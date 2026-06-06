@@ -1650,15 +1650,16 @@ function getWhyWrongEntries(question) {
     }));
 }
 
-function renderWhyWrongHtml(question) {
+function renderWhyWrongHtml(question, displayLetterByCanonical = null) {
   const entries = getWhyWrongEntries(question);
   if (!entries.length) return '';
+  const letterOf = entry => (displayLetterByCanonical && displayLetterByCanonical[entry.letter]) || entry.letter;
   return `
     <div class="why-wrong-block">
       <strong>Why the other options are incorrect:</strong>
       <ul class="why-wrong-list">
         ${entries.map(entry => `
-          <li><strong>${entry.letter}. ${escapeHtml(entry.option)}:</strong> ${escapeHtml(entry.text)}</li>
+          <li><strong>${letterOf(entry)}. ${escapeHtml(entry.option)}:</strong> ${escapeHtml(entry.text)}</li>
         `).join('')}
       </ul>
     </div>
@@ -2304,6 +2305,19 @@ function endPractice() {
   el.practiceArea.classList.add('hidden');
 }
 
+// Per-question shuffled display order so options rotate across A/B/C/D.
+// Cached on the session per question index so the order stays stable across
+// the answer reveal (we never re-shuffle once a question is showing).
+function getOptionOrder(session, current) {
+  if (!session.optionOrders) session.optionOrders = {};
+  let order = session.optionOrders[session.index];
+  if (!order || order.length !== current.options.length) {
+    order = shuffle(current.options.map((_, i) => i));
+    session.optionOrders[session.index] = order;
+  }
+  return order;
+}
+
 function renderPracticeQuestion() {
   const session = state.practice;
   const current = session.questions[session.index];
@@ -2316,6 +2330,13 @@ function renderPracticeQuestion() {
 
   const letters = ['A', 'B', 'C', 'D'];
   const correctIndex = answerLetterToIndex(current.answer);
+  const order = getOptionOrder(session, current);
+  // Map each canonical option letter -> the letter it is displayed under now.
+  const displayLetterByCanonical = {};
+  order.forEach((originalIndex, displayPos) => {
+    displayLetterByCanonical[letters[originalIndex]] = letters[displayPos];
+  });
+  const correctDisplayLetter = displayLetterByCanonical[letters[correctIndex]] || current.answer;
 
   el.practiceCard.innerHTML = `
     <div class="mcq-meta">
@@ -2327,15 +2348,18 @@ function renderPracticeQuestion() {
     <p class="question">${escapeHtml(current.question)}</p>
     ${renderImageHtml(current.questionImage, 'Question image')}
     <div class="options interactive">
-      ${current.options.map((option, i) => {
+      ${order.map((originalIndex, displayPos) => {
+        const option = current.options[originalIndex];
+        const canonicalLetter = letters[originalIndex];   // identity for scoring
+        const displayLetter = letters[displayPos];        // position shown on screen
         let className = 'option-btn';
         if (session.answered) {
-          if (i === correctIndex) className += ' correct';
-          else if (letters[i] === session.selectedOption) className += ' wrong';
+          if (originalIndex === correctIndex) className += ' correct';
+          else if (canonicalLetter === session.selectedOption) className += ' wrong';
         }
         const disabled = session.answered ? 'disabled' : '';
-        return `<button type="button" class="${className}" data-option="${letters[i]}" ${disabled}>
-          <span class="option-letter">${letters[i]}</span>
+        return `<button type="button" class="${className}" data-option="${canonicalLetter}" ${disabled}>
+          <span class="option-letter">${displayLetter}</span>
           <span>${escapeHtml(option)}</span>
         </button>`;
       }).join('')}
@@ -2343,10 +2367,10 @@ function renderPracticeQuestion() {
     ${session.answered ? `
       ${session.lastFeedback ? `<div class="coach-feedback ${session.lastFeedback.tone}">${escapeHtml(session.lastFeedback.text)}</div>` : ''}
       <div class="answer show">
-        <strong>Correct answer: ${current.answer}.</strong> ${escapeHtml(current.options[correctIndex])}
+        <strong>Correct answer: ${correctDisplayLetter}.</strong> ${escapeHtml(current.options[correctIndex])}
         ${current.explanation ? `<br><strong>Explanation:</strong> ${escapeHtml(current.explanation)}` : ''}
         ${renderImageHtml(current.explanationImage, 'Explanation image')}
-        ${renderWhyWrongHtml(current)}
+        ${renderWhyWrongHtml(current, displayLetterByCanonical)}
         <button type="button" class="flag-report-btn" data-action="open-flag" ${hasPendingFlagForQuestion(current.id, state.activeStudentId) ? 'disabled' : ''}>
           ${hasPendingFlagForQuestion(current.id, state.activeStudentId) ? '✓ Report submitted — pending review' : '⚑ Flag wrong answer / suggest correction'}
         </button>
