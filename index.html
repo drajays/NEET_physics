@@ -246,6 +246,7 @@
               <h2>Question bank</h2>
               <p id="bankSummary" class="muted"></p>
               <p id="bankStorageStatus" class="muted storage-status"></p>
+              <p id="bankSyncStatus" class="muted bank-sync-status"></p>
             </div>
             <div class="bank-header-actions">
               <input id="bankSearch" type="search" placeholder="Search..." class="search-input" />
@@ -286,6 +287,17 @@
             <div class="import-card admin-only panel-card" hidden>
               <h3>Publish bank</h3>
               <button id="publishBankBtn" class="primary-btn" type="button">Download bank.json</button>
+            </div>
+            <div class="import-card admin-only panel-card" hidden>
+              <h3>GitHub Auto-sync</h3>
+              <p class="muted">Paste a fine-grained PAT with <strong>contents: write</strong> on this repo. Saved on this device only, never uploaded.</p>
+              <input id="githubTokenInput" type="password" placeholder="github_pat_…" class="text-input" autocomplete="off" />
+              <div class="button-row" style="margin-top:10px">
+                <button id="saveGithubTokenBtn" class="primary-btn small" type="button">Save token</button>
+                <button id="clearGithubTokenBtn" class="secondary-btn small" type="button">Clear</button>
+                <button id="pushBankNowBtn" class="secondary-btn small" type="button">Push bank now</button>
+              </div>
+              <p id="githubTokenStatus" class="muted" style="margin-top:8px"></p>
             </div>
             <div class="import-card admin-only panel-card" hidden>
               <h3>Backup</h3>

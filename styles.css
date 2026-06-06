@@ -474,6 +474,8 @@ textarea, input[type="text"], input[type="number"], input[type="search"], input[
   background: #fff;
 }
 
+.text-input { width: 100%; box-sizing: border-box; }
+.bank-sync-status { font-size: 0.82rem; margin-top: 2px; }
 .bank-list { display: grid; gap: 14px; margin-top: 20px; }
 .bank-card, .empty-state, .empty-card {
   border: 1px solid var(--border);

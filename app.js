@@ -129,6 +129,12 @@ const el = {
   cancelEditBtn: document.getElementById('cancelEditBtn'),
   bankSummary: document.getElementById('bankSummary'),
   bankStorageStatus: document.getElementById('bankStorageStatus'),
+  bankSyncStatus: document.getElementById('bankSyncStatus'),
+  githubTokenInput: document.getElementById('githubTokenInput'),
+  saveGithubTokenBtn: document.getElementById('saveGithubTokenBtn'),
+  clearGithubTokenBtn: document.getElementById('clearGithubTokenBtn'),
+  pushBankNowBtn: document.getElementById('pushBankNowBtn'),
+  githubTokenStatus: document.getElementById('githubTokenStatus'),
   bankSearch: document.getElementById('bankSearch'),
   bankExportJsonBtn: document.getElementById('bankExportJsonBtn'),
   bankExportCsvBtn: document.getElementById('bankExportCsvBtn'),
@@ -1351,6 +1357,89 @@ function buildExportEnvelope() {
   };
 }
 
+// ── GitHub Contents API sync ──────────────────────────────────────────────────
+
+function getGitHubToken() {
+  return localStorage.getItem('neet-github-token') || '';
+}
+
+function parseGitHubCoords() {
+  const url = (getAppConfig().remoteBankUrl || '').trim();
+  // https://raw.githubusercontent.com/OWNER/REPO/BRANCH/PATH
+  const m = url.match(/raw\.githubusercontent\.com\/([^/]+)\/([^/]+)\/([^/]+)\/(.+)/);
+  if (!m) return null;
+  return { owner: m[1], repo: m[2], branch: m[3], path: m[4] };
+}
+
+function setBankSyncStatus(msg, isError = false) {
+  if (!el.bankSyncStatus) return;
+  el.bankSyncStatus.textContent = msg;
+  el.bankSyncStatus.style.color = isError ? 'var(--danger)' : '';
+}
+
+async function pushBankToGitHub(silent = false) {
+  const token = getGitHubToken();
+  if (!token) {
+    if (!silent) alert('No GitHub token saved.\nGo to Import tab → GitHub Auto-sync → paste your PAT and save it.');
+    setBankSyncStatus('No GitHub token — edits saved locally only.', true);
+    return false;
+  }
+  const coords = parseGitHubCoords();
+  if (!coords) {
+    if (!silent) alert('Cannot parse repo info from remoteBankUrl in config.js.');
+    return false;
+  }
+
+  setBankSyncStatus('Pushing to GitHub…');
+  const apiUrl = `https://api.github.com/repos/${coords.owner}/${coords.repo}/contents/${coords.path}`;
+  const headers = {
+    'Authorization': `Bearer ${token}`,
+    'Accept': 'application/vnd.github+json',
+    'Content-Type': 'application/json',
+    'X-GitHub-Api-Version': '2022-11-28'
+  };
+
+  // Fetch current file SHA (needed for updates)
+  let sha;
+  try {
+    const r = await fetch(`${apiUrl}?ref=${coords.branch}`, { headers });
+    if (r.ok) {
+      sha = (await r.json()).sha;
+    } else if (r.status !== 404) {
+      const err = await r.json().catch(() => ({}));
+      throw new Error(`GitHub ${r.status}: ${err.message || r.statusText}`);
+    }
+  } catch (err) {
+    setBankSyncStatus(`GitHub sync failed: ${err.message}`, true);
+    return false;
+  }
+
+  // Encode and push
+  const payload = buildExportEnvelope();
+  const jsonStr = JSON.stringify(payload, null, 2);
+  // btoa on UTF-8 requires encoding first
+  const b64 = btoa(encodeURIComponent(jsonStr).replace(/%([0-9A-F]{2})/g,
+    (_, p1) => String.fromCharCode('0x' + p1)));
+
+  const body = { message: `Update bank.json (${payload.questionCount} questions)`, content: b64, branch: coords.branch };
+  if (sha) body.sha = sha;
+
+  try {
+    const r = await fetch(apiUrl, { method: 'PUT', headers, body: JSON.stringify(body) });
+    if (!r.ok) {
+      const err = await r.json().catch(() => ({}));
+      throw new Error(`GitHub ${r.status}: ${err.message || r.statusText}`);
+    }
+    const ts = new Date().toLocaleTimeString();
+    setBankSyncStatus(`Synced to GitHub ✓  ${ts}`);
+    if (el.githubTokenStatus) el.githubTokenStatus.textContent = `Last push: ${ts}`;
+    return true;
+  } catch (err) {
+    setBankSyncStatus(`GitHub sync failed: ${err.message}`, true);
+    return false;
+  }
+}
+
 const sampleQuestions = [
   {
     question: 'The SI unit of electric field intensity is:',
@@ -2277,6 +2366,7 @@ function upsertQuestion(data) {
 
   saveQuestions();
   refreshUI();
+  pushBankToGitHub(true);
   return true;
 }
 
@@ -2287,6 +2377,7 @@ function deleteQuestion(id) {
   state.questions = state.questions.filter(q => q.id !== id);
   saveQuestions();
   refreshUI();
+  pushBankToGitHub(true);
 }
 
 function clearFilters() {
@@ -2977,6 +3068,34 @@ function bindEvents() {
 
   if (el.syncBankBtn) {
     el.syncBankBtn.addEventListener('click', () => syncFromRemote({ force: true }));
+  }
+
+  // GitHub token management
+  if (el.saveGithubTokenBtn) {
+    el.saveGithubTokenBtn.addEventListener('click', () => {
+      const token = (el.githubTokenInput?.value || '').trim();
+      if (!token) { alert('Paste a GitHub PAT first.'); return; }
+      localStorage.setItem('neet-github-token', token);
+      el.githubTokenInput.value = '';
+      if (el.githubTokenStatus) el.githubTokenStatus.textContent = 'Token saved on this device.';
+    });
+  }
+  if (el.clearGithubTokenBtn) {
+    el.clearGithubTokenBtn.addEventListener('click', () => {
+      localStorage.removeItem('neet-github-token');
+      if (el.githubTokenInput) el.githubTokenInput.value = '';
+      if (el.githubTokenStatus) el.githubTokenStatus.textContent = 'Token cleared.';
+    });
+  }
+  if (el.pushBankNowBtn) {
+    el.pushBankNowBtn.addEventListener('click', () => {
+      if (!requireAdmin('push bank to GitHub')) return;
+      pushBankToGitHub(false);
+    });
+  }
+  // Show saved-token indicator on load
+  if (el.githubTokenStatus && getGitHubToken()) {
+    el.githubTokenStatus.textContent = 'Token is saved on this device.';
   }
 
   if (el.adminUnlockBtn) {
