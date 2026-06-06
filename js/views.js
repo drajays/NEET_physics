@@ -248,8 +248,8 @@
       <div class="view-hero compact">
         <div>
           <p class="eyebrow-dark">Syllabus architecture</p>
-          <h2>Class XI & XII · NEET Biology</h2>
-          <p class="lead">Chapters → sections (Practice, PYQ, Assertion, NCERT). Green = strong, amber = tried, red = weak, grey = new.</p>
+          <h2>Class XI & XII · NEET Physics</h2>
+          <p class="lead">Chapters → sections (PYQ, Practice, NCERT). Green = strong, amber = tried, red = weak, grey = new.</p>
         </div>
       </div>
       <div class="curriculum-tree">

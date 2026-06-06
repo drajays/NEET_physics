@@ -1,16 +1,16 @@
 /**
- * NEET Biology curriculum — Class XI / XII chapter architecture.
- * Maps bank `topic` values to a stable syllabus tree; subtopics = question sections.
+ * NEET Physics curriculum — Class XI / XII chapter architecture.
+ * Maps bank `topic` values to the NCERT physics syllabus tree.
  */
 (function (global) {
   const CHAPTER_ALIASES = {
-    'Living World': 'The Living World'
+    'waves': 'Waves',
+    'Semiconductor Electronics Materials, Devices and Simple Circuits': 'Semiconductor Electronics'
   };
 
   const SECTION_TYPES = [
-    { key: 'practice', label: 'Practice MCQs', icon: '📝' },
-    { key: 'assertion', label: 'Assertion & Reason', icon: '⚖️' },
     { key: 'pyq', label: 'Previous Year (PYQ)', icon: '🎯' },
+    { key: 'practice', label: 'Practice MCQs', icon: '📝' },
     { key: 'ncert', label: 'NCERT Exemplar', icon: '📘' }
   ];
 
@@ -18,58 +18,64 @@
     {
       id: 'xi',
       label: 'Class XI',
-      subtitle: 'Diversity, plant & animal biology, cell biology, physiology',
+      subtitle: 'Mechanics, thermodynamics, waves & oscillations',
       units: [
         {
-          id: 'xi-diversity',
-          label: 'Unit I — Diversity of Living Organisms',
+          id: 'xi-units',
+          label: 'Unit I — Physical World & Measurement',
+          chapters: ['Units and Measurement']
+        },
+        {
+          id: 'xi-kinematics',
+          label: 'Unit II — Kinematics',
           chapters: [
-            'The Living World',
-            'Biological Classification',
-            'Plant Kingdom',
-            'Animal Classification'
+            'Motion in a Straight Line',
+            'Motion in a Plane'
           ]
         },
         {
-          id: 'xi-morphology',
-          label: 'Unit II — Structural Organisation',
+          id: 'xi-laws',
+          label: 'Unit III — Laws of Motion',
+          chapters: ['Laws of Motion']
+        },
+        {
+          id: 'xi-work',
+          label: 'Unit IV — Work, Energy & Power',
+          chapters: ['Work, Energy and Power']
+        },
+        {
+          id: 'xi-rotation',
+          label: 'Unit V — Motion of Systems & Rigid Bodies',
           chapters: [
-            'Plant Morphology',
-            'Anatomy of Flowering Plants',
-            'Structural Organization in Animals'
+            'System of Particles and Rotational Motion',
+            'Gravitation'
           ]
         },
         {
-          id: 'xi-cell',
-          label: 'Unit III — Cell Structure & Function',
+          id: 'xi-properties',
+          label: 'Units VI & VII — Properties of Bulk Matter',
           chapters: [
-            'Cell: The Unit of Life',
-            'Biomolecules',
-            'Cell Cycle and Cell Division'
+            'Mechanical Properties of Solids',
+            'Mechanical Properties of Fluids',
+            'Thermal Properties of Matter'
           ]
         },
         {
-          id: 'xi-plant-physio',
-          label: 'Unit IV — Plant Physiology',
-          chapters: [
-            'Transport in Plants',
-            'Mineral Nutrition',
-            'Photosynthesis in Higher Plants',
-            'Respiration in Plants',
-            'Plant Growth and Development'
-          ]
+          id: 'xi-thermo',
+          label: 'Unit VIII — Thermodynamics',
+          chapters: ['Thermodynamics']
         },
         {
-          id: 'xi-human-physio',
-          label: 'Unit V — Human Physiology',
+          id: 'xi-kinetic',
+          label: 'Unit IX — Behaviour of Perfect Gas',
+          chapters: ['Kinetic Theory']
+        },
+        {
+          id: 'xi-waves',
+          label: 'Unit X — Oscillations & Waves',
           chapters: [
-            'Digestion and Absorption',
-            'Breathing and Exchange of Gases',
-            'Body Fluids and Circulation',
-            'Products and Their Elimination',
-            'Locomotion and Movement',
-            'Neural Control and Co-ordination',
-            'Co-ordination and Integration'
+            'Oscillations',
+            'Waves'
           ]
         }
       ]
@@ -77,53 +83,72 @@
     {
       id: 'xii',
       label: 'Class XII',
-      subtitle: 'Reproduction, genetics, evolution, ecology & biotechnology',
+      subtitle: 'Electrodynamics, optics, modern physics & electronics',
       units: [
         {
-          id: 'xii-reproduction',
-          label: 'Unit VI — Reproduction',
+          id: 'xii-electrostatics',
+          label: 'Unit I — Electrostatics',
           chapters: [
-            'Reproduction in Organisms',
-            'Reproduction in Flowering Plant',
-            'Human Reproduction',
-            'Reproductive Health'
+            'Electric Charges and Fields',
+            'Electrostatic Potential and Capacitance'
           ]
         },
         {
-          id: 'xii-genetics',
-          label: 'Unit VII — Genetics & Evolution',
+          id: 'xii-current',
+          label: 'Unit II — Current Electricity',
+          chapters: ['Current Electricity']
+        },
+        {
+          id: 'xii-magnetism',
+          label: 'Units III & IV — Magnetic Effects & Magnetism',
           chapters: [
-            'Principles of Inheritance and Variation',
-            'Molecular Basis of Inheritance',
-            'Evolution'
+            'Moving Charges and Magnetism',
+            'Magnetism and Matter'
           ]
         },
         {
-          id: 'xii-biotech',
-          label: 'Unit VIII — Biology & Human Welfare',
+          id: 'xii-emi',
+          label: 'Unit V — Electromagnetic Induction & AC',
           chapters: [
-            'Human Health and Disease',
-            'Strategies for Enhancement in Food Production',
-            'Microbes in Human Welfare'
+            'Electromagnetic Induction',
+            'Alternating Current'
           ]
         },
         {
-          id: 'xii-biotech-adv',
-          label: 'Unit IX — Biotechnology',
+          id: 'xii-em-waves',
+          label: 'Unit VI — Electromagnetic Waves',
+          chapters: ['Electromagnetic Waves']
+        },
+        {
+          id: 'xii-optics',
+          label: 'Unit VII — Optics',
           chapters: [
-            'Biotechnology Principles and Processes',
-            'Biotechnology and Its Application'
+            'Ray Optics and Optical Instruments',
+            'Wave Optics'
           ]
         },
         {
-          id: 'xii-ecology',
-          label: 'Unit X — Ecology',
+          id: 'xii-dual',
+          label: 'Unit VIII — Dual Nature of Radiation',
+          chapters: ['Dual Nature of Radiation and Matter']
+        },
+        {
+          id: 'xii-atoms',
+          label: 'Unit IX — Atoms & Nuclei',
           chapters: [
-            'Organisms and Populations',
-            'Ecosystem',
-            'Biodiversity and Conservation',
-            'Environmental Issues'
+            'Atoms',
+            'Nuclei'
           ]
+        },
+        {
+          id: 'xii-semi',
+          label: 'Unit X — Semiconductor Electronics',
+          chapters: ['Semiconductor Electronics']
+        },
+        {
+          id: 'xii-exp',
+          label: 'Unit XI — Experimental Skills',
+          chapters: ['Experimental Skills']
         }
       ]
     }
@@ -135,17 +160,18 @@
   }
 
   function normalizeSection(subtopic) {
-    const raw = (subtopic || 'practice').trim().toLowerCase();
-    if (raw.includes('assertion')) return 'assertion';
+    const raw = (subtopic || '').trim().toLowerCase();
+    if (!raw || raw === 'practice') return 'practice';
     if (raw === 'pyq' || raw.includes('previous')) return 'pyq';
-    if (raw.includes('ncert')) return 'ncert';
-    if (raw === 'practice') return 'practice';
+    if (raw.includes('ncert') || raw.includes('exemplar')) return 'ncert';
+    if (raw.includes('assertion')) return 'assertion';
+    // Physics: subtopic names are actual NCERT section names → treat as PYQ context
     return 'other';
   }
 
   function sectionLabel(sectionKey) {
     const match = SECTION_TYPES.find(item => item.key === sectionKey);
-    return match ? match.label : 'Other';
+    return match ? match.label : 'Topic-wise';
   }
 
   function buildQuestionIndex(questions) {
@@ -199,8 +225,8 @@
           if (otherCount) {
             sections.push({
               key: 'other',
-              label: 'Topic-wise PYQ / Mixed',
-              icon: '🧬',
+              label: 'Topic-wise PYQ',
+              icon: '⚛️',
               count: otherCount,
               questions: bucket.questions.filter(q => normalizeSection(q.subtopic) === 'other')
             });
