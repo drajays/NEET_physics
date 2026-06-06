@@ -291,22 +291,6 @@
     Personal NEET practice app — shared bank syncs across your devices.
   </footer>
 
-  <dialog id="bankUnlockDialog" class="admin-dialog">
-    <form id="bankUnlockForm" method="dialog" class="admin-dialog-body">
-      <h2>Unlock question bank</h2>
-      <p class="muted">Enter your private bank passphrase to decrypt and sync questions.</p>
-      <label>
-        Bank passphrase
-        <input id="bankPassphraseInput" type="password" autocomplete="current-password" required />
-      </label>
-      <p id="bankUnlockError" class="form-error" hidden></p>
-      <div class="button-row">
-        <button id="bankUnlockSubmitBtn" class="primary-btn" type="submit">Unlock &amp; sync</button>
-        <button id="bankUnlockCancelBtn" class="secondary-btn" type="button">Cancel</button>
-      </div>
-    </form>
-  </dialog>
-
   <dialog id="adminDialog" class="admin-dialog">
     <form id="adminForm" method="dialog" class="admin-dialog-body">
       <h2>Admin access</h2>
@@ -324,8 +308,6 @@
   </dialog>
 
   <script src="config.js"></script>
-  <script src="config.private.js" onerror="void 0"></script>
-  <script src="crypto-bank.js"></script>
   <script src="vendor/xlsx.full.min.js"></script>
   <script src="app.js"></script>
 </body>

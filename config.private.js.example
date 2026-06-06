@@ -1,5 +1,0 @@
-// Copy to config.private.js (never commit config.private.js).
-// Use the SAME passphrase on all your personal devices.
-window.APP_PRIVATE = {
-  bankPassphrase: 'SET_YOUR_OWN_SECRET_PASSPHRASE'
-};

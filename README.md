@@ -82,47 +82,22 @@ Change `adminPin` to something only you know.
 2. Enable **GitHub Pages** for the repo (Settings → Pages → deploy from `main`).
 3. Open the app on every device at: `https://drajays.github.io/NEET_pingal/`
 
-### Shared bank (encrypted + sanitized)
+### Shared bank
 
-The hosted file is **`bank.enc.json`** — encrypted, with copyright metadata removed:
+`bank.json` on GitHub holds **7,482 sanitized MCQs** (Vol I + Vol II). Copyright metadata is removed:
 
-- No `Pearson` tags, publisher `source` fields, or OCR image URLs
-- Useless to others without your private passphrase
+- No publisher `source` fields, `Pearson` tags, or OCR image URLs
 
-**One-time setup on each device:**
-
-```bash
-cp config.private.js.example config.private.js
-# Edit config.private.js — set bankPassphrase (same on all 4 devices)
-```
-
-**Rebuild and publish (admin laptop only):**
+Rebuild after updating source files:
 
 ```bash
-python3 -m venv .venv && .venv/bin/pip install cryptography
 python3 convert_pearson_md.py --volume 1
 python3 convert_pearson_md.py --volume 2 --input Objective-Biology-for-NEET2.md --paddle-json Objective-Biology-for-NEET2.json
-cp config.private.js.example config.private.js   # set bankPassphrase here
-BANK_PASSPHRASE='same-passphrase-as-config.private.js' .venv/bin/python build_bank.py --encrypt
-git add bank.enc.json && git commit -m "Update encrypted question bank" && git push
+python3 build_bank.py
+git add bank.json && git commit -m "Update question bank" && git push
 ```
 
-Plain `bank.json` stays local only (gitignored).
-
-### Protecting the bank on GitHub
-
-GitHub cannot encrypt or password-lock a single file. Use **both**:
-
-1. **Encrypted `bank.enc.json`** — public blob, unreadable without passphrase  
-2. **Private repository** (recommended):
-
-```bash
-gh repo edit drajays/NEET_pingal --visibility private
-```
-
-Then only you (and invited collaborators) can access the repo and GitHub Pages site.
-
-### Step 4 — Student devices (your other 3 devices)
+### Step 4 — Other devices (phones/tablets)
 
 1. Open the same GitHub Pages URL.
 2. Do **not** unlock admin.

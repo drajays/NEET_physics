@@ -8,12 +8,6 @@ node_modules/
 Objective-Biology-for-NEET-Vol-I-Pearson-Education-2019.pdf_by_PaddleOCR-VL-1.6.*
 Objective-Biology-for-NEET2.*
 
-# Private passphrase — never commit
-config.private.js
-
-# Plaintext bank (keep only encrypted bank.enc.json in git)
-bank.json
-
 # Generated Pearson import outputs (run convert_pearson_md.py locally)
 pearson_biology_vol1.json
 pearson_biology_vol1.csv

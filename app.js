@@ -7,7 +7,6 @@ const IDB_STORE = 'bank';
 function getAppConfig() {
   return window.APP_CONFIG || {
     remoteBankUrl: '',
-    bankEncrypted: false,
     adminPin: 'change-me-1234',
     autoSyncOnLoad: true,
     appName: 'NEET MCQ Practice'
@@ -122,32 +121,8 @@ const el = {
   adminPinInput: document.getElementById('adminPinInput'),
   adminDialogError: document.getElementById('adminDialogError'),
   adminCancelBtn: document.getElementById('adminCancelBtn'),
-  publishBankBtn: document.getElementById('publishBankBtn'),
-  bankUnlockDialog: document.getElementById('bankUnlockDialog'),
-  bankUnlockForm: document.getElementById('bankUnlockForm'),
-  bankPassphraseInput: document.getElementById('bankPassphraseInput'),
-  bankUnlockError: document.getElementById('bankUnlockError'),
-  bankUnlockCancelBtn: document.getElementById('bankUnlockCancelBtn')
+  publishBankBtn: document.getElementById('publishBankBtn')
 };
-
-function openBankUnlockDialog() {
-  if (!el.bankUnlockDialog) return Promise.resolve(false);
-  el.bankUnlockError.hidden = true;
-  el.bankPassphraseInput.value = '';
-  el.bankUnlockDialog.showModal();
-  el.bankPassphraseInput.focus();
-  return new Promise(resolve => {
-    el.bankUnlockDialog._resolveUnlock = resolve;
-  });
-}
-
-function resolveBankUnlock(success) {
-  if (!el.bankUnlockDialog?._resolveUnlock) return;
-  const resolve = el.bankUnlockDialog._resolveUnlock;
-  el.bankUnlockDialog._resolveUnlock = null;
-  el.bankUnlockDialog.close();
-  resolve(success);
-}
 
 function isAdmin() {
   return sessionStorage.getItem(ADMIN_SESSION_KEY) === '1';
@@ -275,31 +250,17 @@ async function loadQuestionsAsync() {
   }
 }
 
-async function fetchRemoteBank(passphrase = getStoredBankPassphrase()) {
+async function fetchRemoteBank() {
   const config = getAppConfig();
   const url = clean(config.remoteBankUrl);
   if (!url) return null;
-
-  if (config.bankEncrypted && !passphrase) {
-    const unlocked = await openBankUnlockDialog();
-    if (!unlocked) throw new Error('Bank unlock cancelled.');
-    passphrase = getStoredBankPassphrase();
-  }
 
   const response = await fetch(`${url}${url.includes('?') ? '&' : '?'}t=${Date.now()}`, {
     cache: 'no-store'
   });
   if (!response.ok) throw new Error(`Could not download question bank (${response.status}).`);
 
-  const downloaded = await response.json();
-  let parsed;
-  try {
-    parsed = await parseDownloadedBank(downloaded, passphrase);
-  } catch (error) {
-    setStoredBankPassphrase('');
-    throw new Error('Could not decrypt bank. Check your passphrase and try again.');
-  }
-
+  const parsed = await response.json();
   const bank = parseStoredBank(parsed);
   return {
     updatedAt: bank.updatedAt || Date.now(),
@@ -1775,26 +1736,6 @@ function bindEvents() {
     el.publishBankBtn.addEventListener('click', publishBankForDevices);
   }
 
-  if (el.bankUnlockForm) {
-    el.bankUnlockForm.addEventListener('submit', async event => {
-      event.preventDefault();
-      const passphrase = el.bankPassphraseInput.value;
-      try {
-        setStoredBankPassphrase(passphrase);
-        await fetchRemoteBank(passphrase);
-        resolveBankUnlock(true);
-        await syncFromRemote({ silent: true });
-      } catch (error) {
-        setStoredBankPassphrase('');
-        el.bankUnlockError.textContent = error.message;
-        el.bankUnlockError.hidden = false;
-      }
-    });
-  }
-
-  if (el.bankUnlockCancelBtn) {
-    el.bankUnlockCancelBtn.addEventListener('click', () => resolveBankUnlock(false));
-  }
 }
 
 async function init() {
