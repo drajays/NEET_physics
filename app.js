@@ -1,4 +1,6 @@
 const STORAGE_KEY = 'neet-mcq-bank-v1';
+const PROGRESS_KEY = 'neet-student-progress-v1';
+const ACTIVE_STUDENT_KEY = 'neet-active-student-v1';
 const ADMIN_SESSION_KEY = 'neet-admin-session-v1';
 const IDB_NAME = 'neet-mcq-db';
 const IDB_VERSION = 1;
@@ -7,9 +9,11 @@ const IDB_STORE = 'bank';
 function getAppConfig() {
   return window.APP_CONFIG || {
     remoteBankUrl: '',
+    remoteProgressUrl: '',
     adminPin: '1234',
     autoSyncOnLoad: true,
-    appName: 'NEET MCQ Practice'
+    appName: 'NEET MCQ Practice',
+    students: ['Student 1', 'Student 2', 'Student 3', 'Student 4']
   };
 }
 
@@ -38,7 +42,12 @@ const state = {
   },
   bankSearch: '',
   editingId: null,
-  bankUpdatedAt: null
+  bankUpdatedAt: null,
+  progress: { version: 1, updatedAt: 0, students: {} },
+  activeStudentId: '',
+  progressViewStudentId: '',
+  progressSelectedTopic: '',
+  progressListLimit: 80
 };
 
 const el = {
@@ -121,7 +130,23 @@ const el = {
   adminPinInput: document.getElementById('adminPinInput'),
   adminDialogError: document.getElementById('adminDialogError'),
   adminCancelBtn: document.getElementById('adminCancelBtn'),
-  publishBankBtn: document.getElementById('publishBankBtn')
+  publishBankBtn: document.getElementById('publishBankBtn'),
+  studentSelect: document.getElementById('studentSelect'),
+  syncProgressBtn: document.getElementById('syncProgressBtn'),
+  practiceUnsolvedOnly: document.getElementById('practiceUnsolvedOnly'),
+  progressStudentSelect: document.getElementById('progressStudentSelect'),
+  syncProgressPanelBtn: document.getElementById('syncProgressPanelBtn'),
+  publishProgressBtn: document.getElementById('publishProgressBtn'),
+  progressStatus: document.getElementById('progressStatus'),
+  progressSummary: document.getElementById('progressSummary'),
+  progressTopicFilter: document.getElementById('progressTopicFilter'),
+  progressTopicTable: document.getElementById('progressTopicTable'),
+  progressListMeta: document.getElementById('progressListMeta'),
+  progressQuestionList: document.getElementById('progressQuestionList'),
+  practiceUnsolvedTopicBtn: document.getElementById('practiceUnsolvedTopicBtn'),
+  studentDialog: document.getElementById('studentDialog'),
+  studentForm: document.getElementById('studentForm'),
+  studentDialogSelect: document.getElementById('studentDialogSelect')
 };
 
 function isAdmin() {
@@ -185,6 +210,386 @@ function applyRoleUI() {
   }
 
   renderBank();
+  renderStudentSelectors();
+  updateProgressSyncUI();
+}
+
+function getConfiguredStudents() {
+  const config = getAppConfig();
+  const names = Array.isArray(config.students) ? config.students : [];
+  const cleaned = names.map(name => clean(name)).filter(Boolean);
+  return cleaned.length ? cleaned : ['Student 1', 'Student 2', 'Student 3', 'Student 4'];
+}
+
+function studentIdFromName(name) {
+  return clean(name).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') || 'student';
+}
+
+function ensureProgressStudent(studentId, name) {
+  if (!state.progress.students[studentId]) {
+    state.progress.students[studentId] = {
+      name,
+      updatedAt: Date.now(),
+      questions: {}
+    };
+  } else if (name) {
+    state.progress.students[studentId].name = name;
+  }
+  return state.progress.students[studentId];
+}
+
+function getActiveStudentRecord() {
+  if (!state.activeStudentId) return null;
+  return state.progress.students[state.activeStudentId] || null;
+}
+
+function setActiveStudent(studentId) {
+  const names = getConfiguredStudents();
+  const matchName = names.find(name => studentIdFromName(name) === studentId);
+  if (!matchName) return;
+  state.activeStudentId = studentId;
+  localStorage.setItem(ACTIVE_STUDENT_KEY, studentId);
+  ensureProgressStudent(studentId, matchName);
+  renderStudentSelectors();
+  updateFilterUI();
+  if (state.activeTab === 'progress') renderProgress();
+}
+
+function renderStudentSelectors() {
+  const students = getConfiguredStudents();
+  const options = students.map(name => {
+    const id = studentIdFromName(name);
+    return `<option value="${escapeHtml(id)}">${escapeHtml(name)}</option>`;
+  }).join('');
+
+  if (el.studentSelect) {
+    el.studentSelect.innerHTML = options;
+    if (state.activeStudentId) el.studentSelect.value = state.activeStudentId;
+  }
+  if (el.studentDialogSelect) {
+    el.studentDialogSelect.innerHTML = options;
+    if (state.activeStudentId) el.studentDialogSelect.value = state.activeStudentId;
+  }
+  if (el.progressStudentSelect) {
+    el.progressStudentSelect.innerHTML = options;
+    const viewId = state.progressViewStudentId || state.activeStudentId;
+    if (viewId) el.progressStudentSelect.value = viewId;
+  }
+}
+
+function openStudentDialog() {
+  if (!el.studentDialog) return;
+  renderStudentSelectors();
+  el.studentDialog.showModal();
+}
+
+function updateProgressSyncUI() {
+  const hasRemote = Boolean(clean(getAppConfig().remoteProgressUrl));
+  if (el.syncProgressBtn) {
+    el.syncProgressBtn.hidden = !hasRemote;
+    el.syncProgressBtn.disabled = !hasRemote;
+  }
+}
+
+async function loadProgressAsync() {
+  try {
+    const saved = await idbGet(PROGRESS_KEY);
+    if (saved?.students) {
+      state.progress = {
+        version: 1,
+        updatedAt: saved.updatedAt || Date.now(),
+        students: saved.students || {}
+      };
+    }
+  } catch {
+    // ignore
+  }
+  state.activeStudentId = localStorage.getItem(ACTIVE_STUDENT_KEY) || '';
+  state.progressViewStudentId = state.activeStudentId;
+}
+
+async function persistProgress() {
+  state.progress.updatedAt = Date.now();
+  await idbSet(PROGRESS_KEY, state.progress);
+}
+
+function mergeQuestionProgress(localRecord, remoteRecord) {
+  if (!localRecord) return { ...remoteRecord };
+  if (!remoteRecord) return { ...localRecord };
+  const useRemote = (remoteRecord.lastAt || 0) >= (localRecord.lastAt || 0);
+  return {
+    attempts: Math.max(localRecord.attempts || 0, remoteRecord.attempts || 0),
+    correct: Math.max(localRecord.correct || 0, remoteRecord.correct || 0),
+    wrong: Math.max(localRecord.wrong || 0, remoteRecord.wrong || 0),
+    lastResult: useRemote ? remoteRecord.lastResult : localRecord.lastResult,
+    lastAt: Math.max(localRecord.lastAt || 0, remoteRecord.lastAt || 0),
+    subject: remoteRecord.subject || localRecord.subject,
+    topic: remoteRecord.topic || localRecord.topic,
+    subtopic: remoteRecord.subtopic || localRecord.subtopic
+  };
+}
+
+function mergeProgressData(local, remote) {
+  const merged = {
+    version: 1,
+    updatedAt: Math.max(local?.updatedAt || 0, remote?.updatedAt || 0, Date.now()),
+    students: { ...(local?.students || {}) }
+  };
+
+  Object.entries(remote?.students || {}).forEach(([studentId, remoteStudent]) => {
+    const localStudent = merged.students[studentId];
+    if (!localStudent) {
+      merged.students[studentId] = remoteStudent;
+      return;
+    }
+    const questions = { ...(localStudent.questions || {}) };
+    Object.entries(remoteStudent.questions || {}).forEach(([questionId, remoteQ]) => {
+      questions[questionId] = mergeQuestionProgress(questions[questionId], remoteQ);
+    });
+    merged.students[studentId] = {
+      name: remoteStudent.name || localStudent.name,
+      updatedAt: Math.max(localStudent.updatedAt || 0, remoteStudent.updatedAt || 0),
+      questions
+    };
+  });
+
+  return merged;
+}
+
+async function fetchRemoteProgress() {
+  const url = clean(getAppConfig().remoteProgressUrl);
+  if (!url) return null;
+  const response = await fetch(`${url}${url.includes('?') ? '&' : '?'}t=${Date.now()}`, {
+    cache: 'no-store'
+  });
+  if (!response.ok) throw new Error(`Could not download progress (${response.status}).`);
+  const parsed = await response.json();
+  if (!parsed?.students) throw new Error('Remote progress file is invalid.');
+  return parsed;
+}
+
+async function syncProgressFromRemote({ silent = false } = {}) {
+  const config = getAppConfig();
+  if (!clean(config.remoteProgressUrl)) {
+    if (!silent) alert('Set remoteProgressUrl in config.js first.');
+    return false;
+  }
+
+  try {
+    if (!silent && el.progressStatus) el.progressStatus.textContent = 'Syncing progress...';
+    const remote = await fetchRemoteProgress();
+    state.progress = mergeProgressData(state.progress, remote);
+    await persistProgress();
+    renderProgress();
+    const message = 'Progress synced from server.';
+    if (el.progressStatus) {
+      el.progressStatus.textContent = `${message} Last updated ${formatTimestamp(state.progress.updatedAt)}.`;
+    }
+    if (!silent) alert(message);
+    return true;
+  } catch (error) {
+    const missing = String(error.message).includes('404');
+    if (silent && missing) {
+      if (el.progressStatus) {
+        el.progressStatus.textContent = 'Shared progress not published yet. Practice locally, then admin can download progress.json.';
+      }
+      return false;
+    }
+    if (el.progressStatus) el.progressStatus.textContent = `Progress sync failed: ${error.message}`;
+    if (!silent) alert(error.message);
+    return false;
+  }
+}
+
+function getQuestionProgress(studentId, questionId) {
+  return state.progress.students[studentId]?.questions?.[questionId] || null;
+}
+
+function getQuestionStatus(studentId, questionId) {
+  const record = getQuestionProgress(studentId, questionId);
+  if (!record) return 'unsolved';
+  if (record.correct > 0) return 'mastered';
+  if (record.lastResult === 'wrong') return 'wrong';
+  return 'attempted';
+}
+
+function isQuestionUnsolved(studentId, questionId) {
+  return !getQuestionProgress(studentId, questionId);
+}
+
+async function recordAttempt(question, isCorrect) {
+  if (!state.activeStudentId || !question?.id) return;
+  const student = ensureProgressStudent(
+    state.activeStudentId,
+    getConfiguredStudents().find(name => studentIdFromName(name) === state.activeStudentId) || state.activeStudentId
+  );
+  const existing = student.questions[question.id] || {
+    attempts: 0,
+    correct: 0,
+    wrong: 0,
+    lastResult: '',
+    lastAt: 0,
+    subject: question.subject,
+    topic: question.topic,
+    subtopic: question.subtopic
+  };
+
+  existing.attempts += 1;
+  if (isCorrect) existing.correct += 1;
+  else existing.wrong += 1;
+  existing.lastResult = isCorrect ? 'correct' : 'wrong';
+  existing.lastAt = Date.now();
+  existing.subject = question.subject || existing.subject;
+  existing.topic = question.topic || existing.topic;
+  existing.subtopic = question.subtopic || existing.subtopic;
+
+  student.questions[question.id] = existing;
+  student.updatedAt = Date.now();
+  await persistProgress();
+  if (state.activeTab === 'progress') renderProgress();
+}
+
+function buildStudentStats(studentId) {
+  const total = state.questions.length;
+  let attempted = 0;
+  let mastered = 0;
+  let wrong = 0;
+  let unsolved = 0;
+
+  state.questions.forEach(question => {
+    const status = getQuestionStatus(studentId, question.id);
+    if (status === 'unsolved') unsolved += 1;
+    else attempted += 1;
+    if (status === 'mastered') mastered += 1;
+    if (status === 'wrong') wrong += 1;
+  });
+
+  const accuracy = attempted ? Math.round((mastered / attempted) * 100) : 0;
+  return { total, attempted, mastered, wrong, unsolved, accuracy };
+}
+
+function buildTopicStats(studentId) {
+  const topics = new Map();
+  state.questions.forEach(question => {
+    const topic = clean(question.topic) || 'General';
+    if (!topics.has(topic)) {
+      topics.set(topic, { topic, total: 0, attempted: 0, mastered: 0, wrong: 0, unsolved: 0 });
+    }
+    const row = topics.get(topic);
+    row.total += 1;
+    const status = getQuestionStatus(studentId, question.id);
+    if (status === 'unsolved') row.unsolved += 1;
+    else row.attempted += 1;
+    if (status === 'mastered') row.mastered += 1;
+    if (status === 'wrong') row.wrong += 1;
+  });
+  return [...topics.values()].sort((a, b) => a.topic.localeCompare(b.topic));
+}
+
+function getFilteredProgressQuestions(studentId) {
+  const topic = state.progressSelectedTopic;
+  const filter = el.progressTopicFilter?.value || 'all';
+  return state.questions.filter(question => {
+    if (topic && clean(question.topic) !== topic) return false;
+    const status = getQuestionStatus(studentId, question.id);
+    if (filter === 'unsolved') return status === 'unsolved';
+    if (filter === 'wrong') return status === 'wrong';
+    if (filter === 'mastered') return status === 'mastered';
+    return true;
+  });
+}
+
+function renderProgress() {
+  if (!el.progressSummary) return;
+  const studentId = state.progressViewStudentId || state.activeStudentId;
+  if (!studentId) {
+    el.progressSummary.innerHTML = '<div class="empty-state"><h3>Select a student</h3><p>Choose who is practicing from the header menu.</p></div>';
+    el.progressTopicTable.innerHTML = '';
+    el.progressQuestionList.innerHTML = '';
+    if (el.progressListMeta) el.progressListMeta.textContent = '';
+    return;
+  }
+
+  const student = state.progress.students[studentId];
+  const stats = buildStudentStats(studentId);
+  const studentName = student?.name || studentId;
+
+  el.progressSummary.innerHTML = `
+    <div class="progress-stat"><strong>${stats.attempted}</strong><span>Attempted</span></div>
+    <div class="progress-stat"><strong>${stats.unsolved}</strong><span>Not yet tried</span></div>
+    <div class="progress-stat"><strong>${stats.mastered}</strong><span>Answered correctly</span></div>
+    <div class="progress-stat"><strong>${stats.wrong}</strong><span>Wrong last try</span></div>
+    <div class="progress-stat"><strong>${stats.accuracy}%</strong><span>Accuracy</span></div>
+    <div class="progress-stat"><strong>${stats.total}</strong><span>Total in bank</span></div>
+  `;
+
+  if (el.progressStatus) {
+    el.progressStatus.textContent = `Showing progress for ${studentName}. Practice answers are saved automatically.`;
+  }
+
+  const topicRows = buildTopicStats(studentId);
+  el.progressTopicTable.innerHTML = topicRows.map(row => {
+    const percent = row.total ? Math.round((row.attempted / row.total) * 100) : 0;
+    const active = state.progressSelectedTopic === row.topic ? ' active' : '';
+    return `
+      <button type="button" class="progress-topic-row${active}" data-topic="${escapeHtml(row.topic)}">
+        <div>
+          <h4>${escapeHtml(row.topic)}</h4>
+          <p>${row.mastered} correct · ${row.wrong} wrong · ${row.unsolved} unsolved</p>
+        </div>
+        <div>${row.attempted}/${row.total} tried</div>
+        <div class="topic-bar-wrap"><div class="topic-bar" style="width:${percent}%"></div></div>
+      </button>
+    `;
+  }).join('') || '<div class="empty-state"><p>No topics yet. Sync questions first.</p></div>';
+
+  const list = getFilteredProgressQuestions(studentId).slice(0, state.progressListLimit);
+  if (el.progressListMeta) {
+    const label = state.progressSelectedTopic || 'all topics';
+    el.progressListMeta.textContent = `Showing ${list.length} questions for ${label}.`;
+  }
+
+  el.progressQuestionList.innerHTML = list.map(question => {
+    const status = getQuestionStatus(studentId, question.id);
+    const record = getQuestionProgress(studentId, question.id);
+    const detail = record
+      ? `${record.attempts} attempt(s) · last ${record.lastResult}`
+      : 'Not attempted yet';
+    return `
+      <article class="progress-question-item ${status}">
+        <span class="status-pill ${status}">${status}</span>
+        <p>${escapeHtml(question.question)}</p>
+        <small>${escapeHtml(question.topic)}${question.subtopic ? ` · ${escapeHtml(question.subtopic)}` : ''} · ${detail}</small>
+      </article>
+    `;
+  }).join('') || '<div class="empty-state"><p>No questions match this filter.</p></div>';
+
+  if (el.practiceUnsolvedTopicBtn) {
+    const hasTopic = Boolean(state.progressSelectedTopic);
+    el.practiceUnsolvedTopicBtn.hidden = !hasTopic;
+    el.practiceUnsolvedTopicBtn.textContent = hasTopic
+      ? `Practice unsolved in ${state.progressSelectedTopic}`
+      : 'Practice unsolved in this topic';
+  }
+}
+
+function publishProgressForDevices() {
+  if (!requireAdmin('publish progress')) return;
+  const payload = {
+    app: getAppConfig().appName || 'NEET MCQ Practice',
+    version: 1,
+    updatedAt: Date.now(),
+    students: state.progress.students
+  };
+  const blob = new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' });
+  const link = document.createElement('a');
+  link.href = URL.createObjectURL(blob);
+  link.download = 'progress.json';
+  link.click();
+  URL.revokeObjectURL(link.href);
+  if (el.progressStatus) {
+    el.progressStatus.textContent = 'Downloaded progress.json — upload it to GitHub so all devices stay in sync.';
+  }
 }
 
 function openIdb() {
@@ -906,6 +1311,14 @@ function getFilteredQuestions(filters) {
   return state.questions.filter(q => matchesFilters(q, filters));
 }
 
+function getPracticePool(filters = state.selectedFilters) {
+  let pool = getFilteredQuestions(filters);
+  if (el.practiceUnsolvedOnly?.checked && state.activeStudentId) {
+    pool = pool.filter(q => isQuestionUnsolved(state.activeStudentId, q.id));
+  }
+  return pool;
+}
+
 function getBankFilteredQuestions() {
   const search = state.bankSearch.toLowerCase();
   return getFilteredQuestions(state.bankFilters).filter(q => {
@@ -954,13 +1367,14 @@ function updateFilterUI() {
   renderChipGroup(el.filterSubtopics, taxonomy.subtopics, state.selectedFilters.subtopics, 'subtopics');
   renderChipGroup(el.filterTags, taxonomy.tags, state.selectedFilters.tags, 'tags');
 
-  const matched = getFilteredQuestions(state.selectedFilters);
+  const matched = getPracticePool(state.selectedFilters);
   const requested = Math.max(1, Number(el.practiceCount.value) || 1);
   const available = matched.length;
+  const unsolvedNote = el.practiceUnsolvedOnly?.checked ? ' (unsolved only)' : '';
 
   el.matchCount.textContent = available
-    ? `${available} question${available === 1 ? '' : 's'} match your filters.`
-    : 'No questions match your filters.';
+    ? `${available} question${available === 1 ? '' : 's'} match your filters${unsolvedNote}.`
+    : `No questions match your filters${unsolvedNote}.`;
 
   el.startPracticeBtn.disabled = available === 0;
   el.practiceCount.max = Math.max(1, available || 200);
@@ -1103,6 +1517,7 @@ function switchTab(tabName) {
     panel.classList.toggle('active', isActive);
     panel.hidden = !isActive;
   });
+  if (tabName === 'progress') renderProgress();
 }
 
 function resetForm() {
@@ -1234,7 +1649,13 @@ function practiceFromBank() {
 }
 
 function startPractice() {
-  const pool = getFilteredQuestions(state.selectedFilters);
+  const pool = getPracticePool(state.selectedFilters);
+  if (!pool.length) {
+    alert(state.activeStudentId && el.practiceUnsolvedOnly?.checked
+      ? 'No unsolved questions match your filters for this student.'
+      : 'No questions match your filters.');
+    return;
+  }
   const count = Math.min(pool.length, Math.max(1, Number(el.practiceCount.value) || 1));
   state.practice = {
     active: true,
@@ -1312,12 +1733,32 @@ function selectPracticeOption(optionLetter) {
   const session = state.practice;
   if (session.answered) return;
 
+  const current = session.questions[session.index];
+  const isCorrect = optionLetter === current.answer;
   session.selectedOption = optionLetter;
   session.answered = true;
-  if (optionLetter === session.questions[session.index].answer) {
-    session.score += 1;
-  }
+  if (isCorrect) session.score += 1;
+  recordAttempt(current, isCorrect);
   renderPracticeQuestion();
+}
+
+function practiceUnsolvedInTopic() {
+  const topic = state.progressSelectedTopic;
+  if (!topic) return;
+  state.selectedFilters.topics = new Set([topic]);
+  state.selectedFilters.subjects.clear();
+  state.selectedFilters.subtopics.clear();
+  state.selectedFilters.tags.clear();
+  if (el.practiceUnsolvedOnly) el.practiceUnsolvedOnly.checked = true;
+  updateFilterUI();
+  switchTab('practice');
+  const pool = getPracticePool(state.selectedFilters);
+  if (!pool.length) {
+    alert('No unsolved questions left in this topic for the selected student.');
+    return;
+  }
+  el.practiceCount.value = Math.min(pool.length, 20);
+  startPractice();
 }
 
 function nextPracticeQuestion() {
@@ -1620,6 +2061,9 @@ function bindEvents() {
   el.practiceFromBankBtn.addEventListener('click', practiceFromBank);
 
   el.practiceCount.addEventListener('input', updateFilterUI);
+  if (el.practiceUnsolvedOnly) {
+    el.practiceUnsolvedOnly.addEventListener('change', updateFilterUI);
+  }
   el.clearFiltersBtn.addEventListener('click', clearFilters);
   el.startPracticeBtn.addEventListener('click', startPractice);
   el.finishPracticeBtn.addEventListener('click', endPractice);
@@ -1736,16 +2180,64 @@ function bindEvents() {
     el.publishBankBtn.addEventListener('click', publishBankForDevices);
   }
 
+  if (el.studentSelect) {
+    el.studentSelect.addEventListener('change', () => setActiveStudent(el.studentSelect.value));
+  }
+
+  if (el.studentForm) {
+    el.studentForm.addEventListener('submit', event => {
+      event.preventDefault();
+      setActiveStudent(el.studentDialogSelect.value);
+      el.studentDialog?.close();
+    });
+  }
+
+  if (el.progressStudentSelect) {
+    el.progressStudentSelect.addEventListener('change', () => {
+      state.progressViewStudentId = el.progressStudentSelect.value;
+      state.progressSelectedTopic = '';
+      renderProgress();
+    });
+  }
+
+  if (el.progressTopicFilter) {
+    el.progressTopicFilter.addEventListener('change', renderProgress);
+  }
+
+  if (el.progressTopicTable) {
+    el.progressTopicTable.addEventListener('click', event => {
+      const row = event.target.closest('.progress-topic-row');
+      if (!row) return;
+      const topic = row.dataset.topic || '';
+      state.progressSelectedTopic = state.progressSelectedTopic === topic ? '' : topic;
+      renderProgress();
+    });
+  }
+
+  if (el.practiceUnsolvedTopicBtn) {
+    el.practiceUnsolvedTopicBtn.addEventListener('click', practiceUnsolvedInTopic);
+  }
+
+  const syncProgress = () => syncProgressFromRemote({ silent: false });
+  if (el.syncProgressBtn) el.syncProgressBtn.addEventListener('click', syncProgress);
+  if (el.syncProgressPanelBtn) el.syncProgressPanelBtn.addEventListener('click', syncProgress);
+  if (el.publishProgressBtn) el.publishProgressBtn.addEventListener('click', publishProgressForDevices);
+
 }
 
 async function init() {
   state.questions = await loadQuestionsAsync();
+  await loadProgressAsync();
 
   const config = getAppConfig();
   if (clean(config.remoteBankUrl) && config.autoSyncOnLoad) {
     await syncFromRemote({ silent: true });
   } else {
     await maybeSyncFromRemote();
+  }
+
+  if (clean(config.remoteProgressUrl) && config.autoSyncOnLoad) {
+    await syncProgressFromRemote({ silent: true });
   }
 
   if (!state.questions.length && !clean(config.remoteBankUrl)) {
@@ -1774,6 +2266,14 @@ async function init() {
   bindEvents();
   applyRoleUI();
   refreshUI();
+
+  getConfiguredStudents().forEach(name => ensureProgressStudent(studentIdFromName(name), name));
+
+  if (!state.activeStudentId) {
+    openStudentDialog();
+  } else {
+    setActiveStudent(state.activeStudentId);
+  }
 }
 
 init().catch(error => {

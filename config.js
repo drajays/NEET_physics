@@ -1,7 +1,9 @@
 // App settings — edit adminPin on your admin device.
 window.APP_CONFIG = {
   remoteBankUrl: 'https://raw.githubusercontent.com/drajays/NEET_pingal/main/bank.json',
+  remoteProgressUrl: 'https://raw.githubusercontent.com/drajays/NEET_pingal/main/progress.json',
   adminPin: '1234',
   autoSyncOnLoad: true,
-  appName: 'NEET MCQ Practice'
+  appName: 'NEET MCQ Practice',
+  students: ['Student 1', 'Student 2', 'Student 3', 'Student 4']
 };

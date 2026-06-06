@@ -743,6 +743,189 @@ footer {
   font-size: 0.92rem;
 }
 
+.student-select {
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  background: rgba(255, 255, 255, 0.12);
+  color: white;
+  border-radius: 999px;
+  padding: 8px 14px;
+  font-weight: 700;
+  font-size: 0.88rem;
+  max-width: 10rem;
+}
+
+.student-select option {
+  color: var(--ink);
+  background: white;
+}
+
+.unsolved-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 12px 0 0;
+  font-weight: 600;
+  font-size: 0.92rem;
+}
+
+.progress-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: end;
+  margin-bottom: 8px;
+}
+
+.progress-toolbar label {
+  display: grid;
+  gap: 6px;
+  font-weight: 600;
+  font-size: 0.92rem;
+}
+
+.progress-status {
+  margin: 0 0 18px;
+  font-size: 0.9rem;
+}
+
+.progress-summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.progress-stat {
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 16px;
+  background: linear-gradient(180deg, #fff, #f8fafc);
+}
+
+.progress-stat strong {
+  display: block;
+  font-size: 1.6rem;
+  line-height: 1.1;
+  margin-bottom: 4px;
+}
+
+.progress-stat span {
+  color: var(--muted);
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+.progress-section {
+  margin-top: 24px;
+}
+
+.progress-section-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.progress-section-head h3 {
+  margin: 0;
+}
+
+.progress-topic-table {
+  display: grid;
+  gap: 10px;
+}
+
+.progress-topic-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 0.8fr) 120px;
+  gap: 12px;
+  align-items: center;
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: #fff;
+  cursor: pointer;
+  transition: border-color 0.12s ease, box-shadow 0.12s ease;
+}
+
+.progress-topic-row:hover,
+.progress-topic-row.active {
+  border-color: #93c5fd;
+  box-shadow: 0 6px 18px rgba(37, 99, 235, 0.08);
+}
+
+.progress-topic-row h4 {
+  margin: 0 0 4px;
+  font-size: 0.98rem;
+}
+
+.progress-topic-row p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.topic-bar-wrap {
+  height: 8px;
+  border-radius: 999px;
+  background: #e2e8f0;
+  overflow: hidden;
+}
+
+.topic-bar {
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, var(--primary), var(--accent));
+}
+
+.progress-question-list {
+  display: grid;
+  gap: 10px;
+  max-height: 420px;
+  overflow: auto;
+  margin-top: 10px;
+}
+
+.progress-question-item {
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 12px 14px;
+  background: #fff;
+}
+
+.progress-question-item.unsolved { border-left: 4px solid #94a3b8; }
+.progress-question-item.attempted { border-left: 4px solid var(--warning); }
+.progress-question-item.mastered { border-left: 4px solid var(--success); }
+.progress-question-item.wrong { border-left: 4px solid var(--danger); }
+
+.progress-question-item p {
+  margin: 0 0 6px;
+  font-weight: 650;
+  line-height: 1.45;
+}
+
+.progress-question-item small {
+  color: var(--muted);
+}
+
+.status-pill {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  padding: 3px 8px;
+  font-size: 0.74rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.status-pill.unsolved { background: #f1f5f9; color: #475569; }
+.status-pill.attempted { background: #fef3c7; color: #92400e; }
+.status-pill.mastered { background: #dcfce7; color: #166534; }
+.status-pill.wrong { background: #fee2e2; color: #991b1b; }
+
 @media (max-width: 860px) {
   .options-grid, .meta-grid, .import-grid, .inline-options-grid, .inline-meta-grid, .why-wrong-grid {
     grid-template-columns: 1fr;
@@ -754,6 +937,12 @@ footer {
   }
 
   .search-input { max-width: none; width: 100%; }
+
+  .progress-topic-row {
+    grid-template-columns: 1fr;
+  }
+
+  .student-select { max-width: 8rem; }
 }
 
 @media print {

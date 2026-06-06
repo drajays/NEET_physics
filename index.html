@@ -14,6 +14,8 @@
         <span>NEET MCQ Practice</span>
       </div>
       <div class="nav-actions">
+        <select id="studentSelect" class="student-select" aria-label="Active student"></select>
+        <button id="syncProgressBtn" class="ghost-btn small" type="button" hidden>Sync progress</button>
         <button id="syncBankBtn" class="ghost-btn small" type="button" hidden>Sync questions</button>
         <button id="adminUnlockBtn" class="ghost-btn small" type="button">Admin</button>
         <span id="roleBadge" class="stat-pill role-pill">Student</span>
@@ -32,6 +34,7 @@
 
     <nav class="tab-bar" aria-label="Main sections">
       <button class="tab active" data-tab="practice" type="button">Practice</button>
+      <button class="tab" data-tab="progress" type="button">Progress</button>
       <button class="tab admin-only" data-tab="add" type="button" hidden>Add MCQ</button>
       <button class="tab" data-tab="bank" type="button">Question Bank</button>
       <button class="tab admin-only" data-tab="import" type="button" hidden>Import / Export</button>
@@ -69,6 +72,10 @@
           <input id="practiceCount" type="number" min="1" max="200" value="10" />
         </label>
         <p id="matchCount" class="match-info muted">0 questions match your filters.</p>
+        <label class="unsolved-toggle">
+          <input id="practiceUnsolvedOnly" type="checkbox" />
+          Only unsolved questions (for active student)
+        </label>
         <div class="button-row">
           <button id="startPracticeBtn" class="primary-btn" type="button" disabled>Start practice</button>
           <button id="clearFiltersBtn" class="secondary-btn" type="button">Clear filters</button>
@@ -94,6 +101,46 @@
         </div>
 
         <div id="practiceResults" class="practice-results hidden"></div>
+      </div>
+    </section>
+
+    <!-- Progress -->
+    <section id="tab-progress" class="panel tab-panel" aria-labelledby="progressTitle" hidden>
+      <h2 id="progressTitle">Student progress</h2>
+      <p class="muted">Practice is tracked automatically for each student. Pick a student in the header to practice as them.</p>
+
+      <div class="progress-toolbar">
+        <label>
+          View student
+          <select id="progressStudentSelect"></select>
+        </label>
+        <button id="syncProgressPanelBtn" class="secondary-btn" type="button">Sync progress</button>
+        <button id="publishProgressBtn" class="secondary-btn admin-only" type="button" hidden>Download progress.json</button>
+      </div>
+      <p id="progressStatus" class="muted progress-status"></p>
+
+      <div id="progressSummary" class="progress-summary"></div>
+
+      <div class="progress-section">
+        <div class="progress-section-head">
+          <h3>By topic</h3>
+          <select id="progressTopicFilter">
+            <option value="all">All topics</option>
+            <option value="unsolved">Unsolved only</option>
+            <option value="wrong">Wrong last attempt</option>
+            <option value="mastered">Mastered</option>
+          </select>
+        </div>
+        <div id="progressTopicTable" class="progress-topic-table"></div>
+      </div>
+
+      <div class="progress-section">
+        <h3>Question list</h3>
+        <p id="progressListMeta" class="muted"></p>
+        <div id="progressQuestionList" class="progress-question-list"></div>
+        <div class="button-row">
+          <button id="practiceUnsolvedTopicBtn" class="primary-btn" type="button" hidden>Practice unsolved in this topic</button>
+        </div>
       </div>
     </section>
 
@@ -290,6 +337,20 @@
   <footer>
     Personal NEET practice app — shared bank syncs across your devices.
   </footer>
+
+  <dialog id="studentDialog" class="admin-dialog">
+    <form id="studentForm" method="dialog" class="admin-dialog-body">
+      <h2>Who is practicing?</h2>
+      <p class="muted">Your answers will be tracked under this name on this device.</p>
+      <label>
+        Student
+        <select id="studentDialogSelect" required></select>
+      </label>
+      <div class="button-row">
+        <button class="primary-btn" type="submit">Continue</button>
+      </div>
+    </form>
+  </dialog>
 
   <dialog id="adminDialog" class="admin-dialog">
     <form id="adminForm" method="dialog" class="admin-dialog-body">
