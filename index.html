@@ -3,12 +3,16 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0d9488" />
   <title>NEET Physics · MCQ Mastery</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700;0,9..40,800;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" crossorigin="anonymous" />
+  <script>
+    (function(){const t=localStorage.getItem('neet-theme');if(t)document.documentElement.dataset.theme=t;})();
+  </script>
 </head>
 <body class="app-body">
   <div class="app-layout">
@@ -72,11 +76,13 @@
           <select id="studentSelect" class="student-select" aria-label="Active student"></select>
           <button id="syncProgressBtn" class="ghost-btn small" type="button" hidden>Sync progress</button>
           <button id="syncBankBtn" class="ghost-btn small" type="button" hidden>Sync bank</button>
+          <button id="themeToggleBtn" class="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">🌙</button>
           <button id="adminUnlockBtn" class="ghost-btn small" type="button">Admin</button>
           <span id="roleBadge" class="pill role-pill">Student</span>
           <span id="totalCount" class="pill">0 MCQs</span>
         </div>
       </header>
+      <div class="toast-container" id="toastContainer" aria-live="polite"></div>
 
       <main class="content-area">
         <!-- Dashboard -->

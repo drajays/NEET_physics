@@ -56,6 +56,8 @@ const state = {
   },
   bankSearch: '',
   bankShowAnswers: false,
+  bankPage: 1,
+  BANK_PAGE_SIZE: 40,
   search: { query: '', results: [], total: 0, activeIndex: 0, parsed: null },
   editingId: null,
   bankUpdatedAt: null,
@@ -191,8 +193,47 @@ const el = {
   searchCloseBtn: document.getElementById('searchCloseBtn'),
   searchMeta: document.getElementById('searchMeta'),
   searchResults: document.getElementById('searchResults'),
-  searchPracticeAllBtn: document.getElementById('searchPracticeAllBtn')
+  searchPracticeAllBtn: document.getElementById('searchPracticeAllBtn'),
+  themeToggleBtn: document.getElementById('themeToggleBtn'),
+  toastContainer: document.getElementById('toastContainer')
 };
+
+// ── Toast notification system ─────────────────────────────────────────
+function showToast(msg, { type = 'info', title = '', duration = 4000 } = {}) {
+  const icons = { success: '✅', error: '❌', warning: '⚠️', info: 'ℹ️' };
+  const t = document.createElement('div');
+  t.className = `toast toast-${type}`;
+  t.setAttribute('role', 'alert');
+  t.innerHTML = `
+    <span class="toast-icon">${icons[type] || icons.info}</span>
+    <div class="toast-body">
+      ${title ? `<p class="toast-title">${escapeHtml(title)}</p>` : ''}
+      <p class="toast-msg">${escapeHtml(msg)}</p>
+    </div>`;
+  t.addEventListener('click', () => dismissToast(t));
+  el.toastContainer?.appendChild(t);
+  if (duration > 0) setTimeout(() => dismissToast(t), duration);
+  return t;
+}
+function dismissToast(t) {
+  if (!t || t.classList.contains('toast-out')) return;
+  t.classList.add('toast-out');
+  t.addEventListener('animationend', () => t.remove(), { once: true });
+}
+
+// ── Dark mode ─────────────────────────────────────────────────────────
+function initTheme() {
+  const saved = localStorage.getItem('neet-theme') || '';
+  document.documentElement.dataset.theme = saved;
+  if (el.themeToggleBtn) el.themeToggleBtn.textContent = saved === 'dark' ? '☀️' : '🌙';
+}
+function toggleTheme() {
+  const isDark = document.documentElement.dataset.theme === 'dark';
+  const next = isDark ? '' : 'dark';
+  document.documentElement.dataset.theme = next;
+  localStorage.setItem('neet-theme', next);
+  if (el.themeToggleBtn) el.themeToggleBtn.textContent = next === 'dark' ? '☀️' : '🌙';
+}
 
 function isAdmin() {
   return sessionStorage.getItem(ADMIN_SESSION_KEY) === '1';
@@ -200,7 +241,7 @@ function isAdmin() {
 
 function requireAdmin(actionLabel = 'change the question bank') {
   if (isAdmin()) return true;
-  alert(`Admin access is required to ${actionLabel}. Tap Admin and enter your PIN.`);
+  showToast(`Admin PIN required to ${actionLabel}.`, { type: 'warning', title: 'Admin required' });
   openAdminDialog();
   return false;
 }
@@ -624,7 +665,7 @@ function applyChapterPractice(chapterName, { sectionKey = '', unsolvedOnly = tru
   switchTab('practice');
   const pool = getPracticePool(state.selectedFilters);
   if (!pool.length) {
-    alert('No matching questions for this selection.');
+    showToast('No questions match your current filters.', { type: 'warning', title: 'No matches' });
     return;
   }
   el.practiceCount.value = Math.min(pool.length, sectionKey ? pool.length : 20);
@@ -637,7 +678,7 @@ function startRevisionPractice() {
   // Keep that order so the most important questions are actually included.
   const queue = plan.dailyQueue.map(item => item.question).slice(0, 25);
   if (!queue.length) {
-    alert('Revision queue is empty. Explore new chapters instead.');
+    showToast('Revision queue is empty. Explore new chapters instead.', { type: 'info' });
     return;
   }
   startPracticeWithQuestions(queue);
@@ -655,7 +696,7 @@ function startFocusedRevision(kind) {
   if (!target) return;
   const questions = target.items.map(item => item.question);
   if (!questions.length) {
-    alert(target.empty);
+    showToast(target.empty, { type: 'info' });
     return;
   }
   startPracticeWithQuestions(questions);
@@ -829,9 +870,35 @@ function bindSearchPalette() {
   });
 
   document.addEventListener('keydown', event => {
+    const tag = document.activeElement?.tagName;
+    const inInput = tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT';
+
     if ((event.metaKey || event.ctrlKey) && event.key.toLowerCase() === 'k') {
       event.preventDefault();
       el.searchDialog.open ? closeSearchPalette() : openSearchPalette();
+      return;
+    }
+
+    // Practice keyboard shortcuts (1-4 for options, Space/Enter for next)
+    if (!inInput && state.practice.active) {
+      const optionKeys = { '1': 0, '2': 1, '3': 2, '4': 3, 'a': 0, 'b': 1, 'c': 2, 'd': 3 };
+      const letter = event.key.toLowerCase();
+      if (!state.practice.answered && letter in optionKeys) {
+        const btns = el.practiceCard?.querySelectorAll('.option-btn:not(:disabled)');
+        if (btns?.length) {
+          const btn = btns[optionKeys[letter]];
+          if (btn) { event.preventDefault(); btn.click(); }
+        }
+      }
+      if (state.practice.answered && (event.key === ' ' || event.key === 'Enter') && !event.metaKey && !event.ctrlKey) {
+        event.preventDefault();
+        el.practiceNext?.click();
+      }
+    }
+
+    // Toggle dark mode with Shift+D
+    if (!inInput && event.shiftKey && event.key === 'D') {
+      toggleTheme();
     }
   });
 }
@@ -923,7 +990,7 @@ function hasPendingFlagForQuestion(questionId, studentId) {
 
 function openFlagDialog(question) {
   if (!question?.id || !state.activeStudentId) {
-    alert('Select a student profile first.');
+    showToast('Select a student profile first.', { type: 'warning' });
     return;
   }
   if (!el.flagDialog) return;
@@ -1060,7 +1127,7 @@ async function approveAnswerFlag(flagId) {
   if (!flag || flag.status !== 'pending') return;
   const question = state.questions.find(q => q.id === flag.questionId);
   if (!question) {
-    alert('Question no longer in bank.');
+    showToast('Question no longer found in bank.', { type: 'error' }); return;
     return;
   }
   const note = flag.comment ? `\n[Student report ${flag.studentName}]: ${flag.comment}` : '';
@@ -1086,7 +1153,7 @@ async function approveAnswerFlag(flagId) {
   resolveFlag(flagId, 'approved', 'Answer updated to student suggestion.');
   await persistFlags();
   renderFlagReview();
-  alert('Answer updated and flag approved.');
+  showToast('Answer updated and flag approved.', { type: 'success', title: 'Done' });
 }
 
 async function rejectAnswerFlag(flagId, adminNote) {
@@ -1122,7 +1189,7 @@ async function saveFlagAdminEdit(form) {
   resolveFlag(flagId, 'approved', clean(formData.get('admin_note')) || 'Modified by admin.');
   await persistFlags();
   renderFlagReview();
-  alert('Question updated and flag resolved.');
+  showToast('Question updated and flag resolved.', { type: 'success', title: 'Resolved' });
 }
 
 function renderFlagReview() {
@@ -1380,13 +1447,13 @@ function setBankSyncStatus(msg, isError = false) {
 async function pushBankToGitHub(silent = false) {
   const token = getGitHubToken();
   if (!token) {
-    if (!silent) alert('No GitHub token saved.\nGo to Import tab → GitHub Auto-sync → paste your PAT and save it.');
+    if (!silent) showToast('No GitHub token. Go to Import → GitHub Auto-sync to save one.', { type: 'warning', title: 'Token missing' });
     setBankSyncStatus('No GitHub token — edits saved locally only.', true);
     return false;
   }
   const coords = parseGitHubCoords();
   if (!coords) {
-    if (!silent) alert('Cannot parse repo info from remoteBankUrl in config.js.');
+    if (!silent) showToast('Cannot parse repo from remoteBankUrl in config.js.', { type: 'error' });
     return false;
   }
 
@@ -1432,10 +1499,12 @@ async function pushBankToGitHub(silent = false) {
     }
     const ts = new Date().toLocaleTimeString();
     setBankSyncStatus(`Synced to GitHub ✓  ${ts}`);
+    showToast(`Bank synced to GitHub at ${ts}`, { type: 'success', title: 'Synced ✓' });
     if (el.githubTokenStatus) el.githubTokenStatus.textContent = `Last push: ${ts}`;
     return true;
   } catch (err) {
     setBankSyncStatus(`GitHub sync failed: ${err.message}`, true);
+    showToast(`Sync failed: ${err.message}`, { type: 'error', title: 'GitHub error' });
     return false;
   }
 }
@@ -2080,6 +2149,7 @@ function toggleFilterValue(filters, group, value) {
 
 function applyQuickFilter(group, value) {
   toggleFilterValue(state.bankFilters, group, value);
+  state.bankPage = 1;
   updateBankFilterUI();
   renderBank();
   el.bankList.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -2259,8 +2329,27 @@ function renderBank() {
     return;
   }
 
+  const page = state.bankPage;
+  const size = state.BANK_PAGE_SIZE;
+  const visible = filtered.slice(0, page * size);
+  const hasMore = visible.length < filtered.length;
+
   el.bankList.className = 'bank-list';
-  el.bankList.innerHTML = filtered.map(q => renderBankCard(q)).join('');
+  el.bankList.innerHTML =
+    visible.map(q => renderBankCard(q)).join('') +
+    (hasMore ? `<div class="bank-load-more">
+      <button class="secondary-btn" id="bankLoadMoreBtn" type="button">
+        Load more · showing ${visible.length} of ${filtered.length}
+      </button></div>` : '');
+
+  const loadMoreBtn = document.getElementById('bankLoadMoreBtn');
+  if (loadMoreBtn) {
+    loadMoreBtn.addEventListener('click', () => {
+      state.bankPage++;
+      renderBank();
+      loadMoreBtn.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    });
+  }
   updateBankFilterUI();
 }
 
@@ -2351,7 +2440,7 @@ function upsertQuestion(data) {
   if (!requireAdmin('add or edit questions')) return false;
   const question = normaliseQuestion(data);
   if (!question) {
-    alert('Please fill in the question, all four options, and a valid correct answer.');
+    showToast('Fill in the question, all four options, and a correct answer.', { type: 'warning', title: 'Incomplete' });
     return false;
   }
 
@@ -2366,18 +2455,43 @@ function upsertQuestion(data) {
 
   saveQuestions();
   refreshUI();
+  showToast('Question saved — syncing to GitHub…', { type: 'success', duration: 2500 });
   pushBankToGitHub(true);
   return true;
 }
 
 function deleteQuestion(id) {
   if (!requireAdmin('delete questions')) return;
-  if (!confirm('Delete this question permanently?')) return;
-  if (state.editingId === id) state.editingId = null;
-  state.questions = state.questions.filter(q => q.id !== id);
-  saveQuestions();
-  refreshUI();
-  pushBankToGitHub(true);
+  const q = state.questions.find(x => x.id === id);
+  if (!q) return;
+  const snippet = q.question.slice(0, 60) + (q.question.length > 60 ? '…' : '');
+  showConfirm(`Delete: "${snippet}"?`, () => {
+    if (state.editingId === id) state.editingId = null;
+    state.questions = state.questions.filter(x => x.id !== id);
+    saveQuestions();
+    refreshUI();
+    pushBankToGitHub(true);
+    showToast('Question deleted and syncing…', { type: 'success' });
+  });
+}
+
+function showConfirm(msg, onConfirm) {
+  const t = document.createElement('div');
+  t.className = 'toast toast-warning';
+  t.style.maxWidth = '380px';
+  t.innerHTML = `
+    <span class="toast-icon">🗑️</span>
+    <div class="toast-body" style="flex:1">
+      <p class="toast-title">Confirm delete</p>
+      <p class="toast-msg">${escapeHtml(msg)}</p>
+      <div style="display:flex;gap:8px;margin-top:10px">
+        <button class="danger-btn small confirm-yes" style="flex:1">Delete</button>
+        <button class="secondary-btn small confirm-no" style="flex:1">Cancel</button>
+      </div>
+    </div>`;
+  el.toastContainer?.appendChild(t);
+  t.querySelector('.confirm-yes').addEventListener('click', () => { dismissToast(t); onConfirm(); });
+  t.querySelector('.confirm-no').addEventListener('click', () => dismissToast(t));
 }
 
 function clearFilters() {
@@ -3002,6 +3116,7 @@ function bindEvents() {
   el.cancelEditBtn.addEventListener('click', resetForm);
   el.bankSearch.addEventListener('input', event => {
     state.bankSearch = event.target.value;
+    state.bankPage = 1;
     renderBank();
   });
 
@@ -3050,6 +3165,8 @@ function bindEvents() {
     event.preventDefault();
     saveInlineEdit(form);
   });
+
+  if (el.themeToggleBtn) el.themeToggleBtn.addEventListener('click', toggleTheme);
 
   el.importFile.addEventListener('change', event => importFile(event.target.files[0]));
   el.loadSampleBtn.addEventListener('click', loadSampleData);
@@ -3227,6 +3344,7 @@ async function init() {
     el.fExplanationImageRemove
   );
 
+  initTheme();
   bindEvents();
   applyRoleUI();
   refreshUI();
