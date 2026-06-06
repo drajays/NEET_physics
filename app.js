@@ -6,15 +6,25 @@ const IDB_NAME = 'neet-mcq-db';
 const IDB_VERSION = 1;
 const IDB_STORE = 'bank';
 
+const DEFAULT_APP_CONFIG = {
+  remoteBankUrl: '',
+  remoteProgressUrl: '',
+  adminPin: '1234',
+  autoSyncOnLoad: true,
+  appName: 'NEET Biology MCQ Mastery',
+  students: ['Student 1', 'Student 2', 'Student 3', 'Student 4']
+};
+
 function getAppConfig() {
-  return window.APP_CONFIG || {
-    remoteBankUrl: '',
-    remoteProgressUrl: '',
-    adminPin: '1234',
-    autoSyncOnLoad: true,
-    appName: 'NEET MCQ Practice',
-    students: ['Student 1', 'Student 2', 'Student 3', 'Student 4']
-  };
+  return { ...DEFAULT_APP_CONFIG, ...(window.APP_CONFIG || {}) };
+}
+
+function normalizePin(value) {
+  return String(value ?? '').trim();
+}
+
+function getAdminPin() {
+  return normalizePin(getAppConfig().adminPin || DEFAULT_APP_CONFIG.adminPin);
 }
 
 const state = {
@@ -170,9 +180,9 @@ function openAdminDialog() {
 }
 
 function unlockAdmin(pin) {
-  const config = getAppConfig();
-  if (clean(pin) !== clean(config.adminPin)) return false;
+  if (normalizePin(pin) !== getAdminPin()) return false;
   sessionStorage.setItem(ADMIN_SESSION_KEY, '1');
+  el.adminDialogError.hidden = true;
   applyRoleUI();
   return true;
 }
@@ -2239,21 +2249,33 @@ function bindEvents() {
     });
   }
 
-  if (el.adminForm) {
-    el.adminForm.addEventListener('submit', event => {
+  if (el.adminSubmitBtn) {
+    el.adminSubmitBtn.addEventListener('click', event => {
       event.preventDefault();
       const ok = unlockAdmin(el.adminPinInput.value);
       if (!ok) {
         el.adminDialogError.textContent = 'Incorrect admin PIN.';
         el.adminDialogError.hidden = false;
+        el.adminPinInput.focus();
+        el.adminPinInput.select();
         return;
       }
-      el.adminDialog.close();
+      el.adminDialog?.close();
+    });
+  }
+
+  if (el.adminForm) {
+    el.adminForm.addEventListener('submit', event => {
+      event.preventDefault();
+      el.adminSubmitBtn?.click();
     });
   }
 
   if (el.adminCancelBtn) {
-    el.adminCancelBtn.addEventListener('click', () => el.adminDialog?.close());
+    el.adminCancelBtn.addEventListener('click', () => {
+      el.adminDialogError.hidden = true;
+      el.adminDialog?.close();
+    });
   }
 
   if (el.publishBankBtn) {

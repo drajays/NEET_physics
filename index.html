@@ -292,9 +292,11 @@
   </dialog>
 
   <dialog id="adminDialog" class="modal">
-    <form id="adminForm" method="dialog" class="modal-body">
+    <form id="adminForm" class="modal-body" autocomplete="off">
       <h2>Admin</h2>
-      <label>PIN <input id="adminPinInput" type="password" required /></label>
+      <label>PIN
+        <input id="adminPinInput" type="password" inputmode="numeric" pattern="[0-9]*" autocomplete="off" required />
+      </label>
       <p id="adminDialogError" class="form-error" hidden></p>
       <div class="button-row">
         <button id="adminSubmitBtn" class="primary-btn" type="submit">Unlock</button>
