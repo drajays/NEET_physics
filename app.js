@@ -2962,6 +2962,22 @@ function bindEvents() {
 }
 
 async function init() {
+  // Wire up the views layer first so any refresh triggered during the
+  // auto-sync steps below has its dependencies available (state, el, helpers).
+  NeetViews.init({
+    state,
+    el,
+    escapeHtml,
+    summarizeStudent: summarizeStudentForViews,
+    getRevisionPlan: getRevisionPlanForStudent,
+    buildCurriculumTree: buildCurriculumTreeForStudent,
+    findChapter: (tree, name) => NeetCurriculum.findChapter(tree, name),
+    getQuestionStatus,
+    getAuditLog: getAuditLogForStudent,
+    getCoachInsights: getCoachInsightsForStudent,
+    populateStudentSelect
+  });
+
   state.questions = await loadQuestionsAsync();
   await loadProgressAsync();
   await loadFlagsAsync();
@@ -3003,20 +3019,6 @@ async function init() {
     el.fExplanationImagePreview,
     el.fExplanationImageRemove
   );
-
-  NeetViews.init({
-    state,
-    el,
-    escapeHtml,
-    summarizeStudent: summarizeStudentForViews,
-    getRevisionPlan: getRevisionPlanForStudent,
-    buildCurriculumTree: buildCurriculumTreeForStudent,
-    findChapter: (tree, name) => NeetCurriculum.findChapter(tree, name),
-    getQuestionStatus,
-    getAuditLog: getAuditLogForStudent,
-    getCoachInsights: getCoachInsightsForStudent,
-    populateStudentSelect
-  });
 
   bindEvents();
   applyRoleUI();
