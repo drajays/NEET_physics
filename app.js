@@ -625,30 +625,32 @@ function applyChapterPractice(chapterName, { sectionKey = '', unsolvedOnly = tru
 
 function startRevisionPractice() {
   const plan = getRevisionPlanForStudent(state.activeStudentId);
-  const queue = plan.dailyQueue.map(item => item.question);
+  // dailyQueue is already ordered by priority (mistakes → spaced → PYQ → new).
+  // Keep that order so the most important questions are actually included.
+  const queue = plan.dailyQueue.map(item => item.question).slice(0, 25);
   if (!queue.length) {
     alert('Revision queue is empty. Explore new chapters instead.');
     return;
   }
-  state.practice = {
-    active: true,
-    questions: shuffle(queue).slice(0, Math.min(25, queue.length)),
-    index: 0,
-    score: 0,
-    answered: false,
-    selectedOption: null,
-    log: [],
-    streakInSession: 0,
-    lastFeedback: null,
-    questionStartAt: Date.now()
+  startPracticeWithQuestions(queue);
+}
+
+// Practice only one priority bucket from the revision plan.
+function startFocusedRevision(kind) {
+  const plan = getRevisionPlanForStudent(state.activeStudentId);
+  const queues = {
+    wrong: { items: plan.wrongQueue, empty: 'No past mistakes to fix — great work! Try a new chapter or PYQs.' },
+    pyq: { items: plan.pyqQueue, empty: 'No untouched PYQs right now.' },
+    stale: { items: plan.staleQueue, empty: 'Nothing is due for spaced revision yet.' }
   };
-  switchTab('practice');
-  el.practiceArea.classList.remove('hidden');
-  el.practiceResults.classList.add('hidden');
-  el.practiceResults.innerHTML = '';
-  el.nextQuestionBtn.classList.add('hidden');
-  el.finishPracticeBtn.classList.remove('hidden');
-  renderPracticeQuestion();
+  const target = queues[kind];
+  if (!target) return;
+  const questions = target.items.map(item => item.question);
+  if (!questions.length) {
+    alert(target.empty);
+    return;
+  }
+  startPracticeWithQuestions(questions);
 }
 
 // ---- Global question search (command palette) ----
@@ -833,6 +835,9 @@ function handleViewAction(event) {
 
   if (action === 'goto-chapters') switchTab('chapters');
   else if (action === 'start-revision') startRevisionPractice();
+  else if (action === 'practice-mistakes') startFocusedRevision('wrong');
+  else if (action === 'practice-pyq') startFocusedRevision('pyq');
+  else if (action === 'practice-spaced') startFocusedRevision('stale');
   else if (action === 'practice-chapter') applyChapterPractice(target.dataset.chapter);
   else if (action === 'open-chapter') {
     state.selectedChapter = target.dataset.chapter || '';

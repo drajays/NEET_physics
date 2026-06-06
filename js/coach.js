@@ -250,7 +250,7 @@
         icon: '🔧', tone: 'danger',
         title: `Fix ${due.mistakes} past mistake${due.mistakes > 1 ? 's' : ''}`,
         detail: 'Re-attempt questions you got wrong — highest-impact revision.',
-        action: 'start-revision', actionLabel: 'Start revision'
+        action: 'practice-mistakes', actionLabel: 'Fix mistakes'
       });
     }
     if (weakChapters.length) {
@@ -267,7 +267,7 @@
         icon: '🏆', tone: 'primary',
         title: `${due.pyq} PYQ${due.pyq > 1 ? 's' : ''} untouched`,
         detail: 'Previous-year questions show you the real exam pattern.',
-        action: 'start-revision', actionLabel: 'Practice PYQs'
+        action: 'practice-pyq', actionLabel: 'Practice PYQs'
       });
     }
     if (due.spaced > 0) {
@@ -275,7 +275,7 @@
         icon: '🔁', tone: 'success',
         title: `${due.spaced} due for spaced revision`,
         detail: 'Refresh mastered topics before they fade.',
-        action: 'start-revision', actionLabel: 'Refresh now'
+        action: 'practice-spaced', actionLabel: 'Refresh now'
       });
     }
     if (!streak.studiedToday) {
