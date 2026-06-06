@@ -3,363 +3,298 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>NEET MCQ Practice</title>
+  <title>NEET Biology · MCQ Mastery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700;0,9..40,800;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
-  <header class="hero">
-    <nav class="nav">
-      <div class="brand">
-        <span class="brand-mark">N</span>
-        <span>NEET MCQ Practice</span>
-      </div>
-      <div class="nav-actions">
-        <select id="studentSelect" class="student-select" aria-label="Active student"></select>
-        <button id="syncProgressBtn" class="ghost-btn small" type="button" hidden>Sync progress</button>
-        <button id="syncBankBtn" class="ghost-btn small" type="button" hidden>Sync questions</button>
-        <button id="adminUnlockBtn" class="ghost-btn small" type="button">Admin</button>
-        <span id="roleBadge" class="stat-pill role-pill">Student</span>
-        <span id="totalCount" class="stat-pill">0 questions</span>
-      </div>
-    </nav>
-
-    <section class="hero-intro">
-      <p class="eyebrow">Personal NEET practice · Multi-device</p>
-      <h1>Practice from one shared question bank.</h1>
-      <p class="hero-copy">
-        Questions sync from your hosted bank. Only the admin device can upload or edit MCQs; other devices practice and browse.
-      </p>
-      <p id="syncStatus" class="hero-sync muted"></p>
-    </section>
-
-    <nav class="tab-bar" aria-label="Main sections">
-      <button class="tab active" data-tab="practice" type="button">Practice</button>
-      <button class="tab" data-tab="progress" type="button">Progress</button>
-      <button class="tab admin-only" data-tab="add" type="button" hidden>Add MCQ</button>
-      <button class="tab" data-tab="bank" type="button">Question Bank</button>
-      <button class="tab admin-only" data-tab="import" type="button" hidden>Import / Export</button>
-    </nav>
-  </header>
-
-  <main class="container">
-    <!-- Practice -->
-    <section id="tab-practice" class="panel tab-panel active" aria-labelledby="practiceTitle">
-      <h2 id="practiceTitle">Start a practice session</h2>
-      <p class="muted">Select filters below. Leave a group empty to include all values in that group.</p>
-
-      <div class="filter-section">
-        <div class="filter-group">
-          <h3>Subject</h3>
-          <div id="filterSubjects" class="chip-group"></div>
-        </div>
-        <div class="filter-group">
-          <h3>Topic</h3>
-          <div id="filterTopics" class="chip-group"></div>
-        </div>
-        <div class="filter-group">
-          <h3>Subtopic</h3>
-          <div id="filterSubtopics" class="chip-group"></div>
-        </div>
-        <div class="filter-group">
-          <h3>Tags</h3>
-          <div id="filterTags" class="chip-group"></div>
-        </div>
-      </div>
-
-      <div class="practice-controls">
-        <label class="count-label">
-          Number of questions
-          <input id="practiceCount" type="number" min="1" max="200" value="10" />
-        </label>
-        <p id="matchCount" class="match-info muted">0 questions match your filters.</p>
-        <label class="unsolved-toggle">
-          <input id="practiceUnsolvedOnly" type="checkbox" />
-          Only unsolved questions (for active student)
-        </label>
-        <div class="button-row">
-          <button id="startPracticeBtn" class="primary-btn" type="button" disabled>Start practice</button>
-          <button id="clearFiltersBtn" class="secondary-btn" type="button">Clear filters</button>
-        </div>
-      </div>
-
-      <div id="practiceArea" class="practice-area hidden">
-        <div class="practice-header">
-          <div class="progress-wrap">
-            <div id="progressBar" class="progress-bar"></div>
-          </div>
-          <div class="practice-meta">
-            <span id="practiceProgress">Question 1 of 10</span>
-            <span id="practiceScore" class="score-pill">Score: 0</span>
-          </div>
-        </div>
-
-        <article id="practiceCard" class="practice-card"></article>
-
-        <div class="practice-actions">
-          <button id="nextQuestionBtn" class="primary-btn hidden" type="button">Next question</button>
-          <button id="finishPracticeBtn" class="secondary-btn hidden" type="button">End session</button>
-        </div>
-
-        <div id="practiceResults" class="practice-results hidden"></div>
-      </div>
-    </section>
-
-    <!-- Progress -->
-    <section id="tab-progress" class="panel tab-panel" aria-labelledby="progressTitle" hidden>
-      <h2 id="progressTitle">Student progress</h2>
-      <p class="muted">Practice is tracked automatically for each student. Pick a student in the header to practice as them.</p>
-
-      <div class="progress-toolbar">
-        <label>
-          View student
-          <select id="progressStudentSelect"></select>
-        </label>
-        <button id="syncProgressPanelBtn" class="secondary-btn" type="button">Sync progress</button>
-        <button id="publishProgressBtn" class="secondary-btn admin-only" type="button" hidden>Download progress.json</button>
-      </div>
-      <p id="progressStatus" class="muted progress-status"></p>
-
-      <div id="progressSummary" class="progress-summary"></div>
-
-      <div class="progress-section">
-        <div class="progress-section-head">
-          <h3>By topic</h3>
-          <select id="progressTopicFilter">
-            <option value="all">All topics</option>
-            <option value="unsolved">Unsolved only</option>
-            <option value="wrong">Wrong last attempt</option>
-            <option value="mastered">Mastered</option>
-          </select>
-        </div>
-        <div id="progressTopicTable" class="progress-topic-table"></div>
-      </div>
-
-      <div class="progress-section">
-        <h3>Question list</h3>
-        <p id="progressListMeta" class="muted"></p>
-        <div id="progressQuestionList" class="progress-question-list"></div>
-        <div class="button-row">
-          <button id="practiceUnsolvedTopicBtn" class="primary-btn" type="button" hidden>Practice unsolved in this topic</button>
-        </div>
-      </div>
-    </section>
-
-    <!-- Add MCQ -->
-    <section id="tab-add" class="panel tab-panel" aria-labelledby="addTitle" hidden>
-      <h2 id="addTitle">Add a new MCQ</h2>
-      <p id="formMode" class="muted">Fill in the question, four options, and classification fields.</p>
-
-      <form id="mcqForm" class="mcq-form">
-        <input id="editId" type="hidden" />
-
-        <label class="full-width">
-          Question
-          <textarea id="fQuestion" rows="3" required placeholder="Enter the question stem"></textarea>
-        </label>
-
-        <div class="image-upload-block" data-image-field="question_image">
-          <label class="image-upload-label">Question image (optional)
-            <input id="fQuestionImageFile" type="file" accept="image/*" class="image-file-input" />
-          </label>
-          <input id="fQuestionImageData" type="hidden" />
-          <div id="fQuestionImagePreviewWrap" class="image-preview-wrap hidden">
-            <img id="fQuestionImagePreview" class="image-preview" alt="Question image preview" />
-            <button id="fQuestionImageRemove" type="button" class="secondary-btn small remove-image-btn">Remove image</button>
-          </div>
-        </div>
-
-        <div class="options-grid">
-          <label>Option A <input id="fOptionA" type="text" required /></label>
-          <label>Option B <input id="fOptionB" type="text" required /></label>
-          <label>Option C <input id="fOptionC" type="text" required /></label>
-          <label>Option D <input id="fOptionD" type="text" required /></label>
-        </div>
-
-        <label>
-          Correct answer
-          <select id="fAnswer" required>
-            <option value="">Select correct option</option>
-            <option value="A">A</option>
-            <option value="B">B</option>
-            <option value="C">C</option>
-            <option value="D">D</option>
-          </select>
-        </label>
-
-        <label class="full-width">
-          Explanation (optional)
-          <textarea id="fExplanation" rows="2" placeholder="Why this answer is correct"></textarea>
-        </label>
-
-        <div class="image-upload-block" data-image-field="explanation_image">
-          <label class="image-upload-label">Explanation image (optional)
-            <input id="fExplanationImageFile" type="file" accept="image/*" class="image-file-input" />
-          </label>
-          <input id="fExplanationImageData" type="hidden" />
-          <div id="fExplanationImagePreviewWrap" class="image-preview-wrap hidden">
-            <img id="fExplanationImagePreview" class="image-preview" alt="Explanation image preview" />
-            <button id="fExplanationImageRemove" type="button" class="secondary-btn small remove-image-btn">Remove image</button>
-          </div>
-        </div>
-
-        <fieldset class="why-wrong-section full-width">
-          <legend>Why the other options are incorrect</legend>
-          <p class="muted section-note">Optional. Explain why each wrong option is not the answer (shown after you submit in practice).</p>
-          <div class="why-wrong-grid">
-            <label>Option A <textarea id="fWhyWrongA" rows="2" placeholder="Why A is incorrect"></textarea></label>
-            <label>Option B <textarea id="fWhyWrongB" rows="2" placeholder="Why B is incorrect"></textarea></label>
-            <label>Option C <textarea id="fWhyWrongC" rows="2" placeholder="Why C is incorrect"></textarea></label>
-            <label>Option D <textarea id="fWhyWrongD" rows="2" placeholder="Why D is incorrect"></textarea></label>
-          </div>
-        </fieldset>
-
-        <div class="meta-grid">
-          <label>
-            Subject
-            <input id="fSubject" type="text" list="subjectList" required placeholder="e.g. Biology" />
-          </label>
-          <label>
-            Topic
-            <input id="fTopic" type="text" list="topicList" required placeholder="e.g. Human Physiology" />
-          </label>
-          <label>
-            Subtopic
-            <input id="fSubtopic" type="text" list="subtopicList" placeholder="e.g. Digestion" />
-          </label>
-          <label>
-            Tags
-            <input id="fTags" type="text" placeholder="Comma separated, e.g. NCERT, PYQ, Important" />
-          </label>
-        </div>
-
-        <datalist id="subjectList"></datalist>
-        <datalist id="topicList"></datalist>
-        <datalist id="subtopicList"></datalist>
-
-        <div class="button-row">
-          <button class="primary-btn" type="submit">Save MCQ</button>
-          <button id="cancelEditBtn" class="secondary-btn hidden" type="button">Cancel edit</button>
-        </div>
-      </form>
-    </section>
-
-    <!-- Question Bank -->
-    <section id="tab-bank" class="panel tab-panel" aria-labelledby="bankTitle" hidden>
-      <div class="section-header">
+<body class="app-body">
+  <div class="app-layout">
+    <aside class="sidebar" aria-label="Main navigation">
+      <div class="sidebar-brand">
+        <span class="brand-glyph">🧬</span>
         <div>
-          <h2 id="bankTitle">Question bank</h2>
-          <p id="bankSummary" class="muted">All saved questions.</p>
-          <p id="bankStorageStatus" class="muted storage-status"></p>
-        </div>
-        <div class="bank-header-actions">
-          <input id="bankSearch" type="search" placeholder="Search questions..." class="search-input" />
-          <div class="button-row">
-            <button id="bankExportJsonBtn" class="secondary-btn small" type="button">Export JSON</button>
-            <button id="bankExportCsvBtn" class="secondary-btn small" type="button">Export CSV</button>
-          </div>
+          <strong>NEET Biology</strong>
+          <small>MCQ Mastery</small>
         </div>
       </div>
 
-      <div class="bank-filter-section">
-        <p class="muted bank-filter-note">Filter by classification. Click badges on any question to quick-filter. Leave a group empty to show all.</p>
-        <div class="filter-section compact-filters">
-          <div class="filter-group">
-            <h3>Subject</h3>
-            <div id="bankFilterSubjects" class="chip-group"></div>
-          </div>
-          <div class="filter-group">
-            <h3>Topic</h3>
-            <div id="bankFilterTopics" class="chip-group"></div>
-          </div>
-          <div class="filter-group">
-            <h3>Subtopic</h3>
-            <div id="bankFilterSubtopics" class="chip-group"></div>
-          </div>
-          <div class="filter-group">
-            <h3>Tags</h3>
-            <div id="bankFilterTags" class="chip-group"></div>
-          </div>
-        </div>
-        <div class="button-row bank-filter-actions">
-          <button id="clearBankFiltersBtn" class="secondary-btn small" type="button">Clear filters</button>
-          <button id="practiceFromBankBtn" class="primary-btn small" type="button">Practice filtered set</button>
-        </div>
+      <nav class="sidebar-nav">
+        <button class="nav-item active" data-tab="dashboard" type="button">
+          <span class="nav-icon">◉</span> Dashboard
+        </button>
+        <button class="nav-item" data-tab="chapters" type="button">
+          <span class="nav-icon">▦</span> Chapters
+        </button>
+        <button class="nav-item" data-tab="practice" type="button">
+          <span class="nav-icon">✎</span> Practice
+        </button>
+        <button class="nav-item" data-tab="revision" type="button">
+          <span class="nav-icon">↻</span> Revision
+        </button>
+        <button class="nav-item" data-tab="audit" type="button">
+          <span class="nav-icon">☰</span> Progress & Audit
+        </button>
+        <button class="nav-item" data-tab="bank" type="button">
+          <span class="nav-icon">≡</span> Question Bank
+        </button>
+        <div class="nav-divider admin-only" hidden></div>
+        <button class="nav-item admin-only" data-tab="add" type="button" hidden>
+          <span class="nav-icon">+</span> Add MCQ
+        </button>
+        <button class="nav-item admin-only" data-tab="import" type="button" hidden>
+          <span class="nav-icon">⇅</span> Import / Export
+        </button>
+      </nav>
+
+      <div class="sidebar-foot">
+        <p id="syncStatus" class="sync-note muted"></p>
       </div>
+    </aside>
 
-      <div id="bankList" class="bank-list empty-state">
-        <h3>No questions yet</h3>
-        <p>Add MCQs manually or import from a file to get started.</p>
-      </div>
-    </section>
-
-    <!-- Import / Export -->
-    <section id="tab-import" class="panel tab-panel" aria-labelledby="importTitle" hidden>
-      <h2 id="importTitle">Import / Export</h2>
-      <p class="muted">Bulk add questions from CSV, JSON or Excel. Data is saved locally in your browser.</p>
-
-      <div class="import-grid">
-        <div class="import-card admin-only" hidden>
-          <h3>Import file</h3>
-          <p class="muted">Expected columns: question, option_a–d, answer, explanation, why_wrong_a–d, subject, topic, subtopic, tags</p>
-          <label for="importFile" class="primary-btn file-label">Choose file</label>
-          <input id="importFile" type="file" accept=".csv,.json,.xlsx,.xls" hidden />
-          <p id="importStatus" class="muted import-status">No file selected</p>
-          <button id="loadSampleBtn" class="secondary-btn" type="button">Load sample questions</button>
+    <div class="main-column">
+      <header class="topbar">
+        <div class="topbar-left">
+          <button id="menuToggle" class="icon-btn mobile-only" type="button" aria-label="Menu">☰</button>
+          <p class="topbar-eyebrow">NEET · Biology only</p>
         </div>
+        <div class="topbar-actions">
+          <select id="studentSelect" class="student-select" aria-label="Active student"></select>
+          <button id="syncProgressBtn" class="ghost-btn small" type="button" hidden>Sync progress</button>
+          <button id="syncBankBtn" class="ghost-btn small" type="button" hidden>Sync bank</button>
+          <button id="adminUnlockBtn" class="ghost-btn small" type="button">Admin</button>
+          <span id="roleBadge" class="pill role-pill">Student</span>
+          <span id="totalCount" class="pill">0 MCQs</span>
+        </div>
+      </header>
 
-        <div class="import-card admin-only" hidden>
-          <h3>Publish for other devices</h3>
-          <p class="muted">After importing on this admin device, download <code>bank.json</code> and upload it to your hosting URL (see README). Other phones/laptops will sync from that file.</p>
-          <div class="button-row">
-            <button id="publishBankBtn" class="primary-btn" type="button">Download bank.json</button>
+      <main class="content-area">
+        <!-- Dashboard -->
+        <section id="tab-dashboard" class="view-panel active" aria-labelledby="dashboardTitle">
+          <div id="dashboardView"></div>
+        </section>
+
+        <!-- Chapters -->
+        <section id="tab-chapters" class="view-panel" hidden>
+          <div id="chaptersView" class="chapters-layout"></div>
+        </section>
+
+        <!-- Practice -->
+        <section id="tab-practice" class="view-panel" hidden aria-labelledby="practiceTitle">
+          <div class="view-hero compact">
+            <div>
+              <p class="eyebrow-dark">Active practice</p>
+              <h2 id="practiceTitle">Custom practice session</h2>
+              <p class="lead">Filter by chapter and section, or practice only unseen MCQs for the active student.</p>
+            </div>
           </div>
-        </div>
 
-        <div class="import-card admin-only" hidden>
-          <h3>Export backup</h3>
-          <p class="muted">Download your full question bank with every saved field — edits, uploads, explanations, images and why-wrong notes. Images are included in JSON export.</p>
-          <div class="button-row">
-            <button id="exportJsonBtn" class="secondary-btn" type="button">Export JSON</button>
-            <button id="exportCsvBtn" class="secondary-btn" type="button">Export CSV</button>
+          <div class="practice-layout">
+            <aside class="filter-panel">
+              <div class="filter-group">
+                <h3>Chapter</h3>
+                <div id="filterTopics" class="chip-group"></div>
+              </div>
+              <div class="filter-group">
+                <h3>Section</h3>
+                <div id="filterSubtopics" class="chip-group"></div>
+              </div>
+              <div class="filter-group">
+                <h3>Tags</h3>
+                <div id="filterTags" class="chip-group"></div>
+              </div>
+              <div id="filterSubjects" class="hidden" aria-hidden="true"></div>
+            </aside>
+
+            <div class="practice-panel">
+              <label class="count-label">
+                Questions in session
+                <input id="practiceCount" type="number" min="1" max="200" value="15" />
+              </label>
+              <p id="matchCount" class="match-info muted">0 questions match.</p>
+              <label class="check-row">
+                <input id="practiceUnsolvedOnly" type="checkbox" />
+                Only unseen MCQs (active student)
+              </label>
+              <div class="button-row">
+                <button id="startPracticeBtn" class="primary-btn" type="button" disabled>Start session</button>
+                <button id="clearFiltersBtn" class="secondary-btn" type="button">Clear filters</button>
+              </div>
+
+              <div id="practiceArea" class="practice-area hidden">
+                <div class="practice-header">
+                  <div class="progress-wrap"><div id="progressBar" class="progress-bar"></div></div>
+                  <div class="practice-meta">
+                    <span id="practiceProgress">Question 1 of 10</span>
+                    <span id="practiceScore" class="score-pill">Score: 0</span>
+                  </div>
+                </div>
+                <article id="practiceCard" class="practice-card"></article>
+                <div class="practice-actions">
+                  <button id="nextQuestionBtn" class="primary-btn hidden" type="button">Next</button>
+                  <button id="finishPracticeBtn" class="secondary-btn hidden" type="button">End session</button>
+                </div>
+                <div id="practiceResults" class="practice-results hidden"></div>
+              </div>
+            </div>
           </div>
-          <p id="exportStatus" class="muted import-status">Ready to export your latest saved data.</p>
-        </div>
+        </section>
 
-        <div class="import-card danger-card admin-only" hidden>
-          <h3>Reset</h3>
-          <p class="muted">Delete all saved questions from this browser.</p>
-          <button id="resetAllBtn" class="danger-btn" type="button">Clear all data</button>
-        </div>
-      </div>
-    </section>
-  </main>
+        <!-- Revision -->
+        <section id="tab-revision" class="view-panel" hidden>
+          <div id="revisionView"></div>
+        </section>
 
-  <footer>
-    Personal NEET practice app — shared bank syncs across your devices.
-  </footer>
+        <!-- Audit -->
+        <section id="tab-audit" class="view-panel" hidden>
+          <div id="auditView"></div>
+        </section>
 
-  <dialog id="studentDialog" class="admin-dialog">
-    <form id="studentForm" method="dialog" class="admin-dialog-body">
-      <h2>Who is practicing?</h2>
-      <p class="muted">Your answers will be tracked under this name on this device.</p>
-      <label>
-        Student
-        <select id="studentDialogSelect" required></select>
-      </label>
-      <div class="button-row">
-        <button class="primary-btn" type="submit">Continue</button>
-      </div>
+        <!-- Add MCQ -->
+        <section id="tab-add" class="view-panel" hidden aria-labelledby="addTitle">
+          <h2 id="addTitle">Add MCQ</h2>
+          <p id="formMode" class="muted">Biology question with four options.</p>
+          <form id="mcqForm" class="mcq-form panel-card">
+            <input id="editId" type="hidden" />
+            <label class="full-width">Question<textarea id="fQuestion" rows="3" required></textarea></label>
+            <div class="image-upload-block" data-image-field="question_image">
+              <label class="image-upload-label">Question image<input id="fQuestionImageFile" type="file" accept="image/*" class="image-file-input" /></label>
+              <input id="fQuestionImageData" type="hidden" />
+              <div id="fQuestionImagePreviewWrap" class="image-preview-wrap hidden">
+                <img id="fQuestionImagePreview" class="image-preview" alt="" />
+                <button id="fQuestionImageRemove" type="button" class="secondary-btn small remove-image-btn">Remove</button>
+              </div>
+            </div>
+            <div class="options-grid">
+              <label>Option A <input id="fOptionA" type="text" required /></label>
+              <label>Option B <input id="fOptionB" type="text" required /></label>
+              <label>Option C <input id="fOptionC" type="text" required /></label>
+              <label>Option D <input id="fOptionD" type="text" required /></label>
+            </div>
+            <label>Correct answer
+              <select id="fAnswer" required>
+                <option value="">Select</option>
+                <option value="A">A</option><option value="B">B</option>
+                <option value="C">C</option><option value="D">D</option>
+              </select>
+            </label>
+            <label class="full-width">Explanation<textarea id="fExplanation" rows="2"></textarea></label>
+            <div class="image-upload-block" data-image-field="explanation_image">
+              <label class="image-upload-label">Explanation image<input id="fExplanationImageFile" type="file" accept="image/*" class="image-file-input" /></label>
+              <input id="fExplanationImageData" type="hidden" />
+              <div id="fExplanationImagePreviewWrap" class="image-preview-wrap hidden">
+                <img id="fExplanationImagePreview" class="image-preview" alt="" />
+                <button id="fExplanationImageRemove" type="button" class="secondary-btn small remove-image-btn">Remove</button>
+              </div>
+            </div>
+            <fieldset class="why-wrong-section full-width">
+              <legend>Why wrong (optional)</legend>
+              <div class="why-wrong-grid">
+                <label>A <textarea id="fWhyWrongA" rows="2"></textarea></label>
+                <label>B <textarea id="fWhyWrongB" rows="2"></textarea></label>
+                <label>C <textarea id="fWhyWrongC" rows="2"></textarea></label>
+                <label>D <textarea id="fWhyWrongD" rows="2"></textarea></label>
+              </div>
+            </fieldset>
+            <div class="meta-grid">
+              <label>Subject <input id="fSubject" type="text" list="subjectList" value="Biology" required /></label>
+              <label>Chapter <input id="fTopic" type="text" list="topicList" required /></label>
+              <label>Section <input id="fSubtopic" type="text" list="subtopicList" placeholder="Practice, PYQ..." /></label>
+              <label>Tags <input id="fTags" type="text" /></label>
+            </div>
+            <datalist id="subjectList"></datalist>
+            <datalist id="topicList"></datalist>
+            <datalist id="subtopicList"></datalist>
+            <div class="button-row">
+              <button class="primary-btn" type="submit">Save</button>
+              <button id="cancelEditBtn" class="secondary-btn hidden" type="button">Cancel</button>
+            </div>
+          </form>
+        </section>
+
+        <!-- Bank -->
+        <section id="tab-bank" class="view-panel" hidden>
+          <div class="section-header">
+            <div>
+              <h2>Question bank</h2>
+              <p id="bankSummary" class="muted"></p>
+              <p id="bankStorageStatus" class="muted storage-status"></p>
+            </div>
+            <div class="bank-header-actions">
+              <input id="bankSearch" type="search" placeholder="Search..." class="search-input" />
+              <button id="bankExportJsonBtn" class="secondary-btn small" type="button">JSON</button>
+              <button id="bankExportCsvBtn" class="secondary-btn small" type="button">CSV</button>
+            </div>
+          </div>
+          <div class="bank-filter-section panel-card">
+            <div class="filter-section compact-filters">
+              <div class="filter-group"><h3>Chapter</h3><div id="bankFilterTopics" class="chip-group"></div></div>
+              <div class="filter-group"><h3>Section</h3><div id="bankFilterSubtopics" class="chip-group"></div></div>
+              <div class="filter-group"><h3>Tags</h3><div id="bankFilterTags" class="chip-group"></div></div>
+              <div id="bankFilterSubjects" class="hidden"></div>
+            </div>
+            <div class="button-row">
+              <button id="clearBankFiltersBtn" class="secondary-btn small" type="button">Clear</button>
+              <button id="practiceFromBankBtn" class="primary-btn small" type="button">Practice filtered</button>
+            </div>
+          </div>
+          <div id="bankList" class="bank-list empty-state">
+            <h3>No questions</h3>
+            <p>Sync the question bank to begin.</p>
+          </div>
+        </section>
+
+        <!-- Import -->
+        <section id="tab-import" class="view-panel" hidden>
+          <h2>Import / Export</h2>
+          <div class="import-grid">
+            <div class="import-card admin-only panel-card" hidden>
+              <h3>Import</h3>
+              <label for="importFile" class="primary-btn file-label">Choose file</label>
+              <input id="importFile" type="file" accept=".csv,.json,.xlsx,.xls" hidden />
+              <p id="importStatus" class="muted">No file selected</p>
+              <button id="loadSampleBtn" class="secondary-btn" type="button">Load samples</button>
+            </div>
+            <div class="import-card admin-only panel-card" hidden>
+              <h3>Publish bank</h3>
+              <button id="publishBankBtn" class="primary-btn" type="button">Download bank.json</button>
+            </div>
+            <div class="import-card admin-only panel-card" hidden>
+              <h3>Backup</h3>
+              <button id="exportJsonBtn" class="secondary-btn" type="button">Export JSON</button>
+              <button id="exportCsvBtn" class="secondary-btn" type="button">Export CSV</button>
+              <p id="exportStatus" class="muted"></p>
+            </div>
+            <div class="import-card admin-only panel-card danger-card" hidden>
+              <h3>Reset</h3>
+              <button id="resetAllBtn" class="danger-btn" type="button">Clear bank</button>
+            </div>
+            <div class="import-card panel-card">
+              <h3>Progress sync</h3>
+              <p class="muted">Download merged progress for all students and upload to GitHub.</p>
+              <button id="publishProgressBtn" class="secondary-btn admin-only" type="button" hidden>Download progress.json</button>
+              <button id="syncProgressPanelBtn" class="secondary-btn" type="button">Sync progress</button>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <dialog id="studentDialog" class="modal">
+    <form id="studentForm" method="dialog" class="modal-body">
+      <h2>Welcome back</h2>
+      <p class="muted">Who is studying today? Progress is tracked per student.</p>
+      <label>Student <select id="studentDialogSelect" required></select></label>
+      <button class="primary-btn" type="submit">Enter app</button>
     </form>
   </dialog>
 
-  <dialog id="adminDialog" class="admin-dialog">
-    <form id="adminForm" method="dialog" class="admin-dialog-body">
-      <h2>Admin access</h2>
-      <p class="muted">Enter your admin PIN to import, edit or publish questions.</p>
-      <label>
-        Admin PIN
-        <input id="adminPinInput" type="password" autocomplete="current-password" required />
-      </label>
+  <dialog id="adminDialog" class="modal">
+    <form id="adminForm" method="dialog" class="modal-body">
+      <h2>Admin</h2>
+      <label>PIN <input id="adminPinInput" type="password" required /></label>
       <p id="adminDialogError" class="form-error" hidden></p>
       <div class="button-row">
         <button id="adminSubmitBtn" class="primary-btn" type="submit">Unlock</button>
@@ -368,8 +303,13 @@
     </form>
   </dialog>
 
+  <div id="chapterDetail" class="chapter-detail-drawer"></div>
+
   <script src="config.js"></script>
   <script src="vendor/xlsx.full.min.js"></script>
+  <script src="js/curriculum.js"></script>
+  <script src="js/analytics.js"></script>
+  <script src="js/views.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

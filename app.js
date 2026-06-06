@@ -19,7 +19,9 @@ function getAppConfig() {
 
 const state = {
   questions: [],
-  activeTab: 'practice',
+  activeTab: 'dashboard',
+  selectedChapter: '',
+  auditFilter: 'all',
   selectedFilters: {
     subjects: new Set(),
     topics: new Set(),
@@ -52,8 +54,15 @@ const state = {
 
 const el = {
   totalCount: document.getElementById('totalCount'),
-  tabs: document.querySelectorAll('.tab'),
-  tabPanels: document.querySelectorAll('.tab-panel'),
+  navItems: document.querySelectorAll('.nav-item'),
+  viewPanels: document.querySelectorAll('.view-panel'),
+  sidebar: document.querySelector('.sidebar'),
+  menuToggle: document.getElementById('menuToggle'),
+  dashboardView: document.getElementById('dashboardView'),
+  chaptersView: document.getElementById('chaptersView'),
+  chapterDetail: document.getElementById('chapterDetail'),
+  revisionView: document.getElementById('revisionView'),
+  auditView: document.getElementById('auditView'),
   filterSubjects: document.getElementById('filterSubjects'),
   filterTopics: document.getElementById('filterTopics'),
   filterSubtopics: document.getElementById('filterSubtopics'),
@@ -134,16 +143,8 @@ const el = {
   studentSelect: document.getElementById('studentSelect'),
   syncProgressBtn: document.getElementById('syncProgressBtn'),
   practiceUnsolvedOnly: document.getElementById('practiceUnsolvedOnly'),
-  progressStudentSelect: document.getElementById('progressStudentSelect'),
   syncProgressPanelBtn: document.getElementById('syncProgressPanelBtn'),
   publishProgressBtn: document.getElementById('publishProgressBtn'),
-  progressStatus: document.getElementById('progressStatus'),
-  progressSummary: document.getElementById('progressSummary'),
-  progressTopicFilter: document.getElementById('progressTopicFilter'),
-  progressTopicTable: document.getElementById('progressTopicTable'),
-  progressListMeta: document.getElementById('progressListMeta'),
-  progressQuestionList: document.getElementById('progressQuestionList'),
-  practiceUnsolvedTopicBtn: document.getElementById('practiceUnsolvedTopicBtn'),
   studentDialog: document.getElementById('studentDialog'),
   studentForm: document.getElementById('studentForm'),
   studentDialogSelect: document.getElementById('studentDialogSelect')
@@ -178,7 +179,7 @@ function unlockAdmin(pin) {
 
 function lockAdmin() {
   sessionStorage.removeItem(ADMIN_SESSION_KEY);
-  if (state.activeTab === 'add' || state.activeTab === 'import') switchTab('practice');
+  if (state.activeTab === 'add' || state.activeTab === 'import') switchTab('dashboard');
   applyRoleUI();
 }
 
@@ -212,6 +213,7 @@ function applyRoleUI() {
   renderBank();
   renderStudentSelectors();
   updateProgressSyncUI();
+  refreshLearningViews();
 }
 
 function getConfiguredStudents() {
@@ -230,7 +232,8 @@ function ensureProgressStudent(studentId, name) {
     state.progress.students[studentId] = {
       name,
       updatedAt: Date.now(),
-      questions: {}
+      questions: {},
+      history: []
     };
   } else if (name) {
     state.progress.students[studentId].name = name;
@@ -252,7 +255,7 @@ function setActiveStudent(studentId) {
   ensureProgressStudent(studentId, matchName);
   renderStudentSelectors();
   updateFilterUI();
-  if (state.activeTab === 'progress') renderProgress();
+  refreshLearningViews();
 }
 
 function renderStudentSelectors() {
@@ -270,11 +273,16 @@ function renderStudentSelectors() {
     el.studentDialogSelect.innerHTML = options;
     if (state.activeStudentId) el.studentDialogSelect.value = state.activeStudentId;
   }
-  if (el.progressStudentSelect) {
-    el.progressStudentSelect.innerHTML = options;
-    const viewId = state.progressViewStudentId || state.activeStudentId;
-    if (viewId) el.progressStudentSelect.value = viewId;
-  }
+}
+
+function populateStudentSelect(select, selectedId) {
+  if (!select) return;
+  const students = getConfiguredStudents();
+  select.innerHTML = students.map(name => {
+    const id = studentIdFromName(name);
+    return `<option value="${escapeHtml(id)}">${escapeHtml(name)}</option>`;
+  }).join('');
+  if (selectedId) select.value = selectedId;
 }
 
 function openStudentDialog() {
@@ -346,10 +354,14 @@ function mergeProgressData(local, remote) {
     Object.entries(remoteStudent.questions || {}).forEach(([questionId, remoteQ]) => {
       questions[questionId] = mergeQuestionProgress(questions[questionId], remoteQ);
     });
+    const history = [...(localStudent.history || []), ...(remoteStudent.history || [])]
+      .sort((a, b) => b.at - a.at)
+      .slice(0, 600);
     merged.students[studentId] = {
       name: remoteStudent.name || localStudent.name,
       updatedAt: Math.max(localStudent.updatedAt || 0, remoteStudent.updatedAt || 0),
-      questions
+      questions,
+      history
     };
   });
 
@@ -376,26 +388,26 @@ async function syncProgressFromRemote({ silent = false } = {}) {
   }
 
   try {
-    if (!silent && el.progressStatus) el.progressStatus.textContent = 'Syncing progress...';
+    if (!silent && el.syncStatus) el.syncStatus.textContent = 'Syncing progress...';
     const remote = await fetchRemoteProgress();
     state.progress = mergeProgressData(state.progress, remote);
     await persistProgress();
-    renderProgress();
+    refreshLearningViews();
     const message = 'Progress synced from server.';
-    if (el.progressStatus) {
-      el.progressStatus.textContent = `${message} Last updated ${formatTimestamp(state.progress.updatedAt)}.`;
+    if (el.syncStatus) {
+      el.syncStatus.textContent = `${message} Last updated ${formatTimestamp(state.progress.updatedAt)}.`;
     }
     if (!silent) alert(message);
     return true;
   } catch (error) {
     const missing = String(error.message).includes('404');
     if (silent && missing) {
-      if (el.progressStatus) {
-        el.progressStatus.textContent = 'Shared progress not published yet. Practice locally, then admin can download progress.json.';
+      if (el.syncStatus) {
+        el.syncStatus.textContent = 'Shared progress not published yet. Practice locally, then admin can download progress.json.';
       }
       return false;
     }
-    if (el.progressStatus) el.progressStatus.textContent = `Progress sync failed: ${error.message}`;
+    if (el.syncStatus) el.syncStatus.textContent = `Progress sync failed: ${error.message}`;
     if (!silent) alert(error.message);
     return false;
   }
@@ -417,7 +429,7 @@ function isQuestionUnsolved(studentId, questionId) {
   return !getQuestionProgress(studentId, questionId);
 }
 
-async function recordAttempt(question, isCorrect) {
+async function recordAttempt(question, isCorrect, selectedOption = '') {
   if (!state.activeStudentId || !question?.id) return;
   const student = ensureProgressStudent(
     state.activeStudentId,
@@ -444,9 +456,20 @@ async function recordAttempt(question, isCorrect) {
   existing.subtopic = question.subtopic || existing.subtopic;
 
   student.questions[question.id] = existing;
+  if (!student.history) student.history = [];
+  student.history.push({
+    at: Date.now(),
+    questionId: question.id,
+    topic: question.topic,
+    subtopic: question.subtopic,
+    result: isCorrect ? 'correct' : 'wrong',
+    selected: selectedOption,
+    answer: question.answer
+  });
+  if (student.history.length > 600) student.history = student.history.slice(-600);
   student.updatedAt = Date.now();
   await persistProgress();
-  if (state.activeTab === 'progress') renderProgress();
+  refreshLearningViews();
 }
 
 function buildStudentStats(studentId) {
@@ -486,91 +509,124 @@ function buildTopicStats(studentId) {
   return [...topics.values()].sort((a, b) => a.topic.localeCompare(b.topic));
 }
 
-function getFilteredProgressQuestions(studentId) {
-  const topic = state.progressSelectedTopic;
-  const filter = el.progressTopicFilter?.value || 'all';
-  return state.questions.filter(question => {
-    if (topic && clean(question.topic) !== topic) return false;
-    const status = getQuestionStatus(studentId, question.id);
-    if (filter === 'unsolved') return status === 'unsolved';
-    if (filter === 'wrong') return status === 'wrong';
-    if (filter === 'mastered') return status === 'mastered';
-    return true;
+function buildCurriculumTreeForStudent(studentId) {
+  const id = studentId || state.activeStudentId;
+  return NeetCurriculum.buildCurriculumTree(state.questions, qid => getQuestionStatus(id, qid));
+}
+
+function getRevisionPlanForStudent(studentId) {
+  const id = studentId || state.activeStudentId;
+  return NeetAnalytics.getRevisionPlan({
+    questions: state.questions,
+    getStatus: qid => getQuestionStatus(id, qid),
+    getProgress: qid => getQuestionProgress(id, qid),
+    normalizeSection: NeetCurriculum.normalizeSection
   });
 }
 
-function renderProgress() {
-  if (!el.progressSummary) return;
-  const studentId = state.progressViewStudentId || state.activeStudentId;
-  if (!studentId) {
-    el.progressSummary.innerHTML = '<div class="empty-state"><h3>Select a student</h3><p>Choose who is practicing from the header menu.</p></div>';
-    el.progressTopicTable.innerHTML = '';
-    el.progressQuestionList.innerHTML = '';
-    if (el.progressListMeta) el.progressListMeta.textContent = '';
+function summarizeStudentForViews(studentId) {
+  return NeetAnalytics.summarizeStudent(studentId, state.questions, {
+    buildStudentStats,
+    buildCurriculumTree: buildCurriculumTreeForStudent
+  });
+}
+
+function getAuditLogForStudent(student, limit) {
+  const map = new Map(state.questions.map(q => [q.id, q]));
+  return NeetAnalytics.getAuditLog(student, map, limit);
+}
+
+function refreshLearningViews() {
+  if (window.NeetViews) NeetViews.refreshActiveView();
+}
+
+function sectionKeyToLabel(key) {
+  const match = NeetCurriculum.SECTION_TYPES.find(item => item.key === key);
+  return match ? match.label : key;
+}
+
+function applyChapterPractice(chapterName, { sectionKey = '', unsolvedOnly = true } = {}) {
+  const normalized = NeetCurriculum.normalizeChapter(chapterName);
+  state.selectedFilters.topics = new Set([normalized, chapterName].filter(Boolean));
+  state.selectedFilters.subtopics.clear();
+  state.selectedFilters.tags.clear();
+  if (sectionKey && sectionKey !== 'other') {
+    const label = sectionKeyToLabel(sectionKey);
+    state.selectedFilters.subtopics = new Set(
+      state.questions
+        .filter(q => NeetCurriculum.normalizeChapter(q.topic) === normalized)
+        .filter(q => NeetCurriculum.normalizeSection(q.subtopic) === sectionKey)
+        .map(q => q.subtopic)
+        .filter(Boolean)
+    );
+    if (!state.selectedFilters.subtopics.size) state.selectedFilters.subtopics.add(label);
+  }
+  if (el.practiceUnsolvedOnly) el.practiceUnsolvedOnly.checked = unsolvedOnly;
+  updateFilterUI();
+  switchTab('practice');
+  const pool = getPracticePool(state.selectedFilters);
+  if (!pool.length) {
+    alert('No matching questions for this selection.');
     return;
   }
+  el.practiceCount.value = Math.min(pool.length, sectionKey ? pool.length : 20);
+  startPractice();
+}
 
-  const student = state.progress.students[studentId];
-  const stats = buildStudentStats(studentId);
-  const studentName = student?.name || studentId;
-
-  el.progressSummary.innerHTML = `
-    <div class="progress-stat"><strong>${stats.attempted}</strong><span>Attempted</span></div>
-    <div class="progress-stat"><strong>${stats.unsolved}</strong><span>Not yet tried</span></div>
-    <div class="progress-stat"><strong>${stats.mastered}</strong><span>Answered correctly</span></div>
-    <div class="progress-stat"><strong>${stats.wrong}</strong><span>Wrong last try</span></div>
-    <div class="progress-stat"><strong>${stats.accuracy}%</strong><span>Accuracy</span></div>
-    <div class="progress-stat"><strong>${stats.total}</strong><span>Total in bank</span></div>
-  `;
-
-  if (el.progressStatus) {
-    el.progressStatus.textContent = `Showing progress for ${studentName}. Practice answers are saved automatically.`;
+function startRevisionPractice() {
+  const plan = getRevisionPlanForStudent(state.activeStudentId);
+  const queue = plan.dailyQueue.map(item => item.question);
+  if (!queue.length) {
+    alert('Revision queue is empty. Explore new chapters instead.');
+    return;
   }
+  state.practice = {
+    active: true,
+    questions: shuffle(queue).slice(0, Math.min(25, queue.length)),
+    index: 0,
+    score: 0,
+    answered: false,
+    selectedOption: null
+  };
+  switchTab('practice');
+  el.practiceArea.classList.remove('hidden');
+  el.practiceResults.classList.add('hidden');
+  el.practiceResults.innerHTML = '';
+  el.nextQuestionBtn.classList.add('hidden');
+  el.finishPracticeBtn.classList.remove('hidden');
+  renderPracticeQuestion();
+}
 
-  const topicRows = buildTopicStats(studentId);
-  el.progressTopicTable.innerHTML = topicRows.map(row => {
-    const percent = row.total ? Math.round((row.attempted / row.total) * 100) : 0;
-    const active = state.progressSelectedTopic === row.topic ? ' active' : '';
-    return `
-      <button type="button" class="progress-topic-row${active}" data-topic="${escapeHtml(row.topic)}">
-        <div>
-          <h4>${escapeHtml(row.topic)}</h4>
-          <p>${row.mastered} correct · ${row.wrong} wrong · ${row.unsolved} unsolved</p>
-        </div>
-        <div>${row.attempted}/${row.total} tried</div>
-        <div class="topic-bar-wrap"><div class="topic-bar" style="width:${percent}%"></div></div>
-      </button>
-    `;
-  }).join('') || '<div class="empty-state"><p>No topics yet. Sync questions first.</p></div>';
+function handleViewAction(event) {
+  const target = event.target.closest('[data-action]');
+  if (!target) return;
+  const action = target.dataset.action;
 
-  const list = getFilteredProgressQuestions(studentId).slice(0, state.progressListLimit);
-  if (el.progressListMeta) {
-    const label = state.progressSelectedTopic || 'all topics';
-    el.progressListMeta.textContent = `Showing ${list.length} questions for ${label}.`;
+  if (action === 'goto-chapters') switchTab('chapters');
+  else if (action === 'start-revision') startRevisionPractice();
+  else if (action === 'practice-chapter') applyChapterPractice(target.dataset.chapter);
+  else if (action === 'open-chapter') {
+    state.selectedChapter = target.dataset.chapter || '';
+    switchTab('chapters');
+    refreshLearningViews();
+    if (state.selectedChapter) NeetViews.renderChapterDetail(state.selectedChapter);
   }
-
-  el.progressQuestionList.innerHTML = list.map(question => {
-    const status = getQuestionStatus(studentId, question.id);
-    const record = getQuestionProgress(studentId, question.id);
-    const detail = record
-      ? `${record.attempts} attempt(s) · last ${record.lastResult}`
-      : 'Not attempted yet';
-    return `
-      <article class="progress-question-item ${status}">
-        <span class="status-pill ${status}">${status}</span>
-        <p>${escapeHtml(question.question)}</p>
-        <small>${escapeHtml(question.topic)}${question.subtopic ? ` · ${escapeHtml(question.subtopic)}` : ''} · ${detail}</small>
-      </article>
-    `;
-  }).join('') || '<div class="empty-state"><p>No questions match this filter.</p></div>';
-
-  if (el.practiceUnsolvedTopicBtn) {
-    const hasTopic = Boolean(state.progressSelectedTopic);
-    el.practiceUnsolvedTopicBtn.hidden = !hasTopic;
-    el.practiceUnsolvedTopicBtn.textContent = hasTopic
-      ? `Practice unsolved in ${state.progressSelectedTopic}`
-      : 'Practice unsolved in this topic';
+  else if (action === 'close-chapter') {
+    state.selectedChapter = '';
+    if (el.chapterDetail) {
+      el.chapterDetail.classList.remove('open');
+      el.chapterDetail.innerHTML = '';
+    }
+    renderChaptersOnly();
   }
+  else if (action === 'practice-section') {
+    applyChapterPractice(target.dataset.chapter, { sectionKey: target.dataset.section });
+  }
+  else if (action === 'sync-progress') syncProgressFromRemote({ silent: false });
+}
+
+function renderChaptersOnly() {
+  if (window.NeetViews) NeetViews.renderChapters();
 }
 
 function publishProgressForDevices() {
@@ -587,8 +643,8 @@ function publishProgressForDevices() {
   link.download = 'progress.json';
   link.click();
   URL.revokeObjectURL(link.href);
-  if (el.progressStatus) {
-    el.progressStatus.textContent = 'Downloaded progress.json — upload it to GitHub so all devices stay in sync.';
+  if (el.syncStatus) {
+    el.syncStatus.textContent = 'Downloaded progress.json — upload to GitHub for multi-device sync.';
   }
 }
 
@@ -1291,9 +1347,22 @@ function getTaxonomy() {
     q.tags.forEach(tag => tags.add(tag));
   });
 
+  const curriculumOrder = NeetCurriculum.CURRICULUM.flatMap(
+    year => year.units.flatMap(unit => unit.chapters)
+  );
+
+  const sortByCurriculum = (a, b) => {
+    const ai = curriculumOrder.indexOf(NeetCurriculum.normalizeChapter(a));
+    const bi = curriculumOrder.indexOf(NeetCurriculum.normalizeChapter(b));
+    if (ai === -1 && bi === -1) return a.localeCompare(b);
+    if (ai === -1) return 1;
+    if (bi === -1) return -1;
+    return ai - bi;
+  };
+
   return {
     subjects: [...subjects].sort((a, b) => a.localeCompare(b)),
-    topics: [...topics].sort((a, b) => a.localeCompare(b)),
+    topics: [...topics].sort(sortByCurriculum),
     subtopics: [...subtopics].sort((a, b) => a.localeCompare(b)),
     tags: [...tags].sort((a, b) => a.localeCompare(b))
   };
@@ -1301,7 +1370,13 @@ function getTaxonomy() {
 
 function matchesFilters(question, filters = state.selectedFilters) {
   if (filters.subjects.size && !filters.subjects.has(question.subject)) return false;
-  if (filters.topics.size && !filters.topics.has(question.topic)) return false;
+  if (filters.topics.size) {
+    const normalized = NeetCurriculum.normalizeChapter(question.topic);
+    const topicMatch = [...filters.topics].some(
+      value => value === question.topic || NeetCurriculum.normalizeChapter(value) === normalized
+    );
+    if (!topicMatch) return false;
+  }
   if (filters.subtopics.size && !filters.subtopics.has(question.subtopic)) return false;
   if (filters.tags.size && !question.tags.some(tag => filters.tags.has(tag))) return false;
   return true;
@@ -1383,7 +1458,7 @@ function updateFilterUI() {
     el.practiceCount.value = available;
   }
 
-  el.totalCount.textContent = `${state.questions.length} question${state.questions.length === 1 ? '' : 's'}`;
+  el.totalCount.textContent = `${state.questions.length} MCQ${state.questions.length === 1 ? '' : 's'}`;
 }
 
 function updateBankFilterUI() {
@@ -1511,13 +1586,14 @@ function renderBank() {
 
 function switchTab(tabName) {
   state.activeTab = tabName;
-  el.tabs.forEach(tab => tab.classList.toggle('active', tab.dataset.tab === tabName));
-  el.tabPanels.forEach(panel => {
+  el.navItems.forEach(tab => tab.classList.toggle('active', tab.dataset.tab === tabName));
+  el.viewPanels.forEach(panel => {
     const isActive = panel.id === `tab-${tabName}`;
     panel.classList.toggle('active', isActive);
     panel.hidden = !isActive;
   });
-  if (tabName === 'progress') renderProgress();
+  if (el.sidebar) el.sidebar.classList.remove('open');
+  refreshLearningViews();
 }
 
 function resetForm() {
@@ -1738,27 +1814,8 @@ function selectPracticeOption(optionLetter) {
   session.selectedOption = optionLetter;
   session.answered = true;
   if (isCorrect) session.score += 1;
-  recordAttempt(current, isCorrect);
+  recordAttempt(current, isCorrect, optionLetter);
   renderPracticeQuestion();
-}
-
-function practiceUnsolvedInTopic() {
-  const topic = state.progressSelectedTopic;
-  if (!topic) return;
-  state.selectedFilters.topics = new Set([topic]);
-  state.selectedFilters.subjects.clear();
-  state.selectedFilters.subtopics.clear();
-  state.selectedFilters.tags.clear();
-  if (el.practiceUnsolvedOnly) el.practiceUnsolvedOnly.checked = true;
-  updateFilterUI();
-  switchTab('practice');
-  const pool = getPracticePool(state.selectedFilters);
-  if (!pool.length) {
-    alert('No unsolved questions left in this topic for the selected student.');
-    return;
-  }
-  el.practiceCount.value = Math.min(pool.length, 20);
-  startPractice();
 }
 
 function nextPracticeQuestion() {
@@ -1806,6 +1863,7 @@ function refreshUI() {
   updateBankFilterUI();
   renderBank();
   updateStorageStatus();
+  refreshLearningViews();
 }
 
 function parseCsv(text) {
@@ -2034,9 +2092,31 @@ function resetAllData() {
 }
 
 function bindEvents() {
-  el.tabs.forEach(tab => {
+  el.navItems.forEach(tab => {
     tab.addEventListener('click', () => switchTab(tab.dataset.tab));
   });
+
+  if (el.menuToggle && el.sidebar) {
+    el.menuToggle.addEventListener('click', () => el.sidebar.classList.toggle('open'));
+  }
+
+  [el.dashboardView, el.chaptersView, el.revisionView, el.auditView].forEach(view => {
+    if (view) view.addEventListener('click', handleViewAction);
+  });
+
+  if (el.chaptersView) {
+    el.chaptersView.addEventListener('click', event => {
+      const card = event.target.closest('.chapter-card[data-chapter]');
+      if (!card || card.classList.contains('disabled')) return;
+      state.selectedChapter = card.dataset.chapter || '';
+      renderChaptersOnly();
+      if (state.selectedChapter) NeetViews.renderChapterDetail(state.selectedChapter);
+    });
+  }
+
+  if (el.chapterDetail) {
+    el.chapterDetail.addEventListener('click', handleViewAction);
+  }
 
   [el.filterSubjects, el.filterTopics, el.filterSubtopics, el.filterTags].forEach(container => {
     container.addEventListener('click', event => {
@@ -2192,31 +2272,16 @@ function bindEvents() {
     });
   }
 
-  if (el.progressStudentSelect) {
-    el.progressStudentSelect.addEventListener('change', () => {
-      state.progressViewStudentId = el.progressStudentSelect.value;
-      state.progressSelectedTopic = '';
-      renderProgress();
-    });
-  }
-
-  if (el.progressTopicFilter) {
-    el.progressTopicFilter.addEventListener('change', renderProgress);
-  }
-
-  if (el.progressTopicTable) {
-    el.progressTopicTable.addEventListener('click', event => {
-      const row = event.target.closest('.progress-topic-row');
-      if (!row) return;
-      const topic = row.dataset.topic || '';
-      state.progressSelectedTopic = state.progressSelectedTopic === topic ? '' : topic;
-      renderProgress();
-    });
-  }
-
-  if (el.practiceUnsolvedTopicBtn) {
-    el.practiceUnsolvedTopicBtn.addEventListener('click', practiceUnsolvedInTopic);
-  }
+  document.addEventListener('change', event => {
+    if (event.target.id === 'auditStudentSelect') {
+      state.progressViewStudentId = event.target.value;
+      refreshLearningViews();
+    }
+    if (event.target.id === 'auditFilterSelect') {
+      state.auditFilter = event.target.value;
+      refreshLearningViews();
+    }
+  });
 
   const syncProgress = () => syncProgressFromRemote({ silent: false });
   if (el.syncProgressBtn) el.syncProgressBtn.addEventListener('click', syncProgress);
@@ -2262,6 +2327,19 @@ async function init() {
     el.fExplanationImagePreview,
     el.fExplanationImageRemove
   );
+
+  NeetViews.init({
+    state,
+    el,
+    escapeHtml,
+    summarizeStudent: summarizeStudentForViews,
+    getRevisionPlan: getRevisionPlanForStudent,
+    buildCurriculumTree: buildCurriculumTreeForStudent,
+    findChapter: (tree, name) => NeetCurriculum.findChapter(tree, name),
+    getQuestionStatus,
+    getAuditLog: getAuditLogForStudent,
+    populateStudentSelect
+  });
 
   bindEvents();
   applyRoleUI();
