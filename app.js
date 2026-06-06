@@ -55,6 +55,7 @@ const state = {
     selectedOption: null
   },
   bankSearch: '',
+  search: { query: '', results: [], total: 0, activeIndex: 0, parsed: null },
   editingId: null,
   bankUpdatedAt: null,
   progress: { version: 1, updatedAt: 0, students: {} },
@@ -174,7 +175,14 @@ const el = {
   flagsStatus: document.getElementById('flagsStatus'),
   flagPendingBadge: document.getElementById('flagPendingBadge'),
   syncFlagsBtn: document.getElementById('syncFlagsBtn'),
-  publishFlagsBtn: document.getElementById('publishFlagsBtn')
+  publishFlagsBtn: document.getElementById('publishFlagsBtn'),
+  globalSearchBtn: document.getElementById('globalSearchBtn'),
+  searchDialog: document.getElementById('searchDialog'),
+  globalSearchInput: document.getElementById('globalSearchInput'),
+  searchCloseBtn: document.getElementById('searchCloseBtn'),
+  searchMeta: document.getElementById('searchMeta'),
+  searchResults: document.getElementById('searchResults'),
+  searchPracticeAllBtn: document.getElementById('searchPracticeAllBtn')
 };
 
 function isAdmin() {
@@ -640,6 +648,181 @@ function startRevisionPractice() {
   el.nextQuestionBtn.classList.add('hidden');
   el.finishPracticeBtn.classList.remove('hidden');
   renderPracticeQuestion();
+}
+
+// ---- Global question search (command palette) ----
+let searchDebounce = null;
+const STATUS_LABELS = { unsolved: 'New', wrong: 'Weak', mastered: 'Strong', attempted: 'Tried' };
+
+function openSearchPalette() {
+  if (!el.searchDialog) return;
+  if (!el.searchDialog.open) el.searchDialog.showModal();
+  el.globalSearchInput.value = state.search.query || '';
+  renderSearchResults();
+  requestAnimationFrame(() => { el.globalSearchInput.focus(); el.globalSearchInput.select(); });
+}
+
+function closeSearchPalette() {
+  if (el.searchDialog?.open) el.searchDialog.close();
+}
+
+function runGlobalSearch(query) {
+  state.search.query = query;
+  const trimmed = query.trim();
+  state.search.activeIndex = 0;
+  if (trimmed.length < 2) {
+    state.search.results = [];
+    state.search.total = 0;
+    state.search.parsed = NeetSearch.parseQuery(trimmed);
+  } else {
+    const { parsed, results, total } = NeetSearch.searchQuestions(state.questions, trimmed, { limit: 40 });
+    state.search.parsed = parsed;
+    state.search.results = results;
+    state.search.total = total;
+  }
+  renderSearchResults();
+}
+
+function renderSearchResults() {
+  const { query, results, total, parsed, activeIndex } = state.search;
+  const trimmed = (query || '').trim();
+
+  if (trimmed.length < 2) {
+    el.searchMeta.textContent = `Searching ${state.questions.length} questions · type at least 2 characters`;
+    el.searchResults.innerHTML = `
+      <div class="search-empty">
+        <p class="search-empty-title">Find any MCQ instantly</p>
+        <p class="muted">Try a keyword like <button type="button" class="search-suggest" data-q="krebs">krebs</button>,
+          several words like <button type="button" class="search-suggest" data-q="dna replication">dna replication</button>,
+          or an exact phrase like <button type="button" class="search-suggest" data-q='"electron transport chain"'>"electron transport chain"</button>.</p>
+      </div>`;
+    el.searchPracticeAllBtn.hidden = true;
+    return;
+  }
+
+  if (!results.length) {
+    el.searchMeta.textContent = `No matches for "${trimmed}"`;
+    el.searchResults.innerHTML = '<div class="search-empty"><p class="search-empty-title">No questions found</p><p class="muted">Check spelling, use fewer words, or remove quotes.</p></div>';
+    el.searchPracticeAllBtn.hidden = true;
+    return;
+  }
+
+  const shown = results.length;
+  el.searchMeta.innerHTML = `<strong>${total}</strong> match${total === 1 ? '' : 'es'}${total > shown ? ` · showing top ${shown}` : ''}`;
+  el.searchPracticeAllBtn.hidden = false;
+  el.searchPracticeAllBtn.textContent = `Practice these ${shown}`;
+
+  el.searchResults.innerHTML = results.map((row, i) => {
+    const q = row.question;
+    const status = state.activeStudentId ? getQuestionStatus(state.activeStudentId, q.id) : '';
+    const statusLabel = STATUS_LABELS[status] || '';
+    return `
+      <button type="button" class="search-result${i === activeIndex ? ' active' : ''}" role="option" data-index="${i}">
+        <div class="search-result-main">
+          <p class="search-result-q">${NeetSearch.highlight(q.question, parsed)}</p>
+          <p class="search-result-snip muted">${NeetSearch.snippet(q, parsed)}</p>
+          <div class="search-result-meta">
+            ${q.topic ? `<span class="badge green">${NeetSearch.highlight(q.topic, parsed)}</span>` : ''}
+            ${q.subtopic ? `<span class="badge">${escapeHtml(q.subtopic)}</span>` : ''}
+            ${statusLabel ? `<span class="learn-badge ${status}">${statusLabel}</span>` : ''}
+          </div>
+        </div>
+        <span class="search-result-go">Practice →</span>
+      </button>`;
+  }).join('');
+
+  const active = el.searchResults.querySelector('.search-result.active');
+  if (active) active.scrollIntoView({ block: 'nearest' });
+}
+
+function moveSearchActive(delta) {
+  const n = state.search.results.length;
+  if (!n) return;
+  state.search.activeIndex = (state.search.activeIndex + delta + n) % n;
+  renderSearchResults();
+}
+
+function openSearchResult(index) {
+  const row = state.search.results[index];
+  if (!row) return;
+  closeSearchPalette();
+  startPracticeWithQuestions([row.question]);
+}
+
+function practiceAllSearchResults() {
+  const questions = state.search.results.map(r => r.question);
+  if (!questions.length) return;
+  closeSearchPalette();
+  startPracticeWithQuestions(questions);
+}
+
+function startPracticeWithQuestions(questions) {
+  if (!questions || !questions.length) return;
+  state.practice = {
+    active: true,
+    questions: questions.slice(),
+    index: 0,
+    score: 0,
+    answered: false,
+    selectedOption: null,
+    log: [],
+    streakInSession: 0,
+    lastFeedback: null,
+    questionStartAt: Date.now()
+  };
+  switchTab('practice');
+  el.practiceArea.classList.remove('hidden');
+  el.practiceResults.classList.add('hidden');
+  el.practiceResults.innerHTML = '';
+  el.nextQuestionBtn.classList.add('hidden');
+  el.finishPracticeBtn.classList.remove('hidden');
+  renderPracticeQuestion();
+}
+
+function bindSearchPalette() {
+  if (!el.searchDialog) return;
+
+  if (el.globalSearchBtn) el.globalSearchBtn.addEventListener('click', openSearchPalette);
+  if (el.searchCloseBtn) el.searchCloseBtn.addEventListener('click', closeSearchPalette);
+  if (el.searchPracticeAllBtn) el.searchPracticeAllBtn.addEventListener('click', practiceAllSearchResults);
+
+  el.globalSearchInput.addEventListener('input', event => {
+    const value = event.target.value;
+    clearTimeout(searchDebounce);
+    searchDebounce = setTimeout(() => runGlobalSearch(value), 120);
+  });
+
+  el.globalSearchInput.addEventListener('keydown', event => {
+    if (event.key === 'ArrowDown') { event.preventDefault(); moveSearchActive(1); }
+    else if (event.key === 'ArrowUp') { event.preventDefault(); moveSearchActive(-1); }
+    else if (event.key === 'Enter') { event.preventDefault(); openSearchResult(state.search.activeIndex); }
+  });
+
+  el.searchResults.addEventListener('click', event => {
+    const suggest = event.target.closest('.search-suggest');
+    if (suggest) {
+      el.globalSearchInput.value = suggest.dataset.q;
+      runGlobalSearch(suggest.dataset.q);
+      el.globalSearchInput.focus();
+      return;
+    }
+    const result = event.target.closest('.search-result');
+    if (result) openSearchResult(Number(result.dataset.index));
+  });
+
+  el.searchResults.addEventListener('mousemove', event => {
+    const result = event.target.closest('.search-result');
+    if (!result) return;
+    const idx = Number(result.dataset.index);
+    if (idx !== state.search.activeIndex) { state.search.activeIndex = idx; renderSearchResults(); }
+  });
+
+  document.addEventListener('keydown', event => {
+    if ((event.metaKey || event.ctrlKey) && event.key.toLowerCase() === 'k') {
+      event.preventDefault();
+      el.searchDialog.open ? closeSearchPalette() : openSearchPalette();
+    }
+  });
 }
 
 function handleViewAction(event) {
@@ -1750,12 +1933,11 @@ function getPracticePool(filters = state.selectedFilters) {
 }
 
 function getBankFilteredQuestions() {
-  const search = state.bankSearch.toLowerCase();
-  return getFilteredQuestions(state.bankFilters).filter(q => {
-    if (!search) return true;
-    const haystack = [q.question, q.subject, q.topic, q.subtopic, ...q.tags, ...q.options, q.explanation].join(' ').toLowerCase();
-    return haystack.includes(search);
-  });
+  const filtered = getFilteredQuestions(state.bankFilters);
+  const query = (state.bankSearch || '').trim();
+  if (!query) return filtered;
+  const { results } = NeetSearch.searchQuestions(filtered, query, { limit: filtered.length });
+  return results.map(r => r.question);
 }
 
 function toggleFilterValue(filters, group, value) {
@@ -1870,6 +2052,12 @@ function renderBankEditForm(q) {
   `;
 }
 
+function bankHighlight(text) {
+  const query = (state.bankSearch || '').trim();
+  if (!query) return escapeHtml(text);
+  return NeetSearch.highlight(text, NeetSearch.parseQuery(query));
+}
+
 function renderBankCard(q) {
   if (state.editingId === q.id) {
     return `
@@ -1890,16 +2078,16 @@ function renderBankCard(q) {
         ${q.subtopic ? `<button type="button" class="badge clickable filter-badge" data-group="subtopics" data-value="${escapeHtml(q.subtopic)}">${escapeHtml(q.subtopic)}</button>` : ''}
         ${q.tags.map(tag => `<button type="button" class="badge orange clickable filter-badge" data-group="tags" data-value="${escapeHtml(tag)}">${escapeHtml(tag)}</button>`).join('')}
       </div>
-      <p class="question">${escapeHtml(q.question)}</p>
+      <p class="question">${bankHighlight(q.question)}</p>
       ${renderImageHtml(q.questionImage, 'Question image')}
       <ol class="options compact" type="A">
         ${q.options.map((opt, i) => {
           const letter = ['A', 'B', 'C', 'D'][i];
           const isCorrect = letter === q.answer;
-          return `<li class="${isCorrect ? 'correct-static' : ''}"><strong>${letter}.</strong> ${escapeHtml(opt)}</li>`;
+          return `<li class="${isCorrect ? 'correct-static' : ''}"><strong>${letter}.</strong> ${bankHighlight(opt)}</li>`;
         }).join('')}
       </ol>
-      ${q.explanation ? `<p class="bank-explanation"><strong>Explanation:</strong> ${escapeHtml(q.explanation)}</p>` : ''}
+      ${q.explanation ? `<p class="bank-explanation"><strong>Explanation:</strong> ${bankHighlight(q.explanation)}</p>` : ''}
       ${renderImageHtml(q.explanationImage, 'Explanation image')}
       ${renderWhyWrongHtml(q)}
       ${isAdmin() ? `
@@ -2654,6 +2842,8 @@ function bindEvents() {
     state.bankSearch = event.target.value;
     renderBank();
   });
+
+  bindSearchPalette();
 
   el.bankList.addEventListener('change', event => {
     const imageInput = event.target.closest('.image-file-input');

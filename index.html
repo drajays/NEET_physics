@@ -63,6 +63,11 @@
           <p class="topbar-eyebrow">NEET · Biology only</p>
         </div>
         <div class="topbar-actions">
+          <button id="globalSearchBtn" class="search-trigger" type="button" aria-label="Search all questions">
+            <span class="search-trigger-icon">🔍</span>
+            <span class="search-trigger-text">Search questions</span>
+            <kbd class="search-trigger-kbd">⌘K</kbd>
+          </button>
           <select id="studentSelect" class="student-select" aria-label="Active student"></select>
           <button id="syncProgressBtn" class="ghost-btn small" type="button" hidden>Sync progress</button>
           <button id="syncBankBtn" class="ghost-btn small" type="button" hidden>Sync bank</button>
@@ -352,9 +357,27 @@
 
   <div id="chapterDetail" class="chapter-detail-drawer"></div>
 
+  <dialog id="searchDialog" class="search-modal" aria-label="Search questions">
+    <div class="search-modal-body">
+      <div class="search-input-row">
+        <span class="search-input-icon" aria-hidden="true">🔍</span>
+        <input id="globalSearchInput" type="search" autocomplete="off" spellcheck="false"
+          placeholder="Search by keyword, multiple words, or &quot;exact phrase&quot;…" aria-label="Search questions" />
+        <button id="searchCloseBtn" type="button" class="search-close" aria-label="Close">Esc</button>
+      </div>
+      <p id="searchMeta" class="search-meta muted"></p>
+      <div id="searchResults" class="search-results" role="listbox" aria-label="Search results"></div>
+      <div class="search-foot">
+        <span class="search-hints"><kbd>↑</kbd><kbd>↓</kbd> navigate · <kbd>↵</kbd> practice · <kbd>Esc</kbd> close</span>
+        <button id="searchPracticeAllBtn" class="primary-btn small" type="button" hidden>Practice all matches</button>
+      </div>
+    </div>
+  </dialog>
+
   <script src="config.js"></script>
   <script src="vendor/xlsx.full.min.js"></script>
   <script src="js/curriculum.js"></script>
+  <script src="js/search.js"></script>
   <script src="js/analytics.js"></script>
   <script src="js/coach.js"></script>
   <script src="js/views.js"></script>
