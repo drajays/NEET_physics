@@ -27,8 +27,7 @@ from html import unescape
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
 
-# Ordered chapter headers in Vol I (question-bearing sections only)
-CHAPTER_HEADERS = [
+CHAPTER_HEADERS_VOL1 = [
     "Living World",
     "Biological Classification",
     "Plant Kingdom",
@@ -52,6 +51,35 @@ CHAPTER_HEADERS = [
     "Neural Control and Co-ordination",
     "Co-ordination and Integration",
 ]
+
+CHAPTER_HEADERS_VOL2 = [
+    "Reproduction in Organisms",
+    "Reproduction in Flowering Plant",
+    "Human Reproduction",
+    "Reproductive Health",
+    "Principles of Inheritance and Variation",
+    "Molecular Basis of Inheritance",
+    "Evolution",
+    "Human Health and Disease",
+    "Strategies for Enhancement in Food Production",
+    "Microbes in Human Welfare",
+    "Biotechnology Principles and Processes",
+    "Biotechnology and Its Application",
+    "Organisms and Populations",
+    "Ecosystem",
+    "Biodiversity and Conservation",
+    "Environmental Issues",
+]
+
+CHAPTER_HEADERS_BY_VOLUME = {
+    1: CHAPTER_HEADERS_VOL1,
+    2: CHAPTER_HEADERS_VOL2,
+}
+
+SOURCE_BY_VOLUME = {
+    1: "Pearson Objective Biology Vol I 2019",
+    2: "Pearson Objective Biology Vol II 2019",
+}
 
 SECTION_ALIASES = {
     "practice questions": "practice",
@@ -260,11 +288,18 @@ def detect_section_header(line: str) -> Optional[str]:
     return None
 
 
-def detect_chapter_header(line: str) -> Optional[str]:
+def get_chapter_headers(volume: int) -> List[str]:
+    headers = CHAPTER_HEADERS_BY_VOLUME.get(volume)
+    if not headers:
+        raise ValueError(f"Unsupported volume: {volume}. Use 1 or 2.")
+    return headers
+
+
+def detect_chapter_header(line: str, chapter_headers: List[str]) -> Optional[str]:
     stripped = line.strip()
     if stripped.startswith("# "):
         title = stripped[2:].strip()
-        if title in CHAPTER_HEADERS:
+        if title in chapter_headers:
             return title
     return None
 
@@ -330,10 +365,34 @@ def raw_from_paddle_text(content: str, chapter: str, section: str) -> Optional[R
     return raw
 
 
-def build_paddle_question_index(pages: List[dict]) -> Dict[Tuple[str, str, int], RawQuestion]:
+def build_paddle_question_index(
+    pages: List[dict],
+    chapter_headers: List[str],
+) -> Dict[Tuple[str, str, int], RawQuestion]:
     index: Dict[Tuple[str, str, int], RawQuestion] = {}
     current_chapter: Optional[str] = None
     current_section = "practice"
+    pending_chapter_prefix: Optional[str] = None
+
+    def apply_chapter_line(line: str) -> None:
+        nonlocal current_chapter, pending_chapter_prefix
+        stripped = line.strip()
+        if not stripped:
+            return
+        if stripped == "# Strategies for":
+            pending_chapter_prefix = "Strategies for"
+            return
+        if pending_chapter_prefix and stripped == "# Enhancement in Food Production":
+            merged = f"{pending_chapter_prefix} Enhancement in Food Production"
+            if merged in chapter_headers:
+                current_chapter = merged
+            pending_chapter_prefix = None
+            return
+        if pending_chapter_prefix and stripped.startswith("# "):
+            pending_chapter_prefix = None
+        chapter = detect_chapter_header(line, chapter_headers)
+        if chapter:
+            current_chapter = chapter
 
     for page in pages:
         blocks = page.get("prunedResult", {}).get("parsing_res_list", [])
@@ -346,9 +405,7 @@ def build_paddle_question_index(pages: List[dict]) -> Dict[Tuple[str, str, int],
                 continue
 
             if label in {"doc_title", "paragraph_title"}:
-                chapter = detect_chapter_header(content)
-                if chapter:
-                    current_chapter = chapter
+                apply_chapter_line(content)
                 section = detect_section_header(content)
                 if section:
                     current_section = section
@@ -357,9 +414,8 @@ def build_paddle_question_index(pages: List[dict]) -> Dict[Tuple[str, str, int],
             if label != "text" or not current_chapter:
                 continue
 
-            chapter = detect_chapter_header(content)
-            if chapter:
-                current_chapter = chapter
+            apply_chapter_line(content)
+            if content.strip().startswith("# "):
                 continue
 
             raw = raw_from_paddle_text(content, current_chapter, current_section)
@@ -405,16 +461,37 @@ def merge_raw_with_paddle(raw: RawQuestion, paddle_index: Dict[Tuple[str, str, i
     return merged
 
 
-def split_chapters(text: str) -> List[Tuple[str, str]]:
+def find_split_chapter_start(lines: List[str], start: int) -> Optional[Tuple[int, str]]:
+    if lines[start].strip() != "# Strategies for":
+        return None
+    scan = start + 1
+    while scan < len(lines) and not lines[scan].strip():
+        scan += 1
+    if scan < len(lines) and lines[scan].strip() == "# Enhancement in Food Production":
+        return start, "Strategies for Enhancement in Food Production"
+    return None
+
+
+def split_chapters(text: str, chapter_headers: List[str]) -> List[Tuple[str, str]]:
     lines = text.splitlines()
+    chapter_set = set(chapter_headers)
     indices: Dict[str, int] = {}
-    for index, line in enumerate(lines):
-        for title in CHAPTER_HEADERS:
-            if line.strip() == f"# {title}":
+    index = 0
+    while index < len(lines):
+        split_match = find_split_chapter_start(lines, index)
+        if split_match and split_match[1] in chapter_set:
+            indices[split_match[1]] = split_match[0]
+            index += 1
+            continue
+        stripped = lines[index].strip()
+        if stripped.startswith("# "):
+            title = stripped[2:].strip()
+            if title in chapter_set:
                 indices[title] = index
+        index += 1
 
     chapters: List[Tuple[str, str]] = []
-    found = [(title, indices[title]) for title in CHAPTER_HEADERS if title in indices]
+    found = [(title, indices[title]) for title in chapter_headers if title in indices]
     found.sort(key=lambda item: item[1])
 
     for idx, (title, start) in enumerate(found):
@@ -654,6 +731,7 @@ def finalize_question(
     raw: RawQuestion,
     answer: Optional[str],
     assertion_template: Optional[Dict[str, str]] = None,
+    source_label: str = SOURCE_BY_VOLUME[1],
 ) -> Optional[dict]:
     stem = raw.stem_text()
     if not stem:
@@ -731,7 +809,7 @@ def finalize_question(
         "tags": unique_tags,
         "question_image_url": raw.image_urls[0] if raw.image_urls else "",
         "explanation_image_url": "",
-        "source": "Pearson Objective Biology Vol I 2019",
+        "source": source_label,
         "source_question_number": raw.number,
         "source_section": raw.section,
     }
@@ -740,9 +818,15 @@ def finalize_question(
 def convert_markdown(
     md_text: str,
     paddle_index: Optional[Dict[Tuple[str, str, int], RawQuestion]] = None,
+    *,
+    chapter_headers: Optional[List[str]] = None,
+    source_label: str = SOURCE_BY_VOLUME[1],
+    volume: int = 1,
 ) -> Tuple[List[dict], dict]:
     all_questions: List[dict] = []
+    headers = chapter_headers or get_chapter_headers(volume)
     report = {
+        "volume": volume,
         "chapters": {},
         "parsed": 0,
         "skipped_no_answer": 0,
@@ -752,7 +836,7 @@ def convert_markdown(
         "paddle_index_size": len(paddle_index or {}),
     }
 
-    for chapter_title, chunk in split_chapters(md_text):
+    for chapter_title, chunk in split_chapters(md_text, headers):
         question_block, answer_tables = split_questions_and_answer_tables(chunk)
         raw_questions, assertion_template = parse_questions_block(chapter_title, question_block)
         answers_by_section = parse_answer_tables(answer_tables) if answer_tables else {}
@@ -785,7 +869,7 @@ def convert_markdown(
                 report["skipped_no_answer"] += 1
                 continue
 
-            item = finalize_question(raw, answer, assertion_template)
+            item = finalize_question(raw, answer, assertion_template, source_label)
             if not item:
                 chapter_stats["bad_options"] += 1
                 report["skipped_incomplete_options"] += 1
@@ -842,8 +926,15 @@ def write_csv(path: Path, questions: List[dict]) -> None:
             writer.writerow(row)
 
 
-def write_json(path: Path, questions: List[dict], *, used_paddle_json: bool = False) -> None:
-    source = "Pearson Objective Biology Vol I 2019 (OCR markdown"
+def write_json(
+    path: Path,
+    questions: List[dict],
+    *,
+    used_paddle_json: bool = False,
+    volume: int = 1,
+) -> None:
+    book = SOURCE_BY_VOLUME.get(volume, SOURCE_BY_VOLUME[1])
+    source = f"{book} (OCR markdown"
     if used_paddle_json:
         source += " + PaddleOCR JSON"
     source += ")"
@@ -873,18 +964,38 @@ def main() -> int:
         help="Directory for generated import files",
     )
     parser.add_argument(
+        "--volume",
+        type=int,
+        choices=[1, 2],
+        default=1,
+        help="Pearson book volume (1 or 2)",
+    )
+    parser.add_argument(
         "--prefix",
-        default="pearson_biology_vol1",
-        help="Output filename prefix",
+        default=None,
+        help="Output filename prefix (default: pearson_biology_vol{N})",
     )
     parser.add_argument(
         "--paddle-json",
         type=Path,
-        default=Path(__file__).parent
-        / "Objective-Biology-for-NEET-Vol-I-Pearson-Education-2019.pdf_by_PaddleOCR-VL-1.6.json",
+        default=None,
         help="PaddleOCR page JSON for higher-quality question blocks and image URLs",
     )
     args = parser.parse_args()
+
+    if args.prefix is None:
+        args.prefix = f"pearson_biology_vol{args.volume}"
+
+    if args.paddle_json is None:
+        defaults = {
+            1: Path(__file__).parent
+            / "Objective-Biology-for-NEET-Vol-I-Pearson-Education-2019.pdf_by_PaddleOCR-VL-1.6.json",
+            2: Path(__file__).parent / "Objective-Biology-for-NEET2.json",
+        }
+        args.paddle_json = defaults[args.volume]
+
+    if args.input == parser.get_default("input") and args.volume == 2:
+        args.input = Path(__file__).parent / "Objective-Biology-for-NEET2.md"
 
     if not args.input.exists():
         print(f"Input file not found: {args.input}", file=sys.stderr)
@@ -894,9 +1005,12 @@ def main() -> int:
     paddle_index: Dict[Tuple[str, str, int], RawQuestion] = {}
     used_paddle_json = False
 
+    chapter_headers = get_chapter_headers(args.volume)
+    source_label = SOURCE_BY_VOLUME[args.volume]
+
     if args.paddle_json.exists():
         pages = load_paddle_pages(args.paddle_json)
-        paddle_index = build_paddle_question_index(pages)
+        paddle_index = build_paddle_question_index(pages, chapter_headers)
         used_paddle_json = True
         image_map: Dict[str, str] = {}
         for page in pages:
@@ -908,14 +1022,20 @@ def main() -> int:
     else:
         print(f"PaddleOCR JSON not found (skipped): {args.paddle_json}", file=sys.stderr)
 
-    questions, report = convert_markdown(md_text, paddle_index)
+    questions, report = convert_markdown(
+        md_text,
+        paddle_index,
+        chapter_headers=chapter_headers,
+        source_label=source_label,
+        volume=args.volume,
+    )
 
     args.output_dir.mkdir(parents=True, exist_ok=True)
     json_path = args.output_dir / f"{args.prefix}.json"
     csv_path = args.output_dir / f"{args.prefix}.csv"
     report_path = args.output_dir / f"{args.prefix}_report.json"
 
-    write_json(json_path, questions, used_paddle_json=used_paddle_json)
+    write_json(json_path, questions, used_paddle_json=used_paddle_json, volume=args.volume)
     write_csv(csv_path, questions)
     report_path.write_text(json.dumps(report, indent=2), encoding="utf-8")
 

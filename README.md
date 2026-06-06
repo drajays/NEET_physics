@@ -2,7 +2,7 @@
 
 A personal browser app for NEET self-practice. Build your own question bank, organize MCQs by subject, topic, subtopic and tags, then run random practice sessions filtered by what you want to revise.
 
-All data is stored locally in your browser (localStorage).
+Questions are cached in your browser (IndexedDB) and can sync from one shared `bank.json` file across 3–4 devices.
 
 ## Open the app
 
@@ -51,20 +51,94 @@ id, question, option_a, option_b, option_c, option_d, answer, explanation, why_w
 - Exports always read the latest data saved in your browser, including front-end edits and uploads.
 - Export is available from **Question Bank** and **Import / Export**.
 
-## Pearson OCR import (optional, local)
+## Multi-device setup (recommended)
 
-To build a bulk import file from Pearson Vol I OCR exports, place these files in the project folder (not committed to git — they are large):
+Use **one admin device** (your laptop) to upload questions. Other phones/tablets only practice and sync.
 
-- `Objective-Biology-for-NEET-Vol-I-Pearson-Education-2019.pdf_by_PaddleOCR-VL-1.6.md`
-- `Objective-Biology-for-NEET-Vol-I-Pearson-Education-2019.pdf_by_PaddleOCR-VL-1.6.json`
+### Architecture
 
-Then run:
-
-```bash
-python3 convert_pearson_md.py
+```
+Admin laptop  →  import JSON  →  Download bank.json  →  host online (GitHub)
+Phone / tablet / other PC  →  open same app URL  →  Sync questions  →  Practice
 ```
 
-This generates `pearson_biology_vol1.json` (~4k MCQs) for import via **Import / Export**.
+### Step 1 — Configure once
+
+Edit `config.js`:
+
+```javascript
+window.APP_CONFIG = {
+  remoteBankUrl: 'https://raw.githubusercontent.com/drajays/NEET_pingal/main/bank.json',
+  adminPin: 'your-private-pin',
+  autoSyncOnLoad: true
+};
+```
+
+Change `adminPin` to something only you know.
+
+### Step 2 — Host the app and bank
+
+1. Push this project to GitHub (you already have `NEET_pingal`).
+2. Enable **GitHub Pages** for the repo (Settings → Pages → deploy from `main`).
+3. Open the app on every device at: `https://drajays.github.io/NEET_pingal/`
+
+### Shared bank (already integrated)
+
+`bank.json` in this repo permanently combines **Pearson Vol I + Vol II** (7,482 MCQs). The app loads it automatically from:
+
+`https://raw.githubusercontent.com/drajays/NEET_pingal/main/bank.json`
+
+To rebuild after editing source files:
+
+```bash
+python3 convert_pearson_md.py --volume 1
+python3 convert_pearson_md.py --volume 2 --input Objective-Biology-for-NEET2.md --paddle-json Objective-Biology-for-NEET2.json
+python3 build_bank.py
+git add bank.json && git commit -m "Update shared question bank" && git push
+```
+
+### Step 4 — Student devices (your other 3 devices)
+
+1. Open the same GitHub Pages URL.
+2. Do **not** unlock admin.
+3. Tap **Sync questions** (or reload — auto-sync runs when the remote bank is newer).
+4. Use **Practice** and **Question Bank** (read-only).
+
+### Roles
+
+| Action | Admin | Student devices |
+|--------|-------|-----------------|
+| Practice | Yes | Yes |
+| Browse bank | Yes | Yes |
+| Import / add / edit / delete | Yes | No |
+| Publish `bank.json` | Yes | No |
+| Sync from server | Yes | Yes |
+
+### Storage tips
+
+- Avoid images on large Pearson imports (text-only banks are ~3–7 MB).
+- IndexedDB supports much larger banks than old localStorage.
+- Keep a backup: admin **Export JSON** after each import.
+
+## Pearson OCR import (optional, local)
+
+Place the PaddleOCR `.md` and `.json` files in the project folder (not committed to git — they are large), then run the converter:
+
+**Volume I**
+
+```bash
+python3 convert_pearson_md.py --volume 1
+```
+
+**Volume II**
+
+```bash
+python3 convert_pearson_md.py --volume 2 \
+  --input Objective-Biology-for-NEET2.md \
+  --paddle-json Objective-Biology-for-NEET2.json
+```
+
+Outputs `pearson_biology_vol1.json` (~4.3k MCQs) or `pearson_biology_vol2.json` (~3k MCQs) for import via **Import / Export**.
 
 ## Tips
 

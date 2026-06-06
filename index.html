@@ -13,24 +13,28 @@
         <span class="brand-mark">N</span>
         <span>NEET MCQ Practice</span>
       </div>
-      <div class="nav-stats">
+      <div class="nav-actions">
+        <button id="syncBankBtn" class="ghost-btn small" type="button" hidden>Sync questions</button>
+        <button id="adminUnlockBtn" class="ghost-btn small" type="button">Admin</button>
+        <span id="roleBadge" class="stat-pill role-pill">Student</span>
         <span id="totalCount" class="stat-pill">0 questions</span>
       </div>
     </nav>
 
     <section class="hero-intro">
-      <p class="eyebrow">Self practice · Local storage</p>
-      <h1>Build your question bank and practice randomly.</h1>
+      <p class="eyebrow">Personal NEET practice · Multi-device</p>
+      <h1>Practice from one shared question bank.</h1>
       <p class="hero-copy">
-        Add MCQs by subject, topic, subtopic and tags. Filter what you want to revise and start a random practice set.
+        Questions sync from your hosted bank. Only the admin device can upload or edit MCQs; other devices practice and browse.
       </p>
+      <p id="syncStatus" class="hero-sync muted"></p>
     </section>
 
     <nav class="tab-bar" aria-label="Main sections">
       <button class="tab active" data-tab="practice" type="button">Practice</button>
-      <button class="tab" data-tab="add" type="button">Add MCQ</button>
+      <button class="tab admin-only" data-tab="add" type="button" hidden>Add MCQ</button>
       <button class="tab" data-tab="bank" type="button">Question Bank</button>
-      <button class="tab" data-tab="import" type="button">Import / Export</button>
+      <button class="tab admin-only" data-tab="import" type="button" hidden>Import / Export</button>
     </nav>
   </header>
 
@@ -247,7 +251,7 @@
       <p class="muted">Bulk add questions from CSV, JSON or Excel. Data is saved locally in your browser.</p>
 
       <div class="import-grid">
-        <div class="import-card">
+        <div class="import-card admin-only" hidden>
           <h3>Import file</h3>
           <p class="muted">Expected columns: question, option_a–d, answer, explanation, why_wrong_a–d, subject, topic, subtopic, tags</p>
           <label for="importFile" class="primary-btn file-label">Choose file</label>
@@ -256,7 +260,15 @@
           <button id="loadSampleBtn" class="secondary-btn" type="button">Load sample questions</button>
         </div>
 
-        <div class="import-card">
+        <div class="import-card admin-only" hidden>
+          <h3>Publish for other devices</h3>
+          <p class="muted">After importing on this admin device, download <code>bank.json</code> and upload it to your hosting URL (see README). Other phones/laptops will sync from that file.</p>
+          <div class="button-row">
+            <button id="publishBankBtn" class="primary-btn" type="button">Download bank.json</button>
+          </div>
+        </div>
+
+        <div class="import-card admin-only" hidden>
           <h3>Export backup</h3>
           <p class="muted">Download your full question bank with every saved field — edits, uploads, explanations, images and why-wrong notes. Images are included in JSON export.</p>
           <div class="button-row">
@@ -266,7 +278,7 @@
           <p id="exportStatus" class="muted import-status">Ready to export your latest saved data.</p>
         </div>
 
-        <div class="import-card danger-card">
+        <div class="import-card danger-card admin-only" hidden>
           <h3>Reset</h3>
           <p class="muted">Delete all saved questions from this browser.</p>
           <button id="resetAllBtn" class="danger-btn" type="button">Clear all data</button>
@@ -276,9 +288,26 @@
   </main>
 
   <footer>
-    Personal NEET practice app — all data stays in your browser.
+    Personal NEET practice app — shared bank syncs across your devices.
   </footer>
 
+  <dialog id="adminDialog" class="admin-dialog">
+    <form id="adminForm" method="dialog" class="admin-dialog-body">
+      <h2>Admin access</h2>
+      <p class="muted">Enter your admin PIN to import, edit or publish questions.</p>
+      <label>
+        Admin PIN
+        <input id="adminPinInput" type="password" autocomplete="current-password" required />
+      </label>
+      <p id="adminDialogError" class="form-error" hidden></p>
+      <div class="button-row">
+        <button id="adminSubmitBtn" class="primary-btn" type="submit">Unlock</button>
+        <button id="adminCancelBtn" class="secondary-btn" type="button">Cancel</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script src="config.js"></script>
   <script src="vendor/xlsx.full.min.js"></script>
   <script src="app.js"></script>
 </body>

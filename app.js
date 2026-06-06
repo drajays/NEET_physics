@@ -1,4 +1,17 @@
 const STORAGE_KEY = 'neet-mcq-bank-v1';
+const ADMIN_SESSION_KEY = 'neet-admin-session-v1';
+const IDB_NAME = 'neet-mcq-db';
+const IDB_VERSION = 1;
+const IDB_STORE = 'bank';
+
+function getAppConfig() {
+  return window.APP_CONFIG || {
+    remoteBankUrl: '',
+    adminPin: 'change-me-1234',
+    autoSyncOnLoad: true,
+    appName: 'NEET MCQ Practice'
+  };
+}
 
 const state = {
   questions: [],
@@ -24,7 +37,8 @@ const state = {
     selectedOption: null
   },
   bankSearch: '',
-  editingId: null
+  editingId: null,
+  bankUpdatedAt: null
 };
 
 const el = {
@@ -97,8 +111,238 @@ const el = {
   loadSampleBtn: document.getElementById('loadSampleBtn'),
   exportJsonBtn: document.getElementById('exportJsonBtn'),
   exportCsvBtn: document.getElementById('exportCsvBtn'),
-  resetAllBtn: document.getElementById('resetAllBtn')
+  resetAllBtn: document.getElementById('resetAllBtn'),
+  syncBankBtn: document.getElementById('syncBankBtn'),
+  adminUnlockBtn: document.getElementById('adminUnlockBtn'),
+  roleBadge: document.getElementById('roleBadge'),
+  syncStatus: document.getElementById('syncStatus'),
+  adminDialog: document.getElementById('adminDialog'),
+  adminForm: document.getElementById('adminForm'),
+  adminPinInput: document.getElementById('adminPinInput'),
+  adminDialogError: document.getElementById('adminDialogError'),
+  adminCancelBtn: document.getElementById('adminCancelBtn'),
+  publishBankBtn: document.getElementById('publishBankBtn')
 };
+
+function isAdmin() {
+  return sessionStorage.getItem(ADMIN_SESSION_KEY) === '1';
+}
+
+function requireAdmin(actionLabel = 'change the question bank') {
+  if (isAdmin()) return true;
+  alert(`Admin access is required to ${actionLabel}. Tap Admin and enter your PIN.`);
+  openAdminDialog();
+  return false;
+}
+
+function openAdminDialog() {
+  if (!el.adminDialog) return;
+  el.adminDialogError.hidden = true;
+  el.adminPinInput.value = '';
+  el.adminDialog.showModal();
+  el.adminPinInput.focus();
+}
+
+function unlockAdmin(pin) {
+  const config = getAppConfig();
+  if (clean(pin) !== clean(config.adminPin)) return false;
+  sessionStorage.setItem(ADMIN_SESSION_KEY, '1');
+  applyRoleUI();
+  return true;
+}
+
+function lockAdmin() {
+  sessionStorage.removeItem(ADMIN_SESSION_KEY);
+  if (state.activeTab === 'add' || state.activeTab === 'import') switchTab('practice');
+  applyRoleUI();
+}
+
+function applyRoleUI() {
+  const admin = isAdmin();
+  const config = getAppConfig();
+  const hasRemote = Boolean(clean(config.remoteBankUrl));
+
+  document.querySelectorAll('.admin-only').forEach(node => {
+    node.hidden = !admin;
+  });
+
+  if (el.roleBadge) {
+    el.roleBadge.textContent = admin ? 'Admin' : 'Student';
+    el.roleBadge.classList.toggle('admin-role', admin);
+  }
+
+  if (el.adminUnlockBtn) {
+    el.adminUnlockBtn.textContent = admin ? 'Lock admin' : 'Admin';
+  }
+
+  if (el.syncBankBtn) {
+    el.syncBankBtn.hidden = !hasRemote;
+    el.syncBankBtn.disabled = !hasRemote;
+  }
+
+  if (el.syncStatus && !hasRemote) {
+    el.syncStatus.textContent = 'Set remoteBankUrl in config.js to sync the same bank on all devices.';
+  }
+
+  renderBank();
+}
+
+function openIdb() {
+  return new Promise((resolve, reject) => {
+    const request = indexedDB.open(IDB_NAME, IDB_VERSION);
+    request.onupgradeneeded = () => {
+      const db = request.result;
+      if (!db.objectStoreNames.contains(IDB_STORE)) {
+        db.createObjectStore(IDB_STORE);
+      }
+    };
+    request.onsuccess = () => resolve(request.result);
+    request.onerror = () => reject(request.error || new Error('Could not open local database.'));
+  });
+}
+
+async function idbGet(key) {
+  const db = await openIdb();
+  return new Promise((resolve, reject) => {
+    const tx = db.transaction(IDB_STORE, 'readonly');
+    const store = tx.objectStore(IDB_STORE);
+    const request = store.get(key);
+    request.onsuccess = () => resolve(request.result ?? null);
+    request.onerror = () => reject(request.error);
+  });
+}
+
+async function idbSet(key, value) {
+  const db = await openIdb();
+  return new Promise((resolve, reject) => {
+    const tx = db.transaction(IDB_STORE, 'readwrite');
+    const store = tx.objectStore(IDB_STORE);
+    store.put(value, key);
+    tx.oncomplete = () => resolve();
+    tx.onerror = () => reject(tx.error);
+  });
+}
+
+function parseBankPayload(parsed) {
+  const bank = parseStoredBank(parsed);
+  return bank.questions.map(normaliseQuestion).filter(Boolean);
+}
+
+async function loadQuestionsAsync() {
+  try {
+    const saved = await idbGet(STORAGE_KEY);
+    if (saved) return parseBankPayload(saved);
+  } catch {
+    // fall through to legacy storage
+  }
+
+  try {
+    const legacy = localStorage.getItem(STORAGE_KEY);
+    if (!legacy) return [];
+    const parsed = JSON.parse(legacy);
+    const questions = parseBankPayload(parsed);
+    if (questions.length) {
+      await idbSet(STORAGE_KEY, parsed);
+    }
+    return questions;
+  } catch {
+    return [];
+  }
+}
+
+async function fetchRemoteBank() {
+  const config = getAppConfig();
+  const url = clean(config.remoteBankUrl);
+  if (!url) return null;
+
+  const response = await fetch(`${url}${url.includes('?') ? '&' : '?'}t=${Date.now()}`, {
+    cache: 'no-store'
+  });
+  if (!response.ok) throw new Error(`Could not download question bank (${response.status}).`);
+
+  const parsed = await response.json();
+  const bank = parseStoredBank(parsed);
+  return {
+    updatedAt: bank.updatedAt || Date.now(),
+    questions: bank.questions.map(normaliseQuestion).filter(Boolean)
+  };
+}
+
+async function syncFromRemote({ force = false, silent = false } = {}) {
+  const config = getAppConfig();
+  if (!clean(config.remoteBankUrl)) {
+    if (!silent) alert('Set remoteBankUrl in config.js first.');
+    return false;
+  }
+
+  try {
+    if (!silent && el.syncStatus) el.syncStatus.textContent = 'Syncing questions...';
+    const remote = await fetchRemoteBank();
+    if (!remote?.questions?.length) throw new Error('Remote bank is empty or invalid.');
+
+    state.questions = remote.questions;
+    await persistQuestions();
+    refreshUI();
+
+    const message = `Synced ${remote.questions.length} questions from server.`;
+    if (el.syncStatus) el.syncStatus.textContent = `${message} Last updated ${formatTimestamp(remote.updatedAt)}.`;
+    if (!silent) alert(message);
+    return true;
+  } catch (error) {
+    if (el.syncStatus) el.syncStatus.textContent = `Sync failed: ${error.message}`;
+    if (!silent) alert(error.message);
+    return false;
+  }
+}
+
+async function maybeSyncFromRemote() {
+  const config = getAppConfig();
+  if (!config.autoSyncOnLoad || !clean(config.remoteBankUrl)) return;
+
+  if (isAdmin() && state.questions.length) {
+    if (el.syncStatus) {
+      el.syncStatus.textContent = 'Admin device: local bank loaded. Publish bank.json after imports to update other devices.';
+    }
+    return;
+  }
+
+  const localUpdated = getBankUpdatedAt();
+  if (state.questions.length && localUpdated) {
+    try {
+      const remote = await fetchRemoteBank();
+      if (remote && remote.updatedAt <= localUpdated) {
+        if (el.syncStatus) {
+          el.syncStatus.textContent = `Using local bank (${state.questions.length} questions).`;
+        }
+        return;
+      }
+    } catch {
+      if (el.syncStatus) el.syncStatus.textContent = 'Could not check remote bank. Using local copy.';
+      return;
+    }
+  }
+
+  await syncFromRemote({ silent: true });
+}
+
+function publishBankForDevices() {
+  if (!requireAdmin('publish the shared bank')) return;
+  const payload = buildExportEnvelope();
+  download('bank.json', JSON.stringify(payload, null, 2), 'application/json');
+  if (el.exportStatus) {
+    el.exportStatus.textContent = 'Downloaded bank.json. Upload this file to your hosting URL so other devices can sync.';
+  }
+}
+
+function buildExportEnvelope() {
+  return {
+    app: getAppConfig().appName || 'NEET MCQ Practice',
+    version: 1,
+    updatedAt: Date.now(),
+    questionCount: state.questions.length,
+    questions: state.questions.map(toExportQuestion).filter(Boolean)
+  };
+}
 
 const sampleQuestions = [
   {
@@ -549,15 +793,7 @@ function updateStorageStatus(options = {}) {
 }
 
 function getBankUpdatedAt() {
-  try {
-    const saved = localStorage.getItem(STORAGE_KEY);
-    if (!saved) return null;
-    const parsed = JSON.parse(saved);
-    if (parsed && !Array.isArray(parsed) && parsed.updatedAt) return parsed.updatedAt;
-  } catch {
-    return null;
-  }
-
+  if (state.bankUpdatedAt) return state.bankUpdatedAt;
   const latestQuestionUpdate = state.questions.reduce((latest, question) => {
     const stamp = question.updatedAt || question.createdAt || 0;
     return stamp > latest ? stamp : latest;
@@ -570,17 +806,6 @@ function exportFilename(extension) {
   return `neet-mcq-bank-${stamp}.${extension}`;
 }
 
-function loadQuestions() {
-  try {
-    const saved = localStorage.getItem(STORAGE_KEY);
-    if (!saved) return [];
-    const parsed = JSON.parse(saved);
-    const bank = parseStoredBank(parsed);
-    return bank.questions.map(normaliseQuestion).filter(Boolean);
-  } catch {
-    return [];
-  }
-}
 
 function migrateKnownWhyWrongNotes() {
   const patches = {
@@ -610,7 +835,7 @@ function migrateKnownWhyWrongNotes() {
   if (changed) saveQuestions();
 }
 
-function saveQuestions() {
+async function persistQuestions() {
   const now = Date.now();
   state.questions = state.questions
     .map(question => {
@@ -628,13 +853,24 @@ function saveQuestions() {
     updatedAt: now,
     questions: state.questions
   };
+
   try {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(payload));
+    await idbSet(STORAGE_KEY, payload);
+    state.bankUpdatedAt = now;
+    try {
+      localStorage.removeItem(STORAGE_KEY);
+    } catch {
+      // ignore legacy cleanup errors
+    }
   } catch (error) {
-    alert('Could not save all data. Images may be using too much browser storage. Try smaller images, export a backup, or remove some images.');
+    alert('Could not save all data. Try fewer/smaller images, export a backup, or remove some images.');
     throw error;
   }
   updateStorageStatus();
+}
+
+function saveQuestions() {
+  persistQuestions().catch(() => {});
 }
 
 function getTaxonomy() {
@@ -822,10 +1058,11 @@ function renderBankCard(q) {
       ${q.explanation ? `<p class="bank-explanation"><strong>Explanation:</strong> ${escapeHtml(q.explanation)}</p>` : ''}
       ${renderImageHtml(q.explanationImage, 'Explanation image')}
       ${renderWhyWrongHtml(q)}
+      ${isAdmin() ? `
       <div class="bank-actions">
         <button type="button" class="secondary-btn small edit-btn" data-id="${q.id}">Edit</button>
         <button type="button" class="danger-btn small delete-btn" data-id="${q.id}">Delete</button>
-      </div>
+      </div>` : ''}
     </article>
   `;
 }
@@ -839,7 +1076,9 @@ function renderBank() {
 
   if (!state.questions.length) {
     el.bankList.className = 'bank-list empty-state';
-    el.bankList.innerHTML = '<h3>No questions yet</h3><p>Add MCQs manually or import from a file to get started.</p>';
+    el.bankList.innerHTML = isAdmin()
+      ? '<h3>No questions yet</h3><p>Unlock admin, import a JSON file, then publish bank.json for your other devices.</p>'
+      : '<h3>No questions yet</h3><p>Tap <strong>Sync questions</strong> after the admin has published the shared bank.</p>';
     updateBankFilterUI();
     return;
   }
@@ -884,6 +1123,7 @@ function populateFormImages(question) {
 }
 
 function startEdit(id) {
+  if (!requireAdmin('edit questions')) return;
   state.editingId = id;
   const question = state.questions.find(q => q.id === id);
   renderBank();
@@ -903,6 +1143,7 @@ function cancelInlineEdit() {
 }
 
 function saveInlineEdit(form) {
+  if (!requireAdmin('edit questions')) return;
   const id = form.dataset.editId;
   const existing = state.questions.find(q => q.id === id);
   if (!existing) return;
@@ -935,6 +1176,7 @@ function saveInlineEdit(form) {
 }
 
 function upsertQuestion(data) {
+  if (!requireAdmin('add or edit questions')) return false;
   const question = normaliseQuestion(data);
   if (!question) {
     alert('Please fill in the question, all four options, and a valid correct answer.');
@@ -956,6 +1198,7 @@ function upsertQuestion(data) {
 }
 
 function deleteQuestion(id) {
+  if (!requireAdmin('delete questions')) return;
   if (!confirm('Delete this question permanently?')) return;
   if (state.editingId === id) state.editingId = null;
   state.questions = state.questions.filter(q => q.id !== id);
@@ -1182,6 +1425,7 @@ async function parseImportFile(file) {
 
 async function importFile(file) {
   if (!file) return;
+  if (!requireAdmin('import questions')) return;
   try {
     el.importStatus.textContent = `Reading ${file.name}...`;
     const rows = await parseImportFile(file);
@@ -1196,7 +1440,7 @@ async function importFile(file) {
     if (added) parts.push(`${added} new`);
     if (updated) parts.push(`${updated} updated`);
     el.importStatus.textContent = parts.length
-      ? `Imported from ${file.name}: ${parts.join(', ')}. Latest data is saved and ready to export.`
+      ? `Imported from ${file.name}: ${parts.join(', ')}. Download bank.json and upload it to your hosting URL so other devices can sync.`
       : `No changes from ${file.name}. All matching questions were already up to date.`;
   } catch (error) {
     el.importStatus.textContent = error.message;
@@ -1240,6 +1484,7 @@ function mergeImportedQuestions(imported) {
 }
 
 function loadSampleData() {
+  if (!requireAdmin('load sample questions')) return;
   let added = 0;
   const existing = new Set(state.questions.map(q => q.question.toLowerCase()));
   sampleQuestions.forEach(raw => {
@@ -1335,6 +1580,7 @@ function exportCsv() {
 }
 
 function resetAllData() {
+  if (!requireAdmin('clear the question bank')) return;
   if (!confirm('Delete ALL saved questions from this browser? This cannot be undone.')) return;
   state.questions = [];
   state.editingId = null;
@@ -1457,16 +1703,56 @@ function bindEvents() {
   el.bankExportJsonBtn.addEventListener('click', exportJson);
   el.bankExportCsvBtn.addEventListener('click', exportCsv);
   el.resetAllBtn.addEventListener('click', resetAllData);
+
+  if (el.syncBankBtn) {
+    el.syncBankBtn.addEventListener('click', () => syncFromRemote({ force: true }));
+  }
+
+  if (el.adminUnlockBtn) {
+    el.adminUnlockBtn.addEventListener('click', () => {
+      if (isAdmin()) lockAdmin();
+      else openAdminDialog();
+    });
+  }
+
+  if (el.adminForm) {
+    el.adminForm.addEventListener('submit', event => {
+      event.preventDefault();
+      const ok = unlockAdmin(el.adminPinInput.value);
+      if (!ok) {
+        el.adminDialogError.textContent = 'Incorrect admin PIN.';
+        el.adminDialogError.hidden = false;
+        return;
+      }
+      el.adminDialog.close();
+    });
+  }
+
+  if (el.adminCancelBtn) {
+    el.adminCancelBtn.addEventListener('click', () => el.adminDialog?.close());
+  }
+
+  if (el.publishBankBtn) {
+    el.publishBankBtn.addEventListener('click', publishBankForDevices);
+  }
 }
 
-function init() {
-  state.questions = loadQuestions();
-  if (!state.questions.length) {
+async function init() {
+  state.questions = await loadQuestionsAsync();
+
+  const config = getAppConfig();
+  if (clean(config.remoteBankUrl) && config.autoSyncOnLoad) {
+    await syncFromRemote({ silent: true });
+  } else {
+    await maybeSyncFromRemote();
+  }
+
+  if (!state.questions.length && !clean(config.remoteBankUrl)) {
     sampleQuestions.forEach(raw => {
       const item = normaliseQuestion(raw);
       if (item) state.questions.push(item);
     });
-    saveQuestions();
+    if (state.questions.length) await persistQuestions();
   }
   migrateKnownWhyWrongNotes();
   bindImageControl(
@@ -1485,7 +1771,11 @@ function init() {
   );
 
   bindEvents();
+  applyRoleUI();
   refreshUI();
 }
 
-init();
+init().catch(error => {
+  console.error(error);
+  alert('Could not start the app. Try refreshing the page.');
+});
