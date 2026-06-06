@@ -1178,10 +1178,10 @@ function renderFlagReview() {
             <div class="flag-review-meta">${formatTimestamp(flag.createdAt)} · ${escapeHtml(snap.topic || question?.topic || '')} · <span class="learn-badge ${flag.status === 'pending' ? 'wrong' : flag.status}">${flag.status}</span></div>
           </div>
         </div>
-        <p class="question">${escapeHtml(qText)}</p>
+        <p class="question">${renderMath(qText)}</p>
         <div class="flag-answer-compare">
-          <div class="flag-answer-box"><strong>Current key</strong>${escapeHtml(currentAnswer)} — ${escapeHtml(options[answerLetterToIndex(currentAnswer)] || '')}</div>
-          <div class="flag-answer-box suggested"><strong>Student says</strong>${escapeHtml(flag.suggestedAnswer)} — ${escapeHtml(options[answerLetterToIndex(flag.suggestedAnswer)] || '')}</div>
+          <div class="flag-answer-box"><strong>Current key</strong>${escapeHtml(currentAnswer)} — ${renderMath(options[answerLetterToIndex(currentAnswer)] || '')}</div>
+          <div class="flag-answer-box suggested"><strong>Student says</strong>${escapeHtml(flag.suggestedAnswer)} — ${renderMath(options[answerLetterToIndex(flag.suggestedAnswer)] || '')}</div>
         </div>
         <div class="flag-comment"><strong>Comment:</strong> ${escapeHtml(flag.comment)}</div>
         ${adminForm}
@@ -1394,6 +1394,60 @@ function escapeHtml(value) {
     .replace(/>/g, '&gt;')
     .replace(/"/g, '&quot;')
     .replace(/'/g, '&#039;');
+}
+
+/**
+ * Render text that may contain LaTeX math ($ inline $ and $$ display $$).
+ * Falls back to escapeHtml when KaTeX is unavailable.
+ */
+function renderMath(text) {
+  if (!text) return '';
+  if (typeof katex === 'undefined') return escapeHtml(text);
+
+  // Split text into [text, display-math, inline-math] segments.
+  const segments = [];
+  const displayRe = /\$\$([\s\S]+?)\$\$/g;
+  const inlineRe  = /\$([^$\n]+?)\$/g;
+  let last = 0;
+
+  // Pass 1: extract display math $$...$$
+  displayRe.lastIndex = 0;
+  let m;
+  while ((m = displayRe.exec(text)) !== null) {
+    if (m.index > last) segments.push({ type: 'text', val: text.slice(last, m.index) });
+    segments.push({ type: 'display', val: m[1].trim() });
+    last = m.index + m[0].length;
+  }
+  if (last < text.length) segments.push({ type: 'text', val: text.slice(last) });
+
+  // Pass 2: within text segments, extract inline math $...$
+  const final = [];
+  for (const seg of segments) {
+    if (seg.type !== 'text') { final.push(seg); continue; }
+    inlineRe.lastIndex = 0;
+    let start = 0;
+    while ((m = inlineRe.exec(seg.val)) !== null) {
+      if (m.index > start) final.push({ type: 'text', val: seg.val.slice(start, m.index) });
+      final.push({ type: 'inline', val: m[1].trim() });
+      start = m.index + m[0].length;
+    }
+    if (start < seg.val.length) final.push({ type: 'text', val: seg.val.slice(start) });
+  }
+
+  // Render each segment
+  return final.map(seg => {
+    if (seg.type === 'text') return escapeHtml(seg.val);
+    try {
+      return katex.renderToString(seg.val, {
+        displayMode: seg.type === 'display',
+        throwOnError: false,
+        strict: false,
+        trust: false
+      });
+    } catch (_) {
+      return escapeHtml(seg.val);
+    }
+  }).join('');
 }
 
 function makeId() {
@@ -1644,7 +1698,7 @@ function renderWhyWrongHtml(question, displayLetterByCanonical = null) {
       <strong>Why the other options are incorrect:</strong>
       <ul class="why-wrong-list">
         ${entries.map(entry => `
-          <li><strong>${letterOf(entry)}. ${escapeHtml(entry.option)}:</strong> ${escapeHtml(entry.text)}</li>
+          <li><strong>${letterOf(entry)}. ${renderMath(entry.option)}:</strong> ${renderMath(entry.text)}</li>
         `).join('')}
       </ul>
     </div>
@@ -2041,7 +2095,7 @@ function renderBankEditForm(q) {
 
 function bankHighlight(text) {
   const query = (state.bankSearch || '').trim();
-  if (!query) return escapeHtml(text);
+  if (!query) return renderMath(text);
   return NeetSearch.highlight(text, NeetSearch.parseQuery(query));
 }
 
@@ -2330,7 +2384,7 @@ function renderPracticeQuestion() {
       ${current.subtopic ? `<span class="badge">${escapeHtml(current.subtopic)}</span>` : ''}
       ${current.tags.map(tag => `<span class="badge orange">${escapeHtml(tag)}</span>`).join('')}
     </div>
-    <p class="question">${escapeHtml(current.question)}</p>
+    <p class="question">${renderMath(current.question)}</p>
     ${renderImageHtml(current.questionImage, 'Question image')}
     <div class="options interactive">
       ${order.map((originalIndex, displayPos) => {
@@ -2345,15 +2399,15 @@ function renderPracticeQuestion() {
         const disabled = session.answered ? 'disabled' : '';
         return `<button type="button" class="${className}" data-option="${canonicalLetter}" ${disabled}>
           <span class="option-letter">${displayLetter}</span>
-          <span>${escapeHtml(option)}</span>
+          <span>${renderMath(option)}</span>
         </button>`;
       }).join('')}
     </div>
     ${session.answered ? `
       ${session.lastFeedback ? `<div class="coach-feedback ${session.lastFeedback.tone}">${escapeHtml(session.lastFeedback.text)}</div>` : ''}
       <div class="answer show">
-        <strong>Correct answer: ${correctDisplayLetter}.</strong> ${escapeHtml(current.options[correctIndex])}
-        ${current.explanation ? `<br><strong>Explanation:</strong> ${escapeHtml(current.explanation)}` : ''}
+        <strong>Correct answer: ${correctDisplayLetter}.</strong> ${renderMath(current.options[correctIndex])}
+        ${current.explanation ? `<br><strong>Explanation:</strong> ${renderMath(current.explanation)}` : ''}
         ${renderImageHtml(current.explanationImage, 'Explanation image')}
         ${renderWhyWrongHtml(current, displayLetterByCanonical)}
         <button type="button" class="flag-report-btn" data-action="open-flag" ${hasPendingFlagForQuestion(current.id, state.activeStudentId) ? 'disabled' : ''}>
