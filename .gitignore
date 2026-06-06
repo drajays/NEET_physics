@@ -2,3 +2,14 @@
 __pycache__/
 *.pyc
 node_modules/
+
+# Large OCR source files (keep locally, not in repo)
+Objective-Biology-for-NEET-Vol-I-Pearson-Education-2019.pdf_by_PaddleOCR-VL-1.6.*
+
+# Generated Pearson import outputs (run convert_pearson_md.py locally)
+pearson_biology_vol1.json
+pearson_biology_vol1.csv
+pearson_biology_vol1_report.json
+
+# Unrelated / unused assets
+bio_classsif.png

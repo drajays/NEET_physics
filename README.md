@@ -51,6 +51,21 @@ id, question, option_a, option_b, option_c, option_d, answer, explanation, why_w
 - Exports always read the latest data saved in your browser, including front-end edits and uploads.
 - Export is available from **Question Bank** and **Import / Export**.
 
+## Pearson OCR import (optional, local)
+
+To build a bulk import file from Pearson Vol I OCR exports, place these files in the project folder (not committed to git — they are large):
+
+- `Objective-Biology-for-NEET-Vol-I-Pearson-Education-2019.pdf_by_PaddleOCR-VL-1.6.md`
+- `Objective-Biology-for-NEET-Vol-I-Pearson-Education-2019.pdf_by_PaddleOCR-VL-1.6.json`
+
+Then run:
+
+```bash
+python3 convert_pearson_md.py
+```
+
+This generates `pearson_biology_vol1.json` (~4k MCQs) for import via **Import / Export**.
+
 ## Tips
 
 - Leave filter groups empty during practice to include all values in that group
