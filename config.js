@@ -2,6 +2,7 @@
 window.APP_CONFIG = {
   remoteBankUrl: 'https://raw.githubusercontent.com/drajays/NEET_pingal/main/bank.json',
   remoteProgressUrl: 'https://raw.githubusercontent.com/drajays/NEET_pingal/main/progress.json',
+  remoteFlagsUrl: 'https://raw.githubusercontent.com/drajays/NEET_pingal/main/flags.json',
   adminPin: '1234',
   autoSyncOnLoad: true,
   appName: 'NEET Biology MCQ Mastery',
