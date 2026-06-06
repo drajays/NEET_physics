@@ -7,7 +7,7 @@ const IDB_STORE = 'bank';
 function getAppConfig() {
   return window.APP_CONFIG || {
     remoteBankUrl: '',
-    adminPin: 'change-me-1234',
+    adminPin: '1234',
     autoSyncOnLoad: true,
     appName: 'NEET MCQ Practice'
   };

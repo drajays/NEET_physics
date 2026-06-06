@@ -216,15 +216,7 @@ def map_option_letter(letter: str) -> Optional[str]:
     return None
 
 
-def extract_options(text: str) -> Dict[str, str]:
-    text = sanitize_option_source(text)
-    if not text:
-        return {}
-
-    matches = list(OPTION_MARKERS.finditer(text))
-    if not matches:
-        matches = list(NUMERIC_OPTION_MARKERS.finditer(text))
-
+def extract_options_by_markers(text: str, matches: List[re.Match[str]]) -> Dict[str, str]:
     options: Dict[str, str] = {}
     for index, match in enumerate(matches):
         token = match.group(1)
@@ -237,6 +229,41 @@ def extract_options(text: str) -> Dict[str, str]:
         if value:
             options[letter] = value
     return options
+
+
+def extract_options_positional(text: str) -> Dict[str, str]:
+    """Map the first four option markers to A–D by order (handles OCR duplicate/wrong letters)."""
+    text = sanitize_option_source(text)
+    if not text:
+        return {}
+
+    matches = list(OPTION_MARKERS.finditer(text))
+    if len(matches) < 4:
+        matches = list(NUMERIC_OPTION_MARKERS.finditer(text))
+    if len(matches) < 4:
+        return {}
+
+    options: Dict[str, str] = {}
+    for index, match in enumerate(matches[:4]):
+        letter = "ABCD"[index]
+        start = match.end()
+        end = matches[index + 1].start() if index + 1 < len(matches) else len(text)
+        value = clean_text(text[start:end])
+        if value:
+            options[letter] = value
+    return options if len(options) == 4 else {}
+
+
+def extract_options(text: str) -> Dict[str, str]:
+    text = sanitize_option_source(text)
+    if not text:
+        return {}
+
+    matches = list(OPTION_MARKERS.finditer(text))
+    if not matches:
+        matches = list(NUMERIC_OPTION_MARKERS.finditer(text))
+
+    return extract_options_by_markers(text, matches)
 
 
 def is_noise_line(line: str) -> bool:
@@ -589,10 +616,15 @@ def parse_answer_table(table_html: str) -> Dict[str, Dict[int, str]]:
 
     flush_block()
 
-    # Another OCR quirk: first block marked PYQ but contains 100+ practice answers.
+    # OCR quirk: the first answer block is sometimes mislabeled PYQ but is actually practice.
     fixed_blocks: List[Tuple[str, Dict[int, str]]] = []
-    for section, answers in blocks:
-        if section == "pyq" and answers and max(answers) > 50:
+    for index, (section, answers) in enumerate(blocks):
+        if (
+            section == "pyq"
+            and index == 0
+            and answers
+            and max(answers) > 100
+        ):
             fixed_blocks.append(("practice", answers))
         else:
             fixed_blocks.append((section, answers))
@@ -719,12 +751,7 @@ def parse_questions_block(chapter: str, block: str) -> Tuple[List[RawQuestion], 
 
 
 def lookup_answer(raw: RawQuestion, answers_by_section: Dict[str, Dict[int, str]]) -> Optional[str]:
-    answer = answers_by_section.get(raw.section, {}).get(raw.number)
-    if answer:
-        return answer
-    if raw.section == "assertion":
-        return answers_by_section.get("practice", {}).get(raw.number)
-    return None
+    return answers_by_section.get(raw.section, {}).get(raw.number)
 
 
 def finalize_question(
@@ -741,11 +768,15 @@ def finalize_question(
     if not options and raw.option_lines:
         options = extract_options(" ".join(raw.option_lines))
 
-    # Occasionally the first line contains only the question and options are in stem_lines
     if len(options) < 4:
-        merged = extract_options(stem + " " + raw.options_blob())
+        merged = extract_options(f"{stem} {raw.options_blob()}")
         if len(merged) >= len(options):
             options = merged
+
+    if len(options) < 4:
+        positional = extract_options_positional(raw.options_blob() or " ".join(raw.option_lines))
+        if len(positional) >= len(options):
+            options = positional
 
     if len(options) < 4 and raw.section == "assertion":
         template = assertion_template or DEFAULT_ASSERTION_OPTIONS

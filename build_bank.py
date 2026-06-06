@@ -3,9 +3,11 @@
 
 from __future__ import annotations
 
+import csv
 import json
 import sys
 import time
+import uuid
 from pathlib import Path
 
 COPYRIGHT_TAG_MARKERS = ("pearson",)
@@ -23,6 +25,39 @@ def load_questions(path: Path) -> list:
     if isinstance(data, list):
         return data
     return data.get("questions", [])
+
+
+def load_csv_questions(path: Path) -> list:
+    questions: list = []
+    with path.open(newline="", encoding="utf-8") as handle:
+        for row in csv.DictReader(handle):
+            question = (row.get("question") or "").strip()
+            if not question:
+                continue
+            tags = row.get("tags") or ""
+            if isinstance(tags, str):
+                tags = [part.strip() for part in tags.split(";") if part.strip()]
+            questions.append(
+                {
+                    "id": row.get("id") or f"csv_{uuid.uuid4().hex[:10]}",
+                    "question": question,
+                    "option_a": (row.get("option_a") or "").strip(),
+                    "option_b": (row.get("option_b") or "").strip(),
+                    "option_c": (row.get("option_c") or "").strip(),
+                    "option_d": (row.get("option_d") or "").strip(),
+                    "answer": (row.get("answer") or "").strip().upper(),
+                    "explanation": (row.get("explanation") or "").strip(),
+                    "why_wrong_a": (row.get("why_wrong_a") or "").strip(),
+                    "why_wrong_b": (row.get("why_wrong_b") or "").strip(),
+                    "why_wrong_c": (row.get("why_wrong_c") or "").strip(),
+                    "why_wrong_d": (row.get("why_wrong_d") or "").strip(),
+                    "subject": (row.get("subject") or "Biology").strip(),
+                    "topic": (row.get("topic") or "").strip(),
+                    "subtopic": (row.get("subtopic") or "").strip(),
+                    "tags": tags,
+                }
+            )
+    return questions
 
 
 def sanitize_question(item: dict) -> dict:
@@ -47,6 +82,7 @@ def main() -> int:
         root / "pearson_biology_vol1.json",
         root / "pearson_biology_vol2.json",
     ]
+    extra_csv = root / "biology_the_living_world.csv"
     output = root / "bank.json"
 
     missing = [p for p in sources if not p.exists()]
@@ -68,6 +104,19 @@ def main() -> int:
             seen.add(key)
             merged.append(sanitize_question(item))
 
+    if extra_csv.exists():
+        csv_added = 0
+        for item in load_csv_questions(extra_csv):
+            key = (item.get("question") or "").strip().lower()
+            if not key or key in seen:
+                duplicates += 1
+                continue
+            seen.add(key)
+            merged.append(sanitize_question(item))
+            csv_added += 1
+        if csv_added:
+            print(f"Added {csv_added} unique questions from {extra_csv.name}")
+
     payload = {
         "app": "NEET MCQ Practice",
         "version": 1,
@@ -79,7 +128,7 @@ def main() -> int:
 
     print(f"Built {output}")
     print(f"Questions: {len(merged)}")
-    print(f"Duplicates removed: {duplicates}")
+    print(f"Duplicates skipped: {duplicates}")
     return 0
 
 
