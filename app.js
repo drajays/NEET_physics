@@ -1,5 +1,6 @@
 const STORAGE_KEY = 'neet-mcq-bank-v1';
 const PROGRESS_KEY = 'neet-student-progress-v1';
+const FLAGS_KEY = 'neet-answer-flags-v1';
 const ACTIVE_STUDENT_KEY = 'neet-active-student-v1';
 const ADMIN_SESSION_KEY = 'neet-admin-session-v1';
 const IDB_NAME = 'neet-mcq-db';
@@ -9,6 +10,7 @@ const IDB_STORE = 'bank';
 const DEFAULT_APP_CONFIG = {
   remoteBankUrl: '',
   remoteProgressUrl: '',
+  remoteFlagsUrl: '',
   adminPin: '1234',
   autoSyncOnLoad: true,
   appName: 'NEET Biology MCQ Mastery',
@@ -56,6 +58,8 @@ const state = {
   editingId: null,
   bankUpdatedAt: null,
   progress: { version: 1, updatedAt: 0, students: {} },
+  flags: { version: 1, updatedAt: 0, items: [] },
+  flagTargetQuestionId: '',
   activeStudentId: '',
   progressViewStudentId: '',
   progressSelectedTopic: '',
@@ -157,7 +161,20 @@ const el = {
   publishProgressBtn: document.getElementById('publishProgressBtn'),
   studentDialog: document.getElementById('studentDialog'),
   studentForm: document.getElementById('studentForm'),
-  studentDialogSelect: document.getElementById('studentDialogSelect')
+  studentDialogSelect: document.getElementById('studentDialogSelect'),
+  flagDialog: document.getElementById('flagDialog'),
+  flagForm: document.getElementById('flagForm'),
+  flagSuggestedAnswer: document.getElementById('flagSuggestedAnswer'),
+  flagComment: document.getElementById('flagComment'),
+  flagFormError: document.getElementById('flagFormError'),
+  flagFormSuccess: document.getElementById('flagFormSuccess'),
+  flagSubmitBtn: document.getElementById('flagSubmitBtn'),
+  flagCancelBtn: document.getElementById('flagCancelBtn'),
+  flagsReviewList: document.getElementById('flagsReviewList'),
+  flagsStatus: document.getElementById('flagsStatus'),
+  flagPendingBadge: document.getElementById('flagPendingBadge'),
+  syncFlagsBtn: document.getElementById('syncFlagsBtn'),
+  publishFlagsBtn: document.getElementById('publishFlagsBtn')
 };
 
 function isAdmin() {
@@ -223,6 +240,7 @@ function applyRoleUI() {
   renderBank();
   renderStudentSelectors();
   updateProgressSyncUI();
+  updateFlagBadge();
   refreshLearningViews();
 }
 
@@ -546,6 +564,19 @@ function getAuditLogForStudent(student, limit) {
   return NeetAnalytics.getAuditLog(student, map, limit);
 }
 
+function getCoachInsightsForStudent(studentId) {
+  const id = studentId || state.activeStudentId;
+  if (!id || !window.NeetCoach) return null;
+  const student = state.progress.students[id];
+  return NeetCoach.buildInsights({
+    name: student?.name || id,
+    summary: summarizeStudentForViews(id),
+    plan: getRevisionPlanForStudent(id),
+    tree: buildCurriculumTreeForStudent(id),
+    history: student?.history || []
+  });
+}
+
 function refreshLearningViews() {
   if (window.NeetViews) NeetViews.refreshActiveView();
 }
@@ -596,7 +627,11 @@ function startRevisionPractice() {
     index: 0,
     score: 0,
     answered: false,
-    selectedOption: null
+    selectedOption: null,
+    log: [],
+    streakInSession: 0,
+    lastFeedback: null,
+    questionStartAt: Date.now()
   };
   switchTab('practice');
   el.practiceArea.classList.remove('hidden');
@@ -656,6 +691,316 @@ function publishProgressForDevices() {
   if (el.syncStatus) {
     el.syncStatus.textContent = 'Downloaded progress.json — upload to GitHub for multi-device sync.';
   }
+}
+
+async function loadFlagsAsync() {
+  try {
+    const saved = await idbGet(FLAGS_KEY);
+    if (saved?.items) {
+      state.flags = {
+        version: 1,
+        updatedAt: saved.updatedAt || Date.now(),
+        items: saved.items || []
+      };
+    }
+  } catch {
+    // ignore
+  }
+}
+
+async function persistFlags() {
+  state.flags.updatedAt = Date.now();
+  await idbSet(FLAGS_KEY, state.flags);
+  updateFlagBadge();
+}
+
+function getStudentName(studentId) {
+  return getConfiguredStudents().find(name => studentIdFromName(name) === studentId) || studentId;
+}
+
+function hasPendingFlagForQuestion(questionId, studentId) {
+  return (state.flags.items || []).some(
+    item => item.questionId === questionId && item.studentId === studentId && item.status === 'pending'
+  );
+}
+
+function openFlagDialog(question) {
+  if (!question?.id || !state.activeStudentId) {
+    alert('Select a student profile first.');
+    return;
+  }
+  if (!el.flagDialog) return;
+  state.flagTargetQuestionId = question.id;
+  if (el.flagSuggestedAnswer) el.flagSuggestedAnswer.value = '';
+  if (el.flagComment) el.flagComment.value = '';
+  if (el.flagFormError) el.flagFormError.hidden = true;
+  if (el.flagFormSuccess) el.flagFormSuccess.hidden = true;
+  el.flagDialog.showModal();
+  el.flagComment?.focus();
+}
+
+async function submitAnswerFlag(event) {
+  event?.preventDefault();
+  const questionId = state.flagTargetQuestionId;
+  const question = state.questions.find(q => q.id === questionId)
+    || state.practice.questions.find(q => q.id === questionId);
+  if (!question) {
+    if (el.flagFormError) {
+      el.flagFormError.textContent = 'Question not found.';
+      el.flagFormError.hidden = false;
+    }
+    return;
+  }
+
+  const suggested = clean(el.flagSuggestedAnswer?.value).toUpperCase();
+  const comment = clean(el.flagComment?.value);
+  if (!['A', 'B', 'C', 'D'].includes(suggested)) {
+    if (el.flagFormError) {
+      el.flagFormError.textContent = 'Pick the answer you think is correct (A–D).';
+      el.flagFormError.hidden = false;
+    }
+    return;
+  }
+  if (comment.length < 8) {
+    if (el.flagFormError) {
+      el.flagFormError.textContent = 'Please add a short comment (at least 8 characters).';
+      el.flagFormError.hidden = false;
+    }
+    return;
+  }
+
+  if (hasPendingFlagForQuestion(question.id, state.activeStudentId)) {
+    if (el.flagFormError) {
+      el.flagFormError.textContent = 'You already submitted a report for this question.';
+      el.flagFormError.hidden = false;
+    }
+    return;
+  }
+
+  const flag = NeetFlags.createFlag({
+    question,
+    studentId: state.activeStudentId,
+    studentName: getStudentName(state.activeStudentId),
+    suggestedAnswer: suggested,
+    comment
+  });
+  state.flags.items.unshift(flag);
+  await persistFlags();
+  if (el.flagFormSuccess) {
+    el.flagFormSuccess.textContent = 'Report saved. Admin will review it.';
+    el.flagFormSuccess.hidden = false;
+  }
+  if (el.flagFormError) el.flagFormError.hidden = true;
+  setTimeout(() => el.flagDialog?.close(), 700);
+  renderPracticeQuestion();
+}
+
+function updateFlagBadge() {
+  if (!el.flagPendingBadge) return;
+  const count = NeetFlags.pendingCount(state.flags);
+  el.flagPendingBadge.textContent = String(count);
+  el.flagPendingBadge.hidden = !count || !isAdmin();
+}
+
+async function fetchRemoteFlags() {
+  const url = clean(getAppConfig().remoteFlagsUrl);
+  if (!url) return null;
+  const response = await fetch(`${url}${url.includes('?') ? '&' : '?'}t=${Date.now()}`, { cache: 'no-store' });
+  if (!response.ok) throw new Error(`Could not download flags (${response.status}).`);
+  const parsed = await response.json();
+  if (!parsed?.items) throw new Error('Remote flags file is invalid.');
+  return parsed;
+}
+
+async function syncFlagsFromRemote({ silent = false } = {}) {
+  if (!clean(getAppConfig().remoteFlagsUrl)) {
+    if (!silent) alert('Set remoteFlagsUrl in config.js first.');
+    return false;
+  }
+  try {
+    const remote = await fetchRemoteFlags();
+    state.flags = NeetFlags.mergeFlagsData(state.flags, remote);
+    await persistFlags();
+    if (state.activeTab === 'flags') renderFlagReview();
+    if (!silent && el.flagsStatus) el.flagsStatus.textContent = 'Flags synced from server.';
+    return true;
+  } catch (error) {
+    if (!silent && el.flagsStatus) el.flagsStatus.textContent = `Flag sync failed: ${error.message}`;
+    if (!silent) alert(error.message);
+    return false;
+  }
+}
+
+function publishFlagsForDevices() {
+  if (!requireAdmin('publish flags')) return;
+  const payload = {
+    app: getAppConfig().appName || 'NEET Biology MCQ Mastery',
+    version: 1,
+    updatedAt: Date.now(),
+    items: state.flags.items
+  };
+  const blob = new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' });
+  const link = document.createElement('a');
+  link.href = URL.createObjectURL(blob);
+  link.download = 'flags.json';
+  link.click();
+  URL.revokeObjectURL(link.href);
+  if (el.flagsStatus) el.flagsStatus.textContent = 'Downloaded flags.json — upload to GitHub so all devices see reports.';
+}
+
+function resolveFlag(flagId, status, adminNote = '') {
+  const flag = state.flags.items.find(item => item.id === flagId);
+  if (!flag) return null;
+  flag.status = status;
+  flag.resolvedAt = Date.now();
+  flag.adminNote = clean(adminNote);
+  return flag;
+}
+
+async function approveAnswerFlag(flagId) {
+  if (!requireAdmin('approve answer reports')) return;
+  const flag = state.flags.items.find(item => item.id === flagId);
+  if (!flag || flag.status !== 'pending') return;
+  const question = state.questions.find(q => q.id === flag.questionId);
+  if (!question) {
+    alert('Question no longer in bank.');
+    return;
+  }
+  const note = flag.comment ? `\n[Student report ${flag.studentName}]: ${flag.comment}` : '';
+  const success = upsertQuestion({
+    id: question.id,
+    question: question.question,
+    option_a: question.options[0],
+    option_b: question.options[1],
+    option_c: question.options[2],
+    option_d: question.options[3],
+    answer: flag.suggestedAnswer,
+    explanation: `${question.explanation || ''}${note}`.trim(),
+    subject: question.subject,
+    topic: question.topic,
+    subtopic: question.subtopic,
+    tags: question.tags,
+    whyWrong: question.whyWrong,
+    questionImage: question.questionImage,
+    explanationImage: question.explanationImage,
+    createdAt: question.createdAt
+  });
+  if (!success) return;
+  resolveFlag(flagId, 'approved', 'Answer updated to student suggestion.');
+  await persistFlags();
+  renderFlagReview();
+  alert('Answer updated and flag approved.');
+}
+
+async function rejectAnswerFlag(flagId, adminNote) {
+  if (!requireAdmin('reject answer reports')) return;
+  resolveFlag(flagId, 'rejected', adminNote || 'Rejected by admin.');
+  await persistFlags();
+  renderFlagReview();
+}
+
+async function saveFlagAdminEdit(form) {
+  if (!requireAdmin('edit questions from reports')) return;
+  const flagId = form.dataset.flagId;
+  const flag = state.flags.items.find(item => item.id === flagId);
+  if (!flag) return;
+  const existing = state.questions.find(q => q.id === flag.questionId);
+  const formData = new FormData(form);
+  const success = upsertQuestion({
+    id: flag.questionId,
+    question: formData.get('question'),
+    option_a: formData.get('option_a'),
+    option_b: formData.get('option_b'),
+    option_c: formData.get('option_c'),
+    option_d: formData.get('option_d'),
+    answer: formData.get('answer'),
+    explanation: formData.get('explanation'),
+    subject: formData.get('subject') || 'Biology',
+    topic: formData.get('topic'),
+    subtopic: formData.get('subtopic'),
+    tags: formData.get('tags'),
+    createdAt: existing?.createdAt
+  });
+  if (!success) return;
+  resolveFlag(flagId, 'approved', clean(formData.get('admin_note')) || 'Modified by admin.');
+  await persistFlags();
+  renderFlagReview();
+  alert('Question updated and flag resolved.');
+}
+
+function renderFlagReview() {
+  if (!el.flagsReviewList || !isAdmin()) return;
+  const items = state.flags.items || [];
+  const pending = items.filter(item => item.status === 'pending');
+  if (el.flagsStatus) {
+    el.flagsStatus.textContent = `${pending.length} pending · ${items.length} total reports`;
+  }
+
+  if (!items.length) {
+    el.flagsReviewList.innerHTML = '<div class="empty-card"><h3>No reports yet</h3><p>Students can flag answers during practice.</p></div>';
+    updateFlagBadge();
+    return;
+  }
+
+  el.flagsReviewList.innerHTML = items.map(flag => {
+    const question = state.questions.find(q => q.id === flag.questionId);
+    const snap = flag.snapshot || {};
+    const qText = question?.question || snap.question || '(question removed)';
+    const currentAnswer = question?.answer || snap.answer || '?';
+    const options = question?.options || [
+      snap.option_a, snap.option_b, snap.option_c, snap.option_d
+    ];
+
+    const adminForm = flag.status === 'pending' ? `
+      <form class="flag-admin-form" data-flag-id="${escapeHtml(flag.id)}">
+        <p class="muted">Modify anything before saving:</p>
+        <label class="full-width">Question<textarea name="question" rows="2" required>${escapeHtml(question?.question || snap.question || '')}</textarea></label>
+        <div class="options-grid">
+          <label>A <input name="option_a" value="${escapeHtml(options[0] || '')}" required /></label>
+          <label>B <input name="option_b" value="${escapeHtml(options[1] || '')}" required /></label>
+          <label>C <input name="option_c" value="${escapeHtml(options[2] || '')}" required /></label>
+          <label>D <input name="option_d" value="${escapeHtml(options[3] || '')}" required /></label>
+        </div>
+        <label>Correct answer
+          <select name="answer" required>
+            ${['A', 'B', 'C', 'D'].map(letter => `<option value="${letter}" ${(question?.answer || flag.suggestedAnswer) === letter ? 'selected' : ''}>${letter}</option>`).join('')}
+          </select>
+        </label>
+        <label class="full-width">Explanation<textarea name="explanation" rows="2">${escapeHtml(question?.explanation || snap.explanation || '')}</textarea></label>
+        <div class="meta-grid">
+          <label>Chapter <input name="topic" value="${escapeHtml(question?.topic || snap.topic || '')}" /></label>
+          <label>Section <input name="subtopic" value="${escapeHtml(question?.subtopic || snap.subtopic || '')}" /></label>
+          <label>Tags <input name="tags" value="${escapeHtml((question?.tags || []).join('; '))}" /></label>
+          <label>Admin note <input name="admin_note" placeholder="Optional note" /></label>
+        </div>
+        <div class="button-row">
+          <button type="button" class="primary-btn small approve-flag-btn" data-flag-id="${escapeHtml(flag.id)}">Quick approve (${escapeHtml(flag.suggestedAnswer)})</button>
+          <button type="submit" class="secondary-btn small">Save full edit</button>
+          <button type="button" class="danger-btn small reject-flag-btn" data-flag-id="${escapeHtml(flag.id)}">Reject</button>
+        </div>
+      </form>
+    ` : `<p class="muted">Resolved · ${flag.adminNote ? escapeHtml(flag.adminNote) : ''}</p>`;
+
+    return `
+      <article class="flag-review-card ${flag.status}">
+        <div class="flag-review-head">
+          <div>
+            <strong>${escapeHtml(flag.studentName)}</strong>
+            <div class="flag-review-meta">${formatTimestamp(flag.createdAt)} · ${escapeHtml(snap.topic || question?.topic || '')} · <span class="learn-badge ${flag.status === 'pending' ? 'wrong' : flag.status}">${flag.status}</span></div>
+          </div>
+        </div>
+        <p class="question">${escapeHtml(qText)}</p>
+        <div class="flag-answer-compare">
+          <div class="flag-answer-box"><strong>Current key</strong>${escapeHtml(currentAnswer)} — ${escapeHtml(options[answerLetterToIndex(currentAnswer)] || '')}</div>
+          <div class="flag-answer-box suggested"><strong>Student says</strong>${escapeHtml(flag.suggestedAnswer)} — ${escapeHtml(options[answerLetterToIndex(flag.suggestedAnswer)] || '')}</div>
+        </div>
+        <div class="flag-comment"><strong>Comment:</strong> ${escapeHtml(flag.comment)}</div>
+        ${adminForm}
+      </article>
+    `;
+  }).join('');
+
+  updateFlagBadge();
 }
 
 function openIdb() {
@@ -1603,6 +1948,7 @@ function switchTab(tabName) {
     panel.hidden = !isActive;
   });
   if (el.sidebar) el.sidebar.classList.remove('open');
+  if (tabName === 'flags') renderFlagReview();
   refreshLearningViews();
 }
 
@@ -1749,7 +2095,11 @@ function startPractice() {
     index: 0,
     score: 0,
     answered: false,
-    selectedOption: null
+    selectedOption: null,
+    log: [],
+    streakInSession: 0,
+    lastFeedback: null,
+    questionStartAt: Date.now()
   };
 
   el.practiceArea.classList.remove('hidden');
@@ -1802,17 +2152,22 @@ function renderPracticeQuestion() {
       }).join('')}
     </div>
     ${session.answered ? `
+      ${session.lastFeedback ? `<div class="coach-feedback ${session.lastFeedback.tone}">${escapeHtml(session.lastFeedback.text)}</div>` : ''}
       <div class="answer show">
-        <strong>${session.selectedOption === current.answer ? 'Correct!' : 'Incorrect.'}</strong>
-        Correct answer: ${current.answer}. ${escapeHtml(current.options[correctIndex])}
+        <strong>Correct answer: ${current.answer}.</strong> ${escapeHtml(current.options[correctIndex])}
         ${current.explanation ? `<br><strong>Explanation:</strong> ${escapeHtml(current.explanation)}` : ''}
         ${renderImageHtml(current.explanationImage, 'Explanation image')}
         ${renderWhyWrongHtml(current)}
+        <button type="button" class="flag-report-btn" data-action="open-flag" ${hasPendingFlagForQuestion(current.id, state.activeStudentId) ? 'disabled' : ''}>
+          ${hasPendingFlagForQuestion(current.id, state.activeStudentId) ? '✓ Report submitted — pending review' : '⚑ Flag wrong answer / suggest correction'}
+        </button>
       </div>` : ''}
   `;
 
   el.nextQuestionBtn.classList.toggle('hidden', !session.answered);
   el.nextQuestionBtn.textContent = session.index === total - 1 ? 'View results' : 'Next question';
+
+  if (!session.answered) session.questionStartAt = Date.now();
 }
 
 function selectPracticeOption(optionLetter) {
@@ -1824,6 +2179,23 @@ function selectPracticeOption(optionLetter) {
   session.selectedOption = optionLetter;
   session.answered = true;
   if (isCorrect) session.score += 1;
+
+  // Capture state BEFORE recording so the coach can react to the prior history.
+  const prior = getQuestionProgress(state.activeStudentId, current.id);
+  const ms = session.questionStartAt ? Date.now() - session.questionStartAt : 0;
+  session.streakInSession = isCorrect ? (session.streakInSession || 0) + 1 : 0;
+
+  if (window.NeetCoach) {
+    session.lastFeedback = NeetCoach.getAttemptFeedback({
+      isCorrect,
+      prior,
+      section: NeetCurriculum.normalizeSection(current.subtopic),
+      streakInSession: session.streakInSession
+    });
+  }
+  if (!session.log) session.log = [];
+  session.log.push({ question: current, isCorrect, ms });
+
   recordAttempt(current, isCorrect, optionLetter);
   renderPracticeQuestion();
 }
@@ -1838,33 +2210,78 @@ function nextPracticeQuestion() {
   session.index += 1;
   session.answered = false;
   session.selectedOption = null;
+  session.lastFeedback = null;
   renderPracticeQuestion();
 }
 
 function showPracticeResults() {
   const session = state.practice;
-  const total = session.questions.length;
-  const percent = total ? Math.round((session.score / total) * 100) : 0;
+  const log = session.log && session.log.length
+    ? session.log
+    : session.questions.slice(0, session.index).map(q => ({ question: q, isCorrect: false, ms: 0 }));
+  const report = window.NeetCoach
+    ? NeetCoach.getSessionReport(log)
+    : null;
+  const total = log.length;
+  const correct = session.score;
+  const percent = total ? Math.round((correct / total) * 100) : 0;
 
   el.progressBar.style.width = '100%';
   el.practiceProgress.textContent = 'Session complete';
-  el.practiceScore.textContent = `Score: ${session.score}/${total}`;
+  el.practiceScore.textContent = `Score: ${correct}/${total}`;
   el.practiceCard.innerHTML = '';
   el.nextQuestionBtn.classList.add('hidden');
   el.finishPracticeBtn.classList.add('hidden');
 
   el.practiceResults.classList.remove('hidden');
-  el.practiceResults.innerHTML = `
-    <h3>Practice complete</h3>
-    <p class="result-score">${session.score} / ${total} correct (${percent}%)</p>
-    <div class="button-row">
-      <button type="button" class="primary-btn" id="retryPracticeBtn">Practice again</button>
-      <button type="button" class="secondary-btn" id="closePracticeBtn">Back to filters</button>
-    </div>
-  `;
 
-  document.getElementById('retryPracticeBtn').addEventListener('click', startPractice);
-  document.getElementById('closePracticeBtn').addEventListener('click', endPractice);
+  if (!report) {
+    el.practiceResults.innerHTML = `
+      <h3>Practice complete</h3>
+      <p class="result-score">${correct} / ${total} correct (${percent}%)</p>
+      <div class="button-row">
+        <button type="button" class="primary-btn" id="retryPracticeBtn">Practice again</button>
+        <button type="button" class="secondary-btn" id="closePracticeBtn">Back to filters</button>
+      </div>`;
+  } else {
+    el.practiceResults.innerHTML = `
+      <div class="report-card">
+        <div class="report-head tone-${report.grade.tone}">
+          <div class="report-grade">${report.grade.letter}</div>
+          <div>
+            <p class="eyebrow-dark">Session report card</p>
+            <h3>${escapeHtml(report.grade.word)} · ${report.correct}/${report.total} correct (${report.percent}%)</h3>
+            <p class="muted">${report.avgSec ? `~${report.avgSec}s per question` : ''}${report.bestRun >= 3 ? ` · best run ${report.bestRun} 🔥` : ''}</p>
+          </div>
+        </div>
+
+        <div class="report-note">
+          ${report.note.map(line => `<p>${escapeHtml(line).replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')}</p>`).join('')}
+        </div>
+
+        <div class="report-breakdown">
+          <h4>By topic</h4>
+          ${report.breakdown.map(row => `
+            <div class="report-topic">
+              <span class="report-topic-name">${escapeHtml(row.topic)}</span>
+              <span class="track-bar"><i class="${row.pct < 60 ? 'bar-weak' : ''}" style="width:${row.pct}%"></i></span>
+              <span class="report-topic-score ${row.pct < 60 ? 'weak' : ''}">${row.correct}/${row.total}</span>
+            </div>
+          `).join('')}
+        </div>
+
+        <div class="button-row">
+          ${report.weakTopics.length ? `<button type="button" class="primary-btn" data-action="practice-chapter" data-chapter="${escapeHtml(report.weakTopics[0])}">Drill ${escapeHtml(report.weakTopics[0])}</button>` : ''}
+          <button type="button" class="secondary-btn" id="retryPracticeBtn">Practice again</button>
+          <button type="button" class="secondary-btn" id="closePracticeBtn">Back to filters</button>
+        </div>
+      </div>`;
+  }
+
+  const retry = document.getElementById('retryPracticeBtn');
+  const close = document.getElementById('closePracticeBtn');
+  if (retry) retry.addEventListener('click', startPractice);
+  if (close) close.addEventListener('click', endPractice);
 }
 
 function refreshUI() {
@@ -2110,7 +2527,7 @@ function bindEvents() {
     el.menuToggle.addEventListener('click', () => el.sidebar.classList.toggle('open'));
   }
 
-  [el.dashboardView, el.chaptersView, el.revisionView, el.auditView].forEach(view => {
+  [el.dashboardView, el.chaptersView, el.revisionView, el.auditView, el.practiceResults].forEach(view => {
     if (view) view.addEventListener('click', handleViewAction);
   });
 
@@ -2160,10 +2577,51 @@ function bindEvents() {
   el.nextQuestionBtn.addEventListener('click', nextPracticeQuestion);
 
   el.practiceCard.addEventListener('click', event => {
+    const flagBtn = event.target.closest('[data-action="open-flag"]');
+    if (flagBtn && !flagBtn.disabled) {
+      const current = state.practice.questions[state.practice.index];
+      if (current) openFlagDialog(current);
+      return;
+    }
     const btn = event.target.closest('.option-btn');
     if (!btn || btn.disabled) return;
     selectPracticeOption(btn.dataset.option);
   });
+
+  if (el.flagForm) {
+    el.flagForm.addEventListener('submit', submitAnswerFlag);
+  }
+  if (el.flagCancelBtn) {
+    el.flagCancelBtn.addEventListener('click', () => el.flagDialog?.close());
+  }
+
+  if (el.flagsReviewList) {
+    el.flagsReviewList.addEventListener('click', event => {
+      const approveBtn = event.target.closest('.approve-flag-btn');
+      if (approveBtn) {
+        approveAnswerFlag(approveBtn.dataset.flagId);
+        return;
+      }
+      const rejectBtn = event.target.closest('.reject-flag-btn');
+      if (rejectBtn) {
+        const note = prompt('Optional note for rejection (leave blank to skip):') || '';
+        rejectAnswerFlag(rejectBtn.dataset.flagId, note);
+      }
+    });
+    el.flagsReviewList.addEventListener('submit', event => {
+      const form = event.target.closest('.flag-admin-form');
+      if (!form) return;
+      event.preventDefault();
+      saveFlagAdminEdit(form);
+    });
+  }
+
+  if (el.syncFlagsBtn) {
+    el.syncFlagsBtn.addEventListener('click', () => syncFlagsFromRemote({ silent: false }));
+  }
+  if (el.publishFlagsBtn) {
+    el.publishFlagsBtn.addEventListener('click', publishFlagsForDevices);
+  }
 
   el.mcqForm.addEventListener('submit', event => {
     event.preventDefault();
@@ -2315,6 +2773,7 @@ function bindEvents() {
 async function init() {
   state.questions = await loadQuestionsAsync();
   await loadProgressAsync();
+  await loadFlagsAsync();
 
   const config = getAppConfig();
   if (clean(config.remoteBankUrl) && config.autoSyncOnLoad) {
@@ -2325,6 +2784,10 @@ async function init() {
 
   if (clean(config.remoteProgressUrl) && config.autoSyncOnLoad) {
     await syncProgressFromRemote({ silent: true });
+  }
+
+  if (clean(config.remoteFlagsUrl) && config.autoSyncOnLoad) {
+    await syncFlagsFromRemote({ silent: true });
   }
 
   if (!state.questions.length && !clean(config.remoteBankUrl)) {
@@ -2360,6 +2823,7 @@ async function init() {
     findChapter: (tree, name) => NeetCurriculum.findChapter(tree, name),
     getQuestionStatus,
     getAuditLog: getAuditLogForStudent,
+    getCoachInsights: getCoachInsightsForStudent,
     populateStudentSelect
   });
 

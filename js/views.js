@@ -38,6 +38,103 @@
     return `<span class="learn-badge ${status}">${labels[status] || status}</span>`;
   }
 
+  /** Escape, then render lightweight **bold** spans for teacher notes. */
+  function fmtNote(text) {
+    return esc(text).replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+  }
+
+  /** Tiny inline SVG sparkline for an accuracy series (0–100 values). */
+  function sparkline(series, w = 132, h = 36) {
+    if (!series || series.length < 2) return '<span class="spark-empty muted">Not enough data yet</span>';
+    const max = 100, min = 0;
+    const step = w / (series.length - 1);
+    const pts = series.map((v, i) => {
+      const x = i * step;
+      const y = h - ((v - min) / (max - min)) * h;
+      return `${x.toFixed(1)},${y.toFixed(1)}`;
+    });
+    const area = `0,${h} ${pts.join(' ')} ${w},${h}`;
+    return `
+      <svg class="sparkline" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" preserveAspectRatio="none" aria-hidden="true">
+        <polygon class="spark-area" points="${area}"></polygon>
+        <polyline class="spark-line" points="${pts.join(' ')}"></polyline>
+      </svg>`;
+  }
+
+  /** The coach (teacher) card — verdict, note, readiness meter, streak, trend. */
+  function coachCardHtml(insights) {
+    if (!insights || !global.NeetCoach) return '';
+    const note = global.NeetCoach.getTeacherNote(insights);
+    const r = insights.readiness;
+    const streak = insights.streak;
+    const trend = insights.trend;
+    const deltaClass = trend.delta > 0 ? 'up' : trend.delta < 0 ? 'down' : 'flat';
+    const deltaSign = trend.delta > 0 ? '+' : '';
+
+    return `
+      <section class="coach-card tone-${note.tone}">
+        <div class="coach-main">
+          <div class="coach-head">
+            <span class="coach-avatar">🧑‍🏫</span>
+            <div>
+              <p class="eyebrow-dark">Your study coach</p>
+              <h3>${esc(note.greeting)}</h3>
+            </div>
+          </div>
+          <div class="coach-note">
+            ${note.lines.map(line => `<p>${fmtNote(line)}</p>`).join('')}
+          </div>
+        </div>
+        <aside class="coach-side">
+          <div class="readiness-meter band-${r.band}">
+            ${ring(r.score, 96)}
+            <strong>${esc(r.label)}</strong>
+            <span class="muted">Exam readiness</span>
+          </div>
+          <div class="coach-stats">
+            <div class="coach-stat">
+              <span class="coach-stat-icon">🔥</span>
+              <div><strong>${streak.current}<small> day${streak.current === 1 ? '' : 's'}</small></strong><span class="muted">Streak${streak.best > streak.current ? ` · best ${streak.best}` : ''}</span></div>
+            </div>
+            <div class="coach-stat">
+              <span class="coach-stat-icon">🎯</span>
+              <div>
+                <strong>${trend.recent}%</strong>
+                <span class="muted">Recent ${trend.delta ? `<em class="trend-${deltaClass}">${deltaSign}${trend.delta}%</em>` : 'accuracy'}</span>
+              </div>
+            </div>
+            <div class="coach-spark">${sparkline(trend.series)}<span class="muted">Accuracy trend</span></div>
+          </div>
+        </aside>
+      </section>`;
+  }
+
+  /** Actionable suggestion chips that map to existing data-action handlers. */
+  function suggestionsHtml(insights) {
+    if (!insights || !global.NeetCoach) return '';
+    const items = global.NeetCoach.getSuggestions(insights);
+    if (!items.length) return '';
+    return `
+      <section class="panel-card suggestions-panel">
+        <div class="panel-head"><h3>What to do next</h3><span class="muted">Picked for you</span></div>
+        <div class="suggestion-grid">
+          ${items.map(s => `
+            <article class="suggestion-card tone-${s.tone}">
+              <span class="suggestion-icon">${s.icon}</span>
+              <div class="suggestion-body">
+                <h4>${esc(s.title)}</h4>
+                <p>${esc(s.detail)}</p>
+              </div>
+              <button type="button" class="primary-btn small"
+                data-action="${s.action}"${s.data?.chapter ? ` data-chapter="${esc(s.data.chapter)}"` : ''}>
+                ${esc(s.actionLabel)}
+              </button>
+            </article>
+          `).join('')}
+        </div>
+      </section>`;
+  }
+
   function renderDashboard() {
     const el = deps.el;
     if (!el.dashboardView) return;
@@ -53,21 +150,10 @@
     const tree = deps.buildCurriculumTree(studentId);
     const student = deps.state.progress.students[studentId];
     const recent = deps.getAuditLog(student, 5);
-
-    const continueChapter = plan.weakChapters[0] || null;
+    const insights = deps.getCoachInsights ? deps.getCoachInsights(studentId) : null;
 
     el.dashboardView.innerHTML = `
-      <div class="view-hero">
-        <div>
-          <p class="eyebrow-dark">NEET Biology · ${esc(student?.name || studentId)}</p>
-          <h2>Your learning command centre</h2>
-          <p class="lead">Track every chapter, section, and attempt. Revision is ordered by weakness — mistakes first, then PYQs, then new content.</p>
-        </div>
-        <div class="hero-actions">
-          <button type="button" class="primary-btn" data-action="start-revision">Start today's revision</button>
-          <button type="button" class="secondary-btn" data-action="goto-chapters">Browse syllabus</button>
-        </div>
-      </div>
+      ${coachCardHtml(insights)}
 
       <div class="stat-grid">
         <article class="stat-card accent">
@@ -95,16 +181,7 @@
         </article>
       </div>
 
-      ${continueChapter ? `
-        <article class="continue-card">
-          <div>
-            <p class="eyebrow-dark">Recommended focus</p>
-            <h3>${esc(continueChapter.chapter)}</h3>
-            <p>${continueChapter.unsolved} unsolved · ${continueChapter.wrong} weak</p>
-          </div>
-          <button type="button" class="primary-btn" data-action="practice-chapter" data-chapter="${esc(continueChapter.chapter)}">Practice chapter</button>
-        </article>
-      ` : ''}
+      ${suggestionsHtml(insights)}
 
       <div class="split-panels">
         <section class="panel-card">
@@ -272,6 +349,7 @@
     }
 
     const plan = deps.getRevisionPlan(studentId);
+    const insights = deps.getCoachInsights ? deps.getCoachInsights(studentId) : null;
 
     el.revisionView.innerHTML = `
       <div class="view-hero compact">
@@ -282,6 +360,8 @@
         </div>
         <button type="button" class="primary-btn" data-action="start-revision">Practice queue (${plan.dailyQueue.length})</button>
       </div>
+
+      ${suggestionsHtml(insights)}
 
       <div class="strategy-list">
         ${plan.strategy.map(item => `

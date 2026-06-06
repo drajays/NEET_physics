@@ -43,6 +43,9 @@
         <button class="nav-item admin-only" data-tab="add" type="button" hidden>
           <span class="nav-icon">+</span> Add MCQ
         </button>
+        <button class="nav-item admin-only" data-tab="flags" type="button" hidden>
+          <span class="nav-icon">⚑</span> Answer Review <span id="flagPendingBadge" class="nav-badge" hidden>0</span>
+        </button>
         <button class="nav-item admin-only" data-tab="import" type="button" hidden>
           <span class="nav-icon">⇅</span> Import / Export
         </button>
@@ -149,6 +152,23 @@
         <!-- Audit -->
         <section id="tab-audit" class="view-panel" hidden>
           <div id="auditView"></div>
+        </section>
+
+        <!-- Answer flags (admin) -->
+        <section id="tab-flags" class="view-panel admin-only" hidden>
+          <div class="view-hero compact">
+            <div>
+              <p class="eyebrow-dark">Student reports</p>
+              <h2>Answer review queue</h2>
+              <p class="lead">Students can flag wrong answer keys during practice. Approve, edit fully, or reject each report.</p>
+            </div>
+            <div class="button-row">
+              <button id="syncFlagsBtn" class="secondary-btn" type="button">Sync flags</button>
+              <button id="publishFlagsBtn" class="secondary-btn" type="button">Download flags.json</button>
+            </div>
+          </div>
+          <p id="flagsStatus" class="muted"></p>
+          <div id="flagsReviewList" class="flags-review-list"></div>
         </section>
 
         <!-- Add MCQ -->
@@ -291,6 +311,31 @@
     </form>
   </dialog>
 
+  <dialog id="flagDialog" class="modal">
+    <form id="flagForm" class="modal-body">
+      <h2>Report wrong answer</h2>
+      <p class="muted">Tell admin what the correct answer should be. This is saved for review.</p>
+      <label>Correct answer should be
+        <select id="flagSuggestedAnswer" required>
+          <option value="">Select</option>
+          <option value="A">A</option>
+          <option value="B">B</option>
+          <option value="C">C</option>
+          <option value="D">D</option>
+        </select>
+      </label>
+      <label class="full-width">Your comment
+        <textarea id="flagComment" rows="4" required placeholder="Explain why the current answer key looks wrong..."></textarea>
+      </label>
+      <p id="flagFormError" class="form-error" hidden></p>
+      <p id="flagFormSuccess" class="flag-success" hidden></p>
+      <div class="button-row">
+        <button id="flagSubmitBtn" class="primary-btn" type="submit">Submit report</button>
+        <button id="flagCancelBtn" class="secondary-btn" type="button">Cancel</button>
+      </div>
+    </form>
+  </dialog>
+
   <dialog id="adminDialog" class="modal">
     <form id="adminForm" class="modal-body" autocomplete="off">
       <h2>Admin</h2>
@@ -311,7 +356,9 @@
   <script src="vendor/xlsx.full.min.js"></script>
   <script src="js/curriculum.js"></script>
   <script src="js/analytics.js"></script>
+  <script src="js/coach.js"></script>
   <script src="js/views.js"></script>
+  <script src="js/flags.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
