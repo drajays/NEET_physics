@@ -501,6 +501,34 @@ textarea, input[type="text"], input[type="number"], input[type="search"], input[
 .mcq-meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
 .question { font-weight: 800; font-size: 1.05rem; line-height: 1.5; margin: 0 0 14px; }
 
+.bank-answer-section {
+  margin-top: 14px;
+  padding: 14px 16px;
+  border-radius: 12px;
+  background: #f0fdfa;
+  border: 1px solid #99f6e4;
+}
+.bank-correct-answer {
+  font-size: 0.97rem;
+  margin-bottom: 8px;
+  color: #065f46;
+}
+.bank-explanation {
+  margin: 8px 0 0;
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: var(--ink);
+}
+.bank-card-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 14px;
+  flex-wrap: wrap;
+}
+.reveal-answer-btn {
+  font-weight: 700;
+}
+
 .hidden { display: none !important; }
 .muted { color: var(--muted); }
 .mobile-only { display: none; }

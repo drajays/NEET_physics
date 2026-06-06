@@ -55,6 +55,7 @@ const state = {
     selectedOption: null
   },
   bankSearch: '',
+  bankShowAnswers: false,
   search: { query: '', results: [], total: 0, activeIndex: 0, parsed: null },
   editingId: null,
   bankUpdatedAt: null,
@@ -131,6 +132,7 @@ const el = {
   bankSearch: document.getElementById('bankSearch'),
   bankExportJsonBtn: document.getElementById('bankExportJsonBtn'),
   bankExportCsvBtn: document.getElementById('bankExportCsvBtn'),
+  bankToggleAnswersBtn: document.getElementById('bankToggleAnswersBtn'),
   bankFilterSubjects: document.getElementById('bankFilterSubjects'),
   bankFilterTopics: document.getElementById('bankFilterTopics'),
   bankFilterSubtopics: document.getElementById('bankFilterSubtopics'),
@@ -2111,6 +2113,7 @@ function renderBankCard(q) {
     `;
   }
 
+  const answersVisible = state.bankShowAnswers;
   return `
     <article class="bank-card" data-id="${q.id}">
       <div class="mcq-meta">
@@ -2124,18 +2127,22 @@ function renderBankCard(q) {
       <ol class="options compact" type="A">
         ${q.options.map((opt, i) => {
           const letter = ['A', 'B', 'C', 'D'][i];
-          const isCorrect = letter === q.answer;
-          return `<li class="${isCorrect ? 'correct-static' : ''}"><strong>${letter}.</strong> ${bankHighlight(opt)}</li>`;
+          return `<li><strong>${letter}.</strong> ${bankHighlight(opt)}</li>`;
         }).join('')}
       </ol>
-      ${q.explanation ? `<p class="bank-explanation"><strong>Explanation:</strong> ${bankHighlight(q.explanation)}</p>` : ''}
-      ${renderImageHtml(q.explanationImage, 'Explanation image')}
-      ${renderWhyWrongHtml(q)}
-      ${isAdmin() ? `
-      <div class="bank-actions">
+      <div class="bank-answer-section" ${answersVisible ? '' : 'hidden'}>
+        <div class="bank-correct-answer">
+          <strong>Answer: ${escapeHtml(q.answer)}.</strong> ${bankHighlight(q.options[['A','B','C','D'].indexOf(q.answer)] || '')}
+        </div>
+        ${q.explanation ? `<p class="bank-explanation"><strong>Explanation:</strong> ${bankHighlight(q.explanation)}</p>` : ''}
+        ${renderImageHtml(q.explanationImage, 'Explanation image')}
+        ${renderWhyWrongHtml(q)}
+      </div>
+      <div class="bank-card-actions">
+        <button type="button" class="secondary-btn small reveal-answer-btn" data-id="${q.id}">${answersVisible ? 'Hide Answer' : 'Show Answer'}</button>
         <button type="button" class="secondary-btn small edit-btn" data-id="${q.id}">Edit</button>
         <button type="button" class="danger-btn small delete-btn" data-id="${q.id}">Delete</button>
-      </div>` : ''}
+      </div>
     </article>
   `;
 }
@@ -2920,6 +2927,7 @@ function bindEvents() {
     const deleteBtn = event.target.closest('.delete-btn');
     const cancelBtn = event.target.closest('.cancel-inline-btn');
     const removeImageBtn = event.target.closest('.remove-image-btn');
+    const revealBtn = event.target.closest('.reveal-answer-btn');
 
     if (removeImageBtn) {
       handleInlineImageRemove(removeImageBtn);
@@ -2928,6 +2936,16 @@ function bindEvents() {
 
     if (filterBadge) {
       applyQuickFilter(filterBadge.dataset.group, filterBadge.dataset.value);
+      return;
+    }
+    if (revealBtn) {
+      const card = revealBtn.closest('.bank-card');
+      const section = card?.querySelector('.bank-answer-section');
+      if (section) {
+        const nowVisible = section.hidden;
+        section.hidden = !nowVisible;
+        revealBtn.textContent = nowVisible ? 'Hide Answer' : 'Show Answer';
+      }
       return;
     }
     if (editBtn) startEdit(editBtn.dataset.id);
@@ -2948,6 +2966,13 @@ function bindEvents() {
   el.exportCsvBtn.addEventListener('click', exportCsv);
   el.bankExportJsonBtn.addEventListener('click', exportJson);
   el.bankExportCsvBtn.addEventListener('click', exportCsv);
+  if (el.bankToggleAnswersBtn) {
+    el.bankToggleAnswersBtn.addEventListener('click', () => {
+      state.bankShowAnswers = !state.bankShowAnswers;
+      el.bankToggleAnswersBtn.textContent = state.bankShowAnswers ? 'Hide All Answers' : 'Show All Answers';
+      renderBank();
+    });
+  }
   el.resetAllBtn.addEventListener('click', resetAllData);
 
   if (el.syncBankBtn) {
