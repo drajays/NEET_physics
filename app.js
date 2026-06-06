@@ -153,6 +153,7 @@ const el = {
   adminForm: document.getElementById('adminForm'),
   adminPinInput: document.getElementById('adminPinInput'),
   adminDialogError: document.getElementById('adminDialogError'),
+  adminSubmitBtn: document.getElementById('adminSubmitBtn'),
   adminCancelBtn: document.getElementById('adminCancelBtn'),
   publishBankBtn: document.getElementById('publishBankBtn'),
   studentSelect: document.getElementById('studentSelect'),
