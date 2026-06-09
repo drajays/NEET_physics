@@ -3505,39 +3505,46 @@ function jrnGetBankChapters() {
 
 // ── Journey render entry point ───────────────────────────────────────────────
 
+function jrnBuildCard(name, activeId) {
+  const id = studentIdFromName(name);
+  const initials = name.split(' ').map(w => w[0]).join('').slice(0, 2).toUpperCase();
+  const prog = state.progress.students[id] || {};
+  const qs = prog.questions || {};
+  const totalDone = Object.keys(qs).length;
+  const correct = Object.values(qs).filter(q => q.correct).length;
+  const acc = totalDone ? Math.round(correct / totalDone * 100) : 0;
+  const errors = JRN.get(JRN.errors(id)).filter(e => (e.status || 'Open') !== 'Fixed');
+  const revDue = JRN.get(JRN.revision(id)).filter(r => jrnNextDue(r).due).length;
+  const mocks = JRN.get(JRN.mocks(id));
+  const lastMock = mocks.length ? mocks[0].score : '—';
+  const isActive = id === activeId;
+  return `<div class="journey-student-card ${isActive ? 'active-student' : ''}" onclick="jrnOpenStudent('${jrnEscHtml(id)}')">
+    <h3><span class="avatar">${jrnEscHtml(initials)}</span>${jrnEscHtml(name)}</h3>
+    <div class="journey-mini-stats">
+      <div class="journey-mini-stat"><span>MCQs done</span><strong>${totalDone}</strong></div>
+      <div class="journey-mini-stat"><span>Accuracy</span><strong>${acc}%</strong></div>
+      <div class="journey-mini-stat"><span>Open errors</span><strong style="${errors.length > 0 ? 'color:var(--danger)' : ''}">${errors.length}</strong></div>
+      <div class="journey-mini-stat"><span>Last mock</span><strong>${lastMock === '—' ? '—' : lastMock + '/180'}</strong></div>
+    </div>
+    ${revDue > 0 ? `<div class="journey-badge due" style="margin-bottom:6px">↻ ${revDue} revision${revDue > 1 ? 's' : ''} due</div>` : ''}
+    <button class="primary-btn small" style="width:100%;margin-top:4px" onclick="event.stopPropagation();jrnOpenStudent('${jrnEscHtml(id)}')">Open Journey</button>
+  </div>`;
+}
+
+// Refreshes only the summary cards — does NOT re-render the student detail or resources
+function jrnRefreshCards() {
+  const grid = document.querySelector('.journey-student-grid');
+  if (!grid) return;
+  const activeId = state.activeStudentId;
+  grid.innerHTML = getConfiguredStudents().map(n => jrnBuildCard(n, activeId)).join('');
+}
+
 function renderJourney() {
   const container = document.getElementById('journeyView');
   if (!container) return;
 
-  const students = getConfiguredStudents();
   const activeId = state.activeStudentId;
-
-  const studentCards = students.map(name => {
-    const id = studentIdFromName(name);
-    const initials = name.split(' ').map(w => w[0]).join('').slice(0, 2).toUpperCase();
-    const prog = state.progress.students[id] || {};
-    const qs = prog.questions || {};
-    const totalDone = Object.keys(qs).length;
-    const correct = Object.values(qs).filter(q => q.correct).length;
-    const acc = totalDone ? Math.round(correct / totalDone * 100) : 0;
-    const errors = JRN.get(JRN.errors(id)).filter(e => (e.status || 'Open') !== 'Fixed');
-    const revDue = JRN.get(JRN.revision(id)).filter(r => jrnNextDue(r).due).length;
-    const mocks = JRN.get(JRN.mocks(id));
-    const lastMock = mocks.length ? mocks[0].score : '—';
-    const isActive = id === activeId;
-
-    return `<div class="journey-student-card ${isActive ? 'active-student' : ''}" onclick="jrnOpenStudent('${jrnEscHtml(id)}')">
-      <h3><span class="avatar">${jrnEscHtml(initials)}</span>${jrnEscHtml(name)}</h3>
-      <div class="journey-mini-stats">
-        <div class="journey-mini-stat"><span>MCQs done</span><strong>${totalDone}</strong></div>
-        <div class="journey-mini-stat"><span>Accuracy</span><strong>${acc}%</strong></div>
-        <div class="journey-mini-stat"><span>Open errors</span><strong style="${errors.length > 0 ? 'color:var(--danger)' : ''}">${errors.length}</strong></div>
-        <div class="journey-mini-stat"><span>Last mock</span><strong>${lastMock === '—' ? '—' : lastMock + '/180'}</strong></div>
-      </div>
-      ${revDue > 0 ? `<div class="journey-badge due" style="margin-bottom:6px">↻ ${revDue} revision${revDue > 1 ? 's' : ''} due</div>` : ''}
-      <button class="primary-btn small" style="width:100%;margin-top:4px" onclick="event.stopPropagation();jrnOpenStudent('${jrnEscHtml(id)}')">Open Journey</button>
-    </div>`;
-  }).join('');
+  const studentCards = getConfiguredStudents().map(n => jrnBuildCard(n, activeId)).join('');
 
   container.innerHTML = `
     <div class="view-hero compact">
@@ -3550,7 +3557,6 @@ function renderJourney() {
     <div id="jrnDetail"></div>
     <div id="jrnResources" style="margin-top:32px">${jrnResourcesHtml()}</div>`;
 
-  // Auto-open active student's detail
   if (activeId) jrnRenderDetail(activeId);
   jrnInitNcertGrid();
 }
@@ -3843,24 +3849,20 @@ function jrnAddMock(id) {
   </tr>`).join('');
 
   showToast(`Mock saved (${score}/180 · ${topIssue})`, 'success');
-  renderJourney();
+  jrnRefreshCards();
 }
 
 function jrnDeleteMock(id, mockId) {
   const mocks = JRN.get(JRN.mocks(id)).filter(m => m.id !== mockId);
   JRN.set(JRN.mocks(id), mocks);
-  jrnRenderDetail(id);
-  jrnTab(document.querySelector('.journey-tab.active') || {classList:{add:()=>{},remove:()=>{}}}, 'jrn-mock');
-  // Re-activate mock tab
-  const detail = document.getElementById('jrnDetail');
-  if (detail) {
-    detail.querySelectorAll('.journey-tab').forEach(b => b.classList.remove('active'));
-    detail.querySelectorAll('.journey-tab-panel').forEach(p => p.classList.remove('active'));
-    const mockTab = [...detail.querySelectorAll('.journey-tab')].find(b => b.textContent.includes('Mock'));
-    if (mockTab) mockTab.classList.add('active');
-    const mockPanel = document.getElementById('jrn-mock');
-    if (mockPanel) mockPanel.classList.add('active');
-  }
+  // Refresh just the mock table without re-rendering the whole detail
+  const tbody = document.querySelector(`#jrnMockTable_${id} tbody`);
+  if (tbody) tbody.innerHTML = mocks.length ? mocks.map(m => `<tr>
+    <td>${jrnEscHtml(m.name)}</td><td><strong>${m.score}</strong></td>
+    <td>${jrnEscHtml(m.issue||'—')}</td><td>${jrnEscHtml(m.date?.slice(0,10)||'')}</td>
+    <td><button class="secondary-btn small" onclick="jrnDeleteMock('${jrnEscHtml(id)}','${jrnEscHtml(m.id)}')">Delete</button></td>
+  </tr>`).join('') : '<tr><td colspan="5">No mocks recorded yet.</td></tr>';
+  jrnRefreshCards();
 }
 
 function jrnClearMockInputs() {
@@ -3963,7 +3965,7 @@ function jrnAddError(id) {
   JRN.set(JRN.errors(id), errors);
   ['jrnErrRetest','jrnErrSource','jrnErrFix'].forEach(k => { const e = document.getElementById(k); if(e) e.value = ''; });
   jrnRefreshErrors(id);
-  renderJourney();
+  jrnRefreshCards();
   showToast('Error logged.', 'success');
 }
 
@@ -3973,20 +3975,20 @@ function jrnToggleError(id, errId) {
   if (err) err.status = (err.status||'Open') === 'Fixed' ? 'Open' : 'Fixed';
   JRN.set(JRN.errors(id), errors);
   jrnRefreshErrors(id);
-  renderJourney();
+  jrnRefreshCards();
 }
 
 function jrnDeleteError(id, errId) {
   JRN.set(JRN.errors(id), JRN.get(JRN.errors(id)).filter(e => e.id !== errId));
   jrnRefreshErrors(id);
-  renderJourney();
+  jrnRefreshCards();
 }
 
 function jrnClearErrors(id) {
   if (!confirm('Clear all error-log entries for this student?')) return;
   JRN.set(JRN.errors(id), []);
   jrnRefreshErrors(id);
-  renderJourney();
+  jrnRefreshCards();
 }
 
 function jrnRefreshErrors(id) {
@@ -4087,7 +4089,7 @@ function jrnAddRev(id) {
   rows.unshift({ id: crypto.randomUUID?.() || String(Date.now()), chapter, priority: document.getElementById('jrnRevPriority')?.value || 'Medium', added: jrnTodayISO(), ticks: Array(6).fill(false) });
   JRN.set(JRN.revision(id), rows);
   jrnRefreshRevision(id);
-  renderJourney();
+  jrnRefreshCards();
   showToast(`Added revision: ${chapter}`, 'success');
 }
 
@@ -4097,20 +4099,20 @@ function jrnToggleRev(id, rowId, idx) {
   if (row) { row.ticks = row.ticks || Array(6).fill(false); row.ticks[idx] = !row.ticks[idx]; }
   JRN.set(JRN.revision(id), rows);
   jrnRefreshRevision(id);
-  renderJourney();
+  jrnRefreshCards();
 }
 
 function jrnDeleteRev(id, rowId) {
   JRN.set(JRN.revision(id), JRN.get(JRN.revision(id)).filter(r => r.id !== rowId));
   jrnRefreshRevision(id);
-  renderJourney();
+  jrnRefreshCards();
 }
 
 function jrnClearRev(id) {
   if (!confirm('Clear revision tracker for this student?')) return;
   JRN.set(JRN.revision(id), []);
   jrnRefreshRevision(id);
-  renderJourney();
+  jrnRefreshCards();
 }
 
 function jrnRefreshRevision(id) {
