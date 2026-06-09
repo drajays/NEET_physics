@@ -355,6 +355,130 @@ img { display: block; max-width: 100%; }
 .snapshot-chip small { color: var(--muted); font-size: 0.78rem; }
 .snapshot-chip .mini-bar { margin-top: 8px; }
 
+/* ── Chapters two-panel layout ───────────────────────────────────────── */
+.chaps-layout {
+  display: grid;
+  grid-template-columns: 290px 1fr;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: var(--surface);
+  box-shadow: var(--shadow-xs);
+  min-height: calc(100dvh - 140px);
+}
+
+.chaps-list {
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  border-right: 1px solid var(--border);
+  background: var(--surface);
+}
+
+.chaps-detail {
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 24px 26px;
+  background: var(--surface);
+}
+
+/* ── Chapter list rows ──────────────────────────────────────────────── */
+.chap-year-sep {
+  padding: 11px 14px 8px;
+  position: sticky; top: 0; z-index: 3;
+  background: var(--sidebar);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+.chap-year-sep strong {
+  display: block; font-size: 0.8rem; font-weight: 800;
+  color: rgba(255,255,255,0.9); letter-spacing: -0.01em;
+}
+.chap-year-sep span { font-size: 0.72rem; color: rgba(255,255,255,0.4); }
+
+.chap-unit-sep {
+  padding: 7px 14px 5px;
+  font-size: 0.7rem; font-weight: 800;
+  text-transform: uppercase; letter-spacing: 0.07em;
+  color: var(--primary); background: var(--surface-2);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  position: sticky; top: 44px; z-index: 2;
+  line-height: 1.35;
+}
+
+.chap-row {
+  display: grid;
+  grid-template-columns: 4px 1fr auto;
+  align-items: center; gap: 0;
+  width: 100%; text-align: left;
+  border: 0; background: transparent; cursor: pointer;
+  border-bottom: 1px solid var(--border);
+  transition: background var(--t-fast);
+  min-height: 50px;
+  padding: 0;
+}
+.chap-row:hover  { background: var(--surface-2); }
+.chap-row.chap-row--active { background: var(--primary-glow); }
+.chap-row--disabled { opacity: 0.4; cursor: default; pointer-events: none; }
+
+.chap-indicator {
+  align-self: stretch; width: 4px; flex-shrink: 0; border-radius: 0;
+}
+.chap-ind-new    { background: var(--border-2); }
+.chap-ind-tried  { background: var(--warning); }
+.chap-ind-weak   { background: var(--danger); }
+.chap-ind-strong { background: var(--success); }
+
+.chap-name {
+  padding: 10px 8px 10px 12px;
+  font-size: 0.87rem; line-height: 1.3;
+  color: var(--ink); font-weight: 500;
+}
+.chap-row.chap-row--active .chap-name { color: var(--primary-dark); font-weight: 700; }
+[data-theme="dark"] .chap-row.chap-row--active .chap-name { color: var(--accent); }
+
+.chap-count {
+  padding: 10px 12px 10px 0;
+  font-size: 0.78rem; font-weight: 700; color: var(--muted);
+  white-space: nowrap; text-align: right; line-height: 1.3;
+}
+.chap-count em {
+  display: block; font-style: normal; font-size: 0.7rem;
+  color: var(--primary); font-weight: 800;
+}
+
+/* ── Chapter detail (inline panel) ──────────────────────────────────── */
+.chaps-detail-empty {
+  display: flex; flex-direction: column; align-items: center;
+  justify-content: center; min-height: 300px; gap: 10px;
+  color: var(--muted); text-align: center;
+}
+.chaps-detail-empty .hint-icon { font-size: 2.8rem; opacity: 0.35; display: block; }
+.chaps-detail-empty p  { margin: 0; font-size: 0.95rem; font-weight: 700; }
+.chaps-detail-empty small { font-size: 0.82rem; max-width: 220px; line-height: 1.5; display: block; }
+
+/* Back button shows only on mobile */
+.chap-back-btn {
+  display: none; align-items: center; gap: 6px;
+  margin-bottom: 16px; padding: 8px 0;
+  border: 0; background: none; cursor: pointer;
+  font-size: 0.88rem; font-weight: 700; color: var(--primary);
+}
+.chap-back-btn:hover { text-decoration: underline; }
+
+/* ── Mobile: stack panels ────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .chaps-layout {
+    grid-template-columns: 1fr; border: none;
+    border-radius: 0; box-shadow: none; min-height: 0;
+  }
+  .chaps-list { border-right: none; max-height: none; }
+  .chaps-detail { padding: 16px 0 24px; display: none; }
+  .chaps-layout.detail-open .chaps-list  { display: none; }
+  .chaps-layout.detail-open .chaps-detail { display: block; }
+  .chap-back-btn { display: flex; }
+  .chap-unit-sep { top: 38px; }
+}
+
 /* ── Queue & audit ───────────────────────────────────────────────────── */
 .queue-list, .audit-log, .audit-mini, .coverage-table { display: grid; gap: 8px; }
 .queue-item, .audit-row, .audit-entry, .coverage-row {

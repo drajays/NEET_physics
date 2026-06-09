@@ -237,62 +237,46 @@
 
     const studentId = deps.state.activeStudentId || deps.state.progressViewStudentId;
     if (!studentId) {
-      el.chaptersView.innerHTML = '<div class="empty-card"><h3>Select a student</h3></div>';
+      el.chaptersView.innerHTML = '<div style="padding:24px"><div class="empty-card"><h3>Select a student to view chapters</h3></div></div>';
       return;
     }
 
     const tree = deps.buildCurriculumTree(studentId);
     const selected = deps.state.selectedChapter || '';
 
-    el.chaptersView.innerHTML = `
-      <div class="view-hero compact">
-        <div>
-          <p class="eyebrow-dark">Syllabus architecture</p>
-          <h2>Class XI & XII · NEET Physics</h2>
-          <p class="lead">Chapters → sections (PYQ, Practice, NCERT). Green = strong, amber = tried, red = weak, grey = new.</p>
-        </div>
+    function indClass(ch) {
+      if (ch.coverage >= 70) return 'chap-ind-strong';
+      if (ch.coverage >= 30) return 'chap-ind-tried';
+      if (ch.attempted > 0)  return 'chap-ind-weak';
+      return 'chap-ind-new';
+    }
+
+    el.chaptersView.innerHTML = tree.map(year => `
+      <div class="chap-year-sep">
+        <strong>${esc(year.label)}</strong>
+        <span>${esc(year.subtitle)}</span>
       </div>
-      <div class="curriculum-tree">
-        ${tree.map(year => `
-          <section class="year-block">
-            <header class="year-head">
-              <h3>${esc(year.label)}</h3>
-              <p>${esc(year.subtitle)}</p>
-            </header>
-            ${year.units.map(unit => `
-              <div class="unit-block">
-                <h4>${esc(unit.label)}</h4>
-                <div class="chapter-grid">
-                  ${unit.chapters.map(ch => {
-                    if (!ch.inBank) {
-                      return `<article class="chapter-card disabled"><h5>${esc(ch.name)}</h5><p class="muted">No MCQs in bank yet</p></article>`;
-                    }
-                    const active = selected === ch.name ? ' active' : '';
-                    return `
-                      <article class="chapter-card${active}" data-chapter="${esc(ch.name)}">
-                        <div class="chapter-card-top">
-                          <h5>${esc(ch.name)}</h5>
-                          ${ring(ch.coverage, 48)}
-                        </div>
-                        <div class="chapter-metrics">
-                          <span class="learn-badge mastered">${ch.mastered} strong</span>
-                          <span class="learn-badge wrong">${ch.wrong} weak</span>
-                          <span class="learn-badge unsolved">${ch.unsolved} new</span>
-                        </div>
-                        <div class="track-bar"><i style="width:${ch.progress}%"></i></div>
-                        <div class="section-pills">
-                          ${ch.sections.map(s => `<span title="${esc(s.label)}">${s.icon} ${s.count}</span>`).join('')}
-                        </div>
-                      </article>
-                    `;
-                  }).join('')}
-                </div>
-              </div>
-            `).join('')}
-          </section>
-        `).join('')}
-      </div>
-    `;
+      ${year.units.map(unit => `
+        <div class="chap-unit-sep">${esc(unit.label)}</div>
+        ${unit.chapters.map(ch => {
+          if (!ch.inBank) {
+            return `<div class="chap-row chap-row--disabled">
+              <span class="chap-indicator chap-ind-new"></span>
+              <span class="chap-name">${esc(ch.name)}</span>
+              <span class="chap-count muted">—</span>
+            </div>`;
+          }
+          const active = selected === ch.name ? ' chap-row--active' : '';
+          const newBadge = ch.unsolved > 0 ? `<em>${ch.unsolved} new</em>` : '';
+          return `
+            <button class="chap-row${active}" data-chapter="${esc(ch.name)}" type="button">
+              <span class="chap-indicator ${indClass(ch)}"></span>
+              <span class="chap-name">${esc(ch.name)}</span>
+              <span class="chap-count">${ch.total}${newBadge}</span>
+            </button>`;
+        }).join('')}
+      `).join('')}
+    `).join('');
 
     if (selected) renderChapterDetail(selected);
   }
@@ -305,36 +289,48 @@
     const tree = deps.buildCurriculumTree(studentId);
     const found = deps.findChapter(tree, chapterName);
     if (!found) {
-      el.classList.remove('open');
-      el.innerHTML = '';
+      el.innerHTML = `<div class="chaps-detail-empty">
+        <span class="hint-icon">📖</span>
+        <p>Select a chapter</p>
+        <small>Tap any chapter to see its questions and practice options</small>
+      </div>`;
       return;
     }
 
     const ch = found.chapter;
-    el.classList.add('open');
+    const mastPct = ch.coverage;
+    const barColor = mastPct >= 70 ? 'var(--success)' : mastPct >= 30 ? 'var(--warning)' : mastPct > 0 ? 'var(--danger)' : 'var(--border-2)';
+
     el.innerHTML = `
-      <button type="button" class="icon-btn close-detail" data-action="close-chapter">✕</button>
-      <p class="eyebrow-dark">${esc(found.unit.label)}</p>
-      <h3>${esc(ch.name)}</h3>
-      <p class="muted">${ch.total} MCQs · ${ch.coverage}% mastered · ${ch.unsolved} new</p>
+      <button type="button" class="chap-back-btn" data-action="close-chapter">← Chapters</button>
+      <p class="eyebrow-dark" style="margin-bottom:4px">${esc(found.unit.label)}</p>
+      <h3 style="margin:0 0 6px;font-size:1.25rem;font-weight:800;line-height:1.2">${esc(ch.name)}</h3>
+      <p class="muted" style="margin-bottom:16px;font-size:0.88rem">
+        ${ch.total} MCQs &nbsp;·&nbsp; ${ch.mastered} mastered &nbsp;·&nbsp; ${ch.wrong} wrong &nbsp;·&nbsp; ${ch.unsolved} new
+      </p>
+      <div style="height:8px;border-radius:99px;background:var(--surface-3);overflow:hidden;margin-bottom:20px">
+        <div style="height:100%;width:${mastPct}%;background:${barColor};border-radius:99px;transition:width .4s ease"></div>
+      </div>
+      <div class="chap-detail-actions" style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px">
+        <button type="button" class="primary-btn" data-action="practice-chapter" data-chapter="${esc(ch.name)}">Practice all ${ch.total}</button>
+        ${ch.unsolved > 0 ? `<button type="button" class="secondary-btn" data-action="practice-chapter" data-chapter="${esc(ch.name)}" data-only-new="1">New only (${ch.unsolved})</button>` : ''}
+      </div>
       <div class="detail-sections">
         ${ch.sections.map(section => {
-          const items = section.questions.slice(0, 12).map(q => {
+          const items = section.questions.slice(0, 10).map(q => {
             const status = deps.getQuestionStatus(studentId, q.id);
-            return `<li class="${status}">${statusBadge(status)} <span>${esc(q.question.slice(0, 100))}${q.question.length > 100 ? '…' : ''}</span></li>`;
+            return `<li class="${status}">${statusBadge(status)} <span>${esc(q.question.slice(0, 90))}${q.question.length > 90 ? '…' : ''}</span></li>`;
           }).join('');
           return `
             <details class="section-block" open>
               <summary>${section.icon} ${esc(section.label)} <em>${section.count}</em></summary>
               <ul class="question-audit-list">${items || '<li class="muted">No questions</li>'}</ul>
-              ${section.count > 12 ? `<p class="muted">+ ${section.count - 12} more</p>` : ''}
+              ${section.count > 10 ? `<p class="muted" style="margin:6px 0 8px;font-size:0.8rem">+${section.count - 10} more</p>` : ''}
               <button type="button" class="secondary-btn small" data-action="practice-section"
                 data-chapter="${esc(ch.name)}" data-section="${section.key}">Practice ${esc(section.label)}</button>
-            </details>
-          `;
+            </details>`;
         }).join('')}
       </div>
-      <button type="button" class="primary-btn" data-action="practice-chapter" data-chapter="${esc(ch.name)}">Practice full chapter</button>
     `;
   }
 

@@ -932,9 +932,14 @@ function handleViewAction(event) {
   }
   else if (action === 'close-chapter') {
     state.selectedChapter = '';
+    const chapsLayout = document.getElementById('chapsLayout');
+    if (chapsLayout) chapsLayout.classList.remove('detail-open');
     if (el.chapterDetail) {
-      el.chapterDetail.classList.remove('open');
-      el.chapterDetail.innerHTML = '';
+      el.chapterDetail.innerHTML = `<div class="chaps-detail-empty">
+        <span class="hint-icon">📖</span>
+        <p>Select a chapter</p>
+        <small>Tap any chapter to see its questions and practice options</small>
+      </div>`;
     }
     renderChaptersOnly();
   }
@@ -3086,9 +3091,11 @@ function bindEvents() {
 
   if (el.chaptersView) {
     el.chaptersView.addEventListener('click', event => {
-      const card = event.target.closest('.chapter-card[data-chapter]');
-      if (!card || card.classList.contains('disabled')) return;
+      const card = event.target.closest('[data-chapter]');
+      if (!card || card.classList.contains('chap-row--disabled')) return;
       state.selectedChapter = card.dataset.chapter || '';
+      const chapsLayout = document.getElementById('chapsLayout');
+      if (chapsLayout) chapsLayout.classList.toggle('detail-open', !!state.selectedChapter);
       renderChaptersOnly();
       if (state.selectedChapter) NeetViews.renderChapterDetail(state.selectedChapter);
     });

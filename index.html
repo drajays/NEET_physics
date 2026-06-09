@@ -96,7 +96,16 @@
 
         <!-- Chapters -->
         <section id="tab-chapters" class="view-panel" hidden>
-          <div id="chaptersView" class="chapters-layout"></div>
+          <div class="chaps-layout" id="chapsLayout">
+            <div id="chaptersView" class="chaps-list"></div>
+            <div id="chapterDetail" class="chaps-detail">
+              <div class="chaps-detail-empty">
+                <span class="hint-icon">📖</span>
+                <p>Select a chapter</p>
+                <small>Tap any chapter to see its questions and practice options</small>
+              </div>
+            </div>
+          </div>
         </section>
 
         <!-- Practice -->
@@ -384,7 +393,7 @@
     </form>
   </dialog>
 
-  <div id="chapterDetail" class="chapter-detail-drawer"></div>
+  <!-- chapterDetail now lives inside #tab-chapters (see above) -->
 
   <dialog id="searchDialog" class="search-modal" aria-label="Search questions">
     <div class="search-modal-body">
