@@ -29965,6 +29965,690 @@
         "Objective II",
         "Chapter 38"
       ]
+    },
+    {
+      "id": "02fcf4d1-a8f2-4307-83e8-3bdd3641513f",
+      "question": "The rms value of an alternating current $i = i_0\\sin\\omega t$ is",
+      "optionA": "$i_0$",
+      "optionB": "$i_0/\\sqrt{2}$",
+      "optionC": "$i_0/2$",
+      "optionD": "$i_0\\sqrt{2}$",
+      "answer": "B",
+      "explanation": "RMS (root mean square) current:\n$$i_{\\rm rms} = \\sqrt{\\langle i^2 \\rangle} = \\sqrt{\\frac{1}{T}\\int_0^T i_0^2\\sin^2\\omega t\\,dt} = i_0\\sqrt{\\frac{1}{2}} = \\frac{i_0}{\\sqrt{2}}$$\nSimilarly $V_{\\rm rms} = V_0/\\sqrt{2}$. The RMS value is what produces the same heating effect as an equivalent DC current. Answer: (B).",
+      "topic": "Chapter 39: Alternating Current",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 39"
+      ]
+    },
+    {
+      "id": "e1e8487f-6f4a-4e9c-93a1-d0ba6ee981e5",
+      "question": "The power dissipated in an AC circuit with resistance $R$, reactance $X$, and impedance $Z$ at voltage $V_{\\rm rms}$ and current $I_{\\rm rms}$ is",
+      "optionA": "$P = V_{\\rm rms} I_{\\rm rms}$",
+      "optionB": "$P = V_{\\rm rms} I_{\\rm rms} \\cos\\phi$",
+      "optionC": "$P = I_{\\rm rms}^2 Z$",
+      "optionD": "$P = V_{\\rm rms}^2/Z$",
+      "answer": "B",
+      "explanation": "In an AC circuit, instantaneous power $= vi$. The average power dissipated (only in resistors) is:\n$$P = V_{\\rm rms} I_{\\rm rms} \\cos\\phi$$\nwhere $\\phi$ is the phase angle between $V$ and $I$, and $\\cos\\phi = R/Z$ is the **power factor**. A pure inductor or capacitor has $\\phi = 90°$, so $\\cos\\phi = 0$ and $P = 0$ — no average power is dissipated. Answer: (B).",
+      "topic": "Chapter 39: Alternating Current",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 39"
+      ]
+    },
+    {
+      "id": "d798d964-cafa-4203-ba4a-75fb7a62a5ab",
+      "question": "At resonance in a series LCR circuit, the impedance is",
+      "optionA": "$\\sqrt{R^2 + (X_L - X_C)^2}$ (maximum)",
+      "optionB": "$R$ (minimum, equal to the resistance)",
+      "optionC": "zero",
+      "optionD": "$X_L + X_C$",
+      "answer": "B",
+      "explanation": "Resonance occurs when $X_L = X_C$ (i.e., $\\omega L = 1/\\omega C$), so the net reactance is zero. The impedance:\n$$Z = \\sqrt{R^2 + (X_L - X_C)^2} = \\sqrt{R^2 + 0} = R$$\nAt resonance, $Z = R$ (minimum), current is maximum ($I = V/R$), and the circuit is purely resistive. The resonant frequency: $\\omega_0 = 1/\\sqrt{LC}$. Answer: (B).",
+      "topic": "Chapter 39: Alternating Current",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 39"
+      ]
+    },
+    {
+      "id": "aabbff75-36b3-45a0-9da3-76f1927cdefc",
+      "question": "The inductive reactance $X_L$ of a coil of inductance $L$ at frequency $f$ is",
+      "optionA": "$X_L = L/f$",
+      "optionB": "$X_L = 2\\pi fL$",
+      "optionC": "$X_L = 1/(2\\pi fL)$",
+      "optionD": "$X_L = L/(2\\pi f)$",
+      "answer": "B",
+      "explanation": "$X_L = \\omega L = 2\\pi f L$. The inductive reactance increases with frequency — at high frequency an inductor effectively blocks the current. At DC ($f = 0$), $X_L = 0$ (inductor acts as a short circuit). Answer: (B).",
+      "topic": "Chapter 39: Alternating Current",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 39"
+      ]
+    },
+    {
+      "id": "190cd681-7870-4b03-8805-21b25f1f4713",
+      "question": "The capacitive reactance $X_C$ of a capacitor $C$ at frequency $f$ is",
+      "optionA": "$X_C = 2\\pi fC$",
+      "optionB": "$X_C = 1/(2\\pi fC)$",
+      "optionC": "$X_C = C/(2\\pi f)$",
+      "optionD": "$X_C = 2\\pi f/C$",
+      "answer": "B",
+      "explanation": "$X_C = 1/(\\omega C) = 1/(2\\pi fC)$. Capacitive reactance **decreases** with frequency — at high frequency a capacitor passes current easily (low impedance). At DC ($f = 0$), $X_C \\to \\infty$ (capacitor blocks DC). Answer: (B).",
+      "topic": "Chapter 39: Alternating Current",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 39"
+      ]
+    },
+    {
+      "id": "0ab94c39-09a7-4951-a02f-b16950ded82c",
+      "question": "A transformer steps up voltage by a factor of 10. If the input current is 5 A, the output current is approximately",
+      "optionA": "50 A",
+      "optionB": "0.5 A",
+      "optionC": "5 A",
+      "optionD": "500 A",
+      "answer": "B",
+      "explanation": "An ideal transformer conserves power: $V_1 I_1 = V_2 I_2$.\n$$\\frac{I_2}{I_1} = \\frac{V_1}{V_2} = \\frac{1}{10} \\implies I_2 = \\frac{5}{10} = 0.5\\,\\rm A$$\nStep-up in voltage → step-down in current (by the same factor). Answer: (B).",
+      "topic": "Chapter 39: Alternating Current",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 39"
+      ]
+    },
+    {
+      "id": "2f7a3486-c809-4358-bba2-668b21b951bb",
+      "question": "In a purely inductive AC circuit, the current",
+      "optionA": "leads the voltage by 90°",
+      "optionB": "lags the voltage by 90°",
+      "optionC": "is in phase with the voltage",
+      "optionD": "leads the voltage by 45°.",
+      "answer": "B",
+      "explanation": "For a pure inductor: $v = L\\,di/dt$. If $v = V_0\\sin\\omega t$, then $i = -(V_0/\\omega L)\\cos\\omega t = (V_0/\\omega L)\\sin(\\omega t - 90°)$.\n\nCurrent **lags** voltage by 90°. Mnemonic: **ELI** — in an inductor (L), E leads I. Answer: (B).",
+      "topic": "Chapter 39: Alternating Current",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 39"
+      ]
+    },
+    {
+      "id": "453f9798-186b-464c-9dc6-2f56c42df4d9",
+      "question": "Which of the following are true about AC circuits?",
+      "optionA": "An ideal inductor dissipates no average power.",
+      "optionB": "An ideal capacitor dissipates no average power.",
+      "optionC": "A pure resistor has a power factor of 1.",
+      "optionD": "At resonance in a series LCR circuit, the power factor is 1.",
+      "answer": "A,B,C,D",
+      "explanation": "- **A** ✓: Inductor: $\\phi = 90°$, $\\cos\\phi = 0$, $P = 0$.\n- **B** ✓: Capacitor: $\\phi = -90°$, $\\cos\\phi = 0$, $P = 0$.\n- **C** ✓: Pure resistor: $\\phi = 0°$, $\\cos\\phi = 1$, $P = I_{\\rm rms}^2 R$.\n- **D** ✓: At resonance, $Z = R$, $\\phi = 0°$, $\\cos\\phi = 1$, so the circuit behaves purely resistively.\n\nAnswer: (A), (B), (C), (D).",
+      "topic": "Chapter 39: Alternating Current",
+      "subtopic": "Objective II",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective II",
+        "Chapter 39"
+      ]
+    },
+    {
+      "id": "6da78052-9792-4646-8596-67b622847b19",
+      "question": "Which of the following increase at resonance in a series LCR circuit?",
+      "optionA": "Current amplitude",
+      "optionB": "Power dissipated in R",
+      "optionC": "Voltage across L (can exceed supply voltage)",
+      "optionD": "Impedance of the circuit",
+      "answer": "A,B,C",
+      "explanation": "At resonance ($\\omega = \\omega_0$, $X_L = X_C$):\n\n- **A** ✓: $I_{\\rm max} = V_0/R$ (maximum since $Z = R$ is minimum).\n- **B** ✓: $P = I_{\\rm rms}^2 R$ — maximum current → maximum power in $R$.\n- **C** ✓: Voltage across $L$: $V_L = I\\cdot X_L = (V_0/R)\\cdot\\omega_0 L$. For high $Q = \\omega_0 L/R$, $V_L = QV_0 \\gg V_0$. Similarly $V_C = QV_0$. These can greatly exceed the supply voltage (but $V_L$ and $V_C$ cancel each other). ✓\n- **D** ✗: Impedance **decreases** to its minimum value $R$ at resonance.\n\nAnswer: (A), (B), (C).",
+      "topic": "Chapter 39: Alternating Current",
+      "subtopic": "Objective II",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective II",
+        "Chapter 39"
+      ]
+    },
+    {
+      "id": "207351aa-3a49-43b3-9328-28dd6c1467bc",
+      "question": "Electromagnetic waves are produced by",
+      "optionA": "stationary charges",
+      "optionB": "charges moving with constant velocity",
+      "optionC": "accelerating charges",
+      "optionD": "a steady magnetic field.",
+      "answer": "C",
+      "explanation": "An **accelerating charge** produces a changing electric field, which in turn produces a changing magnetic field, which produces a changing electric field — and so on, propagating as an electromagnetic wave. A stationary or uniformly moving charge produces only static or steady fields with no radiation. Answer: (C).",
+      "topic": "Chapter 40: Electromagnetic Waves",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 40"
+      ]
+    },
+    {
+      "id": "db5be771-4c22-411a-85b5-650e62844c29",
+      "question": "The speed of electromagnetic waves in vacuum is",
+      "optionA": "$\\dfrac{1}{\\sqrt{\\mu_0 \\varepsilon_0}}$",
+      "optionB": "$\\sqrt{\\mu_0 \\varepsilon_0}$",
+      "optionC": "$\\mu_0 \\varepsilon_0$",
+      "optionD": "$\\sqrt{\\varepsilon_0/\\mu_0}$",
+      "answer": "A",
+      "explanation": "From Maxwell's equations, the speed of EM waves in vacuum:\n$$c = \\frac{1}{\\sqrt{\\mu_0\\varepsilon_0}} \\approx 3\\times10^8\\,\\rm m/s$$\nMaxwell showed that this equals the measured speed of light, establishing that light is an electromagnetic wave. Answer: (A).",
+      "topic": "Chapter 40: Electromagnetic Waves",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 40"
+      ]
+    },
+    {
+      "id": "afe87f86-a8fb-4923-815c-a5ec565f569a",
+      "question": "In an electromagnetic wave, the electric field $\\vec{E}$ and magnetic field $\\vec{B}$ are",
+      "optionA": "parallel to each other and to the direction of propagation",
+      "optionB": "perpendicular to each other and to the direction of propagation",
+      "optionC": "parallel to each other but perpendicular to the direction of propagation",
+      "optionD": "both along the direction of propagation.",
+      "answer": "B",
+      "explanation": "Electromagnetic waves are **transverse waves**: $\\vec{E}$ and $\\vec{B}$ are both perpendicular to the direction of propagation $\\hat{k}$, and they are mutually perpendicular to each other:\n$$\\vec{E}\\perp\\vec{B}\\perp\\hat{k}, \\quad \\vec{E}\\times\\vec{B} \\parallel \\hat{k}$$\nThe energy flux (Poynting vector) $\\vec{S} = \\frac{1}{\\mu_0}\\vec{E}\\times\\vec{B}$ is in the direction of propagation. Answer: (B).",
+      "topic": "Chapter 40: Electromagnetic Waves",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 40"
+      ]
+    },
+    {
+      "id": "748c8e73-6b2a-4e14-bf95-4dfcf2999449",
+      "question": "Which of the following are NOT electromagnetic waves?",
+      "optionA": "Radio waves",
+      "optionB": "Sound waves",
+      "optionC": "X-rays",
+      "optionD": "Gamma rays",
+      "answer": "B",
+      "explanation": "**Sound waves** are mechanical waves — they are longitudinal pressure waves requiring a material medium. They are not electromagnetic waves.\n\nAll others — radio waves, X-rays, and gamma rays — are electromagnetic waves; they differ only in frequency/wavelength and are all part of the EM spectrum. Answer: (B).",
+      "topic": "Chapter 40: Electromagnetic Waves",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 40"
+      ]
+    },
+    {
+      "id": "db0533dc-0fbb-4029-99aa-4d09795c7dfc",
+      "question": "The correct order of electromagnetic waves with increasing wavelength (from shortest to longest) is",
+      "optionA": "$\\gamma$-rays, X-rays, UV, visible, IR, microwaves, radio waves",
+      "optionB": "radio waves, microwaves, IR, visible, UV, X-rays, $\\gamma$-rays",
+      "optionC": "UV, visible, IR, X-rays, $\\gamma$-rays, microwaves, radio",
+      "optionD": "$\\gamma$-rays, UV, X-rays, visible, IR, radio, microwaves",
+      "answer": "A",
+      "explanation": "The electromagnetic spectrum in order of increasing wavelength (or decreasing frequency/energy):\n$$\\gamma\\text{-rays} < \\text{X-rays} < \\text{UV} < \\text{Visible} < \\text{IR} < \\text{Microwaves} < \\text{Radio}$$\nWavelength ranges: $\\gamma$-rays ($<10^{-12}$m), X-rays ($10^{-12}$–$10^{-9}$m), UV ($10^{-9}$–$4\\times10^{-7}$m), Visible ($4$–$7\\times10^{-7}$m), IR ($10^{-6}$–$10^{-3}$m), Microwaves ($10^{-3}$–$1$m), Radio ($>1$m). Answer: (A).",
+      "topic": "Chapter 40: Electromagnetic Waves",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 40"
+      ]
+    },
+    {
+      "id": "22456a51-ef30-41ab-9595-dc2c8c6f4b9e",
+      "question": "The energy of a photon of electromagnetic radiation of frequency $\\nu$ is",
+      "optionA": "$h/\\nu$",
+      "optionB": "$h\\nu$",
+      "optionC": "$h\\nu^2$",
+      "optionD": "$hc/\\nu$",
+      "answer": "B",
+      "explanation": "Planck's relation for the energy of a single photon:\n$$E = h\\nu = \\frac{hc}{\\lambda}$$\nwhere $h = 6.626\\times10^{-34}\\,\\rm J\\cdot s$ is Planck's constant. Higher frequency → higher energy per photon. Answer: (B).",
+      "topic": "Chapter 40: Electromagnetic Waves",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 40"
+      ]
+    },
+    {
+      "id": "f5f256dc-cd8a-4049-b882-740cf1dbd025",
+      "question": "Which of the following are properties of electromagnetic waves?",
+      "optionA": "They can travel through vacuum.",
+      "optionB": "They are transverse waves.",
+      "optionC": "They carry energy and momentum.",
+      "optionD": "They require a medium for propagation.",
+      "answer": "A,B,C",
+      "explanation": "- **A** ✓: EM waves propagate through vacuum (no medium needed) at speed $c$.\n- **B** ✓: $\\vec{E}$ and $\\vec{B}$ oscillate perpendicular to propagation direction — transverse waves.\n- **C** ✓: Energy flux: Poynting vector $\\vec{S} = \\vec{E}\\times\\vec{B}/\\mu_0$; radiation pressure = $S/c$ (momentum).\n- **D** ✗: Unlike mechanical waves, EM waves require **no medium** (they travel through vacuum).\n\nAnswer: (A), (B), (C).",
+      "topic": "Chapter 40: Electromagnetic Waves",
+      "subtopic": "Objective II",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective II",
+        "Chapter 40"
+      ]
+    },
+    {
+      "id": "cc79d217-7fea-42d6-9042-72f78a0e28d4",
+      "question": "Which parts of the electromagnetic spectrum are used in the following applications?",
+      "optionA": "Radar and cooking — microwaves",
+      "optionB": "Medical imaging of bones — X-rays",
+      "optionC": "Remote controls — infrared",
+      "optionD": "Sterilisation and disinfection — UV",
+      "answer": "A,B,C,D",
+      "explanation": "- **A** ✓: Radar uses microwave wavelengths (cm range); microwave ovens heat food via microwave absorption by water molecules.\n- **B** ✓: X-rays penetrate soft tissue but are absorbed by dense bone — used for bone imaging.\n- **C** ✓: Infrared is used in TV remote controls and night-vision devices.\n- **D** ✓: UV radiation destroys the DNA of microorganisms, used for sterilisation of equipment and water purification.\n\nAnswer: (A), (B), (C), (D).",
+      "topic": "Chapter 40: Electromagnetic Waves",
+      "subtopic": "Objective II",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective II",
+        "Chapter 40"
+      ]
+    },
+    {
+      "id": "2f8c5df5-3bd6-495f-98de-d62af5f0193a",
+      "question": "Cathode rays are",
+      "optionA": "electromagnetic waves",
+      "optionB": "streams of positively charged particles",
+      "optionC": "streams of negatively charged particles (electrons)",
+      "optionD": "streams of neutrons.",
+      "answer": "C",
+      "explanation": "Cathode rays (discovered in discharge tubes) are **streams of electrons** — negatively charged particles emitted from the cathode. Evidence: they travel in straight lines, are deflected by electric and magnetic fields (toward positive plate → negative charge), and cause fluorescence. J.J. Thomson measured their charge-to-mass ratio ($e/m$), establishing them as a new fundamental particle (electron). Answer: (C).",
+      "topic": "Chapter 41: Electric Current through Gases",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 41"
+      ]
+    },
+    {
+      "id": "75248185-e7a6-4181-b17e-1c04bd3a919c",
+      "question": "In a gas discharge tube, ionisation of the gas occurs due to",
+      "optionA": "the high pressure of the gas",
+      "optionB": "collisions of electrons with gas molecules at low pressure",
+      "optionC": "static electricity",
+      "optionD": "the photoelectric effect only.",
+      "answer": "B",
+      "explanation": "At low pressure, the mean free path of electrons is large. Electrons accelerated by the electric field gain enough kinetic energy to ionise gas molecules on collision. The resulting positive ions and free electrons sustain the discharge. At atmospheric pressure, electrons collide too frequently and cannot gain sufficient energy for ionisation. Answer: (B).",
+      "topic": "Chapter 41: Electric Current through Gases",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 41"
+      ]
+    },
+    {
+      "id": "3c78cf4d-f4ca-4d19-a36e-7b322f56c8b9",
+      "question": "The charge-to-mass ratio $e/m$ of the electron was first measured by",
+      "optionA": "Millikan",
+      "optionB": "Thomson",
+      "optionC": "Rutherford",
+      "optionD": "Bohr.",
+      "answer": "B",
+      "explanation": "**J.J. Thomson** (1897) measured the $e/m$ ratio of cathode rays by deflecting them in known electric and magnetic fields and solving for $v$ (velocity) and then $e/m$. He found the same ratio regardless of the cathode material or gas, establishing that electrons are universal constituents of matter. Millikan later measured the electron charge $e$ separately (oil-drop experiment). Answer: (B).",
+      "topic": "Chapter 41: Electric Current through Gases",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 41"
+      ]
+    },
+    {
+      "id": "b7af4111-6e75-4ff0-b489-4fed9ba048cb",
+      "question": "In a vacuum tube diode, current flows",
+      "optionA": "in both directions",
+      "optionB": "only from cathode to anode (anode at positive potential)",
+      "optionC": "only from anode to cathode",
+      "optionD": "only when the filament is cold.",
+      "answer": "B",
+      "explanation": "In a vacuum diode, the heated cathode emits electrons (thermionic emission). These electrons are attracted to the **anode only when it is at a higher (positive) potential** than the cathode — electrons (negative) flow from cathode to anode, meaning conventional current flows from anode to cathode externally. When the anode is at negative potential, electrons are repelled and no current flows. This one-way conduction is the diode's rectifying action. Answer: (B).",
+      "topic": "Chapter 41: Electric Current through Gases",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 41"
+      ]
+    },
+    {
+      "id": "f2538262-80d3-404a-a12c-d8f7cedb900d",
+      "question": "Which of the following are true about cathode rays?",
+      "optionA": "They travel in straight lines in the absence of fields.",
+      "optionB": "They are deflected by electric and magnetic fields.",
+      "optionC": "They have the same e/m ratio regardless of the cathode material.",
+      "optionD": "They are positively charged.",
+      "answer": "A,B,C",
+      "explanation": "- **A** ✓: Without fields, cathode rays travel in straight lines (evidence: shadow of obstacle).\n- **B** ✓: Deflected by $E$ (toward positive plate) and $B$ fields — proof of charge.\n- **C** ✓: Thomson showed $e/m$ is the same for all materials → electrons are universal.\n- **D** ✗: Cathode rays are **negatively** charged (electrons).\n\nAnswer: (A), (B), (C).",
+      "topic": "Chapter 41: Electric Current through Gases",
+      "subtopic": "Objective II",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective II",
+        "Chapter 41"
+      ]
+    },
+    {
+      "id": "bacd0292-666a-4f48-8388-26fd4fcc3d51",
+      "question": "The photoelectric effect demonstrates that light has",
+      "optionA": "wave nature only",
+      "optionB": "particle nature only",
+      "optionC": "both wave and particle nature",
+      "optionD": "neither wave nor particle nature.",
+      "answer": "B",
+      "explanation": "The photoelectric effect (photoemission of electrons when light hits a metal) cannot be explained by classical wave theory — the effect depends on **frequency** (not intensity) of light, and has no time lag. Einstein (1905) explained it by treating light as **photons** (particles of energy $E = h\\nu$). The photoelectric effect is direct evidence of the **particle nature** of light. Answer: (B).",
+      "topic": "Chapter 42: Photoelectric Effect and Wave-Particle Duality",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 42"
+      ]
+    },
+    {
+      "id": "b0d47a5b-f3fb-4088-8463-0bfda060c911",
+      "question": "The maximum kinetic energy of photoelectrons emitted from a metal surface is",
+      "optionA": "proportional to the intensity of light",
+      "optionB": "$KE_{\\rm max} = h\\nu - \\phi$ where $\\phi$ is the work function",
+      "optionC": "$KE_{\\rm max} = h\\nu + \\phi$",
+      "optionD": "independent of the frequency of light.",
+      "answer": "B",
+      "explanation": "Einstein's photoelectric equation:\n$$KE_{\\rm max} = h\\nu - \\phi$$\nwhere $h\\nu$ is the photon energy and $\\phi = h\\nu_0$ is the work function (minimum energy to eject an electron). $KE_{\\rm max}$ depends on **frequency** (not intensity) and is zero at the threshold frequency $\\nu_0 = \\phi/h$. Increasing intensity increases the number of photoelectrons but not their maximum KE. Answer: (B).",
+      "topic": "Chapter 42: Photoelectric Effect and Wave-Particle Duality",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 42"
+      ]
+    },
+    {
+      "id": "574b31b2-a75a-41a7-8487-52dc2fad897f",
+      "question": "The stopping potential in a photoelectric experiment is the potential needed to",
+      "optionA": "accelerate the photoelectrons",
+      "optionB": "stop all photoelectrons from reaching the anode",
+      "optionC": "emit more photoelectrons",
+      "optionD": "increase the work function.",
+      "answer": "B",
+      "explanation": "The **stopping potential** $V_s$ is the minimum reverse (negative) voltage applied to the anode that brings the photocurrent to zero. Even the fastest photoelectrons (with maximum KE) are stopped:\n$$eV_s = KE_{\\rm max} = h\\nu - \\phi$$\nMeasuring $V_s$ is the standard way to determine $KE_{\\rm max}$ and hence test Einstein's equation. Answer: (B).",
+      "topic": "Chapter 42: Photoelectric Effect and Wave-Particle Duality",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 42"
+      ]
+    },
+    {
+      "id": "6703b669-1f21-4e27-bddc-6f48930d1d5b",
+      "question": "The de Broglie wavelength of a particle of mass $m$ and kinetic energy $K$ is",
+      "optionA": "$\\lambda = h/mv$",
+      "optionB": "$\\lambda = h/\\sqrt{2mK}$",
+      "optionC": "$\\lambda = \\sqrt{2mK}/h$",
+      "optionD": "$\\lambda = hK/m$",
+      "answer": "B",
+      "explanation": "De Broglie's relation: $\\lambda = h/p$ where $p$ is momentum.\n\nFor kinetic energy $K = p^2/(2m)$: $p = \\sqrt{2mK}$.\n$$\\lambda = \\frac{h}{p} = \\frac{h}{\\sqrt{2mK}}$$\nThis describes the wave nature of matter — confirmed by electron diffraction experiments. Answer: (B).",
+      "topic": "Chapter 42: Photoelectric Effect and Wave-Particle Duality",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 42"
+      ]
+    },
+    {
+      "id": "857b034c-3af5-4ae0-a254-badc0ae66581",
+      "question": "Photoelectric emission does NOT occur if",
+      "optionA": "the intensity of light is very low",
+      "optionB": "the frequency of light is below the threshold frequency",
+      "optionC": "the metal surface is very clean",
+      "optionD": "the light is monochromatic.",
+      "answer": "B",
+      "explanation": "No matter how intense the light, if the photon energy $h\\nu < \\phi$ (work function), no single photon has enough energy to eject an electron. Emission does not occur below the **threshold frequency** $\\nu_0 = \\phi/h$. Low intensity only reduces the number of photoelectrons (not whether emission occurs). Answer: (B).",
+      "topic": "Chapter 42: Photoelectric Effect and Wave-Particle Duality",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 42"
+      ]
+    },
+    {
+      "id": "ad2916a3-3e8d-4813-9c6b-9498f58d7bf8",
+      "question": "Which of the following are observations in the photoelectric effect that cannot be explained by classical wave theory?",
+      "optionA": "The effect depends on frequency, not intensity.",
+      "optionB": "There is no time lag between illumination and emission.",
+      "optionC": "The stopping potential depends on frequency.",
+      "optionD": "Increasing intensity increases the photocurrent.",
+      "answer": "A,B,C",
+      "explanation": "Classical wave theory predicts:\n- Any frequency should work if intensity is high enough (wrong → A).\n- Energy accumulation would require a time lag (wrong → B).\n- Stopping potential should depend on intensity (wrong → C).\n\nThe fact that photocurrent increases with intensity (D) is actually consistent with quantum theory too (more photons → more electrons), but it doesn't contradict classical theory. A, B, C are the hallmarks that classical theory fails to explain. Answer: (A), (B), (C).",
+      "topic": "Chapter 42: Photoelectric Effect and Wave-Particle Duality",
+      "subtopic": "Objective II",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective II",
+        "Chapter 42"
+      ]
+    },
+    {
+      "id": "7ab01d9a-b379-4cd8-9997-487e501f3496",
+      "question": "Which of the following show wave-particle duality?",
+      "optionA": "Electrons",
+      "optionB": "Protons",
+      "optionC": "Photons",
+      "optionD": "Neutrons",
+      "answer": "A,B,C,D",
+      "explanation": "De Broglie (1924) proposed that **all matter** has an associated wavelength $\\lambda = h/p$. This has been confirmed experimentally for:\n- **Electrons** (Davisson–Germer diffraction experiment ✓)\n- **Protons** and **neutrons** (neutron diffraction used in crystallography ✓)\n- **Photons** (wave: interference/diffraction; particle: photoelectric effect ✓)\n\nWave-particle duality is a universal quantum property. Answer: (A), (B), (C), (D).",
+      "topic": "Chapter 42: Photoelectric Effect and Wave-Particle Duality",
+      "subtopic": "Objective II",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective II",
+        "Chapter 42"
+      ]
+    },
+    {
+      "id": "cf6d6b0e-c69e-495e-b7a4-76dc27906976",
+      "question": "Bohr's first postulate states that electrons in an atom",
+      "optionA": "move in any orbit around the nucleus",
+      "optionB": "move in specific stationary orbits without radiating energy",
+      "optionC": "radiate energy continuously as they orbit",
+      "optionD": "can be at any energy level.",
+      "answer": "B",
+      "explanation": "Bohr's **first postulate**: electrons revolve around the nucleus in **specific (quantised) circular orbits** called **stationary states** or **allowed orbits**. In these orbits, they do **not radiate energy** despite the centripetal acceleration (this contradicts classical electrodynamics but is adopted as a postulate). Answer: (B).",
+      "topic": "Chapter 43: Bohr's Model and Physics of the Atom",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 43"
+      ]
+    },
+    {
+      "id": "ec877d18-56b0-4fb3-b34c-6bd03bc08377",
+      "question": "Bohr's quantisation condition for the angular momentum of an electron is",
+      "optionA": "$L = nh$ (integer multiples of $h$)",
+      "optionB": "$L = nh/(2\\pi) = n\\hbar$",
+      "optionC": "$L = h/(2\\pi n)$",
+      "optionD": "$L = 2\\pi n/h$",
+      "answer": "B",
+      "explanation": "Bohr's **second postulate** (quantisation of angular momentum):\n$$L = mvr = n\\hbar = \\frac{nh}{2\\pi}, \\quad n = 1, 2, 3, \\ldots$$\nwhere $n$ is the principal quantum number and $\\hbar = h/(2\\pi)$. This is the condition that selects the allowed orbits. Answer: (B).",
+      "topic": "Chapter 43: Bohr's Model and Physics of the Atom",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 43"
+      ]
+    },
+    {
+      "id": "41492423-25ad-4a83-956f-fe199f084e28",
+      "question": "The radius of the $n$th Bohr orbit in hydrogen is proportional to",
+      "optionA": "$n$",
+      "optionB": "$n^2$",
+      "optionC": "$1/n$",
+      "optionD": "$1/n^2$",
+      "answer": "B",
+      "explanation": "From Bohr's model:\n$$r_n = n^2 a_0 \\quad \\text{where } a_0 = \\frac{\\varepsilon_0 h^2}{\\pi m e^2} \\approx 0.529\\,\\text{Å}$$\nThe radius of the first orbit ($n=1$) is the **Bohr radius** $a_0$. The radius scales as $n^2$: $r_1 : r_2 : r_3 = 1 : 4 : 9$. Answer: (B).",
+      "topic": "Chapter 43: Bohr's Model and Physics of the Atom",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 43"
+      ]
+    },
+    {
+      "id": "89c47321-f696-4a29-8458-cc546d4ed6ff",
+      "question": "The total energy of the electron in the $n$th orbit of hydrogen is",
+      "optionA": "$E_n = -13.6/n\\,\\rm eV$",
+      "optionB": "$E_n = -13.6/n^2\\,\\rm eV$",
+      "optionC": "$E_n = 13.6/n^2\\,\\rm eV$",
+      "optionD": "$E_n = -13.6\\,n^2\\,\\rm eV$",
+      "answer": "B",
+      "explanation": "$$E_n = -\\frac{13.6}{n^2}\\,\\rm eV$$\nThe negative sign means the electron is bound. Ground state ($n=1$): $E_1 = -13.6\\,\\rm eV$. The ionisation energy is $13.6\\,\\rm eV$. Energy increases (becomes less negative) with $n$: the electron is more loosely bound in higher orbits. Answer: (B).",
+      "topic": "Chapter 43: Bohr's Model and Physics of the Atom",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 43"
+      ]
+    },
+    {
+      "id": "5525e2b9-5b8d-4879-9230-ffc00e8bbb17",
+      "question": "The wavelength of the photon emitted when an electron in hydrogen transitions from level $n_i$ to $n_f$ ($n_i > n_f$) is given by",
+      "optionA": "$\\dfrac{1}{\\lambda} = R_H\\!\\left(\\dfrac{1}{n_f^2} - \\dfrac{1}{n_i^2}\\right)$",
+      "optionB": "$\\dfrac{1}{\\lambda} = R_H\\!\\left(\\dfrac{1}{n_i^2} - \\dfrac{1}{n_f^2}\\right)$",
+      "optionC": "$\\lambda = R_H\\!\\left(\\dfrac{1}{n_f^2} - \\dfrac{1}{n_i^2}\\right)$",
+      "optionD": "$\\dfrac{1}{\\lambda} = R_H(n_i^2 - n_f^2)$",
+      "answer": "A",
+      "explanation": "The **Rydberg formula**:\n$$\\frac{1}{\\lambda} = R_H\\!\\left(\\frac{1}{n_f^2} - \\frac{1}{n_i^2}\\right), \\quad n_i > n_f$$\nwhere $R_H \\approx 1.097\\times10^7\\,\\rm m^{-1}$ is the Rydberg constant. For emission, $n_i > n_f$ and the bracket is positive, giving a real (positive) wavelength. Spectral series: Lyman ($n_f=1$, UV), Balmer ($n_f=2$, visible), Paschen ($n_f=3$, IR), etc. Answer: (A).",
+      "topic": "Chapter 43: Bohr's Model and Physics of the Atom",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 43"
+      ]
+    },
+    {
+      "id": "1c926c34-10b1-4cc5-8dd6-0d2324b3bc76",
+      "question": "The Balmer series of hydrogen spectrum lies in which region?",
+      "optionA": "Infrared",
+      "optionB": "Visible",
+      "optionC": "Ultraviolet",
+      "optionD": "X-ray",
+      "answer": "B",
+      "explanation": "The Balmer series: transitions to $n_f = 2$ from $n_i = 3, 4, 5, \\ldots$ The first line (H$\\alpha$, $n=3\\to2$): $\\lambda = 656\\,\\rm nm$ (red). The series limit ($n\\to\\infty\\to2$): $\\lambda = 365\\,\\rm nm$ (near-UV). The Balmer series spans the **visible** range (~400–700 nm) and was the first to be discovered because it falls in the visible. Answer: (B).",
+      "topic": "Chapter 43: Bohr's Model and Physics of the Atom",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 43"
+      ]
+    },
+    {
+      "id": "85fd29c1-ba9b-46af-bd4b-14bf9bfa3e59",
+      "question": "Which of the following are postulates of Bohr's model of the hydrogen atom?",
+      "optionA": "Electrons move in circular orbits around the nucleus.",
+      "optionB": "Electrons in stationary orbits do not radiate energy.",
+      "optionC": "Angular momentum of electrons is quantised in multiples of $h/(2\\pi)$.",
+      "optionD": "Energy is emitted or absorbed when electrons change orbits.",
+      "answer": "A,B,C,D",
+      "explanation": "All four are Bohr's postulates:\n- **A** ✓: Electrons in circular orbits (Bohr's first postulate).\n- **B** ✓: No radiation in stationary orbits (Bohr's first postulate).\n- **C** ✓: $L = n\\hbar$ (Bohr's second postulate — quantisation).\n- **D** ✓: $E = h\\nu = E_i - E_f$ (Bohr's third postulate — radiation condition).\n\nAnswer: (A), (B), (C), (D).",
+      "topic": "Chapter 43: Bohr's Model and Physics of the Atom",
+      "subtopic": "Objective II",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective II",
+        "Chapter 43"
+      ]
+    },
+    {
+      "id": "84a7459f-1336-4735-ad66-54033b30786c",
+      "question": "Which of the following spectral series of hydrogen lie in the ultraviolet region?",
+      "optionA": "Lyman series",
+      "optionB": "Balmer series",
+      "optionC": "Paschen series",
+      "optionD": "Brackett series",
+      "answer": "A",
+      "explanation": "- **Lyman** ($n_f=1$): UV region (91.2–122 nm). ✓\n- **Balmer** ($n_f=2$): Visible region (365–656 nm). ✗\n- **Paschen** ($n_f=3$): Near infrared (820 nm – 1875 nm). ✗\n- **Brackett** ($n_f=4$): Infrared. ✗\n\nOnly the Lyman series is entirely in the UV. Answer: (A).",
+      "topic": "Chapter 43: Bohr's Model and Physics of the Atom",
+      "subtopic": "Objective II",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective II",
+        "Chapter 43"
+      ]
+    },
+    {
+      "id": "3269b640-18ce-47b7-afc8-022777809ad1",
+      "question": "Which of the following are limitations of Bohr's model?",
+      "optionA": "It cannot explain the spectra of atoms with more than one electron.",
+      "optionB": "It does not account for the fine structure of spectral lines.",
+      "optionC": "It violates the uncertainty principle ($x$ and $p$ simultaneously defined).",
+      "optionD": "It predicts wrong energy levels for hydrogen.",
+      "answer": "A,B,C",
+      "explanation": "- **A** ✓: Bohr's model works only for hydrogen-like (single-electron) atoms. Multi-electron atoms have electron–electron interactions not accounted for.\n- **B** ✓: Fine structure (due to spin-orbit coupling) requires relativistic quantum mechanics (Dirac equation).\n- **C** ✓: Bohr assumes precise circular orbits with definite radius and momentum — violating Heisenberg's uncertainty principle.\n- **D** ✗: Bohr's model gives the correct energy levels for hydrogen: $E_n = -13.6/n^2\\,\\rm eV$. This is not a limitation.\n\nAnswer: (A), (B), (C).",
+      "topic": "Chapter 43: Bohr's Model and Physics of the Atom",
+      "subtopic": "Objective II",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective II",
+        "Chapter 43"
+      ]
     }
   ]
 }
