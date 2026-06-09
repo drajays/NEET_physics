@@ -30649,6 +30649,600 @@
         "Objective II",
         "Chapter 43"
       ]
+    },
+    {
+      "id": "d9bf2cbc-03df-40da-9545-ebb22712b518",
+      "question": "X-rays are produced when",
+      "optionA": "a radioactive substance decays",
+      "optionB": "fast-moving electrons strike a heavy metal target",
+      "optionC": "ultraviolet light falls on a metal surface",
+      "optionD": "a proton beam strikes a metal plate.",
+      "answer": "B",
+      "explanation": "X-rays are produced in an **X-ray tube**: electrons are accelerated through a high voltage and strike a heavy metal target (anode, usually tungsten). Two processes produce X-rays:\n1. **Bremsstrahlung** (braking radiation): electrons decelerate rapidly → emit X-ray photons with a continuous spectrum.\n2. **Characteristic X-rays**: electrons knock out inner-shell electrons; outer electrons fill the vacancies, emitting photons with specific energies characteristic of the target material.\nAnswer: (B).",
+      "topic": "Chapter 44: X-rays",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 44"
+      ]
+    },
+    {
+      "id": "593b8de6-f88f-41c6-9afe-bacdf9ad39a7",
+      "question": "The minimum wavelength (maximum energy) of X-rays produced in an X-ray tube operated at voltage $V$ is",
+      "optionA": "$\\lambda_{\\rm min} = hc/(eV)$",
+      "optionB": "$\\lambda_{\\rm min} = eV/(hc)$",
+      "optionC": "$\\lambda_{\\rm min} = hc \\cdot eV$",
+      "optionD": "$\\lambda_{\\rm min} = h/(eV)$",
+      "answer": "A",
+      "explanation": "The most energetic X-ray photon is produced when an electron converts all its kinetic energy $eV$ into one photon:\n$$h\\nu_{\\rm max} = eV \\implies \\lambda_{\\rm min} = \\frac{c}{\\nu_{\\rm max}} = \\frac{hc}{eV}$$\nThis is the **Duane–Hunt law**. The short-wavelength cutoff $\\lambda_{\\rm min}$ is independent of the target material and decreases as the tube voltage increases. Answer: (A).",
+      "topic": "Chapter 44: X-rays",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 44"
+      ]
+    },
+    {
+      "id": "92061551-7b98-4b25-a830-f26244eb6dcf",
+      "question": "Characteristic X-rays are produced due to",
+      "optionA": "deceleration of electrons in the Coulomb field of the nucleus",
+      "optionB": "transitions of outer electrons between energy levels",
+      "optionC": "transitions of electrons from outer shells to inner shell vacancies created by the incident electrons",
+      "optionD": "pair production.",
+      "answer": "C",
+      "explanation": "**Characteristic X-rays**: the incident electron ejects an inner-shell (e.g., $K$-shell) electron. This creates a vacancy. An outer-shell electron (e.g., $L$ or $M$) drops into the vacancy, releasing a photon with energy equal to the difference in binding energies:\n$$h\\nu = E_K - E_L \\quad (K_\\alpha \\text{ line})$$\nThe energies are characteristic of the target element → used for elemental identification. **Bremsstrahlung** (option A) produces the continuous spectrum, not characteristic lines. Answer: (C).",
+      "topic": "Chapter 44: X-rays",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 44"
+      ]
+    },
+    {
+      "id": "4c3e7d0c-a42c-404b-b494-56b75a7416b1",
+      "question": "The property used in X-ray crystallography is",
+      "optionA": "photoelectric effect of X-rays",
+      "optionB": "diffraction of X-rays by crystal planes",
+      "optionC": "refraction of X-rays by lenses",
+      "optionD": "Compton scattering of X-rays.",
+      "answer": "B",
+      "explanation": "Crystal planes act as diffraction gratings for X-rays because the interplanar spacing ($\\sim 10^{-10}$m) is comparable to X-ray wavelengths. **Bragg's law**:\n$$2d\\sin\\theta = n\\lambda$$\nwhere $d$ is the interplanar spacing, $\\theta$ is the glancing angle, and $n$ is the order. X-ray crystallography determined the structure of DNA (Watson & Crick, using Franklin's data) and countless proteins. Answer: (B).",
+      "topic": "Chapter 44: X-rays",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 44"
+      ]
+    },
+    {
+      "id": "b1e4d78b-c336-4202-84ca-3aae833f5cba",
+      "question": "Which of the following are properties of X-rays?",
+      "optionA": "They are electromagnetic waves.",
+      "optionB": "They can ionise gases.",
+      "optionC": "They are deflected by electric and magnetic fields.",
+      "optionD": "They can cause fluorescence in certain materials.",
+      "answer": "A,B,D",
+      "explanation": "- **A** ✓: X-rays are EM waves (wavelength 0.01–10 nm), discovered by Röntgen (1895).\n- **B** ✓: X-ray photons have high energy ($\\sim$keV) → can ionise gas molecules → used in Geiger counters and ionisation chambers.\n- **C** ✗: As electromagnetic waves, X-rays are **not** deflected by electric or magnetic fields (unlike electrons or other charged particles). (The Compton effect involves scattering by electrons, not deflection of the wave itself by fields.)\n- **D** ✓: X-rays cause fluorescence in materials like zinc sulfide, calcium tungstate — used in X-ray imaging screens.\n\nAnswer: (A), (B), (D).",
+      "topic": "Chapter 44: X-rays",
+      "subtopic": "Objective II",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective II",
+        "Chapter 44"
+      ]
+    },
+    {
+      "id": "0451b4ab-16ce-4422-af60-a2bad2f390c2",
+      "question": "Which of the following are differences between characteristic X-rays and Bremsstrahlung (continuous) X-rays?",
+      "optionA": "Characteristic X-rays have discrete wavelengths; Bremsstrahlung has a continuous spectrum.",
+      "optionB": "Characteristic X-rays depend on the target material; Bremsstrahlung does not.",
+      "optionC": "Bremsstrahlung has a minimum wavelength cutoff; characteristic X-rays do not.",
+      "optionD": "Both types have the same maximum photon energy.",
+      "answer": "A,B,C",
+      "explanation": "- **A** ✓: Characteristic X-rays appear as sharp lines at specific wavelengths determined by the target element. Bremsstrahlung is continuous from $\\lambda_{\\rm min}$ to infinity.\n- **B** ✓: Characteristic line energies are specific to the target ($K_\\alpha$, $K_\\beta$, etc. depend on energy levels of that element). Bremsstrahlung depends only on electron energy, not the target material.\n- **C** ✓: The short-wavelength cutoff ($\\lambda_{\\rm min} = hc/eV$) applies to Bremsstrahlung. Characteristic X-rays appear at fixed wavelengths that may or may not coincide with $\\lambda_{\\rm min}$.\n- **D** ✗: The maximum photon energy in Bremsstrahlung is $eV$ (the full electron KE). Characteristic X-rays have energies equal to inner-shell energy differences, which can be less than $eV$ (they require the electron to have at least enough energy to eject the inner-shell electron, but the emitted photon energy is fixed by atomic levels).\n\nAnswer: (A), (B), (C).",
+      "topic": "Chapter 44: X-rays",
+      "subtopic": "Objective II",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective II",
+        "Chapter 44"
+      ]
+    },
+    {
+      "id": "de29ff26-9557-4da6-ad0f-b071cd3bac8d",
+      "question": "The electrical conductivity of a semiconductor",
+      "optionA": "increases with temperature",
+      "optionB": "decreases with temperature",
+      "optionC": "is independent of temperature",
+      "optionD": "first increases then decreases with temperature.",
+      "answer": "A",
+      "explanation": "In a semiconductor, charge carriers (electrons and holes) are generated by thermal excitation across the band gap. More thermal energy → more carriers → higher conductivity. This is opposite to metals (where conductivity decreases due to increased phonon scattering). Mathematically, carrier density $\\propto e^{-E_g/(2k_BT)}$, so conductivity increases exponentially with temperature. Answer: (A).",
+      "topic": "Chapter 45: Semiconductors and Semiconductor Devices",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 45"
+      ]
+    },
+    {
+      "id": "e9c64462-d395-4380-8263-87f912d97288",
+      "question": "In an intrinsic semiconductor at absolute zero (0 K)",
+      "optionA": "it behaves as a conductor",
+      "optionB": "it behaves as an insulator (zero conductivity)",
+      "optionC": "it has maximum conductivity",
+      "optionD": "it behaves as a p-type semiconductor.",
+      "answer": "B",
+      "explanation": "At 0 K, no thermal energy is available to excite electrons across the band gap. The valence band is completely filled and the conduction band is completely empty. No charge carriers exist → the semiconductor behaves as a **perfect insulator** at 0 K. As temperature rises, carriers are generated and conductivity increases. Answer: (B).",
+      "topic": "Chapter 45: Semiconductors and Semiconductor Devices",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 45"
+      ]
+    },
+    {
+      "id": "d0c93d64-051b-4338-b526-3b509e2fc017",
+      "question": "In an n-type semiconductor, the majority charge carriers are",
+      "optionA": "holes",
+      "optionB": "electrons",
+      "optionC": "protons",
+      "optionD": "negative ions.",
+      "answer": "B",
+      "explanation": "**n-type semiconductor**: formed by doping with pentavalent impurity atoms (e.g., phosphorus in silicon). Each dopant contributes an extra electron to the conduction band. The majority carriers are **electrons** (n for negative). The minority carriers are holes (thermally generated). The material remains electrically neutral overall. Answer: (B).",
+      "topic": "Chapter 45: Semiconductors and Semiconductor Devices",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 45"
+      ]
+    },
+    {
+      "id": "7523aab2-aa1c-48c9-be97-2269d7ffecc5",
+      "question": "A p-n junction diode in forward bias",
+      "optionA": "has high resistance and allows little current",
+      "optionB": "has low resistance and allows large current",
+      "optionC": "acts as an open circuit",
+      "optionD": "depletes the charge carriers completely.",
+      "answer": "B",
+      "explanation": "**Forward bias**: p-side at higher potential (positive terminal to p-side). The external field reduces the built-in potential barrier at the junction, allowing majority carriers to diffuse across: holes from p to n, electrons from n to p. The depletion region narrows → low resistance → **large current** flows. Reverse bias: depletion region widens → high resistance → very small (leakage) current. Answer: (B).",
+      "topic": "Chapter 45: Semiconductors and Semiconductor Devices",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 45"
+      ]
+    },
+    {
+      "id": "fa40942f-cb3f-4fc5-a586-626430aacde7",
+      "question": "A Zener diode is used mainly as",
+      "optionA": "a rectifier",
+      "optionB": "an amplifier",
+      "optionC": "a voltage regulator",
+      "optionD": "a light emitter.",
+      "answer": "C",
+      "explanation": "A **Zener diode** is designed to operate in reverse breakdown (Zener/avalanche breakdown) at a specific **Zener voltage** $V_Z$. Once in breakdown, the voltage across it remains essentially constant regardless of current. This property makes it ideal as a **voltage regulator** — it maintains a stable output voltage even when input voltage or load resistance varies. Answer: (C).",
+      "topic": "Chapter 45: Semiconductors and Semiconductor Devices",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 45"
+      ]
+    },
+    {
+      "id": "c80074af-9589-41d9-a216-1945beb6de6d",
+      "question": "In a common-emitter transistor amplifier, the current gain $\\beta$ is defined as",
+      "optionA": "$\\beta = I_C/I_E$",
+      "optionB": "$\\beta = I_C/I_B$",
+      "optionC": "$\\beta = I_B/I_C$",
+      "optionD": "$\\beta = I_E/I_B$",
+      "answer": "B",
+      "explanation": "In a common-emitter (CE) configuration:\n$$\\beta = \\frac{I_C}{I_B} \\quad (\\text{DC current gain})$$\n$\\beta$ is typically 50–500. The small base current $I_B$ controls the larger collector current $I_C$, providing **current amplification**. Also: $I_E = I_B + I_C$; $\\alpha = I_C/I_E = \\beta/(\\beta+1)$. Answer: (B).",
+      "topic": "Chapter 45: Semiconductors and Semiconductor Devices",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 45"
+      ]
+    },
+    {
+      "id": "b8d062f5-5bef-4383-835b-f6b8714195fd",
+      "question": "An LED (Light Emitting Diode) emits light when",
+      "optionA": "it is in reverse bias",
+      "optionB": "electrons and holes recombine in the depletion region under forward bias",
+      "optionC": "it is heated",
+      "optionD": "it receives a magnetic field.",
+      "answer": "B",
+      "explanation": "An **LED** is a p-n junction operated in **forward bias**. Electrons injected from the n-side and holes from the p-side recombine in the junction region. In direct-bandgap semiconductors (GaAs, GaP, etc.), this recombination releases a photon with energy $\\approx E_g$ (the band gap). The wavelength of emitted light: $\\lambda = hc/E_g$, which can be designed to be in the visible, infrared, or UV range. Answer: (B).",
+      "topic": "Chapter 45: Semiconductors and Semiconductor Devices",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 45"
+      ]
+    },
+    {
+      "id": "05faaadc-ae8e-41ae-85ba-f39b6ea0dece",
+      "question": "Which of the following are correct about p-n junction diodes?",
+      "optionA": "In forward bias, the depletion region becomes narrower.",
+      "optionB": "In reverse bias, the depletion region becomes wider.",
+      "optionC": "The diode conducts in both directions.",
+      "optionD": "The threshold (knee) voltage for silicon is approximately 0.7 V.",
+      "answer": "A,B,D",
+      "explanation": "- **A** ✓: Forward bias reduces the built-in potential → depletion region narrows.\n- **B** ✓: Reverse bias reinforces the built-in potential → depletion region widens.\n- **C** ✗: A diode conducts significantly only in **forward bias** (rectifying action). In reverse bias, only a tiny leakage current flows (until breakdown).\n- **D** ✓: Silicon diode threshold voltage $\\approx 0.7\\,\\rm V$ (germanium $\\approx 0.3\\,\\rm V$).\n\nAnswer: (A), (B), (D).",
+      "topic": "Chapter 45: Semiconductors and Semiconductor Devices",
+      "subtopic": "Objective II",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective II",
+        "Chapter 45"
+      ]
+    },
+    {
+      "id": "1e4d6c81-5c4d-4d1d-8c4c-0dd503a574f6",
+      "question": "Which of the following are correct about semiconductors?",
+      "optionA": "Silicon and germanium are elemental semiconductors.",
+      "optionB": "Adding pentavalent impurities creates p-type semiconductors.",
+      "optionC": "In intrinsic semiconductors, number of electrons = number of holes.",
+      "optionD": "The band gap of semiconductors is between that of conductors and insulators.",
+      "answer": "A,C,D",
+      "explanation": "- **A** ✓: Si (Group 14) and Ge (Group 14) are classic elemental semiconductors.\n- **B** ✗: Pentavalent impurities (5 valence electrons, e.g., P, As, Sb) donate electrons → **n-type**. Trivalent impurities create **p-type**.\n- **C** ✓: In an intrinsic semiconductor, thermal generation always creates equal numbers of electrons and holes (electron-hole pairs).\n- **D** ✓: Conductors: $E_g = 0$ (overlapping bands); Insulators: $E_g > 5\\,\\rm eV$; Semiconductors: $E_g \\sim 1\\,\\rm eV$ (Si: 1.1 eV, Ge: 0.67 eV).\n\nAnswer: (A), (C), (D).",
+      "topic": "Chapter 45: Semiconductors and Semiconductor Devices",
+      "subtopic": "Objective II",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective II",
+        "Chapter 45"
+      ]
+    },
+    {
+      "id": "2e6fb09a-d7fc-4d23-8adb-82a846e13f3b",
+      "question": "The mass number $A$ of a nucleus is",
+      "optionA": "the number of protons only",
+      "optionB": "the number of neutrons only",
+      "optionC": "the total number of protons and neutrons",
+      "optionD": "the mass of the nucleus in atomic mass units.",
+      "answer": "C",
+      "explanation": "The **mass number** $A = Z + N$, where $Z$ is the number of protons (atomic number) and $N$ is the number of neutrons. It gives the total number of **nucleons** (protons + neutrons) in the nucleus. It is not exactly the mass in amu (due to binding energy and mass defect), but it is close. Answer: (C).",
+      "topic": "Chapter 46: The Nucleus",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 46"
+      ]
+    },
+    {
+      "id": "e8ed022d-b310-4b8f-9bc0-e4afa336690d",
+      "question": "The binding energy per nucleon is maximum for",
+      "optionA": "hydrogen ($A=1$)",
+      "optionB": "helium ($A=4$)",
+      "optionC": "iron ($A\u0007pprox56$)",
+      "optionD": "uranium ($A\u0007pprox238$).",
+      "answer": "C",
+      "explanation": "The binding energy per nucleon (BE/A) curve peaks at **iron-56** ($\\approx 8.8\\,\\rm MeV/nucleon$). This peak means:\n- Lighter nuclei ($A < 56$): **fusion** releases energy (moving toward the peak).\n- Heavier nuclei ($A > 56$): **fission** releases energy (splitting moves toward the peak).\n\nIron is the most stable nucleus — no net energy is released by fusing or fissioning iron. Answer: (C).",
+      "topic": "Chapter 46: The Nucleus",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 46"
+      ]
+    },
+    {
+      "id": "2195411d-d328-46c3-96cd-da9171ba97f7",
+      "question": "The radioactive decay law states that the activity of a sample decreases as",
+      "optionA": "$A = A_0\\,e^{+\\lambda t}$",
+      "optionB": "$A = A_0\\,e^{-\\lambda t}$",
+      "optionC": "$A = A_0 - \\lambda t$",
+      "optionD": "$A = A_0 / (\\lambda t)$",
+      "answer": "B",
+      "explanation": "The number of undecayed nuclei follows **exponential decay**:\n$$N(t) = N_0\\,e^{-\\lambda t}$$\nActivity $A = \\lambda N$, so:\n$$A(t) = A_0\\,e^{-\\lambda t}$$\nwhere $\\lambda$ is the decay constant. The **half-life** $t_{1/2} = \\ln 2/\\lambda$: after each half-life, the activity halves. Answer: (B).",
+      "topic": "Chapter 46: The Nucleus",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 46"
+      ]
+    },
+    {
+      "id": "01f19274-921b-4f95-9238-a32ff296efd1",
+      "question": "The half-life $t_{1/2}$ and decay constant $\\lambda$ are related by",
+      "optionA": "$t_{1/2} = \\lambda$",
+      "optionB": "$t_{1/2} = \\ln 2\\,/\\,\\lambda$",
+      "optionC": "$t_{1/2} = 1/\\lambda$",
+      "optionD": "$t_{1/2} = 2/\\lambda$",
+      "answer": "B",
+      "explanation": "From $N = N_0\\,e^{-\\lambda t}$, setting $N = N_0/2$:\n$$\\frac{1}{2} = e^{-\\lambda t_{1/2}} \\implies \\lambda t_{1/2} = \\ln 2 \\implies t_{1/2} = \\frac{\\ln 2}{\\lambda} = \\frac{0.693}{\\lambda}$$\nThe **mean life** $\\tau = 1/\\lambda = t_{1/2}/\\ln 2 \\approx 1.44\\,t_{1/2}$. Answer: (B).",
+      "topic": "Chapter 46: The Nucleus",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 46"
+      ]
+    },
+    {
+      "id": "ff78318d-ba6d-4ee7-b636-05dde16c1bab",
+      "question": "In $\\alpha$-decay, the mass number decreases by",
+      "optionA": "1",
+      "optionB": "2",
+      "optionC": "4",
+      "optionD": "6",
+      "answer": "C",
+      "explanation": "An $\\alpha$-particle is $^4_2$He (2 protons, 2 neutrons). In $\\alpha$-decay:\n$$^A_Z X \\to {}^{A-4}_{Z-2} Y + {}^4_2\\rm He$$\nMass number decreases by **4**, atomic number decreases by **2**. Example: $^{238}_{92}$U → $^{234}_{90}$Th + $^4_2$He. Answer: (C).",
+      "topic": "Chapter 46: The Nucleus",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 46"
+      ]
+    },
+    {
+      "id": "b5d3ee10-8fde-4940-b2b8-0e6c90d4a4e9",
+      "question": "In $\\beta^-$ decay, the nucleus emits",
+      "optionA": "a proton",
+      "optionB": "an electron and an antineutrino",
+      "optionC": "a positron and a neutrino",
+      "optionD": "a neutron.",
+      "answer": "B",
+      "explanation": "**$\\beta^-$ decay**: a neutron converts to a proton inside the nucleus:\n$$n \\to p + e^- + \\bar{\\nu}_e$$\nThe nucleus emits an **electron** (beta particle) and an **antineutrino**. Mass number $A$ stays the same; atomic number $Z$ increases by 1. Example: $^{14}_6$C → $^{14}_7$N + $e^-$ + $\\bar{\\nu}_e$ (radiocarbon dating).\n\nIn $\\beta^+$ decay: proton → neutron + positron + neutrino ($Z$ decreases by 1). Answer: (B).",
+      "topic": "Chapter 46: The Nucleus",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 46"
+      ]
+    },
+    {
+      "id": "a8de5412-6baa-4b47-95f2-de9af79e95af",
+      "question": "In nuclear fission, a heavy nucleus splits into",
+      "optionA": "two protons and a neutron",
+      "optionB": "two lighter nuclei of comparable mass, releasing neutrons and energy",
+      "optionC": "an alpha particle and a beta particle",
+      "optionD": "three equal fragments.",
+      "answer": "B",
+      "explanation": "**Nuclear fission** (e.g., $^{235}$U + $n$): a heavy nucleus absorbs a neutron and becomes highly unstable, splitting into **two medium-mass daughter nuclei** (fission fragments) plus typically 2–3 free neutrons and a large release of energy ($\\sim 200\\,\\rm MeV$ per event). The released neutrons can trigger further fissions — a **chain reaction** — which is exploited in reactors and nuclear weapons. Answer: (B).",
+      "topic": "Chapter 46: The Nucleus",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 46"
+      ]
+    },
+    {
+      "id": "5f4db951-4bb9-4b48-8472-0354f8dbfe4f",
+      "question": "Nuclear fusion releases more energy per unit mass than fission because",
+      "optionA": "the reactants in fusion are lighter",
+      "optionB": "the binding energy per nucleon increases significantly for light nuclei fusing to form heavier nuclei",
+      "optionC": "fusion produces radioactive products",
+      "optionD": "fusion does not require a critical mass.",
+      "answer": "B",
+      "explanation": "On the BE/A curve, light nuclei (like H, He) lie much lower than iron. When they fuse, the product has much higher BE/A — the gain per nucleon is large. For heavy nuclei fissioning, the gain per nucleon (moving from $A\\approx238$ toward $A\\approx56$) is smaller. Thus, **per unit mass**, fusion releases more energy than fission. Answer: (B).",
+      "topic": "Chapter 46: The Nucleus",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 46"
+      ]
+    },
+    {
+      "id": "9280e5cf-50d2-4bc1-89df-b5cfaaa2fbcd",
+      "question": "Which of the following are conservation laws obeyed in nuclear reactions?",
+      "optionA": "Conservation of mass number (baryon number)",
+      "optionB": "Conservation of atomic number (charge)",
+      "optionC": "Conservation of mass (not energy)",
+      "optionD": "Conservation of energy (including mass-energy equivalence)",
+      "answer": "A,B,D",
+      "explanation": "- **A** ✓: Total baryon number (mass number) is conserved in all nuclear reactions.\n- **B** ✓: Total charge (atomic number = proton number) is conserved.\n- **C** ✗: Mass is **not** conserved separately — the mass defect corresponds to the energy released ($E = \\Delta mc^2$). **Mass-energy** is conserved, not mass alone.\n- **D** ✓: Total energy (including rest-mass energy $mc^2$) is conserved.\n\nAnswer: (A), (B), (D).",
+      "topic": "Chapter 46: The Nucleus",
+      "subtopic": "Objective II",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective II",
+        "Chapter 46"
+      ]
+    },
+    {
+      "id": "6318c23a-a5da-449f-8a75-bada1ce3c07f",
+      "question": "Which of the following statements about radioactive decay are correct?",
+      "optionA": "It is a random (probabilistic) process for any individual nucleus.",
+      "optionB": "The decay rate of a large sample follows a predictable exponential law.",
+      "optionC": "The decay constant $\\lambda$ can be altered by chemical bonding.",
+      "optionD": "$\\gamma$-emission does not change $Z$ or $A$ of the nucleus.",
+      "answer": "A,B,D",
+      "explanation": "- **A** ✓: For any single nucleus, decay is random — we cannot predict exactly when it will decay. Only probabilities can be assigned ($\\lambda\\,dt$ = probability of decay in $dt$).\n- **B** ✓: For a large ensemble, the law of large numbers gives a precise exponential decay $N = N_0 e^{-\\lambda t}$.\n- **C** ✗: The decay constant $\\lambda$ is determined by nuclear physics (nuclear force, energy levels). Chemical bonding affects electron orbitals, not the nucleus — $\\lambda$ is essentially unchanged by chemical environment (with very rare exceptions in electron-capture decay).\n- **D** ✓: In $\\gamma$-decay, the nucleus transitions from an excited state to a lower state, emitting a photon. No change in $Z$, $N$, or $A$.\n\nAnswer: (A), (B), (D).",
+      "topic": "Chapter 46: The Nucleus",
+      "subtopic": "Objective II",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective II",
+        "Chapter 46"
+      ]
+    },
+    {
+      "id": "e7bf0496-4dd0-4245-a402-8644d74a9d21",
+      "question": "Einstein's first postulate of special relativity states that",
+      "optionA": "the speed of light depends on the motion of the source",
+      "optionB": "the laws of physics are the same in all inertial reference frames",
+      "optionC": "time is absolute and the same for all observers",
+      "optionD": "the speed of light is different in different media.",
+      "answer": "B",
+      "explanation": "Einstein's **first postulate** (principle of relativity): the **laws of physics are identical in all inertial reference frames** — no preferred frame exists. There is no absolute rest frame. An observer in any inertial frame can claim to be \"at rest\" and apply the same physical laws. Answer: (B).",
+      "topic": "Chapter 47: The Special Theory of Relativity",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 47"
+      ]
+    },
+    {
+      "id": "f029640a-1142-4fa8-80cf-66e707a48857",
+      "question": "Einstein's second postulate of special relativity states that",
+      "optionA": "the speed of light depends on the speed of the observer",
+      "optionB": "the speed of light in vacuum is $c = 3\\times10^8\\,\\rm m/s$ in all inertial frames, regardless of the motion of the source or observer",
+      "optionC": "the speed of light is infinite",
+      "optionD": "light slows down when moving away from its source.",
+      "answer": "B",
+      "explanation": "Einstein's **second postulate**: the speed of light in vacuum is the same constant $c$ for all inertial observers, regardless of the relative motion of the light source and observer. This contradicts Galilean addition of velocities and is the foundation of all relativistic effects (time dilation, length contraction, mass-energy equivalence). Answer: (B).",
+      "topic": "Chapter 47: The Special Theory of Relativity",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 47"
+      ]
+    },
+    {
+      "id": "c4f01dbf-7ee2-4cef-8c69-33a08d15cc8b",
+      "question": "A moving clock runs",
+      "optionA": "faster than a stationary clock",
+      "optionB": "slower than a stationary clock (time dilation)",
+      "optionC": "at the same rate as a stationary clock",
+      "optionD": "faster or slower depending on the medium.",
+      "answer": "B",
+      "explanation": "**Time dilation**: a clock moving with velocity $v$ relative to an observer runs slower by the Lorentz factor:\n$$\\Delta t' = \\gamma\\,\\Delta t_0 = \\frac{\\Delta t_0}{\\sqrt{1 - v^2/c^2}}$$\nwhere $\\Delta t_0$ is the proper time (measured in the clock's rest frame) and $\\Delta t'$ is the time measured by the moving observer ($\\Delta t' > \\Delta t_0$). A moving clock reads less elapsed time — it runs slow. Confirmed by: cosmic ray muons reaching Earth's surface, GPS satellite corrections. Answer: (B).",
+      "topic": "Chapter 47: The Special Theory of Relativity",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 47"
+      ]
+    },
+    {
+      "id": "3b433538-52ce-40e9-bbad-bdc864f73e89",
+      "question": "A moving rod, measured by a stationary observer, appears",
+      "optionA": "longer than when at rest (length expansion)",
+      "optionB": "shorter along the direction of motion (length contraction)",
+      "optionC": "the same length as when at rest",
+      "optionD": "shorter perpendicular to the motion.",
+      "answer": "B",
+      "explanation": "**Length contraction** (Lorentz contraction): a rod of proper length $L_0$ (measured in its rest frame) moving with velocity $v$ appears contracted in the direction of motion to an observer:\n$$L = \\frac{L_0}{\\gamma} = L_0\\sqrt{1 - v^2/c^2}$$\nOnly the length along the direction of motion contracts; dimensions perpendicular to motion are unchanged. Answer: (B).",
+      "topic": "Chapter 47: The Special Theory of Relativity",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 47"
+      ]
+    },
+    {
+      "id": "18bae995-1491-4ac1-a6fa-c8e9c2247d83",
+      "question": "The mass-energy equivalence relation $E = mc^2$ implies",
+      "optionA": "mass and energy are the same thing",
+      "optionB": "mass can be converted to energy and energy to mass",
+      "optionC": "a small mass corresponds to an enormous amount of energy",
+      "optionD": "only (B) and (C) are correct.",
+      "answer": "D",
+      "explanation": "$E = mc^2$:\n- **A** in isolation is imprecise: mass and energy are not \"the same thing\" — they are related by a conversion factor $c^2$.\n- **B** ✓: Mass-energy can be converted: nuclear fission/fusion converts mass defect to energy; pair production converts photon energy to mass.\n- **C** ✓: $c^2 \\approx 9\\times10^{16}\\,\\rm J/kg$ — even 1 gram of mass $\\equiv 9\\times10^{13}\\,\\rm J$ (equivalent to $\\sim 20$ kilotons TNT).\n- **D** ✓: Both B and C are correct; A is an oversimplification.\nAnswer: (D).",
+      "topic": "Chapter 47: The Special Theory of Relativity",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 47"
+      ]
+    },
+    {
+      "id": "8cd764b7-545e-4484-b830-76528a542b22",
+      "question": "The relativistic momentum of a particle of rest mass $m_0$ moving with velocity $v$ is",
+      "optionA": "$p = m_0 v$",
+      "optionB": "$p = \\gamma m_0 v = \\dfrac{m_0 v}{\\sqrt{1 - v^2/c^2}}$",
+      "optionC": "$p = m_0 v^2/c$",
+      "optionD": "$p = m_0 v\\,c$",
+      "answer": "B",
+      "explanation": "The relativistic momentum:\n$$p = \\gamma m_0 v = \\frac{m_0 v}{\\sqrt{1-v^2/c^2}}$$\nAt low speeds ($v \\ll c$): $\\gamma \\approx 1$, recovering Newtonian $p = m_0 v$. As $v \\to c$: $\\gamma \\to \\infty$ and $p \\to \\infty$ — it takes infinite force to accelerate a massive particle to $c$. Answer: (B).",
+      "topic": "Chapter 47: The Special Theory of Relativity",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 47"
+      ]
+    },
+    {
+      "id": "c2b133ff-5752-4326-a096-11dc824fad5f",
+      "question": "Which of the following are consequences of special relativity?",
+      "optionA": "Time dilation: moving clocks run slow.",
+      "optionB": "Length contraction: moving objects are shorter along the direction of motion.",
+      "optionC": "Mass-energy equivalence: $E = mc^2$.",
+      "optionD": "Absolute simultaneity: two events simultaneous in one frame are simultaneous in all frames.",
+      "answer": "A,B,C",
+      "explanation": "- **A** ✓: Time dilation $\\Delta t' = \\gamma\\Delta t_0$ — moving clocks tick slower.\n- **B** ✓: Length contraction $L = L_0/\\gamma$ — moving rods appear shorter.\n- **C** ✓: Mass-energy equivalence — nuclear energy release, pair production.\n- **D** ✗: **Relativity of simultaneity**: two events simultaneous in one inertial frame are generally **not** simultaneous in another. Absolute simultaneity does not exist in special relativity.\n\nAnswer: (A), (B), (C).",
+      "topic": "Chapter 47: The Special Theory of Relativity",
+      "subtopic": "Objective II",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective II",
+        "Chapter 47"
+      ]
+    },
+    {
+      "id": "c1103642-14d8-4d2b-aa35-26e063c4d3d3",
+      "question": "Which of the following are invariant (the same in all inertial frames) in special relativity?",
+      "optionA": "The speed of light in vacuum",
+      "optionB": "The time interval between two events",
+      "optionC": "The spacetime interval $s^2 = c^2\\Delta t^2 - \\Delta x^2$",
+      "optionD": "The rest mass of a particle",
+      "answer": "A,C,D",
+      "explanation": "- **A** ✓: Speed of light $c$ is the same in all inertial frames (Einstein's second postulate).\n- **B** ✗: Time intervals are **not** invariant — they depend on the relative motion of frames (time dilation). The **proper time** (measured in the rest frame) is invariant, but not a general time interval.\n- **C** ✓: The **spacetime interval** $\\Delta s^2 = c^2\\Delta\\tau^2 = c^2\\Delta t^2 - \\Delta x^2 - \\Delta y^2 - \\Delta z^2$ is Lorentz invariant (same in all inertial frames).\n- **D** ✓: The **rest mass** (invariant mass) $m_0$ is the same in all frames. The relativistic mass $\\gamma m_0$ varies, but $m_0$ is invariant.\n\nAnswer: (A), (C), (D).",
+      "topic": "Chapter 47: The Special Theory of Relativity",
+      "subtopic": "Objective II",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective II",
+        "Chapter 47"
+      ]
     }
   ]
 }
