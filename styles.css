@@ -568,7 +568,7 @@ img { display: block; max-width: 100%; }
 .student-select {
   border: 1px solid var(--border); border-radius: 99px;
   padding: 8px 14px; font-weight: 700; background: var(--surface);
-  color: var(--ink); cursor: pointer;
+  color: var(--ink); cursor: pointer; max-width: 200px;
   transition: border-color var(--t-fast);
 }
 .student-select:hover { border-color: var(--primary); }
@@ -1224,4 +1224,125 @@ mark { background: #fde68a; color: inherit; border-radius: 3px; padding: 0 1px; 
   .res-link-grid { grid-template-columns: 1fr; }
   .res-chapter-grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
   .res-ncert-toolbar { flex-direction: column; align-items: stretch; }
+}
+
+/* ── Sidebar backdrop overlay (mobile) ───────────────────────────────── */
+.sidebar-backdrop {
+  position: fixed; inset: 0;
+  background: rgba(0,0,0,0.48);
+  z-index: 40;
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  animation: fadeIn 0.18s ease both;
+  touch-action: none;
+}
+.sidebar-backdrop[hidden] { display: none !important; }
+@media (min-width: 961px) { .sidebar-backdrop { display: none !important; } }
+
+/* ── Touch & iOS scroll optimisations ────────────────────────────────── */
+.journey-table-wrap,
+.search-results,
+.sidebar-nav { -webkit-overflow-scrolling: touch; }
+
+/* ── Prevent iOS input zoom (font-size must be ≥ 16px) ──────────────── */
+@media (max-width: 960px) {
+  input, select, textarea {
+    font-size: max(16px, 1em) !important;
+  }
+  /* Minimum 44 × 44 pt touch targets (Apple HIG) */
+  button, .option-btn, .chip, .nav-item,
+  .journey-tab, .res-chapter-tile { min-height: 44px; }
+  select { min-height: 44px; }
+  .icon-btn { min-height: 44px; min-width: 44px; }
+  /* Avoid hover sticking on touch */
+  .option-btn:hover:not(:disabled) { transform: none; box-shadow: none; }
+  .stat-card:hover { transform: none; box-shadow: var(--shadow-xs); }
+  .journey-student-card:hover { transform: none; }
+}
+
+/* ── Topbar: collapse non-essentials ─────────────────────────────────── */
+/* Sync + pill badges are redundant on anything below a full desktop.
+   Auto-sync runs on load; MCQ count & role are visible on the dashboard. */
+@media (max-width: 1366px) {
+  #syncProgressBtn, #syncBankBtn { display: none !important; }
+  #roleBadge, #totalCount { display: none !important; }
+  .topbar-actions { flex-wrap: nowrap; }
+}
+@media (max-width: 600px) {
+  .topbar-eyebrow { display: none; }
+  .topbar-actions { gap: 5px; }
+  #studentSelect { max-width: 120px; font-size: 0.78rem; min-height: 36px; }
+  #adminUnlockBtn { font-size: 0.76rem; padding: 5px 9px; }
+  #themeToggleBtn { padding: 7px; }
+}
+@media (max-width: 400px) {
+  #adminUnlockBtn { display: none !important; }
+  .topbar { padding: 10px 12px; gap: 8px; }
+  .content-area { padding: 10px; }
+}
+
+/* ── Content area: comfortable padding on phone ──────────────────────── */
+@media (max-width: 480px) {
+  .content-area { padding: 12px; }
+  .panel-card { padding: 14px; }
+  .practice-card-inner { padding: 16px; }
+  .practice-meta { padding: 10px 16px 0; }
+  .view-hero { margin-bottom: 18px; }
+  .continue-card { flex-direction: column; align-items: flex-start; padding: 16px; }
+  .stat-card { padding: 14px 12px; }
+}
+
+/* ── Journey: scrollable sub-tabs on narrow screens ─────────────────── */
+@media (max-width: 640px) {
+  .journey-detail { padding: 14px; }
+  .journey-tabs {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding-bottom: 2px;
+    gap: 4px;
+    margin-bottom: 16px;
+  }
+  .journey-tabs::-webkit-scrollbar { display: none; }
+  .journey-tab { white-space: nowrap; flex-shrink: 0; padding: 6px 11px; }
+  .journey-stat-row { grid-template-columns: repeat(2, 1fr); }
+  .journey-insight-grid { grid-template-columns: repeat(2, 1fr); }
+  .journey-timer-display { font-size: 2.2rem; padding: 14px; }
+}
+
+@media (max-width: 480px) {
+  .journey-table { min-width: 0; font-size: 0.78rem; }
+  .journey-table th, .journey-table td { padding: 8px 7px; }
+  .journey-stat-row { grid-template-columns: 1fr 1fr; }
+  .journey-insight-grid { grid-template-columns: 1fr 1fr; }
+}
+
+/* ── Safe area insets (iPhone notch / Dynamic Island) ────────────────── */
+@supports (padding: env(safe-area-inset-top)) {
+  @media (max-width: 960px) {
+    .topbar {
+      padding-top: max(12px, env(safe-area-inset-top));
+      padding-left: max(16px, env(safe-area-inset-left));
+      padding-right: max(16px, env(safe-area-inset-right));
+    }
+    .sidebar {
+      padding-top: max(20px, env(safe-area-inset-top));
+      padding-bottom: max(12px, env(safe-area-inset-bottom));
+    }
+    .content-area { padding-bottom: max(16px, env(safe-area-inset-bottom)); }
+  }
+}
+
+/* ── Sidebar: ensure it covers full height on mobile ─────────────────── */
+@media (max-width: 960px) {
+  .sidebar { height: 100dvh; height: 100vh; }
+}
+
+/* ── Hover: only apply hover effects on devices that support hover ────── */
+@media (hover: none) {
+  .journey-student-card:hover { border-color: var(--border); box-shadow: none; transform: none; }
+  .res-link:hover { border-color: var(--border); box-shadow: none; transform: none; }
+  .strategy-item:hover { border-color: var(--border); }
+  .res-chapter-tile:hover { border-color: var(--border); background: var(--surface-2); }
 }

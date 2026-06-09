@@ -77,6 +77,7 @@ const el = {
   viewPanels: document.querySelectorAll('.view-panel'),
   sidebar: document.querySelector('.sidebar'),
   menuToggle: document.getElementById('menuToggle'),
+  sidebarBackdrop: document.getElementById('sidebarBackdrop'),
   dashboardView: document.getElementById('dashboardView'),
   chaptersView: document.getElementById('chaptersView'),
   chapterDetail: document.getElementById('chapterDetail'),
@@ -2397,6 +2398,7 @@ function switchTab(tabName) {
     panel.hidden = !isActive;
   });
   if (el.sidebar) el.sidebar.classList.remove('open');
+  if (el.sidebarBackdrop) el.sidebarBackdrop.hidden = true;
   if (tabName === 'flags') renderFlagReview();
   if (tabName === 'journey') renderJourney();
   refreshLearningViews();
@@ -3066,7 +3068,16 @@ function bindEvents() {
   });
 
   if (el.menuToggle && el.sidebar) {
-    el.menuToggle.addEventListener('click', () => el.sidebar.classList.toggle('open'));
+    el.menuToggle.addEventListener('click', () => {
+      const isOpen = el.sidebar.classList.toggle('open');
+      if (el.sidebarBackdrop) el.sidebarBackdrop.hidden = !isOpen;
+    });
+  }
+  if (el.sidebarBackdrop) {
+    el.sidebarBackdrop.addEventListener('click', () => {
+      el.sidebar.classList.remove('open');
+      el.sidebarBackdrop.hidden = true;
+    });
   }
 
   [el.dashboardView, el.chaptersView, el.revisionView, el.auditView, el.practiceResults].forEach(view => {
