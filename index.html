@@ -41,6 +41,9 @@
         <button class="nav-item" data-tab="audit" type="button">
           <span class="nav-icon">☰</span> Progress & Audit
         </button>
+        <button class="nav-item" data-tab="journey" type="button">
+          <span class="nav-icon">🗺</span> Journey
+        </button>
         <button class="nav-item" data-tab="bank" type="button">
           <span class="nav-icon">≡</span> Question Bank
         </button>
@@ -204,13 +207,13 @@
               <label>Option C <input id="fOptionC" type="text" required /></label>
               <label>Option D <input id="fOptionD" type="text" required /></label>
             </div>
-            <label>Correct answer
-              <select id="fAnswer" required>
-                <option value="">Select</option>
-                <option value="A">A</option><option value="B">B</option>
-                <option value="C">C</option><option value="D">D</option>
-              </select>
-            </label>
+            <fieldset class="answer-checkbox-group">
+              <legend>Correct answer(s) <span class="muted">(tick more than one if multiple options are correct)</span></legend>
+              <label class="checkbox-inline"><input type="checkbox" id="fAnswerA" value="A" /> A</label>
+              <label class="checkbox-inline"><input type="checkbox" id="fAnswerB" value="B" /> B</label>
+              <label class="checkbox-inline"><input type="checkbox" id="fAnswerC" value="C" /> C</label>
+              <label class="checkbox-inline"><input type="checkbox" id="fAnswerD" value="D" /> D</label>
+            </fieldset>
             <label class="full-width">Explanation<textarea id="fExplanation" rows="2"></textarea></label>
             <div class="image-upload-block" data-image-field="explanation_image">
               <label class="image-upload-label">Explanation image<input id="fExplanationImageFile" type="file" accept="image/*" class="image-file-input" /></label>
@@ -277,6 +280,11 @@
             <h3>No questions</h3>
             <p>Sync the question bank to begin.</p>
           </div>
+        </section>
+
+        <!-- Journey -->
+        <section id="tab-journey" class="view-panel" hidden>
+          <div id="journeyView"></div>
         </section>
 
         <!-- Import -->

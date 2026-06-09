@@ -52,7 +52,8 @@ const state = {
     index: 0,
     score: 0,
     answered: false,
-    selectedOption: null
+    selectedOption: null,
+    selectedOptions: []
   },
   bankSearch: '',
   bankShowAnswers: false,
@@ -105,7 +106,10 @@ const el = {
   fOptionB: document.getElementById('fOptionB'),
   fOptionC: document.getElementById('fOptionC'),
   fOptionD: document.getElementById('fOptionD'),
-  fAnswer: document.getElementById('fAnswer'),
+  fAnswerA: document.getElementById('fAnswerA'),
+  fAnswerB: document.getElementById('fAnswerB'),
+  fAnswerC: document.getElementById('fAnswerC'),
+  fAnswerD: document.getElementById('fAnswerD'),
   fExplanation: document.getElementById('fExplanation'),
   fQuestionImageFile: document.getElementById('fQuestionImageFile'),
   fQuestionImageData: document.getElementById('fQuestionImageData'),
@@ -817,6 +821,7 @@ function startPracticeWithQuestions(questions) {
     score: 0,
     answered: false,
     selectedOption: null,
+    selectedOptions: [],
     log: [],
     streakInSession: 0,
     lastFeedback: null,
@@ -893,6 +898,10 @@ function bindSearchPalette() {
       if (state.practice.answered && (event.key === ' ' || event.key === 'Enter') && !event.metaKey && !event.ctrlKey) {
         event.preventDefault();
         el.practiceNext?.click();
+      }
+      if (!state.practice.answered && (event.key === ' ' || event.key === 'Enter') && !event.metaKey && !event.ctrlKey) {
+        const submitBtn = el.practiceCard?.querySelector('[data-action="submit-multi"]:not(:disabled)');
+        if (submitBtn) { event.preventDefault(); submitBtn.click(); }
       }
     }
 
@@ -1649,6 +1658,29 @@ function answerTextToLetter(answer, options) {
   return index >= 0 ? ['A', 'B', 'C', 'D'][index] : '';
 }
 
+// Some questions (e.g. "Objective II" style) allow more than one correct option.
+// Their `answer` field is stored as a comma-joined letter list, e.g. "A,C,D".
+function parseAnswerLetters(answer, options) {
+  const raw = clean(answer).toUpperCase();
+  const candidates = raw.split(/[,\s/]+/).filter(Boolean);
+  const valid = candidates.filter(letter => ['A', 'B', 'C', 'D'].includes(letter));
+  if (valid.length) return [...new Set(valid)].sort();
+  const single = answerTextToLetter(answer, options);
+  return single ? [single] : [];
+}
+
+function getCorrectLetters(question) {
+  return clean(question?.answer)
+    .toUpperCase()
+    .split(',')
+    .map(letter => letter.trim())
+    .filter(letter => ['A', 'B', 'C', 'D'].includes(letter));
+}
+
+function isMultiCorrect(question) {
+  return getCorrectLetters(question).length > 1;
+}
+
 const OPTION_LETTERS = ['A', 'B', 'C', 'D'];
 const ALLOWED_IMAGE_TYPES = ['image/jpeg', 'image/png', 'image/webp', 'image/gif'];
 const MAX_IMAGE_FILE_SIZE = 5 * 1024 * 1024;
@@ -1840,8 +1872,9 @@ function setWhyWrongFields(whyWrong = {}) {
 
 function getWhyWrongEntries(question) {
   const whyWrong = question.whyWrong || {};
+  const correctLetters = getCorrectLetters(question);
   return OPTION_LETTERS
-    .filter(letter => letter !== question.answer && clean(whyWrong[letter]))
+    .filter(letter => !correctLetters.includes(letter) && clean(whyWrong[letter]))
     .map(letter => ({
       letter,
       option: question.options[answerLetterToIndex(letter)],
@@ -1895,8 +1928,9 @@ function normaliseQuestion(raw) {
   const question = clean(raw.question);
   if (!question || options.some(opt => !opt)) return null;
 
-  const answer = answerTextToLetter(raw.answer, options);
-  if (!answer) return null;
+  const answerLetters = parseAnswerLetters(raw.answer, options);
+  if (!answerLetters.length) return null;
+  const answer = answerLetters.join(',');
 
   return {
     id: raw.id || makeId(),
@@ -2226,14 +2260,15 @@ function renderBankEditForm(q) {
           </label>
         `).join('')}
       </div>
-      <label>
-        Correct answer
-        <select name="answer" required>
-          ${letters.map(letter => `
-            <option value="${letter}" ${q.answer === letter ? 'selected' : ''}>${letter}</option>
-          `).join('')}
-        </select>
-      </label>
+      <fieldset class="answer-checkbox-group">
+        <legend>Correct answer(s) <span class="muted">(tick more than one if multiple options are correct)</span></legend>
+        ${letters.map(letter => `
+          <label class="checkbox-inline">
+            <input type="checkbox" name="answer" value="${letter}" ${getCorrectLetters(q).includes(letter) ? 'checked' : ''} />
+            ${letter}
+          </label>
+        `).join('')}
+      </fieldset>
       <label class="full-width">
         Explanation
         <textarea name="explanation" rows="2">${escapeHtml(q.explanation)}</textarea>
@@ -2291,7 +2326,7 @@ function renderBankCard(q) {
       </ol>
       <div class="bank-answer-section" ${answersVisible ? '' : 'hidden'}>
         <div class="bank-correct-answer">
-          <strong>Answer: ${escapeHtml(q.answer)}.</strong> ${bankHighlight(q.options[['A','B','C','D'].indexOf(q.answer)] || '')}
+          ${getCorrectLetters(q).map(letter => `<div><strong>Answer: ${letter}.</strong> ${bankHighlight(q.options[['A','B','C','D'].indexOf(letter)] || '')}</div>`).join('')}
         </div>
         ${q.explanation ? `<p class="bank-explanation"><strong>Explanation:</strong> ${bankHighlight(q.explanation)}</p>` : ''}
         ${renderImageHtml(q.explanationImage, 'Explanation image')}
@@ -2363,6 +2398,7 @@ function switchTab(tabName) {
   });
   if (el.sidebar) el.sidebar.classList.remove('open');
   if (tabName === 'flags') renderFlagReview();
+  if (tabName === 'journey') renderJourney();
   refreshLearningViews();
 }
 
@@ -2418,7 +2454,7 @@ function saveInlineEdit(form) {
     option_b: formData.get('option_b'),
     option_c: formData.get('option_c'),
     option_d: formData.get('option_d'),
-    answer: formData.get('answer'),
+    answer: formData.getAll('answer').join(','),
     explanation: formData.get('explanation'),
     whyWrong: readWhyWrongFromForm(formData),
     questionImage: formData.get('question_image'),
@@ -2537,6 +2573,7 @@ function startPractice() {
     score: 0,
     answered: false,
     selectedOption: null,
+    selectedOptions: [],
     log: [],
     streakInSession: 0,
     lastFeedback: null,
@@ -2580,14 +2617,16 @@ function renderPracticeQuestion() {
   el.practiceScore.textContent = `Score: ${session.score}/${session.index + (session.answered ? 1 : 0)}`;
 
   const letters = ['A', 'B', 'C', 'D'];
-  const correctIndex = answerLetterToIndex(current.answer);
+  const multi = isMultiCorrect(current);
+  const correctLetters = getCorrectLetters(current);
   const order = getOptionOrder(session, current);
   // Map each canonical option letter -> the letter it is displayed under now.
   const displayLetterByCanonical = {};
   order.forEach((originalIndex, displayPos) => {
     displayLetterByCanonical[letters[originalIndex]] = letters[displayPos];
   });
-  const correctDisplayLetter = displayLetterByCanonical[letters[correctIndex]] || current.answer;
+  const correctDisplayLetters = correctLetters.map(letter => displayLetterByCanonical[letter] || letter);
+  const selected = multi ? (session.selectedOptions || []) : (session.selectedOption ? [session.selectedOption] : []);
 
   el.practiceCard.innerHTML = `
     <div class="mcq-meta">
@@ -2595,36 +2634,46 @@ function renderPracticeQuestion() {
       <span class="badge green">${escapeHtml(current.topic)}</span>
       ${current.subtopic ? `<span class="badge">${escapeHtml(current.subtopic)}</span>` : ''}
       ${current.tags.map(tag => `<span class="badge orange">${escapeHtml(tag)}</span>`).join('')}
+      ${multi ? '<span class="badge purple">Multiple correct</span>' : ''}
     </div>
     <p class="question">${renderMath(current.question)}</p>
+    ${multi && !session.answered ? '<p class="mcq-hint">Select every option you think is correct, then submit.</p>' : ''}
     ${renderImageHtml(current.questionImage, 'Question image')}
-    <div class="options interactive">
+    <div class="options interactive ${multi ? 'multi-select' : ''}">
       ${order.map((originalIndex, displayPos) => {
         const option = current.options[originalIndex];
         const canonicalLetter = letters[originalIndex];   // identity for scoring
         const displayLetter = letters[displayPos];        // position shown on screen
+        const isChosen = selected.includes(canonicalLetter);
         let className = 'option-btn';
+        if (multi && !session.answered && isChosen) className += ' selected';
         if (session.answered) {
-          if (originalIndex === correctIndex) className += ' correct';
-          else if (canonicalLetter === session.selectedOption) className += ' wrong';
+          if (correctLetters.includes(canonicalLetter)) className += ' correct';
+          else if (isChosen) className += ' wrong';
         }
         const disabled = session.answered ? 'disabled' : '';
+        const marker = multi && !session.answered ? (isChosen ? '✓' : displayLetter) : displayLetter;
         return `<button type="button" class="${className}" data-option="${canonicalLetter}" ${disabled}>
-          <span class="option-letter">${displayLetter}</span>
+          <span class="option-letter">${marker}</span>
           <span>${renderMath(option)}</span>
         </button>`;
       }).join('')}
     </div>
+    ${multi && !session.answered ? `
+      <div class="practice-actions inline">
+        <button type="button" class="primary-btn" data-action="submit-multi" ${selected.length ? '' : 'disabled'}>Submit answer</button>
+      </div>` : ''}
     ${session.answered ? `
       ${session.lastFeedback ? `<div class="coach-feedback ${session.lastFeedback.tone}">${escapeHtml(session.lastFeedback.text)}</div>` : ''}
       <div class="answer show">
-        <strong>Correct answer: ${correctDisplayLetter}.</strong> ${renderMath(current.options[correctIndex])}
+        <strong>Correct answer${correctDisplayLetters.length > 1 ? 's' : ''}: ${correctDisplayLetters.join(', ')}.</strong>
+        ${correctLetters.map(letter => renderMath(current.options[answerLetterToIndex(letter)])).join('<br>')}
         ${current.explanation ? `<br><strong>Explanation:</strong> ${renderMath(current.explanation)}` : ''}
         ${renderImageHtml(current.explanationImage, 'Explanation image')}
         ${renderWhyWrongHtml(current, displayLetterByCanonical)}
-        <button type="button" class="flag-report-btn" data-action="open-flag" ${hasPendingFlagForQuestion(current.id, state.activeStudentId) ? 'disabled' : ''}>
+        ${!multi ? `<button type="button" class="flag-report-btn" data-action="open-flag" ${hasPendingFlagForQuestion(current.id, state.activeStudentId) ? 'disabled' : ''}>
           ${hasPendingFlagForQuestion(current.id, state.activeStudentId) ? '✓ Report submitted — pending review' : '⚑ Flag wrong answer / suggest correction'}
-        </button>
+        </button>` : ''}
       </div>` : ''}
   `;
 
@@ -2637,13 +2686,41 @@ function renderPracticeQuestion() {
 function selectPracticeOption(optionLetter) {
   const session = state.practice;
   if (session.answered) return;
-
   const current = session.questions[session.index];
+
+  if (isMultiCorrect(current)) {
+    const chosen = new Set(session.selectedOptions || []);
+    if (chosen.has(optionLetter)) chosen.delete(optionLetter);
+    else chosen.add(optionLetter);
+    session.selectedOptions = [...chosen];
+    renderPracticeQuestion();
+    return;
+  }
+
   const isCorrect = optionLetter === current.answer;
   session.selectedOption = optionLetter;
   session.answered = true;
   if (isCorrect) session.score += 1;
+  finishPracticeAttempt(current, isCorrect, optionLetter);
+}
 
+function submitMultiPracticeAnswer() {
+  const session = state.practice;
+  if (session.answered) return;
+  const current = session.questions[session.index];
+  if (!isMultiCorrect(current)) return;
+
+  const selected = (session.selectedOptions || []).slice().sort();
+  if (!selected.length) return;
+  const correct = getCorrectLetters(current);
+  const isCorrect = selected.length === correct.length && selected.every((letter, i) => letter === correct[i]);
+  session.answered = true;
+  if (isCorrect) session.score += 1;
+  finishPracticeAttempt(current, isCorrect, selected.join(','));
+}
+
+function finishPracticeAttempt(current, isCorrect, selectedLabel) {
+  const session = state.practice;
   // Capture state BEFORE recording so the coach can react to the prior history.
   const prior = getQuestionProgress(state.activeStudentId, current.id);
   const ms = session.questionStartAt ? Date.now() - session.questionStartAt : 0;
@@ -2660,7 +2737,7 @@ function selectPracticeOption(optionLetter) {
   if (!session.log) session.log = [];
   session.log.push({ question: current, isCorrect, ms });
 
-  recordAttempt(current, isCorrect, optionLetter);
+  recordAttempt(current, isCorrect, selectedLabel);
   renderPracticeQuestion();
 }
 
@@ -2674,6 +2751,7 @@ function nextPracticeQuestion() {
   session.index += 1;
   session.answered = false;
   session.selectedOption = null;
+  session.selectedOptions = [];
   session.lastFeedback = null;
   renderPracticeQuestion();
 }
@@ -3047,6 +3125,11 @@ function bindEvents() {
       if (current) openFlagDialog(current);
       return;
     }
+    const submitBtn = event.target.closest('[data-action="submit-multi"]');
+    if (submitBtn && !submitBtn.disabled) {
+      submitMultiPracticeAnswer();
+      return;
+    }
     const btn = event.target.closest('.option-btn');
     if (!btn || btn.disabled) return;
     selectPracticeOption(btn.dataset.option);
@@ -3097,7 +3180,10 @@ function bindEvents() {
       option_b: el.fOptionB.value,
       option_c: el.fOptionC.value,
       option_d: el.fOptionD.value,
-      answer: el.fAnswer.value,
+      answer: [el.fAnswerA, el.fAnswerB, el.fAnswerC, el.fAnswerD]
+        .filter(box => box.checked)
+        .map(box => box.value)
+        .join(','),
       explanation: el.fExplanation.value,
       whyWrong: readWhyWrongFromForm(),
       questionImage: el.fQuestionImageData.value,
@@ -3356,6 +3442,797 @@ async function init() {
   } else {
     setActiveStudent(state.activeStudentId);
   }
+}
+
+// ═══════════════════════════════════════════════════════════════════════════
+// JOURNEY MODULE — per-student Physics journey tracker
+// ═══════════════════════════════════════════════════════════════════════════
+
+const JRN = {
+  mocks:    id => `neet-phys-mocks-${id}`,
+  errors:   id => `neet-phys-errors-${id}`,
+  revision: id => `neet-phys-revision-${id}`,
+  checklist:id => `neet-phys-checklist-${id}`,
+  get(key, fb = []) {
+    try { return JSON.parse(localStorage.getItem(key)) ?? fb; } catch { return fb; }
+  },
+  set(key, val) { try { localStorage.setItem(key, JSON.stringify(val)); } catch {} }
+};
+
+const REV_OFFSETS = [0, 1, 7, 21, 45, 75];
+
+function jrnTodayISO() {
+  const d = new Date();
+  d.setMinutes(d.getMinutes() - d.getTimezoneOffset());
+  return d.toISOString().slice(0, 10);
+}
+function jrnToDate(iso) { const d = new Date(iso); d.setHours(0,0,0,0); return d; }
+function jrnDaysFrom(iso) {
+  return Math.round((jrnToDate(iso) - jrnToDate(jrnTodayISO())) / 86400000);
+}
+function jrnAddDays(iso, n) {
+  const d = jrnToDate(iso); d.setDate(d.getDate() + n);
+  return d.toISOString().slice(0, 10);
+}
+function jrnNextDue(row) {
+  const ticks = row.ticks || Array(6).fill(false);
+  const idx = ticks.findIndex(t => !t);
+  if (idx === -1) return { label: 'Done', date: '—', idx: -1, due: false };
+  const date = jrnAddDays(row.added || jrnTodayISO(), REV_OFFSETS[idx]);
+  const days = jrnDaysFrom(date);
+  return { label: `R${idx + 1}`, date, idx, due: days <= 0, overdue: days < 0 };
+}
+function jrnEscHtml(s) {
+  return String(s ?? '').replace(/[&<>'"]/g, c =>
+    ({ '&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;' }[c]));
+}
+
+// Get unique chapter names from the loaded bank
+function jrnGetBankChapters() {
+  const seen = new Set();
+  const list = [];
+  (state.questions || []).forEach(q => {
+    const t = q.topic || '';
+    if (t && !seen.has(t)) { seen.add(t); list.push(t); }
+  });
+  list.sort((a, b) => {
+    const na = parseInt(a.match(/\d+/)?.[0] || 0);
+    const nb = parseInt(b.match(/\d+/)?.[0] || 0);
+    return na - nb || a.localeCompare(b);
+  });
+  return list;
+}
+
+// ── Journey render entry point ───────────────────────────────────────────────
+
+function renderJourney() {
+  const container = document.getElementById('journeyView');
+  if (!container) return;
+
+  const students = getConfiguredStudents();
+  const activeId = state.activeStudentId;
+
+  const studentCards = students.map(name => {
+    const id = studentIdFromName(name);
+    const initials = name.split(' ').map(w => w[0]).join('').slice(0, 2).toUpperCase();
+    const prog = state.progress.students[id] || {};
+    const qs = prog.questions || {};
+    const totalDone = Object.keys(qs).length;
+    const correct = Object.values(qs).filter(q => q.correct).length;
+    const acc = totalDone ? Math.round(correct / totalDone * 100) : 0;
+    const errors = JRN.get(JRN.errors(id)).filter(e => (e.status || 'Open') !== 'Fixed');
+    const revDue = JRN.get(JRN.revision(id)).filter(r => jrnNextDue(r).due).length;
+    const mocks = JRN.get(JRN.mocks(id));
+    const lastMock = mocks.length ? mocks[0].score : '—';
+    const isActive = id === activeId;
+
+    return `<div class="journey-student-card ${isActive ? 'active-student' : ''}" onclick="jrnOpenStudent('${jrnEscHtml(id)}')">
+      <h3><span class="avatar">${jrnEscHtml(initials)}</span>${jrnEscHtml(name)}</h3>
+      <div class="journey-mini-stats">
+        <div class="journey-mini-stat"><span>MCQs done</span><strong>${totalDone}</strong></div>
+        <div class="journey-mini-stat"><span>Accuracy</span><strong>${acc}%</strong></div>
+        <div class="journey-mini-stat"><span>Open errors</span><strong style="${errors.length > 0 ? 'color:var(--danger)' : ''}">${errors.length}</strong></div>
+        <div class="journey-mini-stat"><span>Last mock</span><strong>${lastMock === '—' ? '—' : lastMock + '/180'}</strong></div>
+      </div>
+      ${revDue > 0 ? `<div class="journey-badge due" style="margin-bottom:6px">↻ ${revDue} revision${revDue > 1 ? 's' : ''} due</div>` : ''}
+      <button class="primary-btn small" style="width:100%;margin-top:4px" onclick="event.stopPropagation();jrnOpenStudent('${jrnEscHtml(id)}')">Open Journey</button>
+    </div>`;
+  }).join('');
+
+  container.innerHTML = `
+    <div class="view-hero compact">
+      <div class="journey-hero">
+        <h2>Student Journey</h2>
+        <p>Track each student's Physics progress, errors, mock scores and revision schedule. Switch students using the selector above.</p>
+      </div>
+    </div>
+    <div class="journey-student-grid">${studentCards}</div>
+    <div id="jrnDetail"></div>`;
+
+  // Auto-open active student's detail
+  if (activeId) jrnRenderDetail(activeId);
+}
+
+function jrnOpenStudent(id) {
+  setActiveStudent(id);
+  jrnRenderDetail(id);
+  document.getElementById('jrnDetail')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  // Re-render cards to highlight active
+  renderJourney();
+}
+
+// ── Per-student detail view ──────────────────────────────────────────────────
+
+let jrnTimerId = null;
+let jrnTimerSec = 50 * 60;
+let jrnTimerInit = 50 * 60;
+
+function jrnRenderDetail(id) {
+  const detail = document.getElementById('jrnDetail');
+  if (!detail) return;
+  const name = (state.progress.students[id]?.name) ||
+    getConfiguredStudents().find(n => studentIdFromName(n) === id) || id;
+
+  detail.innerHTML = `
+    <div class="journey-detail">
+      <div class="journey-detail-header">
+        <span class="avatar" style="width:42px;height:42px;font-size:1rem;border-radius:50%;background:linear-gradient(135deg,var(--primary),var(--accent));display:inline-flex;align-items:center;justify-content:center;color:white;font-weight:800;flex-shrink:0">
+          ${jrnEscHtml(name.split(' ').map(w=>w[0]).join('').slice(0,2).toUpperCase())}
+        </span>
+        <div>
+          <h3 style="margin:0">${jrnEscHtml(name)}'s Journey</h3>
+          <span style="font-size:0.8rem;color:var(--muted)">Physics · NEET preparation tracker</span>
+        </div>
+      </div>
+
+      <div class="journey-tabs">
+        <button class="journey-tab active" onclick="jrnTab(this,'jrn-plan')">Daily Plan</button>
+        <button class="journey-tab" onclick="jrnTab(this,'jrn-mock')">Mock Analyzer</button>
+        <button class="journey-tab" onclick="jrnTab(this,'jrn-errors')">Error Log</button>
+        <button class="journey-tab" onclick="jrnTab(this,'jrn-revision')">Revision Tracker</button>
+        <button class="journey-tab" onclick="jrnTab(this,'jrn-timer')">Focus Timer</button>
+        <button class="journey-tab" onclick="jrnTab(this,'jrn-roadmap')">Roadmap</button>
+      </div>
+
+      <div id="jrn-plan" class="journey-tab-panel active">${jrnPlanHtml(id)}</div>
+      <div id="jrn-mock" class="journey-tab-panel">${jrnMockHtml(id)}</div>
+      <div id="jrn-errors" class="journey-tab-panel">${jrnErrorsHtml(id)}</div>
+      <div id="jrn-revision" class="journey-tab-panel">${jrnRevisionHtml(id)}</div>
+      <div id="jrn-timer" class="journey-tab-panel">${jrnTimerHtml()}</div>
+      <div id="jrn-roadmap" class="journey-tab-panel">${jrnRoadmapHtml()}</div>
+    </div>`;
+}
+
+function jrnTab(btn, panelId) {
+  const detail = document.getElementById('jrnDetail');
+  if (!detail) return;
+  detail.querySelectorAll('.journey-tab').forEach(b => b.classList.remove('active'));
+  detail.querySelectorAll('.journey-tab-panel').forEach(p => p.classList.remove('active'));
+  btn.classList.add('active');
+  const panel = document.getElementById(panelId);
+  if (panel) panel.classList.add('active');
+}
+
+// ── Daily Plan ───────────────────────────────────────────────────────────────
+
+function jrnPlanHtml(id) {
+  const errors = JRN.get(JRN.errors(id)).filter(e => (e.status||'Open') !== 'Fixed');
+  const revDue = JRN.get(JRN.revision(id)).filter(r => jrnNextDue(r).due);
+  const mocks = JRN.get(JRN.mocks(id));
+  const prog = state.progress.students[id] || {};
+  const qs = prog.questions || {};
+  const totalDone = Object.keys(qs).length;
+
+  const weakChapters = {};
+  Object.entries(qs).forEach(([qid, rec]) => {
+    if (!rec.correct) {
+      const q = state.questions.find(x => x.id === qid);
+      if (q?.topic) weakChapters[q.topic] = (weakChapters[q.topic] || 0) + 1;
+    }
+  });
+  const weakChap = Object.entries(weakChapters).sort((a,b)=>b[1]-a[1]).slice(0,3).map(x=>x[0]).join(', ') || 'None';
+  const weakSubCnt = Object.values(weakChapters).reduce((a,b)=>a+b,0);
+
+  const openMistakeList = errors.slice(0,3).map(e=>e.chapter).join(', ');
+  const dueRevList = revDue.slice(0,3).map(r=>r.chapter).join(', ');
+
+  const topMistake = (() => {
+    const cnt = {};
+    errors.forEach(e => { cnt[e.type] = (cnt[e.type]||0)+1; });
+    const top = Object.entries(cnt).sort((a,b)=>b[1]-a[1]);
+    return top.length ? top[0][0] : '—';
+  })();
+  const lastScore = mocks.length ? mocks[0].score : null;
+
+  return `
+    <div class="journey-insight-grid">
+      <div class="journey-insight"><span>Open errors</span><strong>${errors.length}</strong><small>Not yet fixed</small></div>
+      <div class="journey-insight"><span>Revisions due</span><strong>${revDue.length}</strong><small>Overdue or today</small></div>
+      <div class="journey-insight"><span>Weak chapters</span><strong style="font-size:0.95rem;line-height:1.3">${weakChap ? weakChap.split(',')[0] : '—'}</strong><small>${weakSubCnt} wrong MCQs</small></div>
+      <div class="journey-insight"><span>Top mistake</span><strong style="font-size:0.95rem;line-height:1.3">${jrnEscHtml(topMistake)}</strong><small>Most frequent error type</small></div>
+    </div>
+    <div class="journey-form-grid" style="grid-template-columns:repeat(auto-fit,minmax(160px,1fr))">
+      <label>Study hours today
+        <input id="jrnPlanHours" type="number" min="1" max="12" step="0.5" value="6">
+      </label>
+      <label>Energy level
+        <select id="jrnPlanEnergy">
+          <option value="high">High</option>
+          <option value="medium" selected>Medium</option>
+          <option value="low">Low</option>
+        </select>
+      </label>
+      <label>Prep phase
+        <select id="jrnPlanPhase">
+          <option value="foundation">Foundation</option>
+          <option value="post-syllabus">Post-syllabus</option>
+          <option value="mock-phase" selected>Mock phase</option>
+          <option value="final-month">Final 30 days</option>
+        </select>
+      </label>
+    </div>
+    <div class="journey-btn-row">
+      <button class="primary-btn small" onclick="jrnGeneratePlan('${jrnEscHtml(id)}')">Generate Today's Plan</button>
+      <button class="secondary-btn small" onclick="jrnCopyPlan()">Copy Plan</button>
+    </div>
+    <div id="jrnPlanOutput" class="journey-plan-list"></div>`;
+}
+
+function jrnGeneratePlan(id) {
+  const hours = Math.max(1, Math.min(12, Number(document.getElementById('jrnPlanHours')?.value || 6)));
+  const energy = document.getElementById('jrnPlanEnergy')?.value || 'medium';
+  const phase = document.getElementById('jrnPlanPhase')?.value || 'mock-phase';
+  const totalMin = Math.round(hours * 60);
+
+  const errors = JRN.get(JRN.errors(id)).filter(e => (e.status||'Open') !== 'Fixed');
+  const revDue = JRN.get(JRN.revision(id)).filter(r => jrnNextDue(r).due);
+  const prog = state.progress.students[id] || {};
+  const qs = prog.questions || {};
+
+  const weakChapters = {};
+  Object.entries(qs).forEach(([qid, rec]) => {
+    if (!rec.correct) {
+      const q = state.questions.find(x => x.id === qid);
+      if (q?.topic) weakChapters[q.topic] = (weakChapters[q.topic]||0)+1;
+    }
+  });
+  const weakChap = Object.keys(weakChapters).sort((a,b)=>weakChapters[b]-weakChapters[a])[0] || '';
+
+  const base = energy === 'low' ? 35 : energy === 'high' ? 60 : 50;
+  const long = energy === 'low' ? 50 : energy === 'high' ? 90 : 70;
+  const blocks = [];
+  const add = (min, title, detail, tag) => blocks.push({ min, title, detail, tag });
+
+  if (revDue.length) add(base, 'Due Revision Queue', `Complete overdue revisions: ${revDue.slice(0,3).map(r=>r.chapter).join(', ')}${revDue.length>3?'…':''}. Revision-first is the most consistent topper pattern.`, 'due');
+  if (errors.length) add(base, 'Mistake Repair Block', `Reattempt and re-learn: ${errors.slice(0,3).map(e=>e.chapter).join(', ')}. Write what you did wrong vs what is correct.`, 'hot');
+
+  if (phase === 'foundation') {
+    add(long, 'HC Verma / NCERT Concept Study', 'Study one new Physics chapter. Derive key formulas once, then close the book and recall.', 'ncert');
+    add(base, 'Immediate MCQ Practice', 'Solve 50–80 MCQs from today\'s topic in the app immediately after reading. Log every miss.', 'mcq');
+    add(35, 'Formula Notebook Update', 'Add today\'s formulas to your formula sheet. This creates your revision artifact.', 'formula');
+  } else if (phase === 'post-syllabus') {
+    add(long, 'HC Verma Chapter PYQ Drill', `Focus on: ${weakChap || 'your weakest chapter'}. Classify each error as concept, formula, silly or guesswork.`, 'pyq');
+    add(base, weakChap ? `${weakChap.replace(/Chapter \d+: /,'')} Repair` : 'Weak Chapter Repair', 'Re-read theory for one weak chapter, then solve 40 timed questions.', 'weak');
+    add(base, 'Mixed MCQ Practice', 'Do 60–100 mixed MCQs across topics. Note recurring error patterns.', 'mcq');
+    add(40, 'Sectional Test', 'Take a timed chapter-level test and record mistakes in error log.', 'test');
+  } else if (phase === 'final-month') {
+    add(long, 'Formula + Graph Rapid Revision', 'Revise all formulas, important graphs (v-t, x-t, P-V etc.) and derivation checkpoints.', 'formula');
+    add(base, 'Physics PYQ Mixed Set', 'Do 40 NEET PYQs across random chapters under exam-like timing.', 'pyq');
+    add(long, 'Mock / Old Mock Analysis', 'Attempt a full Physics timed mock or deeply analyze the last mock. Fix every wrong/guessed question.', 'mock');
+    add(30, 'Error Log Final Pass', 'Read through all open error-log entries. If you truly know it now, mark it fixed.', 'errors');
+  } else { // mock-phase
+    add(long, 'Timed Physics Practice Block', 'Attempt 45 questions in 40 minutes. Simulate exam pressure. Start with high-confidence chapters.', 'mock');
+    add(base, 'Mock Analysis Deep Work', 'For every wrong/guessed question: find the concept, re-read it, reattempt tomorrow.', 'analysis');
+    add(base, weakChap ? `${weakChap.replace(/Chapter \d+: /,'')} Targeted Drill` : 'Weak Chapter Drill', `Focused repair: ${weakChap || 'pick your weakest chapter from audit'}. Theory + 30 timed questions.`, 'weak');
+    add(35, 'HC Verma Active Recall', 'Read one chapter, close book, write/recite key formulas and concepts from memory.', 'ncert');
+  }
+
+  blocks.sort((a,b) => (b.tag==='due'?2:b.tag==='hot'?1:0) - (a.tag==='due'?2:a.tag==='hot'?1:0));
+  let used = 0;
+  const selected = [];
+  for (const b of blocks) {
+    if (used >= totalMin) break;
+    const min = Math.min(b.min, totalMin - used);
+    if (min >= 20) { selected.push({ ...b, min }); used += min; }
+  }
+  if (used < totalMin - 15) selected.push({ min: totalMin - used, title: 'Buffer / Backlog', detail: 'Use for pending revision, error log review, or reattempting wrong questions.', tag: '' });
+
+  const phaseLabel = { foundation:'Foundation phase', 'post-syllabus':'Post-syllabus phase', 'mock-phase':'Mock-test phase', 'final-month':'Final 30 days' }[phase];
+  const html = `<div class="journey-flash info"><strong>${phaseLabel}:</strong> Plan uses topper patterns — revision-first, immediate practice, mistake repair, timed simulation.</div>` +
+    selected.map((b,i) => `<div class="journey-plan-item">
+      <div class="journey-plan-time">${b.min} min</div>
+      <div><h4>${i+1}. ${jrnEscHtml(b.title)}</h4><p>${jrnEscHtml(b.detail)}</p></div>
+    </div>`).join('');
+
+  const out = document.getElementById('jrnPlanOutput');
+  if (out) out.innerHTML = html;
+}
+
+function jrnCopyPlan() {
+  const items = [...document.querySelectorAll('#jrnPlanOutput .journey-plan-item')];
+  if (!items.length) { showToast('Generate a plan first.', 'warn'); return; }
+  const text = items.map(x => x.innerText.trim()).join('\n\n');
+  navigator.clipboard?.writeText(text).then(() => showToast('Plan copied!', 'success'));
+}
+
+// ── Mock Analyzer ────────────────────────────────────────────────────────────
+
+function jrnMockHtml(id) {
+  const mocks = JRN.get(JRN.mocks(id));
+  const rows = mocks.map(m => `<tr>
+    <td>${jrnEscHtml(m.name)}</td>
+    <td><strong>${m.score}</strong></td>
+    <td>${jrnEscHtml(m.issue || '—')}</td>
+    <td>${jrnEscHtml(m.date ? m.date.slice(0,10) : '')}</td>
+    <td><button class="secondary-btn small" onclick="jrnDeleteMock('${jrnEscHtml(id)}','${jrnEscHtml(m.id)}')">Delete</button></td>
+  </tr>`).join('') || '<tr><td colspan="5">No mocks recorded yet.</td></tr>';
+
+  const best = mocks.length ? Math.max(...mocks.map(m=>m.score)) : 0;
+  const avg  = mocks.length ? Math.round(mocks.reduce((s,m)=>s+m.score,0)/mocks.length) : 0;
+  const trend = mocks.length > 1 ? (mocks[0].score > mocks[1].score ? '↑ Improving' : mocks[0].score < mocks[1].score ? '↓ Declining' : '→ Stable') : '—';
+
+  return `
+    <div class="journey-stat-row">
+      <div class="journey-stat"><span>Mocks taken</span><strong>${mocks.length}</strong></div>
+      <div class="journey-stat ${best >= 150 ? 'good' : best >= 120 ? '' : 'warn'}"><span>Best score</span><strong>${best}/180</strong></div>
+      <div class="journey-stat"><span>Average</span><strong>${avg ? avg+'/180' : '—'}</strong></div>
+      <div class="journey-stat"><span>Trend</span><strong style="font-size:1rem">${trend}</strong></div>
+    </div>
+    <div style="background:var(--surface-2);border-radius:var(--radius);padding:16px;margin-bottom:16px">
+      <h4 style="margin:0 0 12px;font-size:0.95rem">Record New Mock</h4>
+      <div class="journey-form-grid">
+        <label>Mock name / date<input id="jrnMockName" placeholder="e.g., Full Mock 3 · 9 Jun"></label>
+        <label>Physics score (0–180)<input id="jrnMockScore" type="number" min="0" max="180" placeholder="0–180"></label>
+        <label>Concept mistakes<input id="jrnMockConcept" type="number" min="0" value="0"></label>
+        <label>Silly mistakes<input id="jrnMockSilly" type="number" min="0" value="0"></label>
+        <label>Time-pressure mistakes<input id="jrnMockTime" type="number" min="0" value="0"></label>
+        <label>Formula gaps<input id="jrnMockFormula" type="number" min="0" value="0"></label>
+      </div>
+      <div class="journey-btn-row">
+        <button class="primary-btn small" onclick="jrnAddMock('${jrnEscHtml(id)}')">Save & Analyze</button>
+        <button class="secondary-btn small" onclick="jrnClearMockInputs()">Clear</button>
+      </div>
+      <div id="jrnMockAdvice" style="display:none"></div>
+    </div>
+    <div class="journey-table-wrap">
+      <table class="journey-table" id="jrnMockTable_${jrnEscHtml(id)}">
+        <thead><tr><th>Mock</th><th>Score / 180</th><th>Main Issue</th><th>Date</th><th></th></tr></thead>
+        <tbody>${rows}</tbody>
+      </table>
+    </div>`;
+}
+
+function jrnAddMock(id) {
+  const score = Number(document.getElementById('jrnMockScore')?.value || 0);
+  const name  = document.getElementById('jrnMockName')?.value.trim() || jrnTodayISO();
+  const issues = {
+    'Concept gap':    Number(document.getElementById('jrnMockConcept')?.value||0),
+    'Silly mistake':  Number(document.getElementById('jrnMockSilly')?.value||0),
+    'Time pressure':  Number(document.getElementById('jrnMockTime')?.value||0),
+    'Formula gap':    Number(document.getElementById('jrnMockFormula')?.value||0),
+  };
+  const topIssue = Object.entries(issues).sort((a,b)=>b[1]-a[1]).find(x=>x[1]>0)?.[0] || 'None logged';
+
+  const advice = [];
+  if (score < 120) advice.push('Score below 120: Increase formula practice and attempt HC Verma Objective II questions daily.');
+  if (score >= 120 && score < 150) advice.push('Score 120–149: Focus on converting concept errors to zero. Do chapter PYQs for each weak topic.');
+  if (score >= 150) advice.push('Score 150+: Strong. Focus on eliminating silly mistakes and improving time efficiency.');
+  if (topIssue === 'Silly mistake') advice.push('For silly mistakes: underline key terms in each question, check units, and slow down the first read.');
+  if (topIssue === 'Formula gap') advice.push('For formula gaps: revise your formula sheet every 3 days minimum. Re-derive formulas once a week.');
+  if (topIssue === 'Time pressure') advice.push('For time pressure: practice 45 Qs in 40 minutes regularly. Skip and return — don\'t spend >90 s on any question.');
+  if (topIssue === 'Concept gap') advice.push('For concept gaps: re-read HC Verma theory for the specific chapter, then solve 30 easy MCQs before harder ones.');
+
+  const advEl = document.getElementById('jrnMockAdvice');
+  if (advEl) {
+    advEl.style.display = 'block';
+    advEl.innerHTML = `<div class="journey-flash ${score>=150?'good':''}" style="margin-top:12px"><strong>Analysis:</strong><br>${advice.join('<br>')}</div>`;
+  }
+
+  const mocks = JRN.get(JRN.mocks(id));
+  mocks.unshift({ id: crypto.randomUUID?.() || String(Date.now()), name, score, issue: topIssue, date: new Date().toISOString() });
+  JRN.set(JRN.mocks(id), mocks.slice(0, 50));
+
+  // Refresh table
+  const tbody = document.querySelector(`#jrnMockTable_${id} tbody`);
+  if (tbody) tbody.innerHTML = mocks.map(m => `<tr>
+    <td>${jrnEscHtml(m.name)}</td><td><strong>${m.score}</strong></td>
+    <td>${jrnEscHtml(m.issue||'—')}</td><td>${jrnEscHtml(m.date?.slice(0,10)||'')}</td>
+    <td><button class="secondary-btn small" onclick="jrnDeleteMock('${jrnEscHtml(id)}','${jrnEscHtml(m.id)}')">Delete</button></td>
+  </tr>`).join('');
+
+  showToast(`Mock saved (${score}/180 · ${topIssue})`, 'success');
+  renderJourney();
+}
+
+function jrnDeleteMock(id, mockId) {
+  const mocks = JRN.get(JRN.mocks(id)).filter(m => m.id !== mockId);
+  JRN.set(JRN.mocks(id), mocks);
+  jrnRenderDetail(id);
+  jrnTab(document.querySelector('.journey-tab.active') || {classList:{add:()=>{},remove:()=>{}}}, 'jrn-mock');
+  // Re-activate mock tab
+  const detail = document.getElementById('jrnDetail');
+  if (detail) {
+    detail.querySelectorAll('.journey-tab').forEach(b => b.classList.remove('active'));
+    detail.querySelectorAll('.journey-tab-panel').forEach(p => p.classList.remove('active'));
+    const mockTab = [...detail.querySelectorAll('.journey-tab')].find(b => b.textContent.includes('Mock'));
+    if (mockTab) mockTab.classList.add('active');
+    const mockPanel = document.getElementById('jrn-mock');
+    if (mockPanel) mockPanel.classList.add('active');
+  }
+}
+
+function jrnClearMockInputs() {
+  ['jrnMockName','jrnMockScore','jrnMockConcept','jrnMockSilly','jrnMockTime','jrnMockFormula']
+    .forEach(id => { const el = document.getElementById(id); if (el) el.value = id.includes('Mock') && !['jrnMockName','jrnMockScore'].includes(id) ? 0 : ''; });
+}
+
+// ── Error Log ────────────────────────────────────────────────────────────────
+
+function jrnErrorsHtml(id) {
+  const errors = JRN.get(JRN.errors(id));
+  const chapters = jrnGetBankChapters();
+  const chapterOptions = chapters.map(c => `<option value="${jrnEscHtml(c)}">${jrnEscHtml(c)}</option>`).join('');
+  const open = errors.filter(e => (e.status||'Open') !== 'Fixed').length;
+  const fixed = errors.length - open;
+  const due = errors.filter(e => e.retest && jrnDaysFrom(e.retest) <= 0 && (e.status||'Open') !== 'Fixed').length;
+  const cnt = {}; errors.forEach(e => { cnt[e.type] = (cnt[e.type]||0)+1; });
+  const topType = Object.entries(cnt).sort((a,b)=>b[1]-a[1])[0]?.[0] || '—';
+
+  const rows = errors.map(e => {
+    const status = e.status || 'Open';
+    const isDue = e.retest && jrnDaysFrom(e.retest) <= 0 && status !== 'Fixed';
+    return `<tr>
+      <td>${jrnEscHtml(e.date||'')}</td>
+      <td>${jrnEscHtml(e.chapter)}<br><small style="color:var(--muted)">${jrnEscHtml(e.source||'')}</small></td>
+      <td>${jrnEscHtml(e.type)}</td>
+      <td style="max-width:200px;white-space:normal">${jrnEscHtml(e.fix)}</td>
+      <td><span class="journey-badge ${status==='Fixed'?'fixed':'open'}">${jrnEscHtml(status)}</span></td>
+      <td><span class="journey-badge ${isDue?'due':''}">${jrnEscHtml(e.retest||'—')}</span></td>
+      <td>
+        <button class="secondary-btn small" onclick="jrnToggleError('${jrnEscHtml(id)}','${jrnEscHtml(e.id)}')">${status==='Fixed'?'Reopen':'Fix'}</button>
+        <button class="secondary-btn small" onclick="jrnDeleteError('${jrnEscHtml(id)}','${jrnEscHtml(e.id)}')">✕</button>
+      </td>
+    </tr>`;
+  }).join('') || '<tr><td colspan="7">No errors logged yet.</td></tr>';
+
+  return `
+    <div class="journey-stat-row">
+      <div class="journey-stat ${open>0?'warn':'good'}"><span>Open errors</span><strong>${open}</strong></div>
+      <div class="journey-stat good"><span>Fixed</span><strong>${fixed}</strong></div>
+      <div class="journey-stat ${due>0?'danger':''}"><span>Retest due</span><strong>${due}</strong></div>
+      <div class="journey-stat"><span>Top mistake</span><strong style="font-size:0.9rem">${jrnEscHtml(topType)}</strong></div>
+    </div>
+    <div style="background:var(--surface-2);border-radius:var(--radius);padding:16px;margin-bottom:14px">
+      <h4 style="margin:0 0 12px;font-size:0.95rem">Log a New Error</h4>
+      <div class="journey-form-grid">
+        <label>Date<input id="jrnErrDate" type="date" value="${jrnTodayISO()}"></label>
+        <label>Chapter
+          <select id="jrnErrChapter">${chapterOptions}</select>
+        </label>
+        <label>Mistake type
+          <select id="jrnErrType">
+            <option>Concept not known</option>
+            <option>Formula forgotten</option>
+            <option>Calculation mistake</option>
+            <option>Silly mistake</option>
+            <option>Misread question</option>
+            <option>Time pressure</option>
+            <option>Guesswork error</option>
+          </select>
+        </label>
+        <label>Retest date<input id="jrnErrRetest" type="date"></label>
+        <label>Source<input id="jrnErrSource" placeholder="e.g., Mock 4 Q31 / HC Verma Ch8 Ex5"></label>
+      </div>
+      <div class="journey-form-single">
+        <label>What went wrong → what is correct
+          <textarea id="jrnErrFix" placeholder="Write the exact correction. e.g., Used v²=u²+2as forgetting direction. Correct: direction matters — use vector form or signed scalars."></textarea>
+        </label>
+      </div>
+      <div class="journey-btn-row">
+        <button class="primary-btn small" onclick="jrnAddError('${jrnEscHtml(id)}')">Add Error</button>
+        <button class="secondary-btn small" onclick="jrnExportErrors('${jrnEscHtml(id)}')">Export CSV</button>
+        <button class="danger-btn small" onclick="jrnClearErrors('${jrnEscHtml(id)}')">Clear All</button>
+      </div>
+    </div>
+    <div class="journey-table-wrap">
+      <table class="journey-table" id="jrnErrTable_${jrnEscHtml(id)}">
+        <thead><tr><th>Date</th><th>Chapter</th><th>Type</th><th>Fix</th><th>Status</th><th>Retest</th><th></th></tr></thead>
+        <tbody>${rows}</tbody>
+      </table>
+    </div>`;
+}
+
+function jrnAddError(id) {
+  const chapter = document.getElementById('jrnErrChapter')?.value?.trim();
+  const fix = document.getElementById('jrnErrFix')?.value?.trim();
+  if (!chapter || !fix) { showToast('Add chapter and the correction note.', 'warn'); return; }
+  const item = {
+    id: crypto.randomUUID?.() || String(Date.now()),
+    date: document.getElementById('jrnErrDate')?.value || jrnTodayISO(),
+    chapter,
+    type: document.getElementById('jrnErrType')?.value,
+    retest: document.getElementById('jrnErrRetest')?.value || '',
+    source: document.getElementById('jrnErrSource')?.value?.trim() || '',
+    fix,
+    status: 'Open'
+  };
+  const errors = JRN.get(JRN.errors(id));
+  errors.unshift(item);
+  JRN.set(JRN.errors(id), errors);
+  ['jrnErrRetest','jrnErrSource','jrnErrFix'].forEach(k => { const e = document.getElementById(k); if(e) e.value = ''; });
+  jrnRefreshErrors(id);
+  renderJourney();
+  showToast('Error logged.', 'success');
+}
+
+function jrnToggleError(id, errId) {
+  const errors = JRN.get(JRN.errors(id));
+  const err = errors.find(e => e.id === errId);
+  if (err) err.status = (err.status||'Open') === 'Fixed' ? 'Open' : 'Fixed';
+  JRN.set(JRN.errors(id), errors);
+  jrnRefreshErrors(id);
+  renderJourney();
+}
+
+function jrnDeleteError(id, errId) {
+  JRN.set(JRN.errors(id), JRN.get(JRN.errors(id)).filter(e => e.id !== errId));
+  jrnRefreshErrors(id);
+  renderJourney();
+}
+
+function jrnClearErrors(id) {
+  if (!confirm('Clear all error-log entries for this student?')) return;
+  JRN.set(JRN.errors(id), []);
+  jrnRefreshErrors(id);
+  renderJourney();
+}
+
+function jrnRefreshErrors(id) {
+  const errors = JRN.get(JRN.errors(id));
+  const tbody = document.querySelector(`#jrnErrTable_${id} tbody`);
+  if (!tbody) return;
+  tbody.innerHTML = errors.map(e => {
+    const status = e.status || 'Open';
+    const isDue = e.retest && jrnDaysFrom(e.retest) <= 0 && status !== 'Fixed';
+    return `<tr>
+      <td>${jrnEscHtml(e.date||'')}</td>
+      <td>${jrnEscHtml(e.chapter)}<br><small style="color:var(--muted)">${jrnEscHtml(e.source||'')}</small></td>
+      <td>${jrnEscHtml(e.type)}</td>
+      <td style="max-width:200px;white-space:normal">${jrnEscHtml(e.fix)}</td>
+      <td><span class="journey-badge ${status==='Fixed'?'fixed':'open'}">${jrnEscHtml(status)}</span></td>
+      <td><span class="journey-badge ${isDue?'due':''}">${jrnEscHtml(e.retest||'—')}</span></td>
+      <td>
+        <button class="secondary-btn small" onclick="jrnToggleError('${jrnEscHtml(id)}','${jrnEscHtml(e.id)}')">${status==='Fixed'?'Reopen':'Fix'}</button>
+        <button class="secondary-btn small" onclick="jrnDeleteError('${jrnEscHtml(id)}','${jrnEscHtml(e.id)}')">✕</button>
+      </td>
+    </tr>`;
+  }).join('') || '<tr><td colspan="7">No errors logged yet.</td></tr>';
+}
+
+function jrnExportErrors(id) {
+  const rows = JRN.get(JRN.errors(id));
+  if (!rows.length) { showToast('No errors to export.', 'warn'); return; }
+  const header = ['Date','Chapter','Mistake Type','Source','Correct Fix','Status','Retest Date'];
+  const csv = [header, ...rows.map(e => [e.date,e.chapter,e.type,e.source,e.fix,e.status||'Open',e.retest])]
+    .map(row => row.map(v => `"${String(v||'').replaceAll('"','""')}"`).join(',')).join('\n');
+  const blob = new Blob([csv], { type: 'text/csv' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a'); a.href = url; a.download = `errors-${id}.csv`; a.click();
+  URL.revokeObjectURL(url);
+}
+
+// ── Revision Tracker ─────────────────────────────────────────────────────────
+
+function jrnRevisionHtml(id) {
+  const rows = JRN.get(JRN.revision(id));
+  const chapters = jrnGetBankChapters();
+  const chapterOptions = chapters.map(c => `<option value="${jrnEscHtml(c)}">${jrnEscHtml(c)}</option>`).join('');
+
+  const ticks = rows.reduce((s,r) => s + (r.ticks||[]).filter(Boolean).length, 0);
+  const total = rows.length * 6;
+  const pct = total ? Math.round(ticks / total * 100) : 0;
+  const dueNow = rows.filter(r => jrnNextDue(r).due).length;
+
+  const tableRows = rows.map(r => {
+    const next = jrnNextDue(r);
+    const dueLabel = next.idx === -1 ? '<span class="journey-badge done">Completed</span>' :
+      `<span class="journey-badge ${next.overdue?'open':next.due?'due':''}">${next.label}: ${next.date}${next.overdue?' (overdue)':next.due?' (today)':''}</span>`;
+    const tickCells = (r.ticks||Array(6).fill(false)).map((t,i) =>
+      `<td><input type="checkbox" ${t?'checked':''} onchange="jrnToggleRev('${jrnEscHtml(id)}','${jrnEscHtml(r.id)}',${i})"></td>`
+    ).join('');
+    return `<tr>
+      <td>${jrnEscHtml(r.chapter)}</td>
+      <td>${dueLabel}</td>
+      ${tickCells}
+      <td><button class="secondary-btn small" onclick="jrnDeleteRev('${jrnEscHtml(id)}','${jrnEscHtml(r.id)}')">✕</button></td>
+    </tr>`;
+  }).join('') || '<tr><td colspan="9">No chapters added yet.</td></tr>';
+
+  return `
+    <div class="journey-stat-row">
+      <div class="journey-stat"><span>Chapters</span><strong>${rows.length}</strong></div>
+      <div class="journey-stat"><span>Ticks done</span><strong>${ticks}</strong></div>
+      <div class="journey-stat ${pct===100?'good':''}"><span>Completion</span><strong>${pct}%</strong></div>
+      <div class="journey-stat ${dueNow>0?'warn':'good'}"><span>Due now</span><strong>${dueNow}</strong></div>
+    </div>
+    <div class="journey-progress-bar"><div class="journey-progress-fill" style="width:${pct}%"></div></div>
+    <div class="journey-flash info" style="margin-bottom:12px">Spaced revision: R1 same day · R2 next day · R3 after 7 days · R4 after 21 days · R5 after 45 days · R6 after 75 days</div>
+    <div style="background:var(--surface-2);border-radius:var(--radius);padding:14px;margin-bottom:14px">
+      <div class="journey-form-grid" style="grid-template-columns:1fr 1fr auto">
+        <label>Chapter<select id="jrnRevChapter">${chapterOptions}</select></label>
+        <label>Priority
+          <select id="jrnRevPriority"><option>High</option><option selected>Medium</option><option>Low</option></select>
+        </label>
+        <label style="justify-content:end;align-items:end">
+          <button class="primary-btn small" onclick="jrnAddRev('${jrnEscHtml(id)}')">Add</button>
+        </label>
+      </div>
+    </div>
+    <div class="journey-table-wrap">
+      <table class="journey-table" id="jrnRevTable_${jrnEscHtml(id)}">
+        <thead><tr><th>Chapter</th><th>Next Due</th><th>R1</th><th>R2</th><th>R3</th><th>R4</th><th>R5</th><th>R6</th><th></th></tr></thead>
+        <tbody>${tableRows}</tbody>
+      </table>
+    </div>
+    <button class="danger-btn small" style="margin-top:10px" onclick="jrnClearRev('${jrnEscHtml(id)}')">Clear tracker</button>`;
+}
+
+function jrnAddRev(id) {
+  const chapter = document.getElementById('jrnRevChapter')?.value;
+  if (!chapter) return;
+  const rows = JRN.get(JRN.revision(id));
+  if (rows.find(r => r.chapter === chapter)) { showToast('Already tracking that chapter.', 'warn'); return; }
+  rows.unshift({ id: crypto.randomUUID?.() || String(Date.now()), chapter, priority: document.getElementById('jrnRevPriority')?.value || 'Medium', added: jrnTodayISO(), ticks: Array(6).fill(false) });
+  JRN.set(JRN.revision(id), rows);
+  jrnRefreshRevision(id);
+  renderJourney();
+  showToast(`Added revision: ${chapter}`, 'success');
+}
+
+function jrnToggleRev(id, rowId, idx) {
+  const rows = JRN.get(JRN.revision(id));
+  const row = rows.find(r => r.id === rowId);
+  if (row) { row.ticks = row.ticks || Array(6).fill(false); row.ticks[idx] = !row.ticks[idx]; }
+  JRN.set(JRN.revision(id), rows);
+  jrnRefreshRevision(id);
+  renderJourney();
+}
+
+function jrnDeleteRev(id, rowId) {
+  JRN.set(JRN.revision(id), JRN.get(JRN.revision(id)).filter(r => r.id !== rowId));
+  jrnRefreshRevision(id);
+  renderJourney();
+}
+
+function jrnClearRev(id) {
+  if (!confirm('Clear revision tracker for this student?')) return;
+  JRN.set(JRN.revision(id), []);
+  jrnRefreshRevision(id);
+  renderJourney();
+}
+
+function jrnRefreshRevision(id) {
+  const rows = JRN.get(JRN.revision(id));
+  const tbody = document.querySelector(`#jrnRevTable_${id} tbody`);
+  if (!tbody) return;
+  const ticks = rows.reduce((s,r) => s + (r.ticks||[]).filter(Boolean).length, 0);
+  const total = rows.length * 6;
+  const pct = total ? Math.round(ticks / total * 100) : 0;
+  const bar = document.querySelector('#jrn-revision .journey-progress-fill');
+  if (bar) bar.style.width = pct + '%';
+  tbody.innerHTML = rows.map(r => {
+    const next = jrnNextDue(r);
+    const dueLabel = next.idx === -1 ? '<span class="journey-badge done">Completed</span>' :
+      `<span class="journey-badge ${next.overdue?'open':next.due?'due':''}">${next.label}: ${next.date}${next.overdue?' (overdue)':next.due?' (today)':''}</span>`;
+    return `<tr>
+      <td>${jrnEscHtml(r.chapter)}</td>
+      <td>${dueLabel}</td>
+      ${(r.ticks||Array(6).fill(false)).map((t,i) => `<td><input type="checkbox" ${t?'checked':''} onchange="jrnToggleRev('${jrnEscHtml(id)}','${jrnEscHtml(r.id)}',${i})"></td>`).join('')}
+      <td><button class="secondary-btn small" onclick="jrnDeleteRev('${jrnEscHtml(id)}','${jrnEscHtml(r.id)}')">✕</button></td>
+    </tr>`;
+  }).join('') || '<tr><td colspan="9">No chapters added yet.</td></tr>';
+}
+
+// ── Focus Timer ───────────────────────────────────────────────────────────────
+
+function jrnTimerHtml() {
+  return `
+    <p style="color:var(--muted);font-size:0.88rem;margin-bottom:16px">50 minutes of focused study + 10 minutes of error-log update beats 3 hours of passive reading.</p>
+    <div class="journey-timer-display" id="jrnTimerDisplay">50:00</div>
+    <div class="journey-form-grid" style="grid-template-columns:repeat(auto-fit,minmax(160px,1fr));margin-bottom:14px">
+      <label>Minutes<input id="jrnTimerMins" type="number" min="5" max="120" value="50" onchange="jrnResetTimer()"></label>
+      <label>Session tag
+        <select id="jrnTimerTag">
+          <option>HC Verma MCQ Practice</option>
+          <option>Formula Revision</option>
+          <option>Physics PYQs</option>
+          <option>Error Log Repair</option>
+          <option>Mock Analysis</option>
+          <option>Concept Reading</option>
+        </select>
+      </label>
+    </div>
+    <div class="journey-btn-row">
+      <button class="primary-btn" onclick="jrnStartTimer()">Start</button>
+      <button class="secondary-btn" onclick="jrnPauseTimer()">Pause</button>
+      <button class="danger-btn" onclick="jrnResetTimer()">Reset</button>
+    </div>
+    <div class="journey-flash info" style="margin-top:16px"><strong>After each block:</strong> Update the error log or tick a revision checkbox. Immediate feedback is the topper pattern.</div>`;
+}
+
+function jrnFmtTimer(s) {
+  return `${String(Math.floor(s/60)).padStart(2,'0')}:${String(s%60).padStart(2,'0')}`;
+}
+function jrnSetTimerDisplay() {
+  const el = document.getElementById('jrnTimerDisplay');
+  if (el) el.textContent = jrnFmtTimer(jrnTimerSec);
+}
+function jrnStartTimer() {
+  if (!jrnTimerId) {
+    if (jrnTimerSec <= 0) jrnResetTimer();
+    jrnTimerId = setInterval(() => {
+      jrnTimerSec--;
+      jrnSetTimerDisplay();
+      if (jrnTimerSec <= 0) {
+        jrnPauseTimer();
+        const tag = document.getElementById('jrnTimerTag')?.value || 'Focus';
+        showToast(`Block complete: ${tag}. Update your error log or tick a revision.`, 'success');
+      }
+    }, 1000);
+  }
+}
+function jrnPauseTimer() { if (jrnTimerId) clearInterval(jrnTimerId); jrnTimerId = null; }
+function jrnResetTimer() {
+  jrnPauseTimer();
+  jrnTimerInit = Math.max(5, Math.min(120, Number(document.getElementById('jrnTimerMins')?.value || 50))) * 60;
+  jrnTimerSec = jrnTimerInit;
+  jrnSetTimerDisplay();
+}
+
+// ── Roadmap ───────────────────────────────────────────────────────────────────
+
+function jrnRoadmapHtml() {
+  return `
+    <div class="journey-flash info" style="margin-bottom:16px">
+      <strong>Physics Topper Pattern (10 Years of Interviews):</strong> NCERT + HC Verma concepts → chapter tests → PYQ analysis → mock simulation → mistake repair cycle. Physics decides rank — own it.
+    </div>
+    <div class="journey-roadmap">
+      <div class="journey-phase">
+        <div class="phase-label">Months 1–3<br>Foundation</div>
+        <div>
+          <h4>Concept Build</h4>
+          <p>Complete HC Verma Vol 1 & 2 chapter-by-chapter. Derive formulas once, solve Obj I & II. Build a running formula notebook. Start Obj II questions once Obj I mastery is solid. Do 50–80 MCQs per chapter immediately after reading.</p>
+        </div>
+      </div>
+      <div class="journey-phase">
+        <div class="phase-label">Months 4–6<br>Syllabus</div>
+        <div>
+          <h4>Syllabus Completion</h4>
+          <p>Cover all chapters at least once. Start chapter-wise PYQs. Add every missed question to the error log. Weekly part tests. Revision tracker R1–R2 checkboxes per chapter. Accuracy should reach 60–70%.</p>
+        </div>
+      </div>
+      <div class="journey-phase">
+        <div class="phase-label">Months 7–9<br>Strengthen</div>
+        <div>
+          <h4>PYQs + Sectional Tests</h4>
+          <p>Do full 15-year Physics PYQ set. Fix all open errors. Take sectional tests every week and record mock scores. Revisions tracker R3 checkboxes. Accuracy target: 70–80%. Identify top 5 weak chapters and drill them.</p>
+        </div>
+      </div>
+      <div class="journey-phase">
+        <div class="phase-label">Month 10<br>Mock Phase</div>
+        <div>
+          <h4>Full Mock Simulation</h4>
+          <p>2–3 mocks per week at NEET time slot (2 PM). Deep post-mock analysis every time — do not skip. Record every mock score. Formula + graph revision daily. Aim 150+/180. Silly mistakes must reach zero.</p>
+        </div>
+      </div>
+      <div class="journey-phase">
+        <div class="phase-label">Final 30<br>Retention</div>
+        <div>
+          <h4>Retention & Confidence</h4>
+          <p>No new books. Revise formula sheet daily. Reattempt all open error-log questions. Mock every 2–3 days. R5–R6 revision checkboxes. Maintain sleep and routine. Calm on exam day beats last-minute panic.</p>
+        </div>
+      </div>
+    </div>`;
 }
 
 init().catch(error => {
