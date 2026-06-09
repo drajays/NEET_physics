@@ -27049,6 +27049,420 @@
         "Objective II",
         "Chapter 21"
       ]
+    },
+    {
+      "id": "4c16c55a-9006-4d0c-b539-b1c25f94975c",
+      "question": "A system X is neither in thermal equilibrium with Y nor with Z. The systems Y and Z",
+      "optionA": "must be in thermal equilibrium with each other",
+      "optionB": "cannot be in thermal equilibrium with each other",
+      "optionC": "may or may not be in thermal equilibrium with each other",
+      "optionD": "must not be in thermal equilibrium with each other.",
+      "answer": "C",
+      "explanation": "The **zeroth law** states: if A is in equilibrium with B *and* B with C, then A and C are in equilibrium. The converse is not implied. Here X is **not** in equilibrium with Y or Z — two scenarios are both possible:\n\n- $T_X = 30°C,\\; T_Y = 20°C,\\; T_Z = 20°C$ → Y and Z **are** in equilibrium.\n- $T_X = 30°C,\\; T_Y = 20°C,\\; T_Z = 25°C$ → Y and Z are **not** in equilibrium.\n\nNo conclusion about Y–Z can be drawn. Answer: (C).",
+      "topic": "Chapter 23: Heat and Temperature",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 23"
+      ]
+    },
+    {
+      "id": "40f5a747-5e9c-4901-be52-ff2c252c95a4",
+      "question": "Which of the following pairs may give equal numerical values of the temperature of a body?",
+      "optionA": "Fahrenheit and Kelvin",
+      "optionB": "Celsius and Kelvin",
+      "optionC": "Celsius and Platinum scale",
+      "optionD": "Celsius and Fahrenheit",
+      "answer": "D",
+      "explanation": "Set $F = C$ in $F = \\dfrac{9}{5}C + 32$:\n$$C = \\frac{9}{5}C + 32 \\implies -\\frac{4}{5}C = 32 \\implies C = -40$$\nAt $-40°$, the Celsius and Fahrenheit scales give the same numerical reading. For Kelvin: $K = C + 273.15$ — these are never equal since that would require $C = C + 273.15$ (impossible). Answer: (D).",
+      "topic": "Chapter 23: Heat and Temperature",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 23"
+      ]
+    },
+    {
+      "id": "1e568d29-0c8b-486d-8693-41c1cf05b6da",
+      "question": "For a constant-volume gas thermometer, one should fill the gas at",
+      "optionA": "low temperature and low pressure",
+      "optionB": "high temperature and high pressure",
+      "optionC": "low temperature and high pressure",
+      "optionD": "high temperature and low pressure",
+      "answer": "D",
+      "explanation": "Two requirements: (1) **low pressure** so the gas behaves ideally ($PV = nRT$); (2) the pressure must remain **measurably positive** at all operating temperatures.\n\nFill at high $T_h$ with low $P_h$. At any lower temperature $T$:\n$$P = P_h \\cdot \\frac{T}{T_h} < P_h \\quad \\text{(pressure drops proportionally, stays low and ideal)}$$\nIf filled at low $T_l$ with low $P_l$, at high temperatures $P$ rises to $P_l(T/T_l) \\gg P_l$, causing non-ideal behaviour. Answer: (D).",
+      "topic": "Chapter 23: Heat and Temperature",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 23"
+      ]
+    },
+    {
+      "id": "8ebd5b85-de4d-4e1a-a244-e0ea98ff2a0d",
+      "question": "A steel scale is correct at temperature $T_0$. At this temperature it measures a copper rod to have length $\\ell_0$. When both are heated to temperature $T$ ($\\Delta T = T - T_0$), the scale reading of the rod becomes",
+      "optionA": "$\\ell_0$",
+      "optionB": "$\\ell_0(1 + \\alpha_{\\rm Cu}\\,\\Delta T)$",
+      "optionC": "$\\dfrac{\\ell_0(1 + \\alpha_{\\rm Cu}\\,\\Delta T)}{1 + \\alpha_{\\rm St}\\,\\Delta T}$",
+      "optionD": "$\\dfrac{\\ell_0(1 + \\alpha_{\\rm St}\\,\\Delta T)}{1 + \\alpha_{\\rm Cu}\\,\\Delta T}$",
+      "answer": "C",
+      "explanation": "The true length of the copper rod at temperature $T$:\n$$L_{\\rm Cu} = \\ell_0(1 + \\alpha_{\\rm Cu}\\,\\Delta T)$$\nEach unit mark on the steel scale has expanded, so one scale-unit now equals $(1 + \\alpha_{\\rm St}\\,\\Delta T)$ of the original unit. The **reading** (apparent length) is:\n$$\\text{reading} = \\frac{L_{\\rm Cu}}{1 + \\alpha_{\\rm St}\\,\\Delta T} = \\frac{\\ell_0(1 + \\alpha_{\\rm Cu}\\,\\Delta T)}{1 + \\alpha_{\\rm St}\\,\\Delta T}$$\nSince $\\alpha_{\\rm Cu} > \\alpha_{\\rm St}$, the reading exceeds $\\ell_0$. Answer: (C).",
+      "topic": "Chapter 23: Heat and Temperature",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 23"
+      ]
+    },
+    {
+      "id": "a12aec6a-94e5-4725-981c-fa20824c646d",
+      "question": "An aluminium sphere is dipped into water. Buoyancy will be less in water at 0°C than in water at 4°C because",
+      "optionA": "water is denser at 0°C than at 4°C",
+      "optionB": "water is less dense at 0°C than at 4°C",
+      "optionC": "the sphere contracts at 0°C",
+      "optionD": "the sphere expands at 4°C.",
+      "answer": "B",
+      "explanation": "Water shows **anomalous expansion**: its density is **maximum at 4°C** ($\\approx 1000\\,\\rm kg\\,m^{-3}$) and decreases both above and below that temperature. At 0°C the density is slightly less ($\\approx 999.8\\,\\rm kg\\,m^{-3}$).\n\nBuoyancy $= \\rho_\\text{water}\\,V_\\text{sphere}\\,g$. The sphere's volume barely changes over this small temperature range. Since $\\rho(0°C) < \\rho(4°C)$, buoyancy at 0°C is **less** than at 4°C. The reason is option B. Answer: (B).",
+      "topic": "Chapter 23: Heat and Temperature",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 23"
+      ]
+    },
+    {
+      "id": "973c31c8-2319-4c7e-b8de-66167249e75e",
+      "question": "The coefficient of volume expansion of a solid with linear expansion coefficient $\\alpha$ is",
+      "optionA": "$\\alpha$",
+      "optionB": "$2\\alpha$",
+      "optionC": "$3\\alpha$",
+      "optionD": "$6\\alpha$",
+      "answer": "C",
+      "explanation": "For an isotropic solid, each linear dimension $\\ell$ scales as $\\ell(1+\\alpha\\,\\Delta T)$. Volume $V = \\ell^3$:\n$$V' = \\ell^3(1+\\alpha\\,\\Delta T)^3 \\approx \\ell^3(1 + 3\\alpha\\,\\Delta T) \\quad (\\text{to first order in }\\alpha\\,\\Delta T)$$\n$$\\therefore\\quad \\gamma = \\frac{\\Delta V}{V\\,\\Delta T} = 3\\alpha$$\nThe volume expansion coefficient is three times the linear expansion coefficient. Answer: (C).",
+      "topic": "Chapter 23: Heat and Temperature",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 23"
+      ]
+    },
+    {
+      "id": "3ad90bff-2b50-4a82-8e7a-7339afd7e003",
+      "question": "The temperature of a body is increased from 27°C to 127°C. The radiation emitted by it increases by a factor of",
+      "optionA": "$\\left(\\dfrac{400}{300}\\right)^4$",
+      "optionB": "$\\dfrac{127}{27}$",
+      "optionC": "$\\left(\\dfrac{127}{27}\\right)^4$",
+      "optionD": "$\\dfrac{400}{300}$",
+      "answer": "A",
+      "explanation": "By Stefan–Boltzmann law, the total power radiated is $P \\propto T^4$ (absolute temperature).\n\n$T_1 = 27°C = 300\\,K$, $T_2 = 127°C = 400\\,K$.\n$$\\frac{P_2}{P_1} = \\left(\\frac{T_2}{T_1}\\right)^4 = \\left(\\frac{400}{300}\\right)^4$$\nAnswer: (A).",
+      "topic": "Chapter 23: Heat and Temperature",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 23"
+      ]
+    },
+    {
+      "id": "35a34357-ea99-47db-9be1-fcf134781a1c",
+      "question": "Which of the following are correct?",
+      "optionA": "All bodies emit thermal radiation at all temperatures above 0 K.",
+      "optionB": "All bodies absorb radiation from the surroundings at all temperatures.",
+      "optionC": "The temperature of a body can be raised by radiation.",
+      "optionD": "A body stops radiating when it reaches thermal equilibrium with its surroundings.",
+      "answer": "A,B,C",
+      "explanation": "- **A** ✓: Every body with $T > 0\\,K$ emits thermal (electromagnetic) radiation — a consequence of Planck's law.\n- **B** ✓: Every body absorbs (some fraction of) the radiation incident on it from surroundings.\n- **C** ✓: If absorbed radiation exceeds emitted radiation, net energy input raises the temperature.\n- **D** ✗: At thermal equilibrium the body still radiates; it just absorbs at the same rate as it emits — there is no cessation of radiation.\n\nAnswer: (A), (B), (C).",
+      "topic": "Chapter 23: Heat and Temperature",
+      "subtopic": "Objective II",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective II",
+        "Chapter 23"
+      ]
+    },
+    {
+      "id": "860a6fcd-9e6c-43e6-a56b-0bbd18f157b5",
+      "question": "A body cools from 80°C to 60°C in 5 minutes. In the next 5 minutes, it will cool to a temperature",
+      "optionA": "below 40°C",
+      "optionB": "equal to 40°C",
+      "optionC": "above 40°C",
+      "optionD": "that depends on the nature of the body.",
+      "answer": "C",
+      "explanation": "By **Newton's law of cooling**, the rate of cooling is proportional to the temperature excess above the surroundings. As the body cools, its temperature excess decreases, so the rate of cooling slows. In the first 5 min the body drops 20°C (from 80→60). In the next 5 min, the average excess over surroundings is smaller, so the drop is **less than 20°C**, meaning the final temperature is **above** $60 - 20 = 40°C$. Answer: (C).",
+      "topic": "Chapter 23: Heat and Temperature",
+      "subtopic": "Objective II",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective II",
+        "Chapter 23"
+      ]
+    },
+    {
+      "id": "eea05409-fcae-4d8a-843a-6b6a15b0621c",
+      "question": "Which of the following statements are correct about thermal expansion?",
+      "optionA": "The length of a metal rod increases when heated.",
+      "optionB": "A hole in a metal plate increases in area when the plate is heated.",
+      "optionC": "The time period of a simple pendulum decreases when temperature increases.",
+      "optionD": "Bimetallic strips work on the principle of different thermal expansions.",
+      "answer": "A,B,D",
+      "explanation": "- **A** ✓: Linear expansion — length increases with temperature.\n- **B** ✓: A hole in a plate expands just as if it were filled with the same material. The area of the hole increases (area expansion coefficient $= 2\\alpha$).\n- **C** ✗: $T = 2\\pi\\sqrt{L/g}$. When temperature rises, $L$ increases → $T$ **increases** (pendulum runs slow), not decreases.\n- **D** ✓: A bimetallic strip consists of two metals with different $\\alpha$; on heating, the strip bends toward the side with lower $\\alpha$.\n\nAnswer: (A), (B), (D).",
+      "topic": "Chapter 23: Heat and Temperature",
+      "subtopic": "Objective II",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective II",
+        "Chapter 23"
+      ]
+    },
+    {
+      "id": "db544762-588b-4cb6-88f3-9b4156e10c1d",
+      "question": "The temperature of an ideal gas is increased from 27°C to 927°C. The rms speed of its molecules becomes",
+      "optionA": "twice the original",
+      "optionB": "four times the original",
+      "optionC": "half the original",
+      "optionD": "unchanged.",
+      "answer": "A",
+      "explanation": "$v_{\\rm rms} \\propto \\sqrt{T}$ (absolute temperature).\n\n$T_1 = 27°C = 300\\,K$, $\\quad T_2 = 927°C = 1200\\,K$.\n$$\\frac{v_2}{v_1} = \\sqrt{\\frac{T_2}{T_1}} = \\sqrt{\\frac{1200}{300}} = \\sqrt{4} = 2$$\nThe rms speed doubles. Answer: (A).",
+      "topic": "Chapter 24: Kinetic Theory of Gases",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 24"
+      ]
+    },
+    {
+      "id": "830eefcc-f5b7-4760-a8bb-95adeacafa48",
+      "question": "Which of the following quantities is zero on an average for the molecules of an ideal gas in equilibrium?",
+      "optionA": "Kinetic energy",
+      "optionB": "Momentum",
+      "optionC": "Density",
+      "optionD": "Speed",
+      "answer": "B",
+      "explanation": "In an ideal gas in equilibrium, the molecules move randomly in all directions. Their **speeds** and **kinetic energies** are non-zero on average. **Density** is finite. However, **momentum** is a vector: for each molecule moving with momentum $m\\vec{v}$, there is (on average) another moving with $-m\\vec{v}$. The average vector momentum $\\langle m\\vec{v}\\rangle = 0$. Answer: (B).",
+      "topic": "Chapter 24: Kinetic Theory of Gases",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 24"
+      ]
+    },
+    {
+      "id": "2c30bdb3-2572-4382-ba78-69e6b4aa45cf",
+      "question": "The pressure exerted by an ideal gas is $P = \\frac{1}{3}\\rho\\,\\overline{v^2}$. Here $\\rho$ is the density and $\\overline{v^2}$ is the mean squared speed. This can be written as",
+      "optionA": "$P = \\frac{2}{3}\\left(\\frac{1}{2}\\rho\\,\\overline{v^2}\\right)$",
+      "optionB": "$P = \\frac{2}{3}E_k$ where $E_k$ is the kinetic energy per unit volume",
+      "optionC": "$P = \\frac{2}{3}\\frac{E}{V}$ where $E$ is the total kinetic energy and $V$ is the volume",
+      "optionD": "All of the above.",
+      "answer": "D",
+      "explanation": "$P = \\frac{1}{3}\\rho\\,\\overline{v^2} = \\frac{2}{3}\\cdot\\frac{1}{2}\\rho\\,\\overline{v^2}$.\n\nThe kinetic energy per unit volume is $E_k = \\frac{1}{2}\\rho\\,\\overline{v^2}$, so $P = \\frac{2}{3}E_k$ (option B). For the whole gas of volume $V$: $E = E_k V$, so $E_k = E/V$ and $P = \\frac{2}{3}\\frac{E}{V}$ (option C). Options A, B, and C are all equivalent reformulations. Answer: (D).",
+      "topic": "Chapter 24: Kinetic Theory of Gases",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 24"
+      ]
+    },
+    {
+      "id": "1138f558-888d-43ce-bcb4-51257c6af530",
+      "question": "The average kinetic energy of a molecule of an ideal gas is proportional to",
+      "optionA": "$T^2$",
+      "optionB": "$T$",
+      "optionC": "$1/T$",
+      "optionD": "$\\sqrt{T}$",
+      "answer": "B",
+      "explanation": "From kinetic theory (and equipartition theorem), the average translational kinetic energy per molecule is:\n$$\\langle KE\\rangle = \\frac{3}{2}k_BT$$\nThis is directly proportional to the absolute temperature $T$. Answer: (B).",
+      "topic": "Chapter 24: Kinetic Theory of Gases",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 24"
+      ]
+    },
+    {
+      "id": "53fcf612-ce6f-4a8d-a6b1-d25ce0fadeaa",
+      "question": "The number of degrees of freedom of a rigid diatomic molecule is",
+      "optionA": "3",
+      "optionB": "5",
+      "optionC": "6",
+      "optionD": "7",
+      "answer": "B",
+      "explanation": "A **rigid** diatomic molecule (treated as a dumbbell with a rigid bond — no vibration) has:\n- 3 translational degrees of freedom ($x$, $y$, $z$ motion of the centre of mass)\n- 2 rotational degrees of freedom (rotation about two axes perpendicular to the bond axis; rotation about the bond axis itself contributes negligible inertia for a rigid dumbbell)\n\nTotal $= 3 + 2 = 5$. Answer: (B).",
+      "topic": "Chapter 24: Kinetic Theory of Gases",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 24"
+      ]
+    },
+    {
+      "id": "2dc12ba6-869f-43c5-ba74-066f6188ce85",
+      "question": "By what factor does the mean kinetic energy per molecule of an ideal gas change if the pressure is doubled and the volume is kept constant?",
+      "optionA": "2",
+      "optionB": "4",
+      "optionC": "1/2",
+      "optionD": "unchanged",
+      "answer": "A",
+      "explanation": "At constant volume, $P \\propto T$ (ideal gas law). If $P$ doubles, $T$ doubles.\n\nMean KE per molecule $= \\frac{3}{2}k_BT$. Since $T$ doubles, the mean KE also **doubles**. Answer: (A).",
+      "topic": "Chapter 24: Kinetic Theory of Gases",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 24"
+      ]
+    },
+    {
+      "id": "dcb8ddab-0b02-4a74-9dba-4a7398c70102",
+      "question": "For an ideal gas at temperature $T$, the most probable speed $v_p$, mean speed $\\bar{v}$, and rms speed $v_{\\rm rms}$ satisfy",
+      "optionA": "$v_p < \\bar{v} < v_{\\rm rms}$",
+      "optionB": "$v_{\\rm rms} < \\bar{v} < v_p$",
+      "optionC": "$\\bar{v} < v_p < v_{\\rm rms}$",
+      "optionD": "$v_p < v_{\\rm rms} < \\bar{v}$",
+      "answer": "A",
+      "explanation": "From the Maxwell–Boltzmann distribution:\n$$v_p = \\sqrt{\\frac{2k_BT}{m}},\\quad \\bar{v} = \\sqrt{\\frac{8k_BT}{\\pi m}},\\quad v_{\\rm rms} = \\sqrt{\\frac{3k_BT}{m}}$$\nNumerical factors: $\\sqrt{2} \\approx 1.414$, $\\sqrt{8/\\pi} \\approx 1.596$, $\\sqrt{3} \\approx 1.732$.\n\nSo $v_p < \\bar{v} < v_{\\rm rms}$. Answer: (A).",
+      "topic": "Chapter 24: Kinetic Theory of Gases",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 24"
+      ]
+    },
+    {
+      "id": "7e35f774-38a7-4c10-ba02-db326918f350",
+      "question": "The mean free path of gas molecules",
+      "optionA": "increases with increase in pressure at constant temperature",
+      "optionB": "decreases with increase in pressure at constant temperature",
+      "optionC": "is independent of pressure",
+      "optionD": "decreases with decrease in pressure at constant temperature.",
+      "answer": "B",
+      "explanation": "Mean free path $\\lambda = \\dfrac{1}{\\sqrt{2}\\,\\pi d^2\\,n}$ where $n$ is the number density.\n\nAt constant temperature, increasing pressure compresses the gas: $n = P/(k_BT)$ increases. A larger $n$ means more molecules per unit volume → more frequent collisions → **shorter** mean free path.\n$$\\lambda \\propto \\frac{1}{n} \\propto \\frac{1}{P} \\quad (\\text{at constant }T)$$\nAnswer: (B).",
+      "topic": "Chapter 24: Kinetic Theory of Gases",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 24"
+      ]
+    },
+    {
+      "id": "74dee490-e413-4012-9cb0-65fe82a9c206",
+      "question": "Which of the following quantities of an ideal gas increase when the temperature is increased at constant volume?",
+      "optionA": "Mean kinetic energy",
+      "optionB": "Root mean square speed",
+      "optionC": "Mean free path",
+      "optionD": "Pressure",
+      "answer": "A,B,D",
+      "explanation": "At constant volume, $n$ (number density) is fixed.\n\n- **A** ✓: $\\langle KE\\rangle = \\frac{3}{2}k_BT$ — increases with $T$.\n- **B** ✓: $v_{\\rm rms} \\propto \\sqrt{T}$ — increases.\n- **C** ✗: $\\lambda = \\frac{1}{\\sqrt{2}\\pi d^2 n}$. At constant volume $n$ is constant, so $\\lambda$ is **unchanged**.\n- **D** ✓: $P = nk_BT$ — at constant $n$, $P$ increases with $T$.\n\nAnswer: (A), (B), (D).",
+      "topic": "Chapter 24: Kinetic Theory of Gases",
+      "subtopic": "Objective II",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective II",
+        "Chapter 24"
+      ]
+    },
+    {
+      "id": "b37beae1-c803-4019-8aac-cdfa94bc128c",
+      "question": "Consider a gas in a container. Which of the following are true according to kinetic theory?",
+      "optionA": "All molecules have the same speed at a given instant.",
+      "optionB": "The pressure of the gas is due to collisions of molecules with the walls.",
+      "optionC": "The temperature of the gas is a measure of the average kinetic energy of its molecules.",
+      "optionD": "At absolute zero, all molecular motion stops.",
+      "answer": "B,C",
+      "explanation": "- **A** ✗: Molecules have a **distribution** of speeds (Maxwell–Boltzmann distribution), not a single speed.\n- **B** ✓: Gas pressure arises from the momentum transferred to the walls per unit time per unit area during molecular collisions.\n- **C** ✓: $\\langle KE\\rangle = \\frac{3}{2}k_BT$, so temperature directly measures average translational kinetic energy.\n- **D** ✗: Classical kinetic theory predicts zero motion at 0 K, but quantum mechanics requires nonzero **zero-point energy**. For this chapter, D is commonly stated as true in classical kinetic theory; however, HC Verma notes that \"absolute zero is the temperature at which all molecular motion theoretically ceases,\" making D true in the classical sense. Still, D is more nuanced — accepted as (B), (C) for the strict HC Verma context.\n\nAnswer: (B), (C).",
+      "topic": "Chapter 24: Kinetic Theory of Gases",
+      "subtopic": "Objective II",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective II",
+        "Chapter 24"
+      ]
+    },
+    {
+      "id": "e18824a8-015b-4be3-a59d-14b2de4c47e6",
+      "question": "Which of the following statements about the Maxwell–Boltzmann speed distribution are correct?",
+      "optionA": "The fraction of molecules with speed between v and v + dv changes with temperature.",
+      "optionB": "The most probable speed increases with temperature.",
+      "optionC": "The distribution becomes sharper (narrower) at higher temperature.",
+      "optionD": "The area under the speed distribution curve is always equal to 1.",
+      "answer": "A,B,D",
+      "explanation": "- **A** ✓: The Maxwell distribution $f(v)$ depends on $T$; at higher $T$ the distribution shifts and spreads.\n- **B** ✓: $v_p = \\sqrt{2k_BT/m}$ — most probable speed increases with $T$.\n- **C** ✗: At higher $T$, the distribution **broadens** (spreads over wider range of speeds) and the peak shifts right; it does not become narrower.\n- **D** ✓: By normalisation, $\\int_0^\\infty f(v)\\,dv = 1$ (the total probability is 1). This is always true regardless of $T$.\n\nAnswer: (A), (B), (D).",
+      "topic": "Chapter 24: Kinetic Theory of Gases",
+      "subtopic": "Objective II",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective II",
+        "Chapter 24"
+      ]
+    },
+    {
+      "id": "d4483159-7b8c-4733-8a1e-cc9c276ba746",
+      "question": "For an ideal gas, which of the following processes keep the rms speed of molecules unchanged?",
+      "optionA": "Isothermal compression",
+      "optionB": "Isothermal expansion",
+      "optionC": "Adiabatic compression",
+      "optionD": "Any process at constant temperature.",
+      "answer": "A,B,D",
+      "explanation": "$v_{\\rm rms} = \\sqrt{3k_BT/m}$ — depends only on absolute temperature $T$ and molecular mass $m$.\n\n- **A** ✓: Isothermal compression keeps $T$ constant → $v_{\\rm rms}$ unchanged.\n- **B** ✓: Isothermal expansion keeps $T$ constant → $v_{\\rm rms}$ unchanged.\n- **C** ✗: Adiabatic compression raises $T$ (no heat exchange, work done on gas increases internal energy) → $v_{\\rm rms}$ **increases**. ✗\n- **D** ✓: Any constant-temperature (isothermal) process preserves $v_{\\rm rms}$.\n\nAnswer: (A), (B), (D).",
+      "topic": "Chapter 24: Kinetic Theory of Gases",
+      "subtopic": "Objective II",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective II",
+        "Chapter 24"
+      ]
+    },
+    {
+      "id": "49fdd57b-31ed-4975-9670-2426ae0984a8",
+      "question": "Which of the following are assumptions of kinetic theory of ideal gases?",
+      "optionA": "The volume of molecules is negligible compared to the volume of the container.",
+      "optionB": "Molecules exert long-range attractive forces on each other.",
+      "optionC": "Collisions between molecules are perfectly elastic.",
+      "optionD": "There are a very large number of molecules in the gas.",
+      "answer": "A,C,D",
+      "explanation": "Standard assumptions of kinetic theory:\n- **A** ✓: Point-mass approximation — molecular volume $\\ll$ container volume.\n- **B** ✗: In an ideal gas, there are **no inter-molecular forces** except during brief elastic collisions. Long-range attractive forces are a feature of real gases (van der Waals).\n- **C** ✓: Collisions are perfectly elastic — kinetic energy is conserved.\n- **D** ✓: Large number of molecules ensures statistical averaging is valid.\n\nAnswer: (A), (C), (D).",
+      "topic": "Chapter 24: Kinetic Theory of Gases",
+      "subtopic": "Objective II",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective II",
+        "Chapter 24"
+      ]
     }
   ]
 }
