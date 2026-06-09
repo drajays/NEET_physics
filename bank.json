@@ -1,8 +1,8 @@
 {
   "app": "NEET Physics MCQ Mastery",
   "version": 1,
-  "updatedAt": "2026-06-07",
-  "questionCount": 1678,
+  "updatedAt": "2026-06-09T16:46:12.400730",
+  "questionCount": 2001,
   "questions": [
     {
       "id": "18b21c25-6f2b-4927-8cc8-a5895e75cd3c",
@@ -3531,22 +3531,6 @@
       ]
     },
     {
-      "id": "4b908a9c-5845-4b00-89cb-dbcea5fc22a2",
-      "subject": "Physics",
-      "topic": "Work, Energy and Power",
-      "subtopic": "The Conservation of Mechanical Energy",
-      "question": "A car moving with a speed of 40 km/h can be stopped after 2 m by applying brakes. If the same car is moving with a speed of 80 km/h, what is the minimum stopping distance?",
-      "optionA": "8 m",
-      "optionB": "2 m",
-      "optionC": "4 m",
-      "optionD": "6 m",
-      "answer": "A",
-      "explanation": "According to conservation of energy, The kinetic energy of car = work done in stopping the car i.e., $$ \\frac{1}{2}mv^{2}=Fs $$ where, F is the retarding force and s is the stopping distance. For same retarding force. $$ s\\propto v^{2} $$ $$ \\frac{s_{2}}{s_{1}}=\\left(\\frac{\\mathbf{v}_{2}}{\\mathbf{v}_{1}}\\right)^{2}=\\left(\\frac{80}{40}\\right)^{2}=4 $$ $$ s_{2}=4s_{1}=4\\times2=8m $$",
-      "tags": [
-        "AIPMT 1998"
-      ]
-    },
-    {
       "id": "2920ad85-f40c-4bdf-9dcf-89473f1983bc",
       "subject": "Physics",
       "topic": "Work, Energy and Power",
@@ -4991,20 +4975,6 @@
       "tags": [
         "AIPMT 2004"
       ]
-    },
-    {
-      "id": "6b8c8cd1-02ff-4c51-b81d-58ed336b7248",
-      "subject": "Physics",
-      "topic": "System of Particles and Rotational Motion",
-      "subtopic": "Angular Momentum in Case of Rotation about a Fixed Axis",
-      "question": "A wheel of a bullock cart is rolling on a level road as shown in the figure below. If its linear speed is v in the direction shown, which one of the following options is correct (P and Q are any highest and lowest points on the wheel, respectively)?",
-      "optionA": "Point P moves faster than point Q.",
-      "optionB": "Both the points P and Q move with equal speed.",
-      "optionC": "Point P has zero speed.",
-      "optionD": "Point P moves slower than point Q. [NEET 2",
-      "answer": "",
-      "explanation": "",
-      "tags": []
     },
     {
       "id": "1b179cdb-ab41-4ad3-90b5-5ac21fe95a69",
@@ -8215,22 +8185,6 @@
       ]
     },
     {
-      "id": "dd39a366-bcd0-4a94-a234-9141b6cc9ffd",
-      "subject": "Physics",
-      "topic": "Kinetic Theory",
-      "subtopic": "Law of Equipartition of Energy",
-      "question": "The volume (V) of a monoatomic gas varies with its temperature (T), as shown in the graph. The ratio of work done by the gas, to the heat absorbed by it, when it undergoes a change from state A to B is:",
-      "optionA": "$ \\frac{1}{3} $",
-      "optionB": "$ \\frac{2}{3} $",
-      "optionC": "$ \\frac{2}{5} $",
-      "optionD": "$ \\frac{2}{7} $",
-      "answer": "C",
-      "explanation": "The given graph shows that Volume. $$ V\\propto\\mathrm{t e m p e r a t u r e,~T} $$ $$ \\frac{\\mathrm{V}}{\\mathrm{T}}=\\mathrm{Constant} $$ This is isobaric process. <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//b20e71bf-57fc-449f-9bbb-d84bd788c31c/markdown_0/imgs/img_in_chart_box_156_251_383_432.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A15%3A41Z%2F-1%2F%2Fcc8a80fb66a1261d78713bdd68042de116949be6129d4420f46233e0280ce946\" alt=\"Image\" width=\"19%\" /></div> We know that Work done. $$ \\Delta\\mathbf{W}=\\mathbf{P}\\Delta\\mathbf{V}=n\\mathbf{R}\\Delta\\mathbf{T} $$ Absorbed heat. $$ \\Delta\\mathrm{Q}=n\\mathrm{C}_{p}\\Delta\\mathrm{T}=n\\mathrm{C}_{\\mathrm{p}}(\\mathrm{T}_{\\mathrm{B}}-\\mathrm{T}_{\\mathrm{A}}) $$ $$ \\mathbf{C}_{p}=\\left(\\mathbf{R}+\\frac{3}{2}\\mathbf{R}\\right)=\\frac{5}{2}\\mathbf{R} $$ Then eq.(ii) becomes, $$ \\Delta\\mathrm{Q}=n\\left(\\frac{5}{2}\\mathrm{R}\\right)(\\mathrm{T}_{\\mathrm{B}}-\\mathrm{T}_{\\mathrm{A}}) $$ ∴ Divided eq. (i) by (iii), we write, $$ \\frac{\\Delta\\mathbf{W}}{\\Delta\\mathbf{Q}}\\;=\\;\\frac{n\\mathrm{R}[\\mathrm{T_{B}}-\\mathrm{T_{A}}]}{n\\left(\\frac{5}{2}\\mathrm{R}\\right)[\\mathrm{T_{B}}-\\mathrm{T_{A}}]}\\;=\\;\\frac{2}{5} $$",
-      "tags": [
-        "NEET 2018"
-      ]
-    },
-    {
       "id": "c640bf84-78a8-46ec-ba69-348be67c77a6",
       "subject": "Physics",
       "topic": "Kinetic Theory",
@@ -11272,22 +11226,6 @@
       "explanation": "The energy stored in the capacitor is determined by $ U = \\frac{1}{2} C V^{2} $ If the initial and the final potential are $ V_{1} $ and $ V_{2} $ respectively, Then increase in energy ( $ \\Delta U $), $$ \\begin{aligned}\\Delta U&=\\frac{1}{2}C(V_{2}^{2}-V_{1}^{2})\\\\&=\\frac{1}{2}\\times(6\\times10^{-6})\\times[(20)^{2}-(10)^{2}]\\\\&=\\frac{1}{2}(6\\times10^{-6})\\times300=9\\times10^{-4}J\\end{aligned} $$",
       "tags": [
         "AIPMT 1995"
-      ]
-    },
-    {
-      "id": "e32f3efa-7e27-4b62-a0c1-0618d24f9c6f",
-      "subject": "Physics",
-      "topic": "Current Electricity",
-      "subtopic": "Ohm's Law",
-      "question": "In an electrical circuit, the voltage is measured as $ V = (200 \\pm 4) \\, \\Omega $ volt and the current is measured as $ I = (20 \\pm 0.2) \\, A $. The value of the resistance is:",
-      "optionA": "$ (10 \\pm 4.2) \\, \\Omega $",
-      "optionB": "$ (10 \\pm 0.3) \\, \\Omega $",
-      "optionC": "$ (10 \\pm 0.1) \\, \\Omega $",
-      "optionD": "$ (10 \\pm 0.8) \\, \\Omega $",
-      "answer": "B",
-      "explanation": "Given, Voltage, $ V=(200\\pm4)V $ Current, $ I=(20\\pm0.2)A $ $$ \\mathrm{R}=\\frac{\\mathbf{V}}{\\mathrm{I}}=\\frac{200}{20}=10\\ \\Omega $$ $$ \\left(\\frac{\\Delta\\mathbf{R}}{\\mathbf{R}}\\right)^{2}=\\left(\\frac{\\Delta\\mathbf{V}}{\\mathbf{V}}\\right)^{2}+\\left(\\frac{\\Delta\\mathbf{I}}{\\mathbf{I}}\\right)^{2} $$ $$ \\frac{\\Delta\\mathbf{V}}{\\mathbf{V}}=\\frac{4}{200}=0.02 $$ $$ \\left(\\frac{\\Delta\\mathrm{R}}{\\mathrm{R}}\\right)^{2}=(0.02)^{2}+(0.01)^{2} $$ $$ \\frac{\\Delta R}{R}=\\sqrt{0.0005} $$ $$ \\Delta\\mathbf{R}=\\mathbf{R}\\times0.0224 $$ $$ \\Delta R=0.224 $$ $$ \\therefore R=10\\pm0.224\\Omega=(10\\pm0.3)\\Omega $$",
-      "tags": [
-        "Re-NEET 2024"
       ]
     },
     {
@@ -20893,22 +20831,6 @@
       ]
     },
     {
-      "id": "ab02a067-8510-45c1-9b26-d99590e4fc37",
-      "subject": "Physics",
-      "topic": "Experimental Skills",
-      "subtopic": "",
-      "question": "Three identical spheres, each of mass M, are placed at the corners of a right angled triangle with the mutually perpendicular sides equal to 2 m (see figure). Taking the point of intersection of the two mutually perpendicular sides as the origin, the position vector of centre of mass is:",
-      "optionA": "$ 2(\\hat{i} + \\hat{j}) $",
-      "optionB": "$ (\\hat{i} + \\hat{j}) $",
-      "optionC": "$ \\frac{2}{3}(\\hat{i} + \\hat{j}) $",
-      "optionD": "$ \\frac{4}{3}(\\hat{i} + \\hat{j}) $",
-      "answer": "C",
-      "explanation": "See the figure. <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//e6f55268-e3da-4528-a451-4c2aa45d41c8/markdown_3/imgs/img_in_image_box_245_1140_483_1315.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A35Z%2F-1%2F%2F47c95a401719efd4567a1ea06c687a1e2d17e180a5cb59bf2d0d3a7de9db1923\" alt=\"Image\" width=\"20%\" /></div> $$ \\overrightarrow{OA}=2i $$ $$ \\overrightarrow{OB}=2\\boldsymbol{j} $$ Position vector of centre of mass, $$ \\overrightarrow{R}_{C M}=\\frac{m_{1}r_{1}+m_{2}r_{2}+m_{3}r_{3}}{m_{1}+m_{2}+m_{3}} $$ $$ \\begin{aligned}&=\\frac{\\overrightarrow{M.OA}+\\overrightarrow{M.OB}+\\overrightarrow{M}\\times(0)}{\\overrightarrow{M}+\\overrightarrow{M}+\\overrightarrow{M}}\\\\&=\\frac{\\overrightarrow{M}\\times2\\overrightarrow{i}+\\overrightarrow{M}\\times2\\overrightarrow{j}}{3\\overrightarrow{M}}=\\frac{2}{3}(\\overrightarrow{i}+\\overrightarrow{j})\\end{aligned} $$ $ 20 \\times 1 \\times (80 - 10) = m \\times 540 + m \\times 1 \\times (100 - 80) $ 1400 = 560 m $ \\Rightarrow $ m = 2.5 g Total mass of water = 20 + 2.5 = 22.5 g",
-      "tags": [
-        "NEET 2020"
-      ]
-    },
-    {
       "id": "77a03f83-92f1-46cd-8dd4-4a57881f3b7e",
       "subject": "Physics",
       "topic": "Experimental Skills",
@@ -21633,24 +21555,6 @@
       ]
     },
     {
-      "id": "9f78304b-33e8-435c-91fa-819a4dcd803a",
-      "subject": "Physics",
-      "topic": "Chapter 4: The Forces",
-      "subtopic": "Objective II",
-      "question": "Mark the correct statements:",
-      "optionA": "The nuclear force between two protons is always greater than the electromagnetic force between them.",
-      "optionB": "The electromagnetic force between two protons is always greater than the gravitational force between them.",
-      "optionC": "The gravitational force between two protons may be greater than the nuclear force between them.",
-      "optionD": "Electromagnetic force between two protons may be greater than the nuclear force acting between them.",
-      "answer": "B,C,D",
-      "explanation": "The relative strengths of the forces acting between two protons depend strongly on their **separation** — the nuclear force is extremely strong but extremely *short-ranged* (effectively zero beyond $\\sim 10^{-15}$ m), whereas electromagnetic and gravitational forces fall off more gradually (as $1/r^2$) and act over any distance.\n\n- **(a)** \"Nuclear force is *always* greater than electromagnetic force\": False — outside the range of the nuclear force (separations larger than nuclear dimensions, $\\gtrsim 10^{-14}$–$10^{-15}$ m), the nuclear force essentially vanishes while the Coulomb repulsion persists; so the electromagnetic force can easily exceed the (zero) nuclear force at large separations.\n- **(b)** \"Electromagnetic force is *always* greater than gravitational force, between two protons\": True — comparing their relative strengths, $E/G \\sim 10^{36}$, an enormous ratio that holds at *every* separation (both forces scale as $1/r^2$, so their ratio is separation-independent). ✓\n- **(c)** \"Gravitational force *may* be greater than nuclear force\": True — at separations beyond nuclear range, the nuclear force drops to (essentially) zero while gravity, though tiny, is still nonzero — so gravity can exceed the (vanishing) nuclear force there. ✓\n- **(d)** \"Electromagnetic force *may* be greater than nuclear force\": True — for the same reason; beyond the short range of the nuclear force, the Coulomb repulsion (which persists at all distances) dominates over the (now negligible) nuclear attraction. ✓\n\nAnswer: (B, C, D).",
-      "tags": [
-        "HC Verma Vol 1",
-        "Objective II",
-        "Chapter 4"
-      ]
-    },
-    {
       "id": "ebb50ee6-2d30-4959-b6eb-d7378917f6f9",
       "subject": "Physics",
       "topic": "Chapter 4: The Forces",
@@ -21806,24 +21710,6 @@
       "optionD": "mg tanθ.",
       "answer": "C",
       "explanation": "The plane is **smooth** (frictionless), so the only contact force it can exert on the block is the **normal force** $N$, perpendicular to the inclined surface.\n\nResolve the block's weight $mg$ into components along and perpendicular to the incline:\n- Perpendicular to incline: $mg\\cos\\theta$\n- Along the incline (down-slope): $mg\\sin\\theta$\n\nSince the block doesn't accelerate perpendicular to the incline (it stays on the surface), the normal force must exactly balance the perpendicular component of gravity:\n$$N = mg\\cos\\theta$$\n\n(The component $mg\\sin\\theta$ along the slope is what causes the block to slide down — the smooth surface offers no force to oppose this component.) Answer: (C).",
-      "tags": [
-        "HC Verma Vol 1",
-        "Objective I",
-        "Chapter 5"
-      ]
-    },
-    {
-      "id": "9b573a1a-0d65-4c1e-8589-0ec7f81d5bea",
-      "subject": "Physics",
-      "topic": "Chapter 5: Newton's Laws of Motion",
-      "subtopic": "Objective I",
-      "question": "A block of mass m is placed on a smooth wedge of inclination \\theta. The whole system is accelerated horizontally so that the block does not slip on the wedge. The force exerted by the wedge on the block has a magnitude",
-      "optionA": "mg",
-      "optionB": "mg/cos $ \\theta $",
-      "optionC": "mg $ \\cos\\theta $",
-      "optionD": "mg $ \\tan\\theta $.",
-      "answer": "B",
-      "explanation": "Here the wedge (and block) accelerate **horizontally** with some acceleration $a$ such that the block does *not* slide relative to the wedge — meaning the block moves with the same horizontal acceleration $a$ and has **no acceleration component along the incline** (relative to the wedge, it's stationary).\n\nFor the block to have zero acceleration along the incline, the net force along the incline must be zero. The forces on the block are gravity $mg$ (downward) and the normal force $N$ (perpendicular to the incline surface, since the wedge is smooth). For their resultant to produce *purely horizontal* acceleration (no component along the slope direction), $N$ must be oriented such that its component along the incline cancels gravity's component along the incline:\n\nResolving along the incline: $N\\sin\\theta = mg\\cos\\theta \\times(\\text{appropriate trig relation})$ — working through the geometry (the net force $\\sqrt{N^2 - (mg)^2}$ must be horizontal, or equivalently $N\\cos\\theta = mg$ when the block's acceleration relative to incline is zero and only horizontal acceleration remains):\n$$N\\cos\\theta = mg \\;\\Rightarrow\\; N = \\frac{mg}{\\cos\\theta}$$\n\nThis is *larger* than $mg$ — makes sense, because the normal force must now do double duty: support the block's weight vertically *and* provide the horizontal force needed to accelerate it along with the wedge. Answer: (B).",
       "tags": [
         "HC Verma Vol 1",
         "Objective I",
@@ -23343,24 +23229,6 @@
       ]
     },
     {
-      "id": "9116a5d9-a77e-485c-9704-7a0be63c66b8",
-      "subject": "Physics",
-      "topic": "Chapter 10: Rotational Mechanics",
-      "subtopic": "Objective I",
-      "question": "A solid sphere, a hollow sphere and a disc, all having same mass and radius, are placed at the top of an incline and released. The friction coefficients between the objects and the incline are same and not sufficient to allow pure rolling. Least time will be taken in reaching the bottom by",
-      "optionA": "the solid sphere",
-      "optionB": "the hollow sphere",
-      "optionC": "the disc",
-      "optionD": "all will take same time.",
-      "answer": "D",
-      "explanation": "Now the incline is **rough**, but the friction is **not enough** for pure rolling — so each object both *translates* and *slips/rotates*, with **kinetic friction** acting throughout the descent. Kinetic friction has a fixed magnitude\n$$f = \\mu N = \\mu Mg\\cos\\theta$$\n— the *same* for all three objects (same $M$, same $\\mu$, same $\\theta$, same $g$). \n\nThe equation of motion *along the incline* (translational) is:\n$$Ma = Mg\\sin\\theta - f = Mg\\sin\\theta - \\mu Mg\\cos\\theta$$\n$$a = g\\sin\\theta - \\mu g\\cos\\theta$$\nNotice that $M$ cancels, and — crucially — the **moment of inertia doesn't appear** in this equation for the *linear* (translational) acceleration; it only affects the *rotational* motion (how fast each object spins), not how fast its centre slides down. Since $a$ is identical for all three objects, they cover the same distance in the same time and reach the bottom **simultaneously**. Answer: (D).",
-      "tags": [
-        "HC Verma Vol 1",
-        "Objective I",
-        "Chapter 10"
-      ]
-    },
-    {
       "id": "a8a7bba0-80ce-4089-9725-24d1f1e47d58",
       "subject": "Physics",
       "topic": "Chapter 10: Rotational Mechanics",
@@ -24236,24 +24104,6 @@
       "optionD": "the average potential energy in one time period is equal to the average kinetic energy in this period.",
       "answer": "D",
       "explanation": "At any given **instant**, $PE = \\tfrac12 kx^2$ and $KE = \\tfrac12 k(A^2 - x^2)$ — these are equal only at the two special points where $x = \\pm A/\\sqrt2$ (where $PE = KE = E/2$). So they are *not* \"always equal\" (a) nor \"never equal\" (b) — they coincide at specific points each cycle.\n\nThe \"average over **any** time interval\" (c) is too strong a claim — over a very short interval, or an asymmetric portion of the cycle, the average $PE$ and average $KE$ generally differ (e.g., a tiny interval entirely spent near an extreme position would have average $PE \\gg$ average $KE$).\n\nHowever, averaged over **one full time period**, both $PE$ and $KE$ vary as $\\sin^2$ or $\\cos^2$ of the phase — and the time-averages of $\\sin^2$ and $\\cos^2$ over a full cycle are both exactly $\\tfrac12$. Since $PE + KE = E$ (constant total energy):\n$$\\langle PE\\rangle_{\\text{period}} + \\langle KE\\rangle_{\\text{period}} = E, \\quad \\text{and by the symmetry of } \\sin^2,\\cos^2: \\quad \\langle PE \\rangle = \\langle KE\\rangle = \\frac{E}{2}$$\nSo the average potential energy equals the average kinetic energy specifically when averaged over one complete time period. Answer: (D).",
-      "tags": [
-        "HC Verma Vol 1",
-        "Objective II",
-        "Chapter 12"
-      ]
-    },
-    {
-      "id": "395856e7-0218-430e-8904-a2399dad8f4d",
-      "subject": "Physics",
-      "topic": "Chapter 12: Simple Harmonic Motion",
-      "subtopic": "Objective II",
-      "question": "In a simple harmonic motion",
-      "optionA": "the maximum potential energy equals the maximum kinetic energy",
-      "optionB": "the minimum potential energy equals the minimum kinetic energy",
-      "optionC": "the minimum potential energy equals the maximum kinetic energy",
-      "optionD": "the maximum potential energy equals the minimum kinetic energy.",
-      "answer": "A,B",
-      "explanation": "In SHM, the total mechanical energy $E = \\tfrac12 kA^2$ is conserved and continuously redistributes between $PE = \\tfrac12 kx^2$ and $KE = \\tfrac12 k(A^2-x^2)$:\n\n- **Maximum $PE$** occurs at the extreme positions ($x = \\pm A$, where $v=0$): $PE_{\\max} = \\tfrac12 kA^2 = E$.\n- **Maximum $KE$** occurs at the mean position ($x=0$, where speed is greatest): $KE_{\\max} = \\tfrac12 kA^2 = E$.\n- So $PE_{\\max} = KE_{\\max} = E$ — both equal the total energy. ✓ (A)\n\n- **Minimum $PE$** occurs at the mean position ($x=0$): $PE_{\\min} = 0$.\n- **Minimum $KE$** occurs at the extreme positions ($v=0$): $KE_{\\min} = 0$.\n- So $PE_{\\min} = KE_{\\min} = 0$. ✓ (B)\n\n- **(C)**: $PE_{\\min} (=0)$ equals $KE_{\\max}(=E)$ only if $E=0$ — not true in general. ✗\n- **(D)**: $PE_{\\max}(=E)$ equals $KE_{\\min}(=0)$ only if $E=0$ — not true in general. ✗\n\nAnswer: (A, B).",
       "tags": [
         "HC Verma Vol 1",
         "Objective II",
@@ -25737,24 +25587,6 @@
       ]
     },
     {
-      "id": "4303b63b-eef1-4824-830a-900084d12d0f",
-      "subject": "Physics",
-      "topic": "Chapter 15: Wave Motion and Waves on a String",
-      "subtopic": "Objective I",
-      "question": "A tuning fork of frequency 480 Hz is used to vibrate a sonometer wire having natural frequency 410 Hz. The wire will vibrate with a frequency",
-      "optionA": "410 Hz",
-      "optionB": "480 Hz",
-      "optionC": "820 Hz",
-      "optionD": "960 Hz.",
-      "answer": "B",
-      "explanation": "Here $480$ Hz is **not** an integer multiple of $410$ Hz ($480/410 \\approx 1.17$), so it doesn't coincide with the wire's fundamental or any of its harmonics — there's no possibility of resonance.\n\nNevertheless, when a vibrating tuning fork is brought into contact with (or used to drive) the sonometer wire, the wire is subjected to a **periodic forcing** at the fork's frequency. In **forced vibration**, a system is compelled to oscillate at the *driving* frequency — regardless of whether that frequency matches any of its own natural frequencies (off-resonance, the response amplitude is just smaller than it would be at resonance, but the oscillation frequency is still that of the driver). So the wire vibrates with the tuning fork's frequency, $480$ Hz. Answer: (B).",
-      "tags": [
-        "HC Verma Vol 1",
-        "Objective I",
-        "Chapter 15"
-      ]
-    },
-    {
       "id": "d417f3dc-a696-4629-9aaa-9e49c5029f34",
       "subject": "Physics",
       "topic": "Chapter 15: Wave Motion and Waves on a String",
@@ -26774,24 +26606,6 @@
       "optionD": "unstrained for all distances.",
       "answer": "A",
       "explanation": "A normal eye has $f_{\\max} = x$ (retina distance), so it focuses parallel rays (object at ∞) with zero strain. Here $f_{\\max} > x$. At **full relaxation** the focal length is $f_{\\max} > x$: parallel rays converge **behind** the retina, giving a blurred image even for infinitely distant objects. The eye must **strain the muscles** (contract ciliary muscles to reduce $f$ from $f_{\\max}$ to $x$) even to see something at infinity. For closer objects the required $f$ is even smaller—more strain still. There is **no distance** at which the eye can relax completely. The eye is **always strained**. Answer: (A).",
-      "tags": [
-        "HC Verma Vol 1",
-        "Objective II",
-        "Chapter 19"
-      ]
-    },
-    {
-      "id": "17cfa2db-db65-434b-bb4c-5af18bf7816b",
-      "subject": "Physics",
-      "topic": "Chapter 19: Optical Instruments",
-      "subtopic": "Objective II",
-      "question": "Mark the correct options.",
-      "optionA": "If the far point goes ahead, the power of the divergent lens should be reduced.",
-      "optionB": "If the near point goes ahead, the power of the convergent lens should be reduced.",
-      "optionC": "If the far point is 1 m away from the eye, divergent lens should be used.",
-      "optionD": "If the near point is 1 m away from the eye, divergent lens should be used.",
-      "answer": "A,C",
-      "explanation": "- **A**: Far point moves farther (myopia less severe) → less correction needed → **reduce the magnitude** of the diverging lens power. ✓  \n- **B**: Near point moves farther (hyperopia more severe) → **more** converging power needed, not less. ✗  \n- **C**: Far point = 1 m → myopia → the eye cannot see beyond 1 m → needs a **diverging** (negative) lens to shift the apparent far point to infinity. ✓  \n- **D**: Near point = 1 m → hyperopia → needs a **converging** (positive) lens, not diverging. ✗  \nAnswer: (A), (C).",
       "tags": [
         "HC Verma Vol 1",
         "Objective II",
@@ -31980,6 +31794,952 @@
         "HC Verma Vol 1",
         "Objective II",
         "Chapter 22"
+      ]
+    },
+    {
+      "id": "d2986679-0ef5-4832-8078-65fd1eab3c7b",
+      "subject": "Physics",
+      "topic": "Motion in a Straight Line",
+      "subtopic": "",
+      "question": "The velocity (v) – time (t) plot of the motion of a body is shown below: The acceleration $ (a) $ – time $ (t) $ graph that best suits this motion is:",
+      "optionA": "",
+      "optionB": "",
+      "optionC": "",
+      "optionD": "",
+      "answer": "D",
+      "explanation": "Radians and Steradians are measured in either $\\pi$ (pi) or degrees. Because $\\pi$ and degrees are pure numbers. Planes and solid angles have no dimensions. Plane and solid angles both have units but no dimensions.",
+      "tags": [
+        "NEET 2024"
+      ]
+    },
+    {
+      "id": "933e1fd9-b4a6-408c-929f-172ac21acf74",
+      "subject": "Physics",
+      "topic": "Motion in a Straight Line",
+      "subtopic": "",
+      "question": "Which of the following curves does NOT represent motion in one dimension?",
+      "optionA": "",
+      "optionB": "",
+      "optionC": "",
+      "optionD": "",
+      "answer": "B",
+      "explanation": "Magnetic flux, $ \\phi = B \\cdot A $ As, F = ILB $$ [\\mathbf{B}]={\\frac{\\mathbf{F}}{\\mathbf{I L}}}={\\frac{\\mathbf{M L T}^{-2}}{\\mathbf{A L}}}=[\\mathbf{M T}^{-2}\\mathbf{A}^{-1}] $$ From (i) $$ \\phi=[\\mathrm{M T}^{-2}\\mathrm{A}^{-1}]\\mathrm{L}^{2} $$ $$ [\\phi]=[\\mathrm{M L^{2}T^{-2}A^{-1}}] $$ Self inductance, $ \\phi = LI $ $$ \\mathrm{L}=\\frac{\\phi}{\\mathrm{I}}=\\frac{\\mathrm{ML}^{2}\\mathrm{T}^{-2}\\mathrm{A}^{-1}}{\\mathrm{A}} $$ $$ [{\\mathrm L}]={\\mathrm M}{\\mathrm L}^{2}{\\mathrm T}^{-2}{\\mathrm A}^{-2} $$ Magnetic permeability, $ \\mu = \\frac{B \\cdot 2\\pi r}{I} $ $$ [\\mu]=\\",
+      "tags": []
+    },
+    {
+      "id": "038c6967-0145-493a-a228-3c906ab3a7d4",
+      "subject": "Physics",
+      "topic": "Work, Energy and Power",
+      "subtopic": "",
+      "question": "The kinetic energy acquired by a mass $m$ in travelling distance $d$, starting from rest, under the action of a constant force is directly proportional to:",
+      "optionA": "$m$",
+      "optionB": "$m^{0}$",
+      "optionC": "$\\sqrt{m}$",
+      "optionD": "$\\frac{1}{\\sqrt{m}}$",
+      "answer": "A",
+      "explanation": "Force required, $ F = \\frac{d(mv)}{dt} $ $ = v\\left(\\frac{dm}{dt}\\right) = vM $ as velocity v is constant Hence, $ \\mathrm{F}=\\mathrm{Mv} $ 22.(B) $$ \\mathrm{Thrust}=\\mathbf{M}(g+a)=u\\frac{dm}{dt} $$ $$ \\begin{array}{l}\\frac{dm}{dt}=\\frac{M(g+a)}{u}\\\\=\\frac{5000(10+20)}{800}\\\\ =187.5\\ kg/s \\end{array} $$",
+      "tags": [
+        "AIPMT 1994"
+      ]
+    },
+    {
+      "id": "a3f9c86b-212a-447b-b9b3-01899a5a8065",
+      "subject": "Physics",
+      "topic": "Motion in a Plane",
+      "subtopic": "",
+      "question": "A particle is projected making an angle of 45^{\\circ} with horizontal having kinetic energy K. The kinetic energy at highest point will be:",
+      "optionA": "$ \\frac{K}{\\sqrt{2}} $",
+      "optionB": "$ \\frac{K}{2} $",
+      "optionC": "2K",
+      "optionD": "K",
+      "answer": "C",
+      "explanation": "Thrust is the force with which the rocket moves upward given by, $$ \\mathrm{F}=u\\frac{dm}{dt} $$ Thus mass of the gas ejected per second to supply the thrust needed to overcome the weight of the rocket is $$ \\frac{dm}{dt}=\\frac{F}{u}=\\frac{ma}{u} $$ or $$ \\begin{array}{l}\\frac{dm}{dt}=\\frac{600\\times10}{1000}\\\\ =6\\mathrm{kg}\\mathrm{s}^{-1}\\end{array} $$",
+      "tags": [
+        "AIPMT 2001, 1997"
+      ]
+    },
+    {
+      "id": "60bb7d9b-8c1a-4d60-a1ae-d19aa12fa459",
+      "subject": "Physics",
+      "topic": "System of Particles and Rotational Motion",
+      "subtopic": "",
+      "question": "A particle of mass $m$ moves in the XY plane with a velocity $v$ along the straight line AB. If the angular momentum of the particle with respect to origin $O$ is $L_{A}$, when it is at A and $L_{B}$ when it is at B, then:",
+      "optionA": "$ L_{A}=L_{B} $",
+      "optionB": "the relationship between L_{A} and L_{B} depends upon the slope of the line AB",
+      "optionC": "$ L_{A} < L_{B} $",
+      "optionD": "$ L_{A} > L_{B} $",
+      "answer": "B",
+      "explanation": "Given that, $$ m_{1}=5\\mathrm{~kg},m_{2}=10\\mathrm{~kg~and} $$ $$ r=1\\mathrm{~m}=100\\mathrm{~cm} $$ Let C.M. lies at origin O, $$ \\mathrm{A}\\stackrel{m_{1}}{\\underset{|}{\\longrightarrow}}\\frac{\\mathrm{O}}{r_{1}}\\stackrel{\\mathrm{O}}{\\underset{|}{\\longrightarrow}}\\frac{m_{2}}{r_{2}}\\stackrel{\\mathrm{B}}{\\underset{|}{\\longrightarrow}}r $$ $$ \\frac{m_{1}r_{1}-m_{2}r_{2}}{m_{1}+m_{2}}=0 $$ $$ 5r_{1}-10r_{2}=0 $$ $$ r_{2}=\\frac{r_{1}}{2} $$ Also $$ r_{1}+r_{2}=100 $$ $$ r_{1}+\\frac{r_{1}}{2}=100 $$ $$ 3r_{1}=200 $$ $$ r_{1}=\\frac{200}{3}=67cm $$",
+      "tags": [
+        "AIPMT 2007"
+      ]
+    },
+    {
+      "id": "215c583a-b00a-4960-9d1d-77c2f291007f",
+      "subject": "Physics",
+      "topic": "System of Particles and Rotational Motion",
+      "subtopic": "",
+      "question": "Two bodies have their moments of inertia I and 2I respectively about their axis of rotation. If their kinetic energies of rotation are equal, their angular momentum will be in the ratio:",
+      "optionA": "2:1",
+      "optionB": "1:2",
+      "optionC": "$ \\sqrt{2}:1 $",
+      "optionD": "$ 1:\\sqrt{2} $",
+      "answer": "A",
+      "explanation": "Centre of mass. $$ \\begin{array}{l}r_{\\mathrm{c m}}=\\frac{m_{1}x_{1}+m_{2}x_{2}+m_{3}x_{3}}{m_{1}+m_{2}+m_{3}}\\\\\\quad=\\frac{300\\times0+500\\times40+400\\times70}{300+500+400},\\\\\\quad=40\\mathrm{~c m}\\end{array} $$",
+      "tags": [
+        "AIPMT 2005"
+      ]
+    },
+    {
+      "id": "5714cc4d-a641-476c-9130-128d6777dd44",
+      "subject": "Physics",
+      "topic": "System of Particles and Rotational Motion",
+      "subtopic": "",
+      "question": "A solid spherical ball rolls on a table. Ratio of its rotational kinetic energy to total kinetic energy is:",
+      "optionA": "$ \\frac{1}{2} $",
+      "optionB": "$ \\frac{1}{6} $",
+      "optionC": "$ \\frac{7}{10} $",
+      "optionD": "$ \\frac{2}{7} $",
+      "answer": "A",
+      "explanation": "According to the parallel axis theorem, $$ \\mathrm{I}=\\mathrm{I}_{\\mathrm{cm}}+m d^{2} $$ d is maximum to B. 38.(A) <div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_763_986_979_1122.jpg\" alt=\"Image\" width=\"18%\" /></div> Moment of inertia about an axis passing through one end $$ \\mathrm{I}=\\mathrm{I}_{\\mathrm{CM}}+md^{2} $$ $$ \\mathrm{I}=\\mathrm{I}_{0}+\\mathrm{M}\\left(\\frac{\\mathrm{L}}{2}\\right)^{2}=\\mathrm{I}_{0}+\\frac{\\mathrm{ML}^{2}}{4} $$",
+      "tags": [
+        "AIPMT 1994"
+      ]
+    },
+    {
+      "id": "0be5cb8a-b392-43f9-b840-89613397eb3d",
+      "subject": "Physics",
+      "topic": "System of Particles and Rotational Motion",
+      "subtopic": "",
+      "question": "A solid sphere, disc and solid cylinder all of the same mass and radius are allowed to roll down (from rest) on the inclined plane, then:",
+      "optionA": "solid sphere reaches the bottom first",
+      "optionB": "solid sphere reaches the bottom last",
+      "optionC": "disc will reach the bottom first",
+      "optionD": "all reach the bottom at same time.",
+      "answer": "D",
+      "explanation": "Centre of mass of each ball lies on the centre. $ \\Rightarrow $ Centre of mass of combined body will be at the centroid of equilateral triangle.",
+      "tags": [
+        "AIPMT 1993"
+      ]
+    },
+    {
+      "id": "6b3f6f48-b725-45d7-b756-042027a510a9",
+      "subject": "Physics",
+      "topic": "Gravitation",
+      "subtopic": "",
+      "question": "The dependence of acceleration due to gravity g on the distance f from the centre of Earth, assumed to be a sphere of radius R of uniform density is as shown in figure below:",
+      "optionA": "",
+      "optionB": "",
+      "optionC": "",
+      "optionD": "",
+      "answer": "",
+      "explanation": "",
+      "tags": [
+        "NEET 2021"
+      ]
+    },
+    {
+      "id": "66c93c0c-29f4-4b17-8600-95879adea6d0",
+      "subject": "Physics",
+      "topic": "Gravitation",
+      "subtopic": "",
+      "question": "Starting from the centre of the Earth having radius R, the variation of g (acceleration due to gravity) is shown by:",
+      "optionA": "",
+      "optionB": "",
+      "optionC": "",
+      "optionD": "",
+      "answer": "",
+      "explanation": "",
+      "tags": [
+        "NEET Phase-II 2016"
+      ]
+    },
+    {
+      "id": "46f84a47-2ce6-4ccb-9399-391df05a9bcb",
+      "subject": "Physics",
+      "topic": "Gravitation",
+      "subtopic": "",
+      "question": "Two bodies of mass m and 9m placed at distance R. The gravitational potential on the line joining the bodies where the gravitational field equals zero, will be: (G = gravitational constant)",
+      "optionA": "$ -\\frac{16\\ Gm}{R} $",
+      "optionB": "$ -\\frac{20\\ Gm}{R} $",
+      "optionC": "$ -\\frac{8\\ Gm}{R} $",
+      "optionD": "$ -\\frac{12\\ Gm}{R} $",
+      "answer": "A",
+      "explanation": "Let, at point P, the gravitational field is zero, which is situated at distance x from mass m. The distance between the masses is R. <div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_736_272_992_373.jpg\" alt=\"Image\" width=\"21%\" /></div> $$ \\frac{G m}{x^{2}}=\\frac{G(9m)}{(R-x)^{2}} $$ or $$ (\\mathbb{R}-x)^{2}=9x^{2} $$ or $$ \\frac{\\mathbf{R}-x}{x}=3 $$ or $$ x=\\frac{R}{4} \\tag*{...(i)}$$ Gravitational potential at point P, $$ \\mathbf{V}_{p}=\\frac{-\\mathbf{G}m}{x}-\\frac{\\mathbf{G}(9m)}{\\mathbf{R}-x} $$ or $$ \\mathrm{V}_{p}=\\frac{\\mathrm{Gm}}{\\mathrm{R}/4}\\",
+      "tags": [
+        "NEET 2023"
+      ]
+    },
+    {
+      "id": "69919969-3bcc-4505-8bec-7ad960cbfeb2",
+      "subject": "Physics",
+      "topic": "Gravitation",
+      "subtopic": "",
+      "question": "Dependence of intensity of gravitational field (E) of Earth distance (r) from centre of Earth is correctly represented by:",
+      "optionA": "",
+      "optionB": "",
+      "optionC": "",
+      "optionD": "",
+      "answer": "A",
+      "explanation": "Let, at point P, the gravitational field is zero, which is situated at distance x from mass m. The distance between the masses is R. <div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_736_272_992_373.jpg\" alt=\"Image\" width=\"21%\" /></div> $$ \\frac{G m}{x^{2}}=\\frac{G(9m)}{(R-x)^{2}} $$ or $$ (\\mathbb{R}-x)^{2}=9x^{2} $$ or $$ \\frac{\\mathbf{R}-x}{x}=3 $$ or $$ x=\\frac{R}{4} \\tag*{...(i)}$$ Gravitational potential at point P, $$ \\mathbf{V}_{p}=\\frac{-\\mathbf{G}m}{x}-\\frac{\\mathbf{G}(9m)}{\\mathbf{R}-x} $$ or $$ \\mathrm{V}_{p}=\\frac{\\mathrm{Gm}}{\\mathrm{R}/4}\\",
+      "tags": []
+    },
+    {
+      "id": "d568226e-d7ef-4916-a501-5c04b27c5bcb",
+      "subject": "Physics",
+      "topic": "Gravitation",
+      "subtopic": "",
+      "question": "Which one of the following plots represents the variation of gravitational field on a particle with distance r due to a thin spherical shell of radius R (r is measured from the centre of the spherical shell)?",
+      "optionA": "",
+      "optionB": "",
+      "optionC": "",
+      "optionD": "",
+      "answer": "B",
+      "explanation": "Gravitational field due to thin spherical shell. Inside the shell, (for $ r < R $) F = 0 On the surface of the shell, (for r = R) $$ \\mathrm{F}=\\frac{\\mathrm{GM}}{\\mathrm{R}^{2}} $$ Outside the shell, (for r > R) $$ =\\frac{G M}{r^{2}} $$ <div style=\"text-align: center;\"><img src=\"imgs/img_in_chart_box_854_631_1050_771.jpg\" alt=\"Image\" width=\"16%\" /></div> 42.(C) <div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_728_787_1170_973.jpg\" alt=\"Image\" width=\"37%\" /></div> ∴ change in gravitational potential energy $$ \\begin{array}{l} \\text{U=final energy-initial} \\\\",
+      "tags": [
+        "AIPMT Mains 2012"
+      ]
+    },
+    {
+      "id": "83f7d6c2-91f9-4f52-b32d-f12ee1a38d47",
+      "subject": "Physics",
+      "topic": "Gravitation",
+      "subtopic": "",
+      "question": "A particle of mass $m$ is thrown upwards from the surface of the Earth, with a velocity $u$. The mass and the radius of the Earth are, respectively, M and R. G is gravitational contact and g is acceleration due to gravity on the surface of the Earth. The minimum value of $u$ so that the particle does not return back to Earth, is:",
+      "optionA": "$\\sqrt{\\frac{2GM}{R}}$",
+      "optionB": "$\\sqrt{\\frac{2GM}{R^{2}}}$",
+      "optionC": "$\\sqrt{2gR^{2}}$",
+      "optionD": "$\\sqrt{\\frac{2GM}{R^{2}}}$",
+      "answer": "C",
+      "explanation": "According to Kepler's third law (or law of periods) i.e., $ T^{2} \\propto r^{3} $ Here, $ r_{1} = 10^{13} $ m, $ r_{2} = 10^{12} $ m (C) According to Kepler's third law (or law i.e., $ T^{2} \\propto r^{3} $ Here, $ r_{1}=10^{13} $ m, $ r_{2}=10^{12} $ m $ \\therefore\\frac{T_{1}^{2}}{T_{2}^{2}}=\\frac{r_{1}^{3}}{r_{2}^{3}}=\\frac{\\left(10^{13}\\right)^{3}}{\\left(10^{12}\\right)^{3}} $ or $ \\frac{T_{1}^{2}}{T_{2}^{2}}=\\frac{10^{39}}{10^{36}}=10^{3} $ or $ \\frac{T_{1}}{T_{2}}=10\\sqrt{10} $",
+      "tags": [
+        "NEET 2021"
+      ]
+    },
+    {
+      "id": "a62b72df-1250-4405-b8b4-de84af7ec0c9",
+      "subject": "Physics",
+      "topic": "Mechanical Properties of Solids",
+      "subtopic": "",
+      "question": "Given below are two statements: One is labelled as Assertion",
+      "optionA": "and the other is labelled as Reason (R). Assertion (A): The stretching of a spring is determined by the shear modulus of the material of the spring. Reason (R): A coil spring of copper has more tensile strength than a steel spring of same dimensions. In the light of the above statements, choose the most appropriate answer from the options given below: (A) Both (A) and (R) are true and (R) is not the correct explanation of (A).",
+      "optionB": "(A) is true but (R) is false (D) Both (A) and (R) are true and (R) is the correct explanation of (A).",
+      "optionC": "",
+      "optionD": "Both (A) and (R) are true and (R) is the correct explanation of (A).",
+      "answer": "B",
+      "explanation": "From the concept of Hooke's law, we have, Normal stress, $ (\\sigma) = E\\varepsilon $ where, E = Young's modulus of elasticity and $ \\varepsilon $ is strain which gives linear deformation of the object. Also, Shear Stress, $ (\\tau) = G\\gamma $ where, G = Shear modulus of elasticity of the material and $ \\gamma $ is shear strain which gives angular deformation of the object. When we stretch a spring, the length of the wire does not change but coil experiences an angular twist. Hence shear modulus is used to determine stretching of a spring. Also, we know that for a given dimension, Yo",
+      "tags": [
+        "NEET 2022"
+      ]
+    },
+    {
+      "id": "a850387f-4b45-4630-b65e-1eb4bcf63636",
+      "subject": "Physics",
+      "topic": "Thermal Properties of Matter",
+      "subtopic": "",
+      "question": "The weight of sphere in air is 50 g. Its weight is 40 g in a liquid, at temperature $ 20^{\\circ} $C. When temperature increases to $ 70^{\\circ} $C, its weight becomes 45 g. Find: (i) the ratio of densities of liquid at given two temperature is. (ii) the coefficient of cubical expansion of liquid assuming that there is no expansion of the volume of sphere. (i)(ii)",
+      "optionA": "2:11.24",
+      "optionB": "1:20.02",
+      "optionC": "2:10.02",
+      "optionD": "1:21.24",
+      "answer": "",
+      "explanation": "",
+      "tags": [
+        "AIPMT Mains 2008"
+      ]
+    },
+    {
+      "id": "0549fdad-7bf6-4f0e-bc05-47290b0a42e5",
+      "subject": "Physics",
+      "topic": "Thermodynamics",
+      "subtopic": "",
+      "question": "Liquid oxygen at 50 K is heated to 300 K at constant pressure of 1 atm. The rate of heating is constant. Which one of the following graphs represents the variation of temperature with time?",
+      "optionA": "",
+      "optionB": "",
+      "optionC": "",
+      "optionD": "",
+      "answer": "A",
+      "explanation": "The given graph in option (A) shows the variation of temperature with time.",
+      "tags": [
+        "AIPMT Screening 2012"
+      ]
+    },
+    {
+      "id": "2919c020-7390-4397-8eb1-e7cbcbd5bb19",
+      "subject": "Physics",
+      "topic": "Thermodynamics",
+      "subtopic": "",
+      "question": "Thermodynamic processes are indicated in the following diagram: Match the following: Column-IColumn-II(a) Process I(i) Adiabatic(b) Process II(ii) Isobaric(c) Process III(iii) Isochoric(d) Process IV(iv) Isothermal (a) (b) (c) (d)",
+      "optionA": "(i) (iii) (iv) (ii)",
+      "optionB": "(iii) (i) (iv) (ii)",
+      "optionC": "(iii) (iv) (ii) (i)",
+      "optionD": "(iv) (ii) (i) (iii)",
+      "answer": "B",
+      "explanation": "Process, I = Isochoric, volume is constant. II = Adiabatic, slope of curve II is more than the slope of curve III. III = Isothermal IV = Isobaric, Pressure is constant.",
+      "tags": [
+        "NEET 2018"
+      ]
+    },
+    {
+      "id": "21997be4-d7ae-433e-b3d7-07e139407a0f",
+      "subject": "Physics",
+      "topic": "Thermodynamics",
+      "subtopic": "",
+      "question": "One mole of an ideal gas goes from an initial state A to final state B via two processes: It first undergoes isothermal expansion from volume V to 3V and then its volume is reduced from 3V to V to constant pressure. The correct P-V diagram representing the two process is:",
+      "optionA": "",
+      "optionB": "",
+      "optionC": "",
+      "optionD": "",
+      "answer": "D",
+      "explanation": "Given that, gas A $ \\rightarrow $ B Firstly isothermal expansion = V to 3V then volume reduced from 3V to V at constant pressure. (1) For isothermal expansion, $$ \\mathrm{T}=\\mathrm{constant} $$ $$ PV=nRT=constant $$ $$ PV=constant $$ Hence, the graph will be hyperbolic curve. (2) Now for isobaric compression, $$ P=constant $$ $$ \\mathrm{PV}=n\\mathrm{RT} $$ Hence, the graph will be straight line.",
+      "tags": [
+        "AIPMT Screening 2012"
+      ]
+    },
+    {
+      "id": "d9314067-b49f-47d1-84de-1712fe3c77a8",
+      "subject": "Physics",
+      "topic": "Oscillations",
+      "subtopic": "",
+      "question": "The oscillation of a body on a smooth horizontal surface is represented by the equation, $ x = A \\cos(\\omega t) $ where, x = \\text{displacement at time } t \\omega = \\text{frequency of oscillation} Which one of the following graph's shows correctly the variation a with t? Here, $a = \\text{acceleration at time } t$, $T = \\text{time period}$",
+      "optionA": "",
+      "optionB": "",
+      "optionC": "",
+      "optionD": "",
+      "answer": "C",
+      "explanation": "The oscillation of body on smooth horizontal surface. $ x = A \\cos \\omega t $ where x = displacement at t $ \\omega= $ frequency of oscillation A = Amplitude $$ a=-\\omega^{2}x $$ Here at $$ t=0,x=A,a=-\\omega^{2}A $$ at $ t = \\frac{T}{4} $, $ x = A \\cos \\left( \\frac{2\\pi}{T} \\times \\frac{T}{4} \\right) = A \\cos \\frac{\\pi}{2} = 0 $, a = 0 at $ t=\\frac{T}{2} $, $ x=A\\cos\\left(\\frac{2\\pi}{T}\\times\\frac{T}{2}\\right)=A\\cos\\pi=-A $, $ a=\\omega^{2}A $ The graph becomes, <div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_343_973_540_1091.jpg\" alt=\"Image\" width=\"16%\" /",
+      "tags": [
+        "AIPMT 2014"
+      ]
+    },
+    {
+      "id": "dcfb1aab-dd63-4a4c-90c0-0ca04c7b4e6c",
+      "subject": "Physics",
+      "topic": "Oscillations",
+      "subtopic": "",
+      "question": "A particle of mass $m$ is released from rest and follows a parabolic path as shown. Assuming that the displacement of the mass from the origin is small. Which graph correctly depicts the position of the particle as function of time?",
+      "optionA": "",
+      "optionB": "",
+      "optionC": "",
+      "optionD": "",
+      "answer": "D",
+      "explanation": "Motion start from extreme position and for small displacement it is SHM. $$ y=\\mathbf{A}\\cos\\left(\\omega t+\\phi\\right) $$",
+      "tags": [
+        "AIPMT Screening 2011"
+      ]
+    },
+    {
+      "id": "1da93faf-918f-4f60-8594-f0a0b2af1646",
+      "subject": "Physics",
+      "topic": "Oscillations",
+      "subtopic": "",
+      "question": "A particle of mass m oscillates with simple harmonic motion between points x_{1} and x_{2}, the equilibrium position being O. Its potential energy is plotted. It will be as given below in the graph:",
+      "optionA": "",
+      "optionB": "",
+      "optionC": "",
+      "optionD": "",
+      "answer": "A",
+      "explanation": "PE in $SHM = \\frac{1}{2}kx^{2} \\to$ equation of parabola 43.(C) $$ \\begin{aligned}P.E.&=\\frac{1}{2}kx^{2}\\\\&=\\frac{1}{2}k\\bigg(\\frac{x}{2}\\bigg)^{2}=\\frac{E}{4}\\end{aligned} $$",
+      "tags": [
+        "AIPMT 2003"
+      ]
+    },
+    {
+      "id": "c2ed9b57-adfb-4851-8700-57afa864603f",
+      "subject": "Physics",
+      "topic": "Electric Charges and Fields",
+      "subtopic": "",
+      "question": "An electron falls from rest through a vertical distance $h$ in a uniform and vertically upward directed electric field E. The direction of electric field is now reversed, keeping its magnitude the same. A proton is allowed to fall from rest in it through the same vertical distance $h$. The time of fall of the electron, in comparison to the time of fall of the proton is:",
+      "optionA": "10 times greater",
+      "optionB": "5 times greater",
+      "optionC": "smaller",
+      "optionD": "equal",
+      "answer": "C",
+      "explanation": "Consider force on a charge particle in an electric field is: $$ \\mathrm{F}=q\\mathrm{E} \\tag*{...(i)}$$ And from Newton's second law of motion. $$ F=m a \\tag*{...(ii)}$$ From equations (i) and (ii) we get $$ \\begin{aligned}qE&=ma\\\\a&=\\frac{qE}{m}\\end{aligned} \\tag*{...(iii)}$$ Now consider that particle falls from rest means $u=0$ and $s=h$ $$ \\begin{array}{c}\\therefore\\quad\\\\ s=ut+at^{2}\\\\ h=\\frac{1}{2}at^{2}\\\\ \\Rightarrow\\quad h=\\frac{1}{2}\\bigg(\\frac{q\\mathrm{E}}{m}\\bigg).t^{2}\\\\ \\Rightarrow\\quad h=\\frac{1}{2}\\frac{q\\mathrm{E}}{m}t^{2}\\\\ \\Rightarrow\\quad t=\\sqrt{\\frac{2hm}{q",
+      "tags": [
+        "NEET 2018"
+      ]
+    },
+    {
+      "id": "5a7f4878-6b22-4caf-b7f7-a852272e4a04",
+      "subject": "Physics",
+      "topic": "Electric Charges and Fields",
+      "subtopic": "",
+      "question": "The electric field in a certain region is acting radially outward and is given by, E = Ar. A charge contained in a sphere of radius 'a' centered at the origin of the field will be given by:",
+      "optionA": "$ 4\\pi\\varepsilon_{0}Aa^{2} $",
+      "optionB": "$ A\\varepsilon_{0}a^{2} $",
+      "optionC": "$ 4\\pi\\varepsilon_{0}Aa^{3} $",
+      "optionD": "$ \\varepsilon_{0}Aa^{3} $",
+      "answer": "",
+      "explanation": "",
+      "tags": []
+    },
+    {
+      "id": "d4bfbc86-b85d-4bc2-9739-a178c2147bf7",
+      "subject": "Physics",
+      "topic": "Electric Charges and Fields",
+      "subtopic": "",
+      "question": "The electric field at a distance $ \\frac{3R}{2} $ from the centre of a charged conducting spherical shell of radius R is E. The electric field at a distance $ \\frac{R}{2} $ from the centre of the sphere is:",
+      "optionA": "zero",
+      "optionB": "E",
+      "optionC": "$ \\frac{E}{2} $",
+      "optionD": "$ \\frac{E}{2} $",
+      "answer": "A",
+      "explanation": "We know that, electric field inside the conductor is zero. So, the electric field at a distance $ \\frac{R}{2} $ from the centre of the sphere will also be zero.",
+      "tags": [
+        "AIPMT Mains 2010"
+      ]
+    },
+    {
+      "id": "215af6f6-9a55-4ac5-b9a5-a8d614ffa09b",
+      "subject": "Physics",
+      "topic": "Electric Charges and Fields",
+      "subtopic": "",
+      "question": "A particle of mass $m$ and charge $q$ is placed at rest in a uniform electric field E and then released. The kinetic energy attained by the particle after moving a distance $y$ is:",
+      "optionA": "$qEy^{2}$",
+      "optionB": "$qE^{2}y$",
+      "optionC": "$qEy$",
+      "optionD": "$q^{2}Ey$",
+      "answer": "C",
+      "explanation": "We have electric force on charged particle, $$ F=q E $$ Mechanical force on charged particle in a uniform electric field is, $$ F=m a=q E $$ or $$ a=\\frac{q E}{m} $$ From the third equation of motion, we get, $$ \\mathbf{v}^{2}=u^{2}+2a y $$ $$ \\mathbf{v}^{2}=\\frac{2q\\mathrm{E}y}{m} \\tag*{...(ii)}$$ $$ \\left[u=0\\text{and}a=\\frac{qE}{m}\\right] $$ Now, kinetic energy of the particle, $$ \\begin{aligned}\\mathbf{K}&=\\frac{1}{2}\\boldsymbol{m}\\mathbf{v}^{2}\\\\&=\\frac{m}{2}\\mathbf{\\Omega}\\times\\frac{2q\\mathbf{E}\\mathbf{y}}{m}=q\\mathbf{E}\\mathbf{y}\\end{aligned} $$",
+      "tags": [
+        "AIPMT 1998"
+      ]
+    },
+    {
+      "id": "532f3ad5-f9b6-495e-b840-e982b32f1c05",
+      "subject": "Physics",
+      "topic": "Electric Charges and Fields",
+      "subtopic": "",
+      "question": "A square surface of side L metre in the plane of the paper is placed in a uniform electric field E (volt/m) acting along the same plane at an angle $\\theta$ with the horizontal side of the square as shown in figure. The electric flux linked to the surface in unit of V·m, is:",
+      "optionA": "EL^{2} (C) $ EL^{2}\\sin\\theta $",
+      "optionB": "",
+      "optionC": "$ EL^{2}\\sin\\theta $ (B) $ EL^{2}\\cos\\theta $",
+      "optionD": "0",
+      "answer": "D",
+      "explanation": "We know that, $$ \\mathrm{f l u x,}\\stackrel{\\rightarrow}{\\phi}=\\stackrel{\\rightarrow}{\\mathrm{E.A}} $$ and $$ =EA\\cos\\theta $$ $$ \\begin{array}{l}\\to\\to\\\\ E.A=0,\\end{array} $$ Since $\\theta = 90^{\\circ}$ as $\\overrightarrow{A}$ is normal to the plane of square. #### Related Theory The number of electric field lines crossing a surface normally is known as the electric flux.",
+      "tags": [
+        "AIPMT Screening 2010"
+      ]
+    },
+    {
+      "id": "a75552c1-bfe5-400f-afc1-7c8f6733f2d9",
+      "subject": "Physics",
+      "topic": "Electric Charges and Fields",
+      "subtopic": "",
+      "question": "Two point charges $ -q $ and $ +q $ are placed at a distance of $ L $, as shown in the figure. The magnitude of electric field intensity at a distance $ R $ ( $ R \\gg L $) varies as:",
+      "optionA": "$ \\frac{1}{R^{2}} $",
+      "optionB": "$ \\frac{1}{R^{3}} $",
+      "optionC": "$ \\frac{1}{R^{4}} $",
+      "optionD": "$ \\frac{1}{R^{6}} $",
+      "answer": "B",
+      "explanation": "Electric field due to a dipole at any arbitrary point (R, Q) is $$ \\mathrm{E}=\\frac{p}{4\\pi\\varepsilon_{0}\\mathrm{R}^{3}}\\sqrt{3\\cos^{2}\\theta+1} $$ Here, $$ \\mathrm{E}\\propto\\frac{1}{\\mathrm{R}^{3}}. $$",
+      "tags": [
+        "NEET 2022"
+      ]
+    },
+    {
+      "id": "9b7d35f5-f90b-4a10-8ff9-f1598c761d08",
+      "subject": "Physics",
+      "topic": "Electric Charges and Fields",
+      "subtopic": "",
+      "question": "Polar molecules are the molecules:",
+      "optionA": "having zero dipole moment.",
+      "optionB": "acquire a dipole moment only in the presence of electric field due to displacement of charges.",
+      "optionC": "acquire a dipole moment only when magnetic field is absent.",
+      "optionD": "having a permanent field (D) having a permanent electric dipole moment.",
+      "answer": "D",
+      "explanation": "Polar molecules are the molecules having a permanent electric dipole moment. <div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_667_1084_704_1130.jpg\" alt=\"Image\" width=\"3%\" /></div> ##### Related Theory A polar molecule is one, in which the centre of gravity for positive and negative charges are separated.",
+      "tags": [
+        "NEET 2021"
+      ]
+    },
+    {
+      "id": "d79499d6-8326-47be-bac6-fdd57b5b39fe",
+      "subject": "Physics",
+      "topic": "Electric Charges and Fields",
+      "subtopic": "",
+      "question": "The electric field at a point on the equatorial plane at a distance r from the centre of a dipole having dipole moment P is given by $(r >> \\text{separation of two charges forming the dipole}, \\varepsilon_{0} = \\text{permittivity of free space})$:",
+      "optionA": "$\\frac{-\\mathrm{P}}{4\\pi\\varepsilon_{0}r^{3}}$",
+      "optionB": "$\\frac{2\\mathrm{P}}{4\\pi\\varepsilon_{0}r^{3}}$",
+      "optionC": "$-\\frac{\\mathrm{P}}{4\\pi\\varepsilon_{0}r^{2}}$",
+      "optionD": "$\\frac{\\mathrm{P}}{4\\pi\\varepsilon_{0}r^{2}}$",
+      "answer": "A",
+      "explanation": "Electric field due to electric dipole at an equatorial plane at a distance r from the centre of dipole is given by: $$ \\mathrm{E}_{e}=\\frac{q(2a)}{4\\pi\\varepsilon_{0}(r^{2}+a^{2})^{3/2}} $$ <div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_823_1332_1042_1517.jpg\" alt=\"Image\" width=\"18%\" /></div> Directed from Q to R. $$ \\mathrm{E}_{e}=-\\frac{\\mathrm{P}}{4\\pi\\varepsilon_{0}(r^{2}+a^{2})^{\\frac{3}{2}}} $$ For a very short dipole $(a<<r)$, $$ \\mathrm{E}_{e}=-\\frac{\\mathrm{P}}{4\\pi\\varepsilon_{0}r^{3}} $$",
+      "tags": [
+        "NEET 2020"
+      ]
+    },
+    {
+      "id": "3234f8f4-05ea-42a6-a573-44ba70a208a0",
+      "subject": "Physics",
+      "topic": "Electric Charges and Fields",
+      "subtopic": "",
+      "question": "Three point charges +q, -2q and +q are placed at points $ (x = 0, y = a, z = 0) $, $ (x = 0, y = 0, z = 0) $ and $ (x = a, y = 0, z = 0) $ respectively. The magnitude and direction of the electric dipole moment vector of this charge assembly are:",
+      "optionA": "$ \\sqrt{2}qa $ along the line joining points $ (x=0,y=0,z=0) $ and $ (x=a,y=a,z=0) $",
+      "optionB": "qa along the line joining points $ (x=0,y=0,z=0) $ and $ (x=a,y=a,z=0) $",
+      "optionC": "$ \\sqrt{2}qa $ along +x-direction",
+      "optionD": "$ \\sqrt{2}qa $ along +y-direction ∴ $$ \\frac{Kq^{2}}{x^{2}mg}=\\frac{x}{2l} $$ or $$ x^{3}\\propto q^{2} \\tag*{...(i)}$$ or $$ x^{3/2}\\propto q \\tag*{...(ii)}$$ Differentiate eq. (i) w.r.t. to time, we get $$ 3x^{2}\\frac{dx}{dt}\\propto2q\\frac{dq}{dt} $$ but $ \\frac{dq}{dt} $ is constant. So. $$ x^{2}(v)\\propto q $$ Now, replace q from eq. (ii), we get $$ x^{2}\\left(\\mathrm{v}\\right)\\propto x^{3/2} $$ $$ \\Downarrow: $$ $$ \\textbf{v}\\propto x^{\\frac{-1}{2}} $$",
+      "answer": "A",
+      "explanation": "This consists of two dipoles, -q and +q with dipole moment along with the +y-direction and -q and +q along the x-direction <div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_144_422_384_616.jpg\" alt=\"Image\" width=\"20%\" /></div> ∴ The resultant moment = $ \\sqrt{q^{2}a^{2}+q^{2}a^{2}} $ $ =\\sqrt{2}qa $ along the direction $45^{\\circ}$ that is along OP, where P is $(a,a,0)$.",
+      "tags": []
+    },
+    {
+      "id": "b85521f6-13db-4574-ba3d-4570748ebc47",
+      "subject": "Physics",
+      "topic": "Electrostatic Potential and Capacitance",
+      "subtopic": "",
+      "question": "The variation of electrostatic potential with radial distance r from centre of a positively charged metallic thin shell of radius R is given by the graph:",
+      "optionA": "",
+      "optionB": "R",
+      "optionC": "",
+      "optionD": "R R",
+      "answer": "B",
+      "explanation": "Since, electric potential remains constant inside the metallic spherical shell which is same as at the surface of spherical shell. Outside the spherical shell, $$ \\mathrm{V}\\propto\\frac{1}{r}. $$ So, the graph given in option (B) is the variation of potential (V) with distance r.",
+      "tags": [
+        "NEET 2020"
+      ]
+    },
+    {
+      "id": "f31e30f2-7de0-41d7-996d-515ae548b78f",
+      "subject": "Physics",
+      "topic": "Electrostatic Potential and Capacitance",
+      "subtopic": "",
+      "question": "The diagrams below show regions of equipotentials: (i) (ii) (iii) (iv) A positive charge is moved from A to B in each diagram.",
+      "optionA": "Maximum work is required to move q in figure (iii).",
+      "optionB": "In all the four cases, the work done is the same.",
+      "optionC": "Minimum work is required to move q in figure (i).",
+      "optionD": "Maximum work is required to move q in figure (ii).",
+      "answer": "B",
+      "explanation": "Work done, $ W = q \\Delta V $ ∆V is same in all the cases, so work done is same in all the cases. <div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_583_238_618_278.jpg\" alt=\"Image\" width=\"2%\" /></div> ##### Related Theory An equipotential surface is that at every point of which electric potential is the same and electric field lines of force are always perpendicular to an equipotential surface.",
+      "tags": [
+        "NEET 2018"
+      ]
+    },
+    {
+      "id": "ee5ad835-adc4-4366-bf1a-b7ce51627962",
+      "subject": "Physics",
+      "topic": "Electrostatic Potential and Capacitance",
+      "subtopic": "",
+      "question": "Two thin dielectric slabs of dielectric constants $K_{1}$ and $K_{2}$ ($K_{1}",
+      "optionA": "",
+      "optionB": "",
+      "optionC": "",
+      "optionD": "",
+      "answer": "",
+      "explanation": "",
+      "tags": [
+        "AIPMT 2014"
+      ]
+    },
+    {
+      "id": "9609f93a-4660-4380-9f21-85877c268585",
+      "subject": "Physics",
+      "topic": "Current Electricity",
+      "subtopic": "",
+      "question": "Which of the following graph represents the variation of resistivity ($\\rho$) with temperature (T) for copper?",
+      "optionA": "",
+      "optionB": "",
+      "optionC": "",
+      "optionD": "",
+      "answer": "",
+      "explanation": "",
+      "tags": [
+        "NEET 2020"
+      ]
+    },
+    {
+      "id": "c95850b6-23e3-4740-aec7-fd170b1dfac1",
+      "subject": "Physics",
+      "topic": "Current Electricity",
+      "subtopic": "",
+      "question": "The terminal voltage of the battery, whose emf is 10 V and internal resistance 1 Ω, when connected through an external resistance of 4 Ω as shown in the figure. ### 3.10. Cells, EMF, Internal Resistance",
+      "optionA": "6 V",
+      "optionB": "8 V",
+      "optionC": "10 V",
+      "optionD": "4 V",
+      "answer": "B",
+      "explanation": "From the given circuit diagram",
+      "tags": [
+        "NEET 2024"
+      ]
+    },
+    {
+      "id": "4900a08d-c434-4329-9443-2bdbc3aa6236",
+      "subject": "Physics",
+      "topic": "Current Electricity",
+      "subtopic": "",
+      "question": "A cell having an EMF ε and internal resistance r is connected across a variable external resistance R. As the resistance R is increased, the plot of potential difference V across R is given by:",
+      "optionA": "",
+      "optionB": "",
+      "optionC": "",
+      "optionD": "",
+      "answer": "C",
+      "explanation": "Here, $$ \\mathbf{E}=\\mathbf{I}\\left(\\mathbf{R}+\\mathbf{r}\\right) $$ and $$ \\mathrm{E}=\\mathrm{V}+\\frac{\\mathrm{E}}{\\mathrm{R}+r}\\times r $$ $$ \\circ\\circ $$ $$ \\mathbf{V}=\\mathbf{E}-\\frac{\\mathbf{E}}{\\mathbf{R}+\\mathbf{r}}\\times\\mathbf{r} $$",
+      "tags": [
+        "AIPMT Mains 2012"
+      ]
+    },
+    {
+      "id": "89884b25-3743-434e-94c6-b51fa435e9b7",
+      "subject": "Physics",
+      "topic": "Current Electricity",
+      "subtopic": "",
+      "question": "A battery consists of a variable number 'n' of identical cells (having internal resistance 'r' each) which are connected in series. The terminals of the battery are short-circuited and the current I is measured. Which of the graph shows the correct relationship between I and n?",
+      "optionA": "",
+      "optionB": "",
+      "optionC": "",
+      "optionD": "",
+      "answer": "C",
+      "explanation": "Since, $ I = \\frac{nE}{nr} = \\frac{E}{r} $ So, I is independent of n. So, I is constant. <div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_784_1193_943_1318.jpg\" alt=\"Image\" width=\"13%\" /></div>",
+      "tags": [
+        "NEET 2018"
+      ]
+    },
+    {
+      "id": "88887687-996e-4f0c-9ff4-8a272e66459a",
+      "subject": "Physics",
+      "topic": "Current Electricity",
+      "subtopic": "",
+      "question": "Choose the correct circuit which can achieve the bridge balance.",
+      "optionA": "",
+      "optionB": "",
+      "optionC": "",
+      "optionD": "",
+      "answer": "",
+      "explanation": "",
+      "tags": [
+        "NEET 2024"
+      ]
+    },
+    {
+      "id": "091617af-e295-4739-a6f2-222f36143e84",
+      "subject": "Physics",
+      "topic": "Current Electricity",
+      "subtopic": "",
+      "question": "In the circuit shown below, the reading of voltmeters and the ammeters will be:",
+      "optionA": "$ V_{1}=V_{2} $ and $ i_{1}>i_{2} $",
+      "optionB": "$ V_{1}=V_{2} $ and $ i_{1}=i_{2} $",
+      "optionC": "$ V_{2}>V_{1} $ and $ i_{1}>i_{2} $",
+      "optionD": "$ V_{1}",
+      "answer": "",
+      "explanation": "",
+      "tags": []
+    },
+    {
+      "id": "45c7dd61-e0da-4d1b-9b25-e2702b961d55",
+      "subject": "Physics",
+      "topic": "Current Electricity",
+      "subtopic": "",
+      "question": "The reading of an ideal voltmeter in the circuit shown is: (B) 0 V",
+      "optionA": "",
+      "optionB": "0 V (A) 0.6 V",
+      "optionC": "0.5 V",
+      "optionD": "0.4 V",
+      "answer": "",
+      "explanation": "",
+      "tags": [
+        "NEET 2019"
+      ]
+    },
+    {
+      "id": "ce474ab2-a11d-4fab-9e02-d5d13b9606dc",
+      "subject": "Physics",
+      "topic": "Moving Charges and Magnetism",
+      "subtopic": "",
+      "question": "A thick current carrying cable of radius 'R' carries current 'I' uniformly distributed across its cross-section. The variation of magnetic field B(r) due to the cable with the distance 'r' from the axis of the cable is represented by:",
+      "optionA": "",
+      "optionB": "",
+      "optionC": "",
+      "optionD": "",
+      "answer": "C",
+      "explanation": "Inside, the field varies linearly; while outside, its variation is inversely proportion to r. <div style=\"text-align: center;\"><div style=\"text-align: center;\">38.(B)</div> </div> <div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_134_84_326_303.jpg\" alt=\"Image\" width=\"16%\" /></div> Inside $ (d < R) $ Magnetic field inside conductor, $$ \\mathbf{B}=\\frac{\\mu_{0}}{2\\pi\\mathbf{R}^{2}}\\mathbf{I}d $$ Or B = kd Straight line passing through origin, At surface (d = R) $$ \\mathbf{B}=\\frac{\\mu_{0}}{2\\pi}\\frac{\\mathbf{I}}{\\mathbf{R}} \\tag*{...(ii)}$$ $$ \\begin{array}{r}",
+      "tags": [
+        "NEET 2021"
+      ]
+    },
+    {
+      "id": "406f026d-30df-471b-804f-ad463a0f3cb5",
+      "subject": "Physics",
+      "topic": "Moving Charges and Magnetism",
+      "subtopic": "",
+      "question": "A cylindrical conductor of radius R is carrying a constant current. The plot of the magnitude of the magnetic field B with the distance d from the centre of the conductor, is correctly represented by the figure:",
+      "optionA": "",
+      "optionB": "",
+      "optionC": "",
+      "optionD": "",
+      "answer": "",
+      "explanation": "",
+      "tags": []
+    },
+    {
+      "id": "982b0243-8e25-4e6e-aa0d-5d1b3cb63a7a",
+      "subject": "Physics",
+      "topic": "Magnetism and Matter",
+      "subtopic": "",
+      "question": "Following figures shows the arrangement of bar magnets in different configurations. Each magnet has magnetic dipole moment $m$. Which configuration has highest net magnetic dipole moment?",
+      "optionA": "",
+      "optionB": "",
+      "optionC": "",
+      "optionD": "",
+      "answer": "C",
+      "explanation": "Given, each magnet has magnetic dipole moment = $m$. $\\therefore$ Net magnetic moment $=\\sqrt{m^{2}+m^{2}+2m^{2}\\cos\\theta}$ Here, $m_{\\mathrm{net}}$ is max when $\\cos\\theta$ is max and $\\cos\\theta$ will be max when $\\theta$ is minimum. So, $\\theta = 30^{\\circ}, m_{\\mathrm{net}}$ will be maximum. 8.(B) The magnetic pole strength be m, then magnetic moment, $ M = ml $ From the given figure, $$ l=\\frac{\\pi}{3}\\times r $$ $$ r=\\frac{3l}{\\pi} \\tag*{...(i)}$$ ∴ New magnetic moment, $$ \\begin{aligned}\\mathbf{M}&=m\\times r=m\\times\\frac{3l}{\\pi}\\\\&=\\frac{3}{\\pi}\\times ml=\\frac{3\\mathb",
+      "tags": [
+        "AIPMT 2014"
+      ]
+    },
+    {
+      "id": "44e5c432-c16e-4ccd-aa47-31a6e13315d3",
+      "subject": "Physics",
+      "topic": "Magnetism and Matter",
+      "subtopic": "",
+      "question": "Match List-I with List-II. List-I (Material)List-II (Susceptibility)(a) Diamagnetic(i) $ \\chi = 0 $(b) Ferromagnetic(ii) $ 0 &gt; \\chi \\geq -1 $(c) Paramagnetic(iii) $ \\chi &gt;&gt; 1 $(d) Non-magnetic(iv) $ 0 &lt; \\chi &lt; \\varepsilon $ (a small positive number) Choose the correct answer from the options given below:",
+      "optionA": "(a)-(ii), (b)-(i), (c)-(iii), (d)-(iv)",
+      "optionB": "(a)-(iii), (b)-(ii), (c)-(i), (d)-(iv)",
+      "optionC": "(a)-(iv), (b)-(iii), (c)-(ii), (d)-(i)",
+      "optionD": "(a)-(ii), (b)-(iii), (c)-(iv), (d)-(i)",
+      "answer": "A",
+      "explanation": "For AC source, Given. $$ \\mathrm{V}_{\\mathrm{rms}}=12\\mathrm{~V},\\mathrm{I}_{\\mathrm{rms}}=0.2\\mathrm{~A} $$ Impedance, $$ Z=\\frac{V_{rms}}{I_{rms}}=\\frac{12}{0.2}=60\\Omega $$ and for DC source, Given. $$ V=12V,I=0.4A $$ Resistance. $$ \\mathrm{R}=\\frac{\\mathrm{V}}{\\mathrm{I}}=\\frac{12}{0.4}=30\\ \\Omega $$ Since, Z > R, we conclude there must be another component in the series, which is inductor. ∴ It is a series LR circuit.",
+      "tags": [
+        "NEET 2024"
+      ]
+    },
+    {
+      "id": "cf5dd4e2-3499-4974-958e-e39cf9f4c098",
+      "subject": "Physics",
+      "topic": "Magnetism and Matter",
+      "subtopic": "",
+      "question": "The current (I) in the inductance is varying with time according to the plot shown in figure. Which one of the following is the correct variation of voltage with time in the coil?",
+      "optionA": "",
+      "optionB": "",
+      "optionC": "",
+      "optionD": "",
+      "answer": "A",
+      "explanation": "From Curie Law, $ \\chi_{m} \\propto \\frac{1}{T} $",
+      "tags": [
+        "AIPMT Screening 2012"
+      ]
+    },
+    {
+      "id": "50f16211-3ed6-42e2-9146-b7fb6e1e338f",
+      "subject": "Physics",
+      "topic": "Electromagnetic Waves",
+      "subtopic": "",
+      "question": "The velocity of electromagnetic radiation permittivity $ \\varepsilon_0 $ and permeability $ \\mu_0 $ is",
+      "optionA": "$ \\sqrt{\\frac{\\varepsilon_0}{\\mu_0}} $",
+      "optionB": "$ \\sqrt{\\mu_0 \\varepsilon_0} $",
+      "optionC": "$ \\frac{1}{\\sqrt{\\mu_0 \\varepsilon_0}} $",
+      "optionD": "$ \\sqrt{\\frac{\\mu_0}{\\varepsilon_0}} $",
+      "answer": "C",
+      "explanation": "Velocity of electromagnetic radiation is the velocity of light (c) i.e., $$ c=\\frac{1}{\\sqrt{\\mu_{0}\\varepsilon_{0}}} $$ where, $\\mu_{0}=$ permeability and $\\varepsilon_{0}=$ permittivity of free space",
+      "tags": [
+        "AIPMT Screening 2008"
+      ]
+    },
+    {
+      "id": "ca46359b-7b7d-4c30-9aa9-c3d8f4dc4676",
+      "subject": "Physics",
+      "topic": "Electromagnetic Waves",
+      "subtopic": "",
+      "question": "Match List-I with List-II. List-I (Electromagnetic waves)List-II (Wavelength)(a) AM radio waves(i) $ 10^{-10} m $(b) Microwaves(ii) $ 10^{2} m $(c) Infrared radiations(iii) $ 10^{-2} m $(d) X-rays(iv) $ 10^{-4} m $ Choose the correct answer from the options given below.",
+      "optionA": "(a)-(iv), (b)-(iii), (c)-(ii), (d)-(i)",
+      "optionB": "(a)-(iii), (b)-(ii), (c)-(i), (d)-(iv)",
+      "optionC": "(a)-(iii), (b)-(iv), (c)-(ii), (d)-(i)",
+      "optionD": "(a)-(ii), (b)-(iii), (c)-(iv), (d)-(i)",
+      "answer": "D",
+      "explanation": "The wavelength of AM radio waves is $10^2$ m. The wavelength of microwaves lies between $10^{-3}$ m to $10^{-1}$ m. Infrared radiations wavelength lies between $4 \\times 10^{-7}$ m to $7 \\times 10^{-3}$ m. X-ray wavelength ranges from $10^{-8}$ m to $10^{-12}$ m.",
+      "tags": [
+        "NEET 2022"
+      ]
+    },
+    {
+      "id": "88d0215b-3f06-4376-9d94-be328d17a378",
+      "subject": "Physics",
+      "topic": "Dual Nature of Radiation and Matter",
+      "subtopic": "",
+      "question": "According to Einstein's photoelectric equation, the graph between the kinetic energy of photoelectron ejected and the frequency of incident radiation is:",
+      "optionA": "",
+      "optionB": "",
+      "optionC": "",
+      "optionD": "",
+      "answer": "D",
+      "explanation": "We know that <div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_230_1148_433_1282.jpg\" alt=\"Image\" width=\"17%\" /></div> $$ h\\mathsf{v}=\\emptyset+\\mathsf{K}\\mathrm{E}_{\\max} $$ <div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_70_1311_105_1356.jpg\" alt=\"Image\" width=\"2%\" /></div> ##### Related Theory Kinetic energy of photoelectron is, $$ \\begin{aligned}\\Delta K&=h\\nu-h\\nu_{0}=h c\\left(\\frac{1}{\\lambda}-\\frac{1}{\\lambda_{_{0}}}\\right)\\\\&=12400\\left(\\frac{1}{\\lambda(\\bar{\\mathrm{A}})}-\\frac{1}{\\lambda_{_{0}}(\\bar{\\mathrm{A}})}\\right)\\end{aligned} $$",
+      "tags": [
+        "AIPMT 2004"
+      ]
+    },
+    {
+      "id": "6dd169bb-3a38-4f74-af6c-b440e9b7acb1",
+      "subject": "Physics",
+      "topic": "Dual Nature of Radiation and Matter",
+      "subtopic": "",
+      "question": "The graph which shown the variation of $ \\left(\\frac{1}{\\lambda^{2}}\\right) $ and its kinetic energy, E is (where $ \\lambda $ is de Broglie wavelength of a free particle):",
+      "optionA": "",
+      "optionB": "",
+      "optionC": "",
+      "optionD": "",
+      "answer": "",
+      "explanation": "",
+      "tags": [
+        "NEET 2024"
+      ]
+    },
+    {
+      "id": "a61d1df7-02e7-44c7-b25c-054a35e0cfaa",
+      "subject": "Physics",
+      "topic": "Dual Nature of Radiation and Matter",
+      "subtopic": "",
+      "question": "The graph which shows the variation of the de-Broglie wavelength ($\\lambda$) of a particle and its associated momentum ($p$) is:",
+      "optionA": "",
+      "optionB": "",
+      "optionC": "",
+      "optionD": "",
+      "answer": "D",
+      "explanation": "According to de-Broglie wavelength $$ \\lambda=\\frac{h}{p}\\text{or}\\lambda\\propto\\frac{1}{p} $$ The graph will be rectangular hyperbola.",
+      "tags": [
+        "NEET 2022, AIPMT Cancelled 2015"
+      ]
+    },
+    {
+      "id": "82d016b4-e0bf-4950-89a4-d5af253e8e91",
+      "subject": "Physics",
+      "topic": "Atoms",
+      "subtopic": "",
+      "question": "If in a $p$-n junction, a square input signal of 10 V is applied as shown in given figure: Then the output across $ R_{L} $ will be:",
+      "optionA": "",
+      "optionB": "",
+      "optionC": "",
+      "optionD": "",
+      "answer": "B",
+      "explanation": "Bohr used the concept of quantization of angular momentum. For stationary orbits, Angular momentum, $$ L=\\frac{nh}{2\\pi} $$ where, n = 1, 2, 3, ..., etc. 23.(D) $$ \\mathrm{E}=\\frac{h c}{\\lambda}\\Rightarrow\\lambda=\\frac{h c}{\\mathrm{E}}\\Rightarrow\\lambda\\propto\\frac{1}{\\mathrm{E}} $$ Energy of photon of wavelength $ \\lambda_{1} $ $$ \\Delta\\mathrm{E}_{1}=-\\left(\\frac{5\\mathrm{E}}{2}\\right)+4\\mathrm{E}=\\frac{3\\mathrm{E}}{2} $$ Energy of photon of wavelength $ \\lambda_{2} $, $$ \\Delta\\mathrm{E}_{2}=-2\\mathrm{E}-(-3\\mathrm{E}) $$ $$ \\Delta\\mathrm{E}_{2}=-2\\mathrm{E}+3\\mathrm{E}=",
+      "tags": [
+        "AIPMT Cancelled 2015"
+      ]
+    },
+    {
+      "id": "d32d7696-eeb3-43f4-a4a4-566e9f2fa012",
+      "subject": "Physics",
+      "topic": "Semiconductor Electronics",
+      "subtopic": "",
+      "question": "On the diodes shown in the following diagrams, which one is reverse biased:",
+      "optionA": "",
+      "optionB": "",
+      "optionC": "",
+      "optionD": "",
+      "answer": "B",
+      "explanation": "Thermal K.E. $ \\geq $ Electrostatic P.E.",
+      "tags": [
+        "AIPMT 2004"
+      ]
+    },
+    {
+      "id": "269a0c6f-ff3b-4357-a765-cafaf33ad743",
+      "subject": "Physics",
+      "topic": "Semiconductor Electronics",
+      "subtopic": "",
+      "question": "A logic circuit provides the output Y as per the following truth table: ABY001010101110 The expression for the output Y is:",
+      "optionA": "A. $ \\overline{B} $+ $ \\overline{A} $",
+      "optionB": "$ \\overline{B} $",
+      "optionC": "B",
+      "optionD": "A.B+ $ \\overline{A} $",
+      "answer": "B",
+      "explanation": "Output of the given circuit <table border=1 style='margin: auto; word-wrap: break-word;'><tr><td style='text-align: center; word-wrap: break-word;'>$ \\bar{B} $</td><td style='text-align: center; word-wrap: break-word;'>B</td><td style='text-align: center; word-wrap: break-word;'>A.B+ $ \\bar{A} $</td><td style='text-align: center; word-wrap: break-word;'>A.B+ $ \\bar{A} $</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>1</td><td style='text-align: center; word-wrap: break-word;'>0</td><td style='text-align: center; word-wrap: break-word;'>1</td><td style='text-align: cente",
+      "tags": [
+        "NEET 2024"
+      ]
+    },
+    {
+      "id": "2699a73b-6c28-4e4e-9d67-44479294ce56",
+      "subject": "Physics",
+      "topic": "Semiconductor Electronics",
+      "subtopic": "",
+      "question": "For the following logic circuit, the truth table is:",
+      "optionA": "",
+      "optionB": "",
+      "optionC": "",
+      "optionD": "$$ \\begin{array}{c|c}{A}&{B}&{C}\\\\ \\hline{0}&{0}&{0}\\\\{0}&{1}&{1}\\\\{1}&{0}&{1}\\\\{1}&{1}&{1}\\end{array} $$",
+      "answer": "",
+      "explanation": "",
+      "tags": [
+        "NEET 2023"
+      ]
+    },
+    {
+      "id": "e8114edd-b2e0-459b-a298-cbe38d07a304",
+      "subject": "Physics",
+      "topic": "Semiconductor Electronics",
+      "subtopic": "",
+      "question": "For the logic circuit shown, the truth table is:",
+      "optionA": "",
+      "optionB": "ABY001011101110",
+      "optionC": "ABY001001101110",
+      "optionD": "ABY000010100111 54.",
+      "answer": "D",
+      "explanation": "The logic gate becomes, $$ \\mathbf{Y}=\\overrightarrow{\\mathbf{A}+\\overrightarrow{\\mathbf{B}}}=\\overrightarrow{\\mathbf{A}}\\cdot\\overrightarrow{\\mathbf{B}}=\\mathbf{A}\\cdot\\mathbf{B} $$ <div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_787_1189_1053_1292.jpg\" alt=\"Image\" width=\"22%\" /></div> The truth table of the logic gate is: <table border=1 style='margin: auto; word-wrap: break-word;'><tr><td style='text-align: center; word-wrap: break-word;'>A</td><td style='text-align: center; word-wrap: break-word;'>B</td><td style='text-align: center; word-wrap: break-word;'>$ \\ove",
+      "tags": [
+        "NEET 2020"
+      ]
+    },
+    {
+      "id": "d2399041-120e-4a9c-82a9-2d9af1413a14",
+      "subject": "Physics",
+      "topic": "Semiconductor Electronics",
+      "subtopic": "",
+      "question": "In the following circuit, the output Y for all possible inputs A and B is expressed by the truth table.",
+      "optionA": "",
+      "optionB": "",
+      "optionC": "",
+      "optionD": "",
+      "answer": "C",
+      "explanation": "$ Y' = \\overline{A + B} $, $ Y = \\overline{A + B} = A + B $ <div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_163_1258_436_1313.jpg\" alt=\"Image\" width=\"22%\" /></div> The truth table is <table border=1 style='margin: auto; word-wrap: break-word;'><tr><td style='text-align: center; word-wrap: break-word;'>A</td><td style='text-align: center; word-wrap: break-word;'>B</td><td style='text-align: center; word-wrap: break-word;'>Y&#x27;</td><td style='text-align: center; word-wrap: break-word;'>Y</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>0</td><td styl",
+      "tags": [
+        "AIPMT 2007"
+      ]
+    },
+    {
+      "id": "f83650a8-1df8-43de-bda9-041bf1f6ec29",
+      "subject": "Physics",
+      "topic": "Semiconductor Electronics",
+      "subtopic": "",
+      "question": "For which logic gate, the given truth table is shown? ABY110011101001",
+      "optionA": "NAND",
+      "optionB": "XOR",
+      "optionC": "NOR",
+      "optionD": "OR",
+      "answer": "A",
+      "explanation": "It is a NAND-gate. 72.(A) The given truth table shows that, if any or all the inputs are low, then the output is low. The output is only high, when both inputs are high. So, it represents AND gate. 73.(B) The given truth table shows that, if any or all of the inputs are high, then the output is high. The only method to get a low output is to set all of the inputs to zero. If any or all of the inputs are high, the gate's output Y is high. As a result, this truth table is an OR gate truth table. <div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_1103_1312_1148_1355.jpg\" alt=\"",
+      "tags": []
+    },
+    {
+      "id": "4500676b-1c15-4c29-95d2-2962a7f28152",
+      "subject": "Physics",
+      "topic": "Semiconductor Electronics",
+      "subtopic": "",
+      "question": "The truth table given below represents: InputOutputABY000100010111",
+      "optionA": "AND gate (C) OR gate",
+      "optionB": "",
+      "optionC": "OR gate (B) NOR gate",
+      "optionD": "NAND gate",
+      "answer": "",
+      "explanation": "",
+      "tags": [
+        "AIPMT 2000"
+      ]
+    },
+    {
+      "id": "769fe8d8-672b-4b1f-ba30-6299a8908bcd",
+      "subject": "Physics",
+      "topic": "Semiconductor Electronics",
+      "subtopic": "",
+      "question": "The following truth table corresponds to the logical gate: InputOutputABY000011101111",
+      "optionA": "NAND",
+      "optionB": "OR",
+      "optionC": "AND",
+      "optionD": "XOR",
+      "answer": "",
+      "explanation": "",
+      "tags": [
+        "AIPMT 1991"
       ]
     }
   ]

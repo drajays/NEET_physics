@@ -365,12 +365,13 @@ img { display: block; max-width: 100%; }
   background: var(--surface);
   box-shadow: var(--shadow-xs);
   min-height: calc(100dvh - 140px);
+  transition: grid-template-columns 0.25s ease;
 }
 
 .chaps-list {
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
-  border-right: 1px solid var(--border);
+  flex: 1;
   background: var(--surface);
 }
 
@@ -465,18 +466,91 @@ img { display: block; max-width: 100%; }
 }
 .chap-back-btn:hover { text-decoration: underline; }
 
+/* ── Collapsible chapter list panel ─────────────────────────────────── */
+.chaps-panel {
+  display: flex; flex-direction: column;
+  border-right: 1px solid var(--border);
+  overflow: hidden;
+  min-width: 0;
+}
+.chaps-panel-header {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 8px 10px 8px 14px;
+  border-bottom: 1px solid var(--border);
+  background: var(--sidebar);
+  flex-shrink: 0;
+  min-height: 40px;
+}
+.chaps-panel-title {
+  font-size: 0.72rem; font-weight: 800;
+  text-transform: uppercase; letter-spacing: 0.07em;
+  color: var(--sidebar-text);
+  white-space: nowrap; overflow: hidden;
+  transition: opacity 0.2s;
+}
+
+/* Shared toggle button */
+.panel-toggle-btn {
+  flex-shrink: 0;
+  width: 28px; height: 28px;
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 6px;
+  background: rgba(255,255,255,0.06);
+  color: var(--sidebar-text);
+  font-size: 1.1rem; line-height: 1; cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  transition: background 0.15s, transform 0.25s;
+}
+.panel-toggle-btn:hover { background: rgba(255,255,255,0.14); }
+
+/* Collapsed: chaps-layout shrinks left column to 40px */
+.chaps-layout.panel-collapsed {
+  grid-template-columns: 40px 1fr !important;
+}
+.chaps-layout.panel-collapsed .chaps-panel-title { opacity: 0; }
+.chaps-layout.panel-collapsed #chapsToggle { transform: rotate(180deg); }
+.chaps-layout.panel-collapsed .chaps-list { overflow: hidden; }
+
+/* ── Collapsible filter panel ────────────────────────────────────────── */
+.filter-panel-header {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 8px 10px 8px 14px;
+  border-bottom: 1px solid var(--border);
+  background: var(--sidebar);
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+  min-height: 40px;
+}
+.filter-panel-title {
+  font-size: 0.72rem; font-weight: 800;
+  text-transform: uppercase; letter-spacing: 0.07em;
+  color: var(--sidebar-text);
+  white-space: nowrap; overflow: hidden;
+  transition: opacity 0.2s;
+}
+.practice-layout.filter-collapsed {
+  grid-template-columns: 40px 1fr !important;
+}
+.practice-layout.filter-collapsed .filter-panel-title { opacity: 0; }
+.practice-layout.filter-collapsed #filterToggle { transform: rotate(180deg); }
+.practice-layout.filter-collapsed .filter-content { display: none; }
+
 /* ── Mobile: stack panels (phones only — iPad gets the split view) ────── */
 @media (max-width: 640px) {
   .chaps-layout {
-    grid-template-columns: 1fr; border: none;
+    grid-template-columns: 1fr !important; border: none;
     border-radius: 0; box-shadow: none; min-height: 0;
   }
+  .chaps-panel { border-right: none; }
+  .chaps-panel-header { display: none; } /* mobile uses back-button nav instead */
   .chaps-list { border-right: none; max-height: none; }
   .chaps-detail { padding: 16px 0 24px; display: none; }
   .chaps-layout.detail-open .chaps-list  { display: none; }
   .chaps-layout.detail-open .chaps-detail { display: block; }
   .chap-back-btn { display: flex; }
   .chap-unit-sep { top: 38px; }
+  /* Filter panel: full-width on mobile */
+  .practice-layout { grid-template-columns: 1fr !important; }
+  .filter-panel-header { display: none; }
 }
 
 /* ── Queue & audit ───────────────────────────────────────────────────── */
@@ -502,14 +576,25 @@ img { display: block; max-width: 100%; }
   display: grid;
   grid-template-columns: 272px 1fr;
   gap: 20px;
+  transition: grid-template-columns 0.25s ease;
 }
 
-.filter-panel, .practice-panel {
+.filter-panel {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 0;
+  box-shadow: var(--shadow-xs);
+  overflow: hidden;
+}
+.filter-content { padding: 16px 20px 20px; overflow-y: auto; }
+.practice-panel {
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
   padding: 20px;
   box-shadow: var(--shadow-xs);
+  overflow: hidden;
 }
 
 .filter-group h3 {

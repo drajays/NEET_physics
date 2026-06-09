@@ -97,7 +97,13 @@
         <!-- Chapters -->
         <section id="tab-chapters" class="view-panel" hidden>
           <div class="chaps-layout" id="chapsLayout">
-            <div id="chaptersView" class="chaps-list"></div>
+            <div class="chaps-panel">
+              <div class="chaps-panel-header">
+                <span class="chaps-panel-title">Chapters</span>
+                <button class="panel-toggle-btn" id="chapsToggle" type="button" title="Collapse panel" aria-label="Collapse chapter list">‹</button>
+              </div>
+              <div id="chaptersView" class="chaps-list"></div>
+            </div>
             <div id="chapterDetail" class="chaps-detail">
               <div class="chaps-detail-empty">
                 <span class="hint-icon">📖</span>
@@ -120,19 +126,25 @@
 
           <div class="practice-layout">
             <aside class="filter-panel">
-              <div class="filter-group">
-                <h3>Chapter</h3>
-                <div id="filterTopics" class="chip-group"></div>
+              <div class="filter-panel-header">
+                <span class="filter-panel-title">Filters</span>
+                <button class="panel-toggle-btn" id="filterToggle" type="button" title="Collapse filters" aria-label="Collapse filter panel">‹</button>
               </div>
-              <div class="filter-group">
-                <h3>Section</h3>
-                <div id="filterSubtopics" class="chip-group"></div>
+              <div class="filter-content">
+                <div class="filter-group">
+                  <h3>Chapter</h3>
+                  <div id="filterTopics" class="chip-group"></div>
+                </div>
+                <div class="filter-group">
+                  <h3>Section</h3>
+                  <div id="filterSubtopics" class="chip-group"></div>
+                </div>
+                <div class="filter-group">
+                  <h3>Tags</h3>
+                  <div id="filterTags" class="chip-group"></div>
+                </div>
+                <div id="filterSubjects" class="hidden" aria-hidden="true"></div>
               </div>
-              <div class="filter-group">
-                <h3>Tags</h3>
-                <div id="filterTags" class="chip-group"></div>
-              </div>
-              <div id="filterSubjects" class="hidden" aria-hidden="true"></div>
             </aside>
 
             <div class="practice-panel">

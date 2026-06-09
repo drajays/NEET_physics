@@ -3085,6 +3085,24 @@ function bindEvents() {
     });
   }
 
+  // Collapsible chapter list panel
+  const chapsToggle = document.getElementById('chapsToggle');
+  if (chapsToggle) {
+    chapsToggle.addEventListener('click', () => {
+      const layout = document.getElementById('chapsLayout');
+      if (layout) layout.classList.toggle('panel-collapsed');
+    });
+  }
+
+  // Collapsible filter panel
+  const filterToggle = document.getElementById('filterToggle');
+  if (filterToggle) {
+    filterToggle.addEventListener('click', () => {
+      const layout = document.querySelector('.practice-layout');
+      if (layout) layout.classList.toggle('filter-collapsed');
+    });
+  }
+
   [el.dashboardView, el.chaptersView, el.revisionView, el.auditView, el.practiceResults].forEach(view => {
     if (view) view.addEventListener('click', handleViewAction);
   });
