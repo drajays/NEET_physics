@@ -28237,6 +28237,420 @@
         "Objective II",
         "Chapter 28"
       ]
+    },
+    {
+      "id": "929ff9e8-0e70-4f85-a1ef-36a305859ce1",
+      "question": "The electric force between two point charges is $F$. If the distance between them is doubled, keeping charges fixed, the force becomes",
+      "optionA": "$4F$",
+      "optionB": "$2F$",
+      "optionC": "$F/2$",
+      "optionD": "$F/4$",
+      "answer": "D",
+      "explanation": "By Coulomb's law: $F = \\dfrac{kq_1q_2}{r^2}$.\n\nIf $r \\to 2r$: $F' = \\dfrac{kq_1q_2}{(2r)^2} = \\dfrac{kq_1q_2}{4r^2} = \\dfrac{F}{4}$.\n\nThe force decreases by a factor of 4 (inverse-square law). Answer: (D).",
+      "topic": "Chapter 29: Electric Field and Potential",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 29"
+      ]
+    },
+    {
+      "id": "a566fec5-8a02-4a45-9c27-f7630369464d",
+      "question": "The electric field is a",
+      "optionA": "scalar quantity",
+      "optionB": "vector quantity with magnitude only",
+      "optionC": "vector quantity with both magnitude and direction",
+      "optionD": "dimensionless quantity.",
+      "answer": "C",
+      "explanation": "The **electric field** $\\vec{E}$ at a point is defined as the force per unit positive test charge placed at that point:\n$$\\vec{E} = \\frac{\\vec{F}}{q_0}$$\nIt has both **magnitude** ($|\\vec{E}|$ in N/C or V/m) and **direction** (the direction of force on a positive charge). It is a vector field. Answer: (C).",
+      "topic": "Chapter 29: Electric Field and Potential",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 29"
+      ]
+    },
+    {
+      "id": "d2e2cdd6-0873-4ba8-8887-dbe609b70554",
+      "question": "Electric potential is a",
+      "optionA": "vector quantity",
+      "optionB": "scalar quantity",
+      "optionC": "tensor quantity",
+      "optionD": "dimensionless quantity.",
+      "answer": "B",
+      "explanation": "Electric potential $V$ at a point is the work done per unit positive charge in bringing a test charge from infinity to that point:\n$$V = \\frac{W}{q_0} = \\frac{kQ}{r}$$\nIt is a **scalar** — no direction, just a numerical value (positive for positive charges, negative for negative). Unlike the electric field, potentials due to multiple charges add algebraically. Answer: (B).",
+      "topic": "Chapter 29: Electric Field and Potential",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 29"
+      ]
+    },
+    {
+      "id": "b918c26b-37cd-4e2c-9d7b-5216220624ef",
+      "question": "The relation between electric field $\\vec{E}$ and electric potential $V$ is",
+      "optionA": "$\\vec{E} = V/r$",
+      "optionB": "$\\vec{E} = -\\nabla V$",
+      "optionC": "$\\vec{E} = \\nabla V$",
+      "optionD": "$V = \\vec{E} \\cdot r$",
+      "answer": "B",
+      "explanation": "The electric field is the **negative gradient** of the electric potential:\n$$\\vec{E} = -\\nabla V = -\\left(\\frac{\\partial V}{\\partial x}\\hat{i} + \\frac{\\partial V}{\\partial y}\\hat{j} + \\frac{\\partial V}{\\partial z}\\hat{k}\\right)$$\nIn one dimension: $E = -dV/dr$. The negative sign means the field points from high potential to low potential (downhill on the potential \"landscape\"). Answer: (B).",
+      "topic": "Chapter 29: Electric Field and Potential",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 29"
+      ]
+    },
+    {
+      "id": "e353c6cc-bf52-4868-abaf-4d42c04f52ec",
+      "question": "Work done in moving a charge $q$ from point A (potential $V_A$) to point B (potential $V_B$) is",
+      "optionA": "$q(V_B - V_A)$",
+      "optionB": "$q(V_A - V_B)$",
+      "optionC": "$q(V_A + V_B)$",
+      "optionD": "$q/2\\,(V_A - V_B)$",
+      "answer": "B",
+      "explanation": "Work done by the electric field on charge $q$ moving from A to B:\n$$W = q(V_A - V_B)$$\nIf $V_A > V_B$, a positive charge moves spontaneously from A to B (field does positive work). To move a positive charge against the field (B to A), external work $= q(V_B - V_A)$ is needed. Answer: (B).",
+      "topic": "Chapter 29: Electric Field and Potential",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 29"
+      ]
+    },
+    {
+      "id": "8e2e638f-e805-4747-bb4b-b2f92af6c749",
+      "question": "The work done in moving a charge along an equipotential surface is",
+      "optionA": "maximum",
+      "optionB": "minimum",
+      "optionC": "zero",
+      "optionD": "depends on the path taken.",
+      "answer": "C",
+      "explanation": "An **equipotential surface** is one on which the potential $V$ is constant everywhere. The work done in moving charge $q$ between two points is $W = q(V_A - V_B)$. For any two points on the same equipotential surface, $V_A = V_B$, hence $W = 0$. No work is done regardless of the path taken (as long as the start and end points are on the same equipotential). Answer: (C).",
+      "topic": "Chapter 29: Electric Field and Potential",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 29"
+      ]
+    },
+    {
+      "id": "cf6396ed-1bde-4f44-942b-df0ea62cb95e",
+      "question": "The electric potential at the equatorial point of an electric dipole (perpendicular bisector of the dipole axis) is",
+      "optionA": "maximum",
+      "optionB": "minimum",
+      "optionC": "zero",
+      "optionD": "equal to the potential at the axial point.",
+      "answer": "C",
+      "explanation": "For an electric dipole with charges $+q$ and $-q$ separated by distance $2a$, the potential at a point on the equatorial plane at distance $r$ from the centre is:\n$$V = \\frac{kq}{r_+} + \\frac{k(-q)}{r_-}$$\nOn the equatorial plane, $r_+ = r_- = \\sqrt{r^2 + a^2}$, so $V = 0$. The two contributions cancel exactly. (Note: the electric **field** at the equatorial point is non-zero, but the potential is zero.) Answer: (C).",
+      "topic": "Chapter 29: Electric Field and Potential",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 29"
+      ]
+    },
+    {
+      "id": "2fb5da21-57ce-4d82-be2c-239236468f16",
+      "question": "Inside a conductor in electrostatic equilibrium, the electric field is",
+      "optionA": "equal to $\\sigma/\\varepsilon_0$",
+      "optionB": "equal to $\\sigma/(2\\varepsilon_0)$",
+      "optionC": "zero",
+      "optionD": "equal to the external field.",
+      "answer": "C",
+      "explanation": "In **electrostatic equilibrium**, free charges in a conductor redistribute until they produce an internal field that exactly cancels the external field. Net result: $\\vec{E} = 0$ **inside** the conductor. Any excess charge resides on the **surface**; the surface field is $\\sigma/\\varepsilon_0$ (perpendicular to the surface), but inside it is strictly zero. Answer: (C).",
+      "topic": "Chapter 29: Electric Field and Potential",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 29"
+      ]
+    },
+    {
+      "id": "8ccc01b5-e109-4d6d-9084-c9ec6bd6303c",
+      "question": "Three charges $+q$, $-q$, $+q$ are placed at the vertices of an equilateral triangle of side $a$. The electric potential at the centroid is",
+      "optionA": "$\\frac{3kq}{a/\\sqrt{3}}$",
+      "optionB": "$\\frac{kq}{a/\\sqrt{3}}$",
+      "optionC": "$0$",
+      "optionD": "$\\frac{-kq}{a/\\sqrt{3}}$",
+      "answer": "B",
+      "explanation": "The centroid of an equilateral triangle of side $a$ is at distance $r = a/\\sqrt{3}$ from each vertex.\n\nPotential is a scalar: sum the contributions:\n$$V = \\frac{kq}{r} + \\frac{k(-q)}{r} + \\frac{kq}{r} = \\frac{kq}{r} = \\frac{kq}{a/\\sqrt{3}} = \\frac{k q\\sqrt{3}}{a}$$\nNet: one $+q$ contributes since the $+q$ and $-q$ cancel. Answer: (B).",
+      "topic": "Chapter 29: Electric Field and Potential",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 29"
+      ]
+    },
+    {
+      "id": "5cac826c-30c1-42ea-91e5-11bc6a2dd4f0",
+      "question": "Equipotential surfaces for a uniform electric field are",
+      "optionA": "spheres centred at the source charge",
+      "optionB": "planes parallel to the field direction",
+      "optionC": "planes perpendicular to the field direction",
+      "optionD": "concentric cylinders.",
+      "answer": "C",
+      "explanation": "For a **uniform electric field** $\\vec{E}$ pointing in the $x$-direction, $V = -Ex + $ const. The equipotential surfaces are planes of constant $V$, i.e., planes where $x = $ const — planes **perpendicular to $\\vec{E}$**. This is the general result: equipotential surfaces are always perpendicular to field lines. For a point charge the equipotential surfaces are spheres (concentric about the charge). Answer: (C).",
+      "topic": "Chapter 29: Electric Field and Potential",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 29"
+      ]
+    },
+    {
+      "id": "c0677881-f688-4594-bbca-374b76862643",
+      "question": "Which of the following are true about electric field lines?",
+      "optionA": "Electric field lines never intersect each other.",
+      "optionB": "Electric field lines are continuous curves that start from positive charges and end on negative charges.",
+      "optionC": "The density of field lines represents the magnitude of the electric field.",
+      "optionD": "Electric field lines can form closed loops.",
+      "answer": "A,B,C",
+      "explanation": "- **A** ✓: If two field lines crossed, the field would have two directions at that point — impossible.\n- **B** ✓: By convention, field lines start at positive charges (source) and terminate at negative charges (sink), or extend to/from infinity for isolated charges.\n- **C** ✓: Closer spacing = stronger field; the number of lines through unit area ⊥ to lines represents field strength.\n- **D** ✗: Electric field lines **cannot** form closed loops — that would imply the electric field is non-conservative, which contradicts $\\oint \\vec{E}\\cdot d\\vec{l} = 0$ for static fields. (Magnetic field lines can form loops, not electric.)\n\nAnswer: (A), (B), (C).",
+      "topic": "Chapter 29: Electric Field and Potential",
+      "subtopic": "Objective II",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective II",
+        "Chapter 29"
+      ]
+    },
+    {
+      "id": "e4cb8c7c-0400-4545-b545-f02d13412fd2",
+      "question": "Which of the following are properties of a conductor in electrostatic equilibrium?",
+      "optionA": "The electric field inside the conductor is zero.",
+      "optionB": "Any net charge on the conductor resides on its outer surface.",
+      "optionC": "The electric field just outside the conductor is perpendicular to the surface.",
+      "optionD": "The potential is different at different points on the surface of the conductor.",
+      "answer": "A,B,C",
+      "explanation": "- **A** ✓: No field inside — free electrons redistribute until internal field = 0.\n- **B** ✓: Charges reside on the surface (mutual repulsion drives them outward; inside any Gaussian surface enclosing interior has zero enclosed charge by Gauss's law + $E=0$ inside).\n- **C** ✓: $\\vec{E}$ at the surface must be perpendicular; any tangential component would accelerate surface charges until equilibrium is restored.\n- **D** ✗: The **entire surface** (and interior) of a conductor in electrostatic equilibrium is at the **same potential** — it is an equipotential body.\n\nAnswer: (A), (B), (C).",
+      "topic": "Chapter 29: Electric Field and Potential",
+      "subtopic": "Objective II",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective II",
+        "Chapter 29"
+      ]
+    },
+    {
+      "id": "fdd4fa2f-be79-4864-ac7b-88d6951bf3f1",
+      "question": "Which of the following statements about electric potential are correct?",
+      "optionA": "The potential due to a positive charge is positive.",
+      "optionB": "The potential at a point is the work done per unit charge in bringing a positive test charge from infinity.",
+      "optionC": "Potential decreases in the direction of the electric field.",
+      "optionD": "The electric potential can be zero even when the electric field is non-zero.",
+      "answer": "A,B,C,D",
+      "explanation": "- **A** ✓: $V = kQ/r > 0$ for $Q > 0$.\n- **B** ✓: By definition, $V = W_\\infty/q_0$.\n- **C** ✓: $E = -dV/dr$ → $E > 0$ implies $dV/dr < 0$ → $V$ decreases in the direction of $\\vec{E}$.\n- **D** ✓: At the midpoint between equal and opposite charges, $V = kq/r + k(-q)/r = 0$, yet $\\vec{E}$ is non-zero (both charges contribute fields in the same direction at the midpoint). Also on the equatorial plane of a dipole: $V = 0$, $E \\ne 0$.\n\nAnswer: (A), (B), (C), (D).",
+      "topic": "Chapter 29: Electric Field and Potential",
+      "subtopic": "Objective II",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective II",
+        "Chapter 29"
+      ]
+    },
+    {
+      "id": "d46d223f-3f95-4323-9701-4d1c487122b7",
+      "question": "Gauss\\'s law states that the net electric flux through any closed surface is",
+      "optionA": "equal to the total charge enclosed divided by $\\varepsilon_0$",
+      "optionB": "equal to the surface area times the field",
+      "optionC": "always zero",
+      "optionD": "equal to the charge on the surface divided by $4\\pi\\varepsilon_0$.",
+      "answer": "A",
+      "explanation": "**Gauss's law**:\n$$\\oint_S \\vec{E}\\cdot d\\vec{A} = \\frac{Q_{\\rm enc}}{\\varepsilon_0}$$\nThe net electric flux through any closed (Gaussian) surface equals the **total charge enclosed** $Q_{\\rm enc}$ divided by the permittivity of free space $\\varepsilon_0$. Charges outside the surface do not contribute to the net flux (though they do affect the local field). Answer: (A).",
+      "topic": "Chapter 30: Gauss's Law",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 30"
+      ]
+    },
+    {
+      "id": "6c09bccc-7efc-4d43-aa87-ab46b62f72fd",
+      "question": "If a point charge $+Q$ is placed at the centre of a cube, the flux through each face of the cube is",
+      "optionA": "$Q/\\varepsilon_0$",
+      "optionB": "$Q/(6\\varepsilon_0)$",
+      "optionC": "$Q/(4\\pi\\varepsilon_0)$",
+      "optionD": "$6Q/\\varepsilon_0$",
+      "answer": "B",
+      "explanation": "By Gauss's law, total flux through the cube = $Q/\\varepsilon_0$. By symmetry the cube has 6 identical faces, and the charge at the centre is equidistant from all faces. Each face subtends the same solid angle at the centre. Therefore flux through each face = $\\dfrac{Q}{6\\varepsilon_0}$. Answer: (B).",
+      "topic": "Chapter 30: Gauss's Law",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 30"
+      ]
+    },
+    {
+      "id": "2d9a08e1-c53c-4a89-8e0a-16102654442d",
+      "question": "The electric field inside a uniformly charged hollow spherical shell is",
+      "optionA": "uniform and non-zero",
+      "optionB": "proportional to $r$ (distance from centre)",
+      "optionC": "zero",
+      "optionD": "proportional to $1/r^2$.",
+      "answer": "C",
+      "explanation": "By Gauss's law with a spherical Gaussian surface of radius $r < R$ (inside the shell):\n$$\\oint \\vec{E}\\cdot d\\vec{A} = \\frac{Q_{\\rm enc}}{\\varepsilon_0} = 0 \\quad (\\text{no charge inside})$$\n$$\\therefore\\; E \\cdot 4\\pi r^2 = 0 \\implies E = 0$$\nAll charge is on the shell surface; inside there is zero enclosed charge → zero field for all interior points. Answer: (C).",
+      "topic": "Chapter 30: Gauss's Law",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 30"
+      ]
+    },
+    {
+      "id": "81ac9046-d3c3-4f87-8dbb-8886f66b45cc",
+      "question": "The electric field outside a uniformly charged solid sphere of radius $R$ and total charge $Q$, at distance $r > R$ from the centre, is",
+      "optionA": "$\\dfrac{kQ}{r^2}$ directed outward",
+      "optionB": "$\\dfrac{kQ}{R^2}$ directed outward (constant)",
+      "optionC": "$\\dfrac{kQr}{R^3}$ directed outward",
+      "optionD": "zero",
+      "answer": "A",
+      "explanation": "For $r > R$, choose a spherical Gaussian surface of radius $r$. Enclosed charge = $Q$.\n\n$$E\\cdot 4\\pi r^2 = \\frac{Q}{\\varepsilon_0} \\implies E = \\frac{Q}{4\\pi\\varepsilon_0 r^2} = \\frac{kQ}{r^2}$$\nA uniformly charged sphere **behaves like a point charge** at all external points. Answer: (A).",
+      "topic": "Chapter 30: Gauss's Law",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 30"
+      ]
+    },
+    {
+      "id": "0fcc2986-abb6-4886-b95e-c52b0d3d5a9f",
+      "question": "The electric field inside a uniformly charged solid sphere at distance $r < R$ from the centre is",
+      "optionA": "$\\dfrac{kQ}{r^2}$",
+      "optionB": "$\\dfrac{kQr}{R^3}$",
+      "optionC": "zero",
+      "optionD": "$\\dfrac{kQ}{R^2}$",
+      "answer": "B",
+      "explanation": "For a uniformly charged solid sphere (charge density $\\rho$), at interior point $r < R$:\n\nEnclosed charge: $Q_{\\rm enc} = \\rho\\cdot\\frac{4}{3}\\pi r^3 = Q\\cdot\\frac{r^3}{R^3}$.\n$$E\\cdot 4\\pi r^2 = \\frac{Q_{\\rm enc}}{\\varepsilon_0} = \\frac{Qr^3}{R^3\\varepsilon_0}$$\n$$E = \\frac{Q}{4\\pi\\varepsilon_0 R^3}\\,r = \\frac{kQ}{R^3}\\,r \\propto r$$\nThe field increases linearly with $r$ inside and falls off as $1/r^2$ outside. Answer: (B).",
+      "topic": "Chapter 30: Gauss's Law",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 30"
+      ]
+    },
+    {
+      "id": "e1ef14f9-e3ca-4959-bd4f-406854468202",
+      "question": "The electric field due to an infinite plane sheet of surface charge density $\\sigma$ is",
+      "optionA": "$\\sigma/\\varepsilon_0$ on each side",
+      "optionB": "$\\sigma/(2\\varepsilon_0)$ on each side",
+      "optionC": "$\\sigma\\varepsilon_0/2$",
+      "optionD": "zero inside the sheet.",
+      "answer": "B",
+      "explanation": "Use a cylindrical Gaussian surface (pill-box) straddling the sheet. By symmetry, $\\vec{E}$ is perpendicular to the sheet and equal on both sides.\n\n$$E\\cdot A + E\\cdot A = \\frac{\\sigma A}{\\varepsilon_0} \\implies E = \\frac{\\sigma}{2\\varepsilon_0}$$\nThis is valid for an **infinite isolated sheet**. For a conductor, surface charge on one side gives $E = \\sigma/\\varepsilon_0$ outside (both surfaces contribute, or use the conductor boundary condition). Answer: (B).",
+      "topic": "Chapter 30: Gauss's Law",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 30"
+      ]
+    },
+    {
+      "id": "0dcd5ec3-b949-4b3c-95c9-f36b5f172cd0",
+      "question": "Gauss's law is applicable to",
+      "optionA": "only symmetric charge distributions",
+      "optionB": "only point charges",
+      "optionC": "any arbitrary charge distribution",
+      "optionD": "only continuous charge distributions.",
+      "answer": "C",
+      "explanation": "Gauss's law $\\oint \\vec{E}\\cdot d\\vec{A} = Q_{\\rm enc}/\\varepsilon_0$ is a fundamental law valid for **any charge distribution** — symmetric or asymmetric, discrete or continuous. However, it is practically *useful* for calculating $\\vec{E}$ only when the charge distribution has sufficient symmetry (spherical, cylindrical, planar) so that $\\vec{E}$ can be factored out of the integral. The law itself is universal. Answer: (C).",
+      "topic": "Chapter 30: Gauss's Law",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 30"
+      ]
+    },
+    {
+      "id": "ccfa14dc-ef27-41ad-8e1a-ce895ba1289d",
+      "question": "Which of the following are applications of Gauss's law?",
+      "optionA": "Finding the electric field inside a uniformly charged solid sphere.",
+      "optionB": "Finding the field of an infinite line charge.",
+      "optionC": "Finding the field between the plates of a parallel-plate capacitor.",
+      "optionD": "Finding the field due to a non-symmetric arbitrary charge distribution.",
+      "answer": "A,B,C",
+      "explanation": "Gauss's law is *practically* used when there is sufficient symmetry:\n\n- **A** ✓: Spherical symmetry → spherical Gaussian surface → field inside solid sphere.\n- **B** ✓: Cylindrical symmetry → cylindrical Gaussian surface → field of infinite line charge.\n- **C** ✓: Planar symmetry → pill-box Gaussian surface → uniform field between capacitor plates.\n- **D** ✗: Without symmetry, $\\vec{E}$ cannot be factored out of the flux integral. Gauss's law is still *valid* but not directly **useful** for calculating $\\vec{E}$.\n\nAnswer: (A), (B), (C).",
+      "topic": "Chapter 30: Gauss's Law",
+      "subtopic": "Objective II",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective II",
+        "Chapter 30"
+      ]
+    },
+    {
+      "id": "7ab1c9b2-f1ec-412d-88ee-70de29f593da",
+      "question": "Which of the following statements about Gauss's law and Coulomb's law are correct?",
+      "optionA": "Gauss's law can be derived from Coulomb's law.",
+      "optionB": "Coulomb's law can be derived from Gauss's law.",
+      "optionC": "Both laws are valid only in free space (vacuum).",
+      "optionD": "Gauss's law implies that the electric field obeys an inverse-square law.",
+      "answer": "A,B,D",
+      "explanation": "- **A** ✓: For a point charge, computing the flux through a sphere centred on the charge using Coulomb's law gives $Q/\\varepsilon_0$, which is Gauss's law.\n- **B** ✓: Applying Gauss's law to a spherical surface around a point charge + using spherical symmetry recovers Coulomb's $1/r^2$ law.\n- **C** ✗: Both laws apply in **any** medium, not just vacuum. In a medium with permittivity $\\varepsilon = \\varepsilon_r\\varepsilon_0$, Gauss's law becomes $\\oint \\vec{D}\\cdot d\\vec{A} = Q_{\\rm free}$ where $\\vec{D} = \\varepsilon\\vec{E}$.\n- **D** ✓: The fact that flux through any closed surface = const (independent of surface shape) is mathematically equivalent to an inverse-square law in 3D.\n\nAnswer: (A), (B), (D).",
+      "topic": "Chapter 30: Gauss's Law",
+      "subtopic": "Objective II",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective II",
+        "Chapter 30"
+      ]
+    },
+    {
+      "id": "f2d1e994-67f4-454c-970b-f6e282888752",
+      "question": "A closed Gaussian surface encloses no net charge. Which of the following are necessarily true?",
+      "optionA": "The electric field is zero everywhere on the surface.",
+      "optionB": "The net electric flux through the surface is zero.",
+      "optionC": "The electric field is zero inside the surface.",
+      "optionD": "The sum of positive and negative charges enclosed is zero.",
+      "answer": "B,D",
+      "explanation": "If $Q_{\\rm enc} = 0$, then by Gauss's law $\\Phi = Q_{\\rm enc}/\\varepsilon_0 = 0$.\n\n- **A** ✗: $E = 0$ everywhere on the surface is NOT required. External charges can create non-zero fields on the surface; their contributions to the flux cancel out. Only the **net flux** is zero.\n- **B** ✓: $\\Phi = Q_{\\rm enc}/\\varepsilon_0 = 0$. ✓\n- **C** ✗: The interior field is not necessarily zero. External charges create fields inside too.\n- **D** ✓: $Q_{\\rm enc} = 0$ means the total enclosed charge is zero (all positive charges = all negative charges in absolute value, or simply no charges inside).\n\nAnswer: (B), (D).",
+      "topic": "Chapter 30: Gauss's Law",
+      "subtopic": "Objective II",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective II",
+        "Chapter 30"
+      ]
     }
   ]
 }
