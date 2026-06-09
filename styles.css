@@ -358,7 +358,7 @@ img { display: block; max-width: 100%; }
 /* ── Chapters two-panel layout ───────────────────────────────────────── */
 .chaps-layout {
   display: grid;
-  grid-template-columns: 290px 1fr;
+  grid-template-columns: clamp(220px, 38%, 300px) 1fr;
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
   overflow: hidden;
@@ -465,8 +465,8 @@ img { display: block; max-width: 100%; }
 }
 .chap-back-btn:hover { text-decoration: underline; }
 
-/* ── Mobile: stack panels ────────────────────────────────────────────── */
-@media (max-width: 768px) {
+/* ── Mobile: stack panels (phones only — iPad gets the split view) ────── */
+@media (max-width: 640px) {
   .chaps-layout {
     grid-template-columns: 1fr; border: none;
     border-radius: 0; box-shadow: none; min-height: 0;
