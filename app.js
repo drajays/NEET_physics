@@ -3547,10 +3547,12 @@ function renderJourney() {
       </div>
     </div>
     <div class="journey-student-grid">${studentCards}</div>
-    <div id="jrnDetail"></div>`;
+    <div id="jrnDetail"></div>
+    <div id="jrnResources" style="margin-top:32px">${jrnResourcesHtml()}</div>`;
 
   // Auto-open active student's detail
   if (activeId) jrnRenderDetail(activeId);
+  jrnInitNcertGrid();
 }
 
 function jrnOpenStudent(id) {
@@ -4233,6 +4235,306 @@ function jrnRoadmapHtml() {
         </div>
       </div>
     </div>`;
+}
+
+// ── Physics Resources ─────────────────────────────────────────────────────────
+
+const JRN_NCERT_BOOKS = [
+  {
+    code: 'keph1', label: 'Class 11 Physics Part I', start: 1, end: 7,
+    complete: 'keph1dd.zip',
+    chapters: ['Physical World','Units and Measurements','Motion in a Straight Line','Motion in a Plane','Laws of Motion','Work, Energy and Power','System of Particles and Rotational Motion','Gravitation']
+  },
+  {
+    code: 'keph2', label: 'Class 11 Physics Part II', start: 8, end: 14,
+    complete: 'keph2dd.zip',
+    chapters: ['Mechanical Properties of Solids','Mechanical Properties of Fluids','Thermal Properties of Matter','Thermodynamics','Kinetic Theory','Oscillations','Waves']
+  },
+  {
+    code: 'leph1', label: 'Class 12 Physics Part I', start: 1, end: 8,
+    complete: 'leph1dd.zip',
+    chapters: ['Electric Charges and Fields','Electrostatic Potential and Capacitance','Current Electricity','Moving Charges and Magnetism','Magnetism and Matter','Electromagnetic Induction','Alternating Current','Electromagnetic Waves']
+  },
+  {
+    code: 'leph2', label: 'Class 12 Physics Part II', start: 9, end: 14,
+    complete: 'leph2dd.zip',
+    chapters: ['Ray Optics and Optical Instruments','Wave Optics','Dual Nature of Radiation and Matter','Atoms','Nuclei','Semiconductor Electronics: Materials, Devices and Simple Circuits']
+  }
+];
+
+function jrnNcertUrl(book, ch) {
+  return `https://ncert.nic.in/textbook.php?${book.code}=${ch}-${book.end}`;
+}
+
+function jrnResourcesHtml() {
+  const bookOpts = JRN_NCERT_BOOKS.map(b =>
+    `<option value="${b.code}">${jrnEscHtml(b.label)}</option>`
+  ).join('');
+
+  return `
+  <div class="journey-detail" style="margin-bottom:24px">
+    <h3 style="margin:0 0 4px;font-size:1.2rem;font-weight:800">Physics Resources</h3>
+    <p style="margin:0 0 20px;color:var(--muted);font-size:0.88rem">All reference links for NEET Physics — NCERT, HC Verma, PYQs, video lectures, test series and topper interviews.</p>
+
+    <!-- NCERT Chapter Reader -->
+    <div class="res-section">
+      <div class="res-section-head"><span class="res-icon">📖</span><h4>NCERT Physics — Chapter Reader</h4></div>
+      <p class="res-desc">Open any chapter directly on the official NCERT portal. Select book → click a chapter tile.</p>
+      <div class="res-ncert-toolbar">
+        <label class="res-label">Book
+          <select id="jrnNcertBook" onchange="jrnRenderNcertChapters()">${bookOpts}</select>
+        </label>
+        <label class="res-label">Chapter no.
+          <input id="jrnNcertCh" type="number" min="1" placeholder="e.g. 3" oninput="jrnUpdateNcertCustom()">
+        </label>
+        <button class="primary-btn small" onclick="jrnOpenNcertCustom()">Open</button>
+        <button class="secondary-btn small" onclick="jrnCopyNcertCustom()">Copy link</button>
+      </div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;margin:10px 0">
+        <a id="jrnNcertPrelims" class="secondary-btn small" target="_blank" href="#">Prelims</a>
+        <a id="jrnNcertAnswers" class="secondary-btn small" target="_blank" href="#">Answers</a>
+        <a id="jrnNcertFull"    class="primary-btn small"    target="_blank" href="#">Download Full Book PDF</a>
+      </div>
+      <div id="jrnNcertGrid" class="res-chapter-grid"></div>
+    </div>
+
+    <!-- NCERT PDFs -->
+    <div class="res-section">
+      <div class="res-section-head"><span class="res-icon">📄</span><h4>NCERT Physics — Full Book PDFs</h4></div>
+      <div class="res-link-grid">
+        <a class="res-link" href="https://ncert.nic.in/textbook/pdf/keph1ps.pdf" target="_blank">
+          <span class="res-link-title">Class 11 Physics Part I</span>
+          <span class="res-link-sub">Units & Measurements · Kinematics · Laws of Motion · Work-Energy · Rotational · Gravitation</span>
+        </a>
+        <a class="res-link" href="https://ncert.nic.in/textbook/pdf/keph2ps.pdf" target="_blank">
+          <span class="res-link-title">Class 11 Physics Part II</span>
+          <span class="res-link-sub">Mechanical Properties · Thermal Properties · Thermodynamics · Kinetic Theory · Oscillations · Waves</span>
+        </a>
+        <a class="res-link" href="https://ncert.nic.in/textbook/pdf/leph1ps.pdf" target="_blank">
+          <span class="res-link-title">Class 12 Physics Part I</span>
+          <span class="res-link-sub">Electrostatics · Current Electricity · Magnetism · EMI · AC · Electromagnetic Waves</span>
+        </a>
+        <a class="res-link" href="https://ncert.nic.in/textbook/pdf/leph2ps.pdf" target="_blank">
+          <span class="res-link-title">Class 12 Physics Part II</span>
+          <span class="res-link-sub">Ray Optics · Wave Optics · Dual Nature · Atoms · Nuclei · Semiconductors</span>
+        </a>
+        <a class="res-link" href="https://ncert.nic.in/textbook.php" target="_blank">
+          <span class="res-link-title">NCERT Textbook Portal</span>
+          <span class="res-link-sub">Official NCERT portal — browse all textbooks Class I–XII</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- HC Verma -->
+    <div class="res-section">
+      <div class="res-section-head"><span class="res-icon">📘</span><h4>HC Verma — Solutions & Reference</h4></div>
+      <p class="res-desc">HC Verma Concepts of Physics Vol 1 &amp; Vol 2 — solutions, chapter summaries and exercise guidance.</p>
+      <div class="res-link-grid">
+        <a class="res-link" href="https://www.completephysics.in/downloads/hc-verma-solutions" target="_blank">
+          <span class="res-link-title">Complete Physics — HC Verma Solutions</span>
+          <span class="res-link-sub">Chapter-wise exercise solutions for Vol 1 &amp; Vol 2</span>
+        </a>
+        <a class="res-link" href="https://solutions.shaalaa.com/hc-verma-class-11-physics-solutions" target="_blank">
+          <span class="res-link-title">Shaalaa — HC Verma Class 11 Solutions</span>
+          <span class="res-link-sub">Detailed Obj I, Obj II and exercise solutions with explanations</span>
+        </a>
+        <a class="res-link" href="https://solutions.shaalaa.com/hc-verma-class-12-physics-solutions" target="_blank">
+          <span class="res-link-title">Shaalaa — HC Verma Class 12 Solutions</span>
+          <span class="res-link-sub">Vol 2 solutions — Modern Physics, Optics, Electrostatics, etc.</span>
+        </a>
+        <a class="res-link" href="https://www.vedantu.com/book-solutions/hc-verma" target="_blank">
+          <span class="res-link-title">Vedantu — HC Verma Chapter Solutions</span>
+          <span class="res-link-sub">Chapter-wise MCQ &amp; exercise walkthrough with concept notes</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Official Exam -->
+    <div class="res-section">
+      <div class="res-section-head"><span class="res-icon">🏛</span><h4>Official NEET / NTA</h4></div>
+      <div class="res-link-grid">
+        <a class="res-link" href="https://neet.nta.nic.in" target="_blank">
+          <span class="res-link-title">NTA NEET Official Website</span>
+          <span class="res-link-sub">Admit cards, results, notices, official answer keys</span>
+        </a>
+        <a class="res-link" href="https://neet.nta.nic.in/documents/" target="_blank">
+          <span class="res-link-title">NTA NEET Documents</span>
+          <span class="res-link-sub">Information bulletin, public notices, previous year answer keys</span>
+        </a>
+        <a class="res-link" href="https://neet.nta.nic.in/document/information-bulletin-english/" target="_blank">
+          <span class="res-link-title">NEET Information Bulletin</span>
+          <span class="res-link-sub">Exam pattern, rules, syllabus and instructions — read once at start</span>
+        </a>
+        <a class="res-link" href="https://www.nta.ac.in/Abhyas" target="_blank">
+          <span class="res-link-title">NTA Abhyas App / Portal</span>
+          <span class="res-link-sub">Official NTA mock-test practice — simulates real NEET interface</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- PYQs & Test Series -->
+    <div class="res-section">
+      <div class="res-section-head"><span class="res-icon">📊</span><h4>PYQ Practice &amp; Test Series</h4></div>
+      <p class="res-desc">Physics decides rank — do every PYQ at least twice. Chapter-wise first, then full mixed sets.</p>
+      <div class="res-link-grid">
+        <a class="res-link" href="https://www.embibe.com/exams/neet/physics-questions/" target="_blank">
+          <span class="res-link-title">Embibe — NEET Physics Practice</span>
+          <span class="res-link-sub">Topic-wise adaptive questions + free PYQ papers with solutions</span>
+        </a>
+        <a class="res-link" href="https://www.sarthaks.com/tag/neet-previous-year-questions" target="_blank">
+          <span class="res-link-title">Sarthaks — NEET PYQ Bank</span>
+          <span class="res-link-sub">Searchable previous year questions with community explanations</span>
+        </a>
+        <a class="res-link" href="https://www.dpp.pw/neet" target="_blank">
+          <span class="res-link-title">DPP.pw — NEET Daily Practice Problems</span>
+          <span class="res-link-sub">Chapter-wise DPPs in NEET format — track attempts and accuracy</span>
+        </a>
+        <a class="res-link" href="https://www.pw.live/chapter-neet" target="_blank">
+          <span class="res-link-title">Physics Wallah — Chapter Tests</span>
+          <span class="res-link-sub">Free chapter-wise NEET mock tests; includes PYQ-type questions</span>
+        </a>
+        <a class="res-link" href="https://www.allen.ac.in/test-series/neet" target="_blank">
+          <span class="res-link-title">Allen NEET Test Series</span>
+          <span class="res-link-sub">India's largest NEET test series — sectional + full mocks</span>
+        </a>
+        <a class="res-link" href="https://www.aakash.ac.in/neet/test-series" target="_blank">
+          <span class="res-link-title">Aakash NEET Test Series</span>
+          <span class="res-link-sub">Online sectional and full mock tests with detailed analysis</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Video Lectures -->
+    <div class="res-section">
+      <div class="res-section-head"><span class="res-icon">🎬</span><h4>Video Lectures — Physics</h4></div>
+      <p class="res-desc">Use video for first-time understanding of hard concepts only. Do not re-watch without solving questions.</p>
+      <div class="res-link-grid">
+        <a class="res-link" href="https://www.youtube.com/@PhysicsWallah" target="_blank">
+          <span class="res-link-title">Physics Wallah (Alakh Pandey)</span>
+          <span class="res-link-sub">NEET-focused; free full-course HC Verma &amp; NCERT coverage; most popular</span>
+        </a>
+        <a class="res-link" href="https://www.youtube.com/@VedantuNEETMadeEjee" target="_blank">
+          <span class="res-link-title">Vedantu NEET Made Ejee</span>
+          <span class="res-link-sub">Daily live classes, PYQ sessions, doubt clearing; strong Physics faculty</span>
+        </a>
+        <a class="res-link" href="https://www.youtube.com/@MotionEducation" target="_blank">
+          <span class="res-link-title">Motion Education</span>
+          <span class="res-link-sub">Kota-style JEE/NEET Physics — strong conceptual depth and numericals</span>
+        </a>
+        <a class="res-link" href="https://www.youtube.com/@PradeepKshetrapal" target="_blank">
+          <span class="res-link-title">Pradeep Kshetrapal Physics</span>
+          <span class="res-link-sub">NCERT-aligned Physics; clear blackboard-style explanations for NEET</span>
+        </a>
+        <a class="res-link" href="https://www.youtube.com/@unacademy" target="_blank">
+          <span class="res-link-title">Unacademy NEET</span>
+          <span class="res-link-sub">Free NEET Physics lectures, revision series and crash courses</span>
+        </a>
+        <a class="res-link" href="https://www.khanacademy.org/science/physics" target="_blank">
+          <span class="res-link-title">Khan Academy Physics</span>
+          <span class="res-link-sub">Concept-first explanations for Mechanics, Electricity, Waves — great for foundation</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Formula & Concept References -->
+    <div class="res-section">
+      <div class="res-section-head"><span class="res-icon">🧮</span><h4>Formula &amp; Concept References</h4></div>
+      <div class="res-link-grid">
+        <a class="res-link" href="http://hyperphysics.phy-astr.gsu.edu/hbase/hframe.html" target="_blank">
+          <span class="res-link-title">HyperPhysics (GSU)</span>
+          <span class="res-link-sub">Interactive concept maps for every Physics topic — excellent for understanding derivations</span>
+        </a>
+        <a class="res-link" href="https://www.physicscatalyst.com/neet/neet-physics.php" target="_blank">
+          <span class="res-link-title">Physics Catalyst — NEET Notes</span>
+          <span class="res-link-sub">Chapter-wise theory, formulas and revision notes aligned to NEET syllabus</span>
+        </a>
+        <a class="res-link" href="https://byjus.com/neet/physics-formulas/" target="_blank">
+          <span class="res-link-title">BYJU'S — NEET Physics Formulas</span>
+          <span class="res-link-sub">Comprehensive chapter-wise formula lists — use as quick-revision reference</span>
+        </a>
+        <a class="res-link" href="https://www.toppr.com/guides/physics-formulas/" target="_blank">
+          <span class="res-link-title">Toppr — Physics Formula Guide</span>
+          <span class="res-link-sub">Sortable formula sheets by chapter; includes derivation hints</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Topper Interviews -->
+    <div class="res-section">
+      <div class="res-section-head"><span class="res-icon">🏆</span><h4>Topper Interviews (2016–2025)</h4></div>
+      <p class="res-desc">Physics strategy from every NEET/AIPMT Air-1 — read the key rule extracted from each interview.</p>
+      <div class="journey-table-wrap">
+        <table class="journey-table">
+          <thead><tr><th>Year</th><th>Topper</th><th>Physics Key Rule</th><th>Link</th></tr></thead>
+          <tbody>
+            <tr><td>2025</td><td>Mahesh Kumar, AIR 1</td><td>Structured DPPs + error improvement over mock-score obsession; never burn out</td><td><a class="res-inline-link" href="https://medicine.careers360.com/articles/mahesh-kumar-neet-2025-topper-air-1-interview" target="_blank">Interview →</a></td></tr>
+            <tr><td>2024</td><td>Aditya Kumar Panda, AIR 1</td><td>Stored every wrong Physics question digitally; wrote "mistake made" vs "correct approach" for each</td><td><a class="res-inline-link" href="https://medicine.careers360.com/articles/neet-2024-topper-interview-air-1-aditya-kumar-panda" target="_blank">Interview →</a></td></tr>
+            <tr><td>2023</td><td>Parth Khandelwal, AIR 10</td><td>Personal chapter targets for Physics; NCERT repeated + mock at NEET 2 PM time slot in final phase</td><td><a class="res-inline-link" href="https://www.shiksha.com/medicine-health-sciences/articles/neet-2023-topper-interview-preparing-from-ncert-books-was-my-priority-says-air-10-parth-khandelwal-blogId-127619" target="_blank">Interview →</a></td></tr>
+            <tr><td>2022</td><td>Tanishka, AIR 1</td><td>Doubt clearing immediately after each Physics topic; revision intensity increases as exam approaches</td><td><a class="res-inline-link" href="https://medicine.careers360.com/articles/neet-2022-topper-interview-tanishka-air-1" target="_blank">Interview →</a></td></tr>
+            <tr><td>2021</td><td>Mrinal Kutteri, AIR 1</td><td>Topic test after every Physics chapter; full mocks only after full syllabus; 45-min focused blocks</td><td><a class="res-inline-link" href="https://www.shiksha.com/medicine-health-sciences/articles/neet-2021-topper-interview-mrinal-kutteri-air-1-blogId-72337" target="_blank">Interview →</a></td></tr>
+            <tr><td>2020</td><td>Soyeb Aftab, AIR 1</td><td>Every Physics session must produce output — solved questions, revised formula, or fixed error. No passive study.</td><td><a class="res-inline-link" href="https://educereindia.com/articles/neet-topper-interview-in-conversation-with-soyeb-aftab-air-i-neet-2020" target="_blank">Interview →</a></td></tr>
+            <tr><td>2019</td><td>Nalin Khandelwal, AIR 1</td><td>Finish daily Physics targets before sleep; repeat NCERT for weak areas before adding extra resources</td><td><a class="res-inline-link" href="https://myexam.allen.in/success-journey-of-neet-ug-2019-topper-nalin-khandelwal-air-1-watch-full-interview/" target="_blank">Interview →</a></td></tr>
+            <tr><td>2018</td><td>Kalpana Kumari, AIR 1</td><td>Mocks must diagnose time-consuming Physics sections; reserve dedicated time for numericals every day</td><td><a class="res-inline-link" href="https://blog.pcmbtoday.com/neet-2018-topper-kalpana-kumaris-success-story/" target="_blank">Story →</a></td></tr>
+            <tr><td>2017</td><td>Navdeep Singh, AIR 1</td><td>Finish HC Verma/NCERT base first; online test series builds exam temperament for Physics timing</td><td><a class="res-inline-link" href="https://collegedunia.com/news/e-457-know-neet-air-i-navdeep-singhs-success-story" target="_blank">Story →</a></td></tr>
+            <tr><td>2016</td><td>Het Shah, AIR 1</td><td>15-year PYQs are compulsory for Physics; exam-day calmness must be practised in mocks not just hoped for</td><td><a class="res-inline-link" href="https://indianexpress.com/article/education/neet-2016-topper-het-shah-shares-his-success-story-and-exam-strategy/" target="_blank">Interview →</a></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>`;
+}
+
+// NCERT chapter grid interactions
+function jrnSelectedNcertBook() {
+  const code = document.getElementById('jrnNcertBook')?.value || 'keph1';
+  return JRN_NCERT_BOOKS.find(b => b.code === code) || JRN_NCERT_BOOKS[0];
+}
+
+function jrnInitNcertGrid() {
+  jrnRenderNcertChapters();
+}
+
+function jrnRenderNcertChapters() {
+  const book = jrnSelectedNcertBook();
+  const prelims = document.getElementById('jrnNcertPrelims');
+  const answers = document.getElementById('jrnNcertAnswers');
+  const full    = document.getElementById('jrnNcertFull');
+  if (prelims) prelims.href = `https://ncert.nic.in/textbook.php?${book.code}=ps-${book.end}`;
+  if (answers) answers.href = `https://ncert.nic.in/textbook.php?${book.code}=an-${book.end}`;
+  if (full)    full.href    = `https://ncert.nic.in/textbook/pdf/${book.complete}`;
+
+  const grid = document.getElementById('jrnNcertGrid');
+  if (!grid) return;
+  let html = '';
+  for (let ch = book.start; ch <= book.end; ch++) {
+    const title = book.chapters[ch - book.start] || `Chapter ${ch}`;
+    html += `<a class="res-chapter-tile" href="${jrnNcertUrl(book, ch)}" target="_blank">
+      <strong>Ch ${ch}</strong>
+      <span>${jrnEscHtml(title)}</span>
+    </a>`;
+  }
+  grid.innerHTML = html;
+  jrnUpdateNcertCustom();
+}
+
+function jrnUpdateNcertCustom() {
+  const book = jrnSelectedNcertBook();
+  const ch = Number(document.getElementById('jrnNcertCh')?.value || book.start);
+  const urlEl = document.getElementById('jrnNcertCustomUrl');
+  if (urlEl) urlEl.value = jrnNcertUrl(book, ch);
+}
+
+function jrnOpenNcertCustom() {
+  const book = jrnSelectedNcertBook();
+  const ch = Number(document.getElementById('jrnNcertCh')?.value || book.start);
+  if (ch >= 1) window.open(jrnNcertUrl(book, ch), '_blank');
+}
+
+function jrnCopyNcertCustom() {
+  const book = jrnSelectedNcertBook();
+  const ch = Number(document.getElementById('jrnNcertCh')?.value || book.start);
+  const url = jrnNcertUrl(book, ch);
+  navigator.clipboard?.writeText(url).then(() => showToast('NCERT link copied!', 'success'));
 }
 
 init().catch(error => {
