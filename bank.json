@@ -28651,6 +28651,708 @@
         "Objective II",
         "Chapter 30"
       ]
+    },
+    {
+      "id": "2291a579-75c9-4ec9-8203-7e1fb18f10c6",
+      "question": "The capacitance of a capacitor depends on",
+      "optionA": "the charge stored on it",
+      "optionB": "the potential difference across it",
+      "optionC": "both the charge and the potential",
+      "optionD": "the geometry of the conductors and the medium between them.",
+      "answer": "D",
+      "explanation": "Capacitance is $C = Q/V$, but $C$ is **not** a function of $Q$ or $V$ individually — it is determined entirely by:\n1. The geometry of the conductors (shape, size, separation)\n2. The medium (dielectric) between them\n\nFor a parallel-plate capacitor: $C = \\varepsilon_0 A/d$ (vacuum) or $C = K\\varepsilon_0 A/d$ (with dielectric $K$). Doubling $Q$ doubles $V$ proportionally, leaving $C = Q/V$ unchanged. Answer: (D).",
+      "topic": "Chapter 31: Capacitors",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 31"
+      ]
+    },
+    {
+      "id": "ece408e7-74df-4318-829d-1dddd879870c",
+      "question": "A parallel-plate capacitor has plate area $A$ and plate separation $d$. Its capacitance (in vacuum) is",
+      "optionA": "$\\varepsilon_0 d/A$",
+      "optionB": "$\\varepsilon_0 A/d$",
+      "optionC": "$\\varepsilon_0 A/d^2$",
+      "optionD": "$\\varepsilon_0/(Ad)$",
+      "answer": "B",
+      "explanation": "For a parallel-plate capacitor, the uniform electric field between the plates is $E = \\sigma/\\varepsilon_0 = Q/(\\varepsilon_0 A)$.\nVoltage: $V = Ed = Qd/(\\varepsilon_0 A)$.\n$$C = \\frac{Q}{V} = \\frac{\\varepsilon_0 A}{d}$$\nCapacitance increases with larger plate area and decreases with larger separation. Answer: (B).",
+      "topic": "Chapter 31: Capacitors",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 31"
+      ]
+    },
+    {
+      "id": "2e8316f5-4206-484f-86ab-d4545a986c44",
+      "question": "Two capacitors $C_1$ and $C_2$ are connected in series. The equivalent capacitance is",
+      "optionA": "$C_1 + C_2$",
+      "optionB": "$\\dfrac{C_1 C_2}{C_1 + C_2}$",
+      "optionC": "$\\dfrac{C_1 + C_2}{C_1 C_2}$",
+      "optionD": "$C_1 C_2$",
+      "answer": "B",
+      "explanation": "In series, the same charge $Q$ resides on each capacitor, and voltages add:\n$$V = V_1 + V_2 = \\frac{Q}{C_1} + \\frac{Q}{C_2} = Q\\!\\left(\\frac{1}{C_1}+\\frac{1}{C_2}\\right)$$\n$$C_{\\rm eq} = \\frac{Q}{V} = \\frac{C_1 C_2}{C_1 + C_2}$$\nThis is always **less than** the smaller of $C_1$, $C_2$. Answer: (B).",
+      "topic": "Chapter 31: Capacitors",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 31"
+      ]
+    },
+    {
+      "id": "e8b4f6fb-d4ff-4811-b7c2-8e5ccfdc15c6",
+      "question": "The energy stored in a capacitor of capacitance $C$ charged to potential $V$ is",
+      "optionA": "$CV^2$",
+      "optionB": "$\\dfrac{1}{2}CV$",
+      "optionC": "$\\dfrac{1}{2}CV^2$",
+      "optionD": "$2CV^2$",
+      "answer": "C",
+      "explanation": "Energy is stored in the electric field between the plates. Charging from 0 to $Q$:\n$$U = \\int_0^Q \\frac{q}{C}\\,dq = \\frac{Q^2}{2C} = \\frac{1}{2}CV^2 = \\frac{1}{2}QV$$\nAll three forms are equivalent. Answer: (C).",
+      "topic": "Chapter 31: Capacitors",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 31"
+      ]
+    },
+    {
+      "id": "3833a933-594d-413f-b432-e54b11c51750",
+      "question": "A parallel-plate capacitor is connected to a battery of EMF $V$. A dielectric slab of dielectric constant $K$ is inserted between the plates. The capacitance becomes",
+      "optionA": "$C/K$",
+      "optionB": "$KC$",
+      "optionC": "$C$",
+      "optionD": "$C/K^2$",
+      "answer": "B",
+      "explanation": "Inserting a dielectric of constant $K$ fills the field with a polarisable medium, reducing the effective field and thus increasing the capacitance:\n$$C' = KC = \\frac{K\\varepsilon_0 A}{d}$$\nWith the battery **still connected**, $V$ is fixed, so $Q = C'V = KCV$ increases and energy $U = \\frac{1}{2}C'V^2 = \\frac{1}{2}KCV^2$ also increases (the battery supplies extra charge and energy). Answer: (B).",
+      "topic": "Chapter 31: Capacitors",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 31"
+      ]
+    },
+    {
+      "id": "26bf41eb-ef42-4d50-9872-1d44cfc362d4",
+      "question": "A capacitor is charged to voltage $V$ and then disconnected from the battery. The plate separation is then doubled. The new voltage across the capacitor is",
+      "optionA": "$V/2$",
+      "optionB": "$V$",
+      "optionC": "$2V$",
+      "optionD": "$4V$",
+      "answer": "C",
+      "explanation": "Charge $Q$ is constant (battery disconnected). When $d$ doubles, $C' = C/2$.\n$$V' = \\frac{Q}{C'} = \\frac{Q}{C/2} = \\frac{2Q}{C} = 2V$$\nThe voltage doubles. Intuitively: the same charge on plates farther apart → stronger field over a longer gap → twice the voltage. Answer: (C).",
+      "topic": "Chapter 31: Capacitors",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 31"
+      ]
+    },
+    {
+      "id": "ab1eef64-bb3f-42b6-a766-70edaf3f45a0",
+      "question": "A charged capacitor is disconnected from the battery. A dielectric slab is now inserted. The energy stored",
+      "optionA": "increases",
+      "optionB": "decreases",
+      "optionC": "remains the same",
+      "optionD": "first increases then decreases.",
+      "answer": "B",
+      "explanation": "Battery disconnected → $Q$ is constant. Inserting dielectric: $C \\to KC$.\n$$U' = \\frac{Q^2}{2C'} = \\frac{Q^2}{2KC} = \\frac{U}{K}$$\nSince $K > 1$, $U' < U$: the energy **decreases**. Where does the lost energy go? It appears as work done by the electric field pulling the dielectric into the capacitor (the dielectric is attracted into the gap). Answer: (B).",
+      "topic": "Chapter 31: Capacitors",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 31"
+      ]
+    },
+    {
+      "id": "d15c3a5e-a898-4076-9967-fc14fb56071a",
+      "question": "A $2\\,\\mu\\rm F$ and a $3\\,\\mu\\rm F$ capacitor are connected in parallel. The equivalent capacitance is",
+      "optionA": "$1.2\\,\\mu\\rm F$",
+      "optionB": "$1\\,\\mu\\rm F$",
+      "optionC": "$5\\,\\mu\\rm F$",
+      "optionD": "$6\\,\\mu\\rm F$",
+      "answer": "C",
+      "explanation": "In parallel, capacitances add directly:\n$$C_{\\rm eq} = C_1 + C_2 = 2 + 3 = 5\\,\\mu\\rm F$$\nParallel connection: same voltage, charges add. Answer: (C).",
+      "topic": "Chapter 31: Capacitors",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 31"
+      ]
+    },
+    {
+      "id": "272ab719-dd83-4c06-a5c9-0a399b156936",
+      "question": "A parallel-plate capacitor (battery connected) has a dielectric slab inserted. Which of the following increase?",
+      "optionA": "Capacitance",
+      "optionB": "Charge stored",
+      "optionC": "Voltage across the capacitor",
+      "optionD": "Energy stored",
+      "answer": "A,B,D",
+      "explanation": "Battery connected → voltage $V$ fixed throughout.\n- **A** ✓: $C \\to KC > C$.\n- **B** ✓: $Q = CV \\to KCV > CV$.\n- **C** ✗: Voltage is fixed by the battery. $V$ does not change.\n- **D** ✓: $U = \\frac{1}{2}CV^2 \\to \\frac{1}{2}KCV^2 > U$.\n\nThe extra charge and energy come from the battery. Answer: (A), (B), (D).",
+      "topic": "Chapter 31: Capacitors",
+      "subtopic": "Objective II",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective II",
+        "Chapter 31"
+      ]
+    },
+    {
+      "id": "6e12f81e-cfce-4a89-a57d-fcf323e7c760",
+      "question": "Two charged capacitors $C_1$ (charge $Q_1$) and $C_2$ (charge $Q_2 = 0$) are connected by wires. Which are true after equilibrium?",
+      "optionA": "Total charge is conserved.",
+      "optionB": "Total energy is conserved.",
+      "optionC": "The final voltage across both is the same.",
+      "optionD": "Some energy is dissipated as heat in the connecting wires.",
+      "answer": "A,C,D",
+      "explanation": "After connecting:\n\n- **A** ✓: Charge is conserved: $Q_1 + 0 = C_1 V_f + C_2 V_f$, so $V_f = Q_1/(C_1+C_2)$.\n- **B** ✗: Energy before: $Q_1^2/(2C_1)$. Energy after: $Q_1^2/[2(C_1+C_2)]$. Energy after $<$ energy before — the difference is dissipated as heat (even in zero-resistance wires, via radiation/sparks during the transient).\n- **C** ✓: At equilibrium, both capacitors are at the same potential $V_f$.\n- **D** ✓: Energy is lost to heat (or radiation) in the connecting process.\n\nAnswer: (A), (C), (D).",
+      "topic": "Chapter 31: Capacitors",
+      "subtopic": "Objective II",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective II",
+        "Chapter 31"
+      ]
+    },
+    {
+      "id": "fc51cd12-7487-4154-9caa-b72db5a1e92b",
+      "question": "Which of the following are correct about a spherical capacitor?",
+      "optionA": "Its capacitance is $4\\pi\u000barepsilon_0 r$ for an isolated sphere of radius $r$.",
+      "optionB": "Capacitance of an isolated sphere increases if surrounded by a grounded outer sphere.",
+      "optionC": "A sphere of larger radius has greater capacitance.",
+      "optionD": "The capacitance of an isolated conducting sphere does not depend on the surrounding medium.",
+      "answer": "A,B,C",
+      "explanation": "- **A** ✓: For an isolated sphere: $C = 4\\pi\\varepsilon_0 r$ (treating infinity as the other \"plate\").\n- **B** ✓: Adding a grounded outer sphere reduces the effective radius of the \"other plate\" to a finite value, increasing $C$.\n- **C** ✓: $C = 4\\pi\\varepsilon_0 r$ — larger $r$ → larger $C$.\n- **D** ✗: If the sphere is surrounded by a dielectric, $\\varepsilon_0 \\to K\\varepsilon_0$, so $C$ depends on the medium. D is incorrect.\n\nAnswer: (A), (B), (C).",
+      "topic": "Chapter 31: Capacitors",
+      "subtopic": "Objective II",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective II",
+        "Chapter 31"
+      ]
+    },
+    {
+      "id": "37967f4e-b677-4e93-8edd-7f4b04d7e91d",
+      "question": "Ohm's law states that, for a metallic conductor at constant temperature,",
+      "optionA": "current is proportional to the square of the voltage",
+      "optionB": "voltage is proportional to the current",
+      "optionC": "resistance depends on the applied voltage",
+      "optionD": "current decreases as voltage increases.",
+      "answer": "B",
+      "explanation": "**Ohm's law**: $V = IR$, i.e., voltage is directly proportional to current for a given conductor at constant temperature. $R$ is constant (does not depend on $V$ or $I$ for an ohmic conductor). This is an empirical law, not a universal one — many materials are non-ohmic. Answer: (B).",
+      "topic": "Chapter 32: Electric Current in Conductors",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 32"
+      ]
+    },
+    {
+      "id": "a4db9b3b-fb86-4d6f-b2b3-93f3cc6b4f54",
+      "question": "The resistance of a wire of length $L$, cross-sectional area $A$, and resistivity $\\rho$ is",
+      "optionA": "$\\rho A / L$",
+      "optionB": "$\\rho L / A$",
+      "optionC": "$\\rho L^2 / A$",
+      "optionD": "$\\rho / (LA)$",
+      "answer": "B",
+      "explanation": "From the microscopic definition of resistivity $\\rho = E/J$ (field per current density):\n$$R = \\frac{\\rho L}{A}$$\nResistance increases with length (more collisions over a longer path) and decreases with area (more parallel paths for current). Answer: (B).",
+      "topic": "Chapter 32: Electric Current in Conductors",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 32"
+      ]
+    },
+    {
+      "id": "420a2a35-6b53-48f0-bebc-3ec0da9e1930",
+      "question": "When temperature increases, the resistance of a pure metal",
+      "optionA": "decreases",
+      "optionB": "increases",
+      "optionC": "remains constant",
+      "optionD": "first decreases then increases.",
+      "answer": "B",
+      "explanation": "In metals, current is carried by free electrons. At higher temperatures, lattice ions vibrate more vigorously, causing more frequent collisions with conduction electrons. This increases resistivity and hence resistance:\n$$R = R_0(1 + \\alpha\\Delta T) \\quad (\\alpha > 0 \\text{ for metals})$$\nFor semiconductors, the opposite is true (resistance decreases with temperature). Answer: (B).",
+      "topic": "Chapter 32: Electric Current in Conductors",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 32"
+      ]
+    },
+    {
+      "id": "8ef47316-9084-4953-b086-d0738953f53b",
+      "question": "Two resistors $R_1$ and $R_2$ are connected in parallel. The equivalent resistance is",
+      "optionA": "$R_1 + R_2$",
+      "optionB": "$\\dfrac{R_1 R_2}{R_1 + R_2}$",
+      "optionC": "$\\dfrac{R_1 + R_2}{R_1 R_2}$",
+      "optionD": "$R_1 R_2$",
+      "answer": "B",
+      "explanation": "In parallel, the same voltage $V$ is applied across each. Currents add:\n$$I = \\frac{V}{R_1} + \\frac{V}{R_2} = V\\!\\left(\\frac{1}{R_1}+\\frac{1}{R_2}\\right)$$\n$$R_{\\rm eq} = \\frac{V}{I} = \\frac{R_1 R_2}{R_1 + R_2}$$\nThis is always **less than** the smaller of $R_1$, $R_2$. Answer: (B).",
+      "topic": "Chapter 32: Electric Current in Conductors",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 32"
+      ]
+    },
+    {
+      "id": "708943e9-15da-496f-bb44-7626eaa715b6",
+      "question": "Kirchhoff's current law (junction law) states that",
+      "optionA": "the sum of EMFs around a loop is zero",
+      "optionB": "the algebraic sum of currents meeting at a junction is zero",
+      "optionC": "the current in a series circuit is the same throughout",
+      "optionD": "the potential drop across a resistor equals the current times the resistance.",
+      "answer": "B",
+      "explanation": "**Kirchhoff's Current Law (KCL)**: at any junction (node) in a circuit, the algebraic sum of all currents is zero:\n$$\\sum I = 0 \\quad \\text{(currents in = currents out)}$$\nThis is a statement of **conservation of charge** — charge cannot accumulate at a node. Kirchhoff's Voltage Law (KVL) is the loop law (sum of EMFs = sum of potential drops), which is option A. Answer: (B).",
+      "topic": "Chapter 32: Electric Current in Conductors",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 32"
+      ]
+    },
+    {
+      "id": "6e82ea6b-e57f-474d-a806-28ad78351c08",
+      "question": "In a Wheatstone bridge $P/Q = R/S$, the galvanometer reads zero. This condition means",
+      "optionA": "all four resistors are equal",
+      "optionB": "the potential at both ends of the galvanometer is the same",
+      "optionC": "no current flows in the main circuit",
+      "optionD": "the bridge is in a closed position.",
+      "answer": "B",
+      "explanation": "The Wheatstone bridge is **balanced** when $P/Q = R/S$ (or equivalently $PS = QR$). At balance, the potential at the two intermediate nodes B and D is equal, so no potential difference exists across the galvanometer — no current flows through it. This is used to measure an unknown resistance by adjusting others until null deflection. Answer: (B).",
+      "topic": "Chapter 32: Electric Current in Conductors",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 32"
+      ]
+    },
+    {
+      "id": "6a099e66-bc19-488d-b6f6-6e3fafafb00a",
+      "question": "The drift velocity of electrons in a copper wire carrying a current is of the order of",
+      "optionA": "$10^8\\,\\rm m/s$ (speed of light)",
+      "optionB": "$10^6\\,\\rm m/s$ (thermal speed)",
+      "optionC": "$10^{-4}\\,\\rm m/s$ (a fraction of mm/s)",
+      "optionD": "$10^{-8}\\,\\rm m/s$",
+      "answer": "C",
+      "explanation": "Drift velocity: $v_d = \\dfrac{I}{nqA}$. For copper: $n \\approx 8.5 \\times 10^{28}\\,\\rm m^{-3}$, $A \\sim 1\\,\\rm mm^2$, $I \\sim 1\\,\\rm A$:\n$$v_d = \\frac{1}{8.5\\times10^{28} \\times 1.6\\times10^{-19} \\times 10^{-6}} \\approx 7 \\times 10^{-5}\\,\\rm m/s$$\nThis is of order $10^{-4}\\,\\rm m/s$ — extremely slow. Electric signals propagate at nearly $c$ because the electric field propagates, not the electrons themselves. Answer: (C).",
+      "topic": "Chapter 32: Electric Current in Conductors",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 32"
+      ]
+    },
+    {
+      "id": "891662dd-f74a-4d2d-8900-21cf596b32b4",
+      "question": "A cell of EMF $\\mathcal{E}$ and internal resistance $r$ is connected to an external resistance $R$. The terminal voltage is",
+      "optionA": "$\\mathcal{E}$",
+      "optionB": "$\\mathcal{E} - Ir$",
+      "optionC": "$\\mathcal{E} + Ir$",
+      "optionD": "$IR$",
+      "answer": "B",
+      "explanation": "Current: $I = \\mathcal{E}/(R + r)$. The terminal voltage (voltage across the external resistance) equals the EMF minus the voltage drop across internal resistance:\n$$V_{\\rm terminal} = \\mathcal{E} - Ir = IR$$\nBoth expressions are equal. The terminal voltage is less than EMF when delivering current (due to internal resistance loss). Answer: (B).",
+      "topic": "Chapter 32: Electric Current in Conductors",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 32"
+      ]
+    },
+    {
+      "id": "996d4c90-0be2-43f6-8e58-a1f0f299dde3",
+      "question": "Which of the following are correct for resistors in series?",
+      "optionA": "The same current flows through all resistors.",
+      "optionB": "The voltage across each resistor is the same.",
+      "optionC": "The equivalent resistance is the sum of individual resistances.",
+      "optionD": "The equivalent resistance is always greater than any individual resistance.",
+      "answer": "A,C,D",
+      "explanation": "- **A** ✓: Series connection — single current path, same $I$ everywhere.\n- **B** ✗: Voltage divides: $V_i = IR_i$, different for different $R_i$ (unless all equal).\n- **C** ✓: $R_{\\rm eq} = R_1 + R_2 + \\ldots$\n- **D** ✓: $R_{\\rm eq} > R_{\\rm max}$ (each resistor adds to the total).\n\nAnswer: (A), (C), (D).",
+      "topic": "Chapter 32: Electric Current in Conductors",
+      "subtopic": "Objective II",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective II",
+        "Chapter 32"
+      ]
+    },
+    {
+      "id": "206a9f3b-ab1d-4aae-aa79-b11b01b0e94b",
+      "question": "Which of the following about Kirchhoff's laws are correct?",
+      "optionA": "KCL is based on conservation of charge.",
+      "optionB": "KVL is based on conservation of energy.",
+      "optionC": "KCL applies only to DC circuits.",
+      "optionD": "KVL states that the sum of all EMFs equals the sum of all resistive drops in a loop.",
+      "answer": "A,B,D",
+      "explanation": "- **A** ✓: KCL (sum of currents at node = 0) follows from charge conservation — no charge accumulates.\n- **B** ✓: KVL (sum of potential differences around a closed loop = 0) follows from energy conservation — potential is path-independent.\n- **C** ✗: KCL applies to both AC and DC circuits (charge is conserved in both).\n- **D** ✓: KVL: $\\sum \\mathcal{E} = \\sum IR$ around any closed loop.\n\nAnswer: (A), (B), (D).",
+      "topic": "Chapter 32: Electric Current in Conductors",
+      "subtopic": "Objective II",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective II",
+        "Chapter 32"
+      ]
+    },
+    {
+      "id": "9ab5ce58-3099-4094-9004-4f7bba5951fa",
+      "question": "The heat generated in a resistor of resistance $R$ carrying current $I$ for time $t$ is",
+      "optionA": "$IRt$",
+      "optionB": "$I^2 R t$",
+      "optionC": "$IR^2 t$",
+      "optionD": "$I^2 R / t$",
+      "answer": "B",
+      "explanation": "Joule's law of heating: the electrical energy dissipated as heat is:\n$$H = I^2 R t = \\frac{V^2}{R}\\,t = VIt$$\nAll three forms are equivalent. The $I^2Rt$ form shows that heat is proportional to the square of current, the resistance, and the time. Answer: (B).",
+      "topic": "Chapter 33: Thermal and Chemical Effects of Electric Current",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 33"
+      ]
+    },
+    {
+      "id": "ef097c45-cf08-4e0e-9353-906fd8816d80",
+      "question": "A 60 W and a 100 W bulb (both rated for the same mains voltage) are connected in series. Which glows brighter?",
+      "optionA": "100 W bulb",
+      "optionB": "60 W bulb",
+      "optionC": "Both glow equally bright.",
+      "optionD": "The one nearer to the source.",
+      "answer": "B",
+      "explanation": "Rated power $P = V_{\\rm rated}^2 / R \\implies R \\propto 1/P$ at the same rated voltage.\n$$R_{60} = \\frac{V^2}{60} > R_{100} = \\frac{V^2}{100}$$\nIn series, the same current $I$ flows. Power in each: $P_i = I^2 R_i$.\n$$P_{60} = I^2 R_{60} > I^2 R_{100} = P_{100}$$\nThe 60 W bulb has higher resistance and dissipates more power in series — it **glows brighter**. Answer: (B).",
+      "topic": "Chapter 33: Thermal and Chemical Effects of Electric Current",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 33"
+      ]
+    },
+    {
+      "id": "149bbee0-4926-4808-aa8a-5e59db7164fa",
+      "question": "Faraday's first law of electrolysis states that the mass of a substance deposited at an electrode is proportional to",
+      "optionA": "the current alone",
+      "optionB": "the time alone",
+      "optionC": "the product of current and time (i.e., the charge)",
+      "optionD": "the square of the current.",
+      "answer": "C",
+      "explanation": "**Faraday's first law**: $m \\propto Q = It$.\n\n$$m = Z \\cdot Q = Z \\cdot I \\cdot t$$\nwhere $Z$ is the electrochemical equivalent of the substance. Doubling the current (or time) doubles the mass deposited. Answer: (C).",
+      "topic": "Chapter 33: Thermal and Chemical Effects of Electric Current",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 33"
+      ]
+    },
+    {
+      "id": "f333be63-20d5-4601-9e56-b6eaedb9e47a",
+      "question": "Faraday's second law of electrolysis states that for the same quantity of charge, masses of different substances liberated are proportional to their",
+      "optionA": "atomic masses",
+      "optionB": "chemical equivalent masses (molar mass ÷ valency)",
+      "optionC": "densities",
+      "optionD": "atomic numbers.",
+      "answer": "B",
+      "explanation": "**Faraday's second law**: for the same $Q$, $m_1/m_2 = E_1/E_2$ where $E = M/n$ is the chemical equivalent (molar mass $M$ divided by valency $n$, also called the gram equivalent mass).\n\n$$m = \\frac{M}{nF} \\cdot Q$$\nwhere $F = 96485\\,\\rm C/mol$ is Faraday's constant. Answer: (B).",
+      "topic": "Chapter 33: Thermal and Chemical Effects of Electric Current",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 33"
+      ]
+    },
+    {
+      "id": "50eb8557-9b47-4c9b-8098-f2bfff7c35a7",
+      "question": "The Seebeck effect refers to",
+      "optionA": "generation of heat at a junction when current flows through it",
+      "optionB": "generation of an EMF in a circuit formed by two different metals when the junctions are at different temperatures",
+      "optionC": "absorption of heat at one junction and liberation at another when current flows",
+      "optionD": "heating of a conductor when current flows through it.",
+      "answer": "B",
+      "explanation": "The **Seebeck effect**: when two dissimilar metals (or semiconductors) are joined at two junctions kept at different temperatures $T_1$ and $T_2$, a thermoelectric EMF is generated and a current flows in the closed circuit. This is the basis of the **thermocouple** used for temperature measurement.\n\n- Option A describes the **Peltier effect** (heat at junction when current flows).\n- Option C more precisely describes Peltier effect.\n- Option D describes Joule heating.\nAnswer: (B).",
+      "topic": "Chapter 33: Thermal and Chemical Effects of Electric Current",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 33"
+      ]
+    },
+    {
+      "id": "8f112c55-bfb8-42fa-baf7-02a8c8ed5414",
+      "question": "The Peltier effect is the",
+      "optionA": "generation of EMF due to temperature difference at junctions",
+      "optionB": "absorption or liberation of heat at a junction when current flows through it",
+      "optionC": "heating effect of current in a resistor",
+      "optionD": "electrolytic decomposition of a solution.",
+      "answer": "B",
+      "explanation": "**Peltier effect**: when current flows through a junction of two different metals, heat is **absorbed** or **liberated** at the junction depending on the direction of current. It is the reverse of the Seebeck effect. Peltier coolers (thermoelectric coolers) use this principle — pumping heat from cold side to hot side using electrical energy. Answer: (B).",
+      "topic": "Chapter 33: Thermal and Chemical Effects of Electric Current",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 33"
+      ]
+    },
+    {
+      "id": "7d70a4ff-48ba-420e-9b43-22c24dff2a3a",
+      "question": "Which of the following are correct about Joule heating?",
+      "optionA": "$H \\propto I^2$ for constant $R$",
+      "optionB": "$H \\propto R$ for constant $I$",
+      "optionC": "$H \\propto t$ (time of current flow)",
+      "optionD": "$H \\propto V^2/R$ for constant voltage",
+      "answer": "A,B,C,D",
+      "explanation": "All four are correct forms of Joule's law $H = I^2 R t = V^2 t / R$:\n- **A** ✓: $H = I^2 R t \\propto I^2$.\n- **B** ✓: $H = I^2 R t \\propto R$.\n- **C** ✓: $H \\propto t$.\n- **D** ✓: At constant $V$: $H = (V^2/R) t \\propto V^2/R$.\n\nAnswer: (A), (B), (C), (D).",
+      "topic": "Chapter 33: Thermal and Chemical Effects of Electric Current",
+      "subtopic": "Objective II",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective II",
+        "Chapter 33"
+      ]
+    },
+    {
+      "id": "0d10b3d0-337b-4a42-b4cd-ad520104f6db",
+      "question": "Which of the following are thermoelectric effects?",
+      "optionA": "Seebeck effect",
+      "optionB": "Peltier effect",
+      "optionC": "Thomson effect",
+      "optionD": "Joule effect",
+      "answer": "A,B,C",
+      "explanation": "The three true thermoelectric effects are:\n- **A** ✓: **Seebeck** — EMF due to temperature difference at junctions.\n- **B** ✓: **Peltier** — heat absorbed/liberated at junction when current flows.\n- **C** ✓: **Thomson** — heat absorbed or liberated in a single conductor carrying current while having a temperature gradient.\n- **D** ✗: **Joule** heating is not a thermoelectric effect — it occurs in any resistive material regardless of temperature gradients.\n\nAnswer: (A), (B), (C).",
+      "topic": "Chapter 33: Thermal and Chemical Effects of Electric Current",
+      "subtopic": "Objective II",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective II",
+        "Chapter 33"
+      ]
+    },
+    {
+      "id": "0c029fc1-dfac-4474-b34e-2ab8574ab8c4",
+      "question": "The magnetic force on a charged particle at rest in a magnetic field is",
+      "optionA": "maximum when the field is strong",
+      "optionB": "zero",
+      "optionC": "proportional to the charge and the field",
+      "optionD": "directed along the magnetic field.",
+      "answer": "B",
+      "explanation": "The magnetic (Lorentz) force on a charge $q$ moving with velocity $\\vec{v}$ in field $\\vec{B}$:\n$$\\vec{F} = q\\vec{v} \\times \\vec{B}$$\nIf $\\vec{v} = 0$ (particle at rest), $\\vec{F} = 0$ regardless of $q$ and $\\vec{B}$. Magnetic force acts only on **moving** charges. Answer: (B).",
+      "topic": "Chapter 34: Magnetic Field",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 34"
+      ]
+    },
+    {
+      "id": "c104f664-9ace-4629-b34a-3d4a559de055",
+      "question": "The magnetic force on a charge $q$ moving with velocity $\\vec{v}$ in magnetic field $\\vec{B}$ is maximum when",
+      "optionA": "$\\vec{v}$ is parallel to $\\vec{B}$",
+      "optionB": "$\\vec{v}$ is antiparallel to $\\vec{B}$",
+      "optionC": "$\\vec{v}$ is perpendicular to $\\vec{B}$",
+      "optionD": "$\\vec{v} = 0$",
+      "answer": "C",
+      "explanation": "$F = qvB\\sin\\theta$ where $\\theta$ is the angle between $\\vec{v}$ and $\\vec{B}$.\n\n- $\\theta = 0°$ or $180°$ (parallel/antiparallel): $\\sin\\theta = 0 \\implies F = 0$.\n- $\\theta = 90°$ (perpendicular): $\\sin 90° = 1 \\implies F = qvB$ (maximum).\n\nAnswer: (C).",
+      "topic": "Chapter 34: Magnetic Field",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 34"
+      ]
+    },
+    {
+      "id": "1e738c2b-f012-406a-9956-308e77178e0b",
+      "question": "A charged particle moves with constant speed in a uniform magnetic field (field perpendicular to velocity). Its path is",
+      "optionA": "a straight line",
+      "optionB": "a parabola",
+      "optionC": "a circle",
+      "optionD": "a helix",
+      "answer": "C",
+      "explanation": "The magnetic force $\\vec{F} = q\\vec{v}\\times\\vec{B}$ is always **perpendicular** to $\\vec{v}$. It does no work (power $= \\vec{F}\\cdot\\vec{v} = 0$), so the speed stays constant. The force provides centripetal acceleration, curving the path into a **circle**. (If $\\vec{v}$ has a component along $\\vec{B}$, the path is a helix.) Answer: (C).",
+      "topic": "Chapter 34: Magnetic Field",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 34"
+      ]
+    },
+    {
+      "id": "ea58addb-cbbf-4250-a17b-a63f97776117",
+      "question": "The radius of the circular orbit of a charged particle (charge $q$, mass $m$, speed $v$) in a uniform magnetic field $B$ is",
+      "optionA": "$r = qvB/m$",
+      "optionB": "$r = mv/(qB)$",
+      "optionC": "$r = qmvB$",
+      "optionD": "$r = qB/(mv)$",
+      "answer": "B",
+      "explanation": "Centripetal force = magnetic force:\n$$\\frac{mv^2}{r} = qvB \\implies r = \\frac{mv}{qB}$$\nThe radius is proportional to momentum $mv$ and inversely proportional to $qB$. A more massive or faster particle curves less; a stronger field or larger charge curves more. Answer: (B).",
+      "topic": "Chapter 34: Magnetic Field",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 34"
+      ]
+    },
+    {
+      "id": "b6140a6d-ce10-4786-97d8-7d1f716f35c0",
+      "question": "The time period of revolution of a charged particle in a uniform magnetic field",
+      "optionA": "depends on the speed of the particle",
+      "optionB": "depends on the radius of the orbit",
+      "optionC": "is independent of both speed and radius",
+      "optionD": "increases with increasing speed.",
+      "answer": "C",
+      "explanation": "$T = \\dfrac{2\\pi r}{v} = \\dfrac{2\\pi}{v} \\cdot \\dfrac{mv}{qB} = \\dfrac{2\\pi m}{qB}$\n\nThe time period depends only on $m$, $q$, and $B$ — **not** on $v$ or $r$. This is the key principle exploited in the **cyclotron**: faster particles spiral outward (larger $r$) but complete each orbit in the same time, enabling resonant acceleration. Answer: (C).",
+      "topic": "Chapter 34: Magnetic Field",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 34"
+      ]
+    },
+    {
+      "id": "2c352189-8622-401b-b895-ea69336212a3",
+      "question": "The force on a current-carrying conductor of length $L$ carrying current $I$ in a magnetic field $B$ is maximum when",
+      "optionA": "the conductor is parallel to the field",
+      "optionB": "the conductor is perpendicular to the field",
+      "optionC": "the conductor is at 45° to the field",
+      "optionD": "the conductor has zero resistance.",
+      "answer": "B",
+      "explanation": "Force on a current-carrying conductor: $F = BIL\\sin\\theta$ where $\\theta$ is the angle between the conductor direction and $\\vec{B}$.\n\nMaximum when $\\sin\\theta = 1$, i.e., $\\theta = 90°$ (conductor **perpendicular** to the field). Zero when parallel ($\\theta = 0°$ or $180°$). Answer: (B).",
+      "topic": "Chapter 34: Magnetic Field",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 34"
+      ]
+    },
+    {
+      "id": "349a5919-bede-4f51-bed3-0d151f19cbc5",
+      "question": "A velocity selector uses crossed electric and magnetic fields to select particles. A particle passes through undeflected when",
+      "optionA": "$qE = qvB \\implies v = E/B$",
+      "optionB": "$v = B/E$",
+      "optionC": "$v = qE/B$",
+      "optionD": "$v = qB/E$",
+      "answer": "A",
+      "explanation": "In a velocity selector, electric force $qE$ (upward) and magnetic force $qvB$ (downward) must balance for a particle to pass straight through:\n$$qE = qvB \\implies v = \\frac{E}{B}$$\nThis selects particles of a specific speed $v = E/B$, regardless of charge or mass (as long as $q \\ne 0$). Answer: (A).",
+      "topic": "Chapter 34: Magnetic Field",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 34"
+      ]
+    },
+    {
+      "id": "6c33f189-e7dd-4555-b0a7-b82dfc6692cd",
+      "question": "Which of the following are true for a charged particle moving in a uniform magnetic field?",
+      "optionA": "Its speed remains constant.",
+      "optionB": "Its kinetic energy remains constant.",
+      "optionC": "The magnitude of its momentum remains constant.",
+      "optionD": "The direction of its momentum changes continuously.",
+      "answer": "A,B,C,D",
+      "explanation": "Magnetic force $\\vec{F} = q\\vec{v}\\times\\vec{B}$ is always perpendicular to $\\vec{v}$:\n\n- **A** ✓: $|\\vec{F}| \\perp \\vec{v}$ → no work done → KE constant → speed constant.\n- **B** ✓: KE $= \\frac{1}{2}mv^2$ = constant (same as A).\n- **C** ✓: $|p| = mv$ = constant (speed and mass unchanged).\n- **D** ✓: The force changes the direction of $\\vec{v}$ (and hence $\\vec{p}$) continuously — that's what makes the path circular.\n\nAnswer: (A), (B), (C), (D).",
+      "topic": "Chapter 34: Magnetic Field",
+      "subtopic": "Objective II",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective II",
+        "Chapter 34"
+      ]
+    },
+    {
+      "id": "c05aa678-784e-455a-86de-3fbdd5c104c7",
+      "question": "Which of the following can change the direction of motion of a charged particle?",
+      "optionA": "An electric field",
+      "optionB": "A magnetic field",
+      "optionC": "A gravitational field",
+      "optionD": "A field parallel to the velocity",
+      "answer": "A,B,C",
+      "explanation": "Any force with a component perpendicular to the velocity can change direction:\n\n- **A** ✓: Electric field exerts force $q\\vec{E}$; if $\\vec{E}$ has a component perpendicular to $\\vec{v}$, direction changes.\n- **B** ✓: Magnetic force is always perpendicular to $\\vec{v}$ → always changes direction (circular/helical motion).\n- **C** ✓: Gravity has component perpendicular to (horizontal) motion → projectile motion changes direction.\n- **D** ✗: A field **parallel** to velocity exerts force along $\\vec{v}$ → changes speed, not direction.\n\nAnswer: (A), (B), (C).",
+      "topic": "Chapter 34: Magnetic Field",
+      "subtopic": "Objective II",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective II",
+        "Chapter 34"
+      ]
+    },
+    {
+      "id": "2174d548-a4cf-4416-a747-4d5b0c77a7d9",
+      "question": "Which of the following forces are involved in the operation of a galvanometer?",
+      "optionA": "Magnetic force on a current-carrying coil",
+      "optionB": "Restoring torque of a spring",
+      "optionC": "Electric force on the charge carriers",
+      "optionD": "Gravitational force on the coil.",
+      "answer": "A,B",
+      "explanation": "A galvanometer works by:\n- **A** ✓: Current through a coil in a radial magnetic field → torque $\\tau = NBIA$ deflects the coil.\n- **B** ✓: The hairspring provides a restoring torque $\\tau_s = k\\phi$ opposing the deflection. At equilibrium: $NBIA = k\\phi \\implies \\phi \\propto I$.\n- **C** ✗: Electric force on charge carriers within the wire is already accounted for in the current (not a separate macroscopic force on the instrument).\n- **D** ✗: Galvanometers are designed so gravity doesn't affect deflection (coil balanced, or pivot design).\n\nAnswer: (A), (B).",
+      "topic": "Chapter 34: Magnetic Field",
+      "subtopic": "Objective II",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective II",
+        "Chapter 34"
+      ]
     }
   ]
 }
