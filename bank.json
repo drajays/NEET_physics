@@ -27463,6 +27463,402 @@
         "Objective II",
         "Chapter 24"
       ]
+    },
+    {
+      "id": "d3b2b494-f5eb-45cd-ba6f-79b0e4406d9f",
+      "question": "The specific heat capacity of a substance is defined as the heat required to raise the temperature of",
+      "optionA": "one gram of the substance by 1°C",
+      "optionB": "one kilogram of the substance by 1 K",
+      "optionC": "one mole of the substance by 1 K",
+      "optionD": "unit mass of the substance by unit temperature.",
+      "answer": "D",
+      "explanation": "**Specific heat capacity** $c$ is defined as the heat $\\Delta Q$ required per unit mass per unit temperature rise:\n$$c = \\frac{\\Delta Q}{m\\,\\Delta T}$$\nIn SI units, this is $\\rm J\\,kg^{-1}\\,K^{-1}$. Option D is the most general and correct definition — it says \"unit mass\" and \"unit temperature\" without specifying a particular system of units. Options A–C are special cases (gram/°C, kg/K, mol/K) that define different but related quantities (specific heat in CGS, SI, or molar heat capacity). The fundamental definition is D. Answer: (D).",
+      "topic": "Chapter 25: Calorimetry",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 25"
+      ]
+    },
+    {
+      "id": "f4014f1e-2421-4dce-b961-a019ba6f5189",
+      "question": "A hot body is brought into thermal contact with a cold body. Which of the following is true?",
+      "optionA": "Heat flows from the cold body to the hot body.",
+      "optionB": "Heat flows from the hot body to the cold body until they reach the same temperature.",
+      "optionC": "Heat flow continues until the bodies have equal masses.",
+      "optionD": "The total kinetic energy of both bodies decreases.",
+      "answer": "B",
+      "explanation": "Heat (thermal energy) spontaneously flows from a body at higher temperature to one at lower temperature — this is the zeroth/second law of thermodynamics. The flow continues until both bodies reach the same temperature (**thermal equilibrium**). At that point net heat transfer stops. Mass is irrelevant; total kinetic energy of the molecules is not necessarily decreased (the hot body loses kinetic energy but the cold body gains it; total KE of both is conserved if no work is done). Answer: (B).",
+      "topic": "Chapter 25: Calorimetry",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 25"
+      ]
+    },
+    {
+      "id": "e5f477ee-17a4-44f5-ad7f-ee8772c8587c",
+      "question": "In an experiment, 100 g of water at 100°C is mixed with 100 g of water at 0°C. Ignoring heat loss to the surroundings, the final temperature is",
+      "optionA": "100°C",
+      "optionB": "0°C",
+      "optionC": "50°C",
+      "optionD": "depends on the container material.",
+      "answer": "C",
+      "explanation": "Heat lost by hot water = heat gained by cold water (conservation of energy, no loss):\n$$m c (100 - T_f) = m c (T_f - 0)$$\n$$100 - T_f = T_f \\implies T_f = 50°C$$\nEqual masses of the same substance → equilibrium at the arithmetic mean temperature. Answer: (C).",
+      "topic": "Chapter 25: Calorimetry",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 25"
+      ]
+    },
+    {
+      "id": "e8eed99d-8bf0-4160-afd9-5ca384f2ec6d",
+      "question": "The latent heat of fusion of ice is $L_f = 336\\,\\rm kJ/kg$. What does this mean?",
+      "optionA": "Ice at $0°C$ requires $336\\,\\rm kJ/kg$ to change its temperature to $100°C$.",
+      "optionB": "$1\\,\\rm kg$ of ice at $0°C$ requires $336\\,\\rm kJ$ of heat to completely melt into water at $0°C$.",
+      "optionC": "Water at $0°C$ releases $336\\,\\rm kJ/kg$ when its temperature is lowered to $-10°C$.",
+      "optionD": "Ice can be formed from water only by removing $336\\,\\rm kJ/kg$ of heat at $0°C$.",
+      "answer": "B",
+      "explanation": "**Latent heat** is the energy absorbed (or released) during a phase change at constant temperature. The latent heat of fusion $L_f = 336\\,\\rm kJ/kg$ means that $1\\,\\rm kg$ of ice at exactly $0°C$ absorbs $336\\,\\rm kJ$ to completely convert to water at $0°C$ — with **no change in temperature** during the process. Option D is also true (reverse process) but the question asks what the statement *means*, and B is the direct, precise definition of latent heat of fusion. Answer: (B).",
+      "topic": "Chapter 25: Calorimetry",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 25"
+      ]
+    },
+    {
+      "id": "e2691fb8-8222-4c82-bebf-d6b7aeeb7168",
+      "question": "The water equivalent of a calorimeter is 10 g. This means",
+      "optionA": "the calorimeter has a mass of 10 g",
+      "optionB": "the calorimeter contains 10 g of water",
+      "optionC": "the calorimeter absorbs the same heat as 10 g of water for the same temperature rise",
+      "optionD": "the calorimeter is made of material with the same specific heat as water.",
+      "answer": "C",
+      "explanation": "The **water equivalent** of a calorimeter is defined as the mass of water that would absorb (or release) the same amount of heat as the calorimeter for the same change in temperature. If the calorimeter has mass $M$ and specific heat $s$, its water equivalent is $w = Ms/s_w$ where $s_w = 4200\\,\\rm J\\,kg^{-1}K^{-1}$.\n\nA water equivalent of 10 g means: the calorimeter absorbs the same heat as 10 g of water per degree of temperature change. This is used to correct calorimetric calculations. Answer: (C).",
+      "topic": "Chapter 25: Calorimetry",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 25"
+      ]
+    },
+    {
+      "id": "c3111830-aced-4782-982a-9e2cbe08782e",
+      "question": "Equal masses of three liquids A, B, and C have specific heats $c_A < c_B < c_C$. They are at the same temperature. Equal amounts of heat are supplied to each. Which reaches the highest temperature?",
+      "optionA": "A",
+      "optionB": "B",
+      "optionC": "C",
+      "optionD": "All reach the same temperature.",
+      "answer": "A",
+      "explanation": "$\\Delta T = \\dfrac{\\Delta Q}{mc}$. For equal $\\Delta Q$ and equal mass $m$, the temperature rise is inversely proportional to specific heat:\n$$\\Delta T \\propto \\frac{1}{c}$$\nThe liquid with the **smallest specific heat** ($c_A$) undergoes the **greatest temperature rise** and reaches the highest temperature. Answer: (A).",
+      "topic": "Chapter 25: Calorimetry",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 25"
+      ]
+    },
+    {
+      "id": "f0efc49a-7f1e-4b42-a6c6-1bc791de96a1",
+      "question": "When steam at 100°C is passed into ice at 0°C, which process releases more heat per gram?",
+      "optionA": "Condensation of steam",
+      "optionB": "Cooling of condensed steam from 100°C to 0°C",
+      "optionC": "Both release equal heat.",
+      "optionD": "The question cannot be answered without knowing the mass.",
+      "answer": "A",
+      "explanation": "Per gram of steam:\n\n- **Condensation** (steam → water at 100°C): releases latent heat $L_v \\approx 2260\\,\\rm J/g$.\n- **Cooling** condensed water from 100°C to 0°C: releases $m c \\Delta T = 1\\,\\rm g \\times 4.2\\,J/(g\\cdot°C) \\times 100°C = 420\\,J/g$.\n\nCondensation releases $\\approx 2260\\,\\rm J/g$ vs $\\approx 420\\,\\rm J/g$ for cooling. **Condensation** releases more heat. Answer: (A).",
+      "topic": "Chapter 25: Calorimetry",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 25"
+      ]
+    },
+    {
+      "id": "782f5f3c-f027-49df-9fc2-cf64d5f019f0",
+      "question": "In a calorimetric experiment, the following are true:",
+      "optionA": "The water equivalent of the calorimeter must be accounted for to get an accurate result.",
+      "optionB": "The calorimeter should have high thermal conductivity.",
+      "optionC": "The calorimeter should have low heat capacity.",
+      "optionD": "The experiment should be done quickly to minimise heat loss.",
+      "answer": "A,B,C,D",
+      "explanation": "- **A** ✓: The calorimeter itself absorbs heat; its water equivalent corrects for this.\n- **B** ✓: High thermal conductivity ensures the contents rapidly reach thermal equilibrium with the calorimeter walls — uniformity of temperature.\n- **C** ✓: Low heat capacity means the calorimeter absorbs little heat compared to the substance under study — less correction needed and more accurate results.\n- **D** ✓: A quick experiment minimises heat exchange with the surroundings (heat loss to the environment is the main source of error in calorimetry).\n\nAnswer: (A), (B), (C), (D).",
+      "topic": "Chapter 25: Calorimetry",
+      "subtopic": "Objective II",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective II",
+        "Chapter 25"
+      ]
+    },
+    {
+      "id": "7ccec2f5-296b-43b0-a5bd-4f34e5d9aac3",
+      "question": "Which of the following correctly describe phase transitions?",
+      "optionA": "During melting of ice at 0°C, the temperature remains constant.",
+      "optionB": "The latent heat of vaporisation of water is greater than its latent heat of fusion.",
+      "optionC": "Boiling point of water increases when pressure decreases.",
+      "optionD": "Sublimation is the direct conversion of a solid to vapour.",
+      "answer": "A,B,D",
+      "explanation": "- **A** ✓: During a phase change (melting), the supplied heat goes into breaking intermolecular bonds, not raising temperature. Temperature stays at 0°C throughout.\n- **B** ✓: $L_v \\approx 2260\\,\\rm kJ/kg$ (vaporisation) $\\gg$ $L_f \\approx 336\\,\\rm kJ/kg$ (fusion). Completely separating water molecules (vapour) requires far more energy than partially disrupting order (melting to liquid).\n- **C** ✗: Boiling point **decreases** when pressure decreases (less external pressure → liquid boils at lower temperature). This is why water boils below 100°C at high altitudes.\n- **D** ✓: Sublimation = solid → vapour directly, e.g., dry ice (CO₂) or camphor.\n\nAnswer: (A), (B), (D).",
+      "topic": "Chapter 25: Calorimetry",
+      "subtopic": "Objective II",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective II",
+        "Chapter 25"
+      ]
+    },
+    {
+      "id": "f2d5ba84-e6d3-4a6f-8fbb-74860bf5412d",
+      "question": "Two substances A and B have specific heats in the ratio 1 : 2. Equal masses are given equal heat. Which of the following are correct?",
+      "optionA": "The temperature rise of A is twice that of B.",
+      "optionB": "The temperature rise of B is twice that of A.",
+      "optionC": "If A and B are mixed, the equilibrium temperature is closer to the initial temperature of B.",
+      "optionD": "The final temperature depends on the initial temperatures only if the masses are equal.",
+      "answer": "A,C",
+      "explanation": "Let $c_A : c_B = 1 : 2$ and equal mass $m$, equal heat $Q$.\n$$\\Delta T_A = \\frac{Q}{mc_A}, \\quad \\Delta T_B = \\frac{Q}{mc_B} = \\frac{Q}{2mc_A}$$\n$$\\frac{\\Delta T_A}{\\Delta T_B} = \\frac{c_B}{c_A} = 2 \\implies \\Delta T_A = 2\\Delta T_B \\quad \\text{(A ✓, B ✗)}$$\n\nFor mixing at respective temperatures $T_A = T_0 + \\Delta T_A$ and $T_B = T_0 + \\Delta T_B$:\n$$T_f = \\frac{mc_A T_A + mc_B T_B}{m(c_A + c_B)} = \\frac{c_A T_A + 2c_A T_B}{3c_A}$$\nSince $\\Delta T_A = 2\\Delta T_B$, $T_A > T_B$, and $c_B = 2c_A$, the equilibrium temperature is pulled toward B (higher heat capacity). So $T_f$ is closer to $T_B$ (**C ✓**). Option D is not a general truth. Answer: (A), (C).",
+      "topic": "Chapter 25: Calorimetry",
+      "subtopic": "Objective II",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective II",
+        "Chapter 25"
+      ]
+    },
+    {
+      "id": "ab367cbe-420d-420f-99e0-97ff9b6be353",
+      "question": "The first law of thermodynamics is essentially a statement of",
+      "optionA": "conservation of momentum",
+      "optionB": "conservation of energy",
+      "optionC": "conservation of mass",
+      "optionD": "the second law of thermodynamics.",
+      "answer": "B",
+      "explanation": "The first law of thermodynamics, $\\Delta U = \\Delta Q - W$, expresses that the change in internal energy equals the heat added minus the work done by the system. This is simply the **law of conservation of energy** applied to a thermodynamic system — energy cannot be created or destroyed, only converted between heat, work, and internal energy. Answer: (B).",
+      "topic": "Chapter 26: Laws of Thermodynamics",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 26"
+      ]
+    },
+    {
+      "id": "7f182691-5bbe-4031-a63c-d62410f825d2",
+      "question": "In an adiabatic process, $\\Delta Q = 0$. Therefore",
+      "optionA": "$\\Delta U = 0$",
+      "optionB": "$\\Delta W = 0$",
+      "optionC": "$\\Delta U = -W$ (internal energy decreases when gas does positive work)",
+      "optionD": "the temperature remains constant.",
+      "answer": "C",
+      "explanation": "First law: $\\Delta Q = \\Delta U + W$. With $\\Delta Q = 0$:\n$$\\Delta U = -W$$\nIf the gas expands (does positive work $W > 0$), internal energy decreases ($\\Delta U < 0$), so temperature falls. If compressed ($W < 0$), internal energy increases and temperature rises. Neither $\\Delta U$ nor $W$ is zero in general; temperature is not constant (that would be isothermal). Answer: (C).",
+      "topic": "Chapter 26: Laws of Thermodynamics",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 26"
+      ]
+    },
+    {
+      "id": "82db6cac-b84a-4b7b-84bf-5c25da354e6a",
+      "question": "The work done by an ideal gas in an isothermal expansion from volume $V_1$ to $V_2$ at temperature $T$ is",
+      "optionA": "$W = nRT\\ln\\!\\dfrac{V_2}{V_1}$",
+      "optionB": "$W = nRT\\!\\left(\\dfrac{V_2 - V_1}{V_1}\\right)$",
+      "optionC": "$W = nRT(V_2 - V_1)$",
+      "optionD": "$W = \\dfrac{nRT}{V_2 - V_1}$",
+      "answer": "A",
+      "explanation": "For an isothermal process ($T =$ const), $P = nRT/V$. Work done by the gas:\n$$W = \\int_{V_1}^{V_2} P\\,dV = \\int_{V_1}^{V_2} \\frac{nRT}{V}\\,dV = nRT\\ln\\frac{V_2}{V_1}$$\nFor expansion $V_2 > V_1$, $\\ln(V_2/V_1) > 0$, so $W > 0$ (gas does positive work). Answer: (A).",
+      "topic": "Chapter 26: Laws of Thermodynamics",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 26"
+      ]
+    },
+    {
+      "id": "2da8617a-1f28-4f55-99bc-5f44a5acb09c",
+      "question": "For an ideal gas, $\\Delta U = 0$ in which process?",
+      "optionA": "Adiabatic",
+      "optionB": "Isobaric",
+      "optionC": "Isothermal",
+      "optionD": "Isochoric",
+      "answer": "C",
+      "explanation": "For an **ideal gas**, the internal energy $U$ depends only on temperature. Therefore:\n$$\\Delta U = nC_V\\,\\Delta T$$\n$\\Delta U = 0$ if and only if $\\Delta T = 0$, i.e., the process is **isothermal** (constant temperature). In an adiabatic process $T$ changes; in isobaric and isochoric processes $T$ generally changes too. Answer: (C).",
+      "topic": "Chapter 26: Laws of Thermodynamics",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 26"
+      ]
+    },
+    {
+      "id": "91cb00cd-6f52-4d9f-a08a-1d07f2bdb08c",
+      "question": "The efficiency of a Carnot engine working between temperatures $T_H$ (source) and $T_C$ (sink) is",
+      "optionA": "$\\eta = 1 - \\dfrac{T_H}{T_C}$",
+      "optionB": "$\\eta = \\dfrac{T_H - T_C}{T_H}$",
+      "optionC": "$\\eta = \\dfrac{T_H - T_C}{T_C}$",
+      "optionD": "$\\eta = 1 - \\dfrac{T_C^2}{T_H^2}$",
+      "answer": "B",
+      "explanation": "The Carnot efficiency is derived from the ratio of heat rejected to heat absorbed:\n$$\\eta = 1 - \\frac{Q_C}{Q_H} = 1 - \\frac{T_C}{T_H} = \\frac{T_H - T_C}{T_H}$$\nAll temperatures are **absolute** (Kelvin). Since $T_C < T_H$, $\\eta < 1$ — no heat engine can be 100% efficient (second law). Answer: (B).",
+      "topic": "Chapter 26: Laws of Thermodynamics",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 26"
+      ]
+    },
+    {
+      "id": "556fd61a-1833-46fe-adf1-17d5d7873f07",
+      "question": "Which statement correctly expresses the Kelvin–Planck form of the second law of thermodynamics?",
+      "optionA": "Heat cannot flow spontaneously from a cold body to a hot body.",
+      "optionB": "It is impossible to construct a heat engine that converts all the input heat into work in a cyclic process.",
+      "optionC": "Entropy of the universe always decreases.",
+      "optionD": "The efficiency of all heat engines is equal.",
+      "answer": "B",
+      "explanation": "The **Kelvin–Planck statement**: *It is impossible to construct a device that, operating in a cycle, produces no other effect than the absorption of heat from a single reservoir and the performance of an equivalent amount of work.*\n\nIn other words, no heat engine operating in a cycle can have 100% efficiency — some heat must always be rejected to a cold reservoir. Option A describes the Clausius statement (equivalent but different in form). Option C is incorrect (entropy increases or stays the same). Option D is false. Answer: (B).",
+      "topic": "Chapter 26: Laws of Thermodynamics",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 26"
+      ]
+    },
+    {
+      "id": "fb95dffe-29aa-4e9b-a40d-74c1b7af9310",
+      "question": "A Carnot engine operates between 227°C and 27°C. Its efficiency is",
+      "optionA": "40%",
+      "optionB": "50%",
+      "optionC": "60%",
+      "optionD": "80%",
+      "answer": "A",
+      "explanation": "$T_H = 227°C = 500\\,K$, $\\quad T_C = 27°C = 300\\,K$.\n$$\\eta = 1 - \\frac{T_C}{T_H} = 1 - \\frac{300}{500} = \\frac{200}{500} = 0.40 = 40\\%$$\nAnswer: (A).",
+      "topic": "Chapter 26: Laws of Thermodynamics",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 26"
+      ]
+    },
+    {
+      "id": "dbbbc74d-8534-48d7-9ae6-216046fa0bb4",
+      "question": "In a cyclic process, the net change in internal energy is",
+      "optionA": "positive",
+      "optionB": "negative",
+      "optionC": "zero",
+      "optionD": "depends on the path taken.",
+      "answer": "C",
+      "explanation": "**Internal energy** $U$ is a **state function** — it depends only on the thermodynamic state (temperature, pressure, volume), not on the path. In a **cyclic process**, the system returns to its initial state, so the final and initial states are identical. Therefore:\n$$\\Delta U_{\\text{cycle}} = U_{\\text{final}} - U_{\\text{initial}} = 0$$\nBy the first law: $\\Delta Q_{\\rm net} = W_{\\rm net}$ for a cyclic process. Answer: (C).",
+      "topic": "Chapter 26: Laws of Thermodynamics",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 26"
+      ]
+    },
+    {
+      "id": "916e91b3-672a-46f8-8208-5e3afa72812c",
+      "question": "Which of the following processes are irreversible?",
+      "optionA": "Free expansion of a gas into vacuum",
+      "optionB": "Slow isothermal expansion of an ideal gas",
+      "optionC": "Transfer of heat from a hot body to a cold body",
+      "optionD": "A Carnot cycle",
+      "answer": "A,C",
+      "explanation": "A process is **irreversible** if it cannot be reversed without leaving any change in the universe (entropy increases).\n\n- **A** ✓: Free expansion is spontaneous and highly irreversible — gas expands into vacuum without doing work; cannot spontaneously re-compress.\n- **B** ✗: A quasi-static isothermal expansion (infinitely slow, in equilibrium at each step) is **reversible** — the ideal limiting case.\n- **C** ✓: Spontaneous heat flow from hot to cold is irreversible (second law).\n- **D** ✗: A Carnot cycle is the ideal **reversible** cycle.\n\nAnswer: (A), (C).",
+      "topic": "Chapter 26: Laws of Thermodynamics",
+      "subtopic": "Objective II",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective II",
+        "Chapter 26"
+      ]
+    },
+    {
+      "id": "6fdc585e-7fc0-4b50-a727-c1beef663d3a",
+      "question": "For a process in which a gas expands adiabatically, which of the following are true?",
+      "optionA": "The temperature of the gas decreases.",
+      "optionB": "The internal energy of the gas decreases.",
+      "optionC": "The work done by the gas is positive.",
+      "optionD": "Heat is absorbed from the surroundings.",
+      "answer": "A,B,C",
+      "explanation": "In an adiabatic expansion: $\\Delta Q = 0$, volume increases, $W > 0$ (gas does work).\n\nFirst law: $\\Delta U = \\Delta Q - W = 0 - W = -W < 0$ (internal energy decreases).\nFor an ideal gas, $\\Delta U = nC_V\\Delta T$ → $\\Delta T < 0$ (temperature drops).\n\n- **A** ✓: Temperature decreases.\n- **B** ✓: Internal energy decreases.\n- **C** ✓: Work done by gas is positive (expansion).\n- **D** ✗: No heat exchange ($\\Delta Q = 0$) — adiabatic means thermally insulated.\n\nAnswer: (A), (B), (C).",
+      "topic": "Chapter 26: Laws of Thermodynamics",
+      "subtopic": "Objective II",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective II",
+        "Chapter 26"
+      ]
+    },
+    {
+      "id": "ec4a3d5f-c326-4ce3-b586-474d7cdde7c5",
+      "question": "Which of the following statements about entropy are correct?",
+      "optionA": "Entropy is a state function.",
+      "optionB": "Entropy of the universe increases in all natural (irreversible) processes.",
+      "optionC": "In a reversible process, the total entropy change of the universe is zero.",
+      "optionD": "Entropy can decrease in an isolated system.",
+      "answer": "A,B,C",
+      "explanation": "- **A** ✓: $S$ depends only on the thermodynamic state; $dS = \\delta Q_{\\rm rev}/T$ is an exact differential.\n- **B** ✓: Second law: $\\Delta S_{\\rm universe} \\geq 0$, with equality only for reversible processes. Natural processes are irreversible, so $\\Delta S_{\\rm universe} > 0$.\n- **C** ✓: For a reversible process, $\\Delta S_{\\rm system} + \\Delta S_{\\rm surroundings} = 0$ — entropy gained by one = entropy lost by the other.\n- **D** ✗: In an **isolated** system, entropy **cannot decrease** ($\\Delta S \\geq 0$). This is the second law.\n\nAnswer: (A), (B), (C).",
+      "topic": "Chapter 26: Laws of Thermodynamics",
+      "subtopic": "Objective II",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective II",
+        "Chapter 26"
+      ]
+    },
+    {
+      "id": "bdf7943c-0506-4588-8591-00773978664d",
+      "question": "A gas undergoes a cyclic process ABCA. Which of the following are always true?",
+      "optionA": "Net work done = area enclosed by the cycle on a $P$–$V$ diagram.",
+      "optionB": "Net heat absorbed = net work done.",
+      "optionC": "Internal energy change over the complete cycle is zero.",
+      "optionD": "The process must be reversible.",
+      "answer": "A,B,C",
+      "explanation": "- **A** ✓: On a $P$–$V$ diagram, $W = \\oint P\\,dV$ = area enclosed (positive if traversed clockwise).\n- **B** ✓: $\\Delta U = 0$ for a cycle, so by first law: $Q_{\\rm net} = W_{\\rm net}$.\n- **C** ✓: $U$ is a state function; complete cycle → $\\Delta U = 0$.\n- **D** ✗: A cycle can be irreversible (e.g., a cycle involving free expansion or friction). The Carnot cycle is the ideal reversible cycle, but general cycles are not required to be reversible.\n\nAnswer: (A), (B), (C).",
+      "topic": "Chapter 26: Laws of Thermodynamics",
+      "subtopic": "Objective II",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective II",
+        "Chapter 26"
+      ]
     }
   ]
 }
