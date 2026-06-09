@@ -31243,6 +31243,744 @@
         "Objective II",
         "Chapter 47"
       ]
+    },
+    {
+      "id": "3219a095-5d8e-4800-ab4b-cd3d331567fb",
+      "question": "The dimensions of pressure are",
+      "optionA": "$[\\rm MLT^{-2}]$",
+      "optionB": "$[\\rm ML^{-1}T^{-2}]$",
+      "optionC": "$[\\rm ML^2T^{-2}]$",
+      "optionD": "$[\\rm M^0LT^{-2}]$",
+      "answer": "B",
+      "explanation": "Pressure = Force / Area.\n$$[P] = \\frac{[\\rm Force]}{[\\rm Area]} = \\frac{\\rm MLT^{-2}}{\\rm L^2} = [\\rm ML^{-1}T^{-2}]$$\nThis is also the dimension of stress, Young's modulus, and bulk modulus. Answer: (B).",
+      "topic": "Chapter 1: Introduction to Physics",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 1",
+        "Objective I",
+        "Chapter 1"
+      ]
+    },
+    {
+      "id": "a00d1e60-8e29-4350-827e-0f071151ba46",
+      "question": "Which of the following pairs has the same dimensions?",
+      "optionA": "Work and power",
+      "optionB": "Torque and energy",
+      "optionC": "Force and impulse",
+      "optionD": "Linear momentum and angular momentum",
+      "answer": "B",
+      "explanation": "- Work: $[\\rm ML^2T^{-2}]$; Power: $[\\rm ML^2T^{-3}]$ — different.\n- **Torque**: $\\vec{\\tau}=\\vec{r}\\times\\vec{F}$: $[\\rm ML^2T^{-2}]$; **Energy**: $[\\rm ML^2T^{-2}]$ — **same**.\n- Force: $[\\rm MLT^{-2}]$; Impulse: $[\\rm MLT^{-1}]$ — different.\n- Linear momentum: $[\\rm MLT^{-1}]$; Angular momentum: $[\\rm ML^2T^{-1}]$ — different.\n\nAlthough torque and energy share the same dimensions, they are physically distinct (torque is a vector, energy is a scalar). Answer: (B).",
+      "topic": "Chapter 1: Introduction to Physics",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 1",
+        "Objective I",
+        "Chapter 1"
+      ]
+    },
+    {
+      "id": "c3e58d78-03a3-4c2c-8cb3-56a94d01ea55",
+      "question": "By dimensional analysis, the velocity of a wave on a stretched string is expected to depend on tension $T$ and linear mass density $\\mu$ as",
+      "optionA": "$v \\propto T\\mu$",
+      "optionB": "$v \\propto \\sqrt{T/\\mu}$",
+      "optionC": "$v \\propto T^2/\\mu$",
+      "optionD": "$v \\propto \\mu/T$",
+      "answer": "B",
+      "explanation": "Let $v = k\\,T^a\\mu^b$. Dimensions: $[\\rm LT^{-1}] = [\\rm MLT^{-2}]^a[\\rm ML^{-1}]^b$.\nMatching exponents:\n- M: $0 = a+b \\Rightarrow b=-a$\n- L: $1 = a-b = a+a = 2a \\Rightarrow a=\\tfrac12$\n- T: $-1 = -2a \\Rightarrow a=\\tfrac12$ ✓\n\nSo $v \\propto T^{1/2}\\mu^{-1/2} = \\sqrt{T/\\mu}$. This is the exact correct formula. Answer: (B).",
+      "topic": "Chapter 1: Introduction to Physics",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 1",
+        "Objective I",
+        "Chapter 1"
+      ]
+    },
+    {
+      "id": "666139ac-f3da-4dd6-a452-548ee7326276",
+      "question": "The number of significant figures in $6.020\\times10^{23}$ is",
+      "optionA": "2",
+      "optionB": "3",
+      "optionC": "4",
+      "optionD": "23",
+      "answer": "C",
+      "explanation": "Significant figures rules:\n- All non-zero digits are significant.\n- Zeros between non-zero digits are significant.\n- Trailing zeros **after** a decimal point are significant.\n\n$6.020\\times10^{23}$: digits are 6, 0, 2, 0. The zero between 6 and 2 is significant (rule 2), and the trailing zero after 2 is significant (rule 3). Total: **4** significant figures. The exponent ($10^{23}$) does not affect significant figures. Answer: (C).",
+      "topic": "Chapter 1: Introduction to Physics",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 1",
+        "Objective I",
+        "Chapter 1"
+      ]
+    },
+    {
+      "id": "627b08f3-1295-4c63-9464-ce87597901e0",
+      "question": "Which of the following cannot be used to check dimensional homogeneity of an equation?",
+      "optionA": "$v = u + at$",
+      "optionB": "$s = ut + \\tfrac{1}{2}at^2$",
+      "optionC": "$v^2 = u^2 + 2as$",
+      "optionD": "$\\sin\\theta = v/c$",
+      "answer": "D",
+      "explanation": "Dimensional analysis requires every term to have the same dimensions. However, **trigonometric functions, logarithms, and exponentials are dimensionless** — their arguments must be dimensionless, and their outputs are dimensionless. In $\\sin\\theta = v/c$, the right side has dimensions $[\\rm LT^{-1}/LT^{-1}]$ = dimensionless, and $\\sin\\theta$ is dimensionless. While the equation may be dimensionally consistent, dimensional analysis cannot verify or derive such a relation (it can only check it for polynomial power-law relations). Answer: (D).",
+      "topic": "Chapter 1: Introduction to Physics",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 1",
+        "Objective I",
+        "Chapter 1"
+      ]
+    },
+    {
+      "id": "ee931f7c-18f5-4633-a7e8-5e44e2f32105",
+      "question": "Which of the following quantities are dimensionless?",
+      "optionA": "Strain",
+      "optionB": "Refractive index",
+      "optionC": "Relative density (specific gravity)",
+      "optionD": "Velocity gradient",
+      "answer": "A,B,C",
+      "explanation": "- **Strain** = change in length / original length = $[\\rm L/L]$ = dimensionless ✓\n- **Refractive index** = speed of light in vacuum / speed in medium = $[\\rm LT^{-1}/LT^{-1}]$ = dimensionless ✓\n- **Relative density** = density of substance / density of water = $[\\rm ML^{-3}/ML^{-3}]$ = dimensionless ✓\n- **Velocity gradient** = $dv/dx$: $[\\rm LT^{-1}/L] = [\\rm T^{-1}]$ — has dimensions of inverse time (same as angular velocity). ✗\n\nAnswer: (A), (B), (C).",
+      "topic": "Chapter 1: Introduction to Physics",
+      "subtopic": "Objective II",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 1",
+        "Objective II",
+        "Chapter 1"
+      ]
+    },
+    {
+      "id": "a104a3c1-d06b-4af7-b8e3-9fd46b4bd33b",
+      "question": "In the equation $x = A\\sin(\\omega t + \\phi)$, which quantities must be dimensionless?",
+      "optionA": "$\\omega t$",
+      "optionB": "$\\phi$",
+      "optionC": "$A$",
+      "optionD": "$\\omega$",
+      "answer": "A,B",
+      "explanation": "The argument of a sine function must be dimensionless (in radians):\n- $\\omega t$: $[\\omega][\\rm T] = \\rm dimensionless \\Rightarrow [\\omega] = T^{-1}$ ✓ (the product is dimensionless)\n- $\\phi$ (phase constant): must also be dimensionless (in radians) ✓\n- $A$ (amplitude): has dimensions of displacement $[\\rm L]$ — not dimensionless ✗\n- $\\omega$ alone has dimensions $[\\rm T^{-1}]$ — not dimensionless ✗\n\nAnswer: (A), (B).",
+      "topic": "Chapter 1: Introduction to Physics",
+      "subtopic": "Objective II",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 1",
+        "Objective II",
+        "Chapter 1"
+      ]
+    },
+    {
+      "id": "1e0426b4-7607-41a7-9060-e0a4ec587cc8",
+      "question": "The centre of mass of a system of particles moves with constant velocity if",
+      "optionA": "no force acts on any individual particle",
+      "optionB": "the net external force on the system is zero",
+      "optionC": "the net internal force on the system is zero",
+      "optionD": "all particles move with the same velocity.",
+      "answer": "B",
+      "explanation": "The equation of motion for the centre of mass:\n$$\\vec{F}_{\\rm ext} = M\\vec{a}_{\\rm cm}$$\nInternal forces between particles cancel in pairs (Newton's third law), so only the **net external force** matters. If $\\vec{F}_{\\rm ext} = 0$, then $\\vec{a}_{\\rm cm} = 0$, so the CM moves at constant velocity (or stays at rest). Answer: (B).",
+      "topic": "Chapter 9: Centre of Mass, Linear Momentum, Collision",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 1",
+        "Objective I",
+        "Chapter 9"
+      ]
+    },
+    {
+      "id": "f8f9ce12-a6df-4a81-a9c1-d9e638cd6082",
+      "question": "A bomb at rest explodes into two fragments of masses $m$ and $2m$. The ratio of their speeds $v_1 : v_2$ is",
+      "optionA": "1:1",
+      "optionB": "1:2",
+      "optionC": "2:1",
+      "optionD": "4:1",
+      "answer": "C",
+      "explanation": "Initial momentum = 0 (bomb at rest). By conservation of momentum:\n$$m\\,v_1 = 2m\\,v_2 \\implies v_1 = 2v_2 \\implies v_1 : v_2 = 2:1$$\nThe lighter fragment moves faster. This is why gun recoil (heavy gun, light bullet) gives the bullet much higher speed. Answer: (C).",
+      "topic": "Chapter 9: Centre of Mass, Linear Momentum, Collision",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 1",
+        "Objective I",
+        "Chapter 9"
+      ]
+    },
+    {
+      "id": "c58191ff-25a7-46e0-b586-60ad19bc7e6f",
+      "question": "In a perfectly inelastic collision between two objects",
+      "optionA": "momentum is not conserved",
+      "optionB": "kinetic energy is conserved",
+      "optionC": "the objects stick together and move with a common velocity",
+      "optionD": "energy is not conserved.",
+      "answer": "C",
+      "explanation": "In a **perfectly inelastic collision**:\n- Momentum **is** conserved: $m_1v_1 + m_2v_2 = (m_1+m_2)V$.\n- The objects **stick together** and move with a common final velocity $V$.\n- Kinetic energy is **not** conserved — maximum KE is lost (converted to heat, sound, deformation).\n- Total energy (including internal) **is** conserved (first law of thermodynamics).\n\nAnswer: (C).",
+      "topic": "Chapter 9: Centre of Mass, Linear Momentum, Collision",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 1",
+        "Objective I",
+        "Chapter 9"
+      ]
+    },
+    {
+      "id": "67e7d470-1307-439a-952c-e337e3fb99a8",
+      "question": "In a perfectly elastic collision in one dimension between a moving mass $m$ and an identical stationary mass $m$, after the collision",
+      "optionA": "both masses move with half the initial speed",
+      "optionB": "the moving mass stops and the stationary mass moves with the initial speed",
+      "optionC": "both masses move in the same direction",
+      "optionD": "the moving mass continues with the same speed.",
+      "answer": "B",
+      "explanation": "For elastic collision between equal masses where one is initially at rest:\nUsing conservation of momentum and KE, and the elastic collision formulas:\n$$v_1' = \\frac{m_1-m_2}{m_1+m_2}u_1 = \\frac{m-m}{2m}u = 0$$\n$$v_2' = \\frac{2m_1}{m_1+m_2}u_1 = \\frac{2m}{2m}u = u$$\nThe first mass **stops** and the second moves with the original speed $u$. This is seen in Newton's cradle. Answer: (B).",
+      "topic": "Chapter 9: Centre of Mass, Linear Momentum, Collision",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 1",
+        "Objective I",
+        "Chapter 9"
+      ]
+    },
+    {
+      "id": "93e8b028-f9cb-4b5c-991a-c056e4a05a6d",
+      "question": "The coefficient of restitution $e$ is defined as",
+      "optionA": "ratio of total KE after to before collision",
+      "optionB": "ratio of relative speed of separation to relative speed of approach",
+      "optionC": "ratio of impulse to change in momentum",
+      "optionD": "ratio of final momentum to initial momentum",
+      "answer": "B",
+      "explanation": "The **coefficient of restitution**:\n$$e = \\frac{\\text{relative speed of separation}}{\\text{relative speed of approach}} = \\frac{v_2' - v_1'}{u_1 - u_2}$$\n- $e = 1$: perfectly elastic (no KE loss)\n- $e = 0$: perfectly inelastic (objects stick together)\n- $0 < e < 1$: partially elastic (real collisions)\n\nAnswer: (B).",
+      "topic": "Chapter 9: Centre of Mass, Linear Momentum, Collision",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 1",
+        "Objective I",
+        "Chapter 9"
+      ]
+    },
+    {
+      "id": "9086c1ac-6c91-4dc7-94f5-4c17537c19e2",
+      "question": "A particle of mass $m$ moves with momentum $p$. Its kinetic energy is",
+      "optionA": "$mp$",
+      "optionB": "$p^2/(2m)$",
+      "optionC": "$p/(2m)$",
+      "optionD": "$2mp^2$",
+      "answer": "B",
+      "explanation": "Kinetic energy $K = \\tfrac{1}{2}mv^2$. Since $p = mv \\Rightarrow v = p/m$:\n$$K = \\tfrac{1}{2}m\\!\\left(\\frac{p}{m}\\right)^2 = \\frac{p^2}{2m}$$\nThis is very useful: $K = p^2/(2m)$ relates KE directly to momentum without needing velocity. Answer: (B).",
+      "topic": "Chapter 9: Centre of Mass, Linear Momentum, Collision",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 1",
+        "Objective I",
+        "Chapter 9"
+      ]
+    },
+    {
+      "id": "908ce3ce-5b51-4087-95c6-85bfe6b1b53f",
+      "question": "Centre of mass of a uniform triangular lamina lies at",
+      "optionA": "the centroid (intersection of medians)",
+      "optionB": "the incentre (intersection of angle bisectors)",
+      "optionC": "the circumcentre (equidistant from vertices)",
+      "optionD": "the midpoint of the longest side.",
+      "answer": "A",
+      "explanation": "For a uniform body, the centre of mass coincides with the **centroid** (geometric centre). For a triangle, the centroid is the intersection of the three medians, located at $\\tfrac{1}{3}$ of the median length from the base. Its coordinates are the average of the vertices: $x_{\\rm cm} = (x_1+x_2+x_3)/3$, $y_{\\rm cm} = (y_1+y_2+y_3)/3$. Answer: (A).",
+      "topic": "Chapter 9: Centre of Mass, Linear Momentum, Collision",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 1",
+        "Objective I",
+        "Chapter 9"
+      ]
+    },
+    {
+      "id": "918fbc76-f9e3-4e93-932f-1fa23536be5f",
+      "question": "Which of the following are conserved in all types of collisions (elastic and inelastic)?",
+      "optionA": "Total linear momentum",
+      "optionB": "Total kinetic energy",
+      "optionC": "Total energy",
+      "optionD": "Velocity of centre of mass",
+      "answer": "A,C,D",
+      "explanation": "- **A** ✓: Linear momentum is always conserved (no external force during collision).\n- **B** ✗: KE is conserved only in **elastic** collisions; lost in inelastic ones.\n- **C** ✓: Total energy (KE + internal energy) is always conserved (first law).\n- **D** ✓: Since $\\vec{F}_{\\rm ext} \\approx 0$ during a brief collision, $\\vec{v}_{\\rm cm}$ is constant.\n\nAnswer: (A), (C), (D).",
+      "topic": "Chapter 9: Centre of Mass, Linear Momentum, Collision",
+      "subtopic": "Objective II",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 1",
+        "Objective II",
+        "Chapter 9"
+      ]
+    },
+    {
+      "id": "c0e74e04-8767-4934-a93f-48cdc32bfcb9",
+      "question": "A ball hits a wall and bounces back. Which of the following are correct?",
+      "optionA": "The momentum of the ball changes.",
+      "optionB": "The momentum of the wall changes.",
+      "optionC": "The total momentum of ball + wall is conserved.",
+      "optionD": "Kinetic energy of the ball is conserved if the collision is elastic.",
+      "answer": "A,B,C,D",
+      "explanation": "- **A** ✓: Ball's velocity reverses direction → momentum changes.\n- **B** ✓: By Newton's third law, the wall (and Earth) receives an equal and opposite impulse → its momentum changes (though the huge mass means negligible velocity change).\n- **C** ✓: Total momentum of the system (ball + wall/Earth) is conserved.\n- **D** ✓: If the wall is rigid and the collision is elastic ($e=1$), the ball bounces back with the same speed → KE is conserved.\n\nAnswer: (A), (B), (C), (D).",
+      "topic": "Chapter 9: Centre of Mass, Linear Momentum, Collision",
+      "subtopic": "Objective II",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 1",
+        "Objective II",
+        "Chapter 9"
+      ]
+    },
+    {
+      "id": "9122869c-3c8a-4ea1-a401-b42375538a8b",
+      "question": "Newton's law of gravitation states that the force between two point masses $m_1$ and $m_2$ separated by distance $r$ is",
+      "optionA": "$F = Gm_1m_2\\,r^2$",
+      "optionB": "$F = Gm_1m_2/r$",
+      "optionC": "$F = Gm_1m_2/r^2$",
+      "optionD": "$F = G(m_1+m_2)/r^2$",
+      "answer": "C",
+      "explanation": "Newton's law of universal gravitation:\n$$F = \\frac{Gm_1m_2}{r^2}$$\nwhere $G = 6.674\\times10^{-11}\\,\\rm N\\,m^2\\,kg^{-2}$ is the universal gravitational constant. The force is:\n- attractive (along the line joining the masses)\n- proportional to the product of masses\n- inversely proportional to the square of the distance\nAnswer: (C).",
+      "topic": "Chapter 11: Gravitation",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 1",
+        "Objective I",
+        "Chapter 11"
+      ]
+    },
+    {
+      "id": "6f9477bb-756e-4c07-89f6-beec786e16f7",
+      "question": "The escape velocity from the surface of the Earth (mass $M$, radius $R$) is",
+      "optionA": "$v_e = \\sqrt{GM/R}$",
+      "optionB": "$v_e = \\sqrt{2GM/R}$",
+      "optionC": "$v_e = 2\\sqrt{GM/R}$",
+      "optionD": "$v_e = GM/R^2$",
+      "answer": "B",
+      "explanation": "Escape velocity is found by setting total mechanical energy = 0 (just barely escapes to infinity):\n$$\\tfrac{1}{2}mv_e^2 - \\frac{GMm}{R} = 0 \\implies v_e = \\sqrt{\\frac{2GM}{R}}$$\nFor Earth: $v_e \\approx 11.2\\,\\rm km/s$. Note: $g = GM/R^2$, so $v_e = \\sqrt{2gR}$. Answer: (B).",
+      "topic": "Chapter 11: Gravitation",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 1",
+        "Objective I",
+        "Chapter 11"
+      ]
+    },
+    {
+      "id": "8514e9d6-c128-4956-b63b-6ea658857e29",
+      "question": "Kepler's third law states that for planets orbiting the Sun",
+      "optionA": "$T \\propto r$",
+      "optionB": "$T^2 \\propto r^3$",
+      "optionC": "$T \\propto r^2$",
+      "optionD": "$T^3 \\propto r^2$",
+      "answer": "B",
+      "explanation": "**Kepler's third law** (law of periods): The square of the orbital period $T$ is proportional to the cube of the semi-major axis $r$:\n$$T^2 \\propto r^3 \\quad \\text{or} \\quad \\frac{T^2}{r^3} = \\frac{4\\pi^2}{GM_{\\rm Sun}} = \\rm const.$$\nDerivation: for a circular orbit, gravitational force = centripetal force:\n$$\\frac{GMm}{r^2} = \\frac{mv^2}{r} = \\frac{m(2\\pi r/T)^2}{r} \\implies T^2 = \\frac{4\\pi^2 r^3}{GM}$$\nAnswer: (B).",
+      "topic": "Chapter 11: Gravitation",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 1",
+        "Objective I",
+        "Chapter 11"
+      ]
+    },
+    {
+      "id": "3c0287d2-cbd3-4902-bd31-c3531a8a4978",
+      "question": "The orbital speed of a satellite in a circular orbit of radius $r$ around Earth (mass $M$) is",
+      "optionA": "$v = \\sqrt{GM/r}$",
+      "optionB": "$v = \\sqrt{2GM/r}$",
+      "optionC": "$v = GM/r$",
+      "optionD": "$v = \\sqrt{GMr}$",
+      "answer": "A",
+      "explanation": "For circular orbit, gravitational force = centripetal force:\n$$\\frac{GMm}{r^2} = \\frac{mv^2}{r} \\implies v^2 = \\frac{GM}{r} \\implies v = \\sqrt{\\frac{GM}{r}}$$\nNote: $v = v_e/\\sqrt{2}$. As $r$ increases, orbital speed **decreases** — satellites closer to Earth orbit faster. For a near-Earth orbit ($r \\approx R_E$), $v \\approx 7.9\\,\\rm km/s$. Answer: (A).",
+      "topic": "Chapter 11: Gravitation",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 1",
+        "Objective I",
+        "Chapter 11"
+      ]
+    },
+    {
+      "id": "64cd675c-49af-4051-a25c-5a198cd5cfa8",
+      "question": "The gravitational potential energy of mass $m$ at height $h$ above the Earth (radius $R$, mass $M$) is",
+      "optionA": "$U = mgh$",
+      "optionB": "$U = -GMm/(R+h)$",
+      "optionC": "$U = GMm/(R+h)$",
+      "optionD": "$U = -GMm/R + mgh$",
+      "answer": "B",
+      "explanation": "The exact gravitational potential energy (with $U \\to 0$ as $r \\to \\infty$):\n$$U = -\\frac{GMm}{R+h}$$\nThe negative sign indicates a bound state. The approximation $U \\approx mgh$ holds only when $h \\ll R$:\n$$\\Delta U = -\\frac{GMm}{R+h} + \\frac{GMm}{R} \\approx \\frac{GMmh}{R^2} = mgh$$\nAnswer: (B).",
+      "topic": "Chapter 11: Gravitation",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 1",
+        "Objective I",
+        "Chapter 11"
+      ]
+    },
+    {
+      "id": "4fa405cf-52f0-49a2-b268-fe6416753be2",
+      "question": "At what altitude above the Earth is the gravitational acceleration $g$ reduced to $g/4$?",
+      "optionA": "$R_E$",
+      "optionB": "$2R_E$",
+      "optionC": "$R_E/2$",
+      "optionD": "$3R_E$",
+      "answer": "A",
+      "explanation": "Gravity at height $h$: $g_h = GM/(R+h)^2 = g\\,R^2/(R+h)^2$.\nSet $g_h = g/4$:\n$$\\frac{R^2}{(R+h)^2} = \\frac{1}{4} \\implies (R+h)^2 = 4R^2 \\implies R+h = 2R \\implies h = R$$\nSo at altitude $h = R_E$ (one Earth radius above the surface), $g$ is reduced to $g/4$. Answer: (A).",
+      "topic": "Chapter 11: Gravitation",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 1",
+        "Objective I",
+        "Chapter 11"
+      ]
+    },
+    {
+      "id": "c7c2dc80-7ed9-4954-a8ae-70c85317f952",
+      "question": "A geostationary satellite",
+      "optionA": "orbits at any altitude",
+      "optionB": "has an orbital period of 24 hours and orbits in the equatorial plane",
+      "optionC": "can orbit at any inclination",
+      "optionD": "moves faster than the Earth rotates.",
+      "answer": "B",
+      "explanation": "A **geostationary satellite** must:\n1. Have an orbital period equal to Earth's rotation period: **$T = 24$ hours** (more precisely, 23 h 56 min = sidereal day).\n2. Orbit in the **equatorial plane** (inclination = 0°) in the same direction as Earth's rotation.\n3. Orbit at the specific radius $r \\approx 42,\\!000\\,\\rm km$ ($\\approx 6.6\\,R_E$) where Kepler's third law gives $T = 24\\,\\rm h$.\n\nFrom Earth, it appears **stationary** — used for communication and weather satellites. Answer: (B).",
+      "topic": "Chapter 11: Gravitation",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 1",
+        "Objective I",
+        "Chapter 11"
+      ]
+    },
+    {
+      "id": "073db585-9082-4db3-9394-bfdac193d2d0",
+      "question": "Which of the following are correct about gravitational potential $V = -GM/r$?",
+      "optionA": "It is always negative.",
+      "optionB": "It increases (becomes less negative) as $r$ increases.",
+      "optionC": "At $r \\to \\infty$, $V \\to 0$.",
+      "optionD": "The gravitational field $g = -dV/dr$.",
+      "answer": "A,B,C,D",
+      "explanation": "- **A** ✓: $V = -GM/r < 0$ for all finite $r > 0$.\n- **B** ✓: As $r$ increases, $|V| = GM/r$ decreases, so $V$ increases toward zero.\n- **C** ✓: $\\lim_{r\\to\\infty} V = 0$ — the reference point for gravitational potential energy is at infinity.\n- **D** ✓: Gravitational field (force per unit mass) $g = -dV/dr = -GM/r^2 \\cdot (-1)\\cdot(-1)$... more precisely $\\vec{g} = -\\nabla V$; in 1D: $g = -dV/dr = -GM/r^2$ (directed inward).\n\nAnswer: (A), (B), (C), (D).",
+      "topic": "Chapter 11: Gravitation",
+      "subtopic": "Objective II",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 1",
+        "Objective II",
+        "Chapter 11"
+      ]
+    },
+    {
+      "id": "fafb9129-fbe5-4c72-9277-50fde4af929c",
+      "question": "Which of the following are correct about satellites?",
+      "optionA": "A satellite in a lower orbit has a higher speed.",
+      "optionB": "A satellite in a lower orbit has a shorter period.",
+      "optionC": "The total mechanical energy of a satellite is positive.",
+      "optionD": "For a circular orbit, the KE is half the magnitude of the PE.",
+      "answer": "A,B,D",
+      "explanation": "- **A** ✓: $v = \\sqrt{GM/r}$ — lower $r$ → higher $v$.\n- **B** ✓: $T \\propto r^{3/2}$ — lower $r$ → shorter $T$.\n- **C** ✗: Total energy $E = KE + PE = \\tfrac{1}{2}mv^2 - GMm/r = \\tfrac{GMm}{2r} - \\tfrac{GMm}{r} = -\\tfrac{GMm}{2r} < 0$. A bound orbit has **negative** total energy.\n- **D** ✓: For a circular orbit: $KE = GMm/(2r)$ and $|PE| = GMm/r = 2\\,KE$. This is the **virial theorem** for a $1/r^2$ force: $KE = -E = |PE|/2$.\n\nAnswer: (A), (B), (D).",
+      "topic": "Chapter 11: Gravitation",
+      "subtopic": "Objective II",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 1",
+        "Objective II",
+        "Chapter 11"
+      ]
+    },
+    {
+      "id": "ad810284-7385-4699-894e-e3ad006b1ff5",
+      "question": "Sound waves are",
+      "optionA": "transverse waves",
+      "optionB": "electromagnetic waves",
+      "optionC": "longitudinal mechanical waves",
+      "optionD": "transverse electromagnetic waves.",
+      "answer": "C",
+      "explanation": "Sound waves are **longitudinal mechanical waves** — the displacement of medium particles is along the direction of wave propagation (compressions and rarefactions). They require a material medium (cannot propagate in vacuum). Electromagnetic waves (light, radio) are transverse and do not need a medium. Answer: (C).",
+      "topic": "Chapter 16: Sound Waves",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 1",
+        "Objective I",
+        "Chapter 16"
+      ]
+    },
+    {
+      "id": "414341be-6b66-43c3-8675-a77d6e25e761",
+      "question": "The speed of sound in an ideal gas is given by",
+      "optionA": "$v = \\sqrt{RT/M}$",
+      "optionB": "$v = \\sqrt{\\gamma RT/M}$",
+      "optionC": "$v = \\sqrt{\\gamma P\\rho}$",
+      "optionD": "$v = \\sqrt{P/\\rho}$",
+      "answer": "B",
+      "explanation": "The speed of sound in an ideal gas (Laplace correction — adiabatic process since sound is fast):\n$$v = \\sqrt{\\frac{\\gamma P}{\\rho}} = \\sqrt{\\frac{\\gamma RT}{M}}$$\nwhere $\\gamma = C_p/C_v$, $R$ is the gas constant, $T$ is absolute temperature, and $M$ is molar mass. Newton originally used $\\sqrt{P/\\rho}$ (isothermal), which gave a value $\\approx 280\\,\\rm m/s$ for air — too low. Laplace's correction (using $\\gamma \\approx 1.4$) gives $\\approx 331\\,\\rm m/s$ at 0°C. Answer: (B).",
+      "topic": "Chapter 16: Sound Waves",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 1",
+        "Objective I",
+        "Chapter 16"
+      ]
+    },
+    {
+      "id": "83ba6d59-1e3e-456d-bc1e-6fec1fb98f41",
+      "question": "In a closed pipe (closed at one end), the fundamental frequency corresponds to a wavelength",
+      "optionA": "$\\lambda = L$",
+      "optionB": "$\\lambda = 2L$",
+      "optionC": "$\\lambda = 4L$",
+      "optionD": "$\\lambda = L/2$",
+      "answer": "C",
+      "explanation": "A **closed pipe** (closed at one end, open at the other):\n- Displacement node at the closed end, antinode at the open end.\n- Fundamental: $L = \\lambda/4 \\Rightarrow \\lambda = 4L$.\n- Harmonics: only odd harmonics present ($f_n = nv/(4L)$ for $n = 1, 3, 5, \\ldots$).\n\nAn **open pipe** has antinodes at both ends: $\\lambda = 2L$ for fundamental. Answer: (C).",
+      "topic": "Chapter 16: Sound Waves",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 1",
+        "Objective I",
+        "Chapter 16"
+      ]
+    },
+    {
+      "id": "964e741e-0937-45a9-b220-7d93f496d3d1",
+      "question": "Two tuning forks of frequencies 256 Hz and 260 Hz are sounded together. The number of beats heard per second is",
+      "optionA": "256",
+      "optionB": "260",
+      "optionC": "4",
+      "optionD": "516",
+      "answer": "C",
+      "explanation": "**Beats** are produced by the superposition of two waves of slightly different frequencies $f_1$ and $f_2$. The beat frequency:\n$$f_{\\rm beat} = |f_1 - f_2| = |260 - 256| = 4\\,\\rm Hz$$\nThe listener hears 4 loud-soft cycles per second. Beats are used to tune musical instruments. Answer: (C).",
+      "topic": "Chapter 16: Sound Waves",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 1",
+        "Objective I",
+        "Chapter 16"
+      ]
+    },
+    {
+      "id": "c3fcfcdb-157a-43c2-9747-b4328e22b804",
+      "question": "The Doppler effect predicts that when a source of sound approaches a stationary observer, the observed frequency is",
+      "optionA": "lower than the source frequency",
+      "optionB": "equal to the source frequency",
+      "optionC": "higher than the source frequency",
+      "optionD": "depends on the medium temperature.",
+      "answer": "C",
+      "explanation": "**Doppler effect** formula (source moving toward stationary observer):\n$$f' = f\\,\\frac{v}{v - v_s}$$\nSince $v > v - v_s$ (when $v_s > 0$), we get $f' > f$ — the observed frequency is **higher** than the source frequency. Conversely, when the source moves away: $f' = fv/(v+v_s) < f$. This explains the pitch change of a passing ambulance siren. Answer: (C).",
+      "topic": "Chapter 16: Sound Waves",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 1",
+        "Objective I",
+        "Chapter 16"
+      ]
+    },
+    {
+      "id": "d49c92db-533c-4697-ac67-13b5bb6058e8",
+      "question": "The intensity level of a sound is measured in decibels as $\\beta = 10\\log_{10}(I/I_0)$. If the intensity doubles, the increase in $\\beta$ is approximately",
+      "optionA": "$6\\,\\rm dB$",
+      "optionB": "$3\\,\\rm dB$",
+      "optionC": "$10\\,\\rm dB$",
+      "optionD": "$20\\,\\rm dB$",
+      "answer": "B",
+      "explanation": "If intensity doubles ($I \\to 2I$):\n$$\\Delta\\beta = 10\\log_{10}\\!\\left(\\frac{2I}{I}\\right) = 10\\log_{10}2 = 10\\times 0.301 \\approx 3\\,\\rm dB$$\nKey decibel rules: doubling intensity → +3 dB; 10× intensity → +10 dB; 100× intensity → +20 dB. Answer: (B).",
+      "topic": "Chapter 16: Sound Waves",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 1",
+        "Objective I",
+        "Chapter 16"
+      ]
+    },
+    {
+      "id": "dfb70f5d-6637-48ce-b386-38a1527d878a",
+      "question": "Standing waves are formed in a string by superposition of",
+      "optionA": "two waves of same frequency moving in the same direction",
+      "optionB": "two waves of different frequencies moving in opposite directions",
+      "optionC": "two waves of same frequency, amplitude, and speed moving in opposite directions",
+      "optionD": "two waves of same amplitude moving in the same direction.",
+      "answer": "C",
+      "explanation": "**Standing waves** result from the superposition of two waves with the same frequency, amplitude, and speed traveling in **opposite** directions. Mathematically:\n$$y_1 = A\\sin(kx - \\omega t), \\quad y_2 = A\\sin(kx + \\omega t)$$\n$$y = y_1 + y_2 = 2A\\sin(kx)\\cos(\\omega t)$$\nThis gives nodes (zero amplitude) at $kx = n\\pi$ and antinodes (max amplitude $2A$) at $kx = (n+\\tfrac{1}{2})\\pi$. Answer: (C).",
+      "topic": "Chapter 16: Sound Waves",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 1",
+        "Objective I",
+        "Chapter 16"
+      ]
+    },
+    {
+      "id": "846da6b1-5b94-425d-8445-7de766650135",
+      "question": "Which of the following factors affect the speed of sound in a gas?",
+      "optionA": "Temperature of the gas",
+      "optionB": "Nature of the gas (value of $\\gamma$ and molar mass $M$)",
+      "optionC": "Pressure of the gas (at constant temperature)",
+      "optionD": "Humidity (water vapour content)",
+      "answer": "A,B,D",
+      "explanation": "Speed of sound: $v = \\sqrt{\\gamma RT/M}$.\n- **A** ✓: $v \\propto \\sqrt{T}$ — speed increases with temperature.\n- **B** ✓: $\\gamma$ and $M$ both appear. For example, He ($M=4$, $\\gamma=5/3$) has much higher sound speed than air.\n- **C** ✗: At constant $T$, $P/\\rho = RT/M$ is constant (ideal gas) → pressure alone doesn't affect speed.\n- **D** ✓: Moist air has a lower effective molar mass than dry air (water vapour $M=18$ replaces heavier $N_2$/$O_2$) → slightly higher $v$.\n\nAnswer: (A), (B), (D).",
+      "topic": "Chapter 16: Sound Waves",
+      "subtopic": "Objective II",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 1",
+        "Objective II",
+        "Chapter 16"
+      ]
+    },
+    {
+      "id": "1ccceb90-96e0-4837-b9b3-bec087437f6f",
+      "question": "For a string fixed at both ends vibrating in its $n$th harmonic, which of the following are correct?",
+      "optionA": "There are $n$ antinodes.",
+      "optionB": "The frequency is $f_n = nv/(2L)$.",
+      "optionC": "There are $n+1$ nodes.",
+      "optionD": "The wavelength is $\\lambda_n = 2L/n$.",
+      "answer": "A,B,C,D",
+      "explanation": "For a string of length $L$ fixed at both ends, the $n$th harmonic:\n- Nodes at both ends + $(n-1)$ interior nodes = **$n+1$ nodes total** ✓ (C)\n- Antinodes: $n$ antinodes ✓ (A)\n- Wavelength: $L = n\\lambda_n/2 \\Rightarrow \\lambda_n = 2L/n$ ✓ (D)\n- Frequency: $f_n = v/\\lambda_n = nv/(2L)$ ✓ (B)\n\nAll four are correct. Answer: (A), (B), (C), (D).",
+      "topic": "Chapter 16: Sound Waves",
+      "subtopic": "Objective II",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 1",
+        "Objective II",
+        "Chapter 16"
+      ]
+    },
+    {
+      "id": "50730ecd-5d38-4da5-a1e2-f6cfd86049c3",
+      "question": "Luminous flux is measured in",
+      "optionA": "candela",
+      "optionB": "lumen",
+      "optionC": "lux",
+      "optionD": "watt.",
+      "answer": "B",
+      "explanation": "SI units in photometry:\n- **Luminous intensity**: candela (cd) — fundamental SI unit.\n- **Luminous flux**: **lumen (lm)** = cd·sr (candela × steradian). It measures total light emitted per unit time, weighted by human eye sensitivity.\n- **Illuminance**: lux (lx) = lm/m² — flux per unit area.\n- Watt is radiometric (all radiation), not photometric (visible only).\n\nAnswer: (B).",
+      "topic": "Chapter 22: Photometry",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 1",
+        "Objective I",
+        "Chapter 22"
+      ]
+    },
+    {
+      "id": "e7612562-982b-4bc0-9e90-5053bc4cd679",
+      "question": "The illuminance (E) on a surface due to a point source of luminous intensity $I$ at distance $r$ varies as",
+      "optionA": "$E \\propto r$",
+      "optionB": "$E \\propto r^2$",
+      "optionC": "$E \\propto 1/r^2$",
+      "optionD": "$E \\propto 1/r$",
+      "answer": "C",
+      "explanation": "**Inverse square law of photometry**: the luminous flux from a point source spreads over a sphere of area $4\\pi r^2$. The illuminance (lux = lm/m²) on a surface perpendicular to the rays:\n$$E = \\frac{I}{r^2}$$\nSo $E \\propto 1/r^2$ — doubling the distance quarters the illuminance. This is analogous to the inverse-square law for gravitational/electric fields. Answer: (C).",
+      "topic": "Chapter 22: Photometry",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 1",
+        "Objective I",
+        "Chapter 22"
+      ]
+    },
+    {
+      "id": "83775cf9-95e0-4474-9aa9-eebbed1d793a",
+      "question": "The luminous intensity is related to luminous flux $\\Phi$ by",
+      "optionA": "$I = \\Phi \\cdot \\Omega$",
+      "optionB": "$I = \\Phi / \\Omega$",
+      "optionC": "$I = \\Phi + \\Omega$",
+      "optionD": "$I = \\Omega / \\Phi$",
+      "answer": "B",
+      "explanation": "**Luminous intensity** $I$ is the luminous flux per unit solid angle:\n$$I = \\frac{d\\Phi}{d\\Omega} \\quad \\text{or} \\quad I = \\frac{\\Phi}{\\Omega}$$\nwhere $\\Phi$ is the total luminous flux (lm) and $\\Omega$ is the solid angle (steradian, sr). Units: lm/sr = **candela** (cd). A uniform point source of intensity $I$ emits total flux $\\Phi = 4\\pi I$ lm (over full $4\\pi$ sr). Answer: (B).",
+      "topic": "Chapter 22: Photometry",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 1",
+        "Objective I",
+        "Chapter 22"
+      ]
+    },
+    {
+      "id": "4c784217-9a24-4106-b164-317e777f514d",
+      "question": "Lambert's cosine law states that for a surface element, the luminous intensity in a direction making angle $\\theta$ with the normal is",
+      "optionA": "$I = I_0/\\cos\\theta$",
+      "optionB": "$I = I_0\\cos^2\\theta$",
+      "optionC": "$I = I_0\\cos\\theta$",
+      "optionD": "$I = I_0\\sin\\theta$",
+      "answer": "C",
+      "explanation": "**Lambert's cosine law**: the luminous intensity (or radiant intensity) emitted from a diffuse (Lambertian) surface varies as the cosine of the angle from the normal:\n$$I(\\theta) = I_0\\cos\\theta$$\nwhere $I_0$ is the intensity in the normal direction. This also means the illuminance on an inclined surface:\n$$E = \\frac{I\\cos\\theta}{r^2}$$\nThe cosine factor accounts for the oblique incidence — the effective area presented to incoming light is $A\\cos\\theta$. Answer: (C).",
+      "topic": "Chapter 22: Photometry",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 1",
+        "Objective I",
+        "Chapter 22"
+      ]
+    },
+    {
+      "id": "71cf3a40-ab18-4ad7-8b00-4b766216eabe",
+      "question": "A point source of luminous intensity $I$ illuminates a small surface element placed at distance $r$ and tilted at angle $\\theta$ to the line joining source to surface. The illuminance is",
+      "optionA": "$E = I/r^2$",
+      "optionB": "$E = I\\cos\\theta/r^2$",
+      "optionC": "$E = I/(r^2\\cos\\theta)$",
+      "optionD": "$E = I\\sin\\theta/r^2$",
+      "answer": "B",
+      "explanation": "Illuminance $E$ combines the inverse-square law and Lambert's cosine law:\n$$E = \\frac{I\\cos\\theta}{r^2}$$\nHere $\\theta$ is the angle between the incident light direction and the normal to the surface. When $\\theta = 0$ (surface perpendicular to rays): $E = I/r^2$ (maximum). When $\\theta = 90°$: $E = 0$ (grazing incidence). Answer: (B).",
+      "topic": "Chapter 22: Photometry",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 1",
+        "Objective I",
+        "Chapter 22"
+      ]
+    },
+    {
+      "id": "ef0724f2-541f-47fc-9c63-ce8c9178fd83",
+      "question": "Which of the following are correct about photometry?",
+      "optionA": "Luminous flux accounts for the sensitivity of the human eye to different wavelengths.",
+      "optionB": "The candela is defined using a specific light source at the solidification temperature of platinum.",
+      "optionC": "Illuminance decreases with the square of the distance from a point source.",
+      "optionD": "Luminous efficacy (lm/W) measures how efficiently a source converts power into visible light.",
+      "answer": "A,C,D",
+      "explanation": "- **A** ✓: Luminous flux is weighted by the **luminosity function** $V(\\lambda)$ — the eye's relative sensitivity — so it measures perceived brightness, not raw radiometric power.\n- **B** ✗: The candela was originally defined that way (pre-1979), but the modern definition (since 1979, revised 2019) defines the candela in terms of the luminous efficacy of radiation at 540 THz ($= 683\\,\\rm lm/W$).\n- **C** ✓: Inverse square law: $E = I/r^2$.\n- **D** ✓: Luminous efficacy (lm/W) quantifies conversion efficiency of electrical power to visible light. Incandescent: $\\sim 10\\,\\rm lm/W$; LED: $\\sim 100\\,\\rm lm/W$.\n\nAnswer: (A), (C), (D).",
+      "topic": "Chapter 22: Photometry",
+      "subtopic": "Objective II",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 1",
+        "Objective II",
+        "Chapter 22"
+      ]
+    },
+    {
+      "id": "29600f79-5423-417e-9362-c52354bffb3f",
+      "question": "Which of the following are true about the units in photometry?",
+      "optionA": "Lux is the SI unit of illuminance (lm/m²).",
+      "optionB": "One lumen equals one candela per steradian.",
+      "optionC": "Luminous intensity in candela is a base SI unit.",
+      "optionD": "The foot-candle is an imperial unit of luminance.",
+      "answer": "A,B,C",
+      "explanation": "- **A** ✓: $1\\,\\rm lux = 1\\,\\rm lm/m^2$. Lux measures illuminance (flux received per unit area).\n- **B** ✓: By definition, $1\\,\\rm lm = 1\\,\\rm cd\\cdot sr$, so $1\\,\\rm cd = 1\\,\\rm lm/sr$.\n- **C** ✓: The **candela (cd)** is one of the 7 base SI units (alongside kg, m, s, A, K, mol).\n- **D** ✗: The foot-candle ($\\rm fc$) is an imperial unit of **illuminance** ($1\\,\\rm fc = 1\\,\\rm lm/ft^2 = 10.76\\,\\rm lux$), not luminance. Luminance (brightness per area) is measured in $\\rm cd/m^2$ (nit) or $\\rm cd/ft^2$ (foot-lambert).\n\nAnswer: (A), (B), (C).",
+      "topic": "Chapter 22: Photometry",
+      "subtopic": "Objective II",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 1",
+        "Objective II",
+        "Chapter 22"
+      ]
     }
   ]
 }
