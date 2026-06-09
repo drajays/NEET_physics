@@ -26557,7 +26557,7 @@
       "optionC": "aperture of the pupil",
       "optionD": "size of the image formed on the retina.",
       "answer": "D",
-      "explanation": "",
+      "explanation": "**Perception of size** is determined by what the visual cortex receives—and that is the size of the image cast on the retina. The physical size of the object (A) and its distance (B) are not directly sensed; they influence perception only through their joint effect on retinal image size. The pupil aperture (C) regulates light intensity, not image size. The brain therefore judges an object as large or small based solely on (D), the **size of its retinal image**. Answer: (D).",
       "tags": [
         "HC Verma Vol 1",
         "Objective I",
@@ -26575,7 +26575,7 @@
       "optionC": "at about 25 cm from the eye",
       "optionD": "at about 1 m from the eye.",
       "answer": "A",
-      "explanation": "",
+      "explanation": "**Accommodation** is achieved by the ciliary muscles contracting, which lets the lens bulge (become more convex) and thereby reduces its focal length to focus nearby objects. When the object is **far away** (ideally at infinity), the ciliary muscles are completely relaxed and the lens assumes its flattest natural shape—this requires **no muscular effort** whatsoever. Moving the object closer requires progressively greater muscular contraction and hence greater strain. The least strained state is therefore when the eye is focused on an object as far away as possible. Answer: (A).",
       "tags": [
         "HC Verma Vol 1",
         "Objective I",
@@ -26593,7 +26593,7 @@
       "optionC": "the eye is not able to decrease the distance between the eye-lens and the retina beyond a limit",
       "optionD": "the eye is not able to decrease the focal length beyond a limit.",
       "answer": "D",
-      "explanation": "",
+      "explanation": "The eye focuses by changing lens curvature (via ciliary muscles)—it **cannot** change the eye-lens-to-retina distance (C is wrong). To see a closer object, the focal length must be reduced (lens made more convex). There is a **minimum focal length** the lens can achieve (muscles at full contraction). For any object closer than ~25 cm, the required focal length is shorter than this physiological minimum—the eye simply cannot accommodate enough. Note: option A is wrong (the 25 cm is the near point, not the focal length, which is ~2 cm); option B is wrong (the retina is ~2 cm from the lens). Answer: (D).",
       "tags": [
         "HC Verma Vol 1",
         "Objective I",
@@ -26611,7 +26611,7 @@
       "optionC": "The radii of curvature of the eye-lens.",
       "optionD": "The image-distance from the eye-lens.",
       "answer": "D",
-      "explanation": "",
+      "explanation": "When the eye looks at objects at varying distances it **accommodates**: the ciliary muscles adjust lens curvature, changing the focal length (A changes), and the object-distance varies by definition (B changes), so the radii of curvature change too (C changes). What does **not** change is the anatomical distance from the lens to the retina—the retina is a fixed structure. Regardless of how much the lens is reshaped, the image must always form at the retina, so the **image-distance** = (lens-to-retina distance) remains constant. Answer: (D).",
       "tags": [
         "HC Verma Vol 1",
         "Objective I",
@@ -26629,7 +26629,7 @@
       "optionC": "25 cm to 300 cm",
       "optionD": "18 cm to 300 cm",
       "answer": "B",
-      "explanation": "",
+      "explanation": "Two limits determine the range of clear vision:\n\n**Near point** (closest clear distance) depends on the **maximum accommodation**—the minimum focal length the eye can achieve. Stronger muscles squeeze the lens more → smaller $f_{\\min}$ → nearer near point. B's near point shifts inward, say to 18 cm.\n\n**Far point** (farthest clear distance) depends on the **relaxed state** of the lens (minimum accommodation). At full relaxation the focal length is maximum, fixed by the eyeball geometry—not by muscle strength. Since all parameters other than muscle strength are identical to A, B's far point remains 200 cm.\n\nRange for B: **18 cm to 200 cm**. Answer: (B).",
       "tags": [
         "HC Verma Vol 1",
         "Objective I",
@@ -26647,7 +26647,7 @@
       "optionC": "> x",
       "optionD": "= 2x.",
       "answer": "A",
-      "explanation": "",
+      "explanation": "When the eye is **fully relaxed** (viewing an object at infinity), the incoming rays are parallel. By the thin-lens formula with $u \\to \\infty$:\n$$\\frac{1}{v} - \\frac{1}{\\infty} = \\frac{1}{f} \\implies f = v = x$$\nThe image must fall on the retina, which is at distance $x$ from the lens. This is the state of **maximum focal length** (zero accommodation, muscles fully relaxed), so $f_{\\max} = x$. Answer: (A).",
       "tags": [
         "HC Verma Vol 1",
         "Objective I",
@@ -26665,7 +26665,7 @@
       "optionC": "if his vision is normal",
       "optionD": "in each of these cases",
       "answer": "D",
-      "explanation": "",
+      "explanation": "A converging lens of focal length $f = +1$ m forms a **real image** for any object placed **beyond** $f$ (i.e., at $u > 1$ m). A real image forms on the transmission side of the lens—between the lens and the eye (or even behind the eye). The eye cannot view a real image formed at or behind its own lens position; it can only view **virtual images**, which a converging lens produces only for objects placed **within** $f$ (i.e., $u < 1$ m). Therefore, **for any object beyond 1 m**, the glasses form a real image that the eye cannot use, and the person cannot see that object clearly—regardless of whether the person is myopic, hyperopic, or emmetropic. Answer: (D).",
       "tags": [
         "HC Verma Vol 1",
         "Objective I",
@@ -26683,7 +26683,7 @@
       "optionC": "on f as well as u",
       "optionD": "neither on f nor on u.",
       "answer": "C",
-      "explanation": "",
+      "explanation": "For a simple magnifying glass (object at distance $u$, image at distance $v$):\n$$m = \\frac{D}{u}$$\nThis appears to involve only $u$. However, the lens formula $\\dfrac{1}{f} = \\dfrac{1}{v} + \\dfrac{1}{u}$ (signs omitted for clarity) couples $u$, $v$, and $f$—once $f$ is fixed, the image position $v$ is determined by $u$. Standard results:\n\n- Image at infinity (eye relaxed): $u = f$, giving $m = D/f$ — depends on $f$ only.\n- Image at near point $D$ (eye accommodated): $m = 1 + D/f$ — depends on $f$ only.\n- General position: $m = D/u$ — depends on $u$.\n\nIn general, both $f$ (which sets the useful object-distance range $0 < u \\le f$) and $u$ (chosen by the user within that range) determine $m$. Answer: (C).",
       "tags": [
         "HC Verma Vol 1",
         "Objective I",
@@ -26701,7 +26701,7 @@
       "optionC": "the aperture of the lens",
       "optionD": "the object size.",
       "answer": "B",
-      "explanation": "",
+      "explanation": "The angular magnification of a simple microscope is $m = D/f$ (image at infinity) or $m = 1 + D/f$ (image at near point). In both formulae, **smaller focal length → larger magnification**. Since power $P = 1/f$, a smaller $f$ means a **higher power** lens. Aperture (C) affects resolution and light-gathering but not magnification; object size (D) is a property of the specimen. Answer: (B).",
       "tags": [
         "HC Verma Vol 1",
         "Objective I",
@@ -26719,7 +26719,7 @@
       "optionC": "1",
       "optionD": "$ 0 \\cdot 2 $.",
       "answer": "C",
-      "explanation": "",
+      "explanation": "Without the microscope, the man views the object at his near point $D = 25$ cm; the angle subtended is $\\theta_0 = h/25$.\n\nA 5× microscope has $m = 1 + D/f = 5 \\Rightarrow f = D/4 = 6.25$ cm. When placed immediately in front of the eye, the object is now at $u = 25$ cm from the lens ($u > f$). Applying the lens formula:\n$$\\frac{1}{v} = \\frac{1}{f} - \\frac{1}{u} = \\frac{1}{6.25} - \\frac{1}{25} = \\frac{4-1}{25} = \\frac{3}{25} \\implies v = \\frac{25}{3}\\text{ cm (real)}$$\nImage size: $h' = h \\cdot v/u = h \\cdot \\dfrac{25/3}{25} = h/3$.\n\nAngle at eye: $\\theta = h'/v = \\dfrac{h/3}{25/3} = \\dfrac{h}{25} = \\theta_0$.\n\nThe angular magnification $= \\theta/\\theta_0 = 1$. The microscope provides **no angular gain** because the object, fixed at the near point, is beyond the focal length—the lens does not act as a magnifying glass in this configuration. Answer: (C).",
       "tags": [
         "HC Verma Vol 1",
         "Objective I",
@@ -26737,7 +26737,7 @@
       "optionC": "erect",
       "optionD": "inverted.",
       "answer": "A,D",
-      "explanation": "",
+      "explanation": "The eye lens is a converging lens; the object (external world) is at a finite distance beyond the focal length. The converging lens forms a **real** image (A)—light actually converges at the retina. For a converging lens, the real image is **inverted** (D): top of the object maps to the bottom of the image and vice versa. The brain has learned to invert this image so our perceived world is upright. Options B (virtual) and C (erect) are incorrect for a real image formed by a converging lens. Answer: (A), (D).",
       "tags": [
         "HC Verma Vol 1",
         "Objective II",
@@ -26755,7 +26755,7 @@
       "optionC": "Astronomical telescope",
       "optionD": "Galilean telescope",
       "answer": "A,D",
-      "explanation": "",
+      "explanation": "- **Simple microscope (A)**: A single converging lens with the object inside the focal length produces a **virtual, erect, magnified** image. ✓  \n- **Compound microscope (B)**: The objective forms a real, inverted intermediate image; the eyepiece magnifies it to give a virtual but **still inverted** final image. ✗  \n- **Astronomical (Keplerian) telescope (C)**: Objective gives real inverted intermediate image; eyepiece gives virtual but **inverted** final image. ✗  \n- **Galilean telescope (D)**: Uses a **diverging eyepiece** that intercepts the converging cone from the objective before it forms a real intermediate image, producing a **virtual, erect** final image—the key advantage for terrestrial use. ✓  \nAnswer: (A), (D).",
       "tags": [
         "HC Verma Vol 1",
         "Objective II",
@@ -26773,7 +26773,7 @@
       "optionC": "strained for objects at short distances only",
       "optionD": "unstrained for all distances.",
       "answer": "A",
-      "explanation": "",
+      "explanation": "A normal eye has $f_{\\max} = x$ (retina distance), so it focuses parallel rays (object at ∞) with zero strain. Here $f_{\\max} > x$. At **full relaxation** the focal length is $f_{\\max} > x$: parallel rays converge **behind** the retina, giving a blurred image even for infinitely distant objects. The eye must **strain the muscles** (contract ciliary muscles to reduce $f$ from $f_{\\max}$ to $x$) even to see something at infinity. For closer objects the required $f$ is even smaller—more strain still. There is **no distance** at which the eye can relax completely. The eye is **always strained**. Answer: (A).",
       "tags": [
         "HC Verma Vol 1",
         "Objective II",
@@ -26791,7 +26791,7 @@
       "optionC": "If the far point is 1 m away from the eye, divergent lens should be used.",
       "optionD": "If the near point is 1 m away from the eye, divergent lens should be used.",
       "answer": "A,C",
-      "explanation": "",
+      "explanation": "- **A**: Far point moves farther (myopia less severe) → less correction needed → **reduce the magnitude** of the diverging lens power. ✓  \n- **B**: Near point moves farther (hyperopia more severe) → **more** converging power needed, not less. ✗  \n- **C**: Far point = 1 m → myopia → the eye cannot see beyond 1 m → needs a **diverging** (negative) lens to shift the apparent far point to infinity. ✓  \n- **D**: Near point = 1 m → hyperopia → needs a **converging** (positive) lens, not diverging. ✗  \nAnswer: (A), (C).",
       "tags": [
         "HC Verma Vol 1",
         "Objective II",
@@ -26809,7 +26809,7 @@
       "optionC": "$ f_{0} < L < 2f_{0} $",
       "optionD": "L > 2f_{0}.",
       "answer": "B,D",
-      "explanation": "",
+      "explanation": "In a compound microscope the object sits just outside the objective's focal length ($u$ slightly $> f_0$), and the objective forms a real, magnified, inverted intermediate image.\n\n**Why B ($L > u$):** The image formed by the objective is at $v_0 = \\dfrac{u f_0}{u - f_0}$. Since $u > f_0$ (but small), $v_0 \\gg u$, so $v_0 > u$. This image must lie inside the tube ($v_0 < L$), giving $L > v_0 > u$. ✓\n\n**Why D ($L > 2f_0$):** For a microscope, high magnification requires $f_0 < u < 2f_0$, which places the intermediate image at $v_0 > 2f_0$. Since $v_0 < L$, we need $L > 2f_0$. ✓\n\nOptions A ($L < u$) and C ($f_0 < L < 2f_0$) would prevent the intermediate image from forming inside the tube. Answer: (B), (D).",
       "tags": [
         "HC Verma Vol 1",
         "Objective II",
@@ -26827,7 +26827,7 @@
       "optionC": "remains constant whether the average refractive index increases or decreases",
       "optionD": "has no relation with average refractive index.",
       "answer": "A",
-      "explanation": "",
+      "explanation": "For a thin prism (small angle $A$), the angular dispersion is:\n$$\\delta_v - \\delta_r = (\\mu_v - \\mu_r)\\,A$$\nThe difference $\\mu_v - \\mu_r$ is not independent of the average refractive index $\bar\\mu$: for most optical glasses, a higher $\bar\\mu$ is accompanied by a larger spread $\\mu_v - \\mu_r$ (i.e., more dispersive glass also tends to have higher average $\\mu$). Consequently, angular dispersion **increases** as the average refractive index of the prism material increases. Answer: (A).",
       "tags": [
         "HC Verma Vol 1",
         "Objective I",
@@ -26844,8 +26844,8 @@
       "optionB": "decreases",
       "optionC": "does not change",
       "optionD": "may increase or decrease depending on whether the angle of the prism is less than or greater than $ 60^{\\circ} $.",
-      "answer": "B",
-      "explanation": "",
+      "answer": "A",
+      "explanation": "**Correction: the bank answer B is wrong; the correct answer is A (increases).**\n\nDispersive power $\\omega = \\dfrac{\\mu_v - \\mu_r}{\\mu_y - 1}$ uses $\\mu$ values *relative to the surrounding medium*.\n\nIn **air**: $\\omega_{\\text{air}} = \\dfrac{n_v - n_r}{n_y - 1}$ (e.g.\\ $\u0007pprox 0.04/0.50 = 0.08$).\n\nIn **water** ($n_w \u0007pprox 1.33$), the effective refractive indices are $n_i/n_w$, so:\n$$\\omega_{\\text{water}} = \\frac{n_v/n_w - n_r/n_w}{n_y/n_w - 1} = \\frac{n_v - n_r}{n_y - n_w}$$\nSince $n_y - n_w \u0007pprox 1.50 - 1.33 = 0.17 \\ll n_y - 1 = 0.50$, the denominator is much smaller, making $\\omega_{\\text{water}} \u0007pprox 0.04/0.17 \u0007pprox 0.24 \\gg \\omega_{\\text{air}}$.\n\nDispersive power **increases** substantially when the prism is immersed in water (the \"contrast\" between glass and medium is reduced in the mean, but the chromatic contrast shrinks proportionally less). Answer: (A).",
       "tags": [
         "HC Verma Vol 1",
         "Objective I",
@@ -26863,7 +26863,7 @@
       "optionC": "$ 2\\delta $",
       "optionD": "$ 3\\delta $.",
       "answer": "B",
-      "explanation": "",
+      "explanation": "Each prism can be oriented either **apex up** (producing deviation $+\\delta$) or **apex down** (acting as an inverted prism, producing $-\\delta$). The net deviation from three such prisms is the algebraic sum of their individual deviations.\n\nTo minimise the total deviation, orient two prisms in opposition: one up ($+\\delta$) + one down ($-\\delta$) = $0$. The third must be oriented in some direction, giving $\\pm\\delta$. So the **minimum deviation in magnitude** is $\\delta$.\n\n(A value of 0 is impossible with three identical prisms since any pairing of all three cannot simultaneously cancel—one will always be left over.) Answer: ($\\delta$) i.e. Answer: (B).",
       "tags": [
         "HC Verma Vol 1",
         "Objective I",
@@ -26881,7 +26881,7 @@
       "optionC": "B is correct but A is wrong.",
       "optionD": "Both A and B are correct.",
       "answer": "D",
-      "explanation": "",
+      "explanation": "**Line spectra** consist of sharp, discrete spectral lines arising from transitions of **electrons between quantised energy levels in atoms**—each line corresponds to a specific atomic energy difference, so line spectra are a direct fingerprint of atomic structure. ✓ (Statement A is correct.)\n\n**Band spectra** consist of groups of closely spaced lines (appearing as bands) that arise from the combined electronic, **vibrational, and rotational transitions in molecules**. The rich internal structure of molecules produces these band patterns, encoding molecular bond lengths and bond strengths. ✓ (Statement B is correct.)\n\nBoth statements are correct. Answer: (D).",
       "tags": [
         "HC Verma Vol 1",
         "Objective I",
@@ -26899,7 +26899,7 @@
       "optionC": "$ f_{v} < f_{r} $.",
       "optionD": "Any of the three is possible depending on the value of the average refractive index $ \\mu $.",
       "answer": "C",
-      "explanation": "",
+      "explanation": "By the lensmaker's equation for a thin lens:\n$$\\frac{1}{f} = (\\mu - 1)\\!\\left(\\frac{1}{R_1} - \\frac{1}{R_2}\right)$$\nThe radii $R_1, R_2$ are fixed (same piece of glass). The refractive index $\\mu$ is larger for shorter wavelengths (normal dispersion): $\\mu_v > \\mu_r$. A larger $\\mu$ gives a larger $(\\mu - 1)$, hence a **larger $1/f$**, hence a **smaller $f$**.\n\nTherefore $f_v < f_r$: violet light is focused at a shorter distance than red light. This is the origin of chromatic aberration. Answer: (C).",
       "tags": [
         "HC Verma Vol 1",
         "Objective I",
@@ -26917,7 +26917,7 @@
       "optionC": "The light inside the slab is split into different colours.",
       "optionD": "The light inside the slab is white.",
       "answer": "B,C",
-      "explanation": "",
+      "explanation": "A parallel-sided slab refracts the beam on entry and refracts it again on exit. Because the faces are parallel, the exit refraction exactly **reverses** the entry refraction for every wavelength—the emergent ray is **parallel to the incident ray** for all colours, so the colours **recombine** and the emergent beam is **white** (B). ✓\n\nInside the slab, however, different wavelengths travel at different angles (because $\\mu$ differs with wavelength), so the light **is** spectrally separated inside (C). ✓\n\nA is wrong (colours do separate inside); D is wrong (light inside is not a single white beam). Answer: (B), (C).",
       "tags": [
         "HC Verma Vol 1",
         "Objective II",
@@ -26935,7 +26935,7 @@
       "optionC": "have both dispersion and average deviation",
       "optionD": "have neither dispersion nor average deviation.",
       "answer": "A,B,C",
-      "explanation": "",
+      "explanation": "Two prisms of different materials (different $\\mu$ and $\\omega$) can be tuned by adjusting their apex angles:\n\n- **A (dispersion without mean deviation):** Set $(\\mu_1 - 1)A_1 = (\\mu_2 - 1)A_2$ so mean deviations cancel; $\\omega_1 \ne \\omega_2$ so angular dispersions do not cancel → **direct vision spectroscope**. ✓  \n- **B (deviation without dispersion):** Set $\\omega_1(\\mu_1-1)A_1 = \\omega_2(\\mu_2-1)A_2$ so angular dispersions cancel; mean deviations do not → **achromatic prism**. ✓  \n- **C (both dispersion and deviation):** Simply orient both prisms to add their deviations and dispersions. Trivially achievable. ✓  \n- **D (neither):** Requires both mean deviation and angular dispersion to be simultaneously zero from two non-zero prisms—this would require both prisms to individually cancel, which is impossible for non-trivial prisms. ✗  \nAnswer: (A), (B), (C).",
       "tags": [
         "HC Verma Vol 1",
         "Objective II",
@@ -26953,7 +26953,7 @@
       "optionC": "allows only one colour at a time",
       "optionD": "allows a more parallel beam when it passes through the lens.",
       "answer": "D",
-      "explanation": "",
+      "explanation": "A **pure spectrum** requires that each wavelength forms a **sharp, separate image** in the focal plane of the focusing lens. For this, each colour must emerge from the prism as a **parallel beam** (so the focusing lens brings all rays of that colour to a single point). \n\nPlacing a narrow slit at the **focal plane** of the collimating (achromatic) lens ensures that **light diverging from any point on the slit emerges as a parallel beam** from the collimating lens—each wavelength in that parallel beam is then deviated by a definite, unique angle by the prism and focused to a distinct image point. A narrow slit additionally limits angular spread of the source, but the key function here is: narrow slit at focal plane → **parallel (collimated) beam** incident on prism → sharp spectral lines. Answer: (D).",
       "tags": [
         "HC Verma Vol 1",
         "Objective II",
@@ -26971,7 +26971,7 @@
       "optionC": "Chromatic aberration",
       "optionD": "Radii of curvature",
       "answer": "A,B,C",
-      "explanation": "",
+      "explanation": "By the lensmaker's equation $\\dfrac{1}{f} = (\\mu - 1)\\!\\left(\\dfrac{1}{R_1}-\\dfrac{1}{R_2}\right)$, the focal length depends on $\\mu(\\lambda)$, the refractive index at each wavelength.\n\n- **A (Power $= 1/f$)**: changes with $\\lambda$ since $f$ changes. ✓  \n- **B (Focal length)**: directly depends on $\\mu(\\lambda)$. ✓  \n- **C (Chromatic aberration)**: defined as the variation of focal length with wavelength—by definition depends on wavelength. ✓  \n- **D (Radii of curvature)**: $R_1, R_2$ are purely geometric properties of the ground/polished surfaces; they do not depend on the wavelength of light passing through. ✗  \nAnswer: (A), (B), (C).",
       "tags": [
         "HC Verma Vol 1",
         "Objective II",
@@ -26989,7 +26989,7 @@
       "optionC": "The power of a diverging lens.",
       "optionD": "The focal length of a diverging lens.",
       "answer": "B,D",
-      "explanation": "",
+      "explanation": "Longer wavelength $\\lambda$ → smaller refractive index $\\mu$ (normal dispersion) → smaller $(\\mu - 1)$ → larger $|f|$ from the lensmaker's equation.\n\n- **A (Power of converging lens):** $P = 1/f_{\\text{conv}} > 0$. As $\\lambda$ increases, $f_{\\text{conv}}$ increases, so $P$ **decreases**. ✗  \n- **B (Focal length of converging lens):** $f_{\\text{conv}}$ **increases** with $\\lambda$. ✓  \n- **C (Power of diverging lens, magnitude):** $|P_{\\text{div}}| = 1/|f_{\\text{div}}|$. As $\\lambda$ increases, $|f_{\\text{div}}|$ increases, so $|P|$ **decreases**. ✗  \n- **D (Focal length of diverging lens, magnitude):** $|f_{\\text{div}}|$ **increases** with $\\lambda$. ✓  \nAnswer: (B), (D).",
       "tags": [
         "HC Verma Vol 1",
         "Objective II",
@@ -27007,7 +27007,7 @@
       "optionC": "with respect to a train moving on the earth",
       "optionD": "with respect to a spaceship going in outer space.",
       "answer": "A,B,C,D",
-      "explanation": "",
+      "explanation": "According to the **special theory of relativity**, the speed of light in vacuum is a **universal constant** $c = 299{,}792{,}458\\ \\text{m s}^{-1}$ that is the same in all **inertial reference frames**, regardless of the motion of the source or the observer. The Earth, the Sun, a train moving on the Earth, and a spaceship in outer space are all (to very good approximation) inertial frames. Therefore $c$ has this same value with respect to each of them. Answer: (A), (B), (C), (D).",
       "tags": [
         "HC Verma Vol 1",
         "Objective II",
@@ -27025,7 +27025,7 @@
       "optionC": "Foucault method",
       "optionD": "Michelson method",
       "answer": "C",
-      "explanation": "",
+      "explanation": "- **Rømer's method** uses the eclipses of Jupiter's moons to detect light-travel time across Earth's orbit—purely **astronomical**, impossible in a laboratory. ✗  \n- **Fizeau's toothed-wheel method** requires a path length of several kilometres (Fizeau used ~8 km) to resolve the wheel rotation—not feasible in a typical laboratory. ✗  \n- **Foucault's rotating-mirror method** uses a rotating plane mirror and a concave mirror reflector; the path can be reduced to tens of metres, making it **practicable in a laboratory**. ✓  \n- **Michelson's method** (a refined rotating-mirror technique) required a mountain baseline (~35 km)—not a laboratory setup. ✗  \nAnswer: (C).",
       "tags": [
         "HC Verma Vol 1",
         "Objective II",
@@ -27043,7 +27043,7 @@
       "optionC": "Foucault method",
       "optionD": "Michelson method",
       "answer": "C",
-      "explanation": "",
+      "explanation": "To measure the speed of light **in water**, the light path must pass through the medium. \n\n- **Rømer and Fizeau methods** cannot be adapted to send the beam through a column of water in any practical way. ✗  \n- **Foucault's rotating-mirror method** is ideal: one inserts a **long tube filled with water** in the light path between the rotating mirror and the concave reflector. Foucault himself used this technique to demonstrate that $c_{\\text{water}} < c_{\\text{air}}$, providing direct experimental evidence for the wave theory of light over the corpuscular theory (which predicted the opposite). ✓  \n- **Michelson's method** is not suited to a water-tube arrangement given its very long baseline. ✗  \nAnswer: (C).",
       "tags": [
         "HC Verma Vol 1",
         "Objective II",
