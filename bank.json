@@ -29353,6 +29353,618 @@
         "Objective II",
         "Chapter 34"
       ]
+    },
+    {
+      "id": "2878f245-3e3d-4f46-a59a-a7d0bb086ad9",
+      "question": "The magnetic field at the centre of a circular loop of radius $R$ carrying current $I$ is",
+      "optionA": "$\\dfrac{\\mu_0 I}{2R}$",
+      "optionB": "$\\dfrac{\\mu_0 I}{4\\pi R}$",
+      "optionC": "$\\dfrac{\\mu_0 I}{R}$",
+      "optionD": "$\\dfrac{2\\mu_0 I}{R}$",
+      "answer": "A",
+      "explanation": "By the Biot–Savart law, integrating around a full loop of radius $R$:\n$$B = \\frac{\\mu_0 I}{2R}$$\nThe direction is along the axis of the loop (perpendicular to the plane), given by the right-hand rule. For a coil of $N$ turns: $B = \\mu_0 NI/(2R)$. Answer: (A).",
+      "topic": "Chapter 35: Magnetic Field due to a Current",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 35"
+      ]
+    },
+    {
+      "id": "dfb3f85a-39ec-4ece-90bf-0fc881851b10",
+      "question": "The magnetic field at a perpendicular distance $r$ from a long straight wire carrying current $I$ is",
+      "optionA": "$\\dfrac{\\mu_0 I}{4\\pi r}$",
+      "optionB": "$\\dfrac{\\mu_0 I}{2\\pi r}$",
+      "optionC": "$\\dfrac{\\mu_0 I}{r}$",
+      "optionD": "$\\dfrac{2\\mu_0 I}{\\pi r}$",
+      "answer": "B",
+      "explanation": "Applying Ampère's law with a circular path of radius $r$ centred on the wire:\n$$\\oint \\vec{B}\\cdot d\\vec{l} = B\\cdot 2\\pi r = \\mu_0 I \\implies B = \\frac{\\mu_0 I}{2\\pi r}$$\nField lines are concentric circles around the wire; direction by right-hand rule. Answer: (B).",
+      "topic": "Chapter 35: Magnetic Field due to a Current",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 35"
+      ]
+    },
+    {
+      "id": "7e0476e4-1598-4d7f-80c9-c19fde7284ca",
+      "question": "The magnetic field inside a long solenoid with $n$ turns per unit length carrying current $I$ is",
+      "optionA": "$\\mu_0 n I / (2\\pi)$",
+      "optionB": "$\\mu_0 n I$",
+      "optionC": "$\\mu_0 I / n$",
+      "optionD": "$\\mu_0 n^2 I$",
+      "answer": "B",
+      "explanation": "For an ideal (infinite) solenoid, by Ampère's law with a rectangular Amperian loop partly inside, partly outside:\n$$B\\cdot l = \\mu_0 (nl) I \\implies B = \\mu_0 n I$$\nThe field is uniform inside and zero outside an ideal solenoid. For a solenoid of $N$ total turns and length $L$: $n = N/L$, so $B = \\mu_0 NI/L$. Answer: (B).",
+      "topic": "Chapter 35: Magnetic Field due to a Current",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 35"
+      ]
+    },
+    {
+      "id": "79829851-ff27-4984-b661-d8f835e30073",
+      "question": "Two parallel wires carry currents in the same direction. They",
+      "optionA": "repel each other",
+      "optionB": "attract each other",
+      "optionC": "exert no force on each other",
+      "optionD": "exert only a torque on each other.",
+      "answer": "B",
+      "explanation": "Each wire creates a magnetic field. The field from wire 1 at wire 2 is into the page (for upward currents, field to the right of wire 1 is into the page). By $\\vec{F} = I\\vec{L}\\times\\vec{B}$, this pulls wire 2 **toward** wire 1. By Newton's third law, they attract each other.\n\nOppositely directed currents → repel. This is actually how the SI ampere was historically defined (force per unit length between parallel wires). Answer: (B).",
+      "topic": "Chapter 35: Magnetic Field due to a Current",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 35"
+      ]
+    },
+    {
+      "id": "b23a72fb-6779-44a6-95af-7fd11a6869a2",
+      "question": "The force per unit length between two parallel wires separated by distance $d$, each carrying current $I$, is",
+      "optionA": "$\\dfrac{\\mu_0 I^2}{2\\pi d}$",
+      "optionB": "$\\dfrac{\\mu_0 I^2}{4\\pi d}$",
+      "optionC": "$\\dfrac{\\mu_0 I}{2\\pi d}$",
+      "optionD": "$\\dfrac{2\\mu_0 I^2}{\\pi d}$",
+      "answer": "A",
+      "explanation": "Wire 1 creates field $B_1 = \\mu_0 I/(2\\pi d)$ at wire 2. Force per unit length on wire 2:\n$$\\frac{F}{L} = I B_1 = I \\cdot \\frac{\\mu_0 I}{2\\pi d} = \\frac{\\mu_0 I^2}{2\\pi d}$$\nThis was used to define the ampere: $2\\times10^{-7}$ N/m between wires 1 m apart each carrying 1 A. Answer: (A).",
+      "topic": "Chapter 35: Magnetic Field due to a Current",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 35"
+      ]
+    },
+    {
+      "id": "b42a78ec-0f63-4049-b413-e3025a9b8b57",
+      "question": "Ampère's law states that the line integral of the magnetic field around a closed loop is",
+      "optionA": "equal to the total current enclosed divided by $\\mu_0$",
+      "optionB": "equal to $\\mu_0$ times the total current enclosed",
+      "optionC": "always zero",
+      "optionD": "equal to the total charge enclosed.",
+      "answer": "B",
+      "explanation": "**Ampère's law** (for steady currents):\n$$\\oint_C \\vec{B}\\cdot d\\vec{l} = \\mu_0 I_{\\rm enc}$$\nwhere $I_{\\rm enc}$ is the net current threading through any surface bounded by the closed loop $C$. It is the magnetic analogue of Gauss's law and is used to find $\\vec{B}$ for symmetric current distributions. Answer: (B).",
+      "topic": "Chapter 35: Magnetic Field due to a Current",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 35"
+      ]
+    },
+    {
+      "id": "b06a3dbe-7f5b-4764-b3cf-f217ed9a25b9",
+      "question": "The magnetic field at a point inside a toroid of $N$ turns, mean radius $R$, carrying current $I$ is",
+      "optionA": "$\\mu_0 N I / (2\\pi R)$",
+      "optionB": "zero",
+      "optionC": "$\\mu_0 N I$",
+      "optionD": "$\\mu_0 I / (2\\pi R)$",
+      "answer": "A",
+      "explanation": "By Ampère's law with a circular loop of radius $R$ inside the toroid:\n$$B \\cdot 2\\pi R = \\mu_0 N I \\implies B = \\frac{\\mu_0 N I}{2\\pi R}$$\nThe field is confined entirely inside the toroid (it is zero outside). This formula is equivalent to $B = \\mu_0 n I$ where $n = N/(2\\pi R)$ is the turn density. Answer: (A).",
+      "topic": "Chapter 35: Magnetic Field due to a Current",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 35"
+      ]
+    },
+    {
+      "id": "dc22201c-c83d-44d9-bb72-a4e68862361c",
+      "question": "Which of the following are correct about the magnetic field of a long straight current-carrying wire?",
+      "optionA": "The field forms concentric circles around the wire.",
+      "optionB": "The field decreases as $1/r$ with distance $r$ from the wire.",
+      "optionC": "The field direction is along the wire.",
+      "optionD": "The field is uniform far from the wire.",
+      "answer": "A,B",
+      "explanation": "- **A** ✓: By symmetry and the right-hand rule, field lines are concentric circles centred on the wire.\n- **B** ✓: $B = \\mu_0 I/(2\\pi r) \\propto 1/r$.\n- **C** ✗: The field is tangential (along the circles), not along the wire.\n- **D** ✗: The field falls off as $1/r$ — not uniform anywhere.\n\nAnswer: (A), (B).",
+      "topic": "Chapter 35: Magnetic Field due to a Current",
+      "subtopic": "Objective II",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective II",
+        "Chapter 35"
+      ]
+    },
+    {
+      "id": "b4077e8b-75b4-4250-bc72-fc5c9e2f0033",
+      "question": "Which of the following about a solenoid are correct?",
+      "optionA": "The magnetic field inside an ideal solenoid is uniform.",
+      "optionB": "The field outside an ideal solenoid is zero.",
+      "optionC": "The field inside is proportional to the number of turns per unit length.",
+      "optionD": "The field direction is along the axis of the solenoid.",
+      "answer": "A,B,C,D",
+      "explanation": "All four are correct for an ideal (infinite) solenoid:\n- **A** ✓: $B = \\mu_0 n I$ is uniform throughout the interior.\n- **B** ✓: By Ampère's law, the net enclosed current for a path outside is zero → $B_{\\rm outside} = 0$.\n- **C** ✓: $B \\propto n$ (turns per unit length).\n- **D** ✓: Field is along the solenoid axis (like a bar magnet field along its core).\n\nAnswer: (A), (B), (C), (D).",
+      "topic": "Chapter 35: Magnetic Field due to a Current",
+      "subtopic": "Objective II",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective II",
+        "Chapter 35"
+      ]
+    },
+    {
+      "id": "dd1dc42c-493a-4a0c-bcb0-077bfe9196b3",
+      "question": "The magnetic field lines of a bar magnet",
+      "optionA": "start from the south pole and end at the north pole outside the magnet",
+      "optionB": "start from the north pole and end at the south pole outside the magnet, and are continuous loops inside",
+      "optionC": "are straight lines",
+      "optionD": "do not form closed loops.",
+      "answer": "B",
+      "explanation": "Magnetic field lines:\n- **Outside** the magnet: leave from the N-pole and enter the S-pole (N to S in external space).\n- **Inside** the magnet: run from S to N (completing the closed loop).\n\nThey form **continuous closed loops** — unlike electric field lines which start and end on charges. Answer: (B).",
+      "topic": "Chapter 36: Permanent Magnets",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 36"
+      ]
+    },
+    {
+      "id": "cb120db2-f299-4ac7-9d31-6139b8a99c4b",
+      "question": "A magnetic dipole placed in a uniform magnetic field experiences",
+      "optionA": "a net force and a net torque",
+      "optionB": "a net force but no net torque",
+      "optionC": "a net torque but no net force",
+      "optionD": "neither a net force nor a net torque.",
+      "answer": "C",
+      "explanation": "In a **uniform** field $\\vec{B}$:\n- The forces on the two poles ($+qm$ and $-qm$) are equal and opposite → **no net force**.\n- But the two forces form a couple if the dipole is not aligned → **net torque** $\\tau = MB\\sin\\theta$.\n\nIn a **non-uniform** field, there is also a net translational force. Answer: (C).",
+      "topic": "Chapter 36: Permanent Magnets",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 36"
+      ]
+    },
+    {
+      "id": "92b9c371-efa2-419d-b722-c0cc7a28e86c",
+      "question": "The torque on a magnetic dipole of moment $M$ in a field $B$ is",
+      "optionA": "$\\tau = M/B$",
+      "optionB": "$\\tau = MB$",
+      "optionC": "$\\tau = MB\\sin\\theta$",
+      "optionD": "$\\tau = MB\\cos\\theta$",
+      "answer": "C",
+      "explanation": "$\\vec{\\tau} = \\vec{M}\\times\\vec{B}$, so $\\tau = MB\\sin\\theta$ where $\\theta$ is the angle between $\\vec{M}$ and $\\vec{B}$. The dipole experiences a restoring torque that aligns it with the field. At $\\theta = 0°$: $\\tau = 0$ (stable equilibrium); at $\\theta = 90°$: $\\tau = MB$ (maximum). Answer: (C).",
+      "topic": "Chapter 36: Permanent Magnets",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 36"
+      ]
+    },
+    {
+      "id": "cc996471-2c31-4548-bd6f-1779929dbfc3",
+      "question": "The potential energy of a magnetic dipole $M$ in a field $B$ is",
+      "optionA": "$U = MB\\sin\\theta$",
+      "optionB": "$U = -MB\\cos\\theta$",
+      "optionC": "$U = MB\\cos\\theta$",
+      "optionD": "$U = -MB\\sin\\theta$",
+      "answer": "B",
+      "explanation": "$U = -\\vec{M}\\cdot\\vec{B} = -MB\\cos\\theta$.\n\n- At $\\theta = 0°$ (aligned with field): $U = -MB$ (minimum, stable equilibrium).\n- At $\\theta = 180°$ (anti-aligned): $U = +MB$ (maximum, unstable equilibrium).\n- At $\\theta = 90°$: $U = 0$.\n\nAnswer: (B).",
+      "topic": "Chapter 36: Permanent Magnets",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 36"
+      ]
+    },
+    {
+      "id": "2d0ce988-3417-4355-8e19-4e6ce2afdb3e",
+      "question": "The SI unit of magnetic moment is",
+      "optionA": "$\\rm T\\,m$",
+      "optionB": "$\\rm A\\,m^2$",
+      "optionC": "$\\rm J/T$",
+      "optionD": "Both B and C",
+      "answer": "D",
+      "explanation": "Magnetic moment $M = IA$ (current × area) has SI unit $\\rm A\\cdot m^2$. Alternatively, since $U = -MB\\cos\\theta$ and $[U] = \\rm J$, $[B] = \\rm T$:\n$$[M] = \\frac{[U]}{[B]} = \\frac{\\rm J}{\\rm T} = \\rm J/T$$\nBoth $\\rm A\\,m^2$ and $\\rm J/T$ are equivalent. Answer: (D).",
+      "topic": "Chapter 36: Permanent Magnets",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 36"
+      ]
+    },
+    {
+      "id": "676a017e-6178-44db-b571-394616f6f1db",
+      "question": "Gauss's law for magnetism states that the net magnetic flux through any closed surface is",
+      "optionA": "equal to $\\mu_0$ times the enclosed magnetic charge",
+      "optionB": "equal to the enclosed current divided by $\\mu_0$",
+      "optionC": "always zero",
+      "optionD": "equal to $B \\times A$",
+      "answer": "C",
+      "explanation": "$$\\oint_S \\vec{B}\\cdot d\\vec{A} = 0$$\nUnlike electric charges, **magnetic monopoles** do not exist (no isolated N or S poles have been found). Every magnet has both poles; magnetic field lines form closed loops. Therefore the net flux through any closed surface is zero. Answer: (C).",
+      "topic": "Chapter 36: Permanent Magnets",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 36"
+      ]
+    },
+    {
+      "id": "15ade1d2-b48f-4b53-bc26-c3aae7f03301",
+      "question": "Which of the following are properties of magnetic field lines?",
+      "optionA": "They form closed continuous loops.",
+      "optionB": "They never intersect each other.",
+      "optionC": "They emerge from the north pole and enter the south pole outside the magnet.",
+      "optionD": "Their density indicates the strength of the field.",
+      "answer": "A,B,C,D",
+      "explanation": "- **A** ✓: Unlike electric field lines, magnetic field lines always form closed loops (since there are no magnetic monopoles).\n- **B** ✓: If two field lines crossed, the field would have two directions at that point — impossible.\n- **C** ✓: By convention, outside the magnet, lines go N→S.\n- **D** ✓: Closer lines → stronger field (analogous to electric field lines).\n\nAnswer: (A), (B), (C), (D).",
+      "topic": "Chapter 36: Permanent Magnets",
+      "subtopic": "Objective II",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective II",
+        "Chapter 36"
+      ]
+    },
+    {
+      "id": "293c6821-3557-4be2-9dd1-cf70e9f450bc",
+      "question": "A bar magnet is cut into two equal halves perpendicular to its length. Which of the following are true?",
+      "optionA": "Each half behaves as a smaller magnet with both N and S poles.",
+      "optionB": "The magnetic moment of each half is half that of the original.",
+      "optionC": "The pole strength of each half is the same as the original.",
+      "optionD": "One half has only N pole and the other has only S pole.",
+      "answer": "A,B,C",
+      "explanation": "- **A** ✓: Cutting a magnet never isolates a pole — each piece becomes a complete dipole.\n- **B** ✓: $M = m \\cdot l$ (pole strength × length). Length halved, pole strength unchanged → $M' = m\\cdot(l/2) = M/2$. ✓\n- **C** ✓: Pole strength $m$ is an intrinsic property of the poles; cutting perpendicular to the length doesn't affect them. ✓\n- **D** ✗: Magnetic monopoles don't exist; each piece has both poles.\n\nAnswer: (A), (B), (C).",
+      "topic": "Chapter 36: Permanent Magnets",
+      "subtopic": "Objective II",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective II",
+        "Chapter 36"
+      ]
+    },
+    {
+      "id": "84541796-ac20-4aea-9eaa-52afeccdec25",
+      "question": "A diamagnetic material placed in a non-uniform magnetic field",
+      "optionA": "is strongly attracted toward the region of stronger field",
+      "optionB": "is weakly attracted toward the region of stronger field",
+      "optionC": "is weakly repelled from the region of stronger field",
+      "optionD": "experiences no force.",
+      "answer": "C",
+      "explanation": "**Diamagnetic materials** (e.g., bismuth, copper, water) have a small **negative** susceptibility ($\\chi < 0$). When placed in a non-uniform field, the induced magnetisation opposes the field. The net force on a diamagnetic material is toward **weaker field** regions — i.e., it is **weakly repelled** from regions of strong field. Answer: (C).",
+      "topic": "Chapter 37: Magnetic Properties of Matter",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 37"
+      ]
+    },
+    {
+      "id": "49b38613-8e91-4b2d-8003-aba39a45c39b",
+      "question": "Above the Curie temperature, a ferromagnetic material becomes",
+      "optionA": "diamagnetic",
+      "optionB": "paramagnetic",
+      "optionC": "superconducting",
+      "optionD": "antiferromagnetic.",
+      "answer": "B",
+      "explanation": "Below the Curie temperature $T_C$, ferromagnetic materials have long-range magnetic order (aligned domains). Above $T_C$, thermal energy destroys the alignment:\n- The material becomes **paramagnetic** ($\\chi$ small positive, follows Curie–Weiss law $\\chi = C/(T - T_C)$).\n- It does not become diamagnetic or superconducting.\n\nAnswer: (B).",
+      "topic": "Chapter 37: Magnetic Properties of Matter",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 37"
+      ]
+    },
+    {
+      "id": "ada19083-687d-4276-96ba-d4fa303baf5e",
+      "question": "The magnetic susceptibility $\\chi$ of a paramagnetic material varies with temperature $T$ as",
+      "optionA": "$\\chi \\propto T$",
+      "optionB": "$\\chi \\propto T^2$",
+      "optionC": "$\\chi \\propto 1/T$",
+      "optionD": "$\\chi$ is independent of $T$.",
+      "answer": "C",
+      "explanation": "**Curie's law** for paramagnetic materials:\n$$\\chi = \\frac{C}{T} \\propto \\frac{1}{T}$$\nwhere $C$ is the Curie constant. At higher temperatures, thermal agitation randomises the magnetic dipoles more effectively, reducing the net magnetisation for a given applied field. Answer: (C).",
+      "topic": "Chapter 37: Magnetic Properties of Matter",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 37"
+      ]
+    },
+    {
+      "id": "e2e868f7-60f1-4ab4-8d24-17a485cb8b75",
+      "question": "The relative permeability of a diamagnetic material is",
+      "optionA": "slightly greater than 1",
+      "optionB": "slightly less than 1",
+      "optionC": "much greater than 1",
+      "optionD": "equal to 1.",
+      "answer": "B",
+      "explanation": "For any magnetic material: $\\mu_r = 1 + \\chi$.\n\n- **Diamagnetic**: $\\chi < 0$ (small negative) $\\implies \\mu_r < 1$ (slightly less than 1).\n- **Paramagnetic**: $\\chi > 0$ (small positive) $\\implies \\mu_r > 1$ (slightly greater than 1).\n- **Ferromagnetic**: $\\chi \\gg 1 \\implies \\mu_r \\gg 1$ (much greater than 1, up to $10^5$).\n\nAnswer: (B).",
+      "topic": "Chapter 37: Magnetic Properties of Matter",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 37"
+      ]
+    },
+    {
+      "id": "829c19ff-a478-475b-a996-906990a06bbe",
+      "question": "Hysteresis in ferromagnetic materials refers to",
+      "optionA": "the decrease of magnetisation with temperature",
+      "optionB": "the lag of magnetisation behind the applied magnetic field",
+      "optionC": "the alignment of magnetic domains with the external field",
+      "optionD": "the loss of magnetism above the Curie temperature.",
+      "answer": "B",
+      "explanation": "**Hysteresis**: when a ferromagnetic material is subjected to a cyclic magnetic field, the magnetisation $M$ does not retrace the same path during increasing and decreasing field. The magnetisation **lags behind** the applied field $H$ — this is hysteresis. The area of the hysteresis loop represents the energy dissipated as heat per cycle. Retentivity (residual $M$ at $H=0$) and coercivity ($H$ needed to demagnetise) characterise the loop. Answer: (B).",
+      "topic": "Chapter 37: Magnetic Properties of Matter",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 37"
+      ]
+    },
+    {
+      "id": "8832ec16-f197-4965-b3e5-c7acbbaf893b",
+      "question": "Which of the following are properties of ferromagnetic materials?",
+      "optionA": "They have spontaneous magnetisation below the Curie temperature.",
+      "optionB": "They consist of magnetic domains.",
+      "optionC": "Above the Curie temperature they become paramagnetic.",
+      "optionD": "Their susceptibility is small and negative.",
+      "answer": "A,B,C",
+      "explanation": "- **A** ✓: Below $T_C$, domains align spontaneously → net magnetisation without external field.\n- **B** ✓: Domains are regions of uniform magnetisation; domain boundaries (walls) separate them.\n- **C** ✓: Above $T_C$, ferromagnets become paramagnetic (Curie–Weiss law).\n- **D** ✗: Ferromagnetics have **large positive** susceptibility ($\\chi \\gg 1$). Small negative $\\chi$ describes diamagnetics.\n\nAnswer: (A), (B), (C).",
+      "topic": "Chapter 37: Magnetic Properties of Matter",
+      "subtopic": "Objective II",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective II",
+        "Chapter 37"
+      ]
+    },
+    {
+      "id": "fcc410fc-e195-42f4-b460-e11898772105",
+      "question": "Which of the following are correct about paramagnetic materials?",
+      "optionA": "They are weakly attracted to magnetic fields.",
+      "optionB": "They have positive magnetic susceptibility.",
+      "optionC": "Their susceptibility increases with temperature.",
+      "optionD": "Examples include aluminium and platinum.",
+      "answer": "A,B,D",
+      "explanation": "- **A** ✓: Paramagnetism → weak attraction to external fields (small positive $\\chi$).\n- **B** ✓: $\\chi > 0$ for paramagnets.\n- **C** ✗: For paramagnets, $\\chi = C/T$ (Curie's law) → $\\chi$ **decreases** with temperature.\n- **D** ✓: Aluminium, platinum, oxygen, sodium are paramagnetic.\n\nAnswer: (A), (B), (D).",
+      "topic": "Chapter 37: Magnetic Properties of Matter",
+      "subtopic": "Objective II",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective II",
+        "Chapter 37"
+      ]
+    },
+    {
+      "id": "edb1df85-9a52-4703-99f1-4ae75a11578f",
+      "question": "Faraday's law of electromagnetic induction states that the induced EMF in a circuit is",
+      "optionA": "proportional to the magnetic flux through the circuit",
+      "optionB": "proportional to the rate of change of magnetic flux through the circuit",
+      "optionC": "inversely proportional to the rate of change of flux",
+      "optionD": "equal to the magnetic flux times the resistance.",
+      "answer": "B",
+      "explanation": "**Faraday's law**:\n$$\\mathcal{E} = -\\frac{d\\Phi_B}{dt}$$\nThe induced EMF equals the **negative rate of change** of magnetic flux through the circuit. The negative sign is Lenz's law (induced EMF opposes the cause). The magnitude: $|\\mathcal{E}| = |d\\Phi_B/dt|$. For $N$ turns: $\\mathcal{E} = -N\\,d\\Phi_B/dt$. Answer: (B).",
+      "topic": "Chapter 38: Electromagnetic Induction",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 38"
+      ]
+    },
+    {
+      "id": "0585668f-a9f4-4b29-a9f2-293a4667c9f1",
+      "question": "Lenz's law states that the direction of the induced current is such that it",
+      "optionA": "reinforces the cause that produced it",
+      "optionB": "opposes the change in magnetic flux that produced it",
+      "optionC": "is perpendicular to the magnetic flux",
+      "optionD": "flows from high to low potential.",
+      "answer": "B",
+      "explanation": "**Lenz's law**: the induced current always flows in a direction that **opposes the change in flux** that caused it. This is a consequence of conservation of energy — if induced current reinforced the change, energy would be created from nothing. Lenz's law accounts for the minus sign in Faraday's law: $\\mathcal{E} = -d\\Phi/dt$. Answer: (B).",
+      "topic": "Chapter 38: Electromagnetic Induction",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 38"
+      ]
+    },
+    {
+      "id": "d5642e2d-3fff-4350-ad82-75b9d37c88a6",
+      "question": "A rectangular loop is moved with constant velocity into a region of uniform magnetic field (field perpendicular to the loop plane). The induced EMF is",
+      "optionA": "zero inside the field region",
+      "optionB": "maximum when the loop is fully inside",
+      "optionC": "non-zero only while the loop is entering or leaving the field",
+      "optionD": "constant at all times.",
+      "answer": "C",
+      "explanation": "EMF $= d\\Phi/dt$. Flux change occurs only when the loop is **partially inside** the field (entering or leaving). Once fully inside a **uniform** field, $\\Phi = BA = $ constant → $d\\Phi/dt = 0$ → EMF = 0. At the edges (entering/leaving), flux changes at rate $Bvl$ (where $v$ is velocity, $l$ is the loop width) → constant non-zero EMF during these phases. Answer: (C).",
+      "topic": "Chapter 38: Electromagnetic Induction",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 38"
+      ]
+    },
+    {
+      "id": "5e466eab-9172-4ae6-9ef5-e472610c1e51",
+      "question": "The self-inductance of a coil is defined as the ratio of",
+      "optionA": "the induced EMF to the rate of change of current",
+      "optionB": "the magnetic flux to the current",
+      "optionC": "the rate of change of flux to the current",
+      "optionD": "both A and B",
+      "answer": "D",
+      "explanation": "Self-inductance $L$ can be defined equivalently as:\n$$\\Phi = LI \\implies L = \\frac{\\Phi}{I} \\quad \\text{(option B)}$$\n$$\\mathcal{E} = -L\\frac{dI}{dt} \\implies L = -\\frac{\\mathcal{E}}{dI/dt} \\implies |L| = \\frac{|\\mathcal{E}|}{|dI/dt|} \\quad \\text{(option A)}$$\nBoth definitions are consistent and correct. Answer: (D).",
+      "topic": "Chapter 38: Electromagnetic Induction",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 38"
+      ]
+    },
+    {
+      "id": "1ae3e5e5-5345-4b9f-ba99-b8afe9bd1a66",
+      "question": "The energy stored in an inductor of self-inductance $L$ carrying current $I$ is",
+      "optionA": "$LI$",
+      "optionB": "$\\dfrac{1}{2}LI$",
+      "optionC": "$\\dfrac{1}{2}LI^2$",
+      "optionD": "$LI^2$",
+      "answer": "C",
+      "explanation": "Energy is stored in the magnetic field of the inductor:\n$$U = \\int_0^I L i\\,di = \\frac{1}{2}LI^2$$\nThis is analogous to $U = \\frac{1}{2}CV^2$ for a capacitor. The energy is stored in the magnetic field and can be recovered when the current decreases. Answer: (C).",
+      "topic": "Chapter 38: Electromagnetic Induction",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 38"
+      ]
+    },
+    {
+      "id": "644bf6fe-f202-4558-b58b-d75dcdce820b",
+      "question": "A metal rod of length $L$ moves with velocity $v$ perpendicular to a magnetic field $B$ (field perpendicular to the rod and its motion). The motional EMF induced is",
+      "optionA": "$BL/v$",
+      "optionB": "$BLv$",
+      "optionC": "$BL^2v$",
+      "optionD": "$B^2Lv$",
+      "answer": "B",
+      "explanation": "A rod moving with velocity $v$ perpendicular to field $B$ and to its own length $L$:\n\nEach charge $q$ in the rod experiences force $qvB$ (Lorentz force). This force separates charges until equilibrium:\n$$\\mathcal{E} = \\int_0^L (v\\times B)\\cdot dl = vBL$$\nThe motional EMF $= BLv$. Answer: (B).",
+      "topic": "Chapter 38: Electromagnetic Induction",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 38"
+      ]
+    },
+    {
+      "id": "85efaf24-0c93-4944-9566-400f7cf0ade6",
+      "question": "Eddy currents are induced in a conductor when",
+      "optionA": "a steady current flows through it",
+      "optionB": "it is placed in a changing magnetic field",
+      "optionC": "it carries high-frequency current",
+      "optionD": "it is near a permanent magnet at rest.",
+      "answer": "B",
+      "explanation": "**Eddy currents** are circulating currents induced in bulk conductors exposed to a **changing** magnetic flux (by Faraday's law). They flow in closed loops within the conductor. Applications: induction heating, magnetic braking, metal detectors. They cause energy loss (heating) in transformers, which is minimised by using laminated cores. Answer: (B).",
+      "topic": "Chapter 38: Electromagnetic Induction",
+      "subtopic": "Objective I",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective I",
+        "Chapter 38"
+      ]
+    },
+    {
+      "id": "9954acee-c49b-405b-b09c-7491ccfb256d",
+      "question": "Which of the following are applications of electromagnetic induction?",
+      "optionA": "AC generators",
+      "optionB": "Transformers",
+      "optionC": "Induction cookers",
+      "optionD": "Permanent bar magnets",
+      "answer": "A,B,C",
+      "explanation": "- **A** ✓: AC generators convert mechanical rotation into alternating EMF via changing flux through a coil.\n- **B** ✓: Transformers use mutual induction to step up/down voltage in AC circuits.\n- **C** ✓: Induction cookers use high-frequency alternating fields to induce eddy currents in the cooking vessel, heating it directly.\n- **D** ✗: Permanent magnets are a static magnetic phenomenon; their creation may involve induction processes but the magnet itself operates on its own static field.\n\nAnswer: (A), (B), (C).",
+      "topic": "Chapter 38: Electromagnetic Induction",
+      "subtopic": "Objective II",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective II",
+        "Chapter 38"
+      ]
+    },
+    {
+      "id": "a5d173f0-0f06-4d61-9c64-11a2abf70900",
+      "question": "Which of the following are consequences of Lenz's law?",
+      "optionA": "A magnet falls more slowly through a conducting tube than through a non-conducting tube.",
+      "optionB": "The induced current in a coil opposes the increasing flux through it.",
+      "optionC": "Electromagnetic induction violates conservation of energy.",
+      "optionD": "A braking force acts on a metal plate moving in a magnetic field.",
+      "answer": "A,B,D",
+      "explanation": "- **A** ✓: Eddy currents induced in the conducting tube create a magnetic field opposing the falling magnet's field → retarding force (magnetic braking).\n- **B** ✓: Direct statement of Lenz's law.\n- **C** ✗: Electromagnetic induction is entirely consistent with (and required by) energy conservation — induced currents must do work against the external agent that changes the flux.\n- **D** ✓: Eddy currents in the moving plate create a retarding force opposing motion (used in electromagnetic brakes, dampers).\n\nAnswer: (A), (B), (D).",
+      "topic": "Chapter 38: Electromagnetic Induction",
+      "subtopic": "Objective II",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective II",
+        "Chapter 38"
+      ]
+    },
+    {
+      "id": "c0f9c85d-e103-4aa8-87b9-4838f0082f2d",
+      "question": "Which of the following factors affect the self-inductance of a solenoid?",
+      "optionA": "Number of turns $N$",
+      "optionB": "Length of the solenoid",
+      "optionC": "Cross-sectional area",
+      "optionD": "Material of the core (relative permeability)",
+      "answer": "A,B,C,D",
+      "explanation": "For a solenoid: $L = \\mu_0 \\mu_r n^2 V = \\mu_0 \\mu_r (N/l)^2 (Al) = \\mu_0 \\mu_r N^2 A/l$.\n\n- **A** ✓: $L \\propto N^2$.\n- **B** ✓: $L \\propto 1/l$ (shorter solenoid → higher inductance for fixed $N$, $A$).\n- **C** ✓: $L \\propto A$ (cross-sectional area).\n- **D** ✓: $L \\propto \\mu_r$ (inserting a ferromagnetic core with $\\mu_r \\gg 1$ greatly increases $L$).\n\nAnswer: (A), (B), (C), (D).",
+      "topic": "Chapter 38: Electromagnetic Induction",
+      "subtopic": "Objective II",
+      "subject": "Physics",
+      "tags": [
+        "HC Verma Vol 2",
+        "Objective II",
+        "Chapter 38"
+      ]
     }
   ]
 }
