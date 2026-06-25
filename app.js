@@ -1700,6 +1700,13 @@ function parseImageField(raw, ...keys) {
   return '';
 }
 
+// Normalises an array of figure sources (data URLs or images/ paths),
+// dropping anything that is not a renderable image. Used by bulk imports.
+function parseImageList(raw) {
+  if (!Array.isArray(raw)) return [];
+  return raw.map(value => clean(value)).filter(isRenderableImageSrc);
+}
+
 function readFileAsDataUrl(file) {
   return new Promise((resolve, reject) => {
     const reader = new FileReader();
@@ -1742,9 +1749,21 @@ async function processImageFile(file) {
   return compressDataUrl(dataUrl, MAX_IMAGE_WIDTH);
 }
 
+// An image source the app will render: either an inline data URL (legacy,
+// uploaded via the Add MCQ form) or a repo-relative path under images/
+// (used by bulk-imported question sets like reNEET 2026).
+function isRenderableImageSrc(src) {
+  return typeof src === 'string' && (src.startsWith('data:image') || src.startsWith('images/'));
+}
+
+// Accepts a single source or an array of sources and renders each as a figure.
 function renderImageHtml(src, label = 'MCQ image') {
-  if (!src || !src.startsWith('data:image')) return '';
-  return `<figure class="mcq-image"><img src="${src}" alt="${escapeHtml(label)}" loading="lazy" /></figure>`;
+  const sources = (Array.isArray(src) ? src : [src]).filter(isRenderableImageSrc);
+  if (!sources.length) return '';
+  const imgs = sources
+    .map(s => `<img src="${escapeHtml(s)}" alt="${escapeHtml(label)}" loading="lazy" />`)
+    .join('');
+  return `<figure class="mcq-image">${imgs}</figure>`;
 }
 
 function renderImageUploadFields(questionImage = '', explanationImage = '') {
@@ -1947,6 +1966,8 @@ function normaliseQuestion(raw) {
     whyWrong: parseWhyWrong(raw),
     questionImage: parseImageField(raw, 'questionImage', 'question_image'),
     explanationImage: parseImageField(raw, 'explanationImage', 'explanation_image'),
+    questionImages: parseImageList(raw.questionImages || raw.question_images),
+    solutionImages: parseImageList(raw.solutionImages || raw.solution_images),
     subject: clean(raw.subject) || 'General',
     topic: clean(raw.topic) || 'General',
     subtopic: clean(raw.subtopic || raw.chapter) || '',
@@ -1973,6 +1994,8 @@ function toExportQuestion(raw) {
     options: question.options,
     answer: question.answer,
     explanation: question.explanation,
+    questionImages: question.questionImages,
+    solutionImages: question.solutionImages,
     whyWrong: question.whyWrong,
     why_wrong_a: question.whyWrong.A,
     why_wrong_b: question.whyWrong.B,
@@ -2324,6 +2347,7 @@ function renderBankCard(q) {
       </div>
       <p class="question">${bankHighlight(q.question)}</p>
       ${renderImageHtml(q.questionImage, 'Question image')}
+      ${renderImageHtml(q.questionImages, 'Figure')}
       <ol class="options compact" type="A">
         ${q.options.map((opt, i) => {
           const letter = ['A', 'B', 'C', 'D'][i];
@@ -2336,6 +2360,7 @@ function renderBankCard(q) {
         </div>
         ${q.explanation ? `<p class="bank-explanation"><strong>Explanation:</strong> ${bankHighlight(q.explanation)}</p>` : ''}
         ${renderImageHtml(q.explanationImage, 'Explanation image')}
+        ${renderImageHtml(q.solutionImages, 'Solution figure')}
         ${renderWhyWrongHtml(q)}
       </div>
       <div class="bank-card-actions">
@@ -2646,6 +2671,7 @@ function renderPracticeQuestion() {
     <p class="question">${renderMath(current.question)}</p>
     ${multi && !session.answered ? '<p class="mcq-hint">Select every option you think is correct, then submit.</p>' : ''}
     ${renderImageHtml(current.questionImage, 'Question image')}
+    ${renderImageHtml(current.questionImages, 'Figure')}
     <div class="options interactive ${multi ? 'multi-select' : ''}">
       ${order.map((originalIndex, displayPos) => {
         const option = current.options[originalIndex];
@@ -2677,6 +2703,7 @@ function renderPracticeQuestion() {
         ${correctLetters.map(letter => renderMath(current.options[answerLetterToIndex(letter)])).join('<br>')}
         ${current.explanation ? `<br><strong>Explanation:</strong> ${renderMath(current.explanation)}` : ''}
         ${renderImageHtml(current.explanationImage, 'Explanation image')}
+        ${renderImageHtml(current.solutionImages, 'Solution figure')}
         ${renderWhyWrongHtml(current, displayLetterByCanonical)}
         ${!multi ? `<button type="button" class="flag-report-btn" data-action="open-flag" ${hasPendingFlagForQuestion(current.id, state.activeStudentId) ? 'disabled' : ''}>
           ${hasPendingFlagForQuestion(current.id, state.activeStudentId) ? '✓ Report submitted — pending review' : '⚑ Flag wrong answer / suggest correction'}
