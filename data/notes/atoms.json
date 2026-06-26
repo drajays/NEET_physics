@@ -1,0 +1,572 @@
+[
+  {
+    "id": "note-atoms-alpha-particle-scattering-and-rutherford-s-nuclear-model-of-atom",
+    "chapter": "Atoms",
+    "subtopic": "Alpha-Particle Scattering and Rutherford's Nuclear Model of Atom",
+    "class": "XII",
+    "unitId": "xii-atoms",
+    "unitLabel": "Unit IX — Atoms & Nuclei",
+    "order": 25,
+    "title": "Alpha-Particle Scattering and Rutherford's Nuclear Model of Atom",
+    "summary": "At distance of closest approach, the kinetic energy of the particle will convert completely into electrostatic potential energy.",
+    "body": "**Key points from solved questions**\n- At distance of closest approach, the kinetic energy of the particle will convert completely into electrostatic potential energy. Here, $$ K.E=\\frac{1}{2}m v^{2} $$ Electrostatic potential energy, $$ \\begin{aligned}U&=\\frac{K Q q}{d}\\\\ &=K\\frac{(2e)(Z e)}{d}\\end{aligned} $$ $$ \\frac{1}{2}m\\mathbf{v}^{2}=\\mathbf{K}\\frac{(2e)(\\mathbf{Z}e)}{d} $$ $$ d\\propto\\frac{1}{m} $$\n- The energy of projectile is directly proportional to $ Z_{1}Z_{2} $.\n- From question $$ \\frac{1}{2}m\\mathbf{v}^{2}=\\frac{1}{4\\pi\\varepsilon_{0}}\\frac{(2e)(Z e)}{r_{0}} $$ $$ r_{0}=\\frac{1}{4\\pi\\varepsilon_{0}}\\frac{2Z e^{2}}{\\frac{1}{2}m\\mathbf{v}^{2}} $$ $$ r_{0}\\propto\\frac{1}{m} $$",
+    "formulas": [
+      {
+        "latex": "K.E=\\frac{1}{2}m v^{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}U&=\\frac{K Q q}{d}\\\\ &=K\\frac{(2e)(Z e)}{d}\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{1}{2}m\\mathbf{v}^{2}=\\mathbf{K}\\frac{(2e)(\\mathbf{Z}e)}{d}",
+        "meaning": ""
+      },
+      {
+        "latex": "d\\propto\\frac{1}{m}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{1}{2}m\\mathbf{v}^{2}=\\frac{1}{4\\pi\\varepsilon_{0}}\\frac{(2e)(Z e)}{r_{0}}",
+        "meaning": ""
+      },
+      {
+        "latex": "r_{0}=\\frac{1}{4\\pi\\varepsilon_{0}}\\frac{2Z e^{2}}{\\frac{1}{2}m\\mathbf{v}^{2}}",
+        "meaning": ""
+      },
+      {
+        "latex": "r_{0}\\propto\\frac{1}{m}",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "856b3732-00f4-4b26-ad44-850c3579aa59",
+      "ae32fafe-4385-4e13-825b-85259d059241",
+      "6019fbc2-96a7-41b3-a0c8-384da06f2c3e"
+    ],
+    "tags": [
+      "NEET Phase-I 2016",
+      "AIPMT Screening 2010",
+      "AIPMT Screening 2009"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-atoms-bohr-model-of-the-hydrogen-atom",
+    "chapter": "Atoms",
+    "subtopic": "Bohr Model of the Hydrogen Atom",
+    "class": "XII",
+    "unitId": "xii-atoms",
+    "unitLabel": "Unit IX — Atoms & Nuclei",
+    "order": 25,
+    "title": "Bohr Model of the Hydrogen Atom",
+    "summary": "According to the question, Electron Electron passes from fifth energy level to ground level means, $$…",
+    "body": "**Key points from solved questions**\n- Here, $ r_1 = 5.3 \\times 10^{-11} $ m Radius of third orbit, $ r_3 = n^2 r_1 $ $ r_3 = (3)^2 \\times 5.3 \\times 10^{-11} $ m (As, n = 3) $ r_3 = 47.7 \\times 10^{-11} $ m $ r_3 = 4.77 \\times 10^{-10} $ m\n- For first excited state, $ n_{1}=2 $ For second excited state, $ n_{2}=3 $ $$ \\frac{T_{1}}{T_{2}}=\\frac{n_{2}^{2}}{n_{1}^{2}}=\\frac{3^{2}}{2^{2}}=\\frac{9}{4} $$\n- The energy of an electron in Bohr's orbit of hydrogen atom is given by the expression, $$ \\mathrm{E}_{n}=-\\frac{2\\pi^{2}m e^{4}Z^{2}}{n^{2}h^{2}(4\\pi\\varepsilon_{0})^{2}}=-13.6\\frac{Z^{2}}{n^{2}}\\mathbf{e}\\mathbf{V} $$ Since, Z = 1 for hydrogen atom. So, the above equation further simplifies to, $$ \\mathrm{E}_{n}=-\\frac{13.6}{n^{2}}\\mathrm{~e V} $$\n- Bohr's model is not valid for singly ionised neon atom $ \\mathrm{(Ne^{+})} $.\n- In Bohr's model of H-atom, $$ \\mathbf{K.E}=|\\mathbf{T E}|=\\frac{|\\mathbf{U}|}{2} $$ $$ \\mathrm{K.E=3.4~e V} $$ $$ \\mathrm{U}=-6.8\\;{\\mathrm{e V}} $$\n- $$ \\begin{array}{c}{m_{\\upmu}=207~m_{\\mathrm{e}}}\\\\ {r=0.51~\\mathring{\\mathrm{A}}}\\end{array} $$ $$ r_{n}\\propto\\frac{1}{m} $$ $$ r_{1}=\\frac{0.51\\times10^{-10}}{207}=2.56\\times10^{-13}m $$ Since $$ \\mathrm{E}\\propto m_{e} $$ $$ \\circ\\circ $$ $$ \\mathrm{E}_{1}=-13.6\\times207=-2.8\\mathrm{k e V} $$\n- We have that, KE = -(total energy) So, kinetic energy: total energy = 1 : - 1\n- Time period of an electron in Bohr orbit is, then $$ \\begin{aligned}\\mathrm{T}&=\\frac{4\\varepsilon_{0}^{2}h^{3}n^{3}}{m e^{4}}\\\\\\mathrm{T}&\\propto n^{3}\\\\\\frac{\\mathrm{T}_{1}}{\\mathrm{T}_{2}}&=\\frac{n_{1}^{3}}{n_{2}^{3}}\\\\\\mathrm{T}_{1}&=8\\mathrm{T}_{2}\\\\\\left(\\frac{8\\mathrm{T}_{2}}{\\mathrm{T}_{2}}\\right)&=\\frac{n_{1}^{3}}{n_{2}^{3}}\\\\\\left(\\frac{n_{1}}{n_{2}}\\right)^{3}&=(2^{3})\\\\\\frac{n_{1}}{n_{2}}&=2\\\\n_{1}&=2n_{2}\\end{aligned} $$\n- According to the question, Electron Electron passes from fifth energy level to ground level means, $$ \\begin{aligned}\\mathrm{E}_{5}-\\mathrm{E}_{1}&=\\frac{hc}{\\lambda}\\\\\\Longrightarrow\\quad\\frac{\\mathrm{Rh}c}{25}-\\mathrm{Rh}c&=\\frac{hc}{\\lambda}\\\\\\Longrightarrow\\quad\\frac{24}{25}\\mathrm{R}&=\\frac{1}{\\lambda}\\end{aligned} $$ But $$ p=\\frac{h}{\\lambda} $$ and $$ \\mathbf{v}=\\frac{\\boldsymbol{h}}{m\\lambda}=\\frac{24}{25}\\frac{\\mathbf{R}\\boldsymbol{h}}{m} $$\n- We know that, $ E = \\frac{-13.6}{n^{2}} Z^{2} $ for first excited state n = 2 and for $ \\mathrm{He}^{+} $, Z = 2 $$ \\mathrm{E}=\\frac{-13.6}{2^{2}}\\times2^{2}=-13.6\\mathrm{eV} $$\n- For n = 1, $ \\mathrm{E}_{1} = -\\frac{13.6}{(1)^{2}} = -13.6\\,\\mathrm{eV} $ For n = 3, $$ \\mathrm{E}_{3}=-\\frac{13.6}{\\left(3\\right)^{2}}=-1.51\\mathrm{eV} $$ So, required energy $$ \\begin{aligned}\\mathrm{E}&=\\mathrm{E}_{3}-\\mathrm{E}_{1}\\\\&=-\\left(1.51\\right)-\\left(-13.6\\right)=12.09\\mathrm{eV}\\end{aligned} $$\n- We know that, Number of spectral lines, $$ \\begin{aligned}\\mathrm{N}&=\\frac{n(n-1)}{2}\\\\\\frac{n(n-1)}{2}&=6\\\\\\Rightarrow n^{2}-n-12&=0\\\\\\Rightarrow(n-4)(n+3)&=0\\\\\\Rightarrow n&=4\\end{aligned} $$\n- Ground state energy of hydrogen atom $$ E_{1}=-13.6eV $$ Energy of electron in first excited state $ (n=2) $ $$ \\mathrm{E}_{2}=-\\frac{13.6}{\\left(2\\right)^{2}}\\mathrm{eV} $$ ∴ Excitation energy, $$ \\begin{aligned}\\Delta E&=E_{2}-E_{1}\\\\&=-\\frac{13.6}{4}-(-13.6)\\\\&=-3.4+13.6=10.2eV\\end{aligned} $$\n- Energy of $ n^{\\text{th}} $ orbit of hydrogen atom is given by, $$ \\mathrm{E}_{n}=-\\frac{13.6}{n^{2}}\\mathrm{eV} $$ for ground state, n = 1 $$ \\mathrm{E}_{1}=-\\frac{13.6}{1^{2}}=-13.6\\mathrm{eV} $$ $$ \\mathrm{E}_{2}=-\\frac{13.6}{2^{2}}=-3.4\\,\\mathrm{eV} $$ $$ \\mathbf{K}\\mathbf{E}=|\\mathbf{E}_{2}|=3.4~e\\mathbf{V} $$",
+    "formulas": [
+      {
+        "latex": "r_1 = 5.3 \\times 10^{-11}",
+        "meaning": ""
+      },
+      {
+        "latex": "r_3 = n^2 r_1",
+        "meaning": ""
+      },
+      {
+        "latex": "r_3 = (3)^2 \\times 5.3 \\times 10^{-11}",
+        "meaning": ""
+      },
+      {
+        "latex": "r_3 = 47.7 \\times 10^{-11}",
+        "meaning": ""
+      },
+      {
+        "latex": "r_3 = 4.77 \\times 10^{-10}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{T_{1}}{T_{2}}=\\frac{n_{2}^{2}}{n_{1}^{2}}=\\frac{3^{2}}{2^{2}}=\\frac{9}{4}",
+        "meaning": ""
+      },
+      {
+        "latex": "n_{1}=2",
+        "meaning": ""
+      },
+      {
+        "latex": "n_{2}=3",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{E}_{n}=-\\frac{2\\pi^{2}m e^{4}Z^{2}}{n^{2}h^{2}(4\\pi\\varepsilon_{0})^{2}}=-13.6\\frac{Z^{2}}{n^{2}}\\mathbf{e}\\mathbf{V}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{E}_{n}=-\\frac{13.6}{n^{2}}\\mathrm{~e V}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{K.E}=|\\mathbf{T E}|=\\frac{|\\mathbf{U}|}{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{K.E=3.4~e V}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{U}=-6.8\\;{\\mathrm{e V}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{array}{c}{m_{\\upmu}=207~m_{\\mathrm{e}}}\\\\ {r=0.51~\\mathring{\\mathrm{A}}}\\end{array}",
+        "meaning": ""
+      },
+      {
+        "latex": "r_{n}\\propto\\frac{1}{m}",
+        "meaning": ""
+      },
+      {
+        "latex": "r_{1}=\\frac{0.51\\times10^{-10}}{207}=2.56\\times10^{-13}m",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{E}\\propto m_{e}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\circ\\circ",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{E}_{1}=-13.6\\times207=-2.8\\mathrm{k e V}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}\\mathrm{T}&=\\frac{4\\varepsilon_{0}^{2}h^{3}n^{3}}{m e^{4}}\\\\\\mathrm{T}&\\propto n^{3}\\\\\\frac{\\mathrm{T}_{1}}{\\mathrm{T}_{2}}&=\\frac{n_{1}^{3}}{n_{2}^{3}}\\\\\\mathrm{T}_{1}&=8\\mathrm{T}_{2}\\\\\\left(\\frac{8\\mathrm{T}_{2}}{\\mathrm{T}_{2}}\\right)&=\\frac{n_{1}^{3}}{n_{2}^{3}}\\\\\\left(\\frac{n_{1}}{n_{2}}\\right)^{3}&=(2^{3})\\\\\\frac{n_{1}}{n_{2}}&=2\\\\n_{1}&=2n_{2}\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}\\mathrm{E}_{5}-\\mathrm{E}_{1}&=\\frac{hc}{\\lambda}\\\\\\Longrightarrow\\quad\\frac{\\mathrm{Rh}c}{25}-\\mathrm{Rh}c&=\\frac{hc}{\\lambda}\\\\\\Longrightarrow\\quad\\frac{24}{25}\\mathrm{R}&=\\frac{1}{\\lambda}\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "p=\\frac{h}{\\lambda}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{v}=\\frac{\\boldsymbol{h}}{m\\lambda}=\\frac{24}{25}\\frac{\\mathbf{R}\\boldsymbol{h}}{m}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{E}=\\frac{-13.6}{2^{2}}\\times2^{2}=-13.6\\mathrm{eV}",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "c53fa2fe-6ea4-482d-918b-3c35fe257cda",
+      "2ada4f29-4f29-4fb7-8975-1b9c2105ebab",
+      "0e00ba01-3d97-466a-a427-86f5ca70f169",
+      "d1f31e04-8d8e-419e-8771-6f52ffa18abf",
+      "1afca321-3a17-493d-8e6a-54e3cbdb22a8",
+      "6c87f3fa-a57d-481f-993a-e2b939ec0d63",
+      "17c146a3-16d6-4a61-b41a-3b517c38eb94",
+      "940594e7-9249-4541-9654-ca130fb5d601",
+      "05560340-2312-47a2-98c2-2837aaa96e73",
+      "407d1557-4dfb-4e57-aff5-6dedfefcecc2",
+      "5e1080fa-80ab-449f-8051-27074624aa4d",
+      "45cae08e-5020-426a-8883-dc82bdc54d88",
+      "ee274154-db87-4b2d-8e5b-979aa549a851",
+      "27ff6621-589b-405d-9bfd-bcdbea8d11f9",
+      "91981368-164b-4771-be2e-d1d52f0d2779",
+      "9b12b84f-c29e-41ec-84bc-04063b8dd366",
+      "bdd4e5cd-b209-49aa-9774-a084b8c8e563",
+      "8c4fdd28-85de-4941-a005-6e61d021a599",
+      "38cf1778-77a4-4494-b0ac-9eafcbf839ec"
+    ],
+    "tags": [
+      "NEET 2023",
+      "NEET 2022",
+      "NEET 2020",
+      "NEET 2019",
+      "NEET Odisha 2019",
+      "NEET 2018",
+      "AIPMT Mains 2000",
+      "AIPMT Screening 2009",
+      "AIPMT 2007",
+      "AIPMT 2005",
+      "AIPMT 2004",
+      "AIPMT 1997",
+      "AIPMT 1990"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-atoms-objective-i",
+    "chapter": "Atoms",
+    "subtopic": "Objective I",
+    "class": "XII",
+    "unitId": "xii-atoms",
+    "unitLabel": "Unit IX — Atoms & Nuclei",
+    "order": 25,
+    "title": "Objective I",
+    "summary": "**Characteristic X-rays**: the incident electron ejects an inner-shell (e.g., $K$-shell) electron.",
+    "body": "**Key points from solved questions**\n- Bohr's **first postulate**: electrons revolve around the nucleus in **specific (quantised) circular orbits** called **stationary states** or **allowed orbits**. In these orbits, they do **not radiate energy** despite the centripetal acceleration (this contradicts classical electrodynamics but is adopted as a postulate). Answer: (B).\n- Bohr's **second postulate** (quantisation of angular momentum): $$L = mvr = n\\hbar = \\frac{nh}{2\\pi}, \\quad n = 1, 2, 3, \\ldots$$ where $n$ is the principal quantum number and $\\hbar = h/(2\\pi)$. This is the condition that selects the allowed orbits. Answer: (B).\n- From Bohr's model: $$r_n = n^2 a_0 \\quad \\text{where } a_0 = \\frac{\\varepsilon_0 h^2}{\\pi m e^2} \\approx 0.529\\,\\text{Å}$$ The radius of the first orbit ($n=1$) is the **Bohr radius** $a_0$. The radius scales as $n^2$: $r_1 : r_2 : r_3 = 1 : 4 : 9$. Answer: (B).\n- $$E_n = -\\frac{13.6}{n^2}\\,\\rm eV$$ The negative sign means the electron is bound. Ground state ($n=1$): $E_1 = -13.6\\,\\rm eV$. The ionisation energy is $13.6\\,\\rm eV$. Energy increases (becomes less negative) with $n$: the electron is more loosely bound in higher orbits. Answer: (B).\n- The **Rydberg formula**: $$\\frac{1}{\\lambda} = R_H\\!\\left(\\frac{1}{n_f^2} - \\frac{1}{n_i^2}\\right), \\quad n_i > n_f$$ where $R_H \\approx 1.097\\times10^7\\,\\rm m^{-1}$ is the Rydberg constant. For emission, $n_i > n_f$ and the bracket is positive, giving a real (positive) wavelength. Spectral series: Lyman ($n_f=1$, UV), Balmer ($n_f=2$, visible), Paschen ($n_f=3$, IR), etc. Answer: (A).\n- The Balmer series: transitions to $n_f = 2$ from $n_i = 3, 4, 5, \\ldots$ The first line (H$\\alpha$, $n=3\\to2$): $\\lambda = 656\\,\\rm nm$ (red). The series limit ($n\\to\\infty\\to2$): $\\lambda = 365\\,\\rm nm$ (near-UV). The Balmer series spans the **visible** range (~400–700 nm) and was the first to be discovered because it falls in the visible. Answer: (B).\n- X-rays are produced in an **X-ray tube**: electrons are accelerated through a high voltage and strike a heavy metal target (anode, usually tungsten). Two processes produce X-rays: 1. **Bremsstrahlung** (braking radiation): electrons decelerate rapidly → emit X-ray photons with a continuous spectrum. 2. **Characteristic X-rays**: electrons knock out inner-shell electrons; outer electrons fill the vacancies, emitting photons with specific energies characteristic of the target material. Answer: (B).\n- The most energetic X-ray photon is produced when an electron converts all its kinetic energy $eV$ into one photon: $$h\\nu_{\\rm max} = eV \\implies \\lambda_{\\rm min} = \\frac{c}{\\nu_{\\rm max}} = \\frac{hc}{eV}$$ This is the **Duane–Hunt law**. The short-wavelength cutoff $\\lambda_{\\rm min}$ is independent of the target material and decreases as the tube voltage increases. Answer: (A).\n- **Characteristic X-rays**: the incident electron ejects an inner-shell (e.g., $K$-shell) electron. This creates a vacancy. An outer-shell electron (e.g., $L$ or $M$) drops into the vacancy, releasing a photon with energy equal to the difference in binding energies: $$h\\nu = E_K - E_L \\quad (K_\\alpha \\text{ line})$$ The energies are characteristic of the target element → used for elemental identification. **Bremsstrahlung** (option A) produces the continuous spectrum, not characteristic lines. Answer: (C).\n- Crystal planes act as diffraction gratings for X-rays because the interplanar spacing ($\\sim 10^{-10}$m) is comparable to X-ray wavelengths. **Bragg's law**: $$2d\\sin\\theta = n\\lambda$$ where $d$ is the interplanar spacing, $\\theta$ is the glancing angle, and $n$ is the order. X-ray crystallography determined the structure of DNA (Watson & Crick, using Franklin's data) and countless proteins. Answer: (B).",
+    "formulas": [
+      {
+        "latex": "L = mvr = n\\hbar = \\frac{nh}{2\\pi}, \\quad n = 1, 2, 3, \\ldots",
+        "meaning": ""
+      },
+      {
+        "latex": "\\hbar = h/(2\\pi)",
+        "meaning": ""
+      },
+      {
+        "latex": "r_n = n^2 a_0 \\quad \\text{where } a_0 = \\frac{\\varepsilon_0 h^2}{\\pi m e^2} \\approx 0.529\\,\\text{Å}",
+        "meaning": ""
+      },
+      {
+        "latex": "r_1 : r_2 : r_3 = 1 : 4 : 9",
+        "meaning": ""
+      },
+      {
+        "latex": "E_n = -\\frac{13.6}{n^2}\\,\\rm eV",
+        "meaning": ""
+      },
+      {
+        "latex": "E_1 = -13.6\\,\\rm eV",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{1}{\\lambda} = R_H\\!\\left(\\frac{1}{n_f^2} - \\frac{1}{n_i^2}\\right), \\quad n_i > n_f",
+        "meaning": ""
+      },
+      {
+        "latex": "n_f=1",
+        "meaning": ""
+      },
+      {
+        "latex": "n_f=2",
+        "meaning": ""
+      },
+      {
+        "latex": "n_f=3",
+        "meaning": ""
+      },
+      {
+        "latex": "n_f = 2",
+        "meaning": ""
+      },
+      {
+        "latex": "n_i = 3, 4, 5, \\ldots",
+        "meaning": ""
+      },
+      {
+        "latex": "n=3\\to2",
+        "meaning": ""
+      },
+      {
+        "latex": "\\lambda = 656\\,\\rm nm",
+        "meaning": ""
+      },
+      {
+        "latex": "\\lambda = 365\\,\\rm nm",
+        "meaning": ""
+      },
+      {
+        "latex": "h\\nu_{\\rm max} = eV \\implies \\lambda_{\\rm min} = \\frac{c}{\\nu_{\\rm max}} = \\frac{hc}{eV}",
+        "meaning": ""
+      },
+      {
+        "latex": "h\\nu = E_K - E_L \\quad (K_\\alpha \\text{ line})",
+        "meaning": ""
+      },
+      {
+        "latex": "2d\\sin\\theta = n\\lambda",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "cf6d6b0e-c69e-495e-b7a4-76dc27906976",
+      "ec877d18-56b0-4fb3-b34c-6bd03bc08377",
+      "41492423-25ad-4a83-956f-fe199f084e28",
+      "89c47321-f696-4a29-8458-cc546d4ed6ff",
+      "5525e2b9-5b8d-4879-9230-ffc00e8bbb17",
+      "1c926c34-10b1-4cc5-8dd6-0d2324b3bc76",
+      "d9bf2cbc-03df-40da-9545-ebb22712b518",
+      "593b8de6-f88f-41c6-9afe-bacdf9ad39a7",
+      "92061551-7b98-4b25-a830-f26244eb6dcf",
+      "4c3e7d0c-a42c-404b-b494-56b75a7416b1"
+    ],
+    "tags": [
+      "HC Verma Vol 2",
+      "Objective I",
+      "Chapter 43",
+      "Chapter 44"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-atoms-objective-ii",
+    "chapter": "Atoms",
+    "subtopic": "Objective II",
+    "class": "XII",
+    "unitId": "xii-atoms",
+    "unitLabel": "Unit IX — Atoms & Nuclei",
+    "order": 25,
+    "title": "Objective II",
+    "summary": "- **A** ✓: Characteristic X-rays appear as sharp lines at specific wavelengths determined by the target element.",
+    "body": "**Key points from solved questions**\n- All four are Bohr's postulates: - **A** ✓: Electrons in circular orbits (Bohr's first postulate). - **B** ✓: No radiation in stationary orbits (Bohr's first postulate). - **C** ✓: $L = n\\hbar$ (Bohr's second postulate — quantisation). - **D** ✓: $E = h\\nu = E_i - E_f$ (Bohr's third postulate — radiation condition). Answer: (A), (B), (C), (D).\n- - **Lyman** ($n_f=1$): UV region (91.2–122 nm). ✓ - **Balmer** ($n_f=2$): Visible region (365–656 nm). ✗ - **Paschen** ($n_f=3$): Near infrared (820 nm – 1875 nm). ✗ - **Brackett** ($n_f=4$): Infrared. ✗ Only the Lyman series is entirely in the UV. Answer: (A).\n- - **A** ✓: Bohr's model works only for hydrogen-like (single-electron) atoms. Multi-electron atoms have electron–electron interactions not accounted for. - **B** ✓: Fine structure (due to spin-orbit coupling) requires relativistic quantum mechanics (Dirac equation). - **C** ✓: Bohr assumes precise circular orbits with definite radius and momentum — violating Heisenberg's uncertainty principle. - **D** ✗: Bohr's model gives the correct energy levels for hydrogen: $E_n = -13.6/n^2\\,\\rm eV$. This is not a limitation. Answer: (A), (B), (C).\n- - **A** ✓: X-rays are EM waves (wavelength 0.01–10 nm), discovered by Röntgen (1895). - **B** ✓: X-ray photons have high energy ($\\sim$keV) → can ionise gas molecules → used in Geiger counters and ionisation chambers. - **C** ✗: As electromagnetic waves, X-rays are **not** deflected by electric or magnetic fields (unlike electrons or other charged particles). (The Compton effect involves scattering by electrons, not deflection of the wave itself by fields.) - **D** ✓: X-rays cause fluorescence in materials like zinc sulfide, calcium tungstate — used in X-ray imaging screens. Answer: (A), (B), (D).\n- - **A** ✓: Characteristic X-rays appear as sharp lines at specific wavelengths determined by the target element. Bremsstrahlung is continuous from $\\lambda_{\\rm min}$ to infinity. - **B** ✓: Characteristic line energies are specific to the target ($K_\\alpha$, $K_\\beta$, etc. depend on energy levels of that element). Bremsstrahlung depends only on electron energy, not the target material. - **C** ✓: The short-wavelength cutoff ($\\lambda_{\\rm min} = hc/eV$) applies to Bremsstrahlung. Characteristic X-rays appear at fixed wavelengths that may or may not coincide with $\\lambda_{\\rm min}$. - **D** ✗: The maximum photon energy in Bremsstrahlung is $eV$ (the full electron KE). Characteristic X-rays have energies equal to inner-shell energy differences, which can be less than $eV$ (they require the electron to have at least enough energy to eject the inner-shell electron, but the emitted photon energy is fixed by atomic levels). Answer: (A), (B), (C).",
+    "formulas": [
+      {
+        "latex": "L = n\\hbar",
+        "meaning": ""
+      },
+      {
+        "latex": "E = h\\nu = E_i - E_f",
+        "meaning": ""
+      },
+      {
+        "latex": "n_f=1",
+        "meaning": ""
+      },
+      {
+        "latex": "n_f=2",
+        "meaning": ""
+      },
+      {
+        "latex": "n_f=3",
+        "meaning": ""
+      },
+      {
+        "latex": "n_f=4",
+        "meaning": ""
+      },
+      {
+        "latex": "E_n = -13.6/n^2\\,\\rm eV",
+        "meaning": ""
+      },
+      {
+        "latex": "\\lambda_{\\rm min} = hc/eV",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "85fd29c1-ba9b-46af-bd4b-14bf9bfa3e59",
+      "84a7459f-1336-4735-ad66-54033b30786c",
+      "3269b640-18ce-47b7-afc8-022777809ad1",
+      "b1e4d78b-c336-4202-84ca-3aae833f5cba",
+      "0451b4ab-16ce-4422-af60-a2bad2f390c2"
+    ],
+    "tags": [
+      "HC Verma Vol 2",
+      "Objective II",
+      "Chapter 43",
+      "Chapter 44"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-atoms-overview",
+    "chapter": "Atoms",
+    "subtopic": "Overview",
+    "class": "XII",
+    "unitId": "xii-atoms",
+    "unitLabel": "Unit IX — Atoms & Nuclei",
+    "order": 25,
+    "title": "Overview",
+    "summary": "Bohr used the concept of quantization of angular momentum.",
+    "body": "**Key points from solved questions**\n- Bohr used the concept of quantization of angular momentum. For stationary orbits, Angular momentum, $$ L=\\frac{nh}{2\\pi} $$ where, n = 1, 2, 3, ..., etc. 23.(D) $$ \\mathrm{E}=\\frac{h c}{\\lambda}\\Rightarrow\\lambda=\\frac{h c}{\\mathrm{E}}\\Rightarrow\\lambda\\propto\\frac{1}{\\mathrm{E}} $$ Energy of photon of wavelength $ \\lambda_{1} $ $$ \\Delta\\mathrm{E}_{1}=-\\left(\\frac{5\\mathrm{E}}{2}\\right)+4\\mathrm{E}=\\frac{3\\mathrm{E}}{2} $$ Energy of photon of wavelength $ \\lambda_{2} $, $$ \\Delta\\mathrm{E}_{2}=-2\\mathrm{E}-(-3\\mathrm{E}) $$ $$ \\Delta\\mathrm{E}_{2}=-2\\mathrm{E}+3\\mathrm{E}=",
+    "formulas": [
+      {
+        "latex": "L=\\frac{nh}{2\\pi}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{E}=\\frac{h c}{\\lambda}\\Rightarrow\\lambda=\\frac{h c}{\\mathrm{E}}\\Rightarrow\\lambda\\propto\\frac{1}{\\mathrm{E}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\Delta\\mathrm{E}_{1}=-\\left(\\frac{5\\mathrm{E}}{2}\\right)+4\\mathrm{E}=\\frac{3\\mathrm{E}}{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\Delta\\mathrm{E}_{2}=-2\\mathrm{E}-(-3\\mathrm{E})",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "82d016b4-e0bf-4950-89a4-d5af253e8e91"
+    ],
+    "tags": [
+      "AIPMT Cancelled 2015"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-atoms-the-line-spectra-of-the-hydrogen-atom",
+    "chapter": "Atoms",
+    "subtopic": "The Line Spectra of the Hydrogen Atom",
+    "class": "XII",
+    "unitId": "xii-atoms",
+    "unitLabel": "Unit IX — Atoms & Nuclei",
+    "order": 25,
+    "title": "The Line Spectra of the Hydrogen Atom",
+    "summary": "Using Einstein's photoelectric equation, $$ \\begin{array}{l}\\mathrm{E}=\\mathrm{W}+\\mathrm{KE}_{\\text{max}}\\\\ =\\mathrm{W}+\\mathrm{eV}_{0}\\\\ =2.75+10\\\\ =12.75\\,\\mathrm{eV}\\end{array} $$ <div style=\"text-align:…",
+    "body": "**Key points from solved questions**\n- $$ \\mathrm{E}=\\frac{h c}{\\lambda}\\Rightarrow\\lambda=\\frac{h c}{\\mathrm{E}}\\Rightarrow\\lambda\\propto\\frac{1}{\\mathrm{E}} $$ Energy of photon of wavelength $ \\lambda_{1} $ $$ \\Delta\\mathrm{E}_{1}=-\\left(\\frac{5\\mathrm{E}}{2}\\right)+4\\mathrm{E}=\\frac{3\\mathrm{E}}{2} $$ Energy of photon of wavelength $ \\lambda_{2} $, $$ \\Delta\\mathrm{E}_{2}=-2\\mathrm{E}-(-3\\mathrm{E}) $$ $$ \\Delta\\mathrm{E}_{2}=-2\\mathrm{E}+3\\mathrm{E}=\\mathrm{E} $$ Energy of photon of wavelength $ \\lambda_{3} $, $$ \\Delta\\mathrm{E}_{3}=-2\\mathrm{E}-(-4\\mathrm{E}) $$ $$ =2\\mathrm{E} $$ So. $$ \\lambda_{2}=2\\lambda_{3} $$ $$ \\lambda_{2}>\\lambda_{1} $$\n- The spectral series given in the question shows the electronic transitions from higher energy levels ( $ n_{2}=5,6,\\ldots $) to the level ( $ n_{1}=4 $), this series is the Brackett series.\n- Shortest wavelength in Balmer series is $ \\lambda $. For Balmer series, $ n_{1}=2 $, $ n_{2}=\\infty $ $$ \\begin{aligned}We know,\\frac{1}{\\lambda}&=R\\left(\\frac{1}{n_{1}^{2}}-\\frac{1}{n_{2}^{2}}\\right)\\\\\\frac{1}{\\lambda}&=\\frac{R}{2^{2}}\\end{aligned} $$ For Bracket series, $ n_{1}=4 $, $ n_{2}=\\infty $ So, $$ \\begin{aligned}\\frac{1}{\\lambda^{\\prime}}&=\\mathbf{R}\\left(\\frac{1}{n_{1}^{2}}-\\frac{1}{n_{2}^{2}}\\right)\\\\\\frac{1}{\\lambda^{\\prime}}&=\\frac{\\mathbf{R}}{4^{2}}\\end{aligned} $$ Divide eq (i) by (ii), we get we get $$ \\frac{\\lambda^{\\prime}}{\\lambda}=\\frac{1\\times4^{2}}{2^{2}}=4 $$ $$ \\lambda^{\\prime}=4\\lambda $$ #### ! Caution Students are often confused in finding the correct option. For it just find out the relation of the physical quantity and calculate the answer.\n- Using Rydberg formula, we have, $$ \\begin{aligned}\\frac{1}{\\lambda}&=R\\left(\\frac{1}{n_{1}^{2}}-\\frac{1}{n_{2}^{2}}\\right)\\\\&=R\\left(\\frac{1}{2^{2}}-\\frac{1}{3^{2}}\\right)=\\frac{5R}{36}\\end{aligned} $$ and $$ \\frac{1}{\\lambda^{\\prime}}=R\\left(\\frac{1}{3^{2}}-\\frac{1}{4^{2}}\\right)=\\frac{7R}{144} $$ On dividing eqns. (i) by (ii), we get $$ \\begin{aligned}\\frac{\\lambda^{\\prime}}{\\lambda}&=\\frac{5R}{36}\\times\\frac{144}{7R}=\\frac{20}{7}\\\\\\lambda^{\\prime}&=\\frac{20}{7}\\lambda\\end{aligned} $$\n- Infrared radiation found in Paschen, Bracket and pfund series and it is obtain when electron transitions from high energy level to minimum $3^{rd}$ energy level.\n- We know that, $$ \\begin{array}{c}n=4\\\\\\downarrow\\quad\\mathrm{E}_{1}=\\frac{hc}{\\lambda_{1}}\\\\\\downarrow\\quad\\mathrm{E}_{2}=\\frac{hc}{\\lambda_{2}}\\\\\\downarrow\\quad n=2\\end{array} $$ Energy $$ \\mathrm{E}=\\frac{h c}{\\lambda}=13.6\\left[\\frac{1}{n_{2}^{2}}-\\frac{1}{n_{1}^{2}}\\right] $$ According to the question, $$ \\mathrm{E}_{1}=\\frac{hc}{\\lambda_{1}}=13.6\\left[\\frac{1}{3^{2}}-\\frac{1}{4^{2}}\\right] $$ And $$ \\mathrm{E}_{2}=\\frac{hc}{\\lambda_{2}}=13.6\\left[\\frac{1}{2^{2}}-\\frac{1}{3^{2}}\\right] $$ On dividing eq. (ii) by (i), we get $$ \\begin{aligned}\\frac{\\lambda_{1}}{\\lambda_{2}}&=\\frac{\\frac{1}{4}-\\frac{1}{9}}{\\frac{1}{9}-\\frac{1}{16}}=\\frac{20}{7}\\\\&=20:7\\end{aligned} $$\n- According to the question, Energy released = (-3.4) - (-13.6) = 10.2 eV Using Einstein's photoelectric equation $$ \\mathbf{W}=\\mathbf{E}-\\mathbf{e}\\mathbf{V}=h\\boldsymbol{v} $$ $$ \\begin{aligned}\\nu&=\\frac{\\mathrm{E}-e\\mathrm{V}}{h}=\\frac{(10.2-3.57)e}{6.67\\times10^{-34}}\\\\\\nu&=\\frac{6.03\\times1.6\\times10^{-19}}{6.67\\times10^{-34}}\\\\&=1.6\\times10^{15}\\mathrm{Hz}\\end{aligned} $$\n- Using Einstein's photoelectric equation, $$ \\begin{array}{l}\\mathrm{E}=\\mathrm{W}+\\mathrm{KE}_{\\text{max}}\\\\ =\\mathrm{W}+\\mathrm{eV}_{0}\\\\ =2.75+10\\\\ =12.75\\,\\mathrm{eV}\\end{array} $$ <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//05e73bc7-dc14-4611-a568-f37fd83b803f/markdown_1/imgs/img_in_chart_box_201_254_455_405.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A15%3A54Z%2F-1%2F%2Fca15f0d48fac77e653f80b16f4f58faaf5d9846a2c1fdf2be0b34766a19d4c2d\" alt=\"Image\" width=\"21%\" /></div> ∴ Difference of $n=4$ and $n=1$ Energy level is 12.75 eV Here, higher energy level is $n=4$ and lower energy level is $n=1$. <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//05e73bc7-dc14-4611-a568-f37fd83b803f/markdown_1/imgs/img_in_image_box_32_525_64_574.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A15%3A54Z%2F-1%2F%2Fd79999127e2a5aaa7d8d283f6cbafc0f61fe79bc6888a3b42232baaa0ced3e11\" alt=\"Image\" width=\"2%\" /></div> ##### Mnemonics Order of Spectral lines in a Hydrogen Atom Lion Bechara Pyasa hai Bakri ko Paani Free Lyman, Balmer, Paschen, Brackett, Pfund.\n- <table border=1 style='margin: auto; word-wrap: break-word;'><tr><td style='text-align: center; word-wrap: break-word;'>n=5</td><td style='text-align: center; word-wrap: break-word;'>13 eV</td><td style='text-align: center; word-wrap: break-word;'>0.58 eV</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>n=4</td><td style='text-align: center; word-wrap: break-word;'>12.09 eV</td><td style='text-align: center; word-wrap: break-word;'>0.65 eV</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>n=3</td><td style='text-align: center; word-wrap: break-word;'>10.2 eV</td><td style='text-align: center; word-wrap: break-word;'>1.51 eV</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>n=2</td><td style='text-align: center; word-wrap: break-word;'>13.6 eV</td><td style='text-align: center; word-wrap: break-word;'>3.4 eV</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>n=1</td><td style='text-align: center; word-wrap: break-word;'>13.6 eV</td><td style='text-align: center; word-wrap: break-word;'>1.9 eV</td></tr></table> But 11.1 eV is not present in the diagram. So, 11.1 eV is not possible.\n- We know that, Lyman series for H-ion, $$ \\frac{hc}{\\lambda}=\\operatorname{Rhc}\\left(\\frac{1}{1^{2}}-\\frac{1}{2^{2}}\\right) $$ and for H-like atom. $$ \\frac{hc}{\\lambda}=Z^{2}\\mathrm{Rh}c\\left(\\frac{1}{2^{2}}-\\frac{1}{4^{2}}\\right) $$ compare we get, $$ \\left(\\frac{1}{1^{2}}-\\frac{1}{2^{2}}\\right)=Z^{2}\\left(\\frac{1}{4}-\\frac{1}{16}\\right) $$ Solving we get, Z = 2\n- According to question, $$ \\begin{aligned}-13.6+12.1&=\\frac{-13.6}{n^{2}}\\\\\\Rightarrow\\quad n^{2}&=\\frac{13.6}{1.5}=9\\\\\\Rightarrow\\quad n&=3\\end{aligned} $$ Number of spectral lines emitted, $$ \\begin{aligned}&lines emitted,\\\\ &=\\frac{n(n-1)}{2}=\\frac{3\\times2}{2}\\\\ &=3\\\\ \\end{aligned} $$\n- <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//05e73bc7-dc14-4611-a568-f37fd83b803f/markdown_1/imgs/img_in_image_box_759_386_924_545.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A15%3A54Z%2F-1%2F%2F21ba2af3e7dfe8ebc83068cb224632f585cdac5244f3de6fd43ab2e161b3bb7d\" alt=\"Image\" width=\"13%\" /></div> $$ \\mathrm{E}=\\frac{h c}{\\lambda} $$ $$ E_{CA}=E_{CB}+E_{BA} $$ $$ \\frac{hc}{\\lambda_{3}}=\\frac{hc}{\\lambda_{1}}+\\frac{hc}{\\lambda_{2}} $$ $$ \\frac{1}{\\lambda_{3}}=\\frac{1}{\\lambda_{1}}+\\frac{1}{\\lambda_{2}} $$ $$ \\lambda_{3}=\\frac{\\lambda_{1}\\lambda_{2}}{\\lambda_{1}+\\lambda_{2}} $$\n- Energy of photon, $ \\Delta E = E_{2} - E_{1} $ $$ \\begin{aligned}&=-\\frac{13.6}{9}-\\left(\\frac{-13.6}{4}\\right)\\\\&=13.6\\left[\\frac{1}{4}-\\frac{1}{9}\\right]\\\\&=1.9eV\\end{aligned} $$\n- Jump to second orbit leads to Balmer series. When an electron jumps from $4^{\\mathrm{th}}$ orbit to $2^{\\mathrm{nd}}$, we get second line of Balmer series.",
+    "formulas": [
+      {
+        "latex": "\\mathrm{E}=\\frac{h c}{\\lambda}\\Rightarrow\\lambda=\\frac{h c}{\\mathrm{E}}\\Rightarrow\\lambda\\propto\\frac{1}{\\mathrm{E}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\Delta\\mathrm{E}_{1}=-\\left(\\frac{5\\mathrm{E}}{2}\\right)+4\\mathrm{E}=\\frac{3\\mathrm{E}}{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\Delta\\mathrm{E}_{2}=-2\\mathrm{E}-(-3\\mathrm{E})",
+        "meaning": ""
+      },
+      {
+        "latex": "\\Delta\\mathrm{E}_{2}=-2\\mathrm{E}+3\\mathrm{E}=\\mathrm{E}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\Delta\\mathrm{E}_{3}=-2\\mathrm{E}-(-4\\mathrm{E})",
+        "meaning": ""
+      },
+      {
+        "latex": "=2\\mathrm{E}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\lambda_{2}=2\\lambda_{3}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\lambda_{2}>\\lambda_{1}",
+        "meaning": ""
+      },
+      {
+        "latex": "n_{2}=5,6,\\ldots",
+        "meaning": ""
+      },
+      {
+        "latex": "n_{1}=4",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}We know,\\frac{1}{\\lambda}&=R\\left(\\frac{1}{n_{1}^{2}}-\\frac{1}{n_{2}^{2}}\\right)\\\\\\frac{1}{\\lambda}&=\\frac{R}{2^{2}}\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}\\frac{1}{\\lambda^{\\prime}}&=\\mathbf{R}\\left(\\frac{1}{n_{1}^{2}}-\\frac{1}{n_{2}^{2}}\\right)\\\\\\frac{1}{\\lambda^{\\prime}}&=\\frac{\\mathbf{R}}{4^{2}}\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{\\lambda^{\\prime}}{\\lambda}=\\frac{1\\times4^{2}}{2^{2}}=4",
+        "meaning": ""
+      },
+      {
+        "latex": "\\lambda^{\\prime}=4\\lambda",
+        "meaning": ""
+      },
+      {
+        "latex": "n_{1}=2",
+        "meaning": ""
+      },
+      {
+        "latex": "n_{2}=\\infty",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}\\frac{1}{\\lambda}&=R\\left(\\frac{1}{n_{1}^{2}}-\\frac{1}{n_{2}^{2}}\\right)\\\\&=R\\left(\\frac{1}{2^{2}}-\\frac{1}{3^{2}}\\right)=\\frac{5R}{36}\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{1}{\\lambda^{\\prime}}=R\\left(\\frac{1}{3^{2}}-\\frac{1}{4^{2}}\\right)=\\frac{7R}{144}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}\\frac{\\lambda^{\\prime}}{\\lambda}&=\\frac{5R}{36}\\times\\frac{144}{7R}=\\frac{20}{7}\\\\\\lambda^{\\prime}&=\\frac{20}{7}\\lambda\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{array}{c}n=4\\\\\\downarrow\\quad\\mathrm{E}_{1}=\\frac{hc}{\\lambda_{1}}\\\\\\downarrow\\quad\\mathrm{E}_{2}=\\frac{hc}{\\lambda_{2}}\\\\\\downarrow\\quad n=2\\end{array}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{E}=\\frac{h c}{\\lambda}=13.6\\left[\\frac{1}{n_{2}^{2}}-\\frac{1}{n_{1}^{2}}\\right]",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{E}_{1}=\\frac{hc}{\\lambda_{1}}=13.6\\left[\\frac{1}{3^{2}}-\\frac{1}{4^{2}}\\right]",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{E}_{2}=\\frac{hc}{\\lambda_{2}}=13.6\\left[\\frac{1}{2^{2}}-\\frac{1}{3^{2}}\\right]",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}\\frac{\\lambda_{1}}{\\lambda_{2}}&=\\frac{\\frac{1}{4}-\\frac{1}{9}}{\\frac{1}{9}-\\frac{1}{16}}=\\frac{20}{7}\\\\&=20:7\\end{aligned}",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "2ab5b863-7f5f-4346-826c-6c031a0277dc",
+      "57c9d308-fd98-4b91-b4ab-47afa03ddb7c",
+      "072564d0-1bb3-4d2c-99b1-ed71477d032d",
+      "4cc7f939-6cd9-4e98-9181-f24644c4e23e",
+      "d85bfdf2-ccbf-4af8-bdc7-88ba1e1be57d",
+      "6e56e56b-48bd-4f51-b3da-e1587cc55697",
+      "bac1f1fd-b01b-4e47-bf17-c81c161fd7e0",
+      "933a88f5-345c-4b77-85c2-8818735855f8",
+      "0134066d-19b1-432f-bf45-f3a4a90f8a01",
+      "281f02be-268e-4aa7-ba08-4eb42149a08d",
+      "bcb91f5d-4204-4981-8742-b6afdab62574",
+      "5d832f25-9887-4254-bcc9-bf27e51f40ee",
+      "7def4b1b-c749-4e9b-b26e-6fc6737d0030",
+      "33e471c1-8477-4c55-871c-657e6abd55e0",
+      "351bbf70-49fe-43fc-8e56-e65c6337c290"
+    ],
+    "tags": [
+      "Re-NEET 2024",
+      "NEET 2024",
+      "NEET 2023",
+      "NEET Phase-II 2016",
+      "AIPMT Mains 2012",
+      "AIPMT Screening 2012",
+      "AIPMT Mains 2011",
+      "AIPMT Screening 2011",
+      "AIPMT 2006",
+      "AIPMT 2004",
+      "AIPMT 2000",
+      "AIPMT 1995"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-atoms-reneet2026",
+    "chapter": "Atoms",
+    "subtopic": "reNEET2026",
+    "class": "XII",
+    "unitId": "xii-atoms",
+    "unitLabel": "Unit IX — Atoms & Nuclei",
+    "order": 25,
+    "title": "reNEET2026",
+    "summary": "$\\dfrac{ke^2}{r}=mv^2\\Rightarrow r=\\dfrac{ke^2}{mv^2}=\\dfrac{9\\times10^9(1.6\\times10^{-19})^2}{9\\times10^{-31}\\times25.6\\times10^{10}}=1\\times10^{-9}$ m, so $x=1.$",
+    "body": "**Key points from solved questions**\n- Rutherford scattering gives $N(\\theta)\\propto\\dfrac{1}{\\sin^4(\\theta/2)}$, so $N$ decreases sharply with increasing $\\theta$.\n- $\\dfrac{ke^2}{r}=mv^2\\Rightarrow r=\\dfrac{ke^2}{mv^2}=\\dfrac{9\\times10^9(1.6\\times10^{-19})^2}{9\\times10^{-31}\\times25.6\\times10^{10}}=1\\times10^{-9}$ m, so $x=1.$",
+    "formulas": [
+      {
+        "latex": "\\dfrac{ke^2}{r}=mv^2\\Rightarrow r=\\dfrac{ke^2}{mv^2}=\\dfrac{9\\times10^9(1.6\\times10^{-19})^2}{9\\times10^{-31}\\times25.6\\times10^{10}}=1\\times10^{-9}",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "renet2026-phy-35",
+      "renet2026-phy-40"
+    ],
+    "tags": [
+      "reNEET 2026"
+    ],
+    "source": "seed"
+  }
+]

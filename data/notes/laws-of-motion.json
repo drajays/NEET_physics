@@ -1,0 +1,1083 @@
+[
+  {
+    "id": "note-laws-of-motion-circular-motion",
+    "chapter": "Laws of Motion",
+    "subtopic": "Circular Motion",
+    "class": "XI",
+    "unitId": "xi-laws",
+    "unitLabel": "Unit III — Laws of Motion",
+    "order": 3,
+    "title": "Circular Motion",
+    "summary": "For a ball to move in horizontal circle, the ball should satisfy the condition Tension in the string = Centripetal force $$ \\mathrm{T}_{\\max}=\\frac{\\mathbf{M}\\mathbf{v}_{\\max}^{2}}{\\mathrm{R}} $$ $$…",
+    "body": "**Key points from solved questions**\n- Initial speed = 10 rpm Tension of string before = T Tension of string after = 4T $$ \\mathrm{F_{cp}=m\\omega_{1}^{2}} $$ $$ \\mathrm{T}=m\\omega_{2}^{2} $$ New tension become 4T $$ 4\\mathrm{T}=m r\\omega_{r}^{2} $$ <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//f7ce5ea9-0ede-4795-a9a6-658b3b444f9f/markdown_0/imgs/img_in_image_box_846_1279_1002_1428.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A15%3A41Z%2F-1%2F%2F0f097bb0755ed08dc6093cd7da54ea458dbc07c16cf016f249cd9bd14a5bef60\" alt=\"Image\" width=\"13%\" /></div> Substituting value of T in (ii) we get $$ \\omega_{2}^{2}=\\frac{4mr\\omega_{1}^{2}}{mr} $$ $$ \\bullet \\quad \\bullet\\ast $$ $$ \\omega_{2}^{2}=4\\times(10)^{2}\\qquad\\quad(\\because\\omega_{1}=10\\mathrm{~r p m}) $$ $$ \\omega_{2}^{2}=400 $$ $$ \\omega_{2}=20\\mathrm{r p m} $$\n- To keep the block stationary Frictional force $ \\geq $ weight $$ \\mu N\\geq M g $$ Here. $$ \\mathbf{N}=\\mathbf{M}\\omega^{2}r\\left\\{\\mathrm{Hence},r=1\\mathrm{~m},\\mu=0.1\\right\\} $$ $$ \\mu M\\omega^{2}r=M g $$ $$ \\begin{aligned}\\omega&=\\sqrt{\\frac{g}{\\mu r}}=\\sqrt{\\frac{10}{0.1\\times1}}\\\\&=10\\ rad s^{-1}\\end{aligned} $$\n- According to the question, string $l connected to a particle is shown below. <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//f7ce5ea9-0ede-4795-a9a6-658b3b444f9f/markdown_1/imgs/img_in_image_box_114_508_475_590.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A15%3A43Z%2F-1%2F%2Fc4c6e82328d385d0b1a44c65e9e65b616dc0c359569f020c89e312f4187617be\" alt=\"Image\" width=\"30%\" /></div> v = Speed of particle Since, the particle is in uniform circular motion, so net force is equal to centripetal force. ∴ Centripetal force = Net force $$ \\frac{mv^{2}}{l}=T $$\n- The particle is moving in circle of radius R. So acceleration will be: <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//f7ce5ea9-0ede-4795-a9a6-658b3b444f9f/markdown_1/imgs/img_in_image_box_217_811_380_964.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A15%3A44Z%2F-1%2F%2F4216b6323da6ff359c40524980b1b9372b9613023dc70a47edcfa1d14003a8f7\" alt=\"Image\" width=\"13%\" /></div> $$ a_{c}=\\frac{v^{2}}{R} $$ from figure $$ a_{c}=a\\cos30^{\\circ} $$ $$ \\frac{v^{2}}{R}=a\\cos30^{\\circ} $$ $$ \\begin{aligned}\\mathbf{v}^{2}&=a\\cos30^{\\circ}\\times\\mathbf{R}\\\\&=15\\times\\cos30^{\\circ}\\times2.5\\end{aligned} $$ $$ \\mathbf{v}^{2}=15\\times2.5\\times\\frac{\\sqrt{3}}{2} $$ $$ \\mathbf{v}=5.7~\\mathbf{m}/\\mathbf{s} $$\n- <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//f7ce5ea9-0ede-4795-a9a6-658b3b444f9f/markdown_1/imgs/img_in_image_box_105_1326_484_1543.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A15%3A44Z%2F-1%2F%2F52c8f278a09120718b157fa62553764a2597eb6e1324a38be0792d3de2697f56\" alt=\"Image\" width=\"31%\" /></div> For vertical equilibrium on the road. $$ \\mathrm{~N~c o s}\\theta=m g+f\\sin\\theta $$ $$ mg=N\\cos\\theta-f\\sin\\theta $$ Centripetal force for safe turning, $$ \\mathbf{N}\\sin\\theta+f\\cos\\theta=\\frac{mv^{2}}{R} $$ From eqns. (i) and (ii), we get $$ \\frac{v^{2}}{Rg}=\\frac{N\\sin\\theta+f\\cos\\theta}{N\\cos\\theta-f\\sin\\theta} $$ U $$ \\frac{v_{\\mathrm{max}}^{2}}{Rg}=\\frac{N\\sin\\theta+\\mu_{s}N\\cos\\theta}{N\\cos\\theta-\\mu_{s}N\\sin\\theta} $$ $$ \\mathbf{v}_{\\max}=\\sqrt{\\mathrm{R}g\\left(\\frac{\\mu_{s}+\\tan\\theta}{1-\\mu_{s}\\tan\\theta}\\right)} $$\n- Let v be tangential speed of heavier stone. Then, centripetal force experienced by lighter stone is, $$ (F_{c})_{lighter}=\\frac{m(nv)^{2}}{r} $$ and that of heavier stone is $$ (F_{c})_{\\mathrm{heavier}}=\\frac{2mv^{2}}{r/2} $$ But, $$ (F_{c})_{lighter}=(F_{c})_{heavier} $$ $$ \\frac{m(n v)^{2}}{r}=\\frac{2mv^{2}}{(r/2)} $$ or, $$ n^{2}\\left(\\frac{m\\mathbf{v}^{2}}{r}\\right)=4\\left(\\frac{m\\mathbf{v}^{2}}{r}\\right) $$ $$ n^{2}=4or n=2 $$\n- Let $ \\theta $ is the angle made by the wire with the vertical. $$ \\theta=\\frac{v^{2}}{rg} $$ Here, $$ v=10m/s,r=10m,g=10m/s^{2} $$ $$ \\tan\\theta=\\frac{(10\\mathrm{m/s})^{2}}{10\\mathrm{m}(10\\mathrm{m/s}^{2})}=1 $$ $$ \\theta=\\tan^{-1}\\left(1\\right)=\\frac{\\pi}{4} $$\n- Force of friction provides the necessary centripetal force. $$ \\frac{mv^{2}}{R}\\leq\\mu_{s}N; $$ $$ \\mathbf{v}^{2}\\leq\\frac{\\boldsymbol{\\mu}_{s}\\mathbf{R}\\mathbf{N}}{m} $$ $$ \\begin{aligned}\\mathbf{v}^{2}&\\leq\\mu_{s}\\mathbf{R}\\mathbf{g}\\\\\\mathbf{v}&\\leq\\sqrt{\\mu_{s}\\mathbf{R}\\mathbf{g}}\\end{aligned} $$ or ∴ The maximum speed of the car in circular motion is $$ \\mathrm{v}_{\\max}=\\sqrt{\\mu_{s}R g} $$\n- Given banking angle = $ 45^{\\circ} $ Radius = 90 m and g = 10 m/s^{2} Now banking angle, $\\tan\\theta=\\frac{v^{2}}{rg}$ $$ \\tan45^{\\circ}=\\frac{v^{2}}{90\\times10} $$ $$ \\begin{aligned}v^{2}&=90\\times10\\times\\tan45^{\\circ}\\\\v&=\\sqrt{90\\times10\\times\\tan45^{\\circ}}=30\\end{aligned} $$ $$ \\bullet \\quad \\bullet\\bullet $$ Speed of car, v = 30 m/s\n- For a ball to move in horizontal circle, the ball should satisfy the condition Tension in the string = Centripetal force $$ \\mathrm{T}_{\\max}=\\frac{\\mathbf{M}\\mathbf{v}_{\\max}^{2}}{\\mathrm{R}} $$ $$ \\mathbf{v}_{\\mathbf{max}}\\ =\\sqrt{\\frac{\\mathbf{T}_{\\mathbf{max}}\\cdot\\mathbf{R}}{\\mathbf{M}}} $$ Making substitution, we obtain, $$ \\mathrm{v}_{\\max}=\\sqrt{\\frac{25\\times1.96}{0.25}}=\\sqrt{196}=14\\mathrm{~m}/\\mathrm{s} $$ <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//f7ce5ea9-0ede-4795-a9a6-658b3b444f9f/markdown_2/imgs/img_in_image_box_89_930_131_964.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A15%3A46Z%2F-1%2F%2F05815139154410e3419bcf8403ba0e974a86130f526835007d13c98c5d0f20b3\" alt=\"Image\" width=\"3%\" /></div> ##### Caution Students should know that in a vertical circle, the tension at the highest point is zero and at lowest point is maximum.\n- We have. $$ \\omega=\\frac{2\\pi}{T} $$ Since, both cars take the same time to complete the circle. Therefore, ratio of angular speeds of the cars will be 1:1.",
+    "formulas": [
+      {
+        "latex": "\\mathrm{F_{cp}=m\\omega_{1}^{2}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{T}=m\\omega_{2}^{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "4\\mathrm{T}=m r\\omega_{r}^{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\omega_{2}^{2}=\\frac{4mr\\omega_{1}^{2}}{mr}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\bullet \\quad \\bullet\\ast",
+        "meaning": ""
+      },
+      {
+        "latex": "\\omega_{2}^{2}=4\\times(10)^{2}\\qquad\\quad(\\because\\omega_{1}=10\\mathrm{~r p m})",
+        "meaning": ""
+      },
+      {
+        "latex": "\\omega_{2}^{2}=400",
+        "meaning": ""
+      },
+      {
+        "latex": "\\omega_{2}=20\\mathrm{r p m}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mu N\\geq M g",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{N}=\\mathbf{M}\\omega^{2}r\\left\\{\\mathrm{Hence},r=1\\mathrm{~m},\\mu=0.1\\right\\}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mu M\\omega^{2}r=M g",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}\\omega&=\\sqrt{\\frac{g}{\\mu r}}=\\sqrt{\\frac{10}{0.1\\times1}}\\\\&=10\\ rad s^{-1}\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{mv^{2}}{l}=T",
+        "meaning": ""
+      },
+      {
+        "latex": "a_{c}=\\frac{v^{2}}{R}",
+        "meaning": ""
+      },
+      {
+        "latex": "a_{c}=a\\cos30^{\\circ}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{v^{2}}{R}=a\\cos30^{\\circ}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}\\mathbf{v}^{2}&=a\\cos30^{\\circ}\\times\\mathbf{R}\\\\&=15\\times\\cos30^{\\circ}\\times2.5\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{v}^{2}=15\\times2.5\\times\\frac{\\sqrt{3}}{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{v}=5.7~\\mathbf{m}/\\mathbf{s}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{~N~c o s}\\theta=m g+f\\sin\\theta",
+        "meaning": ""
+      },
+      {
+        "latex": "mg=N\\cos\\theta-f\\sin\\theta",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{N}\\sin\\theta+f\\cos\\theta=\\frac{mv^{2}}{R}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{v^{2}}{Rg}=\\frac{N\\sin\\theta+f\\cos\\theta}{N\\cos\\theta-f\\sin\\theta}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{v_{\\mathrm{max}}^{2}}{Rg}=\\frac{N\\sin\\theta+\\mu_{s}N\\cos\\theta}{N\\cos\\theta-\\mu_{s}N\\sin\\theta}",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "468f4408-8e96-4d7f-af74-9200adf1a5cd",
+      "6a51dce1-16e5-44fa-8e3b-84c291943737",
+      "1e6f2ce4-1080-4fc8-9202-d9315217ac99",
+      "ef48090d-8c3e-4e97-b7c3-cade710a6e8f",
+      "4d705dc0-b1fb-4dcc-a3c8-623bf85104fc",
+      "adabf062-d6a9-4ffb-9305-2b0f2df8e57f",
+      "2aa1896d-a77e-42be-8471-b72cf4c7147e",
+      "ed139e0c-c35b-47e0-9aaf-ffacb688c5bc",
+      "0be10599-f708-47e5-b493-d7055d7561de",
+      "2a4e9eed-5d21-4ebe-ae71-1dea42acd354",
+      "c65ee24c-5413-4354-98ee-bdb3bd30b13b"
+    ],
+    "tags": [
+      "Re-NEET 2024",
+      "NEET 2019",
+      "NEET 2017",
+      "NEET Phase-I 2016",
+      "AIPMT July 2015",
+      "NEET Karnataka 2013",
+      "AIPMT 1998",
+      "AIPMT 1995"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-laws-of-motion-common-forces-in-mechanics",
+    "chapter": "Laws of Motion",
+    "subtopic": "Common Forces in Mechanics",
+    "class": "XI",
+    "unitId": "xi-laws",
+    "unitLabel": "Unit III — Laws of Motion",
+    "order": 3,
+    "title": "Common Forces in Mechanics",
+    "summary": "The situation is.",
+    "body": "**Key points from solved questions**\n- From the given diagram, we can clearly say that the bodies are connected. In connected motion, Common acceleration $ a=\\frac{F}{M} $ where F is net force and M is the total mass, F = 10 N, M = 5 kg $$ a=\\frac{10}{5}=2m/s^{2} $$ Now from FBD of 2 kg block and 3 kg block <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//c79bc8f7-ae73-4d39-ae19-35cff403b2e1/markdown_2/imgs/img_in_image_box_664_789_1012_869.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A39Z%2F-1%2F%2Fbafb95a58a822da95ec80aa8834940c2c214f24581d157e2e34b80636ca0d7ba\" alt=\"Image\" width=\"29%\" /></div> Force exerted by block X on block Y, $$ F_{YX}=(3)a $$ $$ \\mathrm{F}_{\\mathrm{YX}}=3\\times2=6\\mathrm{N} $$\n- As retarding force = force of friction $$ \\begin{array}{l}\\therefore\\quad\\quad\\quad ma=\\mu mg\\\\\\Rightarrow\\quad\\quad\\quad a=\\mu\\times g\\\\\\Rightarrow\\quad\\quad\\quad a=0.15\\times10\\\\\\Rightarrow\\quad\\quad\\quad a=1.5\\ m/s^{2}\\end{array} $$\n- <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//c79bc8f7-ae73-4d39-ae19-35cff403b2e1/markdown_2/imgs/img_in_image_box_664_1116_933_1179.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A39Z%2F-1%2F%2Faa557671803d4b9d1a8edf3f0eb2452a4253ef3049ccc5502cab4702560c8018\" alt=\"Image\" width=\"22%\" /></div> Here, $$ \\mathrm{F}=\\mu m\\mathrm{g} $$ Retardation of the block on the belt. $$ a=\\frac{\\mathrm{F}}{m}=\\frac{\\mu mg}{m}=\\mu g $$ ∴ From third equation of motion. $$ \\begin{aligned}\\mathrm{v}^{2}&=u^{2}+2a s\\\\0&=(2)^{2}-2(\\mu\\mathrm{g})\\mathrm{s}\\\\s&=\\frac{4}{2\\times0.5\\times10}=0.4\\mathrm{~m}\\end{aligned} $$\n- The situation is shown in figure. <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//c79bc8f7-ae73-4d39-ae19-35cff403b2e1/markdown_3/imgs/img_in_image_box_215_126_514_294.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A42Z%2F-1%2F%2F1b0e8f787efcfbb5d7ada2953b00c1d9342330ad849c199cb95cfbc098fc7981\" alt=\"Image\" width=\"25%\" /></div> Here, $a$ = acceleration of the system. Here, from free body diagram. $$ T-\\mu R=10a $$ $$ \\therefore\\mathrm{T}-0.05\\times10\\mathrm{g}=10a\\quad\\{\\mu\\mathrm{R}=0.05\\times100=5\\} $$ $$ T-5=10a $$ For 2 kg block, the eq. of motion, $$ 2g-T=2a $$ $$ 2\\times10-T=2a $$ $$ 20-T=2a $$ From equation (i) and (ii), we get $$ T-5=10a $$ $$ 20-T=2a $$ $$ 20-5=12a $$ $$ 15=12a $$ $$ a=\\frac{15}{12}=\\frac{5}{4}=1.25\\mathrm{~m s}^{-2}. $$\n- Since, body does not move, hence it is in equilibrium. $f_{r}=$ Frictional force which is less than or equal friction. F' = Horizontal force applied on body. <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//c79bc8f7-ae73-4d39-ae19-35cff403b2e1/markdown_3/imgs/img_in_image_box_776_176_1045_367.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A42Z%2F-1%2F%2Fc3dfba88e5a0e70f466e21deea8da9f695f752b29330be74dcd0be4f130d30dd\" alt=\"Image\" width=\"22%\" /></div> Now. $$ N=mg $$ Hence, $$ \\begin{array}{r}{\\vec{\\mathrm{~F~}}=\\vec{\\mathrm{~N~}}+\\vec{f},}\\end{array} $$ $$ \\left|\\overrightarrow{F}\\right|^{2}\\leq(mg)^{2}+(\\mu mg)^{2} $$ $$ |\\overrightarrow{\\mathrm{F}}|\\leq m g\\sqrt{1+\\mu^{2}} $$\n- The coefficient of sliding friction is, $$ \\mu_{s}=\\frac{\\mathrm{N}}{\\mathrm{F_{s l i d i n g}}} $$ The dimension of N and F are same. So, $ \\mu $ is a dimensionless quantity.\n- The situation is shown in the figure. <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//c79bc8f7-ae73-4d39-ae19-35cff403b2e1/markdown_3/imgs/img_in_image_box_806_740_1015_863.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A43Z%2F-1%2F%2Fe979502cb7dc46d878d9452d7416e70ecbe81dd443885de62c7c74e69ab471ae\" alt=\"Image\" width=\"17%\" /></div> Here, coefficient of static friction, $$ \\mu_{s}=\\tan30^{\\circ}=\\frac{1}{\\sqrt{3}}=0.6 $$ And distance covered by plank, $$ s=u t+\\frac{1}{2}a t^{2} $$ Here, $u = 0$ and $a = g$ ($\\sin \\theta - \\mu_k \\cos \\theta$) $$ \\circ\\circ $$ $$ 4=\\frac{1}{2}g(\\sin30^{\\circ}-\\mu_{k}\\cos30^{\\circ}) $$ $$ 0.5=10\\times\\frac{1}{2}-\\mu_{k}\\times10\\times\\frac{\\sqrt{3}}{2} $$ $$ \\begin{array}{l}\\Rightarrow\\\\ \\quad\\Rightarrow\\\\ \\quad\\Rightarrow\\end{array}\\quad\\begin{array}{l}5\\sqrt{3}\\ \\mu_{k}=4.5\\\\ \\mu_{k}=0.51\\end{array} $$ Coefficient of kinetic friction is 0.51\n- The situation is. <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//c79bc8f7-ae73-4d39-ae19-35cff403b2e1/markdown_3/imgs/img_in_image_box_800_1364_1015_1485.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A43Z%2F-1%2F%2F30d3d3e7073e856a6d2e0d0d7a9b024452b3130b9dbc9ea8d069cf3c2f9cbffa\" alt=\"Image\" width=\"18%\" /></div> Let T be the tension in the string $a$ is acceleration of the block. Then from free body diagram of A and B is <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//c79bc8f7-ae73-4d39-ae19-35cff403b2e1/markdown_4/imgs/img_in_image_box_174_86_424_193.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A45Z%2F-1%2F%2Fed7c539158e2e65b85205f3c1b362add64cc880fff426a4ce343faf9941ffb99\" alt=\"Image\" width=\"21%\" /></div> From both the diagram, we have, $$ m_{2}g-T=m_{2}a $$ $$ \\mathrm{T}-\\mu_{k}m_{1}g=m_{1}a $$ From eq. (i) and (ii), $$ m_{2}g-\\mu_{k}m_{1}g=(m_{1}+m_{2})a $$ $$ a=\\frac{(m_{2}-\\mu_{k}m_{1})g}{m_{1}+m_{2}} $$ Putting the value of $a$ in eq. (i), $$ \\begin{aligned}\\mathrm{T}&=m_{2}g-m_{2}a\\\\&=m_{2}g-m_{2}\\left[\\frac{(m_{2}-\\mu_{k} m_{1})g}{m_{1}+m_{2}}\\right]\\\\&=\\ m_{2}g\\left[1-\\frac{(m_{2}-\\mu_{k} m_{1})}{m_{1}+m_{2}}\\right]\\end{aligned} $$ $$ \\mathrm{T}=\\frac{m_{1}m_{2}(1+\\mu_{k})g}{m_{1}+m_{2}} $$\n- From the question, It is given that, $ M_{A} = 4\\ kg $, $ M_{B} = 2\\ kg $, $ M_{C} = 1\\ kg $ $$ \\begin{aligned}\\mathbf{M}&=\\mathbf{M}_{\\mathbf{A}}+\\mathbf{M}_{\\mathbf{B}}+\\mathbf{M}_{\\mathbf{C}}\\\\&=(4+2+1)=7\\mathrm{kg}\\end{aligned} $$ We know, $$ \\mathrm{F=M a} $$ $$ 14=7a $$ <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//c79bc8f7-ae73-4d39-ae19-35cff403b2e1/markdown_4/imgs/img_in_image_box_232_907_424_979.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A45Z%2F-1%2F%2Fe5f878c0a917848eac6d82cfcc5b44f02578be5f847bd1dedf0b57aeee7aa6a2\" alt=\"Image\" width=\"16%\" /></div> Let f be the contact force between A and B then net force, F - f = 4a $$ 14-f=4\\times2 $$ $$ f=6\\textbf{N} $$\n- Consider free body diagram for block $m_{1}$, <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//c79bc8f7-ae73-4d39-ae19-35cff403b2e1/markdown_4/imgs/img_in_image_box_185_1136_418_1316.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A46Z%2F-1%2F%2Fe5c86dafeafc4dd007e88ca132699ff9c57163de23e7538d220d27df03384f23\" alt=\"Image\" width=\"19%\" /></div> Here $$ m_{1}=m_{2}=m_{3} $$ $$ mg-T_{1}=ma $$ For block $ m_{2} $ and $ m_{3} $, $$ T_{1}-2\\mu mg=2ma $$ Solving eq. (i) and (ii) $$ mg-T_{1}=ma $$ $$ T_{1}-2\\mu mg=2\\ ma $$ $$ mg-2\\mu mg=3ma $$ $$ mg(1-2\\mu)=3\\mu a $$ ∴ $$ a=\\frac{g(1-2\\mu)}{3} $$ This is downward acceleration of mass.\n- <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//c79bc8f7-ae73-4d39-ae19-35cff403b2e1/markdown_4/imgs/img_in_image_box_655_258_923_510.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A46Z%2F-1%2F%2F2b5b0247b0b284ea4cebb8d9813acc703df03639b4dd9674636e80052fbc4aba\" alt=\"Image\" width=\"22%\" /></div> For first half, Acceleration = g sin $\\theta$ $$ \\mathbf{v}^{2}=2(g\\sin\\theta)l $$ For second half, Acceleration = g (sin $\\theta - \\mu_{k}$ cos $\\theta$) $$ 0=\\mathbf{v}^{2}+2g\\left(\\sin\\theta-\\mu_{\\mathbf{k}}\\cos\\theta\\right)l\\ldots(\\mathrm{i i}) $$ Putting eq. (i) in (ii), we get $$ \\begin{aligned}{0=2\\left(g\\operatorname{s i n}\\theta\\right)l+\\left(2g\\operatorname{s i n}\\theta\\right)l}\\\\ {-\\left(2g\\;\\mu_{\\mathbf{k}}\\operatorname{c o s}\\theta\\right)l}\\\\ \\end{aligned} $$ $ \\therefore \\mu_{k} \\cos \\theta = 2 \\sin \\theta $\n- $$ \\upmu_{\\mathbf{k}}=2\\tan\\theta $$ <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//c79bc8f7-ae73-4d39-ae19-35cff403b2e1/markdown_4/imgs/img_in_image_box_799_871_925_1006.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A46Z%2F-1%2F%2Fe86c757f43f95801bc4dd3009b7e36aeb826c056bcf60c6cb576e5bc14b4a1ed\" alt=\"Image\" width=\"10%\" /></div> When the lift is accelerating upward. Then, Apparent weight > actual weight Then the equation becomes, $$ R-mg=ma $$ $$ 28000-20000=2000a $$ $$ \\begin{array}{r} \\begin{aligned}a&=\\frac{8000}{2000}\\\\ &=4\\ m s^{-2}\\end{aligned} \\end{array} $$\n- The different forces acting on the block are shown in the given figure. <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//c79bc8f7-ae73-4d39-ae19-35cff403b2e1/markdown_4/imgs/img_in_image_box_702_1377_886_1486.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A46Z%2F-1%2F%2F18443c827068400df584e72b5489a1fe5916e37788f2f69f792cc1b2ccb6f912\" alt=\"Image\" width=\"15%\" /></div> <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//c79bc8f7-ae73-4d39-ae19-35cff403b2e1/markdown_4/imgs/img_in_image_box_897_1361_1003_1489.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A47Z%2F-1%2F%2F5c01e6489c915acb9b3c19251d89fdf200b4039a5f622f3397c72037543ac9a5\" alt=\"Image\" width=\"8%\" /></div> Horizontal component = 20 cos 45° Vertical component = 20 sin 45° Now we can write. $$ 20\\cos45^{\\circ}-f=5a $$ Where $$ \\begin{aligned}f&=frictional~force\\\\&=\\mu N\\end{aligned} $$ $$ =0.2\\times\\aleph $$ And $$ \\begin{array}{l}\\text{N}=5\\text{g}+20\\sin45^{\\circ}\\\\=50+10\\sqrt{2}\\end{array} $$ Considering eq. (i) frictional force in eq. (i) $$ 10\\sqrt{2}-0.2(50+10\\sqrt{2}) $$ solving we get $$ a=0.2624 $$ ∴ speed of block after 15 sec. is $$ \\begin{aligned}\\mathbf{v}&=u+at\\\\&=0.2624\\times15=3.936\\mathrm{~ms}^{-1}\\end{aligned} $$\n- By using $$ \\mathbf{v}=u+at $$ $$ 0=\\mathbf{v}-\\mu g t $$ $$ t=\\frac{\\mathbf{v}}{\\mu g} $$",
+    "formulas": [
+      {
+        "latex": "a=\\frac{10}{5}=2m/s^{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "F_{YX}=(3)a",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{F}_{\\mathrm{YX}}=3\\times2=6\\mathrm{N}",
+        "meaning": ""
+      },
+      {
+        "latex": "a=\\frac{F}{M}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{array}{l}\\therefore\\quad\\quad\\quad ma=\\mu mg\\\\\\Rightarrow\\quad\\quad\\quad a=\\mu\\times g\\\\\\Rightarrow\\quad\\quad\\quad a=0.15\\times10\\\\\\Rightarrow\\quad\\quad\\quad a=1.5\\ m/s^{2}\\end{array}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{F}=\\mu m\\mathrm{g}",
+        "meaning": ""
+      },
+      {
+        "latex": "a=\\frac{\\mathrm{F}}{m}=\\frac{\\mu mg}{m}=\\mu g",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}\\mathrm{v}^{2}&=u^{2}+2a s\\\\0&=(2)^{2}-2(\\mu\\mathrm{g})\\mathrm{s}\\\\s&=\\frac{4}{2\\times0.5\\times10}=0.4\\mathrm{~m}\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "T-\\mu R=10a",
+        "meaning": ""
+      },
+      {
+        "latex": "\\therefore\\mathrm{T}-0.05\\times10\\mathrm{g}=10a\\quad\\{\\mu\\mathrm{R}=0.05\\times100=5\\}",
+        "meaning": ""
+      },
+      {
+        "latex": "T-5=10a",
+        "meaning": ""
+      },
+      {
+        "latex": "2g-T=2a",
+        "meaning": ""
+      },
+      {
+        "latex": "2\\times10-T=2a",
+        "meaning": ""
+      },
+      {
+        "latex": "20-T=2a",
+        "meaning": ""
+      },
+      {
+        "latex": "20-5=12a",
+        "meaning": ""
+      },
+      {
+        "latex": "15=12a",
+        "meaning": ""
+      },
+      {
+        "latex": "a=\\frac{15}{12}=\\frac{5}{4}=1.25\\mathrm{~m s}^{-2}.",
+        "meaning": ""
+      },
+      {
+        "latex": "N=mg",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{array}{r}{\\vec{\\mathrm{~F~}}=\\vec{\\mathrm{~N~}}+\\vec{f},}\\end{array}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\left|\\overrightarrow{F}\\right|^{2}\\leq(mg)^{2}+(\\mu mg)^{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "|\\overrightarrow{\\mathrm{F}}|\\leq m g\\sqrt{1+\\mu^{2}}",
+        "meaning": ""
+      },
+      {
+        "latex": "f_{r}=",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mu_{s}=\\frac{\\mathrm{N}}{\\mathrm{F_{s l i d i n g}}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mu_{s}=\\tan30^{\\circ}=\\frac{1}{\\sqrt{3}}=0.6",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "fdc63c1b-1f20-46e8-be57-b763abb1c15f",
+      "aee6d871-2e66-4523-9136-cb23b3fa9fdd",
+      "887f40eb-099c-418c-afa0-95d5afc54587",
+      "2055170b-f63a-4c93-89cc-ccc83f6e2e24",
+      "c43cda3d-9a5f-4b22-8bb4-c4aedf9a01c6",
+      "434291b2-8586-47b4-9376-b2b5d6f068e5",
+      "e4ce3b0b-6b9f-4185-a7dd-4e671e646ffc",
+      "4122733d-cb1f-419e-add7-e287398a54f0",
+      "c3a6d9db-8349-4a65-aa68-e439f81c87dc",
+      "7584c288-5009-4fde-9fb3-c141e7235da8",
+      "e0778efa-2bdc-41f0-a3ac-82dae3d985ad",
+      "cf580313-a6d7-4989-b5bd-b430211ff876",
+      "8ded10c6-becc-48ed-aeee-a76a7339bb39",
+      "6f079273-2b55-4841-aaf5-c2253575fe4c",
+      "265ee9ed-3c60-4572-90bf-4e05377fb265",
+      "a52c58ff-80fb-43d4-8fa6-d463cb7dc54c",
+      "39b7e7e7-e3d6-49d7-8e4b-1e8c8990e8d1",
+      "75c35660-3ad1-4900-9d4b-e2bd493eb400",
+      "72b90c3b-285f-498e-8c2e-0e4b4230d9d4"
+    ],
+    "tags": [
+      "NEET 2024",
+      "NEET 2023",
+      "NEET 2021",
+      "NEET 2020",
+      "NEET 2019",
+      "NEET 2018",
+      "AIPMT Cancelled 2015",
+      "AIPMT 2014",
+      "NEET 2013",
+      "AIPMT 2004",
+      "AIPMT 2002",
+      "AIPMT 1993",
+      "AIPMT 1991"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-laws-of-motion-conservation-of-momentum",
+    "chapter": "Laws of Motion",
+    "subtopic": "Conservation of Momentum",
+    "class": "XI",
+    "unitId": "xi-laws",
+    "unitLabel": "Unit III — Laws of Motion",
+    "order": 3,
+    "title": "Conservation of Momentum",
+    "summary": "We know that momentum, P = mv <div style=\"text-align: center;\"><img…",
+    "body": "**Key points from solved questions**\n- Let $m$ be the mass of the object, which is flying with velocity $(20\\hat{i}+25\\hat{j}-12\\hat{k})$ is in air. According to the question, the mass breaks into two pieces of ratio 1:5, that means the small piece is $ \\frac{m}{6} $ and another piece is $ \\frac{5m}{6} $. Using law of conservation of momentum, Initial momentum = Final momentum $$ \\begin{array}{r} \\begin{aligned}m\\left(20\\hat{i}+25\\hat{j}-12\\hat{k}\\right)&=\\frac{m}{6}\\left(100\\hat{i}+35\\hat{j}-8\\hat{k}\\right)\\\\ &\\quad+\\frac{5}{6}m\\vec{v}\\end{aligned} \\end{array} $$ $$ \\begin{array}{l}\\Rightarrow(120\\hat{i}+150\\hat{j}-72\\hat{k})=(100\\hat{i}+35\\hat{j}+8\\hat{k})+5\\vec{v}\\\\\\Rightarrow\\quad\\begin{array}{r}\\vec{v}=\\frac{1}{5}\\left(20\\hat{i}+115\\hat{j}-80\\hat{k}\\right)\\\\ \\vec{v}=4\\hat{i}+23\\hat{j}-16\\hat{k}\\end{array}\\end{array} $$\n- Using law of conservation of momentum,\n- We know that momentum, P = mv <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//c79bc8f7-ae73-4d39-ae19-35cff403b2e1/markdown_1/imgs/img_in_image_box_803_826_1060_1002.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A36Z%2F-1%2F%2F06a7af5f81094e10d6ab7f735dca51e5c7cdc408050d67b7d129366b324def61\" alt=\"Image\" width=\"21%\" /></div> ∴ Using law of conservation of momentum, $$ \\begin{array}{c} 1\\times12\\hat{i}+2\\times8\\hat{j}+\\overrightarrow{\\mathrm{\\bf p}_{3}}=0\\end{array} $$ $$ \\mathbf{p}_{3}=-\\left(12\\hat{i}+16\\hat{j}\\right) $$ $$ \\begin{array}{l} \\text{p3|} =\\displaystyle {\\sqrt{(12)^{2} + (16)^{2}}} \\\\ \\qquad = \\sqrt{144 + 256} \\\\ \\qquad = 20 \\text{ kg m/s} \\end{array} $$ Now, $$ p_{3}=m_{3}\\mathbf{v}_{3} $$ $$ m_{3}=\\frac{\\mathbf{p}_{3}}{\\mathbf{v}_{3}}=\\frac{20}{4}=5\\mathrm{~kg} $$\n- Time taken by stone to reach the ground is $$ t=\\frac{s}{u_{1}}=\\frac{10}{2}=5s $$ Using conservation of moment, $$ m_{1}u_{1}=m_{2}u_{2} $$ $$ \\Rightarrow $$ $$ u_{2}=\\frac{0.5\\times2}{50}=\\frac{1}{50}m/s $$ Distance travelled by man in 5 s $$ =\\frac{1}{50}\\times5=0.1m $$ Distance from the ground. = 10 + 0.1 = 10.1 m\n- Mass of bullet $ m_{1} $ = 200 g = 0.2 kg; $$ (\\mathbf{v}_{1})=5\\mathrm{~m/s} $$ and mass of gun $ (m_{2}) = 1 \\, kg $. Before firing, total momentum is zero. After firing total momentum is = $ m_1v_1 + m_2v_2 $. From the law of conservation of momentum, $$ m_{1}\\mathbf{v}_{1}+m_{2}\\mathbf{v}_{2}=0 $$ or $$ \\mathbf{v}_{2}=\\frac{-m_{1}\\mathbf{v}_{1}}{m_{2}}=\\frac{-0.2\\times5}{1}=-1\\ m/s $$\n- Since, 5 kg body explodes into three fragments with masses in the ratio 1:1:3 thus, masses of fragments will be 1 kg, 1 kg and 3 kg respectively. The magnitude of resultant momentum of two fragments each of mass 1 kg, moving with velocity 21 m/s, in perpendicular directions is $$ \\begin{aligned}&=\\sqrt{\\left(m_{1}\\mathbf{v}_{1}\\right)^{2}+\\left(m_{2}\\mathbf{v}_{2}\\right)^{2}}\\\\&=\\sqrt{\\left(21\\right)^{2}+\\left(21\\right)^{2}}=21\\sqrt{2}\\mathrm{~kg}m/s\\end{aligned} $$ According to law of conservation of linear momentum, $$ m_{3}v_{3}=21\\sqrt{2} $$ or $$ 3\\mathbf{v}_{3}=21\\sqrt{2} $$ or $$ \\mathbf{v}_{3}=7\\sqrt{2}\\mathrm{~m/s} $$",
+    "formulas": [
+      {
+        "latex": "\\begin{array}{r} \\begin{aligned}m\\left(20\\hat{i}+25\\hat{j}-12\\hat{k}\\right)&=\\frac{m}{6}\\left(100\\hat{i}+35\\hat{j}-8\\hat{k}\\right)\\\\ &\\quad+\\frac{5}{6}m\\vec{v}\\end{aligned} \\end{array}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{array}{l}\\Rightarrow(120\\hat{i}+150\\hat{j}-72\\hat{k})=(100\\hat{i}+35\\hat{j}+8\\hat{k})+5\\vec{v}\\\\\\Rightarrow\\quad\\begin{array}{r}\\vec{v}=\\frac{1}{5}\\left(20\\hat{i}+115\\hat{j}-80\\hat{k}\\right)\\\\ \\vec{v}=4\\hat{i}+23\\hat{j}-16\\hat{k}\\end{array}\\end{array}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{array}{c} 1\\times12\\hat{i}+2\\times8\\hat{j}+\\overrightarrow{\\mathrm{\\bf p}_{3}}=0\\end{array}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{p}_{3}=-\\left(12\\hat{i}+16\\hat{j}\\right)",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{array}{l} \\text{p3|} =\\displaystyle {\\sqrt{(12)^{2} + (16)^{2}}} \\\\ \\qquad = \\sqrt{144 + 256} \\\\ \\qquad = 20 \\text{ kg m/s} \\end{array}",
+        "meaning": ""
+      },
+      {
+        "latex": "p_{3}=m_{3}\\mathbf{v}_{3}",
+        "meaning": ""
+      },
+      {
+        "latex": "m_{3}=\\frac{\\mathbf{p}_{3}}{\\mathbf{v}_{3}}=\\frac{20}{4}=5\\mathrm{~kg}",
+        "meaning": ""
+      },
+      {
+        "latex": "t=\\frac{s}{u_{1}}=\\frac{10}{2}=5s",
+        "meaning": ""
+      },
+      {
+        "latex": "m_{1}u_{1}=m_{2}u_{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\Rightarrow",
+        "meaning": ""
+      },
+      {
+        "latex": "u_{2}=\\frac{0.5\\times2}{50}=\\frac{1}{50}m/s",
+        "meaning": ""
+      },
+      {
+        "latex": "=\\frac{1}{50}\\times5=0.1m",
+        "meaning": ""
+      },
+      {
+        "latex": "(\\mathbf{v}_{1})=5\\mathrm{~m/s}",
+        "meaning": ""
+      },
+      {
+        "latex": "m_{1}\\mathbf{v}_{1}+m_{2}\\mathbf{v}_{2}=0",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{v}_{2}=\\frac{-m_{1}\\mathbf{v}_{1}}{m_{2}}=\\frac{-0.2\\times5}{1}=-1\\ m/s",
+        "meaning": ""
+      },
+      {
+        "latex": "(m_{2}) = 1 \\, kg",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}&=\\sqrt{\\left(m_{1}\\mathbf{v}_{1}\\right)^{2}+\\left(m_{2}\\mathbf{v}_{2}\\right)^{2}}\\\\&=\\sqrt{\\left(21\\right)^{2}+\\left(21\\right)^{2}}=21\\sqrt{2}\\mathrm{~kg}m/s\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "m_{3}v_{3}=21\\sqrt{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "3\\mathbf{v}_{3}=21\\sqrt{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{v}_{3}=7\\sqrt{2}\\mathrm{~m/s}",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "55bafe0d-6b1e-4544-bf00-a5c7d140c0a7",
+      "6c49d7fd-c436-45f2-a5b7-08858b75b980",
+      "3f1789a2-f716-49ca-90a6-d2d04f253afc",
+      "bb294564-0032-4665-ae07-0d4e36a3f2d5",
+      "8dc2d426-5e7b-458f-9b47-324d17020e9d",
+      "a94997e8-e788-40db-b0e9-e85c4b059ac8"
+    ],
+    "tags": [
+      "NEET 2013",
+      "AIPMT 1996",
+      "AIPMT 1989"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-laws-of-motion-equilibrium-of-a-particle",
+    "chapter": "Laws of Motion",
+    "subtopic": "Equilibrium of a Particle",
+    "class": "XI",
+    "unitId": "xi-laws",
+    "unitLabel": "Unit III — Laws of Motion",
+    "order": 3,
+    "title": "Equilibrium of a Particle",
+    "summary": "This problem has two cases, <div style=\"text-align: center;\"><img…",
+    "body": "**Key points from solved questions**\n- This problem has two cases, <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//c79bc8f7-ae73-4d39-ae19-35cff403b2e1/markdown_2/imgs/img_in_image_box_164_1045_445_1198.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A38Z%2F-1%2F%2F15031aa958bffdf8ec7a93bac803a3fdd19cb8921a67d1f12b8b70375a175ec1\" alt=\"Image\" width=\"23%\" /></div> Case (I): The system is in equilibrium with mass 3m (weight = 4mg) over the spring. Case (II): When the string is cut according to the figure then: (a) Free body diagram $ \\underline{\\text{of}} $ mass m. <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//c79bc8f7-ae73-4d39-ae19-35cff403b2e1/markdown_2/imgs/img_in_image_box_284_1342_336_1432.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A38Z%2F-1%2F%2Ffa14292f56d3ea17c8ab9e0d3789c6281cd13a16125bfb5405edce80cbf5b99c\" alt=\"Image\" width=\"4%\" /></div> Here, force on mass m = mg $ \\therefore $ Acceleration = g (b) Free body diagram of mass 3m Net force, $$ \\mathrm{F_{net}}=4mg-3mg $$ ： $$ 3m.a.=mg $$ $$ a=\\frac{g}{3} $$ <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//c79bc8f7-ae73-4d39-ae19-35cff403b2e1/markdown_2/imgs/img_in_image_box_788_267_883_410.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A39Z%2F-1%2F%2F5b8cd1a32bf509ef2b7725b99e68b9cfa0713bace3395126dac224e3a98a0ed2\" alt=\"Image\" width=\"7%\" /></div> $\\therefore$ Accelerations of blocks A and B are $\\frac{g}{3}$ and $g$ respectively.",
+    "formulas": [
+      {
+        "latex": "\\mathrm{F_{net}}=4mg-3mg",
+        "meaning": ""
+      },
+      {
+        "latex": "3m.a.=mg",
+        "meaning": ""
+      },
+      {
+        "latex": "a=\\frac{g}{3}",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "50a12701-d630-4e98-b621-d74da5d6260c"
+    ],
+    "tags": [
+      "NEET 2017"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-laws-of-motion-newton-s-first-law-of-motion",
+    "chapter": "Laws of Motion",
+    "subtopic": "Newton's First Law of Motion",
+    "class": "XI",
+    "unitId": "xi-laws",
+    "unitLabel": "Unit III — Laws of Motion",
+    "order": 3,
+    "title": "Newton's First Law of Motion",
+    "summary": "Newton's first law of motion is related to physical independence of force.",
+    "body": "**Key points from solved questions**\n- Newton's first law of motion is related to physical independence of force.",
+    "formulas": [],
+    "questionIds": [
+      "bb78edc7-799a-42f9-a2e4-01e749530e76"
+    ],
+    "tags": [],
+    "source": "seed"
+  },
+  {
+    "id": "note-laws-of-motion-newton-s-second-law-of-motion",
+    "chapter": "Laws of Motion",
+    "subtopic": "Newton's Second Law of Motion",
+    "class": "XI",
+    "unitId": "xi-laws",
+    "unitLabel": "Unit III — Laws of Motion",
+    "order": 3,
+    "title": "Newton's Second Law of Motion",
+    "summary": "The situation is shown in the figure, <div style=\"text-align: center;\"><img…",
+    "body": "**Key points from solved questions**\n- Given. Acceleration $$ \\begin{array}{l}\\overset{\\rightarrow}{u}=-u\\overset{\\wedge}{j}\\\\ \\to\\quad\\overset{\\wedge}{v}=ui\\end{array} $$ $$ \\vec{a}=\\frac{\\mathbf{v}-\\mathbf{u}}{t} $$ $$ \\vec{a}=\\frac{\\hat{u i}+\\hat{u j}}{t} $$ Direction of acceleration $$ \\tan\\theta=\\frac{\\mathbf{v}}{u}=1 $$ $ \\theta = 45^{\\circ} $, along northeast. Force is also acting towards north-east. $$ h=10m $$\n- Given. $$ m=0.15\\mathrm{~k g} $$ Velocity just before striking the ground. $$ \\mathbf{v}_{1}=\\sqrt{2gh} $$ $$ \\mathbf{v}_{1}=\\sqrt{2\\times(10\\times10)} $$ $$ =10\\sqrt{2}\\mathrm{~m/s} $$ $$ v_{1}=-10\\sqrt{2} $$ If it reaches same height, speed remain same after collision only the direction changes. $$ v_{2}=10\\sqrt{2}\\ m/s $$ $$ \\overrightarrow{v}_{2}^{}=10\\sqrt{2} $$ $$ \\begin{align*}\\text{Impulse}&=m\\left|\\Delta\\overrightarrow{v}\\right|\\\\&=m\\left|10\\sqrt{2}\\hat{j}-(-10\\sqrt{2}\\hat{j})\\right|\\\\&=0.15\\left[2\\left(10\\sqrt{2}\\right)\\right]\\\\&=3\\sqrt{2}\\text{kg m/s}\\\\&=4.2\\text{kg m/s}.\\end{align*} $$\n- As forces are forming closed loop in same order. So, Net force = 0 $$ ↳\\;\\downarrow\\;↳: $$ $$ \\begin{array}{l}\\overrightarrow{\\mathrm{F}_{\\mathrm{net}}}=0\\\\m\\frac{d\\overrightarrow{\\mathrm{v}}}{dt}=0\\\\\\quad\\rightarrow\\\\\\quad\\mathrm{v}=\\mathrm{constant}\\end{array} $$\n- Impulse, $$ \\begin{aligned}|\\overrightarrow{\\Delta\\mathrm{P}}|&=m|\\overrightarrow{\\Delta\\mathrm{v}}|\\\\&=m(2\\times\\cos60^{\\circ})=m\\mathrm{v}\\end{aligned} $$\n- The F-t graph is, <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//b22cad9d-aca7-4c28-90ba-209f95fbfd68/markdown_4/imgs/img_in_image_box_210_643_521_761.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A02Z%2F-1%2F%2F2048dcad9e370e5f64484936ceee33fdea55aca600ab64a750c20056ce5a478f\" alt=\"Image\" width=\"26%\" /></div> Now, Change of momentum, For $$ I^{st}\\rightarrow\\Delta\\mathbf{P}_{1}=\\frac{1}{2}\\times2\\times6=6kg-m/s $$ For $\\mathrm{II}^{\\mathrm{nd}} \\rightarrow \\Delta \\mathrm{P}_{2} = 2\\left(-3\\right) = -6\\ \\mathrm{kg} \\cdot \\mathrm{m/s}$ For $ \\mathrm{III}^{\\mathrm{rd}} \\rightarrow \\Delta \\mathrm{P}_{3} = 4 \\times 3 = 12 \\, \\mathrm{kg} - \\mathrm{m/s} $ Total change in momentum, $$ \\begin{aligned}\\Delta\\mathrm{P}&=\\Delta\\mathrm{P}_{1}+\\Delta\\mathrm{P}_{2}+\\Delta\\mathrm{P}_{3}\\\\&=6-6+12\\\\&=12\\mathrm{~Ns}\\end{aligned} $$\n- Using law of conservation of momentum, Initial momentum = mu₁ + mu₂ final momentum = nmv₁ + (M - nm)v₂ ∴ $ mu_1 + mu_2 = nmv_1 + (M - nm)v_2 $ $ 0 = \\frac{10 \\times 10}{1000} \\times 800 + \\left(100 - \\frac{10 \\times 10}{1000}\\right)v_2 $ $ -80 = \\frac{999}{10}v_2 $ $ \\Rightarrow v_2 = -0.8 \\, \\text{ms}^{-1} $ And average force exerted on the person, $ =\\frac{n \\times m \\times u}{\\Delta t} $ $ = \\frac{10 \\times \\frac{10}{1000} \\times 800}{5} $ $ =\\frac{80}{5} = 16 \\, \\text{N} $\n- We know that, $$ \\mathbf{v}=\\sqrt{2gh} $$ and momentum, $$ p=m\\mathbf{v} $$ $$ p\\propto\\sqrt{h} $$ $$ \\Rightarrow $$ $$ \\bullet \\quad \\bullet\\ast $$ $$ \\frac{p_{2}}{p_{1}}=\\sqrt{\\frac{h_{2}}{h_{1}}}=\\sqrt{\\frac{2h}{h}}=\\sqrt{2} $$ $$ p_{2}=\\sqrt{2}p_{1} $$ $$ \\bullet \\quad \\bullet\\bullet $$ $$ p_{2}=1.414p_{1} $$ $$ \\%change=\\frac{p_{2}-p_{1}}{p_{1}}\\times100\\%=41\\% $$\n- Impulse = Change in linear momentum $ = M v - (-M v) = 2 M v $\n- We know that, $$ Force=mass\\times acceleration. $$ ∴ $$ \\�d_{F}=6\\stackrel{\\wedge}{i-8}\\stackrel{\\wedge}{j+10}\\stackrel{\\wedge}{k} $$ $$ \\begin{aligned}|\\mathrm{F}|&=\\sqrt{6^{2}+(8)^{2}+10^{2}}\\\\&=\\sqrt{36+64+100}\\\\&=10\\sqrt{2}\\,\\mathrm{N}\\end{aligned} $$ and $$ a=1~\\mathrm{m s}^{-2} $$ $$ m=\\frac{10\\sqrt{2}}{1}=10\\sqrt{2}\\ kg $$\n- The situation is shown in the figure, <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//b22cad9d-aca7-4c28-90ba-209f95fbfd68/markdown_4/imgs/img_in_image_box_840_641_1068_738.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A02Z%2F-1%2F%2F5f64c40c93ccfe8b8833553372c2b7af9b5ea9771a5f7bd782ce419b835b2ad0\" alt=\"Image\" width=\"19%\" /></div> Change in momentum $$ \\begin{aligned}\\overrightarrow{\\Delta\\mathrm{P}}&=\\overrightarrow{\\mathrm{P}}_{f}-\\overrightarrow{\\mathrm{P}}_{i}=m(\\mathrm{v}_{f}-\\mathrm{v}_{i})\\\\&=m[(\\mathrm{v}\\cos45^{\\circ}\\stackrel{\\wedge}{i}-\\mathrm{v}\\sin45^{\\circ}\\stackrel{\\wedge}{j})\\\\&\\quad-(\\mathrm{v}\\cos45^{\\circ}\\stackrel{\\wedge}{i}+\\mathrm{v}\\sin45^{\\circ}\\stackrel{\\wedge}{j})]\\\\&=m\\left[\\left(\\frac{\\mathrm{v}}{\\sqrt{2}}\\stackrel{\\wedge}{i}-\\frac{\\mathrm{v}}{\\sqrt{2}}\\stackrel{\\wedge}{j}\\right)-\\left(\\frac{\\mathrm{v}}{\\sqrt{2}}\\stackrel{\\wedge}{i}+\\frac{\\mathrm{v}}{\\sqrt{2}}\\stackrel{\\wedge}{j}\\right)\\right]\\\\&=-\\sqrt{2}m\\mathrm{v}\\stackrel{\\wedge}{j}\\end{aligned} $$ $$ \\vert\\overrightarrow{\\Delta\\mathbf{P}}\\vert=-\\sqrt{2}\\;m\\mathbf{v} $$\n- Components of momentum parallel to the wall are in the same direction and components of momentum perpendicular to the wall are opposite to each other. Therefore, change of momentum = 2mv sin $\\theta$ <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//b22cad9d-aca7-4c28-90ba-209f95fbfd68/markdown_4/imgs/img_in_image_box_873_1246_988_1452.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A02Z%2F-1%2F%2Fe97fe3398aff5912cffdcd83dc3511498f9c9841d5d185ffa743c9b874100adc\" alt=\"Image\" width=\"9%\" /></div> $ F \\times t = \\text{Change in momentum} = 2mv \\sin \\theta $ ∴ $$ \\begin{array}{l}\\text{F}=\\frac{2mv\\sin\\theta}{t}\\\\=\\frac{2\\times0.5\\times12\\times\\sin30^{\\circ}}{0.25}\\\\=48\\times\\frac{1}{2}=24\\text{N}\\end{array} $$\n- Mass. $$ m=3\\mathrm{~k g}, $$ force, $$ \\mathrm{F}=6t^{2}\\hat{i}+4t\\hat{j} $$ ∴ acceleration. $$ a=\\frac{F}{m}=\\frac{6t^{2}\\hat{i}+4t\\hat{j}}{3} $$ $$ a=2t^{2}\\hat{i}+\\frac{4}{3}t\\hat{j} $$ Now, $$ a=\\frac{dv}{dt}=2t^{2}\\hat{i}+\\frac{4}{3}t\\hat{j} $$ $$ d\\mathbf{v}=\\left(2t^{2}\\hat{i}+\\frac{4}{3}t\\hat{j}\\right)dt $$ $$ \\begin{array}{c} \\displaystyle \\mathbf{v} =\\int_{0}^{3} \\left(2 t^{2} \\hat{i} + \\frac{4}{3} t \\hat{j}\\right) dt \\\\ \\displaystyle = \\left[ \\frac{2}{3} t^{3} \\hat{i} + \\frac{4}{6} t^{2} \\hat{j} \\right]_{0}^{3} = 18 \\hat{i} + 6 \\hat{j}. \\end{array} $$\n- Impulse = Change in momentum $$ \\mathrm{~F~}.\\Delta t=m\\,\\mathbf{v}; $$ $$ \\begin{aligned}F&=\\frac{m.v}{\\Delta t}\\\\&=\\frac{150\\times10^{-3}\\times20}{0.1}=30N\\end{aligned} $$\n- Force = $ \\frac{d}{dt} $ (momentum) = $ \\frac{d}{dt} $ (mv) = v $ \\left(\\frac{dm}{dt}\\right) $ $ \\Rightarrow 210 = 300\\left(\\frac{dm}{dt}\\right) $ $ \\frac{dm}{dt} = rate of combustion $ $ \\frac{210}{300} = 0.7 kg/s $",
+    "formulas": [
+      {
+        "latex": "\\begin{array}{l}\\overset{\\rightarrow}{u}=-u\\overset{\\wedge}{j}\\\\ \\to\\quad\\overset{\\wedge}{v}=ui\\end{array}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\vec{a}=\\frac{\\mathbf{v}-\\mathbf{u}}{t}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\vec{a}=\\frac{\\hat{u i}+\\hat{u j}}{t}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\tan\\theta=\\frac{\\mathbf{v}}{u}=1",
+        "meaning": ""
+      },
+      {
+        "latex": "h=10m",
+        "meaning": ""
+      },
+      {
+        "latex": "\\theta = 45^{\\circ}",
+        "meaning": ""
+      },
+      {
+        "latex": "m=0.15\\mathrm{~k g}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{v}_{1}=\\sqrt{2gh}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{v}_{1}=\\sqrt{2\\times(10\\times10)}",
+        "meaning": ""
+      },
+      {
+        "latex": "=10\\sqrt{2}\\mathrm{~m/s}",
+        "meaning": ""
+      },
+      {
+        "latex": "v_{1}=-10\\sqrt{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "v_{2}=10\\sqrt{2}\\ m/s",
+        "meaning": ""
+      },
+      {
+        "latex": "\\overrightarrow{v}_{2}^{}=10\\sqrt{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{align*}\\text{Impulse}&=m\\left|\\Delta\\overrightarrow{v}\\right|\\\\&=m\\left|10\\sqrt{2}\\hat{j}-(-10\\sqrt{2}\\hat{j})\\right|\\\\&=0.15\\left[2\\left(10\\sqrt{2}\\right)\\right]\\\\&=3\\sqrt{2}\\text{kg m/s}\\\\&=4.2\\text{kg m/s}.\\end{align*}",
+        "meaning": ""
+      },
+      {
+        "latex": "↳\\;\\downarrow\\;↳:",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{array}{l}\\overrightarrow{\\mathrm{F}_{\\mathrm{net}}}=0\\\\m\\frac{d\\overrightarrow{\\mathrm{v}}}{dt}=0\\\\\\quad\\rightarrow\\\\\\quad\\mathrm{v}=\\mathrm{constant}\\end{array}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}|\\overrightarrow{\\Delta\\mathrm{P}}|&=m|\\overrightarrow{\\Delta\\mathrm{v}}|\\\\&=m(2\\times\\cos60^{\\circ})=m\\mathrm{v}\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "I^{st}\\rightarrow\\Delta\\mathbf{P}_{1}=\\frac{1}{2}\\times2\\times6=6kg-m/s",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}\\Delta\\mathrm{P}&=\\Delta\\mathrm{P}_{1}+\\Delta\\mathrm{P}_{2}+\\Delta\\mathrm{P}_{3}\\\\&=6-6+12\\\\&=12\\mathrm{~Ns}\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{II}^{\\mathrm{nd}} \\rightarrow \\Delta \\mathrm{P}_{2} = 2\\left(-3\\right) = -6\\ \\mathrm{kg} \\cdot \\mathrm{m/s}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{III}^{\\mathrm{rd}} \\rightarrow \\Delta \\mathrm{P}_{3} = 4 \\times 3 = 12 \\, \\mathrm{kg} - \\mathrm{m/s}",
+        "meaning": ""
+      },
+      {
+        "latex": "mu_1 + mu_2 = nmv_1 + (M - nm)v_2",
+        "meaning": ""
+      },
+      {
+        "latex": "0 = \\frac{10 \\times 10}{1000} \\times 800 + \\left(100 - \\frac{10 \\times 10}{1000}\\right)v_2",
+        "meaning": ""
+      },
+      {
+        "latex": "-80 = \\frac{999}{10}v_2",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "31098b23-38f9-4631-97b3-b5b49e36f034",
+      "f6673833-a6b5-4199-84cd-27e315e6599b",
+      "536f4f1a-249c-44ae-a744-5b7b4853d0b6",
+      "af3d7f99-c08d-4e4e-859e-032c91736f6e",
+      "06eb64fa-acb8-4f7a-b9db-3c90afe12340",
+      "9701974b-2407-40af-8f1e-aa90d36eaf3f",
+      "bc8a03f8-e67f-4414-9a56-eb066b2152db",
+      "f36aa9cb-1958-40c5-b6dc-81e199030a1f",
+      "1d99ad3f-0d31-4cc7-aab6-5add7773f45f",
+      "6670fa44-822d-45ee-8539-ee6c5013c84a",
+      "d279998d-4adb-48d7-b1cb-e64b5cbae982",
+      "f3d4c8ff-f17c-44d6-9597-8cea2c8eed89",
+      "0b8b0c35-a592-4da3-8a6f-a791bc091757",
+      "727826f9-5aa5-4907-a20b-be31efd7b06a",
+      "104798d7-6a26-43f3-8193-f1decaae2ff8",
+      "68bc78d5-feed-44e0-8158-662eb3e9660b",
+      "0a2f6755-b1ae-4515-ad91-b50ba4b488d7",
+      "e06a3bb7-5b6f-4609-9183-8ede74c766e2",
+      "46e59cf0-602e-4a7d-9266-e1695548f688"
+    ],
+    "tags": [
+      "NEET 2023",
+      "NEET 2021",
+      "NEET 2019",
+      "NEET Phase-II 2016",
+      "AIPMT 2014",
+      "NEET 2013",
+      "AIPMT 2006",
+      "AIPMT 2002",
+      "AIPMT 2001",
+      "AIPMT 1998",
+      "AIPMT 1997",
+      "AIPMT 1996",
+      "AIPMT 1990"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-laws-of-motion-newton-s-third-law-of-motion",
+    "chapter": "Laws of Motion",
+    "subtopic": "Newton's Third Law of Motion",
+    "class": "XI",
+    "unitId": "xi-laws",
+    "unitLabel": "Unit III — Laws of Motion",
+    "order": 3,
+    "title": "Newton's Third Law of Motion",
+    "summary": "Thrust is the force with which the rocket moves upward given by, $$ \\mathrm{F}=u\\frac{dm}{dt} $$ Thus mass of the gas ejected per second to supply the thrust needed to overcome the weight of the rocket is $$…",
+    "body": "**Key points from solved questions**\n- Force required, $ F = \\frac{d(mv)}{dt} $ $ = v\\left(\\frac{dm}{dt}\\right) = vM $ as velocity v is constant Hence, $ \\mathrm{F}=\\mathrm{Mv} $\n- $$ \\mathrm{Thrust}=\\mathbf{M}(g+a)=u\\frac{dm}{dt} $$ $$ \\begin{array}{l}\\frac{dm}{dt}=\\frac{M(g+a)}{u}\\\\=\\frac{5000(10+20)}{800}\\\\ =187.5\\ kg/s \\end{array} $$\n- Rate of burning of fuel, $ \\left(\\frac{dm}{dt}\\right)=1\\ kg/s $ and velocity of ejected fuel, (v) = 60 km/s = 60 × 10³ m/s Force = Rate of change of momentum = $ \\frac{dp}{dt} = \\frac{d(mv)}{dt} $ = v $ \\frac{dm}{dt} $ =(60 × 10³) × 1 = 60000 N\n- Rate of change of mass, $$ =\\frac{d\\mathbf{M}}{dt}=\\alpha\\mathbf{v}. $$ Retarding force = Rate of change of momentum = Velocity $ \\times $ Rate of change in mass $ = -v \\times \\frac{dM}{dt} $ $ = -v \\times \\alpha v = -\\alpha v^{2} $. (Minus sign of v due to deceleration) Therefore, acceleration $ = -\\frac{\\alpha v^{2}}{M} $.\n- Thrust is the force with which the rocket moves upward given by, $$ \\mathrm{F}=u\\frac{dm}{dt} $$ Thus mass of the gas ejected per second to supply the thrust needed to overcome the weight of the rocket is $$ \\frac{dm}{dt}=\\frac{F}{u}=\\frac{ma}{u} $$ or $$ \\begin{array}{l}\\frac{dm}{dt}=\\frac{600\\times10}{1000}\\\\ =6\\mathrm{kg}\\mathrm{s}^{-1}\\end{array} $$",
+    "formulas": [
+      {
+        "latex": "F = \\frac{d(mv)}{dt}",
+        "meaning": ""
+      },
+      {
+        "latex": "= v\\left(\\frac{dm}{dt}\\right) = vM",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{F}=\\mathrm{Mv}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{Thrust}=\\mathbf{M}(g+a)=u\\frac{dm}{dt}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{array}{l}\\frac{dm}{dt}=\\frac{M(g+a)}{u}\\\\=\\frac{5000(10+20)}{800}\\\\ =187.5\\ kg/s \\end{array}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\left(\\frac{dm}{dt}\\right)=1\\ kg/s",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{dp}{dt} = \\frac{d(mv)}{dt}",
+        "meaning": ""
+      },
+      {
+        "latex": "=\\frac{d\\mathbf{M}}{dt}=\\alpha\\mathbf{v}.",
+        "meaning": ""
+      },
+      {
+        "latex": "= -v \\times \\frac{dM}{dt}",
+        "meaning": ""
+      },
+      {
+        "latex": "= -v \\times \\alpha v = -\\alpha v^{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "= -\\frac{\\alpha v^{2}}{M}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{F}=u\\frac{dm}{dt}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{dm}{dt}=\\frac{F}{u}=\\frac{ma}{u}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{array}{l}\\frac{dm}{dt}=\\frac{600\\times10}{1000}\\\\ =6\\mathrm{kg}\\mathrm{s}^{-1}\\end{array}",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "15b443fd-1af6-468d-b0f5-0b8b484bb40a",
+      "e2c98c1e-33c8-4563-bbe8-5e932af6936e",
+      "735a0115-e75a-4858-95cf-f741a8f0ab63",
+      "a8842d56-1f0a-4129-b259-28a7c6a91cab",
+      "3a7f1542-7b1c-4536-85ef-7df979d49691"
+    ],
+    "tags": [
+      "AIPMT Screening 2008",
+      "AIPMT 1998",
+      "AIPMT 1994",
+      "AIPMT 1990"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-laws-of-motion-objective-i",
+    "chapter": "Laws of Motion",
+    "subtopic": "Objective I",
+    "class": "XI",
+    "unitId": "xi-laws",
+    "unitLabel": "Unit III — Laws of Motion",
+    "order": 3,
+    "title": "Objective I",
+    "summary": "Let \"up\" be positive.",
+    "body": "**Key points from solved questions**\n- A handshake is a contact interaction between two human bodies — at the microscopic level it is the result of repulsion between the electron clouds of the atoms in the two hands (and the structural cohesion of matter, which is itself electromagnetic in origin). All everyday \"contact forces\" — pushes, pulls, friction, normal reaction — ultimately arise from electromagnetic interactions between atoms and molecules, not from gravity (far too weak at this scale), the nuclear force (acts only over nuclear-size distances, $\\sim 10^{-15}$ m, deep inside atomic nuclei), or the weak force (also confined to subatomic scales and responsible for processes like radioactive beta decay). Answer: (B).\n- Compare the orders of magnitude of the four fundamental interactions, conventionally expressed via their relative \"strengths\": $$\\text{Nuclear (strong)} \\sim 1, \\quad \\text{Electromagnetic} \\sim 10^{-2}, \\quad \\text{Weak} \\sim 10^{-6}, \\quad \\text{Gravitational} \\sim 10^{-38}$$ But this question restricts attention specifically to **electrons**, and asks us to compare only $E$ (electromagnetic), $G$ (gravitational), and $N$ (nuclear) between two electrons at a given separation. Crucially, **electrons do not participate in the strong nuclear interaction at all** (only quarks/hadrons like protons and neutrons do) — so for a pair of electrons, $N$ is essentially negligible/not applicable in the usual sense, making the electromagnetic force by far the dominant one, followed by the (extremely weak) gravitational pull, with the nuclear contribution being smallest (effectively absent) for electrons: $$E \\gg G \\gg N$$ This ordering, $E > G > N$, corresponds to option (D).\n- This is a direct consequence of **Newton's third law** applied to electromagnetic (Coulomb) forces: for every pair of charged particles $i$ and $j$, the force exerted by $i$ on $j$ is exactly equal in magnitude and opposite in direction to the force exerted by $j$ on $i$: $$\\vec F_{ij} = -\\vec F_{ji}$$ When you sum *all* pairwise electromagnetic forces between every pair of particles in the system, every force $\\vec F_{ij}$ is paired with its equal-and-opposite partner $\\vec F_{ji} = -\\vec F_{ij}$, and these cancel in the sum: $$\\sum_{i \\neq j} \\vec F_{ij} = \\sum_{\\text{pairs}} (\\vec F_{ij}+\\vec F_{ji}) = \\sum_{\\text{pairs}} \\vec 0 = \\vec 0$$ This cancellation is purely a consequence of the *pairwise, equal-and-opposite* nature of the interaction — it doesn't matter whether the charges are positive, negative, or mixed; the signs of the charges only affect whether each individual pair attracts or repels, not the fact that each pair's mutual forces cancel when summed together. Answer: (D), irrespective of the signs of the charges.\n- This is a direct application of **Newton's third law**: \"For every action, there is an equal and opposite reaction.\" When body A exerts a force on body B, body B simultaneously exerts a force of the *same magnitude* (but opposite direction) on body A — regardless of their masses, sizes, or any other property. The masses (60 kg and 40 kg) given in the problem are a deliberate **red herring** — they have no bearing on the magnitudes of the action–reaction pair. The 40 kg man pushes back on the 60 kg man with exactly the same force magnitude that was applied to him: $60$ N. (What *will* differ, due to the different masses, is the resulting accelerations of the two men — but the forces themselves are equal and opposite.) Answer: (C).\n- Treat the chain + body as the system hanging from the ceiling. The whole system is in equilibrium (at rest), so the net force on it is zero. The forces on the system are: - Its total weight, $w_1 + w_2$ (downward) - The force the ceiling exerts on the chain (upward), call it $T$ For equilibrium: $T = w_1 + w_2$. (You can verify this by analyzing the chain alone: it must support the weight $w_1$ hanging from its lower end *and* its own weight $w_2$ — so the force pulling up on its top end, exerted by the ceiling, must balance both: $T = w_1+w_2$.) Answer: (C).\n- This is a classic Newton's-third-law puzzle. When the horse pushes backward against the ground (with its hooves), by Newton's third law, **the ground pushes the horse forward** with an equal and opposite reaction force. It is *this* forward push from the ground on the horse's feet that propels the horse (and, through the harness, the cart) forward. - (a) The cart pulls backward on the horse (via the harness/reins) — this *opposes* the horse's forward motion, it doesn't cause it. - (c) The ground's force on the cart is friction/normal reaction — relevant to the cart's own motion, but it's not what makes the *horse* move forward. - (d) The horse pushes backward on the ground — this is the *action*; it's the **reaction** (ground on horse) that actually accelerates the horse. So the forward-driving force on the horse is the reaction force from the ground. Answer: (B).\n- The car's engine makes the wheels rotate, and the wheels push backward against the road surface (through friction at the contact patch). By **Newton's third law**, the road simultaneously pushes the wheels (and hence the car) forward with an equal and opposite frictional reaction force. This external forward force from the road is what actually accelerates the car — the engine is an *internal* part of the car-system; internal forces (engine on wheels, wheels on axle, etc.) cannot, by themselves, change the net momentum of the car as a whole. Only an **external** force can produce the car's acceleration, and that external agent is the road (via friction on the tyres). Answer: (D).\n- Two spring balances connected in series, with a 10 kg block hanging from the lower one and the upper one attached to a fixed support, form a single chain in static equilibrium. Each spring balance reads the **tension** transmitted through it. Since the system is in equilibrium and the connecting links are \"light\" (massless), the tension is the same throughout the chain — exactly as a massless string transmits the same tension along its length: $$T = \\text{weight of block} = 10g \\;\\Rightarrow\\; \\text{(in mass units) reads } 10\\text{ kg}$$ Both balances are part of the same series chain supporting the same hanging weight, so **both read the full 10 kg** — the upper one supports the block (through the lower balance), and the lower one directly supports the block; the (massless) balances themselves don't add any extra load. Answer: (A).\n- The plane is **smooth** (frictionless), so the only contact force it can exert on the block is the **normal force** $N$, perpendicular to the inclined surface. Resolve the block's weight $mg$ into components along and perpendicular to the incline: - Perpendicular to incline: $mg\\cos\\theta$ - Along the incline (down-slope): $mg\\sin\\theta$ Since the block doesn't accelerate perpendicular to the incline (it stays on the surface), the normal force must exactly balance the perpendicular component of gravity: $$N = mg\\cos\\theta$$ (The component $mg\\sin\\theta$ along the slope is what causes the block to slide down — the smooth surface offers no force to oppose this component.) Answer: (C).\n- Currently, gravity provides the **centripetal force** that keeps you \"stuck\" to the rotating Earth (and also balances against the normal force to keep you in equilibrium when the Earth's rotation is neglected, as the problem states). If gravity suddenly vanished: - There would be **no force pulling you toward the centre** of the Earth, and no force holding you onto the surface. - However, the problem explicitly says to **neglect the rotation of the Earth** — meaning the surface (and you, standing on it) is not actually moving in a circle; there's no centripetal requirement, and no tangential velocity to \"fly off\" along. - With no relative motion and no net force changes in the *horizontal* direction (you weren't moving horizontally to begin with), and gravity (the only vertical force) disappearing along with the normal force it was inducing... Actually, the key insight: **without rotation**, you have no horizontal velocity relative to the ground, so there's nothing to make you \"fly up,\" \"slip,\" or move \"tangentially\" — those effects (like feeling weightless or flying off) arise specifically from rotational/centripetal considerations, which the problem tells us to ignore. With no motion and no horizontal forces, you simply **remain standing** exactly where you are (in the absence of any applied force, an object at rest stays at rest — Newton's first law). Answer: (D).\n- By symmetry, all three vertices of the equilateral triangle carry **identical** charges ($q = 20\\ \\mu\\text{C}$ each) and are equidistant from each other (side $= 1$ m). Consider the forces on the charge at vertex A due to the charges at B and C: - $\\vec F_{AB}$ (force on A due to B) and $\\vec F_{AC}$ (force on A due to C) have **equal magnitudes** (same charge values, same separation $1$ m, so $F = kq^2/r^2$ is the same for both). - The angle between these two force vectors is the **interior angle of the equilateral triangle at A, which is $60°$**... Wait — let's reconsider: the system is explicitly stated to be **\"at rest in an inertial frame\"**, with rigid rods holding the triangle together. The question only asks for the *electrostatic* force on A due to the other charges (that's what \"resultant force on the charged particle at A\" refers to in context, distinguishing electromagnetic interactions). Since like charges repel, $\\vec F_{AB}$ and $\\vec F_{AC}$ both point away from B and C respectively (each along a side of the triangle), and by the symmetry of the equilateral configuration their resultant is a single vector bisecting angle A, pointing away from the triangle's centroid — generally **nonzero**. Actually, re-examining: since the rods are *rigid* and constrain the geometry, the rods supply additional (constraint) forces that exactly balance the electrostatic repulsions, keeping the system static. But the question asks specifically for the resultant of the forces *of the type described* (the electromagnetic forces from the other two charges) — by Coulomb's law with $k = 9\\times10^9$, $q = 20\\times 10^{-6}$ C, $r = 1$ m: $$F = \\frac{kq^2}{r^2} = \\frac{9\\times 10^9 \\times (20\\times10^{-6})^2}{1^2} = 3.6\\ \\text{N}$$ Two such forces of $3.6$ N at $60°$ to each other combine (by the parallelogram law, $C = \\sqrt{F^2+F^2+2F^2\\cos 60°} = F\\sqrt{3}$) to give resultant $3.6\\sqrt{3}$ N — **except** that the question is framed to test whether you recognize that the system is in **static equilibrium** (\"at rest\"), so by Newton's first law the *net* force on each particle (including the rods' constraint forces) must be zero — hence the overall resultant force on A is **zero**. Answer: (A).\n- By the **work–energy theorem**, the work done by a net force equals the change in kinetic energy: $$W = \\Delta KE$$ - Going from rest to speed $v$: $F_1$ does work $W_1 = \\tfrac12 mv^2 - 0 = \\tfrac12 mv^2$ (over whatever distance $d_1$ it acts). - Going from speed $v$ back to rest: $F_2$ does work $W_2 = 0 - \\tfrac12 mv^2 = -\\tfrac12 mv^2$ (it removes the same kinetic energy, over some distance $d_2$). The *magnitudes* of work done are equal ($\\tfrac12 mv^2$ each), but $W = F \\cdot d$ — so the relationship between $F_1$ and $F_2$ depends on the distances $d_1$ and $d_2$ over which each force acts (which are not specified, and need not be equal). If $d_1 = d_2$, then $F_1 = F_2$; if not, $F_1 \\neq F_2$. Since either scenario is consistent with the given information, $F_1$ **may** be equal to $F_2$ (it's possible, but not guaranteed). Answer: (B).\n- Both objects are launched upward with the same initial speed $u$, but experience the **same constant resistive force** $F$ (independent of mass) in addition to gravity. For each body, the net deceleration while going up is $$a = g + \\frac{F}{m}$$ — gravity plus the resistive force divided by the mass. Since $F$ is the *same* for both, but $m_A > m_B$: $$a_A = g + \\frac{F}{m_A} \\;<\\; a_B = g + \\frac{F}{m_B}$$ Body A (heavier) experiences a *smaller* deceleration than body B. Using $v^2 = u^2 - 2ah \\Rightarrow h_{\\max} = \\dfrac{u^2}{2a}$, a smaller deceleration $a$ gives a *larger* maximum height. So A, having the smaller deceleration, **rises higher** than B. Answer: (B). (Physically: the resistive force is a fixed \"extra weight-like\" effect; it represents a proportionally smaller fraction of the heavier object's inertia, so the heavier object is less affected by it — much like how heavier objects are less affected by air resistance relative to gravity.)\n- When the cable is cut, the **entire chamber (including the wedge and the block) goes into free fall** — every part of the system accelerates downward at $g$. In the reference frame of the freely-falling chamber, every object experiences a **pseudo-force** $-mg$ (upward) that exactly cancels the real gravitational force $mg$ (downward) acting on it — this is the principle behind \"weightlessness\" in free fall (the same reason astronauts float in orbit). Net effective gravity inside the freely-falling chamber becomes **zero**. With no effective gravity, there is no component of force driving the block down the (frictionless) incline — the normal force alone would have to provide all of the block's required acceleration (which now matches the chamber's free-fall acceleration), and there's no relative sliding tendency. The block simply **stays where it was placed**, at the top of the wedge, moving along with the wedge in free fall. Answer: (C).",
+    "formulas": [
+      {
+        "latex": "\\text{Nuclear (strong)} \\sim 1, \\quad \\text{Electromagnetic} \\sim 10^{-2}, \\quad \\text{Weak} \\sim 10^{-6}, \\quad \\text{Gravitational} \\sim 10^{-38}",
+        "meaning": ""
+      },
+      {
+        "latex": "E \\gg G \\gg N",
+        "meaning": ""
+      },
+      {
+        "latex": "\\vec F_{ij} = -\\vec F_{ji}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\sum_{i \\neq j} \\vec F_{ij} = \\sum_{\\text{pairs}} (\\vec F_{ij}+\\vec F_{ji}) = \\sum_{\\text{pairs}} \\vec 0 = \\vec 0",
+        "meaning": ""
+      },
+      {
+        "latex": "\\vec F_{ji} = -\\vec F_{ij}",
+        "meaning": ""
+      },
+      {
+        "latex": "T = w_1 + w_2",
+        "meaning": ""
+      },
+      {
+        "latex": "T = w_1+w_2",
+        "meaning": ""
+      },
+      {
+        "latex": "T = \\text{weight of block} = 10g \\;\\Rightarrow\\; \\text{(in mass units) reads } 10\\text{ kg}",
+        "meaning": ""
+      },
+      {
+        "latex": "N = mg\\cos\\theta",
+        "meaning": ""
+      },
+      {
+        "latex": "F = \\frac{kq^2}{r^2} = \\frac{9\\times 10^9 \\times (20\\times10^{-6})^2}{1^2} = 3.6\\ \\text{N}",
+        "meaning": ""
+      },
+      {
+        "latex": "q = 20\\ \\mu\\text{C}",
+        "meaning": ""
+      },
+      {
+        "latex": "F = kq^2/r^2",
+        "meaning": ""
+      },
+      {
+        "latex": "k = 9\\times10^9",
+        "meaning": ""
+      },
+      {
+        "latex": "q = 20\\times 10^{-6}",
+        "meaning": ""
+      },
+      {
+        "latex": "r = 1",
+        "meaning": ""
+      },
+      {
+        "latex": "C = \\sqrt{F^2+F^2+2F^2\\cos 60°} = F\\sqrt{3}",
+        "meaning": ""
+      },
+      {
+        "latex": "W = \\Delta KE",
+        "meaning": ""
+      },
+      {
+        "latex": "W_1 = \\tfrac12 mv^2 - 0 = \\tfrac12 mv^2",
+        "meaning": ""
+      },
+      {
+        "latex": "W_2 = 0 - \\tfrac12 mv^2 = -\\tfrac12 mv^2",
+        "meaning": ""
+      },
+      {
+        "latex": "W = F \\cdot d",
+        "meaning": ""
+      },
+      {
+        "latex": "d_1 = d_2",
+        "meaning": ""
+      },
+      {
+        "latex": "F_1 = F_2",
+        "meaning": ""
+      },
+      {
+        "latex": "a = g + \\frac{F}{m}",
+        "meaning": ""
+      },
+      {
+        "latex": "a_A = g + \\frac{F}{m_A} \\;<\\; a_B = g + \\frac{F}{m_B}",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "5a4a6fba-63b0-420e-ba1f-0275f82f2b42",
+      "f11896b7-b1d8-44d9-a2e8-4ff996f1c071",
+      "99c326ba-56fc-4f89-ae79-f1a9b42cd4b4",
+      "7ca3e67e-6d2e-4e01-8cf1-50c64e2b4013",
+      "a0f034e2-2804-45b0-b388-1980217ad9db",
+      "054419cb-36f7-476d-b8d2-c04cbb137fb9",
+      "d647b9c6-0db0-4b08-a64c-1d7c685bbe50",
+      "9527a9d1-ff90-4015-9cb5-51ca5f548471",
+      "e57cea68-3ed7-4949-a5f5-5ec868700b0d",
+      "900b3e0b-8bfb-4f48-982b-fff8ebc8125b",
+      "bb38da6a-c4cd-4307-ab77-7046db29c18c",
+      "f7519ef0-8def-4415-a0e9-a546065bf081",
+      "eb126b70-cbf2-4738-a92b-83639a371ffd",
+      "f0dcd235-96e1-49c7-8ba0-a6eb3c416dde",
+      "39429063-4402-4039-9150-a0956bdae398",
+      "a4471240-786b-453e-8914-1e878f9525a1",
+      "458c8013-f71b-48c6-b46d-5eb0a4ed791f",
+      "7f7f4dd6-b809-4fb7-ae52-cec278798069",
+      "a89f5bff-17d3-4185-8fd3-804c25a0f429",
+      "788522ef-e3c8-4c9c-b09b-a5411d084251",
+      "6c678249-71f5-451b-a1e0-3393d35ff00e",
+      "c40932dc-a36e-47dd-9de3-0277aed44bc2",
+      "21597467-a287-457c-be8e-6af53560ee5d",
+      "29f37ac4-44e9-4619-bec2-1f5875c056d6",
+      "a0df295d-c900-413d-88b2-aa65d9ae818e"
+    ],
+    "tags": [
+      "HC Verma Vol 1",
+      "Objective I",
+      "Chapter 4",
+      "Chapter 5",
+      "Chapter 6"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-laws-of-motion-objective-ii",
+    "chapter": "Laws of Motion",
+    "subtopic": "Objective II",
+    "class": "XI",
+    "unitId": "xi-laws",
+    "unitLabel": "Unit III — Laws of Motion",
+    "order": 3,
+    "title": "Objective II",
+    "summary": "Neutrons are electrically neutral, so a world made only of neutrons would have **no electromagnetic interactions between particles** (no Coulomb attraction/repulsion, hence no chemical bonds, no atomic structure as we…",
+    "body": "**Key points from solved questions**\n- Both the neutron and proton are **nucleons** — composite particles made of quarks, residing inside (or interacting at) the scale of an atomic nucleus. Two important interactions act between them: - **Gravitational**: Every object with mass attracts every other; a neutron has mass, a proton has mass, so they exert a (extremely tiny, but nonzero) gravitational pull on each other. ✓ (a) - **Electromagnetic**: The neutron is electrically *neutral* (zero net charge), so there is **no** Coulomb interaction between a neutron and a proton (or any charged particle, to leading order). ✗ (b) - **Nuclear (strong)**: This is precisely the force that binds protons and neutrons together inside a nucleus — it acts between nucleons regardless of charge, so it certainly acts between a neutron and a proton (this is, in fact, its primary role). ✓ (c) - **Weak**: The weak interaction is responsible for processes like beta decay (a neutron converting to a proton); it's a real, distinct interaction between nucleons, but the dominant, \"everyday\" force responsible for a neutron pushing/pulling on a proton in a nucleus is the strong nuclear force, not the weak force. The textbook counts (d) as not a primary force here. Answer: (A, C).\n- Two protons, both having mass and both carrying positive electric charge and both being nucleons, can interact via three of the four fundamental forces: - **Gravitational**: Both have mass $\\Rightarrow$ they attract each other gravitationally (negligibly small, but present). ✓ (a) - **Electromagnetic**: Both are positively charged $\\Rightarrow$ they repel each other via the Coulomb force. This is a real, often-dominant interaction between them at atomic scales. ✓ (b) - **Nuclear (strong)**: The strong force binds nucleons (protons and neutrons) together inside a nucleus *irrespective of their charge* — it acts between proton–proton, neutron–neutron, and proton–neutron pairs alike. ✓ (c) - **Weak**: While the weak interaction technically exists between all particles in certain processes, it is not considered one of the standard forces \"exerted\" between two protons in the usual classical/everyday sense addressed by this chapter. ✗ (d) Answer: (A, B, C).\n- Neutrons are electrically neutral, so a world made only of neutrons would have **no electromagnetic interactions between particles** (no Coulomb attraction/repulsion, hence no chemical bonds, no atomic structure as we know it, no contact forces in the usual sense). - **(a) \"no friction\"**: Friction arises from electromagnetic interactions between surface atoms/molecules (interlocking at the microscopic level, intermolecular attraction). Without electromagnetic forces, there would be no such interactions, hence no friction. ✓ - **(b) \"no tension in the string\"**: Tension is transmitted through a material via the electromagnetic bonds between its constituent atoms/molecules. Without electromagnetic forces, there would be no inter-atomic cohesion to transmit a pull along the string — no tension is possible. ✓ - **(c) \"not possible to sit on a chair\"**: The normal (contact) force that supports you on a chair arises from electromagnetic repulsion between the electron clouds of the atoms in your body and the chair. Without it, there'd be nothing to prevent you from passing right through. ✓ - **(d) \"earth could not move around the sun\"**: The Earth's orbital motion is governed by **gravity**, not electromagnetism — and gravity depends only on mass, which neutrons (and neutron-only matter) certainly possess. So orbital motion would be unaffected. ✗ Answer: (A, B, C).\n- **Classical physics** (Newtonian mechanics) gives accurate descriptions of macroscopic objects moving at speeds much less than the speed of light, where quantum effects are negligible. It breaks down at atomic/subatomic scales, where quantum mechanics is required. - **(a) Cricket ball**: A macroscopic object ($\\sim 0.16$ kg) moving at ordinary speeds — classical mechanics describes its motion (trajectory, spin, etc.) essentially perfectly. ✓ - **(b) Dust particle**: Even though small, a dust particle still contains an enormous number of atoms (it's macroscopic on the atomic scale) and follows classical trajectories (e.g., in Brownian motion, classical statistical mechanics suffices to describe its average behavior). ✓ - **(c) Hydrogen atom**: Its structure (electron energy levels, spectral lines, orbital \"shape\") is fundamentally a quantum phenomenon — classical physics famously fails here (e.g., it would predict the electron should spiral into the nucleus, radiating energy continuously, which doesn't happen). ✗ - **(d) Neutron changing to a proton**: This is a process of nuclear beta decay, governed by the weak nuclear interaction — an inherently quantum (and subatomic) phenomenon with no classical analogue. ✗ Answer: (A, B).\n- The tension or compression in a spring depends on how much its **total length changes** — i.e., on the *relative* displacement of its two ends, not on their displacements individually. Let \"rightward\" be the positive direction, and let both ends be displaced by the same magnitude $d$. - **(a)** Right end moves right by $d$, left end moves left by $d$: the spring **stretches** by $d + d = 2d$ — maximum elongation $\\Rightarrow$ maximum tension. ✓ - **(b)** Both ends move right by $d$: the spring just **translates** as a whole; its length is unchanged $\\Rightarrow$ zero tension/compression. - **(c)** Both ends move left by $d$: same as (b) — pure translation, no change in length $\\Rightarrow$ zero tension/compression. - **(d)** Right end moves left by $d$, left end moves right by $d$: the two ends approach each other, and the spring **compresses** by $2d$ — maximum compression (maximum magnitude of internal force, though now compressive rather than tensile). ✓ Both (a) and (d) produce a length change of magnitude $2d$ (maximum possible for given individual displacement magnitudes) — one in extension, one in compression — so both give the maximum-magnitude internal force. Answer: (A, D).\n- This restates **Newton's third law**: whenever object A exerts a force (the \"action\") on object B, object B simultaneously exerts a force (the \"reaction\") on A, such that: - **(a)** They act on **two different objects** — the action acts on B, the reaction acts on A; they never act on the same body. ✓ - **(b)** They have **equal magnitude** — $|\\vec F_{AB}| = |\\vec F_{BA}|$, by the very statement of the third law. ✓ - **(c)** They act in **opposite directions** — $\\vec F_{AB} = -\\vec F_{BA}$. ✓ - **(d)** Their **(vector) resultant is zero** — since $\\vec F_{AB} + \\vec F_{BA} = \\vec F_{AB} + (-\\vec F_{AB}) = \\vec 0$, the vector sum of the action–reaction pair is mathematically zero. ✓ (Note: this \"resultant\" is a purely mathematical statement about the vector sum of two equal-and-opposite vectors — it does *not* mean the forces \"cancel out\" physically, since they act on two different bodies and each separately influences the motion of the body it acts on.) All four statements correctly describe properties of an action–reaction pair. Answer: (A, B, C, D).\n- An **inertial frame** is one in which Newton's first law (the law of inertia) holds — i.e., a frame that is not accelerating. The Earth is constantly accelerating in two ways: - **Revolving around the Sun**: it follows a (nearly circular) orbit, which means it is continuously accelerating centripetally toward the Sun. - **Rotating about its own axis**: any point on Earth's surface (except the poles) moves in a circle about the rotation axis, so it too has a centripetal acceleration. Either of these accelerations alone is enough to make a frame attached to the Earth a *non-inertial* frame (in the strict sense) — pseudo-forces (like the Coriolis and centrifugal effects) are needed to make Newton's laws appear to work in this frame. So: - (a) and (c) are wrong — an Earth-frame is not inertial \"by definition,\" and the mere fact that Newton's laws *appear* approximately valid doesn't make it strictly inertial (small corrections/pseudo-forces are needed for precise analysis). - (b) and (d) correctly identify the *two* sources of the Earth-frame's non-inertial character: orbital revolution and axial rotation. (In everyday situations the accelerations are small enough that the Earth frame is an excellent *approximation* to an inertial frame — but strictly, it is not one.) Answer: (B, D).\n- A particle \"at rest\" in some frame means its **acceleration relative to that frame is zero**. By Newton's second law applied *within* that frame: - **If the frame is inertial**: zero acceleration $\\Rightarrow$ the *real* net force on the particle must be zero (Newton's second law holds directly). - **If the frame is non-inertial** (accelerating): the particle can appear to be at rest (zero acceleration in this frame) even though a nonzero *real* net force acts on it — because a **pseudo-force** (equal and opposite to the frame's acceleration effect) exactly balances the real force in this frame's reckoning. For example, a ball resting on the floor of an upward-accelerating lift: in the lift's (non-inertial) frame it appears at rest, but a nonzero net real force acts on it (causing the lift-frame acceleration in the ground frame). So we **cannot** conclude the frame is inertial (rules out (a)), nor that the resultant *real* force is zero (rules out (b) as a certainty) — but we *can* say: either the frame is inertial and the force is genuinely zero, **or** the frame is non-inertial and a nonzero real force is present (balanced by a pseudo-force in that frame). These are precisely options (c) and (d). Answer: (C, D).\n- The particle is at rest in $S_1$ and moves with *constant* velocity in $S_2$. This means $S_2$ moves with constant velocity relative to $S_1$ (no relative acceleration between the frames) — because if the particle has zero acceleration in $S_1$ and also zero acceleration in $S_2$ (constant velocity $\\Rightarrow$ zero acceleration), the two frames must differ only by a constant relative velocity, not by any relative acceleration. Key principle: **if one frame is inertial, then any frame moving with constant velocity relative to it is also inertial** (Galilean relativity) — and conversely, if one is non-inertial (accelerating in some \"absolute\" sense), a frame moving at constant relative velocity to it shares exactly the same acceleration, so it is *equally* non-inertial. So: - If $S_1$ is inertial, $S_2$ (moving at constant velocity relative to $S_1$) is also inertial. ✓ (a) - If $S_1$ is non-inertial, $S_2$ (related to it only by a constant relative velocity — no relative acceleration) is non-inertial too. ✓ (b) - It is **impossible** for one to be inertial and the other not, since they share the same acceleration (zero relative acceleration between them). ✗ (c), (d) Answer: (A, B).\n- On a displacement–time ($x$–$t$) graph, the **slope gives velocity** and the **rate of change of slope (curvature) indicates acceleration**, which (by Newton's second law, $F=ma$) directly tells us about the force. - A **straight-line segment** (constant slope) means constant velocity $\\Rightarrow$ zero acceleration $\\Rightarrow$ **zero net force**. - A **curved segment** (changing slope) means changing velocity $\\Rightarrow$ nonzero acceleration $\\Rightarrow$ **nonzero net force**. Reading the graph: the regions **AB** and **CD** are straight-line segments (the particle moves with constant velocity through them), so the force is zero there. The regions **BC** and **DE**, by contrast, are curved (the slope is changing — the particle is speeding up or slowing down), indicating a nonzero force. So the force is zero in regions AB and CD. Answer: (A, C).\n- **Before $t=0$ (both ropes pulling):** The block is in equilibrium (at rest or moving with constant velocity on the frictionless surface), pulled equally from both sides by force $F$ through each rope. For equilibrium (zero net horizontal force), the tensions transmitted by both ropes to the block must be equal: $$F_1 = F_2 = F \\quad \\text{for } t<0$$ This is option (a). ✓ (Option (b) incorrectly adds $mg$ — that's a *vertical* weight term that has no bearing on the *horizontal* forces the ropes exert on the block.) **After $t=0$ (left rope's force withdrawn):** The right rope continues to pull with the same applied force $F$; since the rope is presumed light/ideal and still under tension $F$ from the applied end, it transmits $F_1 = F$ to the block. The left rope, however, no longer has any force pulling it — with the block now accelerating away (pulled by the right rope) and the left rope slack (it can only pull, not push), it transmits **zero** force: $F_2 = 0$. So $F_1 = F > 0$ while $F_2 = 0$ — i.e. $F_1 < F$ is false (it stays equal to $F$) but $F_2$ drops to zero. The correct relation for $t>0$ is $F_1 = F$ and $F_2 = 0$ (matching the spirit of options describing the right rope retaining tension $F$ while the left one goes slack). Answer: (A) — for $t<0$, both forces equal $F$, which is the well-defined, unambiguous part of the scenario.\n- The force the floor exerts on a person's feet (the \"normal reaction,\" which is what a weighing scale would read) satisfies, by Newton's second law applied to the person (taking \"up\" as positive): $$N - mg = ma \\;\\Rightarrow\\; N = m(g+a)$$ where $a$ is the person's acceleration (positive if directed upward, negative if downward). The reaction force $N$ exceeds the true weight $mg$ whenever the **acceleration $a$ has an upward component** (i.e., $a > 0$ in our convention): - **Going up and speeding up**: velocity is upward and increasing $\\Rightarrow$ acceleration is upward ($a>0$) $\\Rightarrow$ $N = m(g+a) > mg$. ✓ (b) - **Going down and slowing down**: velocity is downward but its magnitude is decreasing $\\Rightarrow$ the acceleration is directed *upward* (opposing the downward velocity) $\\Rightarrow$ $a > 0$ $\\Rightarrow$ $N > mg$. ✓ (c) - **Going up and slowing down**: velocity is upward but decreasing $\\Rightarrow$ acceleration is downward ($a<0$) $\\Rightarrow$ $N = m(g+a) < mg$. ✗ (a) - **Going down and speeding up**: velocity is downward and increasing in magnitude $\\Rightarrow$ acceleration is downward ($a<0$) $\\Rightarrow$ $N < mg$. ✗ (d) So $N > mg$ (floor pushes harder than weight) precisely when the acceleration points upward — cases (b) and (c). Answer: (B, C).\n- For the elevator (mass $M$), Newton's second law (taking \"up\" as positive) gives: $$T - Mg = Ma \\;\\Rightarrow\\; T = M(g+a)$$ where $a$ is the elevator's acceleration. Given $T = Mg$ (tension equals weight): $M(g+a) = Mg \\Rightarrow a = 0$. So the cable tension equals the elevator's weight **only when the elevator's acceleration is zero** — i.e., it is moving with **constant velocity** (it could be at rest, moving up at constant speed, or moving down at constant speed; \"zero acceleration\" doesn't specify direction of motion, only that the speed isn't changing). - (a) \"going up with *increasing* speed\" $\\Rightarrow$ $a>0 \\Rightarrow T > Mg$. ✗ - (b) \"going down with *increasing* speed\" $\\Rightarrow$ $a<0$ (accelerating downward) $\\Rightarrow T < Mg$. ✗ - (c) \"going up with uniform speed\" $\\Rightarrow a=0 \\Rightarrow T = Mg$. ✓ - (d) \"going down with uniform speed\" $\\Rightarrow a = 0 \\Rightarrow T = Mg$. ✓ Answer: (C, D).\n- Newton's second law, $\\vec F = m\\vec a$, holds **only in inertial reference frames**. If the person made the measurement from a **non-inertial (accelerating) frame**, then a particle that is genuinely force-free (in the inertial/\"true\" sense) can still *appear* to have a nonzero acceleration — this apparent acceleration is exactly what gives rise to the notion of \"pseudo-forces\" in non-inertial frames. So the observation \"acceleration is nonzero while no real force acts\" is **perfectly consistent and explainable** if the measurement was made from a non-inertial frame — there's no need to accuse the person of lying (a), or to suspect faulty instruments like a slow clock (b) or a wrong-length scale (c), which would introduce systematic *measurement errors* rather than explain a genuine nonzero apparent acceleration with no real force. The simplest, physically sound explanation is that the observer's frame of reference was non-inertial. Answer: (D).",
+    "formulas": [
+      {
+        "latex": "d + d = 2d",
+        "meaning": ""
+      },
+      {
+        "latex": "|\\vec F_{AB}| = |\\vec F_{BA}|",
+        "meaning": ""
+      },
+      {
+        "latex": "\\vec F_{AB} = -\\vec F_{BA}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\vec F_{AB} + \\vec F_{BA} = \\vec F_{AB} + (-\\vec F_{AB}) = \\vec 0",
+        "meaning": ""
+      },
+      {
+        "latex": "F_1 = F_2 = F \\quad \\text{for } t<0",
+        "meaning": ""
+      },
+      {
+        "latex": "F_1 = F",
+        "meaning": ""
+      },
+      {
+        "latex": "F_2 = 0",
+        "meaning": ""
+      },
+      {
+        "latex": "F_1 = F > 0",
+        "meaning": ""
+      },
+      {
+        "latex": "N - mg = ma \\;\\Rightarrow\\; N = m(g+a)",
+        "meaning": ""
+      },
+      {
+        "latex": "N = m(g+a) > mg",
+        "meaning": ""
+      },
+      {
+        "latex": "N = m(g+a) < mg",
+        "meaning": ""
+      },
+      {
+        "latex": "T - Mg = Ma \\;\\Rightarrow\\; T = M(g+a)",
+        "meaning": ""
+      },
+      {
+        "latex": "T = Mg",
+        "meaning": ""
+      },
+      {
+        "latex": "M(g+a) = Mg \\Rightarrow a = 0",
+        "meaning": ""
+      },
+      {
+        "latex": "\\Rightarrow a=0 \\Rightarrow T = Mg",
+        "meaning": ""
+      },
+      {
+        "latex": "\\Rightarrow a = 0 \\Rightarrow T = Mg",
+        "meaning": ""
+      },
+      {
+        "latex": "\\vec F = m\\vec a",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "5724c55e-ca12-467f-8b05-fae54bbe0e51",
+      "baecae14-dc05-4a39-8667-916940cc5805",
+      "ebb50ee6-2d30-4959-b6eb-d7378917f6f9",
+      "67a7cebd-5735-4898-aa18-424943f2e758",
+      "17e1d0a8-0f1d-4945-a0a7-595a64fbae82",
+      "36b4814f-2cc6-489d-b0c3-5cb60254a916",
+      "0824adb3-2e6b-427d-9c46-0592a5181458",
+      "b89392d2-138f-4996-bffb-f4e91128a4cc",
+      "39d33bf7-a1b8-4fbc-a633-1ab2e5e3f731",
+      "68c46612-8d15-4afa-9d32-3c4815cbbfea",
+      "72cf11b3-01a5-4925-8960-cb29fca36555",
+      "953748c1-55aa-47b0-ad80-843342fe437f",
+      "b27c1256-38d9-48db-8123-07a21c1c94ca",
+      "8b25af2e-fe62-43ee-9d6a-5017da4895dc"
+    ],
+    "tags": [
+      "HC Verma Vol 1",
+      "Objective II",
+      "Chapter 4",
+      "Chapter 5"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-laws-of-motion-solving-problems-in-mechanics",
+    "chapter": "Laws of Motion",
+    "subtopic": "Solving Problems in Mechanics",
+    "class": "XI",
+    "unitId": "xi-laws",
+    "unitLabel": "Unit III — Laws of Motion",
+    "order": 3,
+    "title": "Solving Problems in Mechanics",
+    "summary": "The wedge is given an acceleration to the left.",
+    "body": "**Key points from solved questions**\n- Mass of the box = 5 kg inclined Angle of Plane, $ \\theta = 30^{\\circ} $ Tension in cord, T = 30 N $$ ma=T-mg\\sin\\theta $$ $$ 5a=30-5\\times10\\left(\\sin30^{\\circ}\\right) $$ $$ 5a=30-\\left(\\begin{array}{c}50\\times\\frac{1}{2}\\\\ \\frac{24}{5}\\end{array}\\right) $$ $$ 5a=5 $$ $$ a=1\\mathrm{~m/s^{2}} $$\n- <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//f7ce5ea9-0ede-4795-a9a6-658b3b444f9f/markdown_2/imgs/img_in_image_box_731_143_984_327.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A15%3A46Z%2F-1%2F%2F811933937c90a2fa20c7b1fde8938f6b7bc83a32f889e2c40de2e0bc269490b7\" alt=\"Image\" width=\"21%\" /></div> In non-inertial frame. N sin $\\theta = ma$ N cos $\\theta = mg$ From eq. (i) and (ii), we get $$ \\tan\\theta=\\frac{a}{g} $$ $$ a=g\\tan\\theta $$\n- Let F be the upthrust of the air. As the balloon is descending down with an acceleration a, $$ mg-F=ma $$ <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//f7ce5ea9-0ede-4795-a9a6-658b3b444f9f/markdown_2/imgs/img_in_image_box_812_617_1064_847.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A15%3A47Z%2F-1%2F%2Fe454025d5c83e10b52cfec86dcf9c23f0140e51753ce385acd9848e5eaf2af07\" alt=\"Image\" width=\"21%\" /></div> Let mass $m_{0}$ be removed from the balloon, so that it starts moving up with an acceleration $a$. Then. $$ \\mathrm{F}-(m-m_{0})g=(m-m_{0})a $$ $$ \\mathrm{F}-m g+m_{0}g=m a-m_{0}a $$ Adding eqn. (i) and eqn. (ii), we get $$ m_{0}g=2ma-m_{0}a; $$ $$ m_{0}g+m_{0}a=2m a $$ $$ m_{0}(g_{*}+a)=2m a $$ $$ m_{0}=\\frac{2ma}{g+a} $$\n- As all blocks are moving with constant speed, therefore, acceleration is zero. So, net force on each block is zero.\n- Here, Mass of a person, m = 60 kg Mass of lift, M = 940 kg. $$ a=1\\ m/s^{2},g=10\\ m/s^{2} $$ <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//f7ce5ea9-0ede-4795-a9a6-658b3b444f9f/markdown_2/imgs/img_in_image_box_866_1342_1004_1510.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A15%3A47Z%2F-1%2F%2Fd7b049fe32efa875fca35c5fc633e9e9fbcc86b45481f569787a5e168be4c24b\" alt=\"Image\" width=\"11%\" /></div> Let T be the tension in the supporting cable. $$ \\begin{aligned}\\therefore\\mathrm{~T}-(\\mathbf{M}+\\boldsymbol{m})\\boldsymbol{g}&=(\\mathbf{M}+\\boldsymbol{m})\\boldsymbol{a}\\\\ \\mathrm{T}&=(\\mathbf{M}+\\boldsymbol{m})(\\boldsymbol{a}+\\boldsymbol{g})\\\\ &=(940+60)(1+10)\\\\ &=11000\\mathrm{~N}\\end{aligned} $$\n- The wedge is given an acceleration to the left. ∴ The block has a pseudo acceleration to the right, pressing against the wedge because of which the block is not moving. <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//f7ce5ea9-0ede-4795-a9a6-658b3b444f9f/markdown_3/imgs/img_in_image_box_163_394_429_622.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A15%3A49Z%2F-1%2F%2F930e79d66568d8c294abe51bf0fa993534f7121f3570339146c9238b01ba520d\" alt=\"Image\" width=\"22%\" /></div> $ \\therefore mg\\sin\\theta=ma\\cos\\theta $ or $$ a=\\frac{g\\sin\\theta}{\\cos\\theta} $$ Total reaction of the wedge on the block is, $$ \\mathrm{N}=m g\\cos\\theta+m a\\sin\\theta $$ or $$ \\mathrm{N}=m g\\cos\\theta+\\frac{m g\\sin\\theta\\sin\\theta}{\\cos\\theta} $$ or $$ \\mathbf{N}=\\frac{mg\\left(\\cos^{2}\\theta+\\sin^{2}\\theta\\right)}{\\cos\\theta}=\\frac{mg}{\\cos\\theta} $$\n- Let T be the tension in the rope when monkey climbs up with an acceleration a. Then, $$ T-mg=ma $$ $$ 25g-20g=20a $$ $$ \\begin{array}{l}a=\\frac{5\\times10}{20}\\\\ =2.5\\ m/s^{2}\\end{array} $$\n- The pseudo acceleration for the body $a^{\\prime}=a$ If the pseudo force, Ma cos $\\theta = Mg \\sin \\theta$, then the body will be at rest. <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//f7ce5ea9-0ede-4795-a9a6-658b3b444f9f/markdown_3/imgs/img_in_image_box_743_407_968_594.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A15%3A50Z%2F-1%2F%2F152d161df2940a988b92bd3045eecc0019cf8fb9225954789ed755584fc88da6\" alt=\"Image\" width=\"18%\" /></div> $$ a=g\\tan\\theta $$ This horizontal acceleration should be applied to the wedge to the left.\n- Let T be the tension in the branch of a tree when monkey is descending with acceleration a. Thus, $$ mg-T=ma $$ also, T = 75% of weight of monkey $$ \\mathrm{T}=\\left(\\frac{75}{100}\\right)mg=\\frac{3}{4}mg $$ ∴ $$ ma=mg-\\left(\\frac{3}{4}\\right)mg=\\frac{1}{4}mg $$ or $$ a=\\frac{g}{4} $$",
+    "formulas": [
+      {
+        "latex": "ma=T-mg\\sin\\theta",
+        "meaning": ""
+      },
+      {
+        "latex": "5a=30-5\\times10\\left(\\sin30^{\\circ}\\right)",
+        "meaning": ""
+      },
+      {
+        "latex": "5a=30-\\left(\\begin{array}{c}50\\times\\frac{1}{2}\\\\ \\frac{24}{5}\\end{array}\\right)",
+        "meaning": ""
+      },
+      {
+        "latex": "5a=5",
+        "meaning": ""
+      },
+      {
+        "latex": "a=1\\mathrm{~m/s^{2}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\theta = 30^{\\circ}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\tan\\theta=\\frac{a}{g}",
+        "meaning": ""
+      },
+      {
+        "latex": "a=g\\tan\\theta",
+        "meaning": ""
+      },
+      {
+        "latex": "\\theta = ma",
+        "meaning": ""
+      },
+      {
+        "latex": "\\theta = mg",
+        "meaning": ""
+      },
+      {
+        "latex": "mg-F=ma",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{F}-(m-m_{0})g=(m-m_{0})a",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{F}-m g+m_{0}g=m a-m_{0}a",
+        "meaning": ""
+      },
+      {
+        "latex": "m_{0}g=2ma-m_{0}a;",
+        "meaning": ""
+      },
+      {
+        "latex": "m_{0}g+m_{0}a=2m a",
+        "meaning": ""
+      },
+      {
+        "latex": "m_{0}(g_{*}+a)=2m a",
+        "meaning": ""
+      },
+      {
+        "latex": "m_{0}=\\frac{2ma}{g+a}",
+        "meaning": ""
+      },
+      {
+        "latex": "a=1\\ m/s^{2},g=10\\ m/s^{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}\\therefore\\mathrm{~T}-(\\mathbf{M}+\\boldsymbol{m})\\boldsymbol{g}&=(\\mathbf{M}+\\boldsymbol{m})\\boldsymbol{a}\\\\ \\mathrm{T}&=(\\mathbf{M}+\\boldsymbol{m})(\\boldsymbol{a}+\\boldsymbol{g})\\\\ &=(940+60)(1+10)\\\\ &=11000\\mathrm{~N}\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "a=\\frac{g\\sin\\theta}{\\cos\\theta}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{N}=m g\\cos\\theta+m a\\sin\\theta",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{N}=m g\\cos\\theta+\\frac{m g\\sin\\theta\\sin\\theta}{\\cos\\theta}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{N}=\\frac{mg\\left(\\cos^{2}\\theta+\\sin^{2}\\theta\\right)}{\\cos\\theta}=\\frac{mg}{\\cos\\theta}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\therefore mg\\sin\\theta=ma\\cos\\theta",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "c91377c4-cf72-47c1-bf3b-989248c56870",
+      "7b6e10a8-1ab3-4446-b4cc-ac5b55329964",
+      "c4fff593-9119-47d1-b0c8-c8689178f580",
+      "4857d202-044b-4328-8ee9-ea3544d4c0ea",
+      "f0f6ad59-9310-4a7f-b480-2548b351aee7",
+      "45351662-24f3-4b05-90d6-ad604f5ae88c",
+      "9b7ee1af-5bb4-4225-a370-076aedca6c3c",
+      "1ff63a62-945b-416b-b3e0-a4191dc185f3",
+      "53ddf208-c39d-479e-96b7-972645b4703e"
+    ],
+    "tags": [
+      "Re-NEET 2024",
+      "NEET 2018",
+      "AIPMT 2014",
+      "AIPMT 2004",
+      "AIPMT 2003",
+      "AIPMT 1998",
+      "AIPMT 1993"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-laws-of-motion-reneet2026",
+    "chapter": "Laws of Motion",
+    "subtopic": "reNEET2026",
+    "class": "XI",
+    "unitId": "xi-laws",
+    "unitLabel": "Unit III — Laws of Motion",
+    "order": 3,
+    "title": "reNEET2026",
+    "summary": "Minimum wear $\\Rightarrow$ no friction needed: $\\tan\\theta=\\dfrac{v^2}{rg}=\\dfrac{100}{50\\times10}=\\dfrac15$, so $\\theta=\\tan^{-1}(1/5).$",
+    "body": "**Key points from solved questions**\n- Minimum wear $\\Rightarrow$ no friction needed: $\\tan\\theta=\\dfrac{v^2}{rg}=\\dfrac{100}{50\\times10}=\\dfrac15$, so $\\theta=\\tan^{-1}(1/5).$",
+    "formulas": [
+      {
+        "latex": "\\tan\\theta=\\dfrac{v^2}{rg}=\\dfrac{100}{50\\times10}=\\dfrac15",
+        "meaning": ""
+      },
+      {
+        "latex": "\\theta=\\tan^{-1}(1/5).",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "renet2026-phy-41"
+    ],
+    "tags": [
+      "reNEET 2026"
+    ],
+    "source": "seed"
+  }
+]

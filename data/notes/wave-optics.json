@@ -1,0 +1,550 @@
+[
+  {
+    "id": "note-wave-optics-diffraction",
+    "chapter": "Wave Optics",
+    "subtopic": "Diffraction",
+    "class": "XII",
+    "unitId": "xii-optics",
+    "unitLabel": "Unit VII — Optics",
+    "order": 23,
+    "title": "Diffraction",
+    "summary": "<div style=\"text-align: center;\"><img…",
+    "body": "**Key points from solved questions**\n- As, $$ \\theta_{0}=\\frac{2\\lambda}{a} $$ $$ \\frac{\\theta^{\\prime}}{\\theta_{0}}=\\frac{\\lambda^{\\prime}}{6000} $$ ⇔ $$ \\begin{array}{l}\\lambda^{\\prime}=0.7\\times6000(as\\theta^{\\prime}=0.7\\theta_{0})\\\\=4200\\mathring{A}\\end{array} $$\n- Here $f = D = 60\\ \\text{cm} = 0.6\\ \\text{m}$ Distance of first dark band from centre of screen, $$ \\begin{aligned}y&=\\frac{\\lambda\\mathrm{D}}{a}=\\frac{5\\times10^{-7}\\times0.6}{2\\times10^{-2}\\times10^{-2}}\\\\&=15\\times10^{-4}\\mathrm{~m}=0.15\\mathrm{~c}\\end{aligned} $$\n- According to the question, first minimum is observed at angle $ 30^{\\circ} $ at single slit of width a means $$ n=1,\\theta=30^{\\circ} $$ From Bragg's law $ a \\sin \\theta = n \\lambda $ a sin 30° = λ $$ a=2\\lambda $$ and the first secondary maxima. $$ a\\sin\\theta_{1}=\\frac{3\\lambda}{2} $$ $$ \\theta_{1}=\\frac{3\\lambda}{2a} $$ $ \\Rightarrow $ From eq. (i) and (ii), $$ \\begin{array}{c} \\text{From eq. (1) and (II),}\\\\ \\sin\\theta_{1}=\\dfrac{3\\lambda}{2(2\\lambda)}\\\\\\\\ \\Rightarrow\\qquad\\sin\\theta_{1}=\\dfrac{3}{4}\\\\\\\\ \\Rightarrow\\qquad\\theta_{1}=\\sin^{-1}\\left(\\dfrac{3}{4}\\right)\\\\ \\end{array} $$\n- <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//c4a242b2-912b-4ad1-96b4-7bf2e352f73d/markdown_0/imgs/img_in_image_box_216_336_466_466.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A28Z%2F-1%2F%2F93c429d4660bb41270031049a235f949a6f08d5d8e257e84069ef8031b5cefc2\" alt=\"Image\" width=\"21%\" /></div> Phase difference, $\\Delta\\phi = \\frac{\\Delta x}{\\lambda} \\times 2\\pi = \\frac{(a / 2)\\sin\\theta}{\\lambda} \\times 2\\pi$ $$ \\Delta\\phi=\\frac{\\lambda}{2\\lambda}\\times2\\pi=\\pi\\text{radian} $$\n- <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//c4a242b2-912b-4ad1-96b4-7bf2e352f73d/markdown_0/imgs/img_in_image_box_211_589_479_738.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A29Z%2F-1%2F%2Fe25352aad4d40c7c979be2f1d731f6e296c1bf6989261679704788c21b7dfab3\" alt=\"Image\" width=\"22%\" /></div> From diagram $ \\sin \\theta = \\frac{\\lambda}{a} $ $ \\sin\\theta=\\theta=\\frac{Y}{D} $ (for small angle) $$ \\frac{Y}{D}=\\frac{\\lambda}{a} $$ $$ Y=\\frac{\\lambda D}{a} $$ $\\therefore$ Width of central maxima = 2Y $=\\frac{2\\lambda D}{a}$\n- For a dark fringe to form, $$ \\begin{aligned}\\frac{dy}{D}&=\\lambda\\\\y&=\\frac{D\\lambda}{d}\\\\&=\\frac{2\\times600\\times10^{-9}}{10^{-3}}=1.2mm\\end{aligned} $$ Distance between the first dark fringes on either side of central bright fringe is $ 2 \\times y = 2.4 \\, mm $.\n- As speed of electrons is increased, so wavelength of electrons will decrease. Therefore, the angular width ( $ \\propto\\lambda $) of the central maximum of diffraction pattern will decrease.\n- We know that path difference for second minimum = 2$\\lambda$. $\\therefore$ Phase difference $=\\frac{2\\pi}{\\lambda}\\times2\\lambda$\n- Huygen's construction of wavefront does not apply to origin of spectra, which is explained by quantum theory.",
+    "formulas": [
+      {
+        "latex": "\\theta_{0}=\\frac{2\\lambda}{a}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{\\theta^{\\prime}}{\\theta_{0}}=\\frac{\\lambda^{\\prime}}{6000}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{array}{l}\\lambda^{\\prime}=0.7\\times6000(as\\theta^{\\prime}=0.7\\theta_{0})\\\\=4200\\mathring{A}\\end{array}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}y&=\\frac{\\lambda\\mathrm{D}}{a}=\\frac{5\\times10^{-7}\\times0.6}{2\\times10^{-2}\\times10^{-2}}\\\\&=15\\times10^{-4}\\mathrm{~m}=0.15\\mathrm{~c}\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "f = D = 60\\ \\text{cm} = 0.6\\ \\text{m}",
+        "meaning": ""
+      },
+      {
+        "latex": "n=1,\\theta=30^{\\circ}",
+        "meaning": ""
+      },
+      {
+        "latex": "a=2\\lambda",
+        "meaning": ""
+      },
+      {
+        "latex": "a\\sin\\theta_{1}=\\frac{3\\lambda}{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\theta_{1}=\\frac{3\\lambda}{2a}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{array}{c} \\text{From eq. (1) and (II),}\\\\ \\sin\\theta_{1}=\\dfrac{3\\lambda}{2(2\\lambda)}\\\\\\\\ \\Rightarrow\\qquad\\sin\\theta_{1}=\\dfrac{3}{4}\\\\\\\\ \\Rightarrow\\qquad\\theta_{1}=\\sin^{-1}\\left(\\dfrac{3}{4}\\right)\\\\ \\end{array}",
+        "meaning": ""
+      },
+      {
+        "latex": "a \\sin \\theta = n \\lambda",
+        "meaning": ""
+      },
+      {
+        "latex": "\\Delta\\phi=\\frac{\\lambda}{2\\lambda}\\times2\\pi=\\pi\\text{radian}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\Delta\\phi = \\frac{\\Delta x}{\\lambda} \\times 2\\pi = \\frac{(a / 2)\\sin\\theta}{\\lambda} \\times 2\\pi",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{Y}{D}=\\frac{\\lambda}{a}",
+        "meaning": ""
+      },
+      {
+        "latex": "Y=\\frac{\\lambda D}{a}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\sin \\theta = \\frac{\\lambda}{a}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\sin\\theta=\\theta=\\frac{Y}{D}",
+        "meaning": ""
+      },
+      {
+        "latex": "=\\frac{2\\lambda D}{a}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}\\frac{dy}{D}&=\\lambda\\\\y&=\\frac{D\\lambda}{d}\\\\&=\\frac{2\\times600\\times10^{-9}}{10^{-3}}=1.2mm\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "2 \\times y = 2.4 \\, mm",
+        "meaning": ""
+      },
+      {
+        "latex": "=\\frac{2\\pi}{\\lambda}\\times2\\lambda",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "fe0d354f-a125-4100-a8eb-013dfe0019ae",
+      "6e896ad1-8f2a-4c94-9ed1-73df85df0064",
+      "e7bce770-8198-4279-8ed0-a03fdbb82eb4",
+      "53400b67-75cc-46da-a39c-fd8048cf296c",
+      "553055ae-eb7a-434d-9449-bca9002c027a",
+      "70740ccb-d9a7-4f06-970a-3e66167261d4",
+      "223f3130-a667-4c8a-8c12-ba530956dbc1",
+      "5b22be95-0137-45d8-a435-8207f2c336b5",
+      "1781ea52-40f6-49f0-b277-7417fddf2b4d"
+    ],
+    "tags": [
+      "NEET 2019",
+      "AIPMT July 2015",
+      "AIPMT 2014",
+      "NEET 2013",
+      "NEET Karnataka 2013",
+      "AIPMT 1988"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-wave-optics-interference-of-light-waves-and-young-s-experiment",
+    "chapter": "Wave Optics",
+    "subtopic": "Interference of Light Waves and Young's Experiment",
+    "class": "XII",
+    "unitId": "xii-optics",
+    "unitLabel": "Unit VII — Optics",
+    "order": 23,
+    "title": "Interference of Light Waves and Young's Experiment",
+    "summary": "<div style=\"text-align: center;\"><img…",
+    "body": "**Key points from solved questions**\n- For a sustainable interference, two waves should have same frequency with a constant phase difference. Wave (I) and (III) satisfy this condition whereas (II) and (IV) have different frequencies.\n- When we use white light in place of monochromatic light then only central fringe looks white and other fringe of different colour are observed. It is because central fringe for all the colour are formed at central point so it becomes white after mixing up. As fringe of other colours fall at different places we see fringes of all colour and a central bright fringe. <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//6e22a0bb-b560-4d55-af68-b6a3e496ff98/markdown_2/imgs/img_in_image_box_24_222_53_266.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A15%3A56Z%2F-1%2F%2F28c55d1a11b5c9336e0883b600c7c2c9ce9350322f7fea8062ba0a7db987edee\" alt=\"Image\" width=\"2%\" /></div> ##### Related Theory Interference occurs when two waves are travelling in same medium but it is only observable when significant maxima and minima are sustained at one place for sufficient time. For example in Young's double slit experiment.\n- Angular separation, $ \\theta = \\frac{\\lambda}{d} $ So, it is independent of D, which is the distance between screen and slit. As $ \\lambda $ increases, $ \\theta $ also increases. Thus, statement I is true but statement II is false.\n- Wavelength of light is inversely proportional to number of fringes observed; $$ \\begin{aligned}So,\\quad&n_{1}\\bar{\\lambda}_{1}=n_{2}\\lambda_{2}\\\\\\Rightarrow\\quad&n_{2}=\\frac{n_{1}\\lambda_{1}}{\\lambda_{2}}\\\\&=\\frac{600\\times8}{400}=12\\end{aligned} $$\n- From Young's double slit experiment. phase difference = $ \\frac{2\\pi}{\\lambda} $ × path difference. But for central maximum, path difference is zero for both coherent source in interference. Which means the path difference = 0 $\\therefore$ Phase difference, $\\phi = \\frac{2\\pi}{\\lambda} \\times 0 = 0$\n- From Young's double slit experiment, Fringe width $ \\beta = \\frac{\\lambda D}{d} $ $$ \\frac{\\beta_{2}}{\\beta_{1}}\\;=\\;\\frac{\\frac{\\lambda_{2}\\mathrm{D}_{2}}{d_{2}}}{\\frac{\\lambda_{1}\\mathrm{D}_{1}}{d_{1}}} $$ ∴ Given, $$ \\lambda_{1}=\\lambda_{2},D_{2}=2D_{1},and d_{2}=\\frac{d_{1}}{2} $$ putting these values in equation (i) $$ \\frac{\\beta_{2}}{\\beta_{1}}=\\frac{2D_{1}}{\\left(\\frac{d_{1}}{2}\\right)}\\times\\frac{d_{1}}{D_{1}}=4 $$ $$ \\beta_{2}=4\\beta_{1} $$ fringe width becomes four times.\n- Angular width, $ \\theta = 0.2^{\\circ} $ Now, $$ \\theta=\\frac{\\beta}{D}=0.2^{\\circ} $$ In water, $$ \\theta^{\\prime}=\\frac{\\beta}{\\mu D} $$ $ \\therefore $ $$ \\begin{aligned}\\theta^{\\prime}&=\\frac{\\theta}{\\mu}=\\frac{0.2}{4/3}\\\\&=0.15^{\\circ}\\end{aligned} $$\n- In Young's double slit experiment $ \\Delta x = \\text{path difference} = (2n - 1) \\frac{\\lambda}{2} $ So, Here $n = 5$ for $5^{\\text{th}}$ minima $$ \\mathrm{^{\\bullet}} $$ $$ \\Delta x=(2\\times5-1)\\frac{\\lambda}{2}=\\frac{9}{2}\\lambda $$\n- In Young's double slit experiment, Angular width of fringe is: ⇄ $$ \\begin{aligned}\\theta&=\\frac{\\lambda}{d}\\\\\\theta&\\propto\\frac{1}{d}\\\\\\frac{\\theta_{1}}{\\theta_{2}}&=\\frac{d_{2}}{d_{1}}\\\\\\theta_{1}&=0.20^{\\circ}\\\\\\theta_{2}&=0.21^{\\circ}\\\\d_{1}&=2\\mathrm{~mm}\\end{aligned} $$ or In question, Then eq. (i) becomes, $$ \\frac{0.20^{\\circ}}{0.21^{\\circ}}=\\frac{d_{2}}{2mm} $$ $ \\Rightarrow $ $$ d_{2}=2\\times\\frac{0.20}{0.21}=\\frac{0.40}{0.21} $$ $ =1.90\\ mm $\n- From the question, it is clear that $5^{\\mathrm{th}}$ dark fringe in air = $8^{\\mathrm{th}}$ bright fringe in medium $$ (2\\times5-1)\\frac{\\lambda_{air}D}{2d}=8\\frac{\\lambda_{m}D}{d} $$ $$ 9\\frac{\\lambda_{air}\\mathbf{D}}{2d}=8\\frac{\\lambda_{m}\\mathbf{D}}{d} $$ $$ \\mu=\\frac{\\lambda_{air}}{\\lambda_{m}} $$ $$ \\mu=\\frac{8\\times2}{9}=\\frac{16}{9} $$ ∴ Refractive index of medium $$ \\mu=\\frac{16}{9}\\cong1.78 $$\n- Let, $$ \\frac{1_{1}}{1,}=\\frac{n}{1} $$ $$ \\begin{aligned}\\frac{\\mathrm{I}_{\\max}-\\mathrm{I}_{\\min}}{\\mathrm{I}_{\\max}+\\mathrm{I}_{\\min}}&=\\frac{\\left(\\sqrt{\\mathrm{I}_{1}}+\\sqrt{\\mathrm{I}_{2}}\\right)^{2}-\\left(\\sqrt{\\mathrm{I}_{1}}-\\sqrt{\\mathrm{I}_{2}}\\right)^{2}}{\\left(\\sqrt{\\mathrm{I}_{1}}+\\sqrt{\\mathrm{I}_{2}}\\right)^{2}+\\left(\\sqrt{\\mathrm{I}_{1}}-\\sqrt{\\mathrm{I}_{2}}\\right)^{2}}\\\\&=\\frac{4\\sqrt{\\mathrm{I}_{1}\\mathrm{I}_{2}}}{2(\\mathrm{I}_{1}+\\mathrm{I}_{2})}\\end{aligned} $$ Dividing numerator and denominator by $ I_{2} $, $\\therefore$ Ratio will be, $\\frac{2\\sqrt{\\frac{\\mathrm{I}_{1}}{\\mathrm{I}_{2}}}}{\\left(\\frac{\\mathrm{I}_{1}}{\\mathrm{I}_{2}}+1\\right)}=\\frac{2\\sqrt{n}}{n+1}$\n- <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//6e22a0bb-b560-4d55-af68-b6a3e496ff98/markdown_3/imgs/img_in_image_box_225_285_461_436.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A15%3A58Z%2F-1%2F%2F685684fac75376dc46c5107f4fb7f4ef64230aae292bd3eae31eae4b071d158f\" alt=\"Image\" width=\"19%\" /></div> $$ \\begin{array}{l}\\Delta x=\\mathrm{S}_{2}\\mathrm{P}-\\mathrm{S}_{1}\\mathrm{P}\\\\ =\\sqrt{\\mathrm{D}^{2}+d^{2}}-\\mathrm{D}\\\\ =\\mathrm{D}\\left(1+\\frac{1}{2}\\frac{d^{2}}{\\mathrm{D}^{2}}\\right)-\\mathrm{D}\\\\ =\\mathrm{D}\\left[1+\\frac{d^{2}}{2\\mathrm{D}^{2}}-1\\right]=\\frac{d^{2}}{2\\mathrm{D}}\\end{array} $$ Now $$ \\begin{aligned}\\Delta x&=\\frac{d^{2}}{2\\times10d}=\\frac{d}{20}\\\\&=\\frac{5\\lambda}{20}=\\frac{\\lambda}{4}\\end{aligned} $$ $$ \\begin{aligned}\\Delta\\phi&=\\frac{2\\pi}{\\lambda}.\\frac{\\lambda}{4}=\\frac{\\pi}{2}\\\\&\\left\\{\\because\\operatorname{Phase}\\operatorname{diff.}=\\frac{2\\pi}{\\lambda}\\times\\operatorname{Path}\\operatorname{diff.}\\right\\}\\end{aligned} $$ So, intensity at the desired point is, $$ \\mathrm{I}=\\mathrm{I}_{0}\\cos^{2}\\frac{\\Delta\\phi}{2}=\\mathrm{I}_{0}\\cos^{2}\\frac{\\pi}{4}=\\frac{\\mathrm{I}_{0}}{2} $$\n- In Young's double slit experiment, two slits of width are in the ratio 1:25. ∴ Ratio of intensity, $$ \\begin{aligned}&\\frac{\\mathrm{I}_{1}}{\\mathrm{I}_{2}}=\\frac{\\mathrm{W}_{1}}{\\mathrm{W}_{2}}=\\frac{1}{25}\\\\ &\\frac{\\mathrm{I}_{1}}{\\mathrm{I}_{2}}=\\frac{1}{25}\\\\ \\end{aligned} $$ ∴ From the question, $$ \\frac{\\mathrm{I}_{\\max}}{\\mathrm{I}_{\\min}}=\\frac{\\left(\\sqrt{\\mathrm{I}_{2}}+\\sqrt{\\mathrm{I}_{1}}\\right)^{2}}{\\left(\\sqrt{\\mathrm{I}_{2}}-\\sqrt{\\mathrm{I}_{1}}\\right)^{2}} $$ $$ \\frac{\\mathrm{I}_{\\max}}{\\mathrm{I}_{\\min}}=\\left[\\frac{\\sqrt{\\frac{\\mathrm{I}_{2}}{\\mathrm{I}_{1}}}+1}{\\sqrt{\\frac{\\mathrm{I}_{2}}{\\mathrm{I}_{1}}}-1}\\right]^{2} $$ $$ \\frac{I_{max}}{I_{min}}=\\left[\\frac{5+1}{5-1}\\right]^{2} $$ $$ \\frac{I_{max}}{I_{min}}=\\frac{6^{2}}{4^{2}} $$ $$ \\frac{I_{max}}{I_{min}}=\\frac{36}{16} $$\n- $$ \\frac{I_{max}}{I_{min}}=\\frac{9}{4} $$ <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//6e22a0bb-b560-4d55-af68-b6a3e496ff98/markdown_3/imgs/img_in_image_box_804_233_1059_356.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A15%3A59Z%2F-1%2F%2F0817f4171bd0f1fcf4e27c3b769786c4582d02da7cb668d826f8a99f300da98d\" alt=\"Image\" width=\"21%\" /></div> Given : $$ d=1\\mathrm{~mm}=1\\times10^{-3}\\mathrm{~m} $$ $$ \\mathrm{D=l m} $$ $$ \\lambda=5\\times10^{-7}m $$ As width of central maxima = width of 10 maxima $$ \\frac{2\\lambda\\mathrm{D}}{a}\\;=\\;10\\left(\\frac{\\lambda\\mathrm{D}}{d}\\right) $$ $$ a=\\frac{d}{5}=\\frac{10^{-3}}{5}=0.2\\times10^{-3}m $$ $$ a=0.2\\mathrm{~mm} $$",
+    "formulas": [
+      {
+        "latex": "\\theta = \\frac{\\lambda}{d}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}So,\\quad&n_{1}\\bar{\\lambda}_{1}=n_{2}\\lambda_{2}\\\\\\Rightarrow\\quad&n_{2}=\\frac{n_{1}\\lambda_{1}}{\\lambda_{2}}\\\\&=\\frac{600\\times8}{400}=12\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\phi = \\frac{2\\pi}{\\lambda} \\times 0 = 0",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{\\beta_{2}}{\\beta_{1}}\\;=\\;\\frac{\\frac{\\lambda_{2}\\mathrm{D}_{2}}{d_{2}}}{\\frac{\\lambda_{1}\\mathrm{D}_{1}}{d_{1}}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\lambda_{1}=\\lambda_{2},D_{2}=2D_{1},and d_{2}=\\frac{d_{1}}{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{\\beta_{2}}{\\beta_{1}}=\\frac{2D_{1}}{\\left(\\frac{d_{1}}{2}\\right)}\\times\\frac{d_{1}}{D_{1}}=4",
+        "meaning": ""
+      },
+      {
+        "latex": "\\beta_{2}=4\\beta_{1}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\beta = \\frac{\\lambda D}{d}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\theta=\\frac{\\beta}{D}=0.2^{\\circ}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\theta^{\\prime}=\\frac{\\beta}{\\mu D}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}\\theta^{\\prime}&=\\frac{\\theta}{\\mu}=\\frac{0.2}{4/3}\\\\&=0.15^{\\circ}\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\theta = 0.2^{\\circ}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{^{\\bullet}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\Delta x=(2\\times5-1)\\frac{\\lambda}{2}=\\frac{9}{2}\\lambda",
+        "meaning": ""
+      },
+      {
+        "latex": "\\Delta x = \\text{path difference} = (2n - 1) \\frac{\\lambda}{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "n = 5",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}\\theta&=\\frac{\\lambda}{d}\\\\\\theta&\\propto\\frac{1}{d}\\\\\\frac{\\theta_{1}}{\\theta_{2}}&=\\frac{d_{2}}{d_{1}}\\\\\\theta_{1}&=0.20^{\\circ}\\\\\\theta_{2}&=0.21^{\\circ}\\\\d_{1}&=2\\mathrm{~mm}\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{0.20^{\\circ}}{0.21^{\\circ}}=\\frac{d_{2}}{2mm}",
+        "meaning": ""
+      },
+      {
+        "latex": "d_{2}=2\\times\\frac{0.20}{0.21}=\\frac{0.40}{0.21}",
+        "meaning": ""
+      },
+      {
+        "latex": "=1.90\\ mm",
+        "meaning": ""
+      },
+      {
+        "latex": "(2\\times5-1)\\frac{\\lambda_{air}D}{2d}=8\\frac{\\lambda_{m}D}{d}",
+        "meaning": ""
+      },
+      {
+        "latex": "9\\frac{\\lambda_{air}\\mathbf{D}}{2d}=8\\frac{\\lambda_{m}\\mathbf{D}}{d}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mu=\\frac{\\lambda_{air}}{\\lambda_{m}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mu=\\frac{8\\times2}{9}=\\frac{16}{9}",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "1f1673a7-a1fa-4005-8ce7-e4617d4b0753",
+      "3806aa9f-b912-4b6f-98ab-b3ceed7751c6",
+      "5264b750-ad55-4f92-82c2-61919786c625",
+      "c735b601-52d1-4151-b10a-a63f6683769b",
+      "f84228ea-a2cd-4e01-bb5f-af776fc8e5d3",
+      "e55d5698-817d-4c4d-9b2b-80da74c737f0",
+      "88c6932f-ed27-473a-ba9a-312805cc4368",
+      "51654abb-f2ef-4830-bda0-8b1f64c749f6",
+      "af42d020-dc6e-4f33-943a-1ba55b1eb37f",
+      "11943340-40cc-4ea6-9892-bbce533a778d",
+      "0b713c00-bb53-4196-a39f-cb727dc12494",
+      "b433c575-ee01-4cd6-9d63-b4b261c85dd3",
+      "a1788d79-72c4-4f32-a47e-ed33043feef2",
+      "1c9e3a84-aee1-46cb-b136-06de104cff89",
+      "4fc8b98c-b629-4b9b-9db9-6249b9b4c398",
+      "3be4dc43-6ecf-4da8-9b14-f95ae4cb5f86",
+      "98a33d5d-e0ab-4eee-bd6b-04597fe431a1",
+      "ceeb4fa1-23ad-427c-9190-17a871d12828",
+      "0f0603ab-87a6-4d23-b081-507c2423bcb3",
+      "eb7a1d8a-a763-4b5d-b281-8161be8b629d",
+      "f4057012-6f19-4e7a-a2c8-8ae353972196",
+      "49deb67e-ecb8-411d-af3b-5e99eddabc1a",
+      "6a09a3af-38ef-4fd2-8060-a46ab1d44a09",
+      "6a7b71e9-f712-409a-aa56-db5330bfb1d9",
+      "3c69ca6e-a49d-4171-aa49-ace00fc0346b",
+      "63e403e7-ce9d-442d-b6da-ffe76e6e60ee",
+      "81b4dbfe-f795-40e4-86c3-b50fde08216a",
+      "c0e44751-906e-4338-9be0-94c1ad22ccbc",
+      "714eb39a-7e3d-4fe2-9f4c-b70031dd8cb2"
+    ],
+    "tags": [
+      "NEET 2024",
+      "NEET 2022",
+      "NEET 2020",
+      "NEET 2019",
+      "NEET 2018",
+      "NEET Phase-I 2016",
+      "AIPMT July 2015",
+      "AIPMT 2014",
+      "NEET 2013",
+      "AIPMT 2002",
+      "AIPMT 1999",
+      "AIPMT 1996",
+      "AIPMT 1993",
+      "AIPMT 1992",
+      "AIPMT 1992, 1991",
+      "AIPMT 1991",
+      "AIPMT 1990",
+      "AIPMT 1989"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-wave-optics-objective-i",
+    "chapter": "Wave Optics",
+    "subtopic": "Objective I",
+    "class": "XII",
+    "unitId": "xii-optics",
+    "unitLabel": "Unit VII — Optics",
+    "order": 23,
+    "title": "Objective I",
+    "summary": "**Polarization** is the phenomenon in which the oscillations of a wave are restricted to a particular plane (or direction) perpendicular to the direction of propagation.",
+    "body": "**Key points from solved questions**\n- Mechanical waves (like sound or waves on a string) require a material medium, and their speed depends on the medium's **mechanical properties** — its elasticity (which provides the restoring force) and its inertia (mass density, which resists acceleration): e.g., $v_{\\text{sound}} = \\sqrt{B/\\rho}$, $v_{\\text{string}} = \\sqrt{T/\\mu}$. **Light, however, is an electromagnetic wave** — it consists of oscillating electric and magnetic fields and requires **no material medium** at all (it travels through vacuum). Its speed is determined by the **electromagnetic properties** of the medium — its permittivity $\\varepsilon$ and permeability $\\mu$ — via $v = \\dfrac{1}{\\sqrt{\\varepsilon\\mu}}$ — concepts entirely distinct from mechanical elasticity or inertia. Answer: (D).\n- Light is an **electromagnetic wave** — it does not involve the physical displacement of any medium's particles (there is no \"ether\"; that idea was discarded after the Michelson–Morley experiment and the development of Maxwell's electromagnetic theory). What actually oscillates, sinusoidally in space and time exactly as described by $y = A\\sin(kx - \\omega t)$, is the **electric field** (accompanied by a perpendicular oscillating magnetic field) — this is the standard way of writing the equation of a light wave, with $y$ representing the instantaneous electric field strength. Answer: (D).\n- **Polarization** is the phenomenon in which the oscillations of a wave are restricted to a particular plane (or direction) perpendicular to the direction of propagation. This is only *possible* for **transverse waves**, where the oscillation direction is perpendicular to the propagation direction and can therefore be selectively oriented or filtered. **Longitudinal waves** (like sound) oscillate *along* their direction of travel — there's no perpendicular direction to \"restrict,\" so they cannot be polarized. Reflection, interference, and diffraction are exhibited by *both* transverse and longitudinal waves — they don't distinguish between the two. The fact that light *can* be polarized (e.g., by Polaroid filters) is therefore direct experimental evidence that light is a **transverse** wave. Answer: (D).\n- When light passes from one medium into another: - The **frequency** is determined by the source and remains **unchanged** — it must be continuous across the boundary (the oscillations on both sides of the interface must stay in step). - The **speed** changes according to the refractive index of the new medium: $v = c/n$. When entering an (optically denser) medium, $n > 1$, so the speed **decreases**. - Since $v = f\\lambda$ and $f$ stays constant while $v$ decreases, the **wavelength** $\\lambda = v/f$ must **decrease** correspondingly. Answer: (C).\n- During refraction: - **Frequency** is set by the source and must remain continuous across the interface — it does **not change**. - **Velocity** changes (depends on the refractive index of each medium, $v = c/n$). - **Wavelength** changes correspondingly ($\\lambda = v/f$, with $f$ fixed and $v$ changing). - **Amplitude** generally also changes somewhat, since part of the light is reflected and part transmitted at the interface, redistributing the energy (and hence the amplitude) between the two. The one quantity that is guaranteed to remain exactly the same is the **frequency**. Answer: (B).\n- **Diffraction** (the bending of waves around obstacles/edges) becomes appreciable when the wavelength of the wave is **comparable to or larger than** the size of the obstacle/aperture, and becomes negligible when the wavelength is much **smaller** than the obstacle. Since the AM wave bends appreciably around the $1\\text{ m}\\times 1\\text{ m}$ board, its wavelength $\\lambda_a$ must be comparable to (or larger than) $1$ m. Since the FM wave bends only negligibly around the same board, its wavelength $\\lambda_f$ must be much smaller than $1$ m. (This matches reality: AM radio wavelengths are of order hundreds of metres, while FM wavelengths are only a few metres.) Therefore: $$\\lambda_a > \\lambda_f$$ Answer: (A).\n- **Monochromatic light** means light of (ideally) a single, sharply-defined wavelength/frequency. - A **candle** and a **bulb** emit broad, continuous spectra (a wide range of wavelengths — essentially \"white\"/thermal radiation). - A **mercury vapour tube** emits a discrete *line spectrum* — several distinct, narrow spectral lines — better than a continuous source, but still not a single wavelength. - A **laser**, through the process of stimulated emission, produces light that is extraordinarily close to a single wavelength (and is also highly coherent), making it by far the best approximation to a truly monochromatic source among these options. Answer: (D).\n- The wavefronts $x + y + z = c$ are **planes**, and the direction of wave propagation is always **perpendicular to the wavefronts** (along the wavefront's normal direction). The normal to the plane $x + y + z = c$ is along the vector $(1, 1, 1)$ (the coefficients of $x$, $y$, $z$). The unit vector along this normal is $\\dfrac{1}{\\sqrt{3}}(1,1,1)$. The angle $\\theta$ this direction makes with the X-axis (unit vector $(1,0,0)$) is found from the dot product: $$\\cos\\theta = \\frac{(1,1,1)\\cdot(1,0,0)}{\\sqrt{3}\\times 1} = \\frac{1}{\\sqrt{3}}$$ $$\\theta = \\cos^{-1}\\left(\\frac{1}{\\sqrt{3}}\\right)$$ Answer: (D).\n- A light source of *any* shape produces wavefronts that are, in general, curved surfaces (e.g., spherical for a point source) centred on the source. However, when the source is **very far away**, the radius of curvature of these wavefronts becomes enormously large by the time they reach an observer — and over any reasonably-sized region of observation, a sphere (or any curved surface) of extremely large radius looks essentially **flat**. This is exactly analogous to how the (spherical) surface of the Earth appears flat to someone standing on it — the curvature is imperceptible at the local scale. So wavefronts from a distant source of *any* shape appear nearly **plane**. Answer: (A).\n- The inverse-square law arises from the geometric spreading of energy as waves expand outward and conservation of energy: - A **point source** emits energy that spreads out uniformly over the surface of an expanding **sphere**. Since the surface area of a sphere is $4\\pi r^2$, the energy per unit area (intensity) falls off as $\\dfrac{1}{r^2}$ — the inverse-square law. - A **line source** spreads its energy over the surface of an expanding **cylinder** (area $\\propto r$), giving intensity $\\propto \\dfrac{1}{r}$. - A **plane source** produces parallel wavefronts that don't spread out geometrically at all — the intensity remains essentially constant with distance (no $1/r$ dependence). So the inverse-square law specifically applies to a **point source**. Answer: (A).\n- For two sources to produce a **stable, observable interference pattern**, the phase difference between the waves arriving at any point must remain **constant in time** — if the phase relationship drifts or fluctuates randomly, the interference pattern (positions of maxima and minima) would shift continuously and average out to uniform illumination, making it unobservable. Having equal wavelength, equal velocity, or the same wavefront shape are necessary *consequences* of being derived from the same source/frequency, but none of these alone *guarantees* that the phase relationship stays fixed over time — that is the defining requirement. Two sources are called **coherent** precisely when they maintain a **constant phase difference**. Answer: (D).\n- A thin oil film on water has two reflecting surfaces — the top (air–oil) and bottom (oil–water) interfaces. Light reflecting from these two surfaces travels slightly different path lengths (depending on the film's thickness and the angle of viewing), and these two reflected waves **interfere** with each other. Because the path difference (and hence whether constructive or destructive interference occurs) depends on the **wavelength**, different colours (wavelengths) interfere constructively at different points/thicknesses of the film — producing the characteristic shifting bands of rainbow colours seen in daylight (which contains all visible wavelengths). This is a classic example of **thin-film interference**. Answer: (D).\n- For two coherent waves of intensities $I_1$ and $I_2$, the maximum and minimum resultant intensities are: $$I_{\\max} = \\left(\\sqrt{I_1} + \\sqrt{I_2}\\right)^2, \\qquad I_{\\min} = \\left(\\sqrt{I_1} - \\sqrt{I_2}\\right)^2$$ Given $\\dfrac{I_{\\max}}{I_{\\min}} = 25$: $$\\frac{\\left(\\sqrt{I_1}+\\sqrt{I_2}\\right)^2}{\\left(\\sqrt{I_1}-\\sqrt{I_2}\\right)^2} = 25 \\;\\Longrightarrow\\; \\frac{\\sqrt{I_1}+\\sqrt{I_2}}{\\sqrt{I_1}-\\sqrt{I_2}} = 5$$ Cross-multiplying: $\\sqrt{I_1} + \\sqrt{I_2} = 5\\sqrt{I_1} - 5\\sqrt{I_2} \\;\\Longrightarrow\\; 6\\sqrt{I_2} = 4\\sqrt{I_1} \\;\\Longrightarrow\\; \\dfrac{\\sqrt{I_1}}{\\sqrt{I_2}} = \\dfrac{3}{2}$ Squaring: $\\dfrac{I_1}{I_2} = \\dfrac{9}{4}$. Answer: (C).\n- With both slits open and equal individual intensities $I$ each, the **central fringe** has zero path difference (perfectly constructive interference), giving: $$I_0 = \\left(\\sqrt{I} + \\sqrt{I}\\right)^2 = (2\\sqrt{I})^2 = 4I \\;\\Longrightarrow\\; I = \\frac{I_0}{4}$$ Now, if **one slit is closed**, there's no interference at all — the intensity at that point is simply the intensity due to the single remaining slit alone, which is $I$: $$I_{\\text{one slit}} = I = \\frac{I_0}{4}$$ Answer: (B).",
+    "formulas": [
+      {
+        "latex": "v_{\\text{sound}} = \\sqrt{B/\\rho}",
+        "meaning": ""
+      },
+      {
+        "latex": "v_{\\text{string}} = \\sqrt{T/\\mu}",
+        "meaning": ""
+      },
+      {
+        "latex": "v = \\dfrac{1}{\\sqrt{\\varepsilon\\mu}}",
+        "meaning": ""
+      },
+      {
+        "latex": "y = A\\sin(kx - \\omega t)",
+        "meaning": ""
+      },
+      {
+        "latex": "v = c/n",
+        "meaning": ""
+      },
+      {
+        "latex": "v = f\\lambda",
+        "meaning": ""
+      },
+      {
+        "latex": "\\lambda = v/f",
+        "meaning": ""
+      },
+      {
+        "latex": "\\lambda_a > \\lambda_f",
+        "meaning": ""
+      },
+      {
+        "latex": "\\cos\\theta = \\frac{(1,1,1)\\cdot(1,0,0)}{\\sqrt{3}\\times 1} = \\frac{1}{\\sqrt{3}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\theta = \\cos^{-1}\\left(\\frac{1}{\\sqrt{3}}\\right)",
+        "meaning": ""
+      },
+      {
+        "latex": "x + y + z = c",
+        "meaning": ""
+      },
+      {
+        "latex": "I_{\\max} = \\left(\\sqrt{I_1} + \\sqrt{I_2}\\right)^2, \\qquad I_{\\min} = \\left(\\sqrt{I_1} - \\sqrt{I_2}\\right)^2",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{\\left(\\sqrt{I_1}+\\sqrt{I_2}\\right)^2}{\\left(\\sqrt{I_1}-\\sqrt{I_2}\\right)^2} = 25 \\;\\Longrightarrow\\; \\frac{\\sqrt{I_1}+\\sqrt{I_2}}{\\sqrt{I_1}-\\sqrt{I_2}} = 5",
+        "meaning": ""
+      },
+      {
+        "latex": "\\dfrac{I_{\\max}}{I_{\\min}} = 25",
+        "meaning": ""
+      },
+      {
+        "latex": "\\sqrt{I_1} + \\sqrt{I_2} = 5\\sqrt{I_1} - 5\\sqrt{I_2} \\;\\Longrightarrow\\; 6\\sqrt{I_2} = 4\\sqrt{I_1} \\;\\Longrightarrow\\; \\dfrac{\\sqrt{I_1}}{\\sqrt{I_2}} = \\dfrac{3}{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\dfrac{I_1}{I_2} = \\dfrac{9}{4}",
+        "meaning": ""
+      },
+      {
+        "latex": "I_0 = \\left(\\sqrt{I} + \\sqrt{I}\\right)^2 = (2\\sqrt{I})^2 = 4I \\;\\Longrightarrow\\; I = \\frac{I_0}{4}",
+        "meaning": ""
+      },
+      {
+        "latex": "I_{\\text{one slit}} = I = \\frac{I_0}{4}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\beta = \\dfrac{\\lambda D}{d}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\beta = \\frac{\\lambda D}{d}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\lambda_{\\text{water}} = \\frac{\\lambda_{\\text{vacuum}}}{n_{\\text{water}}} < \\lambda_{\\text{vacuum}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\beta_{\\text{water}} = \\frac{\\lambda_{\\text{water}} D}{d} < \\frac{\\lambda_{\\text{vacuum}} D}{d} = \\beta_{\\text{vacuum}}",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "7f14e3a2-3fcf-4056-9923-2dcba7f9a819",
+      "956a0904-e0a3-4b0b-8f4c-9043e049df53",
+      "18b10c95-c57a-4e25-9e5d-8244c21f5d7d",
+      "c7302772-6010-4655-ab80-3b1b6519c8dc",
+      "53ad0e7f-be54-4258-97a6-1a88ba28c733",
+      "bce009dc-d8a7-46fa-9817-50ed607d10a2",
+      "933288ee-56c0-4d6a-8f27-fa4ba21d609d",
+      "a9755135-8d4a-4289-b3ab-4b394242e26e",
+      "e6940834-5656-4974-a85a-012cc756ba64",
+      "1ae5164f-0378-4cb2-91e4-55182bef730c",
+      "23d46b9e-0c35-4d17-83a6-12d90fdea26b",
+      "6ab9913f-f898-4ea9-9016-37c321dcc167",
+      "6b471be1-a14c-49b8-9af9-d080a9857c27",
+      "96a74579-f0b9-470e-80e5-b779cb7a102f",
+      "1ecfc276-5b13-4781-b887-a4b1b45ab0d2",
+      "7d68b1eb-8598-4f40-84ed-e0c308868add"
+    ],
+    "tags": [
+      "HC Verma Vol 1",
+      "Objective I",
+      "Chapter 17"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-wave-optics-objective-ii",
+    "chapter": "Wave Optics",
+    "subtopic": "Objective II",
+    "class": "XII",
+    "unitId": "xii-optics",
+    "unitLabel": "Unit VII — Optics",
+    "order": 23,
+    "title": "Objective II",
+    "summary": "This question probes one of the most fundamental (and counter-intuitive, from a everyday/Newtonian standpoint) results of physics: the **constancy of the speed of light in vacuum**.",
+    "body": "**Key points from solved questions**\n- This question probes one of the most fundamental (and counter-intuitive, from a everyday/Newtonian standpoint) results of physics: the **constancy of the speed of light in vacuum**. Unlike the speed of, say, sound (which *does* depend on the relative motion of the observer and the source — hence the Doppler effect for sound involves a velocity-dependent shift in the *measured speed* relative to the medium), the speed of light in vacuum is found, experimentally and as a postulate of **special relativity**, to be **exactly the same, $c$, for all observers**, regardless of their state of motion relative to the source or to each other (this was famously confirmed by the Michelson–Morley experiment, which found no variation in the speed of light due to Earth's motion). So even though $A$ moves toward the source and $C$ moves away from it at the same speed (and $B$ stays still), all three measure the **same** speed of light: $$v_A = v_B = v_C = c$$ (What *does* change with their relative motion is the **frequency** they observe — this is the relativistic Doppler effect — but not the *speed*.) Answer: (C).\n- **Wavefronts are surfaces of constant phase**, and they are always **perpendicular to the direction of wave propagation**. Since the light here travels along the **X-axis**, its wavefronts must be planes whose normal is along the X-axis — i.e., planes on which $x$ is constant: $x = c$. (A plane $y = c$ has its normal along the Y-axis, $z = c$ has its normal along the Z-axis, and $x+y+z=c$ has its normal along $(1,1,1)$ — none of these are perpendicular to the X-axis, so they cannot represent wavefronts of a wave propagating along X.) Answer: (A).",
+    "formulas": [
+      {
+        "latex": "v_A = v_B = v_C = c",
+        "meaning": ""
+      },
+      {
+        "latex": "x = c",
+        "meaning": ""
+      },
+      {
+        "latex": "y = c",
+        "meaning": ""
+      },
+      {
+        "latex": "z = c",
+        "meaning": ""
+      },
+      {
+        "latex": "x+y+z=c",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "ce2a09dc-7991-4ea8-8b94-cb15ea4d62bc",
+      "1965ab7b-f166-48b3-bad3-8b7bc351db0c"
+    ],
+    "tags": [
+      "HC Verma Vol 1",
+      "Objective II",
+      "Chapter 17"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-wave-optics-polarisation",
+    "chapter": "Wave Optics",
+    "subtopic": "Polarisation",
+    "class": "XII",
+    "unitId": "xii-optics",
+    "unitLabel": "Unit VII — Optics",
+    "order": 23,
+    "title": "Polarisation",
+    "summary": "Sound waves can not be polarised as they are longitudinal.",
+    "body": "**Key points from solved questions**\n- When unpolarized light passes through the first polaroid X, its intensity is reduced by half. $$ I_{1}=\\frac{I_{0}}{2} $$ When polarised light passes through polaroid Y, According to Malus' law $$ I_{2}=I_{1}\\cos^{2}60^{\\circ} $$ On comparing eqn (i) and (ii) $$ \\mathrm{I}_{2}=\\frac{\\mathrm{I}_{0}}{2}\\cos^{2}60^{\\circ} $$ $$ \\mathrm{I}_{2}=\\frac{\\mathrm{I}_{0}}{2}\\times\\left(\\frac{1}{2}\\right)^{2}\\left(\\because\\cos60^{\\circ}=\\frac{1}{2}\\right) $$ $$ I_{2}=\\frac{I_{0}}{8} $$ When polarised light passes through polaroid Z, $ \\mathrm{I}_{3}=\\mathrm{I}_{2}\\cos^{2}45^{\\circ} $ $$ \\mathrm{I}_{3}=\\frac{\\mathrm{I}_{0}}{8}\\cos^{2}45^{\\circ}\\left(\\because\\cos45^{\\circ}=\\sqrt{\\frac{1}{2}}\\right) $$ $$ \\mathrm{I}_{3}=\\frac{\\mathrm{I}_{0}}{8}\\left(\\sqrt{\\frac{1}{2}}\\right)^{2}=\\frac{\\mathrm{I}_{0}}{16} $$ $$ I_{3}=\\frac{I_{0}}{16} $$\n- When unpolarised light strikes a surface at Brewster's angle, the reflected light becomes completely polarized parallel to the surface. However, the refracted light remains partially polarized.\n- According to Brewster's law, when a beam of unpolarised light is reflected from a transparent medium of refractive index $(\\mu_{2})$, the reflected light is completely polarised at certain angle of incidence called the angle of polarisation $(i_{b})$. $$ i_{b}=\\frac{\\mu_{2}}{\\mu_{1}} $$ For air, $ \\mu_{1}=1 $ $$ \\therefore\\tan i_{b}=\\mu_{2}>1 $$ $$ \\Rightarrow\\quad\\tan i_{b}>1 $$ $$ \\begin{array}{r} 90^{\\circ} > i_{b} > 45^{\\circ} \\end{array} $$\n- When reflected light rays and refracted rays are perpendicular, reflected light is polarised with electric field vector perpendicular to the plane of incidence. <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//c4a242b2-912b-4ad1-96b4-7bf2e352f73d/markdown_0/imgs/img_in_image_box_831_1353_1039_1499.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A29Z%2F-1%2F%2Fb867a82863d4c040aac78b906ce0151b8450479f51a701078a28781330560248\" alt=\"Image\" width=\"17%\" /></div> Also, $ \\tan i = \\mu $ (Brewster's law).\n- According to the given question, <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//c4a242b2-912b-4ad1-96b4-7bf2e352f73d/markdown_1/imgs/img_in_image_box_97_133_443_364.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A32Z%2F-1%2F%2F6111422cd685854f8ad3b47e7892f3f3dc365b055ee991d6249b1a19f68f4cfc\" alt=\"Image\" width=\"29%\" /></div> From the diagram. The intensity transmitted through $P_{3}$. $$ \\begin{aligned}\\mathrm{I}_{2}&=\\frac{\\mathrm{I}_{0}}{2}\\cos^{2}45^{\\circ}\\\\&=\\frac{\\mathrm{I}_{0}}{2}\\times\\left(\\frac{1}{\\sqrt{2}}\\right)^{2}=\\frac{\\mathrm{I}_{0}}{4}\\end{aligned} $$ Again intensity transmitted through $P_{2}$ $$ \\mathrm{I}_{3}=\\frac{\\mathrm{I}_{0}}{4}\\cos^{2}45^{\\circ}=\\frac{\\mathrm{I}_{0}}{4}\\times\\left(\\frac{1}{\\sqrt{2}}\\right)^{2}=\\frac{\\mathrm{I}_{0}}{8} $$\n- Sound waves can not be polarised as they are longitudinal. Light waves can be polarised as they are transverse. amor hogado (evolução de suavidade em que abertura se escondiu) (o abafou na boca en el dinastio de Hecox de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la región de la reg The quick brown fox jumps over the lazy dog. The temperature is $ 100^\\circ C $.",
+    "formulas": [
+      {
+        "latex": "I_{1}=\\frac{I_{0}}{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "I_{2}=I_{1}\\cos^{2}60^{\\circ}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{I}_{2}=\\frac{\\mathrm{I}_{0}}{2}\\cos^{2}60^{\\circ}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{I}_{2}=\\frac{\\mathrm{I}_{0}}{2}\\times\\left(\\frac{1}{2}\\right)^{2}\\left(\\because\\cos60^{\\circ}=\\frac{1}{2}\\right)",
+        "meaning": ""
+      },
+      {
+        "latex": "I_{2}=\\frac{I_{0}}{8}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{I}_{3}=\\frac{\\mathrm{I}_{0}}{8}\\cos^{2}45^{\\circ}\\left(\\because\\cos45^{\\circ}=\\sqrt{\\frac{1}{2}}\\right)",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{I}_{3}=\\frac{\\mathrm{I}_{0}}{8}\\left(\\sqrt{\\frac{1}{2}}\\right)^{2}=\\frac{\\mathrm{I}_{0}}{16}",
+        "meaning": ""
+      },
+      {
+        "latex": "I_{3}=\\frac{I_{0}}{16}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{I}_{3}=\\mathrm{I}_{2}\\cos^{2}45^{\\circ}",
+        "meaning": ""
+      },
+      {
+        "latex": "i_{b}=\\frac{\\mu_{2}}{\\mu_{1}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\therefore\\tan i_{b}=\\mu_{2}>1",
+        "meaning": ""
+      },
+      {
+        "latex": "\\Rightarrow\\quad\\tan i_{b}>1",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{array}{r} 90^{\\circ} > i_{b} > 45^{\\circ} \\end{array}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mu_{1}=1",
+        "meaning": ""
+      },
+      {
+        "latex": "\\tan i = \\mu",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}\\mathrm{I}_{2}&=\\frac{\\mathrm{I}_{0}}{2}\\cos^{2}45^{\\circ}\\\\&=\\frac{\\mathrm{I}_{0}}{2}\\times\\left(\\frac{1}{\\sqrt{2}}\\right)^{2}=\\frac{\\mathrm{I}_{0}}{4}\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{I}_{3}=\\frac{\\mathrm{I}_{0}}{4}\\cos^{2}45^{\\circ}=\\frac{\\mathrm{I}_{0}}{4}\\times\\left(\\frac{1}{\\sqrt{2}}\\right)^{2}=\\frac{\\mathrm{I}_{0}}{8}",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "4957639c-500e-46a3-93ea-4e063481ddf3",
+      "aae79de5-c42a-416f-941d-b3929a7f2616",
+      "7dc2e6e9-8d5f-40aa-a517-74fb7e6fc2dd",
+      "60dbeb05-a8a9-4c68-b828-11b8c3aa40cb",
+      "8ea24ebc-cf61-4a5c-bcd7-6343edc0ede3",
+      "98305298-5cdf-4abd-a5d0-640e4db24f54"
+    ],
+    "tags": [
+      "Re-NEET 2024",
+      "NEET 2024",
+      "NEET 2020",
+      "NEET 2018",
+      "AIPMT 1988"
+    ],
+    "source": "seed"
+  }
+]

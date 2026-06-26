@@ -1,0 +1,500 @@
+[
+  {
+    "id": "note-nuclei-atomic-masses-and-composition-of-nucleus",
+    "chapter": "Nuclei",
+    "subtopic": "Atomic Masses and Composition of Nucleus",
+    "class": "XII",
+    "unitId": "xii-atoms",
+    "unitLabel": "Unit IX — Atoms & Nuclei",
+    "order": 26,
+    "title": "Atomic Masses and Composition of Nucleus",
+    "summary": "Z = 11 i.e., number of protons = 11 A = 23 Number of neutrons = A - Z = 12 Number of electron = 0 (No electron in nucleus) Therefore, the number of protons, neutrons and electrons are 11, 12, 0.",
+    "body": "**Key points from solved questions**\n- Isotones means number of neutrons remains same.\n- Z = Number of protons A = Total number of protons and neutrons ∴ Number of neutrons, N = A - Z\n- Z = 11 i.e., number of protons = 11 A = 23 Number of neutrons = A - Z = 12 Number of electron = 0 (No electron in nucleus) Therefore, the number of protons, neutrons and electrons are 11, 12, 0.",
+    "formulas": [],
+    "questionIds": [
+      "0c27a36e-489c-41e4-91b7-c1b1b1958e83",
+      "f82351fd-4bb8-4d37-ba5e-5b9524483bce",
+      "820bc6f9-0c0d-466d-9c49-3bd00e077847"
+    ],
+    "tags": [
+      "AIPMT 2005",
+      "AIPMT 1991"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-nuclei-mass-energy-and-nuclear-binding-energy",
+    "chapter": "Nuclei",
+    "subtopic": "Mass-Energy and Nuclear Binding Energy",
+    "class": "XII",
+    "unitId": "xii-atoms",
+    "unitLabel": "Unit IX — Atoms & Nuclei",
+    "order": 26,
+    "title": "Mass-Energy and Nuclear Binding Energy",
+    "summary": "Mass defect, $$ \\Delta\\mathbf{m}=\\mathbf{Z}\\mathbf{M}_{\\mathrm{p}}+(\\mathbf{A}-\\mathbf{Z})\\mathbf{M}_{\\mathrm{n}}-\\mathbf{M}(\\mathbf{A},\\mathbf{Z}) $$ Binding Energy, $$ \\mathbf{BE}=\\Delta mc^{2} $$ ∴ $$…",
+    "body": "**Key points from solved questions**\n- Given, $$ A_{1}=240 $$ $$ \\mathrm{A}_{2}=\\mathrm{A}_{3}=120 $$ $$ \\mathrm{BE}_{1}=7.6\\mathrm{M e V} $$ $$ \\mathrm{BE}_{2}=\\mathrm{BE}_{3}=8.5\\ \\mathrm{MeV} $$ $$ \\begin{aligned}\\Delta\\mathrm{BE}&=\\mathrm{BE}_{2}+\\mathrm{BE}_{3}-\\mathrm{BE}_{1}\\\\&=8.5+8.5-7.6\\\\&=17-7.6\\\\&=9.4\\mathrm{~MeV}\\end{aligned} $$\n- Given: $$ m=0.5\\ g=0.5\\times10^{-3}\\ kg $$ Einstein's mass-energy equivalence relation. $$ E=m c^{2} $$ where, $c = \\text{velocity of light} = 3 \\times 10^{6} \\text{ m/s}$ $$ \\begin{aligned}E&=0.5\\times10^{-3}\\times(3\\times10^{8})^{2}\\\\ &=4.5\\times10^{13}J.\\end{aligned} $$ $$ \\begin{array}{r} 1 \\\\ + \\quad 6 \\\\ \\hline 16 \\end{array} $$\n- The value of energy, $$ Q=2(4\\times7.06)-7\\times(5.60) $$ $$ Q=(8\\times7.06-7\\times5.60) $$ $$ Q=56.48-39.2 $$ $$ Q=17.28MeV $$ $$ Q=17.3MeV $$\n- First increases and then decreases with increase in mass number.\n- According to the question. $$ m=1\\ \\mathrm{u},c=3\\times10^{8}\\ \\mathrm{m s}^{-1} $$ if, $$ E=931~\\mathrm{M e V},1\\mathrm{u}=931~\\mathrm{M e V/c^{2}} $$ ∴ Binding energy, B.E. $$ \\begin{aligned}\\therefore\\text{Binding energy per nucleon,}\\\\=\\frac{39.10}{7}=5.58\\simeq5.6MeV\\end{aligned} $$ $$ \\begin{aligned}&=0.042\\times931\\\\&=39.10MeV\\end{aligned} $$\n- Mass defect, $$ \\Delta\\mathbf{m}=\\mathbf{Z}\\mathbf{M}_{\\mathrm{p}}+(\\mathbf{A}-\\mathbf{Z})\\mathbf{M}_{\\mathrm{n}}-\\mathbf{M}(\\mathbf{A},\\mathbf{Z}) $$ Binding Energy, $$ \\mathbf{BE}=\\Delta mc^{2} $$ ∴ $$ \\mathbf{B}\\mathbf{E}=[\\mathbf{Z}\\mathbf{M}_{\\mathbf{p}}+(\\mathbf{A}-\\mathbf{Z})\\mathbf{M}_{\\mathbf{n}}-\\mathbf{M}\\left(\\mathbf{A},\\mathbf{Z}\\right)]\\mathbf{c}^{2} $$ $$ \\mathbf{M}(\\mathbf{A},\\mathbf{Z})=\\mathbf{Z}\\mathbf{M}_{\\mathrm{p}}+(\\mathbf{A}-\\mathbf{Z})\\mathbf{M}_{\\mathrm{n}}-\\frac{\\mathbf{B}\\mathbf{E}}{c^{2}} $$\n- B.E. = [ZM_{p} + (A - Z)M_{n} - M(A, Z)]c^{2}\n- Energy released. $$ \\begin{aligned}&Q=(B.E.)_{product}-(B.E.)_{reactant}\\\\&Q=(28-4.4)MeV\\\\&\\quad=23.6MeV\\\\ \\end{aligned} $$\n- Energy in given reaction = B.E. of products - B.E. of reactants = c - (a + b) = c - a - b\n- Binding energy, BE = $ [NM_n + ZM_P - M(N, Z)c^2 $ $$ \\mathrm{M}(\\mathrm{N},\\mathrm{Z})=\\mathrm{NM}_{\\mathrm{n}}+\\mathrm{Z}\\mathrm{M}_{\\mathrm{P}}-\\frac{\\mathrm{B}}{c^{2}} $$\n- According to Einstein, mass-energy equation, $$ \\mathrm{E}=m c^{2}. $$ Taking mass, $$ m=1\\mathrm{a m u} $$ $$ =1.66\\times10^{-27}kg $$ and $$ c=3.0\\times10^{8}~\\mathrm{m/s} $$ Therefore, $$ \\begin{aligned}\\mathrm{E}&=(1.66\\times10^{-27})\\times(3\\times10^{8})^{2}\\mathrm{J}\\\\&=1.49\\times10^{-10}\\mathrm{J}\\\\&=\\frac{1.49\\times10^{-10}}{1.6\\times10^{-13}}\\mathrm{~MeV}\\end{aligned} $$ $$ \\begin{aligned}(\\because1MeV&=1.6\\times10^{-13}J)\\\\&=931.25MeV\\end{aligned} $$ Hence, 1 amu ≈ 931 MeV.",
+    "formulas": [
+      {
+        "latex": "A_{1}=240",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{A}_{2}=\\mathrm{A}_{3}=120",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{BE}_{1}=7.6\\mathrm{M e V}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{BE}_{2}=\\mathrm{BE}_{3}=8.5\\ \\mathrm{MeV}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}\\Delta\\mathrm{BE}&=\\mathrm{BE}_{2}+\\mathrm{BE}_{3}-\\mathrm{BE}_{1}\\\\&=8.5+8.5-7.6\\\\&=17-7.6\\\\&=9.4\\mathrm{~MeV}\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "m=0.5\\ g=0.5\\times10^{-3}\\ kg",
+        "meaning": ""
+      },
+      {
+        "latex": "E=m c^{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}E&=0.5\\times10^{-3}\\times(3\\times10^{8})^{2}\\\\ &=4.5\\times10^{13}J.\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{array}{r} 1 \\\\ + \\quad 6 \\\\ \\hline 16 \\end{array}",
+        "meaning": ""
+      },
+      {
+        "latex": "c = \\text{velocity of light} = 3 \\times 10^{6} \\text{ m/s}",
+        "meaning": ""
+      },
+      {
+        "latex": "Q=2(4\\times7.06)-7\\times(5.60)",
+        "meaning": ""
+      },
+      {
+        "latex": "Q=(8\\times7.06-7\\times5.60)",
+        "meaning": ""
+      },
+      {
+        "latex": "Q=56.48-39.2",
+        "meaning": ""
+      },
+      {
+        "latex": "Q=17.28MeV",
+        "meaning": ""
+      },
+      {
+        "latex": "Q=17.3MeV",
+        "meaning": ""
+      },
+      {
+        "latex": "m=1\\ \\mathrm{u},c=3\\times10^{8}\\ \\mathrm{m s}^{-1}",
+        "meaning": ""
+      },
+      {
+        "latex": "E=931~\\mathrm{M e V},1\\mathrm{u}=931~\\mathrm{M e V/c^{2}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}\\therefore\\text{Binding energy per nucleon,}\\\\=\\frac{39.10}{7}=5.58\\simeq5.6MeV\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}&=0.042\\times931\\\\&=39.10MeV\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\Delta\\mathbf{m}=\\mathbf{Z}\\mathbf{M}_{\\mathrm{p}}+(\\mathbf{A}-\\mathbf{Z})\\mathbf{M}_{\\mathrm{n}}-\\mathbf{M}(\\mathbf{A},\\mathbf{Z})",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{BE}=\\Delta mc^{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{B}\\mathbf{E}=[\\mathbf{Z}\\mathbf{M}_{\\mathbf{p}}+(\\mathbf{A}-\\mathbf{Z})\\mathbf{M}_{\\mathbf{n}}-\\mathbf{M}\\left(\\mathbf{A},\\mathbf{Z}\\right)]\\mathbf{c}^{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{M}(\\mathbf{A},\\mathbf{Z})=\\mathbf{Z}\\mathbf{M}_{\\mathrm{p}}+(\\mathbf{A}-\\mathbf{Z})\\mathbf{M}_{\\mathrm{n}}-\\frac{\\mathbf{B}\\mathbf{E}}{c^{2}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}&Q=(B.E.)_{product}-(B.E.)_{reactant}\\\\&Q=(28-4.4)MeV\\\\&\\quad=23.6MeV\\\\ \\end{aligned}",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "1cf8c61f-0765-4ff6-9a84-e6066d331c68",
+      "11770bd4-4f77-4ca2-86a1-bb33cc7af574",
+      "ffecc364-a5d6-4020-92fa-93967173f5e6",
+      "4e787bf1-4a71-4ca7-a495-37840ef46e61",
+      "445d963f-ab53-4935-88c3-e745bbd73c11",
+      "495dbd90-3693-4393-852b-0821b77ae468",
+      "5318ad01-37cb-44dd-959a-0bd6fd793ba2",
+      "30499058-5775-490d-a31c-e89aac389294",
+      "7ef3574c-7d1e-478a-a400-1c64c2a9360b",
+      "46920c3a-27d3-4522-9f07-e2e875c1d326",
+      "ab8f7062-35c5-49b6-a6ba-13c5061366d8"
+    ],
+    "tags": [
+      "NEET 2021",
+      "NEET 2020",
+      "AIPMT 2014",
+      "NEET Karnataka 2013",
+      "AIPMT Screening 2008",
+      "AIPMT 2007",
+      "AIPMT 2006",
+      "AIPMT 2005",
+      "AIPMT 2004",
+      "AIPMT 1992"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-nuclei-nuclear-energy",
+    "chapter": "Nuclei",
+    "subtopic": "Nuclear Energy",
+    "class": "XII",
+    "unitId": "xii-atoms",
+    "unitLabel": "Unit IX — Atoms & Nuclei",
+    "order": 26,
+    "title": "Nuclear Energy",
+    "summary": "A moderator's function is to slow down the fast-moving secondary neutrons created during fission, because only slow-moving neutrons can initiate the fission reaction.",
+    "body": "**Key points from solved questions**\n- Slow neutrons are more effective in causing fission in $ {}^{235}_{92} $U because they have a higher probability of being captured by the uranium nucleus, leading to fission. An $ \\alpha $-particle is the nucleus of a helium atom. Beta particles are high electrons or positrons that are ejected from nucleus by some radionuclides during beta-decay. X-rays have longer wavelength than gamma rays.\n- Water has high specific heat capacity so that it can absorb a significant amount of heat energy without undergoing a large increase in temperature. In nuclear reactors, efficient heat transfer is needed to manage the high amounts of thermal energy produced during nuclear fission.\n- The reaction of Uranium is: $$ {\\bf\\Phi}_{92}^{235}\\mathbf{U}+{\\bf\\Phi}_{0}^{1}n\\to{\\bf\\Phi}_{36}^{89}\\mathbf{K}\\mathbf{r}+{\\bf\\Phi}3{\\bf\\Phi}_{0}^{1}n+\\mathbf{X}_{Z}^{\\mathrm{A}} $$ According to law of conservation. (Atomic number) $ _{Reaction} $ = (Atomic number) $ _{Product} $ $$ 92+0=36+7 $$ ↓ $$ Z=92-36=56 $$ Similarly, (Atomic mass) Reactant = (Atomic mass) Product $$ 235+1=89+A+3\\times1 $$ $$ A=144 $$ The element is $ {}^{144}_{56}Ba $.\n- Energy released per $ u = \\left(\\frac{0.02866}{4}\\right) $ (931 MeV) = 6.675 MeV\n- From the question, Here, $ \\mathrm{power}, P = 1000\\ \\mathrm{W} $ $ \\mathrm{Energy} $ per hour = $ 1000 \\times 3600\\ \\mathrm{J} $ $ \\mathrm{Energy} $ per fission = 200 MeV $ = 200 \\times 1.6 \\times 10^{-13}\\ \\mathrm{J} $ No. of fission per hour, $ n = \\frac{1000 \\times 3600}{200 \\times 1.6 \\times 10^{-13}} $ \\therefore Mass per hour = $ \\frac{n}{N} \\times 235 $ $$ \\begin{array}{l}\\begin{array}{r l r}&{=\\frac{1000\\times3600\\times235}{200\\times1.6\\times10^{-13}\\times6.02\\times10^{23}}} \\\\ &{=43.9\\times10^{-6}~\\mathrm{g}=40~\\mu\\mathrm{g}}\\end{array}\\end{array} $$\n- Thermal K.E. $ \\geq $ Electrostatic P.E.\n- Mass of $_{1}H^{2}=2.014478$ amu Mass of $_{2}He^{4}=4.00388$ amu Mass of deuterium $2\\times2.01478=4.02956$ amu Energy equivalent $_{2}^{2}H=4.02956\\times1.1=4.4$ MeV Energy equivalent to $_{2}^{4}He=4.00388\\times7=28$ MeV Energy released = 28 - 4.4 = 23.6 MeV\n- The mass of fission products is always less than mass of parent nucleus.\n- For nuclei having A > 56, binding energy of nucleus gradually decreases.\n- Product is more stable so that its mass is less than the sum masses of reactants i.e., $ m_{3} < (m_{1} + m_{2}) $.\n- Solar energy $ \\rightarrow $ fusion of protons into helium.\n- In nuclear fusion, lighter nuclei merge to form a heavier nuclear.\n- On the basis of a liquid drop model of the nucleus, nuclear fission can be explained.\n- A moderator's function is to slow down the fast-moving secondary neutrons created during fission, because only slow-moving neutrons can initiate the fission reaction. The moderator should be made of a light substance that does not absorb neutrons. Heavy water, graphite, deuterium, paraffin and other materials can act as moderators. <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//007ef073-949b-4d80-9808-4a33c9029e95/markdown_1/imgs/img_in_image_box_1103_1027_1152_1072.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A15%3A50Z%2F-1%2F%2F9e7f5aa2a37c8859117ef9ee974c16a9b7c6ab804b88692b91859913c323d348\" alt=\"Image\" width=\"4%\" /></div>",
+    "formulas": [
+      {
+        "latex": "{\\bf\\Phi}_{92}^{235}\\mathbf{U}+{\\bf\\Phi}_{0}^{1}n\\to{\\bf\\Phi}_{36}^{89}\\mathbf{K}\\mathbf{r}+{\\bf\\Phi}3{\\bf\\Phi}_{0}^{1}n+\\mathbf{X}_{Z}^{\\mathrm{A}}",
+        "meaning": ""
+      },
+      {
+        "latex": "92+0=36+7",
+        "meaning": ""
+      },
+      {
+        "latex": "Z=92-36=56",
+        "meaning": ""
+      },
+      {
+        "latex": "235+1=89+A+3\\times1",
+        "meaning": ""
+      },
+      {
+        "latex": "A=144",
+        "meaning": ""
+      },
+      {
+        "latex": "u = \\left(\\frac{0.02866}{4}\\right)",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{array}{l}\\begin{array}{r l r}&{=\\frac{1000\\times3600\\times235}{200\\times1.6\\times10^{-13}\\times6.02\\times10^{23}}} \\\\ &{=43.9\\times10^{-6}~\\mathrm{g}=40~\\mu\\mathrm{g}}\\end{array}\\end{array}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{power}, P = 1000\\ \\mathrm{W}",
+        "meaning": ""
+      },
+      {
+        "latex": "= 200 \\times 1.6 \\times 10^{-13}\\ \\mathrm{J}",
+        "meaning": ""
+      },
+      {
+        "latex": "n = \\frac{1000 \\times 3600}{200 \\times 1.6 \\times 10^{-13}}",
+        "meaning": ""
+      },
+      {
+        "latex": "_{1}H^{2}=2.014478",
+        "meaning": ""
+      },
+      {
+        "latex": "_{2}He^{4}=4.00388",
+        "meaning": ""
+      },
+      {
+        "latex": "2\\times2.01478=4.02956",
+        "meaning": ""
+      },
+      {
+        "latex": "_{2}^{2}H=4.02956\\times1.1=4.4",
+        "meaning": ""
+      },
+      {
+        "latex": "_{2}^{4}He=4.00388\\times7=28",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "5b5a97f9-dda5-4e0c-83ec-c00b67b89a71",
+      "b8202847-f05f-4745-82db-1ea7f42dfbbf",
+      "a3901c0c-1a26-45f3-b462-02f4acbe0e9b",
+      "e9e28ed8-de2d-41ce-a8fb-d394fbb739dd",
+      "e9f25f70-1e44-421e-b86d-567558b0ebdd",
+      "a4c50148-4df3-4881-9a68-3c126928cf9d",
+      "820ece9b-4441-4b49-a7b4-7845abc8b777",
+      "d0065beb-a1d9-44ca-962a-7cbddb85620d",
+      "d5685132-b452-4935-ab36-f6714b20eb29",
+      "70cbf53f-f67a-4afa-9c30-80011c8901e6",
+      "582db87e-e37a-4582-9d52-fa5c9abd4505",
+      "d6818374-212f-4098-9ccf-0db7186dce1b",
+      "e984abbf-4ad7-46e4-9b41-da2205717e9b",
+      "45568a76-2a40-407b-aead-6966c3471728"
+    ],
+    "tags": [
+      "Re-NEET 2024",
+      "NEET 2020",
+      "NEET 2013",
+      "AIPMT Mains 2010",
+      "AIPMT 2005",
+      "AIPMT 2004",
+      "AIPMT 2003",
+      "AIPMT 2002",
+      "AIPMT 1994"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-nuclei-objective-i",
+    "chapter": "Nuclei",
+    "subtopic": "Objective I",
+    "class": "XII",
+    "unitId": "xii-atoms",
+    "unitLabel": "Unit IX — Atoms & Nuclei",
+    "order": 26,
+    "title": "Objective I",
+    "summary": "**$\\beta^-$ decay**: a neutron converts to a proton inside the nucleus: $$n \\to p + e^- + \\bar{\\nu}_e$$ The nucleus emits an **electron** (beta particle) and an **antineutrino**.",
+    "body": "**Key points from solved questions**\n- The **mass number** $A = Z + N$, where $Z$ is the number of protons (atomic number) and $N$ is the number of neutrons. It gives the total number of **nucleons** (protons + neutrons) in the nucleus. It is not exactly the mass in amu (due to binding energy and mass defect), but it is close. Answer: (C).\n- The binding energy per nucleon (BE/A) curve peaks at **iron-56** ($\\approx 8.8\\,\\rm MeV/nucleon$). This peak means: - Lighter nuclei ($A < 56$): **fusion** releases energy (moving toward the peak). - Heavier nuclei ($A > 56$): **fission** releases energy (splitting moves toward the peak). Iron is the most stable nucleus — no net energy is released by fusing or fissioning iron. Answer: (C).\n- The number of undecayed nuclei follows **exponential decay**: $$N(t) = N_0\\,e^{-\\lambda t}$$ Activity $A = \\lambda N$, so: $$A(t) = A_0\\,e^{-\\lambda t}$$ where $\\lambda$ is the decay constant. The **half-life** $t_{1/2} = \\ln 2/\\lambda$: after each half-life, the activity halves. Answer: (B).\n- From $N = N_0\\,e^{-\\lambda t}$, setting $N = N_0/2$: $$\\frac{1}{2} = e^{-\\lambda t_{1/2}} \\implies \\lambda t_{1/2} = \\ln 2 \\implies t_{1/2} = \\frac{\\ln 2}{\\lambda} = \\frac{0.693}{\\lambda}$$ The **mean life** $\\tau = 1/\\lambda = t_{1/2}/\\ln 2 \\approx 1.44\\,t_{1/2}$. Answer: (B).\n- An $\\alpha$-particle is $^4_2$He (2 protons, 2 neutrons). In $\\alpha$-decay: $$^A_Z X \\to {}^{A-4}_{Z-2} Y + {}^4_2\\rm He$$ Mass number decreases by **4**, atomic number decreases by **2**. Example: $^{238}_{92}$U → $^{234}_{90}$Th + $^4_2$He. Answer: (C).\n- **$\\beta^-$ decay**: a neutron converts to a proton inside the nucleus: $$n \\to p + e^- + \\bar{\\nu}_e$$ The nucleus emits an **electron** (beta particle) and an **antineutrino**. Mass number $A$ stays the same; atomic number $Z$ increases by 1. Example: $^{14}_6$C → $^{14}_7$N + $e^-$ + $\\bar{\\nu}_e$ (radiocarbon dating). In $\\beta^+$ decay: proton → neutron + positron + neutrino ($Z$ decreases by 1). Answer: (B).\n- **Nuclear fission** (e.g., $^{235}$U + $n$): a heavy nucleus absorbs a neutron and becomes highly unstable, splitting into **two medium-mass daughter nuclei** (fission fragments) plus typically 2–3 free neutrons and a large release of energy ($\\sim 200\\,\\rm MeV$ per event). The released neutrons can trigger further fissions — a **chain reaction** — which is exploited in reactors and nuclear weapons. Answer: (B).\n- On the BE/A curve, light nuclei (like H, He) lie much lower than iron. When they fuse, the product has much higher BE/A — the gain per nucleon is large. For heavy nuclei fissioning, the gain per nucleon (moving from $A\\approx238$ toward $A\\approx56$) is smaller. Thus, **per unit mass**, fusion releases more energy than fission. Answer: (B).",
+    "formulas": [
+      {
+        "latex": "A = Z + N",
+        "meaning": ""
+      },
+      {
+        "latex": "N(t) = N_0\\,e^{-\\lambda t}",
+        "meaning": ""
+      },
+      {
+        "latex": "A(t) = A_0\\,e^{-\\lambda t}",
+        "meaning": ""
+      },
+      {
+        "latex": "A = \\lambda N",
+        "meaning": ""
+      },
+      {
+        "latex": "t_{1/2} = \\ln 2/\\lambda",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{1}{2} = e^{-\\lambda t_{1/2}} \\implies \\lambda t_{1/2} = \\ln 2 \\implies t_{1/2} = \\frac{\\ln 2}{\\lambda} = \\frac{0.693}{\\lambda}",
+        "meaning": ""
+      },
+      {
+        "latex": "N = N_0\\,e^{-\\lambda t}",
+        "meaning": ""
+      },
+      {
+        "latex": "N = N_0/2",
+        "meaning": ""
+      },
+      {
+        "latex": "\\tau = 1/\\lambda = t_{1/2}/\\ln 2 \\approx 1.44\\,t_{1/2}",
+        "meaning": ""
+      },
+      {
+        "latex": "^A_Z X \\to {}^{A-4}_{Z-2} Y + {}^4_2\\rm He",
+        "meaning": ""
+      },
+      {
+        "latex": "n \\to p + e^- + \\bar{\\nu}_e",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "2e6fb09a-d7fc-4d23-8adb-82a846e13f3b",
+      "e8ed022d-b310-4b8f-9bc0-e4afa336690d",
+      "2195411d-d328-46c3-96cd-da9171ba97f7",
+      "01f19274-921b-4f95-9238-a32ff296efd1",
+      "ff78318d-ba6d-4ee7-b636-05dde16c1bab",
+      "b5d3ee10-8fde-4940-b2b8-0e6c90d4a4e9",
+      "a8de5412-6baa-4b47-95f2-de9af79e95af",
+      "5f4db951-4bb9-4b48-8472-0354f8dbfe4f"
+    ],
+    "tags": [
+      "HC Verma Vol 2",
+      "Objective I",
+      "Chapter 46"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-nuclei-objective-ii",
+    "chapter": "Nuclei",
+    "subtopic": "Objective II",
+    "class": "XII",
+    "unitId": "xii-atoms",
+    "unitLabel": "Unit IX — Atoms & Nuclei",
+    "order": 26,
+    "title": "Objective II",
+    "summary": "- **A** ✓: For any single nucleus, decay is random — we cannot predict exactly when it will decay.",
+    "body": "**Key points from solved questions**\n- - **A** ✓: Total baryon number (mass number) is conserved in all nuclear reactions. - **B** ✓: Total charge (atomic number = proton number) is conserved. - **C** ✗: Mass is **not** conserved separately — the mass defect corresponds to the energy released ($E = \\Delta mc^2$). **Mass-energy** is conserved, not mass alone. - **D** ✓: Total energy (including rest-mass energy $mc^2$) is conserved. Answer: (A), (B), (D).\n- - **A** ✓: For any single nucleus, decay is random — we cannot predict exactly when it will decay. Only probabilities can be assigned ($\\lambda\\,dt$ = probability of decay in $dt$). - **B** ✓: For a large ensemble, the law of large numbers gives a precise exponential decay $N = N_0 e^{-\\lambda t}$. - **C** ✗: The decay constant $\\lambda$ is determined by nuclear physics (nuclear force, energy levels). Chemical bonding affects electron orbitals, not the nucleus — $\\lambda$ is essentially unchanged by chemical environment (with very rare exceptions in electron-capture decay). - **D** ✓: In $\\gamma$-decay, the nucleus transitions from an excited state to a lower state, emitting a photon. No change in $Z$, $N$, or $A$. Answer: (A), (B), (D).",
+    "formulas": [
+      {
+        "latex": "E = \\Delta mc^2",
+        "meaning": ""
+      },
+      {
+        "latex": "N = N_0 e^{-\\lambda t}",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "9280e5cf-50d2-4bc1-89df-b5cfaaa2fbcd",
+      "6318c23a-a5da-449f-8a75-bada1ce3c07f"
+    ],
+    "tags": [
+      "HC Verma Vol 2",
+      "Objective II",
+      "Chapter 46"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-nuclei-size-of-the-nucleus",
+    "chapter": "Nuclei",
+    "subtopic": "Size of The Nucleus",
+    "class": "XII",
+    "unitId": "xii-atoms",
+    "unitLabel": "Unit IX — Atoms & Nuclei",
+    "order": 26,
+    "title": "Size of The Nucleus",
+    "summary": "Nuclear radii.",
+    "body": "**Key points from solved questions**\n- Nuclear radius, $ \\mathrm{R} = R_0 A^{\\frac{1}{3}} $ $ \\mathrm{R} \\propto (\\mathrm{A})^{\\frac{1}{3}} $ $ \\frac{\\mathrm{R}_{1}}{\\mathrm{R}_{2}} = \\left(\\frac{125}{64}\\right)^{1/3} $, $ \\frac{\\mathrm{R}_{1}}{\\mathrm{R}_{2}} = \\frac{5}{4} $\n- Radius of nucleus is, $ \\mathrm{R} = \\mathrm{R}_{0} \\mathrm{A}^{1/3} $ $ \\Rightarrow $ $ \\mathrm{R} \\propto \\mathrm{A}^{1/3} $ $$ \\begin{aligned}&\\therefore\\frac{\\mathrm{R}_{\\mathrm{Al}}}{\\mathrm{R}_{\\mathrm{Te}}}=\\left(\\frac{\\mathrm{A}_{\\mathrm{Al}}}{\\mathrm{A}_{\\mathrm{Te}}}\\right)^{\\frac{1}{3}}=\\left(\\frac{27}{125}\\right)^{\\frac{1}{3}}=\\frac{3}{5}\\\\ &\\quad\\mathrm{R}_{\\mathrm{Te}}=\\frac{5}{3}\\mathrm{R}_{\\mathrm{Al}}\\\\ &\\because\\quad\\mathrm{R}_{\\mathrm{Al}}=3.6\\mathrm{~fm}\\\\ &\\Rightarrow\\quad\\mathrm{R}_{\\mathrm{Te}}=\\frac{5}{3}\\times3.6=6\\mathrm{~fm}\\\\ \\end{aligned} $$\n- We know that, (C) we know that, For Al, Nuclear Radius where, A = mass number $\\Rightarrow$ $R = R_{0}A^{1/3}$ $=R_{0}(27)^{1/3}=3R_{0}$ since, nuclear radius is 3.6 fm (given) $\\Rightarrow$ $R_{0}=\\frac{3.6}{3}=1.2$ fm For Cu, $R=R_{0}A^{1/3}=1.2\\times(64)^{1/3}$ $=4.8$ fm.\n- Density of nuclear matter is independent of mass number, so the required ratio is 1:1.\n- Nuclear radii. $$ \\mathrm{R}=\\mathrm{R}_{0}\\mathrm{A}^{1/3} $$ where. $$ R_{0}=1.2\\ f m $$ or $$ \\mathrm{R}\\propto(\\mathrm{A})^{1/3} $$ $$ \\frac{R_{Be}}{R_{Ge}}=\\frac{A_{Be}^{\\frac{1}{3}}}{A_{Ge}^{\\frac{1}{3}}} $$ Given $$ \\mathrm{R}_{\\mathrm{G e}}=2\\mathrm{R}_{\\mathrm{B e}} $$ or $$ \\frac{1}{2}=\\frac{\\mathrm{A}_{\\mathrm{Be}}^{\\frac{1}{3}}}{\\mathrm{A}_{\\mathrm{Ge}}^{\\frac{1}{3}}} $$ $$ \\mathrm{A_{G e}}^{1/3}=2\\times(9)^{1/3} $$ or $$ \\mathrm{A}_{\\mathrm{Ge}}=2^{3}\\times9=8\\times9=72 $$ ∴ Number of nucleus in Ge is 72. $$ \\begin{array}{l}9.\\ (D)\\ \\frac{\\text{Volume of atom}}{\\text{Volume of nucleus}}=\\frac{\\frac{4}{3}\\pi(10^{-10})^{3}}{\\frac{4}{3}\\pi(10^{-15})^{3}}\\\\ =10^{15}\\end{array} $$",
+    "formulas": [
+      {
+        "latex": "\\mathrm{R} = R_0 A^{\\frac{1}{3}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{\\mathrm{R}_{1}}{\\mathrm{R}_{2}} = \\left(\\frac{125}{64}\\right)^{1/3}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{\\mathrm{R}_{1}}{\\mathrm{R}_{2}} = \\frac{5}{4}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}&\\therefore\\frac{\\mathrm{R}_{\\mathrm{Al}}}{\\mathrm{R}_{\\mathrm{Te}}}=\\left(\\frac{\\mathrm{A}_{\\mathrm{Al}}}{\\mathrm{A}_{\\mathrm{Te}}}\\right)^{\\frac{1}{3}}=\\left(\\frac{27}{125}\\right)^{\\frac{1}{3}}=\\frac{3}{5}\\\\ &\\quad\\mathrm{R}_{\\mathrm{Te}}=\\frac{5}{3}\\mathrm{R}_{\\mathrm{Al}}\\\\ &\\because\\quad\\mathrm{R}_{\\mathrm{Al}}=3.6\\mathrm{~fm}\\\\ &\\Rightarrow\\quad\\mathrm{R}_{\\mathrm{Te}}=\\frac{5}{3}\\times3.6=6\\mathrm{~fm}\\\\ \\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{R} = \\mathrm{R}_{0} \\mathrm{A}^{1/3}",
+        "meaning": ""
+      },
+      {
+        "latex": "R = R_{0}A^{1/3}",
+        "meaning": ""
+      },
+      {
+        "latex": "=R_{0}(27)^{1/3}=3R_{0}",
+        "meaning": ""
+      },
+      {
+        "latex": "R_{0}=\\frac{3.6}{3}=1.2",
+        "meaning": ""
+      },
+      {
+        "latex": "R=R_{0}A^{1/3}=1.2\\times(64)^{1/3}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{R}=\\mathrm{R}_{0}\\mathrm{A}^{1/3}",
+        "meaning": ""
+      },
+      {
+        "latex": "R_{0}=1.2\\ f m",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{R}\\propto(\\mathrm{A})^{1/3}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{R_{Be}}{R_{Ge}}=\\frac{A_{Be}^{\\frac{1}{3}}}{A_{Ge}^{\\frac{1}{3}}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{R}_{\\mathrm{G e}}=2\\mathrm{R}_{\\mathrm{B e}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{1}{2}=\\frac{\\mathrm{A}_{\\mathrm{Be}}^{\\frac{1}{3}}}{\\mathrm{A}_{\\mathrm{Ge}}^{\\frac{1}{3}}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{A_{G e}}^{1/3}=2\\times(9)^{1/3}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{A}_{\\mathrm{Ge}}=2^{3}\\times9=8\\times9=72",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{array}{l}9.\\ (D)\\ \\frac{\\text{Volume of atom}}{\\text{Volume of nucleus}}=\\frac{\\frac{4}{3}\\pi(10^{-10})^{3}}{\\frac{4}{3}\\pi(10^{-15})^{3}}\\\\ =10^{15}\\end{array}",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "48b4efc6-dea7-4a77-8840-431e8d35d272",
+      "469104e3-652a-4989-8375-536f65f5b2f5",
+      "7ce5d74b-31f5-4ee9-9ca8-c342e3681da9",
+      "2885c93d-e5a3-43bc-9cd0-a69d0aa6a7ce",
+      "78a9e2fb-c6ce-4511-b811-3aa6a75c9114",
+      "f16e1590-8d8b-4553-85fc-0398b418c47c"
+    ],
+    "tags": [
+      "NEET 2022",
+      "AIPMT Cancelled 2015, 2007",
+      "AIPMT Screening 2008",
+      "AIPMT 2006",
+      "AIPMT 2003"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-nuclei-reneet2026",
+    "chapter": "Nuclei",
+    "subtopic": "reNEET2026",
+    "class": "XII",
+    "unitId": "xii-atoms",
+    "unitLabel": "Unit IX — Atoms & Nuclei",
+    "order": 26,
+    "title": "reNEET2026",
+    "summary": "$\\Delta m=238.050-234.043-4.003=0.004$ u.",
+    "body": "**Key points from solved questions**\n- $\\Delta m=238.050-234.043-4.003=0.004$ u. $Q=0.004\\times931.5\\ \\text{MeV}=3.726\\ \\text{MeV}\\approx3726\\ \\text{keV}.$",
+    "formulas": [
+      {
+        "latex": "\\Delta m=238.050-234.043-4.003=0.004",
+        "meaning": ""
+      },
+      {
+        "latex": "Q=0.004\\times931.5\\ \\text{MeV}=3.726\\ \\text{MeV}\\approx3726\\ \\text{keV}.",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "renet2026-phy-07"
+    ],
+    "tags": [
+      "reNEET 2026"
+    ],
+    "source": "seed"
+  }
+]

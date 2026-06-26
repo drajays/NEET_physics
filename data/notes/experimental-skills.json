@@ -1,0 +1,140 @@
+[
+  {
+    "id": "note-experimental-skills-overview",
+    "chapter": "Experimental Skills",
+    "subtopic": "Overview",
+    "class": "XII",
+    "unitId": "xii-exp",
+    "unitLabel": "Unit XI — Experimental Skills",
+    "order": 28,
+    "title": "Overview",
+    "summary": "The first and second resonance of tuning fork in resonance tube is shown below: <div style=\"text-align: center;\"><img…",
+    "body": "**Key points from solved questions**\n- L.C. of the screw gauge = $ \\frac{\\text{Pitch}}{\\text{Number of divisions on circular scale}} = \\frac{1}{100} = 0.01 \\, \\text{mm} $ Given, circular scale reading = 0.01 × 63 = 0.63 mm ∴ Diameter of wire = Total reading = Main Scale reading + Circular Scale Reading = 1 mm + 0.63 mm = 1.63 mm = 0.163 cm\n- Given, Meter Scale Reading = 0 Circular Scale Reading = 52 Least Count = $ \\frac{1}{100} $ mm = 0.01 mm $$ d=MSR+CSR\\times Least~Count $$ $$ =0+52\\times0.01=0.52\\mathrm{~mm} $$ $$ d=0.052cm $$\n- Given, Least count = 0.01 mm No. of division on circular scale = 50 Pitch of the screw gauge = least count $ \\times $ no. of divisions on circular scale = 0.01 $ \\times $ 50 = 0.5 mm\n- Diameter of the ball = Meter Scale Reading + Circular Scale Reading $ \\times $ (Least Count) - Zero error $$ 0.5+25\\times0.001-(-0.004) $$ $$ =0.5+0.025+0.004 $$ $$ =0.529\\ cm $$\n- $ (N+1) $ vernier scale division (VSD) = (N) Main scale division $$ 1\\ VSD=\\left(\\frac{N}{N+1}\\right)MSD $$ $$ \\begin{aligned}L.C.&=least~count=1MSD-1VSD\\\\&=\\left(1-\\frac{N}{N+1}\\right)MSD\\\\&=\\left(\\frac{1}{N+1}\\right)MSD\\\\&=\\left(\\frac{1}{N+1}\\right)\\times\\frac{0.1}{10}cm\\\\&=\\frac{1}{100(N+1)}cm\\end{aligned} $$\n- $n$ main scale divisions = 1 cm 1 main scale division = $\\frac{1}{n}$ cm $$ 1\\ M S D=\\frac{1}{n}\\ cm $$ $$ n\\mathrm{VSD}=(n-1)\\mathrm{MSD} $$ $$ 1\\ VSD=\\frac{n-1}{n}\\ MSD $$ $$ \\frac{1}{n}-\\left(\\frac{n-1}{n}\\right) \\mathbf{MSD} $$ $$ =\\frac{1}{n}-\\left(\\frac{n-1}{n}\\right)\\left(\\frac{1}{n}\\mathrm{~cm}\\right) $$ $$ \\mathrm{L.C.}=\\left(\\frac{1}{n}-\\frac{n-1}{n^{2}}\\right)\\mathrm{c m} $$ $$ L.C.=\\frac{n-n+1}{n^{2}}=\\frac{1}{n^{2}}cm $$\n- The first and second resonance of tuning fork in resonance tube is shown below: <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//e6f55268-e3da-4528-a451-4c2aa45d41c8/markdown_3/imgs/img_in_image_box_717_541_1011_647.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A35Z%2F-1%2F%2F26ebc24dbf63ff13cf39e457cd7c881347406446140c684c31ac2221bfaf5d63\" alt=\"Image\" width=\"24%\" /></div> $$ \\left(\\begin{array}{c}\\frac{1}{2}\\\\ \\frac{3\\lambda}{4}=l_{2}\\end{array}\\right)\\left(\\begin{array}{c}\\frac{\\lambda}{4}\\\\ \\frac{\\lambda}{2}\\end{array}\\right) $$ Here, $$ l_{1}=\\frac{\\lambda}{4}\\text{and}l_{2}=\\frac{3\\lambda}{4} $$ $$ \\Rightarrow $$ $$ l_{2}-l_{1}=\\frac{3\\lambda}{4}-\\frac{\\lambda}{4}=\\frac{2\\lambda}{4}=\\frac{\\lambda}{2} $$ $$ \\lambda=2(l_{2}-l_{1}) $$ We know that, $$ \\begin{aligned}\\mathbf{v}&=f\\boldsymbol{\\lambda}\\\\\\mathbf{v}&=800\\times2\\quad(31.25-9.75)\\\\&=34400\\mathrm{~cm/s}\\\\\\mathbf{v}&=344\\mathrm{~m/s}\\end{aligned} $$ <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//e6f55268-e3da-4528-a451-4c2aa45d41c8/markdown_3/imgs/img_in_image_box_604_921_644_960.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A36Z%2F-1%2F%2Ff1b10e3c41c6676d7a8f2f4bfa1f5fdf8f469e64d4032fca83190931ee774090\" alt=\"Image\" width=\"3%\" /></div> ##### ! Caution Students should remember that in second resonance use $ l_{2} = \\frac{\\lambda}{2} $ but it is wrong, the first, $ l_{1} = \\frac{\\lambda}{4} $ and then $ \\frac{\\lambda}{2} $ means $ l_{2} = \\frac{\\lambda}{4} + \\frac{\\lambda}{2} = \\frac{3\\lambda}{4} $\n- Using ohm's law, $$ \\mathrm{\\frac{d V}{d l}}=-r $$ and $$ [\\because\\mathrm{~V~}+\\mathrm{I}r=\\mathrm{E}] $$ $$ \\mathbf{V}=\\mathbf{E}, $$ if $$ 1=0 $$ $ \\therefore $ slope of graph = - r and Intercept = E\n- In the first case, <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//e6f55268-e3da-4528-a451-4c2aa45d41c8/markdown_3/imgs/img_in_image_box_775_1266_968_1471.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A36Z%2F-1%2F%2F79253376ddde7da9afe2cc115aa938a774066d1554e6fe676c053b9f54116f83\" alt=\"Image\" width=\"16%\" /></div> At balance point, $$ \\mathrm{\\frac{5}{R}}={\\frac{l_{1}}{100-l_{1}}} $$ In the second case, At balance point. $$ \\frac{5}{\\left(\\frac{\\mathrm{R}}{2}\\right)}=\\frac{1.6l_{1}}{100-1.6l_{1}} $$ <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//e6f55268-e3da-4528-a451-4c2aa45d41c8/markdown_4/imgs/img_in_image_box_238_412_429_641.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A38Z%2F-1%2F%2F82298fbe8a6739b4b8df6a3049001656b7fa593298606ff03c64112ec6998c9b\" alt=\"Image\" width=\"16%\" /></div> Divide eq. (i) by eq (ii), we get, $$ \\frac{1}{2}\\;=\\;\\frac{100-1.6\\;l_{1}}{1.6(100-l_{1})} $$ $$ 160-1.6\\ l_{1}=200-3.2\\ l_{1} $$ $$ 1.6-1.6\\ l_{1}=200-3.2\\ l_{1}\\\\\\ 1.6\\ l_{1}=40\\ or\\ l_{1}=\\frac{40}{1.6}=25\\ cm $$ Substituting this value in eq (i), we get, $$ \\mathrm{\\frac{5}{r}} = \\mathrm{\\frac{25}{75}} $$ $$ \\begin{aligned}R&=\\frac{375}{25}\\Omega\\\\&=15\\Omega.\\end{aligned} $$\n- From prism formula, $$ \\upmu=\\frac{\\sin\\left(\\frac{\\mathbf{A}+\\delta}{2}\\right)}{\\sin\\left(\\frac{\\mathbf{A}}{2}\\right)} $$ $$ \\begin{aligned}\\cot\\frac{\\mathrm{A}}{2}&=\\frac{\\sin\\left(\\frac{\\mathrm{A}+\\delta}{2}\\right)}{\\sin\\left(\\frac{\\mathrm{A}}{2}\\right)}\\\\\\Rightarrow\\quad\\frac{\\cos\\left(\\frac{\\mathrm{A}}{2}\\right)}{\\sin\\left(\\frac{\\mathrm{A}}{2}\\right)}&=\\frac{\\sin\\left(\\frac{\\mathrm{A}+\\delta}{2}\\right)}{\\sin\\left(\\frac{\\mathrm{A}}{2}\\right)}\\\\\\Rightarrow\\quad\\sin\\left(\\frac{\\pi}{2}-\\frac{\\mathrm{A}}{2}\\right)&=\\sin\\left(\\frac{\\mathrm{A}}{2}+\\frac{\\delta}{2}\\right)\\\\\\Rightarrow\\quad\\delta&=\\pi-2\\mathrm{A}\\end{aligned} $$\n- It is V-I characteristics for solar cell where point A represents open circuit voltage and point B short circuit current.\n- The current in a $p-n$ junction is of the order of milli-ampere in forward biasing and of the order of micro-ampere in reverse biasing (negligible). Hence, we can conclude that the device is a $p-n$ junction. ### ТЕЛИ КОНИООР <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//e6f55268-e3da-4528-a451-4c2aa45d41c8/markdown_4/imgs/img_in_image_box_909_1043_1002_1129.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A39Z%2F-1%2F%2Fa653f190ec0bd873fa52bb6ddedf58d202c1c2ffa7f589bddf7d7dd9d615ad2e\" alt=\"Image\" width=\"7%\" /></div>",
+    "formulas": [
+      {
+        "latex": "\\frac{\\text{Pitch}}{\\text{Number of divisions on circular scale}} = \\frac{1}{100} = 0.01 \\, \\text{mm}",
+        "meaning": ""
+      },
+      {
+        "latex": "d=MSR+CSR\\times Least~Count",
+        "meaning": ""
+      },
+      {
+        "latex": "=0+52\\times0.01=0.52\\mathrm{~mm}",
+        "meaning": ""
+      },
+      {
+        "latex": "d=0.052cm",
+        "meaning": ""
+      },
+      {
+        "latex": "0.5+25\\times0.001-(-0.004)",
+        "meaning": ""
+      },
+      {
+        "latex": "=0.5+0.025+0.004",
+        "meaning": ""
+      },
+      {
+        "latex": "=0.529\\ cm",
+        "meaning": ""
+      },
+      {
+        "latex": "1\\ VSD=\\left(\\frac{N}{N+1}\\right)MSD",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}L.C.&=least~count=1MSD-1VSD\\\\&=\\left(1-\\frac{N}{N+1}\\right)MSD\\\\&=\\left(\\frac{1}{N+1}\\right)MSD\\\\&=\\left(\\frac{1}{N+1}\\right)\\times\\frac{0.1}{10}cm\\\\&=\\frac{1}{100(N+1)}cm\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "1\\ M S D=\\frac{1}{n}\\ cm",
+        "meaning": ""
+      },
+      {
+        "latex": "n\\mathrm{VSD}=(n-1)\\mathrm{MSD}",
+        "meaning": ""
+      },
+      {
+        "latex": "1\\ VSD=\\frac{n-1}{n}\\ MSD",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{1}{n}-\\left(\\frac{n-1}{n}\\right) \\mathbf{MSD}",
+        "meaning": ""
+      },
+      {
+        "latex": "=\\frac{1}{n}-\\left(\\frac{n-1}{n}\\right)\\left(\\frac{1}{n}\\mathrm{~cm}\\right)",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{L.C.}=\\left(\\frac{1}{n}-\\frac{n-1}{n^{2}}\\right)\\mathrm{c m}",
+        "meaning": ""
+      },
+      {
+        "latex": "L.C.=\\frac{n-n+1}{n^{2}}=\\frac{1}{n^{2}}cm",
+        "meaning": ""
+      },
+      {
+        "latex": "\\left(\\begin{array}{c}\\frac{1}{2}\\\\ \\frac{3\\lambda}{4}=l_{2}\\end{array}\\right)\\left(\\begin{array}{c}\\frac{\\lambda}{4}\\\\ \\frac{\\lambda}{2}\\end{array}\\right)",
+        "meaning": ""
+      },
+      {
+        "latex": "l_{1}=\\frac{\\lambda}{4}\\text{and}l_{2}=\\frac{3\\lambda}{4}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\Rightarrow",
+        "meaning": ""
+      },
+      {
+        "latex": "l_{2}-l_{1}=\\frac{3\\lambda}{4}-\\frac{\\lambda}{4}=\\frac{2\\lambda}{4}=\\frac{\\lambda}{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\lambda=2(l_{2}-l_{1})",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}\\mathbf{v}&=f\\boldsymbol{\\lambda}\\\\\\mathbf{v}&=800\\times2\\quad(31.25-9.75)\\\\&=34400\\mathrm{~cm/s}\\\\\\mathbf{v}&=344\\mathrm{~m/s}\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "l_{2} = \\frac{\\lambda}{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "l_{1} = \\frac{\\lambda}{4}",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "4da08e08-09ee-4b83-a2ea-da2a15b7b51a",
+      "c30678f6-5b41-4b55-9f76-eebec0176e2b",
+      "0b95c4cb-6541-4239-8a59-0040923f9aa6",
+      "ad112fed-aec3-4308-8ce9-fc5e94ad1c8a",
+      "ef2b04ad-e61c-4379-9b78-e57ce56f1365",
+      "4ccb6f9b-c309-4a5f-9cec-3ea5e106872b",
+      "77a03f83-92f1-46cd-8dd4-4a57881f3b7e",
+      "09c6eadc-8ed7-42bd-b1fe-ebc30c1e0cd9",
+      "b20bf4ef-97b4-4120-927f-307e8a0b87da",
+      "bfe14d3e-3be8-475c-ba95-9874d164454e",
+      "3a1d28bb-5bf2-4e18-9c10-fd9bb36084c8",
+      "e60a749e-c689-473b-aa67-ed5fe1ff00c7",
+      "90e2d7c7-def3-4af2-bbfe-77249d465286"
+    ],
+    "tags": [
+      "Re-NEET 2024",
+      "NEET 2021",
+      "NEET 2020",
+      "NEET 2018",
+      "NEET 2024",
+      "NEET 2019",
+      "AIPMT 2014",
+      "AIPMT Screening 2009",
+      "AIPMT Cancelled 2015",
+      "AIPMT 1997"
+    ],
+    "source": "seed"
+  }
+]

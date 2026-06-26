@@ -1,0 +1,789 @@
+[
+  {
+    "id": "note-waves-beats",
+    "chapter": "Waves",
+    "subtopic": "Beats",
+    "class": "XI",
+    "unitId": "xi-waves",
+    "unitLabel": "Unit X — Oscillations & Waves",
+    "order": 13,
+    "title": "Beats",
+    "summary": "<div style=\"text-align: center;\"><img…",
+    "body": "**Key points from solved questions**\n- In case of beats formation, Unknown frequency, $$ \\mathbf{v}_{B}=\\mathbf{v}_{A}\\pm\\mathrm{b e a t s} $$ Where $$ v_{A}=530Hz,beats=6Hz $$ $$ \\begin{array}{l}\\bullet\\\\ \\bullet\\end{array} $$ $$ \\mathrm{v_{B}=530\\pm6=536,o r524H z} $$ From question, when tension of B is slightly decreased, then beats frequency increases to 7 Hz. Thus, the original frequency B is 524 Hz.\n- <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//469c3723-cc7c-4562-abf6-545774a2e0f7/markdown_3/imgs/img_in_image_box_291_590_509_725.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A01Z%2F-1%2F%2F8c0155ea6d5694d96b41ba5a9f3cfced1cced4b4f06c5db9db4d1f924037b9e7\" alt=\"Image\" width=\"18%\" /></div> Now divide 1 second into 1, 1, 2, equal divisions $$ \\frac{1}{1},\\frac{1}{1},\\frac{2}{1} $$ By eliminating common time instants, total maxima in one second is 2.\n- Frequency of unknown source = 246 Hz or 254 Hz second harmonic of this source = 492 Hz or 508 Hz when gives 5 beats per second when sounded with a source frequency 513 Hz. Therefore, unknown frequency = 254 Hz.\n- According to the question, Frequency of the string varies directly as the square root of its tension. $$ \\begin{aligned}&\\Rightarrow\\quad f\\propto\\sqrt{\\mathrm{T}}\\\\ &\\quad\\quad\\quad\\quad\\frac{\\Delta f}{f}=\\frac{1}{2},\\frac{\\Delta\\mathrm{T}}{\\mathrm{T}}\\\\ &\\Rightarrow\\quad\\quad\\quad\\quad\\frac{\\Delta\\mathrm{T}}{\\mathrm{T}}=2,\\frac{\\Delta f}{f}\\\\ &、\\quad\\quad\\quad\\quad=2\\times\\frac{6}{600}=0.02\\\\ \\end{aligned} $$\n- We have, $$ n_{p}\\propto\\sqrt{\\mathrm{T}} $$ $$ n_{f}=frequency of tuning~fork=512Hz $$ $$ x=Beat~frequency=4~beats/s $$ Hence, $ n_{p} - n_{f} = x \\downarrow $ (wrong) $$ n_{f}-n_{p}=x\\downarrow(correct) $$ $$ n_{p}=n_{f}-x=512-4=508\\mathrm{~Hz} $$\n- According to the question, Frequency of first string, $$ \\begin{aligned}f_{1}&=\\frac{1}{2l}\\sqrt{\\frac{T}{m}}\\\\&=\\frac{1}{2\\times51.6\\times10^{-2}}\\sqrt{\\frac{20}{10^{-3}}}\\\\&=137.03Hz\\end{aligned} $$ Frequency of second string, $$ \\begin{aligned}f_{2}&=\\frac{1}{2\\times49.1\\times10^{-2}}\\sqrt{\\frac{20}{10^{-3}}}\\\\&=144.01\\mathrm{~Hz}\\end{aligned} $$ ∴ Number of beats, $$ f_{2}-f_{1}=144-137=7\\mathrm{b e a t s} $$\n- $$ Frequency=\\frac{Velocity}{Wavelength} $$ $$ \\mathrm{v}_{1}=\\frac{\\mathrm{v}}{\\lambda_{1}}=\\frac{330}{5}=66\\mathrm{~Hz} $$ and $$ \\mathrm{v}_{2}=\\frac{\\mathrm{v}}{\\lambda_{2}}=\\frac{330}{5\\cdot5}=60\\mathrm{~Hz} $$ ∴ Number of beats per second $$ \\begin{aligned}&={\\bf v}_{1}-{\\bf v}_{2}\\\\&=66-60=6.\\end{aligned} $$\n- $$ y_{1}=4\\sin500\\pi t $$ Here, $$ y_{2}=2\\sin506\\pi t $$ $$ \\omega_{1}=500\\pi,\\omega_{2}=506\\pi $$ $$ \\mathrm{v}_{1}=\\frac{\\omega_{1}}{2\\pi}=\\frac{500\\pi}{2\\pi}=250\\mathrm{Hz} $$ $$ \\mathrm{v}_{2}=\\frac{\\omega_{2}}{2\\pi}=\\frac{506\\pi}{2\\pi}=253\\mathrm{~Hz} $$ $$ \\begin{array}{l}v=v_{2}-v_{1}=253-250\\\\=3\\mathrm{beats/s}=180\\mathrm{beats/min}\\end{array} $$\n- We have, the frequency of vibrations of string, $$ n=\\frac{1}{2\\pi}\\sqrt{\\frac{g}{l}} $$ $$ \\begin{aligned}&Given,&n_{A}=2n_{B}\\\\&\\therefore&\\quad\\frac{1}{2\\pi}\\sqrt{\\frac{g}{l_{A}}}=2.\\frac{1}{2\\pi}\\sqrt{\\frac{g}{l_{B}}}\\\\&\\Rightarrow&\\quad\\frac{1}{l_{A}}=\\frac{4}{l_{B}}\\\\&\\Rightarrow&l_{B}=4l_{A}\\\\&It~is~clear~from~eq.(i),~the~frequ\\\\&string~does~not~decoord.\\end{aligned} $$\n- Beats are produced when both waves are combined. Frequency of beats will be, $$ \\mathbf{v}_{1}-\\mathbf{v}_{2}=\\frac{1}{\\mathrm{T}_{1}}-\\frac{1}{\\mathrm{T}_{2}}=\\frac{1}{3}-\\frac{1}{4}=\\frac{1}{12} $$ Hence, time period = 12 s",
+    "formulas": [
+      {
+        "latex": "\\mathbf{v}_{B}=\\mathbf{v}_{A}\\pm\\mathrm{b e a t s}",
+        "meaning": ""
+      },
+      {
+        "latex": "v_{A}=530Hz,beats=6Hz",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{array}{l}\\bullet\\\\ \\bullet\\end{array}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{v_{B}=530\\pm6=536,o r524H z}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{1}{1},\\frac{1}{1},\\frac{2}{1}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}&\\Rightarrow\\quad f\\propto\\sqrt{\\mathrm{T}}\\\\ &\\quad\\quad\\quad\\quad\\frac{\\Delta f}{f}=\\frac{1}{2},\\frac{\\Delta\\mathrm{T}}{\\mathrm{T}}\\\\ &\\Rightarrow\\quad\\quad\\quad\\quad\\frac{\\Delta\\mathrm{T}}{\\mathrm{T}}=2,\\frac{\\Delta f}{f}\\\\ &、\\quad\\quad\\quad\\quad=2\\times\\frac{6}{600}=0.02\\\\ \\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "n_{p}\\propto\\sqrt{\\mathrm{T}}",
+        "meaning": ""
+      },
+      {
+        "latex": "n_{f}=frequency of tuning~fork=512Hz",
+        "meaning": ""
+      },
+      {
+        "latex": "x=Beat~frequency=4~beats/s",
+        "meaning": ""
+      },
+      {
+        "latex": "n_{f}-n_{p}=x\\downarrow(correct)",
+        "meaning": ""
+      },
+      {
+        "latex": "n_{p}=n_{f}-x=512-4=508\\mathrm{~Hz}",
+        "meaning": ""
+      },
+      {
+        "latex": "n_{p} - n_{f} = x \\downarrow",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}f_{1}&=\\frac{1}{2l}\\sqrt{\\frac{T}{m}}\\\\&=\\frac{1}{2\\times51.6\\times10^{-2}}\\sqrt{\\frac{20}{10^{-3}}}\\\\&=137.03Hz\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}f_{2}&=\\frac{1}{2\\times49.1\\times10^{-2}}\\sqrt{\\frac{20}{10^{-3}}}\\\\&=144.01\\mathrm{~Hz}\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "f_{2}-f_{1}=144-137=7\\mathrm{b e a t s}",
+        "meaning": ""
+      },
+      {
+        "latex": "Frequency=\\frac{Velocity}{Wavelength}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{v}_{1}=\\frac{\\mathrm{v}}{\\lambda_{1}}=\\frac{330}{5}=66\\mathrm{~Hz}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{v}_{2}=\\frac{\\mathrm{v}}{\\lambda_{2}}=\\frac{330}{5\\cdot5}=60\\mathrm{~Hz}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}&={\\bf v}_{1}-{\\bf v}_{2}\\\\&=66-60=6.\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "y_{1}=4\\sin500\\pi t",
+        "meaning": ""
+      },
+      {
+        "latex": "y_{2}=2\\sin506\\pi t",
+        "meaning": ""
+      },
+      {
+        "latex": "\\omega_{1}=500\\pi,\\omega_{2}=506\\pi",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{v}_{1}=\\frac{\\omega_{1}}{2\\pi}=\\frac{500\\pi}{2\\pi}=250\\mathrm{Hz}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{v}_{2}=\\frac{\\omega_{2}}{2\\pi}=\\frac{506\\pi}{2\\pi}=253\\mathrm{~Hz}",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "d8b05d0c-702c-494e-8af4-928be2edffb0",
+      "f3cef60b-9f0f-4301-814a-5dd38ced76fe",
+      "216e6a13-8cdb-4409-95a0-d7c482981047",
+      "cfe6ef2a-5a52-43bb-8702-79754dd89210",
+      "c6a38f29-4733-4c43-b175-8464e9cd18fc",
+      "1fa12d8e-db70-4463-a76d-803e2badb9a9",
+      "b9d6385a-84d2-457a-b335-50fbce8af694",
+      "aaecfa96-57a5-45a1-b7e1-d280919c1f96",
+      "0086f702-1e1f-48e1-9b62-1e3a516bc9a3",
+      "68b584de-f943-4d0e-96a0-4dbf2ef14356"
+    ],
+    "tags": [
+      "NEET 2020",
+      "NEET Phase-II 2016",
+      "NEET 2013",
+      "AIPMT Mains 2011",
+      "AIPMT Screening 2009",
+      "AIPMT 2006",
+      "AIPMT 2005",
+      "AIPMT 1993"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-waves-displacement-relation-in-a-progressive-wave",
+    "chapter": "Waves",
+    "subtopic": "Displacement Relation in a Progressive Wave",
+    "class": "XI",
+    "unitId": "xi-waves",
+    "unitLabel": "Unit X — Oscillations & Waves",
+    "order": 13,
+    "title": "Displacement Relation in a Progressive Wave",
+    "summary": "According to the question, A = 2 cm and Direction = + x direction v = 128 ms^{-1} $ \\therefore $ \\quad $ k = \\frac{2\\pi}{\\lambda} = \\frac{2\\pi \\times 5}{4} = 7.85 \\, \\text{rad} \\, \\text{m}^{-1} $ And \\quad $ \\mathbf{v}…",
+    "body": "**Key points from solved questions**\n- Given, $y = C \\sin \\left( \\frac{2\\pi}{\\lambda}(at - x) \\right)$ we can write it as $y = C \\sin \\left( \\frac{2\\pi}{\\lambda} at - \\frac{2\\pi x}{\\lambda} \\right)$ $\\omega = \\frac{2\\pi a}{\\lambda}$ The frequency $f$ is given by $f = \\frac{\\omega}{2\\pi}$ $f = \\frac{\\frac{2\\pi a}{\\lambda}}{2\\pi} = \\frac{a}{\\lambda}$ (A) According to the question, $ A = 1 \\, m $ $ \\therefore \\quad y = A \\sin(kx - \\omega t) $ $ =\\sin\\left(\\frac{2\\pi}{2\\pi}x-2\\pi\\times\\frac{1}{\\pi}t\\right) $ $ =\\sin(x-2t) $\n- It is given that, $$ \\begin{array}{l l l}{}&{y_{1}=\\textup{A}\\operatorname{s i n}\\left(\\omega t+k x+0.57\\right)\\textup{m}}&{\\dots(\\textup{i})}\\\\ {\\textup{a n d}\\quad}&{y_{2}=\\textup{A}\\operatorname{c o s}\\left(\\omega t+k x\\right)\\textup{m}}\\\\ {\\Rightarrow\\quad}&{y_{2}=\\textup{A}\\operatorname{s i n}\\left(\\frac{\\pi}{2}+\\omega t+k x\\right)\\textup{m}}&{\\dots(\\textup{i i})}\\\\ \\end{array} $$ Thus from these two equations, $ \\Delta\\phi = \\phi_{2} - \\phi_{1} $ $ =\\frac{\\pi}{2}-0.57 $ $ =1.57-0.57=1\\ rad $\n- According to the question, A = 2 cm and Direction = + x direction v = 128 ms^{-1} $ \\therefore $ \\quad $ k = \\frac{2\\pi}{\\lambda} = \\frac{2\\pi \\times 5}{4} = 7.85 \\, \\text{rad} \\, \\text{m}^{-1} $ And \\quad $ \\mathbf{v} = \\frac{\\omega}{k} = 128 \\, \\text{ms}^{-1} $ $ \\therefore $ \\quad $ \\omega = \\mathbf{v} \\times k = 128 \\times 7.85 = 1005 \\, \\text{rad} \\, \\text{s}^{-1} $ $ \\therefore $ \\quad $ y = A \\sin (kx - \\omega t) $ becomes \\quad $ y = 2 \\sin (7.85x - 1005 \\, t) $ $ = (0.02) \\sin (7.85x - 1005 \\, t) $\n- Given, $y = 0.25 \\sin (10 \\pi x - 2\\pi t)$ Comparing with equation of wave, $y = A \\sin (kx - \\omega t)$ $A = 0.25, k = 10 \\pi, \\omega = 2\\pi$ $\\frac{2\\pi}{\\lambda} = 10\\pi,$ $2\\pi f = 2\\pi$ $f = 1 \\text{ Hz}$ $\\therefore \\quad \\lambda = \\frac{1}{5} = 0.2 \\text{ m}$ When sign of coefficient of $t$ and $x$ are opposite, it means, $\\frac{dx}{dt} = v > 0$ i.e., wave is propagating in the direction of increasing $x$.\n- The general equation of wave travelling in x-direction is given as, $$ y=A\\sin\\left[\\frac{2\\pi}{\\lambda}(\\mathrm{v}t-x)\\right] $$ Here, A = 0.2 m, v = 360 ms^{-1}, $ \\lambda = 60 $ m ∴ The equation becomes, $$ y=0.2\\sin\\left[\\frac{2\\pi}{60}(360t-x)\\right] $$ $$ y=0.2\\sin\\left[2\\pi\\left(6t-\\frac{x}{60}\\right)\\right] $$",
+    "formulas": [
+      {
+        "latex": "y = C \\sin \\left( \\frac{2\\pi}{\\lambda}(at - x) \\right)",
+        "meaning": ""
+      },
+      {
+        "latex": "y = C \\sin \\left( \\frac{2\\pi}{\\lambda} at - \\frac{2\\pi x}{\\lambda} \\right)",
+        "meaning": ""
+      },
+      {
+        "latex": "\\omega = \\frac{2\\pi a}{\\lambda}",
+        "meaning": ""
+      },
+      {
+        "latex": "f = \\frac{\\omega}{2\\pi}",
+        "meaning": ""
+      },
+      {
+        "latex": "f = \\frac{\\frac{2\\pi a}{\\lambda}}{2\\pi} = \\frac{a}{\\lambda}",
+        "meaning": ""
+      },
+      {
+        "latex": "A = 1 \\, m",
+        "meaning": ""
+      },
+      {
+        "latex": "\\therefore \\quad y = A \\sin(kx - \\omega t)",
+        "meaning": ""
+      },
+      {
+        "latex": "=\\sin\\left(\\frac{2\\pi}{2\\pi}x-2\\pi\\times\\frac{1}{\\pi}t\\right)",
+        "meaning": ""
+      },
+      {
+        "latex": "=\\sin(x-2t)",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{array}{l l l}{}&{y_{1}=\\textup{A}\\operatorname{s i n}\\left(\\omega t+k x+0.57\\right)\\textup{m}}&{\\dots(\\textup{i})}\\\\ {\\textup{a n d}\\quad}&{y_{2}=\\textup{A}\\operatorname{c o s}\\left(\\omega t+k x\\right)\\textup{m}}\\\\ {\\Rightarrow\\quad}&{y_{2}=\\textup{A}\\operatorname{s i n}\\left(\\frac{\\pi}{2}+\\omega t+k x\\right)\\textup{m}}&{\\dots(\\textup{i i})}\\\\ \\end{array}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\Delta\\phi = \\phi_{2} - \\phi_{1}",
+        "meaning": ""
+      },
+      {
+        "latex": "=\\frac{\\pi}{2}-0.57",
+        "meaning": ""
+      },
+      {
+        "latex": "=1.57-0.57=1\\ rad",
+        "meaning": ""
+      },
+      {
+        "latex": "k = \\frac{2\\pi}{\\lambda} = \\frac{2\\pi \\times 5}{4} = 7.85 \\, \\text{rad} \\, \\text{m}^{-1}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{v} = \\frac{\\omega}{k} = 128 \\, \\text{ms}^{-1}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\omega = \\mathbf{v} \\times k = 128 \\times 7.85 = 1005 \\, \\text{rad} \\, \\text{s}^{-1}",
+        "meaning": ""
+      },
+      {
+        "latex": "y = A \\sin (kx - \\omega t)",
+        "meaning": ""
+      },
+      {
+        "latex": "y = 2 \\sin (7.85x - 1005 \\, t)",
+        "meaning": ""
+      },
+      {
+        "latex": "= (0.02) \\sin (7.85x - 1005 \\, t)",
+        "meaning": ""
+      },
+      {
+        "latex": "y = 0.25 \\sin (10 \\pi x - 2\\pi t)",
+        "meaning": ""
+      },
+      {
+        "latex": "A = 0.25, k = 10 \\pi, \\omega = 2\\pi",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{2\\pi}{\\lambda} = 10\\pi,",
+        "meaning": ""
+      },
+      {
+        "latex": "2\\pi f = 2\\pi",
+        "meaning": ""
+      },
+      {
+        "latex": "f = 1 \\text{ Hz}",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "457aa395-3cfb-4582-a4e6-5c6bfe5bcaec",
+      "60f1cc99-b252-47a0-84c4-b0883d9179fa",
+      "c2d26154-da64-445a-a156-862ec0d5ef53",
+      "226c270c-f8bc-4464-8c91-7e31c8c52a8f",
+      "da13c60d-5ba5-4eab-9195-fd5c89817fd1",
+      "0ee0ed44-8848-4176-a089-cce9b509a775"
+    ],
+    "tags": [
+      "Re-NEET 2024",
+      "NEET 2013",
+      "AIPMT Screening 2009",
+      "AIPMT Screening 2008",
+      "AIPMT 2002"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-waves-objective-i",
+    "chapter": "Waves",
+    "subtopic": "Objective I",
+    "class": "XI",
+    "unitId": "xi-waves",
+    "unitLabel": "Unit X — Oscillations & Waves",
+    "order": 13,
+    "title": "Objective I",
+    "summary": "The speed of a transverse signal on a stretched wire is $v = \\sqrt{T/\\mu}$.",
+    "body": "**Key points from solved questions**\n- For a sine wave $y = A\\sin(kx - \\omega t)$, the speed of a particle is $v = \\dfrac{\\partial y}{\\partial t} = -A\\omega\\cos(kx-\\omega t)$ — a function of the particle's *phase* $(kx - \\omega t)$. Two particles will have **identical speed at every instant** (i.e., $v_1(t) = v_2(t)$ for all $t$) only if their phases either coincide, or differ in a way that leaves $\\cos(\\cdot)$ unchanged for all $t$. The cosine function satisfies $\\cos(\\theta + \\pi) = -\\cos\\theta$ — so a phase difference of $\\pi$ makes the speeds equal **in magnitude** at every instant (both reach maximum/zero/minimum together, just with possibly opposite signs — but \"same speed\" refers to magnitude). A phase difference of $\\pi$ corresponds to a *path difference* of $\\dfrac{\\lambda}{2\\pi}\\times \\pi = \\dfrac{\\lambda}{2}$ — this is the smallest nonzero separation that guarantees the particles always have the same speed. Answer: (C).\n- For a travelling sine wave $y = A\\sin(kx - \\omega t)$, at a fixed instant $t$, the displacement is zero wherever $\\sin(kx - \\omega t) = 0$, i.e., wherever $$kx - \\omega t = n\\pi \\quad (n = 0, \\pm1, \\pm2, \\dots)$$ Consecutive values of $x$ satisfying this condition (consecutive zero-crossings, at the *same instant*) differ by: $$\\Delta x = \\frac{\\pi}{k} = \\frac{\\pi}{2\\pi/\\lambda} = \\frac{\\lambda}{2}$$ So the nearest particle (at that same instant) also having zero displacement is at a distance $\\dfrac{\\lambda}{2}$. Answer: (C).\n- A travelling wave moving along a particular axis must have its argument (phase) involve *that* spatial coordinate together with time, in the combination $(\\text{coordinate} \\mp \\omega t)$ — this is what makes the disturbance pattern shift along that axis as time progresses. - **(A)** $x = A\\sin(ky - \\omega t)$: the *displacement* (here, in the $x$-direction — a transverse wave) is a function of $(ky - \\omega t)$ — the spatial dependence is on $y$, and the wave pattern moves along the **Y-axis** as $t$ increases. ✓ This represents a genuine travelling wave along Y. - **(B)** $y = A\\sin(kx - \\omega t)$: this travels along the **X-axis** (displacement $y$ depends on $x$ and $t$ in the travelling-wave combination). ✗ - **(C), (D)**: $y = A\\sin(ky)\\cos(\\omega t)$ and $y = A\\cos(ky)\\sin(\\omega t)$ are products of a function of position alone and a function of time alone — these represent **standing waves** (stationary patterns that oscillate in place), not travelling waves. ✗ Answer: (A).\n- Use the identity $\\sin^2\\theta = \\dfrac{1 - \\cos 2\\theta}{2}$: $$y = A\\sin^2(kx - \\omega t) = \\frac{A}{2} - \\frac{A}{2}\\cos\\big(2kx - 2\\omega t\\big)$$ The constant term $\\dfrac{A}{2}$ represents a fixed shift (mean position) that doesn't oscillate. The actual oscillatory part is $-\\dfrac{A}{2}\\cos(2kx - 2\\omega t)$ — a sinusoidal wave with: - **amplitude** $\\dfrac{A}{2}$ - **angular frequency** $2\\omega$, hence ordinary frequency $\\dfrac{2\\omega}{2\\pi} = \\dfrac{\\omega}{\\pi}$ Answer: (B).\n- A **mechanical wave** is a disturbance that propagates through the oscillation of the particles of a **material medium** — it cannot travel through vacuum (there's nothing to oscillate). **Sound waves** are pressure/density disturbances that travel by the to-and-fro motion of the medium's molecules — a classic mechanical wave. Radio waves, X-rays, and light waves are all forms of **electromagnetic radiation** — oscillating electric and magnetic fields that require *no medium at all* and propagate even through vacuum (e.g., sunlight reaching us through space). Answer: (D).\n- A floating cork simply rises and falls along with the water surface at its location as the wave passes — it doesn't move horizontally with the wave, but oscillates vertically, executing SHM that mirrors the up-and-down motion of that point on the water's surface. By definition, the **frequency of the wave** (at any given point) is precisely the rate at which the medium's particles (here, the water surface, and hence the cork riding on it) oscillate up and down. So the cork's oscillation frequency *is* the wave's frequency: $$f_{\\text{wave}} = f_{\\text{cork}} = v$$ Answer: (A).\n- The speed of a transverse wave on a stretched string is: $$v = \\sqrt{\\frac{T}{\\mu}}, \\qquad \\mu = \\text{mass per unit length} = \\rho \\times (\\text{cross-sectional area}) = \\rho \\pi r^2$$ Both strings are made of the **same material** (same $\\rho$) and stretched by the **same tension** $T$. Given $r_A = 2 r_B$: $$\\mu_A = \\rho \\pi r_A^2 = \\rho \\pi (2r_B)^2 = 4\\rho\\pi r_B^2 = 4\\mu_B$$ So: $$\\frac{v_A}{v_B} = \\sqrt{\\frac{T/\\mu_A}{T/\\mu_B}} = \\sqrt{\\frac{\\mu_B}{\\mu_A}} = \\sqrt{\\frac{\\mu_B}{4\\mu_B}} = \\sqrt{\\frac{1}{4}} = \\frac{1}{2}$$ Answer: (A).\n- The wave speed on a stretched string is $v = \\sqrt{T/\\mu}$. Since both strings AB and CD are made of the **same material with the same cross-section** (hence the same $\\mu$), the ratio of wave speeds depends only on the ratio of the **tensions**: $$\\frac{v_1}{v_2} = \\sqrt{\\frac{T_{AB}}{T_{CD}}}$$ From the pulley arrangement shown in figure (15-Q1), the tension in string $AB$ works out to be **half** the tension in string $CD$ (the geometry/load distribution through the light pulleys results in $T_{AB} : T_{CD} = 1 : 2$). Substituting: $$\\frac{v_1}{v_2} = \\sqrt{\\frac{T_{AB}}{T_{CD}}} = \\sqrt{\\frac{1}{2}} = \\frac{1}{\\sqrt{2}}$$ Answer: (D).\n- Sound is a **mechanical wave** — it is literally the propagation of pressure and density disturbances through the molecules of a material medium (air, water, solids, etc.). It fundamentally *requires* a medium to exist and propagate; there is nothing to compress, rarefy, or oscillate in a perfect vacuum. Therefore, asking for \"the velocity of sound in vacuum\" isn't a question with a numerical answer (neither greater, equal, nor smaller than $332$ m/s) — sound simply **cannot exist or travel** in vacuum, making the very notion of its speed there **meaningless**. Answer: (D).\n- A wave pulse reflecting at a junction is **inverted** precisely when it reflects off a \"denser\" medium — i.e., when travelling from a string with **lower** mass per unit length (where wave speed $v = \\sqrt{T/\\mu}$ is *higher*) into one with **higher** $\\mu$ (where wave speed is *lower*). (This is exactly analogous to a wave on a light string reflecting, with phase reversal, from a junction with a much heavier string — or light reflecting off a denser medium.) So here, the incident wave travels from the **lighter** (higher-speed) piece into the **heavier** (lower-speed) piece, where the transmitted wave continues with a **lower speed** $v' < v$. At the junction, the **frequency must remain the same** on both sides (continuity of the wave's oscillation across the boundary — the junction point oscillates at one definite frequency). Using $v = f\\lambda$: $$\\lambda' = \\frac{v'}{f} < \\frac{v}{f} = \\lambda \\qquad (\\text{since } v' < v \\text{ and } f \\text{ is unchanged})$$ Answer: (C).\n- Rewrite the second wave using $\\cos\\theta = \\sin(\\theta + \\pi/2)$: $$y_2 = a\\cos(\\omega t - kx) = a\\sin\\!\\left(\\omega t - kx + \\frac{\\pi}{2}\\right)$$ So the two waves have the same amplitude $a$ and a **phase difference of $\\dfrac{\\pi}{2}$**. The amplitude of their superposition (using the standard formula for combining two sinusoids of equal amplitude $a$ with phase difference $\\phi$) is: $$A_{\\text{resultant}} = \\sqrt{a^2 + a^2 + 2a^2\\cos\\phi} = \\sqrt{2a^2(1 + \\cos\\phi)} = \\sqrt{2a^2\\left(1 + \\cos\\frac{\\pi}{2}\\right)} = \\sqrt{2a^2(1+0)} = \\sqrt{2}\\,a$$ Answer: (B).\n- The speed of a transverse signal on a stretched wire is $v = \\sqrt{T/\\mu}$. Since the wire's tension arises from being stretched, $T = (\\text{stress})\\times A = (Y \\times \\text{strain}) \\times A$, and $\\mu = \\rho A$, we get: $$v = \\sqrt{\\frac{Y \\cdot (\\text{strain}) \\cdot A}{\\rho A}} = \\sqrt{\\text{strain}}\\sqrt{\\frac{Y}{\\rho}}$$ Since both wires have **identical geometry** (same natural length) and are stretched by the **same (small) amount**, they have the same strain — so: $$\\frac{v_A}{v_B} = \\sqrt{\\frac{Y_A/\\rho_A}{Y_B/\\rho_B}} = \\sqrt{\\frac{Y_A\\,\\rho_B}{Y_B\\,\\rho_A}}$$ We're told $Y_A > Y_B$ (which alone would tend to make $v_A > v_B$) **and** $\\rho_A > \\rho_B$ (which alone would tend to make $v_A < v_B$) — these two effects pull in *opposite* directions, and we have no information about their relative *magnitudes* (i.e., whether $Y_A/Y_B$ is bigger or smaller than $\\rho_A/\\rho_B$). So we cannot determine whether $v_A \\gtrless v_B$, and hence cannot determine the relation between $t_1 = L/v_A$ and $t_2 = L/v_B$. Answer: (D).\n- The principle of superposition for displacement, $y = y_1 + y_2$, holds because the wave equation governing $y$ is **linear**. - **Velocity**: $v = \\dfrac{\\partial y}{\\partial t} = \\dfrac{\\partial y_1}{\\partial t} + \\dfrac{\\partial y_2}{\\partial t} = v_1 + v_2$. This follows *directly* by differentiating the (valid) displacement-superposition relation — differentiation is itself a linear operation, so velocity superposition is automatically valid too. ✓ - **Kinetic energy**: $KE = \\dfrac{1}{2}m v^2 = \\dfrac{1}{2}m(v_1+v_2)^2 = \\dfrac{1}{2}mv_1^2 + \\dfrac{1}{2}mv_2^2 + m\\,v_1 v_2 = KE_1 + KE_2 + (\\text{cross term } m v_1 v_2)$ Kinetic energy depends on the *square* of velocity — a nonlinear (quadratic) function — so an extra **cross term** $mv_1v_2$ appears, which generally does not vanish. Hence $KE \\neq KE_1 + KE_2$ in general — the simple additive principle fails for kinetic energy. Answer: (B).\n- This is a direct consequence of the **linearity of the wave equation** (and the principle of superposition): when two wave pulses overlap, the net displacement at each point and instant is simply the algebraic sum of what each pulse would produce individually (this might cause them to momentarily cancel out if they happen to coincide and one is the exact inverse of the other — but this is purely a transient effect of the overlap). Crucially, the pulses **do not interact, collide, or permanently affect one another** — once they have crossed past each other, *each* pulse continues onward with **exactly its original shape, amplitude, and speed**, completely unaffected by the encounter. This is true regardless of whether the pulses happen to be inverted relative to each other or not — the relative orientation only affects what the *combined* displacement looks like momentarily during the overlap, not the pulses' final, independent fates. Answer: (D).",
+    "formulas": [
+      {
+        "latex": "y = A\\sin(kx - \\omega t)",
+        "meaning": ""
+      },
+      {
+        "latex": "v = \\dfrac{\\partial y}{\\partial t} = -A\\omega\\cos(kx-\\omega t)",
+        "meaning": ""
+      },
+      {
+        "latex": "v_1(t) = v_2(t)",
+        "meaning": ""
+      },
+      {
+        "latex": "\\cos(\\theta + \\pi) = -\\cos\\theta",
+        "meaning": ""
+      },
+      {
+        "latex": "\\dfrac{\\lambda}{2\\pi}\\times \\pi = \\dfrac{\\lambda}{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "kx - \\omega t = n\\pi \\quad (n = 0, \\pm1, \\pm2, \\dots)",
+        "meaning": ""
+      },
+      {
+        "latex": "\\Delta x = \\frac{\\pi}{k} = \\frac{\\pi}{2\\pi/\\lambda} = \\frac{\\lambda}{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\sin(kx - \\omega t) = 0",
+        "meaning": ""
+      },
+      {
+        "latex": "x = A\\sin(ky - \\omega t)",
+        "meaning": ""
+      },
+      {
+        "latex": "y = A\\sin(ky)\\cos(\\omega t)",
+        "meaning": ""
+      },
+      {
+        "latex": "y = A\\cos(ky)\\sin(\\omega t)",
+        "meaning": ""
+      },
+      {
+        "latex": "y = A\\sin^2(kx - \\omega t) = \\frac{A}{2} - \\frac{A}{2}\\cos\\big(2kx - 2\\omega t\\big)",
+        "meaning": ""
+      },
+      {
+        "latex": "\\sin^2\\theta = \\dfrac{1 - \\cos 2\\theta}{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\dfrac{2\\omega}{2\\pi} = \\dfrac{\\omega}{\\pi}",
+        "meaning": ""
+      },
+      {
+        "latex": "f_{\\text{wave}} = f_{\\text{cork}} = v",
+        "meaning": ""
+      },
+      {
+        "latex": "v = \\sqrt{\\frac{T}{\\mu}}, \\qquad \\mu = \\text{mass per unit length} = \\rho \\times (\\text{cross-sectional area}) = \\rho \\pi r^2",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mu_A = \\rho \\pi r_A^2 = \\rho \\pi (2r_B)^2 = 4\\rho\\pi r_B^2 = 4\\mu_B",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{v_A}{v_B} = \\sqrt{\\frac{T/\\mu_A}{T/\\mu_B}} = \\sqrt{\\frac{\\mu_B}{\\mu_A}} = \\sqrt{\\frac{\\mu_B}{4\\mu_B}} = \\sqrt{\\frac{1}{4}} = \\frac{1}{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "r_A = 2 r_B",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{v_1}{v_2} = \\sqrt{\\frac{T_{AB}}{T_{CD}}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{v_1}{v_2} = \\sqrt{\\frac{T_{AB}}{T_{CD}}} = \\sqrt{\\frac{1}{2}} = \\frac{1}{\\sqrt{2}}",
+        "meaning": ""
+      },
+      {
+        "latex": "v = \\sqrt{T/\\mu}",
+        "meaning": ""
+      },
+      {
+        "latex": "T_{AB} : T_{CD} = 1 : 2",
+        "meaning": ""
+      },
+      {
+        "latex": "\\lambda' = \\frac{v'}{f} < \\frac{v}{f} = \\lambda \\qquad (\\text{since } v' < v \\text{ and } f \\text{ is unchanged})",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "d1fc29bc-b4e2-4009-8cf8-3551f7b1340a",
+      "eddbb58c-0bbf-43b4-ae18-c0059aa28a2e",
+      "24f2936b-565a-4ec4-80a5-28e4b40adc30",
+      "665f0363-66fa-42b6-a98b-cba5f023c7c8",
+      "2e82d4bb-43fd-4cd6-b09b-6aad496098d1",
+      "80731146-ff8a-4913-b5d4-ad609bd8a54a",
+      "b0069895-4aa1-47ac-8936-fc49428bdcf9",
+      "589a9ba1-5bf5-4e44-9741-a92e54abc0b8",
+      "bb106299-d477-440d-aa6d-aee80b4d1d75",
+      "a113d7f4-baa8-4c9f-b642-e73dc37b8543",
+      "45fd5bd1-aa7d-4261-b89e-21373fb0e1d6",
+      "3e3a2407-48ff-472c-be77-58a2181fd6b9",
+      "f8965ee3-67b3-4224-9ffc-d296b72e79ac",
+      "bee7a28f-8452-4a8e-9c71-903c69900ec4",
+      "dcd6c432-67d4-440a-ae0f-67702bafde72",
+      "4b4409f1-162a-4d20-b92f-c7bb738fc57a",
+      "b1337324-38f5-48c1-b8c0-5276adfc6193",
+      "b3b20098-b670-4160-8468-51593a438fa0",
+      "2f61f2b9-d38b-4219-9c01-a5609fb0d0fc",
+      "d417f3dc-a696-4629-9aaa-9e49c5029f34",
+      "a60e2a14-e369-4fb6-838c-199c251ff976",
+      "ad810284-7385-4699-894e-e3ad006b1ff5",
+      "414341be-6b66-43c3-8675-a77d6e25e761",
+      "83ba6d59-1e3e-456d-bc1e-6fec1fb98f41",
+      "964e741e-0937-45a9-b220-7d93f496d3d1",
+      "c3fcfcdb-157a-43c2-9747-b4328e22b804",
+      "d49c92db-533c-4697-ac67-13b5bb6058e8",
+      "dfb70f5d-6637-48ce-b386-38a1527d878a"
+    ],
+    "tags": [
+      "HC Verma Vol 1",
+      "Objective I",
+      "Chapter 15",
+      "Chapter 16"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-waves-objective-ii",
+    "chapter": "Waves",
+    "subtopic": "Objective II",
+    "class": "XI",
+    "unitId": "xi-waves",
+    "unitLabel": "Unit X — Oscillations & Waves",
+    "order": 13,
+    "title": "Objective II",
+    "summary": "Speed of sound: $v = \\sqrt{\\gamma RT/M}$.",
+    "body": "**Key points from solved questions**\n- Speed of sound: $v = \\sqrt{\\gamma RT/M}$. - **A** ✓: $v \\propto \\sqrt{T}$ — speed increases with temperature. - **B** ✓: $\\gamma$ and $M$ both appear. For example, He ($M=4$, $\\gamma=5/3$) has much higher sound speed than air. - **C** ✗: At constant $T$, $P/\\rho = RT/M$ is constant (ideal gas) → pressure alone doesn't affect speed. - **D** ✓: Moist air has a lower effective molar mass than dry air (water vapour $M=18$ replaces heavier $N_2$/$O_2$) → slightly higher $v$. Answer: (A), (B), (D).\n- For a string of length $L$ fixed at both ends, the $n$th harmonic: - Nodes at both ends + $(n-1)$ interior nodes = **$n+1$ nodes total** ✓ (C) - Antinodes: $n$ antinodes ✓ (A) - Wavelength: $L = n\\lambda_n/2 \\Rightarrow \\lambda_n = 2L/n$ ✓ (D) - Frequency: $f_n = v/\\lambda_n = nv/(2L)$ ✓ (B) All four are correct. Answer: (A), (B), (C), (D).",
+    "formulas": [
+      {
+        "latex": "v = \\sqrt{\\gamma RT/M}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\gamma=5/3",
+        "meaning": ""
+      },
+      {
+        "latex": "P/\\rho = RT/M",
+        "meaning": ""
+      },
+      {
+        "latex": "L = n\\lambda_n/2 \\Rightarrow \\lambda_n = 2L/n",
+        "meaning": ""
+      },
+      {
+        "latex": "f_n = v/\\lambda_n = nv/(2L)",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "846da6b1-5b94-425d-8445-7de766650135",
+      "1ccceb90-96e0-4837-b9b3-bec087437f6f"
+    ],
+    "tags": [
+      "HC Verma Vol 1",
+      "Objective II",
+      "Chapter 16"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-waves-reflection-of-waves",
+    "chapter": "Waves",
+    "subtopic": "Reflection of Waves",
+    "class": "XI",
+    "unitId": "xi-waves",
+    "unitLabel": "Unit X — Oscillations & Waves",
+    "order": 13,
+    "title": "Reflection of Waves",
+    "summary": "String is divided into three points, <div style=\"text-align: center;\"><img…",
+    "body": "**Key points from solved questions**\n- Fundamental frequency for open organ pipe, $$ f_{o}=\\frac{\\mathbf{v}}{2\\mathbf{L}_{o}} $$ Fundamental frequency for closed organ pipe, $$ \\begin{aligned}&f_{c}=\\frac{\\mathbf{v}}{4\\mathrm{L}_{c}}\\\\ &\\frac{f_{o}}{f_{c}}=\\frac{\\mathbf{v}}{2\\mathrm{L}_{o}}\\times\\frac{4\\mathrm{L}_{c}}{\\mathbf{v}}\\\\ &\\begin{aligned}\\\\ &\\frac{f_{o}}{f_{c}}=\\frac{2}{1}&&\\left(\\because\\mathrm{L}_{o}=\\mathrm{L}_{c}\\right)\\\\ &\\end{aligned}\\\\ \\end{aligned} $$\n- Length of string of musical instrument $$ \\begin{aligned}B)&Length~of~string~of~musical~instrument\\\\&l=90\\mathrm{~cm}=0.9\\mathrm{~m}\\\\&fundamental~frequency,\\\\&f_{1}=120\\mathrm{~Hz},f_{2}=180\\mathrm{~Hz}.\\\\&We~know~that:\\\\&\\quad f\\propto\\frac{1}{l}\\\\&\\Rightarrow\\quad\\frac{f_{1}}{f_{2}}=\\frac{l_{2}}{l_{1}}\\\\&\\Rightarrow\\quad l_{2}=\\frac{f_{1}}{f_{2}}\\times l_{1}\\\\&\\quad l_{2}=\\frac{120}{180}\\times0.9\\\\&\\quad l_{2}=\\frac{2}{3}\\times0.9=0.6\\mathrm{~m}\\\\&\\quad l_{r}=60\\mathrm{~cm}.\\end{aligned} $$\n- For closed organ pipe, Third harmonics, $$ f=\\frac{3\\mathbf{v}}{4I} $$ where, l is the length of closed organ pipe. For open organ pipe, fundamental frequency, $$ f=\\frac{\\mathbf{v}}{2l}, $$ where, $ l = \\text{length of the open organ pipe} $. Equating equation (i) and (ii) $$ \\begin{aligned}\\frac{3\\mathrm{v}}{4l}&=\\frac{\\mathrm{v}}{2l^{\\prime}}\\\\l^{\\prime}&=\\frac{4l}{3\\times2}=\\frac{2l}{3}\\\\\\bar{l}&=\\frac{2}{3}\\times20=\\frac{40}{3}\\\\&\\quad[\\because\\text{Since},l=20\\text{cm given}]\\\\&=13.33\\text{cm}\\end{aligned} $$\n- For first resonance, $ l_{1} = \\frac{\\lambda}{4} $ and second resonance, $ l_{2} = \\frac{3\\lambda}{4} $ $ \\Rightarrow $ $ l_{2} - l_{1} = \\frac{3\\lambda}{4} - \\frac{\\lambda}{4} = \\frac{\\lambda}{2} $ $ \\lambda = 2(l_{2} - l_{1}) $ Velocity of sound wave, $$ \\begin{aligned}&\\mathbf{v}=\\mathbf{v}\\lambda\\qquad\\quad(Where,v=frequency)\\\\&\\mathbf{v}=\\mathbf{v}\\left(2\\right)\\left(l_{2}-l_{1}\\right)\\\\&\\mathbf{v}=2[320(0.73-0.20)]\\\\&\\mathbf{v}=2\\times320\\times0.53=339.2ms^{-1}\\\\&\\mathbf{v}\\approx339ms^{-1}\\\\ \\end{aligned} $$\n- For second overtone $(3^{rd}$ harmonics) in open organ pipe, $3\\lambda$ $$ \\frac{3\\lambda}{2}=l_{o} $$ $$ \\lambda=\\frac{2l_{p}}{3} $$ for first overtone $(2^{nd}$ harmonics)$ in closed organ pipe, $$ \\begin{aligned}&\\frac{3\\lambda}{4}=l_{c}\\\\&\\Rightarrow\\quad\\lambda=\\frac{4l_{c}}{3}=\\frac{4L}{3}\\\\&So,\\quad\\frac{2l_{o}}{3}=\\frac{4L}{3}\\\\&\\Rightarrow\\quad l_{0}=2L\\end{aligned} $$\n- The situation is shown in the given diagram, $$ \\begin{array}{l}\\displaystyle\\bigcup_{\\mathrm{L}_{\\min}}=\\frac{\\lambda}{4}\\\\ \\vdots\\\\ \\displaystyle\\mathrm{L}_{\\min}=\\frac{\\lambda}{4}\\\\ \\Rightarrow\\quad50=\\frac{\\lambda}{4}\\\\ \\Rightarrow\\quad\\lambda=200\\mathrm{~cm}\\end{array} $$ Next higher length of an column, $$ \\begin{aligned}L&=\\frac{\\lambda}{4}+\\frac{\\lambda}{2}=\\frac{3\\lambda}{4}\\\\&=\\frac{3}{4}\\times200=150cm\\end{aligned} $$\n- Two consecutive resonant frequencies for a string fixed at both ends will be, $$ \\begin{array}{c}\\frac{n\\mathbf{v}}{2l}\\ and\\ \\frac{(n+1)}{2l}\\mathbf{v}\\\\\\Rightarrow\\frac{(n+1)\\mathbf{v}}{2l}-\\frac{n\\mathbf{v}}{2l}\\ =420-315\\\\\\Rightarrow\\quad\\frac{\\mathbf{v}}{2l}\\ =105\\ Hz\\end{array} $$\n- For closed organ pipe, frequency of vibration $f_{c}$ is given, $$ f_{c}=\\frac{\\mathbf{v}}{4l} $$ l = length of closed organ pipe and for open organ pipe frequency of vibration is $ f_{0} $ $$ f_{0}=\\frac{\\mathbf{v}}{2l^{\\prime}} $$ $ l' = \\text{length of open organ pipe} $ According to question, $$ f_{c}=3f_{o} $$ $$ \\mathrm{\\frac{v}{4l}}=\\mathrm{\\frac{3v}{2l^{\\prime}}} $$ ↓ $$ l^{\\prime}=6l $$ $$ l^{\\prime}=6\\times20=120cm $$\n- String is divided into three points, <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//469c3723-cc7c-4562-abf6-545774a2e0f7/markdown_2/imgs/img_in_image_box_742_378_963_434.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A15%3A57Z%2F-1%2F%2F92678e3fad92bd11769121b93cfc20e79af4ef12ed75c9dd0100bfa49f4febf4\" alt=\"Image\" width=\"18%\" /></div> $ l_{1} $ has frequency $ n_{1} $ $ l_{2} $ has frequency $ n_{2} $ and $l_{3}$ has frequency $n_{3}$ Using, $$ \\mathbf{v}=f\\boldsymbol{\\lambda} $$ $$ \\lambda=\\frac{\\mathbf{v}}{f} $$ $$ l_{1}=\\frac{\\mathbf{v}}{n_{1}},l_{2}=\\frac{\\mathbf{v}}{n_{2}},l_{3}=\\frac{\\mathbf{v}}{n_{3}} $$ $$ l=l_{1}+l_{2}+l_{3} $$ $$ \\frac{\\mathbf{v}}{n}=\\frac{\\mathbf{v}}{n_{1}}+\\frac{\\mathbf{v}}{n_{2}}+\\frac{\\mathbf{v}}{n_{3}} $$ where, v is same in all case, $$ \\frac{1}{n}=\\frac{1}{n_{1}}+\\frac{1}{n_{2}}+\\frac{1}{n_{3}} $$\n- For pipe closed at one end, <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//469c3723-cc7c-4562-abf6-545774a2e0f7/markdown_2/imgs/img_in_image_box_765_964_938_1038.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A15%3A58Z%2F-1%2F%2F852b2a9bd2085642e4a711c3ebaf4a5ec1b73e481633067879edf71a4f9b1dec\" alt=\"Image\" width=\"14%\" /></div> $$ \\begin{aligned}f_{n}&=(2n-1)\\left(\\frac{\\mathbf{v}}{4l}\\right)\\\\&=(2n-1)\\times\\frac{340}{4\\times85\\times10^{-2}}\\end{aligned} $$ $$ =(2n-1)100 $$ $$ f_{1}=100\\mathrm{~Hz},f_{2}=300\\mathrm{~Hz} $$ $$ f_{3}=500Hz,f_{4}=700Hz $$ $$ f_{5}=900\\mathrm{~Hz},f_{6}=1100\\mathrm{~Hz} $$ This confirms that number of possible natural oscillations could be 6.\n- In the study of the vibration of a pipe, open at both the ends, the displacement node is pressure antinode. So, the pressure change will be maximum at the length $ \\frac{l}{2} $ and the pressure variation will be minimum at both the ends. The odd and even harmonics will be present in the vibration.\n- For standing wave, the length of one segment will be $\\frac{\\lambda}{2}$. Since, there are 5 segments and total length of the string is 10 m. $\\therefore\\quad5\\times\\frac{\\lambda}{2}=10$ $\\Rightarrow\\lambda=4\\ m$ Thus, frequency Thus, frequency, $$ f=\\frac{v}{\\lambda}=\\frac{20}{4}=5Hz\\quad(\\because v=20m/s) $$",
+    "formulas": [
+      {
+        "latex": "f_{o}=\\frac{\\mathbf{v}}{2\\mathbf{L}_{o}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}&f_{c}=\\frac{\\mathbf{v}}{4\\mathrm{L}_{c}}\\\\ &\\frac{f_{o}}{f_{c}}=\\frac{\\mathbf{v}}{2\\mathrm{L}_{o}}\\times\\frac{4\\mathrm{L}_{c}}{\\mathbf{v}}\\\\ &\\begin{aligned}\\\\ &\\frac{f_{o}}{f_{c}}=\\frac{2}{1}&&\\left(\\because\\mathrm{L}_{o}=\\mathrm{L}_{c}\\right)\\\\ &\\end{aligned}\\\\ \\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}B)&Length~of~string~of~musical~instrument\\\\&l=90\\mathrm{~cm}=0.9\\mathrm{~m}\\\\&fundamental~frequency,\\\\&f_{1}=120\\mathrm{~Hz},f_{2}=180\\mathrm{~Hz}.\\\\&We~know~that:\\\\&\\quad f\\propto\\frac{1}{l}\\\\&\\Rightarrow\\quad\\frac{f_{1}}{f_{2}}=\\frac{l_{2}}{l_{1}}\\\\&\\Rightarrow\\quad l_{2}=\\frac{f_{1}}{f_{2}}\\times l_{1}\\\\&\\quad l_{2}=\\frac{120}{180}\\times0.9\\\\&\\quad l_{2}=\\frac{2}{3}\\times0.9=0.6\\mathrm{~m}\\\\&\\quad l_{r}=60\\mathrm{~cm}.\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "f=\\frac{3\\mathbf{v}}{4I}",
+        "meaning": ""
+      },
+      {
+        "latex": "f=\\frac{\\mathbf{v}}{2l},",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}\\frac{3\\mathrm{v}}{4l}&=\\frac{\\mathrm{v}}{2l^{\\prime}}\\\\l^{\\prime}&=\\frac{4l}{3\\times2}=\\frac{2l}{3}\\\\\\bar{l}&=\\frac{2}{3}\\times20=\\frac{40}{3}\\\\&\\quad[\\because\\text{Since},l=20\\text{cm given}]\\\\&=13.33\\text{cm}\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "l = \\text{length of the open organ pipe}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}&\\mathbf{v}=\\mathbf{v}\\lambda\\qquad\\quad(Where,v=frequency)\\\\&\\mathbf{v}=\\mathbf{v}\\left(2\\right)\\left(l_{2}-l_{1}\\right)\\\\&\\mathbf{v}=2[320(0.73-0.20)]\\\\&\\mathbf{v}=2\\times320\\times0.53=339.2ms^{-1}\\\\&\\mathbf{v}\\approx339ms^{-1}\\\\ \\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "l_{1} = \\frac{\\lambda}{4}",
+        "meaning": ""
+      },
+      {
+        "latex": "l_{2} = \\frac{3\\lambda}{4}",
+        "meaning": ""
+      },
+      {
+        "latex": "l_{2} - l_{1} = \\frac{3\\lambda}{4} - \\frac{\\lambda}{4} = \\frac{\\lambda}{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\lambda = 2(l_{2} - l_{1})",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{3\\lambda}{2}=l_{o}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\lambda=\\frac{2l_{p}}{3}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}&\\frac{3\\lambda}{4}=l_{c}\\\\&\\Rightarrow\\quad\\lambda=\\frac{4l_{c}}{3}=\\frac{4L}{3}\\\\&So,\\quad\\frac{2l_{o}}{3}=\\frac{4L}{3}\\\\&\\Rightarrow\\quad l_{0}=2L\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{array}{l}\\displaystyle\\bigcup_{\\mathrm{L}_{\\min}}=\\frac{\\lambda}{4}\\\\ \\vdots\\\\ \\displaystyle\\mathrm{L}_{\\min}=\\frac{\\lambda}{4}\\\\ \\Rightarrow\\quad50=\\frac{\\lambda}{4}\\\\ \\Rightarrow\\quad\\lambda=200\\mathrm{~cm}\\end{array}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}L&=\\frac{\\lambda}{4}+\\frac{\\lambda}{2}=\\frac{3\\lambda}{4}\\\\&=\\frac{3}{4}\\times200=150cm\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{array}{c}\\frac{n\\mathbf{v}}{2l}\\ and\\ \\frac{(n+1)}{2l}\\mathbf{v}\\\\\\Rightarrow\\frac{(n+1)\\mathbf{v}}{2l}-\\frac{n\\mathbf{v}}{2l}\\ =420-315\\\\\\Rightarrow\\quad\\frac{\\mathbf{v}}{2l}\\ =105\\ Hz\\end{array}",
+        "meaning": ""
+      },
+      {
+        "latex": "f_{c}=\\frac{\\mathbf{v}}{4l}",
+        "meaning": ""
+      },
+      {
+        "latex": "f_{0}=\\frac{\\mathbf{v}}{2l^{\\prime}}",
+        "meaning": ""
+      },
+      {
+        "latex": "f_{c}=3f_{o}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{\\frac{v}{4l}}=\\mathrm{\\frac{3v}{2l^{\\prime}}}",
+        "meaning": ""
+      },
+      {
+        "latex": "l^{\\prime}=6l",
+        "meaning": ""
+      },
+      {
+        "latex": "l^{\\prime}=6\\times20=120cm",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "fe80e57f-be01-4b72-88df-4c2e80479a5b",
+      "c638a807-cad6-4bdf-b067-4e0a9844fcfc",
+      "cf9cbf1a-a3cb-4cec-abb4-1fc3e8ac1f32",
+      "ce88bf71-55da-4db9-b943-cf8d9b2bc178",
+      "c6769bf2-43ac-45d5-adcd-58a0977d9308",
+      "765340f3-b006-45f1-b581-e4e19b3f5c49",
+      "8d9a97bd-7461-48ed-a9c3-0c8a1e664b3b",
+      "6eb77de3-df6a-46f6-b994-db8b55b7c614",
+      "c83fbd85-a4e1-4fe7-92f6-2d3914787d71",
+      "656b462c-4a09-498e-a1f5-504bf6b58d09",
+      "4772ced9-70fa-4b60-8b4d-1e7e45de1ddd",
+      "f645c5d7-dd31-4f67-845f-9ab28bc997f0"
+    ],
+    "tags": [
+      "NEET 2023",
+      "NEET 2020",
+      "NEET 2018",
+      "NEET Phase-II 2016",
+      "AIPMT July 2015",
+      "AIPMT 2014, 2012, 2007",
+      "AIPMT 2014",
+      "AIPMT 1997"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-waves-the-principle-of-superposition-of-waves",
+    "chapter": "Waves",
+    "subtopic": "The Principle of Superposition of Waves",
+    "class": "XI",
+    "unitId": "xi-waves",
+    "unitLabel": "Unit X — Oscillations & Waves",
+    "order": 13,
+    "title": "The Principle of Superposition of Waves",
+    "summary": "Sound and light are both altered by interference.",
+    "body": "**Key points from solved questions**\n- Sound and light are both altered by interference. In sound when the resultant intensity is maximum (in phase), the interference is said to be constructive and when the resultant intensity is minimum or zero, it is said to be destructive (in opposite phase).",
+    "formulas": [],
+    "questionIds": [
+      "74ecbe86-7154-4958-af1f-0c4a86a73108"
+    ],
+    "tags": [
+      "AIPMT 1996"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-waves-the-speed-of-a-travelling-wave",
+    "chapter": "Waves",
+    "subtopic": "The Speed of a Travelling Wave",
+    "class": "XI",
+    "unitId": "xi-waves",
+    "unitLabel": "Unit X — Oscillations & Waves",
+    "order": 13,
+    "title": "The Speed of a Travelling Wave",
+    "summary": "The given wave equation is $$ y=3\\sin\\left(25\\pi t-\\frac{\\pi}{2}x\\right) $$ The standard wave equation is $$ y=\\mathbf{A}\\sin\\left(\\omega t-kx\\right) $$ Comparing (i) and (ii), we get $$ \\omega=25\\pi,k=\\frac{\\pi}{2} $$…",
+    "body": "**Key points from solved questions**\n- We know that, velocity of a transverse wave in a stretched string is, $$ \\mathbf{v}=\\sqrt{\\frac{\\mathbf{T}}{\\mu}} $$ Given: Tension, $ T' = 2T $ Now, speed of the wave in the string will be, $$ \\mathbf{v}^{\\prime}=\\sqrt{\\frac{2\\mathrm{T}}{\\mu}} $$ from eq. (i) and (ii), we get $$ \\frac{\\mathbf{v}}{\\mathbf{v}^{\\prime}}=\\frac{1}{\\sqrt{2}} $$\n- From the question: Wavelength of transverse pulse, $$ \\lambda=\\frac{\\mathbf{v}}{n} $$ Also, we know that, $$ \\mathbf{v}=\\sqrt{\\frac{\\mathrm{T}}{\\mu}} $$ v = velocity of the wave, n = frequency of wave T = tension in the string $ \\mu $ = mass per unit length of rope From eq. (i) and (ii), we get, $$ \\lambda=\\frac{1}{n}\\sqrt{\\frac{T}{\\mu}} $$ $$ \\lambda\\propto\\sqrt{T} $$ ∴ for different cases, $$ \\frac{\\lambda_{2}}{\\lambda_{1}}=\\sqrt{\\frac{T_{2}}{T_{1}}}=\\sqrt{\\frac{m_{1}+m_{2}}{m_{2}}} $$ $$ y=3\\sin\\frac{\\pi}{2}(50t-x) $$\n- The given wave equation is $$ y=3\\sin\\left(25\\pi t-\\frac{\\pi}{2}x\\right) $$ The standard wave equation is $$ y=\\mathbf{A}\\sin\\left(\\omega t-kx\\right) $$ Comparing (i) and (ii), we get $$ \\omega=25\\pi,k=\\frac{\\pi}{2} $$ Wave velocity $$ \\begin{array}{l}\\text{v}=\\displaystyle\\frac{\\omega}{k}\\\\ \\quad=\\displaystyle\\frac{25\\pi}{\\pi/2}=50\\mathrm{~m s}^{-1}\\end{array} $$ Particle velocity, $$ \\begin{array}{l}\\text{v}_{p}=\\displaystyle\\frac{d y}{d t}\\\\ \\qquad=\\displaystyle\\frac{d}{d t}\\bigg(3\\sin\\bigg(25\\pi t-\\frac{\\pi}{2}x\\bigg)\\bigg)\\\\ \\qquad=\\displaystyle 75\\pi\\cos\\bigg(25\\pi t-\\frac{\\pi}{2}x\\bigg)\\end{array} $$ Maximum particle velocity, $ (v_{p})_{\\text{max}} = 75\\pi \\, \\text{ms}^{-1} $ $$ \\frac{(\\mathbf{v}_{p})_{\\max}}{\\mathbf{v}}=\\frac{75\\pi}{50}=\\frac{3}{2}\\pi $$\n- Given, Velocity of wave in warm air, $ v_{1}=350\\ m/s $ Velocity of wave in brass, $ v_{2}=3500\\ m/s $ We know that, Velocity of sound, v = n $ \\lambda $ $$ \\frac{\\mathbf{v}_{1}}{\\mathbf{v}_{2}}=\\frac{n_{1}\\lambda_{1}}{n_{2}\\lambda_{2}} $$ Since $$ n_{1}=n_{2} $$ $$ \\frac{\\mathbf{v}_{1}}{\\mathbf{v}_{2}}=\\frac{\\lambda_{1}}{\\lambda_{2}} $$ $$ \\begin{aligned}\\lambda_{2}&=\\lambda_{1}\\frac{\\mathbf{v}_{2}}{\\mathbf{v}_{1}}\\\\&=\\lambda_{1}\\times\\frac{3500}{350}\\\\&=\\lambda_{1}\\times10\\\\\\lambda_{2}&=10\\lambda_{1}\\end{aligned} $$\n- Wave velocity, $ v = \\frac{\\omega}{K} = \\omega A $ $ \\Rightarrow $ $ \\frac{\\lambda}{2\\pi} = A $ $ \\Rightarrow $ $ \\lambda = 2\\pi A $\n- We know that, Phase difference, $ \\phi = \\frac{2\\pi}{\\lambda} \\times \\text{path difference} $ Here, path difference, $$ \\Delta x=15-10=5\\mathrm{~m} $$ Now frequency. $$ \\mathrm{v}=\\frac{1}{\\mathrm{T}}=\\frac{1}{0.05}=20\\mathrm{~Hz} $$ velocity, v =300 m/s $$ \\bullet \\quad \\bullet\\bullet $$ $$ \\lambda=\\frac{v}{v}=\\frac{300}{20}=15m $$ ∴ Phase difference. $$ \\begin{aligned}\\Delta\\phi&=\\frac{2\\pi}{\\lambda}\\times\\Delta x\\\\&=\\frac{2\\pi}{15}\\times5=\\frac{2\\pi}{3}\\end{aligned} $$\n- It is given that, $$ y(x,t)=8.0\\sin\\left[0.5\\pi x-4\\pi t-\\frac{\\pi}{4}\\right] $$ Compare this equation with standard equation. $$ y=A\\sin\\left(\\frac{2\\pi x}{\\lambda}-\\frac{2\\pi t}{T}+\\phi\\right) $$ we have. $$ \\begin{aligned}\\frac{2\\pi}{\\lambda}&=0.5\\pi\\\\\\lambda&=\\frac{2\\pi}{0.5\\pi}=4m\\\\\\frac{2\\pi}{T}&=4\\pi\\\\ T&=\\frac{1}{2}s\\\\ v=\\frac{\\lambda}{T}&=\\frac{4}{1/2}=8m/s\\end{aligned} $$\n- Given: $$ \\mathrm{Intensity}\\propto\\frac{1}{(\\mathrm{distance})^{2}} $$ $$ I_{1}\\propto\\frac{1}{2^{2}} $$ and $$ I_{2}\\propto\\frac{1}{3^{2}} $$ $$ \\frac{I_{1}}{I_{2}}=\\frac{9}{4}=9:4 $$\n- We have, $$ y=A\\sin\\left(100t-\\frac{x}{10}\\right) $$ On comparing with standard wave equation, We get $$ \\omega=100,k=\\frac{1}{10} $$ Velocity of the wave, $$ \\begin{aligned}\\mathbf{v}&=\\frac{\\omega}{k}=\\frac{100}{1/10}\\\\&=100\\times10=1000\\mathrm{~m/s}\\end{aligned} $$",
+    "formulas": [
+      {
+        "latex": "\\mathbf{v}=\\sqrt{\\frac{\\mathbf{T}}{\\mu}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{v}^{\\prime}=\\sqrt{\\frac{2\\mathrm{T}}{\\mu}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{\\mathbf{v}}{\\mathbf{v}^{\\prime}}=\\frac{1}{\\sqrt{2}}",
+        "meaning": ""
+      },
+      {
+        "latex": "T' = 2T",
+        "meaning": ""
+      },
+      {
+        "latex": "\\lambda=\\frac{\\mathbf{v}}{n}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{v}=\\sqrt{\\frac{\\mathrm{T}}{\\mu}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\lambda=\\frac{1}{n}\\sqrt{\\frac{T}{\\mu}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\lambda\\propto\\sqrt{T}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{\\lambda_{2}}{\\lambda_{1}}=\\sqrt{\\frac{T_{2}}{T_{1}}}=\\sqrt{\\frac{m_{1}+m_{2}}{m_{2}}}",
+        "meaning": ""
+      },
+      {
+        "latex": "y=3\\sin\\frac{\\pi}{2}(50t-x)",
+        "meaning": ""
+      },
+      {
+        "latex": "y=3\\sin\\left(25\\pi t-\\frac{\\pi}{2}x\\right)",
+        "meaning": ""
+      },
+      {
+        "latex": "y=\\mathbf{A}\\sin\\left(\\omega t-kx\\right)",
+        "meaning": ""
+      },
+      {
+        "latex": "\\omega=25\\pi,k=\\frac{\\pi}{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{array}{l}\\text{v}=\\displaystyle\\frac{\\omega}{k}\\\\ \\quad=\\displaystyle\\frac{25\\pi}{\\pi/2}=50\\mathrm{~m s}^{-1}\\end{array}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{array}{l}\\text{v}_{p}=\\displaystyle\\frac{d y}{d t}\\\\ \\qquad=\\displaystyle\\frac{d}{d t}\\bigg(3\\sin\\bigg(25\\pi t-\\frac{\\pi}{2}x\\bigg)\\bigg)\\\\ \\qquad=\\displaystyle 75\\pi\\cos\\bigg(25\\pi t-\\frac{\\pi}{2}x\\bigg)\\end{array}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{(\\mathbf{v}_{p})_{\\max}}{\\mathbf{v}}=\\frac{75\\pi}{50}=\\frac{3}{2}\\pi",
+        "meaning": ""
+      },
+      {
+        "latex": "(v_{p})_{\\text{max}} = 75\\pi \\, \\text{ms}^{-1}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{\\mathbf{v}_{1}}{\\mathbf{v}_{2}}=\\frac{n_{1}\\lambda_{1}}{n_{2}\\lambda_{2}}",
+        "meaning": ""
+      },
+      {
+        "latex": "n_{1}=n_{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{\\mathbf{v}_{1}}{\\mathbf{v}_{2}}=\\frac{\\lambda_{1}}{\\lambda_{2}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}\\lambda_{2}&=\\lambda_{1}\\frac{\\mathbf{v}_{2}}{\\mathbf{v}_{1}}\\\\&=\\lambda_{1}\\times\\frac{3500}{350}\\\\&=\\lambda_{1}\\times10\\\\\\lambda_{2}&=10\\lambda_{1}\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "v_{1}=350\\ m/s",
+        "meaning": ""
+      },
+      {
+        "latex": "v_{2}=3500\\ m/s",
+        "meaning": ""
+      },
+      {
+        "latex": "v = \\frac{\\omega}{K} = \\omega A",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "6a1845c3-dde5-4d07-8c04-0af270ef8307",
+      "08d90453-f671-4458-a26e-2525fad4e3b4",
+      "b61f58ef-8dd1-4ce7-9c5c-f8ef238995c9",
+      "12d36597-53ea-4875-8525-0a4064ed4825",
+      "6443cefc-daed-403e-ab3b-433d84920cca",
+      "7142aaaf-187f-478b-b887-ef2e194f81f7",
+      "6827d38c-6d78-48f7-8244-aa239bc68da7",
+      "ba07cdc0-756e-4586-9970-eb9c15840bbc",
+      "18eed86a-ec06-4d66-89d7-26108caa335a"
+    ],
+    "tags": [
+      "NEET 2022",
+      "NEET Phase-I 2016",
+      "AIPMT Mains 2012",
+      "AIPMT Screening 2011",
+      "AIPMT Screening 2010",
+      "AIPMT Screening 2008",
+      "AIPMT 2006",
+      "AIPMT 2005",
+      "AIPMT 2001"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-waves-transverse-and-longitudinal-waves",
+    "chapter": "Waves",
+    "subtopic": "Transverse and Longitudinal Waves",
+    "class": "XI",
+    "unitId": "xi-waves",
+    "unitLabel": "Unit X — Oscillations & Waves",
+    "order": 13,
+    "title": "Transverse and Longitudinal Waves",
+    "summary": "The sound waves in air, are longitudinal while the light waves are transverse.",
+    "body": "**Key points from solved questions**\n- The sound waves in air, are longitudinal while the light waves are transverse.",
+    "formulas": [],
+    "questionIds": [
+      "c5d2cf17-2bd8-42a0-a882-5274e59d5a1c"
+    ],
+    "tags": [
+      "AIPMT 2006"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-waves-reneet2026",
+    "chapter": "Waves",
+    "subtopic": "reNEET2026",
+    "class": "XI",
+    "unitId": "xi-waves",
+    "unitLabel": "Unit X — Oscillations & Waves",
+    "order": 13,
+    "title": "reNEET2026",
+    "summary": "Open pipe, $5^{th}$ harmonic $\\Rightarrow$ 5 nodes ($n=5$).",
+    "body": "**Key points from solved questions**\n- Open pipe, $5^{th}$ harmonic $\\Rightarrow$ 5 nodes ($n=5$). Closed pipe, $9^{th}$ harmonic $\\Rightarrow \\tfrac{9+1}{2}=5$ nodes ($m=5$). So $n/m=1$.",
+    "formulas": [
+      {
+        "latex": "\\Rightarrow \\tfrac{9+1}{2}=5",
+        "meaning": ""
+      },
+      {
+        "latex": "n/m=1",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "renet2026-phy-04"
+    ],
+    "tags": [
+      "reNEET 2026"
+    ],
+    "source": "seed"
+  }
+]

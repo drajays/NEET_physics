@@ -1,0 +1,400 @@
+[
+  {
+    "id": "note-magnetism-and-matter-magnetic-properties-of-materials",
+    "chapter": "Magnetism and Matter",
+    "subtopic": "Magnetic Properties of Materials",
+    "class": "XII",
+    "unitId": "xii-magnetism",
+    "unitLabel": "Units III & IV — Magnetic Effects & Magnetism",
+    "order": 18,
+    "title": "Magnetic Properties of Materials",
+    "summary": "<table border=1 style='margin: auto; word-wrap: break-word;'><tr><td style='text-align: center; word-wrap: break-word;'>Material</td><td style='text-align: center; word-wrap: break-word;'>Magnetic susceptibility $ \\chi…",
+    "body": "**Key points from solved questions**\n- The incorrect relation is $ 1 < \\mu_r < 1 + \\varepsilon $ For diamagnetic material, magnetic susceptibility is small and negative i.e., $-1 \\leq \\chi \\leq 0$. <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//6909d2d9-c618-4062-813f-fb3c5cb303ec/markdown_3/imgs/img_in_image_box_85_554_127_590.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A15%3A50Z%2F-1%2F%2Fc688d60298f78fe9fad4f685128cbaf8b9bda7b2d5f041de42b6262f63a10ffd\" alt=\"Image\" width=\"3%\" /></div> ##### Caution Students should not get confused between relative permeability and magnetic susceptibility of diamagnetic, paramagnetic and ferromagnetic materials.\n- <table border=1 style='margin: auto; word-wrap: break-word;'><tr><td style='text-align: center; word-wrap: break-word;'>Material</td><td style='text-align: center; word-wrap: break-word;'>Magnetic susceptibility $ \\chi $</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>Diamagnetic</td><td style='text-align: center; word-wrap: break-word;'>slightly less than 0</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>Paramagnetic</td><td style='text-align: center; word-wrap: break-word;'>slightly greater than 0</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>Ferromagnetic</td><td style='text-align: center; word-wrap: break-word;'>$ \\gg 1 $</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>Non-magnetic</td><td style='text-align: center; word-wrap: break-word;'>0</td></tr></table>\n- The magnetic moment of a diamagnetic atom is equal to zero.\n- Energy of current source will be converted into potential energy of the rod.\n- Magnetic susceptibility = $ \\chi $ It is negative for diamagnetic material only.\n- (I) Paramagnetic material will be feebly attracted, (II) Diamagnetic material will be feebly repelled, (III) Ferromagnetic material will be strongly attracted (IV) Non-Magnetic material will remain unaffected by magnetic field.\n- If a diamagnetic substance is brought near the north or the south pole of a bar magnet, it is repelled by both the poles.\n- Curie temperature is that temperature above which a ferromagnetic material becomes paramagnetic material.\n- Above curie temperature, ferromagnetic material behaves as paramagnetic material.\n- $ \\mu_p \\neq 0 $, $ \\mu_f \\neq 0 $ and $ \\mu_d = 0 $\n- A diamagnetic material in a magnetic field moves from stronger to the weaker part of the field. <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//6909d2d9-c618-4062-813f-fb3c5cb303ec/markdown_3/imgs/img_in_image_box_657_529_694_572.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A15%3A50Z%2F-1%2F%2F9e928c926be020f4dc6e2efef0620c8961ee97644c98e119d062bab64e0b7d8f\" alt=\"Image\" width=\"3%\" /></div> ##### Related Theory A diamagnetic material tends to move from stronger to weaker regions of the magnetic field and hence decreases the number of magnetic field lines passing through it.\n- From Curie Law, $ \\chi_{m} \\propto \\frac{1}{T} $\n- Material's magnetic susceptibility is a measurement of how easily a specimen of that material may be magnetized in a magnetic field. Magnetic susceptibility ( $ \\chi_{m} $) of a diamagnetic substance is temperature independent.\n- When diamagnetic substances are placed in the magnetic field of a powerful magnet, they are weakly magnetized in the opposite direction of the field and repelled by the powerful magnet. <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//6909d2d9-c618-4062-813f-fb3c5cb303ec/markdown_3/imgs/img_in_image_box_656_933_692_980.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A15%3A50Z%2F-1%2F%2F2882eaf77ef67ec9e4325b0e360b2b96838252b06c7394cfef446d75c5de233f\" alt=\"Image\" width=\"3%\" /></div> ##### Related Theory Relative permeability of the diamagnetic substance is negative.",
+    "formulas": [
+      {
+        "latex": "\\mu_d = 0",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "026799f1-7c92-479c-8a85-2d19582700ee",
+      "e411cdb5-2e04-49b3-9737-975cb337194b",
+      "8b9dfc23-ddf8-499c-a3ec-a4d3c78b2ba6",
+      "0f53a4ca-f584-4328-8f30-b529437a7e7c",
+      "d23882db-22d1-4d03-8379-5f1228012119",
+      "f7f9c70a-eabc-4206-8d44-97f9a45d93f6",
+      "66424db6-044b-4731-90d0-c0a275f6d5f5",
+      "4da6d331-bc12-45c6-a96f-d377b4a91817",
+      "fd123f4d-c410-4d9e-b9ff-c45b641f450f",
+      "6da2a19f-d041-4a03-b4c8-f24bba17a7e2",
+      "82a0a639-d94c-4eb6-bce8-3cc4fb32ee36",
+      "b6bbf148-a07e-46f3-8f46-2c3ca274f36a",
+      "74957dce-7e85-4b4e-9d83-9fda1f183481",
+      "d0c1f03e-7c40-4870-b7f3-9f20d4100b7b",
+      "d59000e8-6215-4f60-98a7-228a431e29bf"
+    ],
+    "tags": [
+      "Re-NEET 2024",
+      "NEET 2024",
+      "NEET 2021",
+      "NEET 2018",
+      "AIPMT Screening 2009",
+      "AIPMT Screening 2008",
+      "AIPMT 2005",
+      "AIPMT 2003",
+      "AIPMT 2001",
+      "AIPMT 1999",
+      "AIPMT 1998"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-magnetism-and-matter-objective-i",
+    "chapter": "Magnetism and Matter",
+    "subtopic": "Objective I",
+    "class": "XII",
+    "unitId": "xii-magnetism",
+    "unitLabel": "Units III & IV — Magnetic Effects & Magnetism",
+    "order": 18,
+    "title": "Objective I",
+    "summary": "**Hysteresis**: when a ferromagnetic material is subjected to a cyclic magnetic field, the magnetisation $M$ does not retrace the same path during increasing and decreasing field.",
+    "body": "**Key points from solved questions**\n- Magnetic field lines: - **Outside** the magnet: leave from the N-pole and enter the S-pole (N to S in external space). - **Inside** the magnet: run from S to N (completing the closed loop). They form **continuous closed loops** — unlike electric field lines which start and end on charges. Answer: (B).\n- In a **uniform** field $\\vec{B}$: - The forces on the two poles ($+qm$ and $-qm$) are equal and opposite → **no net force**. - But the two forces form a couple if the dipole is not aligned → **net torque** $\\tau = MB\\sin\\theta$. In a **non-uniform** field, there is also a net translational force. Answer: (C).\n- $\\vec{\\tau} = \\vec{M}\\times\\vec{B}$, so $\\tau = MB\\sin\\theta$ where $\\theta$ is the angle between $\\vec{M}$ and $\\vec{B}$. The dipole experiences a restoring torque that aligns it with the field. At $\\theta = 0°$: $\\tau = 0$ (stable equilibrium); at $\\theta = 90°$: $\\tau = MB$ (maximum). Answer: (C).\n- $U = -\\vec{M}\\cdot\\vec{B} = -MB\\cos\\theta$. - At $\\theta = 0°$ (aligned with field): $U = -MB$ (minimum, stable equilibrium). - At $\\theta = 180°$ (anti-aligned): $U = +MB$ (maximum, unstable equilibrium). - At $\\theta = 90°$: $U = 0$. Answer: (B).\n- Magnetic moment $M = IA$ (current × area) has SI unit $\\rm A\\cdot m^2$. Alternatively, since $U = -MB\\cos\\theta$ and $[U] = \\rm J$, $[B] = \\rm T$: $$[M] = \\frac{[U]}{[B]} = \\frac{\\rm J}{\\rm T} = \\rm J/T$$ Both $\\rm A\\,m^2$ and $\\rm J/T$ are equivalent. Answer: (D).\n- $$\\oint_S \\vec{B}\\cdot d\\vec{A} = 0$$ Unlike electric charges, **magnetic monopoles** do not exist (no isolated N or S poles have been found). Every magnet has both poles; magnetic field lines form closed loops. Therefore the net flux through any closed surface is zero. Answer: (C).\n- **Diamagnetic materials** (e.g., bismuth, copper, water) have a small **negative** susceptibility ($\\chi < 0$). When placed in a non-uniform field, the induced magnetisation opposes the field. The net force on a diamagnetic material is toward **weaker field** regions — i.e., it is **weakly repelled** from regions of strong field. Answer: (C).\n- Below the Curie temperature $T_C$, ferromagnetic materials have long-range magnetic order (aligned domains). Above $T_C$, thermal energy destroys the alignment: - The material becomes **paramagnetic** ($\\chi$ small positive, follows Curie–Weiss law $\\chi = C/(T - T_C)$). - It does not become diamagnetic or superconducting. Answer: (B).\n- **Curie's law** for paramagnetic materials: $$\\chi = \\frac{C}{T} \\propto \\frac{1}{T}$$ where $C$ is the Curie constant. At higher temperatures, thermal agitation randomises the magnetic dipoles more effectively, reducing the net magnetisation for a given applied field. Answer: (C).\n- For any magnetic material: $\\mu_r = 1 + \\chi$. - **Diamagnetic**: $\\chi < 0$ (small negative) $\\implies \\mu_r < 1$ (slightly less than 1). - **Paramagnetic**: $\\chi > 0$ (small positive) $\\implies \\mu_r > 1$ (slightly greater than 1). - **Ferromagnetic**: $\\chi \\gg 1 \\implies \\mu_r \\gg 1$ (much greater than 1, up to $10^5$). Answer: (B).\n- **Hysteresis**: when a ferromagnetic material is subjected to a cyclic magnetic field, the magnetisation $M$ does not retrace the same path during increasing and decreasing field. The magnetisation **lags behind** the applied field $H$ — this is hysteresis. The area of the hysteresis loop represents the energy dissipated as heat per cycle. Retentivity (residual $M$ at $H=0$) and coercivity ($H$ needed to demagnetise) characterise the loop. Answer: (B).",
+    "formulas": [
+      {
+        "latex": "\\tau = MB\\sin\\theta",
+        "meaning": ""
+      },
+      {
+        "latex": "\\vec{\\tau} = \\vec{M}\\times\\vec{B}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\theta = 0°",
+        "meaning": ""
+      },
+      {
+        "latex": "\\tau = 0",
+        "meaning": ""
+      },
+      {
+        "latex": "\\theta = 90°",
+        "meaning": ""
+      },
+      {
+        "latex": "\\tau = MB",
+        "meaning": ""
+      },
+      {
+        "latex": "U = -\\vec{M}\\cdot\\vec{B} = -MB\\cos\\theta",
+        "meaning": ""
+      },
+      {
+        "latex": "U = -MB",
+        "meaning": ""
+      },
+      {
+        "latex": "\\theta = 180°",
+        "meaning": ""
+      },
+      {
+        "latex": "U = +MB",
+        "meaning": ""
+      },
+      {
+        "latex": "U = 0",
+        "meaning": ""
+      },
+      {
+        "latex": "[M] = \\frac{[U]}{[B]} = \\frac{\\rm J}{\\rm T} = \\rm J/T",
+        "meaning": ""
+      },
+      {
+        "latex": "M = IA",
+        "meaning": ""
+      },
+      {
+        "latex": "U = -MB\\cos\\theta",
+        "meaning": ""
+      },
+      {
+        "latex": "[U] = \\rm J",
+        "meaning": ""
+      },
+      {
+        "latex": "[B] = \\rm T",
+        "meaning": ""
+      },
+      {
+        "latex": "\\oint_S \\vec{B}\\cdot d\\vec{A} = 0",
+        "meaning": ""
+      },
+      {
+        "latex": "\\chi = C/(T - T_C)",
+        "meaning": ""
+      },
+      {
+        "latex": "\\chi = \\frac{C}{T} \\propto \\frac{1}{T}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mu_r = 1 + \\chi",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "dd1dc42c-493a-4a0c-bcb0-077bfe9196b3",
+      "cb120db2-f299-4ac7-9d31-6139b8a99c4b",
+      "92b9c371-efa2-419d-b722-c0cc7a28e86c",
+      "cc996471-2c31-4548-bd6f-1779929dbfc3",
+      "2d0ce988-3417-4355-8e19-4e6ce2afdb3e",
+      "676a017e-6178-44db-b571-394616f6f1db",
+      "84541796-ac20-4aea-9eaa-52afeccdec25",
+      "49b38613-8e91-4b2d-8003-aba39a45c39b",
+      "ada19083-687d-4276-96ba-d4fa303baf5e",
+      "e2e868f7-60f1-4ab4-8d24-17a485cb8b75",
+      "829c19ff-a478-475b-a996-906990a06bbe"
+    ],
+    "tags": [
+      "HC Verma Vol 2",
+      "Objective I",
+      "Chapter 36",
+      "Chapter 37"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-magnetism-and-matter-objective-ii",
+    "chapter": "Magnetism and Matter",
+    "subtopic": "Objective II",
+    "class": "XII",
+    "unitId": "xii-magnetism",
+    "unitLabel": "Units III & IV — Magnetic Effects & Magnetism",
+    "order": 18,
+    "title": "Objective II",
+    "summary": "- **A** ✓: Cutting a magnet never isolates a pole — each piece becomes a complete dipole.",
+    "body": "**Key points from solved questions**\n- - **A** ✓: Unlike electric field lines, magnetic field lines always form closed loops (since there are no magnetic monopoles). - **B** ✓: If two field lines crossed, the field would have two directions at that point — impossible. - **C** ✓: By convention, outside the magnet, lines go N→S. - **D** ✓: Closer lines → stronger field (analogous to electric field lines). Answer: (A), (B), (C), (D).\n- - **A** ✓: Cutting a magnet never isolates a pole — each piece becomes a complete dipole. - **B** ✓: $M = m \\cdot l$ (pole strength × length). Length halved, pole strength unchanged → $M' = m\\cdot(l/2) = M/2$. ✓ - **C** ✓: Pole strength $m$ is an intrinsic property of the poles; cutting perpendicular to the length doesn't affect them. ✓ - **D** ✗: Magnetic monopoles don't exist; each piece has both poles. Answer: (A), (B), (C).\n- - **A** ✓: Below $T_C$, domains align spontaneously → net magnetisation without external field. - **B** ✓: Domains are regions of uniform magnetisation; domain boundaries (walls) separate them. - **C** ✓: Above $T_C$, ferromagnets become paramagnetic (Curie–Weiss law). - **D** ✗: Ferromagnetics have **large positive** susceptibility ($\\chi \\gg 1$). Small negative $\\chi$ describes diamagnetics. Answer: (A), (B), (C).\n- - **A** ✓: Paramagnetism → weak attraction to external fields (small positive $\\chi$). - **B** ✓: $\\chi > 0$ for paramagnets. - **C** ✗: For paramagnets, $\\chi = C/T$ (Curie's law) → $\\chi$ **decreases** with temperature. - **D** ✓: Aluminium, platinum, oxygen, sodium are paramagnetic. Answer: (A), (B), (D).",
+    "formulas": [
+      {
+        "latex": "M = m \\cdot l",
+        "meaning": ""
+      },
+      {
+        "latex": "M' = m\\cdot(l/2) = M/2",
+        "meaning": ""
+      },
+      {
+        "latex": "\\chi = C/T",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "15ade1d2-b48f-4b53-bc26-c3aae7f03301",
+      "293c6821-3557-4be2-9dd1-cf70e9f450bc",
+      "8832ec16-f197-4965-b3e5-c7acbbaf893b",
+      "fcc410fc-e195-42f4-b460-e11898772105"
+    ],
+    "tags": [
+      "HC Verma Vol 2",
+      "Objective II",
+      "Chapter 36",
+      "Chapter 37"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-magnetism-and-matter-overview",
+    "chapter": "Magnetism and Matter",
+    "subtopic": "Overview",
+    "class": "XII",
+    "unitId": "xii-magnetism",
+    "unitLabel": "Units III & IV — Magnetic Effects & Magnetism",
+    "order": 18,
+    "title": "Overview",
+    "summary": "Given, each magnet has magnetic dipole moment = $m$.",
+    "body": "**Key points from solved questions**\n- Given, each magnet has magnetic dipole moment = $m$. $\\therefore$ Net magnetic moment $=\\sqrt{m^{2}+m^{2}+2m^{2}\\cos\\theta}$ Here, $m_{\\mathrm{net}}$ is max when $\\cos\\theta$ is max and $\\cos\\theta$ will be max when $\\theta$ is minimum. So, $\\theta = 30^{\\circ}, m_{\\mathrm{net}}$ will be maximum. 8.(B) The magnetic pole strength be m, then magnetic moment, $ M = ml $ From the given figure, $$ l=\\frac{\\pi}{3}\\times r $$ $$ r=\\frac{3l}{\\pi} \\tag*{...(i)}$$ ∴ New magnetic moment, $$ \\begin{aligned}\\mathbf{M}&=m\\times r=m\\times\\frac{3l}{\\pi}\\\\&=\\frac{3}{\\pi}\\times ml=\\frac{3\\mathb\n- For AC source, Given. $$ \\mathrm{V}_{\\mathrm{rms}}=12\\mathrm{~V},\\mathrm{I}_{\\mathrm{rms}}=0.2\\mathrm{~A} $$ Impedance, $$ Z=\\frac{V_{rms}}{I_{rms}}=\\frac{12}{0.2}=60\\Omega $$ and for DC source, Given. $$ V=12V,I=0.4A $$ Resistance. $$ \\mathrm{R}=\\frac{\\mathrm{V}}{\\mathrm{I}}=\\frac{12}{0.4}=30\\ \\Omega $$ Since, Z > R, we conclude there must be another component in the series, which is inductor. ∴ It is a series LR circuit.\n- From Curie Law, $ \\chi_{m} \\propto \\frac{1}{T} $",
+    "formulas": [
+      {
+        "latex": "l=\\frac{\\pi}{3}\\times r",
+        "meaning": ""
+      },
+      {
+        "latex": "r=\\frac{3l}{\\pi} \\tag*{...(i)}",
+        "meaning": ""
+      },
+      {
+        "latex": "=\\sqrt{m^{2}+m^{2}+2m^{2}\\cos\\theta}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\theta = 30^{\\circ}, m_{\\mathrm{net}}",
+        "meaning": ""
+      },
+      {
+        "latex": "M = ml",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{V}_{\\mathrm{rms}}=12\\mathrm{~V},\\mathrm{I}_{\\mathrm{rms}}=0.2\\mathrm{~A}",
+        "meaning": ""
+      },
+      {
+        "latex": "Z=\\frac{V_{rms}}{I_{rms}}=\\frac{12}{0.2}=60\\Omega",
+        "meaning": ""
+      },
+      {
+        "latex": "V=12V,I=0.4A",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{R}=\\frac{\\mathrm{V}}{\\mathrm{I}}=\\frac{12}{0.4}=30\\ \\Omega",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "982b0243-8e25-4e6e-aa0d-5d1b3cb63a7a",
+      "44e5c432-c16e-4ccd-aa47-31a6e13315d3",
+      "cf5dd4e2-3499-4974-958e-e39cf9f4c098"
+    ],
+    "tags": [
+      "AIPMT 2014",
+      "NEET 2024",
+      "AIPMT Screening 2012"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-magnetism-and-matter-the-bar-magnet",
+    "chapter": "Magnetism and Matter",
+    "subtopic": "The Bar Magnet",
+    "class": "XII",
+    "unitId": "xii-magnetism",
+    "unitLabel": "Units III & IV — Magnetic Effects & Magnetism",
+    "order": 18,
+    "title": "The Bar Magnet",
+    "summary": "Here, $$…",
+    "body": "**Key points from solved questions**\n- The magnetic potential energy when a magnetic dipole of magnetic moment $ \\vec{m} $ is placed perpendicular to a magnetic field $ \\vec{B} $ is given by $ U = -\\vec{m} \\cdot \\vec{B} $ $ \\therefore U = -mB \\cos 90^\\circ = 0 $\n- Given, magnetic moment = $ 1 \\times 10^{-2} $ Am $ ^{2} $ Moment of inertia, $ I = \\frac{10^{-6}}{\\pi^{2}} $ kgm $ ^{2} $ No. of oscillations = 10 time $ t = 10 $ s $$ \\mathrm{T}=\\frac{10}{10}=1\\mathrm{~s} $$ $$ \\mathrm{B}=\\frac{1}{m}\\left(\\frac{2\\pi}{\\mathrm{T}}\\right)^{2} $$ $$ \\begin{aligned} \\mathrm{B} &= \\frac{10^{-6}}{\\pi^2} \\left( \\frac{2\\pi}{\\mathrm{T}} \\right)^2 \\\\ &1 \\times 10^{-2} \\\\ \\mathrm{B} &= \\frac{10^{-6}}{\\pi^2 \\times 10^{-2}} (2\\pi)^2 \\\\ &= \\frac{10^{-6}}{10^{-2} \\pi^2} \\times 4\\pi^2 \\\\ \\mathrm{B} &= 4 \\times 10^{-4} \\, \\mathrm{T} \\end{aligned} $$\n- $$ \\mathbf{M}^{\\prime}=\\mathbf{M}.\\frac{\\boldsymbol{\\theta}}{2\\pi} $$ Given: M is magnetic moment of iron bar $$ \\theta=60^{\\circ} $$ $$ \\mathbf{M}=\\mathbf{M}\\frac{60^{\\circ}}{2\\pi} $$ $$ 60^{\\circ}=\\frac{60\\pi}{180}=\\frac{\\pi}{3}radians $$ So. $$ \\mathbf{M}^{\\prime}=\\mathbf{M}.\\frac{\\overline{3}}{2\\pi}=\\mathbf{M}.\\frac{1}{6} $$\n- Given B = 0.049 T, $$ \\mathrm{T}=\\frac{5}{20}=\\frac{1}{4},\\mathrm{I}=9.8\\times10^{-6}\\mathrm{kg}\\mathrm{m}^{2} $$ $$ \\mathrm{T}=2\\pi\\sqrt{\\frac{\\mathrm{I}}{m\\mathrm{B}}} $$ $$ \\mathrm{T}^{2}=\\frac{4\\pi^{2}\\mathrm{I}}{m\\mathrm{B}} $$ $$ m=\\frac{4\\pi^{2}\\mathrm{I}}{\\mathrm{T}^{2}\\mathrm{B}} $$ On substituting the given values in eqn (i), we get $$ \\begin{aligned}m&=\\frac{4\\pi^{2}\\times9.8\\times10^{-6}}{\\left(\\frac{1}{4}\\right)^{2}\\times4.9\\times10^{-2}}\\\\&=1280\\pi^{2}\\times10^{-5}Am^{2}\\\\x&=1280\\pi^{2}\\end{aligned} $$\n- <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//6909d2d9-c618-4062-813f-fb3c5cb303ec/markdown_2/imgs/img_in_image_box_157_907_335_1084.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A15%3A48Z%2F-1%2F%2Fb68ce25f3ab639fda90538314d1753832670f2cdb5fe1924069679e3984fd6fc\" alt=\"Image\" width=\"14%\" /></div> Magnetic pole strength remains the same $$ M_{new}=m L_{eff}=\\frac{mL}{2}=\\frac{M}{2} $$\n- Since work done in rotating the magnet, $$W = MB (\\cos \\theta_0 - \\cos \\theta)$$ where, $M = \\text{magnetic moment of the magnet}$$ $$B = \\text{magnetic field}$$ $$W = MB (\\cos 0^\\circ - \\cos 60^\\circ)$$ $$= MB \\left( 1 - \\frac{1}{2} \\right) = \\frac{MB}{2}$$ $$MB = 2W$$ $$ \\begin{array}{c} putting\\mathbf{M}\\mathbf{B}=2\\mathbf{W} from(i),\\\\\\tau=2\\mathbf{W}\\sin60^{\\circ}\\\\=2\\mathbf{W}\\times\\frac{\\sqrt{3}}{2}=\\mathbf{W}\\sqrt{3}\\end{array} $$\n- The magnetic pole strength be m, then magnetic moment, $ M = ml $ From the given figure, $$ l=\\frac{\\pi}{3}\\times r $$ $$ r=\\frac{3l}{\\pi} $$ ∴ New magnetic moment, $$ \\begin{aligned}\\mathbf{M}&=m\\times r=m\\times\\frac{3l}{\\pi}\\\\&=\\frac{3}{\\pi}\\times ml=\\frac{3\\mathbf{M}}{\\pi}\\end{aligned} $$\n- Here, $$ \\begin{array}{c}B\\\\\\longrightarrow\\\\\\longrightarrow\\\\\\longrightarrow\\\\\\longrightarrow\\end{array}\\begin{array}{c}\\\\\\longrightarrow\\\\\\longrightarrow\\\\\\longrightarrow\\\\\\longrightarrow\\end{array}\\begin{array}{c}\\\\\\longrightarrow\\\\\\longrightarrow\\\\\\longrightarrow\\\\\\longrightarrow\\\\\\end{array}\\begin{array}{c}\\\\\\longrightarrow\\\\\\longrightarrow\\\\\\longrightarrow\\\\\\longrightarrow\\\\\\end{array} $$ $$ \\tau=\\overset{\\rightarrow}{\\mathbf{M}}\\times\\overset{\\rightarrow}{\\mathbf{B}} $$ $$ \\left|\\tau\\right|=MB\\sin90^{\\circ} $$ $$ \\mathbf{F}l=\\mathbf{M}\\mathbf{B} $$ $$ l=\\frac{\\mathbf{M}\\mathbf{B}}{\\mathrm{F}} $$\n- We know that, U = -MB cos θ for stable equilibrium, θ = 0° U = -MB cos 0° = -MB = -(0.4)(0.16) = -0.064 J\n- The force on stationary charge Q is zero.\n- According to the question; When magnetic dipole is rotated from initial position $ \\theta_{1} $ to final position $ \\theta_{2} $, then $$ \\mathbf{W}=\\mathbf{M}\\mathbf{B}(\\cos\\theta_{1}-\\cos\\theta_{2}) $$ $$ \\mathrm{W}=\\mathrm{MB}\\left(\\cos0^{\\circ}-\\cos60^{\\circ}\\right) $$ $$ W=\\mathbf{M}\\mathbf{B}\\left(1-\\frac{1}{2}\\right)=\\frac{2\\times10^{4}\\times6\\times10^{-4}}{2} $$ $$ \\mathbf{W}=6\\mathbf{J} $$\n- A magnetic torque $ \\tau $ acts on a bar magnet when it is placed in an external magnetic field B, which is given by, $$ \\overrightarrow{\\mathbf{r}}=\\overrightarrow{\\mathbf{M}}\\times\\overrightarrow{\\mathbf{B}}=[\\mathbf{M}]\\left[\\mathbf{B}\\right]\\sin\\theta $$ where, $ \\theta = \\text{angle between M and B} $\n- Given, $$ \\chi=599 $$ Magnetic field, B = 1200 Am $ ^{-1} $ Permeability of the material of the rod. $$ \\begin{aligned}\\mu_{\\mathrm{m}}&=\\mu_{\\mathrm{o}}\\left(1+\\chi\\right)\\\\&=4\\pi\\times10^{-7}\\left(1+599\\right)\\\\&=2.4\\pi\\times10^{-4}\\mathrm{~T~m A}^{-1}.\\end{aligned} $$",
+    "formulas": [
+      {
+        "latex": "U = -\\vec{m} \\cdot \\vec{B}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\therefore U = -mB \\cos 90^\\circ = 0",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{T}=\\frac{10}{10}=1\\mathrm{~s}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{B}=\\frac{1}{m}\\left(\\frac{2\\pi}{\\mathrm{T}}\\right)^{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned} \\mathrm{B} &= \\frac{10^{-6}}{\\pi^2} \\left( \\frac{2\\pi}{\\mathrm{T}} \\right)^2 \\\\ &1 \\times 10^{-2} \\\\ \\mathrm{B} &= \\frac{10^{-6}}{\\pi^2 \\times 10^{-2}} (2\\pi)^2 \\\\ &= \\frac{10^{-6}}{10^{-2} \\pi^2} \\times 4\\pi^2 \\\\ \\mathrm{B} &= 4 \\times 10^{-4} \\, \\mathrm{T} \\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "I = \\frac{10^{-6}}{\\pi^{2}}",
+        "meaning": ""
+      },
+      {
+        "latex": "t = 10",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{M}^{\\prime}=\\mathbf{M}.\\frac{\\boldsymbol{\\theta}}{2\\pi}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\theta=60^{\\circ}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{M}=\\mathbf{M}\\frac{60^{\\circ}}{2\\pi}",
+        "meaning": ""
+      },
+      {
+        "latex": "60^{\\circ}=\\frac{60\\pi}{180}=\\frac{\\pi}{3}radians",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{M}^{\\prime}=\\mathbf{M}.\\frac{\\overline{3}}{2\\pi}=\\mathbf{M}.\\frac{1}{6}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{T}=\\frac{5}{20}=\\frac{1}{4},\\mathrm{I}=9.8\\times10^{-6}\\mathrm{kg}\\mathrm{m}^{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{T}=2\\pi\\sqrt{\\frac{\\mathrm{I}}{m\\mathrm{B}}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{T}^{2}=\\frac{4\\pi^{2}\\mathrm{I}}{m\\mathrm{B}}",
+        "meaning": ""
+      },
+      {
+        "latex": "m=\\frac{4\\pi^{2}\\mathrm{I}}{\\mathrm{T}^{2}\\mathrm{B}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}m&=\\frac{4\\pi^{2}\\times9.8\\times10^{-6}}{\\left(\\frac{1}{4}\\right)^{2}\\times4.9\\times10^{-2}}\\\\&=1280\\pi^{2}\\times10^{-5}Am^{2}\\\\x&=1280\\pi^{2}\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "M_{new}=m L_{eff}=\\frac{mL}{2}=\\frac{M}{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "W = MB (\\cos \\theta_0 - \\cos \\theta)",
+        "meaning": ""
+      },
+      {
+        "latex": "M = \\text{magnetic moment of the magnet} B = \\text{magnetic field} W = MB (\\cos 0^\\circ - \\cos 60^\\circ) = MB \\left( 1 - \\frac{1}{2} \\right) = \\frac{MB}{2} MB = 2W  \\begin{array}{c} putting\\mathbf{M}\\mathbf{B}=2\\mathbf{W} from(i),\\\\\\tau=2\\mathbf{W}\\sin60^{\\circ}\\\\=2\\mathbf{W}\\times\\frac{\\sqrt{3}}{2}=\\mathbf{W}\\sqrt{3}\\end{array}",
+        "meaning": ""
+      },
+      {
+        "latex": "l=\\frac{\\pi}{3}\\times r",
+        "meaning": ""
+      },
+      {
+        "latex": "r=\\frac{3l}{\\pi}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}\\mathbf{M}&=m\\times r=m\\times\\frac{3l}{\\pi}\\\\&=\\frac{3}{\\pi}\\times ml=\\frac{3\\mathbf{M}}{\\pi}\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "M = ml",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "153769db-61b7-457b-b337-3e497929cd2c",
+      "6dc33416-1b5d-4fc2-989d-5ae61a9e25de",
+      "a49be646-3c15-4408-a9e4-04556fc28c88",
+      "7dfc6364-e819-4a66-9c8e-409029ad37ec",
+      "ac079d24-1aa6-4427-b976-6cd5042175f9",
+      "172bc773-a5c1-4cbb-a1c3-4a83d8dac436",
+      "6be4650b-20b7-4c31-8138-3deb5612f164",
+      "066fa607-8438-443a-ade9-081f6e7a2c81",
+      "c13b9d4b-2bda-4092-acc0-e703a4277f23",
+      "6edaedad-67b0-4e66-9198-5b8323dc8dae",
+      "6a6e05c5-59ed-49a6-ba1d-7b090d246308",
+      "8486fcf0-a942-4423-bd94-166e74317646",
+      "01aa2ecd-767f-490a-81fe-ffb692c8ebb4"
+    ],
+    "tags": [
+      "Re-NEET 2024",
+      "NEET 2024",
+      "NEET Phase-II 2016",
+      "NEET 2013",
+      "AIPMT Mains 2010",
+      "AIPMT 1999",
+      "NEET 2020"
+    ],
+    "source": "seed"
+  }
+]

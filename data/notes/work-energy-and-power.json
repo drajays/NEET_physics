@@ -1,0 +1,1279 @@
+[
+  {
+    "id": "note-work-energy-and-power-collisions",
+    "chapter": "Work, Energy and Power",
+    "subtopic": "Collisions",
+    "class": "XI",
+    "unitId": "xi-work",
+    "unitLabel": "Unit IV — Work, Energy & Power",
+    "order": 4,
+    "title": "Collisions",
+    "summary": "16 NEET questions on “Collisions”.",
+    "body": "",
+    "formulas": [],
+    "questionIds": [
+      "3dcd4d35-2449-4c30-b2d6-87166b81e0a8",
+      "09d014fc-6e82-41c4-8146-5fa838955aa9",
+      "5d9e753a-eda8-4bfd-965e-f79d84250911",
+      "42f67bdd-8b2f-479b-8be7-c444f50d9326",
+      "fa8bcd5d-cb2b-438f-8c3e-85d5c06f834f",
+      "e56503e7-f07e-4975-8991-29d9c45e121b",
+      "80249af9-cdf5-48b0-a69b-4986e2d79562",
+      "6836d33f-fdce-401d-bed6-68b82bc63083",
+      "bf526d98-02ee-476d-9bf9-97f96374c540",
+      "475ae719-dba6-4815-bdcd-992981dc0581",
+      "5198361e-20f8-4016-b7e9-26a1f9d53835",
+      "897ff49c-0891-480e-93f4-9979c7c2c6de",
+      "028cbba8-c61a-4e65-b2a8-a0e740f13c0d",
+      "7ffc345f-ea46-40af-8c0d-c55cbd246c1e",
+      "19750214-432d-4107-8f03-20090c313654",
+      "4c9684e0-e31f-40a1-a4df-1efb9e943952"
+    ],
+    "tags": [
+      "Re-NEET 2024",
+      "NEET 2024",
+      "NEET 2019",
+      "NEET 2018",
+      "NEET Phase-II 2016",
+      "AIPMT July 2015",
+      "AIPMT Screening 2012",
+      "AIPMT 1998",
+      "AIPMT 1997",
+      "AIPMT 1996",
+      "AIPMT 1988"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-work-energy-and-power-introduction",
+    "chapter": "Work, Energy and Power",
+    "subtopic": "Introduction",
+    "class": "XI",
+    "unitId": "xi-work",
+    "unitLabel": "Unit IV — Work, Energy & Power",
+    "order": 4,
+    "title": "Introduction",
+    "summary": "Two vectors $\\overrightarrow{A}$ and $\\overrightarrow{B}$ are orthogonal to each other, if their scalar product is zero i.e.",
+    "body": "**Key points from solved questions**\n- Given, $ \\vec{r} = \\cos \\omega t \\, \\hat{x} + \\sin \\omega t \\, \\hat{y} $ $ \\therefore $ $ \\vec{v} = \\frac{d\\vec{r}}{dt} = -\\omega \\sin \\omega t \\, \\hat{x} + \\omega \\cos \\omega t \\, \\hat{y} $ $ \\vec{a} = \\frac{d\\vec{v}}{dt} = -\\omega^2 \\cos \\omega t \\, \\hat{x} - \\omega^2 \\sin \\omega t \\, \\hat{y} = -\\omega^2 \\vec{r} $ Since, position vector $ (\\vec{r}) $ is directed away from the origin, so, acceleration $ (-\\omega^2 \\vec{r}) $ is directed towards the origin. Also, $ \\vec{r} \\cdot \\vec{v} = (\\cos \\omega t \\hat{x} + \\sin \\omega t \\hat{y}) $. $ (-\\omega \\sin \\omega t \\hat{x} + \\omega \\cos \\omega t \\hat{y}) $ $ = -\\omega \\sin \\omega t \\cos \\omega t + \\omega \\sin \\omega t \\cos \\omega t = 0 $ $ \\Rightarrow $ $ \\vec{r} \\perp \\vec{v} $\n- Two vectors $\\overrightarrow{A}$ and $\\overrightarrow{B}$ are orthogonal to each other, if their scalar product is zero i.e. $\\overrightarrow{A} \\cdot \\overrightarrow{B} = 0$ Here, $\\overrightarrow{A} = \\cos \\omega t \\overrightarrow{i} + \\sin \\omega t \\overrightarrow{j}$ and $\\overrightarrow{B} = \\cos \\frac{\\omega t}{2} \\overrightarrow{i} + \\sin \\frac{\\omega t}{2} \\overrightarrow{j}$ $\\therefore \\overrightarrow{A} \\cdot \\overrightarrow{B} = (\\cos \\omega t \\overrightarrow{i} + \\sin \\omega t \\overrightarrow{j}) \\cdot \\left( \\cos \\frac{\\omega t}{2} \\overrightarrow{i} + \\sin \\frac{\\omega t}{2} \\overrightarrow{j} \\right)$ $$= \\cos \\omega t \\cos \\frac{\\omega t}{2} + \\sin \\omega t \\sin \\frac{\\omega t}{2}$$ $$= \\cos \\left( \\omega t - \\frac{\\omega t}{2} \\right)$$ But $ \\overline{A} $ $ \\cdot\\overline{B}=0 $ (as $ \\overline{A} $ and $ \\overline{B} $ are orthogonal to each other) $ \\therefore \\cos\\left(\\omega t-\\frac{\\omega t}{2}\\right)=0 $ $ \\cos\\left(\\omega t-\\frac{\\omega t}{2}\\right)=\\cos\\frac{\\pi}{2} $ or $ \\omega t - \\frac{\\omega t}{2} = \\frac{\\pi}{2} $ $ \\frac{\\omega t}{2} = \\frac{\\pi}{2} $ or $ t = \\frac{\\pi}{\\omega} $\n- $ \\vec{a} = 2\\hat{i} + 3\\hat{j} + 8\\hat{k} $, $ \\vec{b} = 4\\hat{j} - 4\\hat{i} + \\alpha\\hat{k} $ $ \\vec{a} \\cdot \\vec{b} = 0 $ if $ \\vec{a} \\perp \\vec{b} $ $ (2\\hat{i} + 3\\hat{j} + 8\\hat{k}) $. $ (-4\\hat{i} + 4\\hat{j} + \\alpha\\hat{k}) = 0 $ $$ \\begin{aligned}&or,&-8+12+8\\alpha&=0\\\\&\\Rightarrow&4+8\\alpha&=0\\\\&\\Rightarrow&\\alpha&=-\\frac{1}{2}\\end{aligned} $$\n- Given: $ (\\overrightarrow{\\mathrm{F}_{1}} + \\overrightarrow{\\mathrm{F}_{2}}) \\perp (\\overrightarrow{\\mathrm{F}_{1}} - \\overrightarrow{\\mathrm{F}_{2}}) $ $$ (\\vec{\\mathbf{F}}_{1}+\\vec{\\mathbf{F}}_{2}).(\\vec{\\mathbf{F}}_{1}-\\vec{\\mathbf{F}}_{2})=0 $$ $$ \\overrightarrow{\\mathbf{F}}_{1}^{2}-\\overrightarrow{\\mathbf{F}}_{2}^{2}-\\overrightarrow{\\mathbf{F}}_{1}.\\overrightarrow{\\mathbf{F}}_{2}+\\overrightarrow{\\mathbf{F}}_{2}.\\overrightarrow{\\mathbf{F}}_{1}=0 $$ $$ \\overrightarrow{F}_{1}^{2}=+\\overrightarrow{F}_{2}^{2}\\quad(\\because\\overrightarrow{a},\\overrightarrow{b}=\\overrightarrow{b}.\\overrightarrow{a}) $$ i.e., $F_{1}$, $F_{2}$ are equal to each other in magnitude.\n- Position vector of the particle, $$ \\hat{r}=(a\\cos\\omega t)i+(a\\sin\\omega t)j $$ velocity vector $$ \\begin{aligned}\\overline{\\mathbf{v}}=&\\frac{\\overline{d}\\overline{r}}{dt}=(-\\alpha\\omega\\sin\\omega t)\\hat{i}+(a\\omega\\cos\\omega t)\\hat{j}\\\\=&\\omega\\left[(-\\alpha\\sin\\omega t)\\hat{i}+(a\\cos\\omega t)\\hat{j}\\right]\\end{aligned} $$ $$ \\begin{aligned}\\vec{\\mathbf{v}}\\cdot\\vec{r}&=\\omega a[-\\sin\\omega t\\hat{i}+\\cos\\omega t\\hat{j}].[a\\cos\\omega t\\hat{i}+\\\\&\\quad a\\sin\\omega t\\hat{j}]\\\\&=\\omega[-a^{2}\\sin\\omega t\\cos\\omega t+a^{2}\\cos\\omega t\\sin\\omega t]=0\\end{aligned} $$ Therefore, velocity vector is perpendicular to the position vector.",
+    "formulas": [
+      {
+        "latex": "\\vec{r} = \\cos \\omega t \\, \\hat{x} + \\sin \\omega t \\, \\hat{y}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\vec{v} = \\frac{d\\vec{r}}{dt} = -\\omega \\sin \\omega t \\, \\hat{x} + \\omega \\cos \\omega t \\, \\hat{y}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\vec{a} = \\frac{d\\vec{v}}{dt} = -\\omega^2 \\cos \\omega t \\, \\hat{x} - \\omega^2 \\sin \\omega t \\, \\hat{y} = -\\omega^2 \\vec{r}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\vec{r} \\cdot \\vec{v} = (\\cos \\omega t \\hat{x} + \\sin \\omega t \\hat{y})",
+        "meaning": ""
+      },
+      {
+        "latex": "= -\\omega \\sin \\omega t \\cos \\omega t + \\omega \\sin \\omega t \\cos \\omega t = 0",
+        "meaning": ""
+      },
+      {
+        "latex": "= \\cos \\omega t \\cos \\frac{\\omega t}{2} + \\sin \\omega t \\sin \\frac{\\omega t}{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "= \\cos \\left( \\omega t - \\frac{\\omega t}{2} \\right)",
+        "meaning": ""
+      },
+      {
+        "latex": "\\overrightarrow{A} \\cdot \\overrightarrow{B} = 0",
+        "meaning": ""
+      },
+      {
+        "latex": "\\overrightarrow{A} = \\cos \\omega t \\overrightarrow{i} + \\sin \\omega t \\overrightarrow{j}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\overrightarrow{B} = \\cos \\frac{\\omega t}{2} \\overrightarrow{i} + \\sin \\frac{\\omega t}{2} \\overrightarrow{j}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\therefore \\overrightarrow{A} \\cdot \\overrightarrow{B} = (\\cos \\omega t \\overrightarrow{i} + \\sin \\omega t \\overrightarrow{j}) \\cdot \\left( \\cos \\frac{\\omega t}{2} \\overrightarrow{i} + \\sin \\frac{\\omega t}{2} \\overrightarrow{j} \\right)",
+        "meaning": ""
+      },
+      {
+        "latex": "\\cdot\\overline{B}=0",
+        "meaning": ""
+      },
+      {
+        "latex": "\\therefore \\cos\\left(\\omega t-\\frac{\\omega t}{2}\\right)=0",
+        "meaning": ""
+      },
+      {
+        "latex": "\\cos\\left(\\omega t-\\frac{\\omega t}{2}\\right)=\\cos\\frac{\\pi}{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\omega t - \\frac{\\omega t}{2} = \\frac{\\pi}{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{\\omega t}{2} = \\frac{\\pi}{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "t = \\frac{\\pi}{\\omega}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}&or,&-8+12+8\\alpha&=0\\\\&\\Rightarrow&4+8\\alpha&=0\\\\&\\Rightarrow&\\alpha&=-\\frac{1}{2}\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\vec{a} = 2\\hat{i} + 3\\hat{j} + 8\\hat{k}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\vec{b} = 4\\hat{j} - 4\\hat{i} + \\alpha\\hat{k}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\vec{a} \\cdot \\vec{b} = 0",
+        "meaning": ""
+      },
+      {
+        "latex": "(-4\\hat{i} + 4\\hat{j} + \\alpha\\hat{k}) = 0",
+        "meaning": ""
+      },
+      {
+        "latex": "(\\vec{\\mathbf{F}}_{1}+\\vec{\\mathbf{F}}_{2}).(\\vec{\\mathbf{F}}_{1}-\\vec{\\mathbf{F}}_{2})=0",
+        "meaning": ""
+      },
+      {
+        "latex": "\\overrightarrow{\\mathbf{F}}_{1}^{2}-\\overrightarrow{\\mathbf{F}}_{2}^{2}-\\overrightarrow{\\mathbf{F}}_{1}.\\overrightarrow{\\mathbf{F}}_{2}+\\overrightarrow{\\mathbf{F}}_{2}.\\overrightarrow{\\mathbf{F}}_{1}=0",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "f32017c4-a8c7-44c8-8b23-6d097ff695c9",
+      "0085a758-3de5-4005-af29-18576972970d",
+      "3e2d7051-23b1-43ab-bd99-7253478b6354",
+      "bbb5a8fe-3143-4d0b-9a6d-c843cb904abe",
+      "4a310bcf-3e43-4701-850a-7ae85c419be8"
+    ],
+    "tags": [
+      "AIPMT July 2015",
+      "AIPMT 2005",
+      "AIPMT 2003",
+      "AIPMT 1995"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-work-energy-and-power-kinetic-energy",
+    "chapter": "Work, Energy and Power",
+    "subtopic": "Kinetic Energy",
+    "class": "XI",
+    "unitId": "xi-work",
+    "unitLabel": "Unit IV — Work, Energy & Power",
+    "order": 4,
+    "title": "Kinetic Energy",
+    "summary": "<div style=\"text-align: center;\"><img…",
+    "body": "**Key points from solved questions**\n- <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//b40dccb4-bdbc-49c9-aa41-f98054057289/markdown_4/imgs/img_in_image_box_879_799_1122_997.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A03Z%2F-1%2F%2F1f50c9f730d079c0f0c00a16b3cd8dd852378e77faebf761b86e720e3693f31f\" alt=\"Image\" width=\"20%\" /></div> $\\sqrt{2} m v = \\text{Resultant momentum of two small masses}$ $\\therefore \\text{Using law of conversation of momentum, } \\sqrt{2} m v = 2 m v'$ $$ \\Rightarrow\\quad\\mathbf{v}^{\\prime}=\\frac{\\mathbf{v}}{\\sqrt{2}} $$ Now total kinetic energy by the explosion is, $$ \\begin{aligned}\\mathbf{K}.\\mathbf{E}.&=\\frac{1}{2}m\\mathbf{v}^{2}+\\frac{1}{2}m\\mathbf{v}^{2}+\\frac{1}{2}\\left(2\\ m\\right)\\mathbf{v}^{12}\\\\&=m\\mathbf{v}^{2}+m\\left(\\frac{\\mathbf{v}}{\\sqrt{2}}\\right)^{2}=m\\mathbf{v}^{2}+\\frac{m\\mathbf{v}^{2}}{2}\\\\&=\\frac{3}{2}m\\mathbf{v}^{2}\\\\ \\end{aligned} $$\n- Let, $ m = \\text{mass per unit let} $ $ \\therefore $ Rate of change in mass per sec = $ \\frac{mx}{t} $ $ = m\\frac{x}{t} = mv $ ∴ Rate of change in KE = $ \\frac{1}{2}(mv)v^{2} $ $ =\\frac{1}{2}mv^{3} $\n- According to law of conservation of linear momentum, <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//801437ad-f7f4-4e82-8d54-0bcbc0170754/markdown_0/imgs/img_in_image_box_85_306_331_402.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A08Z%2F-1%2F%2Fc25aad75f29e9655150bc83224ecd5af45232fed745961c0b08670768b4068ab\" alt=\"Image\" width=\"20%\" /></div> $$ 30\\times0=18\\times6+12\\times v $$ $$ \\mathbf{v}=-9~\\mathbf{m}/\\mathrm{s} $$ Negative sign indicates that both fragments move in opposite direction. $$ \\begin{array}{l} \\text{K.E. of 12 kg} =\\displaystyle {\\frac{1}{2}} m v^{2} \\\\ \\qquad = \\frac{1}{2} \\times 12 \\times 81 \\\\ \\qquad = 486 \\text{ J} \\end{array} $$\n- Let $ E_{1} $ and $ E_{2} $ be the K.E. of two bodies. Then, $$ \\mathbf{E}_{1}=\\frac{1}{2}m_{1}\\mathbf{v}_{1}^{2} $$ and $$ \\mathbf{E}_{2}=\\frac{1}{2}m_{2}\\mathbf{v}_{2}^{2} $$ $$ \\frac{\\mathbf{E}_{1}}{\\mathbf{E}_{2}}=\\frac{\\frac{1}{2}m_{1}\\mathbf{v}_{1}^{2}}{\\frac{1}{2}m_{2}\\mathbf{v}_{2}^{2}}=\\frac{m_{1}\\mathbf{v}_{1}^{2}}{m_{2}\\mathbf{v}_{2}^{2}} $$ The initial velocity of both the bodies are zero. $ \\therefore v^{2}=2gh $ is same for both bodies. $$ \\frac{\\mathrm{E}_{1}}{\\mathrm{E}_{2}}=\\frac{m_{1}}{m_{2}}=\\frac{2}{4}=\\frac{1}{2} $$\n- We know that, K.E. = $ \\frac{p^{2}}{2m} $ $$ \\frac{E_{1}}{E_{2}}=\\frac{\\frac{p_{1}^{2}}{2m_{1}}}{\\frac{p_{2}^{2}}{2m_{2}}} $$ $$ \\frac{\\mathrm{E}_{1}}{\\mathrm{E}_{2}}=\\frac{m_{2}}{m_{1}} $$ $$ m_{1}>m_{2} $$ $$ E_{1}<E_{2} $$\n- According to law of conservation of linear momentum. $$ m_{1}\\mathbf{v}_{1}=m_{2}\\mathbf{v}_{2} $$ $$ \\mathrm{E}_{1}=\\frac{1}{2}m_{1}\\mathbf{v}_{1}^{2},\\mathrm{E}_{2}=\\frac{1}{2}m_{2}\\mathbf{v}_{2}^{2} $$ $$ \\frac{\\mathrm{E}_{1}}{\\mathrm{E}_{2}}=\\frac{\\frac{1}{2}m_{1}\\mathrm{v}_{1}^{2}}{\\frac{1}{2}m_{2}\\mathrm{v}_{2}^{2}}-\\frac{(m_{1}\\mathrm{v}_{1})^{2}}{(m_{2}\\mathrm{v}_{2})^{2}}\\times\\frac{m_{2}}{m_{1}} $$ $$ \\frac{\\mathrm{E}_{1}}{\\mathrm{E}_{2}}=\\frac{m_{2}}{m_{1}} $$\n- Here, $ p_1 = \\sqrt{2mE_1} $ and $ p_2 = \\sqrt{2mE_2} $ $$ \\mathrm{E}_{2}=\\mathrm{E}_{1}+\\mathrm{E}_{1}\\times\\frac{300}{100} $$ $$ \\begin{aligned}p_{2}&=\\sqrt{2m\\Big(\\mathrm{E}_{1}+\\frac{300}{100}\\mathrm{E}_{1}\\Big)}\\\\&=\\sqrt{2m4\\mathrm{E}_{1}}\\\\&=2p_{1}\\end{aligned} $$ So, the momentum will change by 100%.\n- Kinetic energy of ball = K and angle of projection (\\theta)=45^{\\circ} Velocity of the ball at the highest point $ = v \\cos \\theta $ $ = v \\cos 45^{\\circ} = \\frac{v}{\\sqrt{2}} $ Therefore, kinetic energy of the ball, $$ \\frac{1}{2}m\\times\\left(\\frac{v}{\\sqrt{2}}\\right)^{2}=\\frac{1}{4}mv^{2}=\\frac{K}{2} $$\n- Let $p_{1}, p_{2}$ be the initial momentum and inversed momentum respectively. So, $$ p_{2}=\\frac{150}{100}p_{1} $$ i.e., $$ m\\mathbf{v}_{2}=\\frac{15}{10}m\\mathbf{v}_{1} $$ or $$ (p_{1}=m\\mathbf{v}_{1},p_{2}=m\\mathbf{v}_{2}) $$ $$ \\mathbf{v}_{2}=\\frac{15}{10}\\mathbf{v}_{1} $$ Now, $$ \\begin{array}{l}\\frac{\\mathrm{E}_{2}}{\\mathrm{E}_{1}}=\\frac{\\frac{1}{2}m\\mathrm{v}_{2}^{2}}{\\frac{1}{2}m\\mathrm{v}_{1}^{2}}=\\left(\\frac{\\mathrm{v}_{2}}{\\mathrm{v}_{1}}\\right)^{2}\\\\=\\left(\\frac{15}{10}\\right)^{2}=\\frac{225}{100}\\end{array} $$ Clearly, $$ \\mathrm{E}_{2}>\\mathrm{E}_{1} $$ So, percentage increase in K.E. $$ \\begin{aligned}&=\\frac{(\\mathrm{E}_{4}-\\mathrm{E}_{1})}{\\mathrm{E}_{1}}\\times100\\\\&=\\cdot\\left(\\frac{225}{100}-1\\right)\\times100=125\\%\\end{aligned} $$\n- $$ \\mathbf{v}^{2}=u^{2}+2a s\\text{or}\\mathbf{v}^{2}-u^{2}=2a s $$ or $$ \\mathbf{v}^{2}-(0)^{2}=2\\times\\frac{\\mathbf{F}}{m}\\times\\mathbf{s} $$ or $$ \\mathbf{v}^{2}=\\frac{2\\mathbf{F}\\mathbf{s}}{m} $$ and $$ \\mathbf{K.E.}=\\frac{1}{2}m\\mathbf{v}^{2}=\\frac{1}{2}m\\times\\frac{2\\mathbf{F}s}{m}=\\mathbf{F}s. $$ Thus, K.E. is independent of m or directly proportional to $ m^{0} $.\n- $ \\frac{K_{1}}{K_{2}} = \\frac{p_{1}^{2}}{p_{2}^{2}} \\times \\frac{m_{1}}{m_{2}} $ Here $ K_{1}=K_{2} $ $$ \\frac{p_{1}}{p_{2}}=\\sqrt{\\frac{m_{1}}{m_{2}}}=\\sqrt{\\frac{1}{9}}=\\frac{1}{3} $$ or, $$ p_{1}:p_{2}=1:3 $$\n- On the diametrically opposite points, the velocities have same magnitude but opposite directions. Therefore, change in momentum is $ mv - (-mv) = 2mv $",
+    "formulas": [
+      {
+        "latex": "\\Rightarrow\\quad\\mathbf{v}^{\\prime}=\\frac{\\mathbf{v}}{\\sqrt{2}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}\\mathbf{K}.\\mathbf{E}.&=\\frac{1}{2}m\\mathbf{v}^{2}+\\frac{1}{2}m\\mathbf{v}^{2}+\\frac{1}{2}\\left(2\\ m\\right)\\mathbf{v}^{12}\\\\&=m\\mathbf{v}^{2}+m\\left(\\frac{\\mathbf{v}}{\\sqrt{2}}\\right)^{2}=m\\mathbf{v}^{2}+\\frac{m\\mathbf{v}^{2}}{2}\\\\&=\\frac{3}{2}m\\mathbf{v}^{2}\\\\ \\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\sqrt{2} m v = \\text{Resultant momentum of two small masses}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\therefore \\text{Using law of conversation of momentum, } \\sqrt{2} m v = 2 m v'",
+        "meaning": ""
+      },
+      {
+        "latex": "m = \\text{mass per unit let}",
+        "meaning": ""
+      },
+      {
+        "latex": "= m\\frac{x}{t} = mv",
+        "meaning": ""
+      },
+      {
+        "latex": "=\\frac{1}{2}mv^{3}",
+        "meaning": ""
+      },
+      {
+        "latex": "30\\times0=18\\times6+12\\times v",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{v}=-9~\\mathbf{m}/\\mathrm{s}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{array}{l} \\text{K.E. of 12 kg} =\\displaystyle {\\frac{1}{2}} m v^{2} \\\\ \\qquad = \\frac{1}{2} \\times 12 \\times 81 \\\\ \\qquad = 486 \\text{ J} \\end{array}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{E}_{1}=\\frac{1}{2}m_{1}\\mathbf{v}_{1}^{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{E}_{2}=\\frac{1}{2}m_{2}\\mathbf{v}_{2}^{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{\\mathbf{E}_{1}}{\\mathbf{E}_{2}}=\\frac{\\frac{1}{2}m_{1}\\mathbf{v}_{1}^{2}}{\\frac{1}{2}m_{2}\\mathbf{v}_{2}^{2}}=\\frac{m_{1}\\mathbf{v}_{1}^{2}}{m_{2}\\mathbf{v}_{2}^{2}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{\\mathrm{E}_{1}}{\\mathrm{E}_{2}}=\\frac{m_{1}}{m_{2}}=\\frac{2}{4}=\\frac{1}{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\therefore v^{2}=2gh",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{E_{1}}{E_{2}}=\\frac{\\frac{p_{1}^{2}}{2m_{1}}}{\\frac{p_{2}^{2}}{2m_{2}}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{\\mathrm{E}_{1}}{\\mathrm{E}_{2}}=\\frac{m_{2}}{m_{1}}",
+        "meaning": ""
+      },
+      {
+        "latex": "m_{1}>m_{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "E_{1}<E_{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "m_{1}\\mathbf{v}_{1}=m_{2}\\mathbf{v}_{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{E}_{1}=\\frac{1}{2}m_{1}\\mathbf{v}_{1}^{2},\\mathrm{E}_{2}=\\frac{1}{2}m_{2}\\mathbf{v}_{2}^{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{\\mathrm{E}_{1}}{\\mathrm{E}_{2}}=\\frac{\\frac{1}{2}m_{1}\\mathrm{v}_{1}^{2}}{\\frac{1}{2}m_{2}\\mathrm{v}_{2}^{2}}-\\frac{(m_{1}\\mathrm{v}_{1})^{2}}{(m_{2}\\mathrm{v}_{2})^{2}}\\times\\frac{m_{2}}{m_{1}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{E}_{2}=\\mathrm{E}_{1}+\\mathrm{E}_{1}\\times\\frac{300}{100}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}p_{2}&=\\sqrt{2m\\Big(\\mathrm{E}_{1}+\\frac{300}{100}\\mathrm{E}_{1}\\Big)}\\\\&=\\sqrt{2m4\\mathrm{E}_{1}}\\\\&=2p_{1}\\end{aligned}",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "528592fd-4baa-466e-b54c-dcc150e009fb",
+      "a1d987b3-8399-4db8-93c4-f5b636050f03",
+      "2e6a404a-4240-42c6-843e-890b4ec7950a",
+      "7e0cc40e-81fc-48ce-b5c4-fa503846bfc2",
+      "8e8e08ea-93db-441f-a23d-be8cd1ba62e2",
+      "6d7ae54b-5c57-4405-8b7c-91acc5dc9918",
+      "cdb1f44e-0e42-46f4-b9fc-abcb138efae3",
+      "ba95b97a-fe5f-4765-94d6-3aee70f115c0",
+      "c6a4ff02-9a19-4e31-93b2-e7c17e9b979a",
+      "fd26ba6d-c8f6-4dc0-b3e1-47fb5a152436",
+      "48039194-0e2a-4c91-aa6a-f433ffb9d97f",
+      "295e5919-4d4f-405e-aae6-efaa21c6ef79"
+    ],
+    "tags": [
+      "AIPMT 2014",
+      "AIPMT Screening 2009",
+      "AIPMT 2005",
+      "AIPMT 1994",
+      "AIPMT 2004",
+      "AIPMT 2003",
+      "AIPMT 2002",
+      "AIPMT 2001, 1997",
+      "AIPMT 1995",
+      "AIPMT 1993",
+      "AIPMT 1992"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-work-energy-and-power-notions-of-work-and-kinetic-energy-the-work-energy-theorem",
+    "chapter": "Work, Energy and Power",
+    "subtopic": "Notions of Work and Kinetic Energy: The Work-Energy Theorem",
+    "class": "XI",
+    "unitId": "xi-work",
+    "unitLabel": "Unit IV — Work, Energy & Power",
+    "order": 4,
+    "title": "Notions of Work and Kinetic Energy: The Work-Energy Theorem",
+    "summary": "From law of conservation of linear momentum, <div style=\"text-align: center;\"><img…",
+    "body": "**Key points from solved questions**\n- K.E of an object $ (K_{i})=10\\ J $ $$ \\begin{aligned}\\boldsymbol{x}&=(3\\hat{i})\\boldsymbol{m}\\\\\\overrightarrow{\\boldsymbol{F}}&=(-2\\hat{i}+3\\hat{j})\\mathbf{N}\\\\\\mathbf{W}&=\\mathbf{K}_{f}-\\mathbf{K}_{i}\\\\\\mathbf{W}&=\\mathbf{F}.\\boldsymbol{s}\\\\&=(-2\\hat{i}+3\\hat{j})\\times(3\\hat{i})\\\\\\mathbf{W}&=-6\\mathbf{J}\\\\\\mathbf{K}_{f}&=4\\mathbf{J}\\end{aligned} $$\n- From law of conservation of linear momentum, <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//b40dccb4-bdbc-49c9-aa41-f98054057289/markdown_2/imgs/img_in_image_box_66_1201_316_1350.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A15%3A57Z%2F-1%2F%2Faa4b573f81d8a0cdb5d551e8e91e001342ba73ba9cd31ed3a4bf836b71a07ed2\" alt=\"Image\" width=\"21%\" /></div> $$ \\therefore0=m\\hat{v}j+m\\hat{v}i+3m\\vec{v_{1}} $$ $$ \\overrightarrow{\\mathbf{v}_{1}}=-\\frac{\\mathbf{v}}{3}(\\hat{i}+\\hat{j}) $$ $$ \\mathbf{v}_{1}=\\frac{\\sqrt{2}}{3}\\mathbf{v} $$ $$ \\therefore\\mathrm{~K E}_{i}=0 $$ $$ \\begin{aligned}\\mathrm{KE}_{f}&=\\frac{1}{2}mv^{2}+\\frac{1}{2}mv^{2}+\\frac{1}{2}(3m)\\left(\\frac{\\sqrt{2}}{3}\\right)^{2}v^{2}\\\\&=mv^{2}+\\frac{mv^{2}}{3}=\\frac{4}{3}mv^{2}\\end{aligned} $$ $$ \\Delta\\mathrm{KE}=\\mathrm{KE}_{f}-\\mathrm{KE}_{i}=\\frac{4}{3}mv^{2} $$\n- Work done by gravitational force, $$ \\begin{aligned} & \\text{w} = mgh \\\\ \\therefore & \\quad \\text{W} = 10^{-3} \\times 10 \\times 1 \\times 10^{3} = 10\\,\\text{J} \\\\ & \\text{From work energy theorem}, \\\\ & \\text{Work done} = \\text{change in KE} \\\\ & \\quad \\Delta K = W_{\\text{gravity}} + W_{\\text{air resistance}} \\\\ & \\quad \\frac{1}{2}mv^{2} - 0 = mgh + W_{\\text{air resist}} \\\\ & \\quad \\frac{1}{2} \\times 10^{-3} \\times (50)^{2} = 10 + W_{\\text{air resist}} \\\\ & \\quad W_{\\text{air resist}} = \\frac{1}{2} \\times 10^{-3} \\times 50 \\times 50 - 10 \\\\ & \\quad = 1.25 - 10 \\\\ & \\quad W_{\\text{air resist}} = -8.75\\,\\text{J} \\end{aligned} $$ $$ \\mathbf{W}=mgh $$\n- Here, $ m = 10 \\, \\text{g} = 10^{-2} \\, \\text{kg} $, $ R = 6.4 \\, \\text{cm} = 6.4 \\times 10^{-2} \\, \\text{m} $, $ K_f = 8 \\times 10^{-4} \\, \\text{J} $, $ K_i = 0 $ Using work energy theorem, Work done by all the forces = Change in KE $ W_{tangential force} + W_{centripetal force} = K_f - K_i $ $ \\Rightarrow a_t = \\frac{K_f}{4\\pi R m} $ $ =\\frac{8 \\times 10^{-4}}{4 \\times \\frac{22}{7} \\times 6.4 \\times 10^{-2} \\times 10^{-2}} $ $ = 0.099 = 0.1 \\, \\text{ms}^{-2} $\n- According to the question, Mass of block, $m = 10\\ kg$ Speed of block, $v = 10\\ ms^{-1}$ Retarding force, $f = 0.1\\ x\\ J/m$ Using work energy theorem, Work done = change in kinetic energy $\\mathrm{W} = \\mathrm{KE}_{f} - \\mathrm{KE}_{i}$ $\\therefore \\quad \\mathrm{KE}_{f} = \\mathrm{W} + \\mathrm{KE}_{i}$ $=\\int_{20}^{30}-0.1\\times xdx+\\frac{1}{2}\\times10\\times10^{2}$ $=\\left[-0.1\\frac{x^{2}}{2}\\right]_{20}^{30}+500$ $$ \\begin{aligned}&=-0.1\\times\\frac{500}{2}+500\\\\&=-25+500=475J\\end{aligned} $$\n- From work energy theorem. $$ \\begin{aligned}Work~done~&=change~in~K.E.\\\\\\therefore\\quad W_{gravity}+W_{air}&=\\Delta KE\\\\\\Rightarrow\\quad mgh+W_{air}&=\\frac{1}{2}mv^{2}-\\frac{1}{2}mu^{2}\\end{aligned} $$ Putting the values in above equation. $$ 10\\times10\\times20+W_{air}=\\frac{1}{2}(10)(10)^{2}-0 $$ $$ \\mathbf{W}_{air}=-1500\\mathrm{J} $$\n- According to the work-energy theorem, work done by a force in displacing a body determines the change in kinetic energy of the body. or $$ \\begin{aligned}\\mathbf{W}&=\\Delta\\mathbf{K}\\mathbf{E}\\\\&=\\text{final}\\mathbf{K}\\mathbf{E}-\\text{initial}\\mathbf{K}\\mathbf{E}\\\\&=\\frac{1}{2}m\\mathbf{v}^{2}-\\frac{1}{2}m\\mathbf{u}^{2}\\end{aligned} $$ Given, $ v = 1000 \\, \\text{m/s}, m = 10 \\, \\text{g} $ Putting the values of $m$, $u$ and $v$, we get ： $$ \\begin{aligned}\\mathbf{W}&=\\frac{1}{2}\\times0.01[(1000)^{2}-(500)^{2}]\\\\&=3750\\mathbf{J}\\end{aligned} $$",
+    "formulas": [
+      {
+        "latex": "\\begin{aligned}\\boldsymbol{x}&=(3\\hat{i})\\boldsymbol{m}\\\\\\overrightarrow{\\boldsymbol{F}}&=(-2\\hat{i}+3\\hat{j})\\mathbf{N}\\\\\\mathbf{W}&=\\mathbf{K}_{f}-\\mathbf{K}_{i}\\\\\\mathbf{W}&=\\mathbf{F}.\\boldsymbol{s}\\\\&=(-2\\hat{i}+3\\hat{j})\\times(3\\hat{i})\\\\\\mathbf{W}&=-6\\mathbf{J}\\\\\\mathbf{K}_{f}&=4\\mathbf{J}\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "(K_{i})=10\\ J",
+        "meaning": ""
+      },
+      {
+        "latex": "\\therefore0=m\\hat{v}j+m\\hat{v}i+3m\\vec{v_{1}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\overrightarrow{\\mathbf{v}_{1}}=-\\frac{\\mathbf{v}}{3}(\\hat{i}+\\hat{j})",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{v}_{1}=\\frac{\\sqrt{2}}{3}\\mathbf{v}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\therefore\\mathrm{~K E}_{i}=0",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}\\mathrm{KE}_{f}&=\\frac{1}{2}mv^{2}+\\frac{1}{2}mv^{2}+\\frac{1}{2}(3m)\\left(\\frac{\\sqrt{2}}{3}\\right)^{2}v^{2}\\\\&=mv^{2}+\\frac{mv^{2}}{3}=\\frac{4}{3}mv^{2}\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\Delta\\mathrm{KE}=\\mathrm{KE}_{f}-\\mathrm{KE}_{i}=\\frac{4}{3}mv^{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned} & \\text{w} = mgh \\\\ \\therefore & \\quad \\text{W} = 10^{-3} \\times 10 \\times 1 \\times 10^{3} = 10\\,\\text{J} \\\\ & \\text{From work energy theorem}, \\\\ & \\text{Work done} = \\text{change in KE} \\\\ & \\quad \\Delta K = W_{\\text{gravity}} + W_{\\text{air resistance}} \\\\ & \\quad \\frac{1}{2}mv^{2} - 0 = mgh + W_{\\text{air resist}} \\\\ & \\quad \\frac{1}{2} \\times 10^{-3} \\times (50)^{2} = 10 + W_{\\text{air resist}} \\\\ & \\quad W_{\\text{air resist}} = \\frac{1}{2} \\times 10^{-3} \\times 50 \\times 50 - 10 \\\\ & \\quad = 1.25 - 10 \\\\ & \\quad W_{\\text{air resist}} = -8.75\\,\\text{J} \\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{W}=mgh",
+        "meaning": ""
+      },
+      {
+        "latex": "m = 10 \\, \\text{g} = 10^{-2} \\, \\text{kg}",
+        "meaning": ""
+      },
+      {
+        "latex": "R = 6.4 \\, \\text{cm} = 6.4 \\times 10^{-2} \\, \\text{m}",
+        "meaning": ""
+      },
+      {
+        "latex": "K_f = 8 \\times 10^{-4} \\, \\text{J}",
+        "meaning": ""
+      },
+      {
+        "latex": "K_i = 0",
+        "meaning": ""
+      },
+      {
+        "latex": "W_{tangential force} + W_{centripetal force} = K_f - K_i",
+        "meaning": ""
+      },
+      {
+        "latex": "\\Rightarrow a_t = \\frac{K_f}{4\\pi R m}",
+        "meaning": ""
+      },
+      {
+        "latex": "=\\frac{8 \\times 10^{-4}}{4 \\times \\frac{22}{7} \\times 6.4 \\times 10^{-2} \\times 10^{-2}}",
+        "meaning": ""
+      },
+      {
+        "latex": "= 0.099 = 0.1 \\, \\text{ms}^{-2}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}&=-0.1\\times\\frac{500}{2}+500\\\\&=-25+500=475J\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "m = 10\\ kg",
+        "meaning": ""
+      },
+      {
+        "latex": "v = 10\\ ms^{-1}",
+        "meaning": ""
+      },
+      {
+        "latex": "f = 0.1\\ x\\ J/m",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{W} = \\mathrm{KE}_{f} - \\mathrm{KE}_{i}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\therefore \\quad \\mathrm{KE}_{f} = \\mathrm{W} + \\mathrm{KE}_{i}",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "de5684ca-79f3-4a6c-aedb-e0250559605f",
+      "24373be9-514a-4280-b927-55cfb5c7f794",
+      "ad32c774-7546-48a4-bef0-fd3049262053",
+      "785d19aa-cecd-4faa-ae6a-45e2212a595e",
+      "b4971cbb-17f2-4f83-914b-4896ddcd9ed6",
+      "d621303b-0f08-4af5-b86e-f1a3bd75fca9",
+      "2ce966d8-0394-44de-8c28-3b15c2c2d894"
+    ],
+    "tags": [
+      "Re-NEET 2024",
+      "NEET 2019",
+      "AIPMT Main 2008",
+      "AIPMT 1989"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-work-energy-and-power-objective-i",
+    "chapter": "Work, Energy and Power",
+    "subtopic": "Objective I",
+    "class": "XI",
+    "unitId": "xi-work",
+    "unitLabel": "Unit IV — Work, Energy & Power",
+    "order": 4,
+    "title": "Objective I",
+    "summary": "Since the block does **not slide** on the wedge, there is **no relative sliding** at the contact surface — the friction here is *static* friction, and the point of contact between block and incline has **zero relative…",
+    "body": "**Key points from solved questions**\n- Use the **work–energy theorem** (equivalently, conservation of mechanical energy) for the stone's flight from the cliff-top to the ground. The only force doing work during the flight is gravity (air resistance is neglected), and gravity is conservative — so the total mechanical energy is conserved regardless of the *direction* in which the stone is thrown: $$\\frac{1}{2}mv_f^2 = \\frac{1}{2}mv^2 + mgh \\;\\Longrightarrow\\; v_f = \\sqrt{v^2 + 2gh}$$ This expression for the final (landing) speed $v_f$ depends only on the initial speed $v$, the height $h$, and $g$ — **not** on the direction of projection. Whether thrown straight down, straight up, or horizontally, the stone falls through the same net height $h$ and gains the same kinetic energy $mgh$ from gravity, ending up with exactly the same final speed. (The *time of flight* and the *horizontal range* would differ with direction, but not the *landing speed*.) Answer: (D).\n- When a spring of constant $k$ is stretched by applying a force $F$ at its ends, the extension is $x = F/k$ (Hooke's law), and the elastic potential energy stored is $$U = \\frac{1}{2}kx^2 = \\frac{1}{2}k\\left(\\frac{F}{k}\\right)^2 = \\frac{F^2}{2k}$$ Both springs are stretched by **forces of equal magnitude** $F$, so: $$E_A = \\frac{F^2}{2k_A}, \\qquad E_B = \\frac{F^2}{2k_B}$$ Given $k_A = 2k_B$: $$E_A = \\frac{F^2}{2(2k_B)} = \\frac{F^2}{4k_B} = \\frac{1}{2}\\cdot\\frac{F^2}{2k_B} = \\frac{1}{2}E_B \\;\\Longrightarrow\\; E_B = 2E_A = 2E$$ (The *stiffer* spring, A, stores *less* energy for the same applied force — because it stretches less; $E = F^2/2k$ is inversely proportional to $k$.) Answer: (B).\n- By symmetry, when the two **equal** masses are pulled apart symmetrically, each mass moves outward by the **same distance**, namely $\\dfrac{x}{2}$ (so that the spring's total extension is $x$). The total elastic potential energy stored in the spring (which equals the total work done *against* the spring, or equivalently $-1\\times$ the total work done *by* the spring on both masses combined) is $$U = \\frac{1}{2}kx^2$$ so the total work done **by** the spring on the system of two masses is $W_{\\text{total}} = -\\dfrac{1}{2}kx^2$ (negative, since the spring pulls the masses back as they're being pulled apart, opposing the motion). By the symmetry of the situation — equal masses, equal displacements, equal (and oppositely directed) spring forces on each — the spring does **exactly half** of this total work on each mass: $$W_{\\text{each}} = \\frac{1}{2}\\,W_{\\text{total}} = \\frac{1}{2}\\left(-\\frac{1}{2}kx^2\\right) = -\\frac{1}{4}kx^2$$ Answer: (D).\n- This is essentially the **definition** of potential energy for a conservative force. Potential energy $U$ is defined such that the work done by a conservative (internal) force equals the *negative* of the change in potential energy: $$W_{\\text{conservative}} = -\\Delta U \\quad\\Longleftrightarrow\\quad -W_{\\text{conservative}} = \\Delta U$$ So \"the negative of the work done by the conservative internal forces\" is, by definition, exactly the **change in potential energy** of the system. (This is precisely how potential energy is constructed in the first place — it's a bookkeeping device that lets us track the energy \"stored\" due to the configuration of a system acted on by conservative forces.) Answer: (C).\n- For a *system* of particles, the **internal** (conservative) forces only convert energy back and forth between kinetic and potential forms — they don't change the system's *total* mechanical energy (that's exactly what makes them \"conservative\"). Only forces coming from **outside** the system can add or remove net mechanical energy from it. This is the generalized work–energy statement for systems: $$W_{\\text{external}} = \\Delta E_{\\text{total}} = \\Delta(KE + PE)$$ So the work done by external forces on a system equals the change in its **total (mechanical) energy** — not just its kinetic energy (that would ignore changes in potential energy due to internal conservative forces) and not just its potential energy (external forces aren't what define potential energy). Answer: (A).\n- This is the **work–energy theorem** in its most general form, and it is completely universal — it makes no distinction between external and internal forces, or between conservative and non-conservative forces. Summing the work done by *every* force acting on every particle of the system: $$W_{\\text{all forces}} = \\Delta KE$$ (Internal conservative forces do contribute to this total — their work shows up as $-\\Delta U$ — but when you also account for the corresponding change in $KE$, the *net* effect of all forces together always equals the total change in kinetic energy. This theorem follows directly from Newton's second law applied to each particle and summed over the system.) Answer: (B).\n- **Potential energy** of a two-particle system arises from the *interaction* between the particles (e.g., gravitational, electrostatic, or elastic interaction) — and for such conservative interactions, the interaction energy depends only on the particles' relative configuration, i.e., on the **separation** between them, not on their absolute positions, velocities, or how they got there. For example: gravitational PE between two masses is $U = -\\dfrac{Gm_1m_2}{r}$, electrostatic PE is $U = \\dfrac{kq_1q_2}{r}$, and spring PE is $U = \\dfrac{1}{2}k(\\Delta r)^2$ — in every case, $U$ is a function purely of the separation $r$ between the particles. (Kinetic energy, by contrast, depends on velocities; total mechanical/total energy includes KE and so depends on more than just separation.) Answer: (C).\n- Since the block does **not slide** on the wedge, there is **no relative sliding** at the contact surface — the friction here is *static* friction, and the point of contact between block and incline has **zero relative displacement**. This is the \"static friction does no work in the relative sense\" idea, but we must be careful: the question asks for the work done by friction *in the ground frame*, where the block does have a real (non-zero) displacement, since the whole elevator (with the block on it) moves upward at speed $v$. In time $t$, the block's actual displacement (moving with the elevator) is $vt$, **vertically upward**. The friction force on the block acts **along the inclined surface** (this is the direction friction must act in, being a contact/surface force), with magnitude equal to the component of gravity along the incline that it must balance for the block not to slide: $f = mg\\sin\\theta$ (since the elevator moves at *uniform* velocity, the block has zero acceleration, so along the incline, friction balances $mg\\sin\\theta$). The work done by this force equals $f$ times the component of the actual displacement *along the direction of the force* (along the incline). The vertical displacement $vt$ has a component along the incline surface equal to $vt\\sin\\theta$ (resolving the vertical displacement along the slope, which is inclined at $\\theta$ to the horizontal). So: $$W_{\\text{friction}} = f \\times (vt\\sin\\theta) = (mg\\sin\\theta)(vt\\sin\\theta) = mgvt\\sin^2\\theta$$ Answer: (C).\n- As the block slides down the smooth vertical circular track, it is in **continuous, accelerated** circular motion — and \"equilibrium\" (in any direction) would require the net force in that direction to be zero. None of the proposed equilibrium conditions actually hold: - **Vertical equilibrium**: the block accelerates vertically (its height and vertical speed continuously change) — gravity is doing net work on it, so it's not in vertical equilibrium. - **Horizontal equilibrium**: similarly, the block's horizontal velocity changes continuously as it goes around the curve — there's a net horizontal force component (from the normal reaction) at most points. - **Radial equilibrium**: this is the most clearly false — a net **centripetal** force (provided by the radial component of gravity and the normal reaction) is *required* for circular motion: $F_{\\text{net, radial}} = \\dfrac{mv^2}{r} \\neq 0$. There is no radial equilibrium. Since the block is continuously accelerating (both centripetally and tangentially, as its speed changes due to gravity doing work on it), it is in **none** of these equilibrium states. Answer: (D).\n- For a particle to \"just complete\" a vertical circle on a string, the critical (minimum) condition occurs at the **topmost point**, where gravity alone must supply the entire centripetal force (string tension $\\to 0$): $$mg = \\frac{mv_{\\text{top}}^2}{l} \\;\\Longrightarrow\\; v_{\\text{top}} = \\sqrt{gl}$$ Now use **energy conservation** between the position where the string is *horizontal* (let's call its speed $v_h$, and take the centre of the circle as the reference height) and the *topmost* point (which is a height $l$ above the centre — and hence a height $l$ above the horizontal-string position, since the horizontal-string position is level with the centre): $$\\frac{1}{2}mv_h^2 = \\frac{1}{2}mv_{\\text{top}}^2 + mgl$$ $$v_h^2 = v_{\\text{top}}^2 + 2gl = gl + 2gl = 3gl$$ $$v_h = \\sqrt{3gl}$$ Answer: (C).",
+    "formulas": [
+      {
+        "latex": "\\frac{1}{2}mv_f^2 = \\frac{1}{2}mv^2 + mgh \\;\\Longrightarrow\\; v_f = \\sqrt{v^2 + 2gh}",
+        "meaning": ""
+      },
+      {
+        "latex": "U = \\frac{1}{2}kx^2 = \\frac{1}{2}k\\left(\\frac{F}{k}\\right)^2 = \\frac{F^2}{2k}",
+        "meaning": ""
+      },
+      {
+        "latex": "E_A = \\frac{F^2}{2k_A}, \\qquad E_B = \\frac{F^2}{2k_B}",
+        "meaning": ""
+      },
+      {
+        "latex": "E_A = \\frac{F^2}{2(2k_B)} = \\frac{F^2}{4k_B} = \\frac{1}{2}\\cdot\\frac{F^2}{2k_B} = \\frac{1}{2}E_B \\;\\Longrightarrow\\; E_B = 2E_A = 2E",
+        "meaning": ""
+      },
+      {
+        "latex": "x = F/k",
+        "meaning": ""
+      },
+      {
+        "latex": "k_A = 2k_B",
+        "meaning": ""
+      },
+      {
+        "latex": "E = F^2/2k",
+        "meaning": ""
+      },
+      {
+        "latex": "U = \\frac{1}{2}kx^2",
+        "meaning": ""
+      },
+      {
+        "latex": "W_{\\text{each}} = \\frac{1}{2}\\,W_{\\text{total}} = \\frac{1}{2}\\left(-\\frac{1}{2}kx^2\\right) = -\\frac{1}{4}kx^2",
+        "meaning": ""
+      },
+      {
+        "latex": "W_{\\text{total}} = -\\dfrac{1}{2}kx^2",
+        "meaning": ""
+      },
+      {
+        "latex": "W_{\\text{conservative}} = -\\Delta U \\quad\\Longleftrightarrow\\quad -W_{\\text{conservative}} = \\Delta U",
+        "meaning": ""
+      },
+      {
+        "latex": "W_{\\text{external}} = \\Delta E_{\\text{total}} = \\Delta(KE + PE)",
+        "meaning": ""
+      },
+      {
+        "latex": "W_{\\text{all forces}} = \\Delta KE",
+        "meaning": ""
+      },
+      {
+        "latex": "U = -\\dfrac{Gm_1m_2}{r}",
+        "meaning": ""
+      },
+      {
+        "latex": "U = \\dfrac{kq_1q_2}{r}",
+        "meaning": ""
+      },
+      {
+        "latex": "U = \\dfrac{1}{2}k(\\Delta r)^2",
+        "meaning": ""
+      },
+      {
+        "latex": "W_{\\text{friction}} = f \\times (vt\\sin\\theta) = (mg\\sin\\theta)(vt\\sin\\theta) = mgvt\\sin^2\\theta",
+        "meaning": ""
+      },
+      {
+        "latex": "f = mg\\sin\\theta",
+        "meaning": ""
+      },
+      {
+        "latex": "F_{\\text{net, radial}} = \\dfrac{mv^2}{r} \\neq 0",
+        "meaning": ""
+      },
+      {
+        "latex": "mg = \\frac{mv_{\\text{top}}^2}{l} \\;\\Longrightarrow\\; v_{\\text{top}} = \\sqrt{gl}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{1}{2}mv_h^2 = \\frac{1}{2}mv_{\\text{top}}^2 + mgl",
+        "meaning": ""
+      },
+      {
+        "latex": "v_h^2 = v_{\\text{top}}^2 + 2gl = gl + 2gl = 3gl",
+        "meaning": ""
+      },
+      {
+        "latex": "v_h = \\sqrt{3gl}",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "208b6663-9bae-4900-8f23-af1dab506808",
+      "7a286f2b-87fe-49bd-870f-76a1fa062189",
+      "b848eddd-c1cd-4683-b6e7-6f36f8a24053",
+      "343801bc-482c-4b06-99ff-9c60ea06b620",
+      "75f9bce6-fcec-47f7-9af8-8cf1d43a8f3d",
+      "5d37ed44-c313-492a-950c-b64206681711",
+      "d2964128-726a-4234-a147-7999018b8c39",
+      "616e8ea2-8cf6-41cf-811f-5782c61d600c",
+      "7ee2e4e2-7b50-467b-a081-4fdba45d42a6",
+      "8a6e9fc3-00aa-42e8-ad63-d7bb3605b801"
+    ],
+    "tags": [
+      "HC Verma Vol 1",
+      "Objective I",
+      "Chapter 8"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-work-energy-and-power-objective-ii",
+    "chapter": "Work, Energy and Power",
+    "subtopic": "Objective II",
+    "class": "XI",
+    "unitId": "xi-work",
+    "unitLabel": "Unit IV — Work, Energy & Power",
+    "order": 4,
+    "title": "Objective II",
+    "summary": "\"Just able to complete the circle\" is the **critical condition**: at the topmost point, the string tension drops to exactly zero, and gravity alone supplies the centripetal force: $$mg = \\frac{mv_{\\text{top}}^2}{l}…",
+    "body": "**Key points from solved questions**\n- From energy conservation (only gravity does work during the flight, falling through a net height $h$): $$\\frac{1}{2}mv_f^2 = \\frac{1}{2}mv^2 + mgh \\;\\Longrightarrow\\; v_f = \\sqrt{v^2 + 2gh}$$ Examine each option using this relation: - **(a)** $v_f$ explicitly contains $v$ in its formula — it clearly **depends** on the projection speed. ✓ - **(b)** Since $2gh > 0$, we have $v_f = \\sqrt{v^2 + 2gh} > \\sqrt{v^2} = v$ — the landing speed is **always strictly larger** than the projection speed (gravity always adds kinetic energy as the stone falls through height $h$). ✓ - **(c)** This contradicts (a) — the landing speed clearly *does* depend on $v$ (just not on the *direction* of projection, which is a different question). ✗ - **(d)** Since $v_f > v$ always (from (b)), it can **never** be smaller than the projection speed. ✗ So $v_f$ must depend on $v$, and must always be larger than $v$. Answer: (A, B).\n- This is the **work–energy theorem**, one of the most general and fundamental results in mechanics — it follows directly from Newton's second law ($F = ma$) by integrating $F\\,dx = ma\\,dx = mv\\,dv$ over the path: $$W_{\\text{total}} = \\int \\vec F_{\\text{net}} \\cdot d\\vec r = \\Delta KE$$ This holds **unconditionally** — it makes no assumptions about whether the forces are conservative or non-conservative, gravitational, elastic, frictional, or anything else. It is simply a restatement of Newton's second law in integrated form, and is therefore **always** true for the *total* (net) work done by *all* forces acting on the particle. Answer: (A). (The other options describe special/restrictive scenarios — but the theorem doesn't need any such restriction; it holds universally.)\n- A force that is **always perpendicular to the velocity** does **zero work** at every instant (since $dW = \\vec F \\cdot d\\vec r = \\vec F \\cdot \\vec v \\, dt = 0$ when $\\vec F \\perp \\vec v$). By the work–energy theorem, zero work means **zero change in kinetic energy** — so the kinetic energy (and hence the speed) remains **constant**. ✓ (C) Now, a force of **constant magnitude**, always **perpendicular to a constant-magnitude velocity**, confined to a plane — this is *exactly* the defining condition for **uniform circular motion** (this is, in fact, how centripetal force is characterized: $F = \\dfrac{mv^2}{r}$, constant in magnitude, always perpendicular to $\\vec v$, always directed toward a fixed centre). The particle therefore traces out a **circular path**. ✓ (D) What is **not** guaranteed: - The **velocity** is not constant — its direction continuously changes (only its magnitude, the speed, stays fixed). ✗ (A) - The **acceleration** ($= F/m$, always perpendicular to $\\vec v$, i.e., centripetal) has constant *magnitude* but its *direction* continuously changes (always pointing toward the centre, which is a different absolute direction at each instant) — so the acceleration vector is not constant. ✗ (B) Answer: (C, D).\n- **Acceleration is invariant under Galilean transformations** — if two observers move at constant relative velocity $v$ (both inertial frames), they measure the *same* relative velocity changes over the *same* time intervals, and hence compute the **same acceleration** for the block: $a' = a$. This is a basic feature of Newtonian relativity (forces, and hence accelerations via $F=ma$, are the same in all inertial frames). ✓ (D) By contrast, the following quantities are generally **different** for the two observers, because they depend on velocity (which is frame-dependent — differs by the constant relative velocity $v$ between the observers): - **Kinetic energy** $\\left(\\tfrac12 mv_{\\text{block}}^2\\right)$ at any instant $t$ — depends on the block's velocity *in each observer's frame*, which differs between the two frames. ✗ (A) - **Work done by friction** $= -f \\times (\\text{displacement of the block as measured in that frame})$ — the displacement of the block over a given time interval differs between the two frames (since their relative velocity is nonzero), so this differs too. ✗ (B) - **Total work done on the block** $= \\Delta KE$ — since $KE$ differs between frames, so does its change. ✗ (C) So only the **acceleration** is the same for both observers. Answer: (D).\n- Apply the work–energy theorem to the suitcase, which starts at rest on the floor and ends at rest on the table ($\\Delta KE = 0$): $$W_{\\text{you}} + W_{\\text{gravity}} = \\Delta KE = 0 \\;\\Longrightarrow\\; W_{\\text{you}} = -W_{\\text{gravity}} = mgh$$ where $h$ is the net height gained and $m$ is the suitcase's mass. This simple result $W_{\\text{you}} = mgh$ shows the work you do: - **does not depend on the path** taken (a) — gravity is a conservative force, so $-W_{\\text{gravity}} = \\Delta(PE) = mgh$ depends only on the initial and final heights, regardless of the route taken (zigzag, straight up, etc.). - **does not depend on the time taken** (b) — work is defined purely in terms of force and displacement; how *quickly* you do it doesn't enter the formula $W = mgh$ at all (as long as the suitcase starts and ends at rest). - **does not depend on your own weight** (d) — your weight has nothing to do with the energy transferred to the suitcase. - **does** depend on the **suitcase's weight** (c) — the formula $W = mgh$ explicitly contains $m$ (the suitcase's mass), so a heavier suitcase requires more work to lift through the same height. So the work done does not depend on (a), (b), or (d) — but it *does* depend on (c). Answer: (A, B, D).\n- Work is defined as $dW = \\vec F \\cdot d\\vec r$ — it vanishes whenever the force has no component along the actual displacement of its point of application. Let's examine each case: - **(a)** If $\\vec F$ is always perpendicular to the velocity $\\vec v$ (and hence to the instantaneous displacement $d\\vec r = \\vec v\\,dt$), then $\\vec F \\cdot d\\vec r = 0$ at every instant — **no work is done**. ✓ - **(b)** Perpendicularity to the *acceleration* says nothing about the relationship between $\\vec F$ and the *displacement* — the force could very well have a component along $\\vec v$ (and do work) while still being perpendicular to $\\vec a$. **Not** a valid \"no-work\" condition. ✗ - **(c)** If the object as a whole is stationary (its centre of mass doesn't move) but the *point of application* of the force moves along the object's surface (e.g., friction at the contact point of a wheel spinning in place, or a rope sliding over a fixed pulley/peg) — and that point of application has zero net displacement in the relevant direction (e.g., for rolling without slipping, the contact point is instantaneously at rest) — the force does **no work**, since $d\\vec r = 0$ for the point where the force acts. ✓ - **(d)** If the point of application of the force does not move at all ($d\\vec r = 0$), then trivially $dW = \\vec F \\cdot d\\vec r = 0$ — **no work is done**, however large the force. ✓ Answer: (A, C, D).\n- \"Just able to complete the circle\" is the **critical condition**: at the topmost point, the string tension drops to exactly zero, and gravity alone supplies the centripetal force: $$mg = \\frac{mv_{\\text{top}}^2}{l} \\;\\Longrightarrow\\; v_{\\text{top}} = \\sqrt{gl}$$ - **(a)** At the highest point, the tension is exactly zero (the borderline/critical value) — the string is on the verge of (and, for any speed less than this critical value, *would*) go slack; this borderline condition is described as the string \"becoming slack\" at the top. ✓ - **(b)** The velocity at the top is $\\sqrt{gl} \\neq 0$ — if it *were* zero, the particle could not maintain circular motion (it would fall away from the circular path well before reaching the top, since the string would go slack at some earlier point). The \"just completes\" condition specifically requires a *nonzero* critical speed at the top. ✗ - **(c)** Apply energy conservation between the initial (horizontal-string) position and the top (a height $l$ higher): $$\\frac{1}{2}mv^2 = \\frac{1}{2}mv_{\\text{top}}^2 + mgl = \\frac{1}{2}m(gl) + mgl = \\frac{3}{2}mgl$$ So $\\tfrac12 mv^2 = \\tfrac{3}{2}mgl$ — **not** $mgl$ as claimed. ✗ - **(d)** With no friction or air resistance, mechanical energy is conserved and the motion is periodic — the particle traces the same circular path repeatedly, so it indeed **passes through its initial position again** (with the same speed $v$) after completing the circle. ✓ Answer: (A, D).\n- By the **work–energy theorem**, kinetic energy increases only when the net force does **positive work** — i.e., only when the resultant force has a component **along** the velocity (the angle $\\phi$ between $\\vec F_{\\text{net}}$ and $\\vec v$ satisfies $\\cos\\phi > 0$, i.e. $\\phi < 90°$). For KE to increase *continuously*, this must hold at *every* instant: $$dW = \\vec F_{\\text{net}}\\cdot \\vec v\\, dt = F\\,v\\cos\\phi\\, dt > 0 \\;\\Longrightarrow\\; \\phi < 90° \\text{ always}$$ ✓ (B) — this is exactly the necessary and sufficient condition. - **(A)** The force does **not** need to be exactly *parallel* to the velocity — it merely needs a positive component along it (angle less than $90°$, not necessarily $0°$). A particle could speed up while moving along a curved path (like an accelerating car going around a bend), where the net force is not strictly parallel to $\\vec v$. ✗ - **(C)** Kinetic energy can increase due to work done by *any* force (e.g., an engine, a applied push) — there's no requirement that the object lose height; it could even be rising while speeding up (e.g., a rocket). ✗ - **(D)** Since $KE = \\dfrac{p^2}{2m}$ (with $m$ constant), an increasing $KE$ directly implies an increasing $p = |\\vec p|$ — the magnitude of linear momentum **must** be continuously increasing too. ✓ Answer: (B, D).\n- The elastic potential energy stored in a spring depends only on the **magnitude** of its deformation from the natural length — whether compressed or stretched by an amount $x$, the stored energy is the same: $U = \\dfrac{1}{2}kx^2$. The work done **by** the spring on the block equals the *decrease* in the spring's stored potential energy: $$W_{\\text{spring}} = -\\Delta U = U_{\\text{initial}} - U_{\\text{final}}$$ We're told $W_{\\text{spring}} = +\\dfrac{1}{2}kx^2$ (a *positive* value). This requires $$U_{\\text{initial}} - U_{\\text{final}} = \\frac{1}{2}kx^2 \\;\\Longrightarrow\\; U_{\\text{initial}} = \\frac{1}{2}kx^2,\\ \\ U_{\\text{final}} = 0$$ So the spring must have *started* with stored energy $\\tfrac12 kx^2$ (i.e., displaced by $x$ from its natural length — either **compressed** or **stretched**, since $U$ depends only on $|displacement|$) and *ended* at its **natural length** ($U_{\\text{final}} = 0$, releasing its stored energy as positive work on the block). Both starting configurations — initially compressed by $x$ (a), or initially stretched by $x$ (b) — satisfy this, as long as the spring ends at its natural length. (Options (c) and (d), which describe the spring *gaining* potential energy, would correspond to *negative* work done by the spring — inconsistent with the given positive value.) Answer: (A, B).\n- The string and pulley are **light** (massless) and **smooth** (frictionless) — so the tension is transmitted *unchanged* throughout the string, and equals whatever force is applied at the free end. Since the free end is being pulled by a **constant external force $F$**, the tension throughout the string — including the segment attached to the block — equals exactly: $$T = F$$ ✓ (B). [Option (a), $T = Mg$, would only hold if the block moved at constant velocity (equilibrium) — which is not implied here, since the block's KE is changing.] For (c) and (d): by the work–energy theorem applied to the block, $$W_{\\text{tension}} + W_{\\text{gravity}} = \\Delta KE = 20\\ \\text{J} \\;\\Longrightarrow\\; (Fd) + (-Mgd) = 20\\ \\text{J}$$ where $d$ is the block's displacement in 1 s. This equation constrains only the *combination* $(F - Mg)d$ — it does **not** by itself fix $W_{\\text{tension}} = Fd$ or $W_{\\text{gravity}} = -Mgd$ individually (since $F$, $M$, and $d$ are not separately known). So we **cannot conclude** that the tension's work is exactly $20$ J or that gravity's work is exactly $-20$ J — these would only coincidentally be true for specific values of $F$, $M$, $d$. ✗ (c), (d) Answer: (B).",
+    "formulas": [
+      {
+        "latex": "\\frac{1}{2}mv_f^2 = \\frac{1}{2}mv^2 + mgh \\;\\Longrightarrow\\; v_f = \\sqrt{v^2 + 2gh}",
+        "meaning": ""
+      },
+      {
+        "latex": "v_f = \\sqrt{v^2 + 2gh} > \\sqrt{v^2} = v",
+        "meaning": ""
+      },
+      {
+        "latex": "W_{\\text{total}} = \\int \\vec F_{\\text{net}} \\cdot d\\vec r = \\Delta KE",
+        "meaning": ""
+      },
+      {
+        "latex": "F = ma",
+        "meaning": ""
+      },
+      {
+        "latex": "F\\,dx = ma\\,dx = mv\\,dv",
+        "meaning": ""
+      },
+      {
+        "latex": "dW = \\vec F \\cdot d\\vec r = \\vec F \\cdot \\vec v \\, dt = 0",
+        "meaning": ""
+      },
+      {
+        "latex": "F = \\dfrac{mv^2}{r}",
+        "meaning": ""
+      },
+      {
+        "latex": "= F/m",
+        "meaning": ""
+      },
+      {
+        "latex": "a' = a",
+        "meaning": ""
+      },
+      {
+        "latex": "= -f \\times (\\text{displacement of the block as measured in that frame})",
+        "meaning": ""
+      },
+      {
+        "latex": "= \\Delta KE",
+        "meaning": ""
+      },
+      {
+        "latex": "W_{\\text{you}} + W_{\\text{gravity}} = \\Delta KE = 0 \\;\\Longrightarrow\\; W_{\\text{you}} = -W_{\\text{gravity}} = mgh",
+        "meaning": ""
+      },
+      {
+        "latex": "\\Delta KE = 0",
+        "meaning": ""
+      },
+      {
+        "latex": "W_{\\text{you}} = mgh",
+        "meaning": ""
+      },
+      {
+        "latex": "-W_{\\text{gravity}} = \\Delta(PE) = mgh",
+        "meaning": ""
+      },
+      {
+        "latex": "W = mgh",
+        "meaning": ""
+      },
+      {
+        "latex": "dW = \\vec F \\cdot d\\vec r",
+        "meaning": ""
+      },
+      {
+        "latex": "d\\vec r = \\vec v\\,dt",
+        "meaning": ""
+      },
+      {
+        "latex": "\\vec F \\cdot d\\vec r = 0",
+        "meaning": ""
+      },
+      {
+        "latex": "d\\vec r = 0",
+        "meaning": ""
+      },
+      {
+        "latex": "dW = \\vec F \\cdot d\\vec r = 0",
+        "meaning": ""
+      },
+      {
+        "latex": "mg = \\frac{mv_{\\text{top}}^2}{l} \\;\\Longrightarrow\\; v_{\\text{top}} = \\sqrt{gl}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{1}{2}mv^2 = \\frac{1}{2}mv_{\\text{top}}^2 + mgl = \\frac{1}{2}m(gl) + mgl = \\frac{3}{2}mgl",
+        "meaning": ""
+      },
+      {
+        "latex": "\\tfrac12 mv^2 = \\tfrac{3}{2}mgl",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "879c7402-6d09-4eee-a3b6-4afc428946f3",
+      "ac45bfef-74e7-4438-b203-53c9b290faea",
+      "dede79c7-dfe2-4b8b-9f93-f64ae6d4996e",
+      "669f9651-f431-40e9-b5e9-adbcbb82589b",
+      "7eec7b8f-de6a-4027-a050-6cb21c7294cb",
+      "d810e89a-ef0c-48a7-b93f-5c4fec9928dd",
+      "2d0b3cb5-9383-41bb-99c1-d25e95e3faf2",
+      "677d7f32-e8ed-4364-a35e-7c5e7ef9a670",
+      "37fd952d-7356-4dc1-912c-0345a797e70b",
+      "1638ad2c-6cdb-423e-b531-016ab2918fa2"
+    ],
+    "tags": [
+      "HC Verma Vol 1",
+      "Objective II",
+      "Chapter 8"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-work-energy-and-power-overview",
+    "chapter": "Work, Energy and Power",
+    "subtopic": "Overview",
+    "class": "XI",
+    "unitId": "xi-work",
+    "unitLabel": "Unit IV — Work, Energy & Power",
+    "order": 4,
+    "title": "Overview",
+    "summary": "Force required, $ F = \\frac{d(mv)}{dt} $ $ = v\\left(\\frac{dm}{dt}\\right) = vM $ as velocity v is constant Hence, $ \\mathrm{F}=\\mathrm{Mv} $ 22.(B) $$ \\mathrm{Thrust}=\\mathbf{M}(g+a)=u\\frac{dm}{dt} $$ $$…",
+    "body": "**Key points from solved questions**\n- Force required, $ F = \\frac{d(mv)}{dt} $ $ = v\\left(\\frac{dm}{dt}\\right) = vM $ as velocity v is constant Hence, $ \\mathrm{F}=\\mathrm{Mv} $ 22.(B) $$ \\mathrm{Thrust}=\\mathbf{M}(g+a)=u\\frac{dm}{dt} $$ $$ \\begin{array}{l}\\frac{dm}{dt}=\\frac{M(g+a)}{u}\\\\=\\frac{5000(10+20)}{800}\\\\ =187.5\\ kg/s \\end{array} $$",
+    "formulas": [
+      {
+        "latex": "\\mathrm{Thrust}=\\mathbf{M}(g+a)=u\\frac{dm}{dt}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{array}{l}\\frac{dm}{dt}=\\frac{M(g+a)}{u}\\\\=\\frac{5000(10+20)}{800}\\\\ =187.5\\ kg/s \\end{array}",
+        "meaning": ""
+      },
+      {
+        "latex": "F = \\frac{d(mv)}{dt}",
+        "meaning": ""
+      },
+      {
+        "latex": "= v\\left(\\frac{dm}{dt}\\right) = vM",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{F}=\\mathrm{Mv}",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "038c6967-0145-493a-a228-3c906ab3a7d4"
+    ],
+    "tags": [
+      "AIPMT 1994"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-work-energy-and-power-power",
+    "chapter": "Work, Energy and Power",
+    "subtopic": "Power",
+    "class": "XI",
+    "unitId": "xi-work",
+    "unitLabel": "Unit IV — Work, Energy & Power",
+    "order": 4,
+    "title": "Power",
+    "summary": "Given, $$ \\mathrm{P}=100~\\mathrm{kW} $$ Time.",
+    "body": "**Key points from solved questions**\n- $$ \\begin{array}{c}s=2t-1\\\\\\mathrm{v}=\\frac{ds}{dt}=\\frac{d}{dt}\\ (2t-1)\\\\=2\\,\\mathrm{m/s}\\end{array} $$ Instantaneous power. $$ \\begin{aligned}\\mathbf{P}&=\\overrightarrow{\\mathbf{F.v}}\\\\&=5\\times2=10\\mathbf{W}\\end{aligned} $$\n- Given, $$ \\mathrm{P}=100~\\mathrm{kW} $$ Time. $$ \\begin{array}{c}\\mathrm{E}=\\mathrm{P}\\times t=100\\times1=100\\mathrm{kWh}\\\\ \\mathrm{E}=100\\times3.6\\times10^{6}\\mathrm{J}=36\\times10^{7}\\mathrm{J}\\\\ (\\because1\\mathrm{kWh}=3.6\\times10^{6}\\mathrm{J})\\end{array} $$\n- Given: $$ \\mathbf{v}=1.5~\\mathrm{m/s} $$ $$ \\mathrm{F}=3000\\mathrm{~N} $$",
+    "formulas": [
+      {
+        "latex": "\\begin{array}{c}s=2t-1\\\\\\mathrm{v}=\\frac{ds}{dt}=\\frac{d}{dt}\\ (2t-1)\\\\=2\\,\\mathrm{m/s}\\end{array}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}\\mathbf{P}&=\\overrightarrow{\\mathbf{F.v}}\\\\&=5\\times2=10\\mathbf{W}\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{P}=100~\\mathrm{kW}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{array}{c}\\mathrm{E}=\\mathrm{P}\\times t=100\\times1=100\\mathrm{kWh}\\\\ \\mathrm{E}=100\\times3.6\\times10^{6}\\mathrm{J}=36\\times10^{7}\\mathrm{J}\\\\ (\\because1\\mathrm{kWh}=3.6\\times10^{6}\\mathrm{J})\\end{array}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{v}=1.5~\\mathrm{m/s}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{F}=3000\\mathrm{~N}",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "6f0fdfe0-2ccc-4552-b3bb-1062c42376de",
+      "bb332c36-f88a-4bba-b173-6dfad312098a",
+      "82c93975-cdb5-42f1-9477-0b0cb820ca00",
+      "e5d13a7c-e876-438f-a022-0799a1c37d93",
+      "fb1b18a9-24a7-4f9a-ba26-ca9fe7f123bf",
+      "5f02dcc4-638b-49e7-904a-839c4d20f431",
+      "8953eb62-0518-4409-8032-b98c2e0d0ffb",
+      "255efa18-e1ce-4de4-9679-d4e0be56e88e",
+      "2facfba3-983e-40d6-b0a2-d0c1b71c642b"
+    ],
+    "tags": [
+      "NEET 2024",
+      "NEET 2022",
+      "NEET 2021",
+      "NEET Phase-I 2016",
+      "AIPMT 2010"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-work-energy-and-power-the-concept-of-potential-energy",
+    "chapter": "Work, Energy and Power",
+    "subtopic": "The Concept of Potential Energy",
+    "class": "XI",
+    "unitId": "xi-work",
+    "unitLabel": "Unit IV — Work, Energy & Power",
+    "order": 4,
+    "title": "The Concept of Potential Energy",
+    "summary": "Given, Height = S Arbitrary height = h where $$ \\mathrm{KE}_{h}=3\\ \\mathrm{PE}_{h} $$ At height 'S', PE = mg S At arbitrary height $h$, $(h < S)$ $$ PE=mgh $$ $$ KE=\\frac{1}{2}mv^{2} $$ where $$…",
+    "body": "**Key points from solved questions**\n- Given, Height = S Arbitrary height = h where $$ \\mathrm{KE}_{h}=3\\ \\mathrm{PE}_{h} $$ At height 'S', PE = mg S At arbitrary height $h$, $(h < S)$ $$ PE=mgh $$ $$ KE=\\frac{1}{2}mv^{2} $$ where $$ \\mathbf{v}^{2}=2\\mathbf{g}\\left(\\mathbf{S}-h\\right) $$ $$ \\begin{aligned}KE&=\\frac{1}{2}m2g(S-h)\\\\&=mg(S-h)\\end{aligned} $$ Given. $$ KE_{h}=3PE_{h} $$ mg (S - h) = 3mgh $$ h=\\frac{S}{4} $$ $$ \\mathbf{v}^{2}=2g\\left(\\mathbf{S}-\\frac{\\mathbf{S}}{4}\\right) $$ $$ \\mathbf{v}^{2}=2g\\frac{3S}{4} $$ $$ \\bullet \\quad \\bullet\\bullet $$ $$ \\mathbf{v}=\\sqrt{\\frac{3g\\mathbf{S}}{2}} $$\n- When minimum speed of body is $ \\sqrt{5gR} $ then no matter from where it enters the loop, it will complete full vertical loop.\n- Here, $$ \\mathbf{U}=\\frac{\\mathbf{A}}{\\mathbf{r}^{2}}-\\frac{\\mathbf{B}}{\\mathbf{r}} $$ For equilibrium, $ \\frac{dU}{dr}=0 $ ∴ $$ -\\frac{2\\mathbf{A}}{r^{3}}+\\frac{\\mathbf{B}}{r^{2}}=0 $$ or $$ \\frac{2A}{r^{3}}=\\frac{B}{r^{2}} $$ or $$ r=\\frac{2\\mathbf{A}}{\\mathbf{B}} $$\n- The potential energy of a system increases. If work is done by the system against a conservative force. then, $ W_{int} = -\\Delta U $\n- Potential energy of chain at table level be $U_{f}$ $$ \\mathbf{U}_{f}=0\\mathrm{~a n d~}\\mathbf{U}_{i}=-m g h $$ $$ \\mathrm{U}_{i}=-\\left(\\frac{\\mathbf{M}}{\\mathbf{L}}\\right)\\left(\\frac{\\mathbf{L}}{n}g\\right)\\left(\\frac{\\mathbf{L}}{2n}\\right)=-\\frac{\\mathbf{M}\\mathbf{g}\\mathbf{L}}{2n^{2}} $$ Work done = U_{f} - U_{i} =\\left[0-\\left(-\\frac{MgL}{2n^{2}}\\right)\\right]=\\frac{MgL}{2n^{2}}\n- Potential energy, (C) Potential energy, P.E. = 2 × 10 × 10 = 200 J and work done, W = 300 J ∴ Work done against friction = 300 - 200 = 100 J.\n- Momentum\n- $$ \\mathrm{U}(x)=\\frac{a}{x^{12}}-\\frac{b}{x^{6}} $$ Atom is in stable equilibrium when P.E. is minimum hence, $$ -\\frac{12a}{x^{13}}-\\frac{-6b}{x^{7}}=0 $$ or $$ x^{6}=\\frac{2a}{b} $$ Therefore, $$ x=\\left(\\frac{2a}{b}\\right)^{1/6} $$",
+    "formulas": [
+      {
+        "latex": "\\mathrm{KE}_{h}=3\\ \\mathrm{PE}_{h}",
+        "meaning": ""
+      },
+      {
+        "latex": "PE=mgh",
+        "meaning": ""
+      },
+      {
+        "latex": "KE=\\frac{1}{2}mv^{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{v}^{2}=2\\mathbf{g}\\left(\\mathbf{S}-h\\right)",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}KE&=\\frac{1}{2}m2g(S-h)\\\\&=mg(S-h)\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "KE_{h}=3PE_{h}",
+        "meaning": ""
+      },
+      {
+        "latex": "h=\\frac{S}{4}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{v}^{2}=2g\\left(\\mathbf{S}-\\frac{\\mathbf{S}}{4}\\right)",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{v}^{2}=2g\\frac{3S}{4}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\bullet \\quad \\bullet\\bullet",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{v}=\\sqrt{\\frac{3g\\mathbf{S}}{2}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{U}=\\frac{\\mathbf{A}}{\\mathbf{r}^{2}}-\\frac{\\mathbf{B}}{\\mathbf{r}}",
+        "meaning": ""
+      },
+      {
+        "latex": "-\\frac{2\\mathbf{A}}{r^{3}}+\\frac{\\mathbf{B}}{r^{2}}=0",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{2A}{r^{3}}=\\frac{B}{r^{2}}",
+        "meaning": ""
+      },
+      {
+        "latex": "r=\\frac{2\\mathbf{A}}{\\mathbf{B}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{dU}{dr}=0",
+        "meaning": ""
+      },
+      {
+        "latex": "W_{int} = -\\Delta U",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{U}_{f}=0\\mathrm{~a n d~}\\mathbf{U}_{i}=-m g h",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{U}_{i}=-\\left(\\frac{\\mathbf{M}}{\\mathbf{L}}\\right)\\left(\\frac{\\mathbf{L}}{n}g\\right)\\left(\\frac{\\mathbf{L}}{2n}\\right)=-\\frac{\\mathbf{M}\\mathbf{g}\\mathbf{L}}{2n^{2}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{U}(x)=\\frac{a}{x^{12}}-\\frac{b}{x^{6}}",
+        "meaning": ""
+      },
+      {
+        "latex": "-\\frac{12a}{x^{13}}-\\frac{-6b}{x^{7}}=0",
+        "meaning": ""
+      },
+      {
+        "latex": "x^{6}=\\frac{2a}{b}",
+        "meaning": ""
+      },
+      {
+        "latex": "x=\\left(\\frac{2a}{b}\\right)^{1/6}",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "48d2571d-3553-4333-95ec-c0e38e89f242",
+      "b08d6c42-9435-4daf-8faa-fc4155a6b568",
+      "25056629-d13a-4a29-8f86-e3b2acfb8198",
+      "b19208b6-47ed-4faf-96a0-41d2f71de135",
+      "7ef390c4-73cf-4256-8c21-679195ba573c",
+      "a4921b41-7bf5-41dc-870f-d8efc1eea958",
+      "ede21ad6-806e-460e-8b14-2f2dc389f8ba",
+      "67c7bf8e-ac21-4967-8636-ae63f260c36e"
+    ],
+    "tags": [
+      "NEET 2021",
+      "NEET Phase-I 2016",
+      "AIPMT Screening 2011",
+      "AIPMT 2006",
+      "AIPMT 1995"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-work-energy-and-power-the-potential-energy-of-a-spring",
+    "chapter": "Work, Energy and Power",
+    "subtopic": "The Potential Energy of a Spring",
+    "class": "XI",
+    "unitId": "xi-work",
+    "unitLabel": "Unit IV — Work, Energy & Power",
+    "order": 4,
+    "title": "The Potential Energy of a Spring",
+    "summary": "In case (a), elongation (x) is same for both the springs.",
+    "body": "**Key points from solved questions**\n- Given: $$ x=2cm $$ As we know, $$ \\begin{aligned}\\mathrm{U}&=\\frac{1}{2}k x^{2}\\\\\\mathrm{U}&=\\frac{1}{2}k\\left(2\\right)^{2}=2k\\end{aligned} $$ When spring is stretched by 8 cm, then potential energy is U' given by: $$ \\begin{aligned}\\mathrm{U}^{\\prime}&=\\frac{1}{2}k\\left(8\\right)^{2}=32k\\\\\\frac{\\mathrm{U}^{\\prime}}{\\mathrm{U}}&=\\frac{32k}{2k}=16\\\\\\mathrm{U}^{\\prime}&=16\\mathrm{U}\\end{aligned} $$ Ratio, $ \\Rightarrow $\n- In case (a), elongation (x) is same for both the springs. So, work done by springs P and Q is respectively, $$ \\mathbf{W}_{\\mathrm{P}}=\\frac{1}{2}\\mathbf{K}_{\\mathrm{P}}x^{2}\\text{and}\\mathbf{W}_{\\mathrm{Q}}=\\frac{1}{2}\\mathbf{K}_{\\mathrm{Q}}x^{2} $$ If, $$ \\begin{aligned}&\\mathbf{K}_{\\mathbf{P}}>\\mathbf{K}_{\\mathbf{Q}}\\\\&\\mathbf{W}_{\\mathbf{P}}>\\mathbf{W}_{\\mathbf{Q}}\\end{aligned} $$ $$ \\Rightarrow\\therefore\\quad\\mathbf{W}_{\\mathbf{P}}>\\mathbf{W}_{\\mathbf{Q}} $$ In case (b), force of elongation (F) is same and so elongation is given by, $$ \\begin{array}{l}x_{\\mathrm{P}}=\\frac{\\mathrm{F}}{\\mathrm{K}_{P}}\\quad\\text{and}\\quad x_{\\mathrm{Q}}=\\frac{\\mathrm{F}}{\\mathrm{K}_{\\mathrm{Q}}}\\\\ \\mathrm{W}_{\\mathrm{P}}=\\frac{1}{2}\\mathrm{K}_{P}x_{\\mathrm{P}}^{2}=\\frac{1}{2}\\frac{\\mathrm{F}^{2}}{\\mathrm{K}_{P}}\\\\ \\mathrm{W}_{\\mathrm{Q}}=\\frac{1}{2}\\mathrm{K}_{\\mathrm{Q}}x_{\\mathrm{Q}}^{2}=\\frac{1}{2}\\frac{\\mathrm{F}^{2}}{\\mathrm{K}_{\\mathrm{Q}}}\\end{array} $$ $$ \\mathbf{W}_{\\mathbf{P}}<\\mathbf{W}_{\\mathbf{Q}} $$\n- When the mass attached to a spring fixed at the other end is allowed to fall suddenly, it extends the spring by x. Potential energy lost by the mass is gained by the spring. $$ \\begin{array}{c}Mgx=\\frac{1}{2}kx^{2}\\\\x=\\frac{2Mg}{k}\\end{array} $$\n- Net work done = work done by gravitational force + work done by spring force $ = mg(h+d)-\\frac{1}{2}kd^{2} $\n- According to the question, $$ \\begin{aligned}\\frac{1}{2}mv^{2}&=\\frac{1}{2}kx^{2}\\\\x&=\\sqrt[v]{\\frac{m}{k}}=1.5\\sqrt{\\frac{0.5}{50}}\\\\&=0.15m\\end{aligned} $$ ⇔\n- When the spring joined in series the total extension of spring is: $$ \\begin{aligned}y&=y_{1}+y_{2}\\\\&=\\frac{-F}{k_{1}}-\\frac{F}{k_{2}}\\end{aligned} $$ $$ y=-\\mathrm{F}\\left[\\frac{1}{k_{1}}+\\frac{1}{k_{2}}\\right] $$ $\\therefore$ Spring constant $k=\\frac{k_{1}k_{2}}{k_{1}+k_{2}}$\n- $$ \\mathrm{U}=\\frac{1}{2}\\mathrm{K}(2)^{2} $$ $$ \\mathrm{U}^{\\prime}=\\frac{1}{2}\\mathrm{K}(10)^{2} $$ From above equations (i) and (ii), $$ \\mathrm{U^{\\prime}=25U} $$\n- $$ \\mathrm{Energy}=\\frac{1}{2}\\mathrm{K}x^{2}=\\frac{1}{2}\\frac{\\mathrm{F}^{2}}{\\mathrm{K}} $$ $$ \\frac{\\mathbf{K}_{\\mathbf{A}}}{\\mathbf{K}_{\\mathbf{B}}}=2; $$ $$ \\frac{\\mathrm{E}_{\\mathrm{A}}}{\\mathrm{E}_{\\mathrm{B}}}=\\frac{\\mathrm{K}_{\\mathrm{B}}}{\\mathrm{K}_{\\mathrm{A}}}\\mathrm{~o r~}\\mathrm{E}_{\\mathrm{B}}=2\\mathrm{E}_{\\mathrm{A}} $$",
+    "formulas": [
+      {
+        "latex": "x=2cm",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}\\mathrm{U}&=\\frac{1}{2}k x^{2}\\\\\\mathrm{U}&=\\frac{1}{2}k\\left(2\\right)^{2}=2k\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}\\mathrm{U}^{\\prime}&=\\frac{1}{2}k\\left(8\\right)^{2}=32k\\\\\\frac{\\mathrm{U}^{\\prime}}{\\mathrm{U}}&=\\frac{32k}{2k}=16\\\\\\mathrm{U}^{\\prime}&=16\\mathrm{U}\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{W}_{\\mathrm{P}}=\\frac{1}{2}\\mathbf{K}_{\\mathrm{P}}x^{2}\\text{and}\\mathbf{W}_{\\mathrm{Q}}=\\frac{1}{2}\\mathbf{K}_{\\mathrm{Q}}x^{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}&\\mathbf{K}_{\\mathbf{P}}>\\mathbf{K}_{\\mathbf{Q}}\\\\&\\mathbf{W}_{\\mathbf{P}}>\\mathbf{W}_{\\mathbf{Q}}\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\Rightarrow\\therefore\\quad\\mathbf{W}_{\\mathbf{P}}>\\mathbf{W}_{\\mathbf{Q}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{array}{l}x_{\\mathrm{P}}=\\frac{\\mathrm{F}}{\\mathrm{K}_{P}}\\quad\\text{and}\\quad x_{\\mathrm{Q}}=\\frac{\\mathrm{F}}{\\mathrm{K}_{\\mathrm{Q}}}\\\\ \\mathrm{W}_{\\mathrm{P}}=\\frac{1}{2}\\mathrm{K}_{P}x_{\\mathrm{P}}^{2}=\\frac{1}{2}\\frac{\\mathrm{F}^{2}}{\\mathrm{K}_{P}}\\\\ \\mathrm{W}_{\\mathrm{Q}}=\\frac{1}{2}\\mathrm{K}_{\\mathrm{Q}}x_{\\mathrm{Q}}^{2}=\\frac{1}{2}\\frac{\\mathrm{F}^{2}}{\\mathrm{K}_{\\mathrm{Q}}}\\end{array}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{W}_{\\mathbf{P}}<\\mathbf{W}_{\\mathbf{Q}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{array}{c}Mgx=\\frac{1}{2}kx^{2}\\\\x=\\frac{2Mg}{k}\\end{array}",
+        "meaning": ""
+      },
+      {
+        "latex": "= mg(h+d)-\\frac{1}{2}kd^{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}\\frac{1}{2}mv^{2}&=\\frac{1}{2}kx^{2}\\\\x&=\\sqrt[v]{\\frac{m}{k}}=1.5\\sqrt{\\frac{0.5}{50}}\\\\&=0.15m\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}y&=y_{1}+y_{2}\\\\&=\\frac{-F}{k_{1}}-\\frac{F}{k_{2}}\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "y=-\\mathrm{F}\\left[\\frac{1}{k_{1}}+\\frac{1}{k_{2}}\\right]",
+        "meaning": ""
+      },
+      {
+        "latex": "k=\\frac{k_{1}k_{2}}{k_{1}+k_{2}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{U}=\\frac{1}{2}\\mathrm{K}(2)^{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{U}^{\\prime}=\\frac{1}{2}\\mathrm{K}(10)^{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{U^{\\prime}=25U}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{Energy}=\\frac{1}{2}\\mathrm{K}x^{2}=\\frac{1}{2}\\frac{\\mathrm{F}^{2}}{\\mathrm{K}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{\\mathbf{K}_{\\mathbf{A}}}{\\mathbf{K}_{\\mathbf{B}}}=2;",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{\\mathrm{E}_{\\mathrm{A}}}{\\mathrm{E}_{\\mathrm{B}}}=\\frac{\\mathrm{K}_{\\mathrm{B}}}{\\mathrm{K}_{\\mathrm{A}}}\\mathrm{~o r~}\\mathrm{E}_{\\mathrm{B}}=2\\mathrm{E}_{\\mathrm{A}}",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "2920ad85-f40c-4bdf-9dcf-89473f1983bc",
+      "a058f505-dfdf-49d9-a204-06622e9a7326",
+      "c4af70c5-6241-4f5b-9658-507374673a22",
+      "8eee4f24-01d8-4379-ba2f-e2a4e8c18772",
+      "6d56610c-14c2-4396-b7eb-76a47a7775bd",
+      "c1169dd2-c19c-4a5e-9106-d60ed1b3011f",
+      "192c9d55-b635-4286-9065-03c21515dd53",
+      "0bf5c5cb-9141-4fde-8df2-6f8199e6b71c"
+    ],
+    "tags": [
+      "NEET 2023, AIPMT 2006",
+      "AIPMT Cancelled 2015",
+      "AIPMT 2007",
+      "AIPMT 2004",
+      "AIPMT 2003",
+      "AIPMT 2001"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-work-energy-and-power-work",
+    "chapter": "Work, Energy and Power",
+    "subtopic": "Work",
+    "class": "XI",
+    "unitId": "xi-work",
+    "unitLabel": "Unit IV — Work, Energy & Power",
+    "order": 4,
+    "title": "Work",
+    "summary": "Work done, W = $ \\overrightarrow{F} $.S From the question.",
+    "body": "**Key points from solved questions**\n- Here $$ \\begin{array}{l}\\overrightarrow{r_{1}}=(-2\\hat{i}+5\\hat{j})\\mathbf{m},\\\\\\overrightarrow{r_{2}}=(4\\hat{j}+3\\hat{k})\\mathbf{m}\\\\\\overrightarrow{\\mathrm{F}}=(4\\hat{i}+3\\hat{j})\\mathrm{N},\\end{array} $$ Work done by force F in moving from $ \\overline{r_{1}} $ to $ \\overline{r_{2}} $, $$ \\mathbf{W}=\\mathrm{\\overrightarrow{F}}.(\\mathrm{\\overrightarrow{r_{2}}}-\\mathrm{\\overrightarrow{r_{1}}}) $$ $$ \\begin{aligned}\\mathbf{W}&=(4\\widehat{i}+3\\widehat{j}).(4\\widehat{j}+3\\widehat{k}+2\\widehat{i}-5\\widehat{j})\\\\&=(4\\widehat{i}+3\\widehat{j}).(2\\widehat{i}-\\widehat{j}+3\\widehat{k})\\end{aligned} $$ $$ \\mathbf{W}=8+(-3)=5\\mathbf{J} $$\n- Work done, W = $ \\overrightarrow{F} $.S From the question. $$ \\begin{aligned}\\vec{\\mathrm{F}}&=(3\\hat{i}+\\hat{j})\\mathrm{N}\\\\\\bar{\\mathrm{S}}&=\\bar{r}_{2}-\\bar{r}_{1}\\\\&\\{r_{1}=2\\hat{i}+\\hat{k};r_{2}=4\\hat{i}+3\\hat{j}-\\hat{k}\\}\\\\&=4\\hat{i}+3\\hat{j}-\\hat{k}-(2\\hat{i}+\\hat{k})\\\\&=(2\\hat{i}+3\\hat{j}-2\\hat{k})\\mathrm{m}\\end{aligned} $$ $ \\therefore $ $$ \\begin{aligned}\\mathbf{W}&=\\overrightarrow{\\mathbf{F}}\\cdot\\overrightarrow{\\mathbf{S}}=(3\\overrightarrow{i}+\\overrightarrow{j})\\cdot(2\\overrightarrow{i}+3\\overrightarrow{j}-2\\overrightarrow{k})\\\\&=3\\times2+3+0=9\\mathbf{J}\\end{aligned} $$ $$ \\hat{i}\\hat{j}=1,\\hat{i}\\hat{j}=0\\hat{j}\\hat{j}=1,\\hat{j}\\hat{k}=0 $$ $$ \\hat{k}.\\hat{k}=1,\\hat{k}j=0\\} $$\n- Distance $(s)=10\\ m$; Force (F)=5 N and work done, (W) = 25 J Work done (W) = Fs cosθ $$ \\circlearrowleft $$ $$ 25=5\\times10\\cos\\theta=50\\cos\\theta $$ or $$ \\theta=\\frac{25}{50}=\\frac{1}{2} $$ or $$ \\theta=60^{\\circ} $$\n- Force. $$ \\vec{\\mathbf{F}}=(-2\\hat{i}+15\\hat{j}+6\\hat{k})\\mathbf{N}, $$ $$ d=10\\hat{j} $$ $$ \\begin{aligned}\\mathbf{W}&=\\overrightarrow{\\mathbf{F}}\\overrightarrow{d}=\\left(-2\\hat{i}+15\\hat{j}+6\\hat{k}\\right).\\left(10\\hat{j}\\right)\\\\&=150\\text{Nm}=150\\text{J}\\end{aligned} $$\n- As in circular motion, displacement by the object is zero. Hence, no work is done on it.",
+    "formulas": [
+      {
+        "latex": "\\begin{array}{l}\\overrightarrow{r_{1}}=(-2\\hat{i}+5\\hat{j})\\mathbf{m},\\\\\\overrightarrow{r_{2}}=(4\\hat{j}+3\\hat{k})\\mathbf{m}\\\\\\overrightarrow{\\mathrm{F}}=(4\\hat{i}+3\\hat{j})\\mathrm{N},\\end{array}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{W}=\\mathrm{\\overrightarrow{F}}.(\\mathrm{\\overrightarrow{r_{2}}}-\\mathrm{\\overrightarrow{r_{1}}})",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}\\mathbf{W}&=(4\\widehat{i}+3\\widehat{j}).(4\\widehat{j}+3\\widehat{k}+2\\widehat{i}-5\\widehat{j})\\\\&=(4\\widehat{i}+3\\widehat{j}).(2\\widehat{i}-\\widehat{j}+3\\widehat{k})\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{W}=8+(-3)=5\\mathbf{J}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}\\vec{\\mathrm{F}}&=(3\\hat{i}+\\hat{j})\\mathrm{N}\\\\\\bar{\\mathrm{S}}&=\\bar{r}_{2}-\\bar{r}_{1}\\\\&\\{r_{1}=2\\hat{i}+\\hat{k};r_{2}=4\\hat{i}+3\\hat{j}-\\hat{k}\\}\\\\&=4\\hat{i}+3\\hat{j}-\\hat{k}-(2\\hat{i}+\\hat{k})\\\\&=(2\\hat{i}+3\\hat{j}-2\\hat{k})\\mathrm{m}\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}\\mathbf{W}&=\\overrightarrow{\\mathbf{F}}\\cdot\\overrightarrow{\\mathbf{S}}=(3\\overrightarrow{i}+\\overrightarrow{j})\\cdot(2\\overrightarrow{i}+3\\overrightarrow{j}-2\\overrightarrow{k})\\\\&=3\\times2+3+0=9\\mathbf{J}\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\hat{i}\\hat{j}=1,\\hat{i}\\hat{j}=0\\hat{j}\\hat{j}=1,\\hat{j}\\hat{k}=0",
+        "meaning": ""
+      },
+      {
+        "latex": "\\hat{k}.\\hat{k}=1,\\hat{k}j=0\\}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\circlearrowleft",
+        "meaning": ""
+      },
+      {
+        "latex": "25=5\\times10\\cos\\theta=50\\cos\\theta",
+        "meaning": ""
+      },
+      {
+        "latex": "\\theta=\\frac{25}{50}=\\frac{1}{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\theta=60^{\\circ}",
+        "meaning": ""
+      },
+      {
+        "latex": "(s)=10\\ m",
+        "meaning": ""
+      },
+      {
+        "latex": "\\vec{\\mathbf{F}}=(-2\\hat{i}+15\\hat{j}+6\\hat{k})\\mathbf{N},",
+        "meaning": ""
+      },
+      {
+        "latex": "d=10\\hat{j}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}\\mathbf{W}&=\\overrightarrow{\\mathbf{F}}\\overrightarrow{d}=\\left(-2\\hat{i}+15\\hat{j}+6\\hat{k}\\right).\\left(10\\hat{j}\\right)\\\\&=150\\text{Nm}=150\\text{J}\\end{aligned}",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "19e4da08-2a17-443d-8f2c-4e46d0bfedc2",
+      "3c7981c6-c1df-4470-8b15-c16d0dd87842",
+      "852007a2-04fa-4711-9268-dba5429ea30d",
+      "426f0ecd-a4aa-485b-9438-28bd0f6f4e89",
+      "17832e3d-f92a-424f-83ec-3fed9fc71d06"
+    ],
+    "tags": [
+      "NEET Phase-II 2016",
+      "NEET 2013",
+      "AIPMT 1997",
+      "AIPMT 1994"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-work-energy-and-power-work-done-by-a-variable-force",
+    "chapter": "Work, Energy and Power",
+    "subtopic": "Work Done by a Variable Force",
+    "class": "XI",
+    "unitId": "xi-work",
+    "unitLabel": "Unit IV — Work, Energy & Power",
+    "order": 4,
+    "title": "Work Done by a Variable Force",
+    "summary": "<div style=\"text-align: center;\"><img…",
+    "body": "**Key points from solved questions**\n- Work done by variable force is, $$ \\mathbf{W}=\\begin{array}{c}\\displaystyle\\int\\limits_{y_{i}}^{y_{f}}\\mathbf{F}d y\\end{array} $$ Here, $ y_{i}=0 $ and $ y_{f}=1 $ m $$ \\begin{aligned}\\mathbf{W}&=\\int\\limits_{y_{i}}^{y_{f}}(20+10y)dy\\\\&=\\left[20y+\\frac{10y^{2}}{2}\\right]_{0}^{1}=25\\mathrm{~J}\\end{aligned} $$\n- <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//801437ad-f7f4-4e82-8d54-0bcbc0170754/markdown_1/imgs/img_in_image_box_161_994_466_1136.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A09Z%2F-1%2F%2F3f3415200d4dbe8f86e98b4e98ec533f3c4e29c49d002cfaf57a95c8e38e57f9\" alt=\"Image\" width=\"25%\" /></div> From work-energy theorem, $ \\Delta K = \\text{work} = \\text{area under } F-x \\text{ graph} $ from x = 0 to x = 8 m $$ \\frac{1}{2}m\\mathrm{v}^{2}=100+30 $$ $$ \\frac{1}{2}\\times\\frac{1}{2}\\times\\mathrm{v}^{2}=130 $$ $$ \\mathbf{v}^{2}=520 $$ $$ \\mathrm{v~=~\\sqrt{5}20~=22.8~m/s} $$ $$ x=0\\text{ to}x=12m $$ from $$ \\frac{1}{2}m\\mathbf{v}^{2}=100+30-45+20 $$ $$ \\begin{array}{l} \\text{v } =\\sqrt{420} \\\\ \\text{v } = 20.5\\ \\text{m/s} \\end{array} $$\n- From question, Work done = Area under (F - d) graph $$ \\begin{aligned}k\\ done&=Area\\ under\\ (F-d)\\ graph\\\\&=2\\times(7-3)+\\frac{1}{2}\\times2\\times(12-7)\\\\&=8+\\frac{1}{2}\\times10\\\\&=8+5=13\\ J\\end{aligned} $$\n- It is given that: $$ s=\\frac{t^{2}}{3} $$ Differentiating w.r.t. $t$, we have, $$ \\mathrm{U}=\\frac{d s}{d t}=\\frac{2t}{3} $$ Again differentiating w.r.t. $t$, we have, $$ a=\\frac{d^{2}s}{dt^{2}}=\\frac{2}{3} $$ Now, $$ \\begin{array}{l}\\text{W}=\\displaystyle\\int\\text{F}d s=\\displaystyle\\int m a~d s\\\\ \\quad=\\displaystyle\\int_{0}^{2}m\\times\\frac{2}{3}\\times\\frac{2t}{3}d t\\\\ \\quad=\\frac{4}{9}m\\displaystyle\\int_{0}^{2}t~d t\\end{array} $$ $$ \\begin{aligned}W&=\\frac{4}{9}m\\times\\left[\\frac{t^{2}}{2}\\right]_{0}^{2}\\\\&=\\frac{4}{9}\\times3\\times2=\\frac{8}{3}J\\end{aligned} $$\n- Work done = Area under F - x graph. = area of trapezium = $ \\frac{1}{2}\\times(6+3)\\times3=\\frac{27}{2}=13.5 $ J\n- Given, $$ x=3t-4t^{2}+t^{3} $$ So, velocity $$ \\mathbf{v}=\\frac{dx}{dt}=3-8t+3t^{2} $$ At t = 0 s, $$ v_{1}=3-0+0=3m/s $$ At $ t = 4 \\, s $, $$ \\begin{aligned}V_{2}&=3-8\\times4+3\\times4^{2}\\\\&=3-32+48=19m/s\\end{aligned} $$ Now, during $t=0$ to $t=4$ s $$ \\begin{aligned}work~done&=gain~in~kinetic~energy\\\\&=\\frac{1}{2}m v_{2}^{2}-\\frac{1}{2}m v_{1}^{2}\\\\&=\\frac{1}{2}m\\left(v_{2}^{2}-v_{1}^{2}\\right)\\\\&=\\frac{1}{2}\\times3\\times10^{-3}\\left[(19)^{2}-(3)^{2}\\right]\\\\ \\end{aligned} $$ $$ \\begin{aligned}[\\text{Using},a^{2}-b^{2}]&=(a+b)(a-b)]\\\\&=1.5\\times10^{-3}\\times[(19+3)(19-3)]\\\\&=1.5\\times10^{-3}\\times22\\times16\\\\&=528\\times10^{-3}\\text{J}=528\\text{mJ}\\end{aligned} $$\n- Work done by a variable force F in displacement from $x = x_{1}$ to $x = x_{2}$ is given by, Given. $$ \\mathbf{W}=\\int_{x_{1}}^{x_{2}}\\mathbf{F}dx $$ $$ x_{1}=0,x_{2}=5 $$ $$ \\mathbf{F}=\\left(7-2x+3x^{2}\\right)\\mathbf{N} $$ $$ \\begin{aligned}\\mathbf{W}&=\\int_{0}^{5}\\quad(7-2x+3x^{2})dx\\\\&=\\left[7x-x^{2}+x^{3}\\right]_{0}^{5}\\\\&=\\left[7\\times5-(5)^{2}+(5)^{3}\\right]\\\\&=\\left[35-25+125\\right]=135J\\end{aligned} $$",
+    "formulas": [
+      {
+        "latex": "\\mathbf{W}=\\begin{array}{c}\\displaystyle\\int\\limits_{y_{i}}^{y_{f}}\\mathbf{F}d y\\end{array}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}\\mathbf{W}&=\\int\\limits_{y_{i}}^{y_{f}}(20+10y)dy\\\\&=\\left[20y+\\frac{10y^{2}}{2}\\right]_{0}^{1}=25\\mathrm{~J}\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "y_{i}=0",
+        "meaning": ""
+      },
+      {
+        "latex": "y_{f}=1",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{1}{2}m\\mathrm{v}^{2}=100+30",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{1}{2}\\times\\frac{1}{2}\\times\\mathrm{v}^{2}=130",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{v}^{2}=520",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{v~=~\\sqrt{5}20~=22.8~m/s}",
+        "meaning": ""
+      },
+      {
+        "latex": "x=0\\text{ to}x=12m",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{1}{2}m\\mathbf{v}^{2}=100+30-45+20",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{array}{l} \\text{v } =\\sqrt{420} \\\\ \\text{v } = 20.5\\ \\text{m/s} \\end{array}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\Delta K = \\text{work} = \\text{area under } F-x \\text{ graph}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}k\\ done&=Area\\ under\\ (F-d)\\ graph\\\\&=2\\times(7-3)+\\frac{1}{2}\\times2\\times(12-7)\\\\&=8+\\frac{1}{2}\\times10\\\\&=8+5=13\\ J\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "s=\\frac{t^{2}}{3}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{U}=\\frac{d s}{d t}=\\frac{2t}{3}",
+        "meaning": ""
+      },
+      {
+        "latex": "a=\\frac{d^{2}s}{dt^{2}}=\\frac{2}{3}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{array}{l}\\text{W}=\\displaystyle\\int\\text{F}d s=\\displaystyle\\int m a~d s\\\\ \\quad=\\displaystyle\\int_{0}^{2}m\\times\\frac{2}{3}\\times\\frac{2t}{3}d t\\\\ \\quad=\\frac{4}{9}m\\displaystyle\\int_{0}^{2}t~d t\\end{array}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}W&=\\frac{4}{9}m\\times\\left[\\frac{t^{2}}{2}\\right]_{0}^{2}\\\\&=\\frac{4}{9}\\times3\\times2=\\frac{8}{3}J\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{1}{2}\\times(6+3)\\times3=\\frac{27}{2}=13.5",
+        "meaning": ""
+      },
+      {
+        "latex": "x=3t-4t^{2}+t^{3}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{v}=\\frac{dx}{dt}=3-8t+3t^{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "v_{1}=3-0+0=3m/s",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}V_{2}&=3-8\\times4+3\\times4^{2}\\\\&=3-32+48=19m/s\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}work~done&=gain~in~kinetic~energy\\\\&=\\frac{1}{2}m v_{2}^{2}-\\frac{1}{2}m v_{1}^{2}\\\\&=\\frac{1}{2}m\\left(v_{2}^{2}-v_{1}^{2}\\right)\\\\&=\\frac{1}{2}\\times3\\times10^{-3}\\left[(19)^{2}-(3)^{2}\\right]\\\\ \\end{aligned}",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "398bd724-371a-4506-86cb-40eba1cce7e7",
+      "e856bb10-fffa-4702-9def-9b2f61103135",
+      "81fac636-7336-4286-9353-b9944d6481f7",
+      "a260451e-8582-43f8-8bee-8f86119bb241",
+      "4d01abcf-63da-477a-a967-cfa42ec3ecc7",
+      "8cc2b348-d6e7-4d86-bf61-712bff4d13a5",
+      "ecc46483-6bd7-437f-b33b-86c1d4e4f9c5"
+    ],
+    "tags": [
+      "NEET 2019",
+      "AIPMT 2006",
+      "AIPMT 2005",
+      "AIPMT 1998",
+      "AIPMT 1992"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-work-energy-and-power-reneet2026",
+    "chapter": "Work, Energy and Power",
+    "subtopic": "reNEET2026",
+    "class": "XI",
+    "unitId": "xi-work",
+    "unitLabel": "Unit IV — Work, Energy & Power",
+    "order": 4,
+    "title": "reNEET2026",
+    "summary": "In a one-dimensional elastic collision between equal masses, the velocities are exchanged: A stops and B moves off with 10 ms$^{-1}$.",
+    "body": "**Key points from solved questions**\n- $\\mu_0=\\alpha L$. $|W_f|=\\int_0^L(\\mu_0-\\alpha x)Mg\\,dx=\\mu_0 MgL-\\tfrac{\\alpha MgL^2}{2}=\\tfrac{1}{2}\\mu_0 MgL$, so $n=\\tfrac12$.\n- In a one-dimensional elastic collision between equal masses, the velocities are exchanged: A stops and B moves off with 10 ms$^{-1}$. Then $h=\\dfrac{v^2}{2g}=\\dfrac{100}{20}=5$ m.",
+    "formulas": [
+      {
+        "latex": "\\mu_0=\\alpha L",
+        "meaning": ""
+      },
+      {
+        "latex": "|W_f|=\\int_0^L(\\mu_0-\\alpha x)Mg\\,dx=\\mu_0 MgL-\\tfrac{\\alpha MgL^2}{2}=\\tfrac{1}{2}\\mu_0 MgL",
+        "meaning": ""
+      },
+      {
+        "latex": "n=\\tfrac12",
+        "meaning": ""
+      },
+      {
+        "latex": "h=\\dfrac{v^2}{2g}=\\dfrac{100}{20}=5",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "renet2026-phy-01",
+      "renet2026-phy-44"
+    ],
+    "tags": [
+      "reNEET 2026"
+    ],
+    "source": "seed"
+  }
+]

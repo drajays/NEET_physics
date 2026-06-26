@@ -1,0 +1,1231 @@
+[
+  {
+    "id": "note-gravitation-acceleration-due-to-gravity-below-and-above-the-surface-of-earth",
+    "chapter": "Gravitation",
+    "subtopic": "Acceleration Due to Gravity Below and Above the Surface of Earth",
+    "class": "XI",
+    "unitId": "xi-rotation",
+    "unitLabel": "Unit V — Systems & Rigid Bodies",
+    "order": 6,
+    "title": "Acceleration Due to Gravity Below and Above the Surface of Earth",
+    "summary": "Below the surface of Earth, acceleration due to gravity is: $$ g^{\\prime}=g\\left(1-\\frac{d}{R}\\right) $$ <div style=\"text-align: center;\"><img…",
+    "body": "**Key points from solved questions**\n- The acceleration due to gravity at height $h$ above the Earth's surface is given by, $$ g=\\frac{\\mathrm{G M}}{(\\mathrm{R}_{e}+h)^{2}} $$ At point x, $$ g_{1}=\\frac{\\mathrm{G M}}{\\left(3\\mathrm{R}_{e}\\right)^{2}} $$ At point $y$, $$ g_{2}=\\frac{\\mathrm{G M}}{\\left(\\frac{5\\mathrm{R}_{e}}{2}\\right)^{2}} $$ Change in weight, $$ \\begin{array}{l} \\displaystyle \\Delta \\mathbf{W} = m g_{2} - m g_{1} \\\\ \\displaystyle \\qquad = m \\left[ \\frac{4}{25} - \\frac{1}{9} \\right] \\frac{\\mathbf{G}\\mathbf{M}}{\\mathbf{R}_{o}^{2}} \\\\ \\displaystyle \\qquad = \\frac{11 m g}{225} \\\\ \\displaystyle \\qquad = \\frac{11}{225} \\times 100 \\times 10 \\\\ \\displaystyle \\qquad = 48.89 \\simeq 49 \\text{N} \\end{array} $$\n- Radius of Earth = R Let at depth $d$, gravitational acceleration become $\\frac{g}{n}$. $$ g_{d}=g_{o}\\left(1-\\frac{d}{\\mathbf{R}}\\right) $$ $$ \\frac{g_{o}}{n}=g_{o}\\left(1-\\frac{d}{R}\\right) $$ $$ \\frac{1}{n}=1-\\frac{d}{\\mathbf{R}} $$ $$ \\mathrm{\\frac{d}{R}}=1-\\frac{1}{n} $$ $$ \\mathrm{\\frac{d}{R}}=\\left(\\mathrm{\\frac{n-1}{n}}\\right) $$ $$ d=\\left(\\frac{n-1}{n}\\right)R. $$\n- Given, W = mg = 72 N on surface of the Earth. At height h, equal to half of radius of Earth. $$ h=\\frac{\\mathbf{R}}{2} $$ ∴ Acceleration due to gravity, $$ \\begin{aligned}g^{\\prime}&=g\\left(\\frac{\\mathbf{R}}{\\mathbf{R}+h}\\right)^{2}\\\\&=\\mathbf{g}\\left(\\frac{\\mathbf{R}}{\\mathbf{R}+\\frac{\\mathbf{R}}{2}}\\right)^{2}\\\\&=g\\left(\\frac{4\\mathbf{R}^{2}}{9\\mathbf{R}^{2}}\\right)\\\\ \\end{aligned} $$ $$ g^{\\prime}=g\\times\\frac{4}{9} $$ $$ \\begin{array}{l} \\text{mg}' = m g \\times \\frac{4}{9} \\\\ \\qquad = \\frac{4}{9} \\times 72 \\end{array} $$ $$ mg^{\\prime}=32\\mathrm{N} $$\n- Below the surface of Earth, acceleration due to gravity is: $$ g^{\\prime}=g\\left(1-\\frac{d}{R}\\right) $$ <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//e388feab-a2f5-49e5-95be-f7d5bd0c7541/markdown_3/imgs/img_in_image_box_848_853_970_1000.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A30Z%2F-1%2F%2F83a06550c0acd4a2af37c3e35711c1b2e66596d323c7690c5d934f117e8ac4d6\" alt=\"Image\" width=\"10%\" /></div> Where, d = depth, R = radius of Earth $g = \\text{acceleration due to gravity}$ Multiply m in both sides of equations. Given, $$ m g^{\\prime}=m g\\left(1-\\frac{d}{R}\\right) $$ Given. $$ \\mathrm{W}=m\\mathrm{g}=200 $$ $$ d=\\frac{\\mathrm{R}}{2} $$ Putting these values in eq. (ii), we get $$ \\begin{aligned}mg)&=200\\left(1-\\frac{R}{\\frac{2}{R}}\\right)=200\\left(1-\\frac{1}{2}\\right)\\\\&=200\\times\\frac{1}{2}\\\\&=100\\text{N}\\\\ \\end{aligned} $$ ∴ The body will weight 100 N half way down to the centre of Earth.\n- Given, Acceleration due to gravity at depth $d$ is, $$ g^{\\prime}=g\\left(1-\\frac{d}{\\mathbf{R}}\\right) $$ Where, R = radius of Earth And Acceleration due to gravity at height $h$ is, $$ g^{\\prime \\prime}=g\\left(1-\\frac{2h}{\\mathrm{R}}\\right) $$ According to question, $$ g^{\\prime}=g\\mathrm{\\,a n d\\,\\,}h=1\\mathrm{\\,k m} $$ $$ \\circ\\circ $$ $$ g\\left(1-\\frac{d}{R}\\right)=g\\left(1-\\frac{2h}{R}\\right) $$ (putting h = 1) $$ g\\left(1-\\frac{d}{\\mathrm{R}}\\right)=g\\left(1-\\frac{2}{\\mathrm{R}}\\right) $$ $$ \\frac{d}{R}=\\frac{2}{R} $$ $$ d=2\\mathrm{k m} $$\n- According to the question, $$ \\frac{GMm}{\\left(R+h\\right)^{2}}=\\frac{1}{16}\\frac{GMm}{R^{2}} $$ Where, R = Radius of Earth $$ \\frac{1}{\\left(R+h\\right)^{2}}=\\frac{1}{16R^{2}} $$ $$ \\frac{\\mathrm{R}}{\\mathrm{R}+h}=\\frac{1}{4} $$ $$ \\frac{\\mathbf{R}+h}{\\mathbf{R}}=4 $$ $$ h=3R $$",
+    "formulas": [
+      {
+        "latex": "g=\\frac{\\mathrm{G M}}{(\\mathrm{R}_{e}+h)^{2}}",
+        "meaning": ""
+      },
+      {
+        "latex": "g_{1}=\\frac{\\mathrm{G M}}{\\left(3\\mathrm{R}_{e}\\right)^{2}}",
+        "meaning": ""
+      },
+      {
+        "latex": "g_{2}=\\frac{\\mathrm{G M}}{\\left(\\frac{5\\mathrm{R}_{e}}{2}\\right)^{2}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{array}{l} \\displaystyle \\Delta \\mathbf{W} = m g_{2} - m g_{1} \\\\ \\displaystyle \\qquad = m \\left[ \\frac{4}{25} - \\frac{1}{9} \\right] \\frac{\\mathbf{G}\\mathbf{M}}{\\mathbf{R}_{o}^{2}} \\\\ \\displaystyle \\qquad = \\frac{11 m g}{225} \\\\ \\displaystyle \\qquad = \\frac{11}{225} \\times 100 \\times 10 \\\\ \\displaystyle \\qquad = 48.89 \\simeq 49 \\text{N} \\end{array}",
+        "meaning": ""
+      },
+      {
+        "latex": "g_{d}=g_{o}\\left(1-\\frac{d}{\\mathbf{R}}\\right)",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{g_{o}}{n}=g_{o}\\left(1-\\frac{d}{R}\\right)",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{1}{n}=1-\\frac{d}{\\mathbf{R}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{\\frac{d}{R}}=1-\\frac{1}{n}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{\\frac{d}{R}}=\\left(\\mathrm{\\frac{n-1}{n}}\\right)",
+        "meaning": ""
+      },
+      {
+        "latex": "d=\\left(\\frac{n-1}{n}\\right)R.",
+        "meaning": ""
+      },
+      {
+        "latex": "h=\\frac{\\mathbf{R}}{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}g^{\\prime}&=g\\left(\\frac{\\mathbf{R}}{\\mathbf{R}+h}\\right)^{2}\\\\&=\\mathbf{g}\\left(\\frac{\\mathbf{R}}{\\mathbf{R}+\\frac{\\mathbf{R}}{2}}\\right)^{2}\\\\&=g\\left(\\frac{4\\mathbf{R}^{2}}{9\\mathbf{R}^{2}}\\right)\\\\ \\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "g^{\\prime}=g\\times\\frac{4}{9}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{array}{l} \\text{mg}' = m g \\times \\frac{4}{9} \\\\ \\qquad = \\frac{4}{9} \\times 72 \\end{array}",
+        "meaning": ""
+      },
+      {
+        "latex": "mg^{\\prime}=32\\mathrm{N}",
+        "meaning": ""
+      },
+      {
+        "latex": "g^{\\prime}=g\\left(1-\\frac{d}{R}\\right)",
+        "meaning": ""
+      },
+      {
+        "latex": "m g^{\\prime}=m g\\left(1-\\frac{d}{R}\\right)",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{W}=m\\mathrm{g}=200",
+        "meaning": ""
+      },
+      {
+        "latex": "d=\\frac{\\mathrm{R}}{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}mg)&=200\\left(1-\\frac{R}{\\frac{2}{R}}\\right)=200\\left(1-\\frac{1}{2}\\right)\\\\&=200\\times\\frac{1}{2}\\\\&=100\\text{N}\\\\ \\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "g = \\text{acceleration due to gravity}",
+        "meaning": ""
+      },
+      {
+        "latex": "g^{\\prime}=g\\left(1-\\frac{d}{\\mathbf{R}}\\right)",
+        "meaning": ""
+      },
+      {
+        "latex": "g^{\\prime \\prime}=g\\left(1-\\frac{2h}{\\mathrm{R}}\\right)",
+        "meaning": ""
+      },
+      {
+        "latex": "g^{\\prime}=g\\mathrm{\\,a n d\\,\\,}h=1\\mathrm{\\,k m}",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "41e6d719-b18b-46d9-ad4d-f145a46e9dd3",
+      "c8ff0d70-8050-4426-bd73-4d5ff293f00f",
+      "dba07aad-605d-47fe-affd-7cd9cf5b8e30",
+      "4f2142f9-0034-4250-bfee-674a9232f449",
+      "35535a59-d00f-43b8-a0c8-e4978caf1a05",
+      "673bbe0a-6de5-409b-b034-1e40a9baa2a6"
+    ],
+    "tags": [
+      "Re-NEET 2024",
+      "NEET 2020",
+      "NEET 2020, AIPMT 2000",
+      "NEET 2019",
+      "NEET 2017"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-gravitation-acceleration-due-to-gravity-of-the-earth",
+    "chapter": "Gravitation",
+    "subtopic": "Acceleration Due to Gravity of the Earth",
+    "class": "XI",
+    "unitId": "xi-rotation",
+    "unitLabel": "Unit V — Systems & Rigid Bodies",
+    "order": 6,
+    "title": "Acceleration Due to Gravity of the Earth",
+    "summary": "Let: $ M_{e} = \\text{Original mass of Earth} $ G = Gravitational constant Then from question, ∴ New gravitational constant $$ \\mathrm{G}^{\\prime}=10\\mathrm{G} $$ We know that, Acceleration due to gravity, $$…",
+    "body": "**Key points from solved questions**\n- As $$ g=\\frac{G M}{R^{2}}=9.8m/s^{2} $$ $$ (g=9.8\\;\\mathrm{m/s^{2}}) $$ Now for planet. $$ \\mathbf{M}=\\frac{\\mathbf{M}}{10} $$ [Given: $ \\frac{1}{10} $ m of Earth] $$ \\mathbf{D}^{\\prime}=\\frac{\\mathbf{D}}{2} $$ [Given: half of the Earth] $$ \\mathbf{R}^{\\prime}=\\frac{\\mathbf{R}}{2} $$ Now $$ \\begin{aligned}\\mathbf{g}^{\\prime}&=\\frac{\\mathrm{GM}^{\\prime}}{(\\mathrm{R}^{\\prime})^{2}}=\\frac{\\mathrm{GM}\\times4}{10\\times\\mathrm{R}^{2}}\\\\&=\\frac{4}{10}\\times\\frac{\\mathrm{GM}}{\\mathrm{R}^{2}}\\end{aligned} $$ Using eqn (i), we get $$ g^{\\prime}=0.4\\times9.8\\mathrm{~m/s^{2}}=3.92\\mathrm{~m/s^{2}}. $$\n- Let: $ M_{e} = \\text{Original mass of Earth} $ G = Gravitational constant Then from question, ∴ New gravitational constant $$ \\mathrm{G}^{\\prime}=10\\mathrm{G} $$ We know that, Acceleration due to gravity, $$ g=\\frac{GM_{e}}{R^{2}} $$ $$ M_{e}=mass of Earth $$ New acceleration due to gravity, $$ \\begin{array}{l}\\mathrm{g}^{\\prime}=\\frac{\\mathrm{G}\\mathrm{M}_{e}}{\\mathrm{R}^{2}}\\\\=\\frac{10\\mathrm{M}_{e}\\mathrm{G}}{\\mathrm{R}^{2}}\\end{array} $$ $$ g^{\\prime}=10g $$ $$ \\Rightarrow $$ We also know that time period of simple pendulum is, $$ \\mathrm{T}=2\\pi\\sqrt{\\frac{l}{g}} $$ $$ \\mathrm{T}\\propto\\sqrt{\\frac{l}{g}} $$ or This confirms that time period of pendulum also decreases with the increase in g.\n- We know that, Gravitational force, $$ \\mathrm{F}=\\frac{\\mathrm{GM}_{e}m}{\\mathrm{R}^{2}} $$ and $$ \\begin{aligned}F&=\\frac{\\mathrm{G}\\mathrm{M}_{\\mathrm{p}}m}{\\left(\\mathrm{D}_{\\mathrm{p}}/2\\right)^{2}}\\\\&=\\frac{4\\mathrm{G}\\mathrm{M}_{\\mathrm{p}}m}{\\mathrm{D}_{\\mathrm{p}}^{2}}\\end{aligned} $$ And $$ \\mathbf{F}=ma $$ $$ a=\\frac{F}{m} $$ $$ \\begin{array}{l}a=\\displaystyle\\frac{4\\mathrm{GM_{p}}m}{(\\mathrm{D_{p}^{2}}.m)}\\\\ =\\displaystyle\\frac{4\\mathrm{GM_{p}}}{\\mathrm{D_{p}^{2}}}\\end{array} $$\n- $$ \\begin{array}{l}g=\\frac{\\mathrm{G}\\mathbf{M}}{\\mathbf{R}^{2}}=\\frac{\\mathrm{G}\\frac{4}{3}\\pi\\mathbf{R}^{3}\\rho}{\\mathbf{R}^{2}}\\\\ =\\frac{4}{3}\\mathbf{G}\\pi\\mathbf{R}\\rho\\end{array} $$ $$ \\begin{aligned}g^{\\prime}&=\\frac{4}{3}\\mathbf{G}\\pi\\left(3\\mathbf{R}\\right)\\boldsymbol{\\rho}\\\\&=3g\\end{aligned} $$\n- We know that: $$ \\frac{\\mathbf{G}\\mathbf{M}_{p}}{\\mathbf{R}_{p}^{2}}\\;=\\;\\frac{\\mathbf{G}\\mathbf{M}_{e}}{\\mathbf{R}_{e}^{2}} $$ $$ \\frac{\\mathbf{G}\\times\\frac{4}{3}\\boldsymbol{\\pi}\\mathbf{R}_{p}^{3}\\boldsymbol{\\rho}_{p}}{\\mathbf{R}_{p}^{2}}=\\frac{\\mathbf{G}\\times\\frac{4}{3}\\boldsymbol{\\pi}\\mathbf{R}_{e}^{3}\\boldsymbol{\\rho}_{e}}{\\mathbf{R}_{e}^{2}} $$ we get, $$ \\mathrm{R}_{p}\\uprho_{p}=\\mathrm{R}_{e}\\uprho_{e} $$ Given. $$ \\uprho_{p}=2\\uprho_{e} $$ then $$ \\mathrm{\\bf~R}_{p}\\times2\\uprho_{\\mathrm{e}}=\\mathrm{\\bf~R}_{e}\\uprho_{e} $$ $$ \\mathbf{R}_{p}=\\frac{\\mathbf{R}_{r}}{2}=\\frac{\\mathbf{R}}{2} $$\n- Height of jump on the planet B $$= \\frac{g_{\\mathrm{A}}}{g_{\\mathrm{B}}} \\times \\text{height of jump on the planet A}$$ $$= 2 \\times 9 = 18 \\, \\mathrm{m}$$\n- As we know, $$ \\mathrm{F}=\\frac{\\mathrm{GMm}}{\\mathrm{R}^{2}} $$ $$ mg=\\frac{GMm}{R^{2}} $$ $$ g=\\frac{\\mathrm{G M}}{\\mathrm{R}^{2}} $$ So, $$ \\mathbf{M}=\\frac{g\\mathbf{R}^{2}}{G} $$\n- Acceleration due to gravity $$ \\begin{array}{l}g=\\mathrm{G}\\times\\frac{\\mathbf{M}}{\\mathbf{R}^{2}}\\\\=\\mathrm{G}\\frac{(4/3)\\pi\\mathbf{R}^{3}\\times\\rho}{\\mathbf{R}^{2}}\\\\ \\cdot=\\mathrm{G}\\times\\frac{4}{3}\\pi\\mathbf{R}\\times\\rho\\end{array} $$ $$ \\rho=\\frac{3g}{4\\pi GR} $$ or\n- Given, Radius of Earth $ R_{e} $ = 6400 km; Radius of Mars $ R_{m} $ = 3200 km; Mass of Earth $ M_{e} $ = 10 M_{m} and Weight of the object on Earth $ W_{e} $ = 200 N. $$ \\begin{aligned}\\frac{\\mathrm{W}_{m}}{\\mathrm{W}_{e}}&=\\frac{m g_{m}}{m g_{e}}=\\frac{\\mathrm{M}_{m}}{\\mathrm{M}_{e}}\\times\\left(\\frac{\\mathrm{R}_{e}}{\\mathrm{R}_{m}}\\right)^{2}\\\\&=\\frac{1}{10}\\times(2)^{2}=\\frac{2}{5}\\end{aligned} $$ or $$ \\mathbf{W}_{m}=\\mathbf{W}_{e}\\times\\frac{2}{5}=200\\times0.4=80\\mathrm{~N} $$",
+    "formulas": [
+      {
+        "latex": "g=\\frac{G M}{R^{2}}=9.8m/s^{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "(g=9.8\\;\\mathrm{m/s^{2}})",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{M}=\\frac{\\mathbf{M}}{10}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{D}^{\\prime}=\\frac{\\mathbf{D}}{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{R}^{\\prime}=\\frac{\\mathbf{R}}{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}\\mathbf{g}^{\\prime}&=\\frac{\\mathrm{GM}^{\\prime}}{(\\mathrm{R}^{\\prime})^{2}}=\\frac{\\mathrm{GM}\\times4}{10\\times\\mathrm{R}^{2}}\\\\&=\\frac{4}{10}\\times\\frac{\\mathrm{GM}}{\\mathrm{R}^{2}}\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "g^{\\prime}=0.4\\times9.8\\mathrm{~m/s^{2}}=3.92\\mathrm{~m/s^{2}}.",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{G}^{\\prime}=10\\mathrm{G}",
+        "meaning": ""
+      },
+      {
+        "latex": "g=\\frac{GM_{e}}{R^{2}}",
+        "meaning": ""
+      },
+      {
+        "latex": "M_{e}=mass of Earth",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{array}{l}\\mathrm{g}^{\\prime}=\\frac{\\mathrm{G}\\mathrm{M}_{e}}{\\mathrm{R}^{2}}\\\\=\\frac{10\\mathrm{M}_{e}\\mathrm{G}}{\\mathrm{R}^{2}}\\end{array}",
+        "meaning": ""
+      },
+      {
+        "latex": "g^{\\prime}=10g",
+        "meaning": ""
+      },
+      {
+        "latex": "\\Rightarrow",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{T}=2\\pi\\sqrt{\\frac{l}{g}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{T}\\propto\\sqrt{\\frac{l}{g}}",
+        "meaning": ""
+      },
+      {
+        "latex": "M_{e} = \\text{Original mass of Earth}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{F}=\\frac{\\mathrm{GM}_{e}m}{\\mathrm{R}^{2}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}F&=\\frac{\\mathrm{G}\\mathrm{M}_{\\mathrm{p}}m}{\\left(\\mathrm{D}_{\\mathrm{p}}/2\\right)^{2}}\\\\&=\\frac{4\\mathrm{G}\\mathrm{M}_{\\mathrm{p}}m}{\\mathrm{D}_{\\mathrm{p}}^{2}}\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{F}=ma",
+        "meaning": ""
+      },
+      {
+        "latex": "a=\\frac{F}{m}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{array}{l}a=\\displaystyle\\frac{4\\mathrm{GM_{p}}m}{(\\mathrm{D_{p}^{2}}.m)}\\\\ =\\displaystyle\\frac{4\\mathrm{GM_{p}}}{\\mathrm{D_{p}^{2}}}\\end{array}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{array}{l}g=\\frac{\\mathrm{G}\\mathbf{M}}{\\mathbf{R}^{2}}=\\frac{\\mathrm{G}\\frac{4}{3}\\pi\\mathbf{R}^{3}\\rho}{\\mathbf{R}^{2}}\\\\ =\\frac{4}{3}\\mathbf{G}\\pi\\mathbf{R}\\rho\\end{array}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}g^{\\prime}&=\\frac{4}{3}\\mathbf{G}\\pi\\left(3\\mathbf{R}\\right)\\boldsymbol{\\rho}\\\\&=3g\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{\\mathbf{G}\\mathbf{M}_{p}}{\\mathbf{R}_{p}^{2}}\\;=\\;\\frac{\\mathbf{G}\\mathbf{M}_{e}}{\\mathbf{R}_{e}^{2}}",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "0482350b-d9af-495f-b7d7-8e39794759e0",
+      "752a7739-6c04-496b-9ee7-142211cb6b2c",
+      "bba8790b-89c0-48d6-bfae-8c08dc633efc",
+      "16b668bf-1c47-4113-a6fa-2748d7e821dc",
+      "893eae05-bdf0-423f-8505-86655ff93638",
+      "f4ecc82b-15be-4707-8b86-24b2c2c556ec",
+      "ee7ab30d-5e9c-403d-b675-cb1f2a4220bf",
+      "8fbfb545-a4b0-447b-9876-9fc0bb64c5ee",
+      "2cc58630-5ced-4ffc-87b8-7d56d5d1b110"
+    ],
+    "tags": [
+      "NEET 2024",
+      "NEET 2018",
+      "AIPMT Screening 2012",
+      "AIPMT 2005",
+      "AIPMT 2004",
+      "AIPMT 2003",
+      "AIPMT 1996",
+      "AIPMT 1995",
+      "AIPMT 1994"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-gravitation-earth-satellites",
+    "chapter": "Gravitation",
+    "subtopic": "Earth Satellites",
+    "class": "XI",
+    "unitId": "xi-rotation",
+    "unitLabel": "Unit V — Systems & Rigid Bodies",
+    "order": 6,
+    "title": "Earth Satellites",
+    "summary": "Let the planet is moving above the earth surface at R distance.",
+    "body": "**Key points from solved questions**\n- Let the planet is moving above the earth surface at R distance. $$ \\mathrm{T}=\\frac{2\\pi\\mathrm{R}}{\\mathrm{v}} $$ As we know centripetal force of satellite is due to gravitational force of earth, ⇔ $$ \\begin{array}{c}\\frac{\\mathrm{G}\\mathrm{M}m}{\\mathrm{R}^{2}}=\\frac{mv^{2}}{\\mathrm{R}}\\\\\\frac{\\mathrm{G}\\mathrm{M}}{\\mathrm{R}}=\\mathrm{v}^{2}\\\\\\mathrm{v}=\\sqrt{\\frac{\\mathrm{G}\\mathrm{M}}{\\mathrm{R}}\\end{array} $$ or As we know, $$ \\begin{aligned}&T=\\frac{2\\pi R}{v}\\\\&T=2\\pi R\\sqrt{\\frac{R}{GM}}\\end{aligned} $$ $$ \\begin{array}{l}\\mathrm{T}^{2}=\\frac{4\\pi^{2}\\mathrm{R}^{3}}{\\mathrm{G}\\left(d\\times\\frac{4}{3}\\pi\\mathrm{R}^{3}\\right)}\\\\=\\frac{3\\pi}{\\mathrm{G}d}\\end{array} $$ Hence, $$ \\frac{3\\pi}{\\mathrm{G}d}=\\mathrm{T}^{2} $$\n- Mass of satellite is very small. Centre of mass of system coincides with centre of Earth.\n- From the question, $$ \\mathrm{v_{escape}}=\\sqrt{\\frac{2\\mathrm{G M}}{\\mathrm{R}}}=\\mathrm{v_{e}} $$ and $$ \\mathrm{V}_{\\mathrm{orbital}}=\\sqrt{\\frac{\\mathrm{GM}}{\\mathrm{R}}}=\\mathrm{v}_{\\mathrm{o}} $$ From above equations, $$ \\mathbf{v}_{e}=\\sqrt{2}\\mathbf{v}_{o} $$\n- Since, no external torque is applied therefore according to law of conservation of angular momentum, the ball will continue to move with the same angular velocity along the original orbit of the spacecraft.\n- According to Kepler's third law, the square of the time period of revolution of a planet around the sun is directly proportional to the cube of semi-major axis of its elliptical orbit i.e., $$ \\mathrm{T}^{2}\\propto r^{3} $$ where, T = time taken by the planet to go once around the Sun. r = semi-major axis of the elliptical orbit $$ \\begin{aligned}\\frac{\\mathrm{T}_{1}^{2}}{\\mathrm{T}_{2}^{2}}&=\\frac{\\left(r\\right)^{3}}{\\left(2r\\right)^{3}}=\\frac{1}{8}\\\\\\frac{\\mathrm{T}_{1}}{\\mathrm{T}_{2}}&=\\frac{1}{2\\sqrt{2}}\\end{aligned} $$",
+    "formulas": [
+      {
+        "latex": "\\mathrm{T}=\\frac{2\\pi\\mathrm{R}}{\\mathrm{v}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{array}{c}\\frac{\\mathrm{G}\\mathrm{M}m}{\\mathrm{R}^{2}}=\\frac{mv^{2}}{\\mathrm{R}}\\\\\\frac{\\mathrm{G}\\mathrm{M}}{\\mathrm{R}}=\\mathrm{v}^{2}\\\\\\mathrm{v}=\\sqrt{\\frac{\\mathrm{G}\\mathrm{M}}{\\mathrm{R}}\\end{array}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}&T=\\frac{2\\pi R}{v}\\\\&T=2\\pi R\\sqrt{\\frac{R}{GM}}\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{array}{l}\\mathrm{T}^{2}=\\frac{4\\pi^{2}\\mathrm{R}^{3}}{\\mathrm{G}\\left(d\\times\\frac{4}{3}\\pi\\mathrm{R}^{3}\\right)}\\\\=\\frac{3\\pi}{\\mathrm{G}d}\\end{array}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{3\\pi}{\\mathrm{G}d}=\\mathrm{T}^{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{v_{escape}}=\\sqrt{\\frac{2\\mathrm{G M}}{\\mathrm{R}}}=\\mathrm{v_{e}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{V}_{\\mathrm{orbital}}=\\sqrt{\\frac{\\mathrm{GM}}{\\mathrm{R}}}=\\mathrm{v}_{\\mathrm{o}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{v}_{e}=\\sqrt{2}\\mathbf{v}_{o}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{T}^{2}\\propto r^{3}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}\\frac{\\mathrm{T}_{1}^{2}}{\\mathrm{T}_{2}^{2}}&=\\frac{\\left(r\\right)^{3}}{\\left(2r\\right)^{3}}=\\frac{1}{8}\\\\\\frac{\\mathrm{T}_{1}}{\\mathrm{T}_{2}}&=\\frac{1}{2\\sqrt{2}}\\end{aligned}",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "9b76c696-44e0-4582-b831-63d266ab3af6",
+      "0182b1fb-d9b0-43d2-a0e3-5abf4107526a",
+      "6584cca6-3c86-463b-b30c-a1a8d0468386",
+      "1272d2ba-9180-4346-8605-0919f39cf909",
+      "8f961350-4d4a-46cb-a99a-b8d2032bd04f",
+      "1b2ab1ca-4269-42b9-816f-9879cfa19e2f"
+    ],
+    "tags": [
+      "NEET 2023",
+      "AIPMT July 2015",
+      "AIPMT 1996",
+      "AIPMT 1993"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-gravitation-energy-of-an-orbiting-satellite",
+    "chapter": "Gravitation",
+    "subtopic": "Energy of an Orbiting Satellite",
+    "class": "XI",
+    "unitId": "xi-rotation",
+    "unitLabel": "Unit V — Systems & Rigid Bodies",
+    "order": 6,
+    "title": "Energy of an Orbiting Satellite",
+    "summary": "Total energy (initial) = P.E of satellite $$ \\begin{aligned}initial)=P.E of satellite\\\\ =-\\frac{GMm}{3R}\\end{aligned} $$ $$…",
+    "body": "**Key points from solved questions**\n- Total energy (initial) = P.E of satellite $$ \\begin{aligned}initial)=P.E of satellite\\\\ =-\\frac{GMm}{3R}\\end{aligned} $$ $$ \\begin{aligned}Total~energy~(final)&=P.E~of~satellite+K.E.~of~satellite\\\\&=\\frac{-GMm}{3R}+\\frac{1}{2}m\\Bigg(\\sqrt{\\frac{GM}{3R}}\\Bigg)^{2}\\\\&=\\frac{-GMm}{6R}\\end{aligned} $$ $$ \\begin{aligned}Minimum~energy~required\\\\&=\\frac{-GMm}{6R}+\\frac{GMm}{R}\\\\&=\\frac{-GMm+6GMm}{6R}=\\frac{5GMm}{6R}\\end{aligned} $$ $$ \\begin{aligned}\\mathrm{KE}&=\\frac{\\mathrm{GM}m}{2\\mathrm{R}_{1}}+\\left(-\\frac{\\mathrm{GM}m}{2\\mathrm{R}_{2}}\\right)\\\\&=\\frac{\\mathrm{GM}m}{2}\\left[\\frac{1}{\\mathrm{R}_{1}}-\\frac{1}{\\mathrm{R}_{2}}\\right]\\end{aligned} $$\n- The kinetic energy of orbit of satellite,\n- <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//831b293b-2954-42d0-a737-f0e5d41c733d/markdown_4/imgs/img_in_image_box_345_1083_532_1284.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A17%3A02Z%2F-1%2F%2F5b6b2bf283619493bffb43556292b48625dac16c3029ca57feadb97065740d24\" alt=\"Image\" width=\"15%\" /></div> $$ (P.E.)_{\\mathbf{A}}=-\\frac{\\mathrm{G M}m}{\\mathbf{R}} $$ $$ (P.E.)_{B}=-\\frac{G M m}{R+h} $$ $$ \\begin{aligned}\\Delta U&=(P.E)_{B}-(P.E)_{A}\\\\&=-\\frac{G M m}{R+h}+\\frac{G M m}{R}\\\\&=\\frac{G M m h}{R(R+h)}\\end{aligned} $$\n- Total energy = K.E. + P.E. $$ \\begin{aligned}Total~energy&=K.E.+P.E.\\\\&=\\frac{G M m}{2(R+h)}-\\frac{G M m}{(R+h)}\\\\&=\\frac{G M m}{2(R+h)}-\\frac{G M m}{(R+h)}\\\\&=\\frac{-m g_{o} R^{2}}{2(R+h)}\\quad\\left(where,g_{o}=\\frac{G M}{R^{2}}\\right)\\end{aligned} $$\n- K.E. of satellite $ =\\frac{1}{2}mv^{2} $ (where, $ v=\\sqrt{\\frac{GM}{r^{2}}} $) P.E. of satellite $=\\frac{GMm}{r}=-mv^{2}$ $$ \\begin{aligned}Total~energy&=K.E.+P.E.\\\\&=\\frac{1}{2}mv^{2}-mv^{2}=-\\frac{1}{2}mv^{2}\\end{aligned} $$\n- As $ -\\frac{GMm}{R^{2}}+m\\omega^{2}R=0 $ $$ \\frac{\\mathrm{G M}m}{\\mathrm{R}^{2}}=m\\omega^{2}\\mathrm{R} $$ $$ \\begin{aligned}\\mathrm{K.E.}&=\\frac{1}{2}\\mathrm{I}\\omega^{2}\\\\&=\\frac{1}{2}m\\mathrm{R}^{2}\\omega^{2}\\\\&=\\frac{\\mathrm{G}M m}{2\\mathrm{R}}\\end{aligned} $$ $$ =-\\frac{\\mathrm{G}M m}{R} $$ $$ K.E=\\frac{\\left|P.E\\right|}{2} $$ $$ \\frac{\\mathrm{K.E}}{\\mathrm{P.E}}=\\frac{1}{2} $$",
+    "formulas": [
+      {
+        "latex": "\\begin{aligned}initial)=P.E of satellite\\\\ =-\\frac{GMm}{3R}\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}Total~energy~(final)&=P.E~of~satellite+K.E.~of~satellite\\\\&=\\frac{-GMm}{3R}+\\frac{1}{2}m\\Bigg(\\sqrt{\\frac{GM}{3R}}\\Bigg)^{2}\\\\&=\\frac{-GMm}{6R}\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}Minimum~energy~required\\\\&=\\frac{-GMm}{6R}+\\frac{GMm}{R}\\\\&=\\frac{-GMm+6GMm}{6R}=\\frac{5GMm}{6R}\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}\\mathrm{KE}&=\\frac{\\mathrm{GM}m}{2\\mathrm{R}_{1}}+\\left(-\\frac{\\mathrm{GM}m}{2\\mathrm{R}_{2}}\\right)\\\\&=\\frac{\\mathrm{GM}m}{2}\\left[\\frac{1}{\\mathrm{R}_{1}}-\\frac{1}{\\mathrm{R}_{2}}\\right]\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "(P.E.)_{\\mathbf{A}}=-\\frac{\\mathrm{G M}m}{\\mathbf{R}}",
+        "meaning": ""
+      },
+      {
+        "latex": "(P.E.)_{B}=-\\frac{G M m}{R+h}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}\\Delta U&=(P.E)_{B}-(P.E)_{A}\\\\&=-\\frac{G M m}{R+h}+\\frac{G M m}{R}\\\\&=\\frac{G M m h}{R(R+h)}\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}Total~energy&=K.E.+P.E.\\\\&=\\frac{G M m}{2(R+h)}-\\frac{G M m}{(R+h)}\\\\&=\\frac{G M m}{2(R+h)}-\\frac{G M m}{(R+h)}\\\\&=\\frac{-m g_{o} R^{2}}{2(R+h)}\\quad\\left(where,g_{o}=\\frac{G M}{R^{2}}\\right)\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}Total~energy&=K.E.+P.E.\\\\&=\\frac{1}{2}mv^{2}-mv^{2}=-\\frac{1}{2}mv^{2}\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "=\\frac{1}{2}mv^{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "v=\\sqrt{\\frac{GM}{r^{2}}}",
+        "meaning": ""
+      },
+      {
+        "latex": "=\\frac{GMm}{r}=-mv^{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{\\mathrm{G M}m}{\\mathrm{R}^{2}}=m\\omega^{2}\\mathrm{R}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}\\mathrm{K.E.}&=\\frac{1}{2}\\mathrm{I}\\omega^{2}\\\\&=\\frac{1}{2}m\\mathrm{R}^{2}\\omega^{2}\\\\&=\\frac{\\mathrm{G}M m}{2\\mathrm{R}}\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "=-\\frac{\\mathrm{G}M m}{R}",
+        "meaning": ""
+      },
+      {
+        "latex": "K.E=\\frac{\\left|P.E\\right|}{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{\\mathrm{K.E}}{\\mathrm{P.E}}=\\frac{1}{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "-\\frac{GMm}{R^{2}}+m\\omega^{2}R=0",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "9d490b51-9afc-4743-a3c7-97e2b362061d",
+      "17c2d194-3596-466f-b6d5-a8ad8e1f6792",
+      "86750b26-bf0f-4b85-a090-d8a62cb89e86",
+      "36f4315b-c7b5-4da7-be7c-d07a911a21f1",
+      "a399ae13-f741-4148-ac43-17e738058ec4",
+      "abe557e2-75ee-4f3f-b380-7602739edf2d",
+      "5de085a3-f6cc-4719-8232-d7ff8614cc36"
+    ],
+    "tags": [
+      "NEET 2024",
+      "NEET 2021, AIPMT Mains 2010",
+      "NEET 2019",
+      "AIPMT 2007",
+      "AIPMT 2005",
+      "AIPMT 1991"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-gravitation-escape-speed",
+    "chapter": "Gravitation",
+    "subtopic": "Escape Speed",
+    "class": "XI",
+    "unitId": "xi-rotation",
+    "unitLabel": "Unit V — Systems & Rigid Bodies",
+    "order": 6,
+    "title": "Escape Speed",
+    "summary": "According to the question.",
+    "body": "**Key points from solved questions**\n- Escape velocity of earth = $ v_{E} $ Mass of earth = $ m_{E} $ Mass of Planet = $ 9m_{E} $ Radius of earth = $ r_{E} $ radius of planet = $ 16r_{E} $ $$ \\mathbf{v}=\\sqrt{\\frac{2G M}{R}} $$ $$ \\mathrm{For~earth~v_{E}=\\sqrt{\\frac{2G M_{E}}{R_{E}}}} $$ $$ \\mathrm{For~planet~v_{P}=\\sqrt{\\frac{2G9M_{\\mathrm{E}}}{16R_{\\mathrm{E}}}}} $$ $$ \\begin{array}{l}\\mathrm{v}_{\\mathrm{p}}=\\sqrt{\\frac{2\\mathrm{GM}_{\\mathrm{E}}}{\\mathrm{R}_{\\mathrm{E}}}\\times\\frac{9}{16}}\\\\=\\sqrt{\\frac{9}{16}}\\mathrm{v}_{\\mathrm{E}}\\end{array} $$ $$ \\mathbf{v_{P}}=\\frac{3}{4}\\mathbf{v_{E}} $$\n- Given, energy of the particle at the surface of earth, $$ \\mathrm{E}_{i}=\\frac{1}{2}m\\mathbf{v}^{2}-\\frac{\\mathbf{G}\\mathbf{M}_{\\mathrm{E}}m}{\\mathbf{R}_{\\mathrm{E}}} $$ Energy of particle at a height $h$, $$ \\mathrm{E}_{f}=-\\frac{\\mathrm{G M}_{\\mathrm{E}}m}{\\mathrm{R}_{\\mathrm{E}}+h} $$ (At a height $h$ velocity of the particle is 0) According to the law of conservation of energy $$ \\mathbf{E}_{i}=\\mathbf{E}_{f} $$ $$ \\frac{1}{2}mv^{2}-\\frac{GM_{E}m}{R_{E}}=\\frac{-GM_{E}m}{R_{E}+h} $$ $$ \\frac{1}{2}mv^{2}=\\frac{GM_{E}mh}{(R_{E})(R_{E}+h)} $$ $$ \\frac{1}{2}m v^{2}=\\frac{mghR_{E}}{R_{E}+h} $$ As per question $$ \\begin{aligned}\\mathbf{v}&=k\\mathbf{v}_{e}\\\\&=k\\sqrt{2g\\mathbf{R}_{E}}\\end{aligned} $$ using equ. (i) and (ii), we get $$ h=\\frac{\\mathbf{R}_{\\mathrm{E}}k^{2}}{1-k^{2}} $$ If $$ \\boldsymbol{R}_{E}=\\boldsymbol{R} $$ $$ h=\\frac{\\mathbf{R}k^{2}}{1-k^{2}} $$\n- Given, Escape velocity of Earth = v Radius of other planet = $ 4R_{e} $ Mass density is same = d ∴ Mass of other planet = $ \\frac{4}{3}\\pi(4R_{e})^{3}d $ Mass of Earth = $ \\frac{4}{3}\\pi R_{e}^{3} $ d $$ \\mathrm{M}=\\frac{\\mathrm{M}_{p}}{\\mathrm{M}_{e}}=\\frac{64\\mathrm{R}_{e}^{3}}{\\mathrm{R}_{e}^{3}}=64 $$ ∴ $$ \\mathrm{M_{P}=64~M_{e}} $$ We know, $$ \\mathbf{v_{e}}=\\sqrt{\\frac{2\\mathbf{G M_{e}}}{R_{e}}} $$ $$ \\begin{array}{l}\\mathrm{v}_{\\mathrm{P}}=\\sqrt{\\frac{2\\mathrm{G}(64\\mathrm{M}_{\\mathrm{e}})}{4\\mathrm{R}_{\\mathrm{e}}}}\\\\ =4\\sqrt{\\frac{2\\mathrm{GM}_{\\mathrm{e}}}{\\mathrm{R}_{\\mathrm{e}}}}\\end{array} $$ $$ \\frac{v_{P}}{v}=4 $$ $$ v_{e} $$ $$ \\mathbf{v_{P}}=4\\mathbf{v}_{e} $$\n- Since, escape velocity, $$ \\mathbf{v}_{e}=\\sqrt{\\frac{2\\mathbf{G}\\mathbf{M}_{e}}{\\mathbf{R}}}=\\sqrt{\\frac{2\\mathbf{G}}{\\mathbf{R}}\\left(\\frac{4}{3}\\pi\\mathbf{R}^{3}\\rho\\right)} $$ $$ \\mathbf{v}_{e}\\propto\\mathbf{R}\\sqrt{\\rho} $$ $$ Ratio=1:2\\sqrt{2} $$\n- In this question, compare escape relatives with the velocity of light $c$. Escape velocity $ v_{e}=\\sqrt{\\frac{2GM_{e}}{R}} $ R = New radius of the Earth Since, $$ \\mathbf{v}_{e}=c $$ $$ c=\\sqrt{\\frac{2\\mathrm{G M}_{e}}{\\mathrm{R}}} $$ $$ c^{2}=2\\frac{\\mathbf{G}\\mathbf{M}_{e}}{\\mathbf{R}} $$ $$ \\begin{array}{l} \\text{R} =\\displaystyle {\\frac{2 \\text{GM}_{e}}{c^{2}}} \\\\ =\\displaystyle {\\frac{2 \\times 6.67 \\times 10^{-11} \\times 5.98 \\times 10^{24}}{(3 \\times 10^{8})^{2}}} \\\\ \\qquad = 8.86 \\times 10^{-3} \\text{m} \\\\ \\approx 10^{-2} \\text{m} \\end{array} $$\n- According to the question. $$ \\mathbf{R}_{P}=2\\mathbf{R}_{\\mathrm{E}},\\boldsymbol{\\rho}_{\\mathrm{E}}=\\boldsymbol{\\rho}_{\\mathrm{p}} $$ Escape velocity of Earth, $$ \\mathbf{v}_{\\mathrm{E}}=\\sqrt{\\frac{2\\mathrm{G}\\mathbf{M}_{\\mathrm{E}}}{\\mathbf{R}_{\\mathrm{E}}}} $$ $$ \\begin{aligned}&=\\sqrt{\\frac{2\\mathrm{G}}{\\mathrm{R}_{\\mathrm{E}}}\\left(\\frac{4}{3}\\pi\\mathrm{R}_{\\mathrm{E}}^{3}\\rho_{\\mathrm{E}}\\right)}\\\\&=\\mathrm{R}_{\\mathrm{E}}\\sqrt{\\frac{8}{3}\\pi\\mathrm{G}\\rho_{\\mathrm{E}}}\\end{aligned} $$ Similarly, Escape velocity of planet $$ \\begin{aligned}&\\mathbf{v}_{\\mathrm{P}}=\\sqrt{\\frac{2\\mathrm{G}\\mathbf{M}_{\\mathrm{P}}}{\\mathbf{R}_{\\mathrm{P}}}}\\\\&\\mathbf{v}_{\\mathrm{P}}=\\sqrt{\\frac{2\\mathrm{G}}{\\mathrm{R}_{\\mathrm{P}}}\\left(\\frac{4}{3}\\pi\\mathrm{R}_{p}^{3}\\rho_{p}\\right)}\\\\&\\mathbf{v}_{\\mathrm{P}}=\\mathbf{R}_{\\mathrm{P}}\\sqrt{\\frac{8}{3}\\pi\\mathrm{G}\\rho_{p}}\\\\ \\end{aligned} $$ from eq. (i) and eq. (ii), we get, $$ \\begin{aligned}\\frac{\\mathbf{v}_{\\mathrm{E}}}{\\mathbf{v}_{\\mathrm{P}}}&=\\frac{\\mathbf{R}_{\\mathrm{E}}}{\\mathbf{R}_{\\mathrm{P}}}\\sqrt{\\frac{\\boldsymbol{\\rho}_{\\mathrm{E}}}{\\boldsymbol{\\rho}_{\\mathrm{P}}}}\\\\&=\\frac{\\mathbf{R}_{\\mathrm{E}}}{2\\mathbf{R}_{\\mathrm{E}}}\\sqrt{\\frac{\\boldsymbol{\\rho}_{\\mathrm{E}}}{\\boldsymbol{\\rho}_{\\mathrm{E}}}}\\\\&=\\frac{1}{2}\\end{aligned} $$ $$ \\mathbf{v}_{\\mathrm{P}}=2\\mathbf{v}_{\\mathrm{E}} $$\n- Escape velocity $ v_{e} = \\sqrt{\\frac{2GM_{e}}{(R+h)}} $ From the question $h=3R$ $$ \\begin{array}{l}\\mathrm{v}^{\\prime}_{e}=\\sqrt{\\frac{2\\mathrm{GM}_{e}}{\\mathrm{R}+3\\mathrm{R}}}\\\\ \\quad=\\sqrt{\\frac{2\\mathrm{GM}_{e}}{4\\mathrm{R}}}\\\\ \\quad=\\sqrt{\\frac{\\mathrm{GM}_{e}}{2\\mathrm{R}}}\\end{array} $$ (B) According to the question, Radius of satellite, A = 4R and radius of satellite, B = R Speed of satellite, A = 3v Speed of satellite, B = ? We know that orbital velocity c We know that orbital velocity of satellite is, $$ \\mathbf{v}=\\sqrt{\\frac{\\mathbf{G}\\mathbf{M}_{e}}{r}} $$ $$ \\begin{aligned}\\frac{\\mathbf{v}_{\\mathrm{A}}}{\\mathbf{v}_{\\mathrm{B}}}&=\\sqrt{\\frac{r_{\\mathrm{B}}}{r_{\\mathrm{A}}}}\\\\&=\\sqrt{\\frac{\\mathrm{R}}{4\\mathrm{R}}}=\\frac{1}{2}=\\frac{3\\mathrm{v}}{\\mathrm{v}_{\\mathrm{B}}}\\\\\\mathbf{v}_{\\mathrm{B}}&=6\\mathrm{v}\\end{aligned} $$\n- According to question, Height of a satellite, $ h = 0.25 \\times 10^{6} $ m Radius of Earth, $ R_{E} = 6.38 \\times 10^{6} $ m For the satellite revolving around the Earth above height ‘h’ $$ \\begin{aligned}v_{0}&=\\sqrt{\\frac{\\mathrm{GM_{E}}}{\\mathrm{R_{E}}+h}}=\\sqrt{\\frac{\\mathrm{GM_{E}}}{\\mathrm{R_{E}}\\left[1+\\frac{h}{\\mathrm{R_{E}}}\\right]}}\\\\&=\\sqrt{\\frac{gR_{E}}{1+\\frac{h}{R_{E}}}}\\end{aligned} $$ Putting value, $$ \\begin{aligned}v_{0}&=\\sqrt{\\frac{9.8\\times6.38\\times10^{6}}{1+\\frac{0.25\\times10^{6}}{6.38\\times10^{6}}}}\\\\&=\\sqrt{60\\times10^{6}}\\\\&=7.76\\times10^{3}m s^{-1}=7.76k\\end{aligned} $$\n- We know that Escape velocity, $$ \\mathbf{v}_{e}=\\sqrt{2g\\mathbf{R}} $$ Escape velocity of the body from platform, $$ \\begin{aligned}\\mathbf{P}\\cdot\\mathbf{E}+\\mathbf{K}\\cdot\\mathbf{\\Lambda}\\mathbf{\\Lambda}\\mathbf{E}&=0\\\\-\\frac{\\mathbf{G}\\mathbf{M}m}{2\\mathbf{R}}+\\frac{1}{2}m\\mathbf{v}^{2}&=\\mathbf{0}\\\\\\mathbf{v}&=\\sqrt{\\frac{\\mathbf{G}\\mathbf{M}}{\\mathbf{R}^{2}}\\times\\mathbf{R}}=\\sqrt{g\\mathbf{R}}\\end{aligned} $$ $$ f v=\\frac{v}{\\sqrt{2}} $$ This confirms that, $$ f=\\frac{1}{\\sqrt{2}} $$\n- Use $$ \\mathbf{v}^{2}=\\frac{2gh}{1+\\frac{h}{R}}\\text{given}h=\\mathrm{R}. $$ $$ \\mathbf{v}=\\sqrt{gR}=\\sqrt{\\frac{GM}{R}}=\\left(\\frac{GM}{R}\\right)^{\\frac{1}{2}} $$\n- $$ \\mathbf{v}_{e}=\\sqrt{2g\\mathbf{R}_{e}}=\\sqrt{\\frac{2\\mathbf{G}\\mathbf{M}}{\\mathbf{R}_{e}}} $$ $$ \\mathrm{R}_{p}=\\sqrt{\\frac{2\\mathrm{G M}}{\\mathrm{R}_{e}}}, $$ $$ \\mathbf{v}_{p}=2\\mathbf{v}_{e}=2\\times11.2=22.4\\mathrm{~km/s} $$\n- To escape Earth’s gravitational pull and reach infinity, the starting kinetic energy must be somewhat more than the gravitational potential energy of the body on the surface. Total energy of the body just after projecting is: $$ \\mathrm{E}=\\frac{1}{2}m\\mathbf{v}^{2}-\\frac{\\mathrm{G}\\mathbf{M}_{e}m}{\\mathrm{R}_{e}} $$ This total energy must now be slightly greater than zero in order for the minimum speed to be achieved when kinetic energy equals gravitational potential energy. $$ \\begin{aligned}\\frac{1}{2}m\\mathbf{v}^{2}&=\\frac{\\mathrm{G}\\mathbf{M}_{e}m}{\\mathrm{R}_{e}}\\\\\\frac{1}{2}\\mathbf{v}^{2}&=\\frac{\\mathrm{G}\\mathbf{M}_{e}}{\\mathrm{R}_{e}}\\\\\\mathbf{v}&=\\sqrt{\\frac{2\\mathrm{G}\\mathbf{M}_{e}}{\\mathrm{R}_{e}}}\\end{aligned} $$\n- Escape velocity of a body ( $ v_e $) = 11.2 km/s New mass of the Earth, $ M_e' = 2M_e $ and new radius of the Earth $ R_e' = 0.5\\ R_e $ Escape velocity, ( $ v_e $) = $ \\sqrt{\\frac{2GM_e}{R_e}} \\propto \\sqrt{\\frac{M_e}{R_e}} $ Therefore $ \\frac{v_e}{v_e'} = \\sqrt{\\frac{M_e}{R_e} \\times \\frac{0.5R_e}{2M_e}} $ $$ \\begin{aligned}=\\sqrt{\\frac{1}{4}}\\\\=\\frac{1}{2}\\end{aligned} $$ or. $$ \\mathbf{v}_{e}^{\\prime}=2\\mathbf{v}_{e}=22.4~\\mathrm{k m/s} $$\n- Escape velocity on surface of the Earth is given by, $$ \\begin{aligned}\\mathrm{v}_{e}&=\\sqrt{2g\\mathrm{R}_{e}}\\\\ &=\\sqrt{\\frac{2\\mathrm{GM}_{e}}{\\mathrm{R}_{e}}}\\quad\\left(\\because g=\\frac{\\mathrm{GM}_{e}}{\\mathrm{R}_{e}^{2}}\\right)\\end{aligned} $$ where, $ M_{e}= $ mass of Earth $ R_{e}= $ radius of the Earth G = gravitational constant $$ \\mathrm{v_{e}}\\propto\\sqrt{\\frac{\\mathrm{M_{e}}}{\\mathrm{R_{e}}}} $$ $$ \\bullet \\quad \\bullet $$ If $v_{p}$ is escape velocity from the surface of the planet, then, $$ \\mathrm{\\frac{v_{e}}{v_{p}}}=\\sqrt{\\frac{\\mathrm{M_{e}}}{\\mathrm{R_{e}}}}\\times\\sqrt{\\frac{\\mathrm{R_{P}}}{\\mathrm{M_{P}}}} $$ where, $M_{p}$ is mass of the planet and $R_{p}$ is radius of the planet. but $$ \\mathrm{R}_{p}=3\\mathrm{R}_{e}\\mathrm{(given)} $$ and $$ \\mathbf{M}_{p}=3\\mathbf{M}_{e} $$ $$ \\mathrm{\\frac{v_{e}}{v_{p}}}=\\sqrt{\\frac{\\mathrm{M_{e}}}{\\mathrm{R_{e}}}}\\times\\sqrt{\\frac{3\\mathrm{R_{e}}}{3\\mathrm{M_{e}}}} $$ ∴ or $$ \\mathbf{v}_{p}=\\mathbf{v}_{e} $$",
+    "formulas": [
+      {
+        "latex": "\\mathbf{v}=\\sqrt{\\frac{2G M}{R}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{For~earth~v_{E}=\\sqrt{\\frac{2G M_{E}}{R_{E}}}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{For~planet~v_{P}=\\sqrt{\\frac{2G9M_{\\mathrm{E}}}{16R_{\\mathrm{E}}}}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{array}{l}\\mathrm{v}_{\\mathrm{p}}=\\sqrt{\\frac{2\\mathrm{GM}_{\\mathrm{E}}}{\\mathrm{R}_{\\mathrm{E}}}\\times\\frac{9}{16}}\\\\=\\sqrt{\\frac{9}{16}}\\mathrm{v}_{\\mathrm{E}}\\end{array}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{v_{P}}=\\frac{3}{4}\\mathbf{v_{E}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{E}_{i}=\\frac{1}{2}m\\mathbf{v}^{2}-\\frac{\\mathbf{G}\\mathbf{M}_{\\mathrm{E}}m}{\\mathbf{R}_{\\mathrm{E}}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{E}_{f}=-\\frac{\\mathrm{G M}_{\\mathrm{E}}m}{\\mathrm{R}_{\\mathrm{E}}+h}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{E}_{i}=\\mathbf{E}_{f}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{1}{2}mv^{2}-\\frac{GM_{E}m}{R_{E}}=\\frac{-GM_{E}m}{R_{E}+h}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{1}{2}mv^{2}=\\frac{GM_{E}mh}{(R_{E})(R_{E}+h)}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{1}{2}m v^{2}=\\frac{mghR_{E}}{R_{E}+h}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}\\mathbf{v}&=k\\mathbf{v}_{e}\\\\&=k\\sqrt{2g\\mathbf{R}_{E}}\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "h=\\frac{\\mathbf{R}_{\\mathrm{E}}k^{2}}{1-k^{2}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\boldsymbol{R}_{E}=\\boldsymbol{R}",
+        "meaning": ""
+      },
+      {
+        "latex": "h=\\frac{\\mathbf{R}k^{2}}{1-k^{2}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{M}=\\frac{\\mathrm{M}_{p}}{\\mathrm{M}_{e}}=\\frac{64\\mathrm{R}_{e}^{3}}{\\mathrm{R}_{e}^{3}}=64",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{M_{P}=64~M_{e}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{v_{e}}=\\sqrt{\\frac{2\\mathbf{G M_{e}}}{R_{e}}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{array}{l}\\mathrm{v}_{\\mathrm{P}}=\\sqrt{\\frac{2\\mathrm{G}(64\\mathrm{M}_{\\mathrm{e}})}{4\\mathrm{R}_{\\mathrm{e}}}}\\\\ =4\\sqrt{\\frac{2\\mathrm{GM}_{\\mathrm{e}}}{\\mathrm{R}_{\\mathrm{e}}}}\\end{array}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{v_{P}}{v}=4",
+        "meaning": ""
+      },
+      {
+        "latex": "v_{e}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{v_{P}}=4\\mathbf{v}_{e}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{v}_{e}=\\sqrt{\\frac{2\\mathbf{G}\\mathbf{M}_{e}}{\\mathbf{R}}}=\\sqrt{\\frac{2\\mathbf{G}}{\\mathbf{R}}\\left(\\frac{4}{3}\\pi\\mathbf{R}^{3}\\rho\\right)}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{v}_{e}\\propto\\mathbf{R}\\sqrt{\\rho}",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "836600e1-dbd6-4a20-a596-915c68885713",
+      "5b47e305-e6aa-42d1-8dac-33af34b80660",
+      "ed3d1544-f04c-4776-a6eb-9c9fbba311f7",
+      "408a0303-b49a-454c-9f67-848fa24b40d7",
+      "8e2eeffd-f5a0-4552-ab70-c4c607a7226a",
+      "6ef1455e-5841-4a7f-8558-3e194a568a95",
+      "d85bc922-9242-48b8-be34-1820dcc860eb",
+      "6b7002a0-351c-478a-a7d5-eafd4644cda6",
+      "e04f100c-a0be-49b2-8790-5d366ae568ed",
+      "f6c37524-55b7-4a05-9c74-ba7d06a59d8a",
+      "3b9e5e14-4aad-4344-83a2-4752242b5db5",
+      "1c8ef9d5-f472-41cd-9c60-68fba5f9ae42",
+      "2c46aeca-6f85-4d6f-925b-573ee4db111e",
+      "b7cf04b8-794c-4ddb-93cc-98c4f8c676f6",
+      "79863ea4-b558-4fc4-9a15-4853c4e19127",
+      "5278b223-46db-4ff0-9aec-d3b00d9e2bc7"
+    ],
+    "tags": [
+      "Re-NEET 2024",
+      "NEET 2021",
+      "NEET Phase-I 2016",
+      "AIPMT 2014",
+      "NEET Karnataka 2013",
+      "AIPMT 2006",
+      "AIPMT 2001",
+      "AIPMT 2000",
+      "AIPMT 1999",
+      "AIPMT 1997",
+      "AIPMT 1995",
+      "AIPMT 1993",
+      "AIPMT 1989"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-gravitation-gravitational-potential-energy",
+    "chapter": "Gravitation",
+    "subtopic": "Gravitational Potential Energy",
+    "class": "XI",
+    "unitId": "xi-rotation",
+    "unitLabel": "Unit V — Systems & Rigid Bodies",
+    "order": 6,
+    "title": "Gravitational Potential Energy",
+    "summary": "Gravitational potential energy at any point at a distance r from the centre of the Earth is, $$ \\mathrm{U}=-\\frac{\\mathrm{GM}m}{r} $$ where, M and m be masses of the Earth and the body respectively.",
+    "body": "**Key points from solved questions**\n- Given: Mass of the body, m = 60 g = 0.06 kg Gravitational force, F = 3.0 N The gravitational field intensity is written as; $$ I_{g}=\\frac{F}{m} $$ Now, On putting all the given values in equation (i) we have, $$ I_{g}=\\frac{3.0}{0.06} $$ $$ \\mathrm{I}_{g}=50\\mathrm{N/k g} $$\n- $$ \\begin{aligned}\\mathrm{V}_{P}&=\\frac{\\mathrm{GM}}{a}+\\frac{\\mathrm{GM}}{a/2}\\\\&=\\frac{\\mathrm{GM}}{a}+\\frac{2\\mathrm{GM}}{a}=\\frac{3\\mathrm{GM}}{a}\\end{aligned} $$ $$ \\mathbf{V}_{P}=\\mathbf{V}_{\\mathrm{s p h e r e}}+\\mathbf{V}_{\\mathrm{p a r t i c l e}} $$\n- Work done = Change in potential energy $$ u_{f}-u_{i}=\\frac{-GMm}{(R+h)}-\\left(\\frac{-GMm}{R}\\right) $$ where, M is the mass of Earth and R is the radius of Earth. $$ \\mathbf{W}=\\mathbf{G}\\mathbf{M}m\\left[\\frac{1}{\\mathbf{R}}-\\frac{1}{(\\mathbf{R}+h)}\\right] $$ ： Now, h = R $$ \\mathrm{W}=\\mathrm{G}\\mathrm{M}m\\left[\\frac{1}{\\mathrm{R}}-\\frac{1}{2\\mathrm{R}}\\right]=\\frac{\\mathrm{G}\\mathrm{M}m}{2\\mathrm{R}} $$ $$ \\circ\\circ $$ $$ \\mathbf{W}=\\frac{m g\\mathbf{R}}{2} \\quad \\left[\\because\\mathbf{g}=\\frac{\\mathbf{G}\\mathbf{M}}{\\mathbf{R}^{2}}\\right] $$ $$ \\displaystyle\\ \\ \\bullet $$\n- We know that gravitational potential at height h from surface of Earth is $$ \\mathrm{V}=-\\frac{\\mathrm{GM}}{\\mathrm{R}+h} $$ Here. $$ \\mathrm{V}=-\\frac{\\mathrm{G M}}{\\mathrm{R}+h}=-5.4\\times10^{7} $$ Given: acceleration due to gravity of height h from surface of Earth is, $$ g=\\frac{\\mathrm{G M}}{(\\mathrm{R}+h)^{2}}=6 $$ Divide eq. (i) by eq. (ii), $$ =\\frac{5.4\\times10^{7}}{(R+h)}=6 $$ $ \\Rightarrow $ R + h = 9000 km = 9000 - 6400 $ \\therefore $ h = 2600 km\n- The resulting gravitational potential due to the system at origin is, $$ \\begin{aligned}\\mathrm{V}&=-2\\mathrm{G}\\left[1+\\frac{1}{2}+\\frac{1}{4}+\\frac{1}{8}+\\ldots\\right]\\\\&=-2\\mathrm{G}\\left[1+\\frac{1}{2}+\\frac{1}{2^{2}}+\\frac{1}{2^{3}}+\\ldots\\right]\\end{aligned} $$ $$ \\mathbf{V}=-2\\mathbf{G}\\left(1-\\frac{1}{2}\\right)^{-1} $$ $$ \\mathbf{V}=\\frac{-2\\mathbf{G}}{\\left(1-\\frac{1}{2}\\right)} $$ $$ \\mathrm{V}=\\frac{2\\mathrm{G}}{\\frac{1}{2}}=-4\\mathrm{G} $$ $$ \\mathrm{V}=-4\\mathrm{G} $$\n- Gravitational potential energy at any point at a distance r from the centre of the Earth is, $$ \\mathrm{U}=-\\frac{\\mathrm{GM}m}{r} $$ where, M and m be masses of the Earth and the body respectively. At the surface of the Earth, $$ r=R; $$ $$ \\mathsf{U}_{i}=-\\frac{\\mathsf{GM}m}{\\mathsf{R}} $$ At a height $h$ from the surface, $$ r=\\mathbf{R}+h=\\mathbf{R}+2\\mathbf{R}=3\\mathbf{R} $$ $$ \\mathrm{U}_{f}=-\\frac{\\mathrm{GM}m}{3\\mathrm{R}} $$ Change in potential energy. $$ \\begin{aligned}\\Delta\\mathrm{U}&=\\mathrm{U}_{f}-\\mathrm{U}_{I}\\\\&=-\\frac{\\mathrm{G}\\mathrm{M}m}{3\\mathrm{R}}-\\left(-\\frac{\\mathrm{G}\\mathrm{M}m}{\\mathrm{R}}\\right)\\\\&=\\frac{\\mathrm{G}\\mathrm{M}m}{\\mathrm{R}}\\left(1-\\frac{1}{3}\\right)\\\\&=\\frac{2}{3}\\frac{\\mathrm{G}\\mathrm{M}m}{\\mathrm{R}}=\\frac{2}{3}mg\\mathrm{R}\\end{aligned} $$ $$ \\because g=\\frac{G M}{R^{2}} $$\n- <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//831b293b-2954-42d0-a737-f0e5d41c733d/markdown_0/imgs/img_in_image_box_728_787_1170_973.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A44Z%2F-1%2F%2Fcea4472aa6a10a2802209d0ee4fd0fc395823a80e2272c1915cc6b4404e23d13\" alt=\"Image\" width=\"37%\" /></div> ∴ change in gravitational potential energy $$ \\begin{array}{l} \\text{U=final energy-initial} \\\\ =-\\frac{\\text{GM}m}{4\\text{R}}+\\frac{\\text{GM}m}{\\text{R}} \\\\ =-\\frac{\\text{GM}m}{4\\text{R}}\\left[1-\\frac{1}{4}\\right] \\\\ = \\frac{3}{4} \\frac{\\text{GM}m}{4\\text{R}} \\\\ = \\frac{3}{4} \\frac{\\text{GM}}{R^2} mR = \\frac{3}{4} gmR \\end{array} $$",
+    "formulas": [
+      {
+        "latex": "I_{g}=\\frac{F}{m}",
+        "meaning": ""
+      },
+      {
+        "latex": "I_{g}=\\frac{3.0}{0.06}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{I}_{g}=50\\mathrm{N/k g}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}\\mathrm{V}_{P}&=\\frac{\\mathrm{GM}}{a}+\\frac{\\mathrm{GM}}{a/2}\\\\&=\\frac{\\mathrm{GM}}{a}+\\frac{2\\mathrm{GM}}{a}=\\frac{3\\mathrm{GM}}{a}\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{V}_{P}=\\mathbf{V}_{\\mathrm{s p h e r e}}+\\mathbf{V}_{\\mathrm{p a r t i c l e}}",
+        "meaning": ""
+      },
+      {
+        "latex": "u_{f}-u_{i}=\\frac{-GMm}{(R+h)}-\\left(\\frac{-GMm}{R}\\right)",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{W}=\\mathbf{G}\\mathbf{M}m\\left[\\frac{1}{\\mathbf{R}}-\\frac{1}{(\\mathbf{R}+h)}\\right]",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{W}=\\mathrm{G}\\mathrm{M}m\\left[\\frac{1}{\\mathrm{R}}-\\frac{1}{2\\mathrm{R}}\\right]=\\frac{\\mathrm{G}\\mathrm{M}m}{2\\mathrm{R}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\circ\\circ",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{W}=\\frac{m g\\mathbf{R}}{2} \\quad \\left[\\because\\mathbf{g}=\\frac{\\mathbf{G}\\mathbf{M}}{\\mathbf{R}^{2}}\\right]",
+        "meaning": ""
+      },
+      {
+        "latex": "\\displaystyle\\ \\ \\bullet",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{V}=-\\frac{\\mathrm{GM}}{\\mathrm{R}+h}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{V}=-\\frac{\\mathrm{G M}}{\\mathrm{R}+h}=-5.4\\times10^{7}",
+        "meaning": ""
+      },
+      {
+        "latex": "g=\\frac{\\mathrm{G M}}{(\\mathrm{R}+h)^{2}}=6",
+        "meaning": ""
+      },
+      {
+        "latex": "=\\frac{5.4\\times10^{7}}{(R+h)}=6",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}\\mathrm{V}&=-2\\mathrm{G}\\left[1+\\frac{1}{2}+\\frac{1}{4}+\\frac{1}{8}+\\ldots\\right]\\\\&=-2\\mathrm{G}\\left[1+\\frac{1}{2}+\\frac{1}{2^{2}}+\\frac{1}{2^{3}}+\\ldots\\right]\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{V}=-2\\mathbf{G}\\left(1-\\frac{1}{2}\\right)^{-1}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{V}=\\frac{-2\\mathbf{G}}{\\left(1-\\frac{1}{2}\\right)}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{V}=\\frac{2\\mathrm{G}}{\\frac{1}{2}}=-4\\mathrm{G}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{V}=-4\\mathrm{G}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{U}=-\\frac{\\mathrm{GM}m}{r}",
+        "meaning": ""
+      },
+      {
+        "latex": "r=R;",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathsf{U}_{i}=-\\frac{\\mathsf{GM}m}{\\mathsf{R}}",
+        "meaning": ""
+      },
+      {
+        "latex": "r=\\mathbf{R}+h=\\mathbf{R}+2\\mathbf{R}=3\\mathbf{R}",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "83b43957-c192-4771-89bc-ede5c6a495fd",
+      "341ab5f2-61a7-469c-85a5-2ba364b2e567",
+      "305f3900-3b9f-4971-9886-222affe6a45c",
+      "39f038b2-8c94-44db-b903-41753d38638e",
+      "349a3cdc-5cc5-4b1c-b45f-ef36db648de0",
+      "a11675f4-48ca-4faf-8d92-ce4fb6fb0450",
+      "1246fecd-0ed2-46a9-9016-c3c558e24c99"
+    ],
+    "tags": [
+      "NEET 2022",
+      "NEET 2019",
+      "NEET Phase-I 2016",
+      "NEET 2013",
+      "AIPMT 2003, 2002"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-gravitation-kepler-s-laws",
+    "chapter": "Gravitation",
+    "subtopic": "Kepler's Laws",
+    "class": "XI",
+    "unitId": "xi-rotation",
+    "unitLabel": "Unit V — Systems & Rigid Bodies",
+    "order": 6,
+    "title": "Kepler's Laws",
+    "summary": "<div style=\"text-align: center;\"><img…",
+    "body": "**Key points from solved questions**\n- Using law of conservation of angular momentum $ L_1 = L_2 $ $ mr_1v_1 = mr_2v_2 $ $ r_1v_1 = r_2v_2 $ $ \\frac{v_1}{v_2} = \\frac{r_2}{r_1} $\n- Applying Kepler's law of planetary motion. $$\\frac{d\\mathbf{A}}{dt} = \\mathrm{constant}$$ $$\\Rightarrow \\quad \\frac{\\mathbf{A}_{1}}{t_{1}} = \\frac{\\mathbf{A}_{2}}{t_{2}}$$ $$\\Rightarrow \\quad t_{1} = \\frac{\\mathbf{A}_{1}}{\\mathbf{A}_{2}}t_{2}$$ Since, $A_{1} = 2A_{2}$, Hence, $t_{1} = 2t_{2}$\n- According to Kepler's third law, $$ \\mathrm{T}^{2}\\propto r^{3} $$ where, T = Time period of revolution r = Semi-major axis $\\therefore \\frac{T_{A}^{2}}{T_{B}^{2}} = \\frac{r_{A}^{3}}{r_{B}^{3}}$ $\\therefore \\frac{r_{A}}{r_{B}} = \\left(\\frac{T_{A}}{T_{B}}\\right)^{2/3}$ $=(8)^{\\frac{2}{3}}$ $= 2^{3 \\times \\frac{2}{3}}$ =4 or $r_{A}=4r_{B}$\n- According to Kepler's third law (or law of periods) i.e., $ T^{2} \\propto r^{3} $ Here, $ r_{1} = 10^{13} $ m, $ r_{2} = 10^{12} $ m (C) According to Kepler's third law (or law i.e., $ T^{2} \\propto r^{3} $ Here, $ r_{1}=10^{13} $ m, $ r_{2}=10^{12} $ m $ \\therefore\\frac{T_{1}^{2}}{T_{2}^{2}}=\\frac{r_{1}^{3}}{r_{2}^{3}}=\\frac{\\left(10^{13}\\right)^{3}}{\\left(10^{12}\\right)^{3}} $ or $ \\frac{T_{1}^{2}}{T_{2}^{2}}=\\frac{10^{39}}{10^{36}}=10^{3} $ or $ \\frac{T_{1}}{T_{2}}=10\\sqrt{10} $\n- In a circular or elliptical orbital motion of a planet, the angular momentum is conserved. In attractive field, potential energy and the total energy is negative. Kinetic energy increases with increase in velocity. If the motion is in a plane, the direction of L does not change.\n- <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//e388feab-a2f5-49e5-95be-f7d5bd0c7541/markdown_1/imgs/img_in_image_box_247_70_499_280.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A25Z%2F-1%2F%2F05cf015255c4d9d9fd841e35a8131086e1e2adf3197f9c485f58605e38c6ca44\" alt=\"Image\" width=\"21%\" /></div> Applying the properties of ellipse. we have. $$ \\frac{2}{R}=\\frac{1}{r_{1}}+\\frac{1}{r_{2}}=\\frac{r_{1}+r_{2}}{r_{1}r_{2}} $$ $$ \\mathrm{R}=\\frac{2r_{1}r_{2}}{r_{1}+r_{2}} $$",
+    "formulas": [
+      {
+        "latex": "L_1 = L_2",
+        "meaning": ""
+      },
+      {
+        "latex": "mr_1v_1 = mr_2v_2",
+        "meaning": ""
+      },
+      {
+        "latex": "r_1v_1 = r_2v_2",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{v_1}{v_2} = \\frac{r_2}{r_1}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{d\\mathbf{A}}{dt} = \\mathrm{constant}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\Rightarrow \\quad \\frac{\\mathbf{A}_{1}}{t_{1}} = \\frac{\\mathbf{A}_{2}}{t_{2}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\Rightarrow \\quad t_{1} = \\frac{\\mathbf{A}_{1}}{\\mathbf{A}_{2}}t_{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "A_{1} = 2A_{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "t_{1} = 2t_{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{T}^{2}\\propto r^{3}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\therefore \\frac{T_{A}^{2}}{T_{B}^{2}} = \\frac{r_{A}^{3}}{r_{B}^{3}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\therefore \\frac{r_{A}}{r_{B}} = \\left(\\frac{T_{A}}{T_{B}}\\right)^{2/3}",
+        "meaning": ""
+      },
+      {
+        "latex": "=(8)^{\\frac{2}{3}}",
+        "meaning": ""
+      },
+      {
+        "latex": "= 2^{3 \\times \\frac{2}{3}}",
+        "meaning": ""
+      },
+      {
+        "latex": "r_{A}=4r_{B}",
+        "meaning": ""
+      },
+      {
+        "latex": "r_{1} = 10^{13}",
+        "meaning": ""
+      },
+      {
+        "latex": "r_{2} = 10^{12}",
+        "meaning": ""
+      },
+      {
+        "latex": "r_{1}=10^{13}",
+        "meaning": ""
+      },
+      {
+        "latex": "r_{2}=10^{12}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\therefore\\frac{T_{1}^{2}}{T_{2}^{2}}=\\frac{r_{1}^{3}}{r_{2}^{3}}=\\frac{\\left(10^{13}\\right)^{3}}{\\left(10^{12}\\right)^{3}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{T_{1}^{2}}{T_{2}^{2}}=\\frac{10^{39}}{10^{36}}=10^{3}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{T_{1}}{T_{2}}=10\\sqrt{10}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{2}{R}=\\frac{1}{r_{1}}+\\frac{1}{r_{2}}=\\frac{r_{1}+r_{2}}{r_{1}r_{2}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{R}=\\frac{2r_{1}r_{2}}{r_{1}+r_{2}}",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "13305860-d073-42da-b91c-17482d40fcfa",
+      "54f815f4-40b2-46fe-afd2-513766c746aa",
+      "11fd8971-78be-4369-b6cc-7add91d06e88",
+      "0bd8f814-8d26-44ec-b6fd-d2c7016cdf28",
+      "6041a8bd-5ea1-499a-bf95-1f3dd910ed44",
+      "883be9b1-efb8-4065-a1d3-769bbdf68b2c",
+      "022deffb-2e87-4728-8567-00292ae0c75e"
+    ],
+    "tags": [
+      "NEET 2018",
+      "AIPMT 1997",
+      "NEET 2021",
+      "AIPMT 1990",
+      "AIPMT 1988"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-gravitation-objective-i",
+    "chapter": "Gravitation",
+    "subtopic": "Objective I",
+    "class": "XI",
+    "unitId": "xi-rotation",
+    "unitLabel": "Unit V — Systems & Rigid Bodies",
+    "order": 6,
+    "title": "Objective I",
+    "summary": "A **geostationary satellite** must: 1.",
+    "body": "**Key points from solved questions**\n- Newton's law of universal gravitation: $$F = \\frac{Gm_1m_2}{r^2}$$ where $G = 6.674\\times10^{-11}\\,\\rm N\\,m^2\\,kg^{-2}$ is the universal gravitational constant. The force is: - attractive (along the line joining the masses) - proportional to the product of masses - inversely proportional to the square of the distance Answer: (C).\n- Escape velocity is found by setting total mechanical energy = 0 (just barely escapes to infinity): $$\\tfrac{1}{2}mv_e^2 - \\frac{GMm}{R} = 0 \\implies v_e = \\sqrt{\\frac{2GM}{R}}$$ For Earth: $v_e \\approx 11.2\\,\\rm km/s$. Note: $g = GM/R^2$, so $v_e = \\sqrt{2gR}$. Answer: (B).\n- **Kepler's third law** (law of periods): The square of the orbital period $T$ is proportional to the cube of the semi-major axis $r$: $$T^2 \\propto r^3 \\quad \\text{or} \\quad \\frac{T^2}{r^3} = \\frac{4\\pi^2}{GM_{\\rm Sun}} = \\rm const.$$ Derivation: for a circular orbit, gravitational force = centripetal force: $$\\frac{GMm}{r^2} = \\frac{mv^2}{r} = \\frac{m(2\\pi r/T)^2}{r} \\implies T^2 = \\frac{4\\pi^2 r^3}{GM}$$ Answer: (B).\n- For circular orbit, gravitational force = centripetal force: $$\\frac{GMm}{r^2} = \\frac{mv^2}{r} \\implies v^2 = \\frac{GM}{r} \\implies v = \\sqrt{\\frac{GM}{r}}$$ Note: $v = v_e/\\sqrt{2}$. As $r$ increases, orbital speed **decreases** — satellites closer to Earth orbit faster. For a near-Earth orbit ($r \\approx R_E$), $v \\approx 7.9\\,\\rm km/s$. Answer: (A).\n- The exact gravitational potential energy (with $U \\to 0$ as $r \\to \\infty$): $$U = -\\frac{GMm}{R+h}$$ The negative sign indicates a bound state. The approximation $U \\approx mgh$ holds only when $h \\ll R$: $$\\Delta U = -\\frac{GMm}{R+h} + \\frac{GMm}{R} \\approx \\frac{GMmh}{R^2} = mgh$$ Answer: (B).\n- Gravity at height $h$: $g_h = GM/(R+h)^2 = g\\,R^2/(R+h)^2$. Set $g_h = g/4$: $$\\frac{R^2}{(R+h)^2} = \\frac{1}{4} \\implies (R+h)^2 = 4R^2 \\implies R+h = 2R \\implies h = R$$ So at altitude $h = R_E$ (one Earth radius above the surface), $g$ is reduced to $g/4$. Answer: (A).\n- A **geostationary satellite** must: 1. Have an orbital period equal to Earth's rotation period: **$T = 24$ hours** (more precisely, 23 h 56 min = sidereal day). 2. Orbit in the **equatorial plane** (inclination = 0°) in the same direction as Earth's rotation. 3. Orbit at the specific radius $r \\approx 42,\\!000\\,\\rm km$ ($\\approx 6.6\\,R_E$) where Kepler's third law gives $T = 24\\,\\rm h$. From Earth, it appears **stationary** — used for communication and weather satellites. Answer: (B).",
+    "formulas": [
+      {
+        "latex": "F = \\frac{Gm_1m_2}{r^2}",
+        "meaning": ""
+      },
+      {
+        "latex": "G = 6.674\\times10^{-11}\\,\\rm N\\,m^2\\,kg^{-2}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\tfrac{1}{2}mv_e^2 - \\frac{GMm}{R} = 0 \\implies v_e = \\sqrt{\\frac{2GM}{R}}",
+        "meaning": ""
+      },
+      {
+        "latex": "g = GM/R^2",
+        "meaning": ""
+      },
+      {
+        "latex": "v_e = \\sqrt{2gR}",
+        "meaning": ""
+      },
+      {
+        "latex": "T^2 \\propto r^3 \\quad \\text{or} \\quad \\frac{T^2}{r^3} = \\frac{4\\pi^2}{GM_{\\rm Sun}} = \\rm const.",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{GMm}{r^2} = \\frac{mv^2}{r} = \\frac{m(2\\pi r/T)^2}{r} \\implies T^2 = \\frac{4\\pi^2 r^3}{GM}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{GMm}{r^2} = \\frac{mv^2}{r} \\implies v^2 = \\frac{GM}{r} \\implies v = \\sqrt{\\frac{GM}{r}}",
+        "meaning": ""
+      },
+      {
+        "latex": "v = v_e/\\sqrt{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "U = -\\frac{GMm}{R+h}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\Delta U = -\\frac{GMm}{R+h} + \\frac{GMm}{R} \\approx \\frac{GMmh}{R^2} = mgh",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{R^2}{(R+h)^2} = \\frac{1}{4} \\implies (R+h)^2 = 4R^2 \\implies R+h = 2R \\implies h = R",
+        "meaning": ""
+      },
+      {
+        "latex": "g_h = GM/(R+h)^2 = g\\,R^2/(R+h)^2",
+        "meaning": ""
+      },
+      {
+        "latex": "g_h = g/4",
+        "meaning": ""
+      },
+      {
+        "latex": "h = R_E",
+        "meaning": ""
+      },
+      {
+        "latex": "T = 24",
+        "meaning": ""
+      },
+      {
+        "latex": "T = 24\\,\\rm h",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "9122869c-3c8a-4ea1-a401-b42375538a8b",
+      "6f9477bb-756e-4c07-89f6-beec786e16f7",
+      "8514e9d6-c128-4956-b63b-6ea658857e29",
+      "3c0287d2-cbd3-4902-bd31-c3531a8a4978",
+      "64cd675c-49af-4051-a25c-5a198cd5cfa8",
+      "4fa405cf-52f0-49a2-b268-fe6416753be2",
+      "c7c2dc80-7ed9-4954-a8ae-70c85317f952"
+    ],
+    "tags": [
+      "HC Verma Vol 1",
+      "Objective I",
+      "Chapter 11"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-gravitation-objective-ii",
+    "chapter": "Gravitation",
+    "subtopic": "Objective II",
+    "class": "XI",
+    "unitId": "xi-rotation",
+    "unitLabel": "Unit V — Systems & Rigid Bodies",
+    "order": 6,
+    "title": "Objective II",
+    "summary": "- **A** ✓: $V = -GM/r < 0$ for all finite $r > 0$.",
+    "body": "**Key points from solved questions**\n- - **A** ✓: $V = -GM/r < 0$ for all finite $r > 0$. - **B** ✓: As $r$ increases, $|V| = GM/r$ decreases, so $V$ increases toward zero. - **C** ✓: $\\lim_{r\\to\\infty} V = 0$ — the reference point for gravitational potential energy is at infinity. - **D** ✓: Gravitational field (force per unit mass) $g = -dV/dr = -GM/r^2 \\cdot (-1)\\cdot(-1)$... more precisely $\\vec{g} = -\\nabla V$; in 1D: $g = -dV/dr = -GM/r^2$ (directed inward). Answer: (A), (B), (C), (D).\n- - **A** ✓: $v = \\sqrt{GM/r}$ — lower $r$ → higher $v$. - **B** ✓: $T \\propto r^{3/2}$ — lower $r$ → shorter $T$. - **C** ✗: Total energy $E = KE + PE = \\tfrac{1}{2}mv^2 - GMm/r = \\tfrac{GMm}{2r} - \\tfrac{GMm}{r} = -\\tfrac{GMm}{2r} < 0$. A bound orbit has **negative** total energy. - **D** ✓: For a circular orbit: $KE = GMm/(2r)$ and $|PE| = GMm/r = 2\\,KE$. This is the **virial theorem** for a $1/r^2$ force: $KE = -E = |PE|/2$. Answer: (A), (B), (D).",
+    "formulas": [
+      {
+        "latex": "V = -GM/r < 0",
+        "meaning": ""
+      },
+      {
+        "latex": "|V| = GM/r",
+        "meaning": ""
+      },
+      {
+        "latex": "\\lim_{r\\to\\infty} V = 0",
+        "meaning": ""
+      },
+      {
+        "latex": "g = -dV/dr = -GM/r^2 \\cdot (-1)\\cdot(-1)",
+        "meaning": ""
+      },
+      {
+        "latex": "\\vec{g} = -\\nabla V",
+        "meaning": ""
+      },
+      {
+        "latex": "g = -dV/dr = -GM/r^2",
+        "meaning": ""
+      },
+      {
+        "latex": "v = \\sqrt{GM/r}",
+        "meaning": ""
+      },
+      {
+        "latex": "E = KE + PE = \\tfrac{1}{2}mv^2 - GMm/r = \\tfrac{GMm}{2r} - \\tfrac{GMm}{r} = -\\tfrac{GMm}{2r} < 0",
+        "meaning": ""
+      },
+      {
+        "latex": "KE = GMm/(2r)",
+        "meaning": ""
+      },
+      {
+        "latex": "|PE| = GMm/r = 2\\,KE",
+        "meaning": ""
+      },
+      {
+        "latex": "KE = -E = |PE|/2",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "073db585-9082-4db3-9394-bfdac193d2d0",
+      "fafb9129-fbe5-4c72-9277-50fde4af929c"
+    ],
+    "tags": [
+      "HC Verma Vol 1",
+      "Objective II",
+      "Chapter 11"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-gravitation-overview",
+    "chapter": "Gravitation",
+    "subtopic": "Overview",
+    "class": "XI",
+    "unitId": "xi-rotation",
+    "unitLabel": "Unit V — Systems & Rigid Bodies",
+    "order": 6,
+    "title": "Overview",
+    "summary": "Gravitational field due to thin spherical shell.",
+    "body": "**Key points from solved questions**\n- Let, at point P, the gravitational field is zero, which is situated at distance x from mass m. The distance between the masses is R. <div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_736_272_992_373.jpg\" alt=\"Image\" width=\"21%\" /></div> $$ \\frac{G m}{x^{2}}=\\frac{G(9m)}{(R-x)^{2}} $$ or $$ (\\mathbb{R}-x)^{2}=9x^{2} $$ or $$ \\frac{\\mathbf{R}-x}{x}=3 $$ or $$ x=\\frac{R}{4} \\tag*{...(i)}$$ Gravitational potential at point P, $$ \\mathbf{V}_{p}=\\frac{-\\mathbf{G}m}{x}-\\frac{\\mathbf{G}(9m)}{\\mathbf{R}-x} $$ or $$ \\mathrm{V}_{p}=\\frac{\\mathrm{Gm}}{\\mathrm{R}/4}\\\n- Gravitational field due to thin spherical shell. Inside the shell, (for $ r < R $) F = 0 On the surface of the shell, (for r = R) $$ \\mathrm{F}=\\frac{\\mathrm{GM}}{\\mathrm{R}^{2}} $$ Outside the shell, (for r > R) $$ =\\frac{G M}{r^{2}} $$ <div style=\"text-align: center;\"><img src=\"imgs/img_in_chart_box_854_631_1050_771.jpg\" alt=\"Image\" width=\"16%\" /></div> 42.(C) <div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_728_787_1170_973.jpg\" alt=\"Image\" width=\"37%\" /></div> ∴ change in gravitational potential energy $$ \\begin{array}{l} \\text{U=final energy-initial} \\\\\n- According to Kepler's third law (or law of periods) i.e., $ T^{2} \\propto r^{3} $ Here, $ r_{1} = 10^{13} $ m, $ r_{2} = 10^{12} $ m (C) According to Kepler's third law (or law i.e., $ T^{2} \\propto r^{3} $ Here, $ r_{1}=10^{13} $ m, $ r_{2}=10^{12} $ m $ \\therefore\\frac{T_{1}^{2}}{T_{2}^{2}}=\\frac{r_{1}^{3}}{r_{2}^{3}}=\\frac{\\left(10^{13}\\right)^{3}}{\\left(10^{12}\\right)^{3}} $ or $ \\frac{T_{1}^{2}}{T_{2}^{2}}=\\frac{10^{39}}{10^{36}}=10^{3} $ or $ \\frac{T_{1}}{T_{2}}=10\\sqrt{10} $",
+    "formulas": [
+      {
+        "latex": "\\frac{G m}{x^{2}}=\\frac{G(9m)}{(R-x)^{2}}",
+        "meaning": ""
+      },
+      {
+        "latex": "(\\mathbb{R}-x)^{2}=9x^{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{\\mathbf{R}-x}{x}=3",
+        "meaning": ""
+      },
+      {
+        "latex": "x=\\frac{R}{4} \\tag*{...(i)}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{V}_{p}=\\frac{-\\mathbf{G}m}{x}-\\frac{\\mathbf{G}(9m)}{\\mathbf{R}-x}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{F}=\\frac{\\mathrm{GM}}{\\mathrm{R}^{2}}",
+        "meaning": ""
+      },
+      {
+        "latex": "=\\frac{G M}{r^{2}}",
+        "meaning": ""
+      },
+      {
+        "latex": "r_{1} = 10^{13}",
+        "meaning": ""
+      },
+      {
+        "latex": "r_{2} = 10^{12}",
+        "meaning": ""
+      },
+      {
+        "latex": "r_{1}=10^{13}",
+        "meaning": ""
+      },
+      {
+        "latex": "r_{2}=10^{12}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\therefore\\frac{T_{1}^{2}}{T_{2}^{2}}=\\frac{r_{1}^{3}}{r_{2}^{3}}=\\frac{\\left(10^{13}\\right)^{3}}{\\left(10^{12}\\right)^{3}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{T_{1}^{2}}{T_{2}^{2}}=\\frac{10^{39}}{10^{36}}=10^{3}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{T_{1}}{T_{2}}=10\\sqrt{10}",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "6b3f6f48-b725-45d7-b756-042027a510a9",
+      "66c93c0c-29f4-4b17-8600-95879adea6d0",
+      "46f84a47-2ce6-4ccb-9399-391df05a9bcb",
+      "69919969-3bcc-4505-8bec-7ad960cbfeb2",
+      "d568226e-d7ef-4916-a501-5c04b27c5bcb",
+      "83f7d6c2-91f9-4f52-b32d-f12ee1a38d47"
+    ],
+    "tags": [
+      "NEET 2021",
+      "NEET Phase-II 2016",
+      "NEET 2023",
+      "AIPMT Mains 2012"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-gravitation-universal-law-of-gravitation",
+    "chapter": "Gravitation",
+    "subtopic": "Universal Law of Gravitation",
+    "class": "XI",
+    "unitId": "xi-rotation",
+    "unitLabel": "Unit V — Systems & Rigid Bodies",
+    "order": 6,
+    "title": "Universal Law of Gravitation",
+    "summary": "Let, mass of Sun = M and mass of planet = m Then the gravitational force between them, $$ \\mathrm{F}=\\frac{\\mathrm{GM}m}{r^{2}} $$ where, r = distance between sun and planet.",
+    "body": "**Key points from solved questions**\n- Both the astronauts are in the condition of weightlessness. Gravitational force between them pulls towards each other.\n- Let, mass of Sun = M and mass of planet = m Then the gravitational force between them, $$ \\mathrm{F}=\\frac{\\mathrm{GM}m}{r^{2}} $$ where, r = distance between sun and planet. The above force provided the centripetal force, $$ \\begin{array}{l} \\Rightarrow \\quad \\frac{GMm}{r^2}=\\frac{mv^2}{r} \\\\ \\Rightarrow \\quad \\sqrt{\\frac{GM}{r}}=v \\end{array} $$ We know that time period of planet is, $$ \\begin{array}{c} \\mathrm{T}=\\frac{2\\pi r}{\\mathrm{v}}\\\\ \\Rightarrow\\quad\\mathrm{T}=\\frac{2\\pi r}{\\sqrt{\\frac{\\mathrm{G M}}{r}}}\\\\ \\Rightarrow\\quad\\mathrm{T}^{2}=\\frac{4\\pi^{2}r^{2}}{\\underline{\\mathrm{G M}}r}=\\frac{4\\pi^{2}r^{3}}{\\mathrm{G M}} \\end{array} $$ According to Kepler's third law, $$ \\begin{aligned}&T^{2}\\propto r^{3}\\\\&T^{2}=kr^{3}\\\\ \\end{aligned} $$ From eq. (i) and (ii), $$ \\frac{4\\pi^{2}r^{3}}{GM}=kr^{3} $$ $$ G M K=4\\pi^{2} $$\n- <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//e388feab-a2f5-49e5-95be-f7d5bd0c7541/markdown_1/imgs/img_in_image_box_160_1463_418_1565.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A25Z%2F-1%2F%2Fa61b11b2fbffc0a2b1f9ab6b5de2110290d4b97a9a2afc9cb4296d85a980461d\" alt=\"Image\" width=\"21%\" /></div> Mass of one spherical body = M $$ Its~radius=R $$ Mass of second body = 5M, $$ \\mathrm{Its~radius}=2\\mathrm{R} $$ Then we have. $$ \\begin{aligned}\\mathrm{M}x&=5\\mathrm{M}\\left(9\\mathrm{R}-x\\right)\\\\x&=45\\mathrm{R}-5x\\\\x&=\\frac{45\\mathrm{R}}{6}=7.5\\mathrm{~R}\\end{aligned} $$\n- We know that, $$ {\\bf\\nabla}_{\\bf P}\\mathrm{\\;=\\;F.v\\;=\\;F v\\;}\\cos\\theta $$ Power will be maximum, when velocity and $\\cos\\theta$ will be maximum.\n- The gravitational force does not depend upon the medium in which objects are placed.\n- Force between the two masses, $$ \\mathrm{F}=\\frac{\\mathrm{Gm}^{2}}{4\\mathrm{R}^{2}} $$ This force will provide the necessary centripetal force for the masses to go around a circle, then, $$ \\frac{G m^{2}}{4R^{2}}=\\frac{mv^{2}}{R} $$ $$ ↳\\Downarrow $$ $$ \\mathbf{v}^{2}=\\frac{G m}{4R} $$ $$ \\mathbf{v}=\\frac{1}{2}\\sqrt{\\frac{G m}{R}} $$\n- Given: $$ mass(m)=6\\times10^{24}kg; $$ angular velocity ( $ \\omega $) = $ 2 \\times 10^{-7} $ rad/s and $$ \\begin{aligned}radius\\left(r\\right)&=1.5\\times10^{8}km\\\\&=1.5\\times10^{11}m\\end{aligned} $$ $$ \\begin{aligned}Force~exerted~on~the~Earth,~F&=mR\\omega^{2}\\\\&=(6\\times10^{24})\\times(1.5\\times10^{11})\\\\&=36\\times10^{21}N\\end{aligned}\\times(2\\times10^{-7})^{2} $$\n- Centripetal force (F) = $ \\frac{mv^{2}}{R} $ $$ \\mathrm{F}=\\frac{\\mathrm{GM}m}{\\mathrm{R}} $$ $$ \\mathrm{F}=\\frac{\\mathrm{G M m}}{\\mathrm{R}},(\\mathrm{w h e r e}\\mathrm{R}^{2}\\rightarrow\\mathrm{R}). $$ Since, $$ \\frac{mv^{2}}{R}=\\frac{GMm}{R} $$ therefore. $$ \\mathbf{v}=\\sqrt{\\mathbf{G}\\mathbf{M}}. $$ Thus velocity v is independent of R. Hence, particle in circular orbit under such a force would have its orbital speed v perportional to $ R^{\\circ} $.",
+    "formulas": [
+      {
+        "latex": "\\mathrm{F}=\\frac{\\mathrm{GM}m}{r^{2}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{array}{l} \\Rightarrow \\quad \\frac{GMm}{r^2}=\\frac{mv^2}{r} \\\\ \\Rightarrow \\quad \\sqrt{\\frac{GM}{r}}=v \\end{array}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{array}{c} \\mathrm{T}=\\frac{2\\pi r}{\\mathrm{v}}\\\\ \\Rightarrow\\quad\\mathrm{T}=\\frac{2\\pi r}{\\sqrt{\\frac{\\mathrm{G M}}{r}}}\\\\ \\Rightarrow\\quad\\mathrm{T}^{2}=\\frac{4\\pi^{2}r^{2}}{\\underline{\\mathrm{G M}}r}=\\frac{4\\pi^{2}r^{3}}{\\mathrm{G M}} \\end{array}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}&T^{2}\\propto r^{3}\\\\&T^{2}=kr^{3}\\\\ \\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{4\\pi^{2}r^{3}}{GM}=kr^{3}",
+        "meaning": ""
+      },
+      {
+        "latex": "G M K=4\\pi^{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "Its~radius=R",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{Its~radius}=2\\mathrm{R}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}\\mathrm{M}x&=5\\mathrm{M}\\left(9\\mathrm{R}-x\\right)\\\\x&=45\\mathrm{R}-5x\\\\x&=\\frac{45\\mathrm{R}}{6}=7.5\\mathrm{~R}\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "{\\bf\\nabla}_{\\bf P}\\mathrm{\\;=\\;F.v\\;=\\;F v\\;}\\cos\\theta",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{F}=\\frac{\\mathrm{Gm}^{2}}{4\\mathrm{R}^{2}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{G m^{2}}{4R^{2}}=\\frac{mv^{2}}{R}",
+        "meaning": ""
+      },
+      {
+        "latex": "↳\\Downarrow",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{v}^{2}=\\frac{G m}{4R}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{v}=\\frac{1}{2}\\sqrt{\\frac{G m}{R}}",
+        "meaning": ""
+      },
+      {
+        "latex": "mass(m)=6\\times10^{24}kg;",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}radius\\left(r\\right)&=1.5\\times10^{8}km\\\\&=1.5\\times10^{11}m\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}Force~exerted~on~the~Earth,~F&=mR\\omega^{2}\\\\&=(6\\times10^{24})\\times(1.5\\times10^{11})\\\\&=36\\times10^{21}N\\end{aligned}\\times(2\\times10^{-7})^{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{F}=\\frac{\\mathrm{GM}m}{\\mathrm{R}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{F}=\\frac{\\mathrm{G M m}}{\\mathrm{R}},(\\mathrm{w h e r e}\\mathrm{R}^{2}\\rightarrow\\mathrm{R}).",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{mv^{2}}{R}=\\frac{GMm}{R}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{v}=\\sqrt{\\mathbf{G}\\mathbf{M}}.",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "87a64c91-de09-4c4a-be70-e948c370fcb2",
+      "df431255-4505-47bb-86c7-bd3a92e867ab",
+      "a84d6de1-abd6-4ee1-ab4c-8a6aa2b658c7",
+      "84393ee0-7d65-4b9b-ae0d-359a9d50e5b1",
+      "4ec3c42d-f409-432d-a876-9d8a471501b4",
+      "4a644182-7a0a-4ba6-989e-e1d7ff2d7ce8",
+      "24ae95c1-c52c-4185-80f2-05718766019b",
+      "739a34f3-aff8-497f-9499-4637aaec445f"
+    ],
+    "tags": [
+      "NEET 2017",
+      "AIPMT 2003",
+      "AIPMT 1995",
+      "AIPMT 1994, 1989"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-gravitation-reneet2026",
+    "chapter": "Gravitation",
+    "subtopic": "reNEET2026",
+    "class": "XI",
+    "unitId": "xi-rotation",
+    "unitLabel": "Unit V — Systems & Rigid Bodies",
+    "order": 6,
+    "title": "reNEET2026",
+    "summary": "$v_{esc}=\\sqrt{2GM/R}\\propto1/\\sqrt R$.",
+    "body": "**Key points from solved questions**\n- $v_{esc}=\\sqrt{2GM/R}\\propto1/\\sqrt R$. Equal mass with $R_2=R_1/2\\Rightarrow v_2/v_1=\\sqrt{R_1/R_2}=\\sqrt2.$\n- Kepler's third law: $T^2\\propto R^3\\Rightarrow T\\propto R^{3/2}.$",
+    "formulas": [
+      {
+        "latex": "v_{esc}=\\sqrt{2GM/R}\\propto1/\\sqrt R",
+        "meaning": ""
+      },
+      {
+        "latex": "R_2=R_1/2\\Rightarrow v_2/v_1=\\sqrt{R_1/R_2}=\\sqrt2.",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "renet2026-phy-13",
+      "renet2026-phy-14"
+    ],
+    "tags": [
+      "reNEET 2026"
+    ],
+    "source": "seed"
+  }
+]

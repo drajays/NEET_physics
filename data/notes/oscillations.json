@@ -1,0 +1,1010 @@
+[
+  {
+    "id": "note-oscillations-energy-in-simple-harmonic-motion",
+    "chapter": "Oscillations",
+    "subtopic": "Energy in Simple Harmonic Motion",
+    "class": "XI",
+    "unitId": "xi-waves",
+    "unitLabel": "Unit X — Oscillations & Waves",
+    "order": 12,
+    "title": "Energy in Simple Harmonic Motion",
+    "summary": "We have, time period of a simple pendulum $$ \\mathrm{T}=2\\pi\\sqrt{\\frac{l}{g}} $$ \\[\\begin{array}{r l r}{\\lambda_{1}}&{{}=}&{\\left(\\frac{1}{2},-\\frac{1}{2}\\right),}\\\\…",
+    "body": "**Key points from solved questions**\n- $$ \\mathbf{P E}=\\frac{1}{2}\\mathbf{K}x^{2}, $$ $$ \\mathrm{K E}=\\frac{1}{2}m\\mathbf{v}^{2}, $$ $$ \\mathrm{E}=\\frac{1}{2}k a^{2}, $$ At any point in SHM, the total energy (E) is sum of PE and KE. $$ \\mathrm{E}=\\mathrm{PE}+\\mathrm{KE} $$ Since, $$ PE=KE $$ $$ \\mathrm{E}=2\\mathrm{P E} $$ $$ \\frac{1}{2}ka^{2}=2\\left(\\frac{1}{2}kx^{2}\\right) $$ $$ a^{2}=2x^{2} $$ $$ x^{2}=\\frac{a^{2}}{2} $$ $$ x=\\frac{a}{\\sqrt{2}} $$\n- Displacement of particle is, $x=A\\sin\\omega t$ and it is given that $\\omega=2\\pi n$ $\\Rightarrow x=A\\sin(2\\pi nt)$ Potential energy of particle is, $$ \\mathrm{U}=\\frac{1}{2}k x^{2} $$ $$ \\begin{aligned}\\mathrm{U}&=\\frac{1}{2}k(\\mathrm{A}\\sin\\omega t)^{2}\\\\&=\\frac{1}{2}k\\mathrm{A}^{2}\\sin^{2}\\omega t\\\\&=\\frac{1}{2}k\\mathrm{A}^{2}\\left(\\frac{1-\\cos2\\omega t}{2}\\right)\\\\&=\\frac{1}{4}k\\mathrm{A}^{2}\\left(1-\\cos2\\omega t\\right)\\end{aligned} $$ $$ \\begin{aligned}&=\\frac{k}{4}\\mathbf{A}^{2}\\left(1-\\cos\\left(4\\pi n\\right)t\\right)\\quad(\\because\\omega=2\\pi n)\\\\&=\\frac{k}{4}\\mathbf{A}^{2}\\left(1-\\cos\\left(2\\pi.2n\\right)t\\right)\\end{aligned} $$ Therefore, the frequency of P.E. is 2n.\n- When kinetic energy is maximum potential energy is zero and vice-versa. $$ Max P.E.=T.E. $$ $$ \\mathbf{0}+\\mathbf{K}_{0}=\\mathbf{K}_{0}. $$\n- $$ \\begin{aligned}P.E.&=\\frac{1}{2}kx^{2}\\\\&=\\frac{1}{2}k\\bigg(\\frac{x}{2}\\bigg)^{2}=\\frac{E}{4}\\end{aligned} $$\n- For a S.H.M. between A and B with 0 as the mean position max kinetic energy of the particle executing SHM will be at 0 and maximum potential energy will be at A and B. $$ \\underbrace{\\mathrm{P.E.}}_{\\mathrm{A}\\leftarrow\\cdots\\rightarrow a\\rightarrow0}\\stackrel{\\max\\mathrm{K.E.}}{\\rightarrow}\\stackrel{\\max}{\\rightarrow}\\mathrm{P.E.} $$ ∴ The displacement between position of maximum potential energy and maximum kinetic energy is $ \\pm a $.\n- In simple harmonic motion, The total energy = Potential energy + Kinetic energy or $$ \\begin{aligned}&\\mathrm{r g y}=\\mathrm{P o t e n t i a l~e n e r g y}+\\mathrm{K i n e t i c~e n e}\\\\ &\\mathrm{E}=\\mathrm{U}+\\mathrm{K}\\\\ &\\quad=\\frac{1}{2}m\\omega^{2}x^{2}+\\frac{1}{2}m\\omega^{2}\\left(a^{2}-x^{2}\\right)\\\\ &\\quad=\\frac{1}{2}m\\omega^{2}a^{2}=\\frac{1}{2}k a^{2}\\\\ &\\quad k=\\mathrm{f o r c e~c o n s t a n t}=m\\omega^{2}\\\\ \\end{aligned} $$ where, Hence, the total energy depends on k and a.\n- Total energy of a particle executing SHM at instant time $t$, $$ \\mathrm{E}=\\frac{1}{2}m^{2}\\omega a^{2} $$ and kinetic energy of the particle at instant $t$, $$ \\mathrm{E_{K}}=\\frac{1}{2}m\\omega^{2}\\left(a^{2}-x^{2}\\right) $$ when $$ x=\\frac{a}{2}, $$ $$ \\begin{array}{l}\\mathrm{E}_{\\mathrm{K}}=\\frac{1}{2}m\\omega^{2}\\left(a^{2}-\\frac{a^{2}}{4}\\right)\\\\=\\frac{1}{2}m\\omega^{2}\\times\\frac{3}{4}a^{2}\\end{array} $$ Or $$ \\mathrm{E}_{\\mathbf{K}}=\\frac{1}{2}\\times\\frac{3}{4}m\\omega^{2}a^{2} $$ From eqs. (i) and (iii), we get $$ \\frac{\\mathbf{E}_{\\mathbf{k}}}{\\mathbf{E}}=\\frac{3}{4} $$ $$ \\mathrm{E_{K}}=\\frac{3}{4}\\mathrm{E} $$\n- We have, potential energy of a body executing SHM, $ U = \\frac{1}{2} m\\omega^{2}x^{2} $ Total energy of the body executing SHM, $$ \\mathrm{E}=\\frac{1}{2}m\\omega^{2}a^{2} $$ According to the question $$ \\begin{aligned}U&=\\frac{1}{4}E\\\\\\therefore\\quad&\\frac{1}{2}m\\omega^{2}x^{2}=\\frac{1}{4}\\times\\frac{1}{2}m\\omega^{2}a^{2}\\\\\\Rightarrow\\quad&x^{2}=\\frac{a^{2}}{4}\\\\\\Rightarrow\\quad&x=\\frac{a}{2}\\end{aligned} $$\n- $$ \\mathrm{T}=\\frac{1}{2}m\\omega^{2}(a^{2}-x^{2}) $$ and $$ \\mathrm{U}=\\frac{1}{2}m\\omega^{2}x^{2} $$ $$ \\frac{\\mathrm{T}}{\\mathrm{U}}=\\left(\\frac{a^{2}-x^{2}}{x^{2}}\\right) $$\n- Mass of the bob = m after increasing thrice = $ m' = 3m $ length of the bob = l after half of its length is clamped = $ l = \\frac{l}{2} $ $$ \\mathrm{T}=2\\pi\\sqrt{\\frac{l}{g}} $$ $$ \\mathrm{T}^{\\prime}=~2\\pi\\sqrt{\\frac{l^{\\prime}}{g}}~=~2\\pi\\sqrt{\\frac{l}{2g}} $$ $$ \\mathrm{T}^{\\prime}=\\left(\\frac{1}{\\sqrt{2}}\\right)2\\pi\\sqrt{\\frac{l}{g}}=\\frac{1}{\\sqrt{2}}\\mathrm{T} $$ $$ \\mathrm{T}^{\\prime}=\\frac{x}{2}\\mathrm{~T~(g i v e n)} $$ $$ \\frac{1}{\\sqrt{2}}\\mathrm{T}=\\frac{x}{2}\\mathrm{T} $$ $$ x=\\frac{2}{\\sqrt{2}}=\\sqrt{2} $$\n- Acceleration of particle executing SHM at position y is given as, $$ |a|=\\omega^{2}y $$ Here $$ a=20\\mathrm{~m s}^{-2} $$ $$ y=5\\;{\\mathrm{m}} $$ $$ \\because $$ $$ 20=\\omega^{2}\\left(5\\right) $$ $$ \\Rightarrow $$ $$ \\varpi^{2}=4 $$ $$ \\Downarrow $$ $$ \\omega=2\\mathrm{rad/s} $$ ∴ Time period. $$ \\mathrm{T}=\\frac{2\\pi}{\\omega}=\\frac{2\\pi}{2}=\\pi\\mathrm{s} $$ $$ \\mathrm{T}=\\pi\\mathrm{s} $$\n- We have, time period of a simple pendulum $$ \\mathrm{T}=2\\pi\\sqrt{\\frac{l}{g}} $$ \\[\\begin{array}{r l r}{\\lambda_{1}}&{{}=}&{\\left(\\frac{1}{2},-\\frac{1}{2}\\right),}\\\\ {\\lambda_{2}}&{{}=}&{\\frac{1}{2},-\\frac{1}{2},-\\frac{1}{2},-\\frac{1 where, $l$ = length of pendulum $ g = \\text{acceleration due to gravity} $ i.e., $$ \\mathrm{~T~}\\propto\\sqrt{l} $$ Hence, $$ \\frac{\\mathrm{T}_{2}}{\\mathrm{T}_{1}}=\\sqrt{\\frac{l_{2}}{l_{1}}} $$ Given. $$ l_{2}=4l_{1},\\mathrm{~T}_{1}=2\\mathrm{~s} $$ Substituting these values in Eq. (i), we get $$ \\mathrm{T}_{2}=\\sqrt{\\frac{4l_{1}}{l_{1}}}\\times2=2\\times2=4\\mathrm{~s} $$ <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//9540f7e2-ec72-43a6-81b2-fd80b5833386/markdown_0/imgs/img_in_image_box_654_471_691_514.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A22Z%2F-1%2F%2Fe5a776fc455cb48a9ecd71eb6c2d78c9b014eca99c8496f8e9d2c7cab6b6cf8e\" alt=\"Image\" width=\"3%\" /></div> ##### Related Theory As we move from Earth's surface to deep mine, the acceleration due to gravity decreases and hence the time period of simple pendulum increases. $ \\text{H}_{2}\\text{O}_{2} $ $ \\text{NaOH} + \\text{H}_{2}\\text{SO}_{4} \\rightarrow \\text{Na}_{2}\\text{SO}_{4} + 2\\text{H}_{2}\\text{O} + \\text{NaOH} + \\text{H}_{2}\\text{SO}_{4} + 2\\text{NaOH} + \\text{H}_{2}\\text{O} $ $ \\text{NaOH} + \\text{H}_{2}\\text{SO}_{4} \\rightarrow \\text{Na}_{2}\\text{SO}_{4} + 2\\text{H}_{2}\\text{O} + 2\\text{NaOH} + \\text{H}_{2}\\text{SO}_{4} + 2\\text{NaOH} + \\text{H}_{2}\\text{O} $ $ \\text{NaOH} + \\text{H}_{2}\\text{SO}_{4} \\rightarrow \\text{Na}_{2}\\text{SO}_{4} + 2\\text{H}_{2}\\text{O} + 2\\text{NaOH} + \\text{H}_{2}\\text{SO}_{4} + 2\\text{NaOH} + \\text{H}_{2}\\text{O} $ $$ \\begin{array}{c} \\left[\\begin{array}{cc} \\frac{2}{3} \\times \\frac{2}{2} \\\\ 46.75 \\end{array} \\right] \\mp \\left[\\begin{array}{cc} 2 & 10 \\\\ 2 & 200000000.76 \\end{array} \\right] \\\\ \\left[\\begin{array}{cc} 51.475 & -10 \\\\ 4 & -12.51^{4} & 4 \\end{array} \\right] \\pm 5.1 \\end{array} \\right] \\\\ \\succeq 0 \\end{array} $$ \\(\\begin{array}{l}\\pi r^2 + 2\\pi(2R-r^2)\\leq2r^2-2r^2-2r^2-2r^2- $ \\textcircled{p} \\frac{3}{4} = 1.3 \\times 7 = 7.3 $ $$ \\textcircled{2}A\\quad\\textcircled{2}A_{0} $$ $$ \\textcircled{N}x=\\frac{1}{2}x\\operatorname{l o g}(1+\\frac{1}{4}x^{2}) $$ $ \\textcircled{p} \\frac{3}{4} \\times 620 \\times 4y - 86.77 \\div 2 = 1 \\div 33 - 100 = 100 $ $$ \\textcircled{6}\\frac{1}{x}\\quad\\textcircled{6}\\frac{1}{x-x_{0}} $$ $$ ↳\\textcircled{s}t $$",
+    "formulas": [
+      {
+        "latex": "\\mathbf{P E}=\\frac{1}{2}\\mathbf{K}x^{2},",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{K E}=\\frac{1}{2}m\\mathbf{v}^{2},",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{E}=\\frac{1}{2}k a^{2},",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{E}=\\mathrm{PE}+\\mathrm{KE}",
+        "meaning": ""
+      },
+      {
+        "latex": "PE=KE",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{E}=2\\mathrm{P E}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{1}{2}ka^{2}=2\\left(\\frac{1}{2}kx^{2}\\right)",
+        "meaning": ""
+      },
+      {
+        "latex": "a^{2}=2x^{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "x^{2}=\\frac{a^{2}}{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "x=\\frac{a}{\\sqrt{2}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{U}=\\frac{1}{2}k x^{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}\\mathrm{U}&=\\frac{1}{2}k(\\mathrm{A}\\sin\\omega t)^{2}\\\\&=\\frac{1}{2}k\\mathrm{A}^{2}\\sin^{2}\\omega t\\\\&=\\frac{1}{2}k\\mathrm{A}^{2}\\left(\\frac{1-\\cos2\\omega t}{2}\\right)\\\\&=\\frac{1}{4}k\\mathrm{A}^{2}\\left(1-\\cos2\\omega t\\right)\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}&=\\frac{k}{4}\\mathbf{A}^{2}\\left(1-\\cos\\left(4\\pi n\\right)t\\right)\\quad(\\because\\omega=2\\pi n)\\\\&=\\frac{k}{4}\\mathbf{A}^{2}\\left(1-\\cos\\left(2\\pi.2n\\right)t\\right)\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "x=A\\sin\\omega t",
+        "meaning": ""
+      },
+      {
+        "latex": "\\omega=2\\pi n",
+        "meaning": ""
+      },
+      {
+        "latex": "\\Rightarrow x=A\\sin(2\\pi nt)",
+        "meaning": ""
+      },
+      {
+        "latex": "Max P.E.=T.E.",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{0}+\\mathbf{K}_{0}=\\mathbf{K}_{0}.",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}P.E.&=\\frac{1}{2}kx^{2}\\\\&=\\frac{1}{2}k\\bigg(\\frac{x}{2}\\bigg)^{2}=\\frac{E}{4}\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\underbrace{\\mathrm{P.E.}}_{\\mathrm{A}\\leftarrow\\cdots\\rightarrow a\\rightarrow0}\\stackrel{\\max\\mathrm{K.E.}}{\\rightarrow}\\stackrel{\\max}{\\rightarrow}\\mathrm{P.E.}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}&\\mathrm{r g y}=\\mathrm{P o t e n t i a l~e n e r g y}+\\mathrm{K i n e t i c~e n e}\\\\ &\\mathrm{E}=\\mathrm{U}+\\mathrm{K}\\\\ &\\quad=\\frac{1}{2}m\\omega^{2}x^{2}+\\frac{1}{2}m\\omega^{2}\\left(a^{2}-x^{2}\\right)\\\\ &\\quad=\\frac{1}{2}m\\omega^{2}a^{2}=\\frac{1}{2}k a^{2}\\\\ &\\quad k=\\mathrm{f o r c e~c o n s t a n t}=m\\omega^{2}\\\\ \\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{E}=\\frac{1}{2}m^{2}\\omega a^{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{E_{K}}=\\frac{1}{2}m\\omega^{2}\\left(a^{2}-x^{2}\\right)",
+        "meaning": ""
+      },
+      {
+        "latex": "x=\\frac{a}{2},",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "17951e87-c8df-48e6-9c09-09d7ebcba50d",
+      "24338d37-516e-489a-9ab1-e4271300feae",
+      "bdfada70-06f1-4a9e-84cd-91a38463282c",
+      "8e456c80-eb7e-454d-9ea4-ebe321ca0d08",
+      "ff6bf394-0195-4f49-b233-97840df4d201",
+      "d313b22f-cb83-4bd0-8634-42604ea4241b",
+      "f60f5f21-8b77-4e4b-9345-ba38816b2148",
+      "b0ff387b-cf0c-4ac6-a16b-b42bbe5ea3c7",
+      "b0463773-3027-4c65-b40d-f1eda8b740ac",
+      "b017c0a8-b5c6-42be-9374-982560132bfb",
+      "ea7c125f-e6af-4421-931c-0b5e7a3d9c96",
+      "fc31dcce-060e-402e-963b-bb3c631815b0"
+    ],
+    "tags": [
+      "Re-NEET 2024",
+      "NEET 2021",
+      "AIPMT 2003",
+      "AIPMT 2002",
+      "AIPMT 2001",
+      "AIPMT 1996",
+      "AIPMT 1995",
+      "AIPMT 1991",
+      "NEET 2024",
+      "NEET 2018",
+      "AIPMT 1999"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-oscillations-force-law-for-simple-harmonic-motion",
+    "chapter": "Oscillations",
+    "subtopic": "Force Law for Simple Harmonic Motion",
+    "class": "XI",
+    "unitId": "xi-waves",
+    "unitLabel": "Unit X — Oscillations & Waves",
+    "order": 12,
+    "title": "Force Law for Simple Harmonic Motion",
+    "summary": "According to the question, the diagram is, <div style=\"text-align: center;\"><img…",
+    "body": "**Key points from solved questions**\n- Given, $$ Stretch(x)=5cm $$ $$ \\mathrm{Force}(\\mathbf{F})=10\\,\\mathbf{N} $$ Mass $ m $=2kg Time period, T = ? We know, that, force constant of spring, $$ \\mathbf{K}=\\frac{\\mathbf{F}}{x} $$ $$ \\mathbf{K}=\\frac{10}{0.05}=200\\ N/m $$ $ \\because $ $ \\Rightarrow $ $$ \\omega=\\frac{2\\pi}{T} $$ $$ \\frac{4\\pi^{2}}{\\mathrm{T}^{2}}=\\frac{\\mathrm{K}}{m} $$ ∴ $$ \\begin{aligned}T^{2}&=4\\pi^{2}\\frac{m}{K}\\\\&=2\\pi\\sqrt{\\frac{m}{K}}\\end{aligned} $$ ∴ $$ \\begin{aligned}T&=\\left.2\\pi\\sqrt{\\frac{2}{200}}\\right.\\\\&=\\left.2\\pi\\sqrt{\\frac{1}{100}}\\right.\\\\&=\\frac{2\\pi}{10}\\end{aligned} $$ $$ \\begin{aligned}T&=\\frac{6.28}{10}\\\\&=0.628s\\end{aligned} $$\n- Spring constant $ \\propto\\frac{1}{\\text{length}} $ $ \\Rightarrow $ $ k\\propto\\frac{1}{l} $ i.e., $ k_{1}=6k $, $ k_{2}=3k $ and $ k_{3}=2k $ In series, $$ \\frac{1}{k!}=\\frac{1}{6k}+\\frac{1}{3k}+\\frac{1}{2k} $$ $$ \\frac{1}{k!}=\\frac{6}{6k} $$ $$ \\begin{array}{l}k^{\\prime}=k\\\\ k^{\\prime \\prime}=6k+3k+2k=11k\\end{array}. $$ $$ \\frac{k}{k^{n}}=\\frac{1}{11} $$ $ k': k'' = 1:11 $ <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//e92d9226-645a-476c-8cbd-04aad4950b51/markdown_2/imgs/img_in_image_box_580_1362_618_1410.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A21%3A49Z%2F-1%2F%2F0411fb3e6a116288ae87be1e60bfd9f0e16dc2502349e0a68c75a64ede0dfbfa\" alt=\"Image\" width=\"3%\" /></div> ##### Related Theory The springs are connected in series. ∴ Effective spring constant. $$ \\frac{1}{k_{eff}}=\\frac{1}{k_{1}}+\\frac{1}{k_{2}} $$\n- According to the question, the diagram is, <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//e92d9226-645a-476c-8cbd-04aad4950b51/markdown_3/imgs/img_in_image_box_299_133_370_298.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A21%3A56Z%2F-1%2F%2F7930050a766b5724bc034bf3d91b15805b27357e77ec30bde4a664e372d7aaec\" alt=\"Image\" width=\"5%\" /></div> Time period. $$ \\mathrm{T}=2\\pi\\sqrt{\\frac{m}{k}} $$ $ I^{st} $ case. $$ \\mathrm{T}_{1}=2\\pi\\sqrt{\\frac{m}{k}} $$ II$^{nd}$ case, when mass $m$ is increased by 1 kg then mass becomes $(m+1)$ $$ \\mathrm{T}_{2}=2\\pi\\sqrt{\\frac{m+1}{k}} $$ from eq. (i) and (ii), we get, $$ \\begin{aligned}\\frac{T_{2}}{T_{1}}&=\\sqrt{\\frac{m+1}{m}}\\\\\\Rightarrow\\quad\\frac{5}{3}&=\\sqrt{\\frac{m+1}{m}}\\\\\\Rightarrow\\quad\\frac{m+1}{m}&=\\frac{25}{9}\\\\\\Rightarrow\\quad1+\\frac{1}{m}&=\\frac{25}{9}\\\\\\Rightarrow\\quad\\frac{25}{9}-1&=\\frac{1}{m}\\\\\\therefore\\quad m&=\\frac{9}{16}kg\\end{aligned} $$\n- Time period oscillation T. $$ \\mathrm{T}=2\\pi\\sqrt{\\frac{\\mathbf{M}}{k}} $$ When mass is doubled, then, $$ \\begin{aligned}\\mathrm{T}^{\\prime}&=2\\pi\\sqrt{\\frac{2\\mathbf{M}}{k}}=\\sqrt{2}\\left(2\\pi\\sqrt{\\frac{\\mathbf{M}}{k}}\\right)\\\\&=\\sqrt{2}\\mathrm{T}\\end{aligned} $$\n- For given condition, $$ \\begin{aligned}mg&=m\\omega^{2}a=ka\\\\a&=\\frac{mg}{k}=\\frac{2\\times10}{200}\\\\&=0.1=10cm\\end{aligned} $$\n- Let, K = force constant of spring and $ K' = force\\ constant $ of each part then $ \\frac{1}{K} = \\frac{4}{K'} $ $ \\Rightarrow $ K' = 4K ∴ Time period $$ \\begin{aligned}T&=2\\pi\\sqrt{\\frac{m}{4K}}\\\\&=\\frac{1}{2}\\times2\\pi\\sqrt{\\frac{m}{K}}\\\\&=\\frac{T}{2}\\end{aligned} $$\n- If a particle in simple harmonic motion moves a distance from its equilibrium position, the magnitude of the restoring force F acting on the particle at that instant is given by, $$ \\mathbf{F}=-\\mathbf{A}\\mathbf{K}\\mathbf{x} $$ where, K is known as force constant.",
+    "formulas": [
+      {
+        "latex": "Stretch(x)=5cm",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{Force}(\\mathbf{F})=10\\,\\mathbf{N}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{K}=\\frac{\\mathbf{F}}{x}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{K}=\\frac{10}{0.05}=200\\ N/m",
+        "meaning": ""
+      },
+      {
+        "latex": "\\omega=\\frac{2\\pi}{T}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{4\\pi^{2}}{\\mathrm{T}^{2}}=\\frac{\\mathrm{K}}{m}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}T^{2}&=4\\pi^{2}\\frac{m}{K}\\\\&=2\\pi\\sqrt{\\frac{m}{K}}\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}T&=\\left.2\\pi\\sqrt{\\frac{2}{200}}\\right.\\\\&=\\left.2\\pi\\sqrt{\\frac{1}{100}}\\right.\\\\&=\\frac{2\\pi}{10}\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}T&=\\frac{6.28}{10}\\\\&=0.628s\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{1}{k!}=\\frac{1}{6k}+\\frac{1}{3k}+\\frac{1}{2k}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{1}{k!}=\\frac{6}{6k}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{array}{l}k^{\\prime}=k\\\\ k^{\\prime \\prime}=6k+3k+2k=11k\\end{array}.",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{k}{k^{n}}=\\frac{1}{11}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{1}{k_{eff}}=\\frac{1}{k_{1}}+\\frac{1}{k_{2}}",
+        "meaning": ""
+      },
+      {
+        "latex": "k_{1}=6k",
+        "meaning": ""
+      },
+      {
+        "latex": "k_{2}=3k",
+        "meaning": ""
+      },
+      {
+        "latex": "k_{3}=2k",
+        "meaning": ""
+      },
+      {
+        "latex": "k': k'' = 1:11",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{T}=2\\pi\\sqrt{\\frac{m}{k}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{T}_{1}=2\\pi\\sqrt{\\frac{m}{k}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{T}_{2}=2\\pi\\sqrt{\\frac{m+1}{k}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}\\frac{T_{2}}{T_{1}}&=\\sqrt{\\frac{m+1}{m}}\\\\\\Rightarrow\\quad\\frac{5}{3}&=\\sqrt{\\frac{m+1}{m}}\\\\\\Rightarrow\\quad\\frac{m+1}{m}&=\\frac{25}{9}\\\\\\Rightarrow\\quad1+\\frac{1}{m}&=\\frac{25}{9}\\\\\\Rightarrow\\quad\\frac{25}{9}-1&=\\frac{1}{m}\\\\\\therefore\\quad m&=\\frac{9}{16}kg\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{T}=2\\pi\\sqrt{\\frac{\\mathbf{M}}{k}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}\\mathrm{T}^{\\prime}&=2\\pi\\sqrt{\\frac{2\\mathbf{M}}{k}}=\\sqrt{2}\\left(2\\pi\\sqrt{\\frac{\\mathbf{M}}{k}}\\right)\\\\&=\\sqrt{2}\\mathrm{T}\\end{aligned}",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "d09a72a4-9c08-4fd2-aedd-59715dd21f46",
+      "f38d1b6e-16c9-4b85-a89f-0edad7cfd2d7",
+      "24b84d44-7bb4-4000-ab02-3e02d4c38cb8",
+      "24533a87-6f91-44c4-957b-4259e22682f7",
+      "e569f631-5a34-4d6b-9eab-0da5b8fb266e",
+      "e617e970-190d-4d3e-b9b2-a6e6cee9cd4b",
+      "8466b134-9280-41e1-b437-14496f85eeb0"
+    ],
+    "tags": [
+      "NEET 2021",
+      "NEET 2017",
+      "NEET Phase-II 2016",
+      "AIPMT 2003",
+      "AIPMT 1988"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-oscillations-objective-i",
+    "chapter": "Oscillations",
+    "subtopic": "Objective I",
+    "class": "XI",
+    "unitId": "xi-waves",
+    "unitLabel": "Unit X — Oscillations & Waves",
+    "order": 12,
+    "title": "Objective I",
+    "summary": "The instant the box is released, it (and everything inside, including the bob and the suspension point) begins to **fall freely** — every part of the system shares the same downward acceleration $g$.",
+    "body": "**Key points from solved questions**\n- For motion to be **simple harmonic**, the restoring force must be directly proportional to the displacement from the mean position, with a *constant* proportionality factor: $$F = -m\\omega^2 x = -(\\text{constant})\\cdot x$$ We're told $F = -k\\sqrt{x}$. For this to represent SHM, it must be expressible in the form $-(\\text{constant})\\cdot x$: $$-k\\sqrt{x} = -(m\\omega^2)\\,x \\;\\Longrightarrow\\; k = m\\omega^2 \\sqrt{x}$$ This shows $k$ **cannot be a true constant** — it must vary as $\\sqrt{x}$ in order for the force law to reduce to the required linear-in-$x$ form. Since $\\sqrt{x}$ increases as $x$ increases (for positive $x$), $k = m\\omega^2\\sqrt{x}$ must **increase** as $x$ increases. (This is the only way the given force law is consistent with the stated fact that the motion *is* simple harmonic.) Answer: (A).\n- In SHM, the particle generally passes through any given point **twice** in each cycle — once moving in each direction (e.g., once going right, once coming back left through the same spot). The time between these two passages through a generic point is some fraction of $T$ (often $T/2$ for the mean position, by symmetry, but other fractions for other interior points). The **extreme positions**, however, are special: the particle reaches each extreme only **once per cycle** — it arrives there, momentarily stops, and reverses direction (it doesn't pass through and come back from the same side within that cycle). So the *only* way the particle \"appears again\" at an extreme position is by completing a **full cycle** and returning to that same extreme — this interval is exactly the time period $T$. So the point where consecutive appearances are separated by exactly $T$ (matching \"the time period of the particle\") is an **extreme position**. Answer: (B).\n- In SHM, the velocity at a given point depends on both the position (via $|v| = \\omega\\sqrt{A^2 - x^2}$) and the direction of motion. For most velocity values $v$ (with $0 < |v| < v_{\\max}$), the particle attains that exact velocity (matching both magnitude *and* sign/direction) at **more than one instant** within a single period — so the smallest recurrence interval is *less than* $T$. The **maximum velocity** $v_{\\max} = \\omega A$ is special: it occurs only at the **mean position**, and only while moving in *one specific direction* (e.g., moving in the positive direction). This combination — \"at the mean position, moving in the $+$ direction at speed $v_{\\max}$\" — occurs **exactly once per cycle**. The next time the particle has this *exact* velocity (same magnitude *and* direction) is exactly one full period later. (Velocity $v=0$ occurs twice per period — at the two extremes — giving a smaller recurrence interval of $T/2$; intermediate velocities recur even more frequently within a cycle.) So the velocity for which the smallest recurrence interval equals the full time period $T$ is $v = v_{\\max}$. Answer: (A).\n- \"Displacement\" is a **vector** quantity — it represents the net change in position, $\\Delta x = x_{\\text{final}} - x_{\\text{initial}}$. In simple harmonic motion, the particle returns to **exactly the same position** (with the same velocity, in the same direction) after completing one full time period $T$ — that's precisely what makes the motion \"periodic\" with period $T$. So: $$\\Delta x = x(t+T) - x(t) = 0$$ The net displacement over one complete period is **zero**. Answer: (D).\n- \"Distance moved\" is the total **path length** traversed — a scalar quantity that keeps accumulating regardless of direction (unlike displacement, which can cancel out). Starting from the mean position (say), in one full period the particle: - moves from the mean position to one extreme — a distance $A$, - returns from that extreme back to the mean position — another distance $A$, - continues to the opposite extreme — another distance $A$, - and returns to the mean position to complete the cycle — another distance $A$. Total distance covered in one full period $= A + A + A + A = 4A$ — regardless of the starting phase (the four \"quarter-amplitude\" traversals always add up to $4A$ over a complete cycle). Answer: (C).\n- **Average acceleration** over a time interval $\\Delta t$ is defined as $\\bar a = \\dfrac{\\Delta v}{\\Delta t} = \\dfrac{v(t+\\Delta t) - v(t)}{\\Delta t}$. Over one **complete time period** $T$, the particle returns to the exact same state — same position *and* same velocity (this is what periodicity means): $v(t + T) = v(t)$. So: $$\\bar a = \\frac{v(t+T) - v(t)}{T} = \\frac{0}{T} = 0$$ The average acceleration over a full period is **zero** — this is true for *any* periodic motion, not just SHM (it follows directly from the definition of \"period\" as the interval after which the state repeats). Answer: (D).\n- A sum of a sine and cosine of the *same* angular frequency can always be rewritten as a single sinusoid using the identity $$A\\sin\\omega t + B\\cos\\omega t = \\sqrt{A^2+B^2}\\,\\sin(\\omega t + \\phi)$$ where $\\phi = \\tan^{-1}(B/A)$ (found by writing $A = R\\cos\\phi$, $B = R\\sin\\phi$ with $R = \\sqrt{A^2+B^2}$, and using the angle-addition formula). This is manifestly of the standard SHM form $x = R\\sin(\\omega t + \\phi)$ — simple harmonic motion with **amplitude** $R = \\sqrt{A^2+B^2}$ (note: this is generally *not* equal to $A+B$ or $(A+B)/2$ — those would be the amplitude only in special, coincidental cases). Answer: (D).\n- Writing out the components: $x(t) = A\\cos\\omega t$ and $y(t) = A\\sin\\omega t$. Squaring and adding: $$x^2 + y^2 = A^2\\cos^2\\omega t + A^2\\sin^2\\omega t = A^2(\\cos^2\\omega t + \\sin^2\\omega t) = A^2$$ This is the equation of a **circle** of radius $A$ centred at the origin — and since $\\omega$ is constant, the particle traces this circle at a **constant angular speed** $\\omega$ (i.e., uniform circular motion). (It is *not* simple harmonic — each individual coordinate $x(t)$ or $y(t)$ undergoes SHM, but the actual 2D motion of the particle, taken as a whole, is uniform circular motion, not a back-and-forth oscillation along a line. It's also not a straight line, and the acceleration — centripetal, $a = \\omega^2 A$ directed toward the centre — is constant in *magnitude* but continuously changes *direction*, so it isn't \"constant\" as a vector either.) Answer: (C).\n- Let $X = x - A$. Then the equation becomes $X = B\\sin\\omega t$ — which is the standard form of SHM, $X = (\\text{amplitude})\\sin(\\omega t)$, oscillating about the point $X = 0$ (i.e., $x = A$). So the particle performs SHM about the **mean position $x = A$** (which acts as the new \"origin\" for the oscillation), with the oscillating part — and hence the **amplitude** — given by the coefficient $B$. The constant $A$ merely shifts the centre of oscillation; it does not contribute to how far the particle swings on either side of that centre. Answer: (B).\n- Looking at the two graphs (figure 12-Q1): both curves are sinusoids of the **same shape** (same height/extent — i.e., same amplitude — and same \"width\" per cycle — i.e., same frequency/period, and consequently the same maximum velocity $v_{\\max} = \\omega A$, since $\\omega$ and $A$ are identical for both). The only thing that differs between the two graphs is *where* each curve is along the time axis at $t=0$ — i.e., what value (and what part of its cycle) each oscillation is \"starting from.\" This horizontal shift between two otherwise-identical sinusoids is precisely what is meant by a difference in **phase** ($\\phi$ in $x = A\\sin(\\omega t + \\phi)$). Answer: (C).\n- For a spring-mass oscillator, the angular frequency is determined by the spring constant and the mass: $\\omega = \\sqrt{k/m}$. The total mechanical energy can be rewritten using this relation: $$E = \\frac{1}{2}m\\omega^2 A^2 = \\frac{1}{2}m\\left(\\frac{k}{m}\\right)A^2 = \\frac{1}{2}kA^2$$ Notice that the **mass cancels out** — the total energy depends only on the spring constant $k$ and the amplitude $A$, *not* on the oscillating mass. (Physically: for a *given amplitude*, the maximum spring deformation — and hence the maximum potential energy stored, which equals the total energy — is determined entirely by $k$ and $A$, irrespective of what mass is attached.) Since the spring ($k$) and amplitude ($A$) are unchanged, replacing the mass (even doubling it) leaves the total mechanical energy **unchanged**: $E_{\\text{new}} = E$. Answer: (D).\n- In simple harmonic motion (with no friction or dissipation), the **total mechanical energy** $E = \\tfrac12 m\\omega^2 A^2$ is **conserved** — it remains exactly constant at every instant throughout the motion (kinetic and potential energy continuously interconvert, but their sum never changes). Since $E$ doesn't change with time at all, its average value over *any* interval — including one full time period — is simply equal to its (constant) instantaneous value: $$\\langle E\\rangle_{\\text{one period}} = E = \\frac{1}{2}m\\omega^2 A^2$$ Answer: (A).\n- The kinetic energy in SHM is $$KE = \\frac{1}{2}mv^2 = \\frac{1}{2}m\\omega^2(A^2 - x^2) = \\frac{1}{2}m\\omega^2 A^2\\cos^2(\\omega t + \\phi)$$ (using $x = A\\sin(\\omega t+\\phi)$, so $v = A\\omega\\cos(\\omega t + \\phi)$). Now use the identity $\\cos^2\\theta = \\dfrac{1 + \\cos 2\\theta}{2}$: $$KE = \\frac{1}{2}m\\omega^2 A^2 \\cdot \\frac{1 + \\cos[2(\\omega t + \\phi)]}{2} = \\frac{m\\omega^2 A^2}{4}\\Big[1 + \\cos(2\\omega t + 2\\phi)\\Big]$$ The time-varying part oscillates as $\\cos(2\\omega t + \\cdots)$ — at **twice** the angular frequency $\\omega$ of the particle's positional oscillation. Since frequency $\\nu = \\omega/2\\pi$, the kinetic energy oscillates at frequency $2\\nu$. (This makes physical sense: $KE$ reaches its maximum *twice* every cycle — once at each passage through the mean position, in either direction.) Answer: (C).\n- When a spring of constant $k$ (and natural length $L$) is cut into two **equal** halves, each half has spring constant $2k$. (Reasoning: cutting the original spring in half is equivalent to connecting two springs of constant $k'$ *in series* to reconstruct the original; for series springs, $\\dfrac{1}{k} = \\dfrac{1}{k'} + \\dfrac{1}{k'} = \\dfrac{2}{k'} \\Rightarrow k' = 2k$ — each half is \"stiffer\" than the original.) The time period of a spring-mass oscillator is $T = 2\\pi\\sqrt{\\dfrac{m}{k}}$. Replacing $k$ with the new spring constant $2k$: $$T' = 2\\pi\\sqrt{\\frac{m}{2k}} = \\frac{1}{\\sqrt2}\\cdot 2\\pi\\sqrt{\\frac{m}{k}} = \\frac{T}{\\sqrt2}$$ Answer: (D).",
+    "formulas": [
+      {
+        "latex": "F = -m\\omega^2 x = -(\\text{constant})\\cdot x",
+        "meaning": ""
+      },
+      {
+        "latex": "-k\\sqrt{x} = -(m\\omega^2)\\,x \\;\\Longrightarrow\\; k = m\\omega^2 \\sqrt{x}",
+        "meaning": ""
+      },
+      {
+        "latex": "F = -k\\sqrt{x}",
+        "meaning": ""
+      },
+      {
+        "latex": "k = m\\omega^2\\sqrt{x}",
+        "meaning": ""
+      },
+      {
+        "latex": "|v| = \\omega\\sqrt{A^2 - x^2}",
+        "meaning": ""
+      },
+      {
+        "latex": "v_{\\max} = \\omega A",
+        "meaning": ""
+      },
+      {
+        "latex": "v = v_{\\max}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\Delta x = x(t+T) - x(t) = 0",
+        "meaning": ""
+      },
+      {
+        "latex": "\\Delta x = x_{\\text{final}} - x_{\\text{initial}}",
+        "meaning": ""
+      },
+      {
+        "latex": "= A + A + A + A = 4A",
+        "meaning": ""
+      },
+      {
+        "latex": "\\bar a = \\frac{v(t+T) - v(t)}{T} = \\frac{0}{T} = 0",
+        "meaning": ""
+      },
+      {
+        "latex": "\\bar a = \\dfrac{\\Delta v}{\\Delta t} = \\dfrac{v(t+\\Delta t) - v(t)}{\\Delta t}",
+        "meaning": ""
+      },
+      {
+        "latex": "v(t + T) = v(t)",
+        "meaning": ""
+      },
+      {
+        "latex": "A\\sin\\omega t + B\\cos\\omega t = \\sqrt{A^2+B^2}\\,\\sin(\\omega t + \\phi)",
+        "meaning": ""
+      },
+      {
+        "latex": "\\phi = \\tan^{-1}(B/A)",
+        "meaning": ""
+      },
+      {
+        "latex": "A = R\\cos\\phi",
+        "meaning": ""
+      },
+      {
+        "latex": "B = R\\sin\\phi",
+        "meaning": ""
+      },
+      {
+        "latex": "R = \\sqrt{A^2+B^2}",
+        "meaning": ""
+      },
+      {
+        "latex": "x = R\\sin(\\omega t + \\phi)",
+        "meaning": ""
+      },
+      {
+        "latex": "x^2 + y^2 = A^2\\cos^2\\omega t + A^2\\sin^2\\omega t = A^2(\\cos^2\\omega t + \\sin^2\\omega t) = A^2",
+        "meaning": ""
+      },
+      {
+        "latex": "x(t) = A\\cos\\omega t",
+        "meaning": ""
+      },
+      {
+        "latex": "y(t) = A\\sin\\omega t",
+        "meaning": ""
+      },
+      {
+        "latex": "a = \\omega^2 A",
+        "meaning": ""
+      },
+      {
+        "latex": "X = x - A",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "d618b48e-8046-427e-b3f3-0470ab4a6e9b",
+      "3018967e-d10a-4b71-8af4-f8a9321a43ab",
+      "6a56cbb8-4ad6-42f5-a81a-2a3ebd839cd0",
+      "b77382f8-3916-4834-8ee1-7d5d40a45431",
+      "8bb20784-dfdd-4fde-a693-25f9c5295f43",
+      "27eec997-03fe-4e1b-8c4d-a81f278a8c6e",
+      "ab4a9f0a-2304-40c0-ba8d-181f2b52d5cb",
+      "3207ea4d-2d60-4e57-9548-e0f06caa0c15",
+      "6139c28e-7f4a-447e-851d-b24838766446",
+      "033a2794-f19d-4d41-aa7f-4e8fda563b04",
+      "56affff3-2454-4e5a-919a-d3ac11a07a0f",
+      "0dfd9ff2-5a04-4cb0-a05e-f1e8b4bba90a",
+      "dc5e8c19-c74f-437f-b44f-41ddf4c02680",
+      "22736589-1ecf-486c-b72b-59900cc21973",
+      "5c7d551d-241d-44b7-aa37-cf8e82a0f8fd",
+      "7a7e6574-b86c-4650-9f03-809a3bc22766",
+      "f5bbf46b-b563-4ab7-bc06-c716d3867985",
+      "6318d399-e364-4ffc-80cd-e4d7793e8790",
+      "ca0dd6db-074e-4e05-846c-b06a1b256471",
+      "279b5baf-5d88-4bd3-bd47-b853fa09a8b8",
+      "09f0d3e1-e690-4b23-80f9-07bb014a454e"
+    ],
+    "tags": [
+      "HC Verma Vol 1",
+      "Objective I",
+      "Chapter 12"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-oscillations-objective-ii",
+    "chapter": "Oscillations",
+    "subtopic": "Objective II",
+    "class": "XI",
+    "unitId": "xi-waves",
+    "unitLabel": "Unit X — Oscillations & Waves",
+    "order": 12,
+    "title": "Objective II",
+    "summary": "The particle's path is a single straight line — it falls vertically through height $h$ above the tunnel opening, then continues straight down through the (diametrical) tunnel, emerges on the other side, rises, falls…",
+    "body": "**Key points from solved questions**\n- **Periodic** motion is any motion that repeats itself identically after a fixed time interval — this only requires that the particle return to the same state (position and velocity) at regular intervals. Uniform circular motion clearly satisfies this: the particle returns to the same point with the same velocity after each revolution. However: - **Oscillatory** motion requires the particle to move *back and forth* about a fixed (mean) position — a particle going around a circle never reverses direction; it just keeps going around. So this motion is *not* oscillatory. - Since it isn't oscillatory, it certainly cannot be **simple harmonic** (SHM is a special kind of oscillatory motion) or **angular SHM** either. So uniform circular motion is periodic, but not oscillatory and not (angular) simple harmonic. Answer: (A).\n- A particle whirled in a **vertical** circle (with gravity acting) does *not* move at uniform speed — it speeds up on the way down and slows down on the way up — but it still **repeats its entire motion (position and velocity) identically after each full revolution**. This makes it **periodic**. It is not **oscillatory**: the particle continues moving around the circle in the *same rotational sense* — it never reverses direction or moves back and forth about a fixed point. (Contrast this with a pendulum, which swings back and forth — that *is* oscillatory.) Since it isn't oscillatory, it cannot be simple harmonic or angular simple harmonic either. Answer: (A).\n- For motion to be **periodic**, the particle must return to the *exact same state* — same position **and** same velocity — after a fixed, repeating time interval. If the particle's speed is **continuously increasing**, then every time it returns to the same point on the circle, its speed (and hence its velocity) is *different* from the previous time it was there — the state never repeats. Since the defining condition for periodicity (identical recurrence of state at regular intervals) is never satisfied, this motion is **not periodic** — and therefore cannot be oscillatory, simple harmonic, or anything built upon periodicity. Answer: (D) — none of these.\n- A torsional pendulum consists of a body suspended by a wire/fibre that twists back and forth about its equilibrium (untwisted) orientation, under a **restoring torque** proportional to the angular displacement (for small twists): $\\Gamma = -\\kappa\\theta$. This is the **rotational analogue of SHM** — exactly mirroring $F = -kx$ for a linear spring-mass system: - It repeats its motion at regular intervals — **periodic**. ✓ (A) - It swings back and forth about a fixed equilibrium orientation — **oscillatory**. ✓ (B) - Its restoring torque is linear in the angular displacement — this is, by definition, **angular simple harmonic motion**. ✓ (D) - It is *not* (linear) **simple harmonic motion** in the usual sense — that term refers specifically to *linear* (translational) oscillation governed by $F = -kx$; a torsional pendulum's motion is rotational, described by an angular displacement, not a linear one. ✗ (C) Answer: (A, B, D).\n- In SHM, the **acceleration and the displacement (from the mean position) are always exactly anti-parallel**: $\\vec a = -\\omega^2 \\vec r$ (this is the defining relation of SHM — the restoring acceleration is proportional to, and oppositely directed from, the displacement). Likewise, the **restoring force and the displacement are always anti-parallel**: $\\vec F = -m\\omega^2\\vec r = m\\vec a$. - **$\\vec a \\cdot \\vec r = -\\omega^2\\,|\\vec r|^2 \\leq 0$** — always non-positive (zero only at the mean position, $\\vec r = 0$); in the sense intended here (the two vectors are *always* oppositely directed whenever the particle is displaced), this dot product is **always negative**. ✓ (C) - **$\\vec F \\cdot \\vec r = -m\\omega^2\\,|\\vec r|^2 \\leq 0$** — by the same reasoning ($\\vec F$ and $\\vec r$ are always anti-parallel), this is **always negative**. ✓ (D) By contrast: - **$\\vec F \\cdot \\vec a = (m\\vec a)\\cdot \\vec a = m|\\vec a|^2 \\geq 0$** — $\\vec F$ and $\\vec a$ are *always parallel* (both proportional to $-\\vec r$ with positive constants), so their dot product is always non-negative. ✗ (A) - **$\\vec v \\cdot \\vec r$** — the velocity can point either toward or away from the mean position depending on the phase of motion, so this product changes sign throughout the cycle (sometimes positive, sometimes negative). ✗ (B) Answer: (C, D).\n- As established, in SHM both the acceleration $\\vec a = -\\omega^2\\vec r$ and the restoring force $\\vec F = m\\vec a = -m\\omega^2 \\vec r$ point in the **same direction**: both are always anti-parallel to the displacement $\\vec r$ (i.e., both always point back toward the mean position). Two vectors that always point in the same direction have a dot product that is always **non-negative**: $$\\vec F\\cdot\\vec a = (m\\vec a)\\cdot\\vec a = m\\,|\\vec a|^2 \\geq 0$$ ✓ (A) — this is the only quantity guaranteed to never be negative. By contrast (as discussed in the companion problem): - $\\vec v \\cdot \\vec r$ changes sign through the cycle (sometimes the particle moves toward the mean position, sometimes away). ✗ (B) - $\\vec a \\cdot \\vec r$ and $\\vec F \\cdot \\vec r$ are always **non-positive** (≤ 0), since $\\vec a$ and $\\vec F$ are always *anti*-parallel to $\\vec r$ — the opposite of \"always positive.\" ✗ (C), (D) Answer: (A).\n- The particle's path is a single straight line — it falls vertically through height $h$ above the tunnel opening, then continues straight down through the (diametrical) tunnel, emerges on the other side, rises, falls back, and repeats. Since the drop point is directly above the tunnel and the tunnel runs along a diameter, the *entire* trajectory lies along **one fixed straight line**. ✓ (C) Is the *overall* motion periodic? By energy conservation (no dissipation), the particle retraces an identical sequence of positions and speeds every cycle — it always reaches the same maximum height $h$ above each end of the tunnel and passes through the centre with the same speed. This sequence of states repeats indefinitely at fixed intervals — so the motion is **periodic**. ✓ (D) Is it simple harmonic? **No** — SHM requires $a \\propto -x$ (acceleration proportional to displacement) *throughout* the motion. Inside the tunnel, gravity does vary linearly with distance from the Earth's centre (giving true SHM there) — but during the *free-fall* portion (above the tunnel mouth, through height $h$), the acceleration is simply the *constant* $g$ (not proportional to displacement) — this segment is ordinary uniformly accelerated free fall, not SHM. So the *combined* motion (free fall $+$ in-tunnel SHM) is **not** purely simple harmonic, and (since it's confined to a straight line) certainly not parabolic. ✗ (A), (B) Answer: (C, D).\n- The defining equation of SHM is $$\\vec a = -\\omega^2\\,\\vec x$$ where $\\vec x$ is the **displacement** (a *signed*, vector quantity measured from the mean/equilibrium position) — not merely the \"distance\" (which would be its unsigned magnitude $|\\vec x|$, discarding directional information). This relation says the acceleration is directly proportional to the displacement, and is always oppositely directed to it — capturing both the magnitude *and* the sign/direction relationship. \"Distance from the mean position\" alone (option B) loses the crucial directional information (the acceleration always points *back toward* the mean position — it would point in opposite directions for displacements on either side, even though the *distance* could be the same). \"Distance travelled since $t=0$\" (C) and \"speed\" (D) are entirely different physical quantities not directly tied to the instantaneous restoring acceleration. Answer: (A).\n- Factor the position vector: $\\vec r = A\\cos\\omega t\\,(\\hat i + 2\\hat j)$. Notice that **both** components ($x = A\\cos\\omega t$ and $y = 2A\\cos\\omega t$) oscillate *in phase* with each other, with a **fixed ratio** $y = 2x$ at all times. - **Straight line**: Since $y/x = 2$ always (a constant ratio), the particle's position always lies along the fixed line $y = 2x$ — it moves back and forth along this single line. ✓ (A) - **Ellipse**: An elliptical (or circular) path requires two perpendicular oscillations that are **out of phase** (e.g., $\\cos\\omega t$ and $\\sin\\omega t$, as in the earlier circular-motion problem). Here both components vary as the *same* function $\\cos\\omega t$ (in phase, with a fixed ratio) — so the path collapses to a straight line, not an ellipse. ✗ (B) - **Periodic**: $\\cos\\omega t$ repeats every $T = 2\\pi/\\omega$, so the particle's position repeats — the motion is periodic. ✓ (C) - **Simple harmonic**: The magnitude of displacement along the fixed line varies as $|\\vec r| = A\\sqrt{1^2+2^2}\\,\\cos\\omega t = A\\sqrt{5}\\cos\\omega t$ — a pure sinusoid in time, satisfying $a = -\\omega^2 x$ along that line. This is exactly one-dimensional SHM (along the direction $\\hat i + 2\\hat j$). ✓ (D) Answer: (A, C, D).\n- Rewrite using the identity $\\sin^2\\theta = \\dfrac{1 - \\cos 2\\theta}{2}$: $$x = x_0\\sin^2\\omega t = x_0 \\cdot \\frac{1 - \\cos 2\\omega t}{2} = \\frac{x_0}{2} - \\frac{x_0}{2}\\cos(2\\omega t)$$ This is of the form $x = (\\text{constant}) + (\\text{amplitude})\\cos(2\\omega t)$ — i.e., **simple harmonic motion about the mean position $x = x_0/2$**, with: - **Amplitude** $= \\dfrac{x_0}{2}$ (the coefficient of the cosine term) — *not* $x_0$ or $2x_0$. ✗ (A), (B) - **Angular frequency** of the oscillation $= 2\\omega$ (note: it's $2\\omega$, not $\\omega$, because of the double-angle identity), giving a **time period** $$T = \\frac{2\\pi}{2\\omega} = \\frac{\\pi}{\\omega}$$ ✓ (D), ✗ (C, which gives $2\\pi/\\omega$ — that would be the period if the motion varied as $\\cos\\omega t$, not $\\cos 2\\omega t$) Answer: (D).\n- At any given **instant**, $PE = \\tfrac12 kx^2$ and $KE = \\tfrac12 k(A^2 - x^2)$ — these are equal only at the two special points where $x = \\pm A/\\sqrt2$ (where $PE = KE = E/2$). So they are *not* \"always equal\" (a) nor \"never equal\" (b) — they coincide at specific points each cycle. The \"average over **any** time interval\" (c) is too strong a claim — over a very short interval, or an asymmetric portion of the cycle, the average $PE$ and average $KE$ generally differ (e.g., a tiny interval entirely spent near an extreme position would have average $PE \\gg$ average $KE$). However, averaged over **one full time period**, both $PE$ and $KE$ vary as $\\sin^2$ or $\\cos^2$ of the phase — and the time-averages of $\\sin^2$ and $\\cos^2$ over a full cycle are both exactly $\\tfrac12$. Since $PE + KE = E$ (constant total energy): $$\\langle PE\\rangle_{\\text{period}} + \\langle KE\\rangle_{\\text{period}} = E, \\quad \\text{and by the symmetry of } \\sin^2,\\cos^2: \\quad \\langle PE \\rangle = \\langle KE\\rangle = \\frac{E}{2}$$ So the average potential energy equals the average kinetic energy specifically when averaged over one complete time period. Answer: (D).\n- This is a beautiful, subtle result. The pendulum clock's *own* period depends on $g$: $T_{\\text{clock}} = 2\\pi\\sqrt{l/g}$. The free-fall time also depends on $g$: $t_{\\text{actual}} = \\sqrt{2h/g}$. The **measured** time (number of pendulum-ticks the clock counts during the fall, each \"tick\" treated as one second) is the *ratio*: $$N = \\frac{t_{\\text{actual}}}{T_{\\text{clock}}} = \\frac{\\sqrt{2h/g}}{2\\pi\\sqrt{l/g}} = \\frac{1}{2\\pi}\\sqrt{\\frac{2h}{l}}$$ Notice that $g$ **cancels out completely**! This ratio — and hence the *measured* time, expressed in the clock's own (possibly miscalibrated) \"seconds\" — comes out to be **exactly the same** on the Moon as on Earth, because *both* the phenomenon being timed (free fall, $\\propto 1/\\sqrt g$) and the timekeeping device (pendulum, $\\propto 1/\\sqrt g$) scale identically with $g$. ✓ (A) Similarly, the **measured speed** $= \\dfrac{h}{(\\text{measured time})}$: since $h$ is measured with a (gravity-independent) ruler, and the measured time is the same, the measured speed comes out the same too. ✓ (B) The **actual** times and speeds, however, genuinely *do* depend on the local $g$ ($t_{\\text{actual}} = \\sqrt{2h/g}$, $v_{\\text{actual}} = \\sqrt{2gh}$ — both differ between Earth and Moon, since $g$ differs). ✗ (C), (D) Answer: (A, B).\n- Compare the time-period formulas for each kind of oscillator and check whether $g$ appears: - **Simple pendulum**: $T = 2\\pi\\sqrt{l/g}$ — explicitly depends on $g$. Taking it to the Moon (different $g$) **changes** $T$. ✓ (A) - **Physical (compound) pendulum**: $T = 2\\pi\\sqrt{I/(Mgd)}$ — also explicitly depends on $g$ (through the restoring gravitational torque). **Changes** on the Moon. ✓ (B) - **Torsional pendulum**: $T = 2\\pi\\sqrt{I/\\kappa}$ — depends only on the moment of inertia $I$ and the torsional (elastic) constant $\\kappa$ of the suspension wire; gravity plays no role in providing the restoring torque (it's the wire's twist-elasticity). **No change** on the Moon. ✗ (C) - **Spring-mass system**: $T = 2\\pi\\sqrt{m/k}$ — depends only on the mass and the spring's elastic constant; again, gravity merely shifts the equilibrium position without affecting $T$. **No change**. ✗ (D) Answer: (A, B).",
+    "formulas": [
+      {
+        "latex": "\\Gamma = -\\kappa\\theta",
+        "meaning": ""
+      },
+      {
+        "latex": "F = -kx",
+        "meaning": ""
+      },
+      {
+        "latex": "\\vec a = -\\omega^2 \\vec r",
+        "meaning": ""
+      },
+      {
+        "latex": "\\vec F = -m\\omega^2\\vec r = m\\vec a",
+        "meaning": ""
+      },
+      {
+        "latex": "\\vec a \\cdot \\vec r = -\\omega^2\\,|\\vec r|^2 \\leq 0",
+        "meaning": ""
+      },
+      {
+        "latex": "\\vec r = 0",
+        "meaning": ""
+      },
+      {
+        "latex": "\\vec F \\cdot \\vec r = -m\\omega^2\\,|\\vec r|^2 \\leq 0",
+        "meaning": ""
+      },
+      {
+        "latex": "\\vec F \\cdot \\vec a = (m\\vec a)\\cdot \\vec a = m|\\vec a|^2 \\geq 0",
+        "meaning": ""
+      },
+      {
+        "latex": "\\vec F\\cdot\\vec a = (m\\vec a)\\cdot\\vec a = m\\,|\\vec a|^2 \\geq 0",
+        "meaning": ""
+      },
+      {
+        "latex": "\\vec a = -\\omega^2\\vec r",
+        "meaning": ""
+      },
+      {
+        "latex": "\\vec F = m\\vec a = -m\\omega^2 \\vec r",
+        "meaning": ""
+      },
+      {
+        "latex": "\\vec a = -\\omega^2\\,\\vec x",
+        "meaning": ""
+      },
+      {
+        "latex": "\\vec r = A\\cos\\omega t\\,(\\hat i + 2\\hat j)",
+        "meaning": ""
+      },
+      {
+        "latex": "x = A\\cos\\omega t",
+        "meaning": ""
+      },
+      {
+        "latex": "y = 2A\\cos\\omega t",
+        "meaning": ""
+      },
+      {
+        "latex": "y = 2x",
+        "meaning": ""
+      },
+      {
+        "latex": "y/x = 2",
+        "meaning": ""
+      },
+      {
+        "latex": "T = 2\\pi/\\omega",
+        "meaning": ""
+      },
+      {
+        "latex": "|\\vec r| = A\\sqrt{1^2+2^2}\\,\\cos\\omega t = A\\sqrt{5}\\cos\\omega t",
+        "meaning": ""
+      },
+      {
+        "latex": "a = -\\omega^2 x",
+        "meaning": ""
+      },
+      {
+        "latex": "x = x_0\\sin^2\\omega t = x_0 \\cdot \\frac{1 - \\cos 2\\omega t}{2} = \\frac{x_0}{2} - \\frac{x_0}{2}\\cos(2\\omega t)",
+        "meaning": ""
+      },
+      {
+        "latex": "T = \\frac{2\\pi}{2\\omega} = \\frac{\\pi}{\\omega}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\sin^2\\theta = \\dfrac{1 - \\cos 2\\theta}{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "x = (\\text{constant}) + (\\text{amplitude})\\cos(2\\omega t)",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "f3eb973e-e1ac-4cc6-9b2d-8cfa7be94e42",
+      "aa1af252-8fd5-415d-86c3-09381ab307b4",
+      "4332c6a3-22c8-4fe0-85bd-f89d32ae36bd",
+      "8fefa318-e70f-434f-a7aa-e5928221fe7d",
+      "fdce92b5-5ca7-4208-a0dd-97497c0fb3d6",
+      "29a27fea-9ea4-4426-b2e6-f8672b5373e2",
+      "9493732d-408c-4758-8251-7cdcbc11cc74",
+      "38b5fc60-420c-4788-b911-70e36c62cdc2",
+      "2a265ff2-9cab-4835-b252-0dea78a8d2ce",
+      "8be4fa9b-3b80-4091-a2f4-9eff89336c97",
+      "c89de1f6-c71c-47b6-8d8a-78465139cc39",
+      "de00bcca-6db0-4aa3-9211-e549243ad87a",
+      "857418eb-6f50-4277-8267-d1c2636cc1a5"
+    ],
+    "tags": [
+      "HC Verma Vol 1",
+      "Objective II",
+      "Chapter 12"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-oscillations-overview",
+    "chapter": "Oscillations",
+    "subtopic": "Overview",
+    "class": "XI",
+    "unitId": "xi-waves",
+    "unitLabel": "Unit X — Oscillations & Waves",
+    "order": 12,
+    "title": "Overview",
+    "summary": "The oscillation of body on smooth horizontal surface.",
+    "body": "**Key points from solved questions**\n- The oscillation of body on smooth horizontal surface. $ x = A \\cos \\omega t $ where x = displacement at t $ \\omega= $ frequency of oscillation A = Amplitude $$ a=-\\omega^{2}x $$ Here at $$ t=0,x=A,a=-\\omega^{2}A $$ at $ t = \\frac{T}{4} $, $ x = A \\cos \\left( \\frac{2\\pi}{T} \\times \\frac{T}{4} \\right) = A \\cos \\frac{\\pi}{2} = 0 $, a = 0 at $ t=\\frac{T}{2} $, $ x=A\\cos\\left(\\frac{2\\pi}{T}\\times\\frac{T}{2}\\right)=A\\cos\\pi=-A $, $ a=\\omega^{2}A $ The graph becomes, <div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_343_973_540_1091.jpg\" alt=\"Image\" width=\"16%\" /\n- Motion start from extreme position and for small displacement it is SHM. $$ y=\\mathbf{A}\\cos\\left(\\omega t+\\phi\\right) $$\n- PE in $SHM = \\frac{1}{2}kx^{2} \\to$ equation of parabola 43.(C) $$ \\begin{aligned}P.E.&=\\frac{1}{2}kx^{2}\\\\&=\\frac{1}{2}k\\bigg(\\frac{x}{2}\\bigg)^{2}=\\frac{E}{4}\\end{aligned} $$",
+    "formulas": [
+      {
+        "latex": "a=-\\omega^{2}x",
+        "meaning": ""
+      },
+      {
+        "latex": "t=0,x=A,a=-\\omega^{2}A",
+        "meaning": ""
+      },
+      {
+        "latex": "x = A \\cos \\omega t",
+        "meaning": ""
+      },
+      {
+        "latex": "\\omega=",
+        "meaning": ""
+      },
+      {
+        "latex": "t = \\frac{T}{4}",
+        "meaning": ""
+      },
+      {
+        "latex": "x = A \\cos \\left( \\frac{2\\pi}{T} \\times \\frac{T}{4} \\right) = A \\cos \\frac{\\pi}{2} = 0",
+        "meaning": ""
+      },
+      {
+        "latex": "t=\\frac{T}{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "x=A\\cos\\left(\\frac{2\\pi}{T}\\times\\frac{T}{2}\\right)=A\\cos\\pi=-A",
+        "meaning": ""
+      },
+      {
+        "latex": "a=\\omega^{2}A",
+        "meaning": ""
+      },
+      {
+        "latex": "y=\\mathbf{A}\\cos\\left(\\omega t+\\phi\\right)",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}P.E.&=\\frac{1}{2}kx^{2}\\\\&=\\frac{1}{2}k\\bigg(\\frac{x}{2}\\bigg)^{2}=\\frac{E}{4}\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "SHM = \\frac{1}{2}kx^{2} \\to",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "d9314067-b49f-47d1-84de-1712fe3c77a8",
+      "dcfb1aab-dd63-4a4c-90c0-0ca04c7b4e6c",
+      "1da93faf-918f-4f60-8594-f0a0b2af1646"
+    ],
+    "tags": [
+      "AIPMT 2014",
+      "AIPMT Screening 2011",
+      "AIPMT 2003"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-oscillations-simple-harmonic-motion",
+    "chapter": "Oscillations",
+    "subtopic": "Simple Harmonic Motion",
+    "class": "XI",
+    "unitId": "xi-waves",
+    "unitLabel": "Unit X — Oscillations & Waves",
+    "order": 12,
+    "title": "Simple Harmonic Motion",
+    "summary": "For simple harmonic motion, $$ x=a\\sin\\omega t $$ and $$ y=b\\sin\\left(\\omega t+\\pi\\right) $$ or $$ y=-b\\sin\\omega t $$ From eqs.",
+    "body": "**Key points from solved questions**\n- Here: $ y = A_0 + A \\sin \\omega t + B \\cos \\omega t $ Equating with SHM $ y' = y - A_0 $ $ = A \\cos\\left(\\frac{\\pi}{2} - \\omega t\\right) + B \\cos \\omega t $ $ = A \\sin \\omega t + B \\cos \\omega t. $ Resultant amplitude $$ \\begin{array}{l} \\displaystyle \\text{R } =\\sqrt{\\text{A}^{2} + \\text{B}^{2} + 2\\text{AB}\\cos 90^{\\circ}} \\\\ \\displaystyle \\qquad = \\sqrt{\\text{A}^{2} + \\text{B}^{2}} \\end{array} $$\n- <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//8ddc3d7a-6188-4b36-b8ae-c48ad5e7303a/markdown_3/imgs/img_in_image_box_698_1031_963_1171.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A17%3A52Z%2F-1%2F%2F8e0edbaef09b3d6f2d2f544b6a0c98a60c87a9d3b240be6b05f4e98eae28e325\" alt=\"Image\" width=\"22%\" /></div> In a SHM, particle moves from the mean position to an extreme position (P) and then return to mean position covering same distance A. $$ \\begin{aligned}\\boldsymbol{A}+\\boldsymbol{A}+\\boldsymbol{A}+\\boldsymbol{A}=\\boldsymbol{4}\\boldsymbol{A}\\end{aligned} $$\n- From the question, $$ \\begin{aligned}y_{1}&=a\\sin\\omega t\\\\y_{2}&=b\\cos\\omega t\\\\&=b\\sin\\left(\\omega t-\\frac{\\pi}{2}\\right)\\end{aligned} $$ ∴ Resultant displacement is. $$ y=y_{1}+y_{2}=a\\sin\\omega t+b\\sin\\left(\\omega t+\\frac{\\pi}{2}\\right) $$ $$ \\left\\{\\mathrm{S i n c e},\\sin\\left(\\mathrm{A}+\\mathrm{B}\\right)=\\sin\\mathrm{A}\\cos\\mathrm{B}+\\cos\\mathrm{A}\\sin\\mathrm{B}\\right\\} $$ $$ \\therefore y=a\\sin\\omega t+b\\sin(\\omega t)\\cos\\frac{\\pi}{2}+b\\cos(\\omega t)\\sin\\left(\\frac{\\pi}{2}\\right) $$ $$ \\Rightarrow y=a\\sin\\left(\\omega t\\right)+b\\cos\\left(\\omega t\\right) $$ Again, $$ \\mathrm{Let}\\qquad b\\cos\\left(\\omega t\\right)=\\mathrm{A}\\cos\\theta $$ $$ \\mathrm{a n d}\\qquad a\\sin{(\\omega t)}=A\\sin{\\theta} $$ Squaring and Adding eq. (i) and (ii), $$ \\mathbf{A}=\\sqrt{a^{2}+b^{2}} $$ $ \\therefore \\sqrt{a^{2}+b^{2}} $ is the amplitude of SHM.\n- The equation becomes, $$ \\begin{aligned}&y_{1}=\\frac{\\mathbf{A}}{2}=\\mathbf{A}\\sin\\omega t\\\\&\\phi_{1}=30^{\\circ}\\\\&y_{2}=\\frac{\\mathbf{A}}{2}=\\mathbf{A}\\sin\\left(\\omega t+\\frac{\\pi}{2}\\right)\\\\&\\phi_{2}=\\omega t+\\frac{\\pi}{2}=150^{\\circ}\\\\ \\end{aligned} $$ ∴ Phase difference, $$ \\begin{array}{l}\\Delta\\phi=\\phi_{2}-\\phi_{1}\\\\=150^{\\circ}-30^{\\circ}=120^{\\circ}\\\\=\\frac{2\\pi}{3}\\text{rad}\\end{array} $$\n- For a S.H.M. $$ \\mathbf{a}\\propto\\frac{d^{2}y}{dt^{2}}\\propto-y $$ Hence, equation, $ y = \\sin \\omega t - \\cos \\omega t $ and $$ y=5\\cos\\left(\\frac{3\\pi}{4}-3\\omega t\\right) $$ are satisfying this condition.\n- According to the question $$ x=a\\sin^{2}\\omega t $$ Differentiating eq. (i) w.r.t. t, we get, $$ \\frac{dx}{dt}=2a\\omega\\left(\\sin\\omega t\\right)\\left(\\cos\\omega t\\right) $$ Again differentiating w.r.t. $t$, we have, $$ \\begin{aligned}a=\\frac{d^{2}x}{dt^{2}}&=2a\\omega^{2}\\left[\\cos^{2}\\omega t-\\sin^{2}\\omega t\\right]\\\\&=2a\\omega^{2}\\cos2\\omega t\\end{aligned} $$ The eq. (ii) does not satisfy the condition of SHM. So, motion is not simple harmonic.\n- For equilibrium position, $$ x(t)=a\\sin\\omega t $$ $$ x(t)=\\frac{a}{2} $$ $$ \\sin\\left(\\frac{\\pi}{6}\\right)=\\sin\\omega t $$ $$ \\frac{\\pi}{6}=\\frac{2\\pi t}{\\mathrm{T}} $$ $$ \\left\\{\\begin{array}{l}\\because\\omega=\\frac{2\\pi}{T}\\end{array}\\right\\} $$ $$ t=\\frac{\\mathrm{T}}{12} $$\n- A particle, at in constant-speed in circular motion repeats its motion at regular intervals but does not oscillate around a fixed location. As a result, particle motion is periodic but not simple harmonic.\n- The equations of two simple harmonic motions can be written as, $$ x=a\\sin\\omega t $$ and $$ y=a\\sin\\left(\\omega t+\\frac{\\pi}{2}\\right) $$ $$ y=a\\cos\\omega t $$ On squaring and adding eqs. (i) and (ii), we get $$ x^{2}+y^{2}=a^{2}\\left(\\sin^{2}\\omega t+\\cos^{2}\\omega t\\right) $$ or $$ x^{2}+y^{2}=a^{2} $$ It represents the equation of a circular motion with radius $a$.\n- We have, the equation of simple harmonic motion is given by, $$ x=a\\sin\\omega t $$ or $$ x=a\\sin\\left(\\frac{2\\pi t}{T}\\right) $$ when, $$ x=a, $$ then $$ a=a\\sin\\left(\\frac{2\\pi t}{T}\\right) $$ $$ \\left(\\frac{2\\pi t}{\\mathrm{T}}\\right)=1 $$ $$ \\left(\\frac{2\\pi t}{T}\\right)=\\sin\\frac{\\pi}{2} $$ $$ t=\\frac{\\mathrm{T}}{4} $$ when $ x = \\frac{a}{2} $, $$ \\frac{a}{2}=a\\sin\\left(\\frac{2\\pi}{T}t\\right) $$ $$ \\sin\\left(\\frac{2\\pi}{T}t\\right)=\\sin\\frac{\\pi}{6} $$ $$ t=\\frac{\\mathrm{T}}{12} $$ Hence, time taken to travel from, $x = a$ to $x = \\frac{a}{2}$. $$ \\frac{T}{4}-\\frac{T}{12}=\\frac{T}{6} $$\n- For simple harmonic motion, $$ x=a\\sin\\omega t $$ and $$ y=b\\sin\\left(\\omega t+\\pi\\right) $$ or $$ y=-b\\sin\\omega t $$ From eqs. (i) and (ii), we get $$ \\frac{x}{a}=\\sin\\omega t $$ and $$ -\\frac{y}{b}=\\sin\\omega t $$ $$ \\bullet \\quad \\bullet $$ $$ \\frac{x}{a}=-\\frac{y}{b} $$ ⇔ $$ y=-\\frac{b}{a}x $$ Hence, it is an equation of a straight line. <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//e92d9226-645a-476c-8cbd-04aad4950b51/markdown_0/imgs/img_in_image_box_1_248_26_300.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A21%3A33Z%2F-1%2F%2F72a213d94f6fef06eaeea00eb31d797eeea0eba45ee7b97e24120e7864d0b52e\" alt=\"Image\" width=\"2%\" /></div> ##### Related Theory If two SHM's act in perpendicular direction then their resultant motion is in the form of a straight line or a circle or a parabola etc., depending on the frequency ratio of the two SHM amplitudes and initial phase difference.",
+    "formulas": [
+      {
+        "latex": "\\begin{array}{l} \\displaystyle \\text{R } =\\sqrt{\\text{A}^{2} + \\text{B}^{2} + 2\\text{AB}\\cos 90^{\\circ}} \\\\ \\displaystyle \\qquad = \\sqrt{\\text{A}^{2} + \\text{B}^{2}} \\end{array}",
+        "meaning": ""
+      },
+      {
+        "latex": "y = A_0 + A \\sin \\omega t + B \\cos \\omega t",
+        "meaning": ""
+      },
+      {
+        "latex": "y' = y - A_0",
+        "meaning": ""
+      },
+      {
+        "latex": "= A \\cos\\left(\\frac{\\pi}{2} - \\omega t\\right) + B \\cos \\omega t",
+        "meaning": ""
+      },
+      {
+        "latex": "= A \\sin \\omega t + B \\cos \\omega t.",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}\\boldsymbol{A}+\\boldsymbol{A}+\\boldsymbol{A}+\\boldsymbol{A}=\\boldsymbol{4}\\boldsymbol{A}\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}y_{1}&=a\\sin\\omega t\\\\y_{2}&=b\\cos\\omega t\\\\&=b\\sin\\left(\\omega t-\\frac{\\pi}{2}\\right)\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "y=y_{1}+y_{2}=a\\sin\\omega t+b\\sin\\left(\\omega t+\\frac{\\pi}{2}\\right)",
+        "meaning": ""
+      },
+      {
+        "latex": "\\left\\{\\mathrm{S i n c e},\\sin\\left(\\mathrm{A}+\\mathrm{B}\\right)=\\sin\\mathrm{A}\\cos\\mathrm{B}+\\cos\\mathrm{A}\\sin\\mathrm{B}\\right\\}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\therefore y=a\\sin\\omega t+b\\sin(\\omega t)\\cos\\frac{\\pi}{2}+b\\cos(\\omega t)\\sin\\left(\\frac{\\pi}{2}\\right)",
+        "meaning": ""
+      },
+      {
+        "latex": "\\Rightarrow y=a\\sin\\left(\\omega t\\right)+b\\cos\\left(\\omega t\\right)",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{Let}\\qquad b\\cos\\left(\\omega t\\right)=\\mathrm{A}\\cos\\theta",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{a n d}\\qquad a\\sin{(\\omega t)}=A\\sin{\\theta}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{A}=\\sqrt{a^{2}+b^{2}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}&y_{1}=\\frac{\\mathbf{A}}{2}=\\mathbf{A}\\sin\\omega t\\\\&\\phi_{1}=30^{\\circ}\\\\&y_{2}=\\frac{\\mathbf{A}}{2}=\\mathbf{A}\\sin\\left(\\omega t+\\frac{\\pi}{2}\\right)\\\\&\\phi_{2}=\\omega t+\\frac{\\pi}{2}=150^{\\circ}\\\\ \\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{array}{l}\\Delta\\phi=\\phi_{2}-\\phi_{1}\\\\=150^{\\circ}-30^{\\circ}=120^{\\circ}\\\\=\\frac{2\\pi}{3}\\text{rad}\\end{array}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{a}\\propto\\frac{d^{2}y}{dt^{2}}\\propto-y",
+        "meaning": ""
+      },
+      {
+        "latex": "y=5\\cos\\left(\\frac{3\\pi}{4}-3\\omega t\\right)",
+        "meaning": ""
+      },
+      {
+        "latex": "y = \\sin \\omega t - \\cos \\omega t",
+        "meaning": ""
+      },
+      {
+        "latex": "x=a\\sin^{2}\\omega t",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{dx}{dt}=2a\\omega\\left(\\sin\\omega t\\right)\\left(\\cos\\omega t\\right)",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}a=\\frac{d^{2}x}{dt^{2}}&=2a\\omega^{2}\\left[\\cos^{2}\\omega t-\\sin^{2}\\omega t\\right]\\\\&=2a\\omega^{2}\\cos2\\omega t\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "x(t)=a\\sin\\omega t",
+        "meaning": ""
+      },
+      {
+        "latex": "x(t)=\\frac{a}{2}",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "e0ac6292-057c-4673-9471-a23e7f9043f2",
+      "7888d32a-8b4d-425b-be21-b94b61096ed8",
+      "6f66acac-c4ed-40ff-af31-f615124672cf",
+      "aa2e3fd4-8125-4eeb-85a0-d6c92078068b",
+      "50a1ec19-7aee-4dc4-a6f4-37fdf09a9e99",
+      "c3dafbf7-0c37-4cfd-ac53-f68e3ae4659b",
+      "99e61516-baa0-46bc-b724-cddc026affc5",
+      "50c56b3a-f11d-4fd4-a72b-74ee802e8029",
+      "7e81ec07-1eb7-4e17-800d-c6132ac7cb64",
+      "5fa8a5b1-5726-4e2d-8622-679b25970223",
+      "38dbedbf-60f4-47b3-b251-bce9fa8aa347",
+      "f546dacb-215a-42a9-969e-b5f3f47e3e2e"
+    ],
+    "tags": [
+      "NEET 2024",
+      "NEET 2019",
+      "AIPMT Cancelled 2015",
+      "AIPMT Mains 2011",
+      "AIPMT Screening 2011",
+      "AIPMT 2007",
+      "AIPMT 2005",
+      "AIPMT 1997",
+      "AIPMT 1992",
+      "AIPMT 1990"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-oscillations-simple-harmonic-motion-and-uniform-circular-motion",
+    "chapter": "Oscillations",
+    "subtopic": "Simple Harmonic Motion and Uniform Circular Motion",
+    "class": "XI",
+    "unitId": "xi-waves",
+    "unitLabel": "Unit X — Oscillations & Waves",
+    "order": 12,
+    "title": "Simple Harmonic Motion and Uniform Circular Motion",
+    "summary": "Given: $$ x=a\\sin\\left(\\omega t+\\delta\\right) $$ and $$ y=a\\sin\\left(\\omega t+\\delta+\\frac{\\pi}{2}\\right) $$ or $$ y=a\\cos\\left(\\omega t+\\delta\\right) $$ Squaring and adding eqs.",
+    "body": "**Key points from solved questions**\n- Here, T = 4 s, a = 3 m Time Period. $$ \\mathrm{T}=\\frac{2\\pi}{\\omega} $$ $$ \\omega=\\frac{2\\pi}{T}=\\frac{2\\pi}{4}=\\frac{\\pi}{2}\\mathrm{rad/s} $$ $$ y=a\\cos\\omega t=3\\cos\\frac{\\pi}{2}t $$\n- Given: $$ x=a\\sin\\left(\\omega t+\\delta\\right) $$ and $$ y=a\\sin\\left(\\omega t+\\delta+\\frac{\\pi}{2}\\right) $$ or $$ y=a\\cos\\left(\\omega t+\\delta\\right) $$ Squaring and adding eqs. (i) and (ii), we get $$ x^{2}+y^{2}=a^{2}\\left[\\sin^{2}\\left(\\omega t+\\delta\\right)+\\cos^{2}\\left(\\omega t+\\delta\\right)\\right] $$ or $$ x^{2}+y^{2}=a^{2}\\left(\\because\\sin^{2}\\theta+\\cos^{2}\\theta=1\\right) $$ This represents a circle. $$ \\mathrm{A t}\\left(\\omega t+\\delta\\right)=0;\\quad x=0,\\quad y=a $$ $$ \\mathrm{A t}\\left(\\omega t+\\delta\\right)=\\frac{\\pi}{2};x=a,\\quad y=0 $$ $$ \\mathrm{At}\\left(\\omega t+\\delta\\right)=\\pi;\\quad x=0,\\quad y=-a $$ $$ \\mathrm{At}\\left(\\omega t+\\delta\\right)=\\frac{3\\pi}{2};x=-a,y=0 $$ At $ (\\omega t + \\delta) = 2\\pi $; x = 0, $ y = a $ <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//e92d9226-645a-476c-8cbd-04aad4950b51/markdown_0/imgs/img_in_image_box_135_1009_378_1233.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A21%3A34Z%2F-1%2F%2F4af7194bb7912831b54dc6257182f6797303aa5cb7e0aa38f2e8948f7564839f\" alt=\"Image\" width=\"20%\" /></div> It is clear that the particle motion is in a circular clockwise direction.",
+    "formulas": [
+      {
+        "latex": "\\mathrm{T}=\\frac{2\\pi}{\\omega}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\omega=\\frac{2\\pi}{T}=\\frac{2\\pi}{4}=\\frac{\\pi}{2}\\mathrm{rad/s}",
+        "meaning": ""
+      },
+      {
+        "latex": "y=a\\cos\\omega t=3\\cos\\frac{\\pi}{2}t",
+        "meaning": ""
+      },
+      {
+        "latex": "x=a\\sin\\left(\\omega t+\\delta\\right)",
+        "meaning": ""
+      },
+      {
+        "latex": "y=a\\sin\\left(\\omega t+\\delta+\\frac{\\pi}{2}\\right)",
+        "meaning": ""
+      },
+      {
+        "latex": "y=a\\cos\\left(\\omega t+\\delta\\right)",
+        "meaning": ""
+      },
+      {
+        "latex": "x^{2}+y^{2}=a^{2}\\left[\\sin^{2}\\left(\\omega t+\\delta\\right)+\\cos^{2}\\left(\\omega t+\\delta\\right)\\right]",
+        "meaning": ""
+      },
+      {
+        "latex": "x^{2}+y^{2}=a^{2}\\left(\\because\\sin^{2}\\theta+\\cos^{2}\\theta=1\\right)",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{A t}\\left(\\omega t+\\delta\\right)=0;\\quad x=0,\\quad y=a",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{A t}\\left(\\omega t+\\delta\\right)=\\frac{\\pi}{2};x=a,\\quad y=0",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{At}\\left(\\omega t+\\delta\\right)=\\pi;\\quad x=0,\\quad y=-a",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{At}\\left(\\omega t+\\delta\\right)=\\frac{3\\pi}{2};x=-a,y=0",
+        "meaning": ""
+      },
+      {
+        "latex": "(\\omega t + \\delta) = 2\\pi",
+        "meaning": ""
+      },
+      {
+        "latex": "y = a",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "fe471217-bb15-4905-9182-938a60549290",
+      "ea9ca0f0-ed61-4260-b977-61b06ec6e773"
+    ],
+    "tags": [
+      "NEET 2019",
+      "AIPMT 2000"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-oscillations-velocity-and-acceleration-in-simple-harmonic-motion",
+    "chapter": "Oscillations",
+    "subtopic": "Velocity and Acceleration in Simple Harmonic Motion",
+    "class": "XI",
+    "unitId": "xi-waves",
+    "unitLabel": "Unit X — Oscillations & Waves",
+    "order": 12,
+    "title": "Velocity and Acceleration in Simple Harmonic Motion",
+    "summary": "Maximum acceleration of particle doing SHM is, $$ \\alpha=A\\omega^{2} $$ A = maximum amplitude ω = angular velocity of particle Again maximum velocity, $$ \\boldsymbol{\\beta}=\\mathbf{A}\\boldsymbol{\\omega} $$ From eq.",
+    "body": "**Key points from solved questions**\n- Given: $$ \\omega=\\frac{2\\pi}{8}=\\frac{\\pi}{4}s^{-1} $$ Acceleration, $ a = -A\\omega^{2} $ $ = -(1)\\left(\\frac{\\pi}{4}\\right)^{2} $ $ = \\frac{-\\pi^{2}}{16} \\, \\text{ms}^{-2} $\n- In simple harmonic motion, The equation of displacement of particle is, And the equation of acceleration of particle is, $ a = -A \\omega^{2} \\sin \\omega t $ $ = A \\omega^{2} \\sin (\\omega t + \\pi) $ $$ y=\\mathrm{A}\\sin\\omega t $$ From eq. (i) and equation (ii), The phase difference between displacement and acceleration of particle is: $$ \\begin{aligned}{}&{{}\\phi=(\\omega t+\\pi)-\\omega t}\\\\ {}&{{}\\phi=\\omega t+\\pi-\\omega t=\\pi\\operatorname{r a d i a n}.}\\\\ \\end{aligned} $$\n- In one complete vibration, displacement is $2\\pi\\omega$. So, average velocity in one complete vibration is: $$=\\frac{\\text{Displacement}}{\\text{Time Interval}}=\\frac{y_{1}-y_{2}}{T}=0.$$\n- Given: magnitude of velocity of particle = magnitude of acceleration of particle in SHM ...(i) ∴ Magnitude of velocity of particle at displacement from mean position is, = $ \\omega\\sqrt{A^{2}-y^{2}} $ and magnitude of acceleration of particle in SHM is $ = \\omega^{2} y $ Then eq. (i) becomes, $$ \\begin{array}{l}\\omega\\sqrt{A^{2}-y^{2}}=\\omega^{2}y\\\\\\omega=\\frac{\\sqrt{A^{2}-y^{2}}}{y}=\\frac{\\sqrt{(3)^{2}-(2)^{2}}}{2}\\\\=\\frac{\\sqrt{9-4}}{2}=\\frac{\\sqrt{5}}{2}\\end{array} $$ $\\therefore$ Time period, $T=\\frac{2\\pi}{\\omega}=\\frac{2\\pi}{\\sqrt{5}/2}=\\frac{4\\pi}{\\sqrt{5}}$ sec.\n- Maximum acceleration of particle doing SHM is, $$ \\alpha=A\\omega^{2} $$ A = maximum amplitude ω = angular velocity of particle Again maximum velocity, $$ \\boldsymbol{\\beta}=\\mathbf{A}\\boldsymbol{\\omega} $$ From eq. (i) and (ii) we have, $$ \\frac{\\alpha}{\\beta}=\\frac{A\\omega^{2}}{A\\omega}=\\omega=\\frac{2\\pi}{T} $$ ∴ Time period of vibration. $$ \\mathrm{T}=\\frac{2\\pi\\beta}{\\alpha} $$ $$ \\circlearrowleft $$ <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//e92d9226-645a-476c-8cbd-04aad4950b51/markdown_0/imgs/img_in_image_box_558_1408_602_1448.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A21%3A35Z%2F-1%2F%2F4843b1dc26fc065589dc7829cc0f7f6d709a7a7f21beba65bd0110efa621e253\" alt=\"Image\" width=\"3%\" /></div> ##### Caution Some student mix up the formulas for maximum, acceleration (α) and maximum velocity (β), which leads to incorrect values. Be careful while solving these type of questions.\n- We know under SHM, if A is the amplitude of oscillation, then velocity, $$ \\mathbf{v}_{1}^{2}=\\omega^{2}\\left(\\mathbf{A}^{2}-x_{1}^{2}\\right) $$ $$ \\mathbf{v}_{2}^{2}=\\omega^{2}\\left(\\mathbf{A}^{2}-x_{2}^{2}\\right) $$ where, $x_{1}$ and $x_{2}$ are the displacement of particles from mean position, Subtracting eq. (ii) from eq (i) we have. $$ \\mathbf{v}_{2}^{2}-\\mathbf{v}_{1}^{2}=\\omega^{2}(x_{2}^{2}-x_{1}^{2}) $$ $$ \\omega=\\sqrt{\\frac{\\mathbf{v}_{2}^{2}-\\mathbf{v}_{1}^{2}}{x_{2}^{2}-x_{1}^{2}}} $$ $$ \\frac{2\\pi}{T}=\\sqrt{\\frac{\\mathbf{v}_{2}^{2}-\\mathbf{v}_{1}^{2}}{x_{2}^{2}-x_{1}^{2}}} $$ $$ T=2\\pi\\sqrt{\\frac{x_{2}^{2}-x_{1}^{2}}{v_{2}^{2}-v_{1}^{2}}} $$\n- According to the question, $$ x=a\\sin\\omega t $$ $$ \\frac{x}{a}=\\sin\\omega t $$ Now velocity, $ v = \\frac{dx}{dt} = a\\omega \\cos \\omega t $ $$ \\frac{\\mathbf{v}}{a\\omega}=\\cos\\omega t $$ From eq. (i) and (ii), $$ \\frac{x^{2}}{a^{2}}+\\frac{v^{2}}{a^{2}\\omega^{2}}=\\sin^{2}\\omega t+\\cos^{2}\\omega t $$ $$ \\frac{x^{2}}{a^{2}}+\\frac{v^{2}}{a^{2}\\omega^{2}}=1 $$ This is the equation of ellipse. So, the graph between moment and displacement of particle is ellipse.\n- We know that, $$ \\begin{aligned}\\mathbf{v}&=\\frac{dy}{dt}=a\\omega\\cos\\omega t\\\\&=a\\omega\\sqrt{1-\\sin^{2}\\omega t}\\\\&=a\\omega\\sqrt{a^{2}-y^{2}}\\end{aligned} $$ Here $$ y=\\frac{a}{2} $$ ： $$ \\begin{aligned}\\mathbf{v}&=\\varpi\\sqrt{a^{2}-\\frac{a^{2}}{4}}=\\varpi\\sqrt{\\frac{3a^{2}}{4}}\\\\&=\\frac{2\\pi}{\\mathrm{T}}\\frac{a\\sqrt{3}}{2}=\\frac{\\pi a\\sqrt{3}}{\\mathrm{T}}\\end{aligned} $$\n- For simple harmonic motion, Acceleration, a = -ky where $ y = x + a $ ∴ acceleration = -k(x + a)\n- Acceleration of SHM is, $$ a_{\\mathrm{m a x}}=-\\omega^{2}\\mathbf{A} $$ or $$ \\frac{(a_{\\max})_{1}}{(a_{\\max})_{2}}=\\frac{\\omega_{1}^{2}}{\\omega_{2}^{2}} $$ or $$ \\begin{aligned}\\frac{(a_{max})_{1}}{(a_{max})_{2}}&=\\frac{(100)^{2}}{(1000)^{2}}=\\left(\\frac{1}{10}\\right)^{2}\\\\&=1:10^{2}\\end{aligned} $$\n- The equation is, $$ x=a\\sin\\left(\\omega t+\\frac{\\pi}{6}\\right) $$ Differentiating we get, $$ \\mathbf{v}=\\frac{dx}{dt}=a\\omega\\cos\\left(\\omega t+\\frac{\\pi}{6}\\right) $$ $$ \\mathrm{Now},\\mathrm{v}=\\frac{a\\omega}{2} $$ $$ \\frac{a\\omega}{2}=a\\omega\\cos\\left(\\omega t+\\frac{\\pi}{6}\\right) $$ $$ \\frac{1}{2}=\\cos\\left(\\omega t+\\frac{\\pi}{6}\\right) $$ $$ \\cos\\frac{\\pi}{3}=\\cos\\left(\\omega t+\\frac{\\pi}{6}\\right) $$ $$ \\omega t+\\frac{\\pi}{6}=\\frac{\\pi}{3} $$ ↓ $$ \\omega t=\\frac{\\pi}{6} $$ or $$ t=\\frac{\\pi}{6\\omega}=\\frac{\\pi\\times\\mathrm{T}}{6\\times2\\pi}=\\frac{\\mathrm{T}}{12} $$ Thus at $\\frac{T}{12}$, velocity of the point will be equal to half of its maximum velocity.\n- Let, $$ y=A\\sin\\omega t $$ $$ \\circlearrowleft $$ $$ \\begin{array}{l}\\frac{dy}{dt}=\\mathrm{A}\\omega\\ \\cos\\omega t\\\\=\\mathrm{~A}\\omega\\ \\sin\\left(\\omega t+\\frac{\\pi}{2}\\right)\\end{array} $$ Acceleration. $$ \\begin{aligned}\\frac{d^{2}y}{dt^{2}}&=-A\\omega^{2}\\sin\\omega t\\\\&=A\\omega^{2}\\sin\\left(\\omega t+\\pi\\right)\\end{aligned} $$ $\\therefore$ Phase difference $=\\pi-\\frac{\\pi}{2}=\\frac{\\pi}{2}$\n- Here, $$ a=5cm,v_{max}=31.4cm/s $$ $$ \\begin{aligned}\\mathrm{v}_{\\max}&=\\varpi a\\\\&=31.4=2\\pi\\mathrm{v}\\times5\\end{aligned} $$ $$ 31.4=10\\times3.14\\times\\mathrm{v} $$ $$ \\Rightarrow\\quad\\mathbf{v}=1~\\mathbf{H}\\mathbf{z} $$\n- In SHM Velocity, $ v = A\\omega \\sin(\\omega t + \\frac{\\pi}{2}) $ Acceleration, $ a = A\\omega^{2}\\sin(\\omega t + \\pi) $ This shows that v is max then a is zero.",
+    "formulas": [
+      {
+        "latex": "\\omega=\\frac{2\\pi}{8}=\\frac{\\pi}{4}s^{-1}",
+        "meaning": ""
+      },
+      {
+        "latex": "a = -A\\omega^{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "= -(1)\\left(\\frac{\\pi}{4}\\right)^{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "= \\frac{-\\pi^{2}}{16} \\, \\text{ms}^{-2}",
+        "meaning": ""
+      },
+      {
+        "latex": "y=\\mathrm{A}\\sin\\omega t",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}{}&{{}\\phi=(\\omega t+\\pi)-\\omega t}\\\\ {}&{{}\\phi=\\omega t+\\pi-\\omega t=\\pi\\operatorname{r a d i a n}.}\\\\ \\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "a = -A \\omega^{2} \\sin \\omega t",
+        "meaning": ""
+      },
+      {
+        "latex": "= A \\omega^{2} \\sin (\\omega t + \\pi)",
+        "meaning": ""
+      },
+      {
+        "latex": "=\\frac{\\text{Displacement}}{\\text{Time Interval}}=\\frac{y_{1}-y_{2}}{T}=0.",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{array}{l}\\omega\\sqrt{A^{2}-y^{2}}=\\omega^{2}y\\\\\\omega=\\frac{\\sqrt{A^{2}-y^{2}}}{y}=\\frac{\\sqrt{(3)^{2}-(2)^{2}}}{2}\\\\=\\frac{\\sqrt{9-4}}{2}=\\frac{\\sqrt{5}}{2}\\end{array}",
+        "meaning": ""
+      },
+      {
+        "latex": "= \\omega^{2} y",
+        "meaning": ""
+      },
+      {
+        "latex": "T=\\frac{2\\pi}{\\omega}=\\frac{2\\pi}{\\sqrt{5}/2}=\\frac{4\\pi}{\\sqrt{5}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\alpha=A\\omega^{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\boldsymbol{\\beta}=\\mathbf{A}\\boldsymbol{\\omega}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{\\alpha}{\\beta}=\\frac{A\\omega^{2}}{A\\omega}=\\omega=\\frac{2\\pi}{T}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{T}=\\frac{2\\pi\\beta}{\\alpha}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\circlearrowleft",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{v}_{1}^{2}=\\omega^{2}\\left(\\mathbf{A}^{2}-x_{1}^{2}\\right)",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{v}_{2}^{2}=\\omega^{2}\\left(\\mathbf{A}^{2}-x_{2}^{2}\\right)",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{v}_{2}^{2}-\\mathbf{v}_{1}^{2}=\\omega^{2}(x_{2}^{2}-x_{1}^{2})",
+        "meaning": ""
+      },
+      {
+        "latex": "\\omega=\\sqrt{\\frac{\\mathbf{v}_{2}^{2}-\\mathbf{v}_{1}^{2}}{x_{2}^{2}-x_{1}^{2}}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{2\\pi}{T}=\\sqrt{\\frac{\\mathbf{v}_{2}^{2}-\\mathbf{v}_{1}^{2}}{x_{2}^{2}-x_{1}^{2}}}",
+        "meaning": ""
+      },
+      {
+        "latex": "T=2\\pi\\sqrt{\\frac{x_{2}^{2}-x_{1}^{2}}{v_{2}^{2}-v_{1}^{2}}}",
+        "meaning": ""
+      },
+      {
+        "latex": "x=a\\sin\\omega t",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "93a328e9-e8e7-423b-b224-585f423ed33d",
+      "89d7403c-17db-4ae2-af99-9391ecf5abea",
+      "77dbf102-3afe-4b1c-b7c0-b839dc843465",
+      "80a9b85b-d1b8-44ce-8b7a-27aa7ff3563c",
+      "7e587f83-1a2c-4977-ad5c-cea19a05edad",
+      "fb2dd022-c638-4be9-96a6-442dcaa86b30",
+      "35a56042-5b02-41f1-965d-0c8ed0c35942",
+      "589a9ee4-ed8f-4545-ba63-c453bfb34965",
+      "1194350a-277a-4a1e-bea8-6a2136996392",
+      "d23ccdf7-c3ad-45e1-a473-3d8e1ae59a54",
+      "53fbea44-b59a-4016-b3bc-7f1438f296e6",
+      "211cc10f-1154-4dfd-8c7a-36eab4ded8da",
+      "1b02a9d1-6dc6-488d-a84a-3493eef713b9",
+      "3a58f040-7b95-4334-8ffc-aae65ce54d71",
+      "8107adf0-9de1-4f10-a7d5-49a264d7d19b"
+    ],
+    "tags": [
+      "NEET 2023",
+      "NEET 2020",
+      "NEET 2019",
+      "NEET 2018",
+      "AIPMT July 2015",
+      "NEET 2013",
+      "AIPMT Screening 2009",
+      "AIPMT Screening 2008",
+      "AIPMT 2007",
+      "AIPMT 2005",
+      "AIPMT 2004",
+      "AIPMT 1996"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-oscillations-reneet2026",
+    "chapter": "Oscillations",
+    "subtopic": "reNEET2026",
+    "class": "XI",
+    "unitId": "xi-waves",
+    "unitLabel": "Unit X — Oscillations & Waves",
+    "order": 12,
+    "title": "reNEET2026",
+    "summary": "$v^2=\\omega^2(A^2-x^2)$ is an ellipse with semi-axes $A$ and $\\omega A$; it is a circle when $\\omega=1$, i.e.",
+    "body": "**Key points from solved questions**\n- $T=2\\pi\\sqrt{\\dfrac{m}{A\\rho g}}\\propto\\dfrac{1}{\\sqrt\\rho}$. $T_2=2T_1\\Rightarrow\\dfrac{\\rho_2}{\\rho_1}=\\dfrac14.$\n- $v^2=\\omega^2(A^2-x^2)$ is an ellipse with semi-axes $A$ and $\\omega A$; it is a circle when $\\omega=1$, i.e. $k/m=1\\Rightarrow k=m.$",
+    "formulas": [
+      {
+        "latex": "T=2\\pi\\sqrt{\\dfrac{m}{A\\rho g}}\\propto\\dfrac{1}{\\sqrt\\rho}",
+        "meaning": ""
+      },
+      {
+        "latex": "T_2=2T_1\\Rightarrow\\dfrac{\\rho_2}{\\rho_1}=\\dfrac14.",
+        "meaning": ""
+      },
+      {
+        "latex": "v^2=\\omega^2(A^2-x^2)",
+        "meaning": ""
+      },
+      {
+        "latex": "\\omega=1",
+        "meaning": ""
+      },
+      {
+        "latex": "k/m=1\\Rightarrow k=m.",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "renet2026-phy-25",
+      "renet2026-phy-28"
+    ],
+    "tags": [
+      "reNEET 2026"
+    ],
+    "source": "seed"
+  }
+]

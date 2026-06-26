@@ -1,0 +1,613 @@
+[
+  {
+    "id": "note-thermodynamics-first-law-of-thermodynamics",
+    "chapter": "Thermodynamics",
+    "subtopic": "First Law of Thermodynamics",
+    "class": "XI",
+    "unitId": "xi-thermo",
+    "unitLabel": "Unit VIII — Thermodynamics",
+    "order": 10,
+    "title": "First Law of Thermodynamics",
+    "summary": "From the question.",
+    "body": "**Key points from solved questions**\n- From the question. Heat spent during the conversion of sample of water at $ 100^{\\circ} $C to steam is, $$ \\Delta\\mathrm{Q}=54\\mathrm{~cal}=54\\times4.18\\mathrm{~J}=225.72\\mathrm{~J} $$ $$ \\mathrm{P}=1.013\\times10^{5}\\mathrm{N m}^{-2} $$ $\\therefore$ Work done, $\\Delta W = P\\Delta V = P[V_{\\text{steam}} - V_{\\text{water}}]$ Here, $$ V_{steam}=167.1\\ cc=167.1\\times10^{-6}\\ m^{3} $$ $$ \\begin{aligned}\\mathrm{V}_{\\mathrm{water}}&=0.1\\mathrm{~g}=0.1\\mathrm{~cc}=0.1\\times10^{-6}\\mathrm{~m}^{3}\\\\\\Delta\\mathrm{W}&=1.013\\times10^{5}[(167.1-0.1)\\times10^{-6}]\\\\&=1.013\\times167\\times10^{-1}=16.917\\mathrm{~J}\\end{aligned} $$ We also know that, $$\\Delta Q = \\Delta U + \\Delta W$$ $$\\Delta U = \\Delta Q - \\Delta W = 225.72 - 16.917 = 208.803\\ \\text{J}$$ $$\\approx 208.7\\ \\text{J}$$\n- Using first law of thermodynamics, $$ \\begin{aligned}\\Delta U&=\\Delta Q-\\Delta W\\\\&=2\\times4.2\\times1000-500\\\\&=(8400-500)J=7900J\\end{aligned} $$\n- From first law of thermodynamics, $\\Delta Q = \\Delta U + \\Delta W$ where, $\\Delta Q$ = heat given $\\Delta U$ = change in internal energy $\\Delta W$ = work done Here, $\\Delta Q = 110\\ J$ $\\Delta U = 40\\ J$ $\\therefore \\quad \\Delta W = \\Delta Q - \\Delta U$ = 110 - 40 = 70 J\n- According to the first law of thermodynamics, when some amount of heat ($dQ$) is supplied to a system capable of doing external work, the amount of heat absorbed by the system ($dQ$) is equal to the sum of the increase in the internal energy of the system ($dU$) due to temperature rise and the external work done by the system ($dW$) during expansion, $$ i.e.,\\quad d Q=d U+d W $$ This law is basically the law of conservation of energy applied to every the rmodynamic process in nature.",
+    "formulas": [
+      {
+        "latex": "\\Delta\\mathrm{Q}=54\\mathrm{~cal}=54\\times4.18\\mathrm{~J}=225.72\\mathrm{~J}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{P}=1.013\\times10^{5}\\mathrm{N m}^{-2}",
+        "meaning": ""
+      },
+      {
+        "latex": "V_{steam}=167.1\\ cc=167.1\\times10^{-6}\\ m^{3}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}\\mathrm{V}_{\\mathrm{water}}&=0.1\\mathrm{~g}=0.1\\mathrm{~cc}=0.1\\times10^{-6}\\mathrm{~m}^{3}\\\\\\Delta\\mathrm{W}&=1.013\\times10^{5}[(167.1-0.1)\\times10^{-6}]\\\\&=1.013\\times167\\times10^{-1}=16.917\\mathrm{~J}\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\Delta Q = \\Delta U + \\Delta W",
+        "meaning": ""
+      },
+      {
+        "latex": "\\Delta U = \\Delta Q - \\Delta W = 225.72 - 16.917 = 208.803\\ \\text{J}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\approx 208.7\\ \\text{J}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\Delta W = P\\Delta V = P[V_{\\text{steam}} - V_{\\text{water}}]",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}\\Delta U&=\\Delta Q-\\Delta W\\\\&=2\\times4.2\\times1000-500\\\\&=(8400-500)J=7900J\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\Delta Q = 110\\ J",
+        "meaning": ""
+      },
+      {
+        "latex": "\\Delta U = 40\\ J",
+        "meaning": ""
+      },
+      {
+        "latex": "\\therefore \\quad \\Delta W = \\Delta Q - \\Delta U",
+        "meaning": ""
+      },
+      {
+        "latex": "i.e.,\\quad d Q=d U+d W",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "6f334724-1f4a-4b9e-93a4-1f5cf88e97c5",
+      "ad526894-2241-4f32-86f3-a680669d9e69",
+      "9a7d61d0-80b2-44d1-89f9-9d5fbbedfb44",
+      "d9a28b57-7489-4c8e-a0bf-c94a85b89292"
+    ],
+    "tags": [
+      "NEET 2018",
+      "AIPMT Screening 2009",
+      "AIPMT 1993",
+      "AIPMT 1988"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-thermodynamics-objective-i",
+    "chapter": "Thermodynamics",
+    "subtopic": "Objective I",
+    "class": "XI",
+    "unitId": "xi-thermo",
+    "unitLabel": "Unit VIII — Thermodynamics",
+    "order": 10,
+    "title": "Objective I",
+    "summary": "The **Kelvin–Planck statement**: *It is impossible to construct a device that, operating in a cycle, produces no other effect than the absorption of heat from a single reservoir and the performance of an equivalent…",
+    "body": "**Key points from solved questions**\n- The first law of thermodynamics, $\\Delta U = \\Delta Q - W$, expresses that the change in internal energy equals the heat added minus the work done by the system. This is simply the **law of conservation of energy** applied to a thermodynamic system — energy cannot be created or destroyed, only converted between heat, work, and internal energy. Answer: (B).\n- First law: $\\Delta Q = \\Delta U + W$. With $\\Delta Q = 0$: $$\\Delta U = -W$$ If the gas expands (does positive work $W > 0$), internal energy decreases ($\\Delta U < 0$), so temperature falls. If compressed ($W < 0$), internal energy increases and temperature rises. Neither $\\Delta U$ nor $W$ is zero in general; temperature is not constant (that would be isothermal). Answer: (C).\n- For an isothermal process ($T =$ const), $P = nRT/V$. Work done by the gas: $$W = \\int_{V_1}^{V_2} P\\,dV = \\int_{V_1}^{V_2} \\frac{nRT}{V}\\,dV = nRT\\ln\\frac{V_2}{V_1}$$ For expansion $V_2 > V_1$, $\\ln(V_2/V_1) > 0$, so $W > 0$ (gas does positive work). Answer: (A).\n- For an **ideal gas**, the internal energy $U$ depends only on temperature. Therefore: $$\\Delta U = nC_V\\,\\Delta T$$ $\\Delta U = 0$ if and only if $\\Delta T = 0$, i.e., the process is **isothermal** (constant temperature). In an adiabatic process $T$ changes; in isobaric and isochoric processes $T$ generally changes too. Answer: (C).\n- The Carnot efficiency is derived from the ratio of heat rejected to heat absorbed: $$\\eta = 1 - \\frac{Q_C}{Q_H} = 1 - \\frac{T_C}{T_H} = \\frac{T_H - T_C}{T_H}$$ All temperatures are **absolute** (Kelvin). Since $T_C < T_H$, $\\eta < 1$ — no heat engine can be 100% efficient (second law). Answer: (B).\n- The **Kelvin–Planck statement**: *It is impossible to construct a device that, operating in a cycle, produces no other effect than the absorption of heat from a single reservoir and the performance of an equivalent amount of work.* In other words, no heat engine operating in a cycle can have 100% efficiency — some heat must always be rejected to a cold reservoir. Option A describes the Clausius statement (equivalent but different in form). Option C is incorrect (entropy increases or stays the same). Option D is false. Answer: (B).\n- $T_H = 227°C = 500\\,K$, $\\quad T_C = 27°C = 300\\,K$. $$\\eta = 1 - \\frac{T_C}{T_H} = 1 - \\frac{300}{500} = \\frac{200}{500} = 0.40 = 40\\%$$ Answer: (A).\n- **Internal energy** $U$ is a **state function** — it depends only on the thermodynamic state (temperature, pressure, volume), not on the path. In a **cyclic process**, the system returns to its initial state, so the final and initial states are identical. Therefore: $$\\Delta U_{\\text{cycle}} = U_{\\text{final}} - U_{\\text{initial}} = 0$$ By the first law: $\\Delta Q_{\\rm net} = W_{\\rm net}$ for a cyclic process. Answer: (C).",
+    "formulas": [
+      {
+        "latex": "\\Delta U = \\Delta Q - W",
+        "meaning": ""
+      },
+      {
+        "latex": "\\Delta U = -W",
+        "meaning": ""
+      },
+      {
+        "latex": "\\Delta Q = \\Delta U + W",
+        "meaning": ""
+      },
+      {
+        "latex": "\\Delta Q = 0",
+        "meaning": ""
+      },
+      {
+        "latex": "W = \\int_{V_1}^{V_2} P\\,dV = \\int_{V_1}^{V_2} \\frac{nRT}{V}\\,dV = nRT\\ln\\frac{V_2}{V_1}",
+        "meaning": ""
+      },
+      {
+        "latex": "P = nRT/V",
+        "meaning": ""
+      },
+      {
+        "latex": "\\Delta U = nC_V\\,\\Delta T",
+        "meaning": ""
+      },
+      {
+        "latex": "\\Delta U = 0",
+        "meaning": ""
+      },
+      {
+        "latex": "\\Delta T = 0",
+        "meaning": ""
+      },
+      {
+        "latex": "\\eta = 1 - \\frac{Q_C}{Q_H} = 1 - \\frac{T_C}{T_H} = \\frac{T_H - T_C}{T_H}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\eta = 1 - \\frac{T_C}{T_H} = 1 - \\frac{300}{500} = \\frac{200}{500} = 0.40 = 40\\%",
+        "meaning": ""
+      },
+      {
+        "latex": "T_H = 227°C = 500\\,K",
+        "meaning": ""
+      },
+      {
+        "latex": "\\quad T_C = 27°C = 300\\,K",
+        "meaning": ""
+      },
+      {
+        "latex": "\\Delta U_{\\text{cycle}} = U_{\\text{final}} - U_{\\text{initial}} = 0",
+        "meaning": ""
+      },
+      {
+        "latex": "\\Delta Q_{\\rm net} = W_{\\rm net}",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "ab367cbe-420d-420f-99e0-97ff9b6be353",
+      "7f182691-5bbe-4031-a63c-d62410f825d2",
+      "82db6cac-b84a-4b7b-84bf-5c25da354e6a",
+      "2da8617a-1f28-4f55-99bc-5f44a5acb09c",
+      "91cb00cd-6f52-4d9f-a08a-1d07f2bdb08c",
+      "556fd61a-1833-46fe-adf1-17d5d7873f07",
+      "fb95dffe-29aa-4e9b-a40d-74c1b7af9310",
+      "dbbbc74d-8534-48d7-9ae6-216046fa0bb4"
+    ],
+    "tags": [
+      "HC Verma Vol 2",
+      "Objective I",
+      "Chapter 26"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-thermodynamics-objective-ii",
+    "chapter": "Thermodynamics",
+    "subtopic": "Objective II",
+    "class": "XI",
+    "unitId": "xi-thermo",
+    "unitLabel": "Unit VIII — Thermodynamics",
+    "order": 10,
+    "title": "Objective II",
+    "summary": "- **A** ✓: $S$ depends only on the thermodynamic state; $dS = \\delta Q_{\\rm rev}/T$ is an exact differential.",
+    "body": "**Key points from solved questions**\n- A process is **irreversible** if it cannot be reversed without leaving any change in the universe (entropy increases). - **A** ✓: Free expansion is spontaneous and highly irreversible — gas expands into vacuum without doing work; cannot spontaneously re-compress. - **B** ✗: A quasi-static isothermal expansion (infinitely slow, in equilibrium at each step) is **reversible** — the ideal limiting case. - **C** ✓: Spontaneous heat flow from hot to cold is irreversible (second law). - **D** ✗: A Carnot cycle is the ideal **reversible** cycle. Answer: (A), (C).\n- In an adiabatic expansion: $\\Delta Q = 0$, volume increases, $W > 0$ (gas does work). First law: $\\Delta U = \\Delta Q - W = 0 - W = -W < 0$ (internal energy decreases). For an ideal gas, $\\Delta U = nC_V\\Delta T$ → $\\Delta T < 0$ (temperature drops). - **A** ✓: Temperature decreases. - **B** ✓: Internal energy decreases. - **C** ✓: Work done by gas is positive (expansion). - **D** ✗: No heat exchange ($\\Delta Q = 0$) — adiabatic means thermally insulated. Answer: (A), (B), (C).\n- - **A** ✓: $S$ depends only on the thermodynamic state; $dS = \\delta Q_{\\rm rev}/T$ is an exact differential. - **B** ✓: Second law: $\\Delta S_{\\rm universe} \\geq 0$, with equality only for reversible processes. Natural processes are irreversible, so $\\Delta S_{\\rm universe} > 0$. - **C** ✓: For a reversible process, $\\Delta S_{\\rm system} + \\Delta S_{\\rm surroundings} = 0$ — entropy gained by one = entropy lost by the other. - **D** ✗: In an **isolated** system, entropy **cannot decrease** ($\\Delta S \\geq 0$). This is the second law. Answer: (A), (B), (C).\n- - **A** ✓: On a $P$–$V$ diagram, $W = \\oint P\\,dV$ = area enclosed (positive if traversed clockwise). - **B** ✓: $\\Delta U = 0$ for a cycle, so by first law: $Q_{\\rm net} = W_{\\rm net}$. - **C** ✓: $U$ is a state function; complete cycle → $\\Delta U = 0$. - **D** ✗: A cycle can be irreversible (e.g., a cycle involving free expansion or friction). The Carnot cycle is the ideal reversible cycle, but general cycles are not required to be reversible. Answer: (A), (B), (C).",
+    "formulas": [
+      {
+        "latex": "\\Delta Q = 0",
+        "meaning": ""
+      },
+      {
+        "latex": "\\Delta U = \\Delta Q - W = 0 - W = -W < 0",
+        "meaning": ""
+      },
+      {
+        "latex": "\\Delta U = nC_V\\Delta T",
+        "meaning": ""
+      },
+      {
+        "latex": "dS = \\delta Q_{\\rm rev}/T",
+        "meaning": ""
+      },
+      {
+        "latex": "\\Delta S_{\\rm system} + \\Delta S_{\\rm surroundings} = 0",
+        "meaning": ""
+      },
+      {
+        "latex": "W = \\oint P\\,dV",
+        "meaning": ""
+      },
+      {
+        "latex": "\\Delta U = 0",
+        "meaning": ""
+      },
+      {
+        "latex": "Q_{\\rm net} = W_{\\rm net}",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "916e91b3-672a-46f8-8208-5e3afa72812c",
+      "6fdc585e-7fc0-4b50-a727-c1beef663d3a",
+      "ec4a3d5f-c326-4ce3-b586-474d7cdde7c5",
+      "bdf7943c-0506-4588-8591-00773978664d"
+    ],
+    "tags": [
+      "HC Verma Vol 2",
+      "Objective II",
+      "Chapter 26"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-thermodynamics-overview",
+    "chapter": "Thermodynamics",
+    "subtopic": "Overview",
+    "class": "XI",
+    "unitId": "xi-thermo",
+    "unitLabel": "Unit VIII — Thermodynamics",
+    "order": 10,
+    "title": "Overview",
+    "summary": "Given that, gas A $ \\rightarrow $ B Firstly isothermal expansion = V to 3V then volume reduced from 3V to V at constant pressure.",
+    "body": "**Key points from solved questions**\n- The given graph in option (A) shows the variation of temperature with time.\n- Process, I = Isochoric, volume is constant. II = Adiabatic, slope of curve II is more than the slope of curve III. III = Isothermal IV = Isobaric, Pressure is constant.\n- Given that, gas A $ \\rightarrow $ B Firstly isothermal expansion = V to 3V then volume reduced from 3V to V at constant pressure. (1) For isothermal expansion, $$ \\mathrm{T}=\\mathrm{constant} $$ $$ PV=nRT=constant $$ $$ PV=constant $$ Hence, the graph will be hyperbolic curve. (2) Now for isobaric compression, $$ P=constant $$ $$ \\mathrm{PV}=n\\mathrm{RT} $$ Hence, the graph will be straight line.",
+    "formulas": [
+      {
+        "latex": "\\mathrm{T}=\\mathrm{constant}",
+        "meaning": ""
+      },
+      {
+        "latex": "PV=nRT=constant",
+        "meaning": ""
+      },
+      {
+        "latex": "PV=constant",
+        "meaning": ""
+      },
+      {
+        "latex": "P=constant",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{PV}=n\\mathrm{RT}",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "0549fdad-7bf6-4f0e-bc05-47290b0a42e5",
+      "2919c020-7390-4397-8eb1-e7cbcbd5bb19",
+      "21997be4-d7ae-433e-b3d7-07e139407a0f"
+    ],
+    "tags": [
+      "AIPMT Screening 2012",
+      "NEET 2018"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-thermodynamics-reversible-and-irreversible-processes",
+    "chapter": "Thermodynamics",
+    "subtopic": "Reversible and Irreversible Processes",
+    "class": "XI",
+    "unitId": "xi-thermo",
+    "unitLabel": "Unit VIII — Thermodynamics",
+    "order": 10,
+    "title": "Reversible and Irreversible Processes",
+    "summary": "Isothermal compression is reversible.",
+    "body": "**Key points from solved questions**\n- Isothermal compression is reversible. For example, carnot cycle, heat engine. Chapter",
+    "formulas": [],
+    "questionIds": [
+      "669fbf62-d8a8-4219-ace9-3fddcd6215ed"
+    ],
+    "tags": [
+      "AIPMT 2005"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-thermodynamics-specific-heat-capacity",
+    "chapter": "Thermodynamics",
+    "subtopic": "Specific Heat Capacity",
+    "class": "XI",
+    "unitId": "xi-thermo",
+    "unitLabel": "Unit VIII — Thermodynamics",
+    "order": 10,
+    "title": "Specific Heat Capacity",
+    "summary": "<div style=\"text-align: center;\"><img…",
+    "body": "**Key points from solved questions**\n- <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//ce6d776a-19c4-4d06-9191-67ae8ca469ae/markdown_4/imgs/img_in_image_box_740_935_1025_1115.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A28Z%2F-1%2F%2F8b51d2b260c68e3d154f9138253335967c2b749d7b662d9458df600a0f2b91e9\" alt=\"Image\" width=\"23%\" /></div> We know, $$ \\begin{aligned}\\Delta\\mathrm{U}&=n\\mathrm{C}_{\\mathrm{V}}\\Delta\\mathrm{T}\\\\&=n\\left(\\frac{5\\mathrm{R}}{2}\\right)\\left(\\mathrm{T}_{\\mathrm{B}}-\\mathrm{T}_{\\mathrm{A}}\\right)\\quad\\left[for diatomic gas,\\mathrm{C}_{\\mathrm{V}}=\\frac{5\\mathrm{R}}{2}\\right]\\\\&=\\frac{5n\\mathrm{R}}{2}\\left(\\frac{\\mathrm{P}_{\\mathrm{B}}\\mathrm{V}_{\\mathrm{B}}}{n\\mathrm{R}}-\\frac{\\mathrm{P}_{\\mathrm{A}}\\mathrm{V}_{\\mathrm{A}}}{n\\mathrm{R}}\\right)\\quad[\\because\\mathrm{PV}=n\\mathrm{RT}]\\\\&=\\frac{5}{2}\\left(\\mathrm{P}_{\\mathrm{B}}\\mathrm{V}_{\\mathrm{B}}-\\mathrm{P}_{\\mathrm{A}}\\mathrm{V}_{\\mathrm{A}}\\right)=\\frac{5}{2}\\left(2\\times10^{3}\\times6-5\\times10^{3}\\times4\\right)\\\\&=\\frac{5}{2}\\left(-8\\times10^{3}\\right)=-20\\mathrm{kJ}\\end{aligned} $$\n- Let $C_{V}$ and $C_{P}$ be molar specific heats of the ideal gas at constant volume and constant pressure, respectively, then $$ \\mathrm{C}_{\\mathrm{p}}=\\mathrm{MC}_{\\mathrm{p}}and\\mathrm{C}_{\\mathrm{V}}=\\mathrm{MC}_{\\mathrm{V}} $$ $$ \\mathbf{C}_{\\mathbf{P}}-\\mathbf{C}_{\\mathbf{V}}=\\mathbf{R} $$ from equation (i) and (ii), we get, $$ \\therefore\\mathbf{M}\\mathbf{C}_{\\mathrm{P}}-\\mathbf{M}\\mathbf{C}_{\\mathrm{V}}=\\mathbf{R} $$ $$ \\Rightarrow\\quad\\mathbf{C_{P}}-\\mathbf{C_{V}}=\\frac{\\mathbf{R}}{\\mathbf{M}} $$\n- Change in internal energy of a gas having atomicity $ \\gamma $ is given by, $$ \\Delta\\mathrm{U}=\\frac{1}{(\\gamma-1)}\\left(\\mathrm{P}_{2}\\mathrm{V}_{2}-\\mathrm{P}_{1}\\mathrm{V}_{1}\\right) $$ Given. $$ \\mathbf{V}_{1}=\\mathbf{V}_{1},\\mathbf{V}_{2}=2\\mathbf{V} $$ So. $$ \\begin{array}{l}\\Delta\\mathrm{U}=\\displaystyle\\frac{1}{\\gamma-1}\\left[\\mathrm{P}\\times2\\mathrm{V}-\\mathrm{P}\\times\\mathrm{V}\\right]\\\\ \\quad=\\displaystyle\\frac{1}{\\gamma-1}\\mathrm{P}\\mathrm{V}=\\frac{\\mathrm{P}\\mathrm{V}}{\\gamma-1}\\end{array} $$\n- Here, we know that, At constant pressure $$ \\mathbf{Q}=n\\mathbf{C}_{\\mathbf{P}}\\Delta\\mathbf{T} $$ $$ 207=C_{P}\\times10 $$ $$ \\mathrm{C_{p}=20.7} $$ At constant volume, W = 0 $$ \\mathbf{Q}=\\mathbf{U}=n\\mathbf{C}_{\\mathrm{v}}\\Delta\\mathbf{T} $$ $$ \\mathbf{C}_{\\mathbf{P}}=\\mathbf{C}_{\\mathbf{v}}+\\mathbf{R} $$ $$ \\begin{aligned}&\\Rightarrow\\quad\\mathbf{C}_{\\mathbf{v}}=20.7-8.3=12.4\\\\&\\Rightarrow\\quad\\mathbf{Q}=12.4\\times10=124\\mathbf{J}\\end{aligned} $$",
+    "formulas": [
+      {
+        "latex": "\\begin{aligned}\\Delta\\mathrm{U}&=n\\mathrm{C}_{\\mathrm{V}}\\Delta\\mathrm{T}\\\\&=n\\left(\\frac{5\\mathrm{R}}{2}\\right)\\left(\\mathrm{T}_{\\mathrm{B}}-\\mathrm{T}_{\\mathrm{A}}\\right)\\quad\\left[for diatomic gas,\\mathrm{C}_{\\mathrm{V}}=\\frac{5\\mathrm{R}}{2}\\right]\\\\&=\\frac{5n\\mathrm{R}}{2}\\left(\\frac{\\mathrm{P}_{\\mathrm{B}}\\mathrm{V}_{\\mathrm{B}}}{n\\mathrm{R}}-\\frac{\\mathrm{P}_{\\mathrm{A}}\\mathrm{V}_{\\mathrm{A}}}{n\\mathrm{R}}\\right)\\quad[\\because\\mathrm{PV}=n\\mathrm{RT}]\\\\&=\\frac{5}{2}\\left(\\mathrm{P}_{\\mathrm{B}}\\mathrm{V}_{\\mathrm{B}}-\\mathrm{P}_{\\mathrm{A}}\\mathrm{V}_{\\mathrm{A}}\\right)=\\frac{5}{2}\\left(2\\times10^{3}\\times6-5\\times10^{3}\\times4\\right)\\\\&=\\frac{5}{2}\\left(-8\\times10^{3}\\right)=-20\\mathrm{kJ}\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{C}_{\\mathrm{p}}=\\mathrm{MC}_{\\mathrm{p}}and\\mathrm{C}_{\\mathrm{V}}=\\mathrm{MC}_{\\mathrm{V}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{C}_{\\mathbf{P}}-\\mathbf{C}_{\\mathbf{V}}=\\mathbf{R}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\therefore\\mathbf{M}\\mathbf{C}_{\\mathrm{P}}-\\mathbf{M}\\mathbf{C}_{\\mathrm{V}}=\\mathbf{R}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\Rightarrow\\quad\\mathbf{C_{P}}-\\mathbf{C_{V}}=\\frac{\\mathbf{R}}{\\mathbf{M}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\Delta\\mathrm{U}=\\frac{1}{(\\gamma-1)}\\left(\\mathrm{P}_{2}\\mathrm{V}_{2}-\\mathrm{P}_{1}\\mathrm{V}_{1}\\right)",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{V}_{1}=\\mathbf{V}_{1},\\mathbf{V}_{2}=2\\mathbf{V}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{array}{l}\\Delta\\mathrm{U}=\\displaystyle\\frac{1}{\\gamma-1}\\left[\\mathrm{P}\\times2\\mathrm{V}-\\mathrm{P}\\times\\mathrm{V}\\right]\\\\ \\quad=\\displaystyle\\frac{1}{\\gamma-1}\\mathrm{P}\\mathrm{V}=\\frac{\\mathrm{P}\\mathrm{V}}{\\gamma-1}\\end{array}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{Q}=n\\mathbf{C}_{\\mathbf{P}}\\Delta\\mathbf{T}",
+        "meaning": ""
+      },
+      {
+        "latex": "207=C_{P}\\times10",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{C_{p}=20.7}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{Q}=\\mathbf{U}=n\\mathbf{C}_{\\mathrm{v}}\\Delta\\mathbf{T}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{C}_{\\mathbf{P}}=\\mathbf{C}_{\\mathbf{v}}+\\mathbf{R}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}&\\Rightarrow\\quad\\mathbf{C}_{\\mathbf{v}}=20.7-8.3=12.4\\\\&\\Rightarrow\\quad\\mathbf{Q}=12.4\\times10=124\\mathbf{J}\\end{aligned}",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "c91102f0-bb96-47ac-a2b0-28f1daae75c3",
+      "6af97099-6f14-4fdc-b6a3-6a61e18ee4b3",
+      "0dd33ae7-2172-4b28-b889-bceb30e799db",
+      "3d1437db-93bc-4408-9907-969580c1ac05"
+    ],
+    "tags": [
+      "AIPMT Cancelled 2015",
+      "AIPMT 1998",
+      "AIPMT 1990"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-thermodynamics-thermodynamic-processes",
+    "chapter": "Thermodynamics",
+    "subtopic": "Thermodynamic Processes",
+    "class": "XI",
+    "unitId": "xi-thermo",
+    "unitLabel": "Unit VIII — Thermodynamics",
+    "order": 10,
+    "title": "Thermodynamic Processes",
+    "summary": "<div style=\"text-align: center;\"><img…",
+    "body": "**Key points from solved questions**\n- $$ As,\\quad\\mathrm{W}=\\mathrm{PdV} $$ In cycle b $ \\rightarrow $ c and $ d \\rightarrow a $ $$ \\mathrm{V=c o n s t a n t} $$ $$ d V=0 $$ $$ \\bullet \\quad \\bullet $$ $$ \\mathbf{W}_{bc}=0 $$\n- Curve 4 is isobaric process because pressure is constant. Curve 1 is isochoric because volume is constant. Curve 3 has smaller slope than curve 2 and hence, curve 2 is adiabatic.\n- In an adiabatic process, there is no exchange of heat of the system with its surroundings. Thus in adiabatic process, P, V and T changes but $ \\Delta Q = 0 $ or entropy remains constant $ \\left(\\Delta S = \\frac{\\Delta Q}{T}\\right) $.\n- Process, I = Isochoric, volume is constant. II = Adiabatic, slope of curve II is more than the slope of curve III. III = Isothermal IV = Isobaric, Pressure is constant.\n- In the given graph, the process shown is isobaric. $$ \\mathrm{i.e.,}\\qquad d\\mathbf{Q}=n\\mathbf{C}_{p}\\Delta\\mathbf{T}. $$ ∴ gas is ideal and mono-atomic in nature. $$ d\\mathbf{Q}=n\\left(\\frac{5}{2}\\mathbf{R}\\right)\\Delta\\mathbf{T} $$ and $ dW = PdV = nR\\Delta T $ ∴ Ratio of work done by the gas to the heat absorbed by the gas is, $$ \\frac{dW}{dQ}=\\frac{nR\\Delta T}{n\\left(\\frac{5}{2}R\\right)\\Delta T}=\\frac{2}{5} $$ <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//42c2a837-382d-4536-a07b-52818c81510a/markdown_1/imgs/img_in_chart_box_181_98_451_276.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A15%3A48Z%2F-1%2F%2F27e33a80535ed2deb516d2294e5237a1f35fb6e346c4baded1c3aa30990311e5\" alt=\"Image\" width=\"22%\" /></div> $ W_{ext} = $ Area between the curve and the volume axis. ∴ W (adiabatic) > W (isothermal) Therefore, compressing the gas through adiabatic process will require more work to be done. <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//42c2a837-382d-4536-a07b-52818c81510a/markdown_1/imgs/img_in_chart_box_182_397_445_605.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A15%3A48Z%2F-1%2F%2Fe322ea433a3437d7c25cf9c3e40a78c8a3b3196dbe965db2f2ad90bb8e10718c\" alt=\"Image\" width=\"22%\" /></div> Work done = Area under P - V graph So, more amount of large work is done in adiabatic process. Here, $ W_{adiabatic} > W_{isothermal} > W_{isobaric} $\n- <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//42c2a837-382d-4536-a07b-52818c81510a/markdown_1/imgs/img_in_chart_box_195_726_489_940.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A15%3A48Z%2F-1%2F%2F8033f4b2fa10ed2035735caa8f6afb9c5fa68d5ad863980d59c7bd224cef99d7\" alt=\"Image\" width=\"24%\" /></div> From diagram. We see that initial and final points are same. Case I: So, $ \\Delta U_{A \\rightarrow B \\rightarrow C} = \\Delta U_{A \\rightarrow C} $ A $ \\rightarrow $ B (Isochoric process) $$ d\\mathbf{W}_{\\mathbf{A}\\to\\mathbf{B}}=0 $$ and $$ d Q=d U+d W $$ $$ d\\mathbf{Q}_{\\mathbf{A}\\rightarrow\\mathbf{B}}=d\\mathbf{U}_{\\mathbf{A}\\rightarrow\\mathbf{B}}=400\\mathbf{J} $$ Case II: B $ \\rightarrow $ C is isobaric process. $$ \\begin{aligned}{d\\mathbf{Q}_{\\mathbf{B}\\to\\mathbf{C}}}&{{}=d\\mathbf{U}_{\\mathbf{B}\\to\\mathbf{C}}+d\\mathbf{W}_{\\mathbf{B}\\to\\mathbf{C}}}\\\\ {}&{{}=d\\mathbf{U}_{\\mathbf{B}\\to\\mathbf{C}}+\\mathbf{P}\\Delta\\mathbf{V}_{\\mathbf{B}\\to\\mathbf{C}}.}\\\\ \\end{aligned} $$ $$ 100=dU_{B\\rightarrow C}+6\\times10^{4}(2\\times10^{-3}) $$ $$ d\\mathrm{U}_{\\mathrm{B}\\rightarrow\\mathrm{C}}=100-120=-20\\mathrm{J} $$ Using eq. (i), $$ \\begin{aligned}&\\Delta\\mathrm{U}_{\\mathrm{A}\\rightarrow\\mathrm{B}\\rightarrow\\mathrm{C}}=\\Delta\\mathrm{U}_{\\mathrm{A}\\rightarrow\\mathrm{C}}\\\\ \\Rightarrow\\quad&\\Delta\\mathrm{U}_{\\mathrm{A}\\rightarrow\\mathrm{B}}+\\Delta\\mathrm{U}_{\\mathrm{B}\\rightarrow\\mathrm{C}}=d\\mathrm{Q}_{\\mathrm{A}\\rightarrow\\mathrm{C}}-d\\mathrm{W}_{\\mathrm{A}\\rightarrow\\mathrm{C}}\\\\ \\Rightarrow\\quad&400+(-20)=d\\mathrm{Q}_{\\mathrm{A}\\rightarrow\\mathrm{C}}-(\\mathrm{P}\\Delta\\mathrm{U}_{\\mathrm{A}}+\\mathrm{Area}\\Delta_{\\mathrm{A}\\rightarrow\\mathrm{B}\\rightarrow\\mathrm{C}})\\\\ \\Rightarrow\\quad&d\\mathrm{Q}_{\\mathrm{A}\\rightarrow\\mathrm{C}}=380+\\left[2\\times10^{4}\\times2\\times10^{-3}+\\right.\\\\ &\\left.\\quad\\quad\\quad\\quad\\quad\\quad\\quad\\quad\\frac{1}{2}\\times2\\times10^{-3}\\times4\\times10^{4}\\right]\\\\ \\Rightarrow\\quad&d\\mathrm{Q}_{\\mathrm{A}\\rightarrow\\mathrm{C}}=460\\mathrm{J}\\end{aligned} $$\n- According to the question, Work done in the cyclic process = Area bound by $ t $ closed configuration + Area of closed configuration $$ \\left\\{2\\left[\\frac{1}{2}\\left(\\frac{\\mathbf{V}_{0}}{2}\\right)\\times\\mathbf{P}_{0}\\right]+\\left[-2\\left\\{\\frac{1}{2}\\left(\\frac{\\mathbf{V}_{0}}{2}\\right)\\times\\mathbf{P}_{0}\\right\\}\\right]\\right\\} $$\n- Using ideal gas equation, $$ \\mathbf{P}=\\begin{array}{c}\\frac{nRT}{\\mathbf{V}}\\end{array} $$ $$ \\mathrm{P}_{1}=\\frac{n\\mathrm{RT}}{2\\mathrm{V}}=\\frac{\\mathrm{P}}{2} $$ ∴ For isothermal expansion. $$ \\mathbf{P}\\mathbf{V}=\\mathbf{P}_{1}\\times2\\mathbf{V} $$ $$ \\mathbf{p}_{1}=\\frac{\\mathbf{p}}{2} $$ For adiabatic expansion, $$ \\mathrm{PV}^{\\mathrm{Y}}=\\mathrm{Constant} $$ $$ \\mathbf{P}_{1}\\mathbf{V}_{1}^{Y}=\\mathbf{P}_{2}\\mathbf{V}_{2}^{Y} $$ $$ \\mathbf{P}_{2}=\\mathbf{P}_{1}\\left[\\frac{\\mathbf{V}_{1}}{\\mathbf{V}_{2}}\\right]^{\\gamma} $$ $$ \\begin{aligned}\\mathbf{P}_{2}&=\\frac{\\mathbf{P}}{2}\\left[\\frac{2\\mathbf{V}}{16\\mathbf{V}}\\right]^{\\frac{5}{3}}=\\frac{\\mathbf{P}}{2}\\left[\\frac{1}{8}\\right]^{\\frac{5}{3}}\\\\&=\\frac{\\mathbf{P}}{2}\\times\\left[\\frac{1}{2}\\right]^{5}\\\\&=\\frac{\\mathbf{P}}{64}\\end{aligned} $$\n- Net work done = Area of triangle $$ \\begin{array}{l}\\frac{1}{2}\\times[(7-2)\\times10^{-3}][(6-2)\\times10^{5}]\\\\=1000\\ J\\end{array} $$\n- According to the question, $$ PT^{-3}=Constant $$ For an adiabatic process, $$ PT^{\\frac{\\gamma}{1-\\gamma}}=constant $$ Comparing eqn. (i) and (ii), we get $$ \\frac{\\gamma}{1-\\gamma}=-3; $$ $$ \\gamma=-3+3\\gamma or\\gamma=\\frac{3}{2} $$ As, $$ \\Upsilon=\\frac{C_{\\mathbf{P}}}{C_{\\mathbf{V}}} $$ $$ \\frac{C_{P}}{C_{V}}=\\frac{3}{2} $$\n- According to $1^{st}$ law of thermodynamics $$ \\delta\\mathbf{Q}=\\delta\\mathbf{U}+\\delta\\mathbf{W} $$ <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//42c2a837-382d-4536-a07b-52818c81510a/markdown_2/imgs/img_in_image_box_181_159_369_310.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A15%3A51Z%2F-1%2F%2Fdcfc988190f7be86d71da2fd84e56e9efac64e9e0a980c11ef047ee929ace46a\" alt=\"Image\" width=\"15%\" /></div> Along the path $adc$, $\\delta U_{1}=\\delta Q_{1}-\\delta W_{1}$ $=50-20$ $=30J$ Similarly, path $abc$, $\\delta U_{2}=36-\\delta W_{2}$ Since, change in internal energy is path independent So, $\\delta U_{1}=\\delta U_{2}$ $30\\ J=36\\ J-\\delta W_{2}$ $\\Rightarrow \\delta W_{2}=36\\ J-30\\ J$ $=6J$\n- Adiabatic process $ \\rightarrow $ Heat does not exchange $$ \\mathrm{PV}^{\\mathrm{Y}}=\\mathrm{constant} $$ $$ PV=nRT $$ $$ \\mathrm{P}=\\frac{n\\mathrm{RT}}{\\mathrm{V}} $$ Putting the value of P in eq (i) $$ \\mathrm{\\frac{nRT}{V}}\\ V^{\\prime \\prime}=\\mathrm{constant} $$ Again from the ideal gas equation, $$ TV^{Y-1}=constant $$ $$ \\mathbf{V}=\\frac{n\\mathbf{R}T}{\\mathbf{P}} $$ $$ \\mathrm{P}\\left(\\frac{nRT}{\\mathrm{P}}\\right)^{\\gamma} $$ $$ \\mathrm{P}^{\\gamma}\\mathrm{T}^{1-\\gamma}=\\mathrm{c o n s t a n t} $$\n- According to the question, $$ \\Delta U_{1}=\\Delta U_{2}=\\Delta U_{3} $$ $$ \\mathrm{Q}_{1}>\\mathrm{Q}_{2}>\\mathrm{Q}_{3} $$ $$ \\Delta\\mathbf{Q}=\\Delta\\mathbf{W}+d\\mathbf{U} $$ Change in internal energy is independent of path.\n- From the question, $$ \\mathbf{Q}=\\mathbf{W} $$ W = Area enclosed in the curve = AB \\times AD =(3V - V) (2P - P) = P \\times 2V ∴ Heat rejected = 2PV.",
+    "formulas": [
+      {
+        "latex": "As,\\quad\\mathrm{W}=\\mathrm{PdV}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{V=c o n s t a n t}",
+        "meaning": ""
+      },
+      {
+        "latex": "d V=0",
+        "meaning": ""
+      },
+      {
+        "latex": "\\bullet \\quad \\bullet",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{W}_{bc}=0",
+        "meaning": ""
+      },
+      {
+        "latex": "\\Delta Q = 0",
+        "meaning": ""
+      },
+      {
+        "latex": "\\left(\\Delta S = \\frac{\\Delta Q}{T}\\right)",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{i.e.,}\\qquad d\\mathbf{Q}=n\\mathbf{C}_{p}\\Delta\\mathbf{T}.",
+        "meaning": ""
+      },
+      {
+        "latex": "d\\mathbf{Q}=n\\left(\\frac{5}{2}\\mathbf{R}\\right)\\Delta\\mathbf{T}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{dW}{dQ}=\\frac{nR\\Delta T}{n\\left(\\frac{5}{2}R\\right)\\Delta T}=\\frac{2}{5}",
+        "meaning": ""
+      },
+      {
+        "latex": "dW = PdV = nR\\Delta T",
+        "meaning": ""
+      },
+      {
+        "latex": "W_{ext} =",
+        "meaning": ""
+      },
+      {
+        "latex": "d\\mathbf{W}_{\\mathbf{A}\\to\\mathbf{B}}=0",
+        "meaning": ""
+      },
+      {
+        "latex": "d Q=d U+d W",
+        "meaning": ""
+      },
+      {
+        "latex": "d\\mathbf{Q}_{\\mathbf{A}\\rightarrow\\mathbf{B}}=d\\mathbf{U}_{\\mathbf{A}\\rightarrow\\mathbf{B}}=400\\mathbf{J}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}{d\\mathbf{Q}_{\\mathbf{B}\\to\\mathbf{C}}}&{{}=d\\mathbf{U}_{\\mathbf{B}\\to\\mathbf{C}}+d\\mathbf{W}_{\\mathbf{B}\\to\\mathbf{C}}}\\\\ {}&{{}=d\\mathbf{U}_{\\mathbf{B}\\to\\mathbf{C}}+\\mathbf{P}\\Delta\\mathbf{V}_{\\mathbf{B}\\to\\mathbf{C}}.}\\\\ \\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "100=dU_{B\\rightarrow C}+6\\times10^{4}(2\\times10^{-3})",
+        "meaning": ""
+      },
+      {
+        "latex": "d\\mathrm{U}_{\\mathrm{B}\\rightarrow\\mathrm{C}}=100-120=-20\\mathrm{J}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}&\\Delta\\mathrm{U}_{\\mathrm{A}\\rightarrow\\mathrm{B}\\rightarrow\\mathrm{C}}=\\Delta\\mathrm{U}_{\\mathrm{A}\\rightarrow\\mathrm{C}}\\\\ \\Rightarrow\\quad&\\Delta\\mathrm{U}_{\\mathrm{A}\\rightarrow\\mathrm{B}}+\\Delta\\mathrm{U}_{\\mathrm{B}\\rightarrow\\mathrm{C}}=d\\mathrm{Q}_{\\mathrm{A}\\rightarrow\\mathrm{C}}-d\\mathrm{W}_{\\mathrm{A}\\rightarrow\\mathrm{C}}\\\\ \\Rightarrow\\quad&400+(-20)=d\\mathrm{Q}_{\\mathrm{A}\\rightarrow\\mathrm{C}}-(\\mathrm{P}\\Delta\\mathrm{U}_{\\mathrm{A}}+\\mathrm{Area}\\Delta_{\\mathrm{A}\\rightarrow\\mathrm{B}\\rightarrow\\mathrm{C}})\\\\ \\Rightarrow\\quad&d\\mathrm{Q}_{\\mathrm{A}\\rightarrow\\mathrm{C}}=380+\\left[2\\times10^{4}\\times2\\times10^{-3}+\\right.\\\\ &\\left.\\quad\\quad\\quad\\quad\\quad\\quad\\quad\\quad\\frac{1}{2}\\times2\\times10^{-3}\\times4\\times10^{4}\\right]\\\\ \\Rightarrow\\quad&d\\mathrm{Q}_{\\mathrm{A}\\rightarrow\\mathrm{C}}=460\\mathrm{J}\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\Delta U_{A \\rightarrow B \\rightarrow C} = \\Delta U_{A \\rightarrow C}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\left\\{2\\left[\\frac{1}{2}\\left(\\frac{\\mathbf{V}_{0}}{2}\\right)\\times\\mathbf{P}_{0}\\right]+\\left[-2\\left\\{\\frac{1}{2}\\left(\\frac{\\mathbf{V}_{0}}{2}\\right)\\times\\mathbf{P}_{0}\\right\\}\\right]\\right\\}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{P}=\\begin{array}{c}\\frac{nRT}{\\mathbf{V}}\\end{array}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{P}_{1}=\\frac{n\\mathrm{RT}}{2\\mathrm{V}}=\\frac{\\mathrm{P}}{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{P}\\mathbf{V}=\\mathbf{P}_{1}\\times2\\mathbf{V}",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "72f98bcd-3460-4890-81f0-6fa38a216deb",
+      "0e88b2bd-8d2e-4758-a290-1d2b3abf6b58",
+      "188c248a-36c7-4e4c-86dc-09636736a6be",
+      "b15d8dac-2184-4239-a20d-37e134242240",
+      "703979af-616f-45f6-828e-bab0c8003410",
+      "71bf433b-6008-4ac1-80a1-1fae11905e2f",
+      "99c5b2d6-c36e-4d89-9fed-e95708cd0740",
+      "9b42b788-ef35-4f90-9138-6945dbbaa0cf",
+      "c86b31fb-28b5-48ad-99f4-424594a7fde4",
+      "36c198ac-dbb6-4353-abdc-aba177714605",
+      "7a648941-e8d4-459b-8dbd-49d33262b9c2",
+      "43471da8-fd40-441a-964a-08ac58721d23",
+      "e4dbe990-08aa-4722-a814-a76635317c0a",
+      "8d53f8bc-ec96-4460-9d3a-5812cb95e4c1",
+      "2bdde386-d7fc-41aa-a419-3bc000545f3b",
+      "433c5a0d-4af9-474c-85f2-6fd2522c074b",
+      "07796974-7cd4-4f72-906b-cd5f505f3575",
+      "3bb4a454-be2c-4358-9fa6-807ae29bd8fe",
+      "604ac3e1-f13d-40c1-b16b-399cc2c79799",
+      "210e8c19-1037-44c2-9567-16cc82437380",
+      "3d9c06a7-1a84-4b08-ac12-e3c984f3f020",
+      "9270600e-065a-4633-8ea6-e2eb17244ea9",
+      "13aad3ee-77eb-40a9-9a6f-95925b0069f4",
+      "3ac83a10-d076-44e6-b371-2ad040238cc0",
+      "d87acec2-9dde-4181-b06f-6da4c154c9e7",
+      "0949e551-c01e-433f-99ff-2a04c7df6752"
+    ],
+    "tags": [
+      "NEET 2024",
+      "NEET 2022",
+      "NEET 2019",
+      "NEET 2018",
+      "NEET 2016",
+      "AIPMT July 2015",
+      "AIPMT Cancelled 2015",
+      "AIPMT 2014",
+      "NEET 2013",
+      "NEET Karnataka 2013",
+      "AIPMT Screening 2012",
+      "AIPMT Mains 2011",
+      "AIPMT Screening 2011",
+      "AIPMT Screening 2009",
+      "AIPMT Screening 2008",
+      "AIPMT 1997",
+      "AIPMT 1993",
+      "AIPMT 1991"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-thermodynamics-thermodynamic-state-variables-and-equation-of-state",
+    "chapter": "Thermodynamics",
+    "subtopic": "Thermodynamic State Variables and Equation of State",
+    "class": "XI",
+    "unitId": "xi-thermo",
+    "unitLabel": "Unit VIII — Thermodynamics",
+    "order": 10,
+    "title": "Thermodynamic State Variables and Equation of State",
+    "summary": "Certain specific thermodynamic variables, such as pressure P, volume V, temperature T and entropy S, can be used to describe the thermodynamic state of a homogeneous system.",
+    "body": "**Key points from solved questions**\n- The equilibrium state of a thermodynamic system is described by pressure, temperature and volume only.\n- Given: P = 249 kPa; T = 27°C, M = 2 × 10^{-3}kg Equation of state, $$ \\mathbf{P}\\mathbf{V}=n\\mathbf{R}\\mathbf{T} $$ or $$ \\mathbf{P}\\mathbf{M}=\\boldsymbol{\\rho}\\mathbf{R}\\mathbf{T} $$ $$ \\left[\\because n=\\frac{m}{M}\\right] $$ or $$ \\rho=\\frac{\\mathrm{P M}}{\\mathrm{R T}} $$ $$ \\rho=\\frac{(249\\times10^{3})(2\\times10^{-3})}{8.3\\times300}=0.2\\ kg/m^{3} $$\n- Certain specific thermodynamic variables, such as pressure P, volume V, temperature T and entropy S, can be used to describe the thermodynamic state of a homogeneous system. Any two of these four variables are independent and once they are known, the others can be calculated. As a result, there are just two independent variables, with the others working as functions. Certain relationships are essential for a thorough understanding of the system and we introduce some thermodynamic functions, which are functions of variables P, V, T and S. Thermodynamic functions are classified into four categories. (i) Internal energy (U) (ii) Helmholtz function (F) (iii) Enthalpy (H) (iv) Gibb's energy (G) Hence, work done is not thermodynamic function. <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//42c2a837-382d-4536-a07b-52818c81510a/markdown_0/imgs/img_in_image_box_605_355_648_406.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A15%3A45Z%2F-1%2F%2F7966dca4360bc6878ffdcb24da30166e1c33f215651b6d889a80797efdd4bd8d\" alt=\"Image\" width=\"3%\" /></div> ##### Mnemonics: Gibbs's free energy formula: \"Good Honey Tastes Sweet\" $$ \\Delta\\pmb{G}=\\pmb{H}-\\pmb{T}\\Delta\\pmb{S} $$",
+    "formulas": [
+      {
+        "latex": "\\mathbf{P}\\mathbf{V}=n\\mathbf{R}\\mathbf{T}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{P}\\mathbf{M}=\\boldsymbol{\\rho}\\mathbf{R}\\mathbf{T}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\left[\\because n=\\frac{m}{M}\\right]",
+        "meaning": ""
+      },
+      {
+        "latex": "\\rho=\\frac{\\mathrm{P M}}{\\mathrm{R T}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\rho=\\frac{(249\\times10^{3})(2\\times10^{-3})}{8.3\\times300}=0.2\\ kg/m^{3}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\Delta\\pmb{G}=\\pmb{H}-\\pmb{T}\\Delta\\pmb{S}",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "411d4720-69cf-41e6-848a-0510aca3a52f",
+      "13b8d81d-3fdd-4364-bf41-8a12d7fd6a73",
+      "c2b8d809-002b-4d36-8b2b-b2c7d98cdaa0"
+    ],
+    "tags": [
+      "Re-NEET 2024",
+      "NEET 2020",
+      "AIPMT 1993"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-thermodynamics-reneet2026",
+    "chapter": "Thermodynamics",
+    "subtopic": "reNEET2026",
+    "class": "XI",
+    "unitId": "xi-thermo",
+    "unitLabel": "Unit VIII — Thermodynamics",
+    "order": 10,
+    "title": "reNEET2026",
+    "summary": "For a cycle $\\Delta U=0$, so $Q=W=$ area enclosed by the loop on the P–V diagram, which evaluates to 600 J for the given cycle.",
+    "body": "**Key points from solved questions**\n- Adiabatic: $W=-\\Delta U=nC_V(T_1-T_2)=\\tfrac32 R(60-50)=\\tfrac32(8.3)(10)=124.5\\ \\text{J}.$\n- For a cycle $\\Delta U=0$, so $Q=W=$ area enclosed by the loop on the P–V diagram, which evaluates to 600 J for the given cycle.",
+    "formulas": [
+      {
+        "latex": "W=-\\Delta U=nC_V(T_1-T_2)=\\tfrac32 R(60-50)=\\tfrac32(8.3)(10)=124.5\\ \\text{J}.",
+        "meaning": ""
+      },
+      {
+        "latex": "\\Delta U=0",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "renet2026-phy-17",
+      "renet2026-phy-39"
+    ],
+    "tags": [
+      "reNEET 2026"
+    ],
+    "source": "seed"
+  }
+]

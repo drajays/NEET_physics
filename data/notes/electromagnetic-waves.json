@@ -1,0 +1,443 @@
+[
+  {
+    "id": "note-electromagnetic-waves-displacement-current",
+    "chapter": "Electromagnetic Waves",
+    "subtopic": "Displacement Current",
+    "class": "XII",
+    "unitId": "xii-em-waves",
+    "unitLabel": "Unit VI — Electromagnetic Waves",
+    "order": 21,
+    "title": "Displacement Current",
+    "summary": "A capacitor a being charged then the displacement current is $$ I=\\varepsilon\\frac{d(\\phi)}{dt} $$ $$ I=\\varepsilon_{0}\\frac{d}{dt}\\left(EA\\right) $$ $$…",
+    "body": "**Key points from solved questions**\n- A capacitor a being charged then the displacement current is $$ I=\\varepsilon\\frac{d(\\phi)}{dt} $$ $$ I=\\varepsilon_{0}\\frac{d}{dt}\\left(EA\\right) $$ $$ \\mathrm{I}=\\varepsilon_{0}\\frac{d}{dt}\\left(\\frac{\\mathrm{V}}{d}\\mathrm{A}\\right) $$ $$ \\mathrm{I}=\\frac{\\varepsilon_{0}\\mathrm{A}}{d}\\frac{d}{dt}\\left(\\frac{\\mathrm{Q}}{\\mathrm{C}}\\right) $$ $$ \\mathrm{I}=\\frac{d\\mathrm{Q}}{dt}=\\mathrm{I}_{\\text{conduction}}\\quad\\left(\\because\\mathrm{C}=\\frac{\\varepsilon_{0}\\mathrm{A}}{d}\\right) $$\n- Displacement Current, $$ I_{d}=\\frac{CdV}{dt} $$ $$ \\mathrm{I}_{d}=\\mathrm{C}\\frac{d}{dt}\\ (\\mathrm{V}_{0}\\sin\\omega t) $$ $$ I_{d}=CV_{0}\\omega\\cos\\omega t $$ $$ \\frac{\\mathrm{H}}{\\mathrm{E}}=\\sqrt{\\frac{\\varepsilon}{\\mu}} $$",
+    "formulas": [
+      {
+        "latex": "I=\\varepsilon\\frac{d(\\phi)}{dt}",
+        "meaning": ""
+      },
+      {
+        "latex": "I=\\varepsilon_{0}\\frac{d}{dt}\\left(EA\\right)",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{I}=\\varepsilon_{0}\\frac{d}{dt}\\left(\\frac{\\mathrm{V}}{d}\\mathrm{A}\\right)",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{I}=\\frac{\\varepsilon_{0}\\mathrm{A}}{d}\\frac{d}{dt}\\left(\\frac{\\mathrm{Q}}{\\mathrm{C}}\\right)",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{I}=\\frac{d\\mathrm{Q}}{dt}=\\mathrm{I}_{\\text{conduction}}\\quad\\left(\\because\\mathrm{C}=\\frac{\\varepsilon_{0}\\mathrm{A}}{d}\\right)",
+        "meaning": ""
+      },
+      {
+        "latex": "I_{d}=\\frac{CdV}{dt}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{I}_{d}=\\mathrm{C}\\frac{d}{dt}\\ (\\mathrm{V}_{0}\\sin\\omega t)",
+        "meaning": ""
+      },
+      {
+        "latex": "I_{d}=CV_{0}\\omega\\cos\\omega t",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{\\mathrm{H}}{\\mathrm{E}}=\\sqrt{\\frac{\\varepsilon}{\\mu}}",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "f2d6e56a-988e-4ea7-b030-b941c1fb0cac",
+      "3b23820e-9778-4645-a357-7778797de239"
+    ],
+    "tags": [
+      "NEET 2024",
+      "NEET 2021"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-electromagnetic-waves-electromagnetic-spectrum",
+    "chapter": "Electromagnetic Waves",
+    "subtopic": "Electromagnetic Spectrum",
+    "class": "XII",
+    "unitId": "xii-em-waves",
+    "unitLabel": "Unit VI — Electromagnetic Waves",
+    "order": 21,
+    "title": "Electromagnetic Spectrum",
+    "summary": "<table border=1 style='margin: auto; word-wrap: break-word;'><tr><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'>Frequency Range (Hz)</td><td…",
+    "body": "**Key points from solved questions**\n- The electromagnetic radiation which has the smallest wavelength are Gamma rays with wavelength less than 0.01 nm.\n- <table border=1 style='margin: auto; word-wrap: break-word;'><tr><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'>Frequency Range (Hz)</td><td style='text-align: center; word-wrap: break-word;'>Wavelength (m)</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>Microwaves</td><td style='text-align: center; word-wrap: break-word;'>$ 10^{{9}} $ to $ 10^{{12}} $</td><td style='text-align: center; word-wrap: break-word;'>$ 10^{{-3}} $ to 0.3</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>Ultraviolet</td><td style='text-align: center; word-wrap: break-word;'>$ 10^{{15}} $ to $ 10^{{17}} $</td><td style='text-align: center; word-wrap: break-word;'>$ 1.5 \\times 10^{{-7}} $ to $ 3.5 \\times 10^{{-7}} $</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>X-ray</td><td style='text-align: center; word-wrap: break-word;'>$ 10^{{18}} $ to $ 10^{{20}} $</td><td style='text-align: center; word-wrap: break-word;'>$ 10^{{-11}} $ to $ 10^{{-8}} $</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>Gamma rays</td><td style='text-align: center; word-wrap: break-word;'>$ 10^{{19}} $ to $ 10^{{24}} $</td><td style='text-align: center; word-wrap: break-word;'>$ 10^{{-16}} $ to $ 10^{{-13}} $</td></tr><tr><td colspan=\"3\">From above table, it is clear that Gamma rays has the shortest wavelength and has higher frequency than microwaves, X-rays and UV-rays.</td></tr></table>\n- Energy, E = h $ \\nu $ = $ \\frac{hc}{\\lambda} $ If K.E. is maximum, thus $ \\lambda $ is minimum. So, energy of emitted X-ray = energy of electron $$ \\frac{hc}{\\lambda_{\\min}}=e\\mathsf{V} $$ $$ \\begin{array}{l}\\Rightarrow\\quad\\lambda_{\\min}=\\frac{hc}{e}\\times\\frac{1}{V}\\\\ \\Rightarrow\\quad\\lambda_{\\min}\\propto\\frac{1}{V}\\end{array} $$\n- The wavelength of AM radio waves is $10^2$ m. The wavelength of microwaves lies between $10^{-3}$ m to $10^{-1}$ m. Infrared radiations wavelength lies between $4 \\times 10^{-7}$ m to $7 \\times 10^{-3}$ m. X-ray wavelength ranges from $10^{-8}$ m to $10^{-12}$ m.\n- $ \\lambda_{\\text{red}} > \\lambda_{\\text{orange}} > \\lambda_{\\text{yellow}} > \\lambda_{\\text{green}} > \\lambda_{\\text{blue}} > \\lambda_{\\text{violet}} $\n- We know, $$ E=\\frac{hc}{\\lambda} $$ $ \\Rightarrow $ $$ \\begin{aligned}\\lambda&=\\frac{hc}{E}=\\frac{6.62\\times10^{-34}\\times3\\times10^{8}}{15\\times10^{3}\\times1.6\\times10^{-19}}\\\\&=0.828\\times10^{-10}m\\\\\\lambda&=0.828\\mathring{A}\\end{aligned} $$ Since, the order of wavelength is between 10 nm and 0.001 nm, it belongs to X-ray.\n- The frequency of the microwave should match the resonant frequency of the water molecules.\n- Decreasing order of wavelength ( $ \\lambda $) Microwave > Infrared > Ultraviolet > Gamma ray. <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//eb42f562-0c39-4948-9819-386f13b8d18e/markdown_3/imgs/img_in_image_box_586_762_627_811.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A15%3A50Z%2F-1%2F%2Fbc27658f915fac2d5e2265ec852c616fbf78159d4e71127529208cdd629d9feb\" alt=\"Image\" width=\"3%\" /></div> ##### Mnemonics Increasing frequency or decreasing wavelength: Roman: Radio waves Men: Microwaves Invented: Infrared Very: Visible light Unusual: Ultraviolet X-ray: X-rays Guns : Gamma rays Increasing wavelength or decreasing frequency: Good Xylophones Use Very Interesting Musical Rhythms. Gamma rays, X-rays, Ultraviolet, Visible light, Infrared. Microwaves, Radiowaves.\n- $$ \\lambda_{m}>\\lambda_{v}>\\lambda_{x} $$ In spectrum, X-rays has minimum wavelength and microwave has maximum wavelength.\n- Every body at all times, at all temperature emit radiation which fall in the infrared region.\n- $ \\beta $-rays are not electromagnetic waves.\n- Cosmic rays have very short wavelength. Wavelengths: $$ X\\text{-ray}\\to1\\mathrm{~A~t o~}100\\mathrm{~A~} $$ Ultraviolet rays $ \\rightarrow $ 100 Å to 1 Å $ \\gamma $-rays $ \\rightarrow $ 0.001 Å to 1 Å Cosmic rays $ \\rightarrow $ upto $ 4 \\times 10^{-3} $ Å\n- Frequency of radiations given are listed below. <table border=1 style='margin: auto; word-wrap: break-word;'><tr><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'>Waves</td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'>Frequency (in Hz)</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>1.</td><td style='text-align: center; word-wrap: break-word;'>$ \\gamma $-rays</td><td style='text-align: center; word-wrap: break-word;'>(a)</td><td style='text-align: center; word-wrap: break-word;'>$ 3 \\times 10^{21} $ to $ 3 \\times 10^{18} $</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>2.</td><td style='text-align: center; word-wrap: break-word;'>X-rays</td><td style='text-align: center; word-wrap: break-word;'>(b)</td><td style='text-align: center; word-wrap: break-word;'>$ 3 \\times 10^{18} $ to $ 3 \\times 10^{16} $</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>3.</td><td style='text-align: center; word-wrap: break-word;'>Ultraviolet radiation</td><td style='text-align: center; word-wrap: break-word;'>(c)</td><td style='text-align: center; word-wrap: break-word;'>$ 3 \\times 10^{18} $ to $ 7.5 \\times 10^{14} $</td></tr></table> Thus, correct order is $a > b > c$.\n- In the ozone sphere, the ozone layer extends from 30 km to nearly 50 km above the Earth's surface. This layer absorbs the majority of the Sun's UV radiation and prevents it from reaching the Earth's surface. Since, the range of UV radiations is 100 Å - 4000 Å. As a result, it absorbs radiations of wavelength of less than $ 3 \\times 10^{-7} $ (or 3000 Å).",
+    "formulas": [
+      {
+        "latex": "\\frac{hc}{\\lambda_{\\min}}=e\\mathsf{V}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{array}{l}\\Rightarrow\\quad\\lambda_{\\min}=\\frac{hc}{e}\\times\\frac{1}{V}\\\\ \\Rightarrow\\quad\\lambda_{\\min}\\propto\\frac{1}{V}\\end{array}",
+        "meaning": ""
+      },
+      {
+        "latex": "E=\\frac{hc}{\\lambda}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}\\lambda&=\\frac{hc}{E}=\\frac{6.62\\times10^{-34}\\times3\\times10^{8}}{15\\times10^{3}\\times1.6\\times10^{-19}}\\\\&=0.828\\times10^{-10}m\\\\\\lambda&=0.828\\mathring{A}\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\lambda_{m}>\\lambda_{v}>\\lambda_{x}",
+        "meaning": ""
+      },
+      {
+        "latex": "X\\text{-ray}\\to1\\mathrm{~A~t o~}100\\mathrm{~A~}",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "a73ad263-9f05-476e-8bc8-81d95fe3173e",
+      "cded4b8f-4f22-4b44-893e-e86517865e8c",
+      "ccc14194-55ec-4815-b386-81cda87e4d00",
+      "93b1cf43-2413-4e18-914d-4173e9637fd7",
+      "9c463f99-0836-4676-af57-8afb3537dda7",
+      "a4a1b880-d449-46f9-b9ea-444a5e1e7b18",
+      "6e65683f-c35e-47cd-b6ba-d5dbff5739c6",
+      "91cb312b-1998-442b-ab43-b79b2b671f12",
+      "2567e56f-3145-4bca-97f7-e56cc8dc3929",
+      "0773cfa2-fc9e-47e5-8f67-ba532caeed85",
+      "5c8b53f3-3125-4e21-8dd4-69db21b20815",
+      "78b4a2e3-203c-46b7-9647-ab39da29ecd9",
+      "38ac0a1d-2d8f-4c0d-9207-e8ca3eaa26b2",
+      "cd93e879-d016-4068-9f8d-a6d2004a3f8b",
+      "eed24944-35a9-4b2b-940b-5f540d0714db",
+      "7ed53ffe-6515-48a4-a99c-6a62658342fc",
+      "8c5cd247-2d65-42c6-915e-8109b4e8c518"
+    ],
+    "tags": [
+      "Re-NEET 2024",
+      "Re-NEET 2024, 2020",
+      "NEET 2023",
+      "NEET 2022",
+      "NEET 2019",
+      "AIPMT July 2015",
+      "NEET 2013",
+      "AIPMT Screening 2011",
+      "AIPMT 2005",
+      "AIPMT 2003",
+      "AIPMT 2002",
+      "AIPMT 2000",
+      "AIPMT 1999",
+      "AIPMT 1992"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-electromagnetic-waves-electromagnetic-waves",
+    "chapter": "Electromagnetic Waves",
+    "subtopic": "Electromagnetic Waves",
+    "class": "XII",
+    "unitId": "xii-em-waves",
+    "unitLabel": "Unit VI — Electromagnetic Waves",
+    "order": 21,
+    "title": "Electromagnetic Waves",
+    "summary": "Velocity of electromagnetic wave in vacuum.",
+    "body": "**Key points from solved questions**\n- For relative permittivity and permeability, $$ \\frac{\\mathrm{H}}{\\mathrm{E}}=\\sqrt{\\frac{\\varepsilon_{r}\\varepsilon_{0}}{\\mu_{r}\\mu_{0}}} $$ Given. $$ \\frac{\\mu_{r}}{\\varepsilon_{r}}=\\frac{1}{4} $$ $$ \\frac{\\mathrm{H}}{\\mathrm{E}}\\;=\\;\\sqrt{\\frac{4\\varepsilon_{0}}{1\\mu_{0}}}\\quad\\mathrm{\\quad\\left(\\because\\mathrm{Given}\\frac{\\varepsilon_{0}}{\\mu_{0}}=\\frac{1}{120\\pi}\\right)} $$ $$ \\begin{aligned}\\frac{H}{E}&=\\frac{2}{120\\pi}\\\\&=\\frac{E}{H}=60\\pi\\end{aligned} $$\n- Electromagnetic waves do not originate from charges moving with uniform speed. So, this statement is wrong regarding an EM wave travelling in free space. <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//eb42f562-0c39-4948-9819-386f13b8d18e/markdown_1/imgs/img_in_image_box_46_1310_78_1352.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A15%3A46Z%2F-1%2F%2F21b2697737d38634d9867d266f4b9300142e0c56a8a877146bf7a29cf2e6d9a7\" alt=\"Image\" width=\"2%\" /></div> ##### Related Theory The electromagnetic waves carry equal energy densities in electric and magnetic fields. The source of EM waves is accelerated charge instead of a charge moving with uniform velocity.\n- Given: $$ \\mathbf{v}=2.0\\times10^{10}Hz $$ $$ \\mathrm{E}_{0}=48\\mathrm{~V}\\mathrm{m}^{-1} $$ $$ c=3\\times10^{8}\\,\\mathrm{m s}^{-1} $$ We know that, $$ \\begin{aligned}\\mathrm{B}_{0}&=\\frac{\\mathrm{E}_{0}}{c}=\\frac{48}{3\\times10^{8}}\\\\&=1.6\\times10^{-7}\\mathrm{~T}\\end{aligned} $$\n- For a plane EM wave, the E and B field are mutually perpendicular. Hence (A), (C) and (D) are not possible.\n- The magnetic field in a plane electromagnetic wave is: $$ \\mathbf{B}_{y}=\\mathbf{B}_{0}\\sin\\left(kx-\\omega t\\right) $$ The given magnetic field in a plane electromagnetic wave is, $$\\mathrm{B}_{y}=2\\times10^{-7}\\sin(\\pi\\times10^{3}x+3\\pi\\times10^{11}t)$$ comparing eq. (i) and eq. (ii) we get, $$ \\begin{array}{c}k=\\pi\\times10^{3}\\\\\\Rightarrow\\quad\\quad\\quad\\quad\\frac{2\\pi}{\\lambda}=\\pi\\times10^{3}\\\\\\Rightarrow\\quad\\quad\\quad\\quad\\lambda=\\frac{2}{10^{3}}\\\\=2\\times10^{-3}m.\\end{array} $$\n- We know that, $ \\frac{E_{0}}{B_{0}} = c $ Where, $ E_{0} $ = Peak value of electric field $ B_{0} $ = Peak value of magnetic field Intensity of electromagnetic wave, $$ 1=\\mathrm{U}_{av}\\cdot c $$ and $$ \\mathrm{U}_{a\\mathrm{v}}=u_{\\mathrm{E}}+u_{\\mathrm{B}} $$ where $u_{E}$ is average energy contribution by electric field and $u_{B}$ is average energy contribution by magnetic field. $$ \\begin{aligned}u_{\\mathrm{E}}&=\\frac{1}{2}\\varepsilon_{0}\\mathrm{E}_{0}^{2}=\\frac{1}{2}\\varepsilon_{0}(c\\mathrm{B}_{0})^{2}\\\\&=\\frac{1}{2}\\varepsilon_{0}c^{2}\\mathrm{B}_{0}^{2}=\\frac{1}{2\\mu_{0}}\\mathrm{B}_{0}^{2}\\end{aligned} $$ $$ \\left(\\because c=\\frac{1}{\\sqrt{\\mu_{0}\\varepsilon_{0}}}\\right) $$ $$ u_{\\mathrm{B}}=\\frac{1}{2\\mu_{0}}\\mathrm{B}_{0}^{2} $$ $$ u_{\\mathrm{E}}:u_{\\mathrm{B}}=1:1 $$\n- Velocity of light in medium is, $$ \\mathbf{v}=\\frac{c}{\\sqrt{\\mu_{r}\\varepsilon_{r}}} $$ $$ \\begin{aligned}&\\mathrm{v}=\\frac{3\\times10^{8}}{\\sqrt{1\\times1.44}}\\\\ &\\mathrm{v}=2.5\\times10^{8}\\mathrm{m s}^{-1}\\\\ \\end{aligned} $$\n- According to question, $$ E_{rms}=6V/m $$ Peak value of electric field $$ \\begin{aligned}&E_{0}=\\sqrt{2}E_{rms}\\\\&E_{0}=\\sqrt{2}\\times6V/m\\\\ \\end{aligned} $$ We know that. $$ c=\\frac{E_{0}}{B_{0}} $$ $$ \\begin{aligned}B_{0}&=\\frac{E_{0}}{c}=\\frac{\\sqrt{2}\\times6}{3\\times10^{8}}\\\\&=\\frac{8.48}{3}\\times10^{-8}\\end{aligned} $$ $$ \\mathbf{B}_{0}=2.83\\times10^{-8}\\mathrm{T} $$\n- To generate electromagnetic waves, we need accelerating charge particles.\n- Velocity of electromagnetic wave in vacuum. $$ c=\\frac{1}{\\sqrt{\\mu_{0}\\varepsilon_{0}}}={\\bf v}_{vacuum} $$ Velocity of electromagnetic wave in medium $$ \\begin{array}{l}\\mathrm{V}_{med}=\\frac{1}{\\sqrt{\\mu_{0}\\mu_{r}\\varepsilon_{0}\\ \\varepsilon_{r}}}\\\\ \\\\ =\\frac{c}{\\sqrt{\\mu_{r}\\varepsilon_{r}}}\\end{array} $$ $\\mu_{0}$ and $\\varepsilon_{0}$ is in vacuum and $\\mu_{r}$ and $\\varepsilon_{r}$ is in medium. For dielectric medium $\\mu_{r}=1$ $$ \\mathbf{v}_{\\mathrm{med}}=\\frac{c}{\\sqrt{\\varepsilon_{r}}}Given\\varepsilon_{r}=4 $$ $$ \\mathbf{v}_{\\mathrm{med}}=\\frac{c}{\\sqrt{4}}=\\frac{c}{2} $$ ∴ Wavelength of the wave in medium, $$ \\begin{aligned}\\lambda_{med}&=\\frac{\\mathbf{v}_{med}}{\\mathbf{v}}\\\\&=\\frac{c}{2\\mathbf{v}}=\\frac{\\lambda_{vacuum}}{2}\\end{aligned} $$ <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//eb42f562-0c39-4948-9819-386f13b8d18e/markdown_2/imgs/img_in_image_box_75_1284_111_1329.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A15%3A48Z%2F-1%2F%2F17653f6488ca9b5b11baf0e6ae3fcc6b764bb57b2016a709fc871e529e274397\" alt=\"Image\" width=\"3%\" /></div> ##### Related Theory Maxwell concluded that electromagnetic wave is transverse in nature and the light is an electromagnetic wave.\n- Since $$ c=\\frac{\\mathrm{E}_{0}}{\\mathrm{B}_{0}} $$ $$ \\frac{\\mathbf{B}_{0}}{\\mathbf{E}_{0}}=\\frac{1}{c} $$\n- $$ \\begin{aligned}\\overset{\\rightarrow}{\\mathbf{v}}&=\\overset{\\rightarrow}{\\mathbf{E}}\\times\\overset{\\rightarrow}{\\mathbf{B}}\\\\&=\\mathbf{E}_{0}\\overset{\\leftarrow}{i}\\times\\mathbf{B}_{0}\\overset{\\leftarrow}{j}\\end{aligned} $$ or (direction of propagation of waves is $ \\overrightarrow{E} \\times \\overrightarrow{B} $)\n- It is given that electric field of electromagnetic wave is: $$ \\stackrel{\\rightarrow}{\\mathrm{E}}=10\\cos\\left(10^{7}t+kx\\right)\\stackrel{\\leftarrow}{\\mathrm{j}}\\mathrm{V/m} $$ Here, $$ c=\\frac{\\omega}{k} $$ $$ 3\\times10^{8}=\\frac{10^{7}}{k} $$ $$ k=\\frac{1}{30}=0.033rad/m $$ $$ \\frac{2\\pi}{\\lambda}=\\frac{1}{30} $$ $$ \\lambda=188.4m $$\n- Electric and magnetic field vectors are perpendicular to each other and perpendicular to the direction of propagation of wave.",
+    "formulas": [
+      {
+        "latex": "\\frac{\\mathrm{H}}{\\mathrm{E}}=\\sqrt{\\frac{\\varepsilon_{r}\\varepsilon_{0}}{\\mu_{r}\\mu_{0}}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{\\mu_{r}}{\\varepsilon_{r}}=\\frac{1}{4}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{\\mathrm{H}}{\\mathrm{E}}\\;=\\;\\sqrt{\\frac{4\\varepsilon_{0}}{1\\mu_{0}}}\\quad\\mathrm{\\quad\\left(\\because\\mathrm{Given}\\frac{\\varepsilon_{0}}{\\mu_{0}}=\\frac{1}{120\\pi}\\right)}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}\\frac{H}{E}&=\\frac{2}{120\\pi}\\\\&=\\frac{E}{H}=60\\pi\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{v}=2.0\\times10^{10}Hz",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{E}_{0}=48\\mathrm{~V}\\mathrm{m}^{-1}",
+        "meaning": ""
+      },
+      {
+        "latex": "c=3\\times10^{8}\\,\\mathrm{m s}^{-1}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}\\mathrm{B}_{0}&=\\frac{\\mathrm{E}_{0}}{c}=\\frac{48}{3\\times10^{8}}\\\\&=1.6\\times10^{-7}\\mathrm{~T}\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{B}_{y}=\\mathbf{B}_{0}\\sin\\left(kx-\\omega t\\right)",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{B}_{y}=2\\times10^{-7}\\sin(\\pi\\times10^{3}x+3\\pi\\times10^{11}t)",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{array}{c}k=\\pi\\times10^{3}\\\\\\Rightarrow\\quad\\quad\\quad\\quad\\frac{2\\pi}{\\lambda}=\\pi\\times10^{3}\\\\\\Rightarrow\\quad\\quad\\quad\\quad\\lambda=\\frac{2}{10^{3}}\\\\=2\\times10^{-3}m.\\end{array}",
+        "meaning": ""
+      },
+      {
+        "latex": "1=\\mathrm{U}_{av}\\cdot c",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{U}_{a\\mathrm{v}}=u_{\\mathrm{E}}+u_{\\mathrm{B}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}u_{\\mathrm{E}}&=\\frac{1}{2}\\varepsilon_{0}\\mathrm{E}_{0}^{2}=\\frac{1}{2}\\varepsilon_{0}(c\\mathrm{B}_{0})^{2}\\\\&=\\frac{1}{2}\\varepsilon_{0}c^{2}\\mathrm{B}_{0}^{2}=\\frac{1}{2\\mu_{0}}\\mathrm{B}_{0}^{2}\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\left(\\because c=\\frac{1}{\\sqrt{\\mu_{0}\\varepsilon_{0}}}\\right)",
+        "meaning": ""
+      },
+      {
+        "latex": "u_{\\mathrm{B}}=\\frac{1}{2\\mu_{0}}\\mathrm{B}_{0}^{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "u_{\\mathrm{E}}:u_{\\mathrm{B}}=1:1",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{E_{0}}{B_{0}} = c",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{v}=\\frac{c}{\\sqrt{\\mu_{r}\\varepsilon_{r}}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}&\\mathrm{v}=\\frac{3\\times10^{8}}{\\sqrt{1\\times1.44}}\\\\ &\\mathrm{v}=2.5\\times10^{8}\\mathrm{m s}^{-1}\\\\ \\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "E_{rms}=6V/m",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}&E_{0}=\\sqrt{2}E_{rms}\\\\&E_{0}=\\sqrt{2}\\times6V/m\\\\ \\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "c=\\frac{E_{0}}{B_{0}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}B_{0}&=\\frac{E_{0}}{c}=\\frac{\\sqrt{2}\\times6}{3\\times10^{8}}\\\\&=\\frac{8.48}{3}\\times10^{-8}\\end{aligned}",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "4be7904a-615a-4210-a8e7-da42019162eb",
+      "5401e807-9f31-4f97-8208-fe26f20d5f29",
+      "97c64f49-83d6-48b3-a481-adcd2a3eb26d",
+      "7034fdcb-f5df-4006-9f54-7c6f6d9f73a8",
+      "93475b7d-f272-47e4-a442-116b6ad09c57",
+      "a7121351-9a85-4d4f-9423-b1c277e7db9d",
+      "1a404cfc-901e-42df-bf55-1e66cf1223c7",
+      "2b604e2b-b88f-46ef-9d63-05c676e91642",
+      "c188b490-ad07-4649-a0ea-b72c6ba9323f",
+      "d33ad795-3aff-44f1-9903-6a0d5bbaca13",
+      "d6260cb9-5f31-4359-a82c-a5233b15b23f",
+      "aba01e8a-03a5-4425-a22e-54ff78c9e613",
+      "ef99032e-c468-4a1d-bc35-aab5849d8fef",
+      "cf0d6ada-7273-443d-aeb5-3a96798ffd94",
+      "6c497d5d-de7e-4abc-a862-278549651af4",
+      "654941b9-078e-46db-b55b-d7d5874f1569",
+      "918121a1-1ab2-47ea-9006-87579c0de773",
+      "68df09b3-e031-45e5-854c-04ed0df91e1f",
+      "c54db987-9382-490e-ac40-4f58d153f216",
+      "9816e75d-462a-4f89-b32e-b1c7a9297084"
+    ],
+    "tags": [
+      "Re-NEET 2024",
+      "NEET 2023",
+      "NEET 2020",
+      "NEET 2018",
+      "NEET Phase-I 2016",
+      "NEET Karnataka 2013",
+      "AIPMT Mains 2012",
+      "AIPMT Screening 2011",
+      "AIPMT Screening 2010",
+      "AIPMT Screening 2009",
+      "AIPMT Screening 2008",
+      "AIPMT 2007",
+      "AIPMT 2002",
+      "AIPMT 1999",
+      "AIPMT 1991"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-electromagnetic-waves-objective-i",
+    "chapter": "Electromagnetic Waves",
+    "subtopic": "Objective I",
+    "class": "XII",
+    "unitId": "xii-em-waves",
+    "unitLabel": "Unit VI — Electromagnetic Waves",
+    "order": 21,
+    "title": "Objective I",
+    "summary": "The electromagnetic spectrum in order of increasing wavelength (or decreasing frequency/energy): $$\\gamma\\text{-rays} < \\text{X-rays} < \\text{UV} < \\text{Visible} < \\text{IR} < \\text{Microwaves} < \\text{Radio}$$…",
+    "body": "**Key points from solved questions**\n- An **accelerating charge** produces a changing electric field, which in turn produces a changing magnetic field, which produces a changing electric field — and so on, propagating as an electromagnetic wave. A stationary or uniformly moving charge produces only static or steady fields with no radiation. Answer: (C).\n- From Maxwell's equations, the speed of EM waves in vacuum: $$c = \\frac{1}{\\sqrt{\\mu_0\\varepsilon_0}} \\approx 3\\times10^8\\,\\rm m/s$$ Maxwell showed that this equals the measured speed of light, establishing that light is an electromagnetic wave. Answer: (A).\n- Electromagnetic waves are **transverse waves**: $\\vec{E}$ and $\\vec{B}$ are both perpendicular to the direction of propagation $\\hat{k}$, and they are mutually perpendicular to each other: $$\\vec{E}\\perp\\vec{B}\\perp\\hat{k}, \\quad \\vec{E}\\times\\vec{B} \\parallel \\hat{k}$$ The energy flux (Poynting vector) $\\vec{S} = \\frac{1}{\\mu_0}\\vec{E}\\times\\vec{B}$ is in the direction of propagation. Answer: (B).\n- **Sound waves** are mechanical waves — they are longitudinal pressure waves requiring a material medium. They are not electromagnetic waves. All others — radio waves, X-rays, and gamma rays — are electromagnetic waves; they differ only in frequency/wavelength and are all part of the EM spectrum. Answer: (B).\n- The electromagnetic spectrum in order of increasing wavelength (or decreasing frequency/energy): $$\\gamma\\text{-rays} < \\text{X-rays} < \\text{UV} < \\text{Visible} < \\text{IR} < \\text{Microwaves} < \\text{Radio}$$ Wavelength ranges: $\\gamma$-rays ($<10^{-12}$m), X-rays ($10^{-12}$–$10^{-9}$m), UV ($10^{-9}$–$4\\times10^{-7}$m), Visible ($4$–$7\\times10^{-7}$m), IR ($10^{-6}$–$10^{-3}$m), Microwaves ($10^{-3}$–$1$m), Radio ($>1$m). Answer: (A).\n- Planck's relation for the energy of a single photon: $$E = h\\nu = \\frac{hc}{\\lambda}$$ where $h = 6.626\\times10^{-34}\\,\\rm J\\cdot s$ is Planck's constant. Higher frequency → higher energy per photon. Answer: (B).",
+    "formulas": [
+      {
+        "latex": "c = \\frac{1}{\\sqrt{\\mu_0\\varepsilon_0}} \\approx 3\\times10^8\\,\\rm m/s",
+        "meaning": ""
+      },
+      {
+        "latex": "\\vec{E}\\perp\\vec{B}\\perp\\hat{k}, \\quad \\vec{E}\\times\\vec{B} \\parallel \\hat{k}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\vec{S} = \\frac{1}{\\mu_0}\\vec{E}\\times\\vec{B}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\gamma\\text{-rays} < \\text{X-rays} < \\text{UV} < \\text{Visible} < \\text{IR} < \\text{Microwaves} < \\text{Radio}",
+        "meaning": ""
+      },
+      {
+        "latex": "E = h\\nu = \\frac{hc}{\\lambda}",
+        "meaning": ""
+      },
+      {
+        "latex": "h = 6.626\\times10^{-34}\\,\\rm J\\cdot s",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "207351aa-3a49-43b3-9328-28dd6c1467bc",
+      "db5be771-4c22-411a-85b5-650e62844c29",
+      "afe87f86-a8fb-4923-815c-a5ec565f569a",
+      "748c8e73-6b2a-4e14-bf95-4dfcf2999449",
+      "db0533dc-0fbb-4029-99aa-4d09795c7dfc",
+      "22456a51-ef30-41ab-9595-dc2c8c6f4b9e"
+    ],
+    "tags": [
+      "HC Verma Vol 2",
+      "Objective I",
+      "Chapter 40"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-electromagnetic-waves-objective-ii",
+    "chapter": "Electromagnetic Waves",
+    "subtopic": "Objective II",
+    "class": "XII",
+    "unitId": "xii-em-waves",
+    "unitLabel": "Unit VI — Electromagnetic Waves",
+    "order": 21,
+    "title": "Objective II",
+    "summary": "To measure the speed of light **in water**, the light path must pass through the medium.",
+    "body": "**Key points from solved questions**\n- According to the **special theory of relativity**, the speed of light in vacuum is a **universal constant** $c = 299{,}792{,}458\\ \\text{m s}^{-1}$ that is the same in all **inertial reference frames**, regardless of the motion of the source or the observer. The Earth, the Sun, a train moving on the Earth, and a spaceship in outer space are all (to very good approximation) inertial frames. Therefore $c$ has this same value with respect to each of them. Answer: (A), (B), (C), (D).\n- - **Rømer's method** uses the eclipses of Jupiter's moons to detect light-travel time across Earth's orbit—purely **astronomical**, impossible in a laboratory. ✗ - **Fizeau's toothed-wheel method** requires a path length of several kilometres (Fizeau used ~8 km) to resolve the wheel rotation—not feasible in a typical laboratory. ✗ - **Foucault's rotating-mirror method** uses a rotating plane mirror and a concave mirror reflector; the path can be reduced to tens of metres, making it **practicable in a laboratory**. ✓ - **Michelson's method** (a refined rotating-mirror technique) required a mountain baseline (~35 km)—not a laboratory setup. ✗ Answer: (C).\n- To measure the speed of light **in water**, the light path must pass through the medium. - **Rømer and Fizeau methods** cannot be adapted to send the beam through a column of water in any practical way. ✗ - **Foucault's rotating-mirror method** is ideal: one inserts a **long tube filled with water** in the light path between the rotating mirror and the concave reflector. Foucault himself used this technique to demonstrate that $c_{\\text{water}} < c_{\\text{air}}$, providing direct experimental evidence for the wave theory of light over the corpuscular theory (which predicted the opposite). ✓ - **Michelson's method** is not suited to a water-tube arrangement given its very long baseline. ✗ Answer: (C).\n- - **A** ✓: EM waves propagate through vacuum (no medium needed) at speed $c$. - **B** ✓: $\\vec{E}$ and $\\vec{B}$ oscillate perpendicular to propagation direction — transverse waves. - **C** ✓: Energy flux: Poynting vector $\\vec{S} = \\vec{E}\\times\\vec{B}/\\mu_0$; radiation pressure = $S/c$ (momentum). - **D** ✗: Unlike mechanical waves, EM waves require **no medium** (they travel through vacuum). Answer: (A), (B), (C).\n- - **A** ✓: Radar uses microwave wavelengths (cm range); microwave ovens heat food via microwave absorption by water molecules. - **B** ✓: X-rays penetrate soft tissue but are absorbed by dense bone — used for bone imaging. - **C** ✓: Infrared is used in TV remote controls and night-vision devices. - **D** ✓: UV radiation destroys the DNA of microorganisms, used for sterilisation of equipment and water purification. Answer: (A), (B), (C), (D).",
+    "formulas": [
+      {
+        "latex": "c = 299{,}792{,}458\\ \\text{m s}^{-1}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\vec{S} = \\vec{E}\\times\\vec{B}/\\mu_0",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "1b7d7225-aef9-4752-a31c-c07aff837ca8",
+      "7220556f-40f9-4322-ada8-6734274db19e",
+      "4320ea06-88ea-42e2-850a-567f1882690e",
+      "f5f256dc-cd8a-4049-b882-740cf1dbd025",
+      "cc79d217-7fea-42d6-9042-72f78a0e28d4"
+    ],
+    "tags": [
+      "HC Verma Vol 1",
+      "Objective II",
+      "Chapter 21",
+      "HC Verma Vol 2",
+      "Chapter 40"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-electromagnetic-waves-overview",
+    "chapter": "Electromagnetic Waves",
+    "subtopic": "Overview",
+    "class": "XII",
+    "unitId": "xii-em-waves",
+    "unitLabel": "Unit VI — Electromagnetic Waves",
+    "order": 21,
+    "title": "Overview",
+    "summary": "The wavelength of AM radio waves is $10^2$ m.",
+    "body": "**Key points from solved questions**\n- Velocity of electromagnetic radiation is the velocity of light (c) i.e., $$ c=\\frac{1}{\\sqrt{\\mu_{0}\\varepsilon_{0}}} $$ where, $\\mu_{0}=$ permeability and $\\varepsilon_{0}=$ permittivity of free space\n- The wavelength of AM radio waves is $10^2$ m. The wavelength of microwaves lies between $10^{-3}$ m to $10^{-1}$ m. Infrared radiations wavelength lies between $4 \\times 10^{-7}$ m to $7 \\times 10^{-3}$ m. X-ray wavelength ranges from $10^{-8}$ m to $10^{-12}$ m.",
+    "formulas": [
+      {
+        "latex": "c=\\frac{1}{\\sqrt{\\mu_{0}\\varepsilon_{0}}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mu_{0}=",
+        "meaning": ""
+      },
+      {
+        "latex": "\\varepsilon_{0}=",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "50f16211-3ed6-42e2-9146-b7fb6e1e338f",
+      "ca46359b-7b7d-4c30-9aa9-c3d8f4dc4676"
+    ],
+    "tags": [
+      "AIPMT Screening 2008",
+      "NEET 2022"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-electromagnetic-waves-reneet2026",
+    "chapter": "Electromagnetic Waves",
+    "subtopic": "reNEET2026",
+    "class": "XII",
+    "unitId": "xii-em-waves",
+    "unitLabel": "Unit VI — Electromagnetic Waves",
+    "order": 21,
+    "title": "reNEET2026",
+    "summary": "Microwave $\\to$ warming food (II), UV $\\to$ purifying water (I), Gamma rays $\\to$ treating cancer (IV), Radio wave $\\to$ AM/FM communication (III): P-II, Q-I, R-IV, S-III.",
+    "body": "**Key points from solved questions**\n- $v=c/\\sqrt{\\varepsilon_r}=3\\times10^8/3=10^8$ ms$^{-1}$ (A correct). $f=10^6$ Hz $\\Rightarrow\\lambda=v/f=100$ m, not 300 m, so statement B is incorrect.\n- Microwave $\\to$ warming food (II), UV $\\to$ purifying water (I), Gamma rays $\\to$ treating cancer (IV), Radio wave $\\to$ AM/FM communication (III): P-II, Q-I, R-IV, S-III.",
+    "formulas": [
+      {
+        "latex": "v=c/\\sqrt{\\varepsilon_r}=3\\times10^8/3=10^8",
+        "meaning": ""
+      },
+      {
+        "latex": "f=10^6",
+        "meaning": ""
+      },
+      {
+        "latex": "\\Rightarrow\\lambda=v/f=100",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "renet2026-phy-38",
+      "renet2026-phy-43"
+    ],
+    "tags": [
+      "reNEET 2026"
+    ],
+    "source": "seed"
+  }
+]

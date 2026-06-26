@@ -1,0 +1,387 @@
+[
+  {
+    "id": "note-mechanical-properties-of-solids-elastic-moduli",
+    "chapter": "Mechanical Properties of Solids",
+    "subtopic": "Elastic Moduli",
+    "class": "XI",
+    "unitId": "xi-properties",
+    "unitLabel": "Units VI & VII — Properties of Bulk Matter",
+    "order": 7,
+    "title": "Elastic Moduli",
+    "summary": "We know that, Young's modulus, $ \\mathrm{Y}=\\frac{\\mathrm{FL}}{\\mathrm{A}\\Delta\\mathrm{L}} $ $$ =\\frac{4\\mathrm{F L}}{\\pi\\mathrm{D}^{2}\\Delta\\mathrm{L}} $$ $$…",
+    "body": "**Key points from solved questions**\n- As we know, Stress = Young's modulus $ \\times $ strain Given: elastic limit of steel = $ 8 \\times 10^{8} $ Nm $ ^{-2} $ Young's modulus of steel = $ 2 \\times 10^{11} $ Nm $ ^{-2} $ $$ (\\Delta I)_{\\max}=\\frac{8\\times10^{8}}{2\\times10^{11}} $$ $$ (\\Delta l)_{\\max}=4\\times10^{-3}=4\\mathrm{~mm} $$\n- Young's modulus of metallic bar $$ =0.5\\times10^{11}N m^{-2} $$ $$=0.5\\times10^{11}\\,\\mathrm{Nm}^{-2}$$ $$Coefficient of linear thermal expansion = $10^{-5} $°C^{-1}$$ $$Length = 1\\,\\mathrm{m}$$ $$Area of cross-section = $10^{-3}\\,\\mathrm{m}^{2}$$$ $$Thermal stress = Thermal\\ strain\\times Y$$ $$\\frac{F}{A} = (\\alpha\\,\\Delta T)\\,Y$$ $$\\Rightarrow \\quad \\frac{F}{10^{-3}} = (10^{-5})\\times100\\times0.5\\times10^{11}$$ $$\\therefore \\quad F = 50\\times10^{3}\\,\\mathrm{N}$$\n- As we know that, $$Longitudinal\\ stress = \\frac{Deforming\\ force}{Cross-Sectional\\ Area}$$ $$=\\frac{W}{A}$$\n- From the concept of Hooke's law, we have, Normal stress, $ (\\sigma) = E\\varepsilon $ where, E = Young's modulus of elasticity and $ \\varepsilon $ is strain which gives linear deformation of the object. Also, Shear Stress, $ (\\tau) = G\\gamma $ where, G = Shear modulus of elasticity of the material and $ \\gamma $ is shear strain which gives angular deformation of the object. When we stretch a spring, the length of the wire does not change but coil experiences an angular twist. Hence shear modulus is used to determine stretching of a spring. Also, we know that for a given dimension, Young's modulus of elasticity of steel is more than the Copper. We can say that tensile strength of steel is more than that of copper.\n- Change in length, $ \\Delta L = L_{1} - L $, Area, = A, Force, $$ \\mathbf{F}=\\mathbf{M}\\mathbf{g} $$ $\\therefore$ Young's modulus, $Y=\\frac{\\text{Normal Stress}}{\\text{Longitudinal Strain}}$ $$ \\mathrm{Y}=\\frac{\\frac{\\mathrm{F}}{\\mathrm{A}}}{\\frac{\\Delta\\mathrm{L}}{\\mathrm{L}}}=\\frac{\\mathrm{F}}{\\mathrm{A}}\\times\\frac{\\mathrm{L}}{\\Delta\\mathrm{L}} $$ $$ \\mathrm{Y}=\\frac{\\mathrm{MgL}}{\\mathrm{A}(\\mathrm{L}_{1}-\\mathrm{L})} $$ <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//13890a31-3957-4877-8b9a-d6607f90432f/markdown_2/imgs/img_in_image_box_0_303_14_348.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A02Z%2F-1%2F%2F4c3005d817811a556191a015244d15ca44a58ae7c026659887836e32ad97b0fa\" alt=\"Image\" width=\"1%\" /></div> ##### Mnemonics E equals F/ea. Young's Modulus E = (force $ \\times $ length) / (extension $ \\times $ area)\n- <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//13890a31-3957-4877-8b9a-d6607f90432f/markdown_2/imgs/img_in_image_box_48_407_285_593.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A02Z%2F-1%2F%2F3e7e39593779b31d98b3938621ba7f3770ab37e9acff57a417416f9535b41a64\" alt=\"Image\" width=\"19%\" /></div> Cross Sectional area = A Original length = L Elongation = l $ \\frac{\\text{Energy stored}}{\\text{Volume}} = \\frac{1}{2} \\times \\text{stress} \\times \\text{strain} $ $$ \\frac{\\mathrm{E}}{\\mathrm{V}}=\\frac{1}{2}\\times\\frac{\\mathrm{F}}{\\mathrm{A}}\\times\\frac{\\text{elongation}}{\\text{length}} $$ $$ \\frac{\\mathrm{E}}{\\mathrm{AL}}=\\frac{1}{2}\\times\\frac{mg}{\\mathrm{A}^{\\prime}}\\times\\frac{l}{\\mathrm{L}} $$ $$ \\mathrm{E}=\\frac{1}{2}~m g l $$ ( $ \\because $ V = AL)\n- $$ \\begin{array}{r}\\text{G}\\longrightarrow\\text{F}\\\\ \\text{A} \\quad 3l\\end{array} $$ <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//13890a31-3957-4877-8b9a-d6607f90432f/markdown_2/imgs/img_in_image_box_58_1023_325_1073.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A03Z%2F-1%2F%2Feea0f996cd617a119a8f7d01bef3298d8dad2ccb1a9f0c332e30bd205f191108\" alt=\"Image\" width=\"22%\" /></div> For wire (i), $$ \\Delta l=\\left(\\frac{\\mathrm{F}}{\\mathrm{AY}}\\right)3l $$ For wire (ii), $$ \\frac{\\mathrm{F}^{\\prime}}{3\\mathrm{A}}=\\mathrm{Y}\\frac{\\Delta l}{l} $$ $$ \\Delta l=\\left(\\frac{F^{\\prime}}{3\\mathrm{A}\\mathrm{Y}}\\right)l $$ From eq. (iii) and eq. (iv), we get, $$ \\Delta l=\\frac{\\mathrm{F}}{\\mathrm{AY}}3l=\\left(\\frac{\\mathrm{F}^{\\prime}}{3\\mathrm{AY}}\\right)l $$ $$ \\mathbf{F}^{\\prime}=9\\mathbf{F} $$\n- Bulk modulus B is given as $$ \\mathbf{B}=\\frac{-\\mathbf{P}\\mathbf{V}}{\\Delta\\mathbf{V}} $$ The volume of a spherical object of radius r is given as $$ \\mathbf{V}=\\frac{4}{3}\\pi r^{3} $$ $$ -\\frac{\\mathbf{V}}{\\Delta\\mathbf{V}}=\\frac{\\frac{4}{3}\\pi r^{3}}{\\frac{4}{3}\\pi3r^{2}\\Delta r} $$ or $$ -\\frac{\\mathbf{V}}{\\Delta\\mathbf{V}}=\\frac{\\boldsymbol{r}}{3\\Delta\\boldsymbol{r}} $$ Put this value in eq (i), we get $$ \\mathbf{B}=\\frac{-r r}{3\\Delta r} $$ fractional decrease in radius is $$ -\\frac{\\Delta r}{r}=\\frac{\\mathrm{P}}{3\\mathrm{B}} $$\n- Youngs modulus, $$ \\mathrm{Y}=\\frac{\\mathrm{W}.I}{\\mathrm{A}\\Delta I} $$ l, A and $ \\Delta l $ are same for both the wires $$ \\mathrm{~Y~}\\propto\\mathrm{~W~} $$ $$ \\frac{\\Upsilon_{s}}{\\Upsilon_{b}}=\\frac{\\mathbf{W}_{s}}{\\mathbf{W}_{b}}=\\frac{2}{1} $$ $$ \\mathbf{W}_{s}:\\mathbf{W}_{b}=2:1 $$\n- We know that, $$ Young^{\\prime}s~modulus=\\frac{Longitudinal~Stress}{Longitudinal~Strain} $$ Where, F = force applied A = Area of cross-section $$ \\mathrm{Y}=\\frac{\\frac{\\mathrm{F}}{\\mathrm{A}}}{\\frac{\\Delta I}{l}} $$ $ \\Delta l = \\text{Change in length} $ $ l = \\text{Original length} $ $ V = A \\times l = \\text{Constant} $ $ A = \\frac{V}{l} $ From (i) and (ii), $$ \\mathrm{Y}=\\frac{\\mathrm{F}\\times l\\times l}{\\Delta l\\times\\mathrm{V}} $$ $$ \\Delta l=\\frac{\\mathrm{~F~}}{\\mathrm{V}\\times\\mathrm{Y}}\\mathrm{~\\times~}l^{2} $$ $$ \\Delta l\\propto l^{2} $$\n- We know that, Young's modulus, $ \\mathrm{Y}=\\frac{\\mathrm{FL}}{\\mathrm{A}\\Delta\\mathrm{L}} $ $$ =\\frac{4\\mathrm{F L}}{\\pi\\mathrm{D}^{2}\\Delta\\mathrm{L}} $$ $$ \\Delta\\mathrm{L}=\\frac{4\\mathrm{FL}}{\\pi\\mathrm{D}^{2}\\mathrm{Y}} $$ According to questions. $$ \\frac{\\Delta\\mathrm{L}_{\\mathrm{S}}}{\\Delta\\mathrm{L}_{\\mathrm{C}}}=\\frac{\\mathrm{F}_{\\mathrm{S}}}{\\mathrm{F}_{\\mathrm{C}}}.\\frac{\\mathrm{L}_{\\mathrm{S}}}{\\mathrm{L}_{\\mathrm{C}}}.\\frac{\\mathrm{D}_{\\mathrm{C}}^{2}\\mathrm{Y}_{\\mathrm{c}}}{\\mathrm{D}_{\\mathrm{S}}^{2}\\mathrm{Y}_{\\mathrm{S}}} $$ Here, $$ \\begin{array}{l}\\mathrm{F}_{\\mathrm{S}}=(5m+2m)g=7mg\\\\ \\mathrm{F}_{\\mathrm{C}}=5mg\\end{array} $$ $$ \\frac{\\mathbf{D}_{\\mathrm{S}}}{\\mathbf{D}_{\\mathrm{C}}}=p, $$ $$ \\frac{\\mathrm{L}_{\\mathrm{S}}}{\\mathrm{L}_{\\mathrm{C}}}=q,\\frac{\\mathrm{Y}_{\\mathrm{s}}}{\\mathrm{Y}_{\\mathrm{c}}}=s $$ Putting in eq. (ii), we get, $$ \\begin{array}{l}\\frac{\\Delta\\mathrm{L}_{\\mathrm{S}}}{\\Delta\\mathrm{L}_{\\mathrm{C}}}=\\frac{7mg}{5mg}\\times q\\times\\left(\\frac{1}{p}\\right)^{2}\\left(\\frac{1}{s}\\right)\\\\ =\\frac{7q}{5p^{2}s}\\end{array} $$\n- We know that, $$ \\Delta\\mathbf{L}=\\frac{\\mathbf{F}\\mathbf{L}}{\\mathbf{A}\\mathbf{Y}} $$ $$ \\Delta L\\propto\\frac{L}{d^{2}}\\qquad\\left\\{\\text{since},A=\\frac{\\pi d}{4}\\right\\} $$ This confirm that $ \\Delta L $ will be maximum for the wire when tension $ \\frac{L}{A} $ maximum.",
+    "formulas": [
+      {
+        "latex": "(\\Delta I)_{\\max}=\\frac{8\\times10^{8}}{2\\times10^{11}}",
+        "meaning": ""
+      },
+      {
+        "latex": "(\\Delta l)_{\\max}=4\\times10^{-3}=4\\mathrm{~mm}",
+        "meaning": ""
+      },
+      {
+        "latex": "=0.5\\times10^{11}N m^{-2}",
+        "meaning": ""
+      },
+      {
+        "latex": "=0.5\\times10^{11}\\,\\mathrm{Nm}^{-2}",
+        "meaning": ""
+      },
+      {
+        "latex": "Coefficient of linear thermal expansion = $10^{-5} $°C^{-1}",
+        "meaning": ""
+      },
+      {
+        "latex": "Length = 1\\,\\mathrm{m}",
+        "meaning": ""
+      },
+      {
+        "latex": "Area of cross-section = $10^{-3}\\,\\mathrm{m}^{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "Thermal stress = Thermal\\ strain\\times Y",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{F}{A} = (\\alpha\\,\\Delta T)\\,Y",
+        "meaning": ""
+      },
+      {
+        "latex": "\\Rightarrow \\quad \\frac{F}{10^{-3}} = (10^{-5})\\times100\\times0.5\\times10^{11}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\therefore \\quad F = 50\\times10^{3}\\,\\mathrm{N}",
+        "meaning": ""
+      },
+      {
+        "latex": "Longitudinal\\ stress = \\frac{Deforming\\ force}{Cross-Sectional\\ Area}",
+        "meaning": ""
+      },
+      {
+        "latex": "=\\frac{W}{A}",
+        "meaning": ""
+      },
+      {
+        "latex": "(\\sigma) = E\\varepsilon",
+        "meaning": ""
+      },
+      {
+        "latex": "(\\tau) = G\\gamma",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{F}=\\mathbf{M}\\mathbf{g}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{Y}=\\frac{\\frac{\\mathrm{F}}{\\mathrm{A}}}{\\frac{\\Delta\\mathrm{L}}{\\mathrm{L}}}=\\frac{\\mathrm{F}}{\\mathrm{A}}\\times\\frac{\\mathrm{L}}{\\Delta\\mathrm{L}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{Y}=\\frac{\\mathrm{MgL}}{\\mathrm{A}(\\mathrm{L}_{1}-\\mathrm{L})}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\Delta L = L_{1} - L",
+        "meaning": ""
+      },
+      {
+        "latex": "Y=\\frac{\\text{Normal Stress}}{\\text{Longitudinal Strain}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{\\mathrm{E}}{\\mathrm{V}}=\\frac{1}{2}\\times\\frac{\\mathrm{F}}{\\mathrm{A}}\\times\\frac{\\text{elongation}}{\\text{length}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{\\mathrm{E}}{\\mathrm{AL}}=\\frac{1}{2}\\times\\frac{mg}{\\mathrm{A}^{\\prime}}\\times\\frac{l}{\\mathrm{L}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{E}=\\frac{1}{2}~m g l",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{\\text{Energy stored}}{\\text{Volume}} = \\frac{1}{2} \\times \\text{stress} \\times \\text{strain}",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "e0838895-4949-4b29-889c-34c412c5c93f",
+      "95df1092-b2c4-4985-b475-14deae8860f5",
+      "a11e2d96-2bf5-45a9-82c0-cecf8e25237f",
+      "4875e7d7-8a57-4177-8ce0-e9bed321c399",
+      "df881365-b05f-479d-b51c-6711749cc45b",
+      "3aa0a448-7605-48cc-bf01-ef1aa28d05a6",
+      "e531219c-cb1f-411b-8c38-f32e10e65802",
+      "5d32b474-314d-449a-ad64-9fa1c75b6957",
+      "4b4cd8ea-c5f8-448c-83ec-4e136ca81f48",
+      "e9675138-728d-47c4-8c96-0aaede3d92df",
+      "cd1ae459-f774-4476-bddd-478e6181d654",
+      "1052a28d-3bef-47d8-8312-ef804b35add0"
+    ],
+    "tags": [
+      "NEET 2024",
+      "NEET 2023",
+      "NEET 2022",
+      "NEET 2020",
+      "NEET 2019",
+      "NEET 2018",
+      "NEET 2017",
+      "AIPMT July 2015",
+      "AIPMT 2014",
+      "NEET Karnataka 2013",
+      "NEET 2013"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-mechanical-properties-of-solids-objective-i",
+    "chapter": "Mechanical Properties of Solids",
+    "subtopic": "Objective I",
+    "class": "XI",
+    "unitId": "xi-properties",
+    "unitLabel": "Units VI & VII — Properties of Bulk Matter",
+    "order": 7,
+    "title": "Objective I",
+    "summary": "A heavy rod hanging vertically is stretched by its own weight, and the **tension at any cross-section equals the weight of the rod hanging below that point**.",
+    "body": "**Key points from solved questions**\n- The breaking tension a rope can withstand is determined by the **breaking stress** (a material property) multiplied by its **cross-sectional area**: $$T_{\\text{max}} = \\sigma_{\\text{breaking}} \\times A = \\sigma_{\\text{breaking}} \\times \\pi \\left(\\frac{d}{2}\\right)^2$$ Since the area is proportional to $d^2$, doubling the diameter ($d: 1\\text{ cm} \\to 2\\text{ cm}$) increases the cross-sectional area by a factor of $2^2 = 4$: $$T_{\\text{max, new}} = 4 \\times T_{\\text{max, old}} = 4 \\times 500\\text{ N} = 2000\\text{ N}$$ Answer: (D).\n- **Breaking stress** is defined as the maximum stress (force per unit cross-sectional area) a material can withstand before it fractures: $$\\sigma_{\\text{breaking}} = \\frac{F_{\\text{breaking}}}{A}$$ By definition, *stress* already accounts for the cross-sectional area — so the breaking *stress* itself is an intrinsic property of the **material** (it reflects the strength of the interatomic/intermolecular bonds), and does **not** depend on the wire's length, radius, or the shape of its cross-section (those factors determine the breaking *force* $F = \\sigma_{\\text{breaking}} \\times A$, but not the breaking *stress* itself). Answer: (A).\n- The maximum load a wire can sustain before breaking is determined by: $$F_{\\text{breaking}} = \\sigma_{\\text{breaking}} \\times A$$ — it depends only on the breaking stress (a material property) and the **cross-sectional area** $A$, not on the wire's length. Cutting the wire into two equal halves does not change its cross-sectional area at all (each half still has the same diameter/area as the original). So each half can sustain exactly the **same maximum load**, $20$ kg, as the original wire could. Answer: (B).\n- The elongation of a wire under tension $F$ is given by: $$\\Delta l = \\frac{Fl}{AY} = \\frac{Fl}{\\pi r^2 Y}$$ For wire A: length $l_A = l$, radius $r_A = r$. For wire B: length $l_B = 2l$, radius $r_B = r/2$. Since both are made of the same material (same $Y$) and stretched by the same force $F$: $$\\frac{\\Delta l_A}{\\Delta l_B} = \\frac{l_A / r_A^2}{l_B/r_B^2} = \\frac{l/r^2}{(2l)/(r/2)^2} = \\frac{l/r^2}{(2l)/(r^2/4)} = \\frac{l/r^2}{8l/r^2} = \\frac{1}{8}$$ Answer: (A).\n- When a single weight $W$ hangs directly from the wire, the **tension throughout the wire equals $W$**, producing an elongation of $1.0$ mm. Now consider the wire passed over a (frictionless, massless) pulley with weights $W$ hung from *each* end. By the same reasoning as an Atwood machine in equilibrium — each weight pulls on its end of the wire with force $W$, and since the system is in equilibrium (or the pulley simply redirects the wire without adding or removing tension), the **tension in the wire is still just $W$** throughout its length (not $2W$ — the two ends don't \"add up\"; each end independently experiences a pull of $W$, and a flexible wire/string transmits the same tension along its length when passing over an ideal pulley). Since the tension is unchanged ($W$, same as before), and the elongation depends only on the tension (for a given wire and material), the elongation remains $1.0$ mm. Answer: (B).\n- A heavy rod hanging vertically is stretched by its own weight, and the **tension at any cross-section equals the weight of the rod hanging below that point**. This tension is **maximum at the top** (where it must support the entire weight of the rod below) and **decreases progressively toward the bottom** (becoming zero at the very bottom end, which has nothing hanging below it). Under tension, a wire doesn't just elongate longitudinally — it also undergoes a **lateral contraction** (a reduction in diameter), a well-known elastic effect (related to Poisson's ratio): the greater the longitudinal tensile strain, the greater the lateral contraction. Since the tension (and hence the longitudinal strain) is **greatest at the top** and decreases toward the bottom, the lateral contraction — and therefore the reduction in diameter — is also greatest at the top and smallest at the bottom. So the rod's diameter is **smallest at the top and gradually increases as we go down** the rod. Answer: (A).\n- When a wire is stretched, it elongates longitudinally by $\\Delta l$ (longitudinal strain $= \\Delta l / l$) while simultaneously contracting laterally (by an amount governed by Poisson's ratio $\\sigma$). The resulting **fractional change in volume** works out to: $$\\frac{\\Delta V}{V} = \\frac{\\Delta l}{l}(1 - 2\\sigma)$$ For a given material (fixed Poisson's ratio $\\sigma$), the factor $(1-2\\sigma)$ is a constant — so $\\Delta V / V$ is **directly proportional to** $\\Delta l / l$ (a simple linear relationship, not a square or square-root dependence). Answer: (A).\n- Within the elastic limit, the length of the wire varies linearly with the applied tension (Hooke's law): $$l = l_0 + \\frac{l_0}{AY}\\,T = l_0\\left(1 + kT\\right), \\quad \\text{where } k = \\frac{1}{AY}$$ So $l_1 = l_0(1 + kT_1)$ and $l_2 = l_0(1 + kT_2)$. To eliminate the unknown constant $k$, compute: $$l_1 T_2 - l_2 T_1 = l_0\\big[(1+kT_1)T_2 - (1+kT_2)T_1\\big] = l_0\\big[T_2 - T_1 + kT_1T_2 - kT_1T_2\\big] = l_0(T_2 - T_1)$$ Solving for the natural (unstretched) length: $$l_0 = \\frac{l_1 T_2 - l_2 T_1}{T_2 - T_1}$$ Answer: (C).\n- For a mass $m$ whirled in a vertical circle on a wire of length $r$, the wire's tension at any point must supply both the **centripetal force** (directed toward the centre, magnitude $mv^2/r$) and counteract/support the component of gravity along the wire's direction. At the **lowest point**, gravity acts straight downward — i.e., directly *away* from the centre (which is above). The tension must therefore not only provide the centripetal force but also support the entire weight of the mass: $$T_{\\text{lowest}} = \\frac{mv^2}{r} + mg$$ This is the largest possible value of tension anywhere on the circle (at the highest point, by contrast, gravity actually assists in providing the centripetal force, giving $T_{\\text{highest}} = \\dfrac{mv^2}{r} - mg$, the smallest tension). Since the wire breaks where the tension is greatest, it is **most likely to break when the mass is at the lowest point**. Answer: (B).\n- When a load is slowly (quasi-statically) hung on a wire, the loss in gravitational PE as the load descends through the elongation distance is converted into: 1. **Elastic potential energy** stored in the stretched wire (this is the \"useful\" elastic energy, recoverable if the load is removed within the elastic limit), **and** 2. **Heat**, dissipated due to internal friction/inelastic processes as the wire's molecules rearrange during the (generally non-instantaneous, slightly dissipative) stretching process. The block ends up essentially at rest (no significant residual kinetic energy), so option (A) is wrong. The energy is **not entirely** converted to elastic PE (some is inevitably lost as heat) — so (B) is wrong — and it's **not entirely** converted to heat either (a genuine elastic PE is indeed stored in the stretched wire) — so (C) is wrong. The energy is shared between these two forms, matching neither extreme described in (A), (B), or (C). Answer: (D).\n- The \"surface\" of a liquid is not an idealized mathematical plane (option A is too abstract) nor simply \"all molecules exposed to the atmosphere\" (option B is imprecise about thickness). Physically, it refers to a **thin layer of molecules near the liquid's boundary**, of thickness comparable to the **range of molecular (intermolecular) forces** — which is of the order of a few molecular diameters, i.e., roughly $10^{-8}$–$10^{-9}$ m. Within this thin layer, the molecules experience an asymmetric force environment (different from molecules deep in the bulk, which are surrounded symmetrically), giving rise to phenomena like surface tension and surface energy. Answer: (C).\n- When several small droplets merge into one larger drop, the **total surface area decreases** — for a fixed total volume, a single large sphere has less surface area than many small spheres (surface area $\\propto r^2$ scales more slowly than volume $\\propto r^3$, so combining volume into fewer, larger spheres reduces the total surface area). Since **surface energy = surface tension $\\times$ surface area**, a decrease in total surface area means a decrease in total surface energy. This \"lost\" surface energy doesn't simply vanish — by conservation of energy, it is **released** (typically appearing as heat, causing a slight rise in the temperature of the merged drop). Answer: (A).\n- The dimensions $ML^{-1}T^{-2}$ are those of **pressure** (or stress): $[\\text{Pressure}] = \\dfrac{[\\text{Force}]}{[\\text{Area}]} = \\dfrac{MLT^{-2}}{L^2} = ML^{-1}T^{-2}$. The **modulus of elasticity** is defined as $\\text{stress}/\\text{strain}$. Since strain is a ratio of lengths (dimensionless), the modulus of elasticity has exactly the **same dimensions as stress**, i.e., $ML^{-1}T^{-2}$. (For comparison: moment of force has dimensions $ML^2T^{-2}$, surface tension has dimensions $MT^{-2}$, and coefficient of viscosity has dimensions $ML^{-1}T^{-1}$ — none of these match.) Answer: (C).\n- A soap bubble has **two** liquid surfaces (an inner and an outer surface), so its total surface area contributing to surface energy is $2 \\times (4\\pi R^2) = 8\\pi R^2$ for a bubble of radius $R$. The work done in inflating the bubble equals the **increase in surface energy**: $$W = S \\times \\Delta A_{\\text{total}} = S\\Big[8\\pi (2r)^2 - 8\\pi r^2\\Big] = S\\big[32\\pi r^2 - 8\\pi r^2\\big] = 24\\pi r^2 S$$ Answer: (D).",
+    "formulas": [
+      {
+        "latex": "T_{\\text{max}} = \\sigma_{\\text{breaking}} \\times A = \\sigma_{\\text{breaking}} \\times \\pi \\left(\\frac{d}{2}\\right)^2",
+        "meaning": ""
+      },
+      {
+        "latex": "T_{\\text{max, new}} = 4 \\times T_{\\text{max, old}} = 4 \\times 500\\text{ N} = 2000\\text{ N}",
+        "meaning": ""
+      },
+      {
+        "latex": "2^2 = 4",
+        "meaning": ""
+      },
+      {
+        "latex": "\\sigma_{\\text{breaking}} = \\frac{F_{\\text{breaking}}}{A}",
+        "meaning": ""
+      },
+      {
+        "latex": "F = \\sigma_{\\text{breaking}} \\times A",
+        "meaning": ""
+      },
+      {
+        "latex": "F_{\\text{breaking}} = \\sigma_{\\text{breaking}} \\times A",
+        "meaning": ""
+      },
+      {
+        "latex": "\\Delta l = \\frac{Fl}{AY} = \\frac{Fl}{\\pi r^2 Y}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{\\Delta l_A}{\\Delta l_B} = \\frac{l_A / r_A^2}{l_B/r_B^2} = \\frac{l/r^2}{(2l)/(r/2)^2} = \\frac{l/r^2}{(2l)/(r^2/4)} = \\frac{l/r^2}{8l/r^2} = \\frac{1}{8}",
+        "meaning": ""
+      },
+      {
+        "latex": "l_A = l",
+        "meaning": ""
+      },
+      {
+        "latex": "r_A = r",
+        "meaning": ""
+      },
+      {
+        "latex": "l_B = 2l",
+        "meaning": ""
+      },
+      {
+        "latex": "r_B = r/2",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{\\Delta V}{V} = \\frac{\\Delta l}{l}(1 - 2\\sigma)",
+        "meaning": ""
+      },
+      {
+        "latex": "= \\Delta l / l",
+        "meaning": ""
+      },
+      {
+        "latex": "l = l_0 + \\frac{l_0}{AY}\\,T = l_0\\left(1 + kT\\right), \\quad \\text{where } k = \\frac{1}{AY}",
+        "meaning": ""
+      },
+      {
+        "latex": "l_1 T_2 - l_2 T_1 = l_0\\big[(1+kT_1)T_2 - (1+kT_2)T_1\\big] = l_0\\big[T_2 - T_1 + kT_1T_2 - kT_1T_2\\big] = l_0(T_2 - T_1)",
+        "meaning": ""
+      },
+      {
+        "latex": "l_0 = \\frac{l_1 T_2 - l_2 T_1}{T_2 - T_1}",
+        "meaning": ""
+      },
+      {
+        "latex": "l_1 = l_0(1 + kT_1)",
+        "meaning": ""
+      },
+      {
+        "latex": "l_2 = l_0(1 + kT_2)",
+        "meaning": ""
+      },
+      {
+        "latex": "T_{\\text{lowest}} = \\frac{mv^2}{r} + mg",
+        "meaning": ""
+      },
+      {
+        "latex": "T_{\\text{highest}} = \\dfrac{mv^2}{r} - mg",
+        "meaning": ""
+      },
+      {
+        "latex": "[\\text{Pressure}] = \\dfrac{[\\text{Force}]}{[\\text{Area}]} = \\dfrac{MLT^{-2}}{L^2} = ML^{-1}T^{-2}",
+        "meaning": ""
+      },
+      {
+        "latex": "W = S \\times \\Delta A_{\\text{total}} = S\\Big[8\\pi (2r)^2 - 8\\pi r^2\\Big] = S\\big[32\\pi r^2 - 8\\pi r^2\\big] = 24\\pi r^2 S",
+        "meaning": ""
+      },
+      {
+        "latex": "2 \\times (4\\pi R^2) = 8\\pi R^2",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "a50a51e4-c00d-4667-8dc3-6af4394b64e7",
+      "87b04606-f506-4791-a70f-f9af8964dedf",
+      "45e7ddcf-353a-4db6-a10a-479056697eae",
+      "19ab8671-8145-4a03-9e12-384d2229503f",
+      "b05b3770-c96f-4ee2-b227-ecb7f1d8cf8b",
+      "5560b99e-eca8-4216-a201-298b393572fd",
+      "c747920b-05e1-4655-960f-fbb81c053ac1",
+      "184d13a2-809f-41f7-a2a9-8211de0f809a",
+      "3cb9a1de-1975-44aa-bcb8-01db265522b4",
+      "f560a827-dfd4-48cd-8524-2db916cd2a68",
+      "9547833e-2b93-414e-96c2-ad572f1db4fb",
+      "53a6d1ea-b63c-418e-ada7-6a3c62bcb1cd",
+      "eaad7da3-5d0e-4299-b432-1532344de187",
+      "59e8fea8-e67d-4972-a398-f5c16d4a1037",
+      "83b19928-c49a-498a-9e8d-1f0761adff77",
+      "3a34f28c-3c2d-44c6-a3e3-87776665ac18",
+      "aad9044d-6e84-49ef-9ba3-fbda7220388e",
+      "41adb64a-f11d-4549-8faf-9e74b598c697",
+      "f31c2d9f-90a5-4bdb-9c2c-98ecddd4e9dd",
+      "4a8b9ffa-76ea-4a3c-beb4-e5479bbd19d4",
+      "9e741052-6670-47d6-8964-f3c8a031a43b",
+      "5a8d79e5-6e22-43b7-b9b9-80dbc9c0bf54",
+      "0b29a2ff-0c11-4618-8e87-4323405e261d",
+      "d365b1f8-36a0-4ef8-b372-e740ab0166e5",
+      "1b2c311f-c6a2-49a3-aec0-28b435245ff5",
+      "7e8c6315-42a7-4cf1-83b0-b541d11019f3",
+      "4076ea44-4f1b-446a-80b5-5318ff397fb0",
+      "a47a845f-0dae-459a-a400-c74ebc9e7201"
+    ],
+    "tags": [
+      "HC Verma Vol 1",
+      "Objective I",
+      "Chapter 14"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-mechanical-properties-of-solids-objective-ii",
+    "chapter": "Mechanical Properties of Solids",
+    "subtopic": "Objective II",
+    "class": "XI",
+    "unitId": "xi-properties",
+    "unitLabel": "Units VI & VII — Properties of Bulk Matter",
+    "order": 7,
+    "title": "Objective II",
+    "summary": "On Earth, the sphere reaches terminal velocity ($20$ m/s) when the upward viscous drag force exactly balances its (effective) downward weight: $F_{\\text{drag}}(20\\text{ m/s}) \\approx mg$ (treating the sphere as dense…",
+    "body": "**Key points from solved questions**\n- Molecules at the surface of a liquid behave differently from those deep in the bulk because of their **asymmetric environment**: - **(C)** A surface molecule has *liquid* molecules on one side (below/around it) but a *different kind of medium* — air/vapour molecules — on the other side, within its sphere of molecular influence. A bulk molecule, by contrast, is surrounded uniformly by molecules of its own liquid in all directions. - **(D)** Because of this asymmetry, the net force of attraction on a surface molecule (from the liquid molecules on one side, which vastly outnumber/outweigh the attraction from the sparse vapour molecules on the other) is **unbalanced and directed into the bulk** — unlike a bulk molecule, which experiences zero net force due to symmetric attraction from all sides. This net inward pull is the microscopic origin of surface tension. (Surface molecules are not physically smaller, and they don't acquire charge through collisions — these are not real effects relevant here.) Answer: (C, D).\n- The capillary rise is given by $h = \\dfrac{2S\\cos\\theta}{\\rho g r}$, where $S$ (surface tension) and $\\theta$ (contact angle) both depend on the **nature/material** of the liquid and the tube's surface — so: - **(A)** The rise depends on the **material** (of both liquid and tube, through $S$, $\\rho$, and $\\theta$). ✓ - **(D)** The rise depends directly on the **inner radius** $r$ of the tube — this is the radius that determines the curvature of the meniscus and appears explicitly in the formula. ✓ - **(C)** The **outer radius** of the tube plays no role — it doesn't affect the meniscus or the pressure balance inside the bore of the tube. ✗ - **(B)** The **length** of the tube normally doesn't matter (for a sufficiently long tube, the formula above gives the rise independent of length) — *but* if the tube is shorter than the height $h$ that the formula predicts, the liquid can only rise as far as the top of the tube, where the meniscus then adjusts its curvature to a smaller value to maintain equilibrium. So for short tubes, the length *does* limit/affect the rise — making this a valid dependency in general. ✓ Answer: (A, B, D).\n- The **contact angle** is determined by the relative strengths of the **adhesive forces** (between liquid molecules and the solid surface) and the **cohesive forces** (between liquid molecules themselves) — both of which depend on the *chemical/molecular nature* of the materials involved: - **(A)** the material of the **solid** — determines the strength of adhesion. ✓ - **(B)** the material of the **liquid** — determines the strength of cohesion (and also influences adhesion). ✓ - **(C)**, **(D)** the *shape* or *mass* of the solid have no bearing on the molecular-level interactions that set the contact angle — a larger or oddly-shaped piece of the same solid material gives exactly the same contact angle with a given liquid. ✗ Answer: (A, B).\n- With contact angle zero, the liquid wets the walls completely, and the surface-tension force acts **vertically** (tangent to the liquid surface, along the wall) on each element of the contact line (the line where the liquid meets the tube's inner wall), with magnitude equal to $S \\times (\\text{length of contact line})$. For a semicircular cross-section of radius $r$: - The **curved part** (the semicircular arc) has a contact-line length of $\\pi r$. - The **flat part** (the diameter) has a contact-line length of $2r$. Since the surface tension force on each part is simply $S$ times the corresponding contact-line length, the ratio of the forces is just the ratio of these lengths: $$\\frac{F_{\\text{curved}}}{F_{\\text{flat}}} = \\frac{S(\\pi r)}{S(2r)} = \\frac{\\pi}{2}$$ Answer: (C).\n- The capillary rise/depression is governed by $h = \\dfrac{2S\\cos\\theta}{\\rho g r}$. For the liquid level inside the tube to **neither rise nor fall** ($h = 0$), we need $\\cos\\theta = 0$ (i.e., $\\theta = 90°$) for an ordinary liquid with nonzero surface tension — this is the principal physical condition for \"no capillary action,\" since a contact angle of exactly $90°$ means the liquid surface inside the tube meets the wall without any net vertical pull in either direction. - **(B), (D)**: For any real liquid (with $S \\neq 0$), zero capillary rise *requires* the contact angle to be $90°$ — and conversely, whenever the contact angle *is* $90°$, the rise is zero. So the contact angle being $90°$ is both the expected (necessary, for $S\\ne0$) and a sufficient (\"may be\") condition. ✓ - **(C)**: As a separate (limiting/edge) possibility, if the surface tension itself were zero, there would trivially be no capillary action at all (regardless of the contact angle) — so \"the surface tension may be zero\" describes a valid alternative scenario leading to $h=0$. ✓ - **(A)**: However, it is *not* **necessary** for the surface tension to be zero — the much more common and expected explanation is simply that the contact angle equals $90°$ (with $S \\neq 0$). So \"must be zero\" is too strong a requirement. ✗ Answer: (B, C, D).\n- On Earth, the sphere reaches terminal velocity ($20$ m/s) when the upward viscous drag force exactly balances its (effective) downward weight: $F_{\\text{drag}}(20\\text{ m/s}) \\approx mg$ (treating the sphere as dense enough that buoyancy is a small correction). Now, in the **gravity-free hall**, there is **no weight** acting on the sphere at all (and no buoyancy either, since buoyancy itself arises from a gravity-induced pressure gradient in the fluid). The *only* force present is the **viscous drag**, which depends solely on the sphere's speed relative to the air — and since the air is at the same pressure and the sphere is moving at the same speed ($20$ m/s), the drag force has the **same magnitude as before**, $\\approx mg$, but now it is the *only* force, and it always acts **opposite to the velocity** (i.e., here, *upward*, since the sphere moves *downward*): - **(B)** Initial acceleration $= F_{\\text{drag}}/m \\approx g = 9.8\\text{ m/s}^2$, directed **upward** (opposing the downward motion). ✓ — and (A), claiming a *downward* $9.8$ m/s² (which would require gravity, absent here), is wrong. - **(C)** As the upward drag decelerates the sphere, its speed decreases — and since drag force depends on speed, the force (and hence the deceleration) **progressively decreases**. ✓ - **(D)** With no other force to sustain or reverse the motion, the sphere's speed asymptotically approaches zero, and it **eventually comes to rest** (and stays at rest, since at $v=0$ there is no drag and no other force to set it moving again). ✓ Answer: (B, C, D).",
+    "formulas": [
+      {
+        "latex": "h = \\dfrac{2S\\cos\\theta}{\\rho g r}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{F_{\\text{curved}}}{F_{\\text{flat}}} = \\frac{S(\\pi r)}{S(2r)} = \\frac{\\pi}{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "h = 0",
+        "meaning": ""
+      },
+      {
+        "latex": "\\cos\\theta = 0",
+        "meaning": ""
+      },
+      {
+        "latex": "\\theta = 90°",
+        "meaning": ""
+      },
+      {
+        "latex": "= F_{\\text{drag}}/m \\approx g = 9.8\\text{ m/s}^2",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "49c88f88-08e4-4be0-bb25-b53d5fe9542c",
+      "ab800465-3c23-4a8f-9de7-cba36db60c7a",
+      "326b100b-becd-4d19-99a5-ecc7d7488479",
+      "46fddd4d-798e-41a2-b943-b0c0ee4f0c6a",
+      "23244e7e-1ee8-4d1a-97e9-c45e19b1f96a",
+      "8dd5f0cf-b4b1-437e-a66c-a1ceac071fc5"
+    ],
+    "tags": [
+      "HC Verma Vol 1",
+      "Objective II",
+      "Chapter 14"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-mechanical-properties-of-solids-overview",
+    "chapter": "Mechanical Properties of Solids",
+    "subtopic": "Overview",
+    "class": "XI",
+    "unitId": "xi-properties",
+    "unitLabel": "Units VI & VII — Properties of Bulk Matter",
+    "order": 7,
+    "title": "Overview",
+    "summary": "From the concept of Hooke's law, we have, Normal stress, $ (\\sigma) = E\\varepsilon $ where, E = Young's modulus of elasticity and $ \\varepsilon $ is strain which gives linear deformation of the object.",
+    "body": "**Key points from solved questions**\n- From the concept of Hooke's law, we have, Normal stress, $ (\\sigma) = E\\varepsilon $ where, E = Young's modulus of elasticity and $ \\varepsilon $ is strain which gives linear deformation of the object. Also, Shear Stress, $ (\\tau) = G\\gamma $ where, G = Shear modulus of elasticity of the material and $ \\gamma $ is shear strain which gives angular deformation of the object. When we stretch a spring, the length of the wire does not change but coil experiences an angular twist. Hence shear modulus is used to determine stretching of a spring. Also, we know that for a given dimension, Yo",
+    "formulas": [
+      {
+        "latex": "(\\sigma) = E\\varepsilon",
+        "meaning": ""
+      },
+      {
+        "latex": "(\\tau) = G\\gamma",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "a62b72df-1250-4405-b8b4-de84af7ec0c9"
+    ],
+    "tags": [
+      "NEET 2022"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-mechanical-properties-of-solids-stress-strain-curve",
+    "chapter": "Mechanical Properties of Solids",
+    "subtopic": "Stress - Strain Curve",
+    "class": "XI",
+    "unitId": "xi-properties",
+    "unitLabel": "Units VI & VII — Properties of Bulk Matter",
+    "order": 7,
+    "title": "Stress - Strain Curve",
+    "summary": "Ductile materials have a fracture strength lower than the ultimate tensile strength (i.e., point are far apart) whereas in brittle materials, the fracture strength is equivalent to ultimate tensile strength (i.e., the…",
+    "body": "**Key points from solved questions**\n- Ductile materials have a fracture strength lower than the ultimate tensile strength (i.e., point are far apart) whereas in brittle materials, the fracture strength is equivalent to ultimate tensile strength (i.e., the points are close) ∴ Material X is brittle and Y is ductile is nature.",
+    "formulas": [],
+    "questionIds": [
+      "0d82c2ae-4117-47b0-a5df-60ee32e39cd6"
+    ],
+    "tags": [
+      "NEET 2019"
+    ],
+    "source": "seed"
+  }
+]

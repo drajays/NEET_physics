@@ -8,8 +8,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=20260626" />
+  <link rel="stylesheet" href="styles.css?v=20260627" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" crossorigin="anonymous" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <script>
     (function(){const t=localStorage.getItem('neet-theme');if(t)document.documentElement.dataset.theme=t;})();
   </script>
@@ -32,8 +34,17 @@
         <button class="nav-item" data-tab="chapters" type="button">
           <span class="nav-icon">▦</span> Chapters
         </button>
+        <button class="nav-item" data-tab="notes" type="button">
+          <span class="nav-icon">📖</span> Notes
+        </button>
         <button class="nav-item" data-tab="practice" type="button">
           <span class="nav-icon">✎</span> Practice
+        </button>
+        <button class="nav-item" data-tab="exam" type="button">
+          <span class="nav-icon">📝</span> Mock Test
+        </button>
+        <button class="nav-item" data-tab="revise" type="button">
+          <span class="nav-icon">📌</span> Flashcards
         </button>
         <button class="nav-item" data-tab="revision" type="button">
           <span class="nav-icon">↻</span> Revision
@@ -179,6 +190,21 @@
               </div>
             </div>
           </div>
+        </section>
+
+        <!-- Notes -->
+        <section id="tab-notes" class="view-panel" hidden>
+          <div id="notesView"></div>
+        </section>
+
+        <!-- Flashcards / revision hub -->
+        <section id="tab-revise" class="view-panel" hidden>
+          <div id="reviseView"></div>
+        </section>
+
+        <!-- Mock Test (CBT) -->
+        <section id="tab-exam" class="view-panel" hidden>
+          <div id="examView"></div>
         </section>
 
         <!-- Revision -->
@@ -425,14 +451,23 @@
   </dialog>
 
   <script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" crossorigin="anonymous"></script>
-  <script src="config.js?v=20260626"></script>
+  <script src="config.js?v=20260627"></script>
   <script src="vendor/xlsx.full.min.js"></script>
-  <script src="js/curriculum.js?v=20260626"></script>
-  <script src="js/search.js?v=20260626"></script>
-  <script src="js/analytics.js?v=20260626"></script>
-  <script src="js/coach.js?v=20260626"></script>
-  <script src="js/views.js?v=20260626"></script>
-  <script src="js/flags.js?v=20260626"></script>
-  <script src="app.js?v=20260626"></script>
+  <script src="js/curriculum.js?v=20260627"></script>
+  <script src="js/search.js?v=20260627"></script>
+  <script src="js/analytics.js?v=20260627"></script>
+  <script src="js/coach.js?v=20260627"></script>
+  <script src="js/views.js?v=20260627"></script>
+  <script src="js/flags.js?v=20260627"></script>
+  <script src="notes-bundle.js?v=20260627"></script>
+  <script src="js/notes.js?v=20260627"></script>
+  <script src="js/revise.js?v=20260627"></script>
+  <script src="js/exam.js?v=20260627"></script>
+  <script src="app.js?v=20260627"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => navigator.serviceWorker.register('sw.js?v=20260627').catch(() => {}));
+    }
+  </script>
 </body>
 </html>

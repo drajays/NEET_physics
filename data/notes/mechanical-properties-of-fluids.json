@@ -1,0 +1,717 @@
+[
+  {
+    "id": "note-mechanical-properties-of-fluids-bernoulli-s-principle",
+    "chapter": "Mechanical Properties of Fluids",
+    "subtopic": "Bernoulli's Principle",
+    "class": "XI",
+    "unitId": "xi-properties",
+    "unitLabel": "Units VI & VII — Properties of Bulk Matter",
+    "order": 8,
+    "title": "Bernoulli's Principle",
+    "summary": "Rate of flow of liquid, <div style=\"text-align: center;\"><img…",
+    "body": "**Key points from solved questions**\n- According to the equation of continuity, $$ \\mathbf{A}_{x}\\mathbf{v}_{y}=\\mathbf{A}_{y}\\mathbf{v}_{y} $$ where $A_{x}$ and $A_{y}$ are the cross sectional areas $v_{x}$ and $v_{y}$ are velocities. Since, the fluid is flowing from a narrow section (x) to a wider section (y), to satisfy the continuity equation, the velocity at narrow must be greater than at wider section. Bernoulli's equation. $$ \\mathrm{P}+\\frac{1}{2}\\rho\\mathrm{v}^{2}+\\rho g h=\\mathrm{constant} $$ $$ \\mathrm{P}_{s}+\\frac{1}{2}\\rho\\mathrm{v}_{s}^{2}=\\mathrm{P}_{y}+\\frac{1}{2}\\rho\\mathrm{v}_{y}^{2}, $$ $$ \\mathbf{K}_{1}=\\frac{1}{2}\\rho\\mathbf{v}_{x}^{2} $$ $$ \\mathbf{K}_{2}=\\frac{1}{2}\\rho\\mathbf{v}_{y}^{2} $$ $ v_{x} > v_{y} $ it follows: Since,\n- Venturimeter is a device which is used for measuring rate of flow of fluids. It works on Bernoulli's principle. $$ \\mathbf{K}_{1}>\\mathbf{K}_{2} $$ #### Related Theory In liquid elements, an incompressible liquid's velocity must increased as it goes through a tightening as per the guideline of mass coherence, while its static pressure must diminish as per the standard of protection of mechanical energy (Bernoulli's rule).\n- Rate of flow of liquid, <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//7fd99a06-011a-431b-8b12-608a6e715545/markdown_2/imgs/img_in_image_box_801_595_1042_727.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A33Z%2F-1%2F%2F994d7e51bbb3fa6c203cab7c9c468973060ceeb66c7cc6474a1b87355b95db2b\" alt=\"Image\" width=\"20%\" /></div> $$ \\begin{aligned}Q&=a\\mathbf{v}=a\\sqrt{2gh}\\\\&=2\\times10^{-6}\\mathrm{m}^{2}\\times\\sqrt{2\\times10\\times2}\\mathrm{m/s}\\\\&=2\\times2\\times3.14\\times10^{-6}\\mathrm{m}^{3}/\\mathrm{s}\\\\&=12.56\\times10^{-6}\\mathrm{m}^{3}/\\mathrm{s}\\\\&=12.6\\times10^{-6}\\mathrm{m}^{3}/\\mathrm{s}\\\\ \\end{aligned} $$\n- Applying Bernoulli's theorem to two points just inside the house and outside the house. $$ \\mathrm{P}+\\frac{1}{2}\\rho\\mathrm{v}^{2}=\\mathrm{constant} $$ Inside the pressure is $P_{\\mathrm{atm}}$ the pressure outside is P and v is zero inside, $$ \\therefore\\quad\\mathrm{P}-\\mathrm{P}_{atm}=\\frac{1}{2}\\rho\\mathrm{v}^{2}=\\frac{1}{2}\\times1.2\\times40^{2}=960 $$ then force is: $$ \\begin{aligned}\\mathrm{F}&=(\\mathrm{P}-\\mathrm{P}_{\\mathrm{atm}})\\times\\mathrm{Area}\\\\&=960\\times250\\\\&=2.4\\times10^{5}\\mathrm{~N}\\end{aligned} $$ Force is in upward direction as pressure goes from higher to lower pressure area.\n- The velocity is maximum at the narrowest part of the pipe and pressure is maximum at the widest part of the pipe. Using equation of continuity. $$ \\mathbf{A}\\mathbf{v}=\\mathbf{c o n s t a n t}. $$ And According to the Bernoulli's theorem. $$ \\mathbf{P}+\\mathrm{\\Large~\\frac{1}{2}~}\\rho\\mathbf{v}^{2}\\mathrm{\\Large~=~c o n s t a n t} $$",
+    "formulas": [
+      {
+        "latex": "\\mathbf{A}_{x}\\mathbf{v}_{y}=\\mathbf{A}_{y}\\mathbf{v}_{y}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{P}+\\frac{1}{2}\\rho\\mathrm{v}^{2}+\\rho g h=\\mathrm{constant}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{P}_{s}+\\frac{1}{2}\\rho\\mathrm{v}_{s}^{2}=\\mathrm{P}_{y}+\\frac{1}{2}\\rho\\mathrm{v}_{y}^{2},",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{K}_{1}=\\frac{1}{2}\\rho\\mathbf{v}_{x}^{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{K}_{2}=\\frac{1}{2}\\rho\\mathbf{v}_{y}^{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{K}_{1}>\\mathbf{K}_{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}Q&=a\\mathbf{v}=a\\sqrt{2gh}\\\\&=2\\times10^{-6}\\mathrm{m}^{2}\\times\\sqrt{2\\times10\\times2}\\mathrm{m/s}\\\\&=2\\times2\\times3.14\\times10^{-6}\\mathrm{m}^{3}/\\mathrm{s}\\\\&=12.56\\times10^{-6}\\mathrm{m}^{3}/\\mathrm{s}\\\\&=12.6\\times10^{-6}\\mathrm{m}^{3}/\\mathrm{s}\\\\ \\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{P}+\\frac{1}{2}\\rho\\mathrm{v}^{2}=\\mathrm{constant}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\therefore\\quad\\mathrm{P}-\\mathrm{P}_{atm}=\\frac{1}{2}\\rho\\mathrm{v}^{2}=\\frac{1}{2}\\times1.2\\times40^{2}=960",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}\\mathrm{F}&=(\\mathrm{P}-\\mathrm{P}_{\\mathrm{atm}})\\times\\mathrm{Area}\\\\&=960\\times250\\\\&=2.4\\times10^{5}\\mathrm{~N}\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{A}\\mathbf{v}=\\mathbf{c o n s t a n t}.",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{P}+\\mathrm{\\Large~\\frac{1}{2}~}\\rho\\mathbf{v}^{2}\\mathrm{\\Large~=~c o n s t a n t}",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "ad72c81f-b008-4382-917c-01e111d555ec",
+      "ea5f8f18-ea37-4b73-9d18-07fec1c244b5",
+      "1f9f5e68-734a-4702-ae00-d9b5d5ec71ec",
+      "29341dcf-6623-47bc-b6bf-6338a133dac6",
+      "49bd4834-6915-4e31-9fb7-9c3f13affa9a"
+    ],
+    "tags": [
+      "NEET 2019",
+      "AIPMT Cancelled 2015",
+      "NEET Karnataka 2013"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-mechanical-properties-of-fluids-objective-i",
+    "chapter": "Mechanical Properties of Fluids",
+    "subtopic": "Objective I",
+    "class": "XI",
+    "unitId": "xi-properties",
+    "unitLabel": "Units VI & VII — Properties of Bulk Matter",
+    "order": 8,
+    "title": "Objective I",
+    "summary": "Assume the cube rests directly on the vessel's bottom (in solid-solid contact, with no water able to seep underneath it — a standard assumption for \"placed in the vessel\" before water is poured).",
+    "body": "**Key points from solved questions**\n- The defining difference between the solid and liquid states lies in the **strength of the intermolecular forces** holding the molecules together: - In a **solid**, the intermolecular (cohesive) forces are strong enough to hold each molecule in a fixed position relative to its neighbours — the molecules can vibrate about fixed equilibrium points but cannot easily move past one another. This rigidity of relative positions is precisely what gives a solid a **fixed shape**. - In a **liquid**, these intermolecular forces are weaker — strong enough to keep the molecules close together (giving the liquid a definite volume) but not strong enough to lock them into fixed relative positions. The molecules can slide past each other relatively freely, allowing the liquid to **flow and take the shape of its container**. (Density, molecule size, and average separation differences are secondary consequences — the fundamental reason a solid resists changes in shape while a liquid doesn't is the *strength of the bonds between molecules*.) Answer: (B).\n- The first equation, $P = \\displaystyle\\lim_{\\Delta S \\to 0}\\dfrac{\\Delta F}{\\Delta S}$, is simply the **definition of pressure** at a point — the limiting value of force per unit area as the area shrinks to zero. This definition is purely geometric/kinematic and holds true in *any* reference frame, accelerating or not — pressure is always meaningfully defined this way, anywhere in a fluid. The second equation, $P_1 - P_2 = \\rho g z$, is the **hydrostatic pressure-difference formula** — it's derived assuming the fluid is in equilibrium under a *uniform gravitational field* $g$ (vertical, of magnitude $g$). In an elevator accelerating **upward**, the fluid experiences an *effective* gravitational field of magnitude $g_{\\text{eff}} = g + a$ (combining real gravity and the pseudo-force due to the elevator's acceleration). The correct relation in this situation becomes $P_1 - P_2 = \\rho (g+a) z$ — so the formula as written, using the *unmodified* $g$, is **not valid** here. So the first (definitional) equation remains valid; the second (which assumes a specific, unaccelerated gravitational scenario) does not. Answer: (B).\n- This is the famous **\"hydrostatic paradox\"**: the force (thrust) on the base of a vessel depends *only* on the height of the liquid column directly above it and the base area — **not** on the total volume of liquid or the shape of the vessel's sides: $$F_{\\text{base}} = P_{\\text{base}} \\times A = (\\rho g h)\\times A$$ Since all three vessels have the **same base area** $A$ and contain **equal volumes** of liquid, but have **different shapes**, the height $h$ to which the liquid rises differs from vessel to vessel — a vessel that is *narrower* in its upper portions forces the same volume of liquid to reach a *greater* height $h$ (and vice versa for a vessel that widens upward). The vessel whose shape causes the liquid surface to rise to the **greatest height** $h$ for the given volume — i.e., vessel C, which (from the figure) is the narrowest/most tapering shape — will therefore experience the **maximum force** on its base, since $F_{\\text{base}} = \\rho g h A$ increases directly with $h$. Answer: (C).\n- Since the vessels are **identical cylinders** (same base area $A$, vertical walls) and contain **equal masses** $m$ of liquid, the height $h$ to which each liquid rises is determined by: $$m = \\rho \\times (\\text{volume}) = \\rho \\times (h A) \\;\\Longrightarrow\\; h = \\frac{m}{\\rho A}$$ The force (thrust) on the base is $F = (\\text{pressure at base})\\times A = (\\rho g h)\\times A$. Substituting $h = \\dfrac{m}{\\rho A}$: $$F = \\rho g \\left(\\frac{m}{\\rho A}\\right) A = mg$$ The **density $\\rho$ cancels out completely** — the force on the base of a *cylindrical* vessel (vertical walls) simply equals the **total weight of the liquid it contains**, $mg$, regardless of the liquid's density (a denser liquid rises to a proportionally smaller height, exactly compensating). Since all three masses are equal, the force on the base is the **same** in all three vessels: $F = mg$. Answer: (D).\n- The pressure at the bottom of the liquid is the sum of two contributions: $$P_{\\text{bottom}} = P_{\\text{atmosphere (on the open surface)}} + \\rho g h$$ where $\\rho g h$ is the contribution from the liquid column itself (this term depends only on the liquid's density and height — both of which remain unchanged as air is pumped out of the surrounding jar). As air is continuously pumped out of the jar, the **pressure of the gas above the liquid's free surface decreases**. Since this surface pressure directly adds to the hydrostatic term to give the bottom pressure, and the $\\rho g h$ term stays constant, the **total pressure at the bottom decreases** correspondingly. Answer: (B).\n- In a fluid at rest (or in equilibrium under a *uniform* effective gravitational field), surfaces of constant pressure are perpendicular to the direction of the (effective) gravitational field, and pressure varies only along that direction. - **In the elevator (accelerating vertically upward)**: the effective gravity $g_{\\text{eff}} = g + a$ remains purely **vertical** — just larger in magnitude. Surfaces of constant pressure are still **horizontal planes**. So two points in the *same horizontal plane* still lie on the same constant-pressure surface — they have **equal pressure**. ✓ - **In the car (accelerating horizontally)**: the effective gravity is the *vector sum* of real gravity (vertical) and the pseudo-force (horizontal) — it is **tilted**, pointing diagonally. Surfaces of constant pressure are now **tilted planes**, perpendicular to this tilted effective-gravity direction — *not* horizontal. Two points at the same *horizontal* level (but different horizontal positions) generally lie on *different* tilted constant-pressure surfaces, and so generally have **different** pressures. ✗ So the statement \"pressure is equal at points on the same horizontal level\" is correct only in the (vertically accelerating) elevator, not in the (horizontally accelerating) car. Answer: (B).\n- In a mercury barometer: - At the **top of the mercury column** inside the closed tube, the space above is essentially a **vacuum** (Torricelli's vacuum — negligible mercury vapour pressure). So the pressure there, $P_1$, is (very nearly) **zero**. - At the **surface of the mercury in the open cup**, the mercury is exposed directly to the surrounding air — so the pressure there, $P_2$, equals the **atmospheric pressure**. (It's precisely this pressure difference — zero at the top of the column versus atmospheric pressure pushing down on the cup's surface — that supports the mercury column at a height $h$ such that $\\rho g h = P_{\\text{atm}}$, which is how the barometer measures atmospheric pressure.) Answer: (A).\n- A barometer reading $h$ satisfies $P_{\\text{atm}} = \\rho g_{\\text{eff}}\\, h$, where $g_{\\text{eff}}$ is the *effective* gravitational acceleration experienced by the mercury column (which also experiences the same effective gravity as everything else in the elevator). When the elevator moves **upward with increasing speed** (i.e., it is accelerating upward, $a > 0$), the effective gravity becomes $g_{\\text{eff}} = g + a > g$. Since the atmospheric pressure $P_{\\text{atm}}$ outside (and acting on the mercury surface in the cup) is essentially unaffected by the elevator's motion, we have: $$h = \\frac{P_{\\text{atm}}}{\\rho\\, g_{\\text{eff}}} = \\frac{P_{\\text{atm}}}{\\rho (g+a)} < \\frac{P_{\\text{atm}}}{\\rho g} = 76\\text{ cm}$$ So the reading becomes **less than** 76 cm — a larger effective gravity \"compresses\" the same atmospheric pressure into a shorter mercury column. Answer: (C).\n- Inside the upward-accelerating elevator, the mercury column experiences an **effective gravity** $g_{\\text{eff}} = g + a > g$. The barometer balances the (actual) air pressure inside the elevator against the weight (per unit area) of the mercury column, using this *effective* gravity: $$P_{\\text{air}} = \\rho\\, g_{\\text{eff}}\\, h_{\\text{reading}} = \\rho (g+a)(76\\text{ cm equivalent column})$$ Compare this to what a *normal* (non-accelerating) barometer reading of $76$ cm would represent: $P_{\\text{normal}} = \\rho g (76\\text{ cm})$. Since $g_{\\text{eff}} = g + a > g$, and the reading is the *same* numerical value ($76$ cm) in both cases: $$P_{\\text{air}} = \\rho(g+a)(76) > \\rho g (76) = P_{\\text{normal}}$$ So the actual air pressure (expressed in the equivalent height of mercury under *normal* gravity, i.e., in standard \"cm of Hg\") corresponds to **more than 76 cm** — the true pressure is higher than what the (effective-gravity-affected) reading directly suggests. Answer: (C).\n- In a normal barometer (tube completely filled with mercury, no trapped air), the space above the mercury column is a near-perfect vacuum (pressure $\\approx 0$), and the column settles at the height $h = 76$ cm where $\\rho g h = P_{\\text{atm}}$. Here, however, the $1$ m tube was filled with mercury only up to $76$ cm and then **corked**, trapping a pocket of air (originally at atmospheric pressure) in the remaining $24$ cm of the tube. When inverted into the cup and the cork is removed, this trapped air pocket — no longer compressed by the cork — **expands** into the (now larger) available space as the mercury level inside the tube adjusts. By Boyle's law, expanding to a larger volume means this trapped air now exerts a **lower, but still nonzero**, pressure $P' > 0$ at the top of the mercury column (unlike the near-zero pressure of a true vacuum). Now the balance condition becomes $P_{\\text{atm}} = P' + \\rho g h$, so: $$h = \\frac{P_{\\text{atm}} - P'}{\\rho g} < \\frac{P_{\\text{atm}}}{\\rho g} = 76\\text{ cm}$$ Since $P' > 0$, the resulting column height is **less than** $76$ cm. Answer: (D).\n- The block's weight is $20$ N; after immersion, the spring balance reads $16$ N — the *decrease* in the spring balance reading equals the **buoyant force** exerted by the water on the block: $$F_{\\text{buoyancy}} = 20\\text{ N} - 16\\text{ N} = 4\\text{ N (upward, on the block)}$$ By **Newton's third law**, the block exerts an equal and opposite reaction force on the water — i.e., the block pushes down on the water with a force of $4$ N. This extra downward force is transmitted through the water to the beaker, and from the beaker to the weighing machine — effectively adding to the weight that the weighing machine must support. So the weighing machine's new reading is: $$40\\text{ N} + 4\\text{ N} = 44\\text{ N}$$ Answer: (C).\n- For the wood to float in equilibrium, the **buoyant force must equal its weight**: $$F_{\\text{buoyancy}} = \\rho_{\\text{water}}\\, g\\, V_{\\text{submerged}} = W_{\\text{wood}}$$ Since the wood's weight $W_{\\text{wood}}$ doesn't change, and water is **incompressible** (its density $\\rho_{\\text{water}}$ remains constant regardless of the air pressure above it — Pascal's principle simply transmits the increased pressure uniformly throughout the incompressible water without changing its density), the equilibrium condition $\\rho_{\\text{water}}\\, g\\, V_{\\text{submerged}} = W_{\\text{wood}}$ requires exactly the **same submerged volume** $V_{\\text{submerged}}$ as before. So the wood continues to float with the **same fraction of its volume submerged** — the increased air pressure has no effect on the floating equilibrium (it merely raises the pressure everywhere in the incompressible liquid uniformly, without altering the density that determines buoyancy). Answer: (C).\n- Assume the cube rests directly on the vessel's bottom (in solid-solid contact, with no water able to seep underneath it — a standard assumption for \"placed in the vessel\" before water is poured). Initially (empty vessel), the normal force from the bottom balances just the cube's weight: $N = Mg$. Once water is poured in and the cube is fully submerged, **new vertical forces appear**: the surrounding water exerts pressure on *all the exposed faces* of the cube — crucially including the **top face**, which experiences a downward push of magnitude $P_{\\text{top}}\\times A = (\\rho_{\\text{water}}\\, g\\, h_{\\text{top}})\\times A$ (where $h_{\\text{top}}$ is the depth of the top face below the water surface). Since the bottom face is sealed against the vessel (no water beneath it to push back upward), there is **no compensating upward pressure force** from below. For the cube's equilibrium, the normal force from the vessel's bottom must now balance both the cube's weight *and* this extra downward push from the water above: $$N' = Mg + \\rho_{\\text{water}}\\, g\\, h_{\\text{top}}\\, A \\;>\\; Mg = N$$ So the force on the vessel's bottom (in contact with the cube) actually **increases** when water is added — a classic counter-intuitive result (the naive expectation that \"buoyancy reduces the load\" fails here precisely *because* the seal prevents water from acting on the underside, where buoyancy's upward push would normally originate). Answer: physically, (A) — the force will increase.\n- In the box's (accelerating) reference frame, the water experiences an **effective gravity** that is the vector sum of real gravity ($g$, downward) and the pseudo-force per unit mass ($a$, directed *backward* — i.e., to the left, opposite to the rightward acceleration). This effective gravity vector points diagonally **down and to the left**, and pressure in the fluid increases in this same diagonal direction (just as ordinary hydrostatic pressure increases \"downward\"). Consequently, on the (horizontal) **top face** of the box, the pressure is **not uniform**: it is higher on the left portion (which is \"deeper\" in the effective-gravity sense) and lower on the right portion. The resultant of all these unequal pressure forces — each pushing outward (upward) on the lid — therefore acts through a point shifted toward the side of higher pressure, i.e., toward the **left** of the geometric centre of the top face. Answer: (C).",
+    "formulas": [
+      {
+        "latex": "P = \\displaystyle\\lim_{\\Delta S \\to 0}\\dfrac{\\Delta F}{\\Delta S}",
+        "meaning": ""
+      },
+      {
+        "latex": "P_1 - P_2 = \\rho g z",
+        "meaning": ""
+      },
+      {
+        "latex": "g_{\\text{eff}} = g + a",
+        "meaning": ""
+      },
+      {
+        "latex": "P_1 - P_2 = \\rho (g+a) z",
+        "meaning": ""
+      },
+      {
+        "latex": "F_{\\text{base}} = P_{\\text{base}} \\times A = (\\rho g h)\\times A",
+        "meaning": ""
+      },
+      {
+        "latex": "F_{\\text{base}} = \\rho g h A",
+        "meaning": ""
+      },
+      {
+        "latex": "m = \\rho \\times (\\text{volume}) = \\rho \\times (h A) \\;\\Longrightarrow\\; h = \\frac{m}{\\rho A}",
+        "meaning": ""
+      },
+      {
+        "latex": "F = \\rho g \\left(\\frac{m}{\\rho A}\\right) A = mg",
+        "meaning": ""
+      },
+      {
+        "latex": "F = (\\text{pressure at base})\\times A = (\\rho g h)\\times A",
+        "meaning": ""
+      },
+      {
+        "latex": "h = \\dfrac{m}{\\rho A}",
+        "meaning": ""
+      },
+      {
+        "latex": "F = mg",
+        "meaning": ""
+      },
+      {
+        "latex": "P_{\\text{bottom}} = P_{\\text{atmosphere (on the open surface)}} + \\rho g h",
+        "meaning": ""
+      },
+      {
+        "latex": "\\rho g h = P_{\\text{atm}}",
+        "meaning": ""
+      },
+      {
+        "latex": "h = \\frac{P_{\\text{atm}}}{\\rho\\, g_{\\text{eff}}} = \\frac{P_{\\text{atm}}}{\\rho (g+a)} < \\frac{P_{\\text{atm}}}{\\rho g} = 76\\text{ cm}",
+        "meaning": ""
+      },
+      {
+        "latex": "P_{\\text{atm}} = \\rho g_{\\text{eff}}\\, h",
+        "meaning": ""
+      },
+      {
+        "latex": "g_{\\text{eff}} = g + a > g",
+        "meaning": ""
+      },
+      {
+        "latex": "P_{\\text{air}} = \\rho\\, g_{\\text{eff}}\\, h_{\\text{reading}} = \\rho (g+a)(76\\text{ cm equivalent column})",
+        "meaning": ""
+      },
+      {
+        "latex": "P_{\\text{air}} = \\rho(g+a)(76) > \\rho g (76) = P_{\\text{normal}}",
+        "meaning": ""
+      },
+      {
+        "latex": "P_{\\text{normal}} = \\rho g (76\\text{ cm})",
+        "meaning": ""
+      },
+      {
+        "latex": "h = \\frac{P_{\\text{atm}} - P'}{\\rho g} < \\frac{P_{\\text{atm}}}{\\rho g} = 76\\text{ cm}",
+        "meaning": ""
+      },
+      {
+        "latex": "h = 76",
+        "meaning": ""
+      },
+      {
+        "latex": "P_{\\text{atm}} = P' + \\rho g h",
+        "meaning": ""
+      },
+      {
+        "latex": "F_{\\text{buoyancy}} = 20\\text{ N} - 16\\text{ N} = 4\\text{ N (upward, on the block)}",
+        "meaning": ""
+      },
+      {
+        "latex": "40\\text{ N} + 4\\text{ N} = 44\\text{ N}",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "e5dce764-cb77-4433-9b0c-8a9c4a3d220c",
+      "7e5ee582-8963-4713-bcf0-c94547a39ce6",
+      "9eca9f55-8bf5-4a74-853b-dc6923ed9bcf",
+      "17bee399-de67-4109-b050-37d05694ea33",
+      "543a08a1-64a0-49fb-a75e-c33cb66e7f01",
+      "90ebb103-c54a-4012-bb83-f5a1093e1e3f",
+      "c2e505f8-fd25-4e82-be54-02515a202f8a",
+      "425d9522-d469-4d8e-be15-7f2aa016b584",
+      "5a3772d3-13e5-4c1d-9202-4ec43cb4044c",
+      "9e9d36a3-1389-4036-ba92-9b1776defd21",
+      "bd857b6e-72d4-4b2f-890f-fea2612154f4",
+      "4667e51f-284c-446c-aae2-103a10b4e845",
+      "5c24adfe-9253-48d6-a735-afe1ddac6661",
+      "cfe4b158-72db-424d-9020-ed0382c2948b",
+      "f83108d7-38f0-4e91-bcef-9bff09a56e13",
+      "3f20ff15-baa5-4d4c-b02d-ca61eb92fe17",
+      "18b737e9-7cb5-49a8-ae06-7bef518ee156",
+      "8247b462-cc80-44c5-a75e-b0bcedc94176",
+      "29fc148d-6243-49f5-bb2b-ba00f76af65e",
+      "86f0d171-fc38-42d7-b5c1-a4002128ce3e"
+    ],
+    "tags": [
+      "HC Verma Vol 1",
+      "Objective I",
+      "Chapter 13"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-mechanical-properties-of-fluids-objective-ii",
+    "chapter": "Mechanical Properties of Fluids",
+    "subtopic": "Objective II",
+    "class": "XI",
+    "unitId": "xi-properties",
+    "unitLabel": "Units VI & VII — Properties of Bulk Matter",
+    "order": 8,
+    "title": "Objective II",
+    "summary": "For a solid floating in equilibrium, apply Newton's third law and the floating condition (Archimedes' principle): - **(a)** By Newton's third law, since the liquid exerts an upward force (buoyancy) on the solid, the…",
+    "body": "**Key points from solved questions**\n- For a solid floating in equilibrium, apply Newton's third law and the floating condition (Archimedes' principle): - **(a)** By Newton's third law, since the liquid exerts an upward force (buoyancy) on the solid, the solid must exert an equal and opposite (downward) force on the liquid. For the solid to be in equilibrium, the buoyant force on it must equal its own weight — so the (reaction) force the solid exerts on the liquid is also equal in magnitude to the solid's weight. ✓ - **(b)** This is precisely the **floating equilibrium condition**: the upward buoyant force from the liquid must exactly balance the solid's weight (otherwise the solid would sink or rise). ✓ - **(c)** By **Archimedes' principle**, the buoyant force equals the weight of the liquid displaced. Combined with (b) — buoyant force = weight of solid — we get: weight of displaced liquid = weight of solid. ✓ - **(d)** This would require the *dipped (submerged) part of the solid* to weigh the same as the *displaced liquid* — i.e., $\\rho_{\\text{solid}} V_{\\text{submerged}}\\, g = \\rho_{\\text{liquid}} V_{\\text{submerged}}\\, g$, which holds only if $\\rho_{\\text{solid}} = \\rho_{\\text{liquid}}$. For a floating object, the solid is generally *less* dense than the liquid, so the dipped part actually weighs *less* than the displaced liquid — this statement is not generally true. ✗ Answer: (A, B, C).\n- When the empty balloon is weighed, the spring balance reads its **true weight minus the buoyant force** of the surrounding air on it: $W_1 = W_{\\text{true, empty}} - F_{\\text{buoyancy, empty}}$. When filled with air, the balloon's true weight increases by $w$ (the weight of the air inside), but it also displaces a much larger volume of air — and crucially, since we're told to **neglect the difference between the densities of the air inside and outside**, the weight of the *extra* air displaced (due to the balloon's increased size) is essentially equal to $w$ (the weight of the air now filling it). The increase in buoyant force due to the larger displaced volume of (essentially equal-density) air almost exactly cancels the added weight $w$ of the air inside: $$W_2 = (W_{\\text{true, empty}} + w) - (F_{\\text{buoyancy, empty}} + w) = W_{\\text{true, empty}} - F_{\\text{buoyancy, empty}} = W_1$$ ✓ (A): $W_2 = W_1$ This immediately implies $W_2 = W_1 < W_1 + w$ (since $w > 0$) — i.e., the reading does *not* simply increase by the weight of the enclosed air; it remains the same, which is indeed less than $W_1 + w$. ✓ (C) Option (b), $W_2 = W_1 + w$, would be the (incorrect) answer one gets by *forgetting* about the increased buoyancy — it does not hold once buoyancy is properly accounted for. Answer: (A, C).\n- The buoyant force on a *fully* submerged solid is $F_B = \\rho_{\\text{liquid}}\\, g\\, V_{\\text{solid}}$ — it depends only on the **liquid's density** and the **volume of the solid**, both of which remain fixed once the object is completely immersed. - **(a)** Pushing it deeper doesn't change $V_{\\text{submerged}}$ (it's already fully submerged, $= V_{\\text{solid}}$) or $\\rho_{\\text{liquid}}$ (incompressible) — so $F_B$ stays the **same**, it does not increase. ✗ - **(b)** Changing orientation doesn't change the total submerged volume (still the entire solid) — so $F_B$ remains unchanged. ✗ - **(c)** If it's pulled **partially** out, the submerged volume $V_{\\text{submerged}} < V_{\\text{solid}}$ decreases, so $F_B = \\rho_{\\text{liquid}}\\, g\\, V_{\\text{submerged}}$ **decreases**. ✓ - **(d)** The buoyant force is, by its very nature, the net result of fluid pressure acting on the object's surface — and this net resultant *always* points **vertically upward** (this is essentially the definition/derivation of buoyancy — pressure increases with depth, so the upward push on the bottom surfaces always exceeds the downward push on the top surfaces). ✓ Answer: (C, D).\n- Pumping air out of the sealed space above the water reduces the **pressure of the trapped gas** above the water's surface. ✓ (B) - **(a)** \"Water level rises\": there's no mechanism here to add water or otherwise change its volume — reducing the gas pressure above doesn't cause more liquid to appear or rearrange its (incompressible) volume in a way that raises the level noticeably. The level remains essentially unchanged. ✗ - **(c)** The pressure at the bottom is $P_{\\text{bottom}} = P_{\\text{surface}} + \\rho g h$. Since $P_{\\text{surface}}$ has decreased (from (b)) and $\\rho g h$ is unchanged (water's density and height haven't changed), $P_{\\text{bottom}}$ — and hence the total force on the bottom — **decreases**. ✓ - **(d)** Water is essentially incompressible — reducing the pressure of the gas above it does not measurably change its density. ✗ Answer: (B, C).\n- The classification of flow as \"steady (laminar)\" or \"turbulent\" depends on whether the flow speed is below or above a certain **critical velocity** (related to the Reynolds number) for that tube — it isn't simply determined by the volume that has passed. - **(a)** It's entirely possible for *both* flow rates ($V_0$ in A, $2V_0$ in B) to be below their respective critical velocities — both flows steady. ✓ possible - **(b)** It's also possible for *both* rates to exceed the critical velocity — both flows turbulent. ✓ possible - **(c)** Since B carries **twice** the volume (and hence has roughly twice the average flow speed, given identical tubes), it's quite plausible that A's (lower) speed is below the critical threshold (steady) while B's (higher) speed exceeds it (turbulent) — a very natural scenario given the doubled flow rate. ✓ possible - **(d)** This would require the *slower* flow (A) to be turbulent while the *faster* flow (B) is steady — but turbulence sets in *above* a critical speed; if the lower-speed flow in A is already turbulent, the higher-speed flow in B (through an identical tube) would almost certainly be turbulent too, not suddenly smooth out. This combination is physically implausible. ✗ not possible Answer: (A, B, C).\n- Since points $A$ and $B$ are at the **same height** in a horizontal tube, Bernoulli's equation reduces to $P + \\tfrac12\\rho v^2 = \\text{constant}$, so: $$P_A - P_B = \\frac{1}{2}\\rho\\left(v_B^2 - v_A^2\\right)$$ This difference vanishes if and only if $v_A = v_B$, which (by the continuity equation $A_A v_A = A_B v_B$) happens precisely when the **cross-sectional areas at $A$ and $B$ are equal**. - **(a)** \"Equal for any shape\" is too strong — if the areas at $A$ and $B$ differ, the speeds (and hence pressures) differ. ✗ - **(b)** \"Never equal\" is too strong in the other direction — they *are* equal whenever $v_A = v_B$. ✗ - **(c)** If the tube has a **uniform** cross-section throughout, then certainly $A_A = A_B$, so $v_A = v_B$ and $P_A = P_B$. ✓ - **(d)** Even in a tube whose cross-section varies overall (nonuniform), the *specific points* $A$ and $B$ might happen to have **equal** local cross-sectional areas (e.g., a tube that narrows in the middle and returns to its original width — $A$ before the narrowing and $B$ after, with equal areas) — giving $v_A = v_B$ and thus $P_A = P_B$ even though the tube as a whole is \"nonuniform.\" ✓ Answer: (C, D).\n- By **Torricelli's theorem**, the efflux speed from a small hole at depth $h$ below the liquid surface is $$v = \\sqrt{2gh}$$ This expression depends explicitly on: - **the height $h$ of the liquid column above the hole** ✓ (depends on it — option C) - **the acceleration due to gravity $g$** ✓ (depends on it — option D) But it contains **no reference at all** to: - **the area of the hole** — the *speed* of the emerging liquid is independent of how big or small the hole is (a larger hole would let out more liquid per second — a higher *flow rate* — but each bit of liquid still emerges at the *same speed* $\\sqrt{2gh}$). The question asks which factors the speed does *not* depend on — area qualifies. ✓ (A) - **the density of the liquid** — exactly as in the water/mercury efflux comparison, denser and lighter liquids emerge at the same speed for the same height $h$ (this is essentially \"free fall through height $h$,\" and free-fall speed is independent of the falling object's mass/density). ✓ (B) Answer: (A, B).",
+    "formulas": [
+      {
+        "latex": "\\rho_{\\text{solid}} V_{\\text{submerged}}\\, g = \\rho_{\\text{liquid}} V_{\\text{submerged}}\\, g",
+        "meaning": ""
+      },
+      {
+        "latex": "\\rho_{\\text{solid}} = \\rho_{\\text{liquid}}",
+        "meaning": ""
+      },
+      {
+        "latex": "W_2 = (W_{\\text{true, empty}} + w) - (F_{\\text{buoyancy, empty}} + w) = W_{\\text{true, empty}} - F_{\\text{buoyancy, empty}} = W_1",
+        "meaning": ""
+      },
+      {
+        "latex": "W_1 = W_{\\text{true, empty}} - F_{\\text{buoyancy, empty}}",
+        "meaning": ""
+      },
+      {
+        "latex": "W_2 = W_1",
+        "meaning": ""
+      },
+      {
+        "latex": "W_2 = W_1 < W_1 + w",
+        "meaning": ""
+      },
+      {
+        "latex": "W_2 = W_1 + w",
+        "meaning": ""
+      },
+      {
+        "latex": "F_B = \\rho_{\\text{liquid}}\\, g\\, V_{\\text{solid}}",
+        "meaning": ""
+      },
+      {
+        "latex": "= V_{\\text{solid}}",
+        "meaning": ""
+      },
+      {
+        "latex": "F_B = \\rho_{\\text{liquid}}\\, g\\, V_{\\text{submerged}}",
+        "meaning": ""
+      },
+      {
+        "latex": "P_{\\text{bottom}} = P_{\\text{surface}} + \\rho g h",
+        "meaning": ""
+      },
+      {
+        "latex": "P_A - P_B = \\frac{1}{2}\\rho\\left(v_B^2 - v_A^2\\right)",
+        "meaning": ""
+      },
+      {
+        "latex": "P + \\tfrac12\\rho v^2 = \\text{constant}",
+        "meaning": ""
+      },
+      {
+        "latex": "v_A = v_B",
+        "meaning": ""
+      },
+      {
+        "latex": "A_A v_A = A_B v_B",
+        "meaning": ""
+      },
+      {
+        "latex": "A_A = A_B",
+        "meaning": ""
+      },
+      {
+        "latex": "P_A = P_B",
+        "meaning": ""
+      },
+      {
+        "latex": "v = \\sqrt{2gh}",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "88815396-277d-4093-8562-4ef57384f780",
+      "9f2fe218-d36c-4fbe-ae8c-909263cc7806",
+      "a12e5b33-3106-4e54-a52a-ca99fa2cc14a",
+      "dab9493c-bf63-4adb-bc9f-9e06b970cfdb",
+      "1599151e-0b00-478f-a951-e19d0bd0b5e6",
+      "ae4402ba-968f-4f68-9063-ce74ca9fa949",
+      "6a9cd900-face-45ca-b8d9-cb40bebb2cb1"
+    ],
+    "tags": [
+      "HC Verma Vol 1",
+      "Objective II",
+      "Chapter 13"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-mechanical-properties-of-fluids-pressure",
+    "chapter": "Mechanical Properties of Fluids",
+    "subtopic": "Pressure",
+    "class": "XI",
+    "unitId": "xi-properties",
+    "unitLabel": "Units VI & VII — Properties of Bulk Matter",
+    "order": 8,
+    "title": "Pressure",
+    "summary": "In the given situation as shown in the figure below, Pressure due to water column of height 15 cm = Pressure due to oil column of height 20 cm $ \\Rightarrow h_{w}D_{w}g = h_{0}D_{0}g $ <div style=\"text-align:…",
+    "body": "**Key points from solved questions**\n- From the given question, Density of liquid, $ \\rho_{l}=760\\ kg/m^{3} $ Density of mercury, $ \\rho_{m} = 13600 \\, kg/m^{3} $ Height of liquid column in mercury barometer $$ h_{m}=760\\ cm=0.76m $$ If height of liquid in liquid column is $h_{1}$ then: $$ \\begin{array}{l}P_{liquid}=P_{mercury}\\\\h_{l}\\rho_{l}g=h_{m}\\rho_{m}g\\\\h_{l}=\\frac{h_{m}\\rho_{m}}{\\rho_{l}}\\\\=\\frac{0.76\\times13600}{760}\\\\=13.6m.\\end{array} $$\n- In the given situation as shown in the figure below, Pressure due to water column of height 15 cm = Pressure due to oil column of height 20 cm $ \\Rightarrow h_{w}D_{w}g = h_{0}D_{0}g $ <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//7fd99a06-011a-431b-8b12-608a6e715545/markdown_1/imgs/img_in_image_box_173_1329_440_1523.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A30Z%2F-1%2F%2F232b85b6a506ba7b1774c078303449f4cc896e774f1026460a57bf0c5e64bdca\" alt=\"Image\" width=\"22%\" /></div> $$ 15\\uprho_{w}=20\\uprho_{\\mathrm{o}} $$ $$ \\rho_{0}=\\frac{15}{20}\\rho_{w} $$ $$ \\begin{aligned}\\rho_{0}&=\\frac{15}{20}\\times1000\\\\&\\quad(\\because Given:\\rho_{w}=1000kg m^{-3})\\\\&=750kg m^{-3}\\end{aligned} $$ <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//7fd99a06-011a-431b-8b12-608a6e715545/markdown_1/imgs/img_in_image_box_577_1185_611_1229.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A31Z%2F-1%2F%2Faae734c0b38809920e19e364c0fc601f37ccaad7ba431207cb9258d2d59e42f2\" alt=\"Image\" width=\"2%\" /></div> ##### Related Theory According to Pascal's law, \"Pressure applied to enclosed fluid is transmitted undiminished to every point of the fluid and the walls of the containing vessel.\"\n- The given figure explain the situation of the question, <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//7fd99a06-011a-431b-8b12-608a6e715545/markdown_1/imgs/img_in_image_box_758_1370_965_1517.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A31Z%2F-1%2F%2Ffcaa4980de3a461b3ac3fc69791ba996ab3ac95e1b5e2ee150b418dccd9299ed\" alt=\"Image\" width=\"17%\" /></div> Applying Archimedes principle, $$ \\mathrm{Weight~of~cylinder}=(\\mathrm{upthrust})_{1}+(\\mathrm{upthrust})_{2} $$ $$ \\Rightarrow\\quad\\mathrm{L A}d g=(p\\mathrm{L})\\mathrm{A}(n\\uprho)\\mathrm{g}+(1-p)\\mathrm{L A}\\uprho g $$ $$ \\Rightarrow\\quad d=\\left(1-p\\right)\\uprho+\\left(p n\\right)\\uprho=\\left[1+\\left(n-1\\right)p\\right]\\uprho $$\n- Pressure = 150 mm of Hg Pumping rate = $ \\frac{dV}{dt} = \\frac{5 \\times 10^{-3}}{60} \\, \\text{m}^{3}/\\text{s} $ $$ \\begin{array}{l} \\text{Power of heart} =\\displaystyle {\\lim_{\\text{pt } d \\to 8}} \\frac{\\text{P.d} \\text{V}}{\\text{dt}} = \\rho g h \\cdot \\frac{\\text{dV}}{\\text{dt}} \\\\ \\qquad = (13.6 \\times 10^{3}) \\ (10) \\times (0.15) \\times \\frac{5 \\times 10^{-3}}{60} \\\\ \\qquad = \\frac{13.6 \\times 5 \\times 0.15}{6} = 1.70 \\text{ Watt} \\end{array} $$\n- Depth of the ocean, d = 2700 m Compressibility of water, $$ k=45.4\\times10^{-14}Pa^{-1} $$ Density of water, $ \\rho = 10^{3} $ kg/m $ ^{3} $ The pressure at the bottom of ocean is, $$ \\begin{array}{l} \\text{P} =\\displaystyle {\\lim_{\\text{pg } d \\to}} 10 ( 10^{3}+10 \\times 2700 - 27 \\times 10^{6} \\text{Pa}) \\\\ \\qquad = 10 \\text{ cm} \\end{array} $$ \\therefore Fractional compression = Compressibility $ \\times $ pressure $ =45.4 \\times 10^{-11} \\times 27 \\times 10^{6} $ $ =1.2 \\times 10^{-2} $",
+    "formulas": [
+      {
+        "latex": "h_{m}=760\\ cm=0.76m",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{array}{l}P_{liquid}=P_{mercury}\\\\h_{l}\\rho_{l}g=h_{m}\\rho_{m}g\\\\h_{l}=\\frac{h_{m}\\rho_{m}}{\\rho_{l}}\\\\=\\frac{0.76\\times13600}{760}\\\\=13.6m.\\end{array}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\rho_{l}=760\\ kg/m^{3}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\rho_{m} = 13600 \\, kg/m^{3}",
+        "meaning": ""
+      },
+      {
+        "latex": "15\\uprho_{w}=20\\uprho_{\\mathrm{o}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\rho_{0}=\\frac{15}{20}\\rho_{w}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}\\rho_{0}&=\\frac{15}{20}\\times1000\\\\&\\quad(\\because Given:\\rho_{w}=1000kg m^{-3})\\\\&=750kg m^{-3}\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\Rightarrow h_{w}D_{w}g = h_{0}D_{0}g",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{Weight~of~cylinder}=(\\mathrm{upthrust})_{1}+(\\mathrm{upthrust})_{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\Rightarrow\\quad\\mathrm{L A}d g=(p\\mathrm{L})\\mathrm{A}(n\\uprho)\\mathrm{g}+(1-p)\\mathrm{L A}\\uprho g",
+        "meaning": ""
+      },
+      {
+        "latex": "\\Rightarrow\\quad d=\\left(1-p\\right)\\uprho+\\left(p n\\right)\\uprho=\\left[1+\\left(n-1\\right)p\\right]\\uprho",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{array}{l} \\text{Power of heart} =\\displaystyle {\\lim_{\\text{pt } d \\to 8}} \\frac{\\text{P.d} \\text{V}}{\\text{dt}} = \\rho g h \\cdot \\frac{\\text{dV}}{\\text{dt}} \\\\ \\qquad = (13.6 \\times 10^{3}) \\ (10) \\times (0.15) \\times \\frac{5 \\times 10^{-3}}{60} \\\\ \\qquad = \\frac{13.6 \\times 5 \\times 0.15}{6} = 1.70 \\text{ Watt} \\end{array}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{dV}{dt} = \\frac{5 \\times 10^{-3}}{60} \\, \\text{m}^{3}/\\text{s}",
+        "meaning": ""
+      },
+      {
+        "latex": "k=45.4\\times10^{-14}Pa^{-1}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{array}{l} \\text{P} =\\displaystyle {\\lim_{\\text{pg } d \\to}} 10 ( 10^{3}+10 \\times 2700 - 27 \\times 10^{6} \\text{Pa}) \\\\ \\qquad = 10 \\text{ cm} \\end{array}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\rho = 10^{3}",
+        "meaning": ""
+      },
+      {
+        "latex": "=45.4 \\times 10^{-11} \\times 27 \\times 10^{6}",
+        "meaning": ""
+      },
+      {
+        "latex": "=1.2 \\times 10^{-2}",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "38a75f6a-f384-4c5d-8d90-cd023c47435f",
+      "356df507-d3d2-49a7-a3e0-fe45cde14878",
+      "2892ba94-83e1-4a79-a05a-5729ccb94814",
+      "93c2ab06-a47b-4e04-8018-023f0f7825db",
+      "b8eb4bd3-93a6-4d4d-86c3-3f4a2f3363b2"
+    ],
+    "tags": [
+      "NEET 2020",
+      "NEET 2019",
+      "NEET Phase-I 2016",
+      "AIPMT July 2015",
+      "AIPMT Cancelled 2015"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-mechanical-properties-of-fluids-streamline-flow",
+    "chapter": "Mechanical Properties of Fluids",
+    "subtopic": "Streamline Flow",
+    "class": "XI",
+    "unitId": "xi-properties",
+    "unitLabel": "Units VI & VII — Properties of Bulk Matter",
+    "order": 8,
+    "title": "Streamline Flow",
+    "summary": "Using the equation of continuity, Av = constant Where, A = area of cylindrical tube v = velocity of liquid in the tube ∴ Volume in flow rate = Volume out flow rate $ \\pi R^{2}v = n\\pi r^{2}v' $ $ \\Rightarrow v' =…",
+    "body": "**Key points from solved questions**\n- Using the equation of continuity, Av = constant Where, A = area of cylindrical tube v = velocity of liquid in the tube ∴ Volume in flow rate = Volume out flow rate $ \\pi R^{2}v = n\\pi r^{2}v' $ $ \\Rightarrow v' = \\frac{vR^{2}}{nr^{2}} $",
+    "formulas": [
+      {
+        "latex": "\\pi R^{2}v = n\\pi r^{2}v'",
+        "meaning": ""
+      },
+      {
+        "latex": "\\Rightarrow v' = \\frac{vR^{2}}{nr^{2}}",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "7b0e561f-890e-46cc-8fdb-2d9e79bca1f0"
+    ],
+    "tags": [
+      "AIPMT July 2015"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-mechanical-properties-of-fluids-surface-tension",
+    "chapter": "Mechanical Properties of Fluids",
+    "subtopic": "Surface Tension",
+    "class": "XI",
+    "unitId": "xi-properties",
+    "unitLabel": "Units VI & VII — Properties of Bulk Matter",
+    "order": 8,
+    "title": "Surface Tension",
+    "summary": "We know that, Change in Surface Energy, $ \\Delta E = T\\Delta A $ where, $$ \\Delta A=Change~in~Surface~Area $$ $$ \\mathrm{T}=\\mathrm{Surface~Tension} $$ $$…",
+    "body": "**Key points from solved questions**\n- For a circular disc $$ \\mathrm{F}_{\\mathrm{e x c e s s}}=2\\pi r\\mathrm{~T~} $$ where, $r$ is radius of disc and $T$ is the surface tension. Substituting the given values in eq. (i) we get $$ \\begin{aligned}F_{excess}&=2\\pi\\times4.5\\times10^{-2}\\times0.07\\\\&=2\\times\\frac{22}{7}\\times4.5\\times10^{-2}\\times7\\times10^{-2}\\\\&=198\\times10^{-4}=19.8mN\\end{aligned} $$\n- Given: Radius, $r=2\\mathrm{~cm}=2\\times10^{-2}\\mathrm{~m}$ Surface tension, $S=0.03\\mathrm{~Nm}^{-1}$ We know that, surface tension $=\\frac{\\text{Surface energy}}{\\text{Surface area}}$ $S=\\frac{U}{A}$ $U=S\\times A$ $=0.03\\times2\\times(4\\pi r^{2})$ $=0.03\\times2\\times(4\\times3.14)\\times(2\\times10^{-2})^{2}$ $=3.014\\times10^{-4}\\mathrm{~J}$\n- As we know that the pressure of the soap bubble is written as; $$ \\mathrm{P}_{\\mathrm{i}}-\\mathrm{P}_{\\mathrm{o}}=\\frac{4\\mathrm{T}}{r} $$ When the soap bubble expands, the radius of the soap bubble will increase, therefore from equation (i), we see that the change in pressure is inversely proportional to the radius of the soap. ∴Soap bubble expands, the radius will increases and inside pressure will decrease.\n- A liquid does not wet the solid surface if the angle of contact is obtuse i.e., greater than $90^{\\circ}$. In this case cohesive forces will be greater than adhesive forces and so, the liquid does not wet the surfaces of solid.\n- The height of water rise in a capillary tube is, $$ \\begin{aligned}&h=\\frac{2\\mathrm{T}\\cos\\theta}{r\\rho g}\\\\ &\\begin{aligned}\\\\ &\\Rightarrow&h&\\propto\\frac{1}{r}\\\\&\\Rightarrow&\\frac{h_{1}}{h_{2}}&=\\frac{r_{2}}{r_{1}}=\\frac{2r}{r}=2\\\\&\\text{As}&m&=\\mathrm{A.h}.\\rho\\\\&&\\frac{m_{2}}{m_{1}}&=\\frac{\\mathrm{Ah}_{2}\\rho}{\\mathrm{Ah}_{1}\\rho}=\\frac{h_{2}}{h_{1}}\\\\&&&=\\frac{1}{2}\\\\&\\Rightarrow&m_{2}&=\\frac{m_{1}}{2}=\\frac{5}{2}\\\\&&&=2.5\\mathrm{~g}\\\\ &\\end{aligned}\\\\ \\end{aligned} $$\n- Excess Pressure = $ \\frac{4T}{R} $, $$ \\begin{aligned}Gauge~Pressure&=\\rho gZ_{o}\\\\\\therefore\\quad P_{0}+&\\quad\\frac{4T}{R}=P_{0}+\\rho gZ_{o}\\\\\\Rightarrow\\quad Z_{0}&=\\frac{4T}{R\\times\\rho g}\\\\\\Rightarrow\\quad Z_{0}&=\\frac{4\\times2.5\\times10^{-2}}{10^{-3}\\times1000\\times10}m\\\\\\therefore\\quad Z_{0}&=1cm\\end{aligned} $$\n- Change in surface area, $$ \\begin{array}{c}\\Delta A=(5\\times4-4\\times2)\\times2\\\\\\left\\{film has two surface\\right\\}\\\\=24\\ cm^{2}=24\\times10^{-4}\\ m^{2}\\\\\\therefore\\quad Work~done=T.\\ \\Delta A\\\\3\\times10^{-4}=T\\times24\\times10^{-4}\\\\\\mathrm{T}=\\frac{3\\times10^{-4}}{24\\times10^{-4}}=0.125\\mathrm{~N/m}\\end{array} $$\n- From surface tension, height of capillary, $$ h=\\frac{2T\\cos\\theta}{r\\rho g} $$ From above equation. $$ \\frac{\\cos\\theta_{1}}{\\rho_{1}}=\\frac{\\cos\\theta_{2}}{\\rho_{2}}=\\frac{\\cos\\theta_{3}}{\\rho_{3}} $$ Thus, $ \\cos\\theta\\propto\\rho $ $$ \\rho_{1}>\\rho_{2}>\\rho_{3} $$ $$ \\theta_{1}>\\cos\\theta_{2}>\\cos\\theta_{3} $$ $$ 0\\leq\\theta_{1}\\leq\\theta_{2}\\leq\\theta_{3}<\\frac{\\pi}{2} $$\n- Since, the length of the capillary tube above the surface of the water is less than 'h', the water does not have enough space to over flow like a fountain. Instead, it stays at the top of the tube without overflowing.\n- We know that, Change in Surface Energy, $ \\Delta E = T\\Delta A $ where, $$ \\Delta A=Change~in~Surface~Area $$ $$ \\mathrm{T}=\\mathrm{Surface~Tension} $$ $$ \\Delta\\mathbf{A}=\\mathbf{A}_{f}-\\mathbf{A}_{i}=4\\pi\\mathbf{R}^{2}-n(4\\pi\\mathbf{r}^{2}) $$ Given, $ n \\times \\frac{4}{3} \\pi r^{3} = \\frac{4}{3} \\pi R^{3} = V $ $$ \\Rightarrow\\quad n(4\\pi r^{3})=4\\pi\\mathrm{R}^{3}=3\\mathrm{V} $$ Now, $$ \\Delta A=\\frac{4\\pi R^{3}}{R}-\\frac{n(4\\pi r^{3})}{r}=\\frac{3V}{R}-\\frac{3V}{r} $$ $$ \\therefore\\Delta E=T\\Delta A=T\\left(\\frac{3V}{R}-\\frac{3V}{r}\\right)=3VT\\left(\\frac{1}{R}-\\frac{1}{r}\\right) $$ $$ R>r $$ Therefore, energy is released.\n- The wettability of a surface by a liquid depends primarily on angle of contact between the surface and the liquid.",
+    "formulas": [
+      {
+        "latex": "\\mathrm{F}_{\\mathrm{e x c e s s}}=2\\pi r\\mathrm{~T~}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}F_{excess}&=2\\pi\\times4.5\\times10^{-2}\\times0.07\\\\&=2\\times\\frac{22}{7}\\times4.5\\times10^{-2}\\times7\\times10^{-2}\\\\&=198\\times10^{-4}=19.8mN\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "r=2\\mathrm{~cm}=2\\times10^{-2}\\mathrm{~m}",
+        "meaning": ""
+      },
+      {
+        "latex": "S=0.03\\mathrm{~Nm}^{-1}",
+        "meaning": ""
+      },
+      {
+        "latex": "=\\frac{\\text{Surface energy}}{\\text{Surface area}}",
+        "meaning": ""
+      },
+      {
+        "latex": "S=\\frac{U}{A}",
+        "meaning": ""
+      },
+      {
+        "latex": "U=S\\times A",
+        "meaning": ""
+      },
+      {
+        "latex": "=0.03\\times2\\times(4\\pi r^{2})",
+        "meaning": ""
+      },
+      {
+        "latex": "=0.03\\times2\\times(4\\times3.14)\\times(2\\times10^{-2})^{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "=3.014\\times10^{-4}\\mathrm{~J}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{P}_{\\mathrm{i}}-\\mathrm{P}_{\\mathrm{o}}=\\frac{4\\mathrm{T}}{r}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}&h=\\frac{2\\mathrm{T}\\cos\\theta}{r\\rho g}\\\\ &\\begin{aligned}\\\\ &\\Rightarrow&h&\\propto\\frac{1}{r}\\\\&\\Rightarrow&\\frac{h_{1}}{h_{2}}&=\\frac{r_{2}}{r_{1}}=\\frac{2r}{r}=2\\\\&\\text{As}&m&=\\mathrm{A.h}.\\rho\\\\&&\\frac{m_{2}}{m_{1}}&=\\frac{\\mathrm{Ah}_{2}\\rho}{\\mathrm{Ah}_{1}\\rho}=\\frac{h_{2}}{h_{1}}\\\\&&&=\\frac{1}{2}\\\\&\\Rightarrow&m_{2}&=\\frac{m_{1}}{2}=\\frac{5}{2}\\\\&&&=2.5\\mathrm{~g}\\\\ &\\end{aligned}\\\\ \\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}Gauge~Pressure&=\\rho gZ_{o}\\\\\\therefore\\quad P_{0}+&\\quad\\frac{4T}{R}=P_{0}+\\rho gZ_{o}\\\\\\Rightarrow\\quad Z_{0}&=\\frac{4T}{R\\times\\rho g}\\\\\\Rightarrow\\quad Z_{0}&=\\frac{4\\times2.5\\times10^{-2}}{10^{-3}\\times1000\\times10}m\\\\\\therefore\\quad Z_{0}&=1cm\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{array}{c}\\Delta A=(5\\times4-4\\times2)\\times2\\\\\\left\\{film has two surface\\right\\}\\\\=24\\ cm^{2}=24\\times10^{-4}\\ m^{2}\\\\\\therefore\\quad Work~done=T.\\ \\Delta A\\\\3\\times10^{-4}=T\\times24\\times10^{-4}\\\\\\mathrm{T}=\\frac{3\\times10^{-4}}{24\\times10^{-4}}=0.125\\mathrm{~N/m}\\end{array}",
+        "meaning": ""
+      },
+      {
+        "latex": "h=\\frac{2T\\cos\\theta}{r\\rho g}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{\\cos\\theta_{1}}{\\rho_{1}}=\\frac{\\cos\\theta_{2}}{\\rho_{2}}=\\frac{\\cos\\theta_{3}}{\\rho_{3}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\rho_{1}>\\rho_{2}>\\rho_{3}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\theta_{1}>\\cos\\theta_{2}>\\cos\\theta_{3}",
+        "meaning": ""
+      },
+      {
+        "latex": "0\\leq\\theta_{1}\\leq\\theta_{2}\\leq\\theta_{3}<\\frac{\\pi}{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\Delta A=Change~in~Surface~Area",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{T}=\\mathrm{Surface~Tension}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\Delta\\mathbf{A}=\\mathbf{A}_{f}-\\mathbf{A}_{i}=4\\pi\\mathbf{R}^{2}-n(4\\pi\\mathbf{r}^{2})",
+        "meaning": ""
+      },
+      {
+        "latex": "\\Rightarrow\\quad n(4\\pi r^{3})=4\\pi\\mathrm{R}^{3}=3\\mathrm{V}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\Delta A=\\frac{4\\pi R^{3}}{R}-\\frac{n(4\\pi r^{3})}{r}=\\frac{3V}{R}-\\frac{3V}{r}",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "9057ab4a-bade-4e50-91a0-88c26ad9a36e",
+      "eacbe58f-af53-458f-8679-41480a888ca5",
+      "db3868f1-d7a8-4578-980e-3f4a41850045",
+      "94732f54-ca85-4c68-acf1-70a641feb1a1",
+      "e72553e3-f9cc-4a66-9c3c-6f39972148be",
+      "1eb74074-8732-4c68-990c-3cf68a5608d0",
+      "27c06064-f836-4047-b73c-e32a586ea19d",
+      "54f7074d-2fab-4e40-a169-76d6b04a3f0c",
+      "d1e0c00e-c29a-43ee-b54a-0bc3578585f3",
+      "5787d5f5-ec67-4889-a38b-f0364186978d",
+      "936169a9-530e-4138-8e80-4926be526740"
+    ],
+    "tags": [
+      "NEET 2024",
+      "NEET 2023",
+      "NEET 2022",
+      "NEET 2020",
+      "NEET Phase-II 2016",
+      "AIPMT July 2015",
+      "AIPMT 2014",
+      "NEET 2013"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-mechanical-properties-of-fluids-viscosity",
+    "chapter": "Mechanical Properties of Fluids",
+    "subtopic": "Viscosity",
+    "class": "XI",
+    "unitId": "xi-properties",
+    "unitLabel": "Units VI & VII — Properties of Bulk Matter",
+    "order": 8,
+    "title": "Viscosity",
+    "summary": "When we drop a ball in liquid that is highly viscous in nature and when it falls then initially gravitational force acts.",
+    "body": "**Key points from solved questions**\n- When we drop a ball in liquid that is highly viscous in nature and when it falls then initially gravitational force acts. As it goes inside liquid then viscous force increases no its speed will be constant with time, after sometimes gravitational force is balanced by drag or viscous force. When gravitational force is balanced by drag force then the acceleration of particle which can be measured by the slope of v and t graph initially becomes negative but after some time it becomes zero which means velocity becomes constant with time. The v - t graph can be shown by, <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//7fd99a06-011a-431b-8b12-608a6e715545/markdown_3/imgs/img_in_chart_box_192_389_391_500.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A36Z%2F-1%2F%2Fdf86a4f7f65d43113fa2224e652c65ad44567fa0d208d9ccc4b727f90695c561\" alt=\"Image\" width=\"16%\" /></div> It shows motion as the graph B.\n- Given. Mass of ball = M Density of ball = d Density of glycerine = $ \\frac{d}{2} $ $$ \\begin{array}{c}\\uparrow\\\\ F_{\\mathrm{v}}\\\\\\downarrow\\\\ Mg\\end{array}\\stackrel{\\uparrow}{\\uparrow}\\stackrel{F_{\\mathrm{B}}}{\\downarrow} $$ $$ \\mathrm{F}_{\\mathbf{V}}+\\mathrm{F}_{\\mathrm{B}}=\\mathrm{M}\\mathrm{g} $$ $$ \\begin{aligned}F_{B}&=\\frac{4}{3}\\pi R^{3}dg\\\\&=\\mathbf{V}g\\ dg\\end{aligned} $$ $$ \\mathbf{F}_{\\mathbf{v}}=\\frac{\\mathbf{M}\\mathbf{g}}{2} $$\n- Terminal velocity of ball in viscous fluid is, $$v_{T} = \\frac{2}{9\\eta} \\, r^{2}g \\, (\\sigma - \\rho)$$ Where, $$\\eta = \\text{coeff. of viscosity of medium}$$ $$r = \\text{radius of ball}$$ $$\\sigma = \\text{density of ball}$$ $$\\rho = \\text{density of viscous medium}$$ From the formula. $$ \\mathbf{v}_{\\mathrm{T}}\\approx r^{2}\\left(\\boldsymbol{\\sigma}-\\boldsymbol{\\rho}\\right) $$ From this formula $ \\therefore \\frac{\\text{Terminal velocity of } I^{\\text{st}} \\text{ ball}}{\\text{Terminal velocity of } II^{\\text{nd}} \\text{ ball}} = \\frac{v_{1}}{v_{2}} $ $$ \\begin{aligned}\\frac{\\mathbf{v}_{1}}{\\mathbf{v}_{2}}&=\\frac{1^{2}}{2^{2}}\\frac{(8\\rho_{2}-0.1\\rho_{2})}{(\\rho_{2}-0.1\\rho_{2})}\\\\&=\\frac{1}{4}\\times\\frac{7.9}{0.9}=\\frac{79}{36}\\end{aligned} $$\n- If, P = Viscous force $ v_{T} $ = terminal velocity $$ \\mathrm{F}=6\\pi r\\eta\\mathrm{v}_{\\mathrm{T}} $$ $$ \\begin{array}{l}\\frac{d Q}{d t}=6\\pi\\eta r v_T\\times v_T\\\\ =6\\pi\\eta r v_T^2\\end{array} $$ We also know that terminal velocity, $$ \\begin{aligned}&V_{T}=\\frac{2}{9}\\frac{r^{2}(\\rho-\\sigma)}{\\eta}g\\\\&V_{T}\\propto r^{2}\\\\ \\end{aligned} $$ ⇄ From (i) and (iii), we get $$ \\frac{dQ}{dt}\\propto r.(r^{2})^{2} $$ $$ \\mathrm{\\frac{dQ}{dt}}\\propto r^{5} $$",
+    "formulas": [
+      {
+        "latex": "\\begin{array}{c}\\uparrow\\\\ F_{\\mathrm{v}}\\\\\\downarrow\\\\ Mg\\end{array}\\stackrel{\\uparrow}{\\uparrow}\\stackrel{F_{\\mathrm{B}}}{\\downarrow}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{F}_{\\mathbf{V}}+\\mathrm{F}_{\\mathrm{B}}=\\mathrm{M}\\mathrm{g}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}F_{B}&=\\frac{4}{3}\\pi R^{3}dg\\\\&=\\mathbf{V}g\\ dg\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{F}_{\\mathbf{v}}=\\frac{\\mathbf{M}\\mathbf{g}}{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "v_{T} = \\frac{2}{9\\eta} \\, r^{2}g \\, (\\sigma - \\rho)",
+        "meaning": ""
+      },
+      {
+        "latex": "\\eta = \\text{coeff. of viscosity of medium}",
+        "meaning": ""
+      },
+      {
+        "latex": "r = \\text{radius of ball}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\sigma = \\text{density of ball}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\rho = \\text{density of viscous medium}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{v}_{\\mathrm{T}}\\approx r^{2}\\left(\\boldsymbol{\\sigma}-\\boldsymbol{\\rho}\\right)",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}\\frac{\\mathbf{v}_{1}}{\\mathbf{v}_{2}}&=\\frac{1^{2}}{2^{2}}\\frac{(8\\rho_{2}-0.1\\rho_{2})}{(\\rho_{2}-0.1\\rho_{2})}\\\\&=\\frac{1}{4}\\times\\frac{7.9}{0.9}=\\frac{79}{36}\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\therefore \\frac{\\text{Terminal velocity of } I^{\\text{st}} \\text{ ball}}{\\text{Terminal velocity of } II^{\\text{nd}} \\text{ ball}} = \\frac{v_{1}}{v_{2}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{F}=6\\pi r\\eta\\mathrm{v}_{\\mathrm{T}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{array}{l}\\frac{d Q}{d t}=6\\pi\\eta r v_T\\times v_T\\\\ =6\\pi\\eta r v_T^2\\end{array}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}&V_{T}=\\frac{2}{9}\\frac{r^{2}(\\rho-\\sigma)}{\\eta}g\\\\&V_{T}\\propto r^{2}\\\\ \\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{dQ}{dt}\\propto r.(r^{2})^{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{\\frac{dQ}{dt}}\\propto r^{5}",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "d5645501-0025-4c20-b4d8-566e6c79a5ea",
+      "ca1e98d4-3c69-467c-9468-a13ebaf70ae8",
+      "ce0152ae-66f2-4ce0-b4ca-88842dc3f8bb",
+      "54a48386-7a86-41de-81b9-945ae1471b21"
+    ],
+    "tags": [
+      "NEET 2022",
+      "NEET 2021",
+      "NEET 2019",
+      "NEET 2018"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-mechanical-properties-of-fluids-reneet2026",
+    "chapter": "Mechanical Properties of Fluids",
+    "subtopic": "reNEET2026",
+    "class": "XI",
+    "unitId": "xi-properties",
+    "unitLabel": "Units VI & VII — Properties of Bulk Matter",
+    "order": 8,
+    "title": "reNEET2026",
+    "summary": "Continuity: $v_Q=2v_P$.",
+    "body": "**Key points from solved questions**\n- Continuity: $v_Q=2v_P$. Bernoulli: $\\Delta P=\\tfrac12\\rho(v_Q^2-v_P^2)=\\tfrac12(1000)(3v_P^2)=1500\\,v_P^2=15\\Rightarrow v_P=0.1\\ \\text{m/s}=10\\ \\text{cm/s}$. Flow $=A_P v_P=40\\times10=400\\ \\text{cm}^3\\text{s}^{-1}.$\n- $v_t=\\dfrac{2r^2 g}{9\\eta}(\\sigma-\\rho)\\propto\\left(\\dfrac{\\sigma}{\\rho}-1\\right)$: zero at $\\sigma/\\rho=1$ and increasing linearly beyond it.",
+    "formulas": [
+      {
+        "latex": "v_Q=2v_P",
+        "meaning": ""
+      },
+      {
+        "latex": "\\Delta P=\\tfrac12\\rho(v_Q^2-v_P^2)=\\tfrac12(1000)(3v_P^2)=1500\\,v_P^2=15\\Rightarrow v_P=0.1\\ \\text{m/s}=10\\ \\text{cm/s}",
+        "meaning": ""
+      },
+      {
+        "latex": "=A_P v_P=40\\times10=400\\ \\text{cm}^3\\text{s}^{-1}.",
+        "meaning": ""
+      },
+      {
+        "latex": "v_t=\\dfrac{2r^2 g}{9\\eta}(\\sigma-\\rho)\\propto\\left(\\dfrac{\\sigma}{\\rho}-1\\right)",
+        "meaning": ""
+      },
+      {
+        "latex": "\\sigma/\\rho=1",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "renet2026-phy-10",
+      "renet2026-phy-12"
+    ],
+    "tags": [
+      "reNEET 2026"
+    ],
+    "source": "seed"
+  }
+]

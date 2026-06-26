@@ -1,0 +1,550 @@
+[
+  {
+    "id": "note-electromagnetic-induction-ac-generator",
+    "chapter": "Electromagnetic Induction",
+    "subtopic": "AC Generator",
+    "class": "XII",
+    "unitId": "xii-emi",
+    "unitLabel": "Unit V — Electromagnetic Induction & AC",
+    "order": 19,
+    "title": "AC Generator",
+    "summary": "Eddy current are the loops of electrical current induced within conductor by a changing magnetic field.",
+    "body": "**Key points from solved questions**\n- A current which changes its direction periodically is called alternating current.\n- Consider that the loop is starting to rotate from its initial position where it is perpendicular to the magnetic field. Thus, initially the maximum flux is passing through the loop. When the wired loop rotates, then the flux passing through the loop starts to decrease. When it becomes parallel to the magnetic field, then the flux becomes zero and then it starts to increase. Thus, there are two changes in one time period (i.e., twice per revolution).\n- If sheet is magnetic, then force is required to hold the sheet because magnetic pole exert force on sheet. As sheet is conducting, eddy current form which opposes the way by which it is produced, so force is required. As sheet is non-conducting and non-polar, so no magnetization occurs in sheet; hence no force is required.\n- Eddy current are the loops of electrical current induced within conductor by a changing magnetic field. According to Faraday's law of induction, Eddy current flows in closed loops within conductors, in plane perpendicular to the magnetic field. Electric heaters are not based on the eddy current effect. It is based on joule's heating effect. <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//d4bf1e1b-d37e-4f3f-8524-f7dae63e3a0e/markdown_1/imgs/img_in_image_box_1109_886_1158_933.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A40Z%2F-1%2F%2F9066b0ce5934b3229f976c16359663c371852a69332697c14aade5326a197b2c\" alt=\"Image\" width=\"4%\" /></div> <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//d4bf1e1b-d37e-4f3f-8524-f7dae63e3a0e/markdown_2/imgs/img_in_image_box_739_94_1120_280.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A41Z%2F-1%2F%2Facff1505064c3860901bbe08c483d811038e90084d76af1989d68dc509a7d54f\" alt=\"Image\" width=\"32%\" /></div>",
+    "formulas": [],
+    "questionIds": [
+      "d7cc99d4-726a-4fc1-aa2d-179f5c872ffe",
+      "5d4152f3-bfaa-441a-8791-0bc39f2bd23f",
+      "a6dfb70d-8f71-450f-8044-013fd29b695f",
+      "c8bd9156-70c2-48df-94c0-0e95a53fc92c"
+    ],
+    "tags": [
+      "NEET 2019",
+      "NEET 2013",
+      "NEET 2024"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-electromagnetic-induction-faraday-s-law-of-induction",
+    "chapter": "Electromagnetic Induction",
+    "subtopic": "Faraday's Law of Induction",
+    "class": "XII",
+    "unitId": "xii-emi",
+    "unitLabel": "Unit V — Electromagnetic Induction & AC",
+    "order": 19,
+    "title": "Faraday's Law of Induction",
+    "summary": "We know that, Induced emf of coil, $ e = \\left| -\\frac{d\\phi}{dt} \\right|_{t} $ Given that, $$ \\phi=50t^{2}+4\\mathrm{a n d}\\mathrm{R}=400\\Omega $$ $$ \\begin{aligned}e&=\\left|\\frac{-d\\phi}{d…",
+    "body": "**Key points from solved questions**\n- Here, number of turns, (N) = 1000 Radius, (r) = 10 m Magnetic field, (B) = $ 2 \\times 10^{-5} $ T $$ \\mathrm{Resistance},(\\mathrm{R})=12.56\\ \\Omega $$ Angular frequency of coil, $\\omega = 2\\ \\mathrm{rad}\\ \\mathrm{s}^{-1}$ $$ \\begin{aligned}num~induced~emf,&\\mathrm{E}=\\mathrm{N}\\omega\\mathrm{AB}\\\\&=\\mathrm{N}\\omega(\\pi r^{2})\\mathrm{B}\\\\&=1000\\times2\\times3.14\\times(10)^{2}\\times2\\times10^{-5}\\\\&=12.56\\mathrm{V}\\end{aligned} $$ Maximum induced current. $$ \\begin{aligned}I_{max}&=\\frac{E}{R}\\\\&=\\frac{12.56}{12.56}=1A\\end{aligned} $$\n- Given: Magnetic flux, $ (\\phi)=5t^{2}+3t+16 $ Induced emf. $$ \\begin{aligned}|\\mathbf{E}|&=\\frac{d\\phi}{dt}\\\\&=\\frac{d}{dt}(5t^{2}+3t+16)\\\\&=10t+3\\end{aligned} $$ when, $$ t=4\\mathrm{~s}, $$ $$ \\left|\\mathrm{E}_{4}\\right|=(10\\times4)+3=43\\mathrm{~V} $$\n- Here, $$ \\mathrm{N=800\\tau u r n s} $$ $$ A=0.05\\ m^{2}=5\\times10^{-2}\\ m^{2} $$ $$ \\mathbf{B}=5\\times10^{-5}\\mathrm{T} $$ $$ \\Delta t=0.1\\mathrm{~s~} $$ We know that, $$ e_induced=-{}\\frac{\\Delta\\phi}{\\Delta t} $$ $$ \\begin{aligned}\\Delta\\phi&=\\phi_{f}-\\phi_{i}\\\\\\phi_{f}&=0,\\phi_{i}=\\mathbf{N}\\big(\\overrightarrow{\\mathrm{B}}.\\overrightarrow{\\mathrm{A}}\\big)\\\\&=800\\times5\\times10^{-5}\\times5\\times10^{-2}\\\\&=2\\times10^{-3}\\end{aligned} $$ $$ \\begin{aligned}e_{\\mathrm{induced}}=&-\\frac{\\Delta\\phi}{\\Delta t}=\\frac{-(0-2\\times10^{-3})}{0.1}\\\\&=0.02\\mathrm{~V}\\end{aligned} $$\n- We know that induced emf in the region is given by $$ e=-{\\frac{d\\Phi}{d t}}\\quad\\{\\because\\Phi=\\mathrm{B A}=\\pi r^{2}\\mathrm{B} $$ $$ \\because A=\\pi r^{2} $$ $$ \\frac{d\\Phi}{dt}=-\\pi r^{2}\\frac{dB}{dt} $$ From question, Rate of change of magnetic flux associated with loop (1), $$ e_{1}=-\\frac{d\\Phi_{1}}{d t}=-\\pi r^{2}\\frac{d\\Phi}{d t} $$ and Rate of change of magnetic flux associated with loop (2), $$ e_{2}=-\\frac{d\\Phi_{2}}{d t}=0\\qquad\\{\\mathrm{s i n c e}\\;\\Phi_{2}=0\\} $$\n- Rate of decrease of area of semicircular ring $$ =\\frac{\\mathrm{d}\\mathbf{A}}{\\mathrm{d}t}=(\\pi r)\\mathbf{v} $$ From Faraday's law of electromagnetic induction, $$ e = - \\frac{d \\Phi}{d t} = - \\mathbf { B } \\frac{d \\mathbf { A }}{d t} = - \\mathbf { B } ( \\pi r \\mathbf { v}) $$ $$ \\begin{array}{c}\\times\\quad\\times\\quad\\times\\quad\\times\\quad\\times\\quad\\times\\quad\\times\\quad\\times\\\\\\times\\quad\\times\\quad\\times\\quad r\\quad\\times\\quad\\times\\quad\\times\\quad\\times\\quad\\times\\\\\\times\\quad\\times\\quad\\bullet\\quad\\times\\quad\\times\\quad\\times\\quad\\oplus\\\\P\\longleftarrow2r\\longrightarrow R\\quad\\times\\quad\\times\\quad\\times\\quad\\times\\quad\\times\\quad\\times\\end{array} $$ As induced current in the ring produces magnetic field in upward direction, Hence, R is at higher potential.\n- We know that, Induced emf of coil, $ e = \\left| -\\frac{d\\phi}{dt} \\right|_{t} $ Given that, $$ \\phi=50t^{2}+4\\mathrm{a n d}\\mathrm{R}=400\\Omega $$ $$ \\begin{aligned}e&=\\left|\\frac{-d\\phi}{d t}\\right|_{t=2}=[100t]_{t=2}\\\\&=200\\mathrm{~V}\\end{aligned} $$ ∴ Current in the coil, $ I = \\frac{E}{R} = \\frac{200}{400} $ $$ I=0.5A $$ \\[\\begin{array}{r l}{\\mathrm{(B)}~}&{\\mathrm{W e~k n o w~t h a t,}\\phi=\\mathrm{B A}}\\\\ {\\Rightarrow}&{}\\\\ {\\mathrm{E_{i n}}=\\frac{-d\\phi}{d t}}\\\\ {\\Rightarrow}&{\\mathrm{E_{i n}}=-\\frac{d}{d t}(\\mathrm{B A})}\\\\ {\\Rightarrow}&{\\mathrm{E}=-\\mathrm{B}\\pi2r\\frac{d r}{d t}}\\\\ {\\mathrm{E}=\\mathrm{B}\\pi2r\\frac{d r}{d t}}\\\\ {\\mathrm{E}=\\mathrm{E}=\\mathrm{B}\\pi2r\\frac{d r}{d t}}\\\\ {E=\\mathrm{E}=\\mathrm{B}\\pi2r\\frac{d r}{d t}}\\\\ {E=\\mathrm{E}=\\mathrm{B}\\pi2r\\frac{d r}{d t}}\\\\ {E=\\mathrm{E}=\\mathrm{B}\\pi2r\\frac{d r}{d t}}\\\\ {E=\\mathrm{E}=\\mathrm{B}\\pi2r\\frac{d r}{d t\n- As the induced electric field due to change in magnetic field is non-conservative. The work done due to change in flux = QV.\n- Total number of turns, N = 20 Area of coil, $$ \\begin{array}{l} \\text{A} = 25\\ \\text{cm}^2\\\\ = 25 \\times 10^{-4}\\ \\text{m}^2 \\end{array} $$ Change in magnetic field w.r.t. t $$ \\frac{d\\mathbf{B}}{dt}=1000\\mathrm{T/s} $$ Resistance of coil, $ R = 100 \\, \\Omega $ We have, Induced current, $$ i=\\frac{e}{\\mathbf{R}} $$ $$ \\begin{aligned}&=\\frac{NA\\frac{dB}{dt}}{R}\\left[\\because e=NA\\frac{dB}{dt}\\right]\\\\&=\\frac{20\\times25\\times10^{-4}\\times1000}{100}\\\\&=0.5A\\end{aligned} $$\n- When electron goes in straight line, electric flux first increases then decreases.\n- When a circuit is broken, the induced e.m.f. is largest.",
+    "formulas": [
+      {
+        "latex": "\\mathrm{Resistance},(\\mathrm{R})=12.56\\ \\Omega",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}num~induced~emf,&\\mathrm{E}=\\mathrm{N}\\omega\\mathrm{AB}\\\\&=\\mathrm{N}\\omega(\\pi r^{2})\\mathrm{B}\\\\&=1000\\times2\\times3.14\\times(10)^{2}\\times2\\times10^{-5}\\\\&=12.56\\mathrm{V}\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}I_{max}&=\\frac{E}{R}\\\\&=\\frac{12.56}{12.56}=1A\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\omega = 2\\ \\mathrm{rad}\\ \\mathrm{s}^{-1}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}|\\mathbf{E}|&=\\frac{d\\phi}{dt}\\\\&=\\frac{d}{dt}(5t^{2}+3t+16)\\\\&=10t+3\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "t=4\\mathrm{~s},",
+        "meaning": ""
+      },
+      {
+        "latex": "\\left|\\mathrm{E}_{4}\\right|=(10\\times4)+3=43\\mathrm{~V}",
+        "meaning": ""
+      },
+      {
+        "latex": "(\\phi)=5t^{2}+3t+16",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{N=800\\tau u r n s}",
+        "meaning": ""
+      },
+      {
+        "latex": "A=0.05\\ m^{2}=5\\times10^{-2}\\ m^{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{B}=5\\times10^{-5}\\mathrm{T}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\Delta t=0.1\\mathrm{~s~}",
+        "meaning": ""
+      },
+      {
+        "latex": "e_induced=-{}\\frac{\\Delta\\phi}{\\Delta t}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}\\Delta\\phi&=\\phi_{f}-\\phi_{i}\\\\\\phi_{f}&=0,\\phi_{i}=\\mathbf{N}\\big(\\overrightarrow{\\mathrm{B}}.\\overrightarrow{\\mathrm{A}}\\big)\\\\&=800\\times5\\times10^{-5}\\times5\\times10^{-2}\\\\&=2\\times10^{-3}\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}e_{\\mathrm{induced}}=&-\\frac{\\Delta\\phi}{\\Delta t}=\\frac{-(0-2\\times10^{-3})}{0.1}\\\\&=0.02\\mathrm{~V}\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "e=-{\\frac{d\\Phi}{d t}}\\quad\\{\\because\\Phi=\\mathrm{B A}=\\pi r^{2}\\mathrm{B}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\because A=\\pi r^{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{d\\Phi}{dt}=-\\pi r^{2}\\frac{dB}{dt}",
+        "meaning": ""
+      },
+      {
+        "latex": "e_{1}=-\\frac{d\\Phi_{1}}{d t}=-\\pi r^{2}\\frac{d\\Phi}{d t}",
+        "meaning": ""
+      },
+      {
+        "latex": "e_{2}=-\\frac{d\\Phi_{2}}{d t}=0\\qquad\\{\\mathrm{s i n c e}\\;\\Phi_{2}=0\\}",
+        "meaning": ""
+      },
+      {
+        "latex": "=\\frac{\\mathrm{d}\\mathbf{A}}{\\mathrm{d}t}=(\\pi r)\\mathbf{v}",
+        "meaning": ""
+      },
+      {
+        "latex": "e = - \\frac{d \\Phi}{d t} = - \\mathbf { B } \\frac{d \\mathbf { A }}{d t} = - \\mathbf { B } ( \\pi r \\mathbf { v})",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{array}{c}\\times\\quad\\times\\quad\\times\\quad\\times\\quad\\times\\quad\\times\\quad\\times\\quad\\times\\\\\\times\\quad\\times\\quad\\times\\quad r\\quad\\times\\quad\\times\\quad\\times\\quad\\times\\quad\\times\\\\\\times\\quad\\times\\quad\\bullet\\quad\\times\\quad\\times\\quad\\times\\quad\\oplus\\\\P\\longleftarrow2r\\longrightarrow R\\quad\\times\\quad\\times\\quad\\times\\quad\\times\\quad\\times\\quad\\times\\end{array}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\phi=50t^{2}+4\\mathrm{a n d}\\mathrm{R}=400\\Omega",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "f40fb5f7-7d9c-481a-a3ac-5ea88bf612c1",
+      "dbbd5007-387a-4d8f-ace1-b36c3affdc7a",
+      "5bcd4e26-2b41-4553-a9e0-95d83b4c78a7",
+      "e0c6ae72-ea8d-4974-b183-9188416ea8b5",
+      "aa8a4fff-c4f3-49d0-b515-7c7334c38e39",
+      "895814c6-c6ea-47a2-a266-a2a548ff66e6",
+      "6405276c-08fa-407e-8219-49311b6f3fc8",
+      "a0e003c3-d9c3-403d-aab4-4f3fb2272492",
+      "631eb7da-c8b6-437c-b863-808a168156de",
+      "42e7062a-036b-45da-aaf7-bf17ced88e3c",
+      "6039233a-ebf8-43ac-b74a-9449af45b652"
+    ],
+    "tags": [
+      "NEET 2022",
+      "NEET 2020",
+      "NEET 2019",
+      "AIPMT 2014",
+      "AIPMT Screening 2010, 2009",
+      "AIPMT 2005",
+      "NEET 2024",
+      "AIPMT July 2015",
+      "AIPMT 1989"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-electromagnetic-induction-inductance",
+    "chapter": "Electromagnetic Induction",
+    "subtopic": "Inductance",
+    "class": "XII",
+    "unitId": "xii-emi",
+    "unitLabel": "Unit V — Electromagnetic Induction & AC",
+    "order": 19,
+    "title": "Inductance",
+    "summary": "Let current in bigger loop be i.",
+    "body": "**Key points from solved questions**\n- $ \\mathbf{L} = \\mu_0 \\mu_r \\times n \\times \\mathbf{A} \\times \\mathbf{N} $ $ \\mathbf{L} = \\mu_0 \\mu_r n \\times \\mathbf{A} \\times \\frac{\\mathbf{N}}{l} \\times l $ $ \\mathbf{L} = \\mu_0 \\mu_r \\times n^2 \\times \\mathbf{A} \\times l $ $ \\mathbf{L} \\propto n^2 l $ $ \\frac{\\mathbf{L}_{\\mathrm{A}}}{\\mathbf{L}_{\\mathrm{B}}} = \\frac{n_{\\mathrm{A}}^2}{n_{\\mathrm{B}}^2} \\times \\frac{l_{\\mathrm{A}}}{l_{\\mathrm{B}}} $ $ \\mathbf{\\frac{L_{\\mathrm{A}}}{L_{\\mathrm{B}}}} = \\frac{1}{4} \\times 2 = \\frac{1}{2} $\n- As we know that, $ \\mathbf{U} = \\frac{1}{2} \\mathbf{L} \\mathbf{I}^2 $ $ \\mathbf{L} = \\frac{1}{2} \\times 4 \\times 10^{-6} \\times 2 \\times 2 $ $ = 8 \\, \\mu\\mathbf{J} $\n- Let current in bigger loop be i. Magnetic field at the centre, $$ \\mathbf{B}=\\frac{\\mu_{0}i}{2\\mathbf{R}_{1}} $$ Magnetic flux through smaller coil, $$ \\mathbf{\\Phi}\\phi=\\mathbf{B}\\mathbf{A}=\\frac{\\mathbf{\\Phi}\\phi}{i}=\\frac{\\mu_{0}i}{2\\mathbf{R}_{1}}\\times\\mathbf{\\pi}\\mathbf{R}_{2}^{2} $$ $$ \\phi=\\frac{\\mu_{0}\\pi i R_{2}^{2}}{2R_{1}} $$ As per definition, $ \\phi = Mi $ $$ \\mathbf{M}=\\frac{\\phi}{i}=\\frac{\\frac{\\mu_{0}\\pi i\\mathbf{R}_{2}^{2}}{2\\mathbf{R}_{1}}}{i} $$ $$ \\mathbf{M}=\\frac{\\mu_{0}\\pi R_{2}^{2}}{2R_{1}} $$ $$ M\\propto\\frac{R_{2}^{2}}{R_{1}} $$ <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//d4bf1e1b-d37e-4f3f-8524-f7dae63e3a0e/markdown_0/imgs/img_in_image_box_34_1213_61_1258.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A38Z%2F-1%2F%2F09e3722a4c7839cbb75296b0fc166bd7bd225d5a313b0d036760249b485314ec\" alt=\"Image\" width=\"2%\" /></div> ##### Related Theory When an emf is produced in a coil because of change in current in a coupled coil, the effect is called mutual inductance.\n- Given, $$ U=25mJ=25\\times10^{-3}J $$ $$ I=60\\ mA=60\\times10^{-3}\\ A $$ ∴ Energy stored in inductor. $$ \\mathrm{E}=\\frac{1}{2}\\mathrm{~L}\\times\\mathrm{I}^{2} $$ $$ 25\\times10^{-3}=\\frac{1}{2}L\\times(60\\times(10^{-3}))^{2} $$ $$ \\begin{aligned}L&=\\frac{25\\times2\\times10^{6}\\times10^{-3}}{3600}=\\frac{500}{36}\\\\&=13.89Henry\\end{aligned} $$\n- From the question, Number of turns of the solenoid, N = 1000 Current, I = 4 A And magnetic flux, $ \\phi = 4 \\times 10^{-3} $ Wb $ \\therefore $ self induction, $ L = \\frac{\\phi N}{I} $ $ = \\frac{4 \\times 10^{-3} \\times 1000}{4} = 1 \\, \\text{H} $\n- Given: $ \\begin{array}{l} \\text{current I} = 2.5 \\, \\text{A} \\\\ \\text{Inductance, L} = 5 \\, \\text{H} \\\\ \\text{Magnetic flux, } \\phi = ? \\\\ \\text{We know, } \\quad \\phi = \\text{LI} \\\\ \\Rightarrow \\quad = 5 \\times 2.5 \\, \\text{Wb} = 12.5 \\, \\text{Wb} \\end{array} $\n- Mutual inductance between coils is, $$ \\mathbf{M}=k\\sqrt{\\mathbf{L}_{1}\\mathbf{L}_{2}} $$ $$ \\begin{aligned}\\mathrm{M}&=1\\sqrt{2\\times10^{-3}\\times8\\times10^{-3}}&\\quad\\{k=1\\}\\\\&=4\\times10^{-3}=4\\mathrm{~mH}\\end{aligned} $$\n- L = 2 mH, $ i = t^{2} e^{-t} $ $$ \\begin{aligned}\\mathrm{E}&=-L\\frac{d\\boldsymbol{i}}{d t}=-L\\frac{d}{d t}[\\boldsymbol{t}^{2}\\boldsymbol{e}^{-t}]\\\\&=-\\mathrm{L}[-\\boldsymbol{t}^{2}\\boldsymbol{e}^{-t}+2t\\boldsymbol{e}^{-t}]\\end{aligned} $$ when $$ E=0, $$ $$ -e^{-t}t^{2}+2t e^{-t}=0 $$ $$ t e^{-t}(t-2)=0 $$ Here, $ t \\neq \\infty $ and $ t \\neq 0 $ $ \\therefore $ t = 2 s\n- Emf induced in the coil of self-inductance L $$ e=-\\frac{d\\phi}{d t}=-\\frac{d}{d t}(L i) $$ or $$ e=-L\\frac{di}{dt} $$ $$ \\left(\\frac{di}{dt}=\\text{rate of flow of current in coil}\\right) $$ As, $$ di=i_{2}-i_{1}=0-10=-10\\mathrm{A} $$ $$ dt=0.5s $$ $$ e=220\\mathrm{~V} $$ $$ 220=-\\mathrm{L}\\ \\frac{(-10)}{05} $$ or $$ L=\\frac{220}{20}=11H $$\n- A long solenoid is one, whose length is significantly greater than its cross-section radius. If N is the total number of turns in the solenoid, A is the area of each turn and l is the length of the solenoid, then the self-inductance of the solenoid is, $$ \\begin{aligned}\\mathrm{L}&=\\frac{\\mu_{0}\\mathrm{N}^{2}\\mathrm{A}}{l}\\\\\\mathrm{L}&=\\mu_{0}n^{2}\\mathrm{Al}\\end{aligned} $$ (If the number of turns per unit length is $n$) So, $L \\propto n^{2}$ When $n^{2}$ is doubled, L becomes 4 times.",
+    "formulas": [
+      {
+        "latex": "\\mathbf{L} = \\mu_0 \\mu_r \\times n \\times \\mathbf{A} \\times \\mathbf{N}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{L} = \\mu_0 \\mu_r n \\times \\mathbf{A} \\times \\frac{\\mathbf{N}}{l} \\times l",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{L} = \\mu_0 \\mu_r \\times n^2 \\times \\mathbf{A} \\times l",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{\\mathbf{L}_{\\mathrm{A}}}{\\mathbf{L}_{\\mathrm{B}}} = \\frac{n_{\\mathrm{A}}^2}{n_{\\mathrm{B}}^2} \\times \\frac{l_{\\mathrm{A}}}{l_{\\mathrm{B}}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{\\frac{L_{\\mathrm{A}}}{L_{\\mathrm{B}}}} = \\frac{1}{4} \\times 2 = \\frac{1}{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{U} = \\frac{1}{2} \\mathbf{L} \\mathbf{I}^2",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{L} = \\frac{1}{2} \\times 4 \\times 10^{-6} \\times 2 \\times 2",
+        "meaning": ""
+      },
+      {
+        "latex": "= 8 \\, \\mu\\mathbf{J}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{B}=\\frac{\\mu_{0}i}{2\\mathbf{R}_{1}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{\\Phi}\\phi=\\mathbf{B}\\mathbf{A}=\\frac{\\mathbf{\\Phi}\\phi}{i}=\\frac{\\mu_{0}i}{2\\mathbf{R}_{1}}\\times\\mathbf{\\pi}\\mathbf{R}_{2}^{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\phi=\\frac{\\mu_{0}\\pi i R_{2}^{2}}{2R_{1}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{M}=\\frac{\\phi}{i}=\\frac{\\frac{\\mu_{0}\\pi i\\mathbf{R}_{2}^{2}}{2\\mathbf{R}_{1}}}{i}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{M}=\\frac{\\mu_{0}\\pi R_{2}^{2}}{2R_{1}}",
+        "meaning": ""
+      },
+      {
+        "latex": "M\\propto\\frac{R_{2}^{2}}{R_{1}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\phi = Mi",
+        "meaning": ""
+      },
+      {
+        "latex": "U=25mJ=25\\times10^{-3}J",
+        "meaning": ""
+      },
+      {
+        "latex": "I=60\\ mA=60\\times10^{-3}\\ A",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{E}=\\frac{1}{2}\\mathrm{~L}\\times\\mathrm{I}^{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "25\\times10^{-3}=\\frac{1}{2}L\\times(60\\times(10^{-3}))^{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}L&=\\frac{25\\times2\\times10^{6}\\times10^{-3}}{3600}=\\frac{500}{36}\\\\&=13.89Henry\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\phi = 4 \\times 10^{-3}",
+        "meaning": ""
+      },
+      {
+        "latex": "L = \\frac{\\phi N}{I}",
+        "meaning": ""
+      },
+      {
+        "latex": "= \\frac{4 \\times 10^{-3} \\times 1000}{4} = 1 \\, \\text{H}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{array}{l} \\text{current I} = 2.5 \\, \\text{A} \\\\ \\text{Inductance, L} = 5 \\, \\text{H} \\\\ \\text{Magnetic flux, } \\phi = ? \\\\ \\text{We know, } \\quad \\phi = \\text{LI} \\\\ \\Rightarrow \\quad = 5 \\times 2.5 \\, \\text{Wb} = 12.5 \\, \\text{Wb} \\end{array}",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "b7bb91b9-8421-469f-8a80-f9a9ddff91e8",
+      "6d1d6aea-46f2-4edc-897e-fbd9254d14b7",
+      "ecfd0401-6e77-4663-94d6-6c99ee531425",
+      "8a1c9d9f-f1b5-4f71-9d53-53eb1e86e59c",
+      "21f1593c-35e0-48fd-b17b-c8172f9bec72",
+      "4b88e135-a0ec-42bc-a59d-9bda745249c4",
+      "b432b5a8-9382-414a-ba91-eb1e2df8b80e",
+      "bb4670d3-af51-48a7-b808-ebf1e371375c",
+      "bde344c2-d185-4452-be9a-a2bd7adef743",
+      "b7e2cc9f-99e2-483f-a270-587e1f2597ae"
+    ],
+    "tags": [
+      "Re-NEET 2024",
+      "NEET 2023",
+      "NEET 2021",
+      "NEET 2018",
+      "NEET Phase-1 2016",
+      "NEET 2013",
+      "AIPMT 2006",
+      "AIPMT 2001",
+      "AIPMT 1995, 93",
+      "AIPMT 1991"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-electromagnetic-induction-magnetic-flux",
+    "chapter": "Electromagnetic Induction",
+    "subtopic": "Magnetic Flux",
+    "class": "XII",
+    "unitId": "xii-emi",
+    "unitLabel": "Unit V — Electromagnetic Induction & AC",
+    "order": 19,
+    "title": "Magnetic Flux",
+    "summary": "Here, d = 1 m, R = 1 $ \\Omega $, B = 0.5 T, angle, $ \\theta = 0^{\\circ} $ Area of square loop, A = $ d^{2} = 1 \\, m^{2} $ Magnetic flux, $ \\phi = BA \\cos \\theta $ $$ =0.5\\times1\\times\\cos0^{\\circ} $$",
+    "body": "**Key points from solved questions**\n- Here, d = 1 m, R = 1 $ \\Omega $, B = 0.5 T, angle, $ \\theta = 0^{\\circ} $ Area of square loop, A = $ d^{2} = 1 \\, m^{2} $ Magnetic flux, $ \\phi = BA \\cos \\theta $ $$ =0.5\\times1\\times\\cos0^{\\circ} $$",
+    "formulas": [
+      {
+        "latex": "=0.5\\times1\\times\\cos0^{\\circ}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\theta = 0^{\\circ}",
+        "meaning": ""
+      },
+      {
+        "latex": "d^{2} = 1 \\, m^{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\phi = BA \\cos \\theta",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "cca32529-8b52-42ae-bb0c-d1fbd5872249"
+    ],
+    "tags": [
+      "NEET 2022"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-electromagnetic-induction-motional-electromotive-force",
+    "chapter": "Electromagnetic Induction",
+    "subtopic": "Motional Electromotive Force",
+    "class": "XII",
+    "unitId": "xii-emi",
+    "unitLabel": "Unit V — Electromagnetic Induction & AC",
+    "order": 19,
+    "title": "Motional Electromotive Force",
+    "summary": "<div style=\"text-align: center;\"><img…",
+    "body": "**Key points from solved questions**\n- In the question, $$ \\begin{aligned}\\mathbf{B}&=0.4\\mathbf{\\Delta G}=0.4\\times10^{-4}T\\\\l&=1\\mathbf{\\Delta m}\\end{aligned} $$ $$ f=120\\ rpm=\\frac{120}{60}\\ rps=2\\ Hz $$ Induced emf between the axle and rim of the wheel is: $$ \\begin{aligned}&e=\\frac{1}{2}\\mathbf{B}\\omega l^{2}\\\\&=\\frac{1}{2}\\mathbf{B}(2\\pi f)l^{2}=\\pi\\mathbf{B}f l^{2}\\\\&=3.14\\times0.4\\times10^{-4}\\times2\\times1\\\\&=2.51\\times10^{-4}\\mathrm{V}.\\\\ \\end{aligned} $$\n- <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//240112aa-2f94-464c-a50d-7eeeea0d57f9/markdown_4/imgs/img_in_image_box_270_1017_511_1164.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A17%3A10Z%2F-1%2F%2F2e6a26ad5b997dac17ec0edee91879f2eb32133fa2aefcf767ee0f53370a4a55\" alt=\"Image\" width=\"20%\" /></div> According to the question, $$ \\begin{aligned}e&=\\frac{\\mathbf{B}l^{2}\\boldsymbol{\\omega}}{2}\\\\&=\\frac{1}{2}\\bullet0.1\\times\\left(\\frac{1}{2}\\right)^{2}\\times10=\\frac{1}{8}\\\\&=0.125V.\\end{aligned} $$\n- According to the question on induced emf is: $$ \\begin{aligned} \\mathrm{V} &= \\frac{\\Delta \\phi}{\\Delta t} \\\\ \\text{and current, } \\mathrm{I} &= \\frac{\\mathrm{Q}}{\\Delta t} = \\frac{\\Delta \\phi}{\\Delta t} \\times \\frac{1}{\\mathrm{R}} \\\\ \\Rightarrow \\quad \\mathrm{Q} &= \\frac{\\Delta \\phi}{\\mathrm{R}} \\end{aligned} $$\n- Given, length of conductor (l) = 0.4 m, $$ \\mathrm{speed}(\\mathbf{v})=7\\mathrm{~m/s} $$ $$ (B)=0.9\\ Wb/m^{2} $$ $$ \\begin{aligned}[\\theta=90^{\\circ}]\\text{as B is perpendicular to v}]\\\\=0.9\\times0.4\\times7\\times\\sin90^{\\circ}\\\\=2.52\\text{V}\\end{aligned} $$ ##### Related Theory Magnitude of induced emf is directly proportional to the relative speed of coil magnet system.",
+    "formulas": [
+      {
+        "latex": "\\begin{aligned}\\mathbf{B}&=0.4\\mathbf{\\Delta G}=0.4\\times10^{-4}T\\\\l&=1\\mathbf{\\Delta m}\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "f=120\\ rpm=\\frac{120}{60}\\ rps=2\\ Hz",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}&e=\\frac{1}{2}\\mathbf{B}\\omega l^{2}\\\\&=\\frac{1}{2}\\mathbf{B}(2\\pi f)l^{2}=\\pi\\mathbf{B}f l^{2}\\\\&=3.14\\times0.4\\times10^{-4}\\times2\\times1\\\\&=2.51\\times10^{-4}\\mathrm{V}.\\\\ \\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}e&=\\frac{\\mathbf{B}l^{2}\\boldsymbol{\\omega}}{2}\\\\&=\\frac{1}{2}\\bullet0.1\\times\\left(\\frac{1}{2}\\right)^{2}\\times10=\\frac{1}{8}\\\\&=0.125V.\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned} \\mathrm{V} &= \\frac{\\Delta \\phi}{\\Delta t} \\\\ \\text{and current, } \\mathrm{I} &= \\frac{\\mathrm{Q}}{\\Delta t} = \\frac{\\Delta \\phi}{\\Delta t} \\times \\frac{1}{\\mathrm{R}} \\\\ \\Rightarrow \\quad \\mathrm{Q} &= \\frac{\\Delta \\phi}{\\mathrm{R}} \\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{speed}(\\mathbf{v})=7\\mathrm{~m/s}",
+        "meaning": ""
+      },
+      {
+        "latex": "(B)=0.9\\ Wb/m^{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}[\\theta=90^{\\circ}]\\text{as B is perpendicular to v}]\\\\=0.9\\times0.4\\times7\\times\\sin90^{\\circ}\\\\=2.52\\text{V}\\end{aligned}",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "11029721-2800-404d-95e2-f4d3b09e6dda",
+      "19f10acf-04a6-4710-9646-3a5ef090a8c0",
+      "28c62a0e-2130-4914-a0a9-e931b4ea8582",
+      "7fa52363-51cc-403c-a9bc-4e38343c8cb8"
+    ],
+    "tags": [
+      "NEET 2020",
+      "NEET 2019",
+      "AIPMT 2004",
+      "AIPMT 1995"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-electromagnetic-induction-objective-i",
+    "chapter": "Electromagnetic Induction",
+    "subtopic": "Objective I",
+    "class": "XII",
+    "unitId": "xii-emi",
+    "unitLabel": "Unit V — Electromagnetic Induction & AC",
+    "order": 19,
+    "title": "Objective I",
+    "summary": "EMF $= d\\Phi/dt$.",
+    "body": "**Key points from solved questions**\n- **Faraday's law**: $$\\mathcal{E} = -\\frac{d\\Phi_B}{dt}$$ The induced EMF equals the **negative rate of change** of magnetic flux through the circuit. The negative sign is Lenz's law (induced EMF opposes the cause). The magnitude: $|\\mathcal{E}| = |d\\Phi_B/dt|$. For $N$ turns: $\\mathcal{E} = -N\\,d\\Phi_B/dt$. Answer: (B).\n- **Lenz's law**: the induced current always flows in a direction that **opposes the change in flux** that caused it. This is a consequence of conservation of energy — if induced current reinforced the change, energy would be created from nothing. Lenz's law accounts for the minus sign in Faraday's law: $\\mathcal{E} = -d\\Phi/dt$. Answer: (B).\n- EMF $= d\\Phi/dt$. Flux change occurs only when the loop is **partially inside** the field (entering or leaving). Once fully inside a **uniform** field, $\\Phi = BA = $ constant → $d\\Phi/dt = 0$ → EMF = 0. At the edges (entering/leaving), flux changes at rate $Bvl$ (where $v$ is velocity, $l$ is the loop width) → constant non-zero EMF during these phases. Answer: (C).\n- Self-inductance $L$ can be defined equivalently as: $$\\Phi = LI \\implies L = \\frac{\\Phi}{I} \\quad \\text{(option B)}$$ $$\\mathcal{E} = -L\\frac{dI}{dt} \\implies L = -\\frac{\\mathcal{E}}{dI/dt} \\implies |L| = \\frac{|\\mathcal{E}|}{|dI/dt|} \\quad \\text{(option A)}$$ Both definitions are consistent and correct. Answer: (D).\n- Energy is stored in the magnetic field of the inductor: $$U = \\int_0^I L i\\,di = \\frac{1}{2}LI^2$$ This is analogous to $U = \\frac{1}{2}CV^2$ for a capacitor. The energy is stored in the magnetic field and can be recovered when the current decreases. Answer: (C).\n- A rod moving with velocity $v$ perpendicular to field $B$ and to its own length $L$: Each charge $q$ in the rod experiences force $qvB$ (Lorentz force). This force separates charges until equilibrium: $$\\mathcal{E} = \\int_0^L (v\\times B)\\cdot dl = vBL$$ The motional EMF $= BLv$. Answer: (B).\n- **Eddy currents** are circulating currents induced in bulk conductors exposed to a **changing** magnetic flux (by Faraday's law). They flow in closed loops within the conductor. Applications: induction heating, magnetic braking, metal detectors. They cause energy loss (heating) in transformers, which is minimised by using laminated cores. Answer: (B).",
+    "formulas": [
+      {
+        "latex": "\\mathcal{E} = -\\frac{d\\Phi_B}{dt}",
+        "meaning": ""
+      },
+      {
+        "latex": "|\\mathcal{E}| = |d\\Phi_B/dt|",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathcal{E} = -N\\,d\\Phi_B/dt",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathcal{E} = -d\\Phi/dt",
+        "meaning": ""
+      },
+      {
+        "latex": "= d\\Phi/dt",
+        "meaning": ""
+      },
+      {
+        "latex": "\\Phi = BA =",
+        "meaning": ""
+      },
+      {
+        "latex": "d\\Phi/dt = 0",
+        "meaning": ""
+      },
+      {
+        "latex": "\\Phi = LI \\implies L = \\frac{\\Phi}{I} \\quad \\text{(option B)}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathcal{E} = -L\\frac{dI}{dt} \\implies L = -\\frac{\\mathcal{E}}{dI/dt} \\implies |L| = \\frac{|\\mathcal{E}|}{|dI/dt|} \\quad \\text{(option A)}",
+        "meaning": ""
+      },
+      {
+        "latex": "U = \\int_0^I L i\\,di = \\frac{1}{2}LI^2",
+        "meaning": ""
+      },
+      {
+        "latex": "U = \\frac{1}{2}CV^2",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathcal{E} = \\int_0^L (v\\times B)\\cdot dl = vBL",
+        "meaning": ""
+      },
+      {
+        "latex": "= BLv",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "edb1df85-9a52-4703-99f1-4ae75a11578f",
+      "0585668f-a9f4-4b29-a9f2-293a4667c9f1",
+      "d5642e2d-3fff-4350-ad82-75b9d37c88a6",
+      "5e466eab-9172-4ae6-9ef5-e472610c1e51",
+      "1ae3e5e5-5345-4b9f-ba99-b8afe9bd1a66",
+      "644bf6fe-f202-4558-b58b-d75dcdce820b",
+      "85efaf24-0c93-4944-9566-400f7cf0ade6"
+    ],
+    "tags": [
+      "HC Verma Vol 2",
+      "Objective I",
+      "Chapter 38"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-electromagnetic-induction-objective-ii",
+    "chapter": "Electromagnetic Induction",
+    "subtopic": "Objective II",
+    "class": "XII",
+    "unitId": "xii-emi",
+    "unitLabel": "Unit V — Electromagnetic Induction & AC",
+    "order": 19,
+    "title": "Objective II",
+    "summary": "- **A** ✓: Eddy currents induced in the conducting tube create a magnetic field opposing the falling magnet's field → retarding force (magnetic braking).",
+    "body": "**Key points from solved questions**\n- - **A** ✓: AC generators convert mechanical rotation into alternating EMF via changing flux through a coil. - **B** ✓: Transformers use mutual induction to step up/down voltage in AC circuits. - **C** ✓: Induction cookers use high-frequency alternating fields to induce eddy currents in the cooking vessel, heating it directly. - **D** ✗: Permanent magnets are a static magnetic phenomenon; their creation may involve induction processes but the magnet itself operates on its own static field. Answer: (A), (B), (C).\n- - **A** ✓: Eddy currents induced in the conducting tube create a magnetic field opposing the falling magnet's field → retarding force (magnetic braking). - **B** ✓: Direct statement of Lenz's law. - **C** ✗: Electromagnetic induction is entirely consistent with (and required by) energy conservation — induced currents must do work against the external agent that changes the flux. - **D** ✓: Eddy currents in the moving plate create a retarding force opposing motion (used in electromagnetic brakes, dampers). Answer: (A), (B), (D).\n- For a solenoid: $L = \\mu_0 \\mu_r n^2 V = \\mu_0 \\mu_r (N/l)^2 (Al) = \\mu_0 \\mu_r N^2 A/l$. - **A** ✓: $L \\propto N^2$. - **B** ✓: $L \\propto 1/l$ (shorter solenoid → higher inductance for fixed $N$, $A$). - **C** ✓: $L \\propto A$ (cross-sectional area). - **D** ✓: $L \\propto \\mu_r$ (inserting a ferromagnetic core with $\\mu_r \\gg 1$ greatly increases $L$). Answer: (A), (B), (C), (D).",
+    "formulas": [
+      {
+        "latex": "L = \\mu_0 \\mu_r n^2 V = \\mu_0 \\mu_r (N/l)^2 (Al) = \\mu_0 \\mu_r N^2 A/l",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "9954acee-c49b-405b-b09c-7491ccfb256d",
+      "a5d173f0-0f06-4d61-9c64-11a2abf70900",
+      "c0f9c85d-e103-4aa8-87b9-4838f0082f2d"
+    ],
+    "tags": [
+      "HC Verma Vol 2",
+      "Objective II",
+      "Chapter 38"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-electromagnetic-induction-reneet2026",
+    "chapter": "Electromagnetic Induction",
+    "subtopic": "reNEET2026",
+    "class": "XII",
+    "unitId": "xii-emi",
+    "unitLabel": "Unit V — Electromagnetic Induction & AC",
+    "order": 19,
+    "title": "reNEET2026",
+    "summary": "emf $=-d\\Phi/dt\\propto dA/dt\\propto\\cos t$; $P=\\text{emf}^2/R\\propto\\cos^2 t$, which is maximum at $t=0$ and touches zero every half period.",
+    "body": "**Key points from solved questions**\n- In P the inductors add (series), $E_P=-L\\,dI/dt$; in Q they combine in parallel, $E_Q=-\\tfrac{L}{2}\\,dI/dt$. Hence $E_P/E_Q=2$.\n- $L=\\mu_0 n^2 (\\pi r^2) l=\\mu_0\\pi n^2 r^2 l.$\n- emf $=-d\\Phi/dt\\propto dA/dt\\propto\\cos t$; $P=\\text{emf}^2/R\\propto\\cos^2 t$, which is maximum at $t=0$ and touches zero every half period.",
+    "formulas": [
+      {
+        "latex": "E_P=-L\\,dI/dt",
+        "meaning": ""
+      },
+      {
+        "latex": "E_Q=-\\tfrac{L}{2}\\,dI/dt",
+        "meaning": ""
+      },
+      {
+        "latex": "E_P/E_Q=2",
+        "meaning": ""
+      },
+      {
+        "latex": "L=\\mu_0 n^2 (\\pi r^2) l=\\mu_0\\pi n^2 r^2 l.",
+        "meaning": ""
+      },
+      {
+        "latex": "=-d\\Phi/dt\\propto dA/dt\\propto\\cos t",
+        "meaning": ""
+      },
+      {
+        "latex": "P=\\text{emf}^2/R\\propto\\cos^2 t",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "renet2026-phy-03",
+      "renet2026-phy-05",
+      "renet2026-phy-32"
+    ],
+    "tags": [
+      "reNEET 2026"
+    ],
+    "source": "seed"
+  }
+]

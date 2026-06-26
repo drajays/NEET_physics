@@ -1,0 +1,842 @@
+[
+  {
+    "id": "note-kinetic-theory-behaviour-of-gases",
+    "chapter": "Kinetic Theory",
+    "subtopic": "Behaviour of Gases",
+    "class": "XI",
+    "unitId": "xi-kinetic",
+    "unitLabel": "Unit IX — Behaviour of Perfect Gas",
+    "order": 11,
+    "title": "Behaviour of Gases",
+    "summary": "At STP, T = 273 K, P = 10^{5} N/m^{2} Number of moles of water, $ n = \\frac{\\text{mass of water}}{\\text{molecular weight of water}} $ $ =\\frac{4.5}{1.8\\times10^{-2}}=250 $ Using equation, PV = nRT $ \\Rightarrow $ $…",
+    "body": "**Key points from solved questions**\n- According to Charlie's law $ V \\propto T $ <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//6b55f64b-cbb3-478c-9297-acf5673aa92a/markdown_2/imgs/img_in_image_box_253_877_403_1033.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A23Z%2F-1%2F%2F96f69f2b33343cebc1258df183f831c27b577c3847283cab6ee744ea809edba7\" alt=\"Image\" width=\"12%\" /></div> $$ \\therefore\\mathbf{P}_{1}>\\mathbf{P}_{2}>\\mathbf{P}_{3} $$\n- At STP, T = 273 K, P = 10^{5} N/m^{2} Number of moles of water, $ n = \\frac{\\text{mass of water}}{\\text{molecular weight of water}} $ $ =\\frac{4.5}{1.8\\times10^{-2}}=250 $ Using equation, PV = nRT $ \\Rightarrow $ $ \\frac{nRT}{P}=\\frac{250\\times8.3\\times273}{10^{5}} $ = 5.6 m³ B) If, m = mass of gas V = Volume of gas ∴ Pressure. $$ \\rho=\\mathrm{\\frac{m}{V}}=Density~of~gas $$ $$ \\begin{array}{l}\\mathrm{P}=\\frac{1}{3}\\rho V_{\\mathrm{rms}}^{2}\\\\ \\\\ =\\frac{1}{3}\\rho\\frac{3RT}{\\mathrm{M}_{0}}\\\\ \\\\ =\\frac{\\rho RT}{\\mathrm{M}_{0}}\\end{array} $$ $$ \\rho=\\frac{\\mathrm{P M}_{0}}{\\mathrm{R T}}=\\frac{\\mathrm{P}m\\mathrm{N}_{\\mathrm{A}}}{\\mathrm{K N}_{\\mathrm{A}}\\mathrm{T}} $$ $$ \\rho=\\frac{\\mathrm{P}m}{\\mathrm{KT}} $$\n- As we know, $$ \\mathbf{P}\\mathbf{V}=n\\mathbf{R}\\mathbf{T} $$ $$ \\frac{\\mathbf{V}}{\\mathbf{T}}=\\frac{n\\mathbf{R}}{\\mathbf{P}} $$ The slope of the graph $\\propto\\frac{1}{P}$. So, it is evident from the graph that $P_{2}$ will be smaller as compared to $P_{1}$.\n- Using equation, $$ \\mathbf{P}\\mathbf{V}=n\\mathbf{R}\\mathbf{T} $$ or $$ \\frac{\\mathbf{P V}}{\\mathbf{M}}=\\frac{1}{\\mathbf{M}_{0}}\\mathbf{R T} $$ or $$ \\frac{\\mathbf{P}}{\\rho}=\\frac{\\mathbf{R}\\mathbf{T}}{\\mathbf{M}_{0}} $$ $$ x=\\frac{\\rho}{\\mathrm{P}}=\\frac{\\mathrm{M}}{\\mathrm{RT}} $$ $$ \\mathrm{\\frac{\\rho}{p}}\\propto\\frac{1}{\\mathrm{T}} $$ So. $$ \\frac{x_{2}}{x_{1}}=\\frac{T_{1}}{T_{2}}=\\frac{273+10}{273+110}=\\frac{283}{383} $$ or $$ x_{2}=\\frac{283}{383}x_{1} $$\n- We know that. $$ PV=nRT $$ $$ n=\\frac{m}{molecular mass}=\\frac{5}{32} $$ $$ \\mathbf{PV}=\\left(\\frac{5}{32}\\right)\\mathbf{RT} $$\n- According to Dalton's law of partial pressure, the total pressure exerted by a mixture of gases that do not interact with each other is equal to the sum of the partial pressures that each would impose, if alone occupied the same volume at the given temperature. When various gases are combined in one container, the mixture's pressure P will be; $$ \\mathbf{P}=\\mathbf{P}_{1}+\\mathbf{P}_{2}+\\mathbf{P}_{3} $$",
+    "formulas": [
+      {
+        "latex": "\\therefore\\mathbf{P}_{1}>\\mathbf{P}_{2}>\\mathbf{P}_{3}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\rho=\\mathrm{\\frac{m}{V}}=Density~of~gas",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{array}{l}\\mathrm{P}=\\frac{1}{3}\\rho V_{\\mathrm{rms}}^{2}\\\\ \\\\ =\\frac{1}{3}\\rho\\frac{3RT}{\\mathrm{M}_{0}}\\\\ \\\\ =\\frac{\\rho RT}{\\mathrm{M}_{0}}\\end{array}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\rho=\\frac{\\mathrm{P M}_{0}}{\\mathrm{R T}}=\\frac{\\mathrm{P}m\\mathrm{N}_{\\mathrm{A}}}{\\mathrm{K N}_{\\mathrm{A}}\\mathrm{T}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\rho=\\frac{\\mathrm{P}m}{\\mathrm{KT}}",
+        "meaning": ""
+      },
+      {
+        "latex": "n = \\frac{\\text{mass of water}}{\\text{molecular weight of water}}",
+        "meaning": ""
+      },
+      {
+        "latex": "=\\frac{4.5}{1.8\\times10^{-2}}=250",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{nRT}{P}=\\frac{250\\times8.3\\times273}{10^{5}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{P}\\mathbf{V}=n\\mathbf{R}\\mathbf{T}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{\\mathbf{V}}{\\mathbf{T}}=\\frac{n\\mathbf{R}}{\\mathbf{P}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{\\mathbf{P V}}{\\mathbf{M}}=\\frac{1}{\\mathbf{M}_{0}}\\mathbf{R T}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{\\mathbf{P}}{\\rho}=\\frac{\\mathbf{R}\\mathbf{T}}{\\mathbf{M}_{0}}",
+        "meaning": ""
+      },
+      {
+        "latex": "x=\\frac{\\rho}{\\mathrm{P}}=\\frac{\\mathrm{M}}{\\mathrm{RT}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{\\frac{\\rho}{p}}\\propto\\frac{1}{\\mathrm{T}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{x_{2}}{x_{1}}=\\frac{T_{1}}{T_{2}}=\\frac{273+10}{273+110}=\\frac{283}{383}",
+        "meaning": ""
+      },
+      {
+        "latex": "x_{2}=\\frac{283}{383}x_{1}",
+        "meaning": ""
+      },
+      {
+        "latex": "PV=nRT",
+        "meaning": ""
+      },
+      {
+        "latex": "n=\\frac{m}{molecular mass}=\\frac{5}{32}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{PV}=\\left(\\frac{5}{32}\\right)\\mathbf{RT}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{P}=\\mathbf{P}_{1}+\\mathbf{P}_{2}+\\mathbf{P}_{3}",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "df7daa72-76a7-4264-bd21-fb1f006471a4",
+      "e1dab329-6409-4ec4-8321-226e7da48c5a",
+      "cb42d974-5035-41e9-ae5a-9f75f8c2b867",
+      "031ef796-df4f-42bb-b0c9-d157e2b882f4",
+      "8f25c431-feaa-4721-9252-0e674de5e520",
+      "ef864106-b86e-430d-921b-3ef00f144a2c",
+      "84236555-dc38-4a69-857d-de6df77ace0d"
+    ],
+    "tags": [
+      "NEET 2024",
+      "NEET 2022",
+      "NEET Phase-II 2016",
+      "NEET 2013",
+      "AIPMT Screening 2008",
+      "AIPMT 2004"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-kinetic-theory-kinetic-theory-of-an-ideal-gas",
+    "chapter": "Kinetic Theory",
+    "subtopic": "Kinetic Theory of an Ideal Gas",
+    "class": "XI",
+    "unitId": "xi-kinetic",
+    "unitLabel": "Unit IX — Behaviour of Perfect Gas",
+    "order": 11,
+    "title": "Kinetic Theory of an Ideal Gas",
+    "summary": "We have, pressure exerted by gas molecules, $$ \\mathrm{P}=\\frac{1}{3}\\rho\\mathrm{\\bf~v}^{-2} $$ where, $ \\underline{\\rho}= $ density of gas or $$ \\mathrm{P}=\\frac{2}{3}n.\\ \\frac{1}{2}m\\mathrm{v}^{-2} $$ Here, $…",
+    "body": "**Key points from solved questions**\n- $$ \\begin{aligned}\\mathbf{v}_{rms}&\\propto\\sqrt{\\mathrm{T}}\\\\\\frac{(\\mathbf{v}_{rms})_{2}}{(\\mathbf{v}_{rms})_{1}}&=\\sqrt{\\frac{\\mathrm{T}_{2}}{\\mathrm{T}_{1}}}\\\\4&=\\sqrt{\\frac{\\mathrm{T}_{2}}{273-50}}\\\\16&=\\frac{\\mathrm{T}_{2}}{223}\\\\\\mathrm{T}_{2}&=3568\\mathrm{~K}\\\\\\mathrm{T}_{2}&=3568-273\\\\&=3295^{\\circ}\\mathrm{C}\\end{aligned} $$\n- Ideal gas equation is given by: $$ PV=nRT $$ $$ \\mathbf{PV}=\\frac{m}{\\mathbf{M}}RT $$ $$ \\mathbf{P}=\\frac{m}{\\mathbf{V}}\\left(\\frac{\\mathbf{R}\\mathbf{T}}{\\mathbf{M}_{0}}\\right) $$ $$ \\mathbf{P}=\\rho\\left(\\frac{\\mathbf{R}\\mathbf{T}}{\\mathbf{M}_{0}}\\right) $$ $$ \\uprho=\\frac{m}{\\mathbf{v}} $$ Where, $ \\rho $ and $ M_{0} $ are mass density and molar mass respectively. <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//6b55f64b-cbb3-478c-9297-acf5673aa92a/markdown_3/imgs/img_in_image_box_561_279_598_324.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A25Z%2F-1%2F%2F359d2dfee82c172daf989df458763ca78605056b2095d33ad7a6b30b5cec66bd\" alt=\"Image\" width=\"3%\" /></div> ##### Related Theory Specific heat is the amount of heat needed to raise the temperature of 1 kg of a material by $ 1^{\\circ} $C.\n- The average thermal energy of the system with degree of freedom f is equal to its average energy, i.e., Average thermal energy = $ \\frac{f}{2} $ K_{B}T For monoatomic gas, f = 3. $\\therefore$ Average thermal energy = $\\frac{3}{2}$ K_{B}T Where, $ K_{B} = \\text{Boltzmann constant} $. and T = absolute temperature.\n- Increase in temperature of a gas filled in a container lead to increase in its kinetic energy.\n- Given: $$ \\mathrm{K_{B}=1.38\\times10^{-23}~J K^{-1}} $$ $$ m=2.76\\times10^{-26}g $$ Escape Velocity, $$ \\mathrm{v}_{e}=\\sqrt{\\frac{2\\mathrm{G M}}{\\mathrm{R}}}=\\sqrt{2g\\mathrm{R}} $$ ∴ $$ \\begin{aligned}v_{e}&=\\sqrt{2\\times9.8\\times6.4\\times10^{6}}\\\\&=11.2\\ km s^{-1}=11200\\ m s^{-1}\\end{aligned} $$ [Since, radius of earth R = 6.4 × 10^6 m] So, at temperature T, it attains escape velocity ∴ $$ \\mathbf{v}_{e}=\\sqrt{\\frac{3\\mathbf{K_{B}}T}{m}} $$ $$ 11200=\\sqrt{\\frac{3\\mathrm{K_{B}}T}{m}} $$ ∴ $$ \\mathrm{T}=\\frac{(11.2\\times10^{3})^{2}\\times2.76\\times10^{-26}}{3\\times1.38\\times10^{-23}} $$ $$ \\mathrm{T}=8.360\\times10^{4}\\mathrm{~K} $$\n- Given, $$ \\mathrm{v}_{\\mathrm{rms}}=200\\mathrm{~ms}^{-1},\\mathrm{~T}_{1}=300\\mathrm{~K},\\mathrm{P}_{1}=10^{5}\\mathrm{~N}/\\mathrm{m}^{2} $$ $$ \\mathrm{T}_{2}=400\\mathrm{~K},\\mathrm{P}_{2}=0.05\\times10^{5}\\mathrm{~N}/\\mathrm{m} $$ We know that. $$ \\mathrm{v}_{\\mathrm{rms}}=\\sqrt{\\frac{3\\mathrm{K}_{\\mathrm{B}}\\mathrm{T}}{m}} $$ $$ \\mathbf{v}_{\\mathrm{r m s}}\\propto\\sqrt{\\mathrm{T}} $$ $$ \\begin{array}{l}\\therefore\\quad\\frac{\\mathrm{v}_{27}}{\\mathrm{v}_{127}}=\\sqrt{\\frac{27+273}{127+273}}=\\sqrt{\\frac{300}{400}}=\\frac{\\sqrt{3}}{2}\\\\\\Rightarrow\\quad\\mathrm{v}_{\\text{rms}}=\\frac{200\\times2}{\\sqrt{3}}\\mathrm{~m/s}=\\frac{400}{\\sqrt{3}}\\mathrm{~m/s}\\end{array} $$\n- The equation of pressure is, $$ \\mathrm{P}=\\frac{1}{3}\\frac{m\\mathrm{N}}{\\mathrm{V}}\\mathrm{v}_{\\mathrm{rms}}^{2} $$ where, $m = \\text{mass of each molecule}$ N = number of molecules V = volume of the gas According to the question: Mass of all molecules is halved and velocity is doubled then $$ \\begin{array}{l}\\mathrm{P}^{\\prime}=\\frac{1}{3}\\left(\\frac{m}{2}\\right)\\times\\frac{\\mathrm{N}}{\\mathrm{V}}\\times\\left(2\\mathrm{v}_{\\text{rms}}\\right)^{2}\\\\ &=\\frac{2}{3}\\frac{m\\mathrm{N}}{\\mathrm{V}}\\mathrm{v}_{\\text{rms}}^{2}\\\\&=2\\times\\frac{1}{3}\\frac{m\\mathrm{N}}{\\mathrm{V}}\\mathrm{v}_{\\text{rms}}^{2}\\\\&=2\\mathrm{P}\\end{array} $$ Compare with eq (i), $$ \\mathbf{P}^{\\prime}=2\\mathbf{P} $$\n- The square root of the mean of the squares of the random velocities of individual molecules in a gas is defined as rms speed. rms speed is calculated by using the Maxwell distribution law, $$ \\mathrm{C}_{\\mathrm{rms}}=\\sqrt{\\left(\\frac{3\\mathrm{KT}}{m}\\right)} $$ $$ \\mathrm{C_{r m s}}\\propto\\sqrt{\\mathrm{T}} $$ For two different cases i.e. at two different temperatures, $$ \\frac{\\left(C_{rms}\\right)_{1}}{\\left(C_{rms}\\right)_{2}}=\\sqrt{\\frac{T_{1}}{T_{2}}} $$ Here, $$ \\mathrm{T}_{1}=27^{\\circ}\\mathrm{C}=300\\mathrm{~K} $$ $$ \\mathrm{T}_{2}=927^{\\circ}\\mathrm{C}=1200\\mathrm{K} $$ $$ \\begin{aligned}&\\therefore\\quad\\frac{\\left(C_{rms}\\right)_{1}}{\\left(C_{rms}\\right)_{2}}=\\sqrt{\\frac{300}{1200}}=\\frac{1}{2}\\\\ &\\Rightarrow\\quad(C_{rms})_{2}=2(C_{rms})_{1}\\\\ &Hence,rms speed will be double.\\\\ \\end{aligned} $$\n- We have, pressure exerted by gas molecules, $$ \\mathrm{P}=\\frac{1}{3}\\rho\\mathrm{\\bf~v}^{-2} $$ where, $ \\underline{\\rho}= $ density of gas or $$ \\mathrm{P}=\\frac{2}{3}n.\\ \\frac{1}{2}m\\mathrm{v}^{-2} $$ Here, $ \\frac{1}{2} m\\overline{v}^{2} = $ average kinetic energy of a gas molecule ( $ \\overline{KE} $) Therefore, $$ \\mathrm{P}=\\frac{2}{3}n\\overline{\\mathrm{KE}} $$ If the total number of gas molecules in volume V is N then, No. of gas molecules per unit volume, $$ n=\\frac{\\mathbf{N}}{\\mathbf{V}} $$ ： $$ \\mathrm{P}=\\frac{2}{3}.\\ \\frac{\\mathrm{N}}{\\mathrm{V}}\\left(\\frac{1}{2}m\\mathrm{v}^{2}\\right) $$ or $$ \\mathrm{PV}=\\frac{2}{3}\\mathrm{N}(\\overline{\\mathrm{KE}})\\left[\\mathrm{KE}=\\frac{1}{2}mv^{2}\\right] $$ Also, from eq. (i), $$ \\mathrm{PV}=\\frac{2}{3}\\cdot\\frac{1}{2}\\rho\\mathrm{v}^{2} $$ Here, $ \\frac{1}{2} \\rho \\overline{v}^{2} = $ average kinetic energy of the gas per unit volume. Therefore, $$ \\mathrm{P}=\\frac{2}{3}\\mathrm{E} $$\n- According to kinetic theory of gases, the pressure P exerted by one mole of an ideal gas, $$ \\mathbf{P}=\\frac{1}{3}\\frac{\\mathbf{M}}{\\mathbf{V}}c^{2} $$ or $$ PV=\\frac{1}{3}M c^{2} $$ or $$ \\frac{1}{3}\\mathbf{M}c^{2}=\\mathbf{R}\\mathbf{T} $$ where, c is root mean square velocity of gas. $$ \\mathrm{T}=0,c=0 $$ Hence, the absolute zero temperature can be defined as the temperature at which the root mean square velocity of the gas molecules falls to zero. At absolute zero temperature, the molecular motion comes to a stop.",
+    "formulas": [
+      {
+        "latex": "\\begin{aligned}\\mathbf{v}_{rms}&\\propto\\sqrt{\\mathrm{T}}\\\\\\frac{(\\mathbf{v}_{rms})_{2}}{(\\mathbf{v}_{rms})_{1}}&=\\sqrt{\\frac{\\mathrm{T}_{2}}{\\mathrm{T}_{1}}}\\\\4&=\\sqrt{\\frac{\\mathrm{T}_{2}}{273-50}}\\\\16&=\\frac{\\mathrm{T}_{2}}{223}\\\\\\mathrm{T}_{2}&=3568\\mathrm{~K}\\\\\\mathrm{T}_{2}&=3568-273\\\\&=3295^{\\circ}\\mathrm{C}\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "PV=nRT",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{PV}=\\frac{m}{\\mathbf{M}}RT",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{P}=\\frac{m}{\\mathbf{V}}\\left(\\frac{\\mathbf{R}\\mathbf{T}}{\\mathbf{M}_{0}}\\right)",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{P}=\\rho\\left(\\frac{\\mathbf{R}\\mathbf{T}}{\\mathbf{M}_{0}}\\right)",
+        "meaning": ""
+      },
+      {
+        "latex": "\\uprho=\\frac{m}{\\mathbf{v}}",
+        "meaning": ""
+      },
+      {
+        "latex": "K_{B} = \\text{Boltzmann constant}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{K_{B}=1.38\\times10^{-23}~J K^{-1}}",
+        "meaning": ""
+      },
+      {
+        "latex": "m=2.76\\times10^{-26}g",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{v}_{e}=\\sqrt{\\frac{2\\mathrm{G M}}{\\mathrm{R}}}=\\sqrt{2g\\mathrm{R}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}v_{e}&=\\sqrt{2\\times9.8\\times6.4\\times10^{6}}\\\\&=11.2\\ km s^{-1}=11200\\ m s^{-1}\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{v}_{e}=\\sqrt{\\frac{3\\mathbf{K_{B}}T}{m}}",
+        "meaning": ""
+      },
+      {
+        "latex": "11200=\\sqrt{\\frac{3\\mathrm{K_{B}}T}{m}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{T}=\\frac{(11.2\\times10^{3})^{2}\\times2.76\\times10^{-26}}{3\\times1.38\\times10^{-23}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{T}=8.360\\times10^{4}\\mathrm{~K}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{v}_{\\mathrm{rms}}=200\\mathrm{~ms}^{-1},\\mathrm{~T}_{1}=300\\mathrm{~K},\\mathrm{P}_{1}=10^{5}\\mathrm{~N}/\\mathrm{m}^{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{T}_{2}=400\\mathrm{~K},\\mathrm{P}_{2}=0.05\\times10^{5}\\mathrm{~N}/\\mathrm{m}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{v}_{\\mathrm{rms}}=\\sqrt{\\frac{3\\mathrm{K}_{\\mathrm{B}}\\mathrm{T}}{m}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{v}_{\\mathrm{r m s}}\\propto\\sqrt{\\mathrm{T}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{array}{l}\\therefore\\quad\\frac{\\mathrm{v}_{27}}{\\mathrm{v}_{127}}=\\sqrt{\\frac{27+273}{127+273}}=\\sqrt{\\frac{300}{400}}=\\frac{\\sqrt{3}}{2}\\\\\\Rightarrow\\quad\\mathrm{v}_{\\text{rms}}=\\frac{200\\times2}{\\sqrt{3}}\\mathrm{~m/s}=\\frac{400}{\\sqrt{3}}\\mathrm{~m/s}\\end{array}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{P}=\\frac{1}{3}\\frac{m\\mathrm{N}}{\\mathrm{V}}\\mathrm{v}_{\\mathrm{rms}}^{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{array}{l}\\mathrm{P}^{\\prime}=\\frac{1}{3}\\left(\\frac{m}{2}\\right)\\times\\frac{\\mathrm{N}}{\\mathrm{V}}\\times\\left(2\\mathrm{v}_{\\text{rms}}\\right)^{2}\\\\ &=\\frac{2}{3}\\frac{m\\mathrm{N}}{\\mathrm{V}}\\mathrm{v}_{\\text{rms}}^{2}\\\\&=2\\times\\frac{1}{3}\\frac{m\\mathrm{N}}{\\mathrm{V}}\\mathrm{v}_{\\text{rms}}^{2}\\\\&=2\\mathrm{P}\\end{array}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{P}^{\\prime}=2\\mathbf{P}",
+        "meaning": ""
+      },
+      {
+        "latex": "m = \\text{mass of each molecule}",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "ccef6f4a-977f-420e-9209-cf79a2305e08",
+      "7bb949aa-41c8-45d3-a172-cec52277cb56",
+      "d5ceea52-ee3b-4b4a-a103-608a291fc88f",
+      "303ef8f7-37e0-4f68-a5c2-d54280243dc5",
+      "50eb107c-c0b4-4d31-9e95-37770994d12c",
+      "b2f0bf40-3a8f-4c20-88c1-e825787542a9",
+      "22e7888a-fb6b-4954-bdc6-c26cc6f1779f",
+      "48ca4141-03b3-43b2-a021-3eb0bbb1fe20",
+      "c89eb9bb-669a-4435-ace5-e3c963eefa1b",
+      "884f585d-77a7-4563-b575-5e27e6d4f23c"
+    ],
+    "tags": [
+      "NEET 2023",
+      "NEET 2021",
+      "NEET 2020",
+      "NEET 2019",
+      "NEET 2016",
+      "NEET 2013",
+      "AIPMT 1994",
+      "AIPMT 1992",
+      "AIPMT 1990"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-kinetic-theory-law-of-equipartition-of-energy",
+    "chapter": "Kinetic Theory",
+    "subtopic": "Law of Equipartition of Energy",
+    "class": "XI",
+    "unitId": "xi-kinetic",
+    "unitLabel": "Unit IX — Behaviour of Perfect Gas",
+    "order": 11,
+    "title": "Law of Equipartition of Energy",
+    "summary": "In an adiabatic process, $$ PV^{Y}=constant $$ Where, $$ P=pressure,V=volume $$ and $$ \\gamma=\\mathrm{a t o m i c i t y~o f~g a s}, $$ Now from ideal gas equation.",
+    "body": "**Key points from solved questions**\n- According to law of equipartition of energy, for a polyatomic gas with constant $ \\gamma = \\frac{C_{P}}{C_{V}} $, the number of vibrational modes is given by $ \\frac{40-3r}{r-1} $\n- The rms velocity is, $ v_{rms} = \\sqrt{\\frac{3RT}{M}} $ Pressure exerted by an ideal gas is $ \\frac{1}{3}mn\\bar{v}^{2} $. Average kinetic energy of a molecule $ \\frac{3}{2}K_{B}T $. Total internal energy of 1 mole of a diatomic gas, $ U=\\frac{5}{2}RT $\n- Total internal energy of system = Internal energy of oxygen molecules + internal energy of Argon molecules $$ \\begin{aligned}&=\\frac{f_{1}}{2}n_{1}\\mathrm{RT}+\\frac{f_{2}}{2}n_{2}\\mathrm{RT}\\\\&=\\frac{5}{2}\\times2\\mathrm{RT}+\\frac{3}{2}\\times4\\mathrm{RT}=11\\mathrm{RT}\\end{aligned} $$\n- Since, carbon monoxide (CO) and nitrogen ( $ N_{2} $) are diatomic gases. So, their kinetic energies will be equal. i.e., $$ \\mathbf{E}_{1}=\\mathbf{E}_{2}. $$\n- In an adiabatic process, $$ PV^{Y}=constant $$ Where, $$ P=pressure,V=volume $$ and $$ \\gamma=\\mathrm{a t o m i c i t y~o f~g a s}, $$ Now from ideal gas equation. $$ \\mathsf{P}\\mathsf{V}=\\mathsf{R}\\mathsf{T} $$ (for one mole) $$ \\mathrm{P}=\\frac{\\mathrm{RT}}{\\mathrm{V}} $$ or (where, R = gas constant) From eqs. (i) and (ii), we get, $$ \\left(\\frac{\\mathbf{R}\\mathbf{T}}{\\mathbf{V}}\\right)\\mathbf{V}^{\\mathrm{Y}}=\\mathrm{constant} $$ $$ \\mathrm{T}\\mathrm{V}^{\\gamma-1}=\\mathrm{c o n s t a n t} $$ For two different cases of temperature and volume of a gas. $$ \\mathrm{T}_{1}\\mathbf{V}_{1}\\mathbf{Y}^{-1}=\\mathrm{T}_{2}\\mathbf{V}_{2}\\mathbf{Y}^{-1} $$ or $$ \\frac{\\mathbf{T}_{2}}{\\mathbf{T}_{1}}=\\left(\\frac{\\mathbf{v}_{1}}{\\mathbf{v}_{2}}\\right)^{\\gamma-1} $$ Given. $$ \\mathrm{T}_{1}=27^{\\circ}\\mathrm{C} $$ $$ =27+273=300K $$ And $$ \\frac{\\mathbf{v}_{2}}{\\mathbf{v}_{1}}=\\frac{8}{27},\\mathbf{\\Upsilon}=\\frac{5}{3} $$ Substituting these values in eq. (iii), we get. $$ \\frac{\\mathrm{T}_{2}}{300}=\\left(\\frac{27}{8}\\right)^{5/3-1} $$ or $$ \\frac{\\mathrm{T}_{2}}{300}=\\left[\\left(\\frac{3}{2}\\right)^{3}\\right]^{2/3} $$ or $$ \\frac{\\mathrm{T}_{2}}{300}=\\left(\\frac{3}{2}\\right)^{2}=\\frac{9}{4} $$ $$ \\circ\\circ $$ $$ T_{2}=\\frac{9}{4}\\times300=675K=402^{\\circ}C $$ Thus, rise in temperature. <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//b20e71bf-57fc-449f-9bbb-d84bd788c31c/markdown_0/imgs/img_in_image_box_574_773_611_826.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A15%3A41Z%2F-1%2F%2F5f8820dd51177e13c40f1c9048707b858f1574c59b50596fbccf94ac235c56b3\" alt=\"Image\" width=\"3%\" /></div> $$ \\begin{aligned}&=T_{2}-T_{1}\\\\&=402^{\\circ}C-27^{\\circ}C=375^{\\circ}C\\end{aligned} $$ Related Theory Molar specific heat of gas at constant pressure. $$ C_{P}=C_{V}+R=\\frac{3}{2}R+R=\\frac{5}{2}R $$ $$ \\gamma=\\frac{C_{P}}{C_{V}}=\\frac{5}{3} $$\n- A triatomic gas molecule has a tendency to rotate along one of three coordinate axes. As a result, it possesses six degrees of freedom, 3 of which are translational and 3 of which are rotational. A triatomic molecule with a high enough temperature has 2 vibrational degrees of freedom. But, as there is no temperature requirement given. So, by simply assuming a triatomic gas molecule at room temperature has 6 degrees of freedom. Thus, $$ f=6 $$ <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//b20e71bf-57fc-449f-9bbb-d84bd788c31c/markdown_0/imgs/img_in_image_box_706_1219_994_1432.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A15%3A42Z%2F-1%2F%2Ff2ca6ee98916ac46c9d75cd725531bb5039a554d1769e6dcd6f800574fcb6202\" alt=\"Image\" width=\"24%\" /></div> (3 translational degree + 3 rotational degree) at room temperature.\n- According to adiabatic process, the relation between temperature and volume is given by, $$ TV\\ \\gamma^{-1}=constant $$ For two different cases of temperature and volume of the gas. $$ \\mathrm{T}_{1}\\mathbf{V}_{1}\\mathbf{Y}^{-1}=\\mathrm{T}_{2}\\mathbf{V}_{2}\\mathbf{Y}^{-1} $$ Given, initial temperature, $$ \\mathrm{T}_{1}=18^{\\circ}\\mathrm{C}=291\\mathrm{K} $$ Let initial volume, $$ \\mathbf{V}_{1}=\\mathbf{V} $$ then the final volume, $ V_{2} = \\left(\\frac{1}{8}\\right) V $ Given. Putting these values in eq. (i), $$ \\begin{aligned}\\mathrm{T}_{2}&=291\\left(\\frac{\\mathrm{V}_{1}}{\\mathrm{V}_{2}}\\right)^{\\gamma-1}=291\\left(\\frac{\\mathrm{V}}{\\left(\\frac{1}{8}\\right)\\mathrm{V}}\\right)^{7/5-1}\\\\&=668.4\\mathrm{~K}\\\\&\\quad\\left(\\gamma=\\frac{7}{5}\\text{for diatomic gas}\\right)\\end{aligned} $$\n- Number of degree of freedom of a dynamical system is calculated by subtracting the number of independent relations from the total number of coordinates required to describe the positions of the system's constituent particles. If A is the number of particles in the system, R is the number of independent relations between the particles and N is the system's degree of freedom, then, $$ \\mathbf{N}=3\\mathbf{A}-\\mathbf{R} $$ Every monoatomic, diatomic and triatomic gas has three translational degrees of freedom.\n- According to the law of energy equipartition, for any dynamical system in thermal equilibrium, the total energy is distributed equally across all degrees of freedom and the energy associated with each molecule per degree of freedom equals $\\frac{1}{2}$KT. The mean energy per molecule for a polyatomic gas with $n$ degrees of freedom is $\\frac{1}{2}n$KT. Where, K = Boltzmann constant $n = \\text{degree of freedom, and}$ T = Temperature",
+    "formulas": [
+      {
+        "latex": "\\gamma = \\frac{C_{P}}{C_{V}}",
+        "meaning": ""
+      },
+      {
+        "latex": "v_{rms} = \\sqrt{\\frac{3RT}{M}}",
+        "meaning": ""
+      },
+      {
+        "latex": "U=\\frac{5}{2}RT",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}&=\\frac{f_{1}}{2}n_{1}\\mathrm{RT}+\\frac{f_{2}}{2}n_{2}\\mathrm{RT}\\\\&=\\frac{5}{2}\\times2\\mathrm{RT}+\\frac{3}{2}\\times4\\mathrm{RT}=11\\mathrm{RT}\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{E}_{1}=\\mathbf{E}_{2}.",
+        "meaning": ""
+      },
+      {
+        "latex": "PV^{Y}=constant",
+        "meaning": ""
+      },
+      {
+        "latex": "P=pressure,V=volume",
+        "meaning": ""
+      },
+      {
+        "latex": "\\gamma=\\mathrm{a t o m i c i t y~o f~g a s},",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathsf{P}\\mathsf{V}=\\mathsf{R}\\mathsf{T}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{P}=\\frac{\\mathrm{RT}}{\\mathrm{V}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\left(\\frac{\\mathbf{R}\\mathbf{T}}{\\mathbf{V}}\\right)\\mathbf{V}^{\\mathrm{Y}}=\\mathrm{constant}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{T}\\mathrm{V}^{\\gamma-1}=\\mathrm{c o n s t a n t}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{T}_{1}\\mathbf{V}_{1}\\mathbf{Y}^{-1}=\\mathrm{T}_{2}\\mathbf{V}_{2}\\mathbf{Y}^{-1}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{\\mathbf{T}_{2}}{\\mathbf{T}_{1}}=\\left(\\frac{\\mathbf{v}_{1}}{\\mathbf{v}_{2}}\\right)^{\\gamma-1}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{T}_{1}=27^{\\circ}\\mathrm{C}",
+        "meaning": ""
+      },
+      {
+        "latex": "=27+273=300K",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{\\mathbf{v}_{2}}{\\mathbf{v}_{1}}=\\frac{8}{27},\\mathbf{\\Upsilon}=\\frac{5}{3}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{\\mathrm{T}_{2}}{300}=\\left(\\frac{27}{8}\\right)^{5/3-1}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{\\mathrm{T}_{2}}{300}=\\left[\\left(\\frac{3}{2}\\right)^{3}\\right]^{2/3}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{\\mathrm{T}_{2}}{300}=\\left(\\frac{3}{2}\\right)^{2}=\\frac{9}{4}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\circ\\circ",
+        "meaning": ""
+      },
+      {
+        "latex": "T_{2}=\\frac{9}{4}\\times300=675K=402^{\\circ}C",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}&=T_{2}-T_{1}\\\\&=402^{\\circ}C-27^{\\circ}C=375^{\\circ}C\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "C_{P}=C_{V}+R=\\frac{3}{2}R+R=\\frac{5}{2}R",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "c77d751d-e952-4ba6-9b9d-524351d3ef78",
+      "f50160b6-5765-4511-8347-621bc2eba9c5",
+      "c640bf84-78a8-46ec-ba69-348be67c77a6",
+      "e5465169-78c0-4dd3-b81c-fa4f9f306577",
+      "60984d29-2128-44c0-af9f-ced611697e16",
+      "c150a175-1a03-42ad-9145-d3bc051d76f3",
+      "58e26248-a434-4618-b61d-5955eb715026",
+      "d21ece22-8ffa-45d0-a927-b15b2c1c6bb2",
+      "3257b571-d4f3-4880-86f1-f8ed7f42f1bb"
+    ],
+    "tags": [
+      "Re-NEET 2024",
+      "NEET 2021",
+      "NEET 2018",
+      "AIPMT 2000",
+      "AIPMT 1999",
+      "AIPMT 1996",
+      "AIPMT 1993",
+      "AIPMT 1989"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-kinetic-theory-mean-free-path",
+    "chapter": "Kinetic Theory",
+    "subtopic": "Mean Free Path",
+    "class": "XI",
+    "unitId": "xi-kinetic",
+    "unitLabel": "Unit IX — Behaviour of Perfect Gas",
+    "order": 11,
+    "title": "Mean Free Path",
+    "summary": "The average velocity of the gas molecules increases as the temperature rises.",
+    "body": "**Key points from solved questions**\n- The mean free path \\lambda for a gas, with molecular diameter d and number density n can be expressed as, $ \\frac{1}{\\sqrt{2nnd^{2}}} $\n- $ \\because $ Mean free path, $ \\lambda = \\frac{1}{\\pi nr^2} $ $ \\therefore $ $ \\lambda \\propto \\frac{1}{r^2} $ ##### Related Theory The mean free path is the average distance, that a molecule can travel without colliding, after which its direction or energy gets modified.\n- The average velocity of the gas molecules increases as the temperature rises. As a result, more molecules collide with the walls. Hence, number of collisions per unit time will increase. <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//b20e71bf-57fc-449f-9bbb-d84bd788c31c/markdown_3/imgs/img_in_image_box_634_142_672_186.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A15%3A47Z%2F-1%2F%2Fed5d318bc7acb084441b8f080ac7c1f43a47b4f0d0393d8be33aae8690215de6\" alt=\"Image\" width=\"3%\" /></div>",
+    "formulas": [
+      {
+        "latex": "\\lambda = \\frac{1}{\\pi nr^2}",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "6dafb507-c342-48f5-8581-11facfa8040b",
+      "1a4ce721-4c36-4a0c-afb3-1b1c17666153",
+      "03e73156-3ade-4b44-8097-2a408e8f2321"
+    ],
+    "tags": [
+      "NEET 2020",
+      "AIPMT 2014",
+      "AIPMT 1989"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-kinetic-theory-objective-i",
+    "chapter": "Kinetic Theory",
+    "subtopic": "Objective I",
+    "class": "XI",
+    "unitId": "xi-kinetic",
+    "unitLabel": "Unit IX — Behaviour of Perfect Gas",
+    "order": 11,
+    "title": "Objective I",
+    "summary": "For an **ideal gas**, molecular interactions are absent.",
+    "body": "**Key points from solved questions**\n- $v_{\\rm rms} \\propto \\sqrt{T}$ (absolute temperature). $T_1 = 27°C = 300\\,K$, $\\quad T_2 = 927°C = 1200\\,K$. $$\\frac{v_2}{v_1} = \\sqrt{\\frac{T_2}{T_1}} = \\sqrt{\\frac{1200}{300}} = \\sqrt{4} = 2$$ The rms speed doubles. Answer: (A).\n- In an ideal gas in equilibrium, the molecules move randomly in all directions. Their **speeds** and **kinetic energies** are non-zero on average. **Density** is finite. However, **momentum** is a vector: for each molecule moving with momentum $m\\vec{v}$, there is (on average) another moving with $-m\\vec{v}$. The average vector momentum $\\langle m\\vec{v}\\rangle = 0$. Answer: (B).\n- $P = \\frac{1}{3}\\rho\\,\\overline{v^2} = \\frac{2}{3}\\cdot\\frac{1}{2}\\rho\\,\\overline{v^2}$. The kinetic energy per unit volume is $E_k = \\frac{1}{2}\\rho\\,\\overline{v^2}$, so $P = \\frac{2}{3}E_k$ (option B). For the whole gas of volume $V$: $E = E_k V$, so $E_k = E/V$ and $P = \\frac{2}{3}\\frac{E}{V}$ (option C). Options A, B, and C are all equivalent reformulations. Answer: (D).\n- From kinetic theory (and equipartition theorem), the average translational kinetic energy per molecule is: $$\\langle KE\\rangle = \\frac{3}{2}k_BT$$ This is directly proportional to the absolute temperature $T$. Answer: (B).\n- A **rigid** diatomic molecule (treated as a dumbbell with a rigid bond — no vibration) has: - 3 translational degrees of freedom ($x$, $y$, $z$ motion of the centre of mass) - 2 rotational degrees of freedom (rotation about two axes perpendicular to the bond axis; rotation about the bond axis itself contributes negligible inertia for a rigid dumbbell) Total $= 3 + 2 = 5$. Answer: (B).\n- At constant volume, $P \\propto T$ (ideal gas law). If $P$ doubles, $T$ doubles. Mean KE per molecule $= \\frac{3}{2}k_BT$. Since $T$ doubles, the mean KE also **doubles**. Answer: (A).\n- From the Maxwell–Boltzmann distribution: $$v_p = \\sqrt{\\frac{2k_BT}{m}},\\quad \\bar{v} = \\sqrt{\\frac{8k_BT}{\\pi m}},\\quad v_{\\rm rms} = \\sqrt{\\frac{3k_BT}{m}}$$ Numerical factors: $\\sqrt{2} \\approx 1.414$, $\\sqrt{8/\\pi} \\approx 1.596$, $\\sqrt{3} \\approx 1.732$. So $v_p < \\bar{v} < v_{\\rm rms}$. Answer: (A).\n- Mean free path $\\lambda = \\dfrac{1}{\\sqrt{2}\\,\\pi d^2\\,n}$ where $n$ is the number density. At constant temperature, increasing pressure compresses the gas: $n = P/(k_BT)$ increases. A larger $n$ means more molecules per unit volume → more frequent collisions → **shorter** mean free path. $$\\lambda \\propto \\frac{1}{n} \\propto \\frac{1}{P} \\quad (\\text{at constant }T)$$ Answer: (B).\n- **Meyer's relation**: for one mole of an ideal gas, $$C_P - C_V = R$$ This arises because at constant pressure, the gas must do work $R\\,\\Delta T$ against the atmosphere as it expands ($\\Delta V = R\\Delta T / P$), in addition to increasing its internal energy. At constant volume no work is done. Hence $C_P > C_V$ always, and their difference equals $R$ for any ideal gas. Answer: (C).\n- A monatomic ideal gas (e.g., He, Ar) has 3 translational degrees of freedom and no rotational or vibrational modes. By equipartition: $C_V = \\frac{3}{2}R$ and $C_P = C_V + R = \\frac{5}{2}R$. $$\\gamma = \\frac{C_P}{C_V} = \\frac{5/2}{3/2} = \\frac{5}{3} \\approx 1.67$$ For a rigid diatomic gas: $C_V = \\frac{5}{2}R$, $\\gamma = 7/5 = 1.4$. Answer: (C).\n- A rigid diatomic molecule has $f = 5$ degrees of freedom (3 translational + 2 rotational). By the equipartition theorem, each degree of freedom contributes $\\frac{1}{2}R$ to the molar $C_V$: $$C_V = \\frac{f}{2}R = \\frac{5}{2}R$$ For a polyatomic non-linear molecule (non-rigid): $f \\geq 6$ and $C_V \\geq 3R$. For monatomic: $C_V = \\frac{3}{2}R$. Answer: (B).\n- For a quasi-static adiabatic process on an ideal gas ($\\delta Q = 0$): $$PV^\\gamma = \\text{constant}$$ This is derived from the first law + ideal gas law. Using $PV = nRT$ we can also write equivalent forms: $TV^{\\gamma-1} = $ const or $T^\\gamma P^{1-\\gamma} = $ const. Note option D has the wrong combination. Answer: (B).\n- For an adiabatic process: $TV^{\\gamma-1} = $ const. Monatomic: $\\gamma = 5/3$, so $\\gamma - 1 = 2/3$. $$T_1 V_1^{2/3} = T_2 V_2^{2/3} \\implies \\frac{T_2}{T_1} = \\left(\\frac{V_1}{V_2}\\right)^{2/3} = 8^{2/3} = (2^3)^{2/3} = 2^2 = 4$$ Answer: (B).\n- In an adiabatic process $\\Delta Q = 0$, so by the first law: $$W = -\\Delta U = -(C_V\\,\\Delta T) = C_V(T_1 - T_2)$$ (where $\\Delta T = T_2 - T_1$, and $\\Delta U = C_V(T_2 - T_1)$ for one mole of ideal gas). For expansion ($T_2 < T_1$): $W > 0$. This can also be written $W = \\frac{nR(T_1-T_2)}{\\gamma - 1}$ using $C_V = R/(\\gamma-1)$, which equals option B for $n=1$. Answer: (B).",
+    "formulas": [
+      {
+        "latex": "\\frac{v_2}{v_1} = \\sqrt{\\frac{T_2}{T_1}} = \\sqrt{\\frac{1200}{300}} = \\sqrt{4} = 2",
+        "meaning": ""
+      },
+      {
+        "latex": "T_1 = 27°C = 300\\,K",
+        "meaning": ""
+      },
+      {
+        "latex": "\\quad T_2 = 927°C = 1200\\,K",
+        "meaning": ""
+      },
+      {
+        "latex": "\\langle m\\vec{v}\\rangle = 0",
+        "meaning": ""
+      },
+      {
+        "latex": "P = \\frac{1}{3}\\rho\\,\\overline{v^2} = \\frac{2}{3}\\cdot\\frac{1}{2}\\rho\\,\\overline{v^2}",
+        "meaning": ""
+      },
+      {
+        "latex": "E_k = \\frac{1}{2}\\rho\\,\\overline{v^2}",
+        "meaning": ""
+      },
+      {
+        "latex": "P = \\frac{2}{3}E_k",
+        "meaning": ""
+      },
+      {
+        "latex": "E = E_k V",
+        "meaning": ""
+      },
+      {
+        "latex": "E_k = E/V",
+        "meaning": ""
+      },
+      {
+        "latex": "P = \\frac{2}{3}\\frac{E}{V}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\langle KE\\rangle = \\frac{3}{2}k_BT",
+        "meaning": ""
+      },
+      {
+        "latex": "= 3 + 2 = 5",
+        "meaning": ""
+      },
+      {
+        "latex": "= \\frac{3}{2}k_BT",
+        "meaning": ""
+      },
+      {
+        "latex": "v_p = \\sqrt{\\frac{2k_BT}{m}},\\quad \\bar{v} = \\sqrt{\\frac{8k_BT}{\\pi m}},\\quad v_{\\rm rms} = \\sqrt{\\frac{3k_BT}{m}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\lambda \\propto \\frac{1}{n} \\propto \\frac{1}{P} \\quad (\\text{at constant }T)",
+        "meaning": ""
+      },
+      {
+        "latex": "\\lambda = \\dfrac{1}{\\sqrt{2}\\,\\pi d^2\\,n}",
+        "meaning": ""
+      },
+      {
+        "latex": "n = P/(k_BT)",
+        "meaning": ""
+      },
+      {
+        "latex": "C_P - C_V = R",
+        "meaning": ""
+      },
+      {
+        "latex": "\\Delta V = R\\Delta T / P",
+        "meaning": ""
+      },
+      {
+        "latex": "\\gamma = \\frac{C_P}{C_V} = \\frac{5/2}{3/2} = \\frac{5}{3} \\approx 1.67",
+        "meaning": ""
+      },
+      {
+        "latex": "C_V = \\frac{3}{2}R",
+        "meaning": ""
+      },
+      {
+        "latex": "C_P = C_V + R = \\frac{5}{2}R",
+        "meaning": ""
+      },
+      {
+        "latex": "C_V = \\frac{5}{2}R",
+        "meaning": ""
+      },
+      {
+        "latex": "\\gamma = 7/5 = 1.4",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "db544762-588b-4cb6-88f3-9b4156e10c1d",
+      "830eefcc-f5b7-4760-a8bb-95adeacafa48",
+      "2c30bdb3-2572-4382-ba78-69e6b4aa45cf",
+      "1138f558-888d-43ce-bcb4-51257c6af530",
+      "53fcf612-ce6f-4a8d-a6b1-d25ce0fadeaa",
+      "2dc12ba6-869f-43c5-ba74-066f6188ce85",
+      "dcb8ddab-0b02-4a74-9dba-4a7398c70102",
+      "7e35f774-38a7-4c10-ba02-db326918f350",
+      "8628e562-582c-4c77-ad22-e747cc959185",
+      "5c5d05ed-6ecc-4b4a-9c3b-43808e7e4111",
+      "7cde7e94-01c7-4d8e-bf70-015018e275d5",
+      "f554878a-4df4-45de-bdc1-3b443ec9ed3e",
+      "88290cae-21f5-4b04-8efd-8f302024d65a",
+      "9bbcc0eb-700b-4610-ad69-873b643d9b08",
+      "cce9d31a-99be-491b-8132-bbb0e71ae9b6"
+    ],
+    "tags": [
+      "HC Verma Vol 2",
+      "Objective I",
+      "Chapter 24",
+      "Chapter 27"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-kinetic-theory-objective-ii",
+    "chapter": "Kinetic Theory",
+    "subtopic": "Objective II",
+    "class": "XI",
+    "unitId": "xi-kinetic",
+    "unitLabel": "Unit IX — Behaviour of Perfect Gas",
+    "order": 11,
+    "title": "Objective II",
+    "summary": "For equal masses at same temperature $T$: - **A** ✗: Monatomic has $U = \\frac{3}{2}nRT$ (per mol); diatomic has $U = \\frac{5}{2}nRT$.",
+    "body": "**Key points from solved questions**\n- At constant volume, $n$ (number density) is fixed. - **A** ✓: $\\langle KE\\rangle = \\frac{3}{2}k_BT$ — increases with $T$. - **B** ✓: $v_{\\rm rms} \\propto \\sqrt{T}$ — increases. - **C** ✗: $\\lambda = \\frac{1}{\\sqrt{2}\\pi d^2 n}$. At constant volume $n$ is constant, so $\\lambda$ is **unchanged**. - **D** ✓: $P = nk_BT$ — at constant $n$, $P$ increases with $T$. Answer: (A), (B), (D).\n- - **A** ✗: Molecules have a **distribution** of speeds (Maxwell–Boltzmann distribution), not a single speed. - **B** ✓: Gas pressure arises from the momentum transferred to the walls per unit time per unit area during molecular collisions. - **C** ✓: $\\langle KE\\rangle = \\frac{3}{2}k_BT$, so temperature directly measures average translational kinetic energy. - **D** ✗: Classical kinetic theory predicts zero motion at 0 K, but quantum mechanics requires nonzero **zero-point energy**. For this chapter, D is commonly stated as true in classical kinetic theory; however, HC Verma notes that \"absolute zero is the temperature at which all molecular motion theoretically ceases,\" making D true in the classical sense. Still, D is more nuanced — accepted as (B), (C) for the strict HC Verma context. Answer: (B), (C).\n- - **A** ✓: The Maxwell distribution $f(v)$ depends on $T$; at higher $T$ the distribution shifts and spreads. - **B** ✓: $v_p = \\sqrt{2k_BT/m}$ — most probable speed increases with $T$. - **C** ✗: At higher $T$, the distribution **broadens** (spreads over wider range of speeds) and the peak shifts right; it does not become narrower. - **D** ✓: By normalisation, $\\int_0^\\infty f(v)\\,dv = 1$ (the total probability is 1). This is always true regardless of $T$. Answer: (A), (B), (D).\n- $v_{\\rm rms} = \\sqrt{3k_BT/m}$ — depends only on absolute temperature $T$ and molecular mass $m$. - **A** ✓: Isothermal compression keeps $T$ constant → $v_{\\rm rms}$ unchanged. - **B** ✓: Isothermal expansion keeps $T$ constant → $v_{\\rm rms}$ unchanged. - **C** ✗: Adiabatic compression raises $T$ (no heat exchange, work done on gas increases internal energy) → $v_{\\rm rms}$ **increases**. ✗ - **D** ✓: Any constant-temperature (isothermal) process preserves $v_{\\rm rms}$. Answer: (A), (B), (D).\n- Standard assumptions of kinetic theory: - **A** ✓: Point-mass approximation — molecular volume $\\ll$ container volume. - **B** ✗: In an ideal gas, there are **no inter-molecular forces** except during brief elastic collisions. Long-range attractive forces are a feature of real gases (van der Waals). - **C** ✓: Collisions are perfectly elastic — kinetic energy is conserved. - **D** ✓: Large number of molecules ensures statistical averaging is valid. Answer: (A), (C), (D).\n- - **A** ✓: Isothermal ($n=1$, $T = $ const) → $\\Delta U = C_V\\Delta T = 0$. - **B** ✓: Adiabatic ($n=\\gamma$) → by definition $\\Delta Q = 0$. - **C** ✓: Isobaric ($n=0$, $P = $ const) → $W = \\int P\\,dV = P\\Delta V$. ✓ - **D** ✓: Isochoric ($n \\to \\infty$, $V = $ const) → $\\Delta V = 0$ → $W = \\int P\\,dV = 0$. ✓ All four are correct. Answer: (A), (B), (C), (D).\n- - **A** ✓: $C_P = C_V + R > C_V$ since $R > 0$. - **B** ✓: Meyer's relation. - **C** ✓: $\\gamma = C_P/C_V = (f/2 + 1)/(f/2) = 1 + 2/f$ — depends on $f$ (atomicity). - **D** ✓: $C_V = fR/2$ — more degrees of freedom means larger $C_V$. Answer: (A), (B), (C), (D).\n- For equal masses at same temperature $T$: - **A** ✗: Monatomic has $U = \\frac{3}{2}nRT$ (per mol); diatomic has $U = \\frac{5}{2}nRT$. For equal mass, if molar masses differ, the number of moles differ. In general the internal energies are not equal. ✗ - **B** ✗: Monatomic: KE/molecule = $\\frac{3}{2}k_BT$; diatomic: $\\frac{5}{2}k_BT$ (including rotation). Monatomic has *less* internal energy per molecule (no rotational modes), which is true — but B says \"less kinetic energy\" and the translational KE is the same ($\\frac{3}{2}k_BT$). The question asks about \"kinetic energy\" which in KT = translational = same. ✗ (ambiguous, but generally ✗) - **C** ✓: $v_{\\rm rms} = \\sqrt{3RT/M}$. For same molar mass $M$, same $T$: same $v_{\\rm rms}$. But if we compare typical cases (He mono vs N₂ diatomic, different $M$), rms speed depends on $M$. As stated, \"same molar mass\" → same rms speed, C would be wrong. Without the \"same molar mass\" caveat, C is answerable. HC Verma likely intends same molar mass here, making $v_{\\rm rms}$ the same → C ✗. With different molar masses, mono could be faster. This is ambiguous; let's flag C as ✓ if molar mass is same. - **D** ✓: $\\Delta T = \\frac{Q}{nC_V}$. Monatomic $C_V = \\frac{3}{2}R$; diatomic $C_V = \\frac{5}{2}R$. Same $Q$, same $n$ → monatomic gets a **larger** temperature rise. ✓ Answer: (D) is unambiguous; (C) depends on context. For HC Verma: **Answer: (C), (D)** when molar masses are unspecified (general statement that mono has higher rms speed than diatomic at same T — true for most real cases since monatomic noble gases have smaller molar mass). Answer: (C), (D).",
+    "formulas": [
+      {
+        "latex": "\\langle KE\\rangle = \\frac{3}{2}k_BT",
+        "meaning": ""
+      },
+      {
+        "latex": "\\lambda = \\frac{1}{\\sqrt{2}\\pi d^2 n}",
+        "meaning": ""
+      },
+      {
+        "latex": "P = nk_BT",
+        "meaning": ""
+      },
+      {
+        "latex": "v_p = \\sqrt{2k_BT/m}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\int_0^\\infty f(v)\\,dv = 1",
+        "meaning": ""
+      },
+      {
+        "latex": "v_{\\rm rms} = \\sqrt{3k_BT/m}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\Delta U = C_V\\Delta T = 0",
+        "meaning": ""
+      },
+      {
+        "latex": "n=\\gamma",
+        "meaning": ""
+      },
+      {
+        "latex": "\\Delta Q = 0",
+        "meaning": ""
+      },
+      {
+        "latex": "W = \\int P\\,dV = P\\Delta V",
+        "meaning": ""
+      },
+      {
+        "latex": "\\Delta V = 0",
+        "meaning": ""
+      },
+      {
+        "latex": "W = \\int P\\,dV = 0",
+        "meaning": ""
+      },
+      {
+        "latex": "C_P = C_V + R > C_V",
+        "meaning": ""
+      },
+      {
+        "latex": "\\gamma = C_P/C_V = (f/2 + 1)/(f/2) = 1 + 2/f",
+        "meaning": ""
+      },
+      {
+        "latex": "C_V = fR/2",
+        "meaning": ""
+      },
+      {
+        "latex": "U = \\frac{3}{2}nRT",
+        "meaning": ""
+      },
+      {
+        "latex": "U = \\frac{5}{2}nRT",
+        "meaning": ""
+      },
+      {
+        "latex": "v_{\\rm rms} = \\sqrt{3RT/M}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\Delta T = \\frac{Q}{nC_V}",
+        "meaning": ""
+      },
+      {
+        "latex": "C_V = \\frac{3}{2}R",
+        "meaning": ""
+      },
+      {
+        "latex": "C_V = \\frac{5}{2}R",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "74dee490-e413-4012-9cb0-65fe82a9c206",
+      "b37beae1-c803-4019-8aac-cdfa94bc128c",
+      "e18824a8-015b-4be3-a59d-14b2de4c47e6",
+      "d4483159-7b8c-4733-8a1e-cc9c276ba746",
+      "49fdd57b-31ed-4975-9670-2426ae0984a8",
+      "a94cd8af-1ff1-4eb8-8a84-468c6c078ccd",
+      "4ac6231a-f324-40f8-84cf-7e4517578759",
+      "e3231c6d-7cf2-44f8-9cb8-467e8d20b9e7"
+    ],
+    "tags": [
+      "HC Verma Vol 2",
+      "Objective II",
+      "Chapter 24",
+      "Chapter 27"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-kinetic-theory-specific-heat-capacity",
+    "chapter": "Kinetic Theory",
+    "subtopic": "Specific Heat Capacity",
+    "class": "XI",
+    "unitId": "xi-kinetic",
+    "unitLabel": "Unit IX — Behaviour of Perfect Gas",
+    "order": 11,
+    "title": "Specific Heat Capacity",
+    "summary": "In an adiabatic process, $$ \\mathrm{PV}^{\\mathrm{T}}=\\mathrm{K}(\\mathrm{a}\\ \\mathrm{c o n s t a n t}) $$ where, P = pressure and V = volume and $ \\gamma $ = atomicity of gas Again from standard gas equation.",
+    "body": "**Key points from solved questions**\n- The heat capacity ratio, $$ \\gamma=\\frac{C_{\\mathrm{p}}}{C_{\\mathrm{v}}} $$ where, $ C_{P} = \\text{molar heat capacity at constant pressure} $ and $ C_{V} = \\text{molar heat capacity at constant volume} $ Also, $ C_{P} = C_{V} + R $ (from Mayer's relation) $$ C_{V}=\\frac{f}{2}R $$ (where, f = degree of freedom) $$ C_{\\mathbf{P}}=\\left(\\frac{f}{2}+1\\right)\\mathbf{R} $$ So eq. (i) becomes, $$ \\gamma=1+\\frac{2}{f} $$ For hydrogen gas, which is diatomic, the degree of freedom is 5 (3 translational, 2 rotational). $$ \\gamma=1+\\frac{2}{5}=\\frac{7}{5} $$ For helium gas, which is monoatomic, the degree of freedom is 3 (3 translational only). $$ \\circ\\circ $$ $$ \\gamma=1+\\frac{2}{3}=\\frac{5}{3} $$ The diatomic gas X also have vibrational motion, so degree of freedom is 7 (3 translational, 2 rotational and 2 vibrational) ∴ $$ \\gamma=1+\\frac{2}{7}=\\frac{9}{7} $$\n- From polytropic process, $$ PV^{x}=constant $$ Heat capacity in polytropic process is given by, $$ C=C_{v}+\\frac{R}{1-x} $$ From question, $ PV^{3} = \\text{constant} $ $$ x=3 $$ and also gas is monoatomic. So, $$ \\mathbf{C}_{\\mathbf{V}}=\\frac{3}{2}\\mathbf{R} $$ from above formula. $$ \\begin{aligned}C&=\\left[\\frac{3}{2}\\mathrm{R}+\\frac{\\mathrm{R}}{1-3}\\right]\\\\&=\\frac{3}{2}\\mathrm{R}-\\frac{\\mathrm{R}}{2}=\\mathrm{R}\\end{aligned} $$\n- We know that specific heat at constant volume is given by, $$ \\mathbf{C}_{\\mathbf{V}}=\\frac{n}{2}\\mathbf{R} $$ Where, $n = \\text{degree of freedom}$ R = gas constant And $$ \\mathbf{C}_{\\mathbf{P}}-\\mathbf{C}_{\\mathbf{V}}=\\mathbf{R} $$ [Mayer's formula] $$ \\mathbf{C_{P}}=\\frac{n}{2}\\mathbf{R}+\\mathbf{R}=\\mathbf{R}\\left(1+\\frac{n}{2}\\right) $$ $$ \\begin{aligned}\\Upsilon&=\\frac{C_{p}}{C_{v}}=\\frac{\\mathbf{R}\\left(1+\\frac{n}{2}\\right)}{\\frac{n}{2}\\mathbf{R}}\\\\&=\\frac{2}{n}+1\\end{aligned} $$\n- As we know, $$ \\begin{aligned}\\mathbf{C}_{\\mathbf{P}}-\\mathbf{C}_{\\mathbf{V}}&=\\mathbf{R}and\\boldsymbol{\\gamma}=\\frac{\\mathbf{C}_{\\mathbf{P}}}{\\mathbf{C}_{\\mathbf{V}}}\\\\\\Rightarrow\\quad\\mathbf{C}_{\\mathbf{V}}&=\\frac{\\mathbf{R}}{\\boldsymbol{\\gamma}-1}\\end{aligned} $$\n- Number of moles in 1 g He = $ \\frac{1}{4} $ $ \\therefore $ Amount of heat energy required to raise the temperature of the gas is, $$ \\Delta\\mathbf{Q}=n\\mathbf{C}_{\\mathbf{V}}\\Delta\\mathbf{T} $$ Here, $$ \\begin{array}{l}n=\\displaystyle\\frac{1}{4},\\mathrm{~C}_{\\mathrm{V}}=\\frac{3}{2}\\mathrm{R}\\\\ =\\displaystyle\\left(\\frac{1}{4}\\right)\\left(\\frac{3}{2}\\mathrm{R}\\right)(\\mathrm{T}_{2}-\\mathrm{T}_{1})\\\\ =\\displaystyle\\frac{3}{8}\\mathrm{~K}_{\\mathrm{B}}\\mathrm{~N}_{\\mathrm{A}}(\\mathrm{T}_{2}-\\mathrm{T}_{1}).\\quad\\left(\\because\\mathrm{K}_{\\mathrm{B}}=\\frac{\\mathrm{R}}{\\mathrm{N}_{\\mathrm{A}}}\\right)\\end{array} $$\n- Molar specific heat at constant pressure, $$ \\mathbf{C_{P}}={\\frac{7}{2}}\\mathbf{R} $$ $$ \\begin{aligned}&\\text{We know that,}\\mathbf{C}_{\\mathbf{P}}-\\mathbf{C}_{\\mathbf{V}}=\\mathbf{R}\\\\&\\Rightarrow\\quad\\mathbf{C}_{\\mathbf{V}}=\\mathbf{C}_{\\mathbf{P}}-\\mathbf{R}\\\\&\\quad=\\frac{7}{2}\\mathbf{R}-\\mathbf{R}=\\frac{5}{2}\\mathbf{R}\\end{aligned} $$ from (i) and (ii), $$ \\therefore\\quad\\frac{C_{P}}{C_{V}}=\\frac{7}{5}. $$\n- We know that, work done in adiabatic process is: $$ \\begin{aligned}&\\mathbf{W}=\\frac{-1}{\\gamma-1}\\left(\\mathbf{P}_{f}\\mathbf{V}_{f}-\\mathbf{P}_{i}\\mathbf{V}_{i}\\right)\\\\\\Rightarrow\\quad&\\mathbf{6\\mathbf{R}}=\\frac{-1}{\\frac{5}{3}-1}\\mathbf{R}(\\mathbf{T}_{f}-\\mathbf{T}_{i})\\\\ \\Rightarrow\\quad&\\mathbf{T}_{f}-\\mathbf{T}_{i}=-4\\\\\\Rightarrow\\quad&\\mathbf{T}_{f}=(\\mathbf{T}-4)\\mathbf{K}\\end{aligned}\\\\\\{\\mathrm{S i n c e},\\mathrm{P V}}=n\\mathrm{R T}\\} $$\n- Since, $ C_{v}=\\frac{R}{0.67}\\approx1.5R=\\frac{3}{2}R $ Hence, it is the case of monoatomic gases.\n- Since, hydrogen and oxygen are diatomic gases and $C_{P}-C_{V}=R$ is the same for all gases. Hence, $a=b$, assuming $C_{P}$ and $C_{V}$ are gram molar specific heats. <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//b20e71bf-57fc-449f-9bbb-d84bd788c31c/markdown_2/imgs/img_in_image_box_585_339_623_385.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A15%3A45Z%2F-1%2F%2F844f44023eaa719d14978b4175f39a68765cda35fef02f4eea18da42e0c98b2f\" alt=\"Image\" width=\"3%\" /></div> #### Related Theory The relation $ C_{P}-C_{V}=R $, shows that $ C_{P}>C_{V} $ because R is always more than 1.\n- We have, Given. $$ \\begin{aligned}\\gamma&=\\frac{\\mathbf{C_{p}}}{\\mathbf{C_{v}}}\\\\\\gamma&=1.5=\\frac{3}{2}\\\\\\mathbf{C_{v}}&=\\frac{2}{3}\\mathbf{C_{p}}\\end{aligned} $$ $$ \\circlearrowleft $$ From Mayer's formula, $$ \\begin{aligned}&\\mathbf{C}_{\\mathbf{P}}-\\mathbf{C}_{\\mathbf{V}}=\\mathbf{R}\\\\&\\therefore\\quad\\mathbf{C}_{\\mathbf{P}}-\\frac{2}{3}\\mathbf{\\Sigma}\\mathbf{C}_{\\mathbf{P}}=\\mathbf{R}\\\\&\\Rightarrow\\quad\\frac{\\mathbf{C}_{\\mathbf{P}}}{3}=\\mathbf{R}\\\\&\\Rightarrow\\quad\\mathbf{C}_{\\mathbf{P}}=3\\mathbf{R}\\end{aligned} $$\n- In an adiabatic process, $$ \\mathrm{PV}^{\\mathrm{T}}=\\mathrm{K}(\\mathrm{a}\\ \\mathrm{c o n s t a n t}) $$ where, P = pressure and V = volume and $ \\gamma $ = atomicity of gas Again from standard gas equation. $$ \\mathrm{PV}=n\\mathrm{RT} $$ $$ \\mathbf{V}=\\frac{\\mathbf{R}\\mathbf{T}}{\\mathbf{P}} $$ Putting the value of V in eq. (i), we get $$ \\mathbf{P}\\frac{\\mathbf{R}^{Y}\\mathbf{T}^{Y}}{\\mathbf{P}^{Y}}=\\mathbf{K} $$ $ P^{1-Y}T^{Y} = \\frac{K}{R^{Y}} = \\text{another constant} $ or $$ \\mathrm{P^{1-Y}T^{Y}}=\\mathrm{c o n s t a n t} $$ For two different cases. $$ \\mathbf{P}_{1}^{1-\\Upsilon}\\mathbf{T}_{1}^{\\Upsilon}=\\mathbf{P}_{2}^{1-\\Upsilon}\\mathbf{T}_{2}^{\\Upsilon} $$ $$ \\circ\\circ $$ $$ \\left(\\frac{\\mathbf{T}_{2}}{\\mathbf{T}_{1}}\\right)^{\\gamma}=\\left(\\frac{\\mathbf{P}_{1}}{\\mathbf{P}_{2}}\\right)^{1-\\gamma} $$ Here. $$ \\begin{aligned}&\\mathrm{P}_{2}=\\left(\\frac{1}{8}\\right)\\mathrm{P}_{1}\\\\&\\mathrm{T}_{1}=27^{\\circ}\\mathrm{C}=273+27=300\\mathrm{~K}\\\\&\\mathrm{T}_{2}=?,\\gamma=\\frac{5}{3}\\\\ \\end{aligned} $$ $$ \\begin{aligned}&\\text{or}&\\left(\\frac{\\mathrm{T}_{2}}{300}\\right)^{5/3}&=(8)^{1-5/3}=(8)^{-2/3}\\\\&\\Rightarrow&\\mathrm{T}_{2}&=130.6\\,\\mathrm{K}\\\\&\\therefore&\\mathrm{T}_{2}&=-142^{\\circ}\\mathrm{C}\\end{aligned} $$",
+    "formulas": [
+      {
+        "latex": "\\gamma=\\frac{C_{\\mathrm{p}}}{C_{\\mathrm{v}}}",
+        "meaning": ""
+      },
+      {
+        "latex": "C_{V}=\\frac{f}{2}R",
+        "meaning": ""
+      },
+      {
+        "latex": "C_{\\mathbf{P}}=\\left(\\frac{f}{2}+1\\right)\\mathbf{R}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\gamma=1+\\frac{2}{f}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\gamma=1+\\frac{2}{5}=\\frac{7}{5}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\circ\\circ",
+        "meaning": ""
+      },
+      {
+        "latex": "\\gamma=1+\\frac{2}{3}=\\frac{5}{3}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\gamma=1+\\frac{2}{7}=\\frac{9}{7}",
+        "meaning": ""
+      },
+      {
+        "latex": "C_{P} = \\text{molar heat capacity at constant pressure}",
+        "meaning": ""
+      },
+      {
+        "latex": "C_{V} = \\text{molar heat capacity at constant volume}",
+        "meaning": ""
+      },
+      {
+        "latex": "C_{P} = C_{V} + R",
+        "meaning": ""
+      },
+      {
+        "latex": "PV^{x}=constant",
+        "meaning": ""
+      },
+      {
+        "latex": "C=C_{v}+\\frac{R}{1-x}",
+        "meaning": ""
+      },
+      {
+        "latex": "x=3",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{C}_{\\mathbf{V}}=\\frac{3}{2}\\mathbf{R}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}C&=\\left[\\frac{3}{2}\\mathrm{R}+\\frac{\\mathrm{R}}{1-3}\\right]\\\\&=\\frac{3}{2}\\mathrm{R}-\\frac{\\mathrm{R}}{2}=\\mathrm{R}\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "PV^{3} = \\text{constant}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{C}_{\\mathbf{V}}=\\frac{n}{2}\\mathbf{R}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{C}_{\\mathbf{P}}-\\mathbf{C}_{\\mathbf{V}}=\\mathbf{R}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{C_{P}}=\\frac{n}{2}\\mathbf{R}+\\mathbf{R}=\\mathbf{R}\\left(1+\\frac{n}{2}\\right)",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}\\Upsilon&=\\frac{C_{p}}{C_{v}}=\\frac{\\mathbf{R}\\left(1+\\frac{n}{2}\\right)}{\\frac{n}{2}\\mathbf{R}}\\\\&=\\frac{2}{n}+1\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "n = \\text{degree of freedom}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}\\mathbf{C}_{\\mathbf{P}}-\\mathbf{C}_{\\mathbf{V}}&=\\mathbf{R}and\\boldsymbol{\\gamma}=\\frac{\\mathbf{C}_{\\mathbf{P}}}{\\mathbf{C}_{\\mathbf{V}}}\\\\\\Rightarrow\\quad\\mathbf{C}_{\\mathbf{V}}&=\\frac{\\mathbf{R}}{\\boldsymbol{\\gamma}-1}\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\Delta\\mathbf{Q}=n\\mathbf{C}_{\\mathbf{V}}\\Delta\\mathbf{T}",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "8de8b8fe-8c37-433b-9ece-0a1ac3511a9f",
+      "f08183a8-89da-4405-a6c0-07236653e4ea",
+      "4dd4e984-cb62-421a-afef-d32006f27e3c",
+      "faf36f33-21e2-4f62-b78b-5e1fe7f10cc2",
+      "4646a164-44a7-41ec-92a3-308c76fbab16",
+      "22aa4713-f750-4cde-b90d-07798071d0a8",
+      "c6be54e4-c8f7-4781-a8a6-255d8404833f",
+      "0ae71755-0a24-4f76-9e7c-b60aaad54cda",
+      "a435d90c-f27d-4143-95a3-2aaa96b89f67",
+      "e236f8bc-7e71-4e02-bbcf-fe28df4a5576",
+      "a0cdf50a-c28b-4ffb-a9c2-fa80bac20974"
+    ],
+    "tags": [
+      "NEET Phase-II 2016",
+      "AIPMT Cancelled 2015",
+      "NEET 2013",
+      "AIPMT 2006",
+      "AIPMT 2004",
+      "AIPMT 1991",
+      "AIPMT 1990",
+      "AIPMT 1989"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-kinetic-theory-reneet2026",
+    "chapter": "Kinetic Theory",
+    "subtopic": "reNEET2026",
+    "class": "XI",
+    "unitId": "xi-kinetic",
+    "unitLabel": "Unit IX — Behaviour of Perfect Gas",
+    "order": 11,
+    "title": "reNEET2026",
+    "summary": "$\\lambda=\\dfrac{1}{\\sqrt2\\,\\pi d^2 n}$.",
+    "body": "**Key points from solved questions**\n- $\\lambda=\\dfrac{1}{\\sqrt2\\,\\pi d^2 n}$. With $\\lambda_A=\\tfrac12\\lambda_B$ and $d_A=2d_B$: $\\dfrac{1}{d_A^2 n_A}=\\tfrac12\\dfrac{1}{d_B^2 n_B}\\Rightarrow n_A=\\tfrac12 n_B.$\n- $C_V=\\tfrac12 R(3+3+2f)=(3+f)R$, $C_P=(4+f)R$. $\\gamma=\\dfrac{4+f}{3+f}=\\dfrac87\\Rightarrow7(4+f)=8(3+f)\\Rightarrow f=4.$",
+    "formulas": [
+      {
+        "latex": "\\lambda=\\dfrac{1}{\\sqrt2\\,\\pi d^2 n}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\lambda_A=\\tfrac12\\lambda_B",
+        "meaning": ""
+      },
+      {
+        "latex": "d_A=2d_B",
+        "meaning": ""
+      },
+      {
+        "latex": "\\dfrac{1}{d_A^2 n_A}=\\tfrac12\\dfrac{1}{d_B^2 n_B}\\Rightarrow n_A=\\tfrac12 n_B.",
+        "meaning": ""
+      },
+      {
+        "latex": "C_V=\\tfrac12 R(3+3+2f)=(3+f)R",
+        "meaning": ""
+      },
+      {
+        "latex": "C_P=(4+f)R",
+        "meaning": ""
+      },
+      {
+        "latex": "\\gamma=\\dfrac{4+f}{3+f}=\\dfrac87\\Rightarrow7(4+f)=8(3+f)\\Rightarrow f=4.",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "renet2026-phy-02",
+      "renet2026-phy-45"
+    ],
+    "tags": [
+      "reNEET 2026"
+    ],
+    "source": "seed"
+  }
+]

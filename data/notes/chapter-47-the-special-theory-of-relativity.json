@@ -1,0 +1,86 @@
+[
+  {
+    "id": "note-chapter-47-the-special-theory-of-relativity-objective-i",
+    "chapter": "Chapter 47: The Special Theory of Relativity",
+    "subtopic": "Objective I",
+    "class": "—",
+    "unitId": "",
+    "unitLabel": "",
+    "order": 999,
+    "title": "Objective I",
+    "summary": "$E = mc^2$: - **A** in isolation is imprecise: mass and energy are not \"the same thing\" — they are related by a conversion factor $c^2$.",
+    "body": "**Key points from solved questions**\n- Einstein's **first postulate** (principle of relativity): the **laws of physics are identical in all inertial reference frames** — no preferred frame exists. There is no absolute rest frame. An observer in any inertial frame can claim to be \"at rest\" and apply the same physical laws. Answer: (B).\n- Einstein's **second postulate**: the speed of light in vacuum is the same constant $c$ for all inertial observers, regardless of the relative motion of the light source and observer. This contradicts Galilean addition of velocities and is the foundation of all relativistic effects (time dilation, length contraction, mass-energy equivalence). Answer: (B).\n- **Time dilation**: a clock moving with velocity $v$ relative to an observer runs slower by the Lorentz factor: $$\\Delta t' = \\gamma\\,\\Delta t_0 = \\frac{\\Delta t_0}{\\sqrt{1 - v^2/c^2}}$$ where $\\Delta t_0$ is the proper time (measured in the clock's rest frame) and $\\Delta t'$ is the time measured by the moving observer ($\\Delta t' > \\Delta t_0$). A moving clock reads less elapsed time — it runs slow. Confirmed by: cosmic ray muons reaching Earth's surface, GPS satellite corrections. Answer: (B).\n- **Length contraction** (Lorentz contraction): a rod of proper length $L_0$ (measured in its rest frame) moving with velocity $v$ appears contracted in the direction of motion to an observer: $$L = \\frac{L_0}{\\gamma} = L_0\\sqrt{1 - v^2/c^2}$$ Only the length along the direction of motion contracts; dimensions perpendicular to motion are unchanged. Answer: (B).\n- $E = mc^2$: - **A** in isolation is imprecise: mass and energy are not \"the same thing\" — they are related by a conversion factor $c^2$. - **B** ✓: Mass-energy can be converted: nuclear fission/fusion converts mass defect to energy; pair production converts photon energy to mass. - **C** ✓: $c^2 \\approx 9\\times10^{16}\\,\\rm J/kg$ — even 1 gram of mass $\\equiv 9\\times10^{13}\\,\\rm J$ (equivalent to $\\sim 20$ kilotons TNT). - **D** ✓: Both B and C are correct; A is an oversimplification. Answer: (D).\n- The relativistic momentum: $$p = \\gamma m_0 v = \\frac{m_0 v}{\\sqrt{1-v^2/c^2}}$$ At low speeds ($v \\ll c$): $\\gamma \\approx 1$, recovering Newtonian $p = m_0 v$. As $v \\to c$: $\\gamma \\to \\infty$ and $p \\to \\infty$ — it takes infinite force to accelerate a massive particle to $c$. Answer: (B).",
+    "formulas": [
+      {
+        "latex": "\\Delta t' = \\gamma\\,\\Delta t_0 = \\frac{\\Delta t_0}{\\sqrt{1 - v^2/c^2}}",
+        "meaning": ""
+      },
+      {
+        "latex": "L = \\frac{L_0}{\\gamma} = L_0\\sqrt{1 - v^2/c^2}",
+        "meaning": ""
+      },
+      {
+        "latex": "E = mc^2",
+        "meaning": ""
+      },
+      {
+        "latex": "p = \\gamma m_0 v = \\frac{m_0 v}{\\sqrt{1-v^2/c^2}}",
+        "meaning": ""
+      },
+      {
+        "latex": "p = m_0 v",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "e7bf0496-4dd0-4245-a402-8644d74a9d21",
+      "f029640a-1142-4fa8-80cf-66e707a48857",
+      "c4f01dbf-7ee2-4cef-8c69-33a08d15cc8b",
+      "3b433538-52ce-40e9-bbad-bdc864f73e89",
+      "18bae995-1491-4ac1-a6fa-c8e9c2247d83",
+      "8cd764b7-545e-4484-b830-76528a542b22"
+    ],
+    "tags": [
+      "HC Verma Vol 2",
+      "Objective I",
+      "Chapter 47"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-chapter-47-the-special-theory-of-relativity-objective-ii",
+    "chapter": "Chapter 47: The Special Theory of Relativity",
+    "subtopic": "Objective II",
+    "class": "—",
+    "unitId": "",
+    "unitLabel": "",
+    "order": 999,
+    "title": "Objective II",
+    "summary": "- **A** ✓: Speed of light $c$ is the same in all inertial frames (Einstein's second postulate).",
+    "body": "**Key points from solved questions**\n- - **A** ✓: Time dilation $\\Delta t' = \\gamma\\Delta t_0$ — moving clocks tick slower. - **B** ✓: Length contraction $L = L_0/\\gamma$ — moving rods appear shorter. - **C** ✓: Mass-energy equivalence — nuclear energy release, pair production. - **D** ✗: **Relativity of simultaneity**: two events simultaneous in one inertial frame are generally **not** simultaneous in another. Absolute simultaneity does not exist in special relativity. Answer: (A), (B), (C).\n- - **A** ✓: Speed of light $c$ is the same in all inertial frames (Einstein's second postulate). - **B** ✗: Time intervals are **not** invariant — they depend on the relative motion of frames (time dilation). The **proper time** (measured in the rest frame) is invariant, but not a general time interval. - **C** ✓: The **spacetime interval** $\\Delta s^2 = c^2\\Delta\\tau^2 = c^2\\Delta t^2 - \\Delta x^2 - \\Delta y^2 - \\Delta z^2$ is Lorentz invariant (same in all inertial frames). - **D** ✓: The **rest mass** (invariant mass) $m_0$ is the same in all frames. The relativistic mass $\\gamma m_0$ varies, but $m_0$ is invariant. Answer: (A), (C), (D).",
+    "formulas": [
+      {
+        "latex": "\\Delta t' = \\gamma\\Delta t_0",
+        "meaning": ""
+      },
+      {
+        "latex": "L = L_0/\\gamma",
+        "meaning": ""
+      },
+      {
+        "latex": "\\Delta s^2 = c^2\\Delta\\tau^2 = c^2\\Delta t^2 - \\Delta x^2 - \\Delta y^2 - \\Delta z^2",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "c2b133ff-5752-4326-a096-11dc824fad5f",
+      "c1103642-14d8-4d2b-aa35-26e063c4d3d3"
+    ],
+    "tags": [
+      "HC Verma Vol 2",
+      "Objective II",
+      "Chapter 47"
+    ],
+    "source": "seed"
+  }
+]

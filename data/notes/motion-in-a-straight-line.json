@@ -1,0 +1,769 @@
+[
+  {
+    "id": "note-motion-in-a-straight-line-acceleration",
+    "chapter": "Motion in a Straight Line",
+    "subtopic": "Acceleration",
+    "class": "XI",
+    "unitId": "xi-kinematics",
+    "unitLabel": "Unit II — Kinematics",
+    "order": 1,
+    "title": "Acceleration",
+    "summary": "This situation is plotted on (v-t) graph.",
+    "body": "**Key points from solved questions**\n- $$ \\mathrm{v}(t)=\\frac{dx}{dt}=4\\alpha t^{3}+2\\beta t+\\gamma $$ $$ \\alpha(t)=\\frac{d v}{d t}=12\\alpha t^{2}+2\\beta $$ $$ \\begin{aligned}&\\mathbf{v}(0)=4\\boldsymbol{\\alpha}\\times\\boldsymbol{0}+2\\boldsymbol{\\beta}\\times\\boldsymbol{0}+\\boldsymbol{\\gamma}=\\boldsymbol{\\gamma}\\\\&\\boldsymbol{\\alpha}(0)=12\\boldsymbol{\\alpha}\\times\\boldsymbol{0}+2\\boldsymbol{\\beta}=2\\boldsymbol{\\beta}\\\\ \\end{aligned} $$ The ratio of initial velocity to its initial acceleration is: $$ \\frac{\\mathrm{v}(\\mathfrak{A})}{a(0)}=\\frac{\\gamma}{2\\beta} $$\n- The velocity (v) as a function of position of particle is given by, Acceleration. $$ \\begin{aligned}\\mathbf{v}&=\\beta\\mathbf{x}^{-2n}\\\\a&=\\frac{d\\mathbf{v}}{dt}=\\frac{dx}{dt},\\frac{d\\mathbf{v}}{dx}\\\\a&=\\frac{d\\mathbf{v}}{dx}.\\mathbf{v}=\\mathbf{v},\\frac{d\\mathbf{v}}{dx}\\\\&=\\beta\\mathbf{x}^{-2n}.(-2n\\beta\\mathbf{x}^{-2n-1})\\\\a&=-2n\\beta^{2}\\mathbf{x}^{-4n-1}\\end{aligned} $$ $$ \\begin{array}{c}C)\\text{Acceleration,}\\frac{d\\mathbf{v}}{dt}=f=f_{0}\\left(1-\\frac{t}{\\mathrm{T}}\\right)\\\\ \\Rightarrow\\quad\\int_{0}^{\\mathrm{v}}d\\mathbf{v}=f_{0}\\int_{0}^{\\mathrm{T}}\\left(1-\\frac{t}{\\mathrm{T}}\\right)dt\\\\ \\Rightarrow\\quad\\mathbf{v}=f_{0}\\left(t-\\frac{t^{2}}{2\\mathrm{T}}\\right)_{0}^{\\mathrm{T}}\\\\ =f_{0}\\left(\\mathrm{T}-\\frac{\\mathrm{T}^{2}}{2\\mathrm{T}}\\right)=\\frac{1}{2}f_{0}\\mathrm{T}\\end{array} $$\n- Acceleration. $$ \\frac{dv}{dt}=\\frac{d^{2}x}{dt^{2}} $$ Velocity, $$ \\mathbf{v}=\\frac{dx}{dt}. $$ The given equation is, $$ x=a t^{2}-b t^{3} $$ Velocity, $$ \\mathrm{v}=\\frac{dx}{dt}=2at-3bt^{2} $$ Acceleration. $$ a=\\frac{d\\mathbf{v}}{dt}=2a-6bt $$ but $$ a=0 $$ (given) $$ \\begin{array}{l}\\bullet\\\\ \\bullet\\bullet\\end{array} $$ $$ 2a-6bt=0 $$ $$ 6bt=2a $$ $$ t=\\frac{2a}{6b}=\\frac{a}{3b} $$ or\n- This situation is plotted on (v-t) graph. In (v-t) graph, OA represents the accelerated part and AB represents the decelerated part. <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//3b3777f9-8c7d-4c2a-be98-f0e26bc415ca/markdown_4/imgs/img_in_image_box_829_164_996_322.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A04Z%2F-1%2F%2F94c599b744cfdbbdd6e123833cf0780ecc89fd287bdaf148b3d6e429b26a2b47\" alt=\"Image\" width=\"14%\" /></div> Let $ t_{1} $ and $ t_{2} $ be the times for part OA and AB respectively. At point A velocity is maximum and let it be $ v_{max} $ But, $$ t=t_{1}+t_{2} $$ $$ \\mathbf{t}=\\mathbf{v}_{\\max}\\left(\\frac{1}{\\alpha}+\\frac{1}{\\beta}\\right)=\\mathbf{v}_{\\max}\\left(\\frac{\\alpha+\\beta}{\\alpha\\beta}\\right) $$ or $$ \\mathbf{v}_{\\max}=t\\left(\\frac{\\alpha\\beta}{\\alpha+\\beta}\\right) $$ <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//3b3777f9-8c7d-4c2a-be98-f0e26bc415ca/markdown_4/imgs/img_in_image_box_641_601_673_643.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A04Z%2F-1%2F%2Fced233f300afa228e87330afc79cc54118f4196656ec97f884ef124b56ef0783\" alt=\"Image\" width=\"2%\" /></div> ##### Related Theory This problem can also be solved by checking the dimensions on both sides. On checking the dimensions, we note that the dimensions of option (d) match with that of velocity.",
+    "formulas": [
+      {
+        "latex": "\\mathrm{v}(t)=\\frac{dx}{dt}=4\\alpha t^{3}+2\\beta t+\\gamma",
+        "meaning": ""
+      },
+      {
+        "latex": "\\alpha(t)=\\frac{d v}{d t}=12\\alpha t^{2}+2\\beta",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}&\\mathbf{v}(0)=4\\boldsymbol{\\alpha}\\times\\boldsymbol{0}+2\\boldsymbol{\\beta}\\times\\boldsymbol{0}+\\boldsymbol{\\gamma}=\\boldsymbol{\\gamma}\\\\&\\boldsymbol{\\alpha}(0)=12\\boldsymbol{\\alpha}\\times\\boldsymbol{0}+2\\boldsymbol{\\beta}=2\\boldsymbol{\\beta}\\\\ \\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{\\mathrm{v}(\\mathfrak{A})}{a(0)}=\\frac{\\gamma}{2\\beta}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}\\mathbf{v}&=\\beta\\mathbf{x}^{-2n}\\\\a&=\\frac{d\\mathbf{v}}{dt}=\\frac{dx}{dt},\\frac{d\\mathbf{v}}{dx}\\\\a&=\\frac{d\\mathbf{v}}{dx}.\\mathbf{v}=\\mathbf{v},\\frac{d\\mathbf{v}}{dx}\\\\&=\\beta\\mathbf{x}^{-2n}.(-2n\\beta\\mathbf{x}^{-2n-1})\\\\a&=-2n\\beta^{2}\\mathbf{x}^{-4n-1}\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{array}{c}C)\\text{Acceleration,}\\frac{d\\mathbf{v}}{dt}=f=f_{0}\\left(1-\\frac{t}{\\mathrm{T}}\\right)\\\\ \\Rightarrow\\quad\\int_{0}^{\\mathrm{v}}d\\mathbf{v}=f_{0}\\int_{0}^{\\mathrm{T}}\\left(1-\\frac{t}{\\mathrm{T}}\\right)dt\\\\ \\Rightarrow\\quad\\mathbf{v}=f_{0}\\left(t-\\frac{t^{2}}{2\\mathrm{T}}\\right)_{0}^{\\mathrm{T}}\\\\ =f_{0}\\left(\\mathrm{T}-\\frac{\\mathrm{T}^{2}}{2\\mathrm{T}}\\right)=\\frac{1}{2}f_{0}\\mathrm{T}\\end{array}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{dv}{dt}=\\frac{d^{2}x}{dt^{2}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{v}=\\frac{dx}{dt}.",
+        "meaning": ""
+      },
+      {
+        "latex": "x=a t^{2}-b t^{3}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{v}=\\frac{dx}{dt}=2at-3bt^{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "a=\\frac{d\\mathbf{v}}{dt}=2a-6bt",
+        "meaning": ""
+      },
+      {
+        "latex": "a=0",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{array}{l}\\bullet\\\\ \\bullet\\bullet\\end{array}",
+        "meaning": ""
+      },
+      {
+        "latex": "2a-6bt=0",
+        "meaning": ""
+      },
+      {
+        "latex": "6bt=2a",
+        "meaning": ""
+      },
+      {
+        "latex": "t=\\frac{2a}{6b}=\\frac{a}{3b}",
+        "meaning": ""
+      },
+      {
+        "latex": "t=t_{1}+t_{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{t}=\\mathbf{v}_{\\max}\\left(\\frac{1}{\\alpha}+\\frac{1}{\\beta}\\right)=\\mathbf{v}_{\\max}\\left(\\frac{\\alpha+\\beta}{\\alpha\\beta}\\right)",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{v}_{\\max}=t\\left(\\frac{\\alpha\\beta}{\\alpha+\\beta}\\right)",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "f4593b1e-8033-483a-8c01-683c447bbd4a",
+      "732823fc-b995-4c42-b470-7c706174bdd7",
+      "e22bc6d3-e1c9-4f54-ac32-e4cf4cbc867c",
+      "d842ae2d-e111-4da3-ac07-0afc515ea8bc",
+      "b64effd6-3437-4716-b108-5421a49ea3e1"
+    ],
+    "tags": [
+      "Re-NEET 2024",
+      "AIPMT 2007",
+      "AIPMT 1997",
+      "AIPMT 1994"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-motion-in-a-straight-line-instantaneous-velocity-and-speed",
+    "chapter": "Motion in a Straight Line",
+    "subtopic": "Instantaneous Velocity and Speed",
+    "class": "XI",
+    "unitId": "xi-kinematics",
+    "unitLabel": "Unit II — Kinematics",
+    "order": 1,
+    "title": "Instantaneous Velocity and Speed",
+    "summary": "The given equation is $$ x=40+12t-t^{3} $$ On differentiating, we get, $$ u=\\frac{dx}{dt}=12-3t^{2} $$ When particle comes to rest means, v = 0 $\\therefore$ $12-3t^{2}=0$ $\\Rightarrow$ $t=2s$ The distance travelled…",
+    "body": "**Key points from solved questions**\n- The given equation is $$ x=40+12t-t^{3} $$ On differentiating, we get, $$ u=\\frac{dx}{dt}=12-3t^{2} $$ When particle comes to rest means, v = 0 $\\therefore$ $12-3t^{2}=0$ $\\Rightarrow$ $t=2s$ The distance travelled before coming to rest $$ \\begin{aligned}\\int_{0}^{s}ds&=\\int_{0}^{2}\\mathbf{v}dt\\\\\\left[s\\right]_{0}^{s}&=\\int_{0}^{2}(12-3t^{2})dt\\\\s&=\\left[12t-\\frac{3t^{3}}{3}\\right]_{0}^{2}\\\\&=12\\times2-(8-0)\\\\&=16m.\\end{aligned} $$\n- From question, $$ x=ae^{-\\alpha t}+be^{\\beta t} $$ $$ \\mathrm{v}=\\frac{dx}{dt}=-a\\alpha e^{-\\alpha t}+b\\beta e^{\\beta t} $$ $$ \\mathbf{v}=-a\\alpha e^{-\\alpha t}+b\\beta e^{\\beta t} $$ ∴ Velocity will go on increasing with time.\n- Instantaneous velocity is the slope of displacement-time graph. At point E, the slope is negative, so instantaneous velocity of the particle is negative. At points C and F, the slope is positive and at D, the slope is zero.",
+    "formulas": [
+      {
+        "latex": "x=40+12t-t^{3}",
+        "meaning": ""
+      },
+      {
+        "latex": "u=\\frac{dx}{dt}=12-3t^{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}\\int_{0}^{s}ds&=\\int_{0}^{2}\\mathbf{v}dt\\\\\\left[s\\right]_{0}^{s}&=\\int_{0}^{2}(12-3t^{2})dt\\\\s&=\\left[12t-\\frac{3t^{3}}{3}\\right]_{0}^{2}\\\\&=12\\times2-(8-0)\\\\&=16m.\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "12-3t^{2}=0",
+        "meaning": ""
+      },
+      {
+        "latex": "x=ae^{-\\alpha t}+be^{\\beta t}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{v}=\\frac{dx}{dt}=-a\\alpha e^{-\\alpha t}+b\\beta e^{\\beta t}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{v}=-a\\alpha e^{-\\alpha t}+b\\beta e^{\\beta t}",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "fc8cb4be-e62c-4d30-a49a-5b3616b344f8",
+      "24070304-00c7-44b0-9f60-ddf072ed454b",
+      "04d362cf-c3a9-4ee6-bcfc-ecd8d96158c2"
+    ],
+    "tags": [
+      "AIPMT 2006",
+      "AIPMT 2005",
+      "AIPMT 1994"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-motion-in-a-straight-line-kinematic-equation-for-uniformly-accelerated-motion",
+    "chapter": "Motion in a Straight Line",
+    "subtopic": "Kinematic Equation for Uniformly Accelerated Motion",
+    "class": "XI",
+    "unitId": "xi-kinematics",
+    "unitLabel": "Unit II — Kinematics",
+    "order": 1,
+    "title": "Kinematic Equation for Uniformly Accelerated Motion",
+    "summary": "Initial speed of car, u = 40 km/h $$ =40\\times\\frac{5}{18}m/s=\\frac{100}{9}m/s $$ From $3^{\\mathrm{rd}}$ equation of motion.",
+    "body": "**Key points from solved questions**\n- Given: $$ \\begin{aligned}&u=4\\mathrm{~m}\\mathrm{s}^{-1},\\mathrm{v}=0\\\\&g=10\\mathrm{~m s}^{-2}\\\\ \\end{aligned} $$ Time taken by ball to reach its maximum height, $$ \\begin{aligned}v&=u+at\\\\0&=4+(-10)t\\\\ or4&=10t\\\\t&=0.4s\\\\ime,\\\\&=4s-2\\times0.4s\\\\&=3.2s\\end{aligned} $$ Remaining time, The height of bridge above water surface is, $$ \\Downarrow\\Downarrow $$ $$ \\begin{aligned}S&=ut+\\frac{1}{2}at^{2}\\\\ S&=4\\times3.2+\\frac{1}{2}\\times10\\times(3.2)^{2}\\\\ S&=64m\\end{aligned} $$\n- $$ \\begin{aligned}\\mathrm{S}_{\\mathbf{n}}^{\\mathrm{th}}&=u+\\frac{a}{2}\\left(2n-1\\right)\\\\&=0+\\frac{a}{2}\\left(2n-1\\right)\\\\\\mathrm{S}_{\\mathbf{n}}^{\\mathrm{th}}&\\propto(2n-1)\\\\&=\\left[2(1)-1\\right]:\\left[2(2)-1\\right]:\\left[2(3)-1\\right]:\\left[2(4)-1\\right]\\\\&=1:3:5:7\\end{aligned} $$\n- Here, $$ \\begin{aligned}&h_{1}=\\frac{1}{2}gt^{2}=\\frac{1}{2}g(5)^{2}=125\\\\&h_{2}=\\frac{1}{2}gt^{2}=\\frac{1}{2}g(10)^{2}-\\frac{1}{2}g(5)^{2}=375\\\\ \\end{aligned} $$ $$ \\begin{aligned}&h_{3}=\\frac{1}{2}gt^{2}=\\frac{1}{2}g(15)^{2}-\\frac{1}{2}g(10)^{2}=625\\\\&h_{1}=\\frac{h_{2}}{3}=\\frac{h_{3}}{5}\\\\ \\end{aligned} $$\n- According to the question. For first ball, u = 0 $$ s_{1}=\\frac{1}{2}gt_{1}^{2}=\\frac{1}{2}\\times g(18)^{2} $$ For second ball. $$ \\begin{array}{l}s_{2}=\\mathrm{vt}_{2}+\\frac{1}{2}\\mathrm{gr}^{2}\\\\ t_{2}=18-6=12\\mathrm{s}\\\\ s_{2}=\\mathrm{v}\\times12+\\frac{1}{2}g(12)^{2}\\end{array} $$ Hence, $ s_{1} = s_{2} $ $$ \\therefore\\frac{1}{2}g(18)^{2}=12\\mathrm{v}+\\frac{1}{2}g(12)^{2} $$ On solving we get $$ \\mathbf{v}=75~\\mathbf{m s}^{-1} $$\n- We know the second equation of motion, $$ s=ut+\\frac{1}{2}at^{2} $$ When, $$ u=0,s=\\frac{1}{2}a t^{2} $$ $$ s_{1}=\\frac{1}{2}a(10)^{2} $$ $$ s_{2}=\\frac{1}{2}a(20)^{2} $$ $$ \\frac{s_{1}}{s_{2}}=\\frac{(10)^{2}}{(20)^{2}}=\\frac{1}{4} $$ $$ s_{2}=4s_{1} $$\n- Distance covered in $ n^{\\text{th}} $ second, $$ \\begin{aligned}S_{n}&=u+\\frac{1}{2}a(2n-1)\\\\&=\\ 0+\\frac{1}{2}\\times\\frac{4}{3}(2\\times3-1)=\\frac{1}{2}\\times\\frac{4}{3}\\times5\\\\&=\\frac{10}{3}m\\end{aligned} $$\n- According to the question, two particles reach at the final position in same time, distance covered is S and time t will remain same. From equation of motion, $$ \\mathrm{S}=u t+\\frac{1}{2}a t^{2} $$ For $1^{st}$ particle $$ \\begin{aligned}S&=4(t)+\\frac{1}{2}\\left(1\\right)t^{2}\\\\ &=4t+\\frac{t^{2}}{2}\\end{aligned} $$ For $ 2^{nd} $ particle $$ \\begin{aligned}\\mathrm{S}&=2(t)+\\frac{1}{2}\\left(2\\right)t^{2}\\\\&=2t+t^{2}\\end{aligned} $$ Equating eq. (i) and eq. (ii) we get, $$ 4t+\\frac{t^{2}}{2}=2t+t^{2} $$ $$ t=4s $$ Putting the value of $t$ in eq. (i) we have $$ \\begin{aligned}S&=4(4)+\\frac{16}{2}\\\\&=24m\\end{aligned} $$\n- Let the total height = H T is time taken by ball to reach height H. So, $$ \\mathrm{H}=u\\mathrm{T}-\\frac{1}{2}g\\mathrm{T}^{2} $$ Distance covered by ball in time (T - t) sec. $$ y=u\\left(\\mathrm{T}-t\\right)-\\frac{1}{2}g\\left(\\mathrm{T}-t\\right)^{2} $$ Distance covered in last $t$ sec; $$ \\begin{aligned}h&=\\mathrm{H}-y\\\\=[ut-\\frac{1}{2}gt^{2}]-[u\\left(\\mathrm{T}-t\\right)-\\frac{1}{2}g\\left(\\mathrm{T}-t\\right)^{2}]\\end{aligned} $$ On solving and putting, $$ \\mathrm{T}=\\frac{u}{g} $$ We will get, $$ h=\\frac{1}{2}gt^{2} $$\n- From question, Interval of ball thrown = 2 s If we want that minimum three balls remain in air then time of flight of first ball must be greater than 4 sec. $$ \\mathrm{T}>4\\mathrm{~s} $$ $$ \\bullet \\quad \\bullet\\ast $$ $$ \\mathrm{\\frac{2u}{g}}>4 \\mathrm{~s} $$ $$ \\rightarrow $$ $$ u>19.6\\mathrm{m/s} $$\n- Initial speed of car, u = 40 km/h $$ =40\\times\\frac{5}{18}m/s=\\frac{100}{9}m/s $$ From $3^{\\mathrm{rd}}$ equation of motion. $$ \\mathbf{v}^{2}=u^{2}-2a s $$ ↓ $$ 0=\\left(\\frac{100}{9}\\right)^{2}-2\\times a\\times2 $$ $$ 4a=\\frac{100\\times100}{81} $$ ↓ $$ a=\\frac{2500}{81}m/s $$ Final speed of car = 80 km/h $ = 80 \\times \\frac{5}{18} = \\frac{200}{9} \\text{ m/s} $ Suppose car stops for a distance s'. Then $$ \\mathbf{v}^{2}=\\boldsymbol{u}^{2}-2a s^{\\prime} $$ $$ 0=\\left(\\frac{200}{9}\\right)^{2}-2\\times\\frac{2500}{81}s^{\\prime} $$ $$ s^{\\prime}=\\frac{200\\times200\\times81}{9\\times9\\times2\\times2500}=8m $$ <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//10bc9ad3-8476-4959-86d1-2968a4f9e613/markdown_1/imgs/img_in_image_box_79_757_120_795.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A15%3A52Z%2F-1%2F%2Fe5b5687069ad83d16987874adf18b0b172448c416474dd7e21c52d5c2c985787\" alt=\"Image\" width=\"3%\" /></div> #### ! Caution Students should not get confused by sign of acceleration or retardation. Here, brakes apply retarding force hence a is considered negative.\n- <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//10bc9ad3-8476-4959-86d1-2968a4f9e613/markdown_1/imgs/img_in_image_box_201_890_517_1103.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A15%3A52Z%2F-1%2F%2F4f2d0f7ae84ee9b8de92a85b1144020c361900461d8f2c9d33c8beeb0feda791\" alt=\"Image\" width=\"26%\" /></div> Here, initial velocity of ball, $ u = 40 \\, \\text{m/s}^2 $ Acceleration of ball, $$ \\begin{array}{r} \\begin{aligned}a&=-g\\ \\mathrm{m/s^{2}}\\end{aligned} \\\\ &=-10\\ \\mathrm{m/s^{2}}\\end{array} $$ Time = 2 s From first equation of motion, $$ \\mathbf{v}=\\mathbf{u}+a t=40-10\\times2 $$ $$ \\mathbf{v}=20\\ m/s $$\n- Distance travelled by the body in $ n^{\\text{th}} $ second is given by, $$ s_{n}=u+\\frac{a}{2}(2n-1) $$ Here, $$ u=0 $$ $ \\therefore $ For $ 4^{th} $ second, $$ s_{4}=\\frac{a}{2}(2\\times4-1) $$ and For $ 3^{rd} $ second, Hence, $$ s_{3}=\\frac{a}{2}(2\\times3-1) $$ $$ \\frac{s_{4}}{s_{3}}=\\frac{(2\\times4-1)}{(2\\times3-1)}=\\frac{7}{5} $$\n- As distance travelled in $ n^{th} $ sec is given by, Here, u = 0, $$ s_{n}=u+\\frac{1}{2}a(2n-1) $$ acceleration due to gravity, $ a = 9.8 \\, \\text{m/s}^2 $ $\\therefore$ For $4^{\\text{th}}$ second, $s_{4} = \\frac{1}{2} \\times 9.8(2 \\times 4 - 1)$ and for $5^{\\text{th}}$ second, $s_{5} = \\frac{1}{2} \\times 9.8(2 \\times 5 - 1)$ $$ \\mathrm{\\frac{s_{4}}{s_{5}}} = \\frac{7}{9} $$ $$ s_{4}:s_{5}=7:9 $$\n- Let x be the total distance between points P and Q and v be the velocity of car while passing a certain middle point of PQ. If a is the acceleration of the car then, <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//10bc9ad3-8476-4959-86d1-2968a4f9e613/markdown_1/imgs/img_in_image_box_731_701_1079_795.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A15%3A52Z%2F-1%2F%2F08a5adfa440e77c90c1a36527119c6787b74b2fb0a7f8e4eaa4d803fd5cdfbc2\" alt=\"Image\" width=\"29%\" /></div> For part PQ, $$ 40^{2}-30^{2}=2ax $$ or $$ a=\\frac{350}{x} $$ For part RQ, $$ 40^{2}-\\mathbf{v}^{2}=\\frac{2ax}{2} $$ Putting value of $a$ from eq. (i) in eq. (ii), we have, $$ 40^{2}-v^{2}=2\\left(\\frac{350}{x}\\right)\\frac{x}{2} $$ $$ 40^{2}-v^{2}=350 $$ $$ \\mathbf{v}^{2}=1250 $$ v = 35.35 km/h v ≈ 35 km/h",
+    "formulas": [
+      {
+        "latex": "\\begin{aligned}&u=4\\mathrm{~m}\\mathrm{s}^{-1},\\mathrm{v}=0\\\\&g=10\\mathrm{~m s}^{-2}\\\\ \\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}v&=u+at\\\\0&=4+(-10)t\\\\ or4&=10t\\\\t&=0.4s\\\\ime,\\\\&=4s-2\\times0.4s\\\\&=3.2s\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\Downarrow\\Downarrow",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}S&=ut+\\frac{1}{2}at^{2}\\\\ S&=4\\times3.2+\\frac{1}{2}\\times10\\times(3.2)^{2}\\\\ S&=64m\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}\\mathrm{S}_{\\mathbf{n}}^{\\mathrm{th}}&=u+\\frac{a}{2}\\left(2n-1\\right)\\\\&=0+\\frac{a}{2}\\left(2n-1\\right)\\\\\\mathrm{S}_{\\mathbf{n}}^{\\mathrm{th}}&\\propto(2n-1)\\\\&=\\left[2(1)-1\\right]:\\left[2(2)-1\\right]:\\left[2(3)-1\\right]:\\left[2(4)-1\\right]\\\\&=1:3:5:7\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}&h_{1}=\\frac{1}{2}gt^{2}=\\frac{1}{2}g(5)^{2}=125\\\\&h_{2}=\\frac{1}{2}gt^{2}=\\frac{1}{2}g(10)^{2}-\\frac{1}{2}g(5)^{2}=375\\\\ \\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}&h_{3}=\\frac{1}{2}gt^{2}=\\frac{1}{2}g(15)^{2}-\\frac{1}{2}g(10)^{2}=625\\\\&h_{1}=\\frac{h_{2}}{3}=\\frac{h_{3}}{5}\\\\ \\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "s_{1}=\\frac{1}{2}gt_{1}^{2}=\\frac{1}{2}\\times g(18)^{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{array}{l}s_{2}=\\mathrm{vt}_{2}+\\frac{1}{2}\\mathrm{gr}^{2}\\\\ t_{2}=18-6=12\\mathrm{s}\\\\ s_{2}=\\mathrm{v}\\times12+\\frac{1}{2}g(12)^{2}\\end{array}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\therefore\\frac{1}{2}g(18)^{2}=12\\mathrm{v}+\\frac{1}{2}g(12)^{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{v}=75~\\mathbf{m s}^{-1}",
+        "meaning": ""
+      },
+      {
+        "latex": "s_{1} = s_{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "s=ut+\\frac{1}{2}at^{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "u=0,s=\\frac{1}{2}a t^{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "s_{1}=\\frac{1}{2}a(10)^{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "s_{2}=\\frac{1}{2}a(20)^{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{s_{1}}{s_{2}}=\\frac{(10)^{2}}{(20)^{2}}=\\frac{1}{4}",
+        "meaning": ""
+      },
+      {
+        "latex": "s_{2}=4s_{1}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}S_{n}&=u+\\frac{1}{2}a(2n-1)\\\\&=\\ 0+\\frac{1}{2}\\times\\frac{4}{3}(2\\times3-1)=\\frac{1}{2}\\times\\frac{4}{3}\\times5\\\\&=\\frac{10}{3}m\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{S}=u t+\\frac{1}{2}a t^{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}S&=4(t)+\\frac{1}{2}\\left(1\\right)t^{2}\\\\ &=4t+\\frac{t^{2}}{2}\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}\\mathrm{S}&=2(t)+\\frac{1}{2}\\left(2\\right)t^{2}\\\\&=2t+t^{2}\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "4t+\\frac{t^{2}}{2}=2t+t^{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "t=4s",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "f368d0ab-507e-467f-aefe-19e7ac1ae315",
+      "bcf72e21-8034-435d-a43c-d8a76073bf5a",
+      "79a01816-919e-4789-9b82-0254356376fb",
+      "2c1539ae-9441-4b8a-a178-cb3ba4a73b63",
+      "85b4c542-1236-475f-b00d-6abd5a5a3904",
+      "9521281a-ba97-4500-8b9c-ed00168448cd",
+      "45fbe34c-ec11-4a50-bfc3-16d427cf3d57",
+      "afcb7adf-16ae-4f2f-b354-fb8c6cfca38b",
+      "9fbb7892-cec5-42fe-8f97-6042be02ac14",
+      "8afa264c-37f4-4296-a7b3-8067043aace1",
+      "3c488607-3b22-4970-a424-e7ba2c2d826b",
+      "2a10a6c1-7f45-4d3e-9a72-9b5c423a45a1",
+      "66aa0633-9856-49f1-a5be-374d210bdc5d",
+      "4794820d-adb8-4787-852d-c04c64984a12"
+    ],
+    "tags": [
+      "NEET 2023",
+      "NEET 2022",
+      "NEET 2013",
+      "AIPMT Mains 2008",
+      "AIPMT 2003",
+      "AIPMT 1998",
+      "AIPMT 1996",
+      "AIPMT 1993",
+      "AIPMT 1989",
+      "AIPMT 1988"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-motion-in-a-straight-line-objective-i",
+    "chapter": "Motion in a Straight Line",
+    "subtopic": "Objective I",
+    "class": "XI",
+    "unitId": "xi-kinematics",
+    "unitLabel": "Unit II — Kinematics",
+    "order": 1,
+    "title": "Objective I",
+    "summary": "Take east as positive.",
+    "body": "**Key points from solved questions**\n- Velocity is a vector, so \"change in velocity\" means $\\Delta\\vec v = \\vec v_f - \\vec v_i$, found by vector subtraction — not by subtracting speeds. - Initial velocity: $\\vec v_i = 50$ km/h **due north** - After a $90°$ left turn (north → west) at the same speed: $\\vec v_f = 50$ km/h **due west** $$\\Delta \\vec v = \\vec v_f - \\vec v_i = \\vec v_f + (-\\vec v_i)$$ $-\\vec v_i$ is $50$ km/h due **south**. Adding this to $\\vec v_f$ (west, $50$ km/h): these two are perpendicular vectors of equal magnitude $50$ km/h, so their resultant has magnitude $$|\\Delta \\vec v| = \\sqrt{50^2+50^2} = 50\\sqrt{2} \\approx 70 \\text{ km/h}$$ and it points midway between west and south, i.e. **south-west**. Answer: (B).\n- On a displacement–time ($x$–$t$) graph, the **slope at any point gives the instantaneous velocity** ($v = dx/dt$), and a horizontal segment means the displacement isn't changing — the particle is at rest. The graph for this problem is a straight line of constant (positive) slope from $t=0$ to $t=t_0$ — meaning the particle moves with **constant velocity** during this interval — followed by a horizontal segment for $t > t_0$, where the slope is zero, meaning the particle's position stops changing, i.e. it **comes to rest**. - (a) is wrong because the motion isn't continuous in the same sense after $t_0$ (it stops). - (b) is wrong because the particle is moving (not at rest) for $t<t_0$. - (c) is wrong because the slope (velocity) is *constant*, not increasing, before $t_0$. - (d) correctly captures both phases: constant velocity, then rest. Answer: (D).\n- Take east as positive. Initial velocity $u > 0$ (east), constant acceleration $-a$ (toward west, $a>0$). Using $x = ut + \\tfrac12(-a)t^2$: The key subtlety: we are told the acceleration is \"constant\" and toward the west, but we are **not told its magnitude relative to $u$**. This determines the qualitative behavior: - **If $a$ is small** (particle never reverses direction in 20 s): the particle keeps decelerating but still moves east throughout; since it's slowing down, the displacement in the second 10 s is *less* than in the first 10 s, so $x_A > x_B$. - **If $a$ is large enough** that the particle stops and reverses direction within the 20 s: it could travel east, stop, then come back west — possibly *overshooting* its position from the first 10 seconds, making $x_B$ comparable to or even larger in magnitude than $x_A$ (displacements can partially cancel or add depending on exact timing). Since the relationship between $x_A$ and $x_B$ changes qualitatively depending on the (unspecified) magnitude of $a$, **no unique answer can be determined** from the given information — you'd need to know the value of $a$ relative to $u$. Answer: (D).\n- \"Equal time\" intervals: the person travels at $v_1$ for time $T$ and at $v_2$ for the *same* time $T$. $$\\text{Total distance} = v_1 T + v_2 T, \\qquad \\text{Total time} = 2T$$ $$v_{\\text{avg}} = \\frac{v_1 T + v_2 T}{2T} = \\frac{v_1+v_2}{2}$$ This is simply the **arithmetic mean** of the two speeds — because both speeds are \"weighted\" equally by the *same* duration $T$. Answer: (A). (Contrast this with the next question, where the distances — not the times — are equal; that situation gives the harmonic mean instead.)\n- \"Equal distance\" intervals: the person covers a distance $x$ at speed $v_1$, then the *same* distance $x$ at speed $v_2$. Here the **times spent are different** (more time is spent at the slower speed), so we cannot simply average the speeds. $$\\text{Time for first part} = \\frac{x}{v_1}, \\qquad \\text{Time for second part} = \\frac{x}{v_2}$$ $$v_{\\text{avg}} = \\frac{\\text{total distance}}{\\text{total time}} = \\frac{2x}{\\dfrac{x}{v_1}+\\dfrac{x}{v_2}} = \\frac{2}{\\dfrac{1}{v_1}+\\dfrac{1}{v_2}}$$ Rearranging: $$\\frac{2}{v} = \\frac{1}{v_1}+\\frac{1}{v_2}$$ This is the **harmonic mean** relation — the average speed is pulled towards the smaller of the two speeds (since more time is necessarily spent travelling slowly). Answer: (C).\n- The instant the stone is released, it becomes a **freely falling body** — the elevator's motion (and the muscular/mechanical forces that were accelerating it) no longer act on the stone. From that moment, the *only* force on the stone is gravity (air resistance neglected), so by Newton's second law its acceleration is simply $$a_{\\text{stone}} = g \\ \\text{(downward)}$$ The elevator's acceleration $a$ is irrelevant after release — it only determined the stone's *velocity* at the moment of release (which becomes the initial condition for the subsequent free fall), not its acceleration thereafter. A common trap is to think the relative motion of the elevator matters, but acceleration depends only on the *net force*, and gravity alone acts on the released stone. Answer: (D).\n- Take downward as positive, building height $h$, both balls thrown with the same speed $u$ (ball A upward: initial velocity $-u$; ball B downward: initial velocity $+u$), and both experience acceleration $g$ downward. For ball A (thrown up with speed $u$): it rises, comes back down to the throwing point with speed $u$ (by symmetry of projectile motion — speed depends only on height, not direction of velocity), and from that point onward it is exactly equivalent to ball B's situation: a ball moving downward with speed $u$ from the same height $h$. So **at the level of the throwing point, both balls have the same speed $u$, moving downward**, and from there both fall through the same height $h$ under the same acceleration $g$. Using $v^2 = u^2 + 2gh$ for both: $$v_A^2 = u^2+2gh = v_B^2 \\;\\Rightarrow\\; v_A = v_B$$ This is a standard result: the final speed of a vertically projected object (up or down) from the same height with the same initial speed is the same — it depends only on energy conservation ($\\tfrac12 m v^2 = \\tfrac12 m u^2 + mgh$), which doesn't care about the direction of the initial velocity. Answer: (C).\n- In projectile motion, the acceleration is constant: $\\vec a = g$ (downward) throughout the flight. The velocity vector, however, continuously changes direction — it starts angled upward, becomes horizontal at the top of the trajectory, and ends angled downward. The velocity is perpendicular to the (constant, downward) acceleration only when the velocity itself is **purely horizontal** — because a horizontal vector is perpendicular to a vertical one. This happens at exactly **one instant**: the highest point of the trajectory, where the vertical component of velocity is momentarily zero and only the horizontal component remains. - Before this instant, velocity has an upward component (angle with the downward acceleration is obtuse, not $90°$). - After this instant, velocity has a downward component (angle is acute). - Only at the peak is $\\vec v \\perp \\vec a$. Answer: (C).\n- Both bullets are fired **horizontally** from the same height, so for each bullet the initial vertical velocity component is zero. The horizontal motion (whatever its speed) does not affect the vertical motion at all — the two are independent. The time to fall a height $h$ is governed purely by the vertical equation of motion: $$h = \\tfrac12 g t^2 \\;\\Rightarrow\\; t = \\sqrt{\\frac{2h}{g}}$$ This expression contains no horizontal-speed term — it depends only on $h$ and $g$, both identical for the two bullets. So **regardless of how fast each bullet travels horizontally**, they fall through the same height in the same time and hit the ground simultaneously. (This is the same principle demonstrated by the classic \"monkey and hunter\" / dropped-vs-fired-bullet experiments.) Answer: (C).\n- The range of a projectile launched with speed $u$ at angle $\\theta$ is $$R = \\frac{u^2 \\sin 2\\theta}{g}$$ For the same launch speed $u$, the range depends only on $\\sin 2\\theta$. Note the key identity: $$\\sin(2\\times 15°) = \\sin 30° = \\tfrac12, \\qquad \\sin(2\\times 45°) = \\sin 90° = 1$$ So $$\\frac{R_{45°}}{R_{15°}} = \\frac{\\sin 90°}{\\sin 30°} = \\frac{1}{1/2} = 2$$ Therefore $R_{45°} = 2 \\times R_{15°} = 2\\times 50 = 100$ m. (This also illustrates the general fact that $45°$ gives the *maximum* range for a given launch speed — $\\sin 2\\theta$ is maximised at $\\theta=45°$ where $\\sin 90°=1$.) Answer: (D).\n- The range formula $R = \\dfrac{u^2\\sin 2\\theta}{g}$ requires knowing the **launch speed** $u$ for each projectile. The problem states the angles ($15°$ for A, $45°$ for B) but says nothing about whether the two projectiles are launched with the same speed. - If $u_A = u_B$: then since $\\sin 30° = \\tfrac12 < \\sin 90° = 1$, we'd get $R_A < R_B$. - If $u_A$ is large enough compared to $u_B$ (e.g. $u_A^2 \\sin 30° > u_B^2 \\sin 90°$, i.e. $u_A > u_B\\sqrt{2}$): then $R_A$ could be *greater* than $R_B$. - They could also be launched with speeds that make $R_A = R_B$. Since the launch speeds are not specified, the relation between $R_A$ and $R_B$ **cannot be determined** from the given information. Answer: (D).\n- \"Shortest time to cross\" depends only on the **component of the swimmer's velocity perpendicular to the bank** (i.e., directly across the river) — the river's current only carries him sideways (downstream) but doesn't affect how quickly he covers the width. If the man swims at speed $v_s = 10$ m/min at angle $\\theta$ to the straight-across (north) direction, his across-the-river component is $v_s\\cos\\theta$. The time to cross a river of width $d$ is $$t = \\frac{d}{v_s \\cos\\theta}$$ This is **minimised when $\\cos\\theta$ is maximum**, i.e. $\\theta = 0$ — meaning he should point his swimming effort **straight across (due north)**, regardless of the current's speed. The current (5 m/min, west to east) will carry him downstream (eastward) during the crossing, so he won't land directly opposite his starting point — but he *will* cross in the minimum possible time. (Aiming upstream at an angle, as in options b/c/d, would only reduce his across-stream component and increase the crossing time — that strategy is for minimizing drift, not time.) Answer: (A).",
+    "formulas": [
+      {
+        "latex": "\\Delta \\vec v = \\vec v_f - \\vec v_i = \\vec v_f + (-\\vec v_i)",
+        "meaning": ""
+      },
+      {
+        "latex": "|\\Delta \\vec v| = \\sqrt{50^2+50^2} = 50\\sqrt{2} \\approx 70 \\text{ km/h}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\Delta\\vec v = \\vec v_f - \\vec v_i",
+        "meaning": ""
+      },
+      {
+        "latex": "\\vec v_i = 50",
+        "meaning": ""
+      },
+      {
+        "latex": "\\vec v_f = 50",
+        "meaning": ""
+      },
+      {
+        "latex": "v = dx/dt",
+        "meaning": ""
+      },
+      {
+        "latex": "t=t_0",
+        "meaning": ""
+      },
+      {
+        "latex": "x = ut + \\tfrac12(-a)t^2",
+        "meaning": ""
+      },
+      {
+        "latex": "\\text{Total distance} = v_1 T + v_2 T, \\qquad \\text{Total time} = 2T",
+        "meaning": ""
+      },
+      {
+        "latex": "v_{\\text{avg}} = \\frac{v_1 T + v_2 T}{2T} = \\frac{v_1+v_2}{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\text{Time for first part} = \\frac{x}{v_1}, \\qquad \\text{Time for second part} = \\frac{x}{v_2}",
+        "meaning": ""
+      },
+      {
+        "latex": "v_{\\text{avg}} = \\frac{\\text{total distance}}{\\text{total time}} = \\frac{2x}{\\dfrac{x}{v_1}+\\dfrac{x}{v_2}} = \\frac{2}{\\dfrac{1}{v_1}+\\dfrac{1}{v_2}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{2}{v} = \\frac{1}{v_1}+\\frac{1}{v_2}",
+        "meaning": ""
+      },
+      {
+        "latex": "a_{\\text{stone}} = g \\ \\text{(downward)}",
+        "meaning": ""
+      },
+      {
+        "latex": "v_A^2 = u^2+2gh = v_B^2 \\;\\Rightarrow\\; v_A = v_B",
+        "meaning": ""
+      },
+      {
+        "latex": "v^2 = u^2 + 2gh",
+        "meaning": ""
+      },
+      {
+        "latex": "\\tfrac12 m v^2 = \\tfrac12 m u^2 + mgh",
+        "meaning": ""
+      },
+      {
+        "latex": "\\vec a = g",
+        "meaning": ""
+      },
+      {
+        "latex": "h = \\tfrac12 g t^2 \\;\\Rightarrow\\; t = \\sqrt{\\frac{2h}{g}}",
+        "meaning": ""
+      },
+      {
+        "latex": "R = \\frac{u^2 \\sin 2\\theta}{g}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\sin(2\\times 15°) = \\sin 30° = \\tfrac12, \\qquad \\sin(2\\times 45°) = \\sin 90° = 1",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{R_{45°}}{R_{15°}} = \\frac{\\sin 90°}{\\sin 30°} = \\frac{1}{1/2} = 2",
+        "meaning": ""
+      },
+      {
+        "latex": "R_{45°} = 2 \\times R_{15°} = 2\\times 50 = 100",
+        "meaning": ""
+      },
+      {
+        "latex": "\\theta=45°",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "179afbee-d88b-4d95-9eed-8be4b2c34c19",
+      "55e015c5-7535-4404-893d-0c4815df32d8",
+      "9b33f00b-54fa-42b0-916d-93d365e5f284",
+      "233401e8-2e29-48c1-9522-07ed1fea73e8",
+      "57ced898-4b6d-40f3-bdf2-cb39c9673171",
+      "7e38c985-bc3f-4819-afd0-b405177c959d",
+      "31077789-34fa-4870-bce5-7ac3d5884600",
+      "89267dbe-832f-49b6-95c3-adfdab24b30b",
+      "55ef0dff-6cbc-43e8-a374-915b3b4d70ee",
+      "04761b7b-a003-410e-8b8b-d3e765f436dd",
+      "cb7acfd5-65a0-4f10-b459-51393fcbd24d",
+      "bd8b7218-7cb9-4925-be67-30792b2fa9b9"
+    ],
+    "tags": [
+      "HC Verma Vol 1",
+      "Objective I",
+      "Chapter 3"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-motion-in-a-straight-line-objective-ii",
+    "chapter": "Motion in a Straight Line",
+    "subtopic": "Objective II",
+    "class": "XI",
+    "unitId": "xi-kinematics",
+    "unitLabel": "Unit II — Kinematics",
+    "order": 1,
+    "title": "Objective II",
+    "summary": "Carefully distinguish *instantaneous* quantities from *averages over an interval*.",
+    "body": "**Key points from solved questions**\n- The tip of the minute hand moves in a circle and returns to its **starting point** after exactly one hour (one full revolution). - **Displacement** = (final position) $-$ (initial position) $= 0$, since it ends where it started. ✓ (a) - **Distance covered** = circumference of the circle traced $= 2\\pi r \\neq 0$. So (b) is false. - **Average speed** $= \\dfrac{\\text{distance}}{\\text{time}} = \\dfrac{2\\pi r}{1\\text{ hr}} \\neq 0$. So (c) is false. - **Average velocity** $= \\dfrac{\\text{displacement}}{\\text{time}} = \\dfrac{0}{1\\text{ hr}} = 0$. ✓ (d) This nicely illustrates the key distinction: distance/speed are scalars tracking the *path length*, while displacement/velocity are vectors tracking only the *net change in position* — and for any closed path, displacement (and hence average velocity) is always zero even though distance (and average speed) is not. Answer: (A, D).\n- Let $\\tau = t - 2\\text{ s}$, so $x = u\\tau + a\\tau^2$. Differentiate to get velocity and acceleration: $$v = \\frac{dx}{dt} = \\frac{dx}{d\\tau} = u + 2a\\tau, \\qquad \\text{acceleration} = \\frac{dv}{dt} = 2a \\ (\\text{constant})$$ - **(a) \"initial velocity is $u$\"**: \"Initial\" means at $t=0$, i.e. $\\tau = -2$ s: $v(t=0) = u + 2a(-2) = u - 4a \\neq u$ in general. **False.** (Note: $v=u$ only at $\\tau=0$, i.e. $t = 2$ s — that's not the initial instant.) - **(b) \"acceleration is $a$\"**: We found acceleration $= 2a$, not $a$. **False.** - **(c) \"acceleration is $2a$\"**: Matches our calculation exactly. **True.** ✓ - **(d) \"at $t=2$ s the particle is at the origin\"**: At $t = 2$ s, $\\tau = 0$, so $x = u(0) + a(0)^2 = 0$ — the particle is at the origin. **True.** ✓ Answer: (C, D).\n- Recall: **speed** $= |\\vec v|$ (magnitude only), while **velocity** $\\vec v$ has both magnitude and direction. \"Varying\" velocity means either its magnitude *or* its direction (or both) changes. - **(a) \"varying speed without varying velocity\"**: Impossible — if the speed (magnitude of $\\vec v$) changes, then $\\vec v$ itself has changed, so the velocity has necessarily varied too. **False.** - **(b) \"varying velocity without varying speed\"**: Possible — e.g. uniform circular motion: $|\\vec v|$ stays constant but the *direction* of $\\vec v$ keeps changing, so $\\vec v$ varies. **True.** ✓ - **(c) \"nonzero acceleration without varying velocity\"**: Impossible — acceleration is defined as the *rate of change of velocity* ($\\vec a = d\\vec v/dt$); if $\\vec a \\neq 0$, then $\\vec v$ must be changing, by definition. **False.** - **(d) \"nonzero acceleration without varying speed\"**: Possible — again, uniform circular motion: the centripetal acceleration is nonzero (it constantly redirects the velocity), yet the speed stays constant. **True.** ✓ Answer: (B, D).\n- Take motion along a straight line, with positions/velocities/accelerations as signed (positive/negative) quantities. - **(a)** If $v$ and $a$ have opposite signs, $a$ acts to *reduce* the magnitude of $v$ (it opposes the current direction of motion) — the object is **slowing down**. **True.** ✓ - **(b)** If position $x$ and velocity $v$ have opposite signs: e.g. $x<0$ (object is to the left of origin) and $v>0$ (moving rightward, i.e. towards the origin) — or $x>0,\\ v<0$ (object to the right, moving leftward, again towards the origin). In both cases the object is moving **towards the origin**. **True.** ✓ - **(c)** \"If $v=0$ at an instant, $a$ must also be zero then\" — false in general: e.g. at the topmost point of a vertical throw, $v=0$ momentarily but $a = g \\neq 0$ (gravity keeps acting). $v=0$ only describes the instantaneous state of motion; it doesn't constrain the force/acceleration. **False.** - **(d)** If $v=0$ throughout an *interval* (not just an instant), then $v$ is constant ($=0$) over that interval, so $\\dfrac{dv}{dt} = a = 0$ at every instant within it. **True.** ✓ Answer: (A, B, D).\n- We're told $v(0) = 0$. - **(a) \"acceleration at $t=0$ must be zero\"**: False — e.g. a ball dropped from rest has $v=0$ at the start but $a = g \\neq 0$. Velocity being zero at an instant says nothing about the force/acceleration at that instant. - **(b) \"acceleration at $t=0$ may be zero\"**: True — it's certainly *possible* (e.g., a particle starting from rest and remaining at rest, or one where the net force happens to vanish at that instant). ✓ - **(c) \"if $a=0$ throughout $[0,10\\text{ s}]$, the speed is also zero in this interval\"**: If acceleration is zero throughout, velocity stays constant — and since $v(0)=0$, it remains $v=0$ for the whole interval, so speed $=|v|=0$ throughout. **True.** ✓ - **(d) \"if speed is zero throughout $[0, 10\\text{ s}]$, the acceleration is also zero in this interval\"**: Speed $=0$ throughout means $v=0$ throughout (constant), so $a = dv/dt = 0$ throughout. **True.** ✓ (Only (a) is false — confusing \"$v=0$ at one instant\" with \"$v=0$ over an interval\" is the trap.) Answer: (B, C, D).\n- Carefully distinguish *instantaneous* quantities from *averages over an interval*. - **(a) \"magnitude of velocity = speed\"**: This is essentially the *definition* — instantaneous speed is defined as $|\\vec v|$. **Always true.** ✓ - **(b) \"magnitude of average velocity = average speed\"**: False in general. Average velocity $= \\dfrac{\\text{net displacement}}{\\text{time}}$, while average speed $=\\dfrac{\\text{total path length}}{\\text{time}}$. For a round trip (net displacement zero, but nonzero path length), $|\\vec v_{\\text{avg}}| = 0$ while average speed $\\neq 0$ — they differ. - **(c) \"speed always zero, but average speed nonzero\"**: Impossible — if $|\\vec v(t)| = 0$ at every instant, the particle never moves, so the total path length is zero and average speed is zero too. - **(d) \"speed never zero, but average speed in an interval is zero\"**: Average *speed* (a scalar built from total path length) cannot be zero unless the path length is zero — which requires the particle to never move, i.e. $v=0$ throughout. So if speed is *never* zero, average speed cannot be zero either. (You might be thinking of *average velocity* being zero for a round trip — but that's a different quantity, see (b).) Impossible. Only (a) is unconditionally true. Answer: (A).\n- On a velocity–time graph, the **slope gives acceleration** and the **area under the curve gives displacement**. The graph for this problem is a single straight line — its slope is constant throughout, so: - **(a) \"constant acceleration\"**: A straight-line $v$-$t$ graph has the same slope everywhere $\\Rightarrow$ acceleration is constant. **True.** ✓ - **(b) \"never turned around\"**: The line crosses the time-axis (velocity changes sign, going from positive to negative, or vice versa) — when $v$ changes sign the particle reverses its direction of motion. So it *does* turn around. **False.** - **(c) \"zero displacement\"**: Displacement is the *signed* area between the line and the time axis. Whether the positive-velocity area exactly cancels the negative-velocity area depends on the specific numbers in the graph — this isn't guaranteed by \"constant acceleration\" alone, so we can't assert it generally here. - **(d) \"average speed in 0–10 s same as in 10–20 s\"**: Since the line has constant slope and (by the symmetry of this particular graph) the speed values in the second half mirror those in the first half (just with opposite sign — same magnitudes), the average of $|v|$ over each 10-second half works out the same. **True.** ✓ Answer: (A, D).\n- On a position–time ($x$-$t$) graph, the **slope at a point gives the instantaneous velocity**. The particle is \"at rest\" exactly where the slope is zero — i.e., at a turning point (local maximum or minimum) of the curve, where the tangent is horizontal. Reading the graph: the curve has a sequence of humps and dips — six points where the curve momentarily flattens out (changes from rising to falling or vice versa). At each such point $\\dfrac{dx}{dt} = 0$, so the particle is momentarily at rest there. - **(a) \"particle has come to rest 6 times\"**: Counting the flat-tangent (turning) points on the curve gives six such instants. **True.** ✓ - **(b), (c), (d)**: These claims about the location of maximum speed, the sign of velocity over $[0,6\\text{ s}]$, and the sign of the overall average velocity depend on finer details (the steepness of each segment and the net rise/fall of the curve) that don't hold up against a careful reading of the graph — only the count of rest-instants in (a) is robustly correct. Answer: (A).",
+    "formulas": [
+      {
+        "latex": "= 2\\pi r \\neq 0",
+        "meaning": ""
+      },
+      {
+        "latex": "= \\dfrac{\\text{distance}}{\\text{time}} = \\dfrac{2\\pi r}{1\\text{ hr}} \\neq 0",
+        "meaning": ""
+      },
+      {
+        "latex": "= \\dfrac{\\text{displacement}}{\\text{time}} = \\dfrac{0}{1\\text{ hr}} = 0",
+        "meaning": ""
+      },
+      {
+        "latex": "v = \\frac{dx}{dt} = \\frac{dx}{d\\tau} = u + 2a\\tau, \\qquad \\text{acceleration} = \\frac{dv}{dt} = 2a \\ (\\text{constant})",
+        "meaning": ""
+      },
+      {
+        "latex": "\\tau = t - 2\\text{ s}",
+        "meaning": ""
+      },
+      {
+        "latex": "x = u\\tau + a\\tau^2",
+        "meaning": ""
+      },
+      {
+        "latex": "\\tau = -2",
+        "meaning": ""
+      },
+      {
+        "latex": "v(t=0) = u + 2a(-2) = u - 4a \\neq u",
+        "meaning": ""
+      },
+      {
+        "latex": "\\tau=0",
+        "meaning": ""
+      },
+      {
+        "latex": "t = 2",
+        "meaning": ""
+      },
+      {
+        "latex": "\\tau = 0",
+        "meaning": ""
+      },
+      {
+        "latex": "x = u(0) + a(0)^2 = 0",
+        "meaning": ""
+      },
+      {
+        "latex": "= |\\vec v|",
+        "meaning": ""
+      },
+      {
+        "latex": "\\vec a = d\\vec v/dt",
+        "meaning": ""
+      },
+      {
+        "latex": "a = g \\neq 0",
+        "meaning": ""
+      },
+      {
+        "latex": "\\dfrac{dv}{dt} = a = 0",
+        "meaning": ""
+      },
+      {
+        "latex": "v(0) = 0",
+        "meaning": ""
+      },
+      {
+        "latex": "v(0)=0",
+        "meaning": ""
+      },
+      {
+        "latex": "=|v|=0",
+        "meaning": ""
+      },
+      {
+        "latex": "a = dv/dt = 0",
+        "meaning": ""
+      },
+      {
+        "latex": "= \\dfrac{\\text{net displacement}}{\\text{time}}",
+        "meaning": ""
+      },
+      {
+        "latex": "=\\dfrac{\\text{total path length}}{\\text{time}}",
+        "meaning": ""
+      },
+      {
+        "latex": "|\\vec v_{\\text{avg}}| = 0",
+        "meaning": ""
+      },
+      {
+        "latex": "|\\vec v(t)| = 0",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "77d30e51-806e-401e-be75-23ad4029f0bc",
+      "3e4e7542-5feb-44a7-ab3b-aa2c7d395a10",
+      "023694a7-05e1-439a-92d6-575359d5117e",
+      "8a29555b-f858-493c-b028-4044627908ad",
+      "034eb124-c7e8-4b0f-b15d-310989d69c45",
+      "60d2391d-589e-4fc3-934c-578b54acf778",
+      "e901c49a-0e08-4cfc-8f32-dfe7a8513981",
+      "85ff92ab-6099-43b6-a210-2c5c2baa2690"
+    ],
+    "tags": [
+      "HC Verma Vol 1",
+      "Objective II",
+      "Chapter 3"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-motion-in-a-straight-line-overview",
+    "chapter": "Motion in a Straight Line",
+    "subtopic": "Overview",
+    "class": "XI",
+    "unitId": "xi-kinematics",
+    "unitLabel": "Unit II — Kinematics",
+    "order": 1,
+    "title": "Overview",
+    "summary": "Magnetic flux, $ \\phi = B \\cdot A $ As, F = ILB $$ [\\mathbf{B}]={\\frac{\\mathbf{F}}{\\mathbf{I L}}}={\\frac{\\mathbf{M L T}^{-2}}{\\mathbf{A L}}}=[\\mathbf{M T}^{-2}\\mathbf{A}^{-1}] $$ From (i) $$ \\phi=[\\mathrm{M…",
+    "body": "**Key points from solved questions**\n- Radians and Steradians are measured in either $\\pi$ (pi) or degrees. Because $\\pi$ and degrees are pure numbers. Planes and solid angles have no dimensions. Plane and solid angles both have units but no dimensions.\n- Magnetic flux, $ \\phi = B \\cdot A $ As, F = ILB $$ [\\mathbf{B}]={\\frac{\\mathbf{F}}{\\mathbf{I L}}}={\\frac{\\mathbf{M L T}^{-2}}{\\mathbf{A L}}}=[\\mathbf{M T}^{-2}\\mathbf{A}^{-1}] $$ From (i) $$ \\phi=[\\mathrm{M T}^{-2}\\mathrm{A}^{-1}]\\mathrm{L}^{2} $$ $$ [\\phi]=[\\mathrm{M L^{2}T^{-2}A^{-1}}] $$ Self inductance, $ \\phi = LI $ $$ \\mathrm{L}=\\frac{\\phi}{\\mathrm{I}}=\\frac{\\mathrm{ML}^{2}\\mathrm{T}^{-2}\\mathrm{A}^{-1}}{\\mathrm{A}} $$ $$ [{\\mathrm L}]={\\mathrm M}{\\mathrm L}^{2}{\\mathrm T}^{-2}{\\mathrm A}^{-2} $$ Magnetic permeability, $ \\mu = \\frac{B \\cdot 2\\pi r}{I} $ $$ [\\mu]=\\",
+    "formulas": [
+      {
+        "latex": "[\\mathbf{B}]={\\frac{\\mathbf{F}}{\\mathbf{I L}}}={\\frac{\\mathbf{M L T}^{-2}}{\\mathbf{A L}}}=[\\mathbf{M T}^{-2}\\mathbf{A}^{-1}]",
+        "meaning": ""
+      },
+      {
+        "latex": "\\phi=[\\mathrm{M T}^{-2}\\mathrm{A}^{-1}]\\mathrm{L}^{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "[\\phi]=[\\mathrm{M L^{2}T^{-2}A^{-1}}]",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{L}=\\frac{\\phi}{\\mathrm{I}}=\\frac{\\mathrm{ML}^{2}\\mathrm{T}^{-2}\\mathrm{A}^{-1}}{\\mathrm{A}}",
+        "meaning": ""
+      },
+      {
+        "latex": "[{\\mathrm L}]={\\mathrm M}{\\mathrm L}^{2}{\\mathrm T}^{-2}{\\mathrm A}^{-2}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\phi = B \\cdot A",
+        "meaning": ""
+      },
+      {
+        "latex": "\\phi = LI",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mu = \\frac{B \\cdot 2\\pi r}{I}",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "d2986679-0ef5-4832-8078-65fd1eab3c7b",
+      "933e1fd9-b4a6-408c-929f-172ac21acf74"
+    ],
+    "tags": [
+      "NEET 2024"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-motion-in-a-straight-line-relative-velocity",
+    "chapter": "Motion in a Straight Line",
+    "subtopic": "Relative Velocity",
+    "class": "XI",
+    "unitId": "xi-kinematics",
+    "unitLabel": "Unit II — Kinematics",
+    "order": 1,
+    "title": "Relative Velocity",
+    "summary": "$$ \\mathbf{v}_{s}=10+10=20\\;\\mathbf{m}\\mathbf{s}^{-1} $$ <div style=\"text-align: center;\"><img…",
+    "body": "**Key points from solved questions**\n- Here, $ v_{SR} = 20 \\, m/s $ <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//10bc9ad3-8476-4959-86d1-2968a4f9e613/markdown_1/imgs/img_in_image_box_707_1288_962_1491.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A15%3A52Z%2F-1%2F%2F9779ac5ab22236a8de6af6e48ce4b9b0f5b7a23836e1da7070de9a6cd1f2044d\" alt=\"Image\" width=\"21%\" /></div> $$ \\begin{array}{r}{\\mathbf{v}_{\\mathrm{R G}}\\quad=10\\mathrm{m/s}}\\end{array} $$ $$ \\mathbf{\\tilde{v}_{SG}}\\stackrel{\\rightarrow}{=}\\mathbf{\\tilde{v}_{SR}}\\stackrel{\\rightarrow}{+}\\mathbf{\\tilde{v}_{RG}} $$ $$ \\sin\\theta=\\left|\\frac{\\mathbf{v}_{\\mathrm{RG}}}{\\mathbf{v}_{\\mathrm{SR}}}\\right|=\\frac{10}{20}=\\frac{1}{2} $$ ↓ $$ \\theta=30^{\\circ}\\mathrm{w e s t}. $$\n- <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//10bc9ad3-8476-4959-86d1-2968a4f9e613/markdown_2/imgs/img_in_image_box_96_253_372_423.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A15%3A54Z%2F-1%2F%2F9ba2c41a3d17bbcd42fa589a981b4124358dc5050f0d0156ba427d55648538ab\" alt=\"Image\" width=\"23%\" /></div> Let bullet collide at time t. $$ \\because $$ $$ x_{1}+x_{2}=100m $$ $$ 25t+25t=100 $$ $$ t=2s $$ $$ \\begin{aligned}y=\\frac{1}{2}gt^{2}=\\frac{1}{2}\\times10\\times2^{2}\\\\=20m\\\\h=200-20=180m\\end{aligned} $$ Hence, bullets will collide after 2 s at the height 180 m above the ground.\n- Velocity of girl with respect to elevator = $ \\frac{d}{t_1} = v_1 $ Velocity of elevator with respect to ground = $ \\frac{d}{t_2} = v_2 $ $ \\therefore $ Velocity of girl with respect to ground = $ v_g = v_1 + v_2 $ $$ \\begin{aligned}\\frac{d}{t}&=\\frac{d}{t_{1}}+\\frac{d}{t_{2}}\\\\\\frac{1}{t}&=\\frac{1}{t_{1}}+\\frac{1}{t_{2}}\\\\t&=\\frac{t_{1}t_{2}}{t_{1}+t_{2}}\\end{aligned} $$\n- <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//10bc9ad3-8476-4959-86d1-2968a4f9e613/markdown_2/imgs/img_in_image_box_94_1110_357_1285.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A15%3A55Z%2F-1%2F%2F5d2c8400a70c773d85c369ebe118e820c0f2ca40ad3d9f2ae03032ba0624805d\" alt=\"Image\" width=\"22%\" /></div> From the diagram, the distance S between the ships is, $$ \\mathrm{S}=\\sqrt{(100-x)^{2}+x^{2}}[\\mathrm{From~A~to~B}] $$ for $ S_{min} $, $$ \\frac{d\\mathbf{S}}{dx}=0 $$ $$ \\frac{dS}{dx}=\\frac{[-2(100-x)+2x]}{2[(100-x)^{2}+x^{2}]^{1/2}} $$ $$ \\left[-2\\left(100-x\\right)+2x\\right]=0 $$ $$ \\implies\\quad4x-200=0 $$ ⇨ $ x = 50 ~km $ So after both the ships have covered 50 km. The time taken is. $$ t=\\frac{x}{10}=\\frac{50}{10}=5h $$\n- S $ \\rightarrow $ 1 km B $ \\rightarrow $ $ u = 10 \\, ms^{-1} $ S = Scooter B = Bus Let v = relative velocity of S w.r.t. B $$ \\begin{aligned}&\\mathbf{V}=\\mathbf{V}_{S}-\\mathbf{V}_{\\mathbf{B}}\\\\&\\mathbf{V}_{S}=\\mathbf{V}+\\mathbf{V}_{\\mathbf{B}}\\end{aligned} $$ \\therefore Relative velocity = \\frac{Displacement}{time} = \\frac{1000}{100} = 10 ms^{-1} Putting this value in eq. (i),\n- $$ \\mathbf{v}_{s}=10+10=20\\;\\mathbf{m}\\mathbf{s}^{-1} $$ <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//10bc9ad3-8476-4959-86d1-2968a4f9e613/markdown_2/imgs/img_in_image_box_790_748_1009_832.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A15%3A55Z%2F-1%2F%2F0b70845d2f0d2d4e8beab49a265c8997dd001c9da296682e4b7fafaee60af0d2\" alt=\"Image\" width=\"18%\" /></div> After time t, <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//10bc9ad3-8476-4959-86d1-2968a4f9e613/markdown_2/imgs/img_in_image_box_743_880_988_1114.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A15%3A55Z%2F-1%2F%2F18aa6e192038df1503e791b6ddb2d286c4a83c0f69635d1840b7119dbf33e740\" alt=\"Image\" width=\"20%\" /></div> $$ (\\mathbf{v}t)^{2}=a^{2}+(\\mathbf{v}_{1}t)^{2} $$ $$ \\mathbf{v}^{2}t^{2}=a^{2}+(\\mathbf{v}_{1}^{2}t)^{2} $$ $$ (\\mathbf{v}^{2}-\\mathbf{v}_{1}^{2})t^{2}=a^{2} $$ $$ t=\\frac{a}{\\sqrt{\\mathbf{v}^{2}-\\mathbf{v}_{1}^{2}}} $$\n- Average speed = $ \\frac{\\text{Total distance}}{\\text{Total time taken}} $ Average speed = $ \\frac{2s}{\\frac{s}{v}+\\frac{s}{2v}} $ $ =\\frac{2s\\times2v}{2s+s}=\\frac{4vs}{2s}=\\frac{4v}{3} $\n- <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//10bc9ad3-8476-4959-86d1-2968a4f9e613/markdown_3/imgs/img_in_image_box_273_143_592_228.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A15%3A57Z%2F-1%2F%2F42b9d9af50043815e1a13c36777371438e7cf57c94d71549b5d2fd3c2cab047f\" alt=\"Image\" width=\"26%\" /></div> Time taken. $$ t_{1}=\\frac{x}{\\mathbf{v}_{1}}\\quad\\text{and}\\quad t_{2}=\\frac{x}{\\mathbf{v}_{2}} $$ $\\therefore$ Average velocity $\\mathbf{v}=\\frac{x+x}{t_{1}+t_{2}}=\\frac{2x}{\\frac{x}{v_{1}}+\\frac{x}{v_{2}}}=\\frac{2v_{1}v_{2}}{v_{1}+v_{2}}$ $$ \\frac{2}{\\mathbf{v}}=\\frac{1}{\\mathbf{v}_{1}}+\\frac{1}{\\mathbf{v}_{2}} $$ OR $$ \\mathbf{v}=\\frac{2\\mathbf{v}_{1}\\mathbf{v}_{2}}{\\mathbf{v}_{1}+\\mathbf{v}_{2}} $$\n- Average speed = $ \\frac{\\text{Total distance}}{\\text{Total time}} $ $ =\\frac{2d}{\\frac{d}{v_u}+\\frac{d}{v_d}}=\\frac{2v_d v_u}{v_d+v_u} $\n- Let the distance between two places be $d$ and $t_{1}$ is time taken by car to travel first-half length, $t_{2}$ is time taken by car to travel second-half length. Time taken by car to travel first-half length, $$ t_{1}=\\frac{\\left(\\frac{d}{2}\\right)}{40}=\\frac{d}{80} $$ Time taken by car to travel second-half length. $$ t_{2}=\\frac{\\left(\\frac{d}{2}\\right)}{60}=\\frac{d}{120} $$ ∴ Total time. $$ \\begin{aligned}t&=t_{1}+t_{2}\\\\&=\\frac{d}{80}+\\frac{d}{120}\\\\&=d\\left(\\frac{1}{80}+\\frac{1}{120}\\right)=\\frac{d}{48}\\end{aligned} $$ $\\therefore$ Average speed, $=\\frac{d}{t_{1}+t_{2}}=\\frac{d}{\\left(\\frac{d}{48}\\right)}$ $=48\\mathrm{~km/h}$",
+    "formulas": [
+      {
+        "latex": "\\begin{array}{r}{\\mathbf{v}_{\\mathrm{R G}}\\quad=10\\mathrm{m/s}}\\end{array}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{\\tilde{v}_{SG}}\\stackrel{\\rightarrow}{=}\\mathbf{\\tilde{v}_{SR}}\\stackrel{\\rightarrow}{+}\\mathbf{\\tilde{v}_{RG}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\sin\\theta=\\left|\\frac{\\mathbf{v}_{\\mathrm{RG}}}{\\mathbf{v}_{\\mathrm{SR}}}\\right|=\\frac{10}{20}=\\frac{1}{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\theta=30^{\\circ}\\mathrm{w e s t}.",
+        "meaning": ""
+      },
+      {
+        "latex": "v_{SR} = 20 \\, m/s",
+        "meaning": ""
+      },
+      {
+        "latex": "\\because",
+        "meaning": ""
+      },
+      {
+        "latex": "x_{1}+x_{2}=100m",
+        "meaning": ""
+      },
+      {
+        "latex": "25t+25t=100",
+        "meaning": ""
+      },
+      {
+        "latex": "t=2s",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}y=\\frac{1}{2}gt^{2}=\\frac{1}{2}\\times10\\times2^{2}\\\\=20m\\\\h=200-20=180m\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}\\frac{d}{t}&=\\frac{d}{t_{1}}+\\frac{d}{t_{2}}\\\\\\frac{1}{t}&=\\frac{1}{t_{1}}+\\frac{1}{t_{2}}\\\\t&=\\frac{t_{1}t_{2}}{t_{1}+t_{2}}\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{d}{t_1} = v_1",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{d}{t_2} = v_2",
+        "meaning": ""
+      },
+      {
+        "latex": "v_g = v_1 + v_2",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{S}=\\sqrt{(100-x)^{2}+x^{2}}[\\mathrm{From~A~to~B}]",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{d\\mathbf{S}}{dx}=0",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{dS}{dx}=\\frac{[-2(100-x)+2x]}{2[(100-x)^{2}+x^{2}]^{1/2}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\left[-2\\left(100-x\\right)+2x\\right]=0",
+        "meaning": ""
+      },
+      {
+        "latex": "\\implies\\quad4x-200=0",
+        "meaning": ""
+      },
+      {
+        "latex": "t=\\frac{x}{10}=\\frac{50}{10}=5h",
+        "meaning": ""
+      },
+      {
+        "latex": "x = 50 ~km",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}&\\mathbf{V}=\\mathbf{V}_{S}-\\mathbf{V}_{\\mathbf{B}}\\\\&\\mathbf{V}_{S}=\\mathbf{V}+\\mathbf{V}_{\\mathbf{B}}\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "u = 10 \\, ms^{-1}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{v}_{s}=10+10=20\\;\\mathbf{m}\\mathbf{s}^{-1}",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "43c7266c-431f-40af-91ed-8804238bf1b2",
+      "cf2e59a8-69c2-4a27-8f46-71fa0fd44dee",
+      "b3b52e45-70e3-478e-8a52-d9a7e2585383",
+      "d2713295-3fb4-49af-bd51-b4ce2ff796e6",
+      "92234b89-005f-467e-80fa-96ec3b235f10",
+      "3c683580-5445-4bab-ab86-44337f8477de",
+      "6e17c0aa-b9ee-4c49-935a-680d03df39e9",
+      "6af4a6fc-0448-4398-b5c0-d66c7048a115",
+      "120dc186-3993-4b73-bd36-5f4b722cd2da",
+      "f9d3bd3b-7d5d-4932-a7a8-de63ad5fb38e"
+    ],
+    "tags": [
+      "NEET 2019",
+      "NEET 2017",
+      "AIPMT 2005",
+      "NEET 2023",
+      "AIPMT Mains 2011",
+      "AIPMT 2007",
+      "AIPMT 1990"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-motion-in-a-straight-line-reneet2026",
+    "chapter": "Motion in a Straight Line",
+    "subtopic": "reNEET2026",
+    "class": "XI",
+    "unitId": "xi-kinematics",
+    "unitLabel": "Unit II — Kinematics",
+    "order": 1,
+    "title": "reNEET2026",
+    "summary": "$v=2t-6=0$ at $t=3\\,$s.",
+    "body": "**Key points from solved questions**\n- $v=2t-6=0$ at $t=3\\,$s. Distance $0\\to3$s $=9$ m and $3\\to6$s $=9$ m; total $18$ m in $6$ s $\\Rightarrow$ average speed $3\\ \\text{ms}^{-1}$.",
+    "formulas": [
+      {
+        "latex": "v=2t-6=0",
+        "meaning": ""
+      },
+      {
+        "latex": "t=3\\,",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "renet2026-phy-06"
+    ],
+    "tags": [
+      "reNEET 2026"
+    ],
+    "source": "seed"
+  }
+]

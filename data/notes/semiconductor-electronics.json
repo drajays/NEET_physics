@@ -1,0 +1,523 @@
+[
+  {
+    "id": "note-semiconductor-electronics-application-of-junction-diode-as-a-rectifier",
+    "chapter": "Semiconductor Electronics",
+    "subtopic": "Application of Junction Diode as a Rectifier",
+    "class": "XII",
+    "unitId": "xii-semi",
+    "unitLabel": "Unit X — Semiconductor Electronics",
+    "order": 27,
+    "title": "Application of Junction Diode as a Rectifier",
+    "summary": "The logic gate becomes, $$ \\mathbf{Y}=\\overrightarrow{\\mathbf{A}+\\overrightarrow{\\mathbf{B}}}=\\overrightarrow{\\mathbf{A}}\\cdot\\overrightarrow{\\mathbf{B}}=\\mathbf{A}\\cdot\\mathbf{B} $$ <div style=\"text-align:…",
+    "body": "**Key points from solved questions**\n- Capacitor is used to remove AC ripples from rectified output.\n- <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//fa32e9f1-f086-413f-8e82-5d70f24826b2/markdown_1/imgs/img_in_image_box_710_1295_1135_1476.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A35Z%2F-1%2F%2Fcdfecf54fbbfb926a9e6026bad4188c315a45838637be65efe3fb248997a3f0f\" alt=\"Image\" width=\"35%\" /></div> For half wave rectification, the frequency remains i.e., 60 Hz.\n- $$ \\mathbf{V}_{dc}=\\frac{\\mathbf{V}_{m}}{\\pi}=\\frac{10}{\\pi}\\mathbf{V} $$ <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//fa32e9f1-f086-413f-8e82-5d70f24826b2/markdown_2/imgs/img_in_image_box_206_268_442_467.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A37Z%2F-1%2F%2Fc4b87e3f15d9e53e82428efb272d81ae8503f8b95549ec6f648e8a7e280de875\" alt=\"Image\" width=\"19%\" /></div>\n- In full wave rectifier, the fundamental frequency in ripple is twice of input frequency.\n- The I-V characteristics of solar cell lies in the fourth quadrant of the coordinate axes because current is negative which means the current I is supplied by the solar cell and not drawn by it. In reverse bias condition, the positive terminal is connected to the n-type and the negative terminal is connected to the p-type. Hence, majority charge carries are swept into terminals and minority charge carries are repelled by the terminals. Thus, a very small drift current flows through the diode due to minority charge carriers of both n-side and p-side.\n- Both statement I and II are correct. Photovoltaic devices converts optical radiation energy into electrical energy (electricity) and Zener diode operates at reverse bias in breakdown region.\n- When zener diode is forward biased, it behaves like ordinary diode and when reverse biased, it will be a voltage stabilizer. Also, at room temperature, the voltage across the depletion layer for silicon is about 0.6-0.7 V and for germanium is about 0.3-0.35 V.\n- The energy of light of wavelength $\\lambda$ is given by, $$ \\mathrm{E}=h\\mathbf{v}=\\frac{h c}{\\lambda} $$ $$ \\lambda=\\frac{hc}{E} $$ Here, $ h = \\text{Planck's constant} = 6.63 \\times 10^{-34} \\, \\text{Js} $ $$ c=\\text{speed of light}=3\\times10^{8}\\;\\mathrm{m/s} $$ $$ \\mathrm{E=energy~gap=1.9~eV}=1.9\\times1.6\\times10^{-19}\\mathrm{J} $$ Substituting the given values in eq. (i), we get $$ \\begin{aligned}\\lambda&=\\frac{6.63\\times10^{-34}\\times3\\times10^{8}}{1.9\\times1.6\\times10^{-19}}\\\\&=6.54\\times10^{-7}m\\approx654nm\\end{aligned} $$ Thus, the wavelength of light emitted from LED will be 654 nm.\n- The actual diagram becomes, <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//fa32e9f1-f086-413f-8e82-5d70f24826b2/markdown_2/imgs/img_in_image_box_703_211_997_340.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A38Z%2F-1%2F%2Ff8e5422b6332da5c385a6d969ab4ea0a1146ba59652578279927700d275cfb84\" alt=\"Image\" width=\"24%\" /></div> For 1 kΩ, $$ i_{1}=\\frac{15}{1}=15\\ mA $$ For 250 $ \\Omega $, $$ \\begin{aligned}i_{250}&=\\frac{20-15}{250}=\\frac{5}{250}\\\\&=\\frac{20}{1000}=20mA\\end{aligned} $$ $$ i_{\\mathrm{z e n e r}}=20-15=5\\mathrm{~m A} $$\n- Using de-Broglie equation, $$ E=h v=\\frac{h c}{\\lambda} $$ $ \\Rightarrow $ $$ \\lambda=\\frac{hc}{E}=\\frac{6.63\\times10^{-34}\\times3\\times10^{8}}{2.5\\times1.6\\times10^{-19}} $$ $$ =5000\\textup{\\AA} $$ $$ 4000\\mathrm{~\\AA~}<5000\\mathrm{~\\AA~} $$ ∴ Signal of wavelength 4000 Å can be detected by the photodiode.\n- Frequency corresponding to 2 eV is given by, $$ \\begin{aligned}&\\mathrm{E}=h\\mathbf{v}\\\\ \\Rightarrow\\quad2\\times1.6\\times10^{-19}=6.6\\times10^{-34}\\times\\mathbf{v}\\\\ \\Rightarrow\\quad\\mathbf{v}=\\frac{3.2\\times10^{-19}}{6.6\\times10^{-34}}=5\\times10^{14}\\mathrm{Hz}\\\\ \\end{aligned} $$\n- Zener diode used for stabilization while $p-n$ junction diode is used for rectification.\n- In a $p$-n junction photocell, the value of the photoelectromotive force produced by monochromatic light is proportional to the intensity of the light falling on the cell.\n- The truth tube for an OR gate is, <table border=1 style='margin: auto; word-wrap: break-word;'><tr><td style='text-align: center; word-wrap: break-word;'>A</td><td style='text-align: center; word-wrap: break-word;'>B</td><td style='text-align: center; word-wrap: break-word;'>C=A+B</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>0</td><td style='text-align: center; word-wrap: break-word;'>0</td><td style='text-align: center; word-wrap: break-word;'>0</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>0</td><td style='text-align: center; word-wrap: break-word;'>1</td><td style='text-align: center; word-wrap: break-word;'>1</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>1</td><td style='text-align: center; word-wrap: break-word;'>0</td><td style='text-align: center; word-wrap: break-word;'>1</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>1</td><td style='text-align: center; word-wrap: break-word;'>1</td><td style='text-align: center; word-wrap: break-word;'>1</td></tr></table> Truth table for a NOT gate is. <table border=1 style='margin: auto; word-wrap: break-word;'><tr><td style='text-align: center; word-wrap: break-word;'>C</td><td style='text-align: center; word-wrap: break-word;'>$ \\bar{C} $</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>0</td><td style='text-align: center; word-wrap: break-word;'>1</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>1</td><td style='text-align: center; word-wrap: break-word;'>0</td></tr></table> When output of OR gate is applied to NOT gate, then the truth table of a NOR gate is obtained <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//fa32e9f1-f086-413f-8e82-5d70f24826b2/markdown_3/imgs/img_in_image_box_271_170_394_325.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A41Z%2F-1%2F%2F9f80207fa074aca0912ff9c59efec9f7bbe6bc9e9ae36c33d79b4bbc24ba4093\" alt=\"Image\" width=\"10%\" /></div>",
+    "formulas": [
+      {
+        "latex": "\\mathbf{V}_{dc}=\\frac{\\mathbf{V}_{m}}{\\pi}=\\frac{10}{\\pi}\\mathbf{V}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{E}=h\\mathbf{v}=\\frac{h c}{\\lambda}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\lambda=\\frac{hc}{E}",
+        "meaning": ""
+      },
+      {
+        "latex": "c=\\text{speed of light}=3\\times10^{8}\\;\\mathrm{m/s}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{E=energy~gap=1.9~eV}=1.9\\times1.6\\times10^{-19}\\mathrm{J}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}\\lambda&=\\frac{6.63\\times10^{-34}\\times3\\times10^{8}}{1.9\\times1.6\\times10^{-19}}\\\\&=6.54\\times10^{-7}m\\approx654nm\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "h = \\text{Planck's constant} = 6.63 \\times 10^{-34} \\, \\text{Js}",
+        "meaning": ""
+      },
+      {
+        "latex": "i_{1}=\\frac{15}{1}=15\\ mA",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}i_{250}&=\\frac{20-15}{250}=\\frac{5}{250}\\\\&=\\frac{20}{1000}=20mA\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "i_{\\mathrm{z e n e r}}=20-15=5\\mathrm{~m A}",
+        "meaning": ""
+      },
+      {
+        "latex": "E=h v=\\frac{h c}{\\lambda}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\lambda=\\frac{hc}{E}=\\frac{6.63\\times10^{-34}\\times3\\times10^{8}}{2.5\\times1.6\\times10^{-19}}",
+        "meaning": ""
+      },
+      {
+        "latex": "=5000\\textup{\\AA}",
+        "meaning": ""
+      },
+      {
+        "latex": "4000\\mathrm{~\\AA~}<5000\\mathrm{~\\AA~}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}&\\mathrm{E}=h\\mathbf{v}\\\\ \\Rightarrow\\quad2\\times1.6\\times10^{-19}=6.6\\times10^{-34}\\times\\mathbf{v}\\\\ \\Rightarrow\\quad\\mathbf{v}=\\frac{3.2\\times10^{-19}}{6.6\\times10^{-34}}=5\\times10^{14}\\mathrm{Hz}\\\\ \\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{Y}=\\overline{\\mathrm{P}}\\overline{\\mathrm{Q}}=\\mathrm{P}+\\mathrm{Q}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{Y}=\\mathrm{A}+\\mathrm{B}=\\mathrm{A}.\\mathrm{B}\\text{(AND gate)}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{Y}=\\overrightarrow{\\mathbf{A}+\\overrightarrow{\\mathbf{B}}}=\\overrightarrow{\\mathbf{A}}\\cdot\\overrightarrow{\\mathbf{B}}=\\mathbf{A}\\cdot\\mathbf{B}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{Y}=\\mathbf{A}.\\overline{\\mathbf{B}}+\\overline{\\mathbf{A}}.\\mathbf{B}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{Y}=(\\mathbf{A}+\\mathbf{B}).\\mathbf{C}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{Y}=(\\mathbf{0}+\\mathbf{0}).\\mathbf{0}=\\mathbf{0}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{Y}=1.0\\Rightarrow\\mathrm{Y}=0",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{Y}=(0+1).1=1.1=\\mathbf{Y}=1",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{Case(IV):If}\\mathbf{A}=\\mathbf{0},\\mathbf{B}=1,\\mathbf{C}=\\mathbf{0}",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "b179db9d-31ca-41dc-bd84-c1c5e45740f1",
+      "a59268e1-4def-4bac-b328-2dbf66c0cb8e",
+      "b94a1e73-9e01-49ad-8eae-064f86f6a001",
+      "c36ddc41-2bc8-4ec1-af8e-9dbb212cdfaf",
+      "84571b4c-d456-4abd-892c-49cc094c6fe7",
+      "240965a2-1be9-47aa-bba8-486b6c1644de",
+      "3036781b-378c-475c-bd28-4633d45ba43f",
+      "ba0eddc2-cf80-4c3e-b104-a6ca898946cb",
+      "523d20a5-65ba-4d78-b7fe-d212e1686978",
+      "69d3a2b0-30b5-4d0e-a532-63e124f58174",
+      "2d33a103-d14a-4b1c-8dab-6f8f8365137e",
+      "8c50edf0-0125-4e4c-a26a-b283d0cf7b57",
+      "8f2fdf2f-c19a-470c-b22b-32cc19e1691a",
+      "cbf08b79-1ade-454a-8c34-1977b567b5c0",
+      "7be65b74-2a54-42d0-bf24-19d441f565f5",
+      "8e88cc2f-cd92-41a8-b40e-6b9420079220",
+      "e42eb24d-3a4e-4cf3-819c-23890f37c5a9",
+      "2646bd35-c364-4340-af8c-e6b060c63ddb",
+      "dc129fa1-4acd-4eb0-a35a-1c1375c3dfa1",
+      "0e146f92-6e34-4476-9a4b-339d536ca044",
+      "7fcc2553-06bc-4fba-8a9c-27b9c7b40a9c",
+      "52ca77d6-60f0-45fe-9114-5569e3def780",
+      "5901cec2-7ffd-426a-b647-ef953abacc23",
+      "2d12399d-b7e9-493d-9350-505ca45347bc",
+      "5a0420c5-68f7-4531-a602-61b9dceaed57",
+      "4d9c11ec-4981-4e68-be5c-dc95e21618ef",
+      "250ee6c0-ba10-45ac-8ab0-c5c15cd05b2f",
+      "f5d05c37-87f2-49c3-9143-abaa8baad641",
+      "d388deac-7de0-4759-a4fd-d9828c0d61e8",
+      "9ee67ab9-00b0-4cfa-8c11-27441491cc9c",
+      "b1f4adaa-966a-4fa3-85de-b9c082662d80",
+      "189ad471-a4c7-4b9e-b92b-116bdf933505",
+      "d9c3e750-9f85-4670-8487-ecb2effc1aba",
+      "437430d4-e733-4930-8446-14150a85dc7c",
+      "55e3bdb9-5f3e-4eab-ab7b-f58377c079d9",
+      "9dc3d116-2ef2-492c-9c5b-42ba4159095e",
+      "1651807f-3d4a-4857-9374-386b807bdebe"
+    ],
+    "tags": [
+      "NEET 2023",
+      "NEET 2022, AIPMT Screening 2009",
+      "AIPMT 2004",
+      "Re-NEET 2024",
+      "NEET 2024",
+      "NEET 2021",
+      "NEET 2019",
+      "AIPMT Mains 2011",
+      "AIPMT Screening 2009",
+      "AIPMT Screening 2008",
+      "NEET 2020",
+      "NEET 2018",
+      "NEET Phase-II 2016",
+      "NEET Phase-I 2016, AIPMT Mains 2012, 2010",
+      "AIPMT Cancelled 2015",
+      "NEET 2013, AIPMT 2001",
+      "AIPMT Screening 2012",
+      "AIPMT Screening 2011",
+      "AIPMT Mains 2010",
+      "AIPMT Screening 2010",
+      "AIPMT 2006",
+      "AIPMT 1991"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-semiconductor-electronics-classification-of-metals-conductors-and-semiconductors",
+    "chapter": "Semiconductor Electronics",
+    "subtopic": "Classification of Metals, Conductors and Semiconductors",
+    "class": "XII",
+    "unitId": "xii-semi",
+    "unitLabel": "Unit X — Semiconductor Electronics",
+    "order": 27,
+    "title": "Classification of Metals, Conductors and Semiconductors",
+    "summary": "Due to positive temperature coefficient, metal resistivity is directly proportional to temperature, but due to negative temperature coefficient, the semiconductor resistivity is inversely proportional to temperature.",
+    "body": "**Key points from solved questions**\n- Due to positive temperature coefficient, metal resistivity is directly proportional to temperature, but due to negative temperature coefficient, the semiconductor resistivity is inversely proportional to temperature. It means that as temperature drops, metal resistivity drops but semiconductor resistivity rises. Si is a semiconductor, whereas Cu is a metal, in this case. As a result, Si resistivity increases while Cu resistivity falls. ## 2. (C) Tetravalent atom $ \\rightarrow $ C, Si, Ge, Sn Their outer most shell has four electrons. <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//fa32e9f1-f086-413f-8e82-5d70f24826b2/markdown_0/imgs/img_in_image_box_227_547_303_621.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A28Z%2F-1%2F%2F2eae3169d0e0b23f0b3bfe7884313186bda1d7989897ada13054d9b5878d3124\" alt=\"Image\" width=\"6%\" /></div> <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//fa32e9f1-f086-413f-8e82-5d70f24826b2/markdown_0/imgs/img_in_image_box_339_515_445_637.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A29Z%2F-1%2F%2F8773b25365bdfd880e1f4155e55aaf084bf0d99eda494182b7246eaaee518341\" alt=\"Image\" width=\"8%\" /></div> In Si, electrons are loosely bound but in C, they tightly bound. Therefore, C is insulator.",
+    "formulas": [],
+    "questionIds": [
+      "e77242e5-a1fc-4d25-a275-24c41a9051a4"
+    ],
+    "tags": [
+      "AIPMT 2001"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-semiconductor-electronics-extrinsic-semiconductor",
+    "chapter": "Semiconductor Electronics",
+    "subtopic": "Extrinsic Semiconductor",
+    "class": "XII",
+    "unitId": "xii-semi",
+    "unitLabel": "Unit X — Semiconductor Electronics",
+    "order": 27,
+    "title": "Extrinsic Semiconductor",
+    "summary": "As per the question, $$ n_{\\mathrm{i}}^{2}=n_{\\mathrm{e}}n_{\\mathrm{h}} $$ $$ n_{e}=\\frac{(n_{i})^{2}}{n_{h}}=\\frac{(1.5\\times10^{16})^{2}}{4.5\\times10^{22}} $$ $$ n_{i}=1.5\\times10^{16} $$ $$ n_{h}=4.5\\times10^{22} $$…",
+    "body": "**Key points from solved questions**\n- Since, electron and hole concentration is the same. Hence, application of same field will give same current.\n- For an n-type semiconductor, pentavalent impurity is needed. So, phosphorous is used.\n- p-type Semiconductor: To prepare a p-type semiconductor, a trivalent impurity is added with Si and Ge. Such an impurity atom wants to accept an electron from the crystal lattice. Thus, effectively each dopant atom provides a hole. Thus holes are the majority carriers and trivalent atoms are the dopants.\n- n-type semiconductor can be obtained by doping impurity of pentavalent atoms (phosphorous) etc.\n- As per the question, $$ n_{\\mathrm{i}}^{2}=n_{\\mathrm{e}}n_{\\mathrm{h}} $$ $$ n_{e}=\\frac{(n_{i})^{2}}{n_{h}}=\\frac{(1.5\\times10^{16})^{2}}{4.5\\times10^{22}} $$ $$ n_{i}=1.5\\times10^{16} $$ $$ n_{h}=4.5\\times10^{22} $$ $$ n_{e}=5\\times10^{9}m^{-3} $$ $\\therefore n_{h}>>n_{e}$ i.e. the semiconductor is p-type.\n- By addition of pentavalent impurity, only n-type of semiconductor are constructed.\n- An n-type semiconductor is formed when a small amount of pentavalent impurity is added to a pure semiconductor. Arsenic (33) is the pentavalent impurity. The presence of a pentavalent impurity in the semiconductor crystal results in a large number of free electrons.",
+    "formulas": [
+      {
+        "latex": "n_{\\mathrm{i}}^{2}=n_{\\mathrm{e}}n_{\\mathrm{h}}",
+        "meaning": ""
+      },
+      {
+        "latex": "n_{e}=\\frac{(n_{i})^{2}}{n_{h}}=\\frac{(1.5\\times10^{16})^{2}}{4.5\\times10^{22}}",
+        "meaning": ""
+      },
+      {
+        "latex": "n_{i}=1.5\\times10^{16}",
+        "meaning": ""
+      },
+      {
+        "latex": "n_{h}=4.5\\times10^{22}",
+        "meaning": ""
+      },
+      {
+        "latex": "n_{e}=5\\times10^{9}m^{-3}",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "aa1870cd-2348-4286-a172-997680356afa",
+      "f01b3f91-1a50-4cdf-97e0-40916f939d3f",
+      "aaa93387-c1fc-4407-a8b2-3f2c90c1c4bb",
+      "94364ef3-6078-43cc-8c80-132504f4aa20",
+      "773a814e-00dc-415d-aa19-3beff19d0fed",
+      "ed37b847-a5e9-4961-837d-668695a05c8d",
+      "fdd68077-e4be-47b9-96f4-a62405f114e8"
+    ],
+    "tags": [
+      "NEET 2021",
+      "NEET 2020",
+      "NEET 2019",
+      "NEET 2013",
+      "AIPMT Mains 2011",
+      "AIPMT Screening 2011",
+      "AIPMT 1996"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-semiconductor-electronics-intrinsic-semiconductor",
+    "chapter": "Semiconductor Electronics",
+    "subtopic": "Intrinsic Semiconductor",
+    "class": "XII",
+    "unitId": "xii-semi",
+    "unitLabel": "Unit X — Semiconductor Electronics",
+    "order": 27,
+    "title": "Intrinsic Semiconductor",
+    "summary": "1 NEET questions on “Intrinsic Semiconductor”.",
+    "body": "",
+    "formulas": [],
+    "questionIds": [
+      "21f7f6a2-87a8-4ba6-8d33-85b32988f331"
+    ],
+    "tags": [
+      "AIPMT Screening 2012"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-semiconductor-electronics-objective-i",
+    "chapter": "Semiconductor Electronics",
+    "subtopic": "Objective I",
+    "class": "XII",
+    "unitId": "xii-semi",
+    "unitLabel": "Unit X — Semiconductor Electronics",
+    "order": 27,
+    "title": "Objective I",
+    "summary": "An **LED** is a p-n junction operated in **forward bias**.",
+    "body": "**Key points from solved questions**\n- In a semiconductor, charge carriers (electrons and holes) are generated by thermal excitation across the band gap. More thermal energy → more carriers → higher conductivity. This is opposite to metals (where conductivity decreases due to increased phonon scattering). Mathematically, carrier density $\\propto e^{-E_g/(2k_BT)}$, so conductivity increases exponentially with temperature. Answer: (A).\n- At 0 K, no thermal energy is available to excite electrons across the band gap. The valence band is completely filled and the conduction band is completely empty. No charge carriers exist → the semiconductor behaves as a **perfect insulator** at 0 K. As temperature rises, carriers are generated and conductivity increases. Answer: (B).\n- **n-type semiconductor**: formed by doping with pentavalent impurity atoms (e.g., phosphorus in silicon). Each dopant contributes an extra electron to the conduction band. The majority carriers are **electrons** (n for negative). The minority carriers are holes (thermally generated). The material remains electrically neutral overall. Answer: (B).\n- **Forward bias**: p-side at higher potential (positive terminal to p-side). The external field reduces the built-in potential barrier at the junction, allowing majority carriers to diffuse across: holes from p to n, electrons from n to p. The depletion region narrows → low resistance → **large current** flows. Reverse bias: depletion region widens → high resistance → very small (leakage) current. Answer: (B).\n- A **Zener diode** is designed to operate in reverse breakdown (Zener/avalanche breakdown) at a specific **Zener voltage** $V_Z$. Once in breakdown, the voltage across it remains essentially constant regardless of current. This property makes it ideal as a **voltage regulator** — it maintains a stable output voltage even when input voltage or load resistance varies. Answer: (C).\n- In a common-emitter (CE) configuration: $$\\beta = \\frac{I_C}{I_B} \\quad (\\text{DC current gain})$$ $\\beta$ is typically 50–500. The small base current $I_B$ controls the larger collector current $I_C$, providing **current amplification**. Also: $I_E = I_B + I_C$; $\\alpha = I_C/I_E = \\beta/(\\beta+1)$. Answer: (B).\n- An **LED** is a p-n junction operated in **forward bias**. Electrons injected from the n-side and holes from the p-side recombine in the junction region. In direct-bandgap semiconductors (GaAs, GaP, etc.), this recombination releases a photon with energy $\\approx E_g$ (the band gap). The wavelength of emitted light: $\\lambda = hc/E_g$, which can be designed to be in the visible, infrared, or UV range. Answer: (B).",
+    "formulas": [
+      {
+        "latex": "\\beta = \\frac{I_C}{I_B} \\quad (\\text{DC current gain})",
+        "meaning": ""
+      },
+      {
+        "latex": "I_E = I_B + I_C",
+        "meaning": ""
+      },
+      {
+        "latex": "\\alpha = I_C/I_E = \\beta/(\\beta+1)",
+        "meaning": ""
+      },
+      {
+        "latex": "\\lambda = hc/E_g",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "de29ff26-9557-4da6-ad0f-b071cd3bac8d",
+      "e9c64462-d395-4380-8263-87f912d97288",
+      "d0c93d64-051b-4338-b526-3b509e2fc017",
+      "7523aab2-aa1c-48c9-be97-2269d7ffecc5",
+      "fa40942f-cb3f-4fc5-a586-626430aacde7",
+      "c80074af-9589-41d9-a216-1945beb6de6d",
+      "b8d062f5-5bef-4383-835b-f6b8714195fd"
+    ],
+    "tags": [
+      "HC Verma Vol 2",
+      "Objective I",
+      "Chapter 45"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-semiconductor-electronics-objective-ii",
+    "chapter": "Semiconductor Electronics",
+    "subtopic": "Objective II",
+    "class": "XII",
+    "unitId": "xii-semi",
+    "unitLabel": "Unit X — Semiconductor Electronics",
+    "order": 27,
+    "title": "Objective II",
+    "summary": "- **A** ✓: Si (Group 14) and Ge (Group 14) are classic elemental semiconductors.",
+    "body": "**Key points from solved questions**\n- - **A** ✓: Forward bias reduces the built-in potential → depletion region narrows. - **B** ✓: Reverse bias reinforces the built-in potential → depletion region widens. - **C** ✗: A diode conducts significantly only in **forward bias** (rectifying action). In reverse bias, only a tiny leakage current flows (until breakdown). - **D** ✓: Silicon diode threshold voltage $\\approx 0.7\\,\\rm V$ (germanium $\\approx 0.3\\,\\rm V$). Answer: (A), (B), (D).\n- - **A** ✓: Si (Group 14) and Ge (Group 14) are classic elemental semiconductors. - **B** ✗: Pentavalent impurities (5 valence electrons, e.g., P, As, Sb) donate electrons → **n-type**. Trivalent impurities create **p-type**. - **C** ✓: In an intrinsic semiconductor, thermal generation always creates equal numbers of electrons and holes (electron-hole pairs). - **D** ✓: Conductors: $E_g = 0$ (overlapping bands); Insulators: $E_g > 5\\,\\rm eV$; Semiconductors: $E_g \\sim 1\\,\\rm eV$ (Si: 1.1 eV, Ge: 0.67 eV). Answer: (A), (C), (D).",
+    "formulas": [
+      {
+        "latex": "E_g = 0",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "05faaadc-ae8e-41ae-85ba-f39b6ea0dece",
+      "1e4d6c81-5c4d-4d1d-8c4c-0dd503a574f6"
+    ],
+    "tags": [
+      "HC Verma Vol 2",
+      "Objective II",
+      "Chapter 45"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-semiconductor-electronics-overview",
+    "chapter": "Semiconductor Electronics",
+    "subtopic": "Overview",
+    "class": "XII",
+    "unitId": "xii-semi",
+    "unitLabel": "Unit X — Semiconductor Electronics",
+    "order": 27,
+    "title": "Overview",
+    "summary": "Output of the given circuit <table border=1 style='margin: auto; word-wrap: break-word;'><tr><td style='text-align: center; word-wrap: break-word;'>$ \\bar{B} $</td><td style='text-align: center; word-wrap:…",
+    "body": "**Key points from solved questions**\n- Thermal K.E. $ \\geq $ Electrostatic P.E.\n- Output of the given circuit <table border=1 style='margin: auto; word-wrap: break-word;'><tr><td style='text-align: center; word-wrap: break-word;'>$ \\bar{B} $</td><td style='text-align: center; word-wrap: break-word;'>B</td><td style='text-align: center; word-wrap: break-word;'>A.B+ $ \\bar{A} $</td><td style='text-align: center; word-wrap: break-word;'>A.B+ $ \\bar{A} $</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>1</td><td style='text-align: center; word-wrap: break-word;'>0</td><td style='text-align: center; word-wrap: break-word;'>1</td><td style='text-align: cente\n- The logic gate becomes, $$ \\mathbf{Y}=\\overrightarrow{\\mathbf{A}+\\overrightarrow{\\mathbf{B}}}=\\overrightarrow{\\mathbf{A}}\\cdot\\overrightarrow{\\mathbf{B}}=\\mathbf{A}\\cdot\\mathbf{B} $$ <div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_787_1189_1053_1292.jpg\" alt=\"Image\" width=\"22%\" /></div> The truth table of the logic gate is: <table border=1 style='margin: auto; word-wrap: break-word;'><tr><td style='text-align: center; word-wrap: break-word;'>A</td><td style='text-align: center; word-wrap: break-word;'>B</td><td style='text-align: center; word-wrap: break-word;'>$ \\ove\n- $ Y' = \\overline{A + B} $, $ Y = \\overline{A + B} = A + B $ <div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_163_1258_436_1313.jpg\" alt=\"Image\" width=\"22%\" /></div> The truth table is <table border=1 style='margin: auto; word-wrap: break-word;'><tr><td style='text-align: center; word-wrap: break-word;'>A</td><td style='text-align: center; word-wrap: break-word;'>B</td><td style='text-align: center; word-wrap: break-word;'>Y&#x27;</td><td style='text-align: center; word-wrap: break-word;'>Y</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>0</td><td styl\n- It is a NAND-gate. 72.(A) The given truth table shows that, if any or all the inputs are low, then the output is low. The output is only high, when both inputs are high. So, it represents AND gate. 73.(B) The given truth table shows that, if any or all of the inputs are high, then the output is high. The only method to get a low output is to set all of the inputs to zero. If any or all of the inputs are high, the gate's output Y is high. As a result, this truth table is an OR gate truth table. <div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_1103_1312_1148_1355.jpg\" alt=\"",
+    "formulas": [
+      {
+        "latex": "\\mathbf{Y}=\\overrightarrow{\\mathbf{A}+\\overrightarrow{\\mathbf{B}}}=\\overrightarrow{\\mathbf{A}}\\cdot\\overrightarrow{\\mathbf{B}}=\\mathbf{A}\\cdot\\mathbf{B}",
+        "meaning": ""
+      },
+      {
+        "latex": "Y' = \\overline{A + B}",
+        "meaning": ""
+      },
+      {
+        "latex": "Y = \\overline{A + B} = A + B",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "d32d7696-eeb3-43f4-a4a4-566e9f2fa012",
+      "269a0c6f-ff3b-4357-a765-cafaf33ad743",
+      "2699a73b-6c28-4e4e-9d67-44479294ce56",
+      "e8114edd-b2e0-459b-a298-cbe38d07a304",
+      "d2399041-120e-4a9c-82a9-2d9af1413a14",
+      "f83650a8-1df8-43de-bda9-041bf1f6ec29",
+      "4500676b-1c15-4c29-95d2-2962a7f28152",
+      "769fe8d8-672b-4b1f-ba30-6299a8908bcd"
+    ],
+    "tags": [
+      "AIPMT 2004",
+      "NEET 2024",
+      "NEET 2023",
+      "NEET 2020",
+      "AIPMT 2007",
+      "AIPMT 2000",
+      "AIPMT 1991"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-semiconductor-electronics-semiconductor-diode",
+    "chapter": "Semiconductor Electronics",
+    "subtopic": "Semiconductor Diode",
+    "class": "XII",
+    "unitId": "xii-semi",
+    "unitLabel": "Unit X — Semiconductor Electronics",
+    "order": 27,
+    "title": "Semiconductor Diode",
+    "summary": "In forward bias, p-type semiconductor is at higher potential w.r.t.",
+    "body": "**Key points from solved questions**\n- In forward bias, p-type semiconductor is at higher potential w.r.t. n-type semiconductor and in reverse bias, p-type semiconductor is at lower potential w.r.t. n-type semiconductor. <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//fa32e9f1-f086-413f-8e82-5d70f24826b2/markdown_0/imgs/img_in_image_box_585_1018_620_1064.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A29Z%2F-1%2F%2F60f33506987d2e1d2b57338ddcb34562ee3fddb8917e137434317b4697c33625\" alt=\"Image\" width=\"2%\" /></div> ##### Related Theory $$ \\begin{array}{ccc}\\frac{p}{\\Uparrow}\\stackrel{n}{\\Downarrow}&\\Rightarrow&forward~biased\\\\Higher&Lower&\\\\potential&potential&\\end{array} $$ <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//fa32e9f1-f086-413f-8e82-5d70f24826b2/markdown_0/imgs/img_in_image_box_726_1065_1023_1262.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A30Z%2F-1%2F%2F90c42124e90abc82f58db92ac13864fe677e38699e5a8f7d5650df3c9f4ba3b8\" alt=\"Image\" width=\"24%\" /></div>\n- Due to heating, number of electron-hole pair will increase. So overall resistance of diode will change. Due to which forward biasing and reverse biasing both are changed.\n- In forward bias, p-type semiconductor is at higher potential w.r.t. n-type semiconductor and in reverse bias, p-type semiconductor is at lower potential w.r.t. n-type semiconductor.\n- Current will not flow through $D_{1}$ as it is reverse biased. Current will flow through cell, $R_{1}$, $D_{2}$ and $R_{3}$ is $$ I=\\frac{10}{2+2}=2.5A $$\n- Current. $$ \\begin{array}{l} \\text{I} =\\displaystyle {\\frac{\\operatorname{V}_{A} - \\operatorname{V}_{B}}{R}} \\quad \\left\\{ \\vdots \\text{since } \\operatorname{V} = \\operatorname{IR} \\right\\} \\\\ \\qquad = \\frac{4 - (-6)}{1 \\text{k}\\Omega} = \\frac{10}{1 \\times 10^{3}} = 10^{-2} \\text{A} \\end{array} $$\n- <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//fa32e9f1-f086-413f-8e82-5d70f24826b2/markdown_1/imgs/img_in_image_box_299_390_473_542.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A33Z%2F-1%2F%2Ffef2c7aef1f7104b85abfe0f0f6f3aacc67cebd1de0e2805504a64d4cbfdc4b9\" alt=\"Image\" width=\"14%\" /></div> According to question, External resistance, R = 100 Ω emf = 3.5 V ∴ Potential difference on R. $$ \\mathrm{V}_{\\mathrm{R}}=3.5\\mathrm{~V}-0.5\\mathrm{~V}=3\\mathrm{~V} $$ ∴ current. $$ \\begin{aligned}I&=\\frac{V_{R}}{R}=\\frac{3}{100}=0.03A\\\\&=30mA\\end{aligned} $$\n- The barrier potential of a p-n junction depends on: (I) type of semiconductor: The potential barriers for a silicon p-n junction is 0.7 V at room temperature while for germanium p-n junction is 0.3 V. (II) Amount of doping Due to difference in concentration, electrons diffuse from n-side to p-side and holes diffuse from p-side to n-side. (III) Temperature According to the temperature, number of majority and minority carriers will also change.\n- <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//fa32e9f1-f086-413f-8e82-5d70f24826b2/markdown_1/imgs/img_in_image_box_289_1347_469_1528.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A34Z%2F-1%2F%2F6d18585c547ff809f7e318f913907e9cf39678aa6492dde04567122d804d9ee1\" alt=\"Image\" width=\"15%\" /></div> Here, $D_{1}$ is at forward bias and $D_{2}$ is at reverse bias, current flows only in $D_{1}$. Then the diagram becomes <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//fa32e9f1-f086-413f-8e82-5d70f24826b2/markdown_1/imgs/img_in_image_box_834_169_1050_301.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A34Z%2F-1%2F%2Fc837f3c68f6a024375546b6bc7d7060a23c667507f570b7a88abeeb859ab6cc2\" alt=\"Image\" width=\"18%\" /></div> ∴ Current supplied by the battery is: $$ \\begin{aligned}I&=\\frac{V}{R}\\\\&=\\frac{5\\ V}{10\\ \\Omega}=0.5\\ A\\end{aligned} $$\n- (X) and (Z) both are in forward bias. For forward bias, p-type should be at higher potential and n-type should be at lower potential.\n- Reverse bias increases the potential barrier.\n- In forward bias, the voltage across R is V.\n- Diode $D_{1}$ is forward biased in the circuit, while diode $D_{2}$ is reverse biased. As a result, no current flows via the $D_{2}$-containing arm, whereas all current flows through the $D_{1}$-containing arm. Thus, current flowing through the circuit is, $$ I=\\frac{V}{R_{eq}}=\\frac{5}{20+30}=\\frac{5}{50}\\ A $$\n- We have, current in circuit, $$ \\begin{aligned}i&=\\frac{P}{V_{d}}=\\frac{100\\times10^{-3}}{0.5}\\\\&=200\\times10^{-3}A\\end{aligned} $$ Volatage across resistance R, $$ V^{\\prime}=1.5-0.5=1.0V $$ Thus, resistance $$ \\begin{array}{l} \\displaystyle \\operatorname{R} = \\frac{\\operatorname{V}^{\\prime}}{i} \\\\ \\displaystyle \\qquad = \\frac{1}{200 \\times 10^{-3}} \\\\ \\displaystyle \\qquad = 5 \\Omega \\end{array} $$",
+    "formulas": [
+      {
+        "latex": "\\begin{array}{ccc}\\frac{p}{\\Uparrow}\\stackrel{n}{\\Downarrow}&\\Rightarrow&forward~biased\\\\Higher&Lower&\\\\potential&potential&\\end{array}",
+        "meaning": ""
+      },
+      {
+        "latex": "I=\\frac{10}{2+2}=2.5A",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{array}{l} \\text{I} =\\displaystyle {\\frac{\\operatorname{V}_{A} - \\operatorname{V}_{B}}{R}} \\quad \\left\\{ \\vdots \\text{since } \\operatorname{V} = \\operatorname{IR} \\right\\} \\\\ \\qquad = \\frac{4 - (-6)}{1 \\text{k}\\Omega} = \\frac{10}{1 \\times 10^{3}} = 10^{-2} \\text{A} \\end{array}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{V}_{\\mathrm{R}}=3.5\\mathrm{~V}-0.5\\mathrm{~V}=3\\mathrm{~V}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}I&=\\frac{V_{R}}{R}=\\frac{3}{100}=0.03A\\\\&=30mA\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}I&=\\frac{V}{R}\\\\&=\\frac{5\\ V}{10\\ \\Omega}=0.5\\ A\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "I=\\frac{V}{R_{eq}}=\\frac{5}{20+30}=\\frac{5}{50}\\ A",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}i&=\\frac{P}{V_{d}}=\\frac{100\\times10^{-3}}{0.5}\\\\&=200\\times10^{-3}A\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "V^{\\prime}=1.5-0.5=1.0V",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{array}{l} \\displaystyle \\operatorname{R} = \\frac{\\operatorname{V}^{\\prime}}{i} \\\\ \\displaystyle \\qquad = \\frac{1}{200 \\times 10^{-3}} \\\\ \\displaystyle \\qquad = 5 \\Omega \\end{array}",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "b1c8e1f7-550e-4d66-ab53-8354d5f2eaf5",
+      "f946f54f-49cf-4244-9194-634a69e57273",
+      "17dea428-24c0-4640-b79b-9dd879b11a83",
+      "53e562b8-6fdc-456e-8c6b-1007621e0c3f",
+      "5ca6c236-82fd-47ca-8397-216f43418ca7",
+      "774d9c41-feb8-4b67-8e87-e2dc1beac959",
+      "d6ecb684-dc5d-405d-aaa3-1dfbf5ac414c",
+      "f019d706-d416-4f31-919b-e78934a9d106",
+      "1e03daaf-0f37-4080-86ce-0d9dead4ca04",
+      "615491fe-f450-4128-8e94-7d09d183950e",
+      "24984345-ba02-4bf7-acbe-153effa1e273",
+      "514ed763-ecad-4ac6-bcb2-c5c53009ceca",
+      "e252e3d7-5530-4a7f-82bb-1ad79c395362"
+    ],
+    "tags": [
+      "NEET 2020",
+      "NEET Phase-I 2016",
+      "AIPMT July 2015",
+      "AIPMT 2014",
+      "AIPMT Mains 2011",
+      "AIPMT 2001",
+      "AIPMT 1997"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-semiconductor-electronics-p-n-junction",
+    "chapter": "Semiconductor Electronics",
+    "subtopic": "p-n Junction",
+    "class": "XII",
+    "unitId": "xii-semi",
+    "unitLabel": "Unit X — Semiconductor Electronics",
+    "order": 27,
+    "title": "p-n Junction",
+    "summary": "When a $p$-n junction, is formed, some of the free electrons in the n region diffuse across the junction and combine with holes to form negative ions.",
+    "body": "**Key points from solved questions**\n- A $p$-n junction diode is formed by tusing one $p$-type and one $n$-type. When we apply reverse bias voltage, the electrons are drifted away from the junction and hence conduction is not possible. So, the width of the depletion region in a $p$-n junction diode is increased by reverse bias.\n- The higher hole concentration in p-region than that in n-region.\n- In forward biasing, width of depletion layer is decreased.\n- Forward biased to p-n junction decreases the electric field in the depletion zone.\n- In a $p$-n junction, high potential is at $n$-side and low potential at $p$-side.\n- When a $p$-n junction, is formed, some of the free electrons in the n region diffuse across the junction and combine with holes to form negative ions. In doing so, they leave behind positive ions at the donor impurity sites. Similarly, holes from $p$-side diffuse to the $n$-side and thus form a layer called diffusion layer at the junction. So, the depletion region is caused by the diffusion of charge carriers.",
+    "formulas": [],
+    "questionIds": [
+      "db6211f3-7b35-4902-84c5-700992c5fc61",
+      "4eae7a26-640a-4222-b56a-73c52fc55475",
+      "76ef54b4-b8ec-4ea1-912c-2804ca609471",
+      "aa5354da-b470-4a9b-bc19-9da2ce512e8b",
+      "0ea0b5aa-39a6-4474-b194-006e8b14afaf",
+      "d5375c83-1ea6-4012-bd54-489258ce176d"
+    ],
+    "tags": [
+      "NEET 2020",
+      "NEET 2013",
+      "AIPMT Screening 2011",
+      "AIPMT 2005",
+      "AIPMT 2002",
+      "AIPMT 1991"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-semiconductor-electronics-reneet2026",
+    "chapter": "Semiconductor Electronics",
+    "subtopic": "reNEET2026",
+    "class": "XII",
+    "unitId": "xii-semi",
+    "unitLabel": "Unit X — Semiconductor Electronics",
+    "order": 27,
+    "title": "reNEET2026",
+    "summary": "Forward bias narrows the depletion region while reverse bias widens it.",
+    "body": "**Key points from solved questions**\n- The Zener clamps at 3 V; the remaining $5-3=2$ V appears across the series resistor between B and A.\n- Forward bias narrows the depletion region while reverse bias widens it. For the given connection the ordering of depletion widths is $W_3>W_2>W_1.$",
+    "formulas": [
+      {
+        "latex": "5-3=2",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "renet2026-phy-16",
+      "renet2026-phy-42"
+    ],
+    "tags": [
+      "reNEET 2026"
+    ],
+    "source": "seed"
+  }
+]

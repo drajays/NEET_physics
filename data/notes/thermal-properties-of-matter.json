@@ -1,0 +1,663 @@
+[
+  {
+    "id": "note-thermal-properties-of-matter-change-of-state",
+    "chapter": "Thermal Properties of Matter",
+    "subtopic": "Change of State",
+    "class": "XI",
+    "unitId": "xi-properties",
+    "unitLabel": "Units VI & VII — Properties of Bulk Matter",
+    "order": 9,
+    "title": "Change of State",
+    "summary": "Heat required by 1 g ice at $ 0^{\\circ} $C to melt into 1 g water at $ 0^{\\circ} $C, $$ Q_{1}=mL $$ (L = latent heat of fusion) $$ =1\\times80=80cal(L=80cal/g) $$ Heat required by 1 g of water at $ 0^{\\circ} $C to boil…",
+    "body": "**Key points from solved questions**\n- Given that: $$ \\begin{array}{l}\\frac{1}{4}mgh=mL\\\\h=\\frac{4L}{g}=\\frac{4\\times3.4\\times10^{5}}{10}\\\\=136\\mathrm{~km}\\end{array} $$\n- Heat required by 1 g ice at $ 0^{\\circ} $C to melt into 1 g water at $ 0^{\\circ} $C, $$ Q_{1}=mL $$ (L = latent heat of fusion) $$ =1\\times80=80cal(L=80cal/g) $$ Heat required by 1 g of water at $ 0^{\\circ} $C to boil at $ 100^{\\circ} $C, $$ \\begin{aligned}\\mathrm{Q}_{2}&=m c\\Delta\\mathrm{T}\\\\&=\\mathrm{1}\\times\\mathrm{1}(100-0)\\\\&=100\\mathrm{cal}\\end{aligned}\\quad\\begin{aligned}(c&=\\text{specific heat of water)}\\ $ c=1\\mathrm{cal}/\\mathrm{g}\\mathrm{℃}\\end{aligned} $$ Thus, total heat required by 1 g of ice to reach a temperature of $ 100^{\\circ} $C, $$ \\mathrm{Q}=\\mathrm{Q}_{1}+\\mathrm{Q}_{2}=80+100=180\\mathrm{cal} $$ Heat available with 1 g of steam to condense into 1 g of water at $ 100^{\\circ} $C, $$ \\begin{aligned}Q^{\\prime}&=mL^{\\prime}\\\\&\\quad(L^{\\prime}=latent~heat~of~vaporisation)\\\\&=1\\times536~cal\\quad(L^{\\prime}=536~cal/g)\\\\&=536~cal\\end{aligned} $$ Obviously, the whole steam will not be condensed and ice will attain temperature of $ 100^{\\circ} $C. Thus, the temperature of mixture is $ 100^{\\circ} $C.",
+    "formulas": [
+      {
+        "latex": "\\begin{array}{l}\\frac{1}{4}mgh=mL\\\\h=\\frac{4L}{g}=\\frac{4\\times3.4\\times10^{5}}{10}\\\\=136\\mathrm{~km}\\end{array}",
+        "meaning": ""
+      },
+      {
+        "latex": "Q_{1}=mL",
+        "meaning": ""
+      },
+      {
+        "latex": "=1\\times80=80cal(L=80cal/g)",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}\\mathrm{Q}_{2}&=m c\\Delta\\mathrm{T}\\\\&=\\mathrm{1}\\times\\mathrm{1}(100-0)\\\\&=100\\mathrm{cal}\\end{aligned}\\quad\\begin{aligned}(c&=\\text{specific heat of water)}\\ $ c=1\\mathrm{cal}/\\mathrm{g}\\mathrm{℃}\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{Q}=\\mathrm{Q}_{1}+\\mathrm{Q}_{2}=80+100=180\\mathrm{cal}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}Q^{\\prime}&=mL^{\\prime}\\\\&\\quad(L^{\\prime}=latent~heat~of~vaporisation)\\\\&=1\\times536~cal\\quad(L^{\\prime}=536~cal/g)\\\\&=536~cal\\end{aligned}",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "7e799825-37bc-4363-be91-5d35a276f217",
+      "ab656633-1ca7-4b3b-98e4-f9d313cc3771"
+    ],
+    "tags": [
+      "NEET Phase-I 2016",
+      "AIPMT 1999"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-thermal-properties-of-matter-heat-transfer",
+    "chapter": "Thermal Properties of Matter",
+    "subtopic": "Heat Transfer",
+    "class": "XI",
+    "unitId": "xi-properties",
+    "unitLabel": "Units VI & VII — Properties of Bulk Matter",
+    "order": 9,
+    "title": "Heat Transfer",
+    "summary": "Houses with concrete roofs overlaid with foam are designed to insulate.",
+    "body": "**Key points from solved questions**\n- Houses with concrete roofs overlaid with foam are designed to insulate. In general, good insulation helps to keep the interior temperature stable, reducing the effects of external temperature variations. In summer, effective insulation keeps the interior cooler by reducing heat transfer from the outside to the inside. Therefore, Assertion is false because insulation typically helps in maintaining a cooler interior during summer. Foam insulation generally works to keep buildings cooler in summer by reducing heat exchange with the external environment. Therefore, A is false but R is true. $$ \\begin{aligned}&\\text{Ⅲ )Heat flow rate,&&H=H_{1}+H_{2}\\\\&&&H=\\frac{\\mathrm{K}_{1}\\mathrm{A}(\\mathrm{T}_{1}-\\mathrm{T}_{2})}{d}+\\frac{\\mathrm{K}_{2}\\mathrm{A}(\\mathrm{T}_{1}-\\mathrm{T}_{2})}{d}\\\\&\\Rightarrow\\frac{\\mathrm{K}_{eq}2\\mathrm{A}(\\mathrm{T}_{1}-\\mathrm{T}_{2})}{d}&=\\frac{\\mathrm{A}(\\mathrm{T}_{1}-\\mathrm{T}_{2})}{d}[\\mathrm{K}_{1}+\\mathrm{K}_{2}]\\\\&\\therefore&\\quad\\mathrm{K}_{eq}=\\left[\\frac{\\mathrm{K}_{1}+\\mathrm{K}_{2}}{2}\\right]\\end{aligned} $$\n- Let L = length of each rod $ \\Delta T = \\text{temperature difference} $ ∴ Rate of flow of rod (1) is, $$ \\mathrm{H}_{1}=\\frac{\\mathrm{K}_{\\mathrm{I}}\\mathrm{A}_{\\mathrm{I}}\\Delta\\mathrm{T}}{\\mathrm{L}} $$ and Rate of flow of rod (2) is, $$ \\mathrm{H}_{2}=\\frac{\\mathrm{K}_{2}\\mathrm{A}_{2}\\Delta\\mathrm{T}}{\\mathrm{L}} $$ from the equation, $ \\mathrm{H}_{1}=4\\mathrm{H}_{2} $ $$ \\begin{aligned}&\\Rightarrow\\quad\\frac{\\mathrm{K}_{1}\\mathrm{A}_{1}\\Delta\\mathrm{T}}{\\mathrm{L}}=4\\frac{\\mathrm{K}_{2}\\mathrm{A}_{2}\\Delta\\mathrm{T}}{\\mathrm{L}}\\\\&\\Rightarrow\\quad\\mathrm{K}_{1}\\mathrm{A}_{1}=4\\mathrm{K}_{2}\\mathrm{A}_{2}\\end{aligned} $$\n- We know that, $$ \\begin{aligned}&\\frac{d Q}{d t}=\\frac{\\mathrm{K A}}{\\mathrm{L}}(\\mathrm{T}_{1}-\\mathrm{T}_{2})\\\\ &\\quad Q=\\frac{\\mathrm{K A}}{\\mathrm{L}}(\\mathrm{T}_{1}-\\mathrm{T}_{2})t\\\\ &\\therefore\\quad Q=m\\mathrm{L}_{f}\\\\ &\\therefore\\quad\\frac{\\mathrm{K A}}{\\mathrm{L}}(\\mathrm{T}_{1}-\\mathrm{T}_{2})t=m\\mathrm{L}_{f}\\\\ &\\Rightarrow\\quad\\mathrm{K}=\\frac{m\\mathrm{L}_{f}(\\mathrm{L})}{\\mathrm{A}(\\mathrm{T}_{1}-\\mathrm{T}_{2})t}\\\\ &\\quad=\\frac{4.8\\times3.36\\times10^{5}\\times0.1}{0.36\\times100\\times3600}\\mathrm{J}/\\mathrm{m}/\\mathrm{s}/\\mathrm{^\\circ C}\\\\ &\\quad=\\frac{4.8\\times3.36}{0.36\\times36}=1.24\\mathrm{J}/\\mathrm{m}/\\mathrm{s}/\\mathrm{^\\circ C}\\\\ \\end{aligned} $$ #### △! Caution Students may round off intermediate values to early in the calculation, leading to imprecise results. It's best to keep calculations precise until the final step to maintain accuracy. Area of Rod before melting = $\\pi R^{2} = A$ Length of Rod before melting = L\n- Area of cross-section of Rod before melting = $ \\pi R^{2} $ Length of Rod before melting = L The area after heating is given by, $$ \\mathbf{A}_{1}=\\pi\\left(\\frac{\\mathbf{R}}{2}\\right)^{2}=\\frac{\\pi\\mathbf{R}^{2}}{4} $$ Assuming the volume to be constant $$ \\begin{aligned}&\\Longrightarrow\\quad&\\mathrm{AL}&=\\mathrm{A}_{1}\\mathrm{L}_{1}\\\\&\\Longrightarrow\\quad&\\mathrm{L}_{1}&=\\mathrm{L}\\frac{\\mathrm{A}}{\\mathrm{A}_{1}}=\\frac{\\mathrm{AL}}{\\frac{\\mathrm{A}}{4}}=4\\mathrm{L}\\end{aligned} $$ The amount of heat conducted by the new rod is given by, $ \\mathrm{Q}_{1}=\\frac{\\mathrm{KA}_{1}(\\mathrm{T}_{1}-\\mathrm{T}_{2})}{\\mathrm{L}_{1}}t $... (iii) Substituting eqn. (i) and (ii) in eqn. (iii), we get $$ \\mathrm{Q}_{1}=\\frac{\\mathrm{K}\\pi\\mathrm{R}^{2}(\\mathrm{T}_{1}-\\mathrm{T}_{2})t}{16\\mathrm{L}} $$\n- Heat conducted = $ \\frac{K\\mathrm{A}(T_1 - T_2)t}{l} $ $ =\\frac{K\\pi r^2(T_1 - T_2)t}{l} $ $$ Q_{1}=\\frac{Q}{16} $$ The rod with maximum ratio of $ \\frac{A}{l} $ will conduct most. Here, the rod $ r = 2r_{0} $ and $ l = l_{0} $ will conduct most.",
+    "formulas": [
+      {
+        "latex": "\\begin{aligned}&\\text{Ⅲ )Heat flow rate,&&H=H_{1}+H_{2}\\\\&&&H=\\frac{\\mathrm{K}_{1}\\mathrm{A}(\\mathrm{T}_{1}-\\mathrm{T}_{2})}{d}+\\frac{\\mathrm{K}_{2}\\mathrm{A}(\\mathrm{T}_{1}-\\mathrm{T}_{2})}{d}\\\\&\\Rightarrow\\frac{\\mathrm{K}_{eq}2\\mathrm{A}(\\mathrm{T}_{1}-\\mathrm{T}_{2})}{d}&=\\frac{\\mathrm{A}(\\mathrm{T}_{1}-\\mathrm{T}_{2})}{d}[\\mathrm{K}_{1}+\\mathrm{K}_{2}]\\\\&\\therefore&\\quad\\mathrm{K}_{eq}=\\left[\\frac{\\mathrm{K}_{1}+\\mathrm{K}_{2}}{2}\\right]\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{H}_{1}=\\frac{\\mathrm{K}_{\\mathrm{I}}\\mathrm{A}_{\\mathrm{I}}\\Delta\\mathrm{T}}{\\mathrm{L}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{H}_{2}=\\frac{\\mathrm{K}_{2}\\mathrm{A}_{2}\\Delta\\mathrm{T}}{\\mathrm{L}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}&\\Rightarrow\\quad\\frac{\\mathrm{K}_{1}\\mathrm{A}_{1}\\Delta\\mathrm{T}}{\\mathrm{L}}=4\\frac{\\mathrm{K}_{2}\\mathrm{A}_{2}\\Delta\\mathrm{T}}{\\mathrm{L}}\\\\&\\Rightarrow\\quad\\mathrm{K}_{1}\\mathrm{A}_{1}=4\\mathrm{K}_{2}\\mathrm{A}_{2}\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\Delta T = \\text{temperature difference}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{H}_{1}=4\\mathrm{H}_{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}&\\frac{d Q}{d t}=\\frac{\\mathrm{K A}}{\\mathrm{L}}(\\mathrm{T}_{1}-\\mathrm{T}_{2})\\\\ &\\quad Q=\\frac{\\mathrm{K A}}{\\mathrm{L}}(\\mathrm{T}_{1}-\\mathrm{T}_{2})t\\\\ &\\therefore\\quad Q=m\\mathrm{L}_{f}\\\\ &\\therefore\\quad\\frac{\\mathrm{K A}}{\\mathrm{L}}(\\mathrm{T}_{1}-\\mathrm{T}_{2})t=m\\mathrm{L}_{f}\\\\ &\\Rightarrow\\quad\\mathrm{K}=\\frac{m\\mathrm{L}_{f}(\\mathrm{L})}{\\mathrm{A}(\\mathrm{T}_{1}-\\mathrm{T}_{2})t}\\\\ &\\quad=\\frac{4.8\\times3.36\\times10^{5}\\times0.1}{0.36\\times100\\times3600}\\mathrm{J}/\\mathrm{m}/\\mathrm{s}/\\mathrm{^\\circ C}\\\\ &\\quad=\\frac{4.8\\times3.36}{0.36\\times36}=1.24\\mathrm{J}/\\mathrm{m}/\\mathrm{s}/\\mathrm{^\\circ C}\\\\ \\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\pi R^{2} = A",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{A}_{1}=\\pi\\left(\\frac{\\mathbf{R}}{2}\\right)^{2}=\\frac{\\pi\\mathbf{R}^{2}}{4}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}&\\Longrightarrow\\quad&\\mathrm{AL}&=\\mathrm{A}_{1}\\mathrm{L}_{1}\\\\&\\Longrightarrow\\quad&\\mathrm{L}_{1}&=\\mathrm{L}\\frac{\\mathrm{A}}{\\mathrm{A}_{1}}=\\frac{\\mathrm{AL}}{\\frac{\\mathrm{A}}{4}}=4\\mathrm{L}\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{Q}_{1}=\\frac{\\mathrm{K}\\pi\\mathrm{R}^{2}(\\mathrm{T}_{1}-\\mathrm{T}_{2})t}{16\\mathrm{L}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{Q}_{1}=\\frac{\\mathrm{KA}_{1}(\\mathrm{T}_{1}-\\mathrm{T}_{2})}{\\mathrm{L}_{1}}t",
+        "meaning": ""
+      },
+      {
+        "latex": "Q_{1}=\\frac{Q}{16}",
+        "meaning": ""
+      },
+      {
+        "latex": "=\\frac{K\\pi r^2(T_1 - T_2)t}{l}",
+        "meaning": ""
+      },
+      {
+        "latex": "r = 2r_{0}",
+        "meaning": ""
+      },
+      {
+        "latex": "l = l_{0}",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "ff827e11-c679-4db7-b85c-55c633037323",
+      "691b3184-ea95-4a59-b263-68533ee96d0b",
+      "41782a78-60fc-4b8b-b609-ad95495357a3",
+      "a47e794d-d9be-46af-afb9-e37063721efc",
+      "7d29417c-8d9b-4dfd-8dec-94fd0317c9bc",
+      "3b431344-c7ab-4214-8027-71c9bc6154e4"
+    ],
+    "tags": [
+      "Re-NEET 2024",
+      "NEET 2018",
+      "NEET Karnataka 2013",
+      "AIPMT Mains 2012",
+      "AIPMT 2005"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-thermal-properties-of-matter-measurement-of-temperature",
+    "chapter": "Thermal Properties of Matter",
+    "subtopic": "Measurement Of Temperature",
+    "class": "XI",
+    "unitId": "xi-properties",
+    "unitLabel": "Units VI & VII — Properties of Bulk Matter",
+    "order": 9,
+    "title": "Measurement Of Temperature",
+    "summary": "A mercury thermometer is a liquid thermometer that uses the homogeneous variation in volume of a liquid as a temperature.",
+    "body": "**Key points from solved questions**\n- A mercury thermometer is a liquid thermometer that uses the homogeneous variation in volume of a liquid as a temperature. Mercury is opaque and bright, making it easy to see in the glass tube, and it is a good heat conductor, soon reaching the temperature of the hot bath. A mercury thermometer can be used to measure temperatures up to $ 357^{\\circ} $C because mercury begins to evaporate at $ 367^{\\circ} $C.\n- Relation between Celsius scale and Fahrenheit scale is, $$ \\frac{C}{100^{\\circ}}=\\frac{F-32^{\\circ}}{180^{\\circ}} $$ Putting value of F = 140°, we get $$ \\frac{C}{100^{\\circ}}=\\frac{140^{\\circ}-32^{\\circ}}{180^{\\circ}}=0.6 $$ $$ C=60^{\\circ} $$ Hence, Fall in temperature = Temperature of boiling water - final temperature $$ 100^{\\circ}C-60^{\\circ}C=40^{\\circ}C $$",
+    "formulas": [
+      {
+        "latex": "\\frac{C}{100^{\\circ}}=\\frac{F-32^{\\circ}}{180^{\\circ}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{C}{100^{\\circ}}=\\frac{140^{\\circ}-32^{\\circ}}{180^{\\circ}}=0.6",
+        "meaning": ""
+      },
+      {
+        "latex": "C=60^{\\circ}",
+        "meaning": ""
+      },
+      {
+        "latex": "100^{\\circ}C-60^{\\circ}C=40^{\\circ}C",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "71849c5d-c50e-4eb3-a63e-104589fa5c96",
+      "20a5d804-e96e-4b40-80ae-c5c41ae3c225"
+    ],
+    "tags": [
+      "AIPMT 1992",
+      "AIPMT 1990"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-thermal-properties-of-matter-objective-i",
+    "chapter": "Thermal Properties of Matter",
+    "subtopic": "Objective I",
+    "class": "XI",
+    "unitId": "xi-properties",
+    "unitLabel": "Units VI & VII — Properties of Bulk Matter",
+    "order": 9,
+    "title": "Objective I",
+    "summary": "**Specific heat capacity** $c$ is defined as the heat $\\Delta Q$ required per unit mass per unit temperature rise: $$c = \\frac{\\Delta Q}{m\\,\\Delta T}$$ In SI units, this is $\\rm J\\,kg^{-1}\\,K^{-1}$.",
+    "body": "**Key points from solved questions**\n- The **zeroth law** states: if A is in equilibrium with B *and* B with C, then A and C are in equilibrium. The converse is not implied. Here X is **not** in equilibrium with Y or Z — two scenarios are both possible: - $T_X = 30°C,\\; T_Y = 20°C,\\; T_Z = 20°C$ → Y and Z **are** in equilibrium. - $T_X = 30°C,\\; T_Y = 20°C,\\; T_Z = 25°C$ → Y and Z are **not** in equilibrium. No conclusion about Y–Z can be drawn. Answer: (C).\n- Set $F = C$ in $F = \\dfrac{9}{5}C + 32$: $$C = \\frac{9}{5}C + 32 \\implies -\\frac{4}{5}C = 32 \\implies C = -40$$ At $-40°$, the Celsius and Fahrenheit scales give the same numerical reading. For Kelvin: $K = C + 273.15$ — these are never equal since that would require $C = C + 273.15$ (impossible). Answer: (D).\n- Two requirements: (1) **low pressure** so the gas behaves ideally ($PV = nRT$); (2) the pressure must remain **measurably positive** at all operating temperatures. Fill at high $T_h$ with low $P_h$. At any lower temperature $T$: $$P = P_h \\cdot \\frac{T}{T_h} < P_h \\quad \\text{(pressure drops proportionally, stays low and ideal)}$$ If filled at low $T_l$ with low $P_l$, at high temperatures $P$ rises to $P_l(T/T_l) \\gg P_l$, causing non-ideal behaviour. Answer: (D).\n- The true length of the copper rod at temperature $T$: $$L_{\\rm Cu} = \\ell_0(1 + \\alpha_{\\rm Cu}\\,\\Delta T)$$ Each unit mark on the steel scale has expanded, so one scale-unit now equals $(1 + \\alpha_{\\rm St}\\,\\Delta T)$ of the original unit. The **reading** (apparent length) is: $$\\text{reading} = \\frac{L_{\\rm Cu}}{1 + \\alpha_{\\rm St}\\,\\Delta T} = \\frac{\\ell_0(1 + \\alpha_{\\rm Cu}\\,\\Delta T)}{1 + \\alpha_{\\rm St}\\,\\Delta T}$$ Since $\\alpha_{\\rm Cu} > \\alpha_{\\rm St}$, the reading exceeds $\\ell_0$. Answer: (C).\n- Water shows **anomalous expansion**: its density is **maximum at 4°C** ($\\approx 1000\\,\\rm kg\\,m^{-3}$) and decreases both above and below that temperature. At 0°C the density is slightly less ($\\approx 999.8\\,\\rm kg\\,m^{-3}$). Buoyancy $= \\rho_\\text{water}\\,V_\\text{sphere}\\,g$. The sphere's volume barely changes over this small temperature range. Since $\\rho(0°C) < \\rho(4°C)$, buoyancy at 0°C is **less** than at 4°C. The reason is option B. Answer: (B).\n- For an isotropic solid, each linear dimension $\\ell$ scales as $\\ell(1+\\alpha\\,\\Delta T)$. Volume $V = \\ell^3$: $$V' = \\ell^3(1+\\alpha\\,\\Delta T)^3 \\approx \\ell^3(1 + 3\\alpha\\,\\Delta T) \\quad (\\text{to first order in }\\alpha\\,\\Delta T)$$ $$\\therefore\\quad \\gamma = \\frac{\\Delta V}{V\\,\\Delta T} = 3\\alpha$$ The volume expansion coefficient is three times the linear expansion coefficient. Answer: (C).\n- By Stefan–Boltzmann law, the total power radiated is $P \\propto T^4$ (absolute temperature). $T_1 = 27°C = 300\\,K$, $T_2 = 127°C = 400\\,K$. $$\\frac{P_2}{P_1} = \\left(\\frac{T_2}{T_1}\\right)^4 = \\left(\\frac{400}{300}\\right)^4$$ Answer: (A).\n- **Specific heat capacity** $c$ is defined as the heat $\\Delta Q$ required per unit mass per unit temperature rise: $$c = \\frac{\\Delta Q}{m\\,\\Delta T}$$ In SI units, this is $\\rm J\\,kg^{-1}\\,K^{-1}$. Option D is the most general and correct definition — it says \"unit mass\" and \"unit temperature\" without specifying a particular system of units. Options A–C are special cases (gram/°C, kg/K, mol/K) that define different but related quantities (specific heat in CGS, SI, or molar heat capacity). The fundamental definition is D. Answer: (D).\n- Heat (thermal energy) spontaneously flows from a body at higher temperature to one at lower temperature — this is the zeroth/second law of thermodynamics. The flow continues until both bodies reach the same temperature (**thermal equilibrium**). At that point net heat transfer stops. Mass is irrelevant; total kinetic energy of the molecules is not necessarily decreased (the hot body loses kinetic energy but the cold body gains it; total KE of both is conserved if no work is done). Answer: (B).\n- Heat lost by hot water = heat gained by cold water (conservation of energy, no loss): $$m c (100 - T_f) = m c (T_f - 0)$$ $$100 - T_f = T_f \\implies T_f = 50°C$$ Equal masses of the same substance → equilibrium at the arithmetic mean temperature. Answer: (C).\n- **Latent heat** is the energy absorbed (or released) during a phase change at constant temperature. The latent heat of fusion $L_f = 336\\,\\rm kJ/kg$ means that $1\\,\\rm kg$ of ice at exactly $0°C$ absorbs $336\\,\\rm kJ$ to completely convert to water at $0°C$ — with **no change in temperature** during the process. Option D is also true (reverse process) but the question asks what the statement *means*, and B is the direct, precise definition of latent heat of fusion. Answer: (B).\n- The **water equivalent** of a calorimeter is defined as the mass of water that would absorb (or release) the same amount of heat as the calorimeter for the same change in temperature. If the calorimeter has mass $M$ and specific heat $s$, its water equivalent is $w = Ms/s_w$ where $s_w = 4200\\,\\rm J\\,kg^{-1}K^{-1}$. A water equivalent of 10 g means: the calorimeter absorbs the same heat as 10 g of water per degree of temperature change. This is used to correct calorimetric calculations. Answer: (C).\n- $\\Delta T = \\dfrac{\\Delta Q}{mc}$. For equal $\\Delta Q$ and equal mass $m$, the temperature rise is inversely proportional to specific heat: $$\\Delta T \\propto \\frac{1}{c}$$ The liquid with the **smallest specific heat** ($c_A$) undergoes the **greatest temperature rise** and reaches the highest temperature. Answer: (A).\n- Per gram of steam: - **Condensation** (steam → water at 100°C): releases latent heat $L_v \\approx 2260\\,\\rm J/g$. - **Cooling** condensed water from 100°C to 0°C: releases $m c \\Delta T = 1\\,\\rm g \\times 4.2\\,J/(g\\cdot°C) \\times 100°C = 420\\,J/g$. Condensation releases $\\approx 2260\\,\\rm J/g$ vs $\\approx 420\\,\\rm J/g$ for cooling. **Condensation** releases more heat. Answer: (A).",
+    "formulas": [
+      {
+        "latex": "T_X = 30°C,\\; T_Y = 20°C,\\; T_Z = 20°C",
+        "meaning": ""
+      },
+      {
+        "latex": "T_X = 30°C,\\; T_Y = 20°C,\\; T_Z = 25°C",
+        "meaning": ""
+      },
+      {
+        "latex": "C = \\frac{9}{5}C + 32 \\implies -\\frac{4}{5}C = 32 \\implies C = -40",
+        "meaning": ""
+      },
+      {
+        "latex": "F = C",
+        "meaning": ""
+      },
+      {
+        "latex": "F = \\dfrac{9}{5}C + 32",
+        "meaning": ""
+      },
+      {
+        "latex": "K = C + 273.15",
+        "meaning": ""
+      },
+      {
+        "latex": "C = C + 273.15",
+        "meaning": ""
+      },
+      {
+        "latex": "P = P_h \\cdot \\frac{T}{T_h} < P_h \\quad \\text{(pressure drops proportionally, stays low and ideal)}",
+        "meaning": ""
+      },
+      {
+        "latex": "PV = nRT",
+        "meaning": ""
+      },
+      {
+        "latex": "L_{\\rm Cu} = \\ell_0(1 + \\alpha_{\\rm Cu}\\,\\Delta T)",
+        "meaning": ""
+      },
+      {
+        "latex": "\\text{reading} = \\frac{L_{\\rm Cu}}{1 + \\alpha_{\\rm St}\\,\\Delta T} = \\frac{\\ell_0(1 + \\alpha_{\\rm Cu}\\,\\Delta T)}{1 + \\alpha_{\\rm St}\\,\\Delta T}",
+        "meaning": ""
+      },
+      {
+        "latex": "= \\rho_\\text{water}\\,V_\\text{sphere}\\,g",
+        "meaning": ""
+      },
+      {
+        "latex": "V' = \\ell^3(1+\\alpha\\,\\Delta T)^3 \\approx \\ell^3(1 + 3\\alpha\\,\\Delta T) \\quad (\\text{to first order in }\\alpha\\,\\Delta T)",
+        "meaning": ""
+      },
+      {
+        "latex": "\\therefore\\quad \\gamma = \\frac{\\Delta V}{V\\,\\Delta T} = 3\\alpha",
+        "meaning": ""
+      },
+      {
+        "latex": "V = \\ell^3",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{P_2}{P_1} = \\left(\\frac{T_2}{T_1}\\right)^4 = \\left(\\frac{400}{300}\\right)^4",
+        "meaning": ""
+      },
+      {
+        "latex": "T_1 = 27°C = 300\\,K",
+        "meaning": ""
+      },
+      {
+        "latex": "T_2 = 127°C = 400\\,K",
+        "meaning": ""
+      },
+      {
+        "latex": "c = \\frac{\\Delta Q}{m\\,\\Delta T}",
+        "meaning": ""
+      },
+      {
+        "latex": "m c (100 - T_f) = m c (T_f - 0)",
+        "meaning": ""
+      },
+      {
+        "latex": "100 - T_f = T_f \\implies T_f = 50°C",
+        "meaning": ""
+      },
+      {
+        "latex": "L_f = 336\\,\\rm kJ/kg",
+        "meaning": ""
+      },
+      {
+        "latex": "w = Ms/s_w",
+        "meaning": ""
+      },
+      {
+        "latex": "s_w = 4200\\,\\rm J\\,kg^{-1}K^{-1}",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "4c16c55a-9006-4d0c-b539-b1c25f94975c",
+      "40f5a747-5e9c-4901-be52-ff2c252c95a4",
+      "1e568d29-0c8b-486d-8693-41c1cf05b6da",
+      "8ebd5b85-de4d-4e1a-a244-e0ea98ff2a0d",
+      "a12aec6a-94e5-4725-981c-fa20824c646d",
+      "973c31c8-2319-4c7e-b8de-66167249e75e",
+      "3ad90bff-2b50-4a82-8e7a-7339afd7e003",
+      "d3b2b494-f5eb-45cd-ba6f-79b0e4406d9f",
+      "f4014f1e-2421-4dce-b961-a019ba6f5189",
+      "e5f477ee-17a4-44f5-ad7f-ee8772c8587c",
+      "e8eed99d-8bf0-4160-afd9-5ca384f2ec6d",
+      "e2691fb8-8222-4c82-bebf-d6b7aeeb7168",
+      "c3111830-aced-4782-982a-9e2cbe08782e",
+      "f0efc49a-7f1e-4b42-a6c6-1bc791de96a1",
+      "08ee2ddf-48fd-4ba1-9027-62ae79586afa",
+      "a8c9d521-7afd-47c9-91dd-415e285a2608",
+      "8818353e-7cb3-47f5-b38a-b76af0e1bc49",
+      "f0a737ba-da8e-4e47-9031-246c802185fa",
+      "da5b5e0d-0e06-44bf-acab-f638587dd342",
+      "2f775a5f-f8d3-4a1d-8f99-7d540a7af78b",
+      "875978e2-1c1f-4cb5-8418-bc8b28bcf593",
+      "600c8f58-2f0a-40b6-b20b-2c42c0b1c5aa"
+    ],
+    "tags": [
+      "HC Verma Vol 2",
+      "Objective I",
+      "Chapter 23",
+      "Chapter 25",
+      "Chapter 28"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-thermal-properties-of-matter-objective-ii",
+    "chapter": "Thermal Properties of Matter",
+    "subtopic": "Objective II",
+    "class": "XI",
+    "unitId": "xi-properties",
+    "unitLabel": "Units VI & VII — Properties of Bulk Matter",
+    "order": 9,
+    "title": "Objective II",
+    "summary": "- **A** ✓: During a phase change (melting), the supplied heat goes into breaking intermolecular bonds, not raising temperature.",
+    "body": "**Key points from solved questions**\n- - **A** ✓: Every body with $T > 0\\,K$ emits thermal (electromagnetic) radiation — a consequence of Planck's law. - **B** ✓: Every body absorbs (some fraction of) the radiation incident on it from surroundings. - **C** ✓: If absorbed radiation exceeds emitted radiation, net energy input raises the temperature. - **D** ✗: At thermal equilibrium the body still radiates; it just absorbs at the same rate as it emits — there is no cessation of radiation. Answer: (A), (B), (C).\n- By **Newton's law of cooling**, the rate of cooling is proportional to the temperature excess above the surroundings. As the body cools, its temperature excess decreases, so the rate of cooling slows. In the first 5 min the body drops 20°C (from 80→60). In the next 5 min, the average excess over surroundings is smaller, so the drop is **less than 20°C**, meaning the final temperature is **above** $60 - 20 = 40°C$. Answer: (C).\n- - **A** ✓: Linear expansion — length increases with temperature. - **B** ✓: A hole in a plate expands just as if it were filled with the same material. The area of the hole increases (area expansion coefficient $= 2\\alpha$). - **C** ✗: $T = 2\\pi\\sqrt{L/g}$. When temperature rises, $L$ increases → $T$ **increases** (pendulum runs slow), not decreases. - **D** ✓: A bimetallic strip consists of two metals with different $\\alpha$; on heating, the strip bends toward the side with lower $\\alpha$. Answer: (A), (B), (D).\n- - **A** ✓: The calorimeter itself absorbs heat; its water equivalent corrects for this. - **B** ✓: High thermal conductivity ensures the contents rapidly reach thermal equilibrium with the calorimeter walls — uniformity of temperature. - **C** ✓: Low heat capacity means the calorimeter absorbs little heat compared to the substance under study — less correction needed and more accurate results. - **D** ✓: A quick experiment minimises heat exchange with the surroundings (heat loss to the environment is the main source of error in calorimetry). Answer: (A), (B), (C), (D).\n- - **A** ✓: During a phase change (melting), the supplied heat goes into breaking intermolecular bonds, not raising temperature. Temperature stays at 0°C throughout. - **B** ✓: $L_v \\approx 2260\\,\\rm kJ/kg$ (vaporisation) $\\gg$ $L_f \\approx 336\\,\\rm kJ/kg$ (fusion). Completely separating water molecules (vapour) requires far more energy than partially disrupting order (melting to liquid). - **C** ✗: Boiling point **decreases** when pressure decreases (less external pressure → liquid boils at lower temperature). This is why water boils below 100°C at high altitudes. - **D** ✓: Sublimation = solid → vapour directly, e.g., dry ice (CO₂) or camphor. Answer: (A), (B), (D).\n- Let $c_A : c_B = 1 : 2$ and equal mass $m$, equal heat $Q$. $$\\Delta T_A = \\frac{Q}{mc_A}, \\quad \\Delta T_B = \\frac{Q}{mc_B} = \\frac{Q}{2mc_A}$$ $$\\frac{\\Delta T_A}{\\Delta T_B} = \\frac{c_B}{c_A} = 2 \\implies \\Delta T_A = 2\\Delta T_B \\quad \\text{(A ✓, B ✗)}$$ For mixing at respective temperatures $T_A = T_0 + \\Delta T_A$ and $T_B = T_0 + \\Delta T_B$: $$T_f = \\frac{mc_A T_A + mc_B T_B}{m(c_A + c_B)} = \\frac{c_A T_A + 2c_A T_B}{3c_A}$$ Since $\\Delta T_A = 2\\Delta T_B$, $T_A > T_B$, and $c_B = 2c_A$, the equilibrium temperature is pulled toward B (higher heat capacity). So $T_f$ is closer to $T_B$ (**C ✓**). Option D is not a general truth. Answer: (A), (C).\n- - **A** ✓: Free electrons in metals carry heat efficiently; metals have $K \\sim 10$–$400\\,\\rm W\\,m^{-1}K^{-1}$ vs non-metals ($< 10$). - **B** ✓: Gases transfer heat mainly by molecular collision; liquids have closer-packed molecules. Typical values: gases $0.02$–$0.5$, liquids $0.1$–$0.6\\,\\rm W\\,m^{-1}K^{-1}$. - **C** ✓: By the Wiedemann–Franz law, thermal and electrical conductivities are proportional in metals (both carried by free electrons). - **D** ✗: Thermal conductivity of real materials generally does vary with temperature (e.g., it decreases in metals as $T$ increases due to more phonon scattering). Answer: (A), (B), (C).\n- From $\\dfrac{dT}{dt} = -b(T - T_0)$: - **A** ✓: Larger $(T - T_0)$ → larger $|dT/dt|$ — cooling rate is proportional to excess temperature. - **B** ✗: The constant $b$ depends on the surface area, emissivity, and heat capacity — hence the nature of the surface matters. - **C** ✓: Solving $\\dfrac{dT}{dt} = -b(T-T_0)$ gives $T(t) = T_0 + (T_i - T_0)e^{-bt}$ — exponential approach to $T_0$. - **D** ✗: Newton's law is an approximation valid only for **small** temperature excess ($T - T_0 \\ll T_0$). For large differences, Stefan's $T^4$ law must be used. Answer: (A), (C).\n- - **A** ✓: Stefan–Boltzmann: $E \\propto T^4$ — intensity increases rapidly with temperature. - **B** ✓: Wien's displacement: $\\lambda_{\\rm max} \\propto 1/T$ — peak shifts toward shorter $\\lambda$ at higher $T$. - **C** ✓: By definition, a blackbody absorbs all incident radiation ($a = 1$) and is the perfect emitter ($\\varepsilon = 1$). - **D** ✗: At $0°C = 273\\,K$, the body still radiates (Stefan's law: $E = \\sigma T^4 > 0$ for $T > 0$). Only at absolute zero (0 K) would emission theoretically stop. Answer: (A), (B), (C).",
+    "formulas": [
+      {
+        "latex": "60 - 20 = 40°C",
+        "meaning": ""
+      },
+      {
+        "latex": "= 2\\alpha",
+        "meaning": ""
+      },
+      {
+        "latex": "T = 2\\pi\\sqrt{L/g}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\Delta T_A = \\frac{Q}{mc_A}, \\quad \\Delta T_B = \\frac{Q}{mc_B} = \\frac{Q}{2mc_A}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{\\Delta T_A}{\\Delta T_B} = \\frac{c_B}{c_A} = 2 \\implies \\Delta T_A = 2\\Delta T_B \\quad \\text{(A ✓, B ✗)}",
+        "meaning": ""
+      },
+      {
+        "latex": "T_f = \\frac{mc_A T_A + mc_B T_B}{m(c_A + c_B)} = \\frac{c_A T_A + 2c_A T_B}{3c_A}",
+        "meaning": ""
+      },
+      {
+        "latex": "c_A : c_B = 1 : 2",
+        "meaning": ""
+      },
+      {
+        "latex": "T_A = T_0 + \\Delta T_A",
+        "meaning": ""
+      },
+      {
+        "latex": "T_B = T_0 + \\Delta T_B",
+        "meaning": ""
+      },
+      {
+        "latex": "\\Delta T_A = 2\\Delta T_B",
+        "meaning": ""
+      },
+      {
+        "latex": "c_B = 2c_A",
+        "meaning": ""
+      },
+      {
+        "latex": "\\dfrac{dT}{dt} = -b(T - T_0)",
+        "meaning": ""
+      },
+      {
+        "latex": "\\dfrac{dT}{dt} = -b(T-T_0)",
+        "meaning": ""
+      },
+      {
+        "latex": "T(t) = T_0 + (T_i - T_0)e^{-bt}",
+        "meaning": ""
+      },
+      {
+        "latex": "a = 1",
+        "meaning": ""
+      },
+      {
+        "latex": "\\varepsilon = 1",
+        "meaning": ""
+      },
+      {
+        "latex": "0°C = 273\\,K",
+        "meaning": ""
+      },
+      {
+        "latex": "E = \\sigma T^4 > 0",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "35a34357-ea99-47db-9be1-fcf134781a1c",
+      "860a6fcd-9e6c-43e6-a56b-0bbd18f157b5",
+      "eea05409-fcae-4d8a-843a-6b6a15b0621c",
+      "782f5f3c-f027-49df-9fc2-cf64d5f019f0",
+      "7ccec2f5-296b-43b0-a5bd-4f34e5d9aac3",
+      "f2d5ba84-e6d3-4a6f-8fbb-74860bf5412d",
+      "2a9da28a-ae58-4ed7-a382-40a5119246c2",
+      "047dca32-2ad2-4068-a54c-3328fa2ecc25",
+      "2784efd1-0a91-47d8-9fc8-a793b5cb0653"
+    ],
+    "tags": [
+      "HC Verma Vol 2",
+      "Objective II",
+      "Chapter 23",
+      "Chapter 25",
+      "Chapter 28"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-thermal-properties-of-matter-overview",
+    "chapter": "Thermal Properties of Matter",
+    "subtopic": "Overview",
+    "class": "XI",
+    "unitId": "xi-properties",
+    "unitLabel": "Units VI & VII — Properties of Bulk Matter",
+    "order": 9,
+    "title": "Overview",
+    "summary": "1 NEET questions on “Overview”.",
+    "body": "",
+    "formulas": [],
+    "questionIds": [
+      "a850387f-4b45-4630-b65e-1eb4bcf63636"
+    ],
+    "tags": [
+      "AIPMT Mains 2008"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-thermal-properties-of-matter-specific-heat-capacity",
+    "chapter": "Thermal Properties of Matter",
+    "subtopic": "Specific Heat Capacity",
+    "class": "XI",
+    "unitId": "xi-properties",
+    "unitLabel": "Units VI & VII — Properties of Bulk Matter",
+    "order": 9,
+    "title": "Specific Heat Capacity",
+    "summary": "Heat required $ Q = mc\\Delta T $ $$ =\\left(\\frac{4}{3}\\pi r^{3}.\\rho\\right)c\\Delta\\mathrm{T} $$ Since, $ \\pi,\\rho,c,\\Delta T $ are constant.",
+    "body": "**Key points from solved questions**\n- Heat required $ Q = mc\\Delta T $ $$ =\\left(\\frac{4}{3}\\pi r^{3}.\\rho\\right)c\\Delta\\mathrm{T} $$ Since, $ \\pi,\\rho,c,\\Delta T $ are constant. $$ Q\\propto r^{3} $$ or, $$ \\begin{aligned}\\frac{Q_{1}}{Q_{2}}&=\\frac{r_{1}^{3}}{r_{2}^{3}}=\\left(\\frac{r_{1}}{r_{2}}\\right)^{3}=\\left(\\frac{1.5r_{2}}{r_{2}}\\right)^{3}\\\\&=\\frac{27}{8}\\end{aligned} $$ <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//73c546d1-790e-4d6c-8d37-a3a37f18cd3b/markdown_2/imgs/img_in_image_box_575_1256_614_1304.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A34Z%2F-1%2F%2Fdc4f47f188524fb1eccf184408dbd169a962abe0573900be7390de19162ae5eb\" alt=\"Image\" width=\"3%\" /></div> ##### Related Theory Specific heat is the amount of heat needed to raise the temperature of 1 kg of a material by $ 1^{\\circ} $C.\n- Thermal capacity of a body is defined as the amount of heat required to raise the temperature of the (whole) body through $ 1^{\\circ} $C or 1 K. Amount of heat energy required ( $ \\Delta Q $) to raise the temperature of mass m of a body through temperature range ( $ \\Delta T $) is, $$ \\Delta\\mathbf{Q}=m s(\\Delta\\mathbf{T}) $$ where, $s$ is specific heat of the body, when, $\\Delta T = 1\\ K$, $\\Delta Q = \\text{thermal capacity}$ $\\therefore$ $\\text{Thermal capacity} = s \\times m \\times 1 = ms$ Here, $m = 40\\ g$, $s = 0.2\\ \\text{cal/g K}$ $\\therefore$ $\\text{Thermal capacity} = 40 \\times 0.2 = 8\\ \\text{cal/K}$ $= 4.2 \\times 8\\ \\text{J/K} = 33.6\\ \\text{J/K}$",
+    "formulas": [
+      {
+        "latex": "=\\left(\\frac{4}{3}\\pi r^{3}.\\rho\\right)c\\Delta\\mathrm{T}",
+        "meaning": ""
+      },
+      {
+        "latex": "Q\\propto r^{3}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}\\frac{Q_{1}}{Q_{2}}&=\\frac{r_{1}^{3}}{r_{2}^{3}}=\\left(\\frac{r_{1}}{r_{2}}\\right)^{3}=\\left(\\frac{1.5r_{2}}{r_{2}}\\right)^{3}\\\\&=\\frac{27}{8}\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "Q = mc\\Delta T",
+        "meaning": ""
+      },
+      {
+        "latex": "\\Delta\\mathbf{Q}=m s(\\Delta\\mathbf{T})",
+        "meaning": ""
+      },
+      {
+        "latex": "\\Delta T = 1\\ K",
+        "meaning": ""
+      },
+      {
+        "latex": "\\Delta Q = \\text{thermal capacity}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\text{Thermal capacity} = s \\times m \\times 1 = ms",
+        "meaning": ""
+      },
+      {
+        "latex": "m = 40\\ g",
+        "meaning": ""
+      },
+      {
+        "latex": "s = 0.2\\ \\text{cal/g K}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\text{Thermal capacity} = 40 \\times 0.2 = 8\\ \\text{cal/K}",
+        "meaning": ""
+      },
+      {
+        "latex": "= 4.2 \\times 8\\ \\text{J/K} = 33.6\\ \\text{J/K}",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "95b8e64e-b195-4956-9072-df851b1f1833",
+      "1f5d3f09-e98e-4ab9-98bf-47ee7cddf75e"
+    ],
+    "tags": [
+      "NEET 2020",
+      "AIPMT 1990"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-thermal-properties-of-matter-thermal-expansion",
+    "chapter": "Thermal Properties of Matter",
+    "subtopic": "Thermal Expansion",
+    "class": "XI",
+    "unitId": "xi-properties",
+    "unitLabel": "Units VI & VII — Properties of Bulk Matter",
+    "order": 9,
+    "title": "Thermal Expansion",
+    "summary": "The value of coefficient of volume expansion of glycerin is, $ 5 \\times 10^{-4} \\text{K}^{-1} $ We know that, $ d_{f} = \\frac{d_{i}}{(1 + \\mathrm{V} \\Delta \\mathrm{T})} $ Fractional change, $$ \\begin{aligned}\\Delta…",
+    "body": "**Key points from solved questions**\n- According to question, $$ L_{w}=l_{w}(1+\\alpha_{w}\\Delta T) $$ $$ L_{cu}=l_{cu}(1+\\alpha_{cu}\\Delta T) $$ $$ \\mathrm{L}_{\\mathrm{Al}}=\\mathrm{l}_{\\mathrm{Al}}(1+\\alpha_{\\mathrm{Al}}\\Delta\\mathrm{T}) $$ From eq. (ii) and eq. (iii), $$ \\mathrm{L}_{\\mathrm{A}l}-\\mathrm{L}_{\\mathrm{C}u}=l_{\\mathrm{A}l}\\left(1+\\alpha_{\\mathrm{A}l}\\Delta\\mathrm{T}\\right)-l_{\\mathrm{C}u}\\left(1+\\alpha_{\\mathrm{C}u}\\Delta\\mathrm{T}\\right) $$ Since, $$ l_{Al}\\alpha_{Al}=l_{Cu}\\alpha_{Cu} $$ ∴ $$ \\begin{array}{l}l_{\\mathrm{Al}}=\\frac{l_{\\mathrm{Cu}}\\alpha_{\\mathrm{Cu}}}{\\alpha_{\\mathrm{Al}}}\\\\ {\\quad}=\\frac{88\\times1.7\\times10^{-5}}{2.2\\times10^{-5}}=68\\mathrm{~cm}}\\end{array} $$ $$ l_{\\mathrm{A l}}=68\\mathrm{c m} $$\n- Change in length for both rods should be same, $$ \\Delta I_{1}=\\Delta I_{2} $$ $$ l_{1}\\alpha_{1}\\Delta T=l_{2}\\alpha_{2}\\Delta T $$ $$ \\Rightarrow\\quad l_{1}\\alpha_{1}=l_{2}\\alpha_{2} $$\n- The value of coefficient of volume expansion of glycerin is, $ 5 \\times 10^{-4} \\text{K}^{-1} $ We know that, $ d_{f} = \\frac{d_{i}}{(1 + \\mathrm{V} \\Delta \\mathrm{T})} $ Fractional change, $$ \\begin{aligned}\\Delta d&=\\frac{d_{i}-d_{f}}{d_{f}}=1-\\frac{d_{f}}{d_{i}}\\\\&=1-(1+\\mathrm{V}\\Delta\\mathrm{T})^{-1}=1-(1-\\mathrm{V}\\Delta\\mathrm{T})\\\\&\\quad\\{(1+x)^{n}\\approx1+nx\\}\\\\&=\\mathrm{V}\\Delta\\mathrm{T}=5\\times10^{-4}\\times40=0.020\\end{aligned} $$ <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//73c546d1-790e-4d6c-8d37-a3a37f18cd3b/markdown_2/imgs/img_in_image_box_0_953_23_1001.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A34Z%2F-1%2F%2F84412caf377bdfbb9bb99d8d0c0ecf2930fd98ea02f51c0c6f86ab40ab3d3b45\" alt=\"Image\" width=\"1%\" /></div> ##### Related Theory The increase in volume of a solid when heated is known as volume expansion. The change of a solid with a change in temperature $t$ is given by: $\\Delta V = V_y \\Delta t$, where, $y$ is the coefficient expansion.\n- According to the question, $$ T_{1}=20^{\\circ}C,T_{2}=40^{\\circ}C $$ $$ \\rho_{20}=998\\mathrm{~k g/m^{3}},\\rho_{40}=992\\mathrm{~k g/m^{3}} $$ So, $$ \\rho_{\\mathrm{T}_{2}}=\\frac{\\rho_{\\mathrm{T}_{1}}}{(1+\\gamma\\Delta\\mathrm{T})}=\\frac{\\rho_{\\mathrm{T}_{1}}}{1+\\gamma(\\mathrm{T}_{2}-\\mathrm{T}_{1})} $$ Putting the values we get, $$ 992=\\frac{998}{1+\\gamma(40-20)} $$ $$ 992=\\frac{998}{1+20\\gamma} $$ $$ \\Rightarrow\\ 992\\ (1+20\\gamma)=998 $$ $$ \\Rightarrow\\quad1+20\\gamma=\\frac{998}{992} $$ ↓ $$ 20y=\\frac{6}{992} $$ $ \\Rightarrow $ $$ \\gamma=\\frac{6}{992}\\times\\frac{1}{20}=3\\times10^{-4}\\text{^\\circ}C^{-1} $$",
+    "formulas": [
+      {
+        "latex": "L_{w}=l_{w}(1+\\alpha_{w}\\Delta T)",
+        "meaning": ""
+      },
+      {
+        "latex": "L_{cu}=l_{cu}(1+\\alpha_{cu}\\Delta T)",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{L}_{\\mathrm{Al}}=\\mathrm{l}_{\\mathrm{Al}}(1+\\alpha_{\\mathrm{Al}}\\Delta\\mathrm{T})",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{L}_{\\mathrm{A}l}-\\mathrm{L}_{\\mathrm{C}u}=l_{\\mathrm{A}l}\\left(1+\\alpha_{\\mathrm{A}l}\\Delta\\mathrm{T}\\right)-l_{\\mathrm{C}u}\\left(1+\\alpha_{\\mathrm{C}u}\\Delta\\mathrm{T}\\right)",
+        "meaning": ""
+      },
+      {
+        "latex": "l_{Al}\\alpha_{Al}=l_{Cu}\\alpha_{Cu}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{array}{l}l_{\\mathrm{Al}}=\\frac{l_{\\mathrm{Cu}}\\alpha_{\\mathrm{Cu}}}{\\alpha_{\\mathrm{Al}}}\\\\ {\\quad}=\\frac{88\\times1.7\\times10^{-5}}{2.2\\times10^{-5}}=68\\mathrm{~cm}}\\end{array}",
+        "meaning": ""
+      },
+      {
+        "latex": "l_{\\mathrm{A l}}=68\\mathrm{c m}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\Delta I_{1}=\\Delta I_{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "l_{1}\\alpha_{1}\\Delta T=l_{2}\\alpha_{2}\\Delta T",
+        "meaning": ""
+      },
+      {
+        "latex": "\\Rightarrow\\quad l_{1}\\alpha_{1}=l_{2}\\alpha_{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}\\Delta d&=\\frac{d_{i}-d_{f}}{d_{f}}=1-\\frac{d_{f}}{d_{i}}\\\\&=1-(1+\\mathrm{V}\\Delta\\mathrm{T})^{-1}=1-(1-\\mathrm{V}\\Delta\\mathrm{T})\\\\&\\quad\\{(1+x)^{n}\\approx1+nx\\}\\\\&=\\mathrm{V}\\Delta\\mathrm{T}=5\\times10^{-4}\\times40=0.020\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "d_{f} = \\frac{d_{i}}{(1 + \\mathrm{V} \\Delta \\mathrm{T})}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\Delta V = V_y \\Delta t",
+        "meaning": ""
+      },
+      {
+        "latex": "T_{1}=20^{\\circ}C,T_{2}=40^{\\circ}C",
+        "meaning": ""
+      },
+      {
+        "latex": "\\rho_{20}=998\\mathrm{~k g/m^{3}},\\rho_{40}=992\\mathrm{~k g/m^{3}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\rho_{\\mathrm{T}_{2}}=\\frac{\\rho_{\\mathrm{T}_{1}}}{(1+\\gamma\\Delta\\mathrm{T})}=\\frac{\\rho_{\\mathrm{T}_{1}}}{1+\\gamma(\\mathrm{T}_{2}-\\mathrm{T}_{1})}",
+        "meaning": ""
+      },
+      {
+        "latex": "992=\\frac{998}{1+\\gamma(40-20)}",
+        "meaning": ""
+      },
+      {
+        "latex": "992=\\frac{998}{1+20\\gamma}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\Rightarrow\\ 992\\ (1+20\\gamma)=998",
+        "meaning": ""
+      },
+      {
+        "latex": "\\Rightarrow\\quad1+20\\gamma=\\frac{998}{992}",
+        "meaning": ""
+      },
+      {
+        "latex": "20y=\\frac{6}{992}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\gamma=\\frac{6}{992}\\times\\frac{1}{20}=3\\times10^{-4}\\text{^\\circ}C^{-1}",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "dcf8be8e-76c0-4125-8f8c-68c50ea7a40e",
+      "9e958942-28ad-4017-b4ea-bc2f3927aac4",
+      "78c451eb-f4b3-4b87-b225-fd92b6b2381e",
+      "10fe0515-f17d-49c8-9c6d-5d5527168977"
+    ],
+    "tags": [
+      "NEET 2019",
+      "NEET Phase-I 2016",
+      "NEET Karnataka 2013"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-thermal-properties-of-matter-reneet2026",
+    "chapter": "Thermal Properties of Matter",
+    "subtopic": "reNEET2026",
+    "class": "XI",
+    "unitId": "xi-properties",
+    "unitLabel": "Units VI & VII — Properties of Bulk Matter",
+    "order": 9,
+    "title": "reNEET2026",
+    "summary": "$V=\\tfrac43\\pi R^3$, $\\Delta V=3\\alpha V\\Delta T=3\\alpha\\left(\\tfrac43\\pi R^3\\right)\\Delta T=4\\pi R^3\\alpha\\Delta T.$",
+    "body": "**Key points from solved questions**\n- $V=\\tfrac43\\pi R^3$, $\\Delta V=3\\alpha V\\Delta T=3\\alpha\\left(\\tfrac43\\pi R^3\\right)\\Delta T=4\\pi R^3\\alpha\\Delta T.$",
+    "formulas": [
+      {
+        "latex": "V=\\tfrac43\\pi R^3",
+        "meaning": ""
+      },
+      {
+        "latex": "\\Delta V=3\\alpha V\\Delta T=3\\alpha\\left(\\tfrac43\\pi R^3\\right)\\Delta T=4\\pi R^3\\alpha\\Delta T.",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "renet2026-phy-24"
+    ],
+    "tags": [
+      "reNEET 2026"
+    ],
+    "source": "seed"
+  }
+]

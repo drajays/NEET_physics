@@ -60,6 +60,12 @@ const state = {
   bankPage: 1,
   BANK_PAGE_SIZE: 40,
   search: { query: '', results: [], total: 0, activeIndex: 0, parsed: null },
+  notes: [],
+  noteById: new Map(),
+  noteByQuestionId: new Map(),
+  notesByChapter: new Map(),
+  selectedNoteId: '',
+  notesView: 'browse',
   editingId: null,
   bankUpdatedAt: null,
   progress: { version: 1, updatedAt: 0, students: {} },
@@ -642,6 +648,242 @@ function getCoachInsightsForStudent(studentId) {
 
 function refreshLearningViews() {
   if (window.NeetViews) NeetViews.refreshActiveView();
+  if (window.NeetNotes && state.activeTab === 'notes') NeetNotes.render();
+  if (window.NeetRevise && state.activeTab === 'revise') NeetRevise.render();
+}
+
+/* ============================================================
+   Notes layer — index, cross-link map, SRS, marks, mistakes
+   (all additive; existing question progress is untouched)
+   ============================================================ */
+
+function initNotesIndex() {
+  const notes = Array.isArray(window.NEET_NOTES) ? window.NEET_NOTES : [];
+  state.notes = notes;
+  state.noteById = new Map();
+  state.noteByQuestionId = new Map();
+  state.notesByChapter = new Map();
+  notes.forEach(note => {
+    state.noteById.set(note.id, note);
+    (note.questionIds || []).forEach(qid => {
+      if (!state.noteByQuestionId.has(qid)) state.noteByQuestionId.set(qid, note.id);
+    });
+    const ch = note.chapter || 'Other';
+    if (!state.notesByChapter.has(ch)) state.notesByChapter.set(ch, []);
+    state.notesByChapter.get(ch).push(note);
+  });
+}
+
+function getNoteForQuestion(questionId) {
+  const noteId = state.noteByQuestionId.get(questionId);
+  return noteId ? state.noteById.get(noteId) : null;
+}
+
+function getQuestionsForNote(note) {
+  if (!note) return [];
+  const byId = new Map(state.questions.map(q => [q.id, q]));
+  return (note.questionIds || []).map(id => byId.get(id)).filter(Boolean);
+}
+
+/** Every formula across all notes becomes an SRS-able card: `${noteId}#${i}`. */
+function getNoteFormulaCards(note) {
+  return (note.formulas || []).map((f, i) => ({
+    id: `${note.id}#${i}`,
+    latex: f.latex,
+    meaning: f.meaning || '',
+    noteId: note.id,
+    chapter: note.chapter
+  }));
+}
+
+// ---- Spaced-repetition (SM-2 lite) over notes / formulas / questions ----
+const SRS_DEFAULT = { interval: 0, ease: 2.3, reps: 0, lapses: 0, due: 0, lastAt: 0 };
+
+function ensureStudentLearning(student) {
+  if (!student.srs) student.srs = {};
+  if (!student.marks) student.marks = {};
+  if (!student.goals) student.goals = { daily: 30 };
+  return student;
+}
+
+function srsKey(type, id) { return `${type}:${id}`; }
+
+function getSrsCard(studentId, type, id) {
+  const student = state.progress.students[studentId];
+  return student?.srs?.[srsKey(type, id)] || null;
+}
+
+function isDue(card, now = Date.now()) {
+  return !card || !card.due || card.due <= now;
+}
+
+async function reviewSrs(studentId, type, id, rating) {
+  if (!studentId) return;
+  const student = ensureStudentLearning(ensureProgressStudent(studentId, state.progress.students[studentId]?.name));
+  const key = srsKey(type, id);
+  const card = { ...SRS_DEFAULT, ...(student.srs[key] || {}) };
+  if (rating === 'again') {
+    card.interval = 0;
+    card.ease = Math.max(1.3, card.ease - 0.2);
+    card.lapses += 1;
+    card.reps = 0;
+  } else {
+    card.reps += 1;
+    if (rating === 'hard') {
+      card.ease = Math.max(1.3, card.ease - 0.15);
+      card.interval = card.interval < 1 ? 1 : card.interval * 1.2;
+    } else if (rating === 'good') {
+      card.interval = card.interval < 1 ? 1 : card.interval * card.ease;
+    } else if (rating === 'easy') {
+      card.ease = Math.min(2.8, card.ease + 0.15);
+      card.interval = card.interval < 1 ? 2 : card.interval * card.ease * 1.3;
+    }
+  }
+  card.interval = Math.round(card.interval * 10) / 10;
+  card.due = Date.now() + (rating === 'again' ? 60000 : Math.max(0, card.interval) * 86400000);
+  card.lastAt = Date.now();
+  student.srs[key] = card;
+  student.updatedAt = Date.now();
+  // log a lightweight review event so streaks/goals can count it
+  if (!student.history) student.history = [];
+  student.history.push({ at: Date.now(), result: 'review', kind: type, refId: id });
+  if (student.history.length > 600) student.history = student.history.slice(-600);
+  await persistProgress();
+}
+
+/** Due review items across notes + formulas, oldest-due first. */
+function getDueLearningItems(studentId, { types = ['note', 'formula'], limit = 200 } = {}) {
+  const out = [];
+  const now = Date.now();
+  if (types.includes('note')) {
+    state.notes.forEach(note => {
+      const card = getSrsCard(studentId, 'note', note.id);
+      if (isDue(card, now)) out.push({ type: 'note', id: note.id, note, card });
+    });
+  }
+  if (types.includes('formula')) {
+    state.notes.forEach(note => {
+      getNoteFormulaCards(note).forEach(fc => {
+        const card = getSrsCard(studentId, 'formula', fc.id);
+        if (isDue(card, now)) out.push({ type: 'formula', id: fc.id, formula: fc, note, card });
+      });
+    });
+  }
+  // started-but-due first (has a card), then brand-new
+  out.sort((a, b) => (b.card ? b.card.due : Infinity) - (a.card ? a.card.due : Infinity));
+  return out.slice(0, limit);
+}
+
+// ---- Marks: bookmarks + revise/doubt/confident flags ----
+const MARK_FLAGS = ['revise', 'doubt', 'confident'];
+
+function getMark(studentId, type, id) {
+  const student = state.progress.students[studentId];
+  return student?.marks?.[srsKey(type, id)] || null;
+}
+
+async function toggleBookmark(studentId, type, id) {
+  const student = ensureStudentLearning(ensureProgressStudent(studentId, state.progress.students[studentId]?.name));
+  const key = srsKey(type, id);
+  const m = student.marks[key] || {};
+  m.bookmark = !m.bookmark;
+  student.marks[key] = m;
+  student.updatedAt = Date.now();
+  await persistProgress();
+  return m.bookmark;
+}
+
+async function setMarkFlag(studentId, type, id, flag) {
+  const student = ensureStudentLearning(ensureProgressStudent(studentId, state.progress.students[studentId]?.name));
+  const key = srsKey(type, id);
+  const m = student.marks[key] || {};
+  m.flag = m.flag === flag ? '' : flag;
+  student.marks[key] = m;
+  student.updatedAt = Date.now();
+  await persistProgress();
+  return m.flag;
+}
+
+function getMarkedItems(studentId, field) {
+  const student = state.progress.students[studentId];
+  if (!student?.marks) return [];
+  const out = [];
+  Object.entries(student.marks).forEach(([key, m]) => {
+    const matches = field === 'bookmark' ? m.bookmark : m.flag === field;
+    if (!matches) return;
+    const [type, ...rest] = key.split(':');
+    out.push({ type, id: rest.join(':'), mark: m });
+  });
+  return out;
+}
+
+// ---- Mistakes notebook + leeches (derived from question progress) ----
+function getMistakeQuestions(studentId) {
+  const student = state.progress.students[studentId];
+  if (!student?.questions) return [];
+  const byId = new Map(state.questions.map(q => [q.id, q]));
+  return Object.entries(student.questions)
+    .filter(([, rec]) => rec.lastResult === 'wrong' || (rec.wrong > 0 && rec.correct === 0))
+    .map(([qid, rec]) => ({ question: byId.get(qid), rec }))
+    .filter(row => row.question)
+    .sort((a, b) => (b.rec.lastAt || 0) - (a.rec.lastAt || 0));
+}
+
+/** Leeches: chronically-wrong questions (>=2 wrong attempts, never mastered). */
+function getLeechQuestions(studentId) {
+  const student = state.progress.students[studentId];
+  if (!student?.questions) return [];
+  const byId = new Map(state.questions.map(q => [q.id, q]));
+  return Object.entries(student.questions)
+    .filter(([, rec]) => rec.wrong >= 2 && rec.correct === 0)
+    .map(([qid, rec]) => ({ question: byId.get(qid), rec }))
+    .filter(row => row.question)
+    .sort((a, b) => b.rec.wrong - a.rec.wrong);
+}
+
+// ---- Daily goal + streak ----
+function getReviewsToday(studentId) {
+  const student = state.progress.students[studentId];
+  if (!student?.history) return 0;
+  const start = new Date(); start.setHours(0, 0, 0, 0);
+  const t0 = start.getTime();
+  return student.history.filter(h => h.at >= t0).length;
+}
+
+function getStreakDays(studentId) {
+  const student = state.progress.students[studentId];
+  if (!student?.history?.length) return 0;
+  const days = new Set(student.history.map(h => {
+    const d = new Date(h.at); d.setHours(0, 0, 0, 0); return d.getTime();
+  }));
+  let streak = 0;
+  const cur = new Date(); cur.setHours(0, 0, 0, 0);
+  // allow today to be empty (streak still counts up to yesterday)
+  if (!days.has(cur.getTime())) cur.setDate(cur.getDate() - 1);
+  while (days.has(cur.getTime())) { streak += 1; cur.setDate(cur.getDate() - 1); }
+  return streak;
+}
+
+/** Open the Notes tab focused on a note, flashing it (question -> note link). */
+function jumpToNote(noteId) {
+  const note = state.noteById.get(noteId);
+  if (!note) { showToast('No note linked to this question yet.', { type: 'info' }); return; }
+  state.selectedChapter = note.chapter;
+  state.selectedNoteId = noteId;
+  switchTab('notes');
+  if (window.NeetNotes) NeetNotes.render({ flash: noteId });
+}
+
+/** Launch a practice session from a note's linked MCQs (note -> questions). */
+function practiceNoteQuestions(noteId, onlyNew = false) {
+  const note = state.noteById.get(noteId);
+  if (!note) return;
+  let qs = getQuestionsForNote(note);
+  if (onlyNew && state.activeStudentId) {
+    qs = qs.filter(q => isQuestionUnsolved(state.activeStudentId, q.id));
+  }
+  if (!qs.length) { showToast('No questions available for this note.', { type: 'info' }); return; }
+  startPracticeWithQuestions(shuffle(qs));
 }
 
 function sectionKeyToLabel(key) {
@@ -2365,8 +2607,9 @@ function renderBankCard(q) {
       </div>
       <div class="bank-card-actions">
         <button type="button" class="secondary-btn small reveal-answer-btn" data-id="${q.id}">${answersVisible ? 'Hide Answer' : 'Show Answer'}</button>
-        <button type="button" class="secondary-btn small edit-btn" data-id="${q.id}">Edit</button>
-        <button type="button" class="danger-btn small delete-btn" data-id="${q.id}">Delete</button>
+        ${getNoteForQuestion(q.id) ? `<button type="button" class="secondary-btn small read-note-btn" data-note-id="${escapeHtml(getNoteForQuestion(q.id).id)}">📄 Note</button>` : ''}
+        <button type="button" class="secondary-btn small edit-btn admin-only" data-id="${q.id}">Edit</button>
+        <button type="button" class="danger-btn small delete-btn admin-only" data-id="${q.id}">Delete</button>
       </div>
     </article>
   `;
@@ -2431,6 +2674,9 @@ function switchTab(tabName) {
   if (el.sidebarBackdrop) el.sidebarBackdrop.hidden = true;
   if (tabName === 'flags') renderFlagReview();
   if (tabName === 'journey') renderJourney();
+  if (tabName === 'notes' && window.NeetNotes) NeetNotes.render();
+  if (tabName === 'revise' && window.NeetRevise) NeetRevise.render();
+  if (tabName === 'exam' && window.NeetExam) NeetExam.render();
   refreshLearningViews();
 }
 
@@ -2705,6 +2951,7 @@ function renderPracticeQuestion() {
         ${renderImageHtml(current.explanationImage, 'Explanation image')}
         ${renderImageHtml(current.solutionImages, 'Solution figure')}
         ${renderWhyWrongHtml(current, displayLetterByCanonical)}
+        ${getNoteForQuestion(current.id) ? `<button type="button" class="note-link-btn" data-action="read-note" data-note-id="${escapeHtml(getNoteForQuestion(current.id).id)}">📄 Read the note</button>` : ''}
         ${!multi ? `<button type="button" class="flag-report-btn" data-action="open-flag" ${hasPendingFlagForQuestion(current.id, state.activeStudentId) ? 'disabled' : ''}>
           ${hasPendingFlagForQuestion(current.id, state.activeStudentId) ? '✓ Report submitted — pending review' : '⚑ Flag wrong answer / suggest correction'}
         </button>` : ''}
@@ -3182,6 +3429,11 @@ function bindEvents() {
   el.nextQuestionBtn.addEventListener('click', nextPracticeQuestion);
 
   el.practiceCard.addEventListener('click', event => {
+    const noteBtn = event.target.closest('[data-action="read-note"]');
+    if (noteBtn) {
+      jumpToNote(noteBtn.dataset.noteId);
+      return;
+    }
     const flagBtn = event.target.closest('[data-action="open-flag"]');
     if (flagBtn && !flagBtn.disabled) {
       const current = state.practice.questions[state.practice.index];
@@ -3283,6 +3535,12 @@ function bindEvents() {
     const cancelBtn = event.target.closest('.cancel-inline-btn');
     const removeImageBtn = event.target.closest('.remove-image-btn');
     const revealBtn = event.target.closest('.reveal-answer-btn');
+    const noteBtn = event.target.closest('.read-note-btn');
+
+    if (noteBtn) {
+      jumpToNote(noteBtn.dataset.noteId);
+      return;
+    }
 
     if (removeImageBtn) {
       handleInlineImageRemove(removeImageBtn);
@@ -3451,7 +3709,43 @@ async function init() {
     populateStudentSelect
   });
 
+  const learningDeps = {
+    state,
+    escapeHtml,
+    renderMath,
+    clean,
+    curriculum: NeetCurriculum,
+    getQuestionStatus,
+    getNoteForQuestion,
+    getQuestionsForNote,
+    getNoteFormulaCards,
+    getSrsCard,
+    isDue,
+    reviewSrs,
+    getDueLearningItems,
+    getMark,
+    toggleBookmark,
+    setMarkFlag,
+    getMarkedItems,
+    getMistakeQuestions,
+    getLeechQuestions,
+    getReviewsToday,
+    getStreakDays,
+    jumpToNote,
+    practiceNoteQuestions,
+    startPracticeWithQuestions,
+    switchTab,
+    showToast,
+    persistProgress,
+    refreshLearningViews,
+    getActiveStudentId: () => state.activeStudentId
+  };
+  if (window.NeetNotes) NeetNotes.init(learningDeps);
+  if (window.NeetRevise) NeetRevise.init(learningDeps);
+  if (window.NeetExam) NeetExam.init(learningDeps);
+
   state.questions = await loadQuestionsAsync();
+  initNotesIndex();
   await loadProgressAsync();
   await loadFlagsAsync();
 

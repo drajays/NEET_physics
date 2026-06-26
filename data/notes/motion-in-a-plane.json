@@ -1,0 +1,808 @@
+[
+  {
+    "id": "note-motion-in-a-plane-addition-and-subtraction-of-vectors-graphical-method",
+    "chapter": "Motion in a Plane",
+    "subtopic": "Addition and Subtraction of Vectors – Graphical Method",
+    "class": "XI",
+    "unitId": "xi-kinematics",
+    "unitLabel": "Unit II — Kinematics",
+    "order": 2,
+    "title": "Addition and Subtraction of Vectors – Graphical Method",
+    "summary": "According to the parallelogram law of vector addition, we can say that, $$ \\vec{d}+\\vec{e}=\\vec{f} $$",
+    "body": "**Key points from solved questions**\n- According to the parallelogram law of vector addition, we can say that, $$ \\vec{d}+\\vec{e}=\\vec{f} $$",
+    "formulas": [
+      {
+        "latex": "\\vec{d}+\\vec{e}=\\vec{f}",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "c2e09662-46f3-4675-850e-f4ec65779e1f"
+    ],
+    "tags": [
+      "AIPMT Screening 2010"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-motion-in-a-plane-motion-in-a-plane",
+    "chapter": "Motion in a Plane",
+    "subtopic": "Motion in a Plane",
+    "class": "XI",
+    "unitId": "xi-kinematics",
+    "unitLabel": "Unit II — Kinematics",
+    "order": 2,
+    "title": "Motion in a Plane",
+    "summary": "<div style=\"text-align: center;\"><img…",
+    "body": "**Key points from solved questions**\n- Given: $ \\overrightarrow{r} = (i + 2\\overrightarrow{j}) $ A cos ωt The motion is periodic and exhibits characteristics of simple harmonic mention due to cosine function in the y direction. Thus, the correct answer is periodic motion and SHM.\n- Let displacement be $s$ and time be $t$ and $y$-intercept is zero. $\\therefore$ $s = ut + 0$ $\\Rightarrow$ $s = ut$, where $u$ is velocity as per laws of motion Also u is slope of the graph s vs t. $$ u=\\tan\\theta $$ $$ u_{1}=\\tan30^{\\circ} $$ $$ u_{1}=\\frac{1}{\\sqrt{3}} $$ $$ u_{2}=\\tan45^{\\circ} $$ $$ u_{2}=1 $$ $$ u_{1}:u_{2}=\\frac{1}{\\sqrt{3}}:1 $$ $$ u_{1}:u_{2}=1:\\sqrt{3} $$\n- Given. Initial velocity, u = 0 Acceleration, $ a = 5 \\, \\text{m/s}^2 $ At t = 4 s ball is dropped. velocity of car at $ t = 4 \\, s $, $$ \\mathbf{v}=\\boldsymbol{u}+a t $$ $$ \\mathbf{v}=0+5\\ (4)\\ =20\\ m/s $$ At $t=6\\mathrm{~s}$, acceleration is due to gravity. $$ a=g=10m/s $$ $$ \\begin{aligned}\\mathbf{v}_{x}&=20\\mathrm{~m/s}\\text{(due to car)}\\\\\\mathbf{v}_{y}&=u+at=0+g(2)\\text{(downward)}\\\\&=20\\mathrm{~m/s}\\text{(downward)}\\\\\\mathbf{v}&=\\sqrt{(20^{2}+20^{2})}=20\\sqrt{2}\\mathrm{~m/s}\\end{aligned} $$\n- It is given that, $$ x=a\\sin\\omega t $$ $$ \\frac{x}{a}=\\sin\\omega t $$ $$ y=a\\cos\\omega t $$ $$ \\frac{y}{a}\\;=\\cos\\omega t $$ On squaring and adding eq. (i) and (ii), we get, $$ \\begin{aligned}\\frac{x^{2}}{a^{2}}+\\frac{y^{2}}{a^{2}}&=1\\\\\\Rightarrow\\quad x^{2}+y^{2}&=a^{2}\\end{aligned} $$ This is the equation of circle. Hence, particle follows a circular path.\n- <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//639381e3-f4bc-4ed0-ac07-66249de23cee/markdown_3/imgs/img_in_image_box_116_1313_464_1482.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A10Z%2F-1%2F%2F4c10df36831ad9a7a3618af540c705a4fe18d87f2dd8c6497e203aafd88c9e66\" alt=\"Image\" width=\"29%\" /></div> $\\therefore$ Stopping distance, $x_{1}=\\frac{u^{2}}{2g\\sin60^{\\circ}}$ Stopping distance, $ x_{2}=\\frac{u^{2}}{2g\\sin30^{\\circ}} $ $$ \\begin{aligned}\\frac{x_{1}}{x_{2}}&=\\frac{\\sin30^{\\circ}}{\\sin60^{\\circ}}\\\\&=\\frac{1\\times2}{2\\times\\sqrt{3}}=\\frac{1}{\\sqrt{3}}\\\\&=1:\\sqrt{3}\\end{aligned} $$\n- <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//639381e3-f4bc-4ed0-ac07-66249de23cee/markdown_3/imgs/img_in_image_box_660_327_885_483.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A10Z%2F-1%2F%2F0a2e6ba93ad3fb3430efa70304a549f6a22579f28d6407e0913ce96e209d4ea6\" alt=\"Image\" width=\"18%\" /></div> Displacement of particle is, $$ \\begin{array}{r}{\\vec{\\mathrm{~\\boldmath~R~}}=\\vec{r_{1}}+\\vec{\\mathrm{~\\boldmath~v_{1}~}}t=\\vec{r_{2}}+\\vec{\\mathrm{~\\boldmath~v_{2}~}}t}\\end{array} $$ i.e. $$ \\overset{\\to}{r}_{1}-\\overset{\\to}{r}_{2}=(\\overset{\\to}{\\mathbf{v}}_{2}-\\overset{\\to}{\\mathbf{v}}_{1})t $$ $$ \\begin{array}{r}{\\overset{\\to}{r}_{1}-\\overset{\\to}{r}_{2}=\\big(\\mathbf{v}_{2}\\overset{\\to}{--}\\mathbf{v}_{1}\\big)\\frac{\\overset{\\to}{\\mid}\\boldsymbol{r}_{1}-\\boldsymbol{r}_{2}\\mid}{\\overset{\\to}{\\mid}\\mathbf{v}_{2}-\\mathbf{v}_{1}\\mid}}\\end{array} $$ $$ \\begin{array}{c}\\rightarrow\\rightarrow\\\\\\left.\\begin{array}{l}\\boldsymbol{r}_{1}-\\boldsymbol{r}_{2}\\end{array}\\right.=\\frac{\\left(\\mathbf{v}_{2}-\\mathbf{v}_{1}\\right)}{\\rightarrow\\rightarrow}\\left|\\begin{array}{l}\\mathbf{v}_{2}\\rightarrow\\\\\\mathbf{v}_{1}\\rightarrow\\end{array}\\right.\\end{array} $$\n- Here, net displacement, $$ \\begin{aligned} \\vec{s}_{av} = (13-2)\\hat{i} + (14-3)\\hat{j} = 11\\hat{i} + 11\\hat{j} \\\\ \\text{and time taken, } t = (5-0) = 5 \\\\ \\therefore \\text{Average velocity, } \\vec{v}_{av} = \\frac{\\text{Net displacement}}{\\text{Time taken}} \\\\ = \\frac{11\\hat{i} + 11\\hat{j}}{5} \\\\ = \\frac{11}{5}(\\hat{i} + \\hat{j}) \\end{aligned} $$\n- From graph, x-component remains unchanged and y-component is reversed. So, velocity at point B is $(2\\hat{i}-3\\hat{j})\\, \\mathrm{ms}^{-1}$. [Here, x-component does not change and y-component changes]\n- Here, $ \\tan\\theta=\\frac{3}{\\sqrt{3}}=\\sqrt{3} $ $$ \\theta=60^{\\circ} $$ <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//639381e3-f4bc-4ed0-ac07-66249de23cee/markdown_3/imgs/img_in_image_box_763_1351_952_1541.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A10Z%2F-1%2F%2Fb7d080e3c57b28d7fb019e448ea719786a3147e7fc86325635ea90571408a743\" alt=\"Image\" width=\"15%\" /></div>\n- Let the velocity along x and y-axes be $ v_{x} $ and $ v_{y} $ respectively. $$ \\therefore\\quad\\mathbf{v}_{x}=\\frac{dx}{dt}\\text{and}\\mathbf{v}_{y}=\\frac{dy}{dt} $$ <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//639381e3-f4bc-4ed0-ac07-66249de23cee/markdown_4/imgs/img_in_chart_box_213_202_527_415.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A13Z%2F-1%2F%2F34e98f8f2c3837148f3f72099f10fad7c67f7edc82aa2150040b70d8e535a4ea\" alt=\"Image\" width=\"26%\" /></div> From figure. $$ \\tan\\alpha=\\frac{y}{x} $$ $ y = x \\tan \\alpha $ Differentiating eq. (i), w.r.t. t we get. $$ \\begin{aligned}\\frac{dy}{dt}&=\\frac{dx}{dt}\\tan\\alpha\\\\\\Longrightarrow\\quad\\mathbf{v}_{y}&=\\mathbf{v}_{x}\\tan\\alpha\\\\ Here,\\quad\\mathbf{v}_{x}&=10\\mathrm{~m/s},\\alpha=60^{\\circ}\\\\\\therefore\\quad\\mathbf{v}_{x}&=10\\tan60^{\\circ}\\\\&=10\\sqrt{3}=17.3\\mathrm{~m/s}\\end{aligned} $$",
+    "formulas": [
+      {
+        "latex": "\\overrightarrow{r} = (i + 2\\overrightarrow{j})",
+        "meaning": ""
+      },
+      {
+        "latex": "u=\\tan\\theta",
+        "meaning": ""
+      },
+      {
+        "latex": "u_{1}=\\tan30^{\\circ}",
+        "meaning": ""
+      },
+      {
+        "latex": "u_{1}=\\frac{1}{\\sqrt{3}}",
+        "meaning": ""
+      },
+      {
+        "latex": "u_{2}=\\tan45^{\\circ}",
+        "meaning": ""
+      },
+      {
+        "latex": "u_{2}=1",
+        "meaning": ""
+      },
+      {
+        "latex": "u_{1}:u_{2}=\\frac{1}{\\sqrt{3}}:1",
+        "meaning": ""
+      },
+      {
+        "latex": "u_{1}:u_{2}=1:\\sqrt{3}",
+        "meaning": ""
+      },
+      {
+        "latex": "s = ut + 0",
+        "meaning": ""
+      },
+      {
+        "latex": "s = ut",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{v}=\\boldsymbol{u}+a t",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{v}=0+5\\ (4)\\ =20\\ m/s",
+        "meaning": ""
+      },
+      {
+        "latex": "a=g=10m/s",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}\\mathbf{v}_{x}&=20\\mathrm{~m/s}\\text{(due to car)}\\\\\\mathbf{v}_{y}&=u+at=0+g(2)\\text{(downward)}\\\\&=20\\mathrm{~m/s}\\text{(downward)}\\\\\\mathbf{v}&=\\sqrt{(20^{2}+20^{2})}=20\\sqrt{2}\\mathrm{~m/s}\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "a = 5 \\, \\text{m/s}^2",
+        "meaning": ""
+      },
+      {
+        "latex": "t = 4 \\, s",
+        "meaning": ""
+      },
+      {
+        "latex": "t=6\\mathrm{~s}",
+        "meaning": ""
+      },
+      {
+        "latex": "x=a\\sin\\omega t",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{x}{a}=\\sin\\omega t",
+        "meaning": ""
+      },
+      {
+        "latex": "y=a\\cos\\omega t",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{y}{a}\\;=\\cos\\omega t",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}\\frac{x^{2}}{a^{2}}+\\frac{y^{2}}{a^{2}}&=1\\\\\\Rightarrow\\quad x^{2}+y^{2}&=a^{2}\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}\\frac{x_{1}}{x_{2}}&=\\frac{\\sin30^{\\circ}}{\\sin60^{\\circ}}\\\\&=\\frac{1\\times2}{2\\times\\sqrt{3}}=\\frac{1}{\\sqrt{3}}\\\\&=1:\\sqrt{3}\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "x_{1}=\\frac{u^{2}}{2g\\sin60^{\\circ}}",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "a98f0f6e-9301-4296-bcd1-1056a07402d5",
+      "7666f12f-f21d-412f-a993-d5aad67f34b0",
+      "131a3b7a-1692-4302-8f6a-6a103b7782b1",
+      "9141c959-ea2c-4124-b2a4-99b2d927dfd5",
+      "ae15fe03-2290-43cb-b898-4af97284cdf7",
+      "f860bf4d-82e3-47a5-a4e9-c93fbc50f45c",
+      "dc158b71-1222-4635-b395-ffff2f68473f",
+      "ec0fadd5-669a-462c-803c-ff92778b6b2d",
+      "7d6f75b2-0526-475b-9a74-14755368950d",
+      "b2624576-9d6c-4d58-b732-460cf5b424f2"
+    ],
+    "tags": [
+      "Re-NEET 2024",
+      "NEET 2022",
+      "NEET 2021",
+      "NEET 2019",
+      "AIPMT July 2015",
+      "AIPMT 2014",
+      "AIPMT 2007",
+      "AIPMT 1998"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-motion-in-a-plane-motion-in-a-plane-with-constant-acceleration",
+    "chapter": "Motion in a Plane",
+    "subtopic": "Motion in a Plane with Constant Acceleration",
+    "class": "XI",
+    "unitId": "xi-kinematics",
+    "unitLabel": "Unit II — Kinematics",
+    "order": 2,
+    "title": "Motion in a Plane with Constant Acceleration",
+    "summary": "Velocity is rate of change of position vector, i.e., $$ \\overset{\\rightarrow}{\\mathbf{v}}=\\frac{\\boldsymbol{d}\\overset{\\rightarrow}{r}}{dt} $$ where, $ \\overrightarrow{r} $ is the position vector.",
+    "body": "**Key points from solved questions**\n- Velocity is rate of change of position vector, i.e., $$ \\overset{\\rightarrow}{\\mathbf{v}}=\\frac{\\boldsymbol{d}\\overset{\\rightarrow}{r}}{dt} $$ where, $ \\overrightarrow{r} $ is the position vector. $$ \\begin{aligned}\\overrightarrow{\\mathbf{v}}=&\\frac{d}{dt}\\left[\\left(a\\cos\\omega t\\right)\\hat{i}+\\left(a\\sin\\omega t\\right)\\hat{j}\\right]\\\\=&\\left(-a\\omega\\sin\\omega t\\right)\\hat{i}+\\left(a\\omega\\cos\\omega t\\right)\\hat{j}\\\\=&\\omega[(-a\\sin\\omega t)\\hat{i}+(a\\cos\\omega t)\\hat{j}]\\end{aligned} $$ Slope of position vector $$ \\frac{a\\sin\\omega t}{a\\cos\\omega t}=\\tan\\omega t $$ and slope of velocity vector = $ \\frac{-a\\cos\\omega t}{a\\sin\\omega t} $ $ = -\\frac{1}{\\tan\\omega t} $ Velocity is perpendicular to the displacement. <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//639381e3-f4bc-4ed0-ac07-66249de23cee/markdown_4/imgs/img_in_image_box_96_1383_132_1431.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A13Z%2F-1%2F%2F6c790633eca8b9e2d93dee2bd3e2806d39bc8aa3d211031892a566ed9224c445\" alt=\"Image\" width=\"3%\" /></div> ##### Related Theory Velocity vector and position vector are perpendicular to each other if their scalar product is zero, i.e. $$ \\begin{array}{r}{\\mathbf{\\nabla}^{\\rightarrow}\\rightarrow}\\\\ {\\mathbf{v}.r=0}\\end{array} $$\n- Given. Velocity $$ x=51-2t^{2} $$ $$ \\begin{array}{l}\\text{v}_{x}=\\displaystyle \\frac{dx}{dt}=\\frac{d}{dt}(5t-2t^{2})\\\\ =5-4t \\end{array} $$ Acceleration, $$ \\begin{array}{l}a_{x}=\\displaystyle\\frac{d}{d t}(\\textbf{v}_{x})=\\frac{d}{d t}(5-4t)\\\\ \\quad=-\\displaystyle4\\mathrm{~m/s}^{2}\\end{array} $$ Again, $$ y=10t $$ ∴ Velocity, $$ \\mathbf{v}_{y}=\\frac{d}{dt}(10t)=10 $$ Acceleration, $$ \\begin{array}{l}a_{y}=\\displaystyle\\frac{d}{d t}(\\mathbf{v}_{y})\\\\ =\\displaystyle\\frac{d}{d t}(10)=0\\end{array} $$ ∴ Net acceleration of particle, $$ \\begin{array}{l}\\vec{a_{net}}=\\vec{a_{x}}\\hat{i}+\\vec{a_{y}}\\hat{j}\\\\ \\quad=-\\vec{4\\hat{i}}+0=-\\vec{4\\hat{i}}\\mathrm{m/s^{2}}\\\\ \\quad\\rightarrow\\quad\\quad\\quad\\quad t=t_{2}\\end{array} $$ $$ \\vec{a_{n e t}}=-4~\\mathrm{m/s^{2}} $$\n- Here, $ \\overrightarrow{R} = 4 \\sin (2\\pi t)i + 4 \\cos (2\\pi t)j $ The velocity of the particle is, $$ \\begin{array}{l}\\overrightarrow{v}=\\frac{d\\overrightarrow{R}}{dt}=\\frac{d}{dt}\\left[4\\sin\\left(2\\pi t\\right)\\hat{i}+4\\cos\\left(2\\pi t\\right)\\hat{j}\\right]\\\\=8\\pi\\cos2\\pi t\\hat{i}-8\\pi\\sin\\left(2\\pi t\\right)\\hat{j}\\end{array} $$ Its magnitude is, $$ \\begin{align*}|\\overrightarrow{v}|&=\\sqrt{(8\\pi\\cos(2\\pi t))^2+(-8\\pi\\sin(2\\pi t))^2}\\\\&=\\sqrt{64\\pi^2\\cos^2(2\\pi t)+64\\pi^2\\sin^2(2\\pi t)}\\\\&=\\sqrt{64\\pi^2[\\cos^2(2\\pi t)+\\sin^2(2\\pi t)]}\\\\&=\\sqrt{64\\pi^2}=8\\pi\\text{m/s}\\\\&\\quad\\text{(as}\\sin^2\\theta+\\cos^2\\theta=1\\text{)}\\end{align*} $$\n- Given that, velocity, $ \\vec{u} = 2\\hat{i} + 3\\hat{j} $ Acceleration. $$ \\vec{a}=(0.3\\hat{i}+0.2\\hat{j}) $$ By first equation of motion, $$ \\begin{aligned}\\mathbf{v}&=\\mathbf{u}+at\\\\\\mathbf{v}&=(2\\hat{i}+3\\hat{j})+(0.3\\hat{i}+0.2\\hat{j})\\times10\\\\&=5\\hat{i}+5\\hat{j}\\\\\\mathbf{v}&=5\\sqrt{2}\\text{units}\\end{aligned} $$\n- We know that, first equation of motion. $$ \\begin{aligned}\\mathbf{v}&=u+at\\\\\\overrightarrow{\\mathbf{v}}&=(3\\overrightarrow{i}+4\\overrightarrow{j})+(0.4\\overrightarrow{i}+0.3\\overrightarrow{j})10\\\\&=\\ 3\\overrightarrow{i}+4\\overrightarrow{j}+4\\overrightarrow{i}+3\\overrightarrow{j}\\\\\\overrightarrow{\\mathbf{v}}&=7\\overrightarrow{i}+7\\overrightarrow{j}\\\\|\\mathbf{v}|&=\\ \\sqrt{7^{2}+7^{2}}=\\ \\sqrt{49+49}\\\\&=7\\sqrt{2}units\\end{aligned} $$",
+    "formulas": [
+      {
+        "latex": "\\overset{\\rightarrow}{\\mathbf{v}}=\\frac{\\boldsymbol{d}\\overset{\\rightarrow}{r}}{dt}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}\\overrightarrow{\\mathbf{v}}=&\\frac{d}{dt}\\left[\\left(a\\cos\\omega t\\right)\\hat{i}+\\left(a\\sin\\omega t\\right)\\hat{j}\\right]\\\\=&\\left(-a\\omega\\sin\\omega t\\right)\\hat{i}+\\left(a\\omega\\cos\\omega t\\right)\\hat{j}\\\\=&\\omega[(-a\\sin\\omega t)\\hat{i}+(a\\cos\\omega t)\\hat{j}]\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{a\\sin\\omega t}{a\\cos\\omega t}=\\tan\\omega t",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{array}{r}{\\mathbf{\\nabla}^{\\rightarrow}\\rightarrow}\\\\ {\\mathbf{v}.r=0}\\end{array}",
+        "meaning": ""
+      },
+      {
+        "latex": "= -\\frac{1}{\\tan\\omega t}",
+        "meaning": ""
+      },
+      {
+        "latex": "x=51-2t^{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{array}{l}\\text{v}_{x}=\\displaystyle \\frac{dx}{dt}=\\frac{d}{dt}(5t-2t^{2})\\\\ =5-4t \\end{array}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{array}{l}a_{x}=\\displaystyle\\frac{d}{d t}(\\textbf{v}_{x})=\\frac{d}{d t}(5-4t)\\\\ \\quad=-\\displaystyle4\\mathrm{~m/s}^{2}\\end{array}",
+        "meaning": ""
+      },
+      {
+        "latex": "y=10t",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{v}_{y}=\\frac{d}{dt}(10t)=10",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{array}{l}a_{y}=\\displaystyle\\frac{d}{d t}(\\mathbf{v}_{y})\\\\ =\\displaystyle\\frac{d}{d t}(10)=0\\end{array}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{array}{l}\\vec{a_{net}}=\\vec{a_{x}}\\hat{i}+\\vec{a_{y}}\\hat{j}\\\\ \\quad=-\\vec{4\\hat{i}}+0=-\\vec{4\\hat{i}}\\mathrm{m/s^{2}}\\\\ \\quad\\rightarrow\\quad\\quad\\quad\\quad t=t_{2}\\end{array}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\vec{a_{n e t}}=-4~\\mathrm{m/s^{2}}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{array}{l}\\overrightarrow{v}=\\frac{d\\overrightarrow{R}}{dt}=\\frac{d}{dt}\\left[4\\sin\\left(2\\pi t\\right)\\hat{i}+4\\cos\\left(2\\pi t\\right)\\hat{j}\\right]\\\\=8\\pi\\cos2\\pi t\\hat{i}-8\\pi\\sin\\left(2\\pi t\\right)\\hat{j}\\end{array}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{align*}|\\overrightarrow{v}|&=\\sqrt{(8\\pi\\cos(2\\pi t))^2+(-8\\pi\\sin(2\\pi t))^2}\\\\&=\\sqrt{64\\pi^2\\cos^2(2\\pi t)+64\\pi^2\\sin^2(2\\pi t)}\\\\&=\\sqrt{64\\pi^2[\\cos^2(2\\pi t)+\\sin^2(2\\pi t)]}\\\\&=\\sqrt{64\\pi^2}=8\\pi\\text{m/s}\\\\&\\quad\\text{(as}\\sin^2\\theta+\\cos^2\\theta=1\\text{)}\\end{align*}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\overrightarrow{R} = 4 \\sin (2\\pi t)i + 4 \\cos (2\\pi t)j",
+        "meaning": ""
+      },
+      {
+        "latex": "\\vec{a}=(0.3\\hat{i}+0.2\\hat{j})",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}\\mathbf{v}&=\\mathbf{u}+at\\\\\\mathbf{v}&=(2\\hat{i}+3\\hat{j})+(0.3\\hat{i}+0.2\\hat{j})\\times10\\\\&=5\\hat{i}+5\\hat{j}\\\\\\mathbf{v}&=5\\sqrt{2}\\text{units}\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\vec{u} = 2\\hat{i} + 3\\hat{j}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}\\mathbf{v}&=u+at\\\\\\overrightarrow{\\mathbf{v}}&=(3\\overrightarrow{i}+4\\overrightarrow{j})+(0.4\\overrightarrow{i}+0.3\\overrightarrow{j})10\\\\&=\\ 3\\overrightarrow{i}+4\\overrightarrow{j}+4\\overrightarrow{i}+3\\overrightarrow{j}\\\\\\overrightarrow{\\mathbf{v}}&=7\\overrightarrow{i}+7\\overrightarrow{j}\\\\|\\mathbf{v}|&=\\ \\sqrt{7^{2}+7^{2}}=\\ \\sqrt{49+49}\\\\&=7\\sqrt{2}units\\end{aligned}",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "b99ead63-c73b-4f19-aaf8-8aa8a4dcf9c3",
+      "0cc0439e-628a-448a-ad84-6776eb4d07d5",
+      "89c5f444-b158-434e-8756-ce4f2cd9af23",
+      "0b701865-0d0c-455b-baf0-4182f85747fa",
+      "354d12d7-4dba-4cf8-9851-c6e67f645ec2"
+    ],
+    "tags": [
+      "NEET 2019",
+      "NEET 2017",
+      "AIPMT Screening 2012"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-motion-in-a-plane-objective-i",
+    "chapter": "Motion in a Plane",
+    "subtopic": "Objective I",
+    "class": "XI",
+    "unitId": "xi-kinematics",
+    "unitLabel": "Unit II — Kinematics",
+    "order": 2,
+    "title": "Objective I",
+    "summary": "Both trains move along the equator at the same speed $v$ *relative to the ground* — but the ground (Earth's surface) is itself rotating (west to east) at speed $v_e = \\omega_{\\text{Earth}} R$ relative to the…",
+    "body": "**Key points from solved questions**\n- \"Uniform speed\" means only the *magnitude* $|\\vec v|$ of the velocity stays constant — but velocity is a **vector**, and its *direction* keeps changing continuously as the particle goes around the circle (it's always tangent to the circle, and the tangent direction rotates). So the velocity vector $\\vec v$ is **not** constant. Since the velocity changes (in direction), there must be an acceleration — and indeed the particle has a **centripetal acceleration** $a = v^2/r$, always directed toward the centre. Although the *magnitude* of this acceleration stays constant (since $v$ and $r$ don't change), its **direction** also continuously changes (it always points toward the centre, which is a different absolute direction at each point of the circle). So the acceleration vector $\\vec a$ is **not** constant either. Both the velocity and the acceleration vectors continuously change direction (though their magnitudes stay fixed) — so both \"change\" in the vector sense. Answer: (D).\n- Angular speed is defined as $\\omega = \\dfrac{2\\pi}{T}$, where $T$ is the time period (time to complete one full revolution). We're told both cars **complete their respective circles in equal time** — i.e., they have the same $T$. Therefore: $$\\omega_1 = \\frac{2\\pi}{T}, \\qquad \\omega_2 = \\frac{2\\pi}{T} \\;\\Longrightarrow\\; \\omega_1 = \\omega_2$$ Notice that $\\omega$ depends *only* on the time period $T$ — it doesn't depend on the mass or the radius of the circle at all (those would matter for *linear* speed $v = \\omega r$, but not for angular speed). Since $T$ is the same for both cars, $$\\frac{\\omega_1}{\\omega_2} = 1$$ Answer: (D).\n- For a vehicle moving along a curved road at constant speed $v$, the normal force $N$ from the road and gravity $mg$ together supply the centripetal force needed for circular motion. The relation depends on whether the road curves like a \"hill\" (convex, centre of curvature *below* the road) or a \"valley\" (concave, centre of curvature *above* the road): - **Convex curve (hill-top type)**: the centripetal acceleration points *downward* (toward the centre below), so $mg - N = \\dfrac{mv^2}{r} \\Rightarrow N = mg - \\dfrac{mv^2}{r}$ — this makes $N$ **smaller** than $mg$. - **Concave curve (valley/dip type)**: the centripetal acceleration points *upward* (toward the centre above), so $N - mg = \\dfrac{mv^2}{r} \\Rightarrow N = mg + \\dfrac{mv^2}{r}$ — this makes $N$ **larger** than $mg$. From the figure, point A lies on the convex (hill-like) part of the road and point B lies on the concave (dip-like) part. Hence $N_A = mg - \\dfrac{mv^2}{r_A} < mg < mg + \\dfrac{mv^2}{r_B} = N_B$, i.e. $N_A < N_B$. Answer: (C).\n- **Centrifugal force is a pseudo-force** — it appears only when you analyze motion from a *non-inertial (rotating)* reference frame, as a mathematical device to make Newton's second law \"work\" in that frame. Here, the particle is observed from an **inertial frame of reference**. In an inertial frame, Newton's laws hold directly without needing any pseudo-forces — the *only* real force responsible for the particle's circular motion is the (real, physical) **centripetal force** $\\dfrac{mv^2}{r}$ directed toward the centre (e.g., tension, gravity, friction, etc., depending on the situation). There is **no centrifugal force** acting on the particle as seen from an inertial frame — it simply doesn't exist in this description. Answer: (D) — zero.\n- The centrifugal (pseudo) force experienced by a particle, as analyzed from a rotating frame, has magnitude $m\\omega_{\\text{frame}}^2 r$ — where $\\omega_{\\text{frame}}$ is the angular speed **of the rotating frame itself** (not of the particle's actual motion), and $r$ is the particle's distance from the rotation axis as measured in that frame. This is because the pseudo-force arises purely from the *frame's* rotation — it's the term you must add to make Newton's second law valid in that (non-inertial) frame, and its magnitude depends only on how fast that frame is spinning ($\\omega_0$) and the particle's radial distance ($a$, since the radius doesn't change when viewed from a frame rotating about the same axis). So the centrifugal force on the particle, as seen from the frame rotating at $\\omega_0$, is $$F_{\\text{cf}} = m\\omega_0^2 a$$ — it depends on $\\omega_0$ (the observing frame's spin rate), **not** on $\\omega$ (the particle's actual angular speed in the inertial frame). Answer: (B).\n- On a turntable rotating uniformly, every point moves with the **same angular speed** $\\omega$ (a rigid body rotates as one piece — $\\omega$ doesn't depend on the radius). The particle's linear speed and acceleration, however, *do* depend on its radius $r$: $$v = \\omega r, \\qquad a = \\omega^2 r = \\frac{v^2}{r}$$ Initially: $v = 20$ cm/s, $a = 20$ cm/s$^2$ at radius $r$. From these, $\\omega = v/r$ and $a = \\omega^2 r = v^2/r \\Rightarrow r = v^2/a = (20)^2/20 = 20$ cm, and $\\omega = v/r = 20/20 = 1$ rad/s. When shifted to a new radius $r' = r/2 = 10$ cm, with the **same** $\\omega = 1$ rad/s (the turntable's rotation rate hasn't changed): $$v' = \\omega r' = 1 \\times 10 = 10 \\text{ cm/s}, \\qquad a' = \\omega^2 r' = 1^2 \\times 10 = 10 \\text{ cm/s}^2$$ Both the new speed and acceleration are exactly **half** their original values (consistent with $v \\propto r$ and $a \\propto r$ at fixed $\\omega$). Answer: (A).\n- At the **topmost point** of the vertical circle, both gravity ($mg$, downward) and the normal force from the bucket's bottom on the water ($N$, also downward — toward the centre, since the bucket is inverted) act toward the centre, together providing the centripetal force: $$mg + N = \\frac{mv^2}{r}$$ Since the normal force can never be negative ($N \\geq 0$ — a surface can only *push*, not *pull*), we need: $$\\frac{mv^2}{r} = mg + N \\geq mg \\;\\Longrightarrow\\; \\frac{mv^2}{r} \\geq mg$$ Equivalently, $mg \\leq \\dfrac{mv^2}{r}$ — i.e., **$mg$ is not greater than $\\dfrac{mv^2}{r}$**. This is precisely the condition that ensures gravity alone isn't \"too strong\" to be entirely responsible for the centripetal requirement, leaving room for $N \\geq 0$ — so the water stays in contact with the bucket's bottom and doesn't fall out. Answer: (C).\n- While moving in the circle, the stone's instantaneous velocity is always directed **tangent** to the circle at its current position (this is simply the definition of velocity in circular motion — displacement is along the tangential direction for an infinitesimal time interval). The string provides the **centripetal force** that continuously redirects this tangential velocity toward the centre, keeping the stone on its circular path. The moment the string **breaks**, this centripetal force vanishes — there is no longer any force pulling the stone toward the centre (and no other horizontal force acting on it, by assumption). By Newton's first law, with no net force acting (ignoring gravity for the purposes of this idealized problem, or considering motion in a horizontal plane), the stone continues moving in a straight line with whatever velocity it had at the instant of breaking — which is the tangential velocity. So it flies off **along the tangent** to the circle at the point where the string snapped. Answer: (C).\n- The coin stays on the turntable as long as the **friction** between the coin and the surface can supply the required centripetal force. It is on the verge of slipping when friction reaches its maximum value: $$\\mu m g = m \\omega^2 r \\;\\Longrightarrow\\; r = \\frac{\\mu g}{\\omega^2}$$ This shows $r \\propto \\dfrac{1}{\\omega^2}$ — the critical (slipping) radius is *inversely proportional to the square* of the angular velocity, for a fixed $\\mu$ and $g$. If $\\omega$ is **doubled** ($\\omega \\to 2\\omega$), the new critical radius becomes: $$r' = \\frac{\\mu g}{(2\\omega)^2} = \\frac{\\mu g}{4\\omega^2} = \\frac{r}{4} = \\frac{4\\ \\text{cm}}{4} = 1\\ \\text{cm}$$ So at the higher rotation rate, the coin would now slip at a much *smaller* radius — only 1 cm from the centre. Answer: (A).\n- Model the overbridge as an arc of a circle of radius $R$, with the motorcycle moving at constant speed $v$. At a point where the line from the motorcycle to the centre of the circle makes angle $\\theta$ with the vertical (i.e., with the line to the topmost point), the component of gravity directed toward the centre is $mg\\cos\\theta$, and the normal force $N$ acts away from the centre. The centripetal equation (net force toward centre) gives: $$mg\\cos\\theta - N = \\frac{mv^2}{R} \\;\\Longrightarrow\\; N = mg\\cos\\theta - \\frac{mv^2}{R}$$ As the motorcycle **ascends** toward the top of the bridge, $\\theta$ **decreases** toward $0$ (the topmost point), so $\\cos\\theta$ **increases** toward its maximum value of $1$. Since $v$ and $R$ are constant, $N = mg\\cos\\theta - \\dfrac{mv^2}{R}$ therefore **increases** as the motorcycle climbs toward the crest. Answer: (A).\n- By Newton's third law, the force the car exerts on the bridge ($F$) has the same magnitude as the normal force $N$ the bridge exerts on the car. For a car of mass $m$ moving at speed $v$ at the middle of each type of bridge (radius of curvature $r$): - **Plane (flat) bridge — car A**: no centripetal acceleration is needed (the path is straight at that point), so $N_A = mg$. - **Convex bridge (bulging upward) — car B**: the centripetal acceleration points *downward* (toward the centre, which lies below the road), so $mg - N_B = \\dfrac{mv^2}{r} \\Rightarrow N_B = mg - \\dfrac{mv^2}{r} < mg$. - **Concave bridge (curving upward like a valley) — car C**: the centripetal acceleration points *upward* (toward the centre, which lies above the road), so $N_C - mg = \\dfrac{mv^2}{r} \\Rightarrow N_C = mg + \\dfrac{mv^2}{r} > mg$. Comparing: $N_B < N_A < N_C$, i.e. $F_B < F_A < F_C$ — so $F_C$ (and hence the force car C exerts on its bridge) is the **largest** of the three. Answer: (C).\n- Both trains move along the equator at the same speed $v$ *relative to the ground* — but the ground (Earth's surface) is itself rotating (west to east) at speed $v_e = \\omega_{\\text{Earth}} R$ relative to the (essentially inertial) frame of the Earth's centre. - **Train A** (running east → west, i.e., *against* Earth's rotation) has an absolute speed (relative to the Earth's centre / inertial frame) of $v_e - v$ — *smaller* than $v_e$. - **Train B** (running west → east, i.e., *with* Earth's rotation) has an absolute speed of $v_e + v$ — *larger* than $v_e$. The centripetal requirement for circular motion about Earth's centre is provided by (gravity $-$ normal force): $mg - F = \\dfrac{m\\,(\\text{absolute speed})^2}{R}$, so $$F = mg - \\frac{m\\,(\\text{absolute speed})^2}{R}$$ A **larger** absolute speed demands a **larger** centripetal force, which (for fixed $mg$) leaves a **smaller** normal/track force $F$. Since train B has the larger absolute speed ($v_e+v > v_e - v$), it requires more centripetal force and therefore presses on the track with a *smaller* force: $F_2 < F_1$, i.e. $F_1 > F_2$. Answer: (A).\n- The \"apparent\" value of $g$ that we measure on the rotating Earth is the *true* gravitational acceleration **minus** a correction due to the centripetal acceleration needed to keep us moving in a circle along with the Earth's rotation: $$g_{\\text{apparent}} = g_{\\text{true}} - \\omega^2 R\\cos^2\\lambda$$ (roughly — where $\\lambda$ is the latitude and $R$ is Earth's radius; the correction is largest at the equator and zero at the poles, since the radius of the circular path traced by a point at latitude $\\lambda$ is $R\\cos\\lambda$). If the Earth **stops rotating** ($\\omega \\to 0$): - At the **poles**, the radius of the circular path was already zero, so there was *no* centripetal correction to begin with — $g$ remains exactly the **same** there. - At **all other latitudes** (including the equator), the centripetal correction term $\\omega^2 R\\cos^2\\lambda$ vanishes, so the apparent $g$ **increases** (back toward the true gravitational value). So $g$ increases at all non-polar locations, but stays the same at the poles — i.e., it increases at *some* places and remains the same at *others*. Answer: (D).\n- For a uniformly rotating rod, the tension at any point must supply the centripetal force required to keep **all of the rod beyond that point** moving in its circle. Consider a small element of the rod at distance $x$ from the pivot, with mass $dm = \\dfrac{m}{L}\\,dx$ (uniform linear density $m/L$); it requires a centripetal force $dm\\,\\omega^2 x$ directed toward the pivot. The tension $T(x)$ at a point distance $x$ from the pivot must supply the *total* centripetal force needed by the entire outer segment (from $x$ to the free end at $L$): $$T(x) = \\int_x^L \\frac{m}{L}\\,\\omega^2 r \\, dr = \\frac{m\\omega^2}{2L}\\left(L^2 - x^2\\right)$$ This is a **decreasing function of $x$** — the farther a point is from the pivot, the less of the rod remains \"outboard\" of it (needing to be centripetally supported), so the tension there is smaller. Since $L/4 < 3L/4$: $$T_1 = T(L/4) > T_2 = T(3L/4)$$ Answer: (A).",
+    "formulas": [
+      {
+        "latex": "a = v^2/r",
+        "meaning": ""
+      },
+      {
+        "latex": "\\omega_1 = \\frac{2\\pi}{T}, \\qquad \\omega_2 = \\frac{2\\pi}{T} \\;\\Longrightarrow\\; \\omega_1 = \\omega_2",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{\\omega_1}{\\omega_2} = 1",
+        "meaning": ""
+      },
+      {
+        "latex": "\\omega = \\dfrac{2\\pi}{T}",
+        "meaning": ""
+      },
+      {
+        "latex": "v = \\omega r",
+        "meaning": ""
+      },
+      {
+        "latex": "mg - N = \\dfrac{mv^2}{r} \\Rightarrow N = mg - \\dfrac{mv^2}{r}",
+        "meaning": ""
+      },
+      {
+        "latex": "N - mg = \\dfrac{mv^2}{r} \\Rightarrow N = mg + \\dfrac{mv^2}{r}",
+        "meaning": ""
+      },
+      {
+        "latex": "N_A = mg - \\dfrac{mv^2}{r_A} < mg < mg + \\dfrac{mv^2}{r_B} = N_B",
+        "meaning": ""
+      },
+      {
+        "latex": "F_{\\text{cf}} = m\\omega_0^2 a",
+        "meaning": ""
+      },
+      {
+        "latex": "v = \\omega r, \\qquad a = \\omega^2 r = \\frac{v^2}{r}",
+        "meaning": ""
+      },
+      {
+        "latex": "v' = \\omega r' = 1 \\times 10 = 10 \\text{ cm/s}, \\qquad a' = \\omega^2 r' = 1^2 \\times 10 = 10 \\text{ cm/s}^2",
+        "meaning": ""
+      },
+      {
+        "latex": "v = 20",
+        "meaning": ""
+      },
+      {
+        "latex": "a = 20",
+        "meaning": ""
+      },
+      {
+        "latex": "\\omega = v/r",
+        "meaning": ""
+      },
+      {
+        "latex": "a = \\omega^2 r = v^2/r \\Rightarrow r = v^2/a = (20)^2/20 = 20",
+        "meaning": ""
+      },
+      {
+        "latex": "\\omega = v/r = 20/20 = 1",
+        "meaning": ""
+      },
+      {
+        "latex": "r' = r/2 = 10",
+        "meaning": ""
+      },
+      {
+        "latex": "\\omega = 1",
+        "meaning": ""
+      },
+      {
+        "latex": "mg + N = \\frac{mv^2}{r}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{mv^2}{r} = mg + N \\geq mg \\;\\Longrightarrow\\; \\frac{mv^2}{r} \\geq mg",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mu m g = m \\omega^2 r \\;\\Longrightarrow\\; r = \\frac{\\mu g}{\\omega^2}",
+        "meaning": ""
+      },
+      {
+        "latex": "r' = \\frac{\\mu g}{(2\\omega)^2} = \\frac{\\mu g}{4\\omega^2} = \\frac{r}{4} = \\frac{4\\ \\text{cm}}{4} = 1\\ \\text{cm}",
+        "meaning": ""
+      },
+      {
+        "latex": "mg\\cos\\theta - N = \\frac{mv^2}{R} \\;\\Longrightarrow\\; N = mg\\cos\\theta - \\frac{mv^2}{R}",
+        "meaning": ""
+      },
+      {
+        "latex": "N = mg\\cos\\theta - \\dfrac{mv^2}{R}",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "4d872e46-4b62-4d04-b4fd-cc0c2622b4ad",
+      "a0b10817-418d-4a0b-81f2-7e9fc945ed59",
+      "335acdce-7d18-4153-9ca0-a33b2f3b6645",
+      "1ad7d18a-8d0f-458e-a8c7-0a554df4cb2e",
+      "027b83b8-717a-4cba-bda0-16237bdd5acf",
+      "91bda2cb-f4e7-4fe1-a13f-7d89005968dc",
+      "bf9b1c5a-f71b-4c0a-8fc3-953219f74bff",
+      "41edc027-222a-43e7-93e8-35ddaf9b8914",
+      "a0a770c0-f365-4a55-a7f0-11110a67f8d9",
+      "4d493279-6577-42b5-b742-498a540259cc",
+      "72d44944-b911-49c7-b678-3a8436199023",
+      "8ce509ab-9ee1-4a60-99c5-4c522d79eba4",
+      "1276c077-b871-4f47-9842-d264433a1994",
+      "8b32d1cd-143f-4aad-a8aa-0d19a9f298ac",
+      "ac61151c-8640-4602-b626-2d57feb537c2",
+      "7b8deada-dcd8-4b7d-b3ad-c1d1786c7557"
+    ],
+    "tags": [
+      "HC Verma Vol 1",
+      "Objective I",
+      "Chapter 7"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-motion-in-a-plane-objective-ii",
+    "chapter": "Motion in a Plane",
+    "subtopic": "Objective II",
+    "class": "XI",
+    "unitId": "xi-kinematics",
+    "unitLabel": "Unit II — Kinematics",
+    "order": 2,
+    "title": "Objective II",
+    "summary": "\"Equal areas in equal times\" is the statement that the particle's **areal velocity** (and hence its angular momentum about the origin) is constant — this is a hallmark of motion under a **central force** (Kepler's…",
+    "body": "**Key points from solved questions**\n- \"Equal areas in equal times\" is the statement that the particle's **areal velocity** (and hence its angular momentum about the origin) is constant — this is a hallmark of motion under a **central force** (Kepler's second law). For a particle moving in a *circle* of fixed radius $r$ about the origin, the area swept in time $dt$ is $dA = \\tfrac12 r^2\\,d\\theta$, so \"equal areas in equal times\" directly means $\\dfrac{d\\theta}{dt} = \\omega$ is **constant** — i.e., the motion is **uniform circular motion**. Now examine each option for uniform circular motion: - **Speed** $|\\vec v| = \\omega r$: since $\\omega$ and $r$ are both constant, the **speed remains constant**. ✓ (B) - **Velocity** $\\vec v$: although its magnitude is constant, its *direction* (always tangential) keeps changing — so the velocity vector is **not** constant. ✗ (A) - **Acceleration** $\\vec a$ (centripetal, $= \\omega^2 r$ toward the centre): its *magnitude* is constant, but its *direction* (always toward the centre) continuously changes — so the acceleration vector is **not** constant. ✗ (C) - **Tangential acceleration** $a_t = \\dfrac{d|\\vec v|}{dt}$: since the speed $|\\vec v|$ is constant, $a_t = 0$ at all times — a constant (zero) value. ✓ (D) So the correct statements are that the **speed** remains constant and the **tangential acceleration** remains constant (equal to zero). Answer: (B, D).",
+    "formulas": [
+      {
+        "latex": "dA = \\tfrac12 r^2\\,d\\theta",
+        "meaning": ""
+      },
+      {
+        "latex": "\\dfrac{d\\theta}{dt} = \\omega",
+        "meaning": ""
+      },
+      {
+        "latex": "|\\vec v| = \\omega r",
+        "meaning": ""
+      },
+      {
+        "latex": "= \\omega^2 r",
+        "meaning": ""
+      },
+      {
+        "latex": "a_t = \\dfrac{d|\\vec v|}{dt}",
+        "meaning": ""
+      },
+      {
+        "latex": "a_t = 0",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "e59fef41-bd50-4d0a-a11c-81a3a05c36ee"
+    ],
+    "tags": [
+      "HC Verma Vol 1",
+      "Objective II",
+      "Chapter 7"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-motion-in-a-plane-overview",
+    "chapter": "Motion in a Plane",
+    "subtopic": "Overview",
+    "class": "XI",
+    "unitId": "xi-kinematics",
+    "unitLabel": "Unit II — Kinematics",
+    "order": 2,
+    "title": "Overview",
+    "summary": "Thrust is the force with which the rocket moves upward given by, $$ \\mathrm{F}=u\\frac{dm}{dt} $$ Thus mass of the gas ejected per second to supply the thrust needed to overcome the weight of the rocket is $$…",
+    "body": "**Key points from solved questions**\n- Thrust is the force with which the rocket moves upward given by, $$ \\mathrm{F}=u\\frac{dm}{dt} $$ Thus mass of the gas ejected per second to supply the thrust needed to overcome the weight of the rocket is $$ \\frac{dm}{dt}=\\frac{F}{u}=\\frac{ma}{u} $$ or $$ \\begin{array}{l}\\frac{dm}{dt}=\\frac{600\\times10}{1000}\\\\ =6\\mathrm{kg}\\mathrm{s}^{-1}\\end{array} $$",
+    "formulas": [
+      {
+        "latex": "\\mathrm{F}=u\\frac{dm}{dt}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{dm}{dt}=\\frac{F}{u}=\\frac{ma}{u}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{array}{l}\\frac{dm}{dt}=\\frac{600\\times10}{1000}\\\\ =6\\mathrm{kg}\\mathrm{s}^{-1}\\end{array}",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "a3f9c86b-212a-447b-b9b3-01899a5a8065"
+    ],
+    "tags": [
+      "AIPMT 2001, 1997"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-motion-in-a-plane-projectile-motion",
+    "chapter": "Motion in a Plane",
+    "subtopic": "Projectile Motion",
+    "class": "XI",
+    "unitId": "xi-kinematics",
+    "unitLabel": "Unit II — Kinematics",
+    "order": 2,
+    "title": "Projectile Motion",
+    "summary": "<div style=\"text-align: center;\"><img…",
+    "body": "**Key points from solved questions**\n- Max. height, H = $ \\frac{u^{2}\\sin^{2}\\theta}{2g} $ Here: $$ u=280~\\mathrm{m s}^{-1} $$ $$ \\theta=30^{\\circ} $$ $$ \\begin{aligned}H&=\\frac{(280)^{2}\\times\\sin^{2}30^{\\circ}}{2\\times9.8}\\\\&=\\frac{(280)^{2}\\times\\frac{1}{4}}{2\\times9.8}=1000m\\end{aligned} $$\n- Given: velocity of ball = 10 m/s, Angle with vertical direction = $ 60^{\\circ} $ From question. we can say that speed of the ball at the highest point = v $ \\cos \\theta $ where, $ \\theta = 90^{\\circ} - 60^{\\circ} = 30^{\\circ} $ $$ \\mathbf{v}=10\\times\\cos\\left(30^{\\circ}\\right)=10\\times\\left(\\frac{\\left(\\sqrt{3}\\right)}{2}\\right) $$ $$ \\mathbf{v}=5\\sqrt{3}\\mathrm{~m/s} $$\n- The speed of a projectile at its maximum height $$ \\mathbf{v}^{\\prime}=\\mathbf{v}_{0}\\cos\\theta $$ According to given problem, $$ \\mathbf{v}^{\\prime}=\\frac{\\mathbf{v}_{0}}{2} $$ $$ \\frac{\\mathbf{v}_{0}}{2}=\\mathbf{v}_{0}\\cos\\theta $$ $$ ↳\\Downarrow $$ $$ \\theta=\\frac{1}{2} $$ $$ \\theta=60^{\\circ} $$\n- The equation of trajectory is, $$ y=x\\tan\\theta-\\frac{gx^{2}}{2u^{2}\\cos^{2}\\theta}, $$ where, $\\theta$ is the angle of projection and $u$ is the velocity with which projectile is projected. For equal trajectories and for same angles of projection, $$ \\frac{g}{u^{2}}=constant $$ As per question, $$ \\frac{9.8}{\\left(5\\right)^{2}}=\\frac{g^{\\prime}}{\\left(3\\right)^{2}}, $$ where $g'$ is acceleration due to gravity on the planet.\n- We know that, $$ g^{\\prime}=\\frac{9.8\\times9}{25}\\approx3.5\\mathrm{~m/s^{2}} $$ Range, $$ R=\\frac{u^{2}(2\\sin\\theta\\cos\\theta)}{g} $$ and Height, $$ \\mathrm{H}=\\frac{u^{2}\\sin^{2}\\theta}{2g} $$ According to the question, $$ \\boldsymbol{R}=\\boldsymbol{H} $$ $$ \\frac{u^{2}(2\\sin\\theta\\cos\\theta)}{g}=\\frac{u^{2}\\sin^{2}\\theta}{2g} $$ $$ 2\\cos\\theta=\\frac{\\sin\\theta}{2} $$ $$ \\Downarrow\\Downarrow $$ $$ \\begin{array}{l}\\tan\\theta=4\\\\\\theta=\\tan^{-1}\\left(4\\right)\\end{array} $$\n- <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//b2be096f-d674-4960-9509-b14d75f1ea94/markdown_0/imgs/img_in_image_box_778_575_995_685.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A30Z%2F-1%2F%2F05620f5089d104032402691cc279b81a844bff21bf63ed3322c24f752f07d520\" alt=\"Image\" width=\"18%\" /></div> Height of Projectile, $$ \\begin{array}{l}\\text{H}=\\displaystyle \\frac{u^{2} \\sin^{2} \\theta}{2g} \\\\ = \\displaystyle \\frac{u^{2} \\sin^{2} 45^{\\circ}}{2g} \\\\ = \\displaystyle \\frac{u^{2}}{4g}\\end{array} $$ and Range of projectile, $$ \\begin{aligned}R&=\\frac{u^{2}\\sin2\\theta}{g}\\\\&=\\frac{u^{2}\\sin90^{\\circ}}{g}\\\\&=\\frac{u^{2}}{g}\\end{aligned} $$ $$ \\frac{\\mathrm{R}}{2}=\\frac{u^{2}}{2g} $$ $$ \\tan\\alpha=\\frac{H}{R/2}=\\frac{u^{2}/4g}{u^{2}/2g} $$ considering eq. (i) and eq. (ii), $$ \\tan\\alpha=\\frac{H}{R/2} $$ $$ \\alpha=\\frac{1}{2} $$ $$ \\alpha=\\tan^{-1}\\left(\\frac{1}{2}\\right) $$\n- As we know that, maximum range, $$ \\mathrm{R}_{\\max}=\\frac{u^{2}}{g}=\\frac{(20)^{2}}{10}=40\\mathrm{~m} $$\n- Horizontal range. $$ \\mathrm{R}=\\frac{u^{2}\\sin2\\theta}{g} $$ When angle of projection is $ (45^{\\circ}-\\theta) $ then, $$ \\begin{aligned}R_{1}&=\\frac{u^{2}\\sin2(45^{\\circ}-\\theta)}{g}\\\\&=\\frac{u^{2}\\sin(90^{\\circ}-2\\theta)}{g}\\\\&=\\frac{u^{2}\\cos2\\theta}{g}\\end{aligned} $$ If angle of projection is $ (45^{\\circ} + \\theta) $ then, $$ \\begin{array}{l}\\text{R}_{2}=\\displaystyle\\frac{u^{2}\\sin2(45^{\\circ}+2\\theta)}{g}\\\\ \\quad=\\displaystyle\\frac{u^{2}\\sin(90^{\\circ}+2\\theta)}{g}\\\\ \\quad=\\displaystyle\\frac{u^{2}\\cos2\\theta}{g}\\end{array} $$ Now, $$ \\frac{R_{1}}{R_{2}}=\\frac{u^{2}\\cos\\frac{2\\theta}{g}}{u^{2}\\cos\\frac{2\\theta}{g}}=1:1 $$\n- Range of projectile is given by, $$ \\mathrm{R}=\\frac{u^{2}\\sin2\\theta}{g} $$ For maximum range, angle should be $ 45^{\\circ} $. $$ \\begin{array}{l}\\text{R}_{\\text{max}}=\\displaystyle\\frac{u^{2}\\sin2\\times45^{\\circ}}{g}\\\\=\\displaystyle\\frac{u^{2}\\sin90^{\\circ}}{g}\\end{array} $$ Or $$ R_{max}=\\frac{u^{2}}{g} $$ Here, $$ \\begin{aligned}R_{max}&=\\frac{u^{2}}{g}=16km\\\\&=16000m\\end{aligned} $$ or $$ \\begin{array}{l}u=\\sqrt{16000\\times g}\\\\=\\sqrt{16000\\times10}\\\\=400\\mathrm{~m s}^{-1}\\end{array} $$",
+    "formulas": [
+      {
+        "latex": "u=280~\\mathrm{m s}^{-1}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\theta=30^{\\circ}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}H&=\\frac{(280)^{2}\\times\\sin^{2}30^{\\circ}}{2\\times9.8}\\\\&=\\frac{(280)^{2}\\times\\frac{1}{4}}{2\\times9.8}=1000m\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{v}=10\\times\\cos\\left(30^{\\circ}\\right)=10\\times\\left(\\frac{\\left(\\sqrt{3}\\right)}{2}\\right)",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{v}=5\\sqrt{3}\\mathrm{~m/s}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\theta = 90^{\\circ} - 60^{\\circ} = 30^{\\circ}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{v}^{\\prime}=\\mathbf{v}_{0}\\cos\\theta",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{v}^{\\prime}=\\frac{\\mathbf{v}_{0}}{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{\\mathbf{v}_{0}}{2}=\\mathbf{v}_{0}\\cos\\theta",
+        "meaning": ""
+      },
+      {
+        "latex": "↳\\Downarrow",
+        "meaning": ""
+      },
+      {
+        "latex": "\\theta=\\frac{1}{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\theta=60^{\\circ}",
+        "meaning": ""
+      },
+      {
+        "latex": "y=x\\tan\\theta-\\frac{gx^{2}}{2u^{2}\\cos^{2}\\theta},",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{g}{u^{2}}=constant",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{9.8}{\\left(5\\right)^{2}}=\\frac{g^{\\prime}}{\\left(3\\right)^{2}},",
+        "meaning": ""
+      },
+      {
+        "latex": "g^{\\prime}=\\frac{9.8\\times9}{25}\\approx3.5\\mathrm{~m/s^{2}}",
+        "meaning": ""
+      },
+      {
+        "latex": "R=\\frac{u^{2}(2\\sin\\theta\\cos\\theta)}{g}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{H}=\\frac{u^{2}\\sin^{2}\\theta}{2g}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\boldsymbol{R}=\\boldsymbol{H}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{u^{2}(2\\sin\\theta\\cos\\theta)}{g}=\\frac{u^{2}\\sin^{2}\\theta}{2g}",
+        "meaning": ""
+      },
+      {
+        "latex": "2\\cos\\theta=\\frac{\\sin\\theta}{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\Downarrow\\Downarrow",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{array}{l}\\tan\\theta=4\\\\\\theta=\\tan^{-1}\\left(4\\right)\\end{array}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{array}{l}\\text{H}=\\displaystyle \\frac{u^{2} \\sin^{2} \\theta}{2g} \\\\ = \\displaystyle \\frac{u^{2} \\sin^{2} 45^{\\circ}}{2g} \\\\ = \\displaystyle \\frac{u^{2}}{4g}\\end{array}",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "5cee1b37-53de-46f4-804a-133a3faf76b5",
+      "6a24c1c2-7249-412d-93f2-e80377a44ebd",
+      "09408b03-cea0-480f-8a0d-a5012834a339",
+      "689177f9-eac4-4091-9135-8db6e1f55aca",
+      "6f404b25-3055-4c91-bbf8-73b8b50e4290",
+      "c09bfd2d-c1f5-4113-a15b-6242159aeb82",
+      "9530192b-2f08-45b4-bfdf-5b21016656d3",
+      "dc0ad611-4a10-4534-aedd-65c607b530c3",
+      "4972f67a-1db2-472d-b4df-c20768f8a2c8"
+    ],
+    "tags": [
+      "NEET 2023",
+      "NEET 2022",
+      "NEET 2021",
+      "AIPMT 2014",
+      "AIPMT Screening 2012",
+      "AIPMT Mains 2011",
+      "AIPMT 2006",
+      "AIPMT 1990"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-motion-in-a-plane-scalars-and-vectors",
+    "chapter": "Motion in a Plane",
+    "subtopic": "Scalars and Vectors",
+    "class": "XI",
+    "unitId": "xi-kinematics",
+    "unitLabel": "Unit II — Kinematics",
+    "order": 2,
+    "title": "Scalars and Vectors",
+    "summary": "Speed is a scalar quantity.",
+    "body": "**Key points from solved questions**\n- Speed is a scalar quantity. It gives no idea about the direction of motion of the object. Velocity is a vector quantity, as it has both magnitude and direction. Displacement is a vector as it possesses both magnitude and direction. When an object goes on the path ABC (in figure), then the displacement of the object is AC. The arrow head at C shows that the object is displaced from A to C. <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//639381e3-f4bc-4ed0-ac07-66249de23cee/markdown_2/imgs/img_in_image_box_229_891_426_1019.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A07Z%2F-1%2F%2Ff51f7b108a789dceeef2a9295da79438a9b119dd003c5cf4692bcea041d20d43\" alt=\"Image\" width=\"16%\" /></div> Torque is turning effect of force, which is a vector quantity.",
+    "formulas": [],
+    "questionIds": [
+      "bd13a0c1-e0ae-4a3e-9035-4a3aaf731513"
+    ],
+    "tags": [
+      "AIPMT 1995"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-motion-in-a-plane-uniform-circular-motion",
+    "chapter": "Motion in a Plane",
+    "subtopic": "Uniform Circular Motion",
+    "class": "XI",
+    "unitId": "xi-kinematics",
+    "unitLabel": "Unit II — Kinematics",
+    "order": 2,
+    "title": "Uniform Circular Motion",
+    "summary": "$$ \\begin{aligned}\\overrightarrow{r}&=\\cos\\omega t\\overrightarrow{x}+\\sin\\omega t\\overrightarrow{y}\\\\\\overrightarrow{v}&=\\frac{\\overrightarrow{d}\\overrightarrow{r}}{dt}=-\\omega\\sin\\omega…",
+    "body": "**Key points from solved questions**\n- $ \\omega_{1}x_{1}=\\omega_{2}x_{2}=\\omega_{3}x_{3}=k $ The product of angular speed and angular distance remains constant for each hand of the clock.\n- A particle moving with uniform speed in a circular path has varying velocity as the direction of motion changes continuously. The magnitude of velocity remains constant. As the direction of centripetal acceleration is changing. The particle has varying acceleration. ##### △! Caution Students should not get confused about the direction of acceleration. It is always directed towards centre but position of particle keep changing and hence overall direction of acceleration vector changes.\n- In case of rolling, the velocity of the point of contact with the surface is zero. Also, the velocity of the point of the highest point of the rolling body is twice the velocity of COM of the body. So. point body P moves faster then point Q.\n- Given, $$ \\begin{array}{l}Radius=R\\\\Time=T for one revolution\\end{array} $$ Angle of projection = $ \\theta $ $$ H_{max}=4R $$ $$ \\mathbf{v}=\\frac{2\\pi\\mathbf{R}}{\\mathbf{T}}\\quad(from~circular~motion) $$ $$ \\mathrm{H}_{\\max}=\\frac{\\mathrm{v}_{y}^{2}}{2g}=\\frac{\\mathrm{v}^{2}\\sin^{2}\\theta}{2g}=4\\mathrm{R} $$ $$ \\frac{4\\pi^{2}R^{2}}{T^{2}}\\times\\frac{\\sin^{2}\\theta}{2g}=4R $$ $$ \\sin^{2}\\theta=\\frac{8gT^{2}}{4\\pi^{2}R}=\\frac{2gT^{2}}{\\pi^{2}R} $$ $$ \\theta=\\sin^{-1}\\left(\\frac{2g\\mathrm{T}^{2}}{\\pi^{2}\\mathrm{R}}\\right)^{1/2} $$\n- $$ \\begin{aligned}\\overrightarrow{r}&=\\cos\\omega t\\overrightarrow{x}+\\sin\\omega t\\overrightarrow{y}\\\\\\overrightarrow{v}&=\\frac{\\overrightarrow{d}\\overrightarrow{r}}{dt}=-\\omega\\sin\\omega t\\overrightarrow{x}+\\omega\\cos\\omega t\\overrightarrow{y}\\\\\\overrightarrow{a}&=\\frac{\\overrightarrow{d}\\overrightarrow{v}}{dt}=-\\omega^{2}\\cos\\omega t\\overrightarrow{x}-\\omega^{2}\\sin\\omega t\\overrightarrow{y}\\\\&=-\\omega^{2}\\overrightarrow{r}\\end{aligned} $$ $ \\overrightarrow{a} $ is directed towards the origin. Also, $ \\overrightarrow{r} \\cdot \\overrightarrow{v} = 0 $, Hence, $$ \\overrightarrow{r}\\perp\\overrightarrow{v} $$\n- We have, centripetal acceleration of rotating body Since, $$ \\begin{array}{l}a_{c}=\\frac{v^{2}}{r}=\\frac{v^{2}\\omega^{2}}{r}=r\\omega^{2}\\quad(\\text{as}v=r\\omega)\\\\\\omega=2\\pi v,\\end{array} $$ where v is frequency of rotation. ∴ $$ a_{c}=r\\left(2\\pi\\mathbf{v}\\right)^{2}=r\\times4\\pi^{2}\\mathbf{v}^{2} $$ Here, $$ r=30cm=30\\times10^{-2}m=0.30m $$ $$ \\mathrm{v}=120\\mathrm{rev}/\\mathrm{m}=\\frac{120}{60}\\mathrm{rev}/\\mathrm{s}=2\\mathrm{rev}/\\mathrm{s} $$ $$ \\begin{array}{l}a_{c}=(0.30\\times4\\times3.14\\times3.14\\times2\\times2)\\\\=47.4\\mathrm{~m s}^{-2}\\end{array} $$",
+    "formulas": [
+      {
+        "latex": "\\omega_{1}x_{1}=\\omega_{2}x_{2}=\\omega_{3}x_{3}=k",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{array}{l}Radius=R\\\\Time=T for one revolution\\end{array}",
+        "meaning": ""
+      },
+      {
+        "latex": "H_{max}=4R",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathbf{v}=\\frac{2\\pi\\mathbf{R}}{\\mathbf{T}}\\quad(from~circular~motion)",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{H}_{\\max}=\\frac{\\mathrm{v}_{y}^{2}}{2g}=\\frac{\\mathrm{v}^{2}\\sin^{2}\\theta}{2g}=4\\mathrm{R}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\frac{4\\pi^{2}R^{2}}{T^{2}}\\times\\frac{\\sin^{2}\\theta}{2g}=4R",
+        "meaning": ""
+      },
+      {
+        "latex": "\\sin^{2}\\theta=\\frac{8gT^{2}}{4\\pi^{2}R}=\\frac{2gT^{2}}{\\pi^{2}R}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\theta=\\sin^{-1}\\left(\\frac{2g\\mathrm{T}^{2}}{\\pi^{2}\\mathrm{R}}\\right)^{1/2}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{aligned}\\overrightarrow{r}&=\\cos\\omega t\\overrightarrow{x}+\\sin\\omega t\\overrightarrow{y}\\\\\\overrightarrow{v}&=\\frac{\\overrightarrow{d}\\overrightarrow{r}}{dt}=-\\omega\\sin\\omega t\\overrightarrow{x}+\\omega\\cos\\omega t\\overrightarrow{y}\\\\\\overrightarrow{a}&=\\frac{\\overrightarrow{d}\\overrightarrow{v}}{dt}=-\\omega^{2}\\cos\\omega t\\overrightarrow{x}-\\omega^{2}\\sin\\omega t\\overrightarrow{y}\\\\&=-\\omega^{2}\\overrightarrow{r}\\end{aligned}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\overrightarrow{r}\\perp\\overrightarrow{v}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\overrightarrow{r} \\cdot \\overrightarrow{v} = 0",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{array}{l}a_{c}=\\frac{v^{2}}{r}=\\frac{v^{2}\\omega^{2}}{r}=r\\omega^{2}\\quad(\\text{as}v=r\\omega)\\\\\\omega=2\\pi v,\\end{array}",
+        "meaning": ""
+      },
+      {
+        "latex": "a_{c}=r\\left(2\\pi\\mathbf{v}\\right)^{2}=r\\times4\\pi^{2}\\mathbf{v}^{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "r=30cm=30\\times10^{-2}m=0.30m",
+        "meaning": ""
+      },
+      {
+        "latex": "\\mathrm{v}=120\\mathrm{rev}/\\mathrm{m}=\\frac{120}{60}\\mathrm{rev}/\\mathrm{s}=2\\mathrm{rev}/\\mathrm{s}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\begin{array}{l}a_{c}=(0.30\\times4\\times3.14\\times3.14\\times2\\times2)\\\\=47.4\\mathrm{~m s}^{-2}\\end{array}",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "f91a98c6-b127-4219-bc30-e6507f80f114",
+      "86e7f3cc-b256-436b-bddb-6774ee9c0044",
+      "e7e340bd-46a5-45f8-b08b-130a8e6cff69",
+      "64d37e7f-0032-4e8e-93f7-5132cb499dd7",
+      "3d279d59-fb4f-4e34-8550-b0b05f085099",
+      "6cea4c34-8e37-4231-bbb7-6ca2c27421af"
+    ],
+    "tags": [
+      "Re-NEET 2024",
+      "NEET 2024",
+      "NEET 2021",
+      "NEET Phase-I 2016",
+      "AIPMT 1990"
+    ],
+    "source": "seed"
+  },
+  {
+    "id": "note-motion-in-a-plane-vector-addition-analytical-method",
+    "chapter": "Motion in a Plane",
+    "subtopic": "Vector Addition – Analytical Method",
+    "class": "XI",
+    "unitId": "xi-kinematics",
+    "unitLabel": "Unit II — Kinematics",
+    "order": 2,
+    "title": "Vector Addition – Analytical Method",
+    "summary": "From figure, $ \\overrightarrow{A} + \\overrightarrow{B} = \\overrightarrow{C} $ <div style=\"text-align: center;\"><img…",
+    "body": "**Key points from solved questions**\n- From the question, if $ \\overrightarrow{A} $ and $ \\overrightarrow{B} $ are two vectors, the $ |\\overrightarrow{A}+\\overrightarrow{B}|=|\\overrightarrow{A}-\\overrightarrow{B}| $ $ \\therefore A^{2}+B^{2}+2AB\\cos\\theta=A^{2}+B^{2}-2AB\\cos\\theta $ $ \\Rightarrow $ 4AB $ \\cos\\theta = 0 $ $ \\Rightarrow $ $ \\cos\\theta = 0 $ $ \\Rightarrow $ $ \\theta = 90^{\\circ} $\n- Average acceleration $$ \\overset{\\rightarrow}{a_{\\mathrm{a v g}}}=\\frac{\\overset{\\rightarrow}{\\mathbf{v}}_{f}-\\overset{\\rightarrow}{\\mathbf{v}}_{i}}{t}=\\frac{40\\overset{\\wedge}{j}-30\\overset{\\wedge}{i}}{10} $$ $$ \\overset{\\rightarrow}{a_{\\mathrm{a v g}}}=\\frac{\\sqrt{40^{2}+30^{2}}}{10}=5\\mathrm{m/s e c}^{2} $$\n- From figure, $ \\overrightarrow{A} + \\overrightarrow{B} = \\overrightarrow{C} $ <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//639381e3-f4bc-4ed0-ac07-66249de23cee/markdown_2/imgs/img_in_image_box_808_735_990_920.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A08Z%2F-1%2F%2F2df78b720e388976ae7789cbc4cd13fa6e3cb13fd6f6894a1607720430e49d8c\" alt=\"Image\" width=\"15%\" /></div> Also, $ |\\overrightarrow{A}| = 3 $, $ |\\overrightarrow{B}| = 4 $, $ |\\overrightarrow{C}| = 5 $ As $ \\overrightarrow{A}+\\overrightarrow{B}=\\overrightarrow{C} $ So, $ 5^{2}=3^{2}+4^{2}+2\\times4\\times3\\cos\\theta $ $ \\cos\\theta=0 $ $ \\Rightarrow $ $ \\theta=\\frac{\\pi}{2} $ $ \\Rightarrow $ $ \\overrightarrow{A} $ is perpendicular to $ \\overrightarrow{B} $",
+    "formulas": [
+      {
+        "latex": "|\\overrightarrow{A}+\\overrightarrow{B}|=|\\overrightarrow{A}-\\overrightarrow{B}|",
+        "meaning": ""
+      },
+      {
+        "latex": "\\therefore A^{2}+B^{2}+2AB\\cos\\theta=A^{2}+B^{2}-2AB\\cos\\theta",
+        "meaning": ""
+      },
+      {
+        "latex": "\\cos\\theta = 0",
+        "meaning": ""
+      },
+      {
+        "latex": "\\theta = 90^{\\circ}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\overset{\\rightarrow}{a_{\\mathrm{a v g}}}=\\frac{\\overset{\\rightarrow}{\\mathbf{v}}_{f}-\\overset{\\rightarrow}{\\mathbf{v}}_{i}}{t}=\\frac{40\\overset{\\wedge}{j}-30\\overset{\\wedge}{i}}{10}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\overset{\\rightarrow}{a_{\\mathrm{a v g}}}=\\frac{\\sqrt{40^{2}+30^{2}}}{10}=5\\mathrm{m/s e c}^{2}",
+        "meaning": ""
+      },
+      {
+        "latex": "\\overrightarrow{A} + \\overrightarrow{B} = \\overrightarrow{C}",
+        "meaning": ""
+      },
+      {
+        "latex": "|\\overrightarrow{A}| = 3",
+        "meaning": ""
+      },
+      {
+        "latex": "|\\overrightarrow{B}| = 4",
+        "meaning": ""
+      },
+      {
+        "latex": "|\\overrightarrow{C}| = 5",
+        "meaning": ""
+      },
+      {
+        "latex": "\\overrightarrow{A}+\\overrightarrow{B}=\\overrightarrow{C}",
+        "meaning": ""
+      },
+      {
+        "latex": "5^{2}=3^{2}+4^{2}+2\\times4\\times3\\cos\\theta",
+        "meaning": ""
+      },
+      {
+        "latex": "\\cos\\theta=0",
+        "meaning": ""
+      },
+      {
+        "latex": "\\theta=\\frac{\\pi}{2}",
+        "meaning": ""
+      }
+    ],
+    "questionIds": [
+      "1283aa1b-5d31-4d9e-b59e-78bbb9007880",
+      "1faa34c5-eb4b-482a-beb8-e274f787acac",
+      "7229ac4a-3d0c-435a-975a-410547571dfc"
+    ],
+    "tags": [
+      "NEET Phase-I 2016",
+      "AIPMT Screening 2011",
+      "AIPMT 1988"
+    ],
+    "source": "seed"
+  }
+]
