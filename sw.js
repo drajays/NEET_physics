@@ -1,13 +1,13 @@
 /* NEET Physics service worker — offline app shell.
    Cache-first for same-origin static assets; network passthrough for
    everything else (the remote bank.json is cross-origin and untouched). */
-const CACHE = 'neet-physics-v20260627c';
+const CACHE = 'neet-physics-v20260627d';
 const SHELL = [
   './',
   './index.html',
   './styles.css?v=20260627',
   './config.js?v=20260627',
-  './notes-bundle.js?v=20260627c',
+  './notes-bundle.js?v=20260627d',
   './js/curriculum.js?v=20260627',
   './js/search.js?v=20260627',
   './js/analytics.js?v=20260627',
