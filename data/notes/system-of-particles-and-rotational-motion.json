@@ -7,105 +7,25 @@
     "unitId": "xi-rotation",
     "unitLabel": "Unit V — Systems & Rigid Bodies",
     "order": 5,
-    "title": "Angular Momentum in Case of Rotation about a Fixed Axis",
-    "summary": "<div style=\"text-align: center;\"><img…",
-    "body": "**Key points from solved questions**\n- $$ \\mathrm{I}=2\\,\\mathrm{k g}\\,\\mathrm{m}^{2}, $$ $$ \\omega_{0}=\\frac{60}{60}\\times2\\pi\\mathrm{rad/s} $$ $$ t=60s $$ The torque required to stop the wheel's rotation is, $$ \\begin{aligned}\\tau&=1\\alpha=1\\left(\\frac{\\omega_{0}-\\omega}{t}\\right)\\\\\\tau&=\\frac{2\\times2\\pi\\times60}{60\\times60}\\\\&=\\frac{\\pi}{15}Nm\\end{aligned} $$\n- From question, External torque, $ \\tau_{ext} = 0 $ So $$ \\frac{d\\mathbf{L}}{dt}=\\mathbf{0} $$ L = Constant So, angular momentum remains constant.\n- Translational kinetic energy of rolling body, $$ \\mathbf{K}_{t}=\\frac{1}{2}m\\mathbf{v}^{2} $$ ∴ Total kinetic energy = Rotational KE + Translational KE = $ K_{t}+K_{r} $ (Solid sphere, $$ \\begin{aligned}\\mathrm{I}&=\\frac{2}{5}m\\mathrm{R}^{2})\\\\&=\\mathrm{K}_{t}+\\mathrm{K}_{r}\\\\&=\\frac{1}{2}\\bigg(\\frac{2}{5}m\\mathrm{R}^{2}\\bigg)\\omega^{2}+\\frac{1}{2}m\\mathrm{v}^{2}\\\\&=\\frac{1}{2}\\bigg(\\frac{2}{5}m\\mathrm{R}^{2}\\bigg)\\bigg(\\frac{\\mathrm{v}}{\\mathrm{R}}\\bigg)^{2}+\\frac{1}{2}m\\mathrm{v}^{2}\\\\&=\\frac{1}{5}m\\mathrm{v}^{2}+\\frac{1}{2}m\\mathrm{v}^{2}=\\frac{7}{10}m\\mathrm{v}^{2}\\end{aligned} $$ $$ \\begin{array}{l}\\text{Ratio}=\\frac{\\mathbf{K}_{t}}{\\mathbf{K}_{t}+\\mathbf{K}_{r}}=\\frac{\\frac{1}{2}m\\mathbf{v}^{2}}{\\frac{7}{10}m\\mathbf{v}^{2}}\\\\=\\frac{1}{2}\\times\\frac{10}{7}=\\frac{5}{7}=5:7\\end{array} $$\n- Using law of conservation of angular momentum. $$ \\bullet \\quad \\bullet\\bullet $$ $$ =1_{1}\\omega_{1}+1_{2}\\omega_{2} $$ $$ \\begin{aligned}&=\\mathrm{I}_{\\mathrm{net}}(\\boldsymbol{\\omega}\\\\&=(\\mathrm{I}_{1}+\\mathrm{I}_{2})\\boldsymbol{\\omega}\\end{aligned} $$ $$ \\omega=\\frac{\\mathrm{I}_{1}\\omega_{1}+\\mathrm{I}_{2}\\omega_{2}}{\\mathrm{I}_{1}+\\mathrm{I}_{2}} $$ $$ \\omega=\\frac{\\mathrm{I}\\omega_{1}+\\mathrm{I}\\omega_{2}}{2\\mathrm{I}}=\\frac{\\omega_{1}+\\omega_{2}}{2} $$ $$ \\begin{array}{r l}{\\therefore\\quad\\mathrm{L o s s~o f~e n e r g y}=\\frac{1}{2}\\mathrm{I}\\omega_{1}^{2}+\\frac{1}{2}\\mathrm{I}\\omega_{2}^{2}-\\frac{1}{2}(2\\mathrm{I})\\omega^{2}}\\\\ {\\quad}\\\\ {=\\frac{1}{4}\\mathrm{I}(\\omega_{1}-\\omega_{2})^{2}}\\end{array} $$\n- The K.E. of rotating body is, $$ \\mathrm{K E}=\\frac{1}{2}\\mathrm{I}\\omega^{2}=\\frac{1}{2}\\frac{\\mathrm{I}^{2}\\omega^{2}}{\\mathrm{I}}=\\frac{\\mathrm{L}^{2}}{2\\mathrm{I}} $$ (Since, L = Iω) From question $$ \\begin{aligned}&K_{\\mathrm{A}}=K_{\\mathrm{B}}\\\\&\\overset{\\Rightarrow}{\\quad}\\quad\\frac{\\mathrm{L}_{\\mathrm{A}}^{2}}{2\\mathrm{I}_{\\mathrm{A}}}=\\frac{\\mathrm{L}_{\\mathrm{B}}^{2}}{2\\mathrm{I}_{\\mathrm{B}}}\\quad\\\\&\\mathrm{As},\\quad\\mathrm{I}_{\\mathrm{B}}>\\mathrm{I}_{\\mathrm{A}}\\\\&\\mathrm{So},\\quad\\mathrm{L}_{\\mathrm{A}}^{2}<\\mathrm{L}_{\\mathrm{B}}^{2}\\\\&\\overset{\\Rightarrow}{\\quad}\\quad\\mathrm{L}_{\\mathrm{A}}<\\mathrm{L}_{\\mathrm{B}}\\end{aligned} $$\n- Time taken by the body to reach the bottom when it rolls down on an inclined plane without slipping is given by, $$ t=\\sqrt{\\frac{2l\\left(1+\\frac{k^{2}}{R^{2}}\\right)}{g\\sin\\theta}} $$ Since $g$ is constant and $l$, $R$ and $\\sin\\theta$ are same for both, $$ \\begin{aligned}\\frac{t_{d}}{t_{s}}&=\\frac{\\sqrt{1+\\frac{k_{d}^{2}}{\\mathrm{R}^{2}}}}{\\sqrt{1+\\frac{k_{s}^{2}}{\\mathrm{R}^{2}}}}=\\sqrt{\\frac{1+\\frac{\\mathrm{R}^{2}}{2\\mathrm{R}^{2}}}{1+\\frac{2\\mathrm{R}^{2}}{5\\mathrm{R}^{2}}}}\\\\&\\quad\\left(\\therefore k_{d}=\\frac{\\mathrm{R}}{\\sqrt{2}},k_{s}=\\sqrt{\\frac{2}{5}}\\mathrm{R}\\right)\\\\&=\\sqrt{\\frac{3}{2}\\times\\frac{5}{7}}=\\sqrt{\\frac{15}{14}}\\\\t_{d}&>t_{s}\\end{aligned} $$ Hence, the sphere gets to the bottom first.\n- In this question there are two cases. First when a solid sphere rolling without slipping down an inclined plane and second a sphere slipping down in inclined plane. First case : <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//a3a4cb15-5707-4b25-8a03-cb3af80e07c8/markdown_1/imgs/img_in_image_box_825_72_1014_219.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A21%3A42Z%2F-1%2F%2F4d7e2b4f0a8a18be69f92dfdc006bf7d9a24728cf0e2e41d68f6c579d401d9a8\" alt=\"Image\" width=\"15%\" /></div> $$ \\begin{aligned}a_{1}&=\\frac{g\\sin\\theta}{1+\\frac{k^{2}}{R^{2}}}\\\\&=\\frac{g\\sin\\theta}{1+\\frac{2}{5}}\\end{aligned} $$ $$ a_{1}=\\frac{5}{7}g\\sin\\theta $$ (Since, solid sphere $ k^{2} = \\frac{2}{5} R^{2} $) Second case: $$ a_{2}=g\\sin\\theta $$ From (i) and (ii), $$ \\begin{aligned}\\frac{a_{1}}{a_{2}}&=\\frac{\\frac{5}{7}g\\sin\\theta}{g\\sin\\theta}=\\frac{5}{7}\\\\\\frac{a_{1}}{a_{2}}&=\\frac{5}{7}\\end{aligned} $$\n- Moment of Inertia of $ D_{1} $ $$ \\mathrm{I}_{1}=\\frac{\\mathrm{MR}^{2}}{2}=\\frac{2(0.2)^{2}}{2}=0.04\\mathrm{kg}\\cdot\\mathrm{m}^{2} $$ Initial angular velocity of D_{1} is \\omega_{1}=50\\ \\mathrm{rad}\\ \\mathrm{s}^{-1} M.I of $ D_{2} $ is $ I_{2} = \\frac{4 \\times (0.1)^{2}}{2} = 0.02\\ kg\\ m^{2} $ Initial angular velocity of $D_{2}$ is $\\omega_{2}=200\\ \\text{rad s}^{-1}$. According to the law of conservation of angular momentum, $$ \\begin{aligned}&L_{1}=L_{2}\\\\ \\therefore\\quad&I_{1}\\omega_{1}+I_{2}\\omega_{2}=(I_{1}+I_{2})\\omega\\\\ \\Rightarrow\\quad&\\omega=\\frac{I_{1}\\omega_{1}+I_{2}\\omega_{2}}{I_{1}+I_{2}}\\\\ \\therefore\\quad&\\omega=\\frac{(0.04)^{2}\\times50+(0.02)^{2}\\times200}{0.04+0.02}\\\\ &=\\frac{2+4}{0.06}=100rad s^{-1}\\end{aligned} $$\n- The Kinetic energy of the rolling object is converted into potential energy at height h. <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//a3a4cb15-5707-4b25-8a03-cb3af80e07c8/markdown_1/imgs/img_in_image_box_762_1329_1142_1563.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A21%3A43Z%2F-1%2F%2F6ad4fe5635b9dafd22e4ea175433e63ecd6adf24be2635b6d44bc843090c43f2\" alt=\"Image\" width=\"31%\" /></div> $$ h=\\frac{3\\mathrm{v}^{2}}{4g} $$ So by the law of conservation of mechanical energy, we have $$ \\frac{1}{2}\\mathbf{M}\\mathbf{v}^{2}+\\frac{1}{2}\\mathbf{I}\\boldsymbol{\\omega}^{2}=\\mathbf{M}\\mathbf{g}h $$ $$ \\frac{1}{2}\\mathbf{M}\\mathbf{v}^{2}+\\frac{1}{2}\\mathbf{I}\\left(\\frac{\\mathbf{v}}{\\mathbf{R}}\\right)^{2}=\\mathbf{M}\\mathbf{g}\\left(\\frac{3\\mathbf{v}^{2}}{4g}\\right) $$ $$ \\frac{1}{2}\\mathbf{I}\\frac{\\mathbf{v}^{2}}{\\mathbf{R}^{2}}=\\frac{3}{4}\\mathbf{M}\\mathbf{v}^{2}-\\frac{1}{2}\\mathbf{M}\\mathbf{v}^{2} $$ $$ \\frac{1}{2}\\mathrm{I}\\frac{\\mathbf{v}^{2}}{\\mathbf{R}^{2}}=\\frac{1}{4}\\mathbf{M}\\mathbf{v}^{2} $$ or $$ \\mathrm{I}=\\frac{1}{2}\\mathbf{M}\\mathbf{R}^{2} $$ Hence, the object is disc.\n- At maximum compression the solid cylinder will stop. According to law of conservation of mechanical energy Loss in kinetic energy of cylinder = Gain in potential of spring $$ \\frac{1}{2}mv^{2}+\\frac{1}{2}I\\omega^{2}=\\frac{1}{2}kx^{2}; $$ $$ \\frac{1}{2}mv^{2}+\\frac{1}{2}\\left(\\frac{mR^{2}}{2}\\right)\\left(\\frac{v}{R}\\right)^{2}=\\frac{1}{2}kx^{2} $$ ( $ \\because v = R\\omega $ and for solid cylinder. $ I = \\frac{1}{2}mR^{2} $) $$ \\frac{1}{2}mv^{2}+\\frac{1}{4}mv^{2}=\\frac{1}{2}kx^{2}\\text{or,} $$ $$ \\frac{3}{4}m{\\bf v}^{2}=\\frac{1}{2}k x^{2}\\mathrm{o r} $$ $$ x^{2}=\\frac{3}{2}\\frac{mv^{2}}{k} $$ Here, $m = 3\\ \\mathrm{kg}$, $v = 4\\ \\mathrm{ms}^{-1}$, $k = 200\\ \\mathrm{Nm}^{-1}$ Substituting the given values, we get $$ x^{2}=\\frac{3\\times3\\times4\\times4}{2\\times200} $$ $$ x^{2}=\\frac{36}{60}or x=0.6m $$\n- $$ \\mathrm{T}=\\frac{1}{\\sin\\theta}\\sqrt{\\frac{2h}{g}\\left(1+\\frac{\\mathbf{K}^{2}}{\\mathbf{R}^{2}}\\right)} $$ And hence, $$ \\left(\\frac{\\mathbf{K}^{2}}{\\mathbf{R}^{2}}\\right)_{S}<\\left(\\frac{\\mathbf{K}^{2}}{\\mathbf{R}^{2}}\\right)_{H} $$ Solid body will reach the bottom first with greater velocity.\n- Applying law of conservation of angular momentum $$ \\mathrm{I}_{1}\\omega_{1}=\\mathrm{I}_{2}\\omega_{2} $$ It is given that : $$ \\begin{aligned}\\mathrm{I}&=\\mathbf{M}\\mathbf{R}^{2}\\\\\\mathrm{I}_{2}&=\\mathbf{M}\\mathbf{R}^{2}+2m\\mathbf{R}^{2}\\\\\\omega_{2}&=\\frac{\\mathrm{I}_{1}}{\\mathrm{I}_{2}}\\omega\\\\&=\\frac{\\mathbf{M}}{\\mathbf{M}+2m}\\omega\\end{aligned} $$\n- According to given problem $$ \\mathbf{I}_{t}\\boldsymbol{\\omega}_{i}=(\\mathbf{I}_{t}+\\mathbf{I}_{b})\\boldsymbol{\\omega}_{f} $$ or $$ \\boldsymbol{\\omega}_{f}=\\frac{\\mathbf{I}_{t}\\boldsymbol{\\omega}_{i}}{(\\mathbf{I}_{t}+\\mathbf{I}_{b})},\\mathrm{E}_{i}=\\frac{1}{2}\\mathbf{I}_{t}\\boldsymbol{\\omega}_{i}^{2} $$ $$ \\mathbf{E}_{f}=\\frac{1}{2}(\\mathbf{I}_{t}+\\mathbf{I}_{b})\\boldsymbol{\\omega}_{f}^{2}=\\frac{1}{2}(\\mathbf{I}_{t}+\\mathbf{I}_{b})\\quad\\left(\\frac{\\mathbf{I}_{t}\\boldsymbol{\\omega}_{l}}{\\mathbf{I}_{t}+\\mathbf{I}_{b}}\\right) $$ Loss of energy is $ \\Delta E $ ∴ $$ \\begin{aligned}\\Delta\\mathbf{E}&=\\mathbf{E}_{i}-\\mathbf{E}_{f}\\\\&=\\frac{1}{2}\\mathbf{I}_{t}\\boldsymbol{\\omega}_{i}^{2}-\\frac{1}{2}\\frac{\\mathbf{I}_{t}^{2}\\boldsymbol{\\omega}_{i}^{2}}{(\\mathbf{I}_{t}+\\mathbf{I}_{b})}\\\\&=\\frac{1}{2}\\frac{\\mathbf{I}_{b}\\mathbf{I}_{t}\\boldsymbol{\\omega}_{i}^{2}}{(\\mathbf{I}_{t}+\\mathbf{I}_{b})}\\end{aligned} $$\n- <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//a3a4cb15-5707-4b25-8a03-cb3af80e07c8/markdown_2/imgs/img_in_image_box_803_529_954_699.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A21%3A49Z%2F-1%2F%2Fc66a0aad12978267ee20c1d440f641a2f7c86665938e4e54c219e66f59dd46c1\" alt=\"Image\" width=\"12%\" /></div> Balancing the force, $$ \\mathbf{M}\\mathbf{g}-\\mathbf{N}=\\frac{\\mathbf{M}\\mathbf{v}^{2}}{r} $$ When N = 0 for weightlessness $$ \\frac{\\mathbf{M}\\mathbf{v}^{2}}{r}=\\mathbf{M}\\mathbf{g} $$ ∴ $$ \\mathbf{v}^{2}=g r=20\\times10=200 $$ $$ \\mathrm{v}=\\sqrt{200}=14.14\\mathrm{~m/s} $$ The speed of the car at the top of the hill is between 14 m/s and 15 m/s.",
+    "title": "Why L = Iω for rotation about a fixed axis",
+    "summary": "For a rigid body rotating about a fixed axis, the angular momentum along the axis is $L=I\\omega$ — the rotational analogue of $p=mv$ — and $\\tau=I\\alpha$.",
+    "body": "**Must know**\n- Axial angular momentum: $L=I\\omega$, where $I$ is the moment of inertia about that axis.\n- Newton's law for the fixed axis: $\\tau=\\dfrac{dL}{dt}=I\\alpha$ (for constant $I$).\n- Conservation about the axis: $I_1\\omega_1=I_2\\omega_2$ when $\\tau_{ext}=0$.\n- Rotational kinetic energy: $KE=\\dfrac{1}{2}I\\omega^2=\\dfrac{L^2}{2I}$.\n**Exam traps**\n- When $I$ decreases at constant $L$, $\\omega$ rises and $KE=\\dfrac{L^2}{2I}$ increases — the extra energy comes from the internal work done (muscles), not from torque.",
     "formulas": [
       {
-        "latex": "\\mathrm{I}=2\\,\\mathrm{k g}\\,\\mathrm{m}^{2},",
-        "meaning": ""
+        "latex": "L=I\\omega",
+        "meaning": "Angular momentum about a fixed axis"
       },
       {
-        "latex": "\\omega_{0}=\\frac{60}{60}\\times2\\pi\\mathrm{rad/s}",
-        "meaning": ""
+        "latex": "\\tau=I\\alpha",
+        "meaning": "Newton's second law for fixed-axis rotation"
       },
       {
-        "latex": "t=60s",
-        "meaning": ""
+        "latex": "I_1\\omega_1=I_2\\omega_2",
+        "meaning": "Conservation of angular momentum (no external torque)"
       },
       {
-        "latex": "\\begin{aligned}\\tau&=1\\alpha=1\\left(\\frac{\\omega_{0}-\\omega}{t}\\right)\\\\\\tau&=\\frac{2\\times2\\pi\\times60}{60\\times60}\\\\&=\\frac{\\pi}{15}Nm\\end{aligned}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\frac{d\\mathbf{L}}{dt}=\\mathbf{0}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\tau_{ext} = 0",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathbf{K}_{t}=\\frac{1}{2}m\\mathbf{v}^{2}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{aligned}\\mathrm{I}&=\\frac{2}{5}m\\mathrm{R}^{2})\\\\&=\\mathrm{K}_{t}+\\mathrm{K}_{r}\\\\&=\\frac{1}{2}\\bigg(\\frac{2}{5}m\\mathrm{R}^{2}\\bigg)\\omega^{2}+\\frac{1}{2}m\\mathrm{v}^{2}\\\\&=\\frac{1}{2}\\bigg(\\frac{2}{5}m\\mathrm{R}^{2}\\bigg)\\bigg(\\frac{\\mathrm{v}}{\\mathrm{R}}\\bigg)^{2}+\\frac{1}{2}m\\mathrm{v}^{2}\\\\&=\\frac{1}{5}m\\mathrm{v}^{2}+\\frac{1}{2}m\\mathrm{v}^{2}=\\frac{7}{10}m\\mathrm{v}^{2}\\end{aligned}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{array}{l}\\text{Ratio}=\\frac{\\mathbf{K}_{t}}{\\mathbf{K}_{t}+\\mathbf{K}_{r}}=\\frac{\\frac{1}{2}m\\mathbf{v}^{2}}{\\frac{7}{10}m\\mathbf{v}^{2}}\\\\=\\frac{1}{2}\\times\\frac{10}{7}=\\frac{5}{7}=5:7\\end{array}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\bullet \\quad \\bullet\\bullet",
-        "meaning": ""
-      },
-      {
-        "latex": "=1_{1}\\omega_{1}+1_{2}\\omega_{2}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{aligned}&=\\mathrm{I}_{\\mathrm{net}}(\\boldsymbol{\\omega}\\\\&=(\\mathrm{I}_{1}+\\mathrm{I}_{2})\\boldsymbol{\\omega}\\end{aligned}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\omega=\\frac{\\mathrm{I}_{1}\\omega_{1}+\\mathrm{I}_{2}\\omega_{2}}{\\mathrm{I}_{1}+\\mathrm{I}_{2}}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\omega=\\frac{\\mathrm{I}\\omega_{1}+\\mathrm{I}\\omega_{2}}{2\\mathrm{I}}=\\frac{\\omega_{1}+\\omega_{2}}{2}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{array}{r l}{\\therefore\\quad\\mathrm{L o s s~o f~e n e r g y}=\\frac{1}{2}\\mathrm{I}\\omega_{1}^{2}+\\frac{1}{2}\\mathrm{I}\\omega_{2}^{2}-\\frac{1}{2}(2\\mathrm{I})\\omega^{2}}\\\\ {\\quad}\\\\ {=\\frac{1}{4}\\mathrm{I}(\\omega_{1}-\\omega_{2})^{2}}\\end{array}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathrm{K E}=\\frac{1}{2}\\mathrm{I}\\omega^{2}=\\frac{1}{2}\\frac{\\mathrm{I}^{2}\\omega^{2}}{\\mathrm{I}}=\\frac{\\mathrm{L}^{2}}{2\\mathrm{I}}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{aligned}&K_{\\mathrm{A}}=K_{\\mathrm{B}}\\\\&\\overset{\\Rightarrow}{\\quad}\\quad\\frac{\\mathrm{L}_{\\mathrm{A}}^{2}}{2\\mathrm{I}_{\\mathrm{A}}}=\\frac{\\mathrm{L}_{\\mathrm{B}}^{2}}{2\\mathrm{I}_{\\mathrm{B}}}\\quad\\\\&\\mathrm{As},\\quad\\mathrm{I}_{\\mathrm{B}}>\\mathrm{I}_{\\mathrm{A}}\\\\&\\mathrm{So},\\quad\\mathrm{L}_{\\mathrm{A}}^{2}<\\mathrm{L}_{\\mathrm{B}}^{2}\\\\&\\overset{\\Rightarrow}{\\quad}\\quad\\mathrm{L}_{\\mathrm{A}}<\\mathrm{L}_{\\mathrm{B}}\\end{aligned}",
-        "meaning": ""
-      },
-      {
-        "latex": "t=\\sqrt{\\frac{2l\\left(1+\\frac{k^{2}}{R^{2}}\\right)}{g\\sin\\theta}}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{aligned}\\frac{t_{d}}{t_{s}}&=\\frac{\\sqrt{1+\\frac{k_{d}^{2}}{\\mathrm{R}^{2}}}}{\\sqrt{1+\\frac{k_{s}^{2}}{\\mathrm{R}^{2}}}}=\\sqrt{\\frac{1+\\frac{\\mathrm{R}^{2}}{2\\mathrm{R}^{2}}}{1+\\frac{2\\mathrm{R}^{2}}{5\\mathrm{R}^{2}}}}\\\\&\\quad\\left(\\therefore k_{d}=\\frac{\\mathrm{R}}{\\sqrt{2}},k_{s}=\\sqrt{\\frac{2}{5}}\\mathrm{R}\\right)\\\\&=\\sqrt{\\frac{3}{2}\\times\\frac{5}{7}}=\\sqrt{\\frac{15}{14}}\\\\t_{d}&>t_{s}\\end{aligned}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{aligned}a_{1}&=\\frac{g\\sin\\theta}{1+\\frac{k^{2}}{R^{2}}}\\\\&=\\frac{g\\sin\\theta}{1+\\frac{2}{5}}\\end{aligned}",
-        "meaning": ""
-      },
-      {
-        "latex": "a_{1}=\\frac{5}{7}g\\sin\\theta",
-        "meaning": ""
-      },
-      {
-        "latex": "a_{2}=g\\sin\\theta",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{aligned}\\frac{a_{1}}{a_{2}}&=\\frac{\\frac{5}{7}g\\sin\\theta}{g\\sin\\theta}=\\frac{5}{7}\\\\\\frac{a_{1}}{a_{2}}&=\\frac{5}{7}\\end{aligned}",
-        "meaning": ""
-      },
-      {
-        "latex": "k^{2} = \\frac{2}{5} R^{2}",
-        "meaning": ""
+        "latex": "KE=\\dfrac{1}{2}I\\omega^2=\\dfrac{L^2}{2I}",
+        "meaning": "Rotational kinetic energy"
       }
     ],
     "questionIds": [
@@ -156,7 +76,7 @@
       "AIPMT 1989",
       "AIPMT 1988"
     ],
-    "source": "seed"
+    "source": "authored"
   },
   {
     "id": "note-system-of-particles-and-rotational-motion-angular-velocity-and-its-relation-with-linear-velocity",
@@ -166,21 +86,25 @@
     "unitId": "xi-rotation",
     "unitLabel": "Unit V — Systems & Rigid Bodies",
     "order": 5,
-    "title": "Angular Velocity and its Relation with Linear Velocity",
-    "summary": "The angular acceleration $ \\alpha $ of a body moving along, the circumference of a circle is along the axis of rotation.",
-    "body": "**Key points from solved questions**\n- The angular acceleration $ \\alpha $ of a body moving along, the circumference of a circle is along the axis of rotation. <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//d7992c4e-9784-462a-97ce-ed68b9b64c0a/markdown_3/imgs/img_in_image_box_843_1156_1051_1356.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A15%3A52Z%2F-1%2F%2F463dabb54c5c2236462ab53d1ae060012e3a814b724e73d930a692b134514461\" alt=\"Image\" width=\"17%\" /></div>\n- In the given question, Velocity at A, $ v_{A} = \\omega \\left( \\frac{R}{2} \\right) $ towards right Velocity at B, $ v_{B} = -\\omega R $ towards left\n- $ \\vec{v} \\rightarrow \\vec{\\omega} \\times \\vec{r} \\rightarrow \\begin{vmatrix} \\hat{i} & \\hat{j} & \\hat{k} \\\\ 5 & -6 & 6 \\\\ 3 & -4 & 1 \\end{vmatrix} = 18\\hat{i} + 13\\hat{j} - 2\\hat{k} $",
+    "title": "Why v = ωr ties spin to linear speed",
+    "summary": "Angular velocity $\\omega$ is the rate of angular displacement and is the same for every particle of a rigid body; each particle's linear velocity is $\\vec v=\\vec\\omega\\times\\vec r$, so $v=\\omega r$.",
+    "body": "**Must know**\n- $\\omega=\\dfrac{d\\theta}{dt}$ and $\\alpha=\\dfrac{d\\omega}{dt}$; both are the same for every particle of a rigid body.\n- Linear velocity: $\\vec{v}=\\vec{\\omega}\\times\\vec{r}$, magnitude $v=\\omega r$.\n- Tangential acceleration $a_t=\\alpha r$; centripetal acceleration $a_c=\\omega^2 r=\\dfrac{v^2}{r}$.\n- $\\omega=\\dfrac{2\\pi}{T}=2\\pi f$.\n**Exam traps**\n- $\\omega$ is common to the whole body, but $v=\\omega r$ grows with distance $r$ from the axis.\n- A point on the axis has $r=0$, hence $v=0$.",
     "formulas": [
       {
-        "latex": "v_{A} = \\omega \\left( \\frac{R}{2} \\right)",
-        "meaning": ""
+        "latex": "v=\\omega r",
+        "meaning": "Linear speed of a particle in circular motion"
       },
       {
-        "latex": "v_{B} = -\\omega R",
-        "meaning": ""
+        "latex": "\\vec{v}=\\vec{\\omega}\\times\\vec{r}",
+        "meaning": "Vector relation between linear and angular velocity"
       },
       {
-        "latex": "\\vec{v} \\rightarrow \\vec{\\omega} \\times \\vec{r} \\rightarrow \\begin{vmatrix} \\hat{i} & \\hat{j} & \\hat{k} \\\\ 5 & -6 & 6 \\\\ 3 & -4 & 1 \\end{vmatrix} = 18\\hat{i} + 13\\hat{j} - 2\\hat{k}",
-        "meaning": ""
+        "latex": "a_t=\\alpha r,\\quad a_c=\\omega^2 r=\\dfrac{v^2}{r}",
+        "meaning": "Tangential and centripetal accelerations"
+      },
+      {
+        "latex": "\\omega=\\dfrac{2\\pi}{T}=2\\pi f",
+        "meaning": "Angular velocity from period / frequency"
       }
     ],
     "questionIds": [
@@ -193,7 +117,7 @@
       "AIPMT Mains 2009 (Mod.)",
       "AIPMT 1999"
     ],
-    "source": "seed"
+    "source": "authored"
   },
   {
     "id": "note-system-of-particles-and-rotational-motion-centre-of-mass",
@@ -203,77 +127,25 @@
     "unitId": "xi-rotation",
     "unitLabel": "Unit V — Systems & Rigid Bodies",
     "order": 5,
-    "title": "Centre of Mass",
-    "summary": "In case of rolling, the velocity of the point of contact with the surface is zero.",
-    "body": "**Key points from solved questions**\n- Given. $$ \\mathrm{M}_{1}=10\\mathrm{~kg},\\mathrm{M}_{2}=20\\mathrm{~kg}, $$ Length of rod = 10 m Let $M_{1}$ is at origin, then $X_{1}$ and $X_{2}$ is 0 and 10 m respectively. Centre of mass, $ X = \\frac{M_{1}X_{1} + M_{2}X_{2}}{M_{1} + M_{2}} $ Putting the values in above equation we get, $$ \\begin{aligned}X&=\\frac{10\\times0+20\\times10}{10+20}\\\\&=\\frac{200}{30}=\\frac{20}{3}\\end{aligned} $$ Distance of the centre of mass of the system from the 10 kg mass is $ \\frac{20}{3} $ m.\n- Given,\n- In case of rolling, the velocity of the point of contact with the surface is zero. Also, the velocity of the point of the highest point of the rolling body is twice the velocity of COM of the body. So. point body P moves faster then point Q. <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//a3a4cb15-5707-4b25-8a03-cb3af80e07c8/markdown_0/imgs/img_in_image_box_751_104_917_256.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A21%3A34Z%2F-1%2F%2F7224b0317a6acfe986d0e4e44d4c6c6cc7d7b383c49f0edcd467e3ee1a3ec654\" alt=\"Image\" width=\"13%\" /></div> Since, $$ \\mathbf{v}=\\sqrt{\\frac{2gh}{1+\\frac{\\mathbf{K}^{2}}{\\mathbf{R}^{2}}}} $$ $$ \\mathbf{v}^{2}=\\frac{2gh}{1+\\frac{1}{2}} $$ $$ \\left[\\frac{\\mathbf{K}^{2}}{\\mathbf{R}^{2}}=\\frac{1}{2}\\text{for solid cylinder}\\right] $$ $$ 2gh=4^{2}\\times\\frac{3}{2} $$ $$ h=\\frac{12}{10}=1.2m $$ Now, $$ x=\\frac{h}{\\sin30^{\\circ}}=\\frac{1.2}{\\frac{1}{2}}=2.4m $$\n- Centre of mass. $$ \\begin{array}{l}r_{\\mathrm{c m}}=\\frac{m_{1}x_{1}+m_{2}x_{2}+m_{3}x_{3}}{m_{1}+m_{2}+m_{3}}\\\\\\quad=\\frac{300\\times0+500\\times40+400\\times70}{300+500+400},\\\\\\quad=40\\mathrm{~c m}\\end{array} $$\n- Since no external force applied on the system. And centre of mass (CM) be at rest. So answer is zero.\n- According to the question, position vector, $ \\vec{r} = \\frac{m_1 \\vec{r}_1 + m_2 \\vec{r}_2}{m_1 + m_2} $ $ \\vec{r} = \\frac{1 (\\hat{i} + 2 \\hat{j} + k) + 3 (-3 \\hat{i} - 2 \\hat{j} + \\hat{k})}{1 + 3} $ $ \\vec{r} = \\frac{1}{4} (-8 \\hat{i} - 4 \\hat{j} + 4 \\hat{k}) $ $ \\vec{r} = -2 \\hat{i} - \\hat{j} + \\hat{k} $ $$ C.M.=\\frac{m_{1}x_{1}+m_{2}x_{2}}{m_{1}+m_{2}} $$\n- We know that, After changing a position of $m_{1}$ and to keep the position of C.M. same. $$ \\mathrm{C.M.}=\\frac{m_{1}(x_{1}-d)+m_{2}(x_{2}+d^{\\prime})}{m_{1}+m_{2}} $$ From both eqn., $$ \\begin{aligned}&\\frac{m_{1}x_{1}+m_{2}x_{2}}{m_{1}+m_{2}}=\\frac{m_{1}(x_{1}-d)+m_{2}(x_{2}+d^{\\prime})}{m_{1}+m_{2}}\\\\ &-m_{1}d+m_{2}d^{\\prime}=0\\\\ \\Rightarrow\\quad d^{\\prime}=\\frac{m_{1}}{m_{2}}d\\\\ \\end{aligned} $$ <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//d7992c4e-9784-462a-97ce-ed68b9b64c0a/markdown_3/imgs/img_in_image_box_192_1152_515_1448.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A15%3A52Z%2F-1%2F%2Ff633feabd561a7ad757bf5639a080bd9c719ac5e6608d8c80a77bee758bc1930\" alt=\"Image\" width=\"27%\" /></div>\n- Centre of mass of each ball lies on the centre. $ \\Rightarrow $ Centre of mass of combined body will be at the centroid of equilateral triangle.",
+    "title": "How a system behaves as if all its mass sits at the centre of mass",
+    "summary": "The centre of mass (CM) is the mass-weighted average position of a system; the whole system translates as if all its mass were concentrated there and all external force acted there.",
+    "body": "**Must know**\n- Discrete system: $\\vec{R}_{cm}=\\dfrac{\\sum m_i\\vec{r}_i}{\\sum m_i}$, where $M=\\sum m_i$ is the total mass.\n- Continuous body: $\\vec{R}_{cm}=\\dfrac{1}{M}\\int \\vec{r}\\,dm$.\n- Two particles: $x_{cm}=\\dfrac{m_1x_1+m_2x_2}{m_1+m_2}$; the CM lies on the line joining them, closer to the heavier mass, with $m_1r_1=m_2r_2$.\n- For a uniform symmetric body the CM is at its geometric centre.\nThe CM can lie outside the material of the body — e.g. a ring (centre), or an L-shaped lamina.\n**Exam traps**\n- CM and centre of gravity coincide only in a uniform gravitational field (always assumed in NEET).\n- Internal forces can never shift the CM; only external forces can.\n- Choose the origin at one mass to simplify the algebra.",
     "formulas": [
       {
-        "latex": "\\mathrm{M}_{1}=10\\mathrm{~kg},\\mathrm{M}_{2}=20\\mathrm{~kg},",
-        "meaning": ""
+        "latex": "\\vec{R}_{cm}=\\dfrac{\\sum m_i\\vec{r}_i}{\\sum m_i}",
+        "meaning": "Centre of mass of a discrete system"
       },
       {
-        "latex": "\\begin{aligned}X&=\\frac{10\\times0+20\\times10}{10+20}\\\\&=\\frac{200}{30}=\\frac{20}{3}\\end{aligned}",
-        "meaning": ""
+        "latex": "\\vec{R}_{cm}=\\dfrac{1}{M}\\int \\vec{r}\\,dm",
+        "meaning": "Centre of mass of a continuous body"
       },
       {
-        "latex": "X = \\frac{M_{1}X_{1} + M_{2}X_{2}}{M_{1} + M_{2}}",
-        "meaning": ""
+        "latex": "x_{cm}=\\dfrac{m_1x_1+m_2x_2}{m_1+m_2}",
+        "meaning": "Two-particle centre of mass"
       },
       {
-        "latex": "\\mathbf{v}=\\sqrt{\\frac{2gh}{1+\\frac{\\mathbf{K}^{2}}{\\mathbf{R}^{2}}}}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathbf{v}^{2}=\\frac{2gh}{1+\\frac{1}{2}}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\left[\\frac{\\mathbf{K}^{2}}{\\mathbf{R}^{2}}=\\frac{1}{2}\\text{for solid cylinder}\\right]",
-        "meaning": ""
-      },
-      {
-        "latex": "2gh=4^{2}\\times\\frac{3}{2}",
-        "meaning": ""
-      },
-      {
-        "latex": "h=\\frac{12}{10}=1.2m",
-        "meaning": ""
-      },
-      {
-        "latex": "x=\\frac{h}{\\sin30^{\\circ}}=\\frac{1.2}{\\frac{1}{2}}=2.4m",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{array}{l}r_{\\mathrm{c m}}=\\frac{m_{1}x_{1}+m_{2}x_{2}+m_{3}x_{3}}{m_{1}+m_{2}+m_{3}}\\\\\\quad=\\frac{300\\times0+500\\times40+400\\times70}{300+500+400},\\\\\\quad=40\\mathrm{~c m}\\end{array}",
-        "meaning": ""
-      },
-      {
-        "latex": "C.M.=\\frac{m_{1}x_{1}+m_{2}x_{2}}{m_{1}+m_{2}}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\vec{r} = \\frac{m_1 \\vec{r}_1 + m_2 \\vec{r}_2}{m_1 + m_2}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\vec{r} = \\frac{1 (\\hat{i} + 2 \\hat{j} + k) + 3 (-3 \\hat{i} - 2 \\hat{j} + \\hat{k})}{1 + 3}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\vec{r} = \\frac{1}{4} (-8 \\hat{i} - 4 \\hat{j} + 4 \\hat{k})",
-        "meaning": ""
-      },
-      {
-        "latex": "\\vec{r} = -2 \\hat{i} - \\hat{j} + \\hat{k}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathrm{C.M.}=\\frac{m_{1}(x_{1}-d)+m_{2}(x_{2}+d^{\\prime})}{m_{1}+m_{2}}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{aligned}&\\frac{m_{1}x_{1}+m_{2}x_{2}}{m_{1}+m_{2}}=\\frac{m_{1}(x_{1}-d)+m_{2}(x_{2}+d^{\\prime})}{m_{1}+m_{2}}\\\\ &-m_{1}d+m_{2}d^{\\prime}=0\\\\ \\Rightarrow\\quad d^{\\prime}=\\frac{m_{1}}{m_{2}}d\\\\ \\end{aligned}",
-        "meaning": ""
+        "latex": "m_1 r_1 = m_2 r_2",
+        "meaning": "Distances of two masses from their CM (lever relation)"
       }
     ],
     "questionIds": [
@@ -294,7 +166,7 @@
       "AIPMT 2004",
       "AIPMT 1993"
     ],
-    "source": "seed"
+    "source": "authored"
   },
   {
     "id": "note-system-of-particles-and-rotational-motion-dynamics-of-rotational-motion-about-a-fixed-axis",
@@ -304,105 +176,25 @@
     "unitId": "xi-rotation",
     "unitLabel": "Unit V — Systems & Rigid Bodies",
     "order": 5,
-    "title": "Dynamics of Rotational Motion about a Fixed Axis",
-    "summary": "Here $ m_{1} $ and $ m_{2} $ masses are placed opposite end of the rigid rod whose length is L.",
-    "body": "**Key points from solved questions**\n- Torque about A. <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//a3a4cb15-5707-4b25-8a03-cb3af80e07c8/markdown_0/imgs/img_in_image_box_172_622_366_747.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A21%3A32Z%2F-1%2F%2F09be474ea979a659209efde667ccb4ce0060ab2c9a979b08705573bc4cd5c0bc\" alt=\"Image\" width=\"16%\" /></div> $$ \\tau=m g\\times\\frac{l}{2}=\\frac{m g l}{2} $$ Also, $ \\tau = I\\alpha $ ∴ Angular acceleration, $$ \\alpha=\\frac{\\tau}{1}=\\frac{mg\\frac{l}{2}}{\\frac{ml^{2}}{3}}=\\frac{3g}{2l} $$\n- Mass, M = 2 kg, Radius R = 4 cm. Initial angular speed, $ \\omega_{0} = 3 \\times \\frac{2\\pi}{60} \\text{ rad/s} $ $ = \\frac{\\pi}{10} \\text{ rad/s} $ We know that. $$ \\omega^{2}=\\omega_{0}^{2}+2\\alpha\\theta $$ $$ 0=\\ \\left(\\frac{\\pi}{10}\\right)^{2}+2\\alpha\\times2\\pi\\times2\\pi $$ ↓ $$ \\alpha=-\\mathrm{\\small~\\frac{1}{800}~}\\mathrm{r a d/s^{2}} $$ Now moment of inertia of a solid cylinder, $$ \\mathrm{I}=\\frac{\\mathrm{MR}^{2}}{2}=\\frac{2\\times\\left(\\frac{4}{100}\\right)^{2}}{2}=\\frac{16}{10^{4}} $$ Now we know that, Torque, $$ \\begin{array}{c} \\tau=\\mathrm{I}\\times\\alpha=\\frac{16}{10^{4}}\\times\\left(-\\frac{1}{800}\\right)\\\\ =-2\\times10^{-6}\\ (\\mathrm{Nm}). \\end{array} $$ Negative sign indicates that the applied torque is retarding in nature.\n- Work done required to bring them rest, $$ \\begin{aligned}\\Delta\\mathbf{W}&=\\Delta\\mathbf{K}\\mathbf{E}\\\\\\mathbf{W}_{\\mathrm{A}}:\\mathbf{W}_{\\mathrm{B}}:\\mathbf{W}_{\\mathrm{C}}&=\\frac{2}{5}\\mathbf{M}\\mathbf{R}^{2}:\\frac{1}{2}\\mathbf{M}\\mathbf{R}^{2}:\\mathbf{M}\\mathbf{R}^{2}\\\\&=\\frac{2}{5}:\\frac{1}{2}:1\\\\&=4:5:10\\\\\\mathbf{W}_{\\mathrm{C}}&>\\mathbf{W}_{\\mathrm{B}}>\\mathbf{W}_{\\mathrm{A}}.\\end{aligned} $$\n- Torque on the cylinder due to force F <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//8a183c7a-0ffa-48f9-809f-9a784510847e/markdown_3/imgs/img_in_image_box_781_1120_928_1246.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A32Z%2F-1%2F%2F3006ac4f01be5961ef69efd082fd25fb449751b655817206b9897ac7b98ac7bc\" alt=\"Image\" width=\"12%\" /></div> and we know that, $ \\tau = \\mathrm{I}\\alpha $ Where, I = Moment of Inertia of hollow cylinder about axis and $\\alpha =$ angular acceleration on comparing both the equations, $$ \\alpha=\\frac{\\tau}{I}=\\frac{\\mathrm{F R}}{\\mathrm{M R}^{2}}=\\frac{\\mathrm{F}}{\\mathrm{M R}} $$ $$ \\alpha=\\frac{30}{3\\times40\\times10^{-2}}=25rad/s^{2} $$\n- <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//8a183c7a-0ffa-48f9-809f-9a784510847e/markdown_4/imgs/img_in_image_box_258_124_473_277.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A34Z%2F-1%2F%2F3545636b42b1ce456d8ebc900e86dd341ca44e3283a2690ca7a42cf443e73315\" alt=\"Image\" width=\"18%\" /></div> According to the question. Angular acceleration, $ \\alpha = 2 \\, rad s^{-2} $ Angular speed, $ \\omega = \\alpha t = 4 \\, rad \\, s^{-1} $ ∵ centripetal acceleration at the end of 2.0 sec $$ \\begin{aligned}a_{t}&=\\alpha r=2\\times0.5=1\\mathrm{~m/s^{2}}\\\\a_{c}&=\\omega^{2}r\\\\&=4^{2}\\times0.5\\\\&=8\\mathrm{~m/s^{2}}\\end{aligned} $$ $$ \\begin{array}{l} \\displaystyle \\therefore \\text{Net acceleration,} a = \\sqrt{a_{c}^{2} + a_{t}^{2}} \\\\ \\displaystyle \\qquad = \\sqrt{(8)^{2} + (1)^{2}} \\\\ \\displaystyle \\qquad = \\sqrt{65} \\approx 8\\ \\text{m/s}^2 \\end{array} $$\n- Here $ m_{1} $ and $ m_{2} $ masses are placed opposite end of the rigid rod whose length is L. <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//8a183c7a-0ffa-48f9-809f-9a784510847e/markdown_4/imgs/img_in_image_box_226_741_444_912.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A34Z%2F-1%2F%2F977dab0f847a3de39f179e1a6ba6cd7485df62dc4525a9b6242101566ba0030a\" alt=\"Image\" width=\"18%\" /></div> ∴ Moment of Inerita of rod, $$ \\begin{aligned}\\mathrm{I}&=m_{1}x^{2}+m_{2}(\\mathrm{L}-x)^{2}\\\\&=m_{1}x^{2}+m_{2}L^{2}+m_{2}x^{2}-2m_{2}\\mathrm{L}x\\end{aligned} $$ I $ _{a} $ is minima then, $$ \\begin{aligned}\\frac{d\\mathrm{I}}{dx}&=2m_{1}x+0+2xm_{2}-2m_{2}\\mathrm{L}\\\\&=0\\end{aligned} $$ $$ \\Rightarrow\\quad x(2m_{1}+2m_{2})=2m_{2}L $$ $$ x=\\frac{m_{2}L}{m_{1}+m_{2}} $$ $ \\therefore $ Minimum work = Minimum rotational K.E. $\\Rightarrow$ Maximum angular moments = Minimum moment of inertia ∴ Its rotation should be about CM $$ x=\\frac{m_{2}L}{m_{1}+m_{2}} $$\n- According to question, Velocity of automobile vehicle is $$ v=54km/h=54\\times\\frac{5}{18}=15m/s $$ And angular velocity, $ \\mathbf{v} = \\omega_0 r $ $$ \\Theta_{0}=\\frac{v}{R}=\\frac{15}{0.45}=\\frac{100}{3}\\text{rad/s} $$ and then angular acceleration is $$ \\begin{array}{l}\\alpha=\\frac{\\Delta\\omega}{t}=\\frac{\\omega_{t}-\\omega_{0}}{t}\\\\=\\frac{0-\\frac{100}{3}}{15}=-\\frac{100}{45}\\\\=-\\frac{100}{45}\\ \\mathrm{rad/s^{2}}\\end{array} $$ ∴ Torque, $$ \\begin{aligned}\\tau&=I\\alpha\\\\&=3\\times\\frac{100}{45}=6.66kg m^{2}/s^{2}\\end{aligned} $$\n- According to the question, Mass of cylinder, M = 50 kg. Radius of the cylinder, R = 0.5 m Angular acceleration, $ \\alpha = 2 \\, \\text{rev/s}^{2} $ We know that torque, $ \\tau = I\\alpha $ Now torque produced in the string is : $$ \\tau=\\mathrm{T}\\times\\mathrm{R}=\\mathrm{T}\\times0.5=\\frac{\\mathrm{T}}{2} $$ From eq. (i) and (ii) $$ \\circ\\circ $$ $$ \\tau=\\frac{T}{2} $$ $$ \\ensuremath{\\ddots} $$ $$ \\frac{\\mathrm{T}}{2}=\\cdot\\left(\\frac{\\mathrm{MR}^{2}}{2}\\right)\\times2\\times2\\pi $$ $$ I=\\frac{MR^{2}}{2} $$ $$ \\begin{aligned}\\frac{T}{2}&=\\frac{50\\times(0.5)^{2}}{2}\\times4\\pi\\\\1&=50\\times\\frac{1}{4}\\times4\\pi=50\\pi\\\\&=157N\\end{aligned} $$\n- According to question. <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//8a183c7a-0ffa-48f9-809f-9a784510847e/markdown_4/imgs/img_in_image_box_798_1288_1051_1419.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A34Z%2F-1%2F%2Fbf5ebc75a05d5f1fbaf7a9db1c0004777fbe8d0944989cf9c4a2d5b5dc37901b\" alt=\"Image\" width=\"21%\" /></div> Torque on the rod = Moment of the rod P $$ \\tau=m g\\frac{L}{2} $$ Moment of inertia of rod about P. $$ I=\\frac{mL^{2}}{3} $$ From eq. (i) and (ii). {Since $ \\tau = 1\\alpha $ $$ \\alpha=\\frac{3g}{2L} $$\n- Given that, $ \\theta(t) = 2t^{3} - 6t^{2} $ $$ \\frac{d\\Theta}{d t}=6t^{2}-12t $$ $$ \\frac{d^{2}\\Theta}{d t^{2}}=12t-12 $$ It is given that, torque $ \\tau = 0 $ means $ \\alpha = 0 $ and $$ \\alpha=\\frac{d^{2}\\theta}{dt^{2}}=0 $$ $$ \\begin{array}{r} 12t-12=0 \\\\ \\Rightarrow \\quad t=1\\mathrm{s} \\end{array} $$",
+    "title": "Why τ = Iα is Newton's second law for rotation",
+    "summary": "About a fixed axis the net torque equals $I\\alpha$; rotational work, power and kinetic energy mirror their linear forms.",
+    "body": "**Must know**\n- $\\tau_{net}=I\\alpha$ (the rotational form of $F=ma$).\n- Work done by a torque: $W=\\int\\tau\\,d\\theta$ ($=\\tau\\theta$ for constant $\\tau$).\n- Power: $P=\\tau\\omega$.\n- Rotational kinetic energy: $KE_{rot}=\\dfrac{1}{2}I\\omega^2$.\n- Work-energy theorem: $W=\\dfrac{1}{2}I\\omega^2-\\dfrac{1}{2}I\\omega_0^2$.\n**Exam traps**\n- Include every torque about the axis; only the component along the axis drives $\\alpha$.\n- For a body that also translates (rolling), add translational and rotational energies separately.",
     "formulas": [
       {
-        "latex": "\\tau=m g\\times\\frac{l}{2}=\\frac{m g l}{2}",
-        "meaning": ""
+        "latex": "\\tau=I\\alpha",
+        "meaning": "Newton's second law for rotation"
       },
       {
-        "latex": "\\alpha=\\frac{\\tau}{1}=\\frac{mg\\frac{l}{2}}{\\frac{ml^{2}}{3}}=\\frac{3g}{2l}",
-        "meaning": ""
+        "latex": "P=\\tau\\omega",
+        "meaning": "Power delivered by a torque"
       },
       {
-        "latex": "\\tau = I\\alpha",
-        "meaning": ""
+        "latex": "KE_{rot}=\\tfrac{1}{2}I\\omega^2",
+        "meaning": "Rotational kinetic energy"
       },
       {
-        "latex": "\\omega^{2}=\\omega_{0}^{2}+2\\alpha\\theta",
-        "meaning": ""
-      },
-      {
-        "latex": "0=\\ \\left(\\frac{\\pi}{10}\\right)^{2}+2\\alpha\\times2\\pi\\times2\\pi",
-        "meaning": ""
-      },
-      {
-        "latex": "\\alpha=-\\mathrm{\\small~\\frac{1}{800}~}\\mathrm{r a d/s^{2}}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathrm{I}=\\frac{\\mathrm{MR}^{2}}{2}=\\frac{2\\times\\left(\\frac{4}{100}\\right)^{2}}{2}=\\frac{16}{10^{4}}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{array}{c} \\tau=\\mathrm{I}\\times\\alpha=\\frac{16}{10^{4}}\\times\\left(-\\frac{1}{800}\\right)\\\\ =-2\\times10^{-6}\\ (\\mathrm{Nm}). \\end{array}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\omega_{0} = 3 \\times \\frac{2\\pi}{60} \\text{ rad/s}",
-        "meaning": ""
-      },
-      {
-        "latex": "= \\frac{\\pi}{10} \\text{ rad/s}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{aligned}\\Delta\\mathbf{W}&=\\Delta\\mathbf{K}\\mathbf{E}\\\\\\mathbf{W}_{\\mathrm{A}}:\\mathbf{W}_{\\mathrm{B}}:\\mathbf{W}_{\\mathrm{C}}&=\\frac{2}{5}\\mathbf{M}\\mathbf{R}^{2}:\\frac{1}{2}\\mathbf{M}\\mathbf{R}^{2}:\\mathbf{M}\\mathbf{R}^{2}\\\\&=\\frac{2}{5}:\\frac{1}{2}:1\\\\&=4:5:10\\\\\\mathbf{W}_{\\mathrm{C}}&>\\mathbf{W}_{\\mathrm{B}}>\\mathbf{W}_{\\mathrm{A}}.\\end{aligned}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\alpha=\\frac{\\tau}{I}=\\frac{\\mathrm{F R}}{\\mathrm{M R}^{2}}=\\frac{\\mathrm{F}}{\\mathrm{M R}}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\alpha=\\frac{30}{3\\times40\\times10^{-2}}=25rad/s^{2}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\tau = \\mathrm{I}\\alpha",
-        "meaning": ""
-      },
-      {
-        "latex": "\\alpha =",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{aligned}a_{t}&=\\alpha r=2\\times0.5=1\\mathrm{~m/s^{2}}\\\\a_{c}&=\\omega^{2}r\\\\&=4^{2}\\times0.5\\\\&=8\\mathrm{~m/s^{2}}\\end{aligned}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{array}{l} \\displaystyle \\therefore \\text{Net acceleration,} a = \\sqrt{a_{c}^{2} + a_{t}^{2}} \\\\ \\displaystyle \\qquad = \\sqrt{(8)^{2} + (1)^{2}} \\\\ \\displaystyle \\qquad = \\sqrt{65} \\approx 8\\ \\text{m/s}^2 \\end{array}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\alpha = 2 \\, rad s^{-2}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\omega = \\alpha t = 4 \\, rad \\, s^{-1}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{aligned}\\mathrm{I}&=m_{1}x^{2}+m_{2}(\\mathrm{L}-x)^{2}\\\\&=m_{1}x^{2}+m_{2}L^{2}+m_{2}x^{2}-2m_{2}\\mathrm{L}x\\end{aligned}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{aligned}\\frac{d\\mathrm{I}}{dx}&=2m_{1}x+0+2xm_{2}-2m_{2}\\mathrm{L}\\\\&=0\\end{aligned}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\Rightarrow\\quad x(2m_{1}+2m_{2})=2m_{2}L",
-        "meaning": ""
-      },
-      {
-        "latex": "x=\\frac{m_{2}L}{m_{1}+m_{2}}",
-        "meaning": ""
-      },
-      {
-        "latex": "v=54km/h=54\\times\\frac{5}{18}=15m/s",
-        "meaning": ""
+        "latex": "W=\\tau\\theta",
+        "meaning": "Work done by a constant torque"
       }
     ],
     "questionIds": [
@@ -429,7 +221,7 @@
       "AIPMT 2014",
       "AIPMT 2004"
     ],
-    "source": "seed"
+    "source": "authored"
   },
   {
     "id": "note-system-of-particles-and-rotational-motion-equilibrium-of-a-rigid-body",
@@ -439,45 +231,21 @@
     "unitId": "xi-rotation",
     "unitLabel": "Unit V — Systems & Rigid Bodies",
     "order": 5,
-    "title": "Equilibrium of a Rigid Body",
-    "summary": "From question, weight of the rod is W and the weight W balances the normal reach.",
-    "body": "**Key points from solved questions**\n- Given, $$ \\mathrm{L H S}=2\\times20 $$ $$ \\mathrm{RHS}=0.5\\times60+m\\times120 $$\n- Centre of mass may or may not coincide with centre of gravity. $$ 10=120\\;m $$ $$ m=\\frac{10}{120}=\\frac{1}{12}kg $$ So $$ \\mathbf{W}=\\mathbf{N}_{1}+\\mathbf{N}_{2} $$ For equilibrium. $$ \\mathbf{N}_{1}x=\\mathbf{N}_{2}\\left(d-x\\right) $$ From (i) $$ \\mathbf{N}_{1}x=(\\mathbf{W}-\\mathbf{N}_{1})(d-x) $$ $$ \\begin{array}{l}\\mathrm{N}_{1}x=\\mathrm{W}d-\\mathrm{W}x-\\mathrm{N}_{1}d+\\mathrm{N}_{1}x\\\\\\Rightarrow\\quad\\mathrm{N}_{1}d=\\mathrm{W}(d-x)\\\\\\Rightarrow\\quad\\mathrm{N}_{1}=\\frac{\\mathrm{W}(d-x)}{d}\\end{array} $$\n- From question, weight of the rod is W and the weight W balances the normal reach. $$ 2\\times20=30+120m $$ <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//d7992c4e-9784-462a-97ce-ed68b9b64c0a/markdown_4/imgs/img_in_image_box_755_1243_1011_1388.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A15%3A55Z%2F-1%2F%2Fc2b228cbcd337111e4d083bb933dd8bbfd2879df68d68310d6b7aaefd8725aa9\" alt=\"Image\" width=\"21%\" /></div>",
+    "title": "How a rigid body stays in equilibrium",
+    "summary": "A rigid body is in mechanical equilibrium when both the net external force and the net external torque vanish.",
+    "body": "**Must know**\n- Translational equilibrium: $\\sum\\vec{F}=0$.\n- Rotational equilibrium: $\\sum\\vec{\\tau}=0$ (about any point).\n- A couple is two equal, opposite, non-collinear forces: zero net force but torque $\\tau=Fd$ ($d$ = perpendicular separation).\n- Centre of gravity: the point where the net gravitational torque is zero; it coincides with the CM in a uniform field.\n**Exam traps**\n- For a body in equilibrium you may take torques about any axis — choose one through an unknown force to eliminate it.",
     "formulas": [
       {
-        "latex": "\\mathrm{L H S}=2\\times20",
-        "meaning": ""
+        "latex": "\\sum\\vec{F}=0",
+        "meaning": "Translational equilibrium"
       },
       {
-        "latex": "\\mathrm{RHS}=0.5\\times60+m\\times120",
-        "meaning": ""
+        "latex": "\\sum\\vec{\\tau}=0",
+        "meaning": "Rotational equilibrium"
       },
       {
-        "latex": "10=120\\;m",
-        "meaning": ""
-      },
-      {
-        "latex": "m=\\frac{10}{120}=\\frac{1}{12}kg",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathbf{W}=\\mathbf{N}_{1}+\\mathbf{N}_{2}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathbf{N}_{1}x=\\mathbf{N}_{2}\\left(d-x\\right)",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathbf{N}_{1}x=(\\mathbf{W}-\\mathbf{N}_{1})(d-x)",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{array}{l}\\mathrm{N}_{1}x=\\mathrm{W}d-\\mathrm{W}x-\\mathrm{N}_{1}d+\\mathrm{N}_{1}x\\\\\\Rightarrow\\quad\\mathrm{N}_{1}d=\\mathrm{W}(d-x)\\\\\\Rightarrow\\quad\\mathrm{N}_{1}=\\frac{\\mathrm{W}(d-x)}{d}\\end{array}",
-        "meaning": ""
-      },
-      {
-        "latex": "2\\times20=30+120m",
-        "meaning": ""
+        "latex": "\\tau=Fd",
+        "meaning": "Torque of a couple (d = perpendicular separation)"
       }
     ],
     "questionIds": [
@@ -489,7 +257,7 @@
       "NEET 2017",
       "AIPMT Cancelled 2015"
     ],
-    "source": "seed"
+    "source": "authored"
   },
   {
     "id": "note-system-of-particles-and-rotational-motion-kinematics-of-rotational-motion-about-a-fixed-axis",
@@ -499,33 +267,21 @@
     "unitId": "xi-rotation",
     "unitLabel": "Unit V — Systems & Rigid Bodies",
     "order": 5,
-    "title": "Kinematics of Rotational Motion about a Fixed Axis",
-    "summary": "Initial angular velocity of wheel, $$ \\begin{aligned}\\omega_{i}&=2\\pi f_{o}=2\\pi\\times\\frac{360}{60}\\mathrm{rad/s}\\\\&=12\\pi\\mathrm{rad/s}\\end{aligned} $$ final angular velocity of wheel, $$…",
-    "body": "**Key points from solved questions**\n- Initial angular velocity of wheel, $$ \\begin{aligned}\\omega_{i}&=2\\pi f_{o}=2\\pi\\times\\frac{360}{60}\\mathrm{rad/s}\\\\&=12\\pi\\mathrm{rad/s}\\end{aligned} $$ final angular velocity of wheel, $$ \\begin{aligned}\\omega_{f}&=2\\pi f=2\\pi\\times\\frac{1200}{60}\\mathrm{rad/s}\\\\&=40\\pi\\mathrm{rad/s}\\end{aligned} $$ $$ \\Delta t=14\\,\\mathrm{s} $$ From equation of rotational motion $$ \\omega_{f}=\\omega_{i}+\\alpha\\Delta t $$ $$ \\begin{array}{r}{\\alpha=\\frac{\\omega_{f}-\\omega_{i}}{\\Delta t}}\\\\ {=2\\pi\\mathrm{r a d/s}}\\end{array} $$\n- Here, $$ \\begin{array}{l}\\theta=\\omega_{0}t+\\frac{1}{2}\\alpha t^{2}\\\\ =(2)(2)+\\frac{1}{2}(3)(2)^{2}\\\\ =4+6=10\\text{rad}\\end{array} $$",
+    "title": "How rotational kinematics mirrors the linear SUVAT equations",
+    "summary": "For constant angular acceleration the rotational equations are exact analogues of the linear equations of motion, with $\\theta\\leftrightarrow x,\\ \\omega\\leftrightarrow v,\\ \\alpha\\leftrightarrow a$.",
+    "body": "**Must know (constant $\\alpha$)**\n- $\\omega=\\omega_0+\\alpha t$.\n- $\\theta=\\omega_0 t+\\dfrac{1}{2}\\alpha t^2$.\n- $\\omega^2=\\omega_0^2+2\\alpha\\theta$.\n- $\\theta=\\dfrac{\\omega_0+\\omega}{2}\\,t$.\n**Exam traps**\n- These hold only for constant angular acceleration.\n- Work in radians; convert revolutions using $1\\text{ rev}=2\\pi\\text{ rad}$.",
     "formulas": [
       {
-        "latex": "\\begin{aligned}\\omega_{i}&=2\\pi f_{o}=2\\pi\\times\\frac{360}{60}\\mathrm{rad/s}\\\\&=12\\pi\\mathrm{rad/s}\\end{aligned}",
-        "meaning": ""
+        "latex": "\\omega=\\omega_0+\\alpha t",
+        "meaning": "Angular velocity after time t"
       },
       {
-        "latex": "\\begin{aligned}\\omega_{f}&=2\\pi f=2\\pi\\times\\frac{1200}{60}\\mathrm{rad/s}\\\\&=40\\pi\\mathrm{rad/s}\\end{aligned}",
-        "meaning": ""
+        "latex": "\\theta=\\omega_0 t+\\tfrac{1}{2}\\alpha t^2",
+        "meaning": "Angular displacement"
       },
       {
-        "latex": "\\Delta t=14\\,\\mathrm{s}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\omega_{f}=\\omega_{i}+\\alpha\\Delta t",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{array}{r}{\\alpha=\\frac{\\omega_{f}-\\omega_{i}}{\\Delta t}}\\\\ {=2\\pi\\mathrm{r a d/s}}\\end{array}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{array}{l}\\theta=\\omega_{0}t+\\frac{1}{2}\\alpha t^{2}\\\\ =(2)(2)+\\frac{1}{2}(3)(2)^{2}\\\\ =4+6=10\\text{rad}\\end{array}",
-        "meaning": ""
+        "latex": "\\omega^2=\\omega_0^2+2\\alpha\\theta",
+        "meaning": "Velocity-displacement relation"
       }
     ],
     "questionIds": [
@@ -536,7 +292,7 @@
       "NEET 2020",
       "AIPMT 2007"
     ],
-    "source": "seed"
+    "source": "authored"
   },
   {
     "id": "note-system-of-particles-and-rotational-motion-moment-of-inertia",
@@ -546,105 +302,37 @@
     "unitId": "xi-rotation",
     "unitLabel": "Unit V — Systems & Rigid Bodies",
     "order": 5,
-    "title": "Moment of Inertia",
-    "summary": "The figure of a thin uniform disc and disc is shown below : <div style=\"text-align: center;\"><img…",
-    "body": "**Key points from solved questions**\n- Mass = 5 kg radius of gyration, k = 5 m radius of solid sphere, $ R = \\frac{5x}{\\sqrt{7}}m $ Radius of gyration of a solid sphere about its diameter is $ k = \\sqrt{\\frac{7}{5}}R $ Put the value in eqn (i), $$ 5=\\sqrt{\\frac{7}{5}}\\times\\frac{5x}{\\sqrt{7}} $$ On squaring both sides, $$ 25=\\frac{7}{5}\\times\\frac{25x^{2}}{7} $$ $$ x=\\sqrt{5} $$\n- MOI of a thin rod = 2400 g cm $ ^{2} $ mass of the rod = 400 g length of the rod = ? $$ M.I of rod=\\frac{ML^{2}}{12}=2400g cm^{2} $$ $$ \\Rightarrow\\quad\\frac{400\\mathrm{L}^{2}}{12}=2400 $$ $$ L^{2}=72 $$ $$ L=\\sqrt{72}=8.5cm $$\n- Radius of gyration is $ K = \\sqrt{\\frac{I}{M}} $ i.e., $$ \\frac{K_{solid}}{K_{hollow}}=\\sqrt{\\frac{2MR^{2}/5M}{2MR^{2}/3M}}=\\sqrt{3}:\\sqrt{5} $$\n- The figure of a thin uniform disc and disc is shown below : <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//8a183c7a-0ffa-48f9-809f-9a784510847e/markdown_0/imgs/img_in_image_box_132_1210_582_1413.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A23Z%2F-1%2F%2F74577d0b4c25a391a7eafefdb336fd7c96461ee23a424a937a2f782a1b12cfcc\" alt=\"Image\" width=\"37%\" /></div> Thin uniform disc Disc The radius of gyration of a thin uniform disc, $$ k=\\sqrt{\\frac{1}{m}} $$ and moment of inertia of the disc about an axis through its centre and normal to plane, $$ 1=\\frac{m R^{2}}{2} $$ Here, we have R as the radius, m is the mass. Now, on putting the value in eqn. (i) we have, The radius of gyration of the uniform disc about a axis through its centre and normal to plane, $$ k_{1}=\\sqrt{\\frac{mR^{2}}{\\frac{2}{m}}} $$ $$ k_{1}=\\sqrt{\\frac{R^{2}}{2}} $$ and the radius of gyration of the uniform disc about its diameter, $$ k_{2}=\\sqrt{\\frac{m\\mathrm{R}^{2}}{\\frac{4}{m}}} $$ $$ k_{2}=\\sqrt{\\frac{\\mathbf{R}^{2}}{4}} $$ Now, on dividing equation (ii) by equation (iii) we have; $$ \\frac{k_{1}}{k_{2}}=\\frac{\\sqrt{\\frac{R^{2}}{2}}}{\\sqrt{\\frac{R^{2}}{4}}} $$ $$ k_{1}:k_{2}=\\sqrt{2}:1 $$\n- Given, <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//8a183c7a-0ffa-48f9-809f-9a784510847e/markdown_0/imgs/img_in_image_box_819_991_988_1104.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A23Z%2F-1%2F%2Fc4362ea516f78a6be01fecdbfa0ededec9b0cd946f224065e7979414d9acdb18\" alt=\"Image\" width=\"14%\" /></div> Mass = M Radius = R $ \\operatorname{arc}\\theta = 90^{\\circ} $ $$ I_{remaining}=KMR^{2} $$ $$ 1=r^{2}\\int dm $$ $$ d\\boldsymbol{\\Lambda}=d m r^{2} $$ $$ l=r^{2}\\int dm $$ ∴ Complete ring was having the mass M and now one-fourth part is removed. $$ \\begin{aligned}Mass~of~the~remaining~ring&=~M-\\frac{M}{4}=\\frac{3M}{4}\\\\ \\therefore\\quad&1=~r^{2}\\int dm\\quad(\\because~r=R)\\\\ &=R^{2}\\times\\frac{3M}{4}\\end{aligned} $$ $$ \\mathrm{I}=\\frac{3}{4}\\mathrm{M}\\mathrm{R}^{2} $$ $$ \\mathrm{K}=\\frac{3}{4} $$\n- We know that, KE of rotating rigid body, $$ \\mathrm{KE}=\\frac{1}{2}\\mathrm{I}\\omega^{2} $$ ∴ KE of sphere, $$ \\begin{array}{l}\\mathrm{K}_{\\mathrm{S}}=\\frac{1}{2}\\mathrm{I}_{s}\\omega^{2}\\\\ \\quad=\\frac{1}{2}\\times\\frac{2}{5}\\mathrm{M}\\mathrm{R}^{2}\\times\\omega^{2}\\end{array} $$ In KE of cylinder, $$ \\begin{array}{l}\\mathrm{K}_{\\mathrm{C}}=\\frac{1}{2}\\mathrm{I}_{\\mathrm{C}}\\omega^{2}\\\\ \\\\ =\\frac{1}{2}\\times\\frac{\\mathrm{MR}^{2}}{2}\\times4\\omega^{2}.\\end{array} $$ From (i) and (ii), $$ \\mathrm{\\frac{K_{s}}{K_{c}}}={\\frac{1}{5}} $$\n- <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//8a183c7a-0ffa-48f9-809f-9a784510847e/markdown_1/imgs/img_in_image_box_69_751_338_825.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A26Z%2F-1%2F%2F8a630dd35d4bfa0054e812acaf5ac4aecf060c887fba346558c8b2085a68bbed\" alt=\"Image\" width=\"22%\" /></div> centre of mass of $ m_{1} $ and $ m_{2} $ lies at, $$ r=\\frac{m_{1}r_{1}+m_{2}r_{2}}{m_{1}+m_{2}} $$ $$ r_{1}=\\frac{m_{2}l}{m_{1}+m_{2}},r_{2}=\\frac{m_{1}l}{m_{1}+m_{2}} $$ $$ \\begin{array}{l} \\text{I}_{CM}=\\ m_{1}r_{1}^{2}+m_{2}r_{2}^{2} \\\\ =\\ m_{1}\\Bigg[\\frac{m_{2}l}{m_{1}+m_{2}}\\Bigg]^{2}+m_{2}\\Bigg[\\frac{m_{1}l}{m_{1}+m_{2}}\\Bigg]^{2} \\\\ =\\frac{m_{1}m_{2}l^{2}}{\\left(m_{1}+m_{2}\\right)^{2}}\\left(m_{1}+m_{2}\\right) \\\\ =\\frac{m_{1}m_{2}}{m_{1}+m_{2}}l^{2} \\end{array} $$\n- The diagram is, <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//8a183c7a-0ffa-48f9-809f-9a784510847e/markdown_1/imgs/img_in_image_box_190_1303_355_1473.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A26Z%2F-1%2F%2F1cc234dd608dc243489486f1375ade2bf9eb39b9c0f6a09122dd8f39eafee60e\" alt=\"Image\" width=\"13%\" /></div> Moment of Inertia of disc, $$ \\begin{aligned}\\mathrm{I}&=\\mathrm{I}_{\\text{remain}}+\\mathrm{I}_{\\mathrm{R}/2}\\\\\\mathrm{I}_{\\text{remain}}&=\\mathrm{I}-\\mathrm{I}_{\\mathrm{R}/2}\\end{aligned} $$ $$ \\bullet \\quad \\bullet\\ast $$ $$ \\begin{aligned}&=\\frac{\\mathbf{M}\\mathbf{R}^{2}}{2}-\\left[\\frac{\\mathbf{\\frac{M}{4}}\\left(\\frac{\\mathbf{R}}{2}\\right)^{2}}{2}+\\frac{\\mathbf{M}}{4}\\left(\\frac{\\mathbf{R}}{2}\\right)^{2}\\right]\\\\&=\\frac{\\mathbf{M}\\mathbf{R}^{2}}{2}-\\left[\\frac{\\mathbf{M}\\mathbf{R}^{2}}{32}+\\frac{\\mathbf{M}\\mathbf{R}^{2}}{10}\\right]\\\\&=\\frac{\\mathbf{M}\\mathbf{R}^{2}}{2}-\\frac{3\\mathbf{M}\\mathbf{R}^{2}}{32}\\end{aligned} $$ $$ I_{remain}=\\frac{13MR^{2}}{32} $$\n- Let $I_{1}$, $I_{2}$ and $I_{3}$ be the Moment of Inertia of three spheres. So, Moment of Inertia of the spheres about the axis passing through XX' is, Here, $$ \\begin{aligned}\\mathrm{I}&=\\mathrm{I}_{1}+\\mathrm{I}_{2}+\\mathrm{I}_{3}\\\\\\mathrm{I}_{1}&=\\frac{2}{3}mr^{2}\\end{aligned} $$ $$ \\mathrm{I}_{2}=\\mathrm{I}_{3}=\\frac{2}{3}m r^{2}+m r^{2} $$ (using parallel axis theorem) $$ \\begin{aligned}\\mathrm{I}_{3}=\\mathrm{I}_{2}&=\\frac{5}{3}mr^{2}\\\\\\mathrm{I}&=\\frac{2}{3}mr^{2}+2\\times\\frac{5}{3}mr^{2}\\\\&=\\;mr^{2}\\left(\\frac{2}{3}+\\frac{10}{3}\\right)=4mr^{2}\\end{aligned} $$\n- According to the parallel axis theorem, $$ \\mathrm{I}=\\mathrm{I}_{\\mathrm{cm}}+m d^{2} $$ d is maximum to B.\n- <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//8a183c7a-0ffa-48f9-809f-9a784510847e/markdown_1/imgs/img_in_image_box_763_986_979_1122.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A26Z%2F-1%2F%2Fdb28aa4294e8923dbf51d6b0c1c8c5d1044a94fb66e54bda544e5b2ca4e330b9\" alt=\"Image\" width=\"18%\" /></div> Moment of inertia about an axis passing through one end $$ \\mathrm{I}=\\mathrm{I}_{\\mathrm{CM}}+md^{2} $$ $$ \\mathrm{I}=\\mathrm{I}_{0}+\\mathrm{M}\\left(\\frac{\\mathrm{L}}{2}\\right)^{2}=\\mathrm{I}_{0}+\\frac{\\mathrm{ML}^{2}}{4} $$\n- The Moment of Inertia of disc about an axis perpendicular to the plane and passing through the centre, $$ \\begin{aligned}I&=I_{1}-I_{2}\\\\I&=\\frac{9MR^{2}}{2}-\\frac{MR^{2}}{18}\\\\I&=\\frac{81MR^{2}-MR^{2}}{18}\\\\&\\quad40MR^{2}\\end{aligned} $$ $$ I=\\frac{40MR^{2}}{9} $$\n- Moment of Inertia of system about XX' <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//8a183c7a-0ffa-48f9-809f-9a784510847e/markdown_2/imgs/img_in_image_box_292_137_387_294.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A28Z%2F-1%2F%2F88bbb47342cd72d35928ec82531eb21e2be8d9feda973e4934cb1c20af9c841e\" alt=\"Image\" width=\"7%\" /></div> $$ \\mathrm{I}=\\mathrm{I}_{1}+\\mathrm{I}_{2}+\\mathrm{I}_{3} $$ Here, $ I_{1} = M.I. $ of ring about its diameter $ \\frac{1}{2}mr^{2} $ $$ \\mathrm{I}_{2}=\\frac{1}{2}m r^{2}+m r^{2}=\\frac{3}{2}m r^{2} $$ Similarly, $$ I_{3}=\\frac{3}{2}mr^{2} $$ $$ \\begin{aligned}I&=\\frac{1}{2}mr^{2}+\\frac{3}{2}mr^{2}+\\frac{3}{2}mr^{2}\\\\ &=\\frac{7}{2}mr^{2}\\end{aligned} $$\n- From parallel axis theorem, Moment of Inertia, $ I = \\frac{M l^{2}}{2} + M \\left( \\frac{l}{2} \\right)^{2} = \\frac{M l^{2}}{3} $ $\\therefore$ Moment of Inertia of the system, $I = \\frac{M l^{2}}{3} \\times 4$ $=\\frac{4}{3} M l^{2}$",
+    "title": "How mass distribution sets the rotational inertia",
+    "summary": "Moment of inertia $I=\\sum m_i r_i^2$ is the rotational analogue of mass; it depends on the axis and how the mass is spread, not merely on the total mass.",
+    "body": "**Must know**\n- Definition: $I=\\sum m_i r_i^2=\\int r^2\\,dm$, where $r$ is the perpendicular distance from the axis.\n- Radius of gyration: $k=\\sqrt{I/M}$, so $I=Mk^2$.\n**Standard results (uniform bodies)**\n- Ring / thin hoop, central axis: $I=MR^2$.\n- Disc / solid cylinder, central axis: $I=\\dfrac{1}{2}MR^2$.\n- Solid sphere, diameter: $I=\\dfrac{2}{5}MR^2$.\n- Thin hollow sphere, diameter: $I=\\dfrac{2}{3}MR^2$.\n- Thin rod, centre $\\perp$ to length: $I=\\dfrac{1}{12}ML^2$; about one end: $I=\\dfrac{1}{3}ML^2$.\n**Theorems**\n- Parallel-axis: $I=I_{cm}+Md^2$ ($d$ = distance between the parallel axes, one through the CM).\n- Perpendicular-axis (planar lamina only): $I_z=I_x+I_y$.\n**Exam traps**\n- $I$ has no meaning without naming the axis; the perpendicular-axis theorem applies only to flat laminae.",
     "formulas": [
       {
-        "latex": "5=\\sqrt{\\frac{7}{5}}\\times\\frac{5x}{\\sqrt{7}}",
-        "meaning": ""
+        "latex": "I=\\sum m_i r_i^2=\\int r^2\\,dm",
+        "meaning": "Definition of moment of inertia"
       },
       {
-        "latex": "25=\\frac{7}{5}\\times\\frac{25x^{2}}{7}",
-        "meaning": ""
+        "latex": "k=\\sqrt{I/M}",
+        "meaning": "Radius of gyration"
       },
       {
-        "latex": "x=\\sqrt{5}",
-        "meaning": ""
+        "latex": "I=I_{cm}+Md^2",
+        "meaning": "Parallel-axis theorem"
       },
       {
-        "latex": "R = \\frac{5x}{\\sqrt{7}}m",
-        "meaning": ""
+        "latex": "I_z=I_x+I_y",
+        "meaning": "Perpendicular-axis theorem (planar lamina)"
       },
       {
-        "latex": "k = \\sqrt{\\frac{7}{5}}R",
-        "meaning": ""
+        "latex": "I_{\\text{ring}}=MR^2,\\ I_{\\text{disc}}=\\tfrac{1}{2}MR^2",
+        "meaning": "Ring and disc about central axis"
       },
       {
-        "latex": "M.I of rod=\\frac{ML^{2}}{12}=2400g cm^{2}",
-        "meaning": ""
+        "latex": "I_{\\text{solid sph}}=\\tfrac{2}{5}MR^2,\\ I_{\\text{hollow sph}}=\\tfrac{2}{3}MR^2",
+        "meaning": "Solid and hollow sphere about a diameter"
       },
       {
-        "latex": "\\Rightarrow\\quad\\frac{400\\mathrm{L}^{2}}{12}=2400",
-        "meaning": ""
-      },
-      {
-        "latex": "L^{2}=72",
-        "meaning": ""
-      },
-      {
-        "latex": "L=\\sqrt{72}=8.5cm",
-        "meaning": ""
-      },
-      {
-        "latex": "\\frac{K_{solid}}{K_{hollow}}=\\sqrt{\\frac{2MR^{2}/5M}{2MR^{2}/3M}}=\\sqrt{3}:\\sqrt{5}",
-        "meaning": ""
-      },
-      {
-        "latex": "K = \\sqrt{\\frac{I}{M}}",
-        "meaning": ""
-      },
-      {
-        "latex": "k=\\sqrt{\\frac{1}{m}}",
-        "meaning": ""
-      },
-      {
-        "latex": "1=\\frac{m R^{2}}{2}",
-        "meaning": ""
-      },
-      {
-        "latex": "k_{1}=\\sqrt{\\frac{mR^{2}}{\\frac{2}{m}}}",
-        "meaning": ""
-      },
-      {
-        "latex": "k_{1}=\\sqrt{\\frac{R^{2}}{2}}",
-        "meaning": ""
-      },
-      {
-        "latex": "k_{2}=\\sqrt{\\frac{m\\mathrm{R}^{2}}{\\frac{4}{m}}}",
-        "meaning": ""
-      },
-      {
-        "latex": "k_{2}=\\sqrt{\\frac{\\mathbf{R}^{2}}{4}}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\frac{k_{1}}{k_{2}}=\\frac{\\sqrt{\\frac{R^{2}}{2}}}{\\sqrt{\\frac{R^{2}}{4}}}",
-        "meaning": ""
-      },
-      {
-        "latex": "k_{1}:k_{2}=\\sqrt{2}:1",
-        "meaning": ""
-      },
-      {
-        "latex": "I_{remaining}=KMR^{2}",
-        "meaning": ""
-      },
-      {
-        "latex": "1=r^{2}\\int dm",
-        "meaning": ""
-      },
-      {
-        "latex": "d\\boldsymbol{\\Lambda}=d m r^{2}",
-        "meaning": ""
-      },
-      {
-        "latex": "l=r^{2}\\int dm",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{aligned}Mass~of~the~remaining~ring&=~M-\\frac{M}{4}=\\frac{3M}{4}\\\\ \\therefore\\quad&1=~r^{2}\\int dm\\quad(\\because~r=R)\\\\ &=R^{2}\\times\\frac{3M}{4}\\end{aligned}",
-        "meaning": ""
+        "latex": "I_{\\text{rod,centre}}=\\tfrac{1}{12}ML^2,\\ I_{\\text{rod,end}}=\\tfrac{1}{3}ML^2",
+        "meaning": "Thin rod about centre and about one end"
       }
     ],
     "questionIds": [
@@ -687,7 +375,7 @@
       "AIPMT 2002",
       "AIPMT 1999"
     ],
-    "source": "seed"
+    "source": "authored"
   },
   {
     "id": "note-system-of-particles-and-rotational-motion-motion-of-centre-of-mass",
@@ -697,17 +385,34 @@
     "unitId": "xi-rotation",
     "unitLabel": "Unit V — Systems & Rigid Bodies",
     "order": 5,
-    "title": "Motion of Centre of Mass",
-    "summary": "As net external force on the system is zero and initial velocity of CM is zero, it will remain at rest.",
-    "body": "**Key points from solved questions**\n- As net external force on the system is zero and initial velocity of CM is zero, it will remain at rest.",
-    "formulas": [],
+    "title": "Why only the external force moves the centre of mass",
+    "summary": "The CM moves like a single particle of mass M driven by the net external force; all internal forces cancel in pairs, so an internal explosion never changes the CM motion.",
+    "body": "**Must know**\n- Differentiating $M\\vec{R}_{cm}=\\sum m_i\\vec{r}_i$ gives $M\\vec{V}_{cm}=\\sum m_i\\vec{v}_i=\\vec{P}_{total}$.\n- Newton's second law for a system: $\\vec{F}_{ext}=M\\vec{a}_{cm}$.\n- If $\\vec{F}_{ext}=0$ then $\\vec{P}$ is conserved and $\\vec{V}_{cm}$ stays constant.\n**Exam traps**\n- When a projectile (e.g. a shell) bursts in flight, the fragments' CM keeps moving on the original parabola, because gravity is the only external force.\n- Internal forces (explosion, collisions between parts) cancel and cannot change $\\vec{V}_{cm}$.",
+    "formulas": [
+      {
+        "latex": "\\vec{V}_{cm}=\\dfrac{\\sum m_i\\vec{v}_i}{M}",
+        "meaning": "Velocity of the centre of mass"
+      },
+      {
+        "latex": "\\vec{P}=M\\vec{V}_{cm}",
+        "meaning": "Total linear momentum of a system"
+      },
+      {
+        "latex": "\\vec{F}_{ext}=M\\vec{a}_{cm}",
+        "meaning": "Newton's second law for a system"
+      },
+      {
+        "latex": "\\vec{F}_{ext}=0 \\Rightarrow \\vec{V}_{cm}=\\text{constant}",
+        "meaning": "Conservation of momentum of a system"
+      }
+    ],
     "questionIds": [
       "50d961c4-afd1-425f-abb4-dfba8381ecfc"
     ],
     "tags": [
       "AIPMT Screening 2010"
     ],
-    "source": "seed"
+    "source": "authored"
   },
   {
     "id": "note-system-of-particles-and-rotational-motion-objective-i",
@@ -1004,65 +709,25 @@
     "unitId": "xi-rotation",
     "unitLabel": "Unit V — Systems & Rigid Bodies",
     "order": 5,
-    "title": "Overview",
-    "summary": "Given that, $$ m_{1}=5\\mathrm{~kg},m_{2}=10\\mathrm{~kg~and} $$ $$ r=1\\mathrm{~m}=100\\mathrm{~cm} $$ Let C.M.",
-    "body": "**Key points from solved questions**\n- Given that, $$ m_{1}=5\\mathrm{~kg},m_{2}=10\\mathrm{~kg~and} $$ $$ r=1\\mathrm{~m}=100\\mathrm{~cm} $$ Let C.M. lies at origin O, $$ \\mathrm{A}\\stackrel{m_{1}}{\\underset{|}{\\longrightarrow}}\\frac{\\mathrm{O}}{r_{1}}\\stackrel{\\mathrm{O}}{\\underset{|}{\\longrightarrow}}\\frac{m_{2}}{r_{2}}\\stackrel{\\mathrm{B}}{\\underset{|}{\\longrightarrow}}r $$ $$ \\frac{m_{1}r_{1}-m_{2}r_{2}}{m_{1}+m_{2}}=0 $$ $$ 5r_{1}-10r_{2}=0 $$ $$ r_{2}=\\frac{r_{1}}{2} $$ Also $$ r_{1}+r_{2}=100 $$ $$ r_{1}+\\frac{r_{1}}{2}=100 $$ $$ 3r_{1}=200 $$ $$ r_{1}=\\frac{200}{3}=67cm $$\n- Centre of mass. $$ \\begin{array}{l}r_{\\mathrm{c m}}=\\frac{m_{1}x_{1}+m_{2}x_{2}+m_{3}x_{3}}{m_{1}+m_{2}+m_{3}}\\\\\\quad=\\frac{300\\times0+500\\times40+400\\times70}{300+500+400},\\\\\\quad=40\\mathrm{~c m}\\end{array} $$\n- According to the parallel axis theorem, $$ \\mathrm{I}=\\mathrm{I}_{\\mathrm{cm}}+m d^{2} $$ d is maximum to B. 38.(A) <div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_763_986_979_1122.jpg\" alt=\"Image\" width=\"18%\" /></div> Moment of inertia about an axis passing through one end $$ \\mathrm{I}=\\mathrm{I}_{\\mathrm{CM}}+md^{2} $$ $$ \\mathrm{I}=\\mathrm{I}_{0}+\\mathrm{M}\\left(\\frac{\\mathrm{L}}{2}\\right)^{2}=\\mathrm{I}_{0}+\\frac{\\mathrm{ML}^{2}}{4} $$\n- Centre of mass of each ball lies on the centre. $ \\Rightarrow $ Centre of mass of combined body will be at the centroid of equilateral triangle.",
+    "title": "How rigid-body motion = translation of the CM + rotation about the CM",
+    "summary": "Any rigid-body motion splits into translation of the centre of mass plus rotation about the CM; every linear quantity has a rotational analogue, and rolling links the two through $v_{cm}=\\omega R$.",
+    "body": "**Linear ↔ rotational analogues**\n- $x\\leftrightarrow\\theta,\\ v\\leftrightarrow\\omega,\\ a\\leftrightarrow\\alpha$.\n- mass $m\\leftrightarrow$ moment of inertia $I$; force $F\\leftrightarrow$ torque $\\tau$; momentum $p\\leftrightarrow$ angular momentum $L$.\n- $\\dfrac{1}{2}mv^2\\leftrightarrow\\dfrac{1}{2}I\\omega^2$.\n**Rolling without slipping**\n- Condition: $v_{cm}=\\omega R$.\n- Total KE: $KE=\\dfrac{1}{2}Mv_{cm}^2+\\dfrac{1}{2}I_{cm}\\omega^2=\\dfrac{1}{2}Mv_{cm}^2\\left(1+\\dfrac{k^2}{R^2}\\right)$.\n- Down an incline: $a=\\dfrac{g\\sin\\theta}{1+\\dfrac{I_{cm}}{MR^2}}$.\n**Exam traps**\n- For bodies rolling down the same incline the acceleration order is sphere $>$ disc $>$ ring (smaller $I/MR^2$ wins).\n- In pure rolling, static friction provides the torque but does no work.",
     "formulas": [
       {
-        "latex": "m_{1}=5\\mathrm{~kg},m_{2}=10\\mathrm{~kg~and}",
-        "meaning": ""
+        "latex": "v_{cm}=\\omega R",
+        "meaning": "Rolling-without-slipping condition"
       },
       {
-        "latex": "r=1\\mathrm{~m}=100\\mathrm{~cm}",
-        "meaning": ""
+        "latex": "KE=\\tfrac{1}{2}Mv_{cm}^2+\\tfrac{1}{2}I_{cm}\\omega^2",
+        "meaning": "Total KE of a rolling body"
       },
       {
-        "latex": "\\mathrm{A}\\stackrel{m_{1}}{\\underset{|}{\\longrightarrow}}\\frac{\\mathrm{O}}{r_{1}}\\stackrel{\\mathrm{O}}{\\underset{|}{\\longrightarrow}}\\frac{m_{2}}{r_{2}}\\stackrel{\\mathrm{B}}{\\underset{|}{\\longrightarrow}}r",
-        "meaning": ""
+        "latex": "a=\\dfrac{g\\sin\\theta}{1+\\frac{I_{cm}}{MR^2}}",
+        "meaning": "Acceleration of a body rolling down an incline"
       },
       {
-        "latex": "\\frac{m_{1}r_{1}-m_{2}r_{2}}{m_{1}+m_{2}}=0",
-        "meaning": ""
-      },
-      {
-        "latex": "5r_{1}-10r_{2}=0",
-        "meaning": ""
-      },
-      {
-        "latex": "r_{2}=\\frac{r_{1}}{2}",
-        "meaning": ""
-      },
-      {
-        "latex": "r_{1}+r_{2}=100",
-        "meaning": ""
-      },
-      {
-        "latex": "r_{1}+\\frac{r_{1}}{2}=100",
-        "meaning": ""
-      },
-      {
-        "latex": "3r_{1}=200",
-        "meaning": ""
-      },
-      {
-        "latex": "r_{1}=\\frac{200}{3}=67cm",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{array}{l}r_{\\mathrm{c m}}=\\frac{m_{1}x_{1}+m_{2}x_{2}+m_{3}x_{3}}{m_{1}+m_{2}+m_{3}}\\\\\\quad=\\frac{300\\times0+500\\times40+400\\times70}{300+500+400},\\\\\\quad=40\\mathrm{~c m}\\end{array}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathrm{I}=\\mathrm{I}_{\\mathrm{cm}}+m d^{2}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathrm{I}=\\mathrm{I}_{\\mathrm{CM}}+md^{2}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathrm{I}=\\mathrm{I}_{0}+\\mathrm{M}\\left(\\frac{\\mathrm{L}}{2}\\right)^{2}=\\mathrm{I}_{0}+\\frac{\\mathrm{ML}^{2}}{4}",
-        "meaning": ""
+        "latex": "F\\leftrightarrow\\tau,\\ m\\leftrightarrow I,\\ p\\leftrightarrow L",
+        "meaning": "Linear-to-rotational analogues"
       }
     ],
     "questionIds": [
@@ -1077,7 +742,7 @@
       "AIPMT 1994",
       "AIPMT 1993"
     ],
-    "source": "seed"
+    "source": "authored"
   },
   {
     "id": "note-system-of-particles-and-rotational-motion-torque-and-angular-momentum",
@@ -1087,73 +752,25 @@
     "unitId": "xi-rotation",
     "unitLabel": "Unit V — Systems & Rigid Bodies",
     "order": 5,
-    "title": "Torque and Angular Momentum",
-    "summary": "The torques $F_{1}d$ and $F_{2}d$ of $F_{1}$ and $F_{2}$ respectively are counterclockwise.",
-    "body": "**Key points from solved questions**\n- According to question, Position vector, $$ \\hat{r}=2\\hat{k}\\mathbf{m} $$ Force $$ \\overset{\\rightarrow}{\\mathbf{F}}=3\\hat{j}\\mathbf{N} $$ ∴ Torque, $$ \\begin{array}{l}\\rightarrow\\\\\\tau=\\stackrel{\\rightarrow}{r}\\times\\stackrel{\\rightarrow}{F}=2\\hat{k}\\times3\\hat{j}\\\\=-6\\hat{i}\\\\\\\\=-6\\hat{i}\\mathrm{N m}.\\end{array} $$\n- From the question. Force. $$ \\stackrel{\\rightarrow}{\\mathrm{\\boldmath~F~}}=\\alpha\\hat{i}+3\\hat{j}+6\\hat{k} $$ and Position. $$ \\overset{\\rightarrow}{r}=2\\hat{i}-6\\hat{j}-12\\hat{k} $$ Using law of conservation of angular moments, $$ \\tau=c o n s t a n t $$ $$ \\overset{\\to}{r}\\;\\times\\;\\overset{\\to}{\\mathrm{F}}=0 $$ $$ \\begin{aligned}&(2\\hat{i}-6\\hat{j}-12\\hat{k})\\times(\\alpha\\hat{i}+3\\hat{j}+6\\hat{k})=\\begin{vmatrix}\\hat{i}&\\hat{j}&\\hat{k}\\\\2&-6&-12\\\\\\alpha&3&6\\end{vmatrix}=0\\\\ &\\Rightarrow(-36+36)\\overset{\\hat{i}-}(12+12\\alpha)\\overset{\\hat{j}}{}+(6+6\\alpha)\\overset{\\hat{k}}{=}0\\\\ &\\Rightarrow-12(1+\\alpha)\\overset{\\hat{j}+}6(1+\\alpha)\\overset{\\hat{k}}{=}0\\\\ &\\Rightarrow\\alpha=-1\\\\ \\end{aligned} $$\n- The formula is $L = m \\, (r \\times v)$. This shows that when a mass is rotating in a plane about a fixed point, its angular momentum is directed along a line perpendicular to the plane of rotation.\n- The torques $F_{1}d$ and $F_{2}d$ of $F_{1}$ and $F_{2}$ respectively are counterclockwise. The torque $F_{3}d$ is clockwise. <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//d7992c4e-9784-462a-97ce-ed68b9b64c0a/markdown_4/imgs/img_in_image_box_161_958_445_1161.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A15%3A54Z%2F-1%2F%2F97ed3373ef47f86efe92b6c1616f0ca7881ee73ff72c41d424543cf3bf7e893c\" alt=\"Image\" width=\"23%\" /></div> $$ \\begin{array}{r l r}&{\\xrightarrow{}\\tau_{\\mathrm{N e t}}=0}&\\\\ &{\\Longrightarrow\\mathrm{~F}_{1}d+\\mathrm{F}_{2}d-\\mathrm{F}_{3}d=0}\\end{array} $$ (counterclockwise direction as positive) $$ \\mathbf{F}_{3}=\\mathbf{F}_{1}+\\mathbf{F}_{2} $$\n- Torque is an axial vector i.e., its direction is always perpendicular to the plane containing vectors $ \\overrightarrow{r} $ and $ \\overrightarrow{F} $. Therefore, $$ \\overrightarrow{\\tau}~=~\\overrightarrow{r}\\times\\overrightarrow{\\mathrm{F}} $$ $ \\because $ Torque is perpendicular to both $ \\overrightarrow{r} $ and $ \\overrightarrow{F} $. $$ \\ddots $$ $$ \\overset{\\to}{\\tau}\\overset{\\to}{.}\\overset{\\to}{r}_{}={0} $$ $$ \\ddot{\\theta} $$ $$ {\\overrightarrow{\\mathrm{\\boldmath~F}}}\\cdot{\\overrightarrow{\\tau}}=0 $$",
+    "title": "How torque changes angular momentum",
+    "summary": "Torque is the rotational analogue of force, $\\vec\\tau=\\vec r\\times\\vec F$, and it equals the rate of change of angular momentum, $\\vec\\tau=\\dfrac{d\\vec L}{dt}$.",
+    "body": "**Must know**\n- Torque of a force: $\\vec{\\tau}=\\vec{r}\\times\\vec{F}$, magnitude $\\tau=rF\\sin\\theta=F\\times(\\text{perpendicular lever arm})$.\n- Angular momentum of a particle: $\\vec{L}=\\vec{r}\\times\\vec{p}$, magnitude $L=rp\\sin\\theta$.\n- For a system about a fixed point: $\\vec{\\tau}_{ext}=\\dfrac{d\\vec{L}}{dt}$.\n- If $\\vec{\\tau}_{ext}=0$, total angular momentum $\\vec{L}$ is conserved (a skater pulling in their arms spins faster).\n**Exam traps**\n- Torque and angular momentum are defined about a chosen point/axis — state it.\n- A force whose line of action passes through the axis (or is parallel to $\\vec r$) gives zero torque.",
     "formulas": [
       {
-        "latex": "\\hat{r}=2\\hat{k}\\mathbf{m}",
-        "meaning": ""
+        "latex": "\\vec{\\tau}=\\vec{r}\\times\\vec{F},\\quad \\tau=rF\\sin\\theta",
+        "meaning": "Torque of a force about a point"
       },
       {
-        "latex": "\\overset{\\rightarrow}{\\mathbf{F}}=3\\hat{j}\\mathbf{N}",
-        "meaning": ""
+        "latex": "\\vec{L}=\\vec{r}\\times\\vec{p},\\quad L=rp\\sin\\theta",
+        "meaning": "Angular momentum of a particle"
       },
       {
-        "latex": "\\begin{array}{l}\\rightarrow\\\\\\tau=\\stackrel{\\rightarrow}{r}\\times\\stackrel{\\rightarrow}{F}=2\\hat{k}\\times3\\hat{j}\\\\=-6\\hat{i}\\\\\\\\=-6\\hat{i}\\mathrm{N m}.\\end{array}",
-        "meaning": ""
+        "latex": "\\vec{\\tau}_{ext}=\\dfrac{d\\vec{L}}{dt}",
+        "meaning": "Torque equals rate of change of angular momentum"
       },
       {
-        "latex": "\\stackrel{\\rightarrow}{\\mathrm{\\boldmath~F~}}=\\alpha\\hat{i}+3\\hat{j}+6\\hat{k}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\overset{\\rightarrow}{r}=2\\hat{i}-6\\hat{j}-12\\hat{k}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\tau=c o n s t a n t",
-        "meaning": ""
-      },
-      {
-        "latex": "\\overset{\\to}{r}\\;\\times\\;\\overset{\\to}{\\mathrm{F}}=0",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{aligned}&(2\\hat{i}-6\\hat{j}-12\\hat{k})\\times(\\alpha\\hat{i}+3\\hat{j}+6\\hat{k})=\\begin{vmatrix}\\hat{i}&\\hat{j}&\\hat{k}\\\\2&-6&-12\\\\\\alpha&3&6\\end{vmatrix}=0\\\\ &\\Rightarrow(-36+36)\\overset{\\hat{i}-}(12+12\\alpha)\\overset{\\hat{j}}{}+(6+6\\alpha)\\overset{\\hat{k}}{=}0\\\\ &\\Rightarrow-12(1+\\alpha)\\overset{\\hat{j}+}6(1+\\alpha)\\overset{\\hat{k}}{=}0\\\\ &\\Rightarrow\\alpha=-1\\\\ \\end{aligned}",
-        "meaning": ""
-      },
-      {
-        "latex": "L = m \\, (r \\times v)",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{array}{r l r}&{\\xrightarrow{}\\tau_{\\mathrm{N e t}}=0}&\\\\ &{\\Longrightarrow\\mathrm{~F}_{1}d+\\mathrm{F}_{2}d-\\mathrm{F}_{3}d=0}\\end{array}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathbf{F}_{3}=\\mathbf{F}_{1}+\\mathbf{F}_{2}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\overrightarrow{\\tau}~=~\\overrightarrow{r}\\times\\overrightarrow{\\mathrm{F}}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\ddots",
-        "meaning": ""
-      },
-      {
-        "latex": "\\overset{\\to}{\\tau}\\overset{\\to}{.}\\overset{\\to}{r}_{}={0}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\ddot{\\theta}",
-        "meaning": ""
-      },
-      {
-        "latex": "{\\overrightarrow{\\mathrm{\\boldmath~F}}}\\cdot{\\overrightarrow{\\tau}}=0",
-        "meaning": ""
+        "latex": "\\vec{\\tau}_{ext}=0 \\Rightarrow \\vec{L}=\\text{constant}",
+        "meaning": "Conservation of angular momentum"
       }
     ],
     "questionIds": [
@@ -1169,7 +786,7 @@
       "AIPMT Screening 2012",
       "AIPMT Screening 2009"
     ],
-    "source": "seed"
+    "source": "authored"
   },
   {
     "id": "note-system-of-particles-and-rotational-motion-vector-product-of-two-vectors",
@@ -1179,65 +796,25 @@
     "unitId": "xi-rotation",
     "unitLabel": "Unit V — Systems & Rigid Bodies",
     "order": 5,
-    "title": "Vector Product of Two Vectors",
-    "summary": "Vector triple product of three vectors $\\overrightarrow{A}$, $\\overrightarrow{D}$ and $C$ is:…",
-    "body": "**Key points from solved questions**\n- $ \\overrightarrow{A} \\times 0 $ is a zero vector.\n- Vector triple product of three vectors $\\overrightarrow{A}$, $\\overrightarrow{D}$ and $C$ is: $\\overrightarrow{A}\\times(\\overrightarrow{B}\\times\\overrightarrow{C})=(\\overrightarrow{A}\\cdot\\overrightarrow{C})\\overrightarrow{B}-(\\overrightarrow{A}\\cdot\\overrightarrow{B})\\overrightarrow{C}$ Given: $\\overrightarrow{A} \\cdot \\overrightarrow{B} = 0$, $\\overrightarrow{A} \\cdot \\overrightarrow{C} = 0$ $\\therefore \\overrightarrow{A} \\times (\\overrightarrow{B} \\times \\overrightarrow{C}) = 0$ Thus, the vector $\\overrightarrow{A}$ is parallel to vector $\\overrightarrow{B} \\times \\overrightarrow{C}$.\n- $ \\begin{array}{l} |\\overrightarrow{A} \\times \\overrightarrow{B}| = \\sqrt{3} (\\overrightarrow{A} \\cdot \\overrightarrow{B}) \\\\ \\therefore \\quad AB \\sin \\theta = \\sqrt{3} AB \\cos \\theta \\\\ \\text{or,} \\quad \\tan \\theta = \\sqrt{3} \\\\ \\text{or,} \\quad \\theta = \\tan^{-1} \\sqrt{3} = 60^{\\circ}\\end{array} $\n- Let $ \\overrightarrow{A} \\times \\overrightarrow{B} = C $ The cross product of $ \\overrightarrow{B} $ and $ \\overrightarrow{A} $ is perpendicular to the plane containing $ \\overrightarrow{A} $ and $ \\overrightarrow{B} $ i.e., perpendicular to $ \\overrightarrow{A} $. Therefore, product of $ (\\overrightarrow{B} \\times \\overrightarrow{A}) \\cdot \\overrightarrow{A} = (BA \\sin \\theta) A \\cos 90^{\\circ} = 0 $ $ \\therefore \\cos 90^{\\circ} = 0 $\n- $ |\\overrightarrow{A} \\times \\overrightarrow{B}| = \\sqrt{3} \\overrightarrow{A} \\cdot \\overrightarrow{B} $ $ |\\overrightarrow{A} | \\overrightarrow{B}| \\sin \\theta = \\sqrt{3} |\\overrightarrow{A} | \\overrightarrow{B}| \\cos \\theta $ $ \\tan \\theta = \\sqrt{3} $ $ \\Rightarrow $ $ \\theta = 60^\\circ $ $ |\\overrightarrow{A} + \\overrightarrow{B}| = \\sqrt{|\\overrightarrow{A}|^2 + |\\overrightarrow{B}|^2 + 2 |\\overrightarrow{A}||\\overrightarrow{B}| \\cos \\theta} $ $ = (A^2 + B^2 + AB)^{1/2} $",
+    "title": "How the cross product builds torque and angular momentum",
+    "summary": "The vector (cross) product gives a vector perpendicular to both inputs, magnitude $AB\\sin\\theta$, direction by the right-hand rule — the foundation of torque, angular momentum and $\\vec v=\\vec\\omega\\times\\vec r$.",
+    "body": "**Must know**\n- $\\vec{A}\\times\\vec{B}=AB\\sin\\theta\\,\\hat{n}$; its magnitude equals the area of the parallelogram formed by $\\vec A$ and $\\vec B$.\n- It is anticommutative: $\\vec{A}\\times\\vec{B}=-\\vec{B}\\times\\vec{A}$, and $\\vec{A}\\times\\vec{A}=0$.\n- Right-handed unit triad: $\\hat{i}\\times\\hat{j}=\\hat{k},\\ \\hat{j}\\times\\hat{k}=\\hat{i},\\ \\hat{k}\\times\\hat{i}=\\hat{j}$.\n**Exam traps**\n- Use $\\sin\\theta$ (not $\\cos\\theta$, which belongs to the dot product).\n- The cross product of two parallel or antiparallel vectors is zero.\n- Order matters — reversing the factors flips the sign.",
     "formulas": [
       {
-        "latex": "\\overrightarrow{A}\\times(\\overrightarrow{B}\\times\\overrightarrow{C})=(\\overrightarrow{A}\\cdot\\overrightarrow{C})\\overrightarrow{B}-(\\overrightarrow{A}\\cdot\\overrightarrow{B})\\overrightarrow{C}",
-        "meaning": ""
+        "latex": "|\\vec{A}\\times\\vec{B}|=AB\\sin\\theta",
+        "meaning": "Magnitude of the cross product"
       },
       {
-        "latex": "\\overrightarrow{A} \\cdot \\overrightarrow{B} = 0",
-        "meaning": ""
+        "latex": "\\hat{i}\\times\\hat{j}=\\hat{k},\\ \\hat{j}\\times\\hat{k}=\\hat{i},\\ \\hat{k}\\times\\hat{i}=\\hat{j}",
+        "meaning": "Right-handed unit-vector products"
       },
       {
-        "latex": "\\overrightarrow{A} \\cdot \\overrightarrow{C} = 0",
-        "meaning": ""
+        "latex": "\\vec{A}\\times\\vec{B}=\\begin{vmatrix}\\hat{i}&\\hat{j}&\\hat{k}\\\\A_x&A_y&A_z\\\\B_x&B_y&B_z\\end{vmatrix}",
+        "meaning": "Determinant form of the cross product"
       },
       {
-        "latex": "\\therefore \\overrightarrow{A} \\times (\\overrightarrow{B} \\times \\overrightarrow{C}) = 0",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{array}{l} |\\overrightarrow{A} \\times \\overrightarrow{B}| = \\sqrt{3} (\\overrightarrow{A} \\cdot \\overrightarrow{B}) \\\\ \\therefore \\quad AB \\sin \\theta = \\sqrt{3} AB \\cos \\theta \\\\ \\text{or,} \\quad \\tan \\theta = \\sqrt{3} \\\\ \\text{or,} \\quad \\theta = \\tan^{-1} \\sqrt{3} = 60^{\\circ}\\end{array}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\overrightarrow{A} \\times \\overrightarrow{B} = C",
-        "meaning": ""
-      },
-      {
-        "latex": "(\\overrightarrow{B} \\times \\overrightarrow{A}) \\cdot \\overrightarrow{A} = (BA \\sin \\theta) A \\cos 90^{\\circ} = 0",
-        "meaning": ""
-      },
-      {
-        "latex": "\\therefore \\cos 90^{\\circ} = 0",
-        "meaning": ""
-      },
-      {
-        "latex": "|\\overrightarrow{A} \\times \\overrightarrow{B}| = \\sqrt{3} \\overrightarrow{A} \\cdot \\overrightarrow{B}",
-        "meaning": ""
-      },
-      {
-        "latex": "|\\overrightarrow{A} | \\overrightarrow{B}| \\sin \\theta = \\sqrt{3} |\\overrightarrow{A} | \\overrightarrow{B}| \\cos \\theta",
-        "meaning": ""
-      },
-      {
-        "latex": "\\tan \\theta = \\sqrt{3}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\theta = 60^\\circ",
-        "meaning": ""
-      },
-      {
-        "latex": "|\\overrightarrow{A} + \\overrightarrow{B}| = \\sqrt{|\\overrightarrow{A}|^2 + |\\overrightarrow{B}|^2 + 2 |\\overrightarrow{A}||\\overrightarrow{B}| \\cos \\theta}",
-        "meaning": ""
-      },
-      {
-        "latex": "= (A^2 + B^2 + AB)^{1/2}",
-        "meaning": ""
+        "latex": "\\vec{A}\\times\\vec{B}=-\\vec{B}\\times\\vec{A}",
+        "meaning": "Cross product is anticommutative"
       }
     ],
     "questionIds": [
@@ -1254,7 +831,7 @@
       "AIPMT 2005, 1989",
       "AIPMT 2004"
     ],
-    "source": "seed"
+    "source": "authored"
   },
   {
     "id": "note-system-of-particles-and-rotational-motion-reneet2026",
