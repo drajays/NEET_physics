@@ -7,105 +7,25 @@
     "unitId": "xii-dual",
     "unitLabel": "Unit VIII — Dual Nature of Radiation",
     "order": 24,
-    "title": "Einstein's Photoelectric Equation: Energy Quantum of Radiation",
-    "summary": "Given: Energy of photon, E = 2.20 eV Work function of, $ \\mathrm{Cs}_{\\phi}=2.14\\ \\mathrm{eV} $, $$ \\mathrm{K}_{\\phi}=2.30~\\mathrm{e V}, $$ $$ \\mathrm{Na}_{\\phi}=2.75\\mathrm{eV} $$ we know.",
-    "body": "**Key points from solved questions**\n- The energy of a photon with wavelength $ \\lambda $ is given by $ e = \\frac{hc}{\\lambda} $. For photoelectric effect, the relation for maximum kinetic energy of the ejected electron is, $$ \\mathbf{K}_{\\mathrm{m a x}}=e-\\boldsymbol{\\phi} $$\n- Given: Energy of photon, E = 2.20 eV Work function of, $ \\mathrm{Cs}_{\\phi}=2.14\\ \\mathrm{eV} $, $$ \\mathrm{K}_{\\phi}=2.30~\\mathrm{e V}, $$ $$ \\mathrm{Na}_{\\phi}=2.75\\mathrm{eV} $$ we know. electron emits when $ h\\nu > \\phi_{0} $ So, it is clear that energy of photon is more than the work function of Cs only. Hence, Cs can emit the photoelectrons. <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//9ac48b8d-8abf-4467-a4ed-dfef13c76853/markdown_3/imgs/img_in_image_box_84_1270_119_1317.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A35Z%2F-1%2F%2Fdf605518b57e0d4fcd7c4cc8a01b31179bd3efdff84f0e537c9ba010d472dd9a\" alt=\"Image\" width=\"2%\" /></div> ##### Related Theory The number of photoelectrons emitted per second is proportional to the intensity of incident radiation. <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//9ac48b8d-8abf-4467-a4ed-dfef13c76853/markdown_3/imgs/img_in_image_box_78_1361_118_1408.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A35Z%2F-1%2F%2F221e1bbeaee005b5aad44a570156f13fecd075751a9f34923d4800989a0a1fe0\" alt=\"Image\" width=\"3%\" /></div> ##### Mnemonics Electron emission can be done by 3 process (1) The-Thermionic Emission (2) Field-Field Emission (3) Photo-Photoelectric Emission\n- According to photoelectric effect, $$ h\\mathbf{v}=h\\mathbf{v}_{o}+\\frac{e\\mathbf{V}_{s}}{2} $$ $$ \\mathbf{E}=h\\mathbf{v}_{o}+\\mathbf{e}\\mathbf{V}_{o} $$ $$ \\frac{h\\mathbf{v}}{2}=h\\mathbf{v}_{o}+e\\mathbf{V}_{s} $$ $$ \\frac{h\\mathbf{v}}{2}=\\frac{-e\\mathbf{V}_{s}}{2} $$ $$ -h\\mathbf{v}=e\\mathbf{V}_{s} $$ Putting (iii) in eq (i), we get $$ h\\mathbf{v}=h\\mathbf{v}_{o}-\\frac{h\\mathbf{v}}{2} $$ So, $$ \\mathbf{v}_{o}=\\frac{3}{2}\\mathbf{v} $$\n- Work function of material is $$ \\mathbf{W}=h\\mathbf{v}=\\frac{hc}{\\lambda} $$ Here h = planck's constant $$ h=6.63\\times10^{-34}\\mathrm{J{-}s} $$ $$ c=\\mathrm{speed~of~light}=3\\times10^{8}\\mathrm{~m/s} $$ $$ \\lambda=wavelength~of~light $$ And $$ \\mathbf{W}=h\\mathbf{v}=4\\times1.6\\times10^{-19}\\mathbf{J} $$ From eq. (i) and (ii) we can write, $$ 4\\times1.6\\times10^{-19}=\\frac{6.63\\times10^{-34}\\times3\\times10^{8}}{\\lambda} $$ $$ \\lambda=\\frac{6.63\\times10^{-34}\\times3\\times10^{8}}{4\\times1.6\\times10^{-19}} $$ $$ \\begin{aligned}\\lambda&=3.108\\times10^{-7}m\\\\&=310nm\\end{aligned} $$\n- From Einstein's photoelectric equation, we can write, $$ \\mathrm{E}=\\mathbf{W}_{0}+\\frac{1}{2}m\\mathbf{v}^{2} $$ where $$ \\mathbf{W}_{0}=\\mathbf{W}or\\mathbf{k}\\;function $$ $$ \\frac{1}{2}mv^{2}=Kinectic energy $$ and $$ \\mathbf{E}=h\\mathbf{v} $$ When incident frequency of light is $ v = 2v_{0} $, then eq. (i) become, $$ h(2\\mathbf{v}_{0})=h\\mathbf{v}_{0}+\\frac{1}{2}m\\mathbf{v}_{1}^{2} $$ $$ h\\mathbf{v}_{0}=\\frac{1}{2}m\\mathbf{v}_{1}^{2} $$ When incident frequency of light is $ v = 5v_{0} $, then eq. (i) becomes, $$ \\begin{aligned}h(5\\mathbf{v}_{0})&=h\\mathbf{v}_{0}+\\frac{1}{2}m\\mathbf{v}_{2}^{2}\\\\4h\\mathbf{v}_{0}&=\\frac{1}{2}m\\mathbf{v}_{2}^{2}\\end{aligned} $$ From eq. (ii) and eq. (iii), we have $$ \\begin{aligned}&\\frac{h\\mathbf{v}_{0}}{4h\\mathbf{v}_{0}}=\\frac{\\frac{1}{2}m\\mathbf{v}_{1}^{2}}{\\frac{1}{2}m\\mathbf{v}_{2}^{2}}\\\\ \\Rightarrow\\quad&\\frac{\\mathbf{v}_{1}^{2}}{\\mathbf{v}_{2}^{2}}=\\frac{1}{4}\\\\ \\Rightarrow\\quad&\\frac{\\mathbf{v}_{1}}{\\mathbf{v}_{2}}=1:2\\\\ \\end{aligned} $$\n- Given: Threshold wavelength, $ \\lambda_{0} = 3250 \\times 10^{-10} \\, \\text{m} $ Wavelength of UV light, $ \\lambda = 2536 \\times 10^{-10} $ m We know that Einstein's photoelectric equation is. $$ \\begin{aligned}&\\mathrm{E}=\\mathrm{K}+\\mathrm{W}\\\\&\\mathrm{h}\\mathrm{v}=\\frac{1}{2}m\\mathrm{v}^{2}+h\\mathrm{v}_{0}\\\\ \\Rightarrow\\ \\frac{1}{2}m\\mathrm{v}^{2}=h\\mathrm{v}-h\\mathrm{v}_{0}=h(\\mathrm{v}-\\mathrm{v}_{0})\\\\&=\\quad h c\\left(\\frac{1}{\\lambda}-\\frac{1}{\\lambda_{0}}\\right)\\\\ \\Rightarrow\\quad\\mathrm{v}&=\\sqrt{\\frac{2h c}{m_{0}}\\left(\\frac{1}{\\lambda}-\\frac{1}{\\lambda_{0}}\\right)}\\\\&=\\sqrt{\\frac{2\\times6.02\\times10^{-34}\\times3\\times10^{8}}{9.1\\times10^{-31}}\\left(\\frac{3250-2536}{3250\\times2536}\\right)}\\\\&=0.6\\times10^{6}\\mathrm{~m s}^{-1}\\\\&=6\\times10^{5}\\mathrm{~m s}^{-1}\\end{aligned} $$\n- From photoelectric equation, we have $$ h\\mathbf{v}=\\mathbf{W}+\\frac{1}{2}m\\mathbf{v}_{0}^{2} $$ where, $$ KE=h\\mathbf{v}-\\mathbf{W} $$ putting the given values. $$ 2eV=5eV-W $$ $$ \\mathbf{W}=3\\mathbf{V} $$ $$ V_{\\text{cathode}} - V_{\\text{anode}} = 3\\,V $$ $$ \\therefore\\mathrm{V}_{\\text{anode}}-\\mathrm{V}_{\\text{cathode}}=-3\\mathrm{~V} $$\n- From Einstein's photoelectric equation, where, $$ \\begin{array}{r}{h\\mathbf{v}=\\mathbf{W}+\\mathbf{K}_{\\mathrm{m a x}}}\\\\ {\\mathbf{W}=\\mathrm{w o r k f u n c t i o n}}\\\\ {\\mathbf{K}_{\\mathrm{m a x}}=\\mathrm{k i n e t i c e n e r g y}}\\\\ {\\mathbf{K}_{\\mathrm{m a x}}=h\\mathbf{v}-\\mathbf{W}}\\end{array} $$ $$ \\mathbf{K}_{\\max}=\\frac{hc}{\\lambda}-\\mathbf{W} $$ In the question, maximum kinetic energy of emitted electron is 3 times that in first case. $$ 3K_{\\max}=\\frac{hc}{\\frac{\\lambda}{2}}-W $$ From eq. (i) and (ii), $$ \\mathbf{W}=\\frac{hc}{2\\lambda} $$\n- From Einstein's photoelectric equation, $$ h\\mathbf{v}=\\mathbf{W}+(\\mathbf{K}.\\mathbf{E}.)_{\\max} $$ $$ \\left(\\mathbf{K.E.}\\right)_{\\max}=h\\mathbf{v}-\\mathbf{W} $$ In first condition, $$ 0.5=\\mathrm{E}-\\mathrm{W} $$ In second condition, $$ 0.8=1.2\\mathrm{E}-\\mathrm{W} $$ From (ii) and (iii), $$ -0.3=-0.2\\mathrm{E} $$ $$ E=\\frac{0.3}{0.2}=1.5eV $$ Putting in eq. (ii) we get, $$ \\begin{aligned}&0.5=1.5-\\mathbf{W}\\\\&\\mathbf{W}=1.5-0.5=1\\mathbf{eV}\\\\ \\end{aligned} $$\n- We know that, $$ \\frac{1}{2}m v_{\\mathrm{max}}^{2}=h v $$ $$ \\mathbf{v}_{\\max}^{2}=\\frac{2h\\mathbf{v}}{m} $$ $$ \\mathbf{v}_{\\mathrm{max}}=\\sqrt{\\frac{2h\\mathbf{v}}{m}} $$\n- $$ \\begin{aligned}\\mathrm{v}_{\\max}&=\\sqrt{\\frac{2}{m}(\\mathrm{KE}_{\\max})}\\\\ &=\\sqrt{\\frac{2}{m}(\\mathrm{E}_{ph}-\\mathrm{W})}\\end{aligned} $$ $$ \\frac{\\mathbf{v}_{1}}{\\mathbf{v}_{2}}=\\sqrt{\\frac{1-0.5}{2.5-0.5}}=\\sqrt{\\frac{0.5}{2}}=1:2 $$\n- Given. Threshold frequency, $ v_{0} = 3.3 \\times 10^{14} $ Hz and light of frequency, $ v = 8.2 \\times 10^{14} $ Hz Then we know from Einstein's photoelectric equation, $$ \\mathbf{e V}_{0}=\\mathbf{E}-h\\mathbf{v}_{0} $$ $$ \\mathbf{V}_{0}=\\frac{\\mathrm{E}-h\\mathbf{v}_{0}}{e} $$ $$ \\mathbf{V}_{0}=\\frac{h(\\mathbf{v}-\\mathbf{v}_{0})}{e} $$ $$ \\mathrm{V}_{0}=\\frac{6.62\\times10^{-34}(8.2\\times10^{14}-3.3\\times10^{14})}{1.6\\times10^{-19}} $$ $$ \\mathrm{V}_{0}=\\frac{6.62\\times10^{-34}}{1.6}\\times4.9\\times10^{33} $$ $$ V_{0}=\\frac{6.62\\times4.9\\times10^{-1}}{1.6} $$ $$ \\mathrm{V}_{0}=2\\mathrm{v o l t} $$\n- Using Einstein's photoelectric equation where. $$ \\begin{aligned}\\mathrm{KE}_{\\max}&=\\mathrm{E}-f\\\\f&=\\text{work function}\\\\\\mathrm{KE}_{\\max}&=\\text{Maximum kinetic energy}\\\\h\\mathbf{v}&=\\mathbf{e}\\mathrm{V}_{0}+f\\\\h\\mathbf{v}&=5\\mathrm{eV}+6.2\\mathrm{eV}=11.2\\mathrm{eV}\\\\\\lambda&=\\left(\\frac{12400}{112\\mathrm{eV}}\\right)=1.104\\times10^{-7}\\mathrm{n}\\end{aligned} $$ Hence, the radiation lies in ultraviolet region.\n- According to given situation, $$ \\begin{aligned}&and\\\\ &\\Longrightarrow\\\\ \\end{aligned} $$ $$ \\begin{aligned}h\\mathbf{v}&=\\mathbf{E}_{0}+\\mathbf{K}\\\\2h\\mathbf{v}&=\\mathbf{E}_{0}+\\mathbf{K}^{\\prime}\\\\\\mathbf{K}^{\\prime}&=\\mathbf{K}+h\\mathbf{v}\\end{aligned} $$",
+    "title": "Why Einstein's equation explains the photoelectric effect",
+    "summary": "Einstein's equation KE_max = hν − φ₀ says a photon's energy frees an electron (overcoming the work function φ₀) and gives it kinetic energy — explaining the threshold and the role of frequency.",
+    "body": "**Must know**\n- $KE_{max}=h\\nu-\\phi_0$, where the work function $\\phi_0=h\\nu_0$.\n- In terms of stopping potential: $eV_0=h\\nu-\\phi_0$.\n- Below $\\nu_0$ no electron is emitted (the photon energy is less than $\\phi_0$).\n- A graph of $V_0$ versus $\\nu$ is a straight line of slope $h/e$.\n**Exam traps**\n- One photon ejects at most one electron.\n- $KE_{max}$ is linear in frequency; its intercept gives the work function.",
     "formulas": [
       {
-        "latex": "\\mathbf{K}_{\\mathrm{m a x}}=e-\\boldsymbol{\\phi}",
-        "meaning": ""
+        "latex": "KE_{max}=h\\nu-\\phi_0",
+        "meaning": "Einstein's photoelectric equation"
       },
       {
-        "latex": "e = \\frac{hc}{\\lambda}",
-        "meaning": ""
+        "latex": "eV_0=h\\nu-\\phi_0",
+        "meaning": "Stopping-potential form"
       },
       {
-        "latex": "\\mathrm{K}_{\\phi}=2.30~\\mathrm{e V},",
-        "meaning": ""
+        "latex": "\\phi_0=h\\nu_0",
+        "meaning": "Work function and threshold frequency"
       },
       {
-        "latex": "\\mathrm{Na}_{\\phi}=2.75\\mathrm{eV}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathrm{Cs}_{\\phi}=2.14\\ \\mathrm{eV}",
-        "meaning": ""
-      },
-      {
-        "latex": "h\\mathbf{v}=h\\mathbf{v}_{o}+\\frac{e\\mathbf{V}_{s}}{2}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathbf{E}=h\\mathbf{v}_{o}+\\mathbf{e}\\mathbf{V}_{o}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\frac{h\\mathbf{v}}{2}=h\\mathbf{v}_{o}+e\\mathbf{V}_{s}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\frac{h\\mathbf{v}}{2}=\\frac{-e\\mathbf{V}_{s}}{2}",
-        "meaning": ""
-      },
-      {
-        "latex": "-h\\mathbf{v}=e\\mathbf{V}_{s}",
-        "meaning": ""
-      },
-      {
-        "latex": "h\\mathbf{v}=h\\mathbf{v}_{o}-\\frac{h\\mathbf{v}}{2}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathbf{v}_{o}=\\frac{3}{2}\\mathbf{v}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathbf{W}=h\\mathbf{v}=\\frac{hc}{\\lambda}",
-        "meaning": ""
-      },
-      {
-        "latex": "h=6.63\\times10^{-34}\\mathrm{J{-}s}",
-        "meaning": ""
-      },
-      {
-        "latex": "c=\\mathrm{speed~of~light}=3\\times10^{8}\\mathrm{~m/s}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\lambda=wavelength~of~light",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathbf{W}=h\\mathbf{v}=4\\times1.6\\times10^{-19}\\mathbf{J}",
-        "meaning": ""
-      },
-      {
-        "latex": "4\\times1.6\\times10^{-19}=\\frac{6.63\\times10^{-34}\\times3\\times10^{8}}{\\lambda}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\lambda=\\frac{6.63\\times10^{-34}\\times3\\times10^{8}}{4\\times1.6\\times10^{-19}}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{aligned}\\lambda&=3.108\\times10^{-7}m\\\\&=310nm\\end{aligned}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathrm{E}=\\mathbf{W}_{0}+\\frac{1}{2}m\\mathbf{v}^{2}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathbf{W}_{0}=\\mathbf{W}or\\mathbf{k}\\;function",
-        "meaning": ""
-      },
-      {
-        "latex": "\\frac{1}{2}mv^{2}=Kinectic energy",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathbf{E}=h\\mathbf{v}",
-        "meaning": ""
+        "latex": "\\text{slope of }V_0\\text{–}\\nu=\\dfrac{h}{e}",
+        "meaning": "Slope of the stopping-potential graph"
       }
     ],
     "questionIds": [
@@ -149,7 +69,7 @@
       "AIPMT 2000",
       "AIPMT 1995"
     ],
-    "source": "seed"
+    "source": "authored"
   },
   {
     "id": "note-dual-nature-of-radiation-and-matter-experimental-study-of-photoelectric-effect",
@@ -159,85 +79,21 @@
     "unitId": "xii-dual",
     "unitLabel": "Unit VIII — Dual Nature of Radiation",
     "order": 24,
-    "title": "Experimental Study of Photoelectric Effect",
-    "summary": "Photocell employs photoelectric effect to convert change in the intensity of illumination into a change in photoelectric current.",
-    "body": "**Key points from solved questions**\n- Stopping potential is independent of distance, hence, new stopping potential will remain unchanged. Stopping potential = $ V_{0} $\n- In a photoelectric effect, Stopping potential = Maximum kinetic energy So, $$ e\\mathbf{V}=\\mathbf{K}\\mathbf{E}_{\\max} $$ $$ V=\\frac{KE_{max}}{e}=\\frac{0.5eV}{e}=0.5V $$\n- From Einstein's photoelectric equation, $$ \\mathbf{E}=h(\\mathbf{v}-\\mathbf{v}_{0}) $$ $$ \\mathsf{v}\\ge\\mathsf{v}_{0} $$\n- Kinetic energy of photoelectrons depends on the frequency of incident radiation and number of photoelectrons depend on the intensity.\n- We know that energy of incident light $$ \\mathrm{E}=\\frac{h c}{\\lambda}=6.2\\mathrm{eV} $$ Using Einstein's photoelectric equation $$ \\begin{aligned}\\mathrm{E}&=\\mathrm{W}+\\mathrm{e}\\mathrm{V}_{0}\\\\\\mathrm{e}\\mathrm{V}_{0}&=\\mathrm{E}-\\mathrm{W}\\\\&=(6.2-5.01)\\end{aligned} $$ $$ \\begin{aligned}&=1.2\\ eV\\\\ \\mathbf{V}_{0}&=1.2\\ V\\end{aligned} $$\n- Curves $a$ and $b$ represent incident radiations of same frequency but of different intensities.\n- The number of photoelectrons emitted is directly proportional to the intensity of light.\n- Intensity is given by $$ I=\\frac{\\mathrm{P}}{4\\pi d^{2}} $$ where, P = Power of source d = distance We know (assume) that light to spread out uniformly in all direction, i.e., spherical source. $$ I\\propto\\frac{1}{d^{2}} $$ $$ \\frac{\\mathrm{I}_{1}}{\\mathrm{I}_{2}}=\\frac{d_{2}^{2}}{d_{1}^{2}} $$ $$ \\frac{\\mathrm{I}_{1}}{\\mathrm{I}_{2}}=\\left(\\frac{1}{0.5}\\right)^{2} $$ $$ \\frac{I_{1}}{I_{2}}=4 $$ $$ I_{2}=\\frac{I_{1}}{4} $$\n- Photocell employs photoelectric effect to convert change in the intensity of illumination into a change in photoelectric current. <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//9ac48b8d-8abf-4467-a4ed-dfef13c76853/markdown_2/imgs/img_in_image_box_593_1255_629_1299.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A31Z%2F-1%2F%2F000a7e14272da0fc01567dad0f0fb6728c5320fc6d777fe19fce17406ecc3531\" alt=\"Image\" width=\"3%\" /></div> ##### Related Theory A photocell is a technological application of the photoelectric effect. It is a device which converts light signal into an electrical signal.\n- For a point source, $ 1 \\propto \\frac{1}{r^{2}} $ As number of photoelectrons $ \\propto $ intensity, so, number of photoelectrons is quarter of the initial number.\n- Einstein's photoelectric effect theory states that a single incident photon ejects a single electron. As a result, as the intensity increases, the number of incident photons increases, and the number of emitted electrons increases, the photo current increases.\n- By work function of a metal, it means that the minimum energy required for the electron in the highest level of conduction band to get out of the metal. The work function has no effect on photoelectric current as long as $ h\\nu > W_{0} $. The photoelectric current is proportional to the intensity of incident light. Since, there is no change in the intensity of light. Hence, $$ I_{1}=I_{2} $$\n- When a photon of light with frequency v strikes a photosensitive metal surface, its energy (hv) is consumed in two ways. A portion of the photon's energy is utilized to liberate the electron from the metal surface, which is equal to the metal's work function $ W_{0} $. $$ \\mathbf{W}_{0}=h\\mathbf{v}_{0} $$ (where, $ v_{0} $ is threshold frequency) $$ \\Rightarrow\\quad\\mathbf{w}_{0}=\\frac{h c}{\\lambda_{0}} $$ Here, $$ \\begin{aligned}\\lambda_{0}&=5000\\text{Å }\\\\&=5000\\times10^{-10}m\\end{aligned} $$ $$ \\mathbf{W}_{0}=\\frac{6.63\\times10^{-34}\\times3\\times10^{8}}{5000\\times10^{-10}} $$ $$ =4\\times10^{-19}\\mathrm{N} $$",
+    "title": "How experiments reveal the laws of the photoelectric effect",
+    "summary": "Photoelectric experiments show emission is instantaneous, the stopping potential depends on frequency (not intensity), and there is a threshold frequency below which no emission occurs.",
+    "body": "**Must know**\n- The saturation photocurrent is proportional to the light intensity (above threshold).\n- The stopping potential $V_0$ satisfies $eV_0=KE_{max}$ and depends on frequency, not intensity.\n- There is a threshold frequency $\\nu_0$ below which no emission occurs, whatever the intensity.\n**Exam traps**\n- The stopping potential is independent of intensity; only the saturation current scales with intensity.\n- Emission is essentially instantaneous (~10⁻⁹ s), not delayed.",
     "formulas": [
       {
-        "latex": "e\\mathbf{V}=\\mathbf{K}\\mathbf{E}_{\\max}",
-        "meaning": ""
+        "latex": "eV_0=KE_{max}",
+        "meaning": "Stopping potential and maximum KE"
       },
       {
-        "latex": "V=\\frac{KE_{max}}{e}=\\frac{0.5eV}{e}=0.5V",
-        "meaning": ""
+        "latex": "KE_{max}=h\\nu-\\phi_0",
+        "meaning": "Maximum kinetic energy of photoelectrons"
       },
       {
-        "latex": "\\mathbf{E}=h(\\mathbf{v}-\\mathbf{v}_{0})",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathsf{v}\\ge\\mathsf{v}_{0}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathrm{E}=\\frac{h c}{\\lambda}=6.2\\mathrm{eV}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{aligned}\\mathrm{E}&=\\mathrm{W}+\\mathrm{e}\\mathrm{V}_{0}\\\\\\mathrm{e}\\mathrm{V}_{0}&=\\mathrm{E}-\\mathrm{W}\\\\&=(6.2-5.01)\\end{aligned}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{aligned}&=1.2\\ eV\\\\ \\mathbf{V}_{0}&=1.2\\ V\\end{aligned}",
-        "meaning": ""
-      },
-      {
-        "latex": "I=\\frac{\\mathrm{P}}{4\\pi d^{2}}",
-        "meaning": ""
-      },
-      {
-        "latex": "I\\propto\\frac{1}{d^{2}}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\frac{\\mathrm{I}_{1}}{\\mathrm{I}_{2}}=\\frac{d_{2}^{2}}{d_{1}^{2}}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\frac{\\mathrm{I}_{1}}{\\mathrm{I}_{2}}=\\left(\\frac{1}{0.5}\\right)^{2}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\frac{I_{1}}{I_{2}}=4",
-        "meaning": ""
-      },
-      {
-        "latex": "I_{2}=\\frac{I_{1}}{4}",
-        "meaning": ""
-      },
-      {
-        "latex": "I_{1}=I_{2}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathbf{W}_{0}=h\\mathbf{v}_{0}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\Rightarrow\\quad\\mathbf{w}_{0}=\\frac{h c}{\\lambda_{0}}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{aligned}\\lambda_{0}&=5000\\text{Å }\\\\&=5000\\times10^{-10}m\\end{aligned}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathbf{W}_{0}=\\frac{6.63\\times10^{-34}\\times3\\times10^{8}}{5000\\times10^{-10}}",
-        "meaning": ""
-      },
-      {
-        "latex": "=4\\times10^{-19}\\mathrm{N}",
-        "meaning": ""
+        "latex": "\\nu_0=\\dfrac{\\phi_0}{h}",
+        "meaning": "Threshold frequency"
       }
     ],
     "questionIds": [
@@ -267,7 +123,7 @@
       "AIPMT 1992",
       "AIPMT 1988"
     ],
-    "source": "seed"
+    "source": "authored"
   },
   {
     "id": "note-dual-nature-of-radiation-and-matter-introduction",
@@ -277,17 +133,17 @@
     "unitId": "xii-dual",
     "unitLabel": "Unit VIII — Dual Nature of Radiation",
     "order": 24,
-    "title": "Introduction",
-    "summary": "Cathode rays deflect in an electric field.",
-    "body": "**Key points from solved questions**\n- Negative electrons and neutral atoms collides and causes the ionization of gas enclosed in a discharge tube.\n- $$ \\left(\\frac{e}{m}\\right)_{electron}>>\\left(\\frac{e}{m}\\right)_{proton} $$ $$ \\left[\\because\\left(\\frac{e}{m}\\right)_{proton}=\\frac{1}{1837}\\left(\\frac{e}{m}\\right)_{electron}\\right] $$\n- Cathode rays deflect in an electric field. <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//9ac48b8d-8abf-4467-a4ed-dfef13c76853/markdown_2/imgs/img_in_image_box_53_910_83_950.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A31Z%2F-1%2F%2Fa498efd0de95f37d90151ac40be976859faf2db821af76a35ccedb1e9fceb756\" alt=\"Image\" width=\"2%\" /></div> ##### Related Theory Stopping potential increases linearly with the frequency of incident photons but independent of the intensity.",
+    "title": "Why both light and matter show wave–particle duality",
+    "summary": "Light shows wave behaviour (interference, diffraction) and particle behaviour (the photoelectric effect); matter likewise shows both — duality is universal.",
+    "body": "**Must know**\n- Light: wave aspect (interference, diffraction) and particle aspect (photon, photoelectric and Compton effects).\n- Matter: particle aspect and wave aspect (de Broglie waves, electron diffraction).\n- Which aspect appears depends on the experiment performed.\n**Exam traps**\n- Wave and particle pictures are complementary, not contradictory.\n- Planck's constant $h$ is the bridge between the two descriptions.",
     "formulas": [
       {
-        "latex": "\\left(\\frac{e}{m}\\right)_{electron}>>\\left(\\frac{e}{m}\\right)_{proton}",
-        "meaning": ""
+        "latex": "E=h\\nu",
+        "meaning": "Light as a particle (photon energy)"
       },
       {
-        "latex": "\\left[\\because\\left(\\frac{e}{m}\\right)_{proton}=\\frac{1}{1837}\\left(\\frac{e}{m}\\right)_{electron}\\right]",
-        "meaning": ""
+        "latex": "\\lambda=\\dfrac{h}{p}",
+        "meaning": "Matter as a wave (de Broglie)"
       }
     ],
     "questionIds": [
@@ -300,7 +156,7 @@
       "AIPMT 2003",
       "AIPMT 2002"
     ],
-    "source": "seed"
+    "source": "authored"
   },
   {
     "id": "note-dual-nature-of-radiation-and-matter-objective-i",
@@ -401,21 +257,21 @@
     "unitId": "xii-dual",
     "unitLabel": "Unit VIII — Dual Nature of Radiation",
     "order": 24,
-    "title": "Overview",
-    "summary": "We know that <div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_230_1148_433_1282.jpg\" alt=\"Image\" width=\"17%\" /></div> $$ h\\mathsf{v}=\\emptyset+\\mathsf{K}\\mathrm{E}_{\\max} $$ <div style=\"text-align:…",
-    "body": "**Key points from solved questions**\n- We know that <div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_230_1148_433_1282.jpg\" alt=\"Image\" width=\"17%\" /></div> $$ h\\mathsf{v}=\\emptyset+\\mathsf{K}\\mathrm{E}_{\\max} $$ <div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_70_1311_105_1356.jpg\" alt=\"Image\" width=\"2%\" /></div> ##### Related Theory Kinetic energy of photoelectron is, $$ \\begin{aligned}\\Delta K&=h\\nu-h\\nu_{0}=h c\\left(\\frac{1}{\\lambda}-\\frac{1}{\\lambda_{_{0}}}\\right)\\\\&=12400\\left(\\frac{1}{\\lambda(\\bar{\\mathrm{A}})}-\\frac{1}{\\lambda_{_{0}}(\\bar{\\mathrm{A}})}\\right)\\end{aligned} $$\n- According to de-Broglie wavelength $$ \\lambda=\\frac{h}{p}\\text{or}\\lambda\\propto\\frac{1}{p} $$ The graph will be rectangular hyperbola.",
+    "title": "How Planck's constant unifies radiation and matter",
+    "summary": "Planck's constant h links a photon's energy to its frequency (E = hν) and a particle's wavelength to its momentum (λ = h/p), underpinning both the photoelectric effect and matter waves.",
+    "body": "**Must know**\n- Photon: $E=h\\nu$, $p=\\dfrac{h}{\\lambda}$.\n- Photoelectric effect: $KE_{max}=h\\nu-\\phi_0$.\n- Matter wave: $\\lambda=\\dfrac{h}{p}$.\n**Exam traps**\n- Distinguish the work function from the threshold frequency ($\\phi_0=h\\nu_0$).\n- $KE_{max}$ is linear in frequency, not in intensity.",
     "formulas": [
       {
-        "latex": "h\\mathsf{v}=\\emptyset+\\mathsf{K}\\mathrm{E}_{\\max}",
-        "meaning": ""
+        "latex": "E=h\\nu=\\dfrac{hc}{\\lambda}",
+        "meaning": "Photon energy"
       },
       {
-        "latex": "\\begin{aligned}\\Delta K&=h\\nu-h\\nu_{0}=h c\\left(\\frac{1}{\\lambda}-\\frac{1}{\\lambda_{_{0}}}\\right)\\\\&=12400\\left(\\frac{1}{\\lambda(\\bar{\\mathrm{A}})}-\\frac{1}{\\lambda_{_{0}}(\\bar{\\mathrm{A}})}\\right)\\end{aligned}",
-        "meaning": ""
+        "latex": "KE_{max}=h\\nu-\\phi_0",
+        "meaning": "Einstein's photoelectric equation"
       },
       {
-        "latex": "\\lambda=\\frac{h}{p}\\text{or}\\lambda\\propto\\frac{1}{p}",
-        "meaning": ""
+        "latex": "\\lambda=\\dfrac{h}{p}",
+        "meaning": "de Broglie wavelength"
       }
     ],
     "questionIds": [
@@ -428,7 +284,7 @@
       "NEET 2024",
       "NEET 2022, AIPMT Cancelled 2015"
     ],
-    "source": "seed"
+    "source": "authored"
   },
   {
     "id": "note-dual-nature-of-radiation-and-matter-particle-nature-of-light-the-photon",
@@ -438,105 +294,21 @@
     "unitId": "xii-dual",
     "unitLabel": "Unit VIII — Dual Nature of Radiation",
     "order": 24,
-    "title": "Particle Nature of Light: The Photon",
-    "summary": "Energy $ E = h\\nu $ velocity = c = v $ \\lambda $ $$ p=\\frac{h}{\\lambda}=\\frac{\\frac{h}{c}}{v}=\\frac{h\\nu}{c} $$ $$ \\mathrm{E_{e x d.}=0}, $$ So momentum is conserved and energy is also conserved.",
-    "body": "**Key points from solved questions**\n- Energy $ E = h\\nu $ velocity = c = v $ \\lambda $ $$ p=\\frac{h}{\\lambda}=\\frac{\\frac{h}{c}}{v}=\\frac{h\\nu}{c} $$ $$ \\mathrm{E_{e x d.}=0}, $$ So momentum is conserved and energy is also conserved. <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//b91fdc07-9ef2-48be-9332-51976f4704ae/markdown_1/imgs/img_in_image_box_29_113_57_157.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A23Z%2F-1%2F%2Fe9c24b39469f70172d17d01e19dbe3bca3b202dd9736bad37eaa389349ccb551\" alt=\"Image\" width=\"2%\" /></div> ##### Related Theory Photons are chargeless massless particles that carry momentum $p = \\frac{\\hbar v}{c}$, where $\\mathbf{v}$ is the frequency of light and $c$ is the speed of light.\n- Given, $$ \\begin{aligned}&\\lambda=600nm\\\\&\\lambda=600\\times10^{-9}m\\\\&\\lambda=6\\times10^{-7}m\\\\&P=3.3\\times10^{-3}watt\\\\ \\end{aligned} $$ We know power, $P = \\frac{E}{t} = \\frac{nhv}{t}$ $$ \\bullet \\quad \\bullet\\bullet $$ $$ \\frac{n}{t}=\\frac{\\mathrm{P}}{h\\mathrm{v}}=\\frac{\\mathrm{P}\\lambda}{h c} $$ $$ \\bullet \\quad \\bullet\\bullet $$ $$ \\frac{n}{t}=\\frac{3.3\\times10^{-3}\\times6\\times10^{-7}}{6.6\\times10^{-34}\\times3\\times10^{8}} $$ $$ \\frac{n}{t}=10^{16} $$\n- We can write, $$ \\begin{aligned}\\mathrm{F}_{a v}&=\\frac{\\Delta\\mathrm{P}}{\\Delta t}\\\\&=\\frac{2\\mathrm{I}}{c}\\times\\mathrm{A}\\\\&=\\frac{2\\times25\\times10^{4}}{3\\times10^{8}}\\times15\\times10^{-4}\\\\&=\\frac{10\\times25\\times10^{4}\\times10^{-4}}{10^{8}}\\\\&=2.5\\times10^{-6}\\mathrm{N}\\end{aligned} $$\n- Using the formula, $ P = \\frac{N}{t} \\times \\frac{hc}{\\lambda} $ $ = 200 \\times 0.25 $ $ \\frac{N}{t} = 50 \\times \\frac{\\lambda}{hc} $ $ = \\frac{50 \\times 0.6 \\times 10^{-6}}{6.6 \\times 10^{-34} \\times 3 \\times 10^{8}} $ $ = 1.5 \\times 10^{20} $\n- Number of photons emitted per second $$ \\begin{aligned}&(1)\\text{Number of photons cimbs:}\\\\&\\quad n=\\frac{P}{\\left(\\frac{\\hbar c}{\\lambda}\\right)}\\\\&\\quad\\Rightarrow\\quad P=\\frac{\\hbar c\\lambda}{\\lambda}\\\\&\\quad\\Rightarrow\\quad\\frac{P_{1}}{P_{2}}=\\frac{n_{2}\\lambda_{1}}{n_{1}\\lambda_{2}}=\\frac{1.02\\times10^{15}\\times5000}{10^{15}\\times5100}\\\\&\\quad\\quad=1\\end{aligned} $$\n- Energy of photon, $ E = 1 \\, MeV $ Momentum of photon, $ p = \\frac{E}{c} $ $$ \\begin{aligned}p&=\\frac{E}{c}=\\frac{1\\times10^{6}\\times1.6\\times10^{-19}}{3\\times10^{8}}\\\\&=5\\times10^{-22}kg m/s\\end{aligned} $$\n- The value of planck's constant $$ h=6.63\\times10^{-34}J s $$\n- We have, The energy of light E = $ \\frac{hc}{\\lambda} $ The energy of light $ E = mc^{2} $ From (i) and (ii), we get $$ \\begin{array}{l}\\frac{hc}{\\lambda}=mc^{2}\\\\\\frac{h}{\\lambda}=mc=Momentum\\end{array} $$ Thus, the momentum of the photon = $ \\frac{h}{\\lambda} $\n- We have, $$ E=\\frac{h c}{\\lambda} $$ or $ E\\lambda = hc = \\text{constant} $ Therefore, $ E_{1}\\lambda_{1}=E_{2}\\lambda_{2} $ $$ 1\\times10^{3}eV\\times1.24\\times10^{-9}=1\\times10^{6}eV\\times\\lambda_{2} $$ Now, We have, $$ \\lambda=1.24\\times10^{-12} $$ SO. $$ \\mathsf{v}=\\frac{c}{\\lambda} $$ $$ v=2.4\\times10^{20}Hz $$",
+    "title": "How light behaves as a stream of photons",
+    "summary": "Light comes in quanta called photons, each carrying energy E = hν = hc/λ and momentum p = h/λ; photons are massless and travel at speed c.",
+    "body": "**Must know**\n- Photon energy: $E=h\\nu=\\dfrac{hc}{\\lambda}$.\n- Photon momentum: $p=\\dfrac{h}{\\lambda}=\\dfrac{E}{c}$.\n- A photon has zero rest mass and always moves at $c$; $h=6.63\\times10^{-34}\\ \\text{J s}$.\n**Exam traps**\n- Photon energy depends on frequency, not on intensity; intensity $=$ (photons per second) $\\times h\\nu$.\n- Photon momentum is $p=E/c$, not $mv$.",
     "formulas": [
       {
-        "latex": "p=\\frac{h}{\\lambda}=\\frac{\\frac{h}{c}}{v}=\\frac{h\\nu}{c}",
-        "meaning": ""
+        "latex": "E=h\\nu=\\dfrac{hc}{\\lambda}",
+        "meaning": "Energy of a photon"
       },
       {
-        "latex": "\\mathrm{E_{e x d.}=0},",
-        "meaning": ""
+        "latex": "p=\\dfrac{h}{\\lambda}=\\dfrac{E}{c}",
+        "meaning": "Momentum of a photon"
       },
       {
-        "latex": "E = h\\nu",
-        "meaning": ""
-      },
-      {
-        "latex": "p = \\frac{\\hbar v}{c}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{aligned}&\\lambda=600nm\\\\&\\lambda=600\\times10^{-9}m\\\\&\\lambda=6\\times10^{-7}m\\\\&P=3.3\\times10^{-3}watt\\\\ \\end{aligned}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\bullet \\quad \\bullet\\bullet",
-        "meaning": ""
-      },
-      {
-        "latex": "\\frac{n}{t}=\\frac{\\mathrm{P}}{h\\mathrm{v}}=\\frac{\\mathrm{P}\\lambda}{h c}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\frac{n}{t}=\\frac{3.3\\times10^{-3}\\times6\\times10^{-7}}{6.6\\times10^{-34}\\times3\\times10^{8}}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\frac{n}{t}=10^{16}",
-        "meaning": ""
-      },
-      {
-        "latex": "P = \\frac{E}{t} = \\frac{nhv}{t}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{aligned}\\mathrm{F}_{a v}&=\\frac{\\Delta\\mathrm{P}}{\\Delta t}\\\\&=\\frac{2\\mathrm{I}}{c}\\times\\mathrm{A}\\\\&=\\frac{2\\times25\\times10^{4}}{3\\times10^{8}}\\times15\\times10^{-4}\\\\&=\\frac{10\\times25\\times10^{4}\\times10^{-4}}{10^{8}}\\\\&=2.5\\times10^{-6}\\mathrm{N}\\end{aligned}",
-        "meaning": ""
-      },
-      {
-        "latex": "P = \\frac{N}{t} \\times \\frac{hc}{\\lambda}",
-        "meaning": ""
-      },
-      {
-        "latex": "= 200 \\times 0.25",
-        "meaning": ""
-      },
-      {
-        "latex": "\\frac{N}{t} = 50 \\times \\frac{\\lambda}{hc}",
-        "meaning": ""
-      },
-      {
-        "latex": "= \\frac{50 \\times 0.6 \\times 10^{-6}}{6.6 \\times 10^{-34} \\times 3 \\times 10^{8}}",
-        "meaning": ""
-      },
-      {
-        "latex": "= 1.5 \\times 10^{20}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{aligned}&(1)\\text{Number of photons cimbs:}\\\\&\\quad n=\\frac{P}{\\left(\\frac{\\hbar c}{\\lambda}\\right)}\\\\&\\quad\\Rightarrow\\quad P=\\frac{\\hbar c\\lambda}{\\lambda}\\\\&\\quad\\Rightarrow\\quad\\frac{P_{1}}{P_{2}}=\\frac{n_{2}\\lambda_{1}}{n_{1}\\lambda_{2}}=\\frac{1.02\\times10^{15}\\times5000}{10^{15}\\times5100}\\\\&\\quad\\quad=1\\end{aligned}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{aligned}p&=\\frac{E}{c}=\\frac{1\\times10^{6}\\times1.6\\times10^{-19}}{3\\times10^{8}}\\\\&=5\\times10^{-22}kg m/s\\end{aligned}",
-        "meaning": ""
-      },
-      {
-        "latex": "E = 1 \\, MeV",
-        "meaning": ""
-      },
-      {
-        "latex": "p = \\frac{E}{c}",
-        "meaning": ""
-      },
-      {
-        "latex": "h=6.63\\times10^{-34}J s",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{array}{l}\\frac{hc}{\\lambda}=mc^{2}\\\\\\frac{h}{\\lambda}=mc=Momentum\\end{array}",
-        "meaning": ""
-      },
-      {
-        "latex": "E = mc^{2}",
-        "meaning": ""
-      },
-      {
-        "latex": "E=\\frac{h c}{\\lambda}",
-        "meaning": ""
+        "latex": "h=6.63\\times10^{-34}\\ \\text{J s}",
+        "meaning": "Planck's constant"
       }
     ],
     "questionIds": [
@@ -561,7 +333,7 @@
       "AIPMT 1993",
       "AIPMT 1991"
     ],
-    "source": "seed"
+    "source": "authored"
   },
   {
     "id": "note-dual-nature-of-radiation-and-matter-wave-nature-of-matter",
@@ -571,105 +343,21 @@
     "unitId": "xii-dual",
     "unitLabel": "Unit VIII — Dual Nature of Radiation",
     "order": 24,
-    "title": "Wave Nature of Matter",
-    "summary": "Given, $ Wavelength = \\lambda $ $$ \\boldsymbol{W}=0 $$ $$ mass=m_{e} $$ de-Broglie wavelength = $ \\lambda_{d} $ We know from Einstein's relation Since $$…",
-    "body": "**Key points from solved questions**\n- To find the ratio between $\\lambda_{e}$ to $\\lambda_{\\alpha}$ $$ \\begin{aligned}\\frac{\\lambda_{e}}{\\lambda_{\\alpha}}&=\\frac{\\frac{n}{\\sqrt{2m_{e}(2e)\\mathrm{V}}}}{\\frac{h}{\\sqrt{2m_{\\alpha}e\\mathrm{V}}}}&\\\\&=\\frac{\\sqrt{2m_{\\alpha}e\\mathrm{V}}}{\\sqrt{m_{e}e\\mathrm{V}}}\\\\ &=\\frac{\\sqrt{2(4m_{p})e\\mathrm{V}}}{\\sqrt{m_{e}e\\mathrm{V}}}\\\\ &=2\\sqrt{2}\\frac{\\sqrt{m_{p}}}{\\sqrt{m_{e}}}\\\\ &=2\\sqrt{2}\\times42.8\\quad\\left[\\because\\sqrt{\\frac{m_{p}}{m_{e}}}=42.8\\right]\\\\ &=121\\\\ \\lambda_{e}&=121\\lambda_{\\alpha}\\\\ \\lambda_{e}&>\\lambda_{\\alpha}\\\\ \\end{aligned} $$\n- Given, $ Wavelength = \\lambda $ $$ \\boldsymbol{W}=0 $$ $$ mass=m_{e} $$ de-Broglie wavelength = $ \\lambda_{d} $ We know from Einstein's relation Since $$ \\begin{aligned}&h\\mathbf{v}=\\mathbf{W}+\\mathbf{K}\\mathbf{E}\\\\&\\mathbf{W}=\\mathbf{0}\\\\&h\\mathbf{v}=\\mathbf{K}\\mathbf{E}\\\\ \\end{aligned} $$ From de-Broglie hypothesis we know, $$ \\lambda_{d}=\\frac{h}{p} $$ and $$ p=\\sqrt{2m K E} $$ $$ \\bullet \\quad \\bullet\\ast $$ $$ \\lambda_{d}=\\frac{h}{\\sqrt{2mKE}} $$ ∴From eq. (ii), $$ \\lambda_{d}^{2}=\\frac{h^{2}}{2mKE} $$ $$ \\bullet \\quad \\bullet $$ $$ KE=\\frac{h^{2}}{2m\\lambda_{d}^{2}} $$ From eq. (i), $$ \\frac{h c}{\\lambda}=KE $$ ∴ $$ \\lambda=\\frac{hc}{KE} $$ From eq. (iii) and (iv), $$ \\lambda=\\frac{hc}{h^{2}}\\times2m\\lambda_{d}^{2} $$ $$ \\lambda=\\frac{c}{h}2m\\lambda_{d}^{2} $$ $$ \\lambda=\\left(\\frac{2mc}{h}\\right)\\lambda_{d}^{2} $$ ##### △! Caution The de-broglie wavelength is inversely proportional to momentum $ \\lambda \\propto \\frac{1}{p} $. Some students may assume a direct relationship or overlook the inverse proportionality.\n- Kinetic energy of electron $$ \\mathrm{K E=144~e V} $$ Means $$ \\mathrm{eV}=144~\\mathrm{eV} $$ $$ \\mathrm{V}=144~\\mathrm{V} $$ ∵ de-Broglie wavelength. From eq. (i), $$ \\lambda=\\frac{12.27}{\\sqrt{\\mathbf{V}}}\\mathring{\\mathbf{A}} $$ $$ \\begin{aligned}\\lambda&=\\frac{12.27}{\\sqrt{144}}\\mathring{A}\\\\&=\\frac{12.27}{12}\\mathring{A}=1.02\\mathring{A}\\\\&=102\\times10^{-3}nm.\\end{aligned} $$\n- The de-Broglie wavelength of any moving particle associated with momentum, $$ \\lambda=\\frac{h}{p} $$ where, $h = \\mathrm{planck's}$ constant Now $$ K.E.=\\frac{1}{2}m v^{2} $$ $$ K.E.=\\frac{1}{2m}(mv)^{2}=\\frac{p^{2}}{2m} $$ $$ \\Rightarrow $$ $$ p=\\sqrt{2mKE} $$ ∴ From (i) and (ii), $$ \\lambda=\\frac{h}{\\sqrt{2mKE}} $$ For Proton. $$ \\lambda_{P}=\\frac{h}{\\sqrt{2m_{P}KE_{P}}} $$ For $ \\alpha $-particle $$ \\lambda_{\\alpha}=\\frac{h}{\\sqrt{2m_{\\alpha}\\mathrm{KE}_{\\alpha}}} $$ From (iii) and (iv), $$ \\frac{\\lambda_{p}}{\\lambda_{\\alpha}}=\\frac{\\sqrt{2m_{\\alpha}kE_{\\alpha}}}{\\sqrt{2m_{p}kE_{p}}} $$ $$\\{\\because\\mathrm{~S i n c e~K E}_{\\alpha}=\\mathrm{K E}_{\\mathrm{P}}\\mathrm{~a n d~}m_{\\alpha}=4m_{p}\\}$$ $$ \\frac{\\lambda_{p}}{\\lambda_{\\alpha}}=\\sqrt{\\frac{4m_{p}}{m_{p}}}=\\frac{2}{1} $$ $$ \\lambda_{\\mathbf{P}}:\\lambda_{\\alpha}=2:1 $$\n- From question $$ \\mathbf{v}=\\mathbf{v}_{0}\\hat{i}\\quad\\mathrm{a n d}\\quad\\mathbf{E}=-\\mathbf{E}_{0}\\hat{i} $$ Now initial de-Broglic wavelength is, $$ \\lambda_{0}=\\frac{h}{m\\mathrm{v}_{0}} $$ Acceleration of electron. $$ a=\\frac{e\\mathrm{E}_{0}}{m} $$ Velocity after $t$ is, $$ \\mathbf{v}=\\left(\\mathbf{v}_{0}+\\frac{e\\mathbf{E}_{0}}{m}t\\right) $$ [This is obtained from, $ v = u + at $] So, $$ \\lambda=\\frac{h}{m\\mathrm{v}}=\\frac{h}{m\\left(\\mathrm{v}_{0}+\\frac{e\\mathrm{E}_{0}}{m}t\\right)} $$ $$ \\lambda=\\frac{h}{mv_{0}\\left(1+\\frac{eE_{0}}{mv_{0}}t\\right)}=\\frac{\\lambda_{0}}{\\left(1+\\frac{eE_{0}}{mv_{0}}t\\right)} $$ Thus $$ \\lambda=\\frac{\\lambda_{0}}{\\left(1+\\frac{e\\mathrm{E}_{0}}{m\\mathrm{v}_{0}}t\\right)} $$\n- de-Broglie wavelength $$ \\lambda=\\frac{h}{p} $$ $$ \\lambda=\\frac{h}{\\sqrt{2m(KE)}} $$ $$ \\lambda=\\frac{h}{\\sqrt{2m\\left(\\frac{3}{2}\\mathrm{KT}\\right)}} $$ $$ \\lambda=\\frac{h}{\\sqrt{3mKT}} $$\n- From de-Broglie equation $$ \\lambda=\\frac{h}{p} $$ $$ p=\\frac{h}{\\lambda} $$ $$ \\mathrm{E}=\\frac{p^{2}}{2m}=\\frac{h^{2}}{2m\\lambda^{2}} $$ $$ \\therefore $$ $$ Also~in~X-ray,\\lambda_{0}=\\frac{hc}{E} $$ $$ \\lambda_{0}=\\frac{2mc\\lambda^{2}}{h} $$\n- For electron, $$ \\lambda_{e}=\\frac{h}{\\sqrt{2mE}} $$ for photon. $$ \\lambda_{ph}=\\frac{hc}{E} $$ $$ \\begin{array}{l}\\frac{\\lambda_{e}}{\\lambda_{ph}}=\\frac{h}{\\sqrt{2mE}}\\times\\frac{\\mathrm{E}}{hc}\\\\=\\left(\\frac{\\mathrm{E}}{2m}\\right)^{\\frac{1}{2}}\\times\\frac{1}{c}\\end{array} $$\n- Energy of photon, (E) = $ \\frac{12400}{5000} $ $ = 2.48 \\, eV $ Work function, W = 2.28 eV Using Einstein's photoelectric equation $$ \\mathbf{E}=\\mathbf{W}+\\mathbf{K}\\mathbf{E}_{max} $$ $$ 2.48=2.28+(\\mathrm{K.E.})_{\\max} $$ $$ \\therefore\\quad(K.E.)_{\\max}=0.20\\ eV $$ for electron. $$ \\lambda=\\frac{h}{\\sqrt{2mE}} $$ ⇔ $$ \\lambda=28\\textup{\\AA} $$ So $$ \\lambda\\geq2.8\\times10^{-9}\\mathrm{m} $$\n- Using de-Broglie hypothesis, $$ \\lambda=\\frac{h}{p} $$ Hence, $$ \\lambda_{1}=\\frac{h}{p}=\\frac{h}{\\sqrt{2mK}} $$ and $$ \\begin{array}{l}\\lambda_{2}=\\frac{h}{2m\\times16K}\\\\=\\frac{h}{4\\sqrt{2mK}}=\\frac{\\lambda_{1}}{4}\\end{array} $$ Using eq. (i) ∴ $$ \\lambda_{2}=\\frac{1}{4}\\times\\lambda_{1}=25\\%of\\lambda_{1} $$ % Change in wavelength $$ \\begin{aligned}&=\\frac{\\lambda_{1}-\\lambda_{2}}{\\lambda_{1}}\\times100=1-\\frac{\\lambda_{2}}{\\lambda_{1}}\\times100\\\\&=75\\%\\end{aligned} $$ Thus, 75% changes in the wavelength.\n- Using de-Broglie wavelength, $$ \\begin{aligned}\\lambda&=\\frac{\\sqrt[n]{2m\\mathrm{K_{B}}\\mathrm{T}}}{\\quad}\\\\ \\lambda&=\\frac{6.63\\times10^{-34}}{0.83\\times10^{-2}\\times2\\times1.6\\times10^{-19}\\times0.25}\\\\ &=\\frac{3.08\\times10^{-34}\\times10^{25}}{\\sqrt{\\mathrm{T}}}\\mathrm{m}=\\frac{30.8}{\\sqrt{\\mathrm{T}}}\\mathring{A}\\end{aligned} $$\n- From de-Broglie hypothesis $$ \\left|\\frac{\\Delta p}{p}\\right|=\\frac{\\Delta\\lambda}{\\lambda} $$ $$ \\frac{\\Delta p}{p_{i}}=\\frac{\\Delta\\lambda}{\\lambda} $$ $$ p_{i}=\\frac{p}{\\underline{0.5}} $$ $$ p_{i}=\\frac{1000}{5}p=200p $$\n- We know that, $$ \\mathrm{R}=\\frac{m\\mathrm{v}}{q\\mathrm{B}}\\text{and}\\lambda=\\frac{h}{m\\mathrm{v}} $$ $$ \\begin{aligned}\\lambda&=\\frac{h}{mv}=\\frac{h}{RqB}\\\\\\lambda&=\\frac{6.63\\times10^{-34}}{0.83\\times10^{-2}\\times2\\times1.6\\times10^{-19}\\times0.25}\\\\&=0.01\\mathring{A}\\end{aligned} $$\n- We know that, $ \\lambda = \\frac{12.27}{\\sqrt{\\mathrm{v}}} $ $$ \\begin{array}{ll}\\Rightarrow&\\frac{\\lambda_{1}}{\\lambda_{2}}=\\sqrt{\\frac{\\mathrm{V}_{2}}{\\mathrm{V}_{1}}}\\\\ \\Rightarrow&\\lambda_{2}=\\lambda_{1}\\sqrt{\\frac{\\mathrm{V}_{1}}{\\mathrm{V}_{2}}\\\\\\therefore&\\lambda_{2}=\\lambda_{1}\\sqrt{\\frac{25}{100}}\\\\\\Rightarrow&\\lambda_{2}=\\lambda_{1}\\sqrt{\\frac{1}{4}}=\\frac{\\lambda_{1}}{2}\\end{array} $$",
+    "title": "How every moving particle has a de Broglie wavelength",
+    "summary": "Every moving particle has an associated wavelength λ = h/p = h/mv (de Broglie); this wave nature matters only for very small particles such as electrons.",
+    "body": "**Must know**\n- de Broglie wavelength: $\\lambda=\\dfrac{h}{p}=\\dfrac{h}{mv}$.\n- In terms of kinetic energy: $\\lambda=\\dfrac{h}{\\sqrt{2mK}}$.\n- For an electron accelerated through $V$ volts: $\\lambda=\\dfrac{12.27}{\\sqrt{V}}\\ \\text{\\AA}$.\n- Confirmed experimentally by Davisson–Germer electron diffraction.\n**Exam traps**\n- $\\lambda\\propto 1/p$: a heavier or faster particle has a shorter wavelength.\n- Macroscopic objects have an utterly negligible de Broglie wavelength.",
     "formulas": [
       {
-        "latex": "\\begin{aligned}\\frac{\\lambda_{e}}{\\lambda_{\\alpha}}&=\\frac{\\frac{n}{\\sqrt{2m_{e}(2e)\\mathrm{V}}}}{\\frac{h}{\\sqrt{2m_{\\alpha}e\\mathrm{V}}}}&\\\\&=\\frac{\\sqrt{2m_{\\alpha}e\\mathrm{V}}}{\\sqrt{m_{e}e\\mathrm{V}}}\\\\ &=\\frac{\\sqrt{2(4m_{p})e\\mathrm{V}}}{\\sqrt{m_{e}e\\mathrm{V}}}\\\\ &=2\\sqrt{2}\\frac{\\sqrt{m_{p}}}{\\sqrt{m_{e}}}\\\\ &=2\\sqrt{2}\\times42.8\\quad\\left[\\because\\sqrt{\\frac{m_{p}}{m_{e}}}=42.8\\right]\\\\ &=121\\\\ \\lambda_{e}&=121\\lambda_{\\alpha}\\\\ \\lambda_{e}&>\\lambda_{\\alpha}\\\\ \\end{aligned}",
-        "meaning": ""
+        "latex": "\\lambda=\\dfrac{h}{p}=\\dfrac{h}{mv}",
+        "meaning": "de Broglie wavelength"
       },
       {
-        "latex": "\\boldsymbol{W}=0",
-        "meaning": ""
+        "latex": "\\lambda=\\dfrac{h}{\\sqrt{2mK}}",
+        "meaning": "Wavelength from kinetic energy"
       },
       {
-        "latex": "mass=m_{e}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{aligned}&h\\mathbf{v}=\\mathbf{W}+\\mathbf{K}\\mathbf{E}\\\\&\\mathbf{W}=\\mathbf{0}\\\\&h\\mathbf{v}=\\mathbf{K}\\mathbf{E}\\\\ \\end{aligned}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\lambda_{d}=\\frac{h}{p}",
-        "meaning": ""
-      },
-      {
-        "latex": "p=\\sqrt{2m K E}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\bullet \\quad \\bullet\\ast",
-        "meaning": ""
-      },
-      {
-        "latex": "\\lambda_{d}=\\frac{h}{\\sqrt{2mKE}}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\lambda_{d}^{2}=\\frac{h^{2}}{2mKE}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\bullet \\quad \\bullet",
-        "meaning": ""
-      },
-      {
-        "latex": "KE=\\frac{h^{2}}{2m\\lambda_{d}^{2}}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\frac{h c}{\\lambda}=KE",
-        "meaning": ""
-      },
-      {
-        "latex": "\\lambda=\\frac{hc}{KE}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\lambda=\\frac{hc}{h^{2}}\\times2m\\lambda_{d}^{2}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\lambda=\\frac{c}{h}2m\\lambda_{d}^{2}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\lambda=\\left(\\frac{2mc}{h}\\right)\\lambda_{d}^{2}",
-        "meaning": ""
-      },
-      {
-        "latex": "Wavelength = \\lambda",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathrm{K E=144~e V}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathrm{eV}=144~\\mathrm{eV}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathrm{V}=144~\\mathrm{V}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\lambda=\\frac{12.27}{\\sqrt{\\mathbf{V}}}\\mathring{\\mathbf{A}}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{aligned}\\lambda&=\\frac{12.27}{\\sqrt{144}}\\mathring{A}\\\\&=\\frac{12.27}{12}\\mathring{A}=1.02\\mathring{A}\\\\&=102\\times10^{-3}nm.\\end{aligned}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\lambda=\\frac{h}{p}",
-        "meaning": ""
-      },
-      {
-        "latex": "K.E.=\\frac{1}{2}m v^{2}",
-        "meaning": ""
+        "latex": "\\lambda=\\dfrac{12.27}{\\sqrt{V}}\\ \\text{\\AA}",
+        "meaning": "Electron wavelength (V in volts)"
       }
     ],
     "questionIds": [
@@ -707,7 +395,7 @@
       "AIPMT 2002",
       "AIPMT 1996"
     ],
-    "source": "seed"
+    "source": "authored"
   },
   {
     "id": "note-dual-nature-of-radiation-and-matter-reneet2026",
