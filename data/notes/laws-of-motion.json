@@ -7,105 +7,25 @@
     "unitId": "xi-laws",
     "unitLabel": "Unit III — Laws of Motion",
     "order": 3,
-    "title": "Circular Motion",
-    "summary": "For a ball to move in horizontal circle, the ball should satisfy the condition Tension in the string = Centripetal force $$ \\mathrm{T}_{\\max}=\\frac{\\mathbf{M}\\mathbf{v}_{\\max}^{2}}{\\mathrm{R}} $$ $$…",
-    "body": "**Key points from solved questions**\n- Initial speed = 10 rpm Tension of string before = T Tension of string after = 4T $$ \\mathrm{F_{cp}=m\\omega_{1}^{2}} $$ $$ \\mathrm{T}=m\\omega_{2}^{2} $$ New tension become 4T $$ 4\\mathrm{T}=m r\\omega_{r}^{2} $$ <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//f7ce5ea9-0ede-4795-a9a6-658b3b444f9f/markdown_0/imgs/img_in_image_box_846_1279_1002_1428.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A15%3A41Z%2F-1%2F%2F0f097bb0755ed08dc6093cd7da54ea458dbc07c16cf016f249cd9bd14a5bef60\" alt=\"Image\" width=\"13%\" /></div> Substituting value of T in (ii) we get $$ \\omega_{2}^{2}=\\frac{4mr\\omega_{1}^{2}}{mr} $$ $$ \\bullet \\quad \\bullet\\ast $$ $$ \\omega_{2}^{2}=4\\times(10)^{2}\\qquad\\quad(\\because\\omega_{1}=10\\mathrm{~r p m}) $$ $$ \\omega_{2}^{2}=400 $$ $$ \\omega_{2}=20\\mathrm{r p m} $$\n- To keep the block stationary Frictional force $ \\geq $ weight $$ \\mu N\\geq M g $$ Here. $$ \\mathbf{N}=\\mathbf{M}\\omega^{2}r\\left\\{\\mathrm{Hence},r=1\\mathrm{~m},\\mu=0.1\\right\\} $$ $$ \\mu M\\omega^{2}r=M g $$ $$ \\begin{aligned}\\omega&=\\sqrt{\\frac{g}{\\mu r}}=\\sqrt{\\frac{10}{0.1\\times1}}\\\\&=10\\ rad s^{-1}\\end{aligned} $$\n- According to the question, string $l connected to a particle is shown below. <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//f7ce5ea9-0ede-4795-a9a6-658b3b444f9f/markdown_1/imgs/img_in_image_box_114_508_475_590.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A15%3A43Z%2F-1%2F%2Fc4c6e82328d385d0b1a44c65e9e65b616dc0c359569f020c89e312f4187617be\" alt=\"Image\" width=\"30%\" /></div> v = Speed of particle Since, the particle is in uniform circular motion, so net force is equal to centripetal force. ∴ Centripetal force = Net force $$ \\frac{mv^{2}}{l}=T $$\n- The particle is moving in circle of radius R. So acceleration will be: <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//f7ce5ea9-0ede-4795-a9a6-658b3b444f9f/markdown_1/imgs/img_in_image_box_217_811_380_964.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A15%3A44Z%2F-1%2F%2F4216b6323da6ff359c40524980b1b9372b9613023dc70a47edcfa1d14003a8f7\" alt=\"Image\" width=\"13%\" /></div> $$ a_{c}=\\frac{v^{2}}{R} $$ from figure $$ a_{c}=a\\cos30^{\\circ} $$ $$ \\frac{v^{2}}{R}=a\\cos30^{\\circ} $$ $$ \\begin{aligned}\\mathbf{v}^{2}&=a\\cos30^{\\circ}\\times\\mathbf{R}\\\\&=15\\times\\cos30^{\\circ}\\times2.5\\end{aligned} $$ $$ \\mathbf{v}^{2}=15\\times2.5\\times\\frac{\\sqrt{3}}{2} $$ $$ \\mathbf{v}=5.7~\\mathbf{m}/\\mathbf{s} $$\n- <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//f7ce5ea9-0ede-4795-a9a6-658b3b444f9f/markdown_1/imgs/img_in_image_box_105_1326_484_1543.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A15%3A44Z%2F-1%2F%2F52c8f278a09120718b157fa62553764a2597eb6e1324a38be0792d3de2697f56\" alt=\"Image\" width=\"31%\" /></div> For vertical equilibrium on the road. $$ \\mathrm{~N~c o s}\\theta=m g+f\\sin\\theta $$ $$ mg=N\\cos\\theta-f\\sin\\theta $$ Centripetal force for safe turning, $$ \\mathbf{N}\\sin\\theta+f\\cos\\theta=\\frac{mv^{2}}{R} $$ From eqns. (i) and (ii), we get $$ \\frac{v^{2}}{Rg}=\\frac{N\\sin\\theta+f\\cos\\theta}{N\\cos\\theta-f\\sin\\theta} $$ U $$ \\frac{v_{\\mathrm{max}}^{2}}{Rg}=\\frac{N\\sin\\theta+\\mu_{s}N\\cos\\theta}{N\\cos\\theta-\\mu_{s}N\\sin\\theta} $$ $$ \\mathbf{v}_{\\max}=\\sqrt{\\mathrm{R}g\\left(\\frac{\\mu_{s}+\\tan\\theta}{1-\\mu_{s}\\tan\\theta}\\right)} $$\n- Let v be tangential speed of heavier stone. Then, centripetal force experienced by lighter stone is, $$ (F_{c})_{lighter}=\\frac{m(nv)^{2}}{r} $$ and that of heavier stone is $$ (F_{c})_{\\mathrm{heavier}}=\\frac{2mv^{2}}{r/2} $$ But, $$ (F_{c})_{lighter}=(F_{c})_{heavier} $$ $$ \\frac{m(n v)^{2}}{r}=\\frac{2mv^{2}}{(r/2)} $$ or, $$ n^{2}\\left(\\frac{m\\mathbf{v}^{2}}{r}\\right)=4\\left(\\frac{m\\mathbf{v}^{2}}{r}\\right) $$ $$ n^{2}=4or n=2 $$\n- Let $ \\theta $ is the angle made by the wire with the vertical. $$ \\theta=\\frac{v^{2}}{rg} $$ Here, $$ v=10m/s,r=10m,g=10m/s^{2} $$ $$ \\tan\\theta=\\frac{(10\\mathrm{m/s})^{2}}{10\\mathrm{m}(10\\mathrm{m/s}^{2})}=1 $$ $$ \\theta=\\tan^{-1}\\left(1\\right)=\\frac{\\pi}{4} $$\n- Force of friction provides the necessary centripetal force. $$ \\frac{mv^{2}}{R}\\leq\\mu_{s}N; $$ $$ \\mathbf{v}^{2}\\leq\\frac{\\boldsymbol{\\mu}_{s}\\mathbf{R}\\mathbf{N}}{m} $$ $$ \\begin{aligned}\\mathbf{v}^{2}&\\leq\\mu_{s}\\mathbf{R}\\mathbf{g}\\\\\\mathbf{v}&\\leq\\sqrt{\\mu_{s}\\mathbf{R}\\mathbf{g}}\\end{aligned} $$ or ∴ The maximum speed of the car in circular motion is $$ \\mathrm{v}_{\\max}=\\sqrt{\\mu_{s}R g} $$\n- Given banking angle = $ 45^{\\circ} $ Radius = 90 m and g = 10 m/s^{2} Now banking angle, $\\tan\\theta=\\frac{v^{2}}{rg}$ $$ \\tan45^{\\circ}=\\frac{v^{2}}{90\\times10} $$ $$ \\begin{aligned}v^{2}&=90\\times10\\times\\tan45^{\\circ}\\\\v&=\\sqrt{90\\times10\\times\\tan45^{\\circ}}=30\\end{aligned} $$ $$ \\bullet \\quad \\bullet\\bullet $$ Speed of car, v = 30 m/s\n- For a ball to move in horizontal circle, the ball should satisfy the condition Tension in the string = Centripetal force $$ \\mathrm{T}_{\\max}=\\frac{\\mathbf{M}\\mathbf{v}_{\\max}^{2}}{\\mathrm{R}} $$ $$ \\mathbf{v}_{\\mathbf{max}}\\ =\\sqrt{\\frac{\\mathbf{T}_{\\mathbf{max}}\\cdot\\mathbf{R}}{\\mathbf{M}}} $$ Making substitution, we obtain, $$ \\mathrm{v}_{\\max}=\\sqrt{\\frac{25\\times1.96}{0.25}}=\\sqrt{196}=14\\mathrm{~m}/\\mathrm{s} $$ <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//f7ce5ea9-0ede-4795-a9a6-658b3b444f9f/markdown_2/imgs/img_in_image_box_89_930_131_964.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A15%3A46Z%2F-1%2F%2F05815139154410e3419bcf8403ba0e974a86130f526835007d13c98c5d0f20b3\" alt=\"Image\" width=\"3%\" /></div> ##### Caution Students should know that in a vertical circle, the tension at the highest point is zero and at lowest point is maximum.\n- We have. $$ \\omega=\\frac{2\\pi}{T} $$ Since, both cars take the same time to complete the circle. Therefore, ratio of angular speeds of the cars will be 1:1.",
+    "title": "Why circular motion always needs a centripetal force",
+    "summary": "A body in uniform circular motion accelerates toward the centre with a = v²/r = ω²r, requiring a centripetal force F = mv²/r supplied by tension, gravity, friction, etc.",
+    "body": "**Must know**\n- Centripetal acceleration: $a_c=\\dfrac{v^2}{r}=\\omega^2 r$, directed to the centre.\n- Centripetal force: $F=\\dfrac{mv^2}{r}=m\\omega^2 r$.\n- Banking of a road (frictionless): $\\tan\\theta=\\dfrac{v^2}{rg}$.\n- Vertical circle: minimum speed at the top is $v_{top}=\\sqrt{gr}$.\n**Exam traps**\n- The centripetal force is a requirement, provided by real forces — it is not a new force.\n- 'Centrifugal force' is a pseudo-force seen only in the rotating frame.",
     "formulas": [
       {
-        "latex": "\\mathrm{F_{cp}=m\\omega_{1}^{2}}",
-        "meaning": ""
+        "latex": "a_c=\\dfrac{v^2}{r}=\\omega^2 r",
+        "meaning": "Centripetal acceleration"
       },
       {
-        "latex": "\\mathrm{T}=m\\omega_{2}^{2}",
-        "meaning": ""
+        "latex": "F=\\dfrac{mv^2}{r}=m\\omega^2 r",
+        "meaning": "Centripetal force"
       },
       {
-        "latex": "4\\mathrm{T}=m r\\omega_{r}^{2}",
-        "meaning": ""
+        "latex": "\\tan\\theta=\\dfrac{v^2}{rg}",
+        "meaning": "Banking angle (no friction)"
       },
       {
-        "latex": "\\omega_{2}^{2}=\\frac{4mr\\omega_{1}^{2}}{mr}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\bullet \\quad \\bullet\\ast",
-        "meaning": ""
-      },
-      {
-        "latex": "\\omega_{2}^{2}=4\\times(10)^{2}\\qquad\\quad(\\because\\omega_{1}=10\\mathrm{~r p m})",
-        "meaning": ""
-      },
-      {
-        "latex": "\\omega_{2}^{2}=400",
-        "meaning": ""
-      },
-      {
-        "latex": "\\omega_{2}=20\\mathrm{r p m}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mu N\\geq M g",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathbf{N}=\\mathbf{M}\\omega^{2}r\\left\\{\\mathrm{Hence},r=1\\mathrm{~m},\\mu=0.1\\right\\}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mu M\\omega^{2}r=M g",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{aligned}\\omega&=\\sqrt{\\frac{g}{\\mu r}}=\\sqrt{\\frac{10}{0.1\\times1}}\\\\&=10\\ rad s^{-1}\\end{aligned}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\frac{mv^{2}}{l}=T",
-        "meaning": ""
-      },
-      {
-        "latex": "a_{c}=\\frac{v^{2}}{R}",
-        "meaning": ""
-      },
-      {
-        "latex": "a_{c}=a\\cos30^{\\circ}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\frac{v^{2}}{R}=a\\cos30^{\\circ}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{aligned}\\mathbf{v}^{2}&=a\\cos30^{\\circ}\\times\\mathbf{R}\\\\&=15\\times\\cos30^{\\circ}\\times2.5\\end{aligned}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathbf{v}^{2}=15\\times2.5\\times\\frac{\\sqrt{3}}{2}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathbf{v}=5.7~\\mathbf{m}/\\mathbf{s}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathrm{~N~c o s}\\theta=m g+f\\sin\\theta",
-        "meaning": ""
-      },
-      {
-        "latex": "mg=N\\cos\\theta-f\\sin\\theta",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathbf{N}\\sin\\theta+f\\cos\\theta=\\frac{mv^{2}}{R}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\frac{v^{2}}{Rg}=\\frac{N\\sin\\theta+f\\cos\\theta}{N\\cos\\theta-f\\sin\\theta}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\frac{v_{\\mathrm{max}}^{2}}{Rg}=\\frac{N\\sin\\theta+\\mu_{s}N\\cos\\theta}{N\\cos\\theta-\\mu_{s}N\\sin\\theta}",
-        "meaning": ""
+        "latex": "v_{top}=\\sqrt{gr}",
+        "meaning": "Minimum speed at top of vertical circle"
       }
     ],
     "questionIds": [
@@ -131,7 +51,7 @@
       "AIPMT 1998",
       "AIPMT 1995"
     ],
-    "source": "seed"
+    "source": "authored"
   },
   {
     "id": "note-laws-of-motion-common-forces-in-mechanics",
@@ -141,105 +61,25 @@
     "unitId": "xi-laws",
     "unitLabel": "Unit III — Laws of Motion",
     "order": 3,
-    "title": "Common Forces in Mechanics",
-    "summary": "The situation is.",
-    "body": "**Key points from solved questions**\n- From the given diagram, we can clearly say that the bodies are connected. In connected motion, Common acceleration $ a=\\frac{F}{M} $ where F is net force and M is the total mass, F = 10 N, M = 5 kg $$ a=\\frac{10}{5}=2m/s^{2} $$ Now from FBD of 2 kg block and 3 kg block <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//c79bc8f7-ae73-4d39-ae19-35cff403b2e1/markdown_2/imgs/img_in_image_box_664_789_1012_869.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A39Z%2F-1%2F%2Fbafb95a58a822da95ec80aa8834940c2c214f24581d157e2e34b80636ca0d7ba\" alt=\"Image\" width=\"29%\" /></div> Force exerted by block X on block Y, $$ F_{YX}=(3)a $$ $$ \\mathrm{F}_{\\mathrm{YX}}=3\\times2=6\\mathrm{N} $$\n- As retarding force = force of friction $$ \\begin{array}{l}\\therefore\\quad\\quad\\quad ma=\\mu mg\\\\\\Rightarrow\\quad\\quad\\quad a=\\mu\\times g\\\\\\Rightarrow\\quad\\quad\\quad a=0.15\\times10\\\\\\Rightarrow\\quad\\quad\\quad a=1.5\\ m/s^{2}\\end{array} $$\n- <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//c79bc8f7-ae73-4d39-ae19-35cff403b2e1/markdown_2/imgs/img_in_image_box_664_1116_933_1179.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A39Z%2F-1%2F%2Faa557671803d4b9d1a8edf3f0eb2452a4253ef3049ccc5502cab4702560c8018\" alt=\"Image\" width=\"22%\" /></div> Here, $$ \\mathrm{F}=\\mu m\\mathrm{g} $$ Retardation of the block on the belt. $$ a=\\frac{\\mathrm{F}}{m}=\\frac{\\mu mg}{m}=\\mu g $$ ∴ From third equation of motion. $$ \\begin{aligned}\\mathrm{v}^{2}&=u^{2}+2a s\\\\0&=(2)^{2}-2(\\mu\\mathrm{g})\\mathrm{s}\\\\s&=\\frac{4}{2\\times0.5\\times10}=0.4\\mathrm{~m}\\end{aligned} $$\n- The situation is shown in figure. <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//c79bc8f7-ae73-4d39-ae19-35cff403b2e1/markdown_3/imgs/img_in_image_box_215_126_514_294.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A42Z%2F-1%2F%2F1b0e8f787efcfbb5d7ada2953b00c1d9342330ad849c199cb95cfbc098fc7981\" alt=\"Image\" width=\"25%\" /></div> Here, $a$ = acceleration of the system. Here, from free body diagram. $$ T-\\mu R=10a $$ $$ \\therefore\\mathrm{T}-0.05\\times10\\mathrm{g}=10a\\quad\\{\\mu\\mathrm{R}=0.05\\times100=5\\} $$ $$ T-5=10a $$ For 2 kg block, the eq. of motion, $$ 2g-T=2a $$ $$ 2\\times10-T=2a $$ $$ 20-T=2a $$ From equation (i) and (ii), we get $$ T-5=10a $$ $$ 20-T=2a $$ $$ 20-5=12a $$ $$ 15=12a $$ $$ a=\\frac{15}{12}=\\frac{5}{4}=1.25\\mathrm{~m s}^{-2}. $$\n- Since, body does not move, hence it is in equilibrium. $f_{r}=$ Frictional force which is less than or equal friction. F' = Horizontal force applied on body. <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//c79bc8f7-ae73-4d39-ae19-35cff403b2e1/markdown_3/imgs/img_in_image_box_776_176_1045_367.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A42Z%2F-1%2F%2Fc3dfba88e5a0e70f466e21deea8da9f695f752b29330be74dcd0be4f130d30dd\" alt=\"Image\" width=\"22%\" /></div> Now. $$ N=mg $$ Hence, $$ \\begin{array}{r}{\\vec{\\mathrm{~F~}}=\\vec{\\mathrm{~N~}}+\\vec{f},}\\end{array} $$ $$ \\left|\\overrightarrow{F}\\right|^{2}\\leq(mg)^{2}+(\\mu mg)^{2} $$ $$ |\\overrightarrow{\\mathrm{F}}|\\leq m g\\sqrt{1+\\mu^{2}} $$\n- The coefficient of sliding friction is, $$ \\mu_{s}=\\frac{\\mathrm{N}}{\\mathrm{F_{s l i d i n g}}} $$ The dimension of N and F are same. So, $ \\mu $ is a dimensionless quantity.\n- The situation is shown in the figure. <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//c79bc8f7-ae73-4d39-ae19-35cff403b2e1/markdown_3/imgs/img_in_image_box_806_740_1015_863.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A43Z%2F-1%2F%2Fe979502cb7dc46d878d9452d7416e70ecbe81dd443885de62c7c74e69ab471ae\" alt=\"Image\" width=\"17%\" /></div> Here, coefficient of static friction, $$ \\mu_{s}=\\tan30^{\\circ}=\\frac{1}{\\sqrt{3}}=0.6 $$ And distance covered by plank, $$ s=u t+\\frac{1}{2}a t^{2} $$ Here, $u = 0$ and $a = g$ ($\\sin \\theta - \\mu_k \\cos \\theta$) $$ \\circ\\circ $$ $$ 4=\\frac{1}{2}g(\\sin30^{\\circ}-\\mu_{k}\\cos30^{\\circ}) $$ $$ 0.5=10\\times\\frac{1}{2}-\\mu_{k}\\times10\\times\\frac{\\sqrt{3}}{2} $$ $$ \\begin{array}{l}\\Rightarrow\\\\ \\quad\\Rightarrow\\\\ \\quad\\Rightarrow\\end{array}\\quad\\begin{array}{l}5\\sqrt{3}\\ \\mu_{k}=4.5\\\\ \\mu_{k}=0.51\\end{array} $$ Coefficient of kinetic friction is 0.51\n- The situation is. <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//c79bc8f7-ae73-4d39-ae19-35cff403b2e1/markdown_3/imgs/img_in_image_box_800_1364_1015_1485.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A43Z%2F-1%2F%2F30d3d3e7073e856a6d2e0d0d7a9b024452b3130b9dbc9ea8d069cf3c2f9cbffa\" alt=\"Image\" width=\"18%\" /></div> Let T be the tension in the string $a$ is acceleration of the block. Then from free body diagram of A and B is <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//c79bc8f7-ae73-4d39-ae19-35cff403b2e1/markdown_4/imgs/img_in_image_box_174_86_424_193.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A45Z%2F-1%2F%2Fed7c539158e2e65b85205f3c1b362add64cc880fff426a4ce343faf9941ffb99\" alt=\"Image\" width=\"21%\" /></div> From both the diagram, we have, $$ m_{2}g-T=m_{2}a $$ $$ \\mathrm{T}-\\mu_{k}m_{1}g=m_{1}a $$ From eq. (i) and (ii), $$ m_{2}g-\\mu_{k}m_{1}g=(m_{1}+m_{2})a $$ $$ a=\\frac{(m_{2}-\\mu_{k}m_{1})g}{m_{1}+m_{2}} $$ Putting the value of $a$ in eq. (i), $$ \\begin{aligned}\\mathrm{T}&=m_{2}g-m_{2}a\\\\&=m_{2}g-m_{2}\\left[\\frac{(m_{2}-\\mu_{k} m_{1})g}{m_{1}+m_{2}}\\right]\\\\&=\\ m_{2}g\\left[1-\\frac{(m_{2}-\\mu_{k} m_{1})}{m_{1}+m_{2}}\\right]\\end{aligned} $$ $$ \\mathrm{T}=\\frac{m_{1}m_{2}(1+\\mu_{k})g}{m_{1}+m_{2}} $$\n- From the question, It is given that, $ M_{A} = 4\\ kg $, $ M_{B} = 2\\ kg $, $ M_{C} = 1\\ kg $ $$ \\begin{aligned}\\mathbf{M}&=\\mathbf{M}_{\\mathbf{A}}+\\mathbf{M}_{\\mathbf{B}}+\\mathbf{M}_{\\mathbf{C}}\\\\&=(4+2+1)=7\\mathrm{kg}\\end{aligned} $$ We know, $$ \\mathrm{F=M a} $$ $$ 14=7a $$ <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//c79bc8f7-ae73-4d39-ae19-35cff403b2e1/markdown_4/imgs/img_in_image_box_232_907_424_979.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A45Z%2F-1%2F%2Fe5f878c0a917848eac6d82cfcc5b44f02578be5f847bd1dedf0b57aeee7aa6a2\" alt=\"Image\" width=\"16%\" /></div> Let f be the contact force between A and B then net force, F - f = 4a $$ 14-f=4\\times2 $$ $$ f=6\\textbf{N} $$\n- Consider free body diagram for block $m_{1}$, <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//c79bc8f7-ae73-4d39-ae19-35cff403b2e1/markdown_4/imgs/img_in_image_box_185_1136_418_1316.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A46Z%2F-1%2F%2Fe5c86dafeafc4dd007e88ca132699ff9c57163de23e7538d220d27df03384f23\" alt=\"Image\" width=\"19%\" /></div> Here $$ m_{1}=m_{2}=m_{3} $$ $$ mg-T_{1}=ma $$ For block $ m_{2} $ and $ m_{3} $, $$ T_{1}-2\\mu mg=2ma $$ Solving eq. (i) and (ii) $$ mg-T_{1}=ma $$ $$ T_{1}-2\\mu mg=2\\ ma $$ $$ mg-2\\mu mg=3ma $$ $$ mg(1-2\\mu)=3\\mu a $$ ∴ $$ a=\\frac{g(1-2\\mu)}{3} $$ This is downward acceleration of mass.\n- <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//c79bc8f7-ae73-4d39-ae19-35cff403b2e1/markdown_4/imgs/img_in_image_box_655_258_923_510.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A46Z%2F-1%2F%2F2b5b0247b0b284ea4cebb8d9813acc703df03639b4dd9674636e80052fbc4aba\" alt=\"Image\" width=\"22%\" /></div> For first half, Acceleration = g sin $\\theta$ $$ \\mathbf{v}^{2}=2(g\\sin\\theta)l $$ For second half, Acceleration = g (sin $\\theta - \\mu_{k}$ cos $\\theta$) $$ 0=\\mathbf{v}^{2}+2g\\left(\\sin\\theta-\\mu_{\\mathbf{k}}\\cos\\theta\\right)l\\ldots(\\mathrm{i i}) $$ Putting eq. (i) in (ii), we get $$ \\begin{aligned}{0=2\\left(g\\operatorname{s i n}\\theta\\right)l+\\left(2g\\operatorname{s i n}\\theta\\right)l}\\\\ {-\\left(2g\\;\\mu_{\\mathbf{k}}\\operatorname{c o s}\\theta\\right)l}\\\\ \\end{aligned} $$ $ \\therefore \\mu_{k} \\cos \\theta = 2 \\sin \\theta $\n- $$ \\upmu_{\\mathbf{k}}=2\\tan\\theta $$ <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//c79bc8f7-ae73-4d39-ae19-35cff403b2e1/markdown_4/imgs/img_in_image_box_799_871_925_1006.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A46Z%2F-1%2F%2Fe86c757f43f95801bc4dd3009b7e36aeb826c056bcf60c6cb576e5bc14b4a1ed\" alt=\"Image\" width=\"10%\" /></div> When the lift is accelerating upward. Then, Apparent weight > actual weight Then the equation becomes, $$ R-mg=ma $$ $$ 28000-20000=2000a $$ $$ \\begin{array}{r} \\begin{aligned}a&=\\frac{8000}{2000}\\\\ &=4\\ m s^{-2}\\end{aligned} \\end{array} $$\n- The different forces acting on the block are shown in the given figure. <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//c79bc8f7-ae73-4d39-ae19-35cff403b2e1/markdown_4/imgs/img_in_image_box_702_1377_886_1486.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A46Z%2F-1%2F%2F18443c827068400df584e72b5489a1fe5916e37788f2f69f792cc1b2ccb6f912\" alt=\"Image\" width=\"15%\" /></div> <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//c79bc8f7-ae73-4d39-ae19-35cff403b2e1/markdown_4/imgs/img_in_image_box_897_1361_1003_1489.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A47Z%2F-1%2F%2F5c01e6489c915acb9b3c19251d89fdf200b4039a5f622f3397c72037543ac9a5\" alt=\"Image\" width=\"8%\" /></div> Horizontal component = 20 cos 45° Vertical component = 20 sin 45° Now we can write. $$ 20\\cos45^{\\circ}-f=5a $$ Where $$ \\begin{aligned}f&=frictional~force\\\\&=\\mu N\\end{aligned} $$ $$ =0.2\\times\\aleph $$ And $$ \\begin{array}{l}\\text{N}=5\\text{g}+20\\sin45^{\\circ}\\\\=50+10\\sqrt{2}\\end{array} $$ Considering eq. (i) frictional force in eq. (i) $$ 10\\sqrt{2}-0.2(50+10\\sqrt{2}) $$ solving we get $$ a=0.2624 $$ ∴ speed of block after 15 sec. is $$ \\begin{aligned}\\mathbf{v}&=u+at\\\\&=0.2624\\times15=3.936\\mathrm{~ms}^{-1}\\end{aligned} $$\n- By using $$ \\mathbf{v}=u+at $$ $$ 0=\\mathbf{v}-\\mu g t $$ $$ t=\\frac{\\mathbf{v}}{\\mu g} $$",
+    "title": "How weight, normal reaction, tension and friction act",
+    "summary": "Everyday mechanics uses weight (mg), the normal reaction (perpendicular to the surface), tension (along strings) and friction (opposing relative motion, with f ≤ μN).",
+    "body": "**Must know**\n- Weight $W=mg$, directed downward; normal reaction $N$ acts perpendicular to the contact surface.\n- Tension acts along a string and is the same throughout a light (massless) string.\n- Friction: static $f_s\\le\\mu_s N$, kinetic $f_k=\\mu_k N$, with $\\mu_s>\\mu_k$.\n- Angle of repose: $\\mu_s=\\tan\\theta$.\n**Exam traps**\n- The normal force is not always equal to $mg$ (think of inclines and accelerating lifts).\n- Static friction adjusts up to its maximum; kinetic friction is essentially constant.",
     "formulas": [
       {
-        "latex": "a=\\frac{10}{5}=2m/s^{2}",
-        "meaning": ""
+        "latex": "W=mg",
+        "meaning": "Weight of a body"
       },
       {
-        "latex": "F_{YX}=(3)a",
-        "meaning": ""
+        "latex": "f_s\\le\\mu_s N",
+        "meaning": "Static friction (maximum)"
       },
       {
-        "latex": "\\mathrm{F}_{\\mathrm{YX}}=3\\times2=6\\mathrm{N}",
-        "meaning": ""
+        "latex": "f_k=\\mu_k N",
+        "meaning": "Kinetic friction"
       },
       {
-        "latex": "a=\\frac{F}{M}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{array}{l}\\therefore\\quad\\quad\\quad ma=\\mu mg\\\\\\Rightarrow\\quad\\quad\\quad a=\\mu\\times g\\\\\\Rightarrow\\quad\\quad\\quad a=0.15\\times10\\\\\\Rightarrow\\quad\\quad\\quad a=1.5\\ m/s^{2}\\end{array}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathrm{F}=\\mu m\\mathrm{g}",
-        "meaning": ""
-      },
-      {
-        "latex": "a=\\frac{\\mathrm{F}}{m}=\\frac{\\mu mg}{m}=\\mu g",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{aligned}\\mathrm{v}^{2}&=u^{2}+2a s\\\\0&=(2)^{2}-2(\\mu\\mathrm{g})\\mathrm{s}\\\\s&=\\frac{4}{2\\times0.5\\times10}=0.4\\mathrm{~m}\\end{aligned}",
-        "meaning": ""
-      },
-      {
-        "latex": "T-\\mu R=10a",
-        "meaning": ""
-      },
-      {
-        "latex": "\\therefore\\mathrm{T}-0.05\\times10\\mathrm{g}=10a\\quad\\{\\mu\\mathrm{R}=0.05\\times100=5\\}",
-        "meaning": ""
-      },
-      {
-        "latex": "T-5=10a",
-        "meaning": ""
-      },
-      {
-        "latex": "2g-T=2a",
-        "meaning": ""
-      },
-      {
-        "latex": "2\\times10-T=2a",
-        "meaning": ""
-      },
-      {
-        "latex": "20-T=2a",
-        "meaning": ""
-      },
-      {
-        "latex": "20-5=12a",
-        "meaning": ""
-      },
-      {
-        "latex": "15=12a",
-        "meaning": ""
-      },
-      {
-        "latex": "a=\\frac{15}{12}=\\frac{5}{4}=1.25\\mathrm{~m s}^{-2}.",
-        "meaning": ""
-      },
-      {
-        "latex": "N=mg",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{array}{r}{\\vec{\\mathrm{~F~}}=\\vec{\\mathrm{~N~}}+\\vec{f},}\\end{array}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\left|\\overrightarrow{F}\\right|^{2}\\leq(mg)^{2}+(\\mu mg)^{2}",
-        "meaning": ""
-      },
-      {
-        "latex": "|\\overrightarrow{\\mathrm{F}}|\\leq m g\\sqrt{1+\\mu^{2}}",
-        "meaning": ""
-      },
-      {
-        "latex": "f_{r}=",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mu_{s}=\\frac{\\mathrm{N}}{\\mathrm{F_{s l i d i n g}}}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mu_{s}=\\tan30^{\\circ}=\\frac{1}{\\sqrt{3}}=0.6",
-        "meaning": ""
+        "latex": "\\mu_s=\\tan\\theta",
+        "meaning": "Angle of repose"
       }
     ],
     "questionIds": [
@@ -278,7 +118,7 @@
       "AIPMT 1993",
       "AIPMT 1991"
     ],
-    "source": "seed"
+    "source": "authored"
   },
   {
     "id": "note-laws-of-motion-conservation-of-momentum",
@@ -288,89 +128,21 @@
     "unitId": "xi-laws",
     "unitLabel": "Unit III — Laws of Motion",
     "order": 3,
-    "title": "Conservation of Momentum",
-    "summary": "We know that momentum, P = mv <div style=\"text-align: center;\"><img…",
-    "body": "**Key points from solved questions**\n- Let $m$ be the mass of the object, which is flying with velocity $(20\\hat{i}+25\\hat{j}-12\\hat{k})$ is in air. According to the question, the mass breaks into two pieces of ratio 1:5, that means the small piece is $ \\frac{m}{6} $ and another piece is $ \\frac{5m}{6} $. Using law of conservation of momentum, Initial momentum = Final momentum $$ \\begin{array}{r} \\begin{aligned}m\\left(20\\hat{i}+25\\hat{j}-12\\hat{k}\\right)&=\\frac{m}{6}\\left(100\\hat{i}+35\\hat{j}-8\\hat{k}\\right)\\\\ &\\quad+\\frac{5}{6}m\\vec{v}\\end{aligned} \\end{array} $$ $$ \\begin{array}{l}\\Rightarrow(120\\hat{i}+150\\hat{j}-72\\hat{k})=(100\\hat{i}+35\\hat{j}+8\\hat{k})+5\\vec{v}\\\\\\Rightarrow\\quad\\begin{array}{r}\\vec{v}=\\frac{1}{5}\\left(20\\hat{i}+115\\hat{j}-80\\hat{k}\\right)\\\\ \\vec{v}=4\\hat{i}+23\\hat{j}-16\\hat{k}\\end{array}\\end{array} $$\n- Using law of conservation of momentum,\n- We know that momentum, P = mv <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//c79bc8f7-ae73-4d39-ae19-35cff403b2e1/markdown_1/imgs/img_in_image_box_803_826_1060_1002.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A36Z%2F-1%2F%2F06a7af5f81094e10d6ab7f735dca51e5c7cdc408050d67b7d129366b324def61\" alt=\"Image\" width=\"21%\" /></div> ∴ Using law of conservation of momentum, $$ \\begin{array}{c} 1\\times12\\hat{i}+2\\times8\\hat{j}+\\overrightarrow{\\mathrm{\\bf p}_{3}}=0\\end{array} $$ $$ \\mathbf{p}_{3}=-\\left(12\\hat{i}+16\\hat{j}\\right) $$ $$ \\begin{array}{l} \\text{p3|} =\\displaystyle {\\sqrt{(12)^{2} + (16)^{2}}} \\\\ \\qquad = \\sqrt{144 + 256} \\\\ \\qquad = 20 \\text{ kg m/s} \\end{array} $$ Now, $$ p_{3}=m_{3}\\mathbf{v}_{3} $$ $$ m_{3}=\\frac{\\mathbf{p}_{3}}{\\mathbf{v}_{3}}=\\frac{20}{4}=5\\mathrm{~kg} $$\n- Time taken by stone to reach the ground is $$ t=\\frac{s}{u_{1}}=\\frac{10}{2}=5s $$ Using conservation of moment, $$ m_{1}u_{1}=m_{2}u_{2} $$ $$ \\Rightarrow $$ $$ u_{2}=\\frac{0.5\\times2}{50}=\\frac{1}{50}m/s $$ Distance travelled by man in 5 s $$ =\\frac{1}{50}\\times5=0.1m $$ Distance from the ground. = 10 + 0.1 = 10.1 m\n- Mass of bullet $ m_{1} $ = 200 g = 0.2 kg; $$ (\\mathbf{v}_{1})=5\\mathrm{~m/s} $$ and mass of gun $ (m_{2}) = 1 \\, kg $. Before firing, total momentum is zero. After firing total momentum is = $ m_1v_1 + m_2v_2 $. From the law of conservation of momentum, $$ m_{1}\\mathbf{v}_{1}+m_{2}\\mathbf{v}_{2}=0 $$ or $$ \\mathbf{v}_{2}=\\frac{-m_{1}\\mathbf{v}_{1}}{m_{2}}=\\frac{-0.2\\times5}{1}=-1\\ m/s $$\n- Since, 5 kg body explodes into three fragments with masses in the ratio 1:1:3 thus, masses of fragments will be 1 kg, 1 kg and 3 kg respectively. The magnitude of resultant momentum of two fragments each of mass 1 kg, moving with velocity 21 m/s, in perpendicular directions is $$ \\begin{aligned}&=\\sqrt{\\left(m_{1}\\mathbf{v}_{1}\\right)^{2}+\\left(m_{2}\\mathbf{v}_{2}\\right)^{2}}\\\\&=\\sqrt{\\left(21\\right)^{2}+\\left(21\\right)^{2}}=21\\sqrt{2}\\mathrm{~kg}m/s\\end{aligned} $$ According to law of conservation of linear momentum, $$ m_{3}v_{3}=21\\sqrt{2} $$ or $$ 3\\mathbf{v}_{3}=21\\sqrt{2} $$ or $$ \\mathbf{v}_{3}=7\\sqrt{2}\\mathrm{~m/s} $$",
+    "title": "How momentum is conserved without an external force",
+    "summary": "For an isolated system (no net external force), the total momentum stays constant — a direct consequence of Newton's second and third laws.",
+    "body": "**Must know**\n- $\\vec{F}_{ext}=0\\Rightarrow\\vec{p}_{total}=\\text{constant}$.\n- Two-body: $m_1\\vec{u}_1+m_2\\vec{u}_2=m_1\\vec{v}_1+m_2\\vec{v}_2$.\n- Recoil from rest: $m_1\\vec{v}_1+m_2\\vec{v}_2=0$ (gun and bullet move oppositely).\n**Exam traps**\n- Momentum is conserved even in inelastic collisions and explosions.\n- Internal forces cannot change the total momentum of the system.",
     "formulas": [
       {
-        "latex": "\\begin{array}{r} \\begin{aligned}m\\left(20\\hat{i}+25\\hat{j}-12\\hat{k}\\right)&=\\frac{m}{6}\\left(100\\hat{i}+35\\hat{j}-8\\hat{k}\\right)\\\\ &\\quad+\\frac{5}{6}m\\vec{v}\\end{aligned} \\end{array}",
-        "meaning": ""
+        "latex": "\\vec{F}_{ext}=0\\Rightarrow\\vec{p}=\\text{constant}",
+        "meaning": "Conservation of momentum"
       },
       {
-        "latex": "\\begin{array}{l}\\Rightarrow(120\\hat{i}+150\\hat{j}-72\\hat{k})=(100\\hat{i}+35\\hat{j}+8\\hat{k})+5\\vec{v}\\\\\\Rightarrow\\quad\\begin{array}{r}\\vec{v}=\\frac{1}{5}\\left(20\\hat{i}+115\\hat{j}-80\\hat{k}\\right)\\\\ \\vec{v}=4\\hat{i}+23\\hat{j}-16\\hat{k}\\end{array}\\end{array}",
-        "meaning": ""
+        "latex": "m_1\\vec{u}_1+m_2\\vec{u}_2=m_1\\vec{v}_1+m_2\\vec{v}_2",
+        "meaning": "Two-body momentum balance"
       },
       {
-        "latex": "\\begin{array}{c} 1\\times12\\hat{i}+2\\times8\\hat{j}+\\overrightarrow{\\mathrm{\\bf p}_{3}}=0\\end{array}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathbf{p}_{3}=-\\left(12\\hat{i}+16\\hat{j}\\right)",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{array}{l} \\text{p3|} =\\displaystyle {\\sqrt{(12)^{2} + (16)^{2}}} \\\\ \\qquad = \\sqrt{144 + 256} \\\\ \\qquad = 20 \\text{ kg m/s} \\end{array}",
-        "meaning": ""
-      },
-      {
-        "latex": "p_{3}=m_{3}\\mathbf{v}_{3}",
-        "meaning": ""
-      },
-      {
-        "latex": "m_{3}=\\frac{\\mathbf{p}_{3}}{\\mathbf{v}_{3}}=\\frac{20}{4}=5\\mathrm{~kg}",
-        "meaning": ""
-      },
-      {
-        "latex": "t=\\frac{s}{u_{1}}=\\frac{10}{2}=5s",
-        "meaning": ""
-      },
-      {
-        "latex": "m_{1}u_{1}=m_{2}u_{2}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\Rightarrow",
-        "meaning": ""
-      },
-      {
-        "latex": "u_{2}=\\frac{0.5\\times2}{50}=\\frac{1}{50}m/s",
-        "meaning": ""
-      },
-      {
-        "latex": "=\\frac{1}{50}\\times5=0.1m",
-        "meaning": ""
-      },
-      {
-        "latex": "(\\mathbf{v}_{1})=5\\mathrm{~m/s}",
-        "meaning": ""
-      },
-      {
-        "latex": "m_{1}\\mathbf{v}_{1}+m_{2}\\mathbf{v}_{2}=0",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathbf{v}_{2}=\\frac{-m_{1}\\mathbf{v}_{1}}{m_{2}}=\\frac{-0.2\\times5}{1}=-1\\ m/s",
-        "meaning": ""
-      },
-      {
-        "latex": "(m_{2}) = 1 \\, kg",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{aligned}&=\\sqrt{\\left(m_{1}\\mathbf{v}_{1}\\right)^{2}+\\left(m_{2}\\mathbf{v}_{2}\\right)^{2}}\\\\&=\\sqrt{\\left(21\\right)^{2}+\\left(21\\right)^{2}}=21\\sqrt{2}\\mathrm{~kg}m/s\\end{aligned}",
-        "meaning": ""
-      },
-      {
-        "latex": "m_{3}v_{3}=21\\sqrt{2}",
-        "meaning": ""
-      },
-      {
-        "latex": "3\\mathbf{v}_{3}=21\\sqrt{2}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathbf{v}_{3}=7\\sqrt{2}\\mathrm{~m/s}",
-        "meaning": ""
+        "latex": "m_1\\vec{v}_1+m_2\\vec{v}_2=0",
+        "meaning": "Recoil from rest"
       }
     ],
     "questionIds": [
@@ -386,7 +158,7 @@
       "AIPMT 1996",
       "AIPMT 1989"
     ],
-    "source": "seed"
+    "source": "authored"
   },
   {
     "id": "note-laws-of-motion-equilibrium-of-a-particle",
@@ -396,21 +168,21 @@
     "unitId": "xi-laws",
     "unitLabel": "Unit III — Laws of Motion",
     "order": 3,
-    "title": "Equilibrium of a Particle",
-    "summary": "This problem has two cases, <div style=\"text-align: center;\"><img…",
-    "body": "**Key points from solved questions**\n- This problem has two cases, <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//c79bc8f7-ae73-4d39-ae19-35cff403b2e1/markdown_2/imgs/img_in_image_box_164_1045_445_1198.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A38Z%2F-1%2F%2F15031aa958bffdf8ec7a93bac803a3fdd19cb8921a67d1f12b8b70375a175ec1\" alt=\"Image\" width=\"23%\" /></div> Case (I): The system is in equilibrium with mass 3m (weight = 4mg) over the spring. Case (II): When the string is cut according to the figure then: (a) Free body diagram $ \\underline{\\text{of}} $ mass m. <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//c79bc8f7-ae73-4d39-ae19-35cff403b2e1/markdown_2/imgs/img_in_image_box_284_1342_336_1432.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A38Z%2F-1%2F%2Ffa14292f56d3ea17c8ab9e0d3789c6281cd13a16125bfb5405edce80cbf5b99c\" alt=\"Image\" width=\"4%\" /></div> Here, force on mass m = mg $ \\therefore $ Acceleration = g (b) Free body diagram of mass 3m Net force, $$ \\mathrm{F_{net}}=4mg-3mg $$ ： $$ 3m.a.=mg $$ $$ a=\\frac{g}{3} $$ <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//c79bc8f7-ae73-4d39-ae19-35cff403b2e1/markdown_2/imgs/img_in_image_box_788_267_883_410.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A39Z%2F-1%2F%2F5b8cd1a32bf509ef2b7725b99e68b9cfa0713bace3395126dac224e3a98a0ed2\" alt=\"Image\" width=\"7%\" /></div> $\\therefore$ Accelerations of blocks A and B are $\\frac{g}{3}$ and $g$ respectively.",
+    "title": "How a particle stays in equilibrium under concurrent forces",
+    "summary": "A particle is in equilibrium when the vector sum of the forces on it is zero; resolving, ΣFx = 0 and ΣFy = 0.",
+    "body": "**Must know**\n- Condition: $\\sum\\vec{F}=0$, i.e. $\\sum F_x=0$ and $\\sum F_y=0$.\n- Three concurrent forces in equilibrium form a closed triangle.\n- Lami's theorem: $\\dfrac{F_1}{\\sin\\alpha}=\\dfrac{F_2}{\\sin\\beta}=\\dfrac{F_3}{\\sin\\gamma}$.\n**Exam traps**\n- Equilibrium means zero NET force, not the absence of forces.\n- Resolve along convenient perpendicular axes before summing.",
     "formulas": [
       {
-        "latex": "\\mathrm{F_{net}}=4mg-3mg",
-        "meaning": ""
+        "latex": "\\sum\\vec{F}=0",
+        "meaning": "Condition for equilibrium"
       },
       {
-        "latex": "3m.a.=mg",
-        "meaning": ""
+        "latex": "\\sum F_x=0,\\quad \\sum F_y=0",
+        "meaning": "Component equations"
       },
       {
-        "latex": "a=\\frac{g}{3}",
-        "meaning": ""
+        "latex": "\\dfrac{F_1}{\\sin\\alpha}=\\dfrac{F_2}{\\sin\\beta}=\\dfrac{F_3}{\\sin\\gamma}",
+        "meaning": "Lami's theorem"
       }
     ],
     "questionIds": [
@@ -419,7 +191,7 @@
     "tags": [
       "NEET 2017"
     ],
-    "source": "seed"
+    "source": "authored"
   },
   {
     "id": "note-laws-of-motion-newton-s-first-law-of-motion",
@@ -429,15 +201,24 @@
     "unitId": "xi-laws",
     "unitLabel": "Unit III — Laws of Motion",
     "order": 3,
-    "title": "Newton's First Law of Motion",
-    "summary": "Newton's first law of motion is related to physical independence of force.",
-    "body": "**Key points from solved questions**\n- Newton's first law of motion is related to physical independence of force.",
-    "formulas": [],
+    "title": "Why a body keeps its state of motion (inertia)",
+    "summary": "A body stays at rest or in uniform straight-line motion unless a net external force acts on it; this defines inertia and inertial frames.",
+    "body": "**Must know**\n- With no net force the velocity is constant: $\\sum\\vec{F}=0\\Rightarrow\\vec{v}=\\text{constant}$.\n- Inertia is the tendency to resist a change in motion; mass measures inertia.\n- The first law defines force qualitatively and identifies inertial frames.\n**Exam traps**\n- Zero NET force does not mean no forces act — they may simply balance.\n- The first law is the special case $\\vec{F}=0\\Rightarrow\\vec{a}=0$ of the second law.",
+    "formulas": [
+      {
+        "latex": "\\sum\\vec{F}=0\\Rightarrow\\vec{a}=0",
+        "meaning": "No net force means no acceleration"
+      },
+      {
+        "latex": "\\sum\\vec{F}=0\\Rightarrow\\vec{v}=\\text{constant}",
+        "meaning": "Uniform motion under zero net force"
+      }
+    ],
     "questionIds": [
       "bb78edc7-799a-42f9-a2e4-01e749530e76"
     ],
     "tags": [],
-    "source": "seed"
+    "source": "authored"
   },
   {
     "id": "note-laws-of-motion-newton-s-second-law-of-motion",
@@ -447,105 +228,21 @@
     "unitId": "xi-laws",
     "unitLabel": "Unit III — Laws of Motion",
     "order": 3,
-    "title": "Newton's Second Law of Motion",
-    "summary": "The situation is shown in the figure, <div style=\"text-align: center;\"><img…",
-    "body": "**Key points from solved questions**\n- Given. Acceleration $$ \\begin{array}{l}\\overset{\\rightarrow}{u}=-u\\overset{\\wedge}{j}\\\\ \\to\\quad\\overset{\\wedge}{v}=ui\\end{array} $$ $$ \\vec{a}=\\frac{\\mathbf{v}-\\mathbf{u}}{t} $$ $$ \\vec{a}=\\frac{\\hat{u i}+\\hat{u j}}{t} $$ Direction of acceleration $$ \\tan\\theta=\\frac{\\mathbf{v}}{u}=1 $$ $ \\theta = 45^{\\circ} $, along northeast. Force is also acting towards north-east. $$ h=10m $$\n- Given. $$ m=0.15\\mathrm{~k g} $$ Velocity just before striking the ground. $$ \\mathbf{v}_{1}=\\sqrt{2gh} $$ $$ \\mathbf{v}_{1}=\\sqrt{2\\times(10\\times10)} $$ $$ =10\\sqrt{2}\\mathrm{~m/s} $$ $$ v_{1}=-10\\sqrt{2} $$ If it reaches same height, speed remain same after collision only the direction changes. $$ v_{2}=10\\sqrt{2}\\ m/s $$ $$ \\overrightarrow{v}_{2}^{}=10\\sqrt{2} $$ $$ \\begin{align*}\\text{Impulse}&=m\\left|\\Delta\\overrightarrow{v}\\right|\\\\&=m\\left|10\\sqrt{2}\\hat{j}-(-10\\sqrt{2}\\hat{j})\\right|\\\\&=0.15\\left[2\\left(10\\sqrt{2}\\right)\\right]\\\\&=3\\sqrt{2}\\text{kg m/s}\\\\&=4.2\\text{kg m/s}.\\end{align*} $$\n- As forces are forming closed loop in same order. So, Net force = 0 $$ ↳\\;\\downarrow\\;↳: $$ $$ \\begin{array}{l}\\overrightarrow{\\mathrm{F}_{\\mathrm{net}}}=0\\\\m\\frac{d\\overrightarrow{\\mathrm{v}}}{dt}=0\\\\\\quad\\rightarrow\\\\\\quad\\mathrm{v}=\\mathrm{constant}\\end{array} $$\n- Impulse, $$ \\begin{aligned}|\\overrightarrow{\\Delta\\mathrm{P}}|&=m|\\overrightarrow{\\Delta\\mathrm{v}}|\\\\&=m(2\\times\\cos60^{\\circ})=m\\mathrm{v}\\end{aligned} $$\n- The F-t graph is, <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//b22cad9d-aca7-4c28-90ba-209f95fbfd68/markdown_4/imgs/img_in_image_box_210_643_521_761.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A02Z%2F-1%2F%2F2048dcad9e370e5f64484936ceee33fdea55aca600ab64a750c20056ce5a478f\" alt=\"Image\" width=\"26%\" /></div> Now, Change of momentum, For $$ I^{st}\\rightarrow\\Delta\\mathbf{P}_{1}=\\frac{1}{2}\\times2\\times6=6kg-m/s $$ For $\\mathrm{II}^{\\mathrm{nd}} \\rightarrow \\Delta \\mathrm{P}_{2} = 2\\left(-3\\right) = -6\\ \\mathrm{kg} \\cdot \\mathrm{m/s}$ For $ \\mathrm{III}^{\\mathrm{rd}} \\rightarrow \\Delta \\mathrm{P}_{3} = 4 \\times 3 = 12 \\, \\mathrm{kg} - \\mathrm{m/s} $ Total change in momentum, $$ \\begin{aligned}\\Delta\\mathrm{P}&=\\Delta\\mathrm{P}_{1}+\\Delta\\mathrm{P}_{2}+\\Delta\\mathrm{P}_{3}\\\\&=6-6+12\\\\&=12\\mathrm{~Ns}\\end{aligned} $$\n- Using law of conservation of momentum, Initial momentum = mu₁ + mu₂ final momentum = nmv₁ + (M - nm)v₂ ∴ $ mu_1 + mu_2 = nmv_1 + (M - nm)v_2 $ $ 0 = \\frac{10 \\times 10}{1000} \\times 800 + \\left(100 - \\frac{10 \\times 10}{1000}\\right)v_2 $ $ -80 = \\frac{999}{10}v_2 $ $ \\Rightarrow v_2 = -0.8 \\, \\text{ms}^{-1} $ And average force exerted on the person, $ =\\frac{n \\times m \\times u}{\\Delta t} $ $ = \\frac{10 \\times \\frac{10}{1000} \\times 800}{5} $ $ =\\frac{80}{5} = 16 \\, \\text{N} $\n- We know that, $$ \\mathbf{v}=\\sqrt{2gh} $$ and momentum, $$ p=m\\mathbf{v} $$ $$ p\\propto\\sqrt{h} $$ $$ \\Rightarrow $$ $$ \\bullet \\quad \\bullet\\ast $$ $$ \\frac{p_{2}}{p_{1}}=\\sqrt{\\frac{h_{2}}{h_{1}}}=\\sqrt{\\frac{2h}{h}}=\\sqrt{2} $$ $$ p_{2}=\\sqrt{2}p_{1} $$ $$ \\bullet \\quad \\bullet\\bullet $$ $$ p_{2}=1.414p_{1} $$ $$ \\%change=\\frac{p_{2}-p_{1}}{p_{1}}\\times100\\%=41\\% $$\n- Impulse = Change in linear momentum $ = M v - (-M v) = 2 M v $\n- We know that, $$ Force=mass\\times acceleration. $$ ∴ $$ \\�d_{F}=6\\stackrel{\\wedge}{i-8}\\stackrel{\\wedge}{j+10}\\stackrel{\\wedge}{k} $$ $$ \\begin{aligned}|\\mathrm{F}|&=\\sqrt{6^{2}+(8)^{2}+10^{2}}\\\\&=\\sqrt{36+64+100}\\\\&=10\\sqrt{2}\\,\\mathrm{N}\\end{aligned} $$ and $$ a=1~\\mathrm{m s}^{-2} $$ $$ m=\\frac{10\\sqrt{2}}{1}=10\\sqrt{2}\\ kg $$\n- The situation is shown in the figure, <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//b22cad9d-aca7-4c28-90ba-209f95fbfd68/markdown_4/imgs/img_in_image_box_840_641_1068_738.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A02Z%2F-1%2F%2F5f64c40c93ccfe8b8833553372c2b7af9b5ea9771a5f7bd782ce419b835b2ad0\" alt=\"Image\" width=\"19%\" /></div> Change in momentum $$ \\begin{aligned}\\overrightarrow{\\Delta\\mathrm{P}}&=\\overrightarrow{\\mathrm{P}}_{f}-\\overrightarrow{\\mathrm{P}}_{i}=m(\\mathrm{v}_{f}-\\mathrm{v}_{i})\\\\&=m[(\\mathrm{v}\\cos45^{\\circ}\\stackrel{\\wedge}{i}-\\mathrm{v}\\sin45^{\\circ}\\stackrel{\\wedge}{j})\\\\&\\quad-(\\mathrm{v}\\cos45^{\\circ}\\stackrel{\\wedge}{i}+\\mathrm{v}\\sin45^{\\circ}\\stackrel{\\wedge}{j})]\\\\&=m\\left[\\left(\\frac{\\mathrm{v}}{\\sqrt{2}}\\stackrel{\\wedge}{i}-\\frac{\\mathrm{v}}{\\sqrt{2}}\\stackrel{\\wedge}{j}\\right)-\\left(\\frac{\\mathrm{v}}{\\sqrt{2}}\\stackrel{\\wedge}{i}+\\frac{\\mathrm{v}}{\\sqrt{2}}\\stackrel{\\wedge}{j}\\right)\\right]\\\\&=-\\sqrt{2}m\\mathrm{v}\\stackrel{\\wedge}{j}\\end{aligned} $$ $$ \\vert\\overrightarrow{\\Delta\\mathbf{P}}\\vert=-\\sqrt{2}\\;m\\mathbf{v} $$\n- Components of momentum parallel to the wall are in the same direction and components of momentum perpendicular to the wall are opposite to each other. Therefore, change of momentum = 2mv sin $\\theta$ <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//b22cad9d-aca7-4c28-90ba-209f95fbfd68/markdown_4/imgs/img_in_image_box_873_1246_988_1452.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A02Z%2F-1%2F%2Fe97fe3398aff5912cffdcd83dc3511498f9c9841d5d185ffa743c9b874100adc\" alt=\"Image\" width=\"9%\" /></div> $ F \\times t = \\text{Change in momentum} = 2mv \\sin \\theta $ ∴ $$ \\begin{array}{l}\\text{F}=\\frac{2mv\\sin\\theta}{t}\\\\=\\frac{2\\times0.5\\times12\\times\\sin30^{\\circ}}{0.25}\\\\=48\\times\\frac{1}{2}=24\\text{N}\\end{array} $$\n- Mass. $$ m=3\\mathrm{~k g}, $$ force, $$ \\mathrm{F}=6t^{2}\\hat{i}+4t\\hat{j} $$ ∴ acceleration. $$ a=\\frac{F}{m}=\\frac{6t^{2}\\hat{i}+4t\\hat{j}}{3} $$ $$ a=2t^{2}\\hat{i}+\\frac{4}{3}t\\hat{j} $$ Now, $$ a=\\frac{dv}{dt}=2t^{2}\\hat{i}+\\frac{4}{3}t\\hat{j} $$ $$ d\\mathbf{v}=\\left(2t^{2}\\hat{i}+\\frac{4}{3}t\\hat{j}\\right)dt $$ $$ \\begin{array}{c} \\displaystyle \\mathbf{v} =\\int_{0}^{3} \\left(2 t^{2} \\hat{i} + \\frac{4}{3} t \\hat{j}\\right) dt \\\\ \\displaystyle = \\left[ \\frac{2}{3} t^{3} \\hat{i} + \\frac{4}{6} t^{2} \\hat{j} \\right]_{0}^{3} = 18 \\hat{i} + 6 \\hat{j}. \\end{array} $$\n- Impulse = Change in momentum $$ \\mathrm{~F~}.\\Delta t=m\\,\\mathbf{v}; $$ $$ \\begin{aligned}F&=\\frac{m.v}{\\Delta t}\\\\&=\\frac{150\\times10^{-3}\\times20}{0.1}=30N\\end{aligned} $$\n- Force = $ \\frac{d}{dt} $ (momentum) = $ \\frac{d}{dt} $ (mv) = v $ \\left(\\frac{dm}{dt}\\right) $ $ \\Rightarrow 210 = 300\\left(\\frac{dm}{dt}\\right) $ $ \\frac{dm}{dt} = rate of combustion $ $ \\frac{210}{300} = 0.7 kg/s $",
+    "title": "How force equals the rate of change of momentum",
+    "summary": "The net force on a body equals the rate of change of its momentum, F = dp/dt; for constant mass this becomes F = ma.",
+    "body": "**Must know**\n- General form: $\\vec{F}=\\dfrac{d\\vec{p}}{dt}$; for constant mass, $\\vec{F}=m\\vec{a}$.\n- Impulse–momentum theorem: $\\vec{J}=\\displaystyle\\int\\vec{F}\\,dt=\\Delta\\vec{p}$.\n- SI unit: newton, $1\\ \\text{N}=1\\ \\text{kg m s}^{-2}$.\n**Exam traps**\n- Use $\\vec{F}=d\\vec{p}/dt$ when the mass changes (e.g. rockets).\n- A large force for a short time and a small force for a long time can give the same impulse.",
     "formulas": [
       {
-        "latex": "\\begin{array}{l}\\overset{\\rightarrow}{u}=-u\\overset{\\wedge}{j}\\\\ \\to\\quad\\overset{\\wedge}{v}=ui\\end{array}",
-        "meaning": ""
+        "latex": "\\vec{F}=\\dfrac{d\\vec{p}}{dt}",
+        "meaning": "Newton's second law (general)"
       },
       {
-        "latex": "\\vec{a}=\\frac{\\mathbf{v}-\\mathbf{u}}{t}",
-        "meaning": ""
+        "latex": "\\vec{F}=m\\vec{a}",
+        "meaning": "Second law for constant mass"
       },
       {
-        "latex": "\\vec{a}=\\frac{\\hat{u i}+\\hat{u j}}{t}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\tan\\theta=\\frac{\\mathbf{v}}{u}=1",
-        "meaning": ""
-      },
-      {
-        "latex": "h=10m",
-        "meaning": ""
-      },
-      {
-        "latex": "\\theta = 45^{\\circ}",
-        "meaning": ""
-      },
-      {
-        "latex": "m=0.15\\mathrm{~k g}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathbf{v}_{1}=\\sqrt{2gh}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathbf{v}_{1}=\\sqrt{2\\times(10\\times10)}",
-        "meaning": ""
-      },
-      {
-        "latex": "=10\\sqrt{2}\\mathrm{~m/s}",
-        "meaning": ""
-      },
-      {
-        "latex": "v_{1}=-10\\sqrt{2}",
-        "meaning": ""
-      },
-      {
-        "latex": "v_{2}=10\\sqrt{2}\\ m/s",
-        "meaning": ""
-      },
-      {
-        "latex": "\\overrightarrow{v}_{2}^{}=10\\sqrt{2}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{align*}\\text{Impulse}&=m\\left|\\Delta\\overrightarrow{v}\\right|\\\\&=m\\left|10\\sqrt{2}\\hat{j}-(-10\\sqrt{2}\\hat{j})\\right|\\\\&=0.15\\left[2\\left(10\\sqrt{2}\\right)\\right]\\\\&=3\\sqrt{2}\\text{kg m/s}\\\\&=4.2\\text{kg m/s}.\\end{align*}",
-        "meaning": ""
-      },
-      {
-        "latex": "↳\\;\\downarrow\\;↳:",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{array}{l}\\overrightarrow{\\mathrm{F}_{\\mathrm{net}}}=0\\\\m\\frac{d\\overrightarrow{\\mathrm{v}}}{dt}=0\\\\\\quad\\rightarrow\\\\\\quad\\mathrm{v}=\\mathrm{constant}\\end{array}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{aligned}|\\overrightarrow{\\Delta\\mathrm{P}}|&=m|\\overrightarrow{\\Delta\\mathrm{v}}|\\\\&=m(2\\times\\cos60^{\\circ})=m\\mathrm{v}\\end{aligned}",
-        "meaning": ""
-      },
-      {
-        "latex": "I^{st}\\rightarrow\\Delta\\mathbf{P}_{1}=\\frac{1}{2}\\times2\\times6=6kg-m/s",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{aligned}\\Delta\\mathrm{P}&=\\Delta\\mathrm{P}_{1}+\\Delta\\mathrm{P}_{2}+\\Delta\\mathrm{P}_{3}\\\\&=6-6+12\\\\&=12\\mathrm{~Ns}\\end{aligned}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathrm{II}^{\\mathrm{nd}} \\rightarrow \\Delta \\mathrm{P}_{2} = 2\\left(-3\\right) = -6\\ \\mathrm{kg} \\cdot \\mathrm{m/s}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathrm{III}^{\\mathrm{rd}} \\rightarrow \\Delta \\mathrm{P}_{3} = 4 \\times 3 = 12 \\, \\mathrm{kg} - \\mathrm{m/s}",
-        "meaning": ""
-      },
-      {
-        "latex": "mu_1 + mu_2 = nmv_1 + (M - nm)v_2",
-        "meaning": ""
-      },
-      {
-        "latex": "0 = \\frac{10 \\times 10}{1000} \\times 800 + \\left(100 - \\frac{10 \\times 10}{1000}\\right)v_2",
-        "meaning": ""
-      },
-      {
-        "latex": "-80 = \\frac{999}{10}v_2",
-        "meaning": ""
+        "latex": "\\vec{J}=\\int\\vec{F}\\,dt=\\Delta\\vec{p}",
+        "meaning": "Impulse–momentum theorem"
       }
     ],
     "questionIds": [
@@ -584,7 +281,7 @@
       "AIPMT 1996",
       "AIPMT 1990"
     ],
-    "source": "seed"
+    "source": "authored"
   },
   {
     "id": "note-laws-of-motion-newton-s-third-law-of-motion",
@@ -594,65 +291,17 @@
     "unitId": "xi-laws",
     "unitLabel": "Unit III — Laws of Motion",
     "order": 3,
-    "title": "Newton's Third Law of Motion",
-    "summary": "Thrust is the force with which the rocket moves upward given by, $$ \\mathrm{F}=u\\frac{dm}{dt} $$ Thus mass of the gas ejected per second to supply the thrust needed to overcome the weight of the rocket is $$…",
-    "body": "**Key points from solved questions**\n- Force required, $ F = \\frac{d(mv)}{dt} $ $ = v\\left(\\frac{dm}{dt}\\right) = vM $ as velocity v is constant Hence, $ \\mathrm{F}=\\mathrm{Mv} $\n- $$ \\mathrm{Thrust}=\\mathbf{M}(g+a)=u\\frac{dm}{dt} $$ $$ \\begin{array}{l}\\frac{dm}{dt}=\\frac{M(g+a)}{u}\\\\=\\frac{5000(10+20)}{800}\\\\ =187.5\\ kg/s \\end{array} $$\n- Rate of burning of fuel, $ \\left(\\frac{dm}{dt}\\right)=1\\ kg/s $ and velocity of ejected fuel, (v) = 60 km/s = 60 × 10³ m/s Force = Rate of change of momentum = $ \\frac{dp}{dt} = \\frac{d(mv)}{dt} $ = v $ \\frac{dm}{dt} $ =(60 × 10³) × 1 = 60000 N\n- Rate of change of mass, $$ =\\frac{d\\mathbf{M}}{dt}=\\alpha\\mathbf{v}. $$ Retarding force = Rate of change of momentum = Velocity $ \\times $ Rate of change in mass $ = -v \\times \\frac{dM}{dt} $ $ = -v \\times \\alpha v = -\\alpha v^{2} $. (Minus sign of v due to deceleration) Therefore, acceleration $ = -\\frac{\\alpha v^{2}}{M} $.\n- Thrust is the force with which the rocket moves upward given by, $$ \\mathrm{F}=u\\frac{dm}{dt} $$ Thus mass of the gas ejected per second to supply the thrust needed to overcome the weight of the rocket is $$ \\frac{dm}{dt}=\\frac{F}{u}=\\frac{ma}{u} $$ or $$ \\begin{array}{l}\\frac{dm}{dt}=\\frac{600\\times10}{1000}\\\\ =6\\mathrm{kg}\\mathrm{s}^{-1}\\end{array} $$",
+    "title": "Why every action has an equal and opposite reaction",
+    "summary": "Forces come in pairs: if A pushes B, then B pushes A with an equal and opposite force; the pair acts on different bodies, so it never cancels.",
+    "body": "**Must know**\n- $\\vec{F}_{AB}=-\\vec{F}_{BA}$ — equal in magnitude, opposite in direction.\n- The two forces act on different bodies, so they do not cancel each other.\n- It underlies recoil, walking, swimming and rocket propulsion.\n**Exam traps**\n- Action and reaction never act on the same body — that is why they can't cancel.\n- They appear and disappear together (simultaneously).",
     "formulas": [
       {
-        "latex": "F = \\frac{d(mv)}{dt}",
-        "meaning": ""
+        "latex": "\\vec{F}_{AB}=-\\vec{F}_{BA}",
+        "meaning": "Action–reaction pair"
       },
       {
-        "latex": "= v\\left(\\frac{dm}{dt}\\right) = vM",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathrm{F}=\\mathrm{Mv}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathrm{Thrust}=\\mathbf{M}(g+a)=u\\frac{dm}{dt}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{array}{l}\\frac{dm}{dt}=\\frac{M(g+a)}{u}\\\\=\\frac{5000(10+20)}{800}\\\\ =187.5\\ kg/s \\end{array}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\left(\\frac{dm}{dt}\\right)=1\\ kg/s",
-        "meaning": ""
-      },
-      {
-        "latex": "\\frac{dp}{dt} = \\frac{d(mv)}{dt}",
-        "meaning": ""
-      },
-      {
-        "latex": "=\\frac{d\\mathbf{M}}{dt}=\\alpha\\mathbf{v}.",
-        "meaning": ""
-      },
-      {
-        "latex": "= -v \\times \\frac{dM}{dt}",
-        "meaning": ""
-      },
-      {
-        "latex": "= -v \\times \\alpha v = -\\alpha v^{2}",
-        "meaning": ""
-      },
-      {
-        "latex": "= -\\frac{\\alpha v^{2}}{M}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathrm{F}=u\\frac{dm}{dt}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\frac{dm}{dt}=\\frac{F}{u}=\\frac{ma}{u}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{array}{l}\\frac{dm}{dt}=\\frac{600\\times10}{1000}\\\\ =6\\mathrm{kg}\\mathrm{s}^{-1}\\end{array}",
-        "meaning": ""
+        "latex": "|\\vec{F}_{AB}|=|\\vec{F}_{BA}|",
+        "meaning": "Equal magnitudes"
       }
     ],
     "questionIds": [
@@ -668,7 +317,7 @@
       "AIPMT 1994",
       "AIPMT 1990"
     ],
-    "source": "seed"
+    "source": "authored"
   },
   {
     "id": "note-laws-of-motion-objective-i",
@@ -928,105 +577,21 @@
     "unitId": "xi-laws",
     "unitLabel": "Unit III — Laws of Motion",
     "order": 3,
-    "title": "Solving Problems in Mechanics",
-    "summary": "The wedge is given an acceleration to the left.",
-    "body": "**Key points from solved questions**\n- Mass of the box = 5 kg inclined Angle of Plane, $ \\theta = 30^{\\circ} $ Tension in cord, T = 30 N $$ ma=T-mg\\sin\\theta $$ $$ 5a=30-5\\times10\\left(\\sin30^{\\circ}\\right) $$ $$ 5a=30-\\left(\\begin{array}{c}50\\times\\frac{1}{2}\\\\ \\frac{24}{5}\\end{array}\\right) $$ $$ 5a=5 $$ $$ a=1\\mathrm{~m/s^{2}} $$\n- <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//f7ce5ea9-0ede-4795-a9a6-658b3b444f9f/markdown_2/imgs/img_in_image_box_731_143_984_327.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A15%3A46Z%2F-1%2F%2F811933937c90a2fa20c7b1fde8938f6b7bc83a32f889e2c40de2e0bc269490b7\" alt=\"Image\" width=\"21%\" /></div> In non-inertial frame. N sin $\\theta = ma$ N cos $\\theta = mg$ From eq. (i) and (ii), we get $$ \\tan\\theta=\\frac{a}{g} $$ $$ a=g\\tan\\theta $$\n- Let F be the upthrust of the air. As the balloon is descending down with an acceleration a, $$ mg-F=ma $$ <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//f7ce5ea9-0ede-4795-a9a6-658b3b444f9f/markdown_2/imgs/img_in_image_box_812_617_1064_847.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A15%3A47Z%2F-1%2F%2Fe454025d5c83e10b52cfec86dcf9c23f0140e51753ce385acd9848e5eaf2af07\" alt=\"Image\" width=\"21%\" /></div> Let mass $m_{0}$ be removed from the balloon, so that it starts moving up with an acceleration $a$. Then. $$ \\mathrm{F}-(m-m_{0})g=(m-m_{0})a $$ $$ \\mathrm{F}-m g+m_{0}g=m a-m_{0}a $$ Adding eqn. (i) and eqn. (ii), we get $$ m_{0}g=2ma-m_{0}a; $$ $$ m_{0}g+m_{0}a=2m a $$ $$ m_{0}(g_{*}+a)=2m a $$ $$ m_{0}=\\frac{2ma}{g+a} $$\n- As all blocks are moving with constant speed, therefore, acceleration is zero. So, net force on each block is zero.\n- Here, Mass of a person, m = 60 kg Mass of lift, M = 940 kg. $$ a=1\\ m/s^{2},g=10\\ m/s^{2} $$ <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//f7ce5ea9-0ede-4795-a9a6-658b3b444f9f/markdown_2/imgs/img_in_image_box_866_1342_1004_1510.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A15%3A47Z%2F-1%2F%2Fd7b049fe32efa875fca35c5fc633e9e9fbcc86b45481f569787a5e168be4c24b\" alt=\"Image\" width=\"11%\" /></div> Let T be the tension in the supporting cable. $$ \\begin{aligned}\\therefore\\mathrm{~T}-(\\mathbf{M}+\\boldsymbol{m})\\boldsymbol{g}&=(\\mathbf{M}+\\boldsymbol{m})\\boldsymbol{a}\\\\ \\mathrm{T}&=(\\mathbf{M}+\\boldsymbol{m})(\\boldsymbol{a}+\\boldsymbol{g})\\\\ &=(940+60)(1+10)\\\\ &=11000\\mathrm{~N}\\end{aligned} $$\n- The wedge is given an acceleration to the left. ∴ The block has a pseudo acceleration to the right, pressing against the wedge because of which the block is not moving. <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//f7ce5ea9-0ede-4795-a9a6-658b3b444f9f/markdown_3/imgs/img_in_image_box_163_394_429_622.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A15%3A49Z%2F-1%2F%2F930e79d66568d8c294abe51bf0fa993534f7121f3570339146c9238b01ba520d\" alt=\"Image\" width=\"22%\" /></div> $ \\therefore mg\\sin\\theta=ma\\cos\\theta $ or $$ a=\\frac{g\\sin\\theta}{\\cos\\theta} $$ Total reaction of the wedge on the block is, $$ \\mathrm{N}=m g\\cos\\theta+m a\\sin\\theta $$ or $$ \\mathrm{N}=m g\\cos\\theta+\\frac{m g\\sin\\theta\\sin\\theta}{\\cos\\theta} $$ or $$ \\mathbf{N}=\\frac{mg\\left(\\cos^{2}\\theta+\\sin^{2}\\theta\\right)}{\\cos\\theta}=\\frac{mg}{\\cos\\theta} $$\n- Let T be the tension in the rope when monkey climbs up with an acceleration a. Then, $$ T-mg=ma $$ $$ 25g-20g=20a $$ $$ \\begin{array}{l}a=\\frac{5\\times10}{20}\\\\ =2.5\\ m/s^{2}\\end{array} $$\n- The pseudo acceleration for the body $a^{\\prime}=a$ If the pseudo force, Ma cos $\\theta = Mg \\sin \\theta$, then the body will be at rest. <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//f7ce5ea9-0ede-4795-a9a6-658b3b444f9f/markdown_3/imgs/img_in_image_box_743_407_968_594.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A15%3A50Z%2F-1%2F%2F152d161df2940a988b92bd3045eecc0019cf8fb9225954789ed755584fc88da6\" alt=\"Image\" width=\"18%\" /></div> $$ a=g\\tan\\theta $$ This horizontal acceleration should be applied to the wedge to the left.\n- Let T be the tension in the branch of a tree when monkey is descending with acceleration a. Thus, $$ mg-T=ma $$ also, T = 75% of weight of monkey $$ \\mathrm{T}=\\left(\\frac{75}{100}\\right)mg=\\frac{3}{4}mg $$ ∴ $$ ma=mg-\\left(\\frac{3}{4}\\right)mg=\\frac{1}{4}mg $$ or $$ a=\\frac{g}{4} $$",
+    "title": "How free-body diagrams solve mechanics problems",
+    "summary": "Draw a free-body diagram for each body, resolve the forces along chosen axes, and apply ΣF = ma to each — the systematic route to connected-body problems.",
+    "body": "**Must know**\n- Method: isolate each body → mark every force → choose axes → apply $\\sum\\vec{F}=m\\vec{a}$ per axis → solve.\n- Connected bodies share the same acceleration magnitude; a light string carries the same tension throughout.\n- Atwood machine: $a=\\dfrac{(m_1-m_2)g}{m_1+m_2}$ and $T=\\dfrac{2m_1m_2 g}{m_1+m_2}$.\n**Exam traps**\n- Draw a SEPARATE free-body diagram for each body; choose axes along the motion (e.g. along an incline).",
     "formulas": [
       {
-        "latex": "ma=T-mg\\sin\\theta",
-        "meaning": ""
+        "latex": "\\sum\\vec{F}=m\\vec{a}",
+        "meaning": "Newton's second law per body"
       },
       {
-        "latex": "5a=30-5\\times10\\left(\\sin30^{\\circ}\\right)",
-        "meaning": ""
+        "latex": "a=\\dfrac{(m_1-m_2)g}{m_1+m_2}",
+        "meaning": "Atwood-machine acceleration"
       },
       {
-        "latex": "5a=30-\\left(\\begin{array}{c}50\\times\\frac{1}{2}\\\\ \\frac{24}{5}\\end{array}\\right)",
-        "meaning": ""
-      },
-      {
-        "latex": "5a=5",
-        "meaning": ""
-      },
-      {
-        "latex": "a=1\\mathrm{~m/s^{2}}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\theta = 30^{\\circ}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\tan\\theta=\\frac{a}{g}",
-        "meaning": ""
-      },
-      {
-        "latex": "a=g\\tan\\theta",
-        "meaning": ""
-      },
-      {
-        "latex": "\\theta = ma",
-        "meaning": ""
-      },
-      {
-        "latex": "\\theta = mg",
-        "meaning": ""
-      },
-      {
-        "latex": "mg-F=ma",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathrm{F}-(m-m_{0})g=(m-m_{0})a",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathrm{F}-m g+m_{0}g=m a-m_{0}a",
-        "meaning": ""
-      },
-      {
-        "latex": "m_{0}g=2ma-m_{0}a;",
-        "meaning": ""
-      },
-      {
-        "latex": "m_{0}g+m_{0}a=2m a",
-        "meaning": ""
-      },
-      {
-        "latex": "m_{0}(g_{*}+a)=2m a",
-        "meaning": ""
-      },
-      {
-        "latex": "m_{0}=\\frac{2ma}{g+a}",
-        "meaning": ""
-      },
-      {
-        "latex": "a=1\\ m/s^{2},g=10\\ m/s^{2}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{aligned}\\therefore\\mathrm{~T}-(\\mathbf{M}+\\boldsymbol{m})\\boldsymbol{g}&=(\\mathbf{M}+\\boldsymbol{m})\\boldsymbol{a}\\\\ \\mathrm{T}&=(\\mathbf{M}+\\boldsymbol{m})(\\boldsymbol{a}+\\boldsymbol{g})\\\\ &=(940+60)(1+10)\\\\ &=11000\\mathrm{~N}\\end{aligned}",
-        "meaning": ""
-      },
-      {
-        "latex": "a=\\frac{g\\sin\\theta}{\\cos\\theta}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathrm{N}=m g\\cos\\theta+m a\\sin\\theta",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathrm{N}=m g\\cos\\theta+\\frac{m g\\sin\\theta\\sin\\theta}{\\cos\\theta}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathbf{N}=\\frac{mg\\left(\\cos^{2}\\theta+\\sin^{2}\\theta\\right)}{\\cos\\theta}=\\frac{mg}{\\cos\\theta}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\therefore mg\\sin\\theta=ma\\cos\\theta",
-        "meaning": ""
+        "latex": "T=\\dfrac{2m_1m_2 g}{m_1+m_2}",
+        "meaning": "Atwood-machine tension"
       }
     ],
     "questionIds": [
@@ -1049,7 +614,7 @@
       "AIPMT 1998",
       "AIPMT 1993"
     ],
-    "source": "seed"
+    "source": "authored"
   },
   {
     "id": "note-laws-of-motion-reneet2026",
