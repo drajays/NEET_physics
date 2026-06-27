@@ -7,105 +7,21 @@
     "unitId": "xii-magnetism",
     "unitLabel": "Units III & IV — Magnetic Effects & Magnetism",
     "order": 17,
-    "title": "Ampere's Circuital Law",
-    "summary": "According to the question, Two wires AOB and COD are placed at right angle.",
-    "body": "**Key points from solved questions**\n- According to Ampere's circuital law, $$ \\mathrm{B}_{\\mathrm{in}}=\\frac{\\mu_{0}\\mathrm{Ir}}{2\\pi a^{2}}\\text{or}\\mathrm{B}_{\\mathrm{in}}\\propto r $$ $$ \\mathrm{B}_{\\mathrm{out}}=\\frac{\\mu_{0}\\mathrm{I}}{2\\pi r}\\text{or}\\mathrm{B}_{\\mathrm{out}}\\propto\\frac{1}{r} $$ <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//b39f21c5-0e0c-431a-b36d-55a71763205a/markdown_3/imgs/img_in_image_box_830_1306_987_1468.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A00Z%2F-1%2F%2F647d5c956e3fba29e3af5dc14b59db1dabdbc9439a3b7fd3e2164ea24f5735ff\" alt=\"Image\" width=\"13%\" /></div>\n- <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//b39f21c5-0e0c-431a-b36d-55a71763205a/markdown_4/imgs/img_in_image_box_149_969_401_1230.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A02Z%2F-1%2F%2F45964115da7dd1d4ca8e8a1eacb4f1a527e0a1da9d1fdbca6dc62f5c3e8d2976\" alt=\"Image\" width=\"21%\" /></div> Here, two Amperian loops of radius $ \\frac{a}{2} $ and 2a are shown from Ampere's circuital law, $ \\oint \\mathbf{B} \\cdot dl = \\mu_0 I_{enclosed} $ ∴ for small loop, $$ \\mathbf{B}\\times2\\pi\\frac{a}{2}=\\mu_{0}\\times\\frac{\\mathbf{I}}{\\pi a^{2}}\\times\\pi\\left(\\frac{a}{2}\\right)^{2} $$ $$ \\mathbf{B}=\\frac{\\mu_{0}\\mathbf{I}}{4\\pi a} $$ Similarly for bigger loop, $$ \\mathbf{B}^{\\prime}\\times2\\pi(2a)=\\mu_{0}\\mathbf{I} $$ ： $$ \\mathbf{B}^{\\prime}=\\frac{\\mu_{0}\\mathbf{I}}{4\\pi a} $$ $$ \\ddot{\\cdot}\\ddot{\\cdot} $$ $$ \\frac{\\mathbf{B}}{\\mathbf{B}^{\\prime}}=\\frac{\\mu_{0}\\mathbf{I}}{4\\pi a}\\times\\frac{4\\pi a}{\\mu_{0}\\mathbf{I}}=1 $$\n- According to the question, Two wires AOB and COD are placed at right angle. O is the common point. $I_{1}$ and $I_{2}$ are current flowing in the wires. <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//b39f21c5-0e0c-431a-b36d-55a71763205a/markdown_4/imgs/img_in_image_box_741_451_968_614.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A02Z%2F-1%2F%2F91b4d4c5167df6ccb087fb56c3587f24a19e245c65a00357194cfe309081d36f\" alt=\"Image\" width=\"19%\" /></div> Point P is lying at distance d along the axis. So, <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//b39f21c5-0e0c-431a-b36d-55a71763205a/markdown_4/imgs/img_in_image_box_778_659_961_779.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A02Z%2F-1%2F%2Fcc8cd4f3a6237f871b057e7656013899fa7cdaafab80e575b4f3603d603f3b6b\" alt=\"Image\" width=\"15%\" /></div> ∴ $$ |\\mathbf{B}_{1}|=\\frac{\\mu_{0}}{2\\pi}\\frac{\\mathbf{I}_{1}}{d} $$ $$ |\\mathbf{B}_{2}|=\\frac{\\mu_{0}}{2\\pi}\\frac{\\mathbf{I}_{2}}{d} $$ $$ \\begin{aligned}\\mathbf{B_{net}}&=\\sqrt{\\mathbf{B}_{1}^{2}+\\mathbf{B}_{2}^{2}}\\\\&=\\sqrt{\\left(\\frac{\\mu_{0}}{2\\pi}\\times\\frac{\\mathbf{I}_{1}}{d}\\right)^{2}+\\left(\\frac{\\mu_{0}}{2\\pi}\\times\\frac{\\mathbf{I}_{2}}{d}\\right)^{2}}\\\\&=\\frac{\\mu_{0}}{2\\pi}\\frac{(\\mathbf{I}_{1}^{2}+\\mathbf{I}_{2}^{2})^{\\frac{1}{2}}}{d}\\\\ \\end{aligned} $$\n- According to Ampere's circuital law. $$ \\int\\mathbf{B}.d l=\\mu_{0}\\mathbf{I}_{e n c l o s e d} $$ $$ \\mathrm{so},\\quad\\mathbf{B}\\left(2\\pi r\\right)=\\mu_{0}\\times0 $$ [lenclosed = 0] Since, there is no current inside the Amperian loop in a hollow metallic (copper) pipe, Hence, the magnetic field is zero. For external points, however, the entire current behaves as if it were concentrated along the axis. So, outside, $$ \\mathbf{B}_{0}=\\frac{\\mu_{0}\\mathbf{I}}{2\\pi\\mathbf{r}} $$ Thus, the magnetic field is only created outside the pipe.\n- Magnetic induction at the centre of a current-carrying coil with N turns is equal to, $$ \\mathbf{B}=\\frac{\\mu_{0}\\mathbf{N}\\mathbf{I}}{2r} $$ Suppose, length of the wire be L. Case 1: For coil of one turn, let radius be $ r_{1} $. $$ \\circlearrowleft $$ $$ \\mathrm{L}=2\\pi r_{1}\\times\\mathrm{N} $$ $$ or $$ $$ r_{1}=\\frac{L}{2\\pi\\times N}=\\frac{L}{2\\pi} $$ $$ (\\because\\mathbf{N}=1) $$ Case 2: For coil of two turns, let radius be $ r_{2} $. $$ \\bullet \\quad \\bullet\\ast $$ $$ L=2\\pi r_{2}\\times N $$ or $$ \\mathrm{r}_{2}=\\frac{\\mathrm{L}}{2\\pi\\times\\mathrm{N}}=\\frac{\\mathrm{L}}{2\\pi\\times2}\\quad(\\because\\mathrm{N}=2) $$ or $$ r_{2}=\\frac{r_{1}}{2} $$ By comparing two different cases from eq. (i), we get, $$ \\frac{\\mathbf{B}_{1}}{\\mathbf{B}_{2}}=\\frac{\\mathbf{N}_{1}}{r_{1}}\\times\\frac{r_{2}}{\\mathbf{N}_{2}} $$ or $$ \\frac{\\mathbf{B}_{1}}{\\mathbf{B}_{2}}=\\frac{1\\times\\frac{r_{1}}{2}}{r_{1}\\times2} $$ $$ \\bullet \\quad \\bullet\\bullet $$ $$ \\frac{\\mathbf{B}_{1}}{\\mathbf{B}_{2}}=\\frac{1}{4} $$\n- Using the right hand grip rule and considering AB, the magnetic field corresponding to one current is upwards and the magnetic field due to the other is downward. Both magnetic fields cancel each other out, and the resultant magnetic field is zero. When considering CD and applying the right hand grip rule to the two currents, the magnetic field direction is the same in both cases, resulting in a non-zero resultant.\n- Magnetic field due to straight wire, $$ \\mathrm{B}=\\frac{\\mu_{0}}{4\\pi}\\frac{2\\mathrm{I}}{r} $$ The magnetic field due to a current-carrying conductor does not depend on the diameter of the wire; it only depends on the distance of the wire from the point and the current in the wire, therefore the magnetic field for both wires remains the same.",
+    "title": "How Ampère's law gives fields from symmetry",
+    "summary": "Ampère's law states ∮B·dl = μ₀I_enc — a quick route to the field of symmetric current distributions such as wires and solenoids.",
+    "body": "**Must know**\n- $\\oint\\vec{B}\\cdot d\\vec{l}=\\mu_0 I_{enc}$ (only the enclosed current counts).\n- Long straight wire: $B=\\dfrac{\\mu_0 I}{2\\pi r}$.\n- Inside a long solenoid: $B=\\mu_0 nI$; toroid: $B=\\dfrac{\\mu_0 NI}{2\\pi r}$.\n**Exam traps**\n- Choose an Amperian loop matching the symmetry; currents outside the loop contribute nothing to the line integral.",
     "formulas": [
       {
-        "latex": "\\mathrm{B}_{\\mathrm{in}}=\\frac{\\mu_{0}\\mathrm{Ir}}{2\\pi a^{2}}\\text{or}\\mathrm{B}_{\\mathrm{in}}\\propto r",
-        "meaning": ""
+        "latex": "\\oint\\vec{B}\\cdot d\\vec{l}=\\mu_0 I_{enc}",
+        "meaning": "Ampère's circuital law"
       },
       {
-        "latex": "\\mathrm{B}_{\\mathrm{out}}=\\frac{\\mu_{0}\\mathrm{I}}{2\\pi r}\\text{or}\\mathrm{B}_{\\mathrm{out}}\\propto\\frac{1}{r}",
-        "meaning": ""
+        "latex": "B=\\dfrac{\\mu_0 I}{2\\pi r}",
+        "meaning": "Field around a straight wire"
       },
       {
-        "latex": "\\mathbf{B}\\times2\\pi\\frac{a}{2}=\\mu_{0}\\times\\frac{\\mathbf{I}}{\\pi a^{2}}\\times\\pi\\left(\\frac{a}{2}\\right)^{2}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathbf{B}=\\frac{\\mu_{0}\\mathbf{I}}{4\\pi a}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathbf{B}^{\\prime}\\times2\\pi(2a)=\\mu_{0}\\mathbf{I}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathbf{B}^{\\prime}=\\frac{\\mu_{0}\\mathbf{I}}{4\\pi a}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\ddot{\\cdot}\\ddot{\\cdot}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\frac{\\mathbf{B}}{\\mathbf{B}^{\\prime}}=\\frac{\\mu_{0}\\mathbf{I}}{4\\pi a}\\times\\frac{4\\pi a}{\\mu_{0}\\mathbf{I}}=1",
-        "meaning": ""
-      },
-      {
-        "latex": "\\oint \\mathbf{B} \\cdot dl = \\mu_0 I_{enclosed}",
-        "meaning": ""
-      },
-      {
-        "latex": "|\\mathbf{B}_{1}|=\\frac{\\mu_{0}}{2\\pi}\\frac{\\mathbf{I}_{1}}{d}",
-        "meaning": ""
-      },
-      {
-        "latex": "|\\mathbf{B}_{2}|=\\frac{\\mu_{0}}{2\\pi}\\frac{\\mathbf{I}_{2}}{d}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{aligned}\\mathbf{B_{net}}&=\\sqrt{\\mathbf{B}_{1}^{2}+\\mathbf{B}_{2}^{2}}\\\\&=\\sqrt{\\left(\\frac{\\mu_{0}}{2\\pi}\\times\\frac{\\mathbf{I}_{1}}{d}\\right)^{2}+\\left(\\frac{\\mu_{0}}{2\\pi}\\times\\frac{\\mathbf{I}_{2}}{d}\\right)^{2}}\\\\&=\\frac{\\mu_{0}}{2\\pi}\\frac{(\\mathbf{I}_{1}^{2}+\\mathbf{I}_{2}^{2})^{\\frac{1}{2}}}{d}\\\\ \\end{aligned}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\int\\mathbf{B}.d l=\\mu_{0}\\mathbf{I}_{e n c l o s e d}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathrm{so},\\quad\\mathbf{B}\\left(2\\pi r\\right)=\\mu_{0}\\times0",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathbf{B}_{0}=\\frac{\\mu_{0}\\mathbf{I}}{2\\pi\\mathbf{r}}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathbf{B}=\\frac{\\mu_{0}\\mathbf{N}\\mathbf{I}}{2r}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\circlearrowleft",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathrm{L}=2\\pi r_{1}\\times\\mathrm{N}",
-        "meaning": ""
-      },
-      {
-        "latex": "or",
-        "meaning": ""
-      },
-      {
-        "latex": "r_{1}=\\frac{L}{2\\pi\\times N}=\\frac{L}{2\\pi}",
-        "meaning": ""
-      },
-      {
-        "latex": "(\\because\\mathbf{N}=1)",
-        "meaning": ""
-      },
-      {
-        "latex": "\\bullet \\quad \\bullet\\ast",
-        "meaning": ""
-      },
-      {
-        "latex": "L=2\\pi r_{2}\\times N",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathrm{r}_{2}=\\frac{\\mathrm{L}}{2\\pi\\times\\mathrm{N}}=\\frac{\\mathrm{L}}{2\\pi\\times2}\\quad(\\because\\mathrm{N}=2)",
-        "meaning": ""
+        "latex": "B=\\mu_0 nI",
+        "meaning": "Field inside a long solenoid"
       }
     ],
     "questionIds": [
@@ -126,7 +42,7 @@
       "AIPMT 1996",
       "AIPMT 1995"
     ],
-    "source": "seed"
+    "source": "authored"
   },
   {
     "id": "note-moving-charges-and-magnetism-magnetic-field-due-to-a-current-element-biot-savart-law",
@@ -136,13 +52,21 @@
     "unitId": "xii-magnetism",
     "unitLabel": "Units III & IV — Magnetic Effects & Magnetism",
     "order": 17,
-    "title": "Magnetic Field due to a Current Element, Biot-Savart Law",
-    "summary": "According to Biot - Savart's law, $$ \\overrightarrow{\\mathrm{dB}}=\\frac{\\mu_{0}\\begin{pmatrix}\\rightarrow&\\rightarrow\\\\ \\mathrm{Idl}\\times\\mathrm{r}\\end{pmatrix}}{4\\pi r^{3}} $$ Here, current element Idl is a vector…",
-    "body": "**Key points from solved questions**\n- According to Biot - Savart's law, $$ \\overrightarrow{\\mathrm{dB}}=\\frac{\\mu_{0}\\begin{pmatrix}\\rightarrow&\\rightarrow\\\\ \\mathrm{Idl}\\times\\mathrm{r}\\end{pmatrix}}{4\\pi r^{3}} $$ Here, current element Idl is a vector quantity and the coulomb's force is produced by scalar source $q$. Hence statement - I is correct, but statement - II is incorrect.",
+    "title": "How the Biot–Savart law gives the field of a current",
+    "summary": "The Biot–Savart law gives the field of a current element: dB = (μ₀/4π)(I dl×r̂)/r².",
+    "body": "**Must know**\n- $d\\vec{B}=\\dfrac{\\mu_0}{4\\pi}\\dfrac{I\\,d\\vec{l}\\times\\hat{r}}{r^2}$, magnitude $dB=\\dfrac{\\mu_0}{4\\pi}\\dfrac{I\\,dl\\sin\\theta}{r^2}$.\n- $\\mu_0=4\\pi\\times10^{-7}\\ \\text{T m A}^{-1}$.\n- Long straight wire (after integrating): $B=\\dfrac{\\mu_0 I}{2\\pi a}$.\n**Exam traps**\n- The element field goes as $1/r^2$, but the field of an infinite straight wire goes as $1/a$.\n- The direction is set by the right-hand rule (the cross product).",
     "formulas": [
       {
-        "latex": "\\overrightarrow{\\mathrm{dB}}=\\frac{\\mu_{0}\\begin{pmatrix}\\rightarrow&\\rightarrow\\\\ \\mathrm{Idl}\\times\\mathrm{r}\\end{pmatrix}}{4\\pi r^{3}}",
-        "meaning": ""
+        "latex": "d\\vec{B}=\\dfrac{\\mu_0}{4\\pi}\\dfrac{I\\,d\\vec{l}\\times\\hat{r}}{r^2}",
+        "meaning": "Biot–Savart law"
+      },
+      {
+        "latex": "B=\\dfrac{\\mu_0 I}{2\\pi a}",
+        "meaning": "Field of a long straight wire"
+      },
+      {
+        "latex": "\\mu_0=4\\pi\\times10^{-7}\\ \\text{T m A}^{-1}",
+        "meaning": "Permeability of free space"
       }
     ],
     "questionIds": [
@@ -151,7 +75,7 @@
     "tags": [
       "NEET 2022"
     ],
-    "source": "seed"
+    "source": "authored"
   },
   {
     "id": "note-moving-charges-and-magnetism-magnetic-field-on-the-axis-of-a-circular-current-loop",
@@ -161,105 +85,21 @@
     "unitId": "xii-magnetism",
     "unitLabel": "Units III & IV — Magnetic Effects & Magnetism",
     "order": 17,
-    "title": "Magnetic Field on the Axis of a Circular Current Loop",
-    "summary": "Magnetic field due to wire parallel to the X-axis is, $$ \\vec{B}_{I}=\\frac{\\mu_{0}}{4\\pi}\\frac{I}{R}(-\\hat{k}) $$ Magnetic field due to another wire parallel to x-axis is, $ \\vec{B}_{\\mathrm{III}} = \\frac{\\mu_{0}}{4\\pi}…",
-    "body": "**Key points from solved questions**\n- Number of turns in coil N = 100 Radius of coil r = 0.1 m Current flowing in coil I = 7 A Magnetic field at the centre of coil B = $ \\frac{\\mu_{0}I N}{2r} $ $$ \\begin{aligned}\\mathrm{B}&=\\frac{4\\pi\\times10^{-7}\\times7\\times100}{2\\times0.1}\\\\&=43.96\\times10^{-4}\\mathrm{~T}\\approx4.4\\mathrm{~mT}\\end{aligned} $$\n- As, $ \\mathrm{B} = \\frac{\\mu_0 i}{4 \\pi R} (\\pi) - \\frac{\\mu_0}{4 \\pi} \\frac{2 i}{R} $ $ = \\frac{\\mu_0 i}{4 R} \\left[ 1 - \\frac{2}{\\pi} \\right] $ outward\n- Since, $ l = 2\\pi R = n(2\\pi r) $ $ \\Rightarrow r = \\frac{R}{n} $ for one turn, $ B = \\frac{\\mu_0 I}{2R} $ $$ \\begin{array}{l} \\text{for } n \\text{ turn,} \\\\ \\qquad \\Rightarrow \\end{array} $$ $$ \\begin{aligned}&\\mathbf{B}^{\\prime}=\\frac{\\mu_{0}n\\mathbf{I}}{2r}\\\\&\\mathbf{B}^{\\prime}=\\frac{\\mu_{0}n^{2}\\mathbf{I}}{2\\mathbf{R}}=n^{2}\\left(\\frac{\\mu_{0}\\mathbf{I}}{2\\mathbf{R}}\\right)\\\\&\\mathbf{B}^{\\prime}=n^{2}\\mathbf{B}\\\\ \\end{aligned} $$\n- Magnetic field due to wire parallel to the X-axis is, $$ \\vec{B}_{I}=\\frac{\\mu_{0}}{4\\pi}\\frac{I}{R}(-\\hat{k}) $$ Magnetic field due to another wire parallel to x-axis is, $ \\vec{B}_{\\mathrm{III}} = \\frac{\\mu_{0}}{4\\pi} \\frac{\\mathrm{I}}{\\mathrm{R}} (-\\hat{k}) $ Magnetic field due to half semi-circular wire is, $$ \\stackrel{\\rightarrow}{\\mathrm{\\mathbf{B}_{II}}}=-\\frac{\\mu_{0}\\mathrm{\\mathbf{I}}}{4\\mathrm{R}}\\stackrel{\\wedge}{(i)} $$ ∴ Magnetic field at the centre of wire is, $$ \\overset{\\rightarrow}{\\mathbf{B}}=\\overset{\\rightarrow}{\\mathbf{B}}_{\\mathrm{I}}+\\overset{\\longrightarrow}{\\mathbf{B}}_{\\mathrm{II}}+\\overset{\\longrightarrow}{\\mathbf{B}}_{\\mathrm{III}} $$ $$ \\vec{\\mathrm{B}}_{\\mathrm{c}}=-\\frac{\\mu_{0}\\mathrm{I}}{4\\mathrm{R}}\\left(\\stackrel{\\wedge}{i}+\\frac{2\\stackrel{\\wedge}{k}}{\\pi}\\right)=-\\frac{\\mu_{0}\\mathrm{I}}{4\\pi\\mathrm{R}}(\\stackrel{\\wedge}{p}\\stackrel{\\wedge}{i}+2\\stackrel{\\wedge}{k}) $$\n- Radius of semi-circular part = R Then magnetic field, $$ \\mathbf{B}_{1}=\\mathbf{B}_{2}=\\frac{\\mu_{0}i}{4R} $$ Then magnetic field at their common centre will be: $$ \\begin{array}{l}\\vec{\\mathbf{B}}=\\vec{\\mathbf{B}}_{1}+\\vec{\\mathbf{B}}_{2}\\\\|\\vec{\\mathbf{B}}|=\\sqrt{\\left(\\frac{\\mu_{0}i}{4\\mathbf{R}}\\right)^{2}+\\left(\\frac{\\mu_{0}i}{4\\mathbf{R}}\\right)^{2}}\\\\\\mathbf{B}=\\frac{\\mu_{0}i}{2\\sqrt{2}\\mathbf{R}}\\end{array} $$\n- Let $ r_{1} $ and $ r_{2} $ be the radius of coil 1 and coil 2. If $ B_{1} $ and $ B_{2} $ are magnetic induction at their centre, then $$ \\begin{aligned}\\mathrm{B}_{1}&=\\frac{\\mu_{0}\\mathrm{I}_{1}}{2r_{1}}\\text{and}\\mathrm{B}_{2}=\\frac{\\mu_{0}\\mathrm{I}_{2}}{2r_{2}}\\\\\\mathrm{B}_{1}&=\\mathrm{B}_{2}\\text{and}r_{1}=2r_{2}\\\\\\mathrm{I}_{1}&=2\\mathrm{I}_{2}\\end{aligned} $$ then Again, if $R_{1}$ and $R_{2}$ are resistance of coils 1 and 2, then $R_{1}=2R_{2}$ (as $R \\propto$ length) and if $V_{1}$ and $V_{2}$ are the potential difference across them respectively, then $$ \\begin{array}{l}\\frac{\\mathbf{V}_{1}}{\\mathbf{V}_{2}}=\\frac{\\mathbf{I}_{1}\\mathbf{R}_{1}}{\\mathbf{I}_{2}\\mathbf{R}_{2}}\\\\=\\frac{(2\\mathbf{I}_{2})(2\\mathbf{R}_{2})}{\\mathbf{I}_{2}\\mathbf{R}_{2}}=4\\end{array} $$\n- The magnetic field produced by moving electron in circular path, <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//b39f21c5-0e0c-431a-b36d-55a71763205a/markdown_3/imgs/img_in_image_box_854_207_986_367.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A00Z%2F-1%2F%2Fb1f3f19a76534906fac91ac396f9314f2c67c04280ca0a9cbfc20494cf13da8c\" alt=\"Image\" width=\"11%\" /></div> $$ \\mathbf{B}=\\frac{\\mu_{0}\\mathbf{I}}{2r} $$ where, $$ \\mathbf{I}=\\frac{\\boldsymbol{q}}{t}=\\frac{\\boldsymbol{q}}{2\\pi r}\\times\\mathbf{v} $$ $$ \\mathbf{B}=\\frac{\\mu_{0}q\\mathbf{v}}{4\\pi r^{2}} $$ $$ r\\propto\\sqrt{\\frac{\\mathbf{v}}{\\mathbf{B}}} $$\n- <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//b39f21c5-0e0c-431a-b36d-55a71763205a/markdown_3/imgs/img_in_image_box_723_621_965_712.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A00Z%2F-1%2F%2F7aeb86cd3ea32aa979e7f83bace2d81afab5b333861d606d3aebec5d4d090360\" alt=\"Image\" width=\"20%\" /></div> Here $$ \\mathbf{B}_{1}=\\mathbf{B}=\\frac{\\mu_{0}\\mathbf{I}}{2\\mathbf{R}} $$ $$ \\mathbf{B}_{2}=\\frac{\\mu_{0}(2\\mathbf{I})}{2r} $$ $$ 2\\times2\\pi r=2\\pi R $$ $$ r=\\frac{\\mathtt{R}}{2} $$ Now, Putting the value of $r$ in eqn (ii), we get $$ \\begin{aligned}\\mathrm{B}_{2}&=\\frac{\\mu_{0}2\\mathrm{I}}{\\frac{2\\mathrm{R}}{2}}\\\\&=\\frac{4\\mu_{0}\\mathrm{I}}{2\\mathrm{R}}\\\\&=4\\mathrm{B}_{1}\\end{aligned} $$",
+    "title": "How a current loop's axial field falls off with distance",
+    "summary": "On the axis of a circular loop the field is B = μ₀IR²/[2(R²+x²)^{3/2}], peaking at the centre as B = μ₀I/2R.",
+    "body": "**Must know**\n- Axial field: $B=\\dfrac{\\mu_0 I R^2}{2(R^2+x^2)^{3/2}}$.\n- At the centre ($x=0$): $B=\\dfrac{\\mu_0 NI}{2R}$ for $N$ turns.\n- Far on the axis ($x\\gg R$): $B\\approx\\dfrac{\\mu_0}{4\\pi}\\dfrac{2m}{x^3}$ with magnetic moment $m=NIA$.\n**Exam traps**\n- $N$ turns multiply the field; the loop behaves as a magnetic dipole far away.",
     "formulas": [
       {
-        "latex": "\\begin{aligned}\\mathrm{B}&=\\frac{4\\pi\\times10^{-7}\\times7\\times100}{2\\times0.1}\\\\&=43.96\\times10^{-4}\\mathrm{~T}\\approx4.4\\mathrm{~mT}\\end{aligned}",
-        "meaning": ""
+        "latex": "B=\\dfrac{\\mu_0 I R^2}{2(R^2+x^2)^{3/2}}",
+        "meaning": "Axial field of a circular loop"
       },
       {
-        "latex": "\\mathrm{B} = \\frac{\\mu_0 i}{4 \\pi R} (\\pi) - \\frac{\\mu_0}{4 \\pi} \\frac{2 i}{R}",
-        "meaning": ""
+        "latex": "B_{centre}=\\dfrac{\\mu_0 NI}{2R}",
+        "meaning": "Field at the centre"
       },
       {
-        "latex": "= \\frac{\\mu_0 i}{4 R} \\left[ 1 - \\frac{2}{\\pi} \\right]",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{array}{l} \\text{for } n \\text{ turn,} \\\\ \\qquad \\Rightarrow \\end{array}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{aligned}&\\mathbf{B}^{\\prime}=\\frac{\\mu_{0}n\\mathbf{I}}{2r}\\\\&\\mathbf{B}^{\\prime}=\\frac{\\mu_{0}n^{2}\\mathbf{I}}{2\\mathbf{R}}=n^{2}\\left(\\frac{\\mu_{0}\\mathbf{I}}{2\\mathbf{R}}\\right)\\\\&\\mathbf{B}^{\\prime}=n^{2}\\mathbf{B}\\\\ \\end{aligned}",
-        "meaning": ""
-      },
-      {
-        "latex": "l = 2\\pi R = n(2\\pi r)",
-        "meaning": ""
-      },
-      {
-        "latex": "\\Rightarrow r = \\frac{R}{n}",
-        "meaning": ""
-      },
-      {
-        "latex": "B = \\frac{\\mu_0 I}{2R}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\vec{B}_{I}=\\frac{\\mu_{0}}{4\\pi}\\frac{I}{R}(-\\hat{k})",
-        "meaning": ""
-      },
-      {
-        "latex": "\\stackrel{\\rightarrow}{\\mathrm{\\mathbf{B}_{II}}}=-\\frac{\\mu_{0}\\mathrm{\\mathbf{I}}}{4\\mathrm{R}}\\stackrel{\\wedge}{(i)}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\overset{\\rightarrow}{\\mathbf{B}}=\\overset{\\rightarrow}{\\mathbf{B}}_{\\mathrm{I}}+\\overset{\\longrightarrow}{\\mathbf{B}}_{\\mathrm{II}}+\\overset{\\longrightarrow}{\\mathbf{B}}_{\\mathrm{III}}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\vec{\\mathrm{B}}_{\\mathrm{c}}=-\\frac{\\mu_{0}\\mathrm{I}}{4\\mathrm{R}}\\left(\\stackrel{\\wedge}{i}+\\frac{2\\stackrel{\\wedge}{k}}{\\pi}\\right)=-\\frac{\\mu_{0}\\mathrm{I}}{4\\pi\\mathrm{R}}(\\stackrel{\\wedge}{p}\\stackrel{\\wedge}{i}+2\\stackrel{\\wedge}{k})",
-        "meaning": ""
-      },
-      {
-        "latex": "\\vec{B}_{\\mathrm{III}} = \\frac{\\mu_{0}}{4\\pi} \\frac{\\mathrm{I}}{\\mathrm{R}} (-\\hat{k})",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathbf{B}_{1}=\\mathbf{B}_{2}=\\frac{\\mu_{0}i}{4R}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{array}{l}\\vec{\\mathbf{B}}=\\vec{\\mathbf{B}}_{1}+\\vec{\\mathbf{B}}_{2}\\\\|\\vec{\\mathbf{B}}|=\\sqrt{\\left(\\frac{\\mu_{0}i}{4\\mathbf{R}}\\right)^{2}+\\left(\\frac{\\mu_{0}i}{4\\mathbf{R}}\\right)^{2}}\\\\\\mathbf{B}=\\frac{\\mu_{0}i}{2\\sqrt{2}\\mathbf{R}}\\end{array}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{aligned}\\mathrm{B}_{1}&=\\frac{\\mu_{0}\\mathrm{I}_{1}}{2r_{1}}\\text{and}\\mathrm{B}_{2}=\\frac{\\mu_{0}\\mathrm{I}_{2}}{2r_{2}}\\\\\\mathrm{B}_{1}&=\\mathrm{B}_{2}\\text{and}r_{1}=2r_{2}\\\\\\mathrm{I}_{1}&=2\\mathrm{I}_{2}\\end{aligned}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{array}{l}\\frac{\\mathbf{V}_{1}}{\\mathbf{V}_{2}}=\\frac{\\mathbf{I}_{1}\\mathbf{R}_{1}}{\\mathbf{I}_{2}\\mathbf{R}_{2}}\\\\=\\frac{(2\\mathbf{I}_{2})(2\\mathbf{R}_{2})}{\\mathbf{I}_{2}\\mathbf{R}_{2}}=4\\end{array}",
-        "meaning": ""
-      },
-      {
-        "latex": "R_{1}=2R_{2}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathbf{B}=\\frac{\\mu_{0}\\mathbf{I}}{2r}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathbf{I}=\\frac{\\boldsymbol{q}}{t}=\\frac{\\boldsymbol{q}}{2\\pi r}\\times\\mathbf{v}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathbf{B}=\\frac{\\mu_{0}q\\mathbf{v}}{4\\pi r^{2}}",
-        "meaning": ""
-      },
-      {
-        "latex": "r\\propto\\sqrt{\\frac{\\mathbf{v}}{\\mathbf{B}}}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathbf{B}_{1}=\\mathbf{B}=\\frac{\\mu_{0}\\mathbf{I}}{2\\mathbf{R}}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathbf{B}_{2}=\\frac{\\mu_{0}(2\\mathbf{I})}{2r}",
-        "meaning": ""
+        "latex": "B_{far}=\\dfrac{\\mu_0}{4\\pi}\\dfrac{2m}{x^3}",
+        "meaning": "Far-axial (dipole) field"
       }
     ],
     "questionIds": [
@@ -280,7 +120,7 @@
       "AIPMT 2005",
       "AIPMT 2002"
     ],
-    "source": "seed"
+    "source": "authored"
   },
   {
     "id": "note-moving-charges-and-magnetism-magnetic-force",
@@ -290,105 +130,21 @@
     "unitId": "xii-magnetism",
     "unitLabel": "Units III & IV — Magnetic Effects & Magnetism",
     "order": 17,
-    "title": "Magnetic Force",
-    "summary": "From the question, Velocity of electron, $ v = 10^{7} $ m/s Magnetic field, $$ \\mathbf{B}=2\\times10^{-4}\\mathbf{Wb}/\\mathbf{m}^{2} $$ <div style=\"text-align: center;\"><img…",
-    "body": "**Key points from solved questions**\n- Here: $$ \\begin{aligned}&\\mathrm{Here}:\\overline{\\mathbf{B}}=(2\\hat{i}+3\\hat{j}-4\\hat{k})\\mathrm{T}\\\\&\\quad\\overline{\\mathbf{F}}=\\overrightarrow{\\mathrm{IL}}\\times\\overline{\\mathbf{B}}\\\\&\\quad\\overline{\\mathbf{F}}=\\mathrm{I}\\hat{i}\\mathrm{~L}\\times(2\\hat{i}+3\\hat{j}-4\\hat{k})\\\\&\\quad\\overline{\\mathbf{F}}=3\\mathrm{IL}\\hat{k}+4\\mathrm{IL}\\hat{j}\\\\&\\quad|\\overline{\\mathbf{F}}|=\\sqrt{(3\\mathrm{IL})^{2}+(4\\mathrm{IL})^{2}}\\\\&\\quad|\\overline{\\mathbf{F}}|=5\\mathrm{IL}\\mathrm{T e s l a}\\end{aligned} $$\n- Given, $$ \\mathbf{v}_{e}=10^{5}\\,\\mathrm{m/s} $$ $$ r=20\\ cm=0.2\\ m $$ We know that due to magnetic field generated by the wire, the electron will experience a force, $$ \\overset{\\rightarrow}{\\mathbf{F}}=\\boldsymbol{q}\\begin{pmatrix}\\rightarrow&\\rightarrow\\\\ \\mathbf{v}\\times\\overrightarrow{\\mathbf{B}}\\end{pmatrix} $$ Since, the angle is $ 90^{\\circ} $. Hence, $$ \\begin{aligned}&\\mathrm{F}=\\mathrm{qv_{e}B}\\\\&\\mathrm{B}=\\frac{\\mu_{0}\\mathrm{I}}{2\\pi\\mathrm{r}}=2\\ \\frac{\\mu_{0}}{4\\pi}\\frac{\\mathrm{I}}{\\mathrm{r}}\\\\&\\quad=2\\times10^{-7}\\times\\frac{5}{0.2}\\\\\\mathrm{B}&=\\frac{2\\times50}{2}\\times10^{-7}\\\\&\\quad=5\\times10^{-6}\\end{aligned} $$ From eqn (i), we get $$ \\begin{aligned}F&=1.6\\times10^{-19}\\times10^{5}\\times5\\times10^{-6}\\\\&=8\\times10^{-20}N\\end{aligned} $$\n- According to the question, For equilibrium, <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//404a28b6-a412-472e-a9ff-36f35d8f090d/markdown_4/imgs/img_in_image_box_763_777_1051_969.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A15%3A56Z%2F-1%2F%2F8cbe24d4f765195987089fec931847a1ced2e32eca1ecb6432e8b3c2c6ec34ab\" alt=\"Image\" width=\"24%\" /></div> mg sin 30^{\\circ} = ILB cos 30^{\\circ} I = $ \\frac{mg}{LB} $ tan $ 30^{\\circ} $ = $ \\frac{0.5\\times9.8}{0.25\\times\\sqrt{3}} $ $ \\{\\because B=0.25T\\} $ = 11.32 A\n- Acceleration of charge particle, $$ \\vec{a}=\\frac{\\dot{q}}{m}\\left(\\vec{E}+\\vec{v}\\times\\vec{B}\\right) $$ Released from rest $$ ↳\\Downarrow $$ $$ a=\\frac{qE}{m}(west) $$ $$ \\mathrm{E}=\\frac{m a_{0}}{e}\\text{(west)} $$ When it is projected towards north, acceleration due to magnetic force = $ 2a_{0} $ \\therefore Magnetic field =\\frac{2ma_{0}}{ev_{0}} (down)\n- From the question, Velocity of electron, $ v = 10^{7} $ m/s Magnetic field, $$ \\mathbf{B}=2\\times10^{-4}\\mathbf{Wb}/\\mathbf{m}^{2} $$ <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//b39f21c5-0e0c-431a-b36d-55a71763205a/markdown_0/imgs/img_in_chart_box_167_212_378_359.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A15%3A55Z%2F-1%2F%2F9f7153fa4b69282a0ce82e70e800edbef0b8e12aa3bbba1115901200d3d74552\" alt=\"Image\" width=\"17%\" /></div> Then magnitude of force experienced by the electron, i.e. $ F = \\text{ev} B \\sin\\theta $ $$ \\begin{aligned}\\{\\because\\mathbf{v}and\\mathbf{B}are~perpendicular~to~each~other\\}\\\\ =ev\\mathbf{B}\\sin90^{\\circ}\\\\ =1.6\\times10^{-19}\\times10^{7}\\times2\\times10^{-4}\\times1\\\\ =3.2\\times10^{-16}N\\end{aligned} $$\n- According to the question, it is clear that field B is not applying any force. Field E will apply a force opposite to velocity of the electron and its speed will decrease.\n- Magnetic Lorentz force, $$ \\begin{array}{l}\\vec{\\mathrm{F}}=q(\\stackrel{\\rightarrow}{\\mathrm{v}}\\times\\stackrel{\\rightarrow}{\\mathrm{B}})\\\\\\vec{\\mathrm{F}}=-2\\times10^{-6}(2\\hat{i}+3\\hat{j})\\times2\\hat{j}\\times10^{6}\\\\\\vec{\\mathrm{F}}=-2\\times10^{-6}(2\\hat{i}\\times2\\hat{j})\\times10^{6}\\\\\\vec{\\mathrm{F}}=-8\\hat{k}\\mathrm{~N}\\end{array} $$\n- $$ \\begin{array}{l}\\vec{\\mathrm{F}}=q(\\stackrel{\\rightarrow}{\\mathrm{v}}\\times\\stackrel{\\rightarrow}{\\mathrm{B}})\\\\\\\\=q\\,\\mathrm{v}\\,\\mathrm{B}\\sin\\theta\\;\\\\\\mathrm{n}\\,\\theta=0^{\\circ}\\,\\mathrm{o r}\\,\\theta=180^{\\circ}\\end{array} $$ Therefore, when $$ \\mathbf{F}=\\mathbf{0} $$\n- According to Fleming's left hand rule, the direction of force is along y-axis which is perpendicular to wire, $$ \\overset{\\rightarrow}{\\mathbf{F}}=q\\overset{\\rightarrow}{(\\mathbf{v}\\times\\overset{\\rightarrow}{\\mathbf{B}})} $$ B due to I acting inwards is into the paper, v is along or: $$ \\mathbf{F}=\\boldsymbol{q}\\left|\\begin{array}{l l l}{\\hat{i}}&{\\hat{j}}&{\\hat{k}}\\\\ {\\mathbf{v}}&{0}&{0}\\\\ {0}&{0}&{-\\mathbf{B}}\\end{array}\\right| $$ $$ \\mathbf{F}=q[-\\hat{j}(-\\mathbf{v}\\mathbf{B})+0] $$\n- Lorentz force, $ \\vec{F}_v = \\vec{F}_e + \\vec{F}_m $ $ = q\\vec{E} + q(\\vec{v} \\times \\vec{B}) $\n- SI unit of magnetic induction is tesla (T). If a charged particle of one coulomb moving at right angle to a magnetic field with a velocity of 1 ms $ ^{-1} $ experiences a force of 1 N at that point, the magnetic field induction is said to be one tesla. $$ 1\\mathrm{~T}=1\\mathrm{~N A}^{-1}\\mathrm{~m}^{-1} $$",
+    "title": "How magnetic fields push moving charges and currents",
+    "summary": "A charge moving in a magnetic field feels the Lorentz force F = qv×B; a current-carrying wire feels F = IL×B.",
+    "body": "**Must know**\n- On a charge: $\\vec{F}=q\\vec{v}\\times\\vec{B}$, magnitude $F=qvB\\sin\\theta$.\n- On a wire: $\\vec{F}=I\\vec{L}\\times\\vec{B}$, magnitude $F=BIL\\sin\\theta$.\n- Full Lorentz force: $\\vec{F}=q(\\vec{E}+\\vec{v}\\times\\vec{B})$.\n**Exam traps**\n- The force is maximum when $\\vec{v}\\perp\\vec{B}$ and zero when they are parallel.\n- The magnetic force does no work — it changes direction, not speed.",
     "formulas": [
       {
-        "latex": "\\begin{aligned}&\\mathrm{Here}:\\overline{\\mathbf{B}}=(2\\hat{i}+3\\hat{j}-4\\hat{k})\\mathrm{T}\\\\&\\quad\\overline{\\mathbf{F}}=\\overrightarrow{\\mathrm{IL}}\\times\\overline{\\mathbf{B}}\\\\&\\quad\\overline{\\mathbf{F}}=\\mathrm{I}\\hat{i}\\mathrm{~L}\\times(2\\hat{i}+3\\hat{j}-4\\hat{k})\\\\&\\quad\\overline{\\mathbf{F}}=3\\mathrm{IL}\\hat{k}+4\\mathrm{IL}\\hat{j}\\\\&\\quad|\\overline{\\mathbf{F}}|=\\sqrt{(3\\mathrm{IL})^{2}+(4\\mathrm{IL})^{2}}\\\\&\\quad|\\overline{\\mathbf{F}}|=5\\mathrm{IL}\\mathrm{T e s l a}\\end{aligned}",
-        "meaning": ""
+        "latex": "\\vec{F}=q\\vec{v}\\times\\vec{B},\\quad F=qvB\\sin\\theta",
+        "meaning": "Magnetic force on a charge"
       },
       {
-        "latex": "\\mathbf{v}_{e}=10^{5}\\,\\mathrm{m/s}",
-        "meaning": ""
+        "latex": "\\vec{F}=I\\vec{L}\\times\\vec{B},\\quad F=BIL\\sin\\theta",
+        "meaning": "Force on a current-carrying wire"
       },
       {
-        "latex": "r=20\\ cm=0.2\\ m",
-        "meaning": ""
-      },
-      {
-        "latex": "\\overset{\\rightarrow}{\\mathbf{F}}=\\boldsymbol{q}\\begin{pmatrix}\\rightarrow&\\rightarrow\\\\ \\mathbf{v}\\times\\overrightarrow{\\mathbf{B}}\\end{pmatrix}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{aligned}&\\mathrm{F}=\\mathrm{qv_{e}B}\\\\&\\mathrm{B}=\\frac{\\mu_{0}\\mathrm{I}}{2\\pi\\mathrm{r}}=2\\ \\frac{\\mu_{0}}{4\\pi}\\frac{\\mathrm{I}}{\\mathrm{r}}\\\\&\\quad=2\\times10^{-7}\\times\\frac{5}{0.2}\\\\\\mathrm{B}&=\\frac{2\\times50}{2}\\times10^{-7}\\\\&\\quad=5\\times10^{-6}\\end{aligned}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{aligned}F&=1.6\\times10^{-19}\\times10^{5}\\times5\\times10^{-6}\\\\&=8\\times10^{-20}N\\end{aligned}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\{\\because B=0.25T\\}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\vec{a}=\\frac{\\dot{q}}{m}\\left(\\vec{E}+\\vec{v}\\times\\vec{B}\\right)",
-        "meaning": ""
-      },
-      {
-        "latex": "↳\\Downarrow",
-        "meaning": ""
-      },
-      {
-        "latex": "a=\\frac{qE}{m}(west)",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathrm{E}=\\frac{m a_{0}}{e}\\text{(west)}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathbf{B}=2\\times10^{-4}\\mathbf{Wb}/\\mathbf{m}^{2}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{aligned}\\{\\because\\mathbf{v}and\\mathbf{B}are~perpendicular~to~each~other\\}\\\\ =ev\\mathbf{B}\\sin90^{\\circ}\\\\ =1.6\\times10^{-19}\\times10^{7}\\times2\\times10^{-4}\\times1\\\\ =3.2\\times10^{-16}N\\end{aligned}",
-        "meaning": ""
-      },
-      {
-        "latex": "v = 10^{7}",
-        "meaning": ""
-      },
-      {
-        "latex": "F = \\text{ev} B \\sin\\theta",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{array}{l}\\vec{\\mathrm{F}}=q(\\stackrel{\\rightarrow}{\\mathrm{v}}\\times\\stackrel{\\rightarrow}{\\mathrm{B}})\\\\\\vec{\\mathrm{F}}=-2\\times10^{-6}(2\\hat{i}+3\\hat{j})\\times2\\hat{j}\\times10^{6}\\\\\\vec{\\mathrm{F}}=-2\\times10^{-6}(2\\hat{i}\\times2\\hat{j})\\times10^{6}\\\\\\vec{\\mathrm{F}}=-8\\hat{k}\\mathrm{~N}\\end{array}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{array}{l}\\vec{\\mathrm{F}}=q(\\stackrel{\\rightarrow}{\\mathrm{v}}\\times\\stackrel{\\rightarrow}{\\mathrm{B}})\\\\\\\\=q\\,\\mathrm{v}\\,\\mathrm{B}\\sin\\theta\\;\\\\\\mathrm{n}\\,\\theta=0^{\\circ}\\,\\mathrm{o r}\\,\\theta=180^{\\circ}\\end{array}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathbf{F}=\\mathbf{0}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\overset{\\rightarrow}{\\mathbf{F}}=q\\overset{\\rightarrow}{(\\mathbf{v}\\times\\overset{\\rightarrow}{\\mathbf{B}})}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathbf{F}=\\boldsymbol{q}\\left|\\begin{array}{l l l}{\\hat{i}}&{\\hat{j}}&{\\hat{k}}\\\\ {\\mathbf{v}}&{0}&{0}\\\\ {0}&{0}&{-\\mathbf{B}}\\end{array}\\right|",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathbf{F}=q[-\\hat{j}(-\\mathbf{v}\\mathbf{B})+0]",
-        "meaning": ""
-      },
-      {
-        "latex": "\\vec{F}_v = \\vec{F}_e + \\vec{F}_m",
-        "meaning": ""
-      },
-      {
-        "latex": "= q\\vec{E} + q(\\vec{v} \\times \\vec{B})",
-        "meaning": ""
-      },
-      {
-        "latex": "1\\mathrm{~T}=1\\mathrm{~N A}^{-1}\\mathrm{~m}^{-1}",
-        "meaning": ""
+        "latex": "\\vec{F}=q(\\vec{E}+\\vec{v}\\times\\vec{B})",
+        "meaning": "Lorentz force"
       }
     ],
     "questionIds": [
@@ -416,7 +172,7 @@
       "AIPMT 2002",
       "AIPMT 1988"
     ],
-    "source": "seed"
+    "source": "authored"
   },
   {
     "id": "note-moving-charges-and-magnetism-motion-in-a-magnetic-field",
@@ -426,105 +182,21 @@
     "unitId": "xii-magnetism",
     "unitLabel": "Units III & IV — Magnetic Effects & Magnetism",
     "order": 17,
-    "title": "Motion in a Magnetic Field",
-    "summary": "A maximum force acting perpendicular to the direction of B as well as v is experienced by a charged particle moving perpendicular to the direction of B.",
-    "body": "**Key points from solved questions**\n- From question: $$ q_{\\mathrm{H}}=e\\mathrm{and}q_{\\alpha}=2e $$ For circular motion, $$ \\begin{array}{c}\\frac{mv^{2}}{r}=Bqv\\\\r=\\frac{mv}{Bq}\\end{array} $$ $$ r\\propto\\frac{1}{q} $$ $$ \\frac{r_{\\mathrm{H}}}{r_{a}}=\\frac{q_{a}}{q_{\\mathrm{H}}}=\\frac{2e}{e}=\\frac{2}{1}=2:1 $$\n- Radius of charged particle in magnetic field is, $$ r=\\frac{m\\mathbf{v}}{q\\mathbf{B}} $$ And time taken to complete the circle, $$ \\begin{aligned}T&=\\frac{2\\pi r}{v}\\\\\\frac{T}{2\\pi}&=\\frac{m}{qB}\\\\\\omega&=\\frac{2\\pi}{T}=\\frac{qB}{m}\\end{aligned} $$ {using (i)} Here, $ q = e $, $ \\frac{e}{m} = 1.76 \\times 10^{11} $ C/kg and $$ \\frac{2\\pi}{T}=\\frac{e\\mathbf{B}}{m} $$ $$ \\begin{aligned}f&=\\frac{1}{2\\pi}\\frac{e}{m}\\mathbf{B}\\\\&=\\frac{1}{2\\pi}\\times1.76\\times10^{11}\\times3.57\\times10^{-2}\\\\&=1.0\\times10^{9}\\mathrm{Hz}\\\\&=1\\mathrm{GHz}\\\\ \\end{aligned} $$\n- We know that radius in magnetic field of circular orbit is R $$ \\mathrm{R}=\\frac{m\\mathrm{v}}{q\\mathrm{B}} $$ In circular orbit, total energy of moving particle, $$ \\mathrm{E}=\\frac{q^{2}\\mathrm{B}^{2}\\mathrm{R}^{2}}{2m} $$ When proton enter in the region of magnetic field then, $$ E_{p}=\\frac{e^{2}\\times B^{2}\\times R^{2}}{2m_{p}} $$ where, $ m_{P} = \\text{mass of proton} $ Again when $ \\alpha $-particle enter in the region of magnetic field then, $$ \\mathrm{E}_{\\alpha}=\\frac{(2e)^{2}\\mathrm{B}^{2}\\mathrm{R}^{2}}{2(4m_{\\mathrm{p}})}\\qquad\\ldots(\\mathrm{ii})\\\\ {\\{\\because\\mathrm{since}m_{\\alpha}=4m_{p}(\\mathrm{given})\\}} $$ Now from eq. (i) and (ii), we get $$ \\begin{array}{r l r}&{\\frac{\\mathrm{E}_{\\alpha}}{\\mathrm{E_{P}}}=\\frac{(2e)^{2}\\times\\mathrm{B}^{2}\\times\\mathrm{R}^{2}}{2\\times4m_{\\mathrm{P}}}\\times\\frac{2\\times m_{\\mathrm{P}}}{e^{2}\\times\\mathrm{B}^{2}\\times\\mathrm{R}^{2}}}\\\\ {\\Rightarrow\\quad}&{\\frac{\\mathrm{E}_{\\alpha}}{\\mathrm{E_{P}}}=1}\\\\ {\\Rightarrow\\quad}&{\\mathrm{E}_{\\alpha}=\\mathrm{E_{P}}=1\\mathrm{M e V}}\\end{array} $$\n- We know that, $$ I=\\frac{q}{t} $$ If an electron is moving in a circular orbit of radius r then $$ \\begin{aligned}I&=\\frac{e}{T}=\\frac{e}{\\frac{2\\pi}{\\omega}}\\\\&=\\frac{\\omega e}{2\\pi}=\\frac{2\\pi n e}{2\\pi}=n e\\end{aligned} $$ ∴ Magnetic field produced at the centre is $$ \\mathrm{B}=\\mathrm{\\frac{\\mu_{0}I}{2R}}=\\frac{\\mu_{0}ne}{2r} $$\n- The Lorentz force acting on a charged particle is given by, $$ \\overrightarrow{\\mathrm{F}}=q(\\overrightarrow{\\mathrm{E}}+\\overrightarrow{\\mathrm{v}}\\times\\overrightarrow{\\mathrm{B}}) $$ When $ \\vec{B} \\parallel \\vec{E} \\parallel \\vec{v} $ $$ \\begin{aligned}\\overrightarrow{v}\\times\\overrightarrow{B}&=0\\\\F&=q\\overrightarrow{E}\\end{aligned} $$ Therefore, the particle will be moving in a horizontal direction. There may be another possibility when both $ \\bar{B} $ and $ \\bar{E} $ are mutually perpendicular and perpendicular to the velocity direction, the particle moves without any deflection.\n- According to the law of conservation of energy, $$ \\begin{array}{c}e\\mathbf{V}=\\frac{1}{2}m\\mathbf{v}^{2}\\\\\\mathbf{v}=\\sqrt{\\frac{2e\\mathbf{V}}{m}}\\end{array} $$ The condition is, electron beam is not deflected then $$ \\begin{aligned}\\mathbf{F}_{m}&=\\mathbf{F}_{e}\\\\\\mathbf{B}_{e}\\mathbf{v}&=\\mathbf{E}_{e}\\\\\\mathbf{v}&=\\frac{\\mathbf{E}}{\\mathbf{B}}\\end{aligned} $$ From eq. (i) and (ii), we get $$ \\mathrm{\\frac{E}{B}}=\\sqrt{\\frac{2\\;e V}{m}} $$ $$ \\frac{E^{2}}{B^{2}}=\\frac{2eV}{m} $$ $$ \\frac{e}{m}=\\frac{E^{2}}{2VB^{2}} $$\n- Time period of circular motion of charged particle is, $$ \\mathrm{T}=\\frac{2\\pi r}{\\mathrm{v}}=\\frac{2\\pi}{\\mathrm{v}}\\times\\frac{m\\mathrm{v}}{\\mathrm{B}q} $$ $$ \\mathrm{T}=\\frac{2\\pi m}{\\mathrm{B}q} $$ which is independent of both v and R. <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//b39f21c5-0e0c-431a-b36d-55a71763205a/markdown_1/imgs/img_in_image_box_635_711_670_754.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A15%3A57Z%2F-1%2F%2Fbc0a11192a668e9bd8112079a1aba6f4d1eb6fd9b2661d534979f6f4a924f42b\" alt=\"Image\" width=\"2%\" /></div> #### Related Theory If a charged particle is moving perpendicular to the direction of $ \\overrightarrow{B} $, it experiences maximum force, which is perpendicular to $ \\overrightarrow{B} $ as well as $ \\overrightarrow{v} $.\n- After passing through a magnetic field, the magnitude of its mass and velocity of the particle remain same. So its energy does not change, i.e., K.E. will remain T.\n- In a magnetic field, a charged particle moves in a circular orbit.\n- Consider the mass and charge of the ion be m and q. Energy of the ion is increased due to the electric field. $$ \\begin{aligned}q V&=\\frac{1}{2}m v^{2}\\\\\\mathbf{v}&=\\sqrt{\\frac{q}{m}}\\sqrt{2\\mathbf{V}}\\end{aligned} $$ The magnetic field provides centripetal force for motion in circle: $$ \\begin{array}{c}\\Rightarrow\\\\\\hline\\end{array}\\frac{mv^{2}}{R}=qvB\\\\\\Rightarrow\\begin{array}{c}v=\\frac{qBR}{m}\\\\\\end{array}\\\\\\Rightarrow\\begin{array}{c}\\frac{1}{BR}\\sqrt{2V}=\\sqrt{\\frac{q}{m}}\\end{array} $$ $$ \\begin{array}{l} \\Rightarrow \\quad \\frac{q}{m}=\\frac{2\\mathrm{V}}{\\mathrm{B}^{2}\\mathrm{R}^{2}} \\\\ \\Rightarrow \\quad \\frac{q}{m}\\propto\\frac{1}{\\mathrm{R}^{2}} \\end{array} $$\n- A charged particle moves through a magnetic field in a direction perpendicular to it. Then the speed of the particle remains unchanged.\n- We have, Magnetic force = Centripetal force $$ i.e $$ $$ qvB=\\frac{mv^{2}}{r} $$ or $$ qv\\mathbf{B}=\\mathbf{m}\\boldsymbol{r}\\boldsymbol{\\omega}^{2} $$ or $$ \\omega^{2}=\\frac{qvB}{mr}=\\frac{q(r\\omega)B}{mr} $$ Angular frequency, $\\omega = \\frac{qB}{m}$ If v is the frequency of rotation, then $$ \\omega=2\\pi\\mathbf{v} $$ $$ \\mathbf{v}=\\frac{\\omega}{2\\pi} $$ $$ \\mathrm{v}=\\frac{\\mathrm{qB}}{2\\pi\\mathrm{m}} $$ <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//b39f21c5-0e0c-431a-b36d-55a71763205a/markdown_2/imgs/img_in_image_box_12_791_40_833.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A15%3A58Z%2F-1%2F%2Fb7d295c278f5bc86efa439183c57ceac3a4fc0383f4112a12521da2a24e6cdd2\" alt=\"Image\" width=\"2%\" /></div> ##### Related Theory Since, the resultant expression $ \\frac{q}{m} $ is known as specific charge. It is sometimes denoted by $ \\alpha $. So, $ \\omega = B\\alpha $ and $ \\nu = \\frac{B\\alpha}{2\\pi} $\n- If a coil contains N turns, i is the current running through it and A is the coil's area, then magnetic dipole moment or simply the magnetic moment of the coil, $$ M=NiA $$\n- A maximum force acting perpendicular to the direction of B as well as v is experienced by a charged particle moving perpendicular to the direction of B. As a result of this force, the charged particle will travel a circular path in the magnetic field of radius r, which is given by, $$ \\frac{mv^{2}}{r}=qvB $$ Now, KE of electron = 10 eV $$ \\begin{aligned}&\\Rightarrow\\quad\\frac{1}{2}mv^{2}=10eV\\\\&\\therefore\\frac{1}{2}\\times(9.1\\times10^{-31})v^{2}=10\\times1.6\\times10^{-19}\\\\&\\Rightarrow\\quad v^{2}=\\frac{2\\times10\\times1.6\\times10^{-19}}{9.1\\times10^{-31}}\\\\&\\Rightarrow\\quad v^{2}=3.52\\times10^{12}\\\\&or\\quad v=1.88\\times10^{6}m/s\\end{aligned} $$ Now radius of circular path, $$ \\begin{array}{l}r=\\frac{m\\mathrm{v}}{q\\mathrm{B}}\\\\ =\\frac{9.1\\times10^{-31}\\times1.88\\times10^{6}}{1.6\\times10^{-19}\\times10^{-4}}\\\\ =11\\mathrm{~cm}\\end{array} $$ <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//b39f21c5-0e0c-431a-b36d-55a71763205a/markdown_2/imgs/img_in_image_box_574_305_608_346.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A15%3A58Z%2F-1%2F%2F6d5f09d57d88350a46605cddbdb27f03a6e04e0b648cb1179a59e0d48d3c1d5f\" alt=\"Image\" width=\"2%\" /></div> ##### Related Theory When a charged particle is projected perpendicular to the magnetic field, its path is circular in a plane perpendicular to the plane of magnetic field and direction of motion of the charged particle.",
+    "title": "Why a charge moves in a circle or helix in a magnetic field",
+    "summary": "A charge moving perpendicular to B circles with radius r = mv/qB and period T = 2πm/qB (independent of speed); a velocity component along B turns the path into a helix.",
+    "body": "**Must know**\n- Radius: $r=\\dfrac{mv}{qB}=\\dfrac{p}{qB}$.\n- Period and cyclotron frequency: $T=\\dfrac{2\\pi m}{qB}$, $f=\\dfrac{qB}{2\\pi m}$ — both independent of speed.\n- A velocity component along $\\vec{B}$ gives a helix of pitch $p=v_\\parallel T$.\n**Exam traps**\n- The period (and cyclotron frequency) does not depend on the speed or radius.\n- The magnetic force supplies the centripetal force; it never speeds the particle up.",
     "formulas": [
       {
-        "latex": "q_{\\mathrm{H}}=e\\mathrm{and}q_{\\alpha}=2e",
-        "meaning": ""
+        "latex": "r=\\dfrac{mv}{qB}",
+        "meaning": "Radius of circular motion"
       },
       {
-        "latex": "\\begin{array}{c}\\frac{mv^{2}}{r}=Bqv\\\\r=\\frac{mv}{Bq}\\end{array}",
-        "meaning": ""
+        "latex": "T=\\dfrac{2\\pi m}{qB},\\quad f=\\dfrac{qB}{2\\pi m}",
+        "meaning": "Period and cyclotron frequency"
       },
       {
-        "latex": "r\\propto\\frac{1}{q}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\frac{r_{\\mathrm{H}}}{r_{a}}=\\frac{q_{a}}{q_{\\mathrm{H}}}=\\frac{2e}{e}=\\frac{2}{1}=2:1",
-        "meaning": ""
-      },
-      {
-        "latex": "r=\\frac{m\\mathbf{v}}{q\\mathbf{B}}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{aligned}T&=\\frac{2\\pi r}{v}\\\\\\frac{T}{2\\pi}&=\\frac{m}{qB}\\\\\\omega&=\\frac{2\\pi}{T}=\\frac{qB}{m}\\end{aligned}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\frac{2\\pi}{T}=\\frac{e\\mathbf{B}}{m}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{aligned}f&=\\frac{1}{2\\pi}\\frac{e}{m}\\mathbf{B}\\\\&=\\frac{1}{2\\pi}\\times1.76\\times10^{11}\\times3.57\\times10^{-2}\\\\&=1.0\\times10^{9}\\mathrm{Hz}\\\\&=1\\mathrm{GHz}\\\\ \\end{aligned}",
-        "meaning": ""
-      },
-      {
-        "latex": "q = e",
-        "meaning": ""
-      },
-      {
-        "latex": "\\frac{e}{m} = 1.76 \\times 10^{11}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathrm{R}=\\frac{m\\mathrm{v}}{q\\mathrm{B}}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathrm{E}=\\frac{q^{2}\\mathrm{B}^{2}\\mathrm{R}^{2}}{2m}",
-        "meaning": ""
-      },
-      {
-        "latex": "E_{p}=\\frac{e^{2}\\times B^{2}\\times R^{2}}{2m_{p}}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathrm{E}_{\\alpha}=\\frac{(2e)^{2}\\mathrm{B}^{2}\\mathrm{R}^{2}}{2(4m_{\\mathrm{p}})}\\qquad\\ldots(\\mathrm{ii})\\\\ {\\{\\because\\mathrm{since}m_{\\alpha}=4m_{p}(\\mathrm{given})\\}}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{array}{r l r}&{\\frac{\\mathrm{E}_{\\alpha}}{\\mathrm{E_{P}}}=\\frac{(2e)^{2}\\times\\mathrm{B}^{2}\\times\\mathrm{R}^{2}}{2\\times4m_{\\mathrm{P}}}\\times\\frac{2\\times m_{\\mathrm{P}}}{e^{2}\\times\\mathrm{B}^{2}\\times\\mathrm{R}^{2}}}\\\\ {\\Rightarrow\\quad}&{\\frac{\\mathrm{E}_{\\alpha}}{\\mathrm{E_{P}}}=1}\\\\ {\\Rightarrow\\quad}&{\\mathrm{E}_{\\alpha}=\\mathrm{E_{P}}=1\\mathrm{M e V}}\\end{array}",
-        "meaning": ""
-      },
-      {
-        "latex": "m_{P} = \\text{mass of proton}",
-        "meaning": ""
-      },
-      {
-        "latex": "I=\\frac{q}{t}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{aligned}I&=\\frac{e}{T}=\\frac{e}{\\frac{2\\pi}{\\omega}}\\\\&=\\frac{\\omega e}{2\\pi}=\\frac{2\\pi n e}{2\\pi}=n e\\end{aligned}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathrm{B}=\\mathrm{\\frac{\\mu_{0}I}{2R}}=\\frac{\\mu_{0}ne}{2r}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\overrightarrow{\\mathrm{F}}=q(\\overrightarrow{\\mathrm{E}}+\\overrightarrow{\\mathrm{v}}\\times\\overrightarrow{\\mathrm{B}})",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{aligned}\\overrightarrow{v}\\times\\overrightarrow{B}&=0\\\\F&=q\\overrightarrow{E}\\end{aligned}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{array}{c}e\\mathbf{V}=\\frac{1}{2}m\\mathbf{v}^{2}\\\\\\mathbf{v}=\\sqrt{\\frac{2e\\mathbf{V}}{m}}\\end{array}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{aligned}\\mathbf{F}_{m}&=\\mathbf{F}_{e}\\\\\\mathbf{B}_{e}\\mathbf{v}&=\\mathbf{E}_{e}\\\\\\mathbf{v}&=\\frac{\\mathbf{E}}{\\mathbf{B}}\\end{aligned}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathrm{\\frac{E}{B}}=\\sqrt{\\frac{2\\;e V}{m}}",
-        "meaning": ""
+        "latex": "\\text{pitch}=v_\\parallel\\,\\dfrac{2\\pi m}{qB}",
+        "meaning": "Pitch of the helical path"
       }
     ],
     "questionIds": [
@@ -555,7 +227,7 @@
       "AIPMT 1996",
       "AIPMT 1991"
     ],
-    "source": "seed"
+    "source": "authored"
   },
   {
     "id": "note-moving-charges-and-magnetism-objective-i",
@@ -762,17 +434,25 @@
     "unitId": "xii-magnetism",
     "unitLabel": "Units III & IV — Magnetic Effects & Magnetism",
     "order": 17,
-    "title": "Overview",
-    "summary": "Inside, the field varies linearly; while outside, its variation is inversely proportion to r.",
-    "body": "**Key points from solved questions**\n- Inside, the field varies linearly; while outside, its variation is inversely proportion to r. <div style=\"text-align: center;\"><div style=\"text-align: center;\">38.(B)</div> </div> <div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_134_84_326_303.jpg\" alt=\"Image\" width=\"16%\" /></div> Inside $ (d < R) $ Magnetic field inside conductor, $$ \\mathbf{B}=\\frac{\\mu_{0}}{2\\pi\\mathbf{R}^{2}}\\mathbf{I}d $$ Or B = kd Straight line passing through origin, At surface (d = R) $$ \\mathbf{B}=\\frac{\\mu_{0}}{2\\pi}\\frac{\\mathbf{I}}{\\mathbf{R}} \\tag*{...(ii)}$$ $$ \\begin{array}{r}",
+    "title": "How currents both create and respond to magnetic fields",
+    "summary": "Moving charges and currents produce magnetic fields (Biot–Savart, Ampère) and also experience forces and torques in them (Lorentz force, m×B) — unifying wires, loops, solenoids and instruments.",
+    "body": "**Must know**\n- Sources of field: the Biot–Savart law and Ampère's law $\\oint\\vec{B}\\cdot d\\vec{l}=\\mu_0 I_{enc}$.\n- Effects of field: $\\vec{F}=q\\vec{v}\\times\\vec{B}$, $\\vec{F}=I\\vec{L}\\times\\vec{B}$, $\\vec{\\tau}=\\vec{m}\\times\\vec{B}$.\n- Devices: the cyclotron, the moving-coil galvanometer and the electric motor.\n**Exam traps**\n- Keep the field-producing formulas distinct from the force/torque formulas.\n- The magnetic force never does work.",
     "formulas": [
       {
-        "latex": "\\mathbf{B}=\\frac{\\mu_{0}}{2\\pi\\mathbf{R}^{2}}\\mathbf{I}d",
-        "meaning": ""
+        "latex": "\\vec{F}=q\\vec{v}\\times\\vec{B}",
+        "meaning": "Force on a moving charge"
       },
       {
-        "latex": "\\mathbf{B}=\\frac{\\mu_{0}}{2\\pi}\\frac{\\mathbf{I}}{\\mathbf{R}} \\tag*{...(ii)}",
-        "meaning": ""
+        "latex": "B=\\dfrac{\\mu_0 I}{2\\pi r}",
+        "meaning": "Field of a straight wire"
+      },
+      {
+        "latex": "\\vec{\\tau}=\\vec{m}\\times\\vec{B}",
+        "meaning": "Torque on a magnetic dipole"
+      },
+      {
+        "latex": "r=\\dfrac{mv}{qB}",
+        "meaning": "Radius of circular motion"
       }
     ],
     "questionIds": [
@@ -782,7 +462,7 @@
     "tags": [
       "NEET 2021"
     ],
-    "source": "seed"
+    "source": "authored"
   },
   {
     "id": "note-moving-charges-and-magnetism-the-moving-coil-galvanometer",
@@ -792,105 +472,21 @@
     "unitId": "xii-magnetism",
     "unitLabel": "Units III & IV — Magnetic Effects & Magnetism",
     "order": 17,
-    "title": "The Moving Coil Galvanometer",
-    "summary": "Deflection current, $ I_{g} = \\frac{25mV}{G} $ Ampere Where, G = resistance of galvanometer The value of shunt will be, $$…",
-    "body": "**Key points from solved questions**\n- Since, galvanometer shows no deflection, then voltage across R is 2 V. Now voltage across R is given by, $$ =\\frac{10\\mathrm{R}}{400+\\mathrm{R}} $$ or $$ 2=\\frac{10\\mathrm{R}}{400+\\mathrm{R}} $$ $$ \\mathrm{R}=100\\Omega $$\n- Current sensitivity (I_{S}) for moving coil galvanometer is: $$ \\mathrm{I}_{\\mathrm{S}}=\\frac{\\theta}{\\mathrm{I}}=\\frac{\\mathrm{NAB}}{\\mathrm{C}} $$ where, N = Number of turns in the coil A = Area of each turn of the coil B = Magnetic field C = Restoring torque per unit twist of the strip Now, voltage sensitivity $ V_{S} $ is given by, $$ \\mathrm{V}_{\\mathrm{S}}=\\frac{\\theta}{\\mathrm{V}}=\\frac{\\mathrm{NAB}}{\\mathrm{CR}_{\\mathrm{G}}} $$ $ R_{G} $ = resistance of galvanometer ∴ Resistance of galvanometer is, $$ \\mathrm{R}_{\\mathrm{G}}=\\frac{\\mathrm{I}_{\\mathrm{S}}}{\\mathrm{V}_{\\mathrm{S}}}=\\frac{5\\times1}{20\\times10^{-3}}=\\frac{5000}{20}=250\\Omega $$ $$ \\mathrm{R_{G}=250\\Omega} $$\n- The situation of the question is given below. <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//6a0eee75-13f9-4825-a6e7-e8e89c5e0a59/markdown_2/imgs/img_in_image_box_794_1063_1072_1195.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A15%3A45Z%2F-1%2F%2Fe861cce08e81b1afbbb077d01718feb5d3cde41bdec91a18f61db4638ffd8265\" alt=\"Image\" width=\"23%\" /></div> ∴ For ammeter. $$ \\mathrm{G}\\times0.002\\mathrm{I}=0.998\\mathrm{I}\\times r_{g} $$ $$ r_{g}=\\frac{0.002}{0.998}G=\\frac{1}{499}G $$\n- Deflection current, $ I_{g} = \\frac{25mV}{G} $ Ampere Where, G = resistance of galvanometer The value of shunt will be, $$ \\mathrm{S}=\\frac{\\mathrm{I}_{\\mathrm{g}}\\mathrm{G}}{\\mathrm{I}-\\mathrm{I}_{\\mathrm{g}}}=\\frac{25\\mathrm{mV}}{25}=0.001\\ \\Omega $$ 67.( ) According to the question, If resistance is same, then current is unchanged. <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//6a0eee75-13f9-4825-a6e7-e8e89c5e0a59/markdown_3/imgs/img_in_image_box_71_154_443_274.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A15%3A47Z%2F-1%2F%2F98dc8cbc60daa7a4bca9e50f29ae9d08a360b813b119af50999b571094b053a7\" alt=\"Image\" width=\"31%\" /></div> $$ \\mathbf{G}=\\frac{\\mathbf{G}\\mathbf{S}}{\\mathbf{G}+\\mathbf{S}}+\\mathbf{R} $$ $$ \\begin{aligned}R&=G-\\frac{GS}{G+S}\\\\&=\\frac{G^{2}}{G+S}\\end{aligned} $$\n- Required resistance $$ \\begin{aligned}\\mathbf{R}&=\\frac{\\mathbf{V}}{1_{g}}-\\mathbf{G}\\\\&=\\frac{30}{30\\times10^{-3}}-100=900\\Omega\\end{aligned} $$\n- From the question, Given, $$ G=60\\Omega,I_{g}=1.0A,I=5A $$ $$ \\begin{aligned}\\mathrm{I}_{g}\\mathrm{G}&=(\\mathrm{I}-\\mathrm{I}_{g})\\mathrm{S}\\\\ \\mathrm{S}&=\\frac{\\mathrm{I}_{g}\\mathrm{G}}{\\mathrm{I}-\\mathrm{I}_{g}}=\\frac{1}{5-1}\\times60=15\\Omega\\end{aligned} $$\n- Current through galvanometer, $$ \\mathrm{I}=\\frac{3}{50+2950}=10^{-3}\\mathrm{A} $$ Current for 30 division = $ 10^{-3} $ A $$ \\begin{aligned}Current~for~20~divisions&=\\frac{20}{30}\\times10^{-3}\\\\&=\\frac{2}{3}\\times10^{-3}A=\\frac{1}{1500}A\\end{aligned} $$ Required current = $ \\frac{3}{50 + R} $ $$ \\frac{1}{1500}=\\frac{3}{50+R} $$ → $$ 50+R=4500 $$ $$ \\mathrm{R}=4500-50 $$ $$ \\mathrm{R}=4450\\Omega $$\n- Let, S = shunt resistance Given that, $$ 1=750A $$ $$ \\mathbf{I}_{\\mathbf{g}}=100\\mathrm{~A},\\mathbf{R}_{\\mathrm{G}}=13\\Omega $$ $$ \\mathrm{I_{g}R_{G}=(I-I_{g})S} $$ $$ \\begin{aligned}&\\Rightarrow\\text{□}100\\times13=[750-100]S\\\\ &\\Rightarrow\\text{□}S=2\\Omega\\\\ \\end{aligned} $$\n- A galvanometer acting as a voltmeter will have a high resistance in series with its coil. <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//6a0eee75-13f9-4825-a6e7-e8e89c5e0a59/markdown_3/imgs/img_in_image_box_569_653_611_692.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A15%3A47Z%2F-1%2F%2Fc7633eec97ccc89e049d28e08f3bac443aa70e67b60060add8669819405f1b72\" alt=\"Image\" width=\"3%\" /></div> ##### △ Caution Students cannot use galvanometer for measuring current as it is a very sensitive instrument because it shows full deflection for a very small current.\n- Total current in the galvanometer. $$ I_{g}=25\\times4\\times10^{-4}A $$ $$ \\mathrm{I_{g}=10^{-2}A} $$ The value of resistance connected in series to convert galvanometer into voltmeter of 25 V is: $$ \\begin{array}{l} \\displaystyle \\mathrm{R} = \\frac{\\mathrm{V}}{\\mathrm{I}_{g}} - \\mathrm{G} \\\\ \\displaystyle \\qquad = \\frac{25}{10^{-2}} - 50 \\\\ \\displaystyle \\qquad = 2450 \\Omega \\end{array} $$",
+    "title": "How a galvanometer turns current into a deflection",
+    "summary": "In a moving-coil galvanometer the deflection is proportional to the current, φ = (NAB/k)I; a shunt or a series resistor converts it into an ammeter or a voltmeter.",
+    "body": "**Must know**\n- Deflection: $\\phi=\\dfrac{NAB}{k}I$, so $\\phi\\propto I$ (a radial field keeps the torque $=NIAB$).\n- Current sensitivity $=\\dfrac{NAB}{k}$; voltage sensitivity $=\\dfrac{NAB}{kR}$.\n- Ammeter: connect a small shunt in parallel, $S=\\dfrac{I_g}{I-I_g}G$. Voltmeter: a large resistor in series, $R=\\dfrac{V}{I_g}-G$.\n**Exam traps**\n- An ideal ammeter has low resistance (parallel shunt); an ideal voltmeter has high resistance (series resistor).",
     "formulas": [
       {
-        "latex": "=\\frac{10\\mathrm{R}}{400+\\mathrm{R}}",
-        "meaning": ""
+        "latex": "\\phi=\\dfrac{NAB}{k}I",
+        "meaning": "Galvanometer deflection"
       },
       {
-        "latex": "2=\\frac{10\\mathrm{R}}{400+\\mathrm{R}}",
-        "meaning": ""
+        "latex": "S=\\dfrac{I_g}{I-I_g}\\,G",
+        "meaning": "Shunt for an ammeter"
       },
       {
-        "latex": "\\mathrm{R}=100\\Omega",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathrm{I}_{\\mathrm{S}}=\\frac{\\theta}{\\mathrm{I}}=\\frac{\\mathrm{NAB}}{\\mathrm{C}}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathrm{V}_{\\mathrm{S}}=\\frac{\\theta}{\\mathrm{V}}=\\frac{\\mathrm{NAB}}{\\mathrm{CR}_{\\mathrm{G}}}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathrm{R}_{\\mathrm{G}}=\\frac{\\mathrm{I}_{\\mathrm{S}}}{\\mathrm{V}_{\\mathrm{S}}}=\\frac{5\\times1}{20\\times10^{-3}}=\\frac{5000}{20}=250\\Omega",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathrm{R_{G}=250\\Omega}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathrm{G}\\times0.002\\mathrm{I}=0.998\\mathrm{I}\\times r_{g}",
-        "meaning": ""
-      },
-      {
-        "latex": "r_{g}=\\frac{0.002}{0.998}G=\\frac{1}{499}G",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathrm{S}=\\frac{\\mathrm{I}_{\\mathrm{g}}\\mathrm{G}}{\\mathrm{I}-\\mathrm{I}_{\\mathrm{g}}}=\\frac{25\\mathrm{mV}}{25}=0.001\\ \\Omega",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathbf{G}=\\frac{\\mathbf{G}\\mathbf{S}}{\\mathbf{G}+\\mathbf{S}}+\\mathbf{R}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{aligned}R&=G-\\frac{GS}{G+S}\\\\&=\\frac{G^{2}}{G+S}\\end{aligned}",
-        "meaning": ""
-      },
-      {
-        "latex": "I_{g} = \\frac{25mV}{G}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{aligned}\\mathbf{R}&=\\frac{\\mathbf{V}}{1_{g}}-\\mathbf{G}\\\\&=\\frac{30}{30\\times10^{-3}}-100=900\\Omega\\end{aligned}",
-        "meaning": ""
-      },
-      {
-        "latex": "G=60\\Omega,I_{g}=1.0A,I=5A",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{aligned}\\mathrm{I}_{g}\\mathrm{G}&=(\\mathrm{I}-\\mathrm{I}_{g})\\mathrm{S}\\\\ \\mathrm{S}&=\\frac{\\mathrm{I}_{g}\\mathrm{G}}{\\mathrm{I}-\\mathrm{I}_{g}}=\\frac{1}{5-1}\\times60=15\\Omega\\end{aligned}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathrm{I}=\\frac{3}{50+2950}=10^{-3}\\mathrm{A}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{aligned}Current~for~20~divisions&=\\frac{20}{30}\\times10^{-3}\\\\&=\\frac{2}{3}\\times10^{-3}A=\\frac{1}{1500}A\\end{aligned}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\frac{1}{1500}=\\frac{3}{50+R}",
-        "meaning": ""
-      },
-      {
-        "latex": "50+R=4500",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathrm{R}=4500-50",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathrm{R}=4450\\Omega",
-        "meaning": ""
-      },
-      {
-        "latex": "1=750A",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathbf{I}_{\\mathbf{g}}=100\\mathrm{~A},\\mathbf{R}_{\\mathrm{G}}=13\\Omega",
-        "meaning": ""
+        "latex": "R=\\dfrac{V}{I_g}-G",
+        "meaning": "Series resistor for a voltmeter"
       }
     ],
     "questionIds": [
@@ -916,7 +512,7 @@
       "AIPMT 2004, 2002",
       "AIPMT 2004"
     ],
-    "source": "seed"
+    "source": "authored"
   },
   {
     "id": "note-moving-charges-and-magnetism-the-solenoid",
@@ -926,97 +522,21 @@
     "unitId": "xii-magnetism",
     "unitLabel": "Units III & IV — Magnetic Effects & Magnetism",
     "order": 17,
-    "title": "The Solenoid",
-    "summary": "<div style=\"text-align: center;\"><img…",
-    "body": "**Key points from solved questions**\n- Given: $ I = 1 \\, A $, $ n = \\frac{100}{1 \\, mm} = 100 \\times 10^{3} \\, m^{-1} $ Magnetic field strength at the centre of the solenoid, B = μ₀nI = 4π × 10⁻⁷ × 10⁵ × 1 = 12.56 × 10⁻² T\n- From the question, l = 50 cm = 0.5 m, N = 100 turns and I = 2.5 A ∴ Magnetic field at the centre of solenoid is $$ \\begin{aligned}\\mathbf{B}&=\\mu_{0}n\\mathbf{I}=\\mu_{0}\\left(\\frac{\\mathbf{N}}{l}\\right)\\mathbf{I}\\\\&=4\\pi\\times10^{-7}\\times\\frac{100}{0.5}\\times2.5\\\\&=6.28\\times10^{-4}\\mathrm{~T}\\end{aligned} $$\n- From the question, Resistance of the solenoid, $ R = 10\\pi^{2}\\Omega $ Radius of second coil, $ r = 10^{-2} $ m $ \\Delta t = 0.05 $ s, $ \\Delta I = 4 - 0 = 4 $ A Then we know that, charge flowing through the coil is, $$ \\begin{aligned}\\Delta q&=\\left(\\frac{\\Delta\\phi}{\\Delta t}\\right)\\frac{1}{\\mathrm{R}}\\times(\\Delta t)&\\left(\\because\\phi=\\mathrm{MI}\\right)\\\\ &=\\mu_{0}\\mathrm{N}_{1}\\mathrm{N}_{2}\\pi r^{2}\\left(\\frac{\\Delta\\mathrm{I}}{\\Delta t}\\right)\\frac{1}{\\mathrm{R}}\\Delta t\\\\ &=4\\pi\\times10^{-7}\\times2\\times10^{4}\\times100\\times\\pi\\\\ &\\quad\\times(10^{-2})^{2}\\quad\\times\\left(\\frac{4}{0.05}\\right)\\times\\frac{1}{10\\pi^{2}}\\times0.05\\\\ &=32\\times10^{-6}\\mathrm{C}=32\\mu\\mathrm{C}\\\\ \\end{aligned} $$\n- Force between BC and AB will be same in magnitude. <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//6a0eee75-13f9-4825-a6e7-e8e89c5e0a59/markdown_0/imgs/img_in_image_box_835_898_1035_1082.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A15%3A39Z%2F-1%2F%2F255b1b476e3ab7bf67384135522185ac58add39163cb62ad9a975ff5cb03b538\" alt=\"Image\" width=\"16%\" /></div> $$ \\mathrm{F}_{\\mathrm{BC}}=\\mathrm{F}_{\\mathrm{BA}}=\\frac{\\mu_{0}\\mathrm{I}^{2}}{2\\pi d} $$ and resultant force on B, $$ \\mathrm{F}=\\sqrt{\\mathrm{F}_{1}^{2}+\\mathrm{F}_{2}^{2}} $$ $$ \\mathrm{F}=\\sqrt{2}\\mathrm{F}_{\\mathrm{BC}}=\\sqrt{2}\\frac{\\mu_{0}\\mathrm{I}^{2}}{2\\pi d} $$ $$ \\mathrm{F}=\\frac{\\mu_{0}\\mathrm{I}^{2}}{\\sqrt{2}\\pi d} $$\n- <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//6a0eee75-13f9-4825-a6e7-e8e89c5e0a59/markdown_0/imgs/img_in_image_box_771_1363_1053_1522.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A15%3A39Z%2F-1%2F%2Fa3987a0033521686fdf5b62ccd3e2f3afd0de232340421a135ceac8e6dc27be3\" alt=\"Image\" width=\"23%\" /></div> $$ \\mathrm{F}_{\\mathrm{A B}}=\\mathrm{I}/\\mathrm{B}\\mathrm{(a t t r a c t i o n)} $$ $$ \\mathrm{F}_{\\mathrm{AB}}=\\frac{\\mu_{0}\\mathrm{I}i(\\mathrm{L})}{2\\pi\\left(\\frac{\\mathrm{L}}{2}\\right)}\\left(\\because\\mathrm{B}_{\\mathrm{AB}}=\\frac{\\mu_{0}\\mathrm{I}}{2\\pi\\left(\\frac{\\mathrm{L}}{2}\\right)}\\right) $$ $ F_{BC}(\\uparrow) $ and $ F_{AD}(\\downarrow) \\Rightarrow $ Cancels each other, $$ \\mathrm{F_{CD}=I/B~(r e p u l s i o n)} $$ $$ \\mathrm{F}_{\\mathrm{C D}}=\\frac{\\mu_{0}\\mathrm{I}i(\\mathrm{L})}{2\\pi\\left(3\\mathrm{L}/2\\right)}\\quad\\left(\\because\\mathrm{B}_{\\mathrm{C D}}=\\frac{\\mu_{0}\\mathrm{I}}{2\\pi\\left(\\frac{3\\mathrm{L}}{2}\\right)}\\right) $$ $$ \\mathrm{F}_{\\mathrm{net}}=\\frac{\\mu_{0}\\mathrm{I}i\\mathrm{L}}{2\\pi}\\left(\\frac{1}{\\left(\\frac{\\mathrm{L}}{2}\\right)}-\\frac{1}{\\left(\\frac{3\\mathrm{L}}{2}\\right)}\\right)=\\frac{2\\mu_{0}\\mathrm{I}i}{3\\pi} $$\n- The situation is shown in the diagram, <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//6a0eee75-13f9-4825-a6e7-e8e89c5e0a59/markdown_1/imgs/img_in_image_box_169_492_432_708.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A15%3A41Z%2F-1%2F%2Fa77fa9f451e112c7aa5102ffb9925b9bf732533c34919ba6067b3b57c04a493a\" alt=\"Image\" width=\"22%\" /></div> The relation between $ F_{2} $ and $ F_{4} $ is, $$ \\mathbf{F}_{2}=-\\mathbf{F}_{4} $$ $$ \\mathrm{F}_{1}=\\frac{\\upmu_{0}\\mathbf{I}_{1}\\mathbf{u}}{2\\uppi d} $$ $$ \\mathrm{F}_{3}=\\frac{\\mu_{0}\\mathrm{I}_{1}\\mathrm{I}}{2\\pi(d+l)} $$ $$ \\begin{array}{l}\\Rightarrow\\quad\\mathrm{F}_{1}>\\mathrm{F}_{3}\\\\\\Rightarrow\\quad\\mathrm{F}_{\\text{net}}=\\mathrm{F}_{1}-\\mathrm{F}_{3}\\end{array} $$ So, the wire attract loop.\n- Magnetic field induction at point inside the solenoid, having $n$ turns per unit length carrying current I, is given by $$ \\mathbf{B}=\\boldsymbol{\\mu}_{0}n\\mathbf{I} $$ If I is doubled and n is halved, then B remains same.",
+    "title": "Why a long solenoid's interior field is uniform",
+    "summary": "A long solenoid produces a nearly uniform axial field inside, B = μ₀nI (n = turns per unit length), and almost zero field outside.",
+    "body": "**Must know**\n- Inside a long solenoid: $B=\\mu_0 nI$, uniform and along the axis.\n- At the end of a long solenoid: $B=\\dfrac{1}{2}\\mu_0 nI$.\n- Toroid: $B=\\dfrac{\\mu_0 NI}{2\\pi r}$; the field outside an ideal solenoid/toroid is essentially zero.\n**Exam traps**\n- $n$ is turns per unit length, not the total number of turns $N$.\n- Inside the field is independent of the radial position.",
     "formulas": [
       {
-        "latex": "I = 1 \\, A",
-        "meaning": ""
+        "latex": "B=\\mu_0 nI",
+        "meaning": "Field inside a long solenoid"
       },
       {
-        "latex": "n = \\frac{100}{1 \\, mm} = 100 \\times 10^{3} \\, m^{-1}",
-        "meaning": ""
+        "latex": "B_{end}=\\dfrac{1}{2}\\mu_0 nI",
+        "meaning": "Field at the end of a long solenoid"
       },
       {
-        "latex": "\\begin{aligned}\\mathbf{B}&=\\mu_{0}n\\mathbf{I}=\\mu_{0}\\left(\\frac{\\mathbf{N}}{l}\\right)\\mathbf{I}\\\\&=4\\pi\\times10^{-7}\\times\\frac{100}{0.5}\\times2.5\\\\&=6.28\\times10^{-4}\\mathrm{~T}\\end{aligned}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{aligned}\\Delta q&=\\left(\\frac{\\Delta\\phi}{\\Delta t}\\right)\\frac{1}{\\mathrm{R}}\\times(\\Delta t)&\\left(\\because\\phi=\\mathrm{MI}\\right)\\\\ &=\\mu_{0}\\mathrm{N}_{1}\\mathrm{N}_{2}\\pi r^{2}\\left(\\frac{\\Delta\\mathrm{I}}{\\Delta t}\\right)\\frac{1}{\\mathrm{R}}\\Delta t\\\\ &=4\\pi\\times10^{-7}\\times2\\times10^{4}\\times100\\times\\pi\\\\ &\\quad\\times(10^{-2})^{2}\\quad\\times\\left(\\frac{4}{0.05}\\right)\\times\\frac{1}{10\\pi^{2}}\\times0.05\\\\ &=32\\times10^{-6}\\mathrm{C}=32\\mu\\mathrm{C}\\\\ \\end{aligned}",
-        "meaning": ""
-      },
-      {
-        "latex": "R = 10\\pi^{2}\\Omega",
-        "meaning": ""
-      },
-      {
-        "latex": "r = 10^{-2}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\Delta t = 0.05",
-        "meaning": ""
-      },
-      {
-        "latex": "\\Delta I = 4 - 0 = 4",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathrm{F}_{\\mathrm{BC}}=\\mathrm{F}_{\\mathrm{BA}}=\\frac{\\mu_{0}\\mathrm{I}^{2}}{2\\pi d}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathrm{F}=\\sqrt{\\mathrm{F}_{1}^{2}+\\mathrm{F}_{2}^{2}}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathrm{F}=\\sqrt{2}\\mathrm{F}_{\\mathrm{BC}}=\\sqrt{2}\\frac{\\mu_{0}\\mathrm{I}^{2}}{2\\pi d}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathrm{F}=\\frac{\\mu_{0}\\mathrm{I}^{2}}{\\sqrt{2}\\pi d}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathrm{F}_{\\mathrm{A B}}=\\mathrm{I}/\\mathrm{B}\\mathrm{(a t t r a c t i o n)}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathrm{F}_{\\mathrm{AB}}=\\frac{\\mu_{0}\\mathrm{I}i(\\mathrm{L})}{2\\pi\\left(\\frac{\\mathrm{L}}{2}\\right)}\\left(\\because\\mathrm{B}_{\\mathrm{AB}}=\\frac{\\mu_{0}\\mathrm{I}}{2\\pi\\left(\\frac{\\mathrm{L}}{2}\\right)}\\right)",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathrm{F_{CD}=I/B~(r e p u l s i o n)}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathrm{F}_{\\mathrm{C D}}=\\frac{\\mu_{0}\\mathrm{I}i(\\mathrm{L})}{2\\pi\\left(3\\mathrm{L}/2\\right)}\\quad\\left(\\because\\mathrm{B}_{\\mathrm{C D}}=\\frac{\\mu_{0}\\mathrm{I}}{2\\pi\\left(\\frac{3\\mathrm{L}}{2}\\right)}\\right)",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathrm{F}_{\\mathrm{net}}=\\frac{\\mu_{0}\\mathrm{I}i\\mathrm{L}}{2\\pi}\\left(\\frac{1}{\\left(\\frac{\\mathrm{L}}{2}\\right)}-\\frac{1}{\\left(\\frac{3\\mathrm{L}}{2}\\right)}\\right)=\\frac{2\\mu_{0}\\mathrm{I}i}{3\\pi}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathbf{F}_{2}=-\\mathbf{F}_{4}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathrm{F}_{1}=\\frac{\\upmu_{0}\\mathbf{I}_{1}\\mathbf{u}}{2\\uppi d}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathrm{F}_{3}=\\frac{\\mu_{0}\\mathrm{I}_{1}\\mathrm{I}}{2\\pi(d+l)}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{array}{l}\\Rightarrow\\quad\\mathrm{F}_{1}>\\mathrm{F}_{3}\\\\\\Rightarrow\\quad\\mathrm{F}_{\\text{net}}=\\mathrm{F}_{1}-\\mathrm{F}_{3}\\end{array}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathbf{B}=\\boldsymbol{\\mu}_{0}n\\mathbf{I}",
-        "meaning": ""
+        "latex": "B_{toroid}=\\dfrac{\\mu_0 NI}{2\\pi r}",
+        "meaning": "Field inside a toroid"
       }
     ],
     "questionIds": [
@@ -1035,7 +555,7 @@
       "AIPMT Mains 2011",
       "AIPMT 2003"
     ],
-    "source": "seed"
+    "source": "authored"
   },
   {
     "id": "note-moving-charges-and-magnetism-torque-on-current-loop-magnetic-dipole",
@@ -1045,93 +565,21 @@
     "unitId": "xii-magnetism",
     "unitLabel": "Units III & IV — Magnetic Effects & Magnetism",
     "order": 17,
-    "title": "Torque on Current Loop, Magnetic Dipole",
-    "summary": "<div style=\"text-align: center;\"><img…",
-    "body": "**Key points from solved questions**\n- Given, Length of wire, l = 12 a Resistance = R Current = I (i) Equilateral triangle of side $a'$ we know, $m = NIA$ $$ \\mathbf{A}=\\frac{\\sqrt{3}}{4}a^{2} $$ Perimeter = 3a $$ \\boldsymbol{N}=4 $$ $$ \\begin{aligned}m&=4.\\ I.\\ \\frac{\\sqrt{3}}{4}a^{2}\\\\&=\\sqrt{3}\\ I a^{2}\\end{aligned} $$ (ii) Area of Square of side 'a' Square, $ A = a^{2} $ perimeter = 4a $ \\therefore $ N = 3 m = 3.1 a^{2}\n- When wire of length L is bent in the form of a circle of radius R then $$ \\mathrm{L}=2\\pi\\mathrm{R} $$ $$ \\displaystyle\\ \\ \\bullet $$ $$ \\mathrm{R}=\\frac{\\mathrm{L}}{2\\pi} $$ ∴ Magnetic moment, $$ \\begin{aligned}\\mu&=I A\\\\&=I(\\pi R^{2})\\\\&=I.\\pi.\\left(\\frac{L}{2\\pi}\\right)^{2}\\\\&=\\frac{I\\pi L^{2}}{4\\pi^{2}}=\\frac{I L^{2}}{4\\pi}\\end{aligned} $$\n- Work done in rotating the coil, $$ \\begin{aligned}\\mathrm{W}&=\\mathrm{MB}\\left(\\cos\\theta_{1}-\\cos\\theta_{2}\\right)\\\\\\therefore\\quad\\mathrm{W}&=\\mathrm{MB}\\left(\\cos0^{\\circ}-\\cos180^{\\circ}\\right)\\\\&=2\\mathrm{MB}=2\\times\\mathrm{NIA}\\times\\mathrm{B}\\\\&=2\\times250\\times85\\times10^{-6}\\times2.1\\times\\\\&\\quad1.25\\times10^{-4}\\times0.85\\\\&=9.48\\times10^{-6}\\mathrm{J}\\\\&=9.5\\mu\\mathrm{J}\\end{aligned} $$\n- For parallel, it is stable and for antiparallel, it is unstable.\n- The net magnetic force on a current loop in a uniform magnetic field is always zero. <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//6a0eee75-13f9-4825-a6e7-e8e89c5e0a59/markdown_2/imgs/img_in_image_box_260_230_453_413.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A15%3A44Z%2F-1%2F%2F01d51ddad5f3390ad8a8650498457c12fee2211a862d0061fc551e8ea1e49c4c\" alt=\"Image\" width=\"16%\" /></div> $$ \\vec{F}_{AB}+\\vec{F}_{BCDA}=0 $$ $$ \\vec{\\mathbf{F}}_{\\mathrm{B C D A}}=-\\vec{\\mathbf{F}}_{\\mathrm{A B}}=-\\vec{\\mathbf{F}} $$\n- If magnetic field B is uniform, then force on closed loop = 0 One force is F, then the total force should be zero. This confirms that, $\\overrightarrow{F} = -\\overrightarrow{F}$ for zero net force.\n- <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//6a0eee75-13f9-4825-a6e7-e8e89c5e0a59/markdown_2/imgs/img_in_image_box_179_850_424_937.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A15%3A44Z%2F-1%2F%2F30eccf0df8680b2ebea3d8b85aae9f57e08f5d416233b9cd6ef9156a8d9148bc\" alt=\"Image\" width=\"20%\" /></div> If placed in uniform magnetic field, total force on the current carrying closed loop should be zero. $$ \\mathrm{F}_{\\mathrm{horizontal}}=\\mathrm{F}_{3}-\\mathrm{F}_{1} $$ $$ \\mathrm{F_{vertical}}=\\mathrm{F_{2}} $$ Resultant of $ \\vec{F}_1 $, $ \\vec{F}_2 $ and $ \\vec{F}_3 $ is $ \\vec{F} $, Where $$ \\overrightarrow{\\mathrm{F}}=\\sqrt{\\left(\\mathrm{F}_{3}-\\mathrm{F}_{1}\\right)^{2}+\\mathrm{F}_{2}^{2}} $$ since, total force = 0, Hence, force on QP is equal to $ \\overrightarrow{F} $ in magnitude but opposite direction. $$ \\mathrm{F_{QP}}=\\sqrt{\\left(\\mathrm{F_{3}}-\\mathrm{F_{1}}\\right)^{2}+\\mathrm{F_{2}^{2}}} $$\n- Magnetic moment, $ \\mu = IA $ Since, $$ \\mathrm{T}=\\frac{2\\pi\\mathrm{R}}{\\mathrm{v}} $$ $$ I=\\frac{q}{T}=\\frac{q v}{2\\pi R} $$ also, $$ \\begin{aligned}\\mu&=\\left(\\frac{q\\mathbf{v}}{2\\pi\\mathbf{R}}\\right)(\\pi\\mathbf{R}^{2})\\\\&=\\frac{q\\mathbf{v}\\mathbf{R}}{2}\\end{aligned} $$\n- The coil must be oriented in such a way that its magnetic moment coincides with the field. So that the coil's magnetic force is zero. Since, the direction of magnetic moment is perpendicular of coil's plane which means plane has to be perpendicular to magnetic field.",
+    "title": "How a current loop acts as a magnetic dipole",
+    "summary": "A current loop has magnetic moment m = NIA and feels a torque τ = m×B in a field — the principle behind motors and galvanometers.",
+    "body": "**Must know**\n- Magnetic moment: $\\vec{m}=NI\\vec{A}$, magnitude $m=NIA$.\n- Torque: $\\vec{\\tau}=\\vec{m}\\times\\vec{B}$, magnitude $\\tau=NIAB\\sin\\theta$.\n- Potential energy: $U=-\\vec{m}\\cdot\\vec{B}=-mB\\cos\\theta$.\n**Exam traps**\n- Torque is maximum when the loop's plane is parallel to $\\vec{B}$ (so $\\vec{m}\\perp\\vec{B}$).\n- Stable equilibrium occurs when $\\vec{m}$ is aligned with $\\vec{B}$.",
     "formulas": [
       {
-        "latex": "\\mathbf{A}=\\frac{\\sqrt{3}}{4}a^{2}",
-        "meaning": ""
+        "latex": "\\vec{m}=NI\\vec{A}",
+        "meaning": "Magnetic moment of a current loop"
       },
       {
-        "latex": "\\boldsymbol{N}=4",
-        "meaning": ""
+        "latex": "\\vec{\\tau}=\\vec{m}\\times\\vec{B},\\quad \\tau=NIAB\\sin\\theta",
+        "meaning": "Torque on the loop"
       },
       {
-        "latex": "\\begin{aligned}m&=4.\\ I.\\ \\frac{\\sqrt{3}}{4}a^{2}\\\\&=\\sqrt{3}\\ I a^{2}\\end{aligned}",
-        "meaning": ""
-      },
-      {
-        "latex": "m = NIA",
-        "meaning": ""
-      },
-      {
-        "latex": "A = a^{2}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathrm{L}=2\\pi\\mathrm{R}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\displaystyle\\ \\ \\bullet",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathrm{R}=\\frac{\\mathrm{L}}{2\\pi}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{aligned}\\mu&=I A\\\\&=I(\\pi R^{2})\\\\&=I.\\pi.\\left(\\frac{L}{2\\pi}\\right)^{2}\\\\&=\\frac{I\\pi L^{2}}{4\\pi^{2}}=\\frac{I L^{2}}{4\\pi}\\end{aligned}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{aligned}\\mathrm{W}&=\\mathrm{MB}\\left(\\cos\\theta_{1}-\\cos\\theta_{2}\\right)\\\\\\therefore\\quad\\mathrm{W}&=\\mathrm{MB}\\left(\\cos0^{\\circ}-\\cos180^{\\circ}\\right)\\\\&=2\\mathrm{MB}=2\\times\\mathrm{NIA}\\times\\mathrm{B}\\\\&=2\\times250\\times85\\times10^{-6}\\times2.1\\times\\\\&\\quad1.25\\times10^{-4}\\times0.85\\\\&=9.48\\times10^{-6}\\mathrm{J}\\\\&=9.5\\mu\\mathrm{J}\\end{aligned}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\vec{F}_{AB}+\\vec{F}_{BCDA}=0",
-        "meaning": ""
-      },
-      {
-        "latex": "\\vec{\\mathbf{F}}_{\\mathrm{B C D A}}=-\\vec{\\mathbf{F}}_{\\mathrm{A B}}=-\\vec{\\mathbf{F}}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\overrightarrow{F} = -\\overrightarrow{F}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathrm{F}_{\\mathrm{horizontal}}=\\mathrm{F}_{3}-\\mathrm{F}_{1}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathrm{F_{vertical}}=\\mathrm{F_{2}}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\overrightarrow{\\mathrm{F}}=\\sqrt{\\left(\\mathrm{F}_{3}-\\mathrm{F}_{1}\\right)^{2}+\\mathrm{F}_{2}^{2}}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathrm{F_{QP}}=\\sqrt{\\left(\\mathrm{F_{3}}-\\mathrm{F_{1}}\\right)^{2}+\\mathrm{F_{2}^{2}}}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathrm{T}=\\frac{2\\pi\\mathrm{R}}{\\mathrm{v}}",
-        "meaning": ""
-      },
-      {
-        "latex": "I=\\frac{q}{T}=\\frac{q v}{2\\pi R}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{aligned}\\mu&=\\left(\\frac{q\\mathbf{v}}{2\\pi\\mathbf{R}}\\right)(\\pi\\mathbf{R}^{2})\\\\&=\\frac{q\\mathbf{v}\\mathbf{R}}{2}\\end{aligned}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mu = IA",
-        "meaning": ""
+        "latex": "U=-\\vec{m}\\cdot\\vec{B}",
+        "meaning": "Potential energy of a magnetic dipole"
       }
     ],
     "questionIds": [
@@ -1154,7 +602,7 @@
       "AIPMT 2007",
       "AIPMT 1988"
     ],
-    "source": "seed"
+    "source": "authored"
   },
   {
     "id": "note-moving-charges-and-magnetism-reneet2026",
