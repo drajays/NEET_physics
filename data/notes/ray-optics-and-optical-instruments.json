@@ -276,105 +276,21 @@
     "unitId": "xii-optics",
     "unitLabel": "Unit VII — Optics",
     "order": 22,
-    "title": "Optical Instruments",
-    "summary": "<div style=\"text-align: center;\"><img…",
-    "body": "**Key points from solved questions**\n- Given: $ f_{o}=140\\ cm; $ $ f_{e}=5\\ cm $ Magnifying power for normal adjustment $$ \\mathbf{M}=\\left|\\frac{-f_{o}}{f_{e}}\\right|=\\left|-\\frac{140}{5}\\right|=28 $$\n- Aperture ensure proper collection of light as well as better resolution.\n- For telescope, angular magnification is $ \\frac{f_{o}}{f_{e}} $. So focal length of objective lens should be large and angular resolution = $ \\frac{D}{1.22\\lambda} $ should also be large. So, object lens should have large focal length ( $ f_{o} $) and large diameter (D).\n- Objective lens Eye piece lens <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//6b66c489-7aa9-48e0-9312-948fb85db0f7/markdown_2/imgs/img_in_image_box_192_764_518_885.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A31Z%2F-1%2F%2F1ca22ed2a433f350bdee625b5584dface7e825ad0d21e7eb6d34a92609b6ea20\" alt=\"Image\" width=\"27%\" /></div> Using lens formula for objective lens, $$ \\frac{1}{\\textbf{v}}-\\frac{1}{u}=\\frac{1}{f} $$ $$ \\begin{aligned}\\frac{1}{\\text{v}}&=\\frac{1}{f}+\\frac{1}{u}\\\\&=\\frac{1}{40}+\\frac{1}{-200}\\\\&=\\frac{+5-1}{200}\\end{aligned} $$ $ \\Rightarrow $ v = 50 cm : Tube length $$ \\begin{aligned}l&=|\\mathbf{v}|+f_{e}\\\\&=50+4\\\\&=54\\ cm\\end{aligned} $$\n- <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//6b66c489-7aa9-48e0-9312-948fb85db0f7/markdown_2/imgs/img_in_image_box_158_1253_423_1361.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A31Z%2F-1%2F%2Ffee723d3b86b705046d917f04e6cd6038f3dce74f148d4048273273de5973121\" alt=\"Image\" width=\"22%\" /></div> We know that magnification of telescope, $$ \\mathbf{M}=\\frac{f_{o}}{f_{e}} $$ And also $$ \\frac{f_{e}}{f_{e}+u}=-\\frac{l}{L} $$ $$ \\begin{array}{c} \\Rightarrow\\quad\\frac{f_{e}}{f_{e}-(f_{o}+f_{e})}=-\\frac{l}{L}\\\\ \\Rightarrow\\quad\\frac{f_{e}}{f_{o}}=\\frac{l}{L} \\end{array} $$ From eq. (i) and (ii), $$ \\textbf{M}=\\frac{L}{l} $$ <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//6b66c489-7aa9-48e0-9312-948fb85db0f7/markdown_2/imgs/img_in_image_box_635_339_677_390.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A31Z%2F-1%2F%2F26f1d20436f3d5ae527cceac3d4504cc76b4737570eb5e9f28a8b0aa13cf9191\" alt=\"Image\" width=\"3%\" /></div> ##### Mnemonics Magnifying power of Telescope: MBA for free $$ m=\\left(\\frac{B}{\\alpha}\\right)\\times\\left(\\frac{f_{\\theta}}{e}\\right) $$\n- $\\because$ Magnifying power, $m \\propto \\frac{1}{f_{o}} \\rightarrow$ microscope $$ \\frac{f_{o}}{f_{e}}=m $$ $ m \\propto f_o \\rightarrow $ telescope The magnifying power of microscope decreases and magnifying power of telescope increases.\n- Shifting in microscope = upward shifting in mark $$ t\\biggl(1-\\frac{1}{\\upmu}\\biggr)\\;=\\;3\\biggl(1-\\frac{1}{1\\cdot5}\\biggr)=1\\mathrm{~c m} $$ <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//6b66c489-7aa9-48e0-9312-948fb85db0f7/markdown_2/imgs/img_in_image_box_629_794_671_843.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A32Z%2F-1%2F%2F4d7ef4dbd2ffabf5462e8c83543590ddaa62e2b8e0cb093206b8fb564a643f10\" alt=\"Image\" width=\"3%\" /></div> ##### Mnemonics Magnifying power of simple microscope Microscope says, I add Detailed focus (microscope) $ \\mathbf{m} = 1 + \\left( \\frac{D}{f} \\right)_{\\text{focus}}^{\\text{Detailed}} $\n- For an astronomical telescope, Therefore, $$ m=\\frac{f_{o}}{f_{e}} $$ where, $ f_{o} $ = focal length of objective lens. $ f_{e}= $ focal length of eyepiece lens Length of telescope tube, $ L = f_{o} + f_{e} $ $$ m=10,L=44cm $$ $$ \\frac{f_{o}}{f_{e}}=10 $$ and $$ f_{o}+f_{e}=44 $$ $$ f_{e}=\\frac{f_{o}}{10} $$ Therefore, $$ f_{o}+\\frac{f_{o}}{10}=44 $$ or $$ \\frac{11f_{o}}{10}=44 $$ or $$ f_{o}=40\\ cm $$",
+    "title": "How microscopes and telescopes magnify",
+    "summary": "Magnifying instruments combine lenses: a simple microscope gives M = 1 + D/f, while compound microscopes and telescopes multiply the magnifications of objective and eyepiece.",
+    "body": "**Must know**\n- Simple microscope (image at near point): $M=1+\\dfrac{D}{f}$, with $D=25$ cm.\n- Compound microscope: $M\\approx\\dfrac{L}{f_o}\\cdot\\dfrac{D}{f_e}$.\n- Astronomical telescope (normal adjustment): $M=\\dfrac{f_o}{f_e}$ and tube length $L=f_o+f_e$.\n**Exam traps**\n- A telescope needs a large objective focal length and a small eyepiece focal length; a microscope needs both short.\n- The near point distance $D=25$ cm for a normal eye.",
     "formulas": [
       {
-        "latex": "\\mathbf{M}=\\left|\\frac{-f_{o}}{f_{e}}\\right|=\\left|-\\frac{140}{5}\\right|=28",
-        "meaning": ""
+        "latex": "M=1+\\dfrac{D}{f}",
+        "meaning": "Simple microscope (near point)"
       },
       {
-        "latex": "f_{o}=140\\ cm;",
-        "meaning": ""
+        "latex": "M\\approx\\dfrac{L}{f_o}\\cdot\\dfrac{D}{f_e}",
+        "meaning": "Compound microscope magnification"
       },
       {
-        "latex": "f_{e}=5\\ cm",
-        "meaning": ""
-      },
-      {
-        "latex": "\\frac{1}{\\textbf{v}}-\\frac{1}{u}=\\frac{1}{f}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{aligned}\\frac{1}{\\text{v}}&=\\frac{1}{f}+\\frac{1}{u}\\\\&=\\frac{1}{40}+\\frac{1}{-200}\\\\&=\\frac{+5-1}{200}\\end{aligned}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{aligned}l&=|\\mathbf{v}|+f_{e}\\\\&=50+4\\\\&=54\\ cm\\end{aligned}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathbf{M}=\\frac{f_{o}}{f_{e}}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\frac{f_{e}}{f_{e}+u}=-\\frac{l}{L}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{array}{c} \\Rightarrow\\quad\\frac{f_{e}}{f_{e}-(f_{o}+f_{e})}=-\\frac{l}{L}\\\\ \\Rightarrow\\quad\\frac{f_{e}}{f_{o}}=\\frac{l}{L} \\end{array}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\textbf{M}=\\frac{L}{l}",
-        "meaning": ""
-      },
-      {
-        "latex": "m=\\left(\\frac{B}{\\alpha}\\right)\\times\\left(\\frac{f_{\\theta}}{e}\\right)",
-        "meaning": ""
-      },
-      {
-        "latex": "\\frac{f_{o}}{f_{e}}=m",
-        "meaning": ""
-      },
-      {
-        "latex": "t\\biggl(1-\\frac{1}{\\upmu}\\biggr)\\;=\\;3\\biggl(1-\\frac{1}{1\\cdot5}\\biggr)=1\\mathrm{~c m}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathbf{m} = 1 + \\left( \\frac{D}{f} \\right)_{\\text{focus}}^{\\text{Detailed}}",
-        "meaning": ""
-      },
-      {
-        "latex": "m=\\frac{f_{o}}{f_{e}}",
-        "meaning": ""
-      },
-      {
-        "latex": "m=10,L=44cm",
-        "meaning": ""
-      },
-      {
-        "latex": "\\frac{f_{o}}{f_{e}}=10",
-        "meaning": ""
-      },
-      {
-        "latex": "f_{o}+f_{e}=44",
-        "meaning": ""
-      },
-      {
-        "latex": "f_{e}=\\frac{f_{o}}{10}",
-        "meaning": ""
-      },
-      {
-        "latex": "f_{o}+\\frac{f_{o}}{10}=44",
-        "meaning": ""
-      },
-      {
-        "latex": "\\frac{11f_{o}}{10}=44",
-        "meaning": ""
-      },
-      {
-        "latex": "f_{o}=40\\ cm",
-        "meaning": ""
-      },
-      {
-        "latex": "f_{e}=",
-        "meaning": ""
-      },
-      {
-        "latex": "L = f_{o} + f_{e}",
-        "meaning": ""
+        "latex": "M=\\dfrac{f_o}{f_e},\\quad L=f_o+f_e",
+        "meaning": "Telescope (normal adjustment)"
       }
     ],
     "questionIds": [
@@ -397,7 +313,7 @@
       "AIPMT 2006",
       "AIPMT 1997"
     ],
-    "source": "seed"
+    "source": "authored"
   },
   {
     "id": "note-ray-optics-and-optical-instruments-reflection-of-light-by-spherical-mirrors",
@@ -407,105 +323,21 @@
     "unitId": "xii-optics",
     "unitLabel": "Unit VII — Optics",
     "order": 22,
-    "title": "Reflection of Light by Spherical Mirrors",
-    "summary": "In this problem, we consider two cases <div style=\"text-align: center;\"><img…",
-    "body": "**Key points from solved questions**\n- In this problem, we consider two cases <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//eb1b4280-4567-45d6-8552-01db3664a28f/markdown_2/imgs/img_in_image_box_235_920_500_1067.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A00Z%2F-1%2F%2F4a2e7c287e7b1e78e050aa1a83c1e25488916cf6f62921a8ea250898d94152a6\" alt=\"Image\" width=\"22%\" /></div> In Case (i) When object is placed, $ u_{1} = -40 $ cm and focal length of mirror, f = -15 cm Using the mirror formula, $$ \\frac{1}{f}=\\frac{1}{v_{i}}+\\frac{1}{u_{i}} $$ $$ -\\frac{1}{15}=\\frac{1}{v_{1}}-\\frac{1}{40} $$ $$ \\frac{1}{v_{i}}=\\frac{1}{-15}+\\frac{1}{40}=-\\frac{5}{120} $$ $$ v_{1}=-24cm $$ Case (ii) When object is displaced by 20 cm towards the mirror Then, $$ u_{2}=-20\\mathrm{c m} $$ $$ \\frac{1}{f}=\\frac{1}{\\mathbf{v}_{2}}+\\frac{1}{u_{2}} $$ $$ -\\frac{1}{15}=\\frac{1}{v_{2}}-\\frac{1}{20} $$ $$ \\frac{1}{\\mathrm{v}_{2}}=\\frac{1}{20}-\\frac{1}{15}=-\\frac{1}{60} $$ $$ \\mathbf{v}_{2}=-60\\mathrm{c m} $$ So, image shifts away from mirror by $$ =60-24=36cm $$\n- Here <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//eb1b4280-4567-45d6-8552-01db3664a28f/markdown_2/imgs/img_in_image_box_705_563_934_820.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A01Z%2F-1%2F%2Ffe3b3e3aa8d6ee28e3abea0a45104820e172717324f5c78f041d70afbe8c462d\" alt=\"Image\" width=\"19%\" /></div> $$ \\frac{y}{x}=2\\theta $$ $$ \\theta=\\frac{y}{2x} $$\n- $ m = + v_{e} $ (virtual image) $$ m=-\\mathbf{v}_{e}\\text{(real image)} $$ $ |m|<1 $ (diminished image) <table border=1 style='margin: auto; word-wrap: break-word;'><tr><td style='text-align: center; word-wrap: break-word;'>Column 1</td><td style='text-align: center; word-wrap: break-word;'>Column 2</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>(a) $ m = -2 $</td><td style='text-align: center; word-wrap: break-word;'>Concave mirror, real image</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>(b) $ m = -\\frac{1}{2} $</td><td style='text-align: center; word-wrap: break-word;'>Concave mirror, real image</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>(c) $ m = +2 $</td><td style='text-align: center; word-wrap: break-word;'>Concave mirror, virtual image</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>(d) $ m = +\\frac{1}{2} $</td><td style='text-align: center; word-wrap: break-word;'>Convex mirror, virtual image</td></tr></table>\n- The actual situation is shown in the given figure. <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//eb1b4280-4567-45d6-8552-01db3664a28f/markdown_2/imgs/img_in_image_box_785_1307_1056_1452.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A01Z%2F-1%2F%2Fc84775a8005bf58459056fc057bd19c4daa67bd89cf8a9fc9799639b06aba2e7\" alt=\"Image\" width=\"22%\" /></div> $$ \\theta+40^{\\circ}=90^{\\circ} $$ $$ \\theta=90^{\\circ}-40^{\\circ}=50^{\\circ} $$\n- <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//eb1b4280-4567-45d6-8552-01db3664a28f/markdown_3/imgs/img_in_image_box_96_109_355_234.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A03Z%2F-1%2F%2F42e0993a4383943f7566e2c5566b5def9197ad43eda7f949611289bca48357b7\" alt=\"Image\" width=\"21%\" /></div> Image position of end A $$ \\frac{1}{\\mathrm{v}_{\\mathrm{A}}}+\\frac{1}{-20}=\\frac{1}{-10} $$ $$ \\Rightarrow $$ $$ \\mathrm{v_{A}=-20cm} $$ Image position of end B $$ \\mathrm{\\frac{l}{v_{8}}+\\frac{l}{-30}=}\\quad\\frac{1}{-10} $$ $$ \\Rightarrow $$ $$ \\mathrm{V_{B}=-15c m} $$ ∴ Length of the image is $$ \\mathrm{A}_{1}\\mathrm{B}_{1}=\\left|\\mathrm{v}_{\\mathrm{A}}\\right|-\\left|\\mathrm{v}_{\\mathrm{B}}\\right|=20-15=5\\mathrm{~cm} $$\n- Many images are created when an object is held between two plane mirrors $M_{1}$ and $M_{2}$ inclined at an angle $\\theta$ due to multiple reflections of light from the mirrors. The total number of images formed. $$ n=\\frac{360^{\\circ}}{\\theta}-1 $$ Here, $ \\theta = 60^{\\circ} $ $$ n=\\frac{360^{\\circ}}{60^{\\circ}}-1=6-1=5 $$",
+    "title": "How the mirror formula locates an image",
+    "summary": "For a spherical mirror, 1/v + 1/u = 1/f with f = R/2, and the magnification is m = −v/u — all applied with the Cartesian sign convention.",
+    "body": "**Must know**\n- Mirror formula: $\\dfrac{1}{v}+\\dfrac{1}{u}=\\dfrac{1}{f}$, with focal length $f=\\dfrac{R}{2}$.\n- Magnification: $m=\\dfrac{h'}{h}=-\\dfrac{v}{u}$.\n- Cartesian sign convention: distances are measured from the pole; a concave mirror has $f<0$, a convex mirror $f>0$.\n**Exam traps**\n- A convex mirror always forms a virtual, erect, diminished image.\n- A concave mirror gives a real image for an object beyond the focus and a virtual image inside it.",
     "formulas": [
       {
-        "latex": "\\frac{1}{f}=\\frac{1}{v_{i}}+\\frac{1}{u_{i}}",
-        "meaning": ""
+        "latex": "\\dfrac{1}{v}+\\dfrac{1}{u}=\\dfrac{1}{f}",
+        "meaning": "Mirror formula"
       },
       {
-        "latex": "-\\frac{1}{15}=\\frac{1}{v_{1}}-\\frac{1}{40}",
-        "meaning": ""
+        "latex": "f=\\dfrac{R}{2}",
+        "meaning": "Focal length of a spherical mirror"
       },
       {
-        "latex": "\\frac{1}{v_{i}}=\\frac{1}{-15}+\\frac{1}{40}=-\\frac{5}{120}",
-        "meaning": ""
-      },
-      {
-        "latex": "v_{1}=-24cm",
-        "meaning": ""
-      },
-      {
-        "latex": "u_{2}=-20\\mathrm{c m}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\frac{1}{f}=\\frac{1}{\\mathbf{v}_{2}}+\\frac{1}{u_{2}}",
-        "meaning": ""
-      },
-      {
-        "latex": "-\\frac{1}{15}=\\frac{1}{v_{2}}-\\frac{1}{20}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\frac{1}{\\mathrm{v}_{2}}=\\frac{1}{20}-\\frac{1}{15}=-\\frac{1}{60}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathbf{v}_{2}=-60\\mathrm{c m}",
-        "meaning": ""
-      },
-      {
-        "latex": "=60-24=36cm",
-        "meaning": ""
-      },
-      {
-        "latex": "u_{1} = -40",
-        "meaning": ""
-      },
-      {
-        "latex": "\\frac{y}{x}=2\\theta",
-        "meaning": ""
-      },
-      {
-        "latex": "\\theta=\\frac{y}{2x}",
-        "meaning": ""
-      },
-      {
-        "latex": "m=-\\mathbf{v}_{e}\\text{(real image)}",
-        "meaning": ""
-      },
-      {
-        "latex": "m = + v_{e}",
-        "meaning": ""
-      },
-      {
-        "latex": "m = -2",
-        "meaning": ""
-      },
-      {
-        "latex": "m = -\\frac{1}{2}",
-        "meaning": ""
-      },
-      {
-        "latex": "m = +2",
-        "meaning": ""
-      },
-      {
-        "latex": "m = +\\frac{1}{2}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\theta+40^{\\circ}=90^{\\circ}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\theta=90^{\\circ}-40^{\\circ}=50^{\\circ}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\frac{1}{\\mathrm{v}_{\\mathrm{A}}}+\\frac{1}{-20}=\\frac{1}{-10}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\Rightarrow",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathrm{v_{A}=-20cm}",
-        "meaning": ""
+        "latex": "m=-\\dfrac{v}{u}=\\dfrac{h'}{h}",
+        "meaning": "Linear magnification"
       }
     ],
     "questionIds": [
@@ -525,7 +357,7 @@
       "AIPMT Mains 2012",
       "AIPMT 1995"
     ],
-    "source": "seed"
+    "source": "authored"
   },
   {
     "id": "note-ray-optics-and-optical-instruments-refraction",
@@ -535,81 +367,21 @@
     "unitId": "xii-optics",
     "unitLabel": "Unit VII — Optics",
     "order": 22,
-    "title": "Refraction",
-    "summary": "By Snell's law.",
-    "body": "**Key points from solved questions**\n- For an image to form, regular reflection or refraction is necessary. Regular reflection occurs when light rays reflect off a smooth surface to form clear images. Refraction involves the bending of light as it passes from one medium to another, which also contributes to image formation (e.g., lenses forming images by refraction). The colours of objects are perceived based on the wavelengths of light they reflect. Objects absorb certain wavelengths of light and reflect others. The reflected light enters our eyes and is interpreted as colour. The colour of the light source (constituent colours) plays an important role in this perception. So, both statements are correct.\n- By Snell's law. $$ \\mathrm{1\\sin60^{\\circ}=\\sqrt{3}\\sin r} $$ $$ \\frac{\\sqrt{3}}{2}=\\sqrt{3}\\sin r $$ $$ \\sin r=\\frac{1}{2} $$ $$ r=30^{\\circ} $$ <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//eb1b4280-4567-45d6-8552-01db3664a28f/markdown_3/imgs/img_in_image_box_736_113_1034_378.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A03Z%2F-1%2F%2Fb4184ff1b4ed911fb96c24e7a6eee4bb65306f141ce43912622ac990b20c50d7\" alt=\"Image\" width=\"25%\" /></div> $$ 60^{\\circ}+\\theta+30^{\\circ}=180^{\\circ} $$ $$ \\theta=90^{\\circ} $$ So, the angle between refracted and reflected ray is $ 90^{\\circ} $.\n- Let, t = thickness of glass slab. <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//eb1b4280-4567-45d6-8552-01db3664a28f/markdown_3/imgs/img_in_image_box_796_537_983_703.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A03Z%2F-1%2F%2F84af0683b1b72f79849fd39271ce08b0234104b6c92fa84fb66f934137248edb\" alt=\"Image\" width=\"15%\" /></div> From question. $$ \\begin{array}{r} \\begin{aligned}\\frac{x}{\\mu}+\\frac{t-x}{\\mu}&=3+5\\\\ \\frac{t}{\\mu}&=8cm\\end{aligned} \\\\ \\therefore \\quad t=\\mu\\times8&=8\\times\\frac{3}{2}=12cm \\end{array} $$\n- Refractive index, $ \\mu = \\frac{c}{v\\lambda} $ $$ \\mu=\\frac{3\\times10^{8}}{2\\times10^{14}\\times5000\\times10^{-10}}=3 $$\n- $$ \\frac{1}{\\mu}=\\sin\\theta_{c}=\\frac{3}{5} $$ $$ \\upmu=\\frac{5}{3} $$ And $$ \\begin{array}{l} \\text{v} =\\displaystyle {\\lim_{\\text{mu } m \\to 8}} 37 ( 10 i^{8}- \\frac{3-10^{8}}{5/3}- \\frac{1}{3}+ \\dots) \\\\\\qquad=\\displaystyle {\\lim_{\\text{fg } h \\to 8}} 9 ( 10^{8}-1.8+10^{8}-1 \\text{ ms}) \\\\ \\qquad = 9 \\text{ cm} \\end{array} $$\n- Red and green rays emerge from two points propagating in two different parallel directions. <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//eb1b4280-4567-45d6-8552-01db3664a28f/markdown_3/imgs/img_in_image_box_769_1374_1028_1506.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A03Z%2F-1%2F%2F38ac1f7ca0c9b9cd82a03fba120046b2cbd06e524d4bab5143777d21c1416a4b\" alt=\"Image\" width=\"21%\" /></div>\n- When an electromagnetic wave travels through another medium, the frequency is unchanged, but the wavelength and velocity are $\\frac{1}{\\mu}$ times. Thus, after passing from air to a glass slab with a refractive index of $(\\mu)$, frequency remains $v$, and wavelength becomes $\\lambda' = \\frac{\\lambda}{\\mu}$ and velocity of light $v' = \\frac{v}{\\mu}$.\n- Let x be thickness of window, v be velocity of light entering in window, so time taken by sunlight to pass through the window $$ \\begin{aligned}t=&\\frac{x}{\\mathbf{v}}=\\frac{x}{\\underbrace{c}_{\\ \\mu}}=\\frac{\\mu x}{c}&\\left[\\because\\mathbf{v}=\\frac{c}{\\mu}\\right]\\\\t=&\\frac{1.5\\times4\\times10^{-3}}{3\\times10^{8}}=2\\times10^{-11}\\mathbf{s}\\end{aligned} $$\n- We have, refractive index, $$ \\upmu=\\frac{c}{\\mathbf{v}}=\\frac{\\mathbf{v}\\lambda_{\\mathbf{v}}}{\\mathbf{v}\\lambda_{\\mathbf{m}}} $$ As, v remains constant during refraction. $$ \\lambda_{m}=\\frac{\\lambda_{v}}{\\mu} $$ $$ \\lambda_{\\mathrm{m}}<\\lambda_{\\mathrm{v}} $$ Hence, in the second medium, the wavelength falls.",
+    "title": "Why light bends — Snell's law and refractive index",
+    "summary": "Crossing a boundary, light bends according to Snell's law n₁ sin i = n₂ sin r; the refractive index n = c/v measures how much a medium slows light.",
+    "body": "**Must know**\n- Snell's law: $n_1\\sin i=n_2\\sin r$.\n- Refractive index: $n=\\dfrac{c}{v}$; relative index $n_{21}=\\dfrac{n_2}{n_1}=\\dfrac{v_1}{v_2}$.\n- Apparent depth: $n=\\dfrac{\\text{real depth}}{\\text{apparent depth}}$.\n**Exam traps**\n- On refraction the frequency stays the same; the speed and wavelength change.\n- Light bends toward the normal when entering a denser medium.",
     "formulas": [
       {
-        "latex": "\\mathrm{1\\sin60^{\\circ}=\\sqrt{3}\\sin r}",
-        "meaning": ""
+        "latex": "n_1\\sin i=n_2\\sin r",
+        "meaning": "Snell's law"
       },
       {
-        "latex": "\\frac{\\sqrt{3}}{2}=\\sqrt{3}\\sin r",
-        "meaning": ""
+        "latex": "n=\\dfrac{c}{v}",
+        "meaning": "Absolute refractive index"
       },
       {
-        "latex": "\\sin r=\\frac{1}{2}",
-        "meaning": ""
-      },
-      {
-        "latex": "r=30^{\\circ}",
-        "meaning": ""
-      },
-      {
-        "latex": "60^{\\circ}+\\theta+30^{\\circ}=180^{\\circ}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\theta=90^{\\circ}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{array}{r} \\begin{aligned}\\frac{x}{\\mu}+\\frac{t-x}{\\mu}&=3+5\\\\ \\frac{t}{\\mu}&=8cm\\end{aligned} \\\\ \\therefore \\quad t=\\mu\\times8&=8\\times\\frac{3}{2}=12cm \\end{array}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mu=\\frac{3\\times10^{8}}{2\\times10^{14}\\times5000\\times10^{-10}}=3",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mu = \\frac{c}{v\\lambda}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\frac{1}{\\mu}=\\sin\\theta_{c}=\\frac{3}{5}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\upmu=\\frac{5}{3}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{array}{l} \\text{v} =\\displaystyle {\\lim_{\\text{mu } m \\to 8}} 37 ( 10 i^{8}- \\frac{3-10^{8}}{5/3}- \\frac{1}{3}+ \\dots) \\\\\\qquad=\\displaystyle {\\lim_{\\text{fg } h \\to 8}} 9 ( 10^{8}-1.8+10^{8}-1 \\text{ ms}) \\\\ \\qquad = 9 \\text{ cm} \\end{array}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\lambda' = \\frac{\\lambda}{\\mu}",
-        "meaning": ""
-      },
-      {
-        "latex": "v' = \\frac{v}{\\mu}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{aligned}t=&\\frac{x}{\\mathbf{v}}=\\frac{x}{\\underbrace{c}_{\\ \\mu}}=\\frac{\\mu x}{c}&\\left[\\because\\mathbf{v}=\\frac{c}{\\mu}\\right]\\\\t=&\\frac{1.5\\times4\\times10^{-3}}{3\\times10^{8}}=2\\times10^{-11}\\mathbf{s}\\end{aligned}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\upmu=\\frac{c}{\\mathbf{v}}=\\frac{\\mathbf{v}\\lambda_{\\mathbf{v}}}{\\mathbf{v}\\lambda_{\\mathbf{m}}}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\lambda_{m}=\\frac{\\lambda_{v}}{\\mu}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\lambda_{\\mathrm{m}}<\\lambda_{\\mathrm{v}}",
-        "meaning": ""
+        "latex": "n=\\dfrac{\\text{real depth}}{\\text{apparent depth}}",
+        "meaning": "Apparent depth relation"
       }
     ],
     "questionIds": [
@@ -631,7 +403,7 @@
       "AIPMT 1993",
       "AIPMT 1992"
     ],
-    "source": "seed"
+    "source": "authored"
   },
   {
     "id": "note-ray-optics-and-optical-instruments-refraction-at-spherical-surfaces-and-by-lenses",
@@ -641,105 +413,25 @@
     "unitId": "xii-optics",
     "unitLabel": "Unit VII — Optics",
     "order": 22,
-    "title": "Refraction at Spherical Surfaces and by Lenses",
-    "summary": "<div style=\"text-align: center;\"><img…",
-    "body": "**Key points from solved questions**\n- When two lenses placed in contact with each other, their power will be added. $$ \\therefore\\quad\\mathrm{P}_{\\text{combination}}=\\mathrm{P}_{\\text{convex}}+\\mathrm{P}_{\\text{concave}} $$ $$ \\begin{aligned}\\frac{1}{f_{comb}}&=\\frac{1}{f_{convex}}+\\frac{1}{f_{concave}}\\\\&=\\frac{1}{f}+\\frac{1}{(-f)}=0\\end{aligned} $$ $$ f_{comb}=\\frac{1}{0}=\\infty $$ <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//eac8d127-d0de-489f-848b-28c0d3643225/markdown_0/imgs/img_in_image_box_20_368_50_405.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A59Z%2F-1%2F%2F0c25ba3e00c13e25c26737f65ac115eee353a48dfb15a45c6620cd1825995284\" alt=\"Image\" width=\"2%\" /></div> ##### Caution Students must know that some of the terms on the right side in algebraic sum of individual power may be positive (for convex lens) and some negative (for concave lens).\n- From lens maker's formula, $$ \\begin{aligned}\\frac{1}{f_{1}}&=(1.6-1)\\left(\\frac{1}{\\infty}-\\frac{1}{20}\\right)=\\\\f_{1}&=\\frac{-100}{3}cm\\\\\\frac{1}{f_{2}}&=(1.5-1)\\left(\\frac{1}{20}+\\frac{1}{20}\\right)\\\\f_{2}&=20cm\\\\f_{3}&=f_{1}=-\\frac{100}{3}cm\\\\\\frac{1}{f_{net}}&=\\frac{1}{f_{1}}+\\frac{1}{f_{2}}+\\frac{1}{f_{3}}\\\\&=\\frac{-3}{100}+\\frac{1}{20}-\\frac{3}{100}\\\\&=\\frac{-1}{100}\\\\f&=-100cm\\end{aligned} $$ $$ f_{\\mathrm{net}}=-100\\mathrm{c m} $$\n- Given: $$ \\boldsymbol{\\mu}=1.5,\\mathbf{R}_{1}=+\\mathbf{R},\\mathbf{R}_{2}=-\\mathbf{R} $$ $$ \\mathrm{R}_{1}=+20\\mathrm{~cm~and~}\\mathrm{R}_{2}=-20\\mathrm{~cm~} $$ Lens maker's formula, $$ \\begin{aligned}\\frac{1}{f}&=(\\mu-1)\\left(\\frac{1}{\\mathrm{R}_{1}}-\\frac{1}{\\mathrm{R}_{2}}\\right)\\\\\\frac{1}{f}&=(1.5-1)\\left(\\frac{1}{20}-\\frac{1}{(-20)}\\right)\\\\\\frac{1}{f}&=0.5\\left(\\frac{1}{20}+\\frac{1}{20}\\right)\\\\\\frac{1}{f}&=\\frac{1}{20}\\\\f&=20\\mathrm{~cm}\\\\&=100\\quad5\\mathrm{D}\\end{aligned} $$ Now Power, $ P = \\frac{100}{20} = 5D $\n- Using lens formula, for first refraction from convex lens. $$ \\frac{1}{\\mathbf{v}_{1}}-\\frac{1}{u}=\\frac{1}{f} $$ $$ v_{1}=?,\\quad u=-60\\ cm,f=30\\ cm $$ $$ \\begin{array}{llll}\\Rightarrow&\\quad\\frac{1}{\\mathbf{v}_{1}}+\\frac{1}{60}=\\frac{1}{30}&\\\\ \\Rightarrow&\\quad\\mathbf{v}_{1}=60\\mathrm{~cm}\\end{array} $$ <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//eac8d127-d0de-489f-848b-28c0d3643225/markdown_0/imgs/img_in_image_box_615_122_1014_358.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A59Z%2F-1%2F%2F50b6d040bbfdf5751b575c88df61ca0115235f5e591b5d72c7d7a92a6cc013ba\" alt=\"Image\" width=\"33%\" /></div> Here, $I_{1}$ is the first image by the lens, The plane mirror will produce an image at distance 20 cm to the left of it. For second refraction from convex lens, $$ u=-20cm,v=?,f=30cm $$ From lens formula, $$ \\begin{array}{llll}\\Rightarrow&\\quad\\frac{1}{\\mathbf{v}}-\\frac{1}{(-20)}=\\frac{1}{30}&\\\\ &\\quad\\mathbf{v}=-60\\mathrm{~cm}\\end{array} $$ Thus, the final image is virtual and at a distance, 60 cm - 40 cm = 20 cm from the plane mirror.\n- Given, Focal length of A = $ f_{A} = +20 \\, cm $ [convex] Focal length of B = $ f_{B} = -5 \\, cm $ [concave] Distance between A and B = d For parallel beam of light entering A to remain parallel while exiting B, net focal length of combination should be infinite. $$ \\begin{aligned}\\frac{1}{f}&=\\frac{1}{f_{A}}+\\frac{1}{f_{B}}-\\frac{d}{f_{A}f_{B}}=0\\\\\\frac{1}{20}&-\\frac{1}{5}+\\frac{d}{100}=0\\\\&\\quad-\\frac{15}{100}+\\frac{d}{100}=0\\\\d&=15\\end{aligned} $$ $$ d=15\\mathrm{c m} $$\n- The first known spherometer was invented by French Optician Robert Aglae Cauchoix in 1810. They started manufacturing in the nineteenth century primarily for the use of opticians in grinding lenses and curved mirrors.\n- From question, power of biconvex lens is, P = 10 D $$ f=\\frac{1}{\\mathrm{P}}=\\frac{1}{10}=0.1\\mathrm{~m}=10\\mathrm{~cm} $$ $$ \\mathrm{R}_{1}=\\mathrm{R}_{2}=10\\mathrm{~cm} $$ Now, from lens maker's formula $$ \\frac{1}{f}=(\\mu-1)\\left(\\frac{1}{\\mathbf{R}_{1}}-\\frac{1}{\\mathbf{R}_{2}}\\right) $$ $$ \\frac{1}{10}=(\\mu-1)\\left(\\frac{1}{10}-\\frac{1}{-10}\\right) $$ $$ \\begin{array}{c}\\frac{1}{10}=(\\mu-1)\\left(\\frac{2}{10}\\right)\\\\\\Rightarrow\\quad1=(\\mu-1)\\times2\\\\\\Rightarrow\\quad\\mu-1=\\frac{1}{2}\\\\\\Rightarrow\\quad\\mu=1+\\frac{1}{2}=\\frac{3}{2}\\end{array} $$\n- <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//eac8d127-d0de-489f-848b-28c0d3643225/markdown_1/imgs/img_in_image_box_274_325_515_469.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A17%3A01Z%2F-1%2F%2Fc3b853f8a222d75d5d1e2689bad84219b1733ede1398e61ee2cb0bc4f411de3c\" alt=\"Image\" width=\"20%\" /></div> First find the focal length of lens (1), $$ \\frac{1}{f_{1}}=\\left(\\frac{\\mu_{2}}{\\mu_{3}}-1\\right)\\left(\\frac{1}{\\mathbf{R}_{1}}-\\frac{1}{\\mathbf{R}_{2}}\\right) $$ $ R_{1} = \\text{Radius of } 1^{\\text{st}} \\text{ surface} $, $ R_{2} = \\text{Radius of } 2^{\\text{nd}} \\text{ surface}; $ $$ \\begin{aligned}\\frac{1}{f_{1}}&=\\left(\\frac{1.5}{1}-1\\right)\\left(\\frac{1}{\\mathbf{R}}-\\frac{1}{-\\mathbf{R}}\\right)\\\\&=\\frac{1}{2}\\times\\frac{2}{\\mathbf{R}}=\\frac{1}{\\mathbf{R}}\\end{aligned} $$ Now, focal length of (2), $$ \\frac{1}{f_{2}}=\\left(\\frac{1.5}{1}-1\\right)\\left(\\frac{1}{R}-\\frac{1}{-R}\\right)=\\frac{1}{R} $$ From combination of these two $$ \\frac{1}{\\mathrm{F}_{1}}=\\frac{1}{f_{2}}+\\frac{1}{f_{2}}=\\frac{1}{\\mathrm{R}}+\\frac{1}{\\mathrm{R}}=\\frac{2}{\\mathrm{R}} $$ $$ \\mathbf{F}_{1}=\\frac{\\mathbf{R}}{2} $$ Now focal length of concave (3) $$ \\frac{1}{f_{3}}=\\left(\\frac{\\mu_{2}}{\\mu_{3}}-1\\right)\\left(\\frac{1}{R_{1}}-\\frac{1}{R_{2}}\\right) $$ $$ \\begin{aligned}\\frac{1}{f_{3}}&=\\left(\\frac{1.5}{1}-1\\right)\\left(-\\frac{1}{\\mathrm{R}}-\\frac{1}{\\mathrm{R}}\\right)\\\\&=\\frac{1}{2}\\times\\frac{-2}{\\mathrm{R}}\\\\&=-\\frac{1}{\\mathrm{R}}\\end{aligned} $$ ∴ Focal length. $$ \\frac{1}{\\mathbf{F}_{2}}=\\frac{1}{f_{1}}+\\frac{1}{f_{2}}+\\frac{1}{f_{3}} $$ $$ \\frac{1}{F_{2}}=\\frac{1}{R}+\\frac{1}{R}-\\frac{1}{R}=\\frac{1}{R} $$ $ \\therefore F_{2}=R $ According to question,\n- $$ \\frac{\\mathrm{F}_{1}}{\\mathrm{F}_{2}}=\\frac{\\mathrm{R}/2}{\\mathrm{R}}=\\frac{\\mathrm{R}}{2\\times\\mathrm{R}}=\\frac{1}{2} $$ <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//eac8d127-d0de-489f-848b-28c0d3643225/markdown_1/imgs/img_in_image_box_759_169_1032_343.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A17%3A01Z%2F-1%2F%2F86f64e8407a3f5c11a186188be9c53771c51f65838ddec099efb078c12fa7814\" alt=\"Image\" width=\"22%\" /></div> In both the cases, (i) and (ii) focal length does not change. Hence, power does not change. So, power of one part is also P.\n- Focal length of lens is, $$ \\frac{1}{f}=(\\mu-1)\\left(\\frac{1}{\\mathbf{R}_{1}}-\\frac{1}{\\mathbf{R}_{2}}\\right) $$ $$ \\therefore\\quad\\frac{1}{25}=(1.5-1)\\left(\\frac{1}{R}+\\frac{1}{2R}\\right) $$ $$ \\frac{1}{25}=0.5\\left(\\frac{3}{2R}\\right) $$ $$ \\Rightarrow\\quad2R=37.5\\mathrm{c m} $$ $$ \\therefore\\quad\\mathrm{R}=18.75\\mathrm{~cm} $$ Hence, radii are 18.75 cm, 37.5 cm.\n- <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//eac8d127-d0de-489f-848b-28c0d3643225/markdown_1/imgs/img_in_image_box_805_738_1068_927.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A17%3A01Z%2F-1%2F%2F43ea44f3bf329242bf36af29268f5404d8470bcee136c5d8aa79163495a2c53b\" alt=\"Image\" width=\"22%\" /></div> The diagram shows the actual situation Let R = Radius of curvature of the lens and $ \\frac{1}{f_{eq}} = \\frac{1}{f_1} + \\frac{1}{f_2} + \\frac{1}{f_3} $ $$ f_{1}=f_{3}=\\frac{R}{2\\left(\\frac{3}{2}-1\\right)} $$ $$ \\boldsymbol{R}=f $$ $$ f_{2}=\\frac{-\\mathbf{R}}{2\\left(\\frac{4}{3}-1\\right)}=-\\frac{3}{2}\\mathbf{R}=-\\frac{3}{2}f $$ $$ \\begin{aligned}&\\therefore\\quad\\frac{1}{f_{eq}}=\\frac{1}{f_{1}}+\\frac{1}{f_{2}}+\\frac{1}{f_{3}}\\\\&\\Rightarrow\\frac{1}{f_{eq}}=\\frac{1}{f}+\\left(-\\frac{2}{3f}\\right)+\\frac{1}{f}\\\\&\\Rightarrow\\frac{1}{f_{eq}}=\\frac{4}{3f}\\\\&\\Rightarrow\\quad f_{eq}=\\frac{3f}{4}\\end{aligned} $$ <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//eac8d127-d0de-489f-848b-28c0d3643225/markdown_2/imgs/img_in_image_box_201_104_348_212.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A17%3A03Z%2F-1%2F%2Fdc141d0d7c4a3c997c34a40e97a10743548044955731753584235bc0f750ea35\" alt=\"Image\" width=\"12%\" /></div> Radius of curvature of plano-convex lens, R = 20 cm Refractive index of plano-convex lens, $ \\mu = 1.5 $ Using mirror formula. $$ \\frac{1}{f}=(\\mu-1)\\left[\\frac{1}{\\mathbf{R}}\\right] $$ $$ \\Rightarrow $$ $$ \\frac{1}{f}=(1.5-1).\\frac{1}{R} $$ $$ \\rightarrow $$ $$ \\frac{1}{f}=\\frac{0.5}{R} $$ Focal length of concave medium, $$ \\begin{array}{l}\\frac{1}{f_{\\mathrm{concave}}}=(\\mu_{1}-1)\\left(-\\frac{1}{\\mathrm{R}}-\\frac{1}{\\mathrm{R}}\\right)\\\\ \\\\ =(1.7-1)\\left[-\\frac{1}{\\mathrm{R}}-\\frac{1}{\\mathrm{R}}\\right]\\end{array} $$ $$ \\begin{array}{c} *\\\\ *\\end{array} $$ $$ \\frac{1}{f_{\\mathrm{concave}}}=\\frac{-0.7\\times2}{R}=-\\frac{1.4}{R} $$ Equivalent focal length will be, $$ \\frac{1}{f_{\\mathrm{eq}}}=\\frac{0.5}{\\mathrm{R}}-\\frac{1.4}{\\mathrm{R}}+\\frac{0.5}{\\mathrm{R}}=-\\frac{0.4}{\\mathrm{R}} $$ $$ f_{eq}=-50\\ cm $$ <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//eac8d127-d0de-489f-848b-28c0d3643225/markdown_2/imgs/img_in_image_box_33_897_62_942.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A17%3A03Z%2F-1%2F%2F80905dfd08ff88e26ad60e87adc3f3c44718cd36b88a93b5c019bfdbf05dd143\" alt=\"Image\" width=\"2%\" /></div> ##### Related Theory When a concave lens and a convex lens of the same focal length are in contact, then the power of the lens combination will be zero and its focal length will be infinite.\n- Lens maker's formula: $$ \\frac{1}{f}\\;=\\;(\\mu-1)\\!\\left(\\frac{1}{\\mathrm{R}_{1}}-\\frac{1}{\\mathrm{R}_{2}}\\right) $$ For plano-convex lens: $$ \\mathbf{R}_{1}=\\infty,\\mathbf{R}_{2}=-\\mathbf{R} $$ Using (i), $$ \\begin{aligned}\\frac{1}{f_{1}}&=\\left(\\mu_{1}-1\\right)\\left(\\frac{1}{\\infty}-\\frac{1}{-\\mathbf{R}}\\right)\\\\\\frac{1}{f_{1}}&=\\frac{1}{f_{2}}=\\frac{\\mu_{1}-1}{\\mathbf{R}}\\end{aligned} $$ For plano-concave lens: $$ \\mathbf{R}_{1}=-\\mathbf{R},\\mathbf{R}_{2}=\\infty $$ Using (i), $$ \\begin{aligned}\\frac{1}{f_{2}}&=\\left(\\mu_{2}-1\\right)\\left(\\frac{1}{-\\mathbf{R}}-\\frac{1}{\\infty}\\right)\\\\\\frac{1}{f_{2}}&=\\frac{1-\\mu_{2}}{\\mathbf{R}}\\end{aligned} $$ Thus focal length of combination, $$ \\begin{aligned}\\frac{1}{\\mathrm{F}}&=\\frac{1}{f_{1}}+\\frac{1}{f_{2}}\\\\&=\\frac{\\mu_{1}-1}{\\mathrm{R}}+\\frac{1-\\mu_{2}}{\\mathrm{R}}\\end{aligned} $$ $$ \\mathbf{F}=\\frac{\\mathbf{R}}{\\mu_{1}-\\mu_{2}} $$\n- According to the question, <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//eac8d127-d0de-489f-848b-28c0d3643225/markdown_2/imgs/img_in_image_box_722_339_956_477.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A17%3A03Z%2F-1%2F%2F94d199277dc7d763db5dc91638a80a94eda108c769de645fb8c8338b06133a8d\" alt=\"Image\" width=\"19%\" /></div> $$ \\upmu_{g}=1.47 $$ and $$ f=\\infty $$ Using the formula, $$ \\frac{1}{f}=(\\mu-1)\\left(\\frac{1}{R_{1}}-\\frac{1}{R_{2}}\\right) $$ $ \\Rightarrow $ $$ \\frac{1}{\\infty}=\\left(\\frac{\\mu_{g}}{\\mu_{2}}-1\\right)\\left(\\frac{1}{R_{1}}-\\frac{1}{R_{2}}\\right) $$ $$ 0=\\left(\\frac{\\mu_{g}}{\\mu_{2}}-1\\right)\\left(\\frac{1}{R_{1}}-\\frac{1}{R_{2}}\\right) $$ Since, $ \\left(\\frac{1}{R_{1}}-\\frac{1}{R_{2}}\\right)\\neq0 $ $$ \\begin{array}{ll}\\therefore&\\quad\\left(\\frac{\\mu_{g}}{\\mu_{2}}-1\\right)=0\\\\\\Rightarrow&\\quad\\frac{\\mu_{g}-\\mu_{2}}{\\mu_{2}}=0\\\\\\Rightarrow&\\quad\\mu_{g}=\\mu_{2}\\end{array} $$ This shows that the liquid must have a refractive index equal to that of glass.\n- <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//eac8d127-d0de-489f-848b-28c0d3643225/markdown_2/imgs/img_in_image_box_714_1067_974_1193.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A17%3A03Z%2F-1%2F%2F37dfc4bcbfd749b909327fa4cb628f9cea3558917df3c78ed9432348f203b31a\" alt=\"Image\" width=\"21%\" /></div> $$ d=2f_{1}+f_{2} $$",
+    "title": "How the lens-maker's formula and the lens equation work",
+    "summary": "Refraction at one spherical surface gives n₂/v − n₁/u = (n₂−n₁)/R; combining two surfaces yields the lens-maker's formula and the thin-lens equation 1/v − 1/u = 1/f.",
+    "body": "**Must know**\n- Single spherical surface: $\\dfrac{n_2}{v}-\\dfrac{n_1}{u}=\\dfrac{n_2-n_1}{R}$.\n- Lens-maker's formula: $\\dfrac{1}{f}=(n-1)\\!\\left(\\dfrac{1}{R_1}-\\dfrac{1}{R_2}\\right)$.\n- Thin-lens equation: $\\dfrac{1}{v}-\\dfrac{1}{u}=\\dfrac{1}{f}$, magnification $m=\\dfrac{v}{u}$.\n- Power $P=\\dfrac{1}{f}$ (dioptre, $f$ in metres); for thin lenses in contact $P=P_1+P_2$.\n**Exam traps**\n- The lens formula's sign pattern differs from the mirror formula's.\n- A converging (convex) lens has $f>0$; a diverging (concave) lens has $f<0$.",
     "formulas": [
       {
-        "latex": "\\therefore\\quad\\mathrm{P}_{\\text{combination}}=\\mathrm{P}_{\\text{convex}}+\\mathrm{P}_{\\text{concave}}",
-        "meaning": ""
+        "latex": "\\dfrac{n_2}{v}-\\dfrac{n_1}{u}=\\dfrac{n_2-n_1}{R}",
+        "meaning": "Refraction at a single spherical surface"
       },
       {
-        "latex": "\\begin{aligned}\\frac{1}{f_{comb}}&=\\frac{1}{f_{convex}}+\\frac{1}{f_{concave}}\\\\&=\\frac{1}{f}+\\frac{1}{(-f)}=0\\end{aligned}",
-        "meaning": ""
+        "latex": "\\dfrac{1}{f}=(n-1)\\left(\\dfrac{1}{R_1}-\\dfrac{1}{R_2}\\right)",
+        "meaning": "Lens-maker's formula"
       },
       {
-        "latex": "f_{comb}=\\frac{1}{0}=\\infty",
-        "meaning": ""
+        "latex": "\\dfrac{1}{v}-\\dfrac{1}{u}=\\dfrac{1}{f},\\quad m=\\dfrac{v}{u}",
+        "meaning": "Thin-lens equation and magnification"
       },
       {
-        "latex": "\\begin{aligned}\\frac{1}{f_{1}}&=(1.6-1)\\left(\\frac{1}{\\infty}-\\frac{1}{20}\\right)=\\\\f_{1}&=\\frac{-100}{3}cm\\\\\\frac{1}{f_{2}}&=(1.5-1)\\left(\\frac{1}{20}+\\frac{1}{20}\\right)\\\\f_{2}&=20cm\\\\f_{3}&=f_{1}=-\\frac{100}{3}cm\\\\\\frac{1}{f_{net}}&=\\frac{1}{f_{1}}+\\frac{1}{f_{2}}+\\frac{1}{f_{3}}\\\\&=\\frac{-3}{100}+\\frac{1}{20}-\\frac{3}{100}\\\\&=\\frac{-1}{100}\\\\f&=-100cm\\end{aligned}",
-        "meaning": ""
-      },
-      {
-        "latex": "f_{\\mathrm{net}}=-100\\mathrm{c m}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\boldsymbol{\\mu}=1.5,\\mathbf{R}_{1}=+\\mathbf{R},\\mathbf{R}_{2}=-\\mathbf{R}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathrm{R}_{1}=+20\\mathrm{~cm~and~}\\mathrm{R}_{2}=-20\\mathrm{~cm~}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{aligned}\\frac{1}{f}&=(\\mu-1)\\left(\\frac{1}{\\mathrm{R}_{1}}-\\frac{1}{\\mathrm{R}_{2}}\\right)\\\\\\frac{1}{f}&=(1.5-1)\\left(\\frac{1}{20}-\\frac{1}{(-20)}\\right)\\\\\\frac{1}{f}&=0.5\\left(\\frac{1}{20}+\\frac{1}{20}\\right)\\\\\\frac{1}{f}&=\\frac{1}{20}\\\\f&=20\\mathrm{~cm}\\\\&=100\\quad5\\mathrm{D}\\end{aligned}",
-        "meaning": ""
-      },
-      {
-        "latex": "P = \\frac{100}{20} = 5D",
-        "meaning": ""
-      },
-      {
-        "latex": "\\frac{1}{\\mathbf{v}_{1}}-\\frac{1}{u}=\\frac{1}{f}",
-        "meaning": ""
-      },
-      {
-        "latex": "v_{1}=?,\\quad u=-60\\ cm,f=30\\ cm",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{array}{llll}\\Rightarrow&\\quad\\frac{1}{\\mathbf{v}_{1}}+\\frac{1}{60}=\\frac{1}{30}&\\\\ \\Rightarrow&\\quad\\mathbf{v}_{1}=60\\mathrm{~cm}\\end{array}",
-        "meaning": ""
-      },
-      {
-        "latex": "u=-20cm,v=?,f=30cm",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{array}{llll}\\Rightarrow&\\quad\\frac{1}{\\mathbf{v}}-\\frac{1}{(-20)}=\\frac{1}{30}&\\\\ &\\quad\\mathbf{v}=-60\\mathrm{~cm}\\end{array}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{aligned}\\frac{1}{f}&=\\frac{1}{f_{A}}+\\frac{1}{f_{B}}-\\frac{d}{f_{A}f_{B}}=0\\\\\\frac{1}{20}&-\\frac{1}{5}+\\frac{d}{100}=0\\\\&\\quad-\\frac{15}{100}+\\frac{d}{100}=0\\\\d&=15\\end{aligned}",
-        "meaning": ""
-      },
-      {
-        "latex": "d=15\\mathrm{c m}",
-        "meaning": ""
-      },
-      {
-        "latex": "f_{A} = +20 \\, cm",
-        "meaning": ""
-      },
-      {
-        "latex": "f_{B} = -5 \\, cm",
-        "meaning": ""
-      },
-      {
-        "latex": "f=\\frac{1}{\\mathrm{P}}=\\frac{1}{10}=0.1\\mathrm{~m}=10\\mathrm{~cm}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathrm{R}_{1}=\\mathrm{R}_{2}=10\\mathrm{~cm}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\frac{1}{f}=(\\mu-1)\\left(\\frac{1}{\\mathbf{R}_{1}}-\\frac{1}{\\mathbf{R}_{2}}\\right)",
-        "meaning": ""
-      },
-      {
-        "latex": "\\frac{1}{10}=(\\mu-1)\\left(\\frac{1}{10}-\\frac{1}{-10}\\right)",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{array}{c}\\frac{1}{10}=(\\mu-1)\\left(\\frac{2}{10}\\right)\\\\\\Rightarrow\\quad1=(\\mu-1)\\times2\\\\\\Rightarrow\\quad\\mu-1=\\frac{1}{2}\\\\\\Rightarrow\\quad\\mu=1+\\frac{1}{2}=\\frac{3}{2}\\end{array}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\frac{1}{f_{1}}=\\left(\\frac{\\mu_{2}}{\\mu_{3}}-1\\right)\\left(\\frac{1}{\\mathbf{R}_{1}}-\\frac{1}{\\mathbf{R}_{2}}\\right)",
-        "meaning": ""
+        "latex": "P=\\dfrac{1}{f},\\quad P=P_1+P_2",
+        "meaning": "Power of a lens; lenses in contact"
       }
     ],
     "questionIds": [
@@ -790,7 +482,7 @@
       "AIPMT 1999",
       "AIPMT 1996"
     ],
-    "source": "seed"
+    "source": "authored"
   },
   {
     "id": "note-ray-optics-and-optical-instruments-refraction-through-a-prism",
@@ -800,105 +492,21 @@
     "unitId": "xii-optics",
     "unitLabel": "Unit VII — Optics",
     "order": 22,
-    "title": "Refraction through a Prism",
-    "summary": "$$ \\begin{aligned}r_{1}+r_{2}&=90^{\\circ}\\\\r_{2}&=90^{\\circ}-r_{1}\\end{aligned} $$ <div style=\"text-align: center;\"><img…",
-    "body": "**Key points from solved questions**\n- $$ \\begin{aligned}r_{1}+r_{2}&=90^{\\circ}\\\\r_{2}&=90^{\\circ}-r_{1}\\end{aligned} $$ <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//eac8d127-d0de-489f-848b-28c0d3643225/markdown_4/imgs/img_in_image_box_641_1046_879_1188.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A17%3A07Z%2F-1%2F%2Ff20ccd6d445f8d65ab9a29a771d379f31774fd3fee68f881a25852e3be1d404e\" alt=\"Image\" width=\"20%\" /></div> For surface AB $$ 1\\times\\sin30^{\\circ}=\\mu\\sin r, $$ For surface AC $$ \\begin{aligned}\\mu\\sin\\left(90^\\circ-r_{1}\\right)&=1\\\\\\Rightarrow\\quad\\mu\\cos r,&=1\\end{aligned} $$ $$ \\mathrm{OS}r,=\\frac{1}{\\mu} $$ From eqn (i) and (ii), we get $$ \\frac{1}{2}=\\mu\\sqrt{1-\\frac{1}{\\mu^{2}}} $$ or $$ \\frac{1}{4}\\;=\\;\\mu^{2}\\left(1-\\frac{1}{\\mu^{2}}\\right) $$ or $$ \\frac{1}{4}=\\mu^{2}-1 $$ $$ \\implies $$ $$ \\mu^{2}\\;=\\;1+\\frac{1}{4} $$ $$ \\bullet \\quad \\bullet\\ast $$ $$ \\mu=\\frac{\\sqrt{5}}{2} $$ <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//6b66c489-7aa9-48e0-9312-948fb85db0f7/markdown_0/imgs/img_in_image_box_73_370_108_413.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A26Z%2F-1%2F%2Fd9c2aa62a781e2afcc06f118d328b311c705f09edf0c956698388515504f9445\" alt=\"Image\" width=\"2%\" /></div> ##### Related Theory For emergence of ray along face of the prism, incidence angle at that face should be equal to the critical angle of glass air interface.\n- The ray diagram is, <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//6b66c489-7aa9-48e0-9312-948fb85db0f7/markdown_0/imgs/img_in_image_box_259_1116_497_1289.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A27Z%2F-1%2F%2F59278f824ff80112852e49cc0f34747db4341d8b19e8adc80a7063550a0b418f\" alt=\"Image\" width=\"20%\" /></div> From ray diagram. $$ \\begin{aligned}&A+a+90^{\\circ}=180^{\\circ}\\\\ \\Rightarrow\\quad&a=90^{\\circ}-A\\\\ Also\\quad&r+a=90^{\\circ}\\\\&r=90^{\\circ}-a\\\\&=90^{\\circ}-(90^{\\circ}-A)=A\\\\ \\Rightarrow\\quad&r=A\\end{aligned} $$ From snell's law, $$ \\mu_{1}\\sin i=\\mu_{2}\\sin r $$ $$ \\sin i=\\mu\\sin A(Here,\\mu_{1}=1,\\mu_{2}=\\mu) $$ For small, $ \\sin\\theta\\approx\\theta $ <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//6b66c489-7aa9-48e0-9312-948fb85db0f7/markdown_0/imgs/img_in_image_box_634_306_670_352.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A27Z%2F-1%2F%2Ff0c649a1fdd169c42d9934e88db2a5feaf4058b76ae84f6ff70955ca526d2094\" alt=\"Image\" width=\"3%\" /></div> $$ i=\\mu\\mathbf{A}. $$ ##### Related Theory Prism is a homogeneous solid transparent medium bounded by two plane surfaces inclined at an angle.\n- For retracing its path, light ray should be normally inclined on silvered face. <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//6b66c489-7aa9-48e0-9312-948fb85db0f7/markdown_0/imgs/img_in_image_box_782_456_1034_606.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A27Z%2F-1%2F%2Fe882528afa3628a4b8c609cbe652fbd55020faf037f40482eff1eeff21e1e3ad\" alt=\"Image\" width=\"21%\" /></div> Applying Snell's law at P, $$ \\frac{\\sin i}{\\sin30^{\\circ}}=\\frac{\\sqrt{2}}{1} $$ $$ \\sin i=\\sqrt{2}\\times\\frac{1}{2}=\\frac{1}{\\sqrt{2}}=\\sin45^{\\circ} $$ $ \\Rightarrow $ $$ i=45^{\\circ} $$\n- The dispersion without deviation of prism is, $$ \\left(\\mu-1\\right)\\mathrm{A}+\\left(\\mu^{\\prime}-1\\right)\\mathrm{A}^{\\prime}=0 $$ $$ \\Rightarrow $$ $$ \\left|\\left(\\mu-1\\right)\\mathbf{A}\\right|=\\left|\\left(\\mu^{\\prime}-1\\right)\\mathbf{A}^{\\prime}\\right| $$ $$ \\Rightarrow\\quad(1.42-1)10=(1.7-1)A^{\\prime} $$ $$ 4.2=0.7\\mathrm{A}^{\\prime} $$ $$ \\Rightarrow $$ $$ \\mathrm{A^{\\prime}}=6^{\\circ} $$\n- <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//6b66c489-7aa9-48e0-9312-948fb85db0f7/markdown_0/imgs/img_in_image_box_763_978_1037_1107.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A27Z%2F-1%2F%2F06281cfc257797cabb72587339cc799a0ea845264877f805136ccd1304cc2242\" alt=\"Image\" width=\"23%\" /></div> From figure, it is clear that, Here angle of incidence, i = 45° angle of refraction, $ r = r' = 30^\\circ $ angle of emergence, $ e = 45^{\\circ} $ ∴ Minimum deviation suffered by the ray. $$ \\delta_{d}=i+e-(r+r^{\\prime})=90^{\\circ}-60^{\\circ}=30^{\\circ} $$ Using the formula. $$ \\mu=\\frac{\\sin\\left(\\frac{\\mathbf{A}+\\delta}{2}\\right)}{\\sin\\frac{\\mathbf{A}}{2}} $$ $$ \\mu=\\frac{\\sin\\left(\\frac{60^{\\circ}+30^{\\circ}}{2}\\right)}{\\sin\\frac{60^{\\circ}}{2}} $$ $$ \\mu=\\frac{\\sin45^{\\circ}}{\\sin30^{\\circ}} $$ $$ \\mu=\\frac{1/\\sqrt{2}}{1/2}=\\frac{2}{\\sqrt{2}}=\\sqrt{2} $$\n- We know that, $$ \\mu=\\frac{1}{\\sin i_{c}}=\\frac{1}{\\sin45^{\\circ}}=\\sqrt{2} $$ $$ \\because\\quad(\\mu_{red}=1.39)<\\mu $$ $$ \\bullet \\quad \\bullet\\bullet $$ $$ \\mu_{b}>\\mu;\\;\\mu_{g}>\\mu $$ Only red colour do not suffer total internal reflection.\n- <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//6b66c489-7aa9-48e0-9312-948fb85db0f7/markdown_1/imgs/img_in_image_box_142_401_431_548.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A29Z%2F-1%2F%2Fb8c8a9d220aeb567e3940b7af009044f50d69f9e8f0667d18601a79b8bff0e68\" alt=\"Image\" width=\"24%\" /></div> MO'P is a prism and the diagram is given, $$ \\begin{array}{l}\\angle MON=90^{\\circ}-A\\\\ \\therefore \\quad \\angle r=90^{\\circ}-(90^{\\circ}-A)\\\\ \\Rightarrow \\quad \\angle r=A\\end{array} $$ ∴ From Snell's law, $$ \\begin{array}{c}\\frac{\\sin i}{\\sin r}=\\mu\\\\\\Rightarrow\\quad\\mu=\\frac{\\sin\\left(2\\mathrm{A}\\right)}{\\sin\\mathrm{A}}\\\\\\therefore\\quad\\mu=\\frac{2\\sin\\mathrm{A}\\cos\\mathrm{A}}{\\sin\\mathrm{A}}=2\\cos\\mathrm{A}\\\\\\Rightarrow\\quad\\mu=2\\cos\\mathrm{A}\\end{array} $$\n- Since, $$ \\mu=\\frac{\\sin\\left(A+\\frac{\\delta_{m}}{2}\\right)}{\\sin\\frac{A}{2}} $$ <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//6b66c489-7aa9-48e0-9312-948fb85db0f7/markdown_1/imgs/img_in_image_box_188_1052_440_1323.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A29Z%2F-1%2F%2Ff27d331196d211d7196139684d9430c57f9f021e03a6edc90006917c15a7eb8b\" alt=\"Image\" width=\"21%\" /></div> Values of A varies from 0 to $ 90^{\\circ} $. $$ \\bullet \\quad \\bullet\\bullet $$ $$ A_{min}=2\\cos\\frac{90^{\\circ}}{2}=\\sqrt{2} $$ $$ \\mathrm{A}_{max}=2\\cos0^{\\circ}=2 $$\n- The formula using for without deviation is, $$ \\frac{A}{A^{\\prime}}=\\frac{\\mu^{\\prime}-1}{\\mu-1} $$ putting the given value from question $$ \\frac{15^{\\circ}}{A^{\\prime}}=\\frac{1.75-1}{1.5-1} $$ $$ \\frac{15^{\\circ}}{A^{\\prime}}=\\frac{0.75}{0.5} $$ $$ \\mathbf{A}^{\\prime}=\\frac{0.5\\times15^{\\circ}}{0.75}=10^{\\circ} $$\n- Here, refracting angle of prism $$ \\mathbf{A}=r_{1}+r_{2} $$ And for minimum deviation, $$ r_{1}=r_{2}=r $$ $$ A=2r $$ $ \\Rightarrow $ $$ r=\\frac{A}{2}=\\frac{60^{\\circ}}{2}=30^{\\circ} $$\n- <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//6b66c489-7aa9-48e0-9312-948fb85db0f7/markdown_1/imgs/img_in_image_box_765_490_926_676.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A29Z%2F-1%2F%2F686b8e428e00f537c9a99ad371aeda0a10d2894e2467f6b050ab3624be0765b5\" alt=\"Image\" width=\"13%\" /></div> For given condition and use snell's law $$ 45^{\\circ}=\\mu\\sin\\left(90-\\theta_{C}\\right) $$ $$ \\frac{1}{\\sqrt{2}}=\\mu\\cos\\theta_{C}=\\mu\\sqrt{1-\\frac{1}{\\mu^{2}}} $$ $$ \\mu^{2}=1+\\frac{1}{2}=\\frac{3}{2} $$ $$ \\upmu=\\sqrt{\\frac{3}{2}} $$\n- The refractive index of a prism is given by, $$ \\mu=\\frac{\\sin\\frac{\\left(\\mathbf{A}+\\delta\\right)}{2}}{\\sin\\left(\\frac{\\mathbf{A}}{2}\\right)} $$ For a very thin prism, we can assume that $ \\sin\\theta \\approx \\theta $ $$ \\mu=\\frac{\\frac{A+\\delta}{2}}{\\frac{A}{2}} $$ or $$ \\mu=\\frac{\\mathbf{A}+\\delta}{\\mathbf{A}} $$ $$ \\mathrm{O r}, $$ $$ \\boldsymbol{\\delta}=\\mu\\mathbf{A}-\\mathbf{A}=(\\mu-1)\\mathbf{A} $$\n- When, the ray QR retraced its path, <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//6b66c489-7aa9-48e0-9312-948fb85db0f7/markdown_1/imgs/img_in_image_box_768_1298_1021_1486.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A30Z%2F-1%2F%2Ffec2136364ab7d84ccdfc02129145214d45b2dbf23a4c62c4bf74f29a2476ba3\" alt=\"Image\" width=\"21%\" /></div> $$ \\angle ARQ=90^{\\circ},\\angle r=30^{\\circ} $$ $$ \\angle AQR=90^{\\circ}-30^{\\circ}=60^{\\circ} $$ By snell's law. $ \\sin i \\times 1 = \\sin r \\times \\mu $ $ \\sin i = \\mu \\sin r = \\sqrt{2} \\sin 30^\\circ $ [ $ \\mu $ for air = 1] $$ \\begin{array}{l}i=\\sqrt{2} \\times \\frac{1}{2}=\\frac{1}{\\sqrt{2}}\\\\i=45^{\\circ}\\end{array} $$",
+    "title": "How a prism deviates and disperses light",
+    "summary": "A prism bends light by a deviation angle that is least when the ray passes symmetrically; at minimum deviation n = sin[(A+δm)/2] / sin(A/2).",
+    "body": "**Must know**\n- Geometry: $A=r_1+r_2$ and deviation $\\delta=i_1+i_2-A$.\n- At minimum deviation (symmetric path): $n=\\dfrac{\\sin\\frac{A+\\delta_m}{2}}{\\sin\\frac{A}{2}}$.\n- Thin prism: $\\delta=(n-1)A$.\n**Exam traps**\n- The $\\delta$–$i$ graph passes through a single minimum (minimum deviation).\n- Different colours deviate by different amounts (dispersion); violet deviates most, red least.",
     "formulas": [
       {
-        "latex": "\\begin{aligned}r_{1}+r_{2}&=90^{\\circ}\\\\r_{2}&=90^{\\circ}-r_{1}\\end{aligned}",
-        "meaning": ""
+        "latex": "A=r_1+r_2,\\quad \\delta=i_1+i_2-A",
+        "meaning": "Prism geometry and deviation"
       },
       {
-        "latex": "1\\times\\sin30^{\\circ}=\\mu\\sin r,",
-        "meaning": ""
+        "latex": "n=\\dfrac{\\sin\\frac{A+\\delta_m}{2}}{\\sin\\frac{A}{2}}",
+        "meaning": "Prism formula at minimum deviation"
       },
       {
-        "latex": "\\begin{aligned}\\mu\\sin\\left(90^\\circ-r_{1}\\right)&=1\\\\\\Rightarrow\\quad\\mu\\cos r,&=1\\end{aligned}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathrm{OS}r,=\\frac{1}{\\mu}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\frac{1}{2}=\\mu\\sqrt{1-\\frac{1}{\\mu^{2}}}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\frac{1}{4}\\;=\\;\\mu^{2}\\left(1-\\frac{1}{\\mu^{2}}\\right)",
-        "meaning": ""
-      },
-      {
-        "latex": "\\frac{1}{4}=\\mu^{2}-1",
-        "meaning": ""
-      },
-      {
-        "latex": "\\implies",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mu^{2}\\;=\\;1+\\frac{1}{4}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\bullet \\quad \\bullet\\ast",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mu=\\frac{\\sqrt{5}}{2}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{aligned}&A+a+90^{\\circ}=180^{\\circ}\\\\ \\Rightarrow\\quad&a=90^{\\circ}-A\\\\ Also\\quad&r+a=90^{\\circ}\\\\&r=90^{\\circ}-a\\\\&=90^{\\circ}-(90^{\\circ}-A)=A\\\\ \\Rightarrow\\quad&r=A\\end{aligned}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mu_{1}\\sin i=\\mu_{2}\\sin r",
-        "meaning": ""
-      },
-      {
-        "latex": "\\sin i=\\mu\\sin A(Here,\\mu_{1}=1,\\mu_{2}=\\mu)",
-        "meaning": ""
-      },
-      {
-        "latex": "i=\\mu\\mathbf{A}.",
-        "meaning": ""
-      },
-      {
-        "latex": "\\frac{\\sin i}{\\sin30^{\\circ}}=\\frac{\\sqrt{2}}{1}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\sin i=\\sqrt{2}\\times\\frac{1}{2}=\\frac{1}{\\sqrt{2}}=\\sin45^{\\circ}",
-        "meaning": ""
-      },
-      {
-        "latex": "i=45^{\\circ}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\left(\\mu-1\\right)\\mathrm{A}+\\left(\\mu^{\\prime}-1\\right)\\mathrm{A}^{\\prime}=0",
-        "meaning": ""
-      },
-      {
-        "latex": "\\Rightarrow",
-        "meaning": ""
-      },
-      {
-        "latex": "\\left|\\left(\\mu-1\\right)\\mathbf{A}\\right|=\\left|\\left(\\mu^{\\prime}-1\\right)\\mathbf{A}^{\\prime}\\right|",
-        "meaning": ""
-      },
-      {
-        "latex": "\\Rightarrow\\quad(1.42-1)10=(1.7-1)A^{\\prime}",
-        "meaning": ""
-      },
-      {
-        "latex": "4.2=0.7\\mathrm{A}^{\\prime}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathrm{A^{\\prime}}=6^{\\circ}",
-        "meaning": ""
+        "latex": "\\delta=(n-1)A",
+        "meaning": "Deviation by a thin prism"
       }
     ],
     "questionIds": [
@@ -928,7 +536,7 @@
       "AIPMT 1994",
       "AIPMT 1992"
     ],
-    "source": "seed"
+    "source": "authored"
   },
   {
     "id": "note-ray-optics-and-optical-instruments-total-internal-reflection",
@@ -938,105 +546,21 @@
     "unitId": "xii-optics",
     "unitLabel": "Unit VII — Optics",
     "order": 22,
-    "title": "Total Internal Reflection",
-    "summary": "<div style=\"text-align: center;\"><img…",
-    "body": "**Key points from solved questions**\n- For air. $$ \\mathrm{c}=\\frac{x}{t_{1}} $$ For medium. $$ \\mathbf{v}=\\frac{10x}{t_{2}} $$ Refractive index. $$ \\mathrm{\\mu}=\\frac{c}{v}=\\frac{x \\times t_{2}}{t_{1} \\times 10 x}=\\frac{t_{2}}{10 t_{1}} $$ As, $$ \\sin\\mathrm{~c~}=\\frac{1}{\\mu}=\\frac{10t_{1}}{t_{2}} $$ [Using (iii)] $$ \\mathrm{c}=\\sin^{-1}\\left(\\frac{10t_{1}}{t_{2}}\\right) $$\n- For medium A, speed of light, $ v_{A} = 1.5 \\times 10^{8} $ m/s For medium B, speed of light, $ v_{B} = 2.0 \\times 10^{8} $ m/s For medium A, $ n_{A} = \\frac{c}{v_{A}} = \\frac{3 \\times 10^{8}}{1.5 \\times 10^{8}} = 2 $ For medium B, $ n_{B} = \\frac{c}{v_{B}} = \\frac{3 \\times 10^{8}}{2 \\times 10^{8}} = 1.5 $ Critical angle, $ \\sin c = \\frac{n_{B}}{n_{A}} $ $ c = \\sin^{-1}\\left(\\frac{1.5}{2}\\right) $ $ = \\sin^{-1}(0.750) $\n- It is given that critical angle, $ i_{c} = 45^{\\circ} $. We know $$ \\begin{aligned}\\mu&=\\frac{1}{\\sin i_{\\mathrm{c}}}=\\frac{1}{\\sin45^{\\circ}}\\\\&=\\frac{1}{\\frac{1}{\\sqrt{2}}}=\\sqrt{2}\\end{aligned} $$ Velocity of light in air = $ \\sqrt{2} $ Velocity of light in medium $$ ↳\\Downarrow $$ $$ \\mathrm{\\frac{3 \\times 10^{8}}{v_{m}}}={\\sqrt{2}} $$ $$ \\mathbf{v}_{m}=\\frac{3}{\\sqrt{2}}\\mathrm{~\\boldmath~\\times~}10^{8}\\mathrm{m/s}. $$\n- <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//eb1b4280-4567-45d6-8552-01db3664a28f/markdown_4/imgs/img_in_image_box_834_475_1061_620.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A16%3A05Z%2F-1%2F%2Fd7844b17de94a7729d8e298901ce5a8c0e523d0aaef5c8824e06b0217f4b05bf\" alt=\"Image\" width=\"19%\" /></div> At $i = i_{c}$, refracted ray grazes with the surface. So, angle of refraction is $90^{\\circ}$.\n- Difference between apparent and real depth of a pond is due to refraction.\n- We know that, $$ \\begin{aligned}&for total~internal~reflection\\\\&\\Rightarrow\\quad\\sin i>\\sin c\\\\&\\Rightarrow\\quad\\sin45^{\\circ}>\\frac{1}{\\mu}\\\\&\\Rightarrow\\quad\\mu>\\sqrt{2}\\\\&\\Rightarrow\\quad\\mu>1.4\\end{aligned} $$\n- In total internal reflection, the angle of incidence $i$ is greater than or equal to critical angle $c$. $$ \\begin{aligned}i&\\geq c\\\\\\mu_{1}&=2and\\mu_{2}=\\frac{3}{2}\\end{aligned} $$ $$2 \\sin i \\geq \\frac{3}{2} \\sin 90^{\\circ}$$ $$ i\\geq\\frac{3}{4} $$ $$ i\\geq\\sin^{-1}\\left(\\frac{3}{4}\\right) $$\n- From the relation, Here, and $$ \\begin{aligned}\\frac{1}{\\textrm{O}}&=\\frac{\\textrm{v}}{u}\\\\\\textrm{O}&=1.39\\times10^{9}\\textrm{m}\\\\\\textrm{v}&=0.1\\textrm{m}\\\\u&=1.5\\times10^{11}\\textrm{m}\\\\l&=\\frac{0.1}{1.5\\times10^{11}}\\times1.39\\times10^{9}\\\\&=9.2\\times10^{-4}\\textrm{m}\\end{aligned} $$",
+    "title": "How total internal reflection traps light",
+    "summary": "When light in a denser medium meets the boundary beyond the critical angle, it is reflected entirely back; the critical angle satisfies sin θc = 1/n.",
+    "body": "**Must know**\n- It occurs only going from a denser to a rarer medium, when the angle of incidence exceeds the critical angle.\n- Critical angle: $\\sin\\theta_c=\\dfrac{n_2}{n_1}=\\dfrac{1}{n}$ (denser medium of index $n$ to air).\n- Applications: optical fibres, the brilliance of diamonds, mirages, totally-reflecting prisms.\n**Exam traps**\n- The condition is $i>\\theta_c$ and only for denser → rarer.\n- A larger refractive index gives a smaller critical angle.",
     "formulas": [
       {
-        "latex": "\\mathrm{c}=\\frac{x}{t_{1}}",
-        "meaning": ""
+        "latex": "\\sin\\theta_c=\\dfrac{1}{n}",
+        "meaning": "Critical angle (denser medium to air)"
       },
       {
-        "latex": "\\mathbf{v}=\\frac{10x}{t_{2}}",
-        "meaning": ""
+        "latex": "\\sin\\theta_c=\\dfrac{n_2}{n_1}\\quad(n_1>n_2)",
+        "meaning": "Critical angle, general"
       },
       {
-        "latex": "\\mathrm{\\mu}=\\frac{c}{v}=\\frac{x \\times t_{2}}{t_{1} \\times 10 x}=\\frac{t_{2}}{10 t_{1}}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\sin\\mathrm{~c~}=\\frac{1}{\\mu}=\\frac{10t_{1}}{t_{2}}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathrm{c}=\\sin^{-1}\\left(\\frac{10t_{1}}{t_{2}}\\right)",
-        "meaning": ""
-      },
-      {
-        "latex": "v_{A} = 1.5 \\times 10^{8}",
-        "meaning": ""
-      },
-      {
-        "latex": "v_{B} = 2.0 \\times 10^{8}",
-        "meaning": ""
-      },
-      {
-        "latex": "n_{A} = \\frac{c}{v_{A}} = \\frac{3 \\times 10^{8}}{1.5 \\times 10^{8}} = 2",
-        "meaning": ""
-      },
-      {
-        "latex": "n_{B} = \\frac{c}{v_{B}} = \\frac{3 \\times 10^{8}}{2 \\times 10^{8}} = 1.5",
-        "meaning": ""
-      },
-      {
-        "latex": "\\sin c = \\frac{n_{B}}{n_{A}}",
-        "meaning": ""
-      },
-      {
-        "latex": "c = \\sin^{-1}\\left(\\frac{1.5}{2}\\right)",
-        "meaning": ""
-      },
-      {
-        "latex": "= \\sin^{-1}(0.750)",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{aligned}\\mu&=\\frac{1}{\\sin i_{\\mathrm{c}}}=\\frac{1}{\\sin45^{\\circ}}\\\\&=\\frac{1}{\\frac{1}{\\sqrt{2}}}=\\sqrt{2}\\end{aligned}",
-        "meaning": ""
-      },
-      {
-        "latex": "↳\\Downarrow",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathrm{\\frac{3 \\times 10^{8}}{v_{m}}}={\\sqrt{2}}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathbf{v}_{m}=\\frac{3}{\\sqrt{2}}\\mathrm{~\\boldmath~\\times~}10^{8}\\mathrm{m/s}.",
-        "meaning": ""
-      },
-      {
-        "latex": "i_{c} = 45^{\\circ}",
-        "meaning": ""
-      },
-      {
-        "latex": "i = i_{c}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{aligned}&for total~internal~reflection\\\\&\\Rightarrow\\quad\\sin i>\\sin c\\\\&\\Rightarrow\\quad\\sin45^{\\circ}>\\frac{1}{\\mu}\\\\&\\Rightarrow\\quad\\mu>\\sqrt{2}\\\\&\\Rightarrow\\quad\\mu>1.4\\end{aligned}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{aligned}i&\\geq c\\\\\\mu_{1}&=2and\\mu_{2}=\\frac{3}{2}\\end{aligned}",
-        "meaning": ""
-      },
-      {
-        "latex": "2 \\sin i \\geq \\frac{3}{2} \\sin 90^{\\circ}",
-        "meaning": ""
-      },
-      {
-        "latex": "i\\geq\\frac{3}{4}",
-        "meaning": ""
-      },
-      {
-        "latex": "i\\geq\\sin^{-1}\\left(\\frac{3}{4}\\right)",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{aligned}\\frac{1}{\\textrm{O}}&=\\frac{\\textrm{v}}{u}\\\\\\textrm{O}&=1.39\\times10^{9}\\textrm{m}\\\\\\textrm{v}&=0.1\\textrm{m}\\\\u&=1.5\\times10^{11}\\textrm{m}\\\\l&=\\frac{0.1}{1.5\\times10^{11}}\\times1.39\\times10^{9}\\\\&=9.2\\times10^{-4}\\textrm{m}\\end{aligned}",
-        "meaning": ""
+        "latex": "i>\\theta_c",
+        "meaning": "Condition for total internal reflection"
       }
     ],
     "questionIds": [
@@ -1057,7 +581,7 @@
       "AIPMT Mains 2010",
       "AIPMT Screening 2010"
     ],
-    "source": "seed"
+    "source": "authored"
   },
   {
     "id": "note-ray-optics-and-optical-instruments-reneet2026",
