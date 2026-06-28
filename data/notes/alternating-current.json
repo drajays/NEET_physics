@@ -7,105 +7,21 @@
     "unitId": "xii-emi",
     "unitLabel": "Unit V — Electromagnetic Induction & AC",
     "order": 20,
-    "title": "AC Voltage Applied to a Capacitor",
-    "summary": "<div style=\"text-align: center;\"><img…",
-    "body": "**Key points from solved questions**\n- <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//bd0d0ca6-5744-48d4-8846-216affcf2e4a/markdown_1/imgs/img_in_image_box_674_653_901_838.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A17%3A43Z%2F-1%2F%2F2dee5d7f8ab89b22dfbf382c8a9f99cc311ca1e4276e7266b3fa208d44fa228c\" alt=\"Image\" width=\"19%\" /></div> $$ \\mathrm{R}=2\\Omega,\\mathrm{R}_{1}5\\Omega,\\mathrm{R}_{2}=3\\Omega $$ <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//bd0d0ca6-5744-48d4-8846-216affcf2e4a/markdown_1/imgs/img_in_image_box_591_928_626_977.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A17%3A43Z%2F-1%2F%2Fc0506afa51f715aa9b58615c7e10c96adb084dd6f849c0281d2f05734859c1c1\" alt=\"Image\" width=\"2%\" /></div> $$ I=\\frac{E}{R+R_{2}}=\\frac{10}{2+3}=\\frac{10}{5}=2\\ A $$ ##### Related Theory In a steady state DC circuit, the capacitor is fully charged and acts as an open circuit.\n- Given: $$ \\mathrm{V}_{r m s}=210\\mathrm{V}, $$ $$ \\begin{aligned}\\mathrm{V}_{0}&=210\\sqrt{2}\\mathrm{~V}\\\\&\\mathrm{C}=10\\mu\\mathrm{F}\\end{aligned} $$ <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//bd0d0ca6-5744-48d4-8846-216affcf2e4a/markdown_1/imgs/img_in_image_box_784_1116_934_1294.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A17%3A43Z%2F-1%2F%2Ffde00f587f8ffed1f2563a165955aab303a19f0df2e5da6b09cb0e64d4cfa46d\" alt=\"Image\" width=\"12%\" /></div> 210 V, 50 Hz $$ \\mathbf{V}_{0}=\\mathbf{I}_{0}\\mathbf{X}_{c} $$ $$ \\mathrm{V}_{0}=\\mathrm{I}_{0}\\times\\frac{1}{\\omega\\mathrm{C}} $$ $$ V_{0}=1_{0}\\times\\frac{1}{2\\pi\\times50\\times10\\times10^{-6}} $$ $$ l_{0}=210\\sqrt{2}\\times2\\pi\\times500\\times10^{-6} $$ $$ l_{0}=0.93A $$\n- Capacitive inductance. $$ X_{C}=\\frac{1}{2\\pi fC} $$ As frequency decreases, $X_{C}$ increases <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//bd0d0ca6-5744-48d4-8846-216affcf2e4a/markdown_2/imgs/img_in_image_box_262_262_443_374.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A17%3A46Z%2F-1%2F%2F18286f9b644a3a7dd9350335a67e5a60346fc50f381becf6d0f9d87961f60c6e\" alt=\"Image\" width=\"15%\" /></div> So, conductive current decreases. Hence, displacement current also decreases.\n- From the question. $$ \\mathrm{C}=40\\mu\\mathrm{F}=40\\times10^{-6}\\mathrm{~F},\\mathrm{V}_{\\mathrm{rms}}=200\\mathrm{~V},f=50\\mathrm{~Hz} $$ $$ \\begin{aligned}X_{C}&=\\frac{1}{2\\pi f C}=\\frac{1}{2\\pi\\times50\\times40\\times10^{-6}}\\\\&=\\frac{10^{6}}{100\\pi\\times40}=\\frac{250}{\\pi}\\Omega\\end{aligned} $$ $$ I_{rms}=\\frac{V_{rms}}{X_{C}}=\\frac{200}{\\underbrace{250}_{\\pi}}=2.5A. $$\n- We know that, Impedance of R-C circuit. $$ Z=\\sqrt{R^{2}+X_{c}^{2}} $$ Here $$ R=100\\ \\Omega,X_{C}=100\\ \\Omega $$ $$ \\bullet \\quad \\bullet\\bullet $$ $$ Z=\\sqrt{(100)^{2}+(100)^{2}}=100\\sqrt{2}\\Omega $$ At 50% charged, $ V_{max} = 220\\sqrt{2} $ V Peak value of current, $$ I_{max}=\\frac{V_{max}}{Z}=\\frac{220\\sqrt{2}}{100\\sqrt{2}}=2.2A $$\n- When an AC signal is coupled to a capacitor with capacitance C, the circuit's reactance is simply capacitive. We have, the capacitive reactance. $$ X_{C}=\\frac{1}{\\omega C}=\\frac{1}{2\\pi f C} $$ $$ x_{c}\\propto\\frac{1}{fC} $$ Considering two different cases of frequency and capacitance, we have $$ \\frac{X^{\\prime}}{X}=\\frac{fC}{f^{\\prime}C^{\\prime}}=\\frac{f\\times C}{2f\\times2C} $$ $$ [\\because f^{\\prime}=2f\\text{and}C^{\\prime}=2C] $$ $$ \\frac{X^{\\prime}}{X}=\\frac{1}{4} $$ $$ \\begin{aligned}X^{\\prime}=\\frac{X}{4}\\end{aligned} $$",
+    "title": "Why the current leads the voltage by 90° in a capacitor",
+    "summary": "A pure capacitor makes the current lead the voltage by π/2; its capacitive reactance X_C = 1/ωC falls with frequency, and it consumes no average power.",
+    "body": "**Must know**\n- The current leads the voltage by $\\dfrac{\\pi}{2}$.\n- Capacitive reactance: $X_C=\\dfrac{1}{\\omega C}=\\dfrac{1}{2\\pi f C}$, which decreases with frequency.\n- $I_{rms}=\\dfrac{V_{rms}}{X_C}$, and the average power is zero.\n**Exam traps**\n- A capacitor blocks DC ($f=0\\Rightarrow X_C=\\infty$) but passes high-frequency AC.\n- A pure capacitor dissipates no power.",
     "formulas": [
       {
-        "latex": "\\mathrm{R}=2\\Omega,\\mathrm{R}_{1}5\\Omega,\\mathrm{R}_{2}=3\\Omega",
-        "meaning": ""
+        "latex": "X_C=\\dfrac{1}{\\omega C}=\\dfrac{1}{2\\pi f C}",
+        "meaning": "Capacitive reactance"
       },
       {
-        "latex": "I=\\frac{E}{R+R_{2}}=\\frac{10}{2+3}=\\frac{10}{5}=2\\ A",
-        "meaning": ""
+        "latex": "I_{rms}=\\dfrac{V_{rms}}{X_C}",
+        "meaning": "rms current through a capacitor"
       },
       {
-        "latex": "\\mathrm{V}_{r m s}=210\\mathrm{V},",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{aligned}\\mathrm{V}_{0}&=210\\sqrt{2}\\mathrm{~V}\\\\&\\mathrm{C}=10\\mu\\mathrm{F}\\end{aligned}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathbf{V}_{0}=\\mathbf{I}_{0}\\mathbf{X}_{c}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathrm{V}_{0}=\\mathrm{I}_{0}\\times\\frac{1}{\\omega\\mathrm{C}}",
-        "meaning": ""
-      },
-      {
-        "latex": "V_{0}=1_{0}\\times\\frac{1}{2\\pi\\times50\\times10\\times10^{-6}}",
-        "meaning": ""
-      },
-      {
-        "latex": "l_{0}=210\\sqrt{2}\\times2\\pi\\times500\\times10^{-6}",
-        "meaning": ""
-      },
-      {
-        "latex": "l_{0}=0.93A",
-        "meaning": ""
-      },
-      {
-        "latex": "X_{C}=\\frac{1}{2\\pi fC}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathrm{C}=40\\mu\\mathrm{F}=40\\times10^{-6}\\mathrm{~F},\\mathrm{V}_{\\mathrm{rms}}=200\\mathrm{~V},f=50\\mathrm{~Hz}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{aligned}X_{C}&=\\frac{1}{2\\pi f C}=\\frac{1}{2\\pi\\times50\\times40\\times10^{-6}}\\\\&=\\frac{10^{6}}{100\\pi\\times40}=\\frac{250}{\\pi}\\Omega\\end{aligned}",
-        "meaning": ""
-      },
-      {
-        "latex": "I_{rms}=\\frac{V_{rms}}{X_{C}}=\\frac{200}{\\underbrace{250}_{\\pi}}=2.5A.",
-        "meaning": ""
-      },
-      {
-        "latex": "Z=\\sqrt{R^{2}+X_{c}^{2}}",
-        "meaning": ""
-      },
-      {
-        "latex": "R=100\\ \\Omega,X_{C}=100\\ \\Omega",
-        "meaning": ""
-      },
-      {
-        "latex": "\\bullet \\quad \\bullet\\bullet",
-        "meaning": ""
-      },
-      {
-        "latex": "Z=\\sqrt{(100)^{2}+(100)^{2}}=100\\sqrt{2}\\Omega",
-        "meaning": ""
-      },
-      {
-        "latex": "I_{max}=\\frac{V_{max}}{Z}=\\frac{220\\sqrt{2}}{100\\sqrt{2}}=2.2A",
-        "meaning": ""
-      },
-      {
-        "latex": "V_{max} = 220\\sqrt{2}",
-        "meaning": ""
-      },
-      {
-        "latex": "X_{C}=\\frac{1}{\\omega C}=\\frac{1}{2\\pi f C}",
-        "meaning": ""
-      },
-      {
-        "latex": "x_{c}\\propto\\frac{1}{fC}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\frac{X^{\\prime}}{X}=\\frac{fC}{f^{\\prime}C^{\\prime}}=\\frac{f\\times C}{2f\\times2C}",
-        "meaning": ""
-      },
-      {
-        "latex": "[\\because f^{\\prime}=2f\\text{and}C^{\\prime}=2C]",
-        "meaning": ""
-      },
-      {
-        "latex": "\\frac{X^{\\prime}}{X}=\\frac{1}{4}",
-        "meaning": ""
+        "latex": "P_{avg}=0",
+        "meaning": "No average power in a pure capacitor"
       }
     ],
     "questionIds": [
@@ -123,7 +39,7 @@
       "NEET Phase-II 2016",
       "AIPMT 2001"
     ],
-    "source": "seed"
+    "source": "authored"
   },
   {
     "id": "note-alternating-current-ac-voltage-applied-to-a-resistor",
@@ -133,17 +49,21 @@
     "unitId": "xii-emi",
     "unitLabel": "Unit V — Electromagnetic Induction & AC",
     "order": 20,
-    "title": "AC Voltage Applied to a Resistor",
-    "summary": "We know that, $ V_{rms} = \\frac{V_{o}}{\\sqrt{2}} $ $ \\Rightarrow $ $ V_{0}=\\sqrt{2}V_{rms} $",
-    "body": "**Key points from solved questions**\n- We know that, $ V_{rms} = \\frac{V_{o}}{\\sqrt{2}} $ $ \\Rightarrow $ $ V_{0}=\\sqrt{2}V_{rms} $",
+    "title": "How a resistor responds to AC, with current in phase",
+    "summary": "For a pure resistor, current and voltage are in phase; the rms values obey I_rms = V_rms/R, and the average power is V_rms·I_rms.",
+    "body": "**Must know**\n- $v=V_m\\sin\\omega t$ gives $i=\\dfrac{V_m}{R}\\sin\\omega t$ — current and voltage are in phase.\n- rms values: $V_{rms}=\\dfrac{V_m}{\\sqrt{2}}$, $I_{rms}=\\dfrac{I_m}{\\sqrt{2}}$, with $I_{rms}=\\dfrac{V_{rms}}{R}$.\n- Average power: $P=V_{rms}I_{rms}=I_{rms}^2R$.\n**Exam traps**\n- The phase difference is zero for a pure resistor.\n- The rms value is the peak divided by $\\sqrt{2}$.",
     "formulas": [
       {
-        "latex": "V_{rms} = \\frac{V_{o}}{\\sqrt{2}}",
-        "meaning": ""
+        "latex": "V_{rms}=\\dfrac{V_m}{\\sqrt{2}},\\quad I_{rms}=\\dfrac{I_m}{\\sqrt{2}}",
+        "meaning": "rms values"
       },
       {
-        "latex": "V_{0}=\\sqrt{2}V_{rms}",
-        "meaning": ""
+        "latex": "I_{rms}=\\dfrac{V_{rms}}{R}",
+        "meaning": "Ohm's law (rms)"
+      },
+      {
+        "latex": "P=V_{rms}I_{rms}=I_{rms}^2R",
+        "meaning": "Average power in a resistor"
       }
     ],
     "questionIds": [
@@ -152,7 +72,7 @@
     "tags": [
       "NEET 2022"
     ],
-    "source": "seed"
+    "source": "authored"
   },
   {
     "id": "note-alternating-current-ac-voltage-applied-to-a-series-lcr-circuit",
@@ -162,105 +82,25 @@
     "unitId": "xii-emi",
     "unitLabel": "Unit V — Electromagnetic Induction & AC",
     "order": 20,
-    "title": "AC Voltage Applied to a Series LCR Circuit",
-    "summary": "<div style=\"text-align: center;\"><img…",
-    "body": "**Key points from solved questions**\n- $$ As \\quad Q=Q_{o}e^{-1\\frac{R.t}{2L}} $$ $$ \\mathrm{Given:}R=1.5\\Omega,:=12\\mathrm{~mH} $$ $$ =12\\times10^{-3}H $$ $$ Q=0.5Q_{o} $$ $$ 0.5Q_{0}=Q_{0}e^{-1\\frac{R.t}{2L}} $$ $$ \\ln(0.5)=-\\frac{R.t}{2L} $$ $$ \\ln(0.5)=-\\frac{1.5\\times t}{2\\times0.012} $$ $$ \\ln(0.5)=-62.5\\times t $$ $$ t=\\frac{\\ln(0.5)}{-62.5} $$ $$ t=0.0111s\\approx11.09ms $$\n- Given, L = 10 mH = $ 10 \\times 10^{-3} $ H $$ C=1\\mu F=1\\times10^{-6}F $$ $$ \\mathrm{R=100\\Omega} $$ Resonance frequency, $$ \\begin{aligned}f_{0}&=\\frac{1}{2\\pi}\\sqrt{\\frac{1}{\\mathrm{LC}}}\\\\&=\\frac{1}{2\\times3.14}\\sqrt{\\frac{1}{10\\times10^{-3}\\times10^{-6}}}\\\\&=\\frac{1}{2\\times3.14}\\sqrt{\\frac{10^{8}}{1}}\\\\&=\\frac{10^{4}}{2\\times3.14}=1592.3\\mathrm{~Hz}=1.59\\mathrm{~kJ}\\end{aligned} $$\n- Here: $$ \\mathrm{L}=\\frac{50}{\\pi}\\mathrm{~mH}=\\frac{50}{\\pi}\\times10^{-3}\\mathrm{~H} $$ Then, $$ \\begin{aligned}f&=50\\ Hz\\\\ X_{L}&=2\\pi f L\\\\&=2\\pi\\times50\\times\\frac{50}{\\pi}\\times10^{-3}\\\\&=5\\ \\Omega\\end{aligned} $$ Similarly, $$ X_{C}=\\frac{1}{2\\pi fC} $$ $$ X_{C}=\\frac{1}{2\\pi\\times50\\times\\frac{10^{3}}{\\pi}\\times10^{-6}}=10\\ \\Omega $$ As impedance. $$ Z=\\sqrt{R^{2}+(X_{C}-X_{L})^{2}} $$ $$ Z=\\sqrt{(10)^{2}+(10-5)^{2}} $$ $$ =5\\sqrt{5}\\Omega $$\n- Given. $$ \\begin{aligned}&C=10\\mu F,R=50\\Omega,L=10H\\\\&\\omega=2\\pi f\\\\ \\end{aligned} $$ $$ \\mathrm{v}=\\frac{\\omega}{2\\pi}=\\frac{100}{2\\pi}=\\frac{50}{\\pi}\\mathrm{Hz} $$ $$ \\begin{align*}Resonance~frequency,~v_{0}&=\\frac{1}{2\\pi\\sqrt{LC}}\\\\&=\\frac{1}{2\\pi\\sqrt{10\\times10\\times10^{-6}}}\\\\&=\\frac{100}{2\\pi}\\\\&=50\\end{align*} $$\n- <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//bd0d0ca6-5744-48d4-8846-216affcf2e4a/markdown_3/imgs/img_in_image_box_163_286_470_469.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A17%3A48Z%2F-1%2F%2F882a79557cfc7ac31b6d7927a8eb7cab93c459a77bc0f71d2e0580ef58f5e9cd\" alt=\"Image\" width=\"25%\" /></div> Given. $$ \\begin{array}{c}\\mathrm{V}_{\\mathrm{L}}=40\\mathrm{V}\\\\\\mathrm{V}_{\\mathrm{C}}=10\\mathrm{V}\\\\\\mathrm{V}_{\\mathrm{R}}=40\\mathrm{V}\\\\\\mathrm{I}_{0}=10\\sqrt{2}\\end{array} $$ We know that. $$ \\mathrm{V_{rms}=\\sqrt{V_{R}^{2}+(V_{L}-V_{C})^{2}}} $$ ： $$ \\mathrm{V}_{\\mathrm{rms}}=\\sqrt{1600+900}=50\\mathrm{~V} $$ $ \\therefore $ $$ I_{rms}=\\frac{I_{0}}{\\sqrt{2}}=\\frac{10\\sqrt{2}}{\\sqrt{2}}=10\\ A $$ $$ Z=\\frac{\\mathrm{V}_{\\mathrm{rms}}}{\\mathrm{I}_{\\mathrm{rms}}}=\\frac{50}{10}=5\\Omega $$ <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//bd0d0ca6-5744-48d4-8846-216affcf2e4a/markdown_3/imgs/img_in_image_box_28_811_60_860.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A17%3A49Z%2F-1%2F%2F3d7057897bc65077fe8dbdf243c2aa3d53d8b51d355bb23e114ae7aa46e3c806\" alt=\"Image\" width=\"2%\" /></div> ##### Mnemonics LEI the CIE For an inductive [L] circuit, the EMF(E) is ahead of the current (I). While for a capacitive circuit (C), the current (I) is ahead of EMF (E)\n- For AC source, Given. $$ \\mathrm{V}_{\\mathrm{rms}}=12\\mathrm{~V},\\mathrm{I}_{\\mathrm{rms}}=0.2\\mathrm{~A} $$ Impedance, $$ Z=\\frac{V_{rms}}{I_{rms}}=\\frac{12}{0.2}=60\\Omega $$ and for DC source, Given. $$ V=12V,I=0.4A $$ Resistance. $$ \\mathrm{R}=\\frac{\\mathrm{V}}{\\mathrm{I}}=\\frac{12}{0.4}=30\\ \\Omega $$ Since, Z > R, we conclude there must be another component in the series, which is inductor. ∴ It is a series LR circuit.\n- Just after the switch is closed, the inductor behaves as open circuit and the capacitor behaves short circuit. The equivalent circuit of the situation is shown below. Now, these two resistors are in parallel. <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//bd0d0ca6-5744-48d4-8846-216affcf2e4a/markdown_3/imgs/img_in_image_box_141_1384_551_1532.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A17%3A49Z%2F-1%2F%2F0f6ec62442933d598c34283942f55488a8c519607ed63bf980974e9a9b8bc93a\" alt=\"Image\" width=\"34%\" /></div> $$ \\begin{array}{c} \\mathrm{R}_{eq}=\\frac{\\mathrm{R}_{1}\\mathrm{R}_{2}}{\\mathrm{R}_{1}+\\mathrm{R}_{2}}=\\frac{\\mathrm{R}.\\mathrm{R}}{2\\mathrm{R}}=\\frac{\\mathrm{R}}{2}=\\frac{9}{2}\\Omega\\\\\\Rightarrow\\quad\\text{Current}=\\frac{\\mathrm{E}}{\\mathrm{R}_{eq}}=\\frac{18}{\\frac{9}{2}}=4\\mathrm{~A} \\end{array} $$\n- When capacitor is filled with mica, then capacitance C increases, so $X_{C}$ decreases. In case (2), $X_{C}$ decreases, so voltage across capacitor decreases. $$ \\mathbf{V}_{1}>\\mathbf{V}_{2} $$\n- According to the question $$ \\begin{aligned}\\mathrm{R}&=30\\Omega\\\\\\mathrm{X_{L}}&=20\\Omega\\\\f&=50\\mathrm{Hz}\\\\\\mathrm{X_{L}}&=\\omega\\mathrm{L}=2\\pi\\mathrm{fL}\\\\20&=2\\pi\\times50\\times\\mathrm{L}\\end{aligned} $$ We know when frequency of AC source in changed to 100 Hz $$ X_{L}^{\\prime}=\\omega^{\\prime}L=2\\pi\\times100\\times L $$ $$ \\mathbf{X}_{\\mathrm{L}}^{\\prime}=2\\pi\\times50\\times2\\times\\mathrm{L} $$ from eq. (i), we get $$ X_{L}^{^{\\prime}}=20\\times2=40\\ \\Omega $$ Impedance $$ \\begin{aligned}Z&=\\sqrt{R^{2}+(X_{L}^{^{\\prime}})^{2}}\\\\&=\\sqrt{(30)^{2}+(40)^{2}}\\\\&=\\sqrt{900+1600}\\end{aligned} $$ $$ Z=50\\ \\Omega $$ Current, $$ I=\\frac{V}{Z}=\\frac{200}{50}=4A $$\n- We know that $$ \\tan\\phi=\\frac{\\mathrm{X_{L}}}{\\mathrm{R}} $$ and $$ \\phi=\\frac{3}{3} $$ $ \\tan \\phi = 1 $ $$ \\phi=45^{\\circ} $$ $$ \\phi=\\frac{\\pi}{4}\\mathrm{~r a d} $$\n- For series LCR circuit. Voltage. $$ \\mathbf{V}=\\sqrt{\\mathbf{V}_{R}^{2}+(\\mathbf{V}_{L}-\\mathbf{V}_{C})^{2}} $$ since $$ \\mathbf{V}_{L}=\\mathbf{V}_{C} $$ Hence, $$ \\mathbf{V}=\\mathbf{V}_{R}=220\\mathrm{~V} $$ ∴ $$ I=\\frac{V}{R}=\\frac{220}{100}=2.2A $$ <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//bd0d0ca6-5744-48d4-8846-216affcf2e4a/markdown_3/imgs/img_in_image_box_587_1421_623_1468.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A17%3A49Z%2F-1%2F%2F876d865e534a8873b3d3ed56a528f10f5eba94de54ff74f5f3473a3d4181adcd\" alt=\"Image\" width=\"3%\" /></div> ##### Related Theory Series LCR circuit offers minimum impedance at resonance and current at this frequency is maximum.\n- According to question, current is maximum at resonance $$ \\begin{aligned}\\omega^{2}&=\\frac{1}{\\mathrm{LC}}\\\\\\mathrm{L}&=\\frac{1}{\\omega^{2}\\mathrm{C}}\\\\&=\\frac{1}{(1000)^{2}(10\\times10^{-6})}\\\\&=0.1\\mathrm{~H}=100\\mathrm{~mH}\\end{aligned} $$ <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//bd0d0ca6-5744-48d4-8846-216affcf2e4a/markdown_4/imgs/img_in_image_box_92_372_129_417.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A17%3A52Z%2F-1%2F%2Fa3f52fce93ac0f15036d50b363af5c0a950d18c2736b0e9d32bd77feb8f08d14\" alt=\"Image\" width=\"3%\" /></div> ##### Related Theory For resonance to occur in LCR-Circuit, the presence of both capacitor (C) and inductor (L) is necessary. Resonance cannot be obtained in LR and LC circuit.\n- Phase difference between voltage and current is $$ \\begin{array}{c}\\tan\\phi=\\frac{\\mathrm{X_{C}}-\\mathrm{X_{L}}}{\\mathrm{R}}\\\\\\tan\\left(\\frac{\\pi}{4}\\right)=\\frac{\\frac{1}{\\omega\\mathrm{C}}-\\omega\\mathrm{L}}{\\mathrm{R}}\\\\\\Rightarrow\\quad\\mathrm{R}=\\frac{1}{\\omega\\mathrm{C}}-\\omega\\mathrm{L}\\ $ \\mathrm{R}+2\\pi f\\mathrm{L})=\\frac{1}{2\\pi f\\mathrm{C}}\\\\\\text{or}\\quad\\mathrm{C}=\\frac{1}{2\\pi f(\\mathrm{R}+2\\pi f\\mathrm{L})}\\end{array} $$\n- According to the question, Time constant for LR circuit is, $ \\tau = \\frac{L}{R} $ $$ \\tau=\\frac{40}{8}=5s $$ ：",
+    "title": "How impedance and resonance work in a series LCR circuit",
+    "summary": "A series LCR circuit has impedance Z = √(R²+(X_L−X_C)²); at resonance X_L = X_C, so Z = R is minimum and the current is maximum.",
+    "body": "**Must know**\n- Impedance: $Z=\\sqrt{R^2+(X_L-X_C)^2}$, with $I_{rms}=\\dfrac{V_{rms}}{Z}$.\n- Phase angle: $\\tan\\phi=\\dfrac{X_L-X_C}{R}$.\n- Resonance ($X_L=X_C$): $\\omega_0=\\dfrac{1}{\\sqrt{LC}}$, $Z=R$ (minimum), current maximum.\n- Quality factor: $Q=\\dfrac{\\omega_0 L}{R}=\\dfrac{1}{R}\\sqrt{\\dfrac{L}{C}}$.\n**Exam traps**\n- At resonance the circuit is purely resistive ($\\phi=0$) and the current peaks.",
     "formulas": [
       {
-        "latex": "As \\quad Q=Q_{o}e^{-1\\frac{R.t}{2L}}",
-        "meaning": ""
+        "latex": "Z=\\sqrt{R^2+(X_L-X_C)^2}",
+        "meaning": "Impedance of a series LCR circuit"
       },
       {
-        "latex": "\\mathrm{Given:}R=1.5\\Omega,:=12\\mathrm{~mH}",
-        "meaning": ""
+        "latex": "\\tan\\phi=\\dfrac{X_L-X_C}{R}",
+        "meaning": "Phase angle"
       },
       {
-        "latex": "=12\\times10^{-3}H",
-        "meaning": ""
+        "latex": "\\omega_0=\\dfrac{1}{\\sqrt{LC}}",
+        "meaning": "Resonant angular frequency"
       },
       {
-        "latex": "Q=0.5Q_{o}",
-        "meaning": ""
-      },
-      {
-        "latex": "0.5Q_{0}=Q_{0}e^{-1\\frac{R.t}{2L}}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\ln(0.5)=-\\frac{R.t}{2L}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\ln(0.5)=-\\frac{1.5\\times t}{2\\times0.012}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\ln(0.5)=-62.5\\times t",
-        "meaning": ""
-      },
-      {
-        "latex": "t=\\frac{\\ln(0.5)}{-62.5}",
-        "meaning": ""
-      },
-      {
-        "latex": "t=0.0111s\\approx11.09ms",
-        "meaning": ""
-      },
-      {
-        "latex": "C=1\\mu F=1\\times10^{-6}F",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathrm{R=100\\Omega}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{aligned}f_{0}&=\\frac{1}{2\\pi}\\sqrt{\\frac{1}{\\mathrm{LC}}}\\\\&=\\frac{1}{2\\times3.14}\\sqrt{\\frac{1}{10\\times10^{-3}\\times10^{-6}}}\\\\&=\\frac{1}{2\\times3.14}\\sqrt{\\frac{10^{8}}{1}}\\\\&=\\frac{10^{4}}{2\\times3.14}=1592.3\\mathrm{~Hz}=1.59\\mathrm{~kJ}\\end{aligned}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathrm{L}=\\frac{50}{\\pi}\\mathrm{~mH}=\\frac{50}{\\pi}\\times10^{-3}\\mathrm{~H}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{aligned}f&=50\\ Hz\\\\ X_{L}&=2\\pi f L\\\\&=2\\pi\\times50\\times\\frac{50}{\\pi}\\times10^{-3}\\\\&=5\\ \\Omega\\end{aligned}",
-        "meaning": ""
-      },
-      {
-        "latex": "X_{C}=\\frac{1}{2\\pi fC}",
-        "meaning": ""
-      },
-      {
-        "latex": "X_{C}=\\frac{1}{2\\pi\\times50\\times\\frac{10^{3}}{\\pi}\\times10^{-6}}=10\\ \\Omega",
-        "meaning": ""
-      },
-      {
-        "latex": "Z=\\sqrt{R^{2}+(X_{C}-X_{L})^{2}}",
-        "meaning": ""
-      },
-      {
-        "latex": "Z=\\sqrt{(10)^{2}+(10-5)^{2}}",
-        "meaning": ""
-      },
-      {
-        "latex": "=5\\sqrt{5}\\Omega",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{aligned}&C=10\\mu F,R=50\\Omega,L=10H\\\\&\\omega=2\\pi f\\\\ \\end{aligned}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathrm{v}=\\frac{\\omega}{2\\pi}=\\frac{100}{2\\pi}=\\frac{50}{\\pi}\\mathrm{Hz}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{align*}Resonance~frequency,~v_{0}&=\\frac{1}{2\\pi\\sqrt{LC}}\\\\&=\\frac{1}{2\\pi\\sqrt{10\\times10\\times10^{-6}}}\\\\&=\\frac{100}{2\\pi}\\\\&=50\\end{align*}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{array}{c}\\mathrm{V}_{\\mathrm{L}}=40\\mathrm{V}\\\\\\mathrm{V}_{\\mathrm{C}}=10\\mathrm{V}\\\\\\mathrm{V}_{\\mathrm{R}}=40\\mathrm{V}\\\\\\mathrm{I}_{0}=10\\sqrt{2}\\end{array}",
-        "meaning": ""
+        "latex": "Q=\\dfrac{1}{R}\\sqrt{\\dfrac{L}{C}}",
+        "meaning": "Quality factor"
       }
     ],
     "questionIds": [
@@ -294,7 +134,7 @@
       "AIPMT 1994",
       "AIPMT 1992"
     ],
-    "source": "seed"
+    "source": "authored"
   },
   {
     "id": "note-alternating-current-ac-voltage-applied-to-an-inductor",
@@ -304,49 +144,21 @@
     "unitId": "xii-emi",
     "unitLabel": "Unit V — Electromagnetic Induction & AC",
     "order": 20,
-    "title": "AC Voltage Applied to an Inductor",
-    "summary": "The diagram is shown in the figure.",
-    "body": "**Key points from solved questions**\n- $$ \\mathbf{V}_{\\mathrm{L}}=\\mathrm{L}\\frac{d\\mathrm{I}}{dt} $$ The current in the circuit is $$ I\\left(t\\right)=I_{0}\\sin\\omega t $$ $$ \\frac{d\\mathrm{I}}{dt}=\\frac{d}{dt}\\mathrm{(I_{0}\\sin\\omega t)} $$ $$ =\\mathrm{I}_{0}\\omega\\cos(\\omega t) $$ $$ \\mathrm{V_{L}}=\\mathrm{L}\\frac{d\\mathrm{I}}{dt}=\\mathrm{L}.\\mathrm{I_{0}}\\omega\\cos\\left(\\omega t\\right) $$ $$ \\mathbf{V}_{\\mathrm{L}}=\\mathrm{L}\\mathbf{I}_{0}\\boldsymbol{\\omega}\\cos\\left(\\omega t\\right) $$\n- The diagram is shown in the figure. According to the question, the key is closed and when the iron rod is inserted inside the inductor, then inductance (L) of the coil increases. <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//bd0d0ca6-5744-48d4-8846-216affcf2e4a/markdown_1/imgs/img_in_image_box_219_1066_429_1168.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A17%3A43Z%2F-1%2F%2F941c5573c8d3b5596420bcad6657f2409f5d5d8d456093fa72df9c5a12cf571f\" alt=\"Image\" width=\"17%\" /></div> When L increases, Then inductive reactance $ X_{L} = \\omega L $ also increases. When $ X_{L} $ increases, Then current I decreases which is confirmed from the equation. $$ I=\\frac{e}{X_{L}} $$ Since, $ X_{L} $ increases, hence I decreases and the glow of the bulb also decreases.\n- We know that, $$ Z=\\sqrt{R^{2}+X_{L}^{2}}=\\sqrt{R^{2}+(2\\pi fL)^{2}} $$ and $$ I=\\frac{\\mathbf{V}}{Z},\\mathrm{P}=\\mathrm{I}^{2}\\mathrm{R} $$ When an iron rod is inserted in the coil, self-inductance increases and the current decreases. Hence, the brightness of the bulb decreases.",
+    "title": "Why the current lags the voltage by 90° in an inductor",
+    "summary": "A pure inductor makes the current lag the voltage by π/2; it opposes change through the inductive reactance X_L = ωL and consumes no average power.",
+    "body": "**Must know**\n- The current lags the voltage by $\\dfrac{\\pi}{2}$.\n- Inductive reactance: $X_L=\\omega L=2\\pi f L$ (in ohm), which increases with frequency.\n- $I_{rms}=\\dfrac{V_{rms}}{X_L}$, and the average power is zero.\n**Exam traps**\n- A pure inductor dissipates no power (it is purely reactive).\n- Its reactance rises with frequency, so it blocks high-frequency AC more.",
     "formulas": [
       {
-        "latex": "\\mathbf{V}_{\\mathrm{L}}=\\mathrm{L}\\frac{d\\mathrm{I}}{dt}",
-        "meaning": ""
+        "latex": "X_L=\\omega L=2\\pi f L",
+        "meaning": "Inductive reactance"
       },
       {
-        "latex": "I\\left(t\\right)=I_{0}\\sin\\omega t",
-        "meaning": ""
+        "latex": "I_{rms}=\\dfrac{V_{rms}}{X_L}",
+        "meaning": "rms current through an inductor"
       },
       {
-        "latex": "\\frac{d\\mathrm{I}}{dt}=\\frac{d}{dt}\\mathrm{(I_{0}\\sin\\omega t)}",
-        "meaning": ""
-      },
-      {
-        "latex": "=\\mathrm{I}_{0}\\omega\\cos(\\omega t)",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathrm{V_{L}}=\\mathrm{L}\\frac{d\\mathrm{I}}{dt}=\\mathrm{L}.\\mathrm{I_{0}}\\omega\\cos\\left(\\omega t\\right)",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathbf{V}_{\\mathrm{L}}=\\mathrm{L}\\mathbf{I}_{0}\\boldsymbol{\\omega}\\cos\\left(\\omega t\\right)",
-        "meaning": ""
-      },
-      {
-        "latex": "I=\\frac{e}{X_{L}}",
-        "meaning": ""
-      },
-      {
-        "latex": "X_{L} = \\omega L",
-        "meaning": ""
-      },
-      {
-        "latex": "Z=\\sqrt{R^{2}+X_{L}^{2}}=\\sqrt{R^{2}+(2\\pi fL)^{2}}",
-        "meaning": ""
-      },
-      {
-        "latex": "I=\\frac{\\mathbf{V}}{Z},\\mathrm{P}=\\mathrm{I}^{2}\\mathrm{R}",
-        "meaning": ""
+        "latex": "P_{avg}=0",
+        "meaning": "No average power in a pure inductor"
       }
     ],
     "questionIds": [
@@ -358,7 +170,7 @@
       "NEET 2020",
       "NEET 2013"
     ],
-    "source": "seed"
+    "source": "authored"
   },
   {
     "id": "note-alternating-current-objective-i",
@@ -569,105 +381,21 @@
     "unitId": "xii-emi",
     "unitLabel": "Unit V — Electromagnetic Induction & AC",
     "order": 20,
-    "title": "Power in AC Circuit: The Power Factor",
-    "summary": "<div style=\"text-align: center;\"><img…",
-    "body": "**Key points from solved questions**\n- Given, $$ \\begin{aligned}&L=5\\ H\\\\&C=80\\ \\mu F\\\\ \\end{aligned} $$ $$ \\mathrm{R}=40\\ \\Omega $$ $$ V=230V $$ Let the frequencies be, $$ \\omega^{\\prime}=\\omega_{R}\\pm\\Delta\\omega $$ where, ∴ $$ \\Delta\\omega=\\frac{R}{2L} $$ $$ \\Delta\\omega=\\frac{40}{2\\times5}=4rad/s $$ And $$ \\omega_{R}=\\frac{1}{\\sqrt{LC}}=50rad/s $$ $\\therefore$ Frequencies are 50 - 4 and 50 + 4 = 46 rad/s and 54 rad/s\n- <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//bd0d0ca6-5744-48d4-8846-216affcf2e4a/markdown_4/imgs/img_in_image_box_812_515_1093_606.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A17%3A52Z%2F-1%2F%2Fa2ba471b9c52d708209b9753f0721073f224b2b6063cbc40b98f26d05a7c0d1d\" alt=\"Image\" width=\"23%\" /></div> For LCR circuit phase difference, $$ \\phi=\\tan^{-1}\\left[\\frac{\\mathbf{X}_{L}-\\mathbf{X}_{C}}{\\mathbf{R}}\\right] $$ When L is removed, then $ X_{L} = 0 $ $$ \\phi=\\tan^{-1}\\left(\\frac{-\\mathrm{X}_{\\mathrm{c}}}{\\mathrm{R}}\\right) $$ $ \\tan \\phi = \\left| \\frac{X_c}{R} \\right| $ <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//bd0d0ca6-5744-48d4-8846-216affcf2e4a/markdown_4/imgs/img_in_image_box_836_869_1058_1002.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A17%3A52Z%2F-1%2F%2F9603a75212abcf6f432ad5fe3f405cbdd466e303aa949888b1acf1fa644c5126\" alt=\"Image\" width=\"18%\" /></div> <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//bd0d0ca6-5744-48d4-8846-216affcf2e4a/markdown_4/imgs/img_in_image_box_843_1005_1037_1123.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A17%3A53Z%2F-1%2F%2F396b074cc142d274312da57e16f555e28246ba031ee59dfe79be972b95f45b62\" alt=\"Image\" width=\"16%\" /></div> $$ \\phi=\\frac{\\pi}{3} $$ <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//bd0d0ca6-5744-48d4-8846-216affcf2e4a/markdown_4/imgs/img_in_image_box_844_1123_1046_1246.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A17%3A53Z%2F-1%2F%2F2be49c82f6a6722f364c5d750438188b07f7c9ff6c8deb28389a0298c7a6c622\" alt=\"Image\" width=\"16%\" /></div> When C is removed. then $$ x_{c}=0 $$ $$ \\phi=\\tan^{-1}\\left(\\frac{\\mathbf{X}_{L}}{\\mathbf{R}}\\right) $$ $$ \\phi=\\left(\\frac{\\mathbf{X}_{\\perp}}{\\mathbf{R}}\\right) $$ From eq. (i) and eq. (ii), we get $$ \\mathbf{X}_{\\mathrm{L}}=\\mathbf{X}_{\\mathrm{C}} $$ $\\therefore$ Impedance, $Z=\\sqrt{R^{2}+(X_{L}-X_{C})^{2}}$ $$ Z=R $$ Power Factor, $$ \\cos\\phi=\\frac{\\mathrm{R}}{\\mathrm{Z}}=1 $$ ∴ Power factor, $ \\cos\\phi=1 $.\n- For this, we know the formula, $$ \\tan\\phi=\\frac{V_{L}-V_{C}}{V_{R}}=\\frac{100-40}{80}=\\frac{3}{4} $$ $$ \\phi=37^{\\circ} $$ ∴ Power factor = $ \\cos\\phi = \\cos37^{\\circ} $ $$ =0.8 $$\n- Given, Inductance, $ L = 20 \\, \\text{mH} = 20 \\times 10^{-3} \\, \\text{H} $ Capacitance. $$ C=100\\mu F=100\\times10^{-6}F $$ Resistance. $$ R=50\\Omega $$ $$ \\mathbf{V}=10\\sin314t $$ and equation of emf is, $$ \\mathbf{V}=\\mathbf{V}_{0}\\sin\\omega t $$ Compare eq. (i) and (ii), we get $$ V_{0}=10\\ V\\ and\\ \\omega=314\\ rad\\ s^{-1} $$ Power of the AC circuit is, $$ \\begin{aligned}\\mathrm{P}&=\\mathrm{V}_{\\mathrm{rms}}\\mathrm{I}_{\\mathrm{rms}}\\cos\\phi\\\\&=\\mathrm{V}_{\\mathrm{rms}}\\left(\\frac{\\mathrm{V}_{\\mathrm{rms}}}{Z}\\right)\\left(\\frac{\\mathrm{R}}{Z}\\right)=\\left(\\frac{\\mathrm{V}_{\\mathrm{rms}}}{Z}\\right)^{2}\\mathrm{R}\\end{aligned} $$ $$ \\mathrm{P}=\\left(\\frac{\\mathrm{V}_{0}}{\\sqrt{2}.Z}\\right)^{2}.฿ $$ Impedance, $$ \\begin{aligned}\\boldsymbol{Z}&=\\sqrt{\\mathbf{R}^{2}+(\\overline{\\mathbf{X}_{\\mathrm{L}}-\\mathbf{X}_{\\mathrm{C}}})^{2}}\\\\&=\\sqrt{\\mathbf{R}^{2}+\\left(\\omega\\mathbf{L}-\\frac{1}{\\omega\\mathbf{C}}\\right)^{2}}\\end{aligned} $$ $$ \\begin{array}{l}=\\sqrt{(50)^{2}+\\left(314\\times20\\times10^{-3}-\\frac{1}{314\\times100\\times10^{-6}}\\right)^{2}}\\\\=\\sqrt{2500+(-25.56)^{2}}\\approx56\\Omega\\end{array} $$ Putting the value of $Z = 56\\ \\Omega$ in eq. (iii), we get $$ \\mathbf{P}=\\left(\\frac{10}{\\sqrt{2}\\times56}\\right)^{2}\\times50 $$ $$ P=\\frac{100}{2\\times3136}\\times50 $$ $$ \\mathrm{P}=0.79\\mathrm{~W} $$ ∴ Power loss = 0.79 W\n- According to the question, the power drawn is $$ P=V_{rms}\\cdot I_{rms}=V_{rms}\\cdot\\frac{V_{rms}}{R} $$ $$ \\Rightarrow\\mathrm{~\\boldmath~V~}_{\\mathrm{r m s}}^{2}=\\mathrm{P R} $$ When inductor is connected in series with the resistor, then power drawn is, $$ \\mathbf{P}^{\\prime}=\\mathbf{V}_{\\mathrm{rms}}\\ .I_{\\mathrm{rms}}\\cos\\ \\phi $$ where, $ \\phi = \\text{phase difference} $ ∴ $$ \\mathrm{P}^{\\prime}=\\mathrm{V}_{\\mathrm{rms}}.\\frac{\\mathrm{V}_{\\mathrm{rms}}}{\\mathrm{Z}}.\\frac{\\mathrm{R}}{\\mathrm{Z}} $$ $$ \\frac{V_{rms}^{2}}{R}\\cdot\\frac{R^{2}}{Z^{2}} $$ $ \\therefore $ $$ \\mathrm{P}^{\\prime}=\\frac{\\mathrm{P}.\\mathrm{R}^{2}}{\\mathrm{Z}^{2}}=\\mathrm{P}\\left(\\frac{\\mathrm{R}}{\\mathrm{Z}}\\right)^{2} $$\n- $$ \\begin{aligned}\\mathrm{P}&=\\mathrm{V}_{\\text{rms}}\\ \\mathrm{I}_{\\text{rms}}\\cos\\phi\\\\&=\\frac{1}{2}\\times\\frac{1}{2}\\times\\cos\\left(\\frac{\\pi}{3}\\right)=\\frac{1}{8}\\mathrm{W}\\end{aligned} $$\n- Power = rate of work done in one complete cycle, $$ \\mathbf{P}_{\\omega}=\\frac{\\mathbf{W}}{\\mathrm{T}} $$ $$ \\mathrm{P}_{\\omega}=\\frac{(\\varepsilon_{0}\\mathrm{I}_{0}\\cos\\phi)\\mathrm{T}/2}{\\mathrm{T}} $$ $$ \\mathbf{P}_{\\omega}=\\frac{\\varepsilon_{0}\\mathbf{I}_{0}\\cos\\phi}{2} $$ where, $ \\cos \\phi $ is called the power factor of an AC circuit.\n- $ X_L = 31\\ \\Omega, X_C = 25\\ \\Omega, R = 8\\ \\Omega $ ∴ Impedance of series LCR is $$ \\mathbf{Z}=\\sqrt{\\mathbf{R}^{2}+(\\mathbf{X}_{L}-\\mathbf{X}_{C})^{2}} $$ $$ \\mathrm{Z}=\\sqrt{8^{2}+(31-25)^{2}} $$ $$ \\mathrm{Z}=\\sqrt{64+36} $$ $$ Z=\\sqrt{100}=10\\Omega $$ Power factor, $ \\cos\\phi=\\frac{R}{Z}=\\frac{8}{10}=0.8 $\n- Power loss is given by, $$ \\mathbf{P}=\\mathbf{V}\\mathbf{I}\\cos\\boldsymbol{\\phi} $$ At resonance, current and voltage are in the same phase, that is $ \\phi = 0 $. $ \\therefore $ $$ \\begin{aligned}\\mathbf{P}&=\\mathbf{V}\\mathbf{I}\\cos0^{\\circ}\\\\&=\\mathbf{V}\\mathbf{I}=\\mathbf{I}^{2}\\mathbf{R}\\end{aligned} $$",
+    "title": "Why average AC power depends on the power factor",
+    "summary": "The average power in an AC circuit is P = V_rms·I_rms·cosφ; cosφ is the power factor, from 1 (resistive) down to 0 (purely reactive, a 'wattless' current).",
+    "body": "**Must know**\n- $P=V_{rms}I_{rms}\\cos\\phi$, where the power factor $\\cos\\phi=\\dfrac{R}{Z}$.\n- Pure resistor: $\\cos\\phi=1$; pure inductor or capacitor: $\\cos\\phi=0$ (no power).\n- Only the resistance dissipates power: $P=I_{rms}^2 R$.\n**Exam traps**\n- Reactive elements store and return energy but dissipate none — this is the 'wattless' current.\n- At resonance $\\cos\\phi=1$, so power is maximum.",
     "formulas": [
       {
-        "latex": "\\begin{aligned}&L=5\\ H\\\\&C=80\\ \\mu F\\\\ \\end{aligned}",
-        "meaning": ""
+        "latex": "P=V_{rms}I_{rms}\\cos\\phi",
+        "meaning": "Average AC power"
       },
       {
-        "latex": "\\mathrm{R}=40\\ \\Omega",
-        "meaning": ""
+        "latex": "\\cos\\phi=\\dfrac{R}{Z}",
+        "meaning": "Power factor"
       },
       {
-        "latex": "V=230V",
-        "meaning": ""
-      },
-      {
-        "latex": "\\omega^{\\prime}=\\omega_{R}\\pm\\Delta\\omega",
-        "meaning": ""
-      },
-      {
-        "latex": "\\Delta\\omega=\\frac{R}{2L}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\Delta\\omega=\\frac{40}{2\\times5}=4rad/s",
-        "meaning": ""
-      },
-      {
-        "latex": "\\omega_{R}=\\frac{1}{\\sqrt{LC}}=50rad/s",
-        "meaning": ""
-      },
-      {
-        "latex": "\\phi=\\tan^{-1}\\left[\\frac{\\mathbf{X}_{L}-\\mathbf{X}_{C}}{\\mathbf{R}}\\right]",
-        "meaning": ""
-      },
-      {
-        "latex": "\\phi=\\tan^{-1}\\left(\\frac{-\\mathrm{X}_{\\mathrm{c}}}{\\mathrm{R}}\\right)",
-        "meaning": ""
-      },
-      {
-        "latex": "\\phi=\\frac{\\pi}{3}",
-        "meaning": ""
-      },
-      {
-        "latex": "x_{c}=0",
-        "meaning": ""
-      },
-      {
-        "latex": "\\phi=\\tan^{-1}\\left(\\frac{\\mathbf{X}_{L}}{\\mathbf{R}}\\right)",
-        "meaning": ""
-      },
-      {
-        "latex": "\\phi=\\left(\\frac{\\mathbf{X}_{\\perp}}{\\mathbf{R}}\\right)",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathbf{X}_{\\mathrm{L}}=\\mathbf{X}_{\\mathrm{C}}",
-        "meaning": ""
-      },
-      {
-        "latex": "Z=R",
-        "meaning": ""
-      },
-      {
-        "latex": "\\cos\\phi=\\frac{\\mathrm{R}}{\\mathrm{Z}}=1",
-        "meaning": ""
-      },
-      {
-        "latex": "X_{L} = 0",
-        "meaning": ""
-      },
-      {
-        "latex": "\\tan \\phi = \\left| \\frac{X_c}{R} \\right|",
-        "meaning": ""
-      },
-      {
-        "latex": "Z=\\sqrt{R^{2}+(X_{L}-X_{C})^{2}}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\cos\\phi=1",
-        "meaning": ""
-      },
-      {
-        "latex": "\\tan\\phi=\\frac{V_{L}-V_{C}}{V_{R}}=\\frac{100-40}{80}=\\frac{3}{4}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\phi=37^{\\circ}",
-        "meaning": ""
-      },
-      {
-        "latex": "=0.8",
-        "meaning": ""
-      },
-      {
-        "latex": "\\cos\\phi = \\cos37^{\\circ}",
-        "meaning": ""
+        "latex": "P=I_{rms}^2 R",
+        "meaning": "Only the resistance dissipates power"
       }
     ],
     "questionIds": [
@@ -691,7 +419,7 @@
       "AIPMT 2002",
       "AIPMT Screening 2009"
     ],
-    "source": "seed"
+    "source": "authored"
   },
   {
     "id": "note-alternating-current-transformers",
@@ -701,105 +429,21 @@
     "unitId": "xii-emi",
     "unitLabel": "Unit V — Electromagnetic Induction & AC",
     "order": 20,
-    "title": "Transformers",
-    "summary": "For step-up transformer $$ \\frac{\\mathbf{V}_{\\mathrm{S}}}{\\mathbf{V}_{\\mathrm{P}}}\\;=\\;\\frac{\\mathbf{N}_{\\mathrm{S}}}{\\mathbf{N}_{\\mathrm{P}}}\\;=\\;\\frac{\\mathbf{l}_{\\mathrm{P}}}{\\mathbf{l}_{\\mathrm{S}}} $$ Here, $$…",
-    "body": "**Key points from solved questions**\n- Given, Primary voltage, $ V_{P} = 220 \\, V $ Secondary voltage, $ V_{S} = 11,000 V $ Power. $$ \\mathbf{P}=88\\ \\mathrm{W} $$ $$ \\mathbf{P}_{\\mathbf{P}}=\\mathbf{P}_{\\mathbf{S}}=\\mathbf{P} $$ $$ \\mathbf{P}_{\\mathbf{S}}=\\mathbf{V}_{\\mathbf{S}}\\mathbf{l}_{\\mathbf{S}} $$ $$ I_{S}=\\frac{P_{s}}{V_{s}} $$ $$ I_{S}=\\frac{88W}{11000V} $$ $$ l_{S}=0.008A $$ $$ \\mathrm{I_{S\\delta}=8\\ m A} $$ <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//2a7e1678-0d6f-4a26-a15f-2d270f5a3f40/markdown_1/imgs/img_in_image_box_90_248_126_293.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A15%3A38Z%2F-1%2F%2F645512d91afac0276c9604cf3cac41adb3e24d8af393c511eb9c39f8d35385da\" alt=\"Image\" width=\"3%\" /></div> ##### Related Theory The relationship between current voltage and number of turns in the primary and secondary coils of the transformer is given by, $$ \\frac{I_{P}}{I_{S}}=\\frac{V_{S}}{V_{P}}=\\frac{N_{S}}{N_{P}}. $$\n- Given: $$ \\frac{\\aleph_{p}}{\\aleph_{s}}=1:2 $$ $$ \\eta=\\frac{\\mathrm{V_{s}}}{\\mathrm{V_{p}}}=\\frac{\\mathrm{N_{s}}}{\\mathrm{N_{p}}} $$ ∴ $$ \\mathrm{\\frac{v_{s}}{v_{p}}}={\\frac{2}{1}} $$\n- <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//2a7e1678-0d6f-4a26-a15f-2d270f5a3f40/markdown_1/imgs/img_in_image_box_192_657_499_818.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A15%3A38Z%2F-1%2F%2F2924d1d987bdb4e04505af3d89ac8096bcdb0bca809768bd57c284c3f7474a41\" alt=\"Image\" width=\"25%\" /></div> Let us consider current in the primary is $ I_{p} $. As the transformer is ideal $$ \\begin{array}{r} \\begin{aligned}\\mathrm{P}_{i}&=\\mathrm{P}_{0}\\\\ 220\\times\\mathrm{I}_{p}&=60\\end{aligned}\\end{array} $$ or $$ I_{p}=\\frac{60}{220}=\\frac{3}{11}=0.27A $$\n- Given, step-down transformer $$ \\begin{aligned}\\mathrm{V}_{\\mathrm{P}}&=220\\mathrm{~V}\\\\\\mathrm{V}_{\\mathrm{S}}&=11\\mathrm{~V}\\\\\\mathrm{P}_{\\mathrm{S}}&=44\\mathrm{~W}\\\\\\mathrm{P}_{\\mathrm{P}}&=\\mathrm{P}_{\\mathrm{S}}\\\\\\mathrm{I}_{\\mathrm{S}}&=\\frac{\\mathrm{P}_{\\mathrm{s}}}{\\mathrm{V}_{\\mathrm{s}}}=4\\mathrm{~A}\\\\\\mathrm{V}_{\\mathrm{P}}\\mathrm{I}_{\\mathrm{P}}&=\\mathrm{V}_{\\mathrm{S}}\\mathrm{I}_{\\mathrm{S}}\\\\\\mathrm{I}_{\\mathrm{P}}&=\\frac{\\mathrm{V}_{\\mathrm{s}}\\mathrm{I}_{\\mathrm{s}}}{\\mathrm{V}_{\\mathrm{P}}}=\\frac{11\\times4}{220}=\\frac{4}{20}\\\\&=\\frac{1}{5}=0.2\\mathrm{~A}\\end{aligned} $$\n- According to the question, Efficiency = 90% = 0.9 Input voltage, $ V_{P} = 200 \\, V $ Input power, $ P_{P} = 3000 $ W Secondary coil current, $ I_{S} = 6 \\, A $ $$ \\begin{aligned}V_{P}I_{P}&=3000\\\\ I_{P}&=\\frac{3000}{V_{P}}=\\frac{3000}{200}=15A\\end{aligned} $$ $$ \\therefore\\text{Now efficiency}=\\frac{\\text{Output}}{\\text{input}}=\\frac{V_{S}I_{S}}{V_{P}I_{P}} $$ $$ 0.9=\\frac{V_{s}\\times6}{200\\times15} $$ $$ \\mathrm{V_{S}}=450~\\mathrm{V} $$ ∴ Secondary coil current = 450 V.\n- Transformer can not work on DC.\n- Efficiency, $$ ↳\\Downarrow $$ $$ \\begin{aligned}\\eta\\%&=\\frac{P_{out}}{P_{in}}\\times100=\\frac{V_{s}i_{s}}{V_{p}i_{p}}\\times100\\\\80&=\\frac{2\\times440}{220\\times i_{p}}\\times100\\\\i_{P}&=5A\\end{aligned} $$\n- According to the question, $$ \\mathrm{N_{P}=50,N_{S}=1500} $$ and $$ \\phi=\\phi_{\\mathrm{v}}+4\\mathrm{t} $$ Voltage across primary coil, $$ \\mathrm{V}_{\\mathrm{P}}=\\frac{d\\phi}{d t}=\\frac{d}{d t}(\\phi_{\\mathrm{v}}+4\\mathrm{t}) $$ $$ =4V $$ Now $$ \\mathrm{\\frac{V_{S}}{V_{P}}}={\\mathrm{\\frac{N_{S}}{N_{P}}}} $$ $$ V_{S}=\\frac{1500}{50}\\times4=120V $$\n- The efficiency of transformer, $$ \\begin{array}{l} \\eta =\\frac{P_S}{V_A I_P} \\times 100 \\\\ =\\frac{100}{220 \\times 0.5} \\times 100 \\approx 90\\% \\end{array} $$\n- The core of a transformers is laminated to minimise the energy losses due to eddy currents.\n- For step-up transformer $$ \\frac{\\mathbf{V}_{\\mathrm{S}}}{\\mathbf{V}_{\\mathrm{P}}}\\;=\\;\\frac{\\mathbf{N}_{\\mathrm{S}}}{\\mathbf{N}_{\\mathrm{P}}}\\;=\\;\\frac{\\mathbf{l}_{\\mathrm{P}}}{\\mathbf{l}_{\\mathrm{S}}} $$ Here, $$ \\mathrm{\\frac{N_{p}}{N_{s}}} = \\frac{1}{25} $$ or $$ l_{S}=2\\ A $$ $$ \\frac{1_{P}}{2}=\\frac{25}{1} $$ or $$ l_{P}=25\\times2=50A $$ <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//2a7e1678-0d6f-4a26-a15f-2d270f5a3f40/markdown_2/imgs/img_in_image_box_28_97_53_154.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A15%3A40Z%2F-1%2F%2Fabe56e1f46f54f2e60de54b80aba796b39296bd1f962c8616a898afddb6059bc\" alt=\"Image\" width=\"2%\" /></div> ##### Related Theory We have the change in flux of the primary and secondary coils is proportional to the number of turns in the primary and secondary coils, respectively. So, $$ \\frac{\\phi_{P}}{N_{P}}=\\frac{\\phi_{S}}{N_{S}} $$ or $$ \\frac{1}{N_{P}}\\times\\frac{d\\phi_{P}}{dt}=\\frac{1}{N_{S}}\\frac{d\\phi_{S}}{dt} $$ $$ \\frac{V_{S}}{V_{P}}=\\frac{N_{S}}{N_{P}} $$ $$ \\left(a s V\\propto\\frac{d\\phi}{d t}\\right) $$ If there is no power loss, $$ VI=constant $$ $$ I=\\frac{1}{V}\\times\\mathrm{constant} $$ or $$ \\frac{I_{P}}{I_{S}}=\\frac{V_{S}}{V_{P}}or\\frac{I_{P}}{I_{S}}=\\frac{N_{S}}{N_{P}} $$ $I_{p}$ and $I_{s}$ are currents in primary and secondary coils respectively.\n- The transformer converts high-voltage AC current into low-voltage AC current without changing the frequency. The voltage across the input is divided by the voltage across the output. We have, The voltage is given by, $$ \\mathrm{\\frac{Vs}{V_{p}}}={\\frac{N_{s}}{N_{p}}} $$ $ N_{S} $ = Number of turns in secondary coil $ N_{P}= $ Number of turns in primary coil $$ \\mathbf{V}_{\\mathrm{S}}=\\frac{\\mathbf{N}_{\\mathrm{s}}}{\\mathbf{N}_{\\mathrm{p}}}\\mathbf{V}_{\\mathrm{P}} $$ Substitute the given values, we get $$ =\\frac{5000}{500}\\times20=200V $$ Thus, output has voltage 200 V and frequency 50 Hz. <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//2a7e1678-0d6f-4a26-a15f-2d270f5a3f40/markdown_2/imgs/img_in_image_box_1046_612_1099_659.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A15%3A40Z%2F-1%2F%2F88f6bcd361525990b7e60753c2c563d2777590e43ebc4ae70e67efed328e88f6\" alt=\"Image\" width=\"4%\" /></div> 2023年1月1日星期日",
+    "title": "How a transformer steps voltage up or down",
+    "summary": "A transformer changes AC voltage by the turns ratio V_s/V_p = N_s/N_p; for an ideal (lossless) transformer V_pI_p = V_sI_s.",
+    "body": "**Must know**\n- $\\dfrac{V_s}{V_p}=\\dfrac{N_s}{N_p}=\\dfrac{I_p}{I_s}$.\n- Step-up ($N_s>N_p$): voltage rises, current falls; step-down: the reverse.\n- Ideal transformer conserves power: $V_pI_p=V_sI_s$.\n**Exam traps**\n- A transformer works on AC only (it relies on mutual induction).\n- Stepping voltage up necessarily steps current down (power is conserved).",
     "formulas": [
       {
-        "latex": "\\mathbf{P}=88\\ \\mathrm{W}",
-        "meaning": ""
+        "latex": "\\dfrac{V_s}{V_p}=\\dfrac{N_s}{N_p}",
+        "meaning": "Turns ratio (voltage)"
       },
       {
-        "latex": "\\mathbf{P}_{\\mathbf{P}}=\\mathbf{P}_{\\mathbf{S}}=\\mathbf{P}",
-        "meaning": ""
+        "latex": "\\dfrac{I_p}{I_s}=\\dfrac{N_s}{N_p}",
+        "meaning": "Current ratio"
       },
       {
-        "latex": "\\mathbf{P}_{\\mathbf{S}}=\\mathbf{V}_{\\mathbf{S}}\\mathbf{l}_{\\mathbf{S}}",
-        "meaning": ""
-      },
-      {
-        "latex": "I_{S}=\\frac{P_{s}}{V_{s}}",
-        "meaning": ""
-      },
-      {
-        "latex": "I_{S}=\\frac{88W}{11000V}",
-        "meaning": ""
-      },
-      {
-        "latex": "l_{S}=0.008A",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathrm{I_{S\\delta}=8\\ m A}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\frac{I_{P}}{I_{S}}=\\frac{V_{S}}{V_{P}}=\\frac{N_{S}}{N_{P}}.",
-        "meaning": ""
-      },
-      {
-        "latex": "V_{P} = 220 \\, V",
-        "meaning": ""
-      },
-      {
-        "latex": "V_{S} = 11,000 V",
-        "meaning": ""
-      },
-      {
-        "latex": "\\frac{\\aleph_{p}}{\\aleph_{s}}=1:2",
-        "meaning": ""
-      },
-      {
-        "latex": "\\eta=\\frac{\\mathrm{V_{s}}}{\\mathrm{V_{p}}}=\\frac{\\mathrm{N_{s}}}{\\mathrm{N_{p}}}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathrm{\\frac{v_{s}}{v_{p}}}={\\frac{2}{1}}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{array}{r} \\begin{aligned}\\mathrm{P}_{i}&=\\mathrm{P}_{0}\\\\ 220\\times\\mathrm{I}_{p}&=60\\end{aligned}\\end{array}",
-        "meaning": ""
-      },
-      {
-        "latex": "I_{p}=\\frac{60}{220}=\\frac{3}{11}=0.27A",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{aligned}\\mathrm{V}_{\\mathrm{P}}&=220\\mathrm{~V}\\\\\\mathrm{V}_{\\mathrm{S}}&=11\\mathrm{~V}\\\\\\mathrm{P}_{\\mathrm{S}}&=44\\mathrm{~W}\\\\\\mathrm{P}_{\\mathrm{P}}&=\\mathrm{P}_{\\mathrm{S}}\\\\\\mathrm{I}_{\\mathrm{S}}&=\\frac{\\mathrm{P}_{\\mathrm{s}}}{\\mathrm{V}_{\\mathrm{s}}}=4\\mathrm{~A}\\\\\\mathrm{V}_{\\mathrm{P}}\\mathrm{I}_{\\mathrm{P}}&=\\mathrm{V}_{\\mathrm{S}}\\mathrm{I}_{\\mathrm{S}}\\\\\\mathrm{I}_{\\mathrm{P}}&=\\frac{\\mathrm{V}_{\\mathrm{s}}\\mathrm{I}_{\\mathrm{s}}}{\\mathrm{V}_{\\mathrm{P}}}=\\frac{11\\times4}{220}=\\frac{4}{20}\\\\&=\\frac{1}{5}=0.2\\mathrm{~A}\\end{aligned}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{aligned}V_{P}I_{P}&=3000\\\\ I_{P}&=\\frac{3000}{V_{P}}=\\frac{3000}{200}=15A\\end{aligned}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\therefore\\text{Now efficiency}=\\frac{\\text{Output}}{\\text{input}}=\\frac{V_{S}I_{S}}{V_{P}I_{P}}",
-        "meaning": ""
-      },
-      {
-        "latex": "0.9=\\frac{V_{s}\\times6}{200\\times15}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathrm{V_{S}}=450~\\mathrm{V}",
-        "meaning": ""
-      },
-      {
-        "latex": "V_{P} = 200 \\, V",
-        "meaning": ""
-      },
-      {
-        "latex": "P_{P} = 3000",
-        "meaning": ""
-      },
-      {
-        "latex": "I_{S} = 6 \\, A",
-        "meaning": ""
-      },
-      {
-        "latex": "↳\\Downarrow",
-        "meaning": ""
+        "latex": "V_pI_p=V_sI_s",
+        "meaning": "Power conservation (ideal transformer)"
       }
     ],
     "questionIds": [
@@ -828,7 +472,7 @@
       "AIPMT 1998",
       "AIPMT 1997"
     ],
-    "source": "seed"
+    "source": "authored"
   },
   {
     "id": "note-alternating-current-reneet2026",
