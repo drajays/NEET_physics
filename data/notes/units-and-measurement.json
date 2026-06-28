@@ -7,105 +7,21 @@
     "unitId": "xi-units",
     "unitLabel": "Unit I — Physical World & Measurement",
     "order": 0,
-    "title": "Dimensional Analysis and its Applications",
-    "summary": "Dimension of force, $ F = [MLT^{-2}] $ Dimension of velocity, $ v = [LT^{-1}] $ and dimension of time, T = [T] According to the question, $$ [\\mathbf{M}]=[\\mathbf{F}^{a}\\,\\mathbf{v}^{b}\\,\\mathbf{T}^{c}] $$ Where $a$,…",
-    "body": "**Key points from solved questions**\n- Given $ V = \\frac{Px^{2}}{\\sqrt{x} + Q} $ Dimension of potential energy = $ [ML^{2}T^{-2}] $ x has dimension of length = [L] $$ \\sqrt{x}={\\mathbf{L}}^{1/2} $$ $$ \\mathrm{Q}=\\mathrm{L}^{\\prime\\frac{1}{2}} $$ ( $ \\because $ having same dimension of $ (x $) So, now eqn (i) is $$ \\mathbf{V}=\\frac{\\mathbf{P}x^{2}}{\\mathbf{L}^{\\prime}^{2}+\\mathbf{L}^{\\prime}^{2}} $$ Dimension P is $ [ML^{2}T^{-2}][L^{-3/2}] $ $ = [ML^{1/2}T^{-2}] $ Now for $ \\frac{P^{2}}{Q} $ As, $ Q = L^{\\frac{1}{2}} $ $$ \\mathrm{\\frac{[ML^{\\frac{\\nu}{2}}T^{-2}]^{2}}{L^{\\frac{\\nu}{2}}}}\\ \\Rightarrow\\mathrm{\\frac{M^{2}L T^{-4}}{L^{\\frac{\\nu}{2}}}} $$ $$ \\frac{\\mathbf{P}^{2}}{\\mathbf{Q}}=[\\mathbf{M}^{2}\\mathbf{L}^{\\frac{1}{2}}\\mathbf{T}^{-4}] $$ ##### ! Caution Students are often confused while writing the units. For this, write the formula first and then its corresponding units. In this way, one can easily calculate the unit.\n- $$ \\mathrm{F}=\\alpha t^{2}+\\beta b $$ For $$ \\mathrm{F}=\\alpha t^{2} $$ $$ [\\mathrm{M L T}^{-2}]=\\alpha[\\mathrm{T}^{2}] $$ $$ \\alpha=[\\mathrm{M L T^{-4}}] $$ For $$ \\mathbf{F}=\\boldsymbol{\\beta t} $$ $$ [{\\mathrm{M L T^{-2}}}]=\\upbeta[{\\mathrm{T}}] $$ $$ \\boldsymbol{\\beta}=[\\mathrm{M L T}^{-3}] $$ $$ \\begin{aligned}\\frac{\\alpha t}{\\beta}&=\\frac{[MLT^{-4}][T]}{[MLT^{-3}]}\\\\&=[M^{0}L^{0}T^{0}]\\end{aligned} $$\n- $ L = [c]^x [G]^y \\left[ \\frac{e^2}{4\\pi\\varepsilon_0} \\right]^z $ Since coulomb's force is $ F = \\frac{e^{2}}{4\\pi\\varepsilon_{0}r^{2}} $ $$ \\frac{e^{2}}{4\\pi\\varepsilon_{0}}\\;=\\left[\\mathrm{ML}^{3}\\mathrm{T}^{-2}\\right] $$ L = [LT^{-1}]^{x} [M^{-1}L^{3}T^{-2}]^{y} [ML^{3}T^{-2}]^{z} $$ [\\mathbf{L}]=[\\mathbf{L}^{x}+3y+3z\\mathbf{M}^{-y}+z\\mathbf{T}^{-x}-2y-2z] $$ Comparing both sides, $$ -y+z=0 $$ $$ y=z $$ $$ x+3y+3z=1 $$ $$ -x-4z=0 $$ From (i), (ii) and (iii), $$ z=y=\\frac{1}{2},x=-2 $$ Hence, $$ \\mathrm{L}=\\frac{1}{c^{2}}\\left[\\mathrm{G}.\\frac{e^{2}}{4\\pi\\varepsilon_{0}}\\right]^{\\frac{1}{2}} $$\n- According to question. $$ \\mathbf{L}=[h]^{a}\\mathbf{\\Sigma}[c]^{b}\\mathbf{\\Sigma}[\\mathbf{G}]^{c} $$ Putting the dimensions on both sides, we get, $$ [\\mathbf{M}^{0}\\mathbf{L}\\mathbf{T}^{0}]=[\\mathbf{M}\\mathbf{L}^{2}\\mathbf{T}^{-1}]^{a}\\;[\\mathbf{L}\\mathbf{T}^{-1}]^{b}\\;[\\mathbf{M}^{-1}\\mathbf{L}^{3}\\mathbf{T}^{-2}]^{c} $$ $$ [\\mathbf{M}^{0}\\mathbf{L}\\mathbf{T}^{0}]=[\\mathbf{M}^{a-c}]\\;\\left[\\mathbf{L}^{2a+b+3c}\\right]\\;[\\mathbf{T}^{-a-b-2c}] $$ Comparing powers on both sides, we get. $$ a-c=0 $$ $$ 2a+b+3c=1 $$ $$ -a-b-2c=0 $$ Solving the above equations, $$ a=c=\\frac{1}{2}and b=-\\frac{3}{2} $$ Putting these values in eq. (i), we get. $$ \\mathrm{L}=[h^{1/2}\\ c^{-3/2}\\ G^{1/2}]=\\frac{\\sqrt{h\\mathrm{G}}}{c^{3/2}} $$ $$ \\mathrm{L}=\\frac{\\sqrt{h\\mathrm{G}}}{c^{3/2}} $$\n- Dimension of force, $ F = [MLT^{-2}] $ Dimension of velocity, $ v = [LT^{-1}] $ and dimension of time, T = [T] According to the question, $$ [\\mathbf{M}]=[\\mathbf{F}^{a}\\,\\mathbf{v}^{b}\\,\\mathbf{T}^{c}] $$ Where $a$, $b$ and $c$ are constant putting dimensions. $$ [\\mathbf{M}]=[\\mathbf{M L T}^{-2}]^{a}\\;[\\mathbf{L T}^{-1}]^{b}[\\mathbf{T}]^{c} $$ $$ [\\mathbf{M}]=[\\mathbf{M}^{a}\\,\\mathbf{L}^{a+b}\\,\\mathbf{T}^{-2a-b+c}] $$ Comparing powers on both side, we get: $$ a=1,a+b=0,-2a-b+c=0 $$ Solving the above equation, we get $$ a=1,b=-1\\text{and}c=1 $$ Putting these values in eq. (i), we get $$ \\mathbf{M}=[\\mathbf{F}\\mathbf{v}^{-1}\\mathbf{T}] $$ <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//2aba7efd-6b82-47bb-a501-61606c5e1dce/markdown_2/imgs/img_in_image_box_22_1370_55_1411.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A15%3A30Z%2F-1%2F%2F3f409fb64a1db37e0996ac6df26568892f99c3c25f0e41e5bf5ae8cdb43ed693\" alt=\"Image\" width=\"2%\" /></div> ##### related Theory Alternative method: $$ F=m a $$ $$ \\Rightarrow $$ $$ F=\\frac{m\\mathbf{v}}{t} $$ $$ m=\\frac{Ft}{\\textbf{v}} $$ $$ M=\\frac{[F][T]}{[\\mathbf{v}]}=[F\\mathbf{v}^{-1}T] $$\n- From the formula, $ d_{1} = \\frac{m}{V} $ $$ \\begin{array}{l}d_{2}=d_{1}\\Bigg[\\frac{\\mathbf{M}_{1}}{\\mathbf{M}_{2}}\\Bigg]\\Bigg[\\frac{\\mathbf{L}_{1}}{\\mathbf{L}_{2}}\\Bigg]^{-3}\\\\=4\\Bigg[\\frac{1}{100}\\Bigg]\\Bigg[\\frac{1}{10}\\Bigg]^{-3}=40\\end{array} $$\n- This question will be solved with the help of given options: $$X = [M^a L^b T^c]$$ (a) If $a = 1$, $b = -1$, $c = -2$ $$\\Rightarrow$$ $X = [ML^{-1}T^{-2}] \\rightarrow Pressure$$ (b) If $a = 1$, $b = 0$, $c = -1$ $$\\Rightarrow$$ $X = [MT^{-1}]$$ It is not the dimension of velocity. (c) If $a = 1$, $b = 1$, $c = -2$ $$\\Rightarrow$$ $X = [MLT^{-2}]$, It is not the dimension of acceleration. (d) If $a = 0$, $b = -1$, $c = -2$ $$\\Rightarrow$$ $X = [L^{-1}T^{-2}]$, It is not the dimension of force.\n- Using principle of homogeniety, $$ \\left[\\frac{a}{\\mathbf{V}^{2}}\\right]=\\mathbf{P} $$ $$ \\begin{aligned}{[a]}&{{}=[\\mathbf{P}]\\;[\\mathbf{V}^{2}]}\\\\ {}&{{}=[\\mathbf{M}\\mathbf{L}^{-1}\\mathbf{T}^{-2}]\\;[\\mathbf{L}^{3}]^{2}}\\\\ {}&{{}=[\\mathbf{M}\\mathbf{L}^{5}\\mathbf{T}^{-2}]}\\\\ \\end{aligned} $$\n- Using principle of homogeniety. (B) Using principle of homogeniety. Dimension of v = Dimension of at = Dimension of $ \\frac{b}{t+c} $ $ \\therefore\\quad at = [LT^{-1}] $ $ \\Rightarrow\\quad [a]=\\frac{\\left[LT^{-1}\\right]}{[T]}=[LT^{-2}] $ And c = T \\Rightarrow c = [T] And \\frac{[b]}{[T]} = [LT^{-1}] \\Rightarrow $ [b] = [LT^{-1}] [T] = [L] $\n- Force. $$ \\begin{aligned}\\mathrm{F}&=[MLT^{-2}]\\\\&=(10\\mathrm{~g})(10\\mathrm{~cm})(0.1\\mathrm{~s})^{-2}\\end{aligned} $$ Changing these units into mks system. $$ \\begin{aligned}\\mathrm{F}&=\\left(10^{-2}\\mathrm{kg}\\right)\\left(10^{-1}\\mathrm{m}\\right)\\left(10^{-1}\\mathrm{s}\\right)^{-2}\\\\&=10^{-1}\\mathrm{N}=0.1\\mathrm{~N}\\end{aligned} $$\n- As. $$ x=a t+b t^{2} $$ According to the concept of dimensional analysis and principle of homogeneity. $$ \\because $$ $$ unit~of~x=unit~of~bt^{2} $$ $$ unit of b=\\frac{unit of x}{unit of t^{2}}=km/s^{2} $$\n- Given, Voltage, $ V=(200\\pm4)V $ Current, $ I = (20 \\pm 0.2) $ A $$ R=\\frac{V}{I}=\\frac{200}{20}=10\\ \\Omega $$ $$ \\left(\\frac{\\Delta\\mathrm{R}}{\\mathrm{R}}\\right)^{2}=\\left(\\frac{\\Delta\\mathrm{V}}{\\mathrm{V}}\\right)^{2}+\\left(\\frac{\\Delta\\mathrm{I}}{\\mathrm{I}}\\right)^{2} $$ $$ \\frac{\\Delta\\mathrm{V}}{\\mathrm{V}}=\\frac{4}{200}=0.02 $$ $$ \\left(\\frac{\\Delta R}{R}\\right)^{2}=(0.02)^{2}+(0.01)^{2} $$ $$ \\frac{\\Delta R}{R}=\\sqrt{0.0005} $$ $$ \\Delta\\mathbf{R}=\\mathbf{R}\\times0.0224 $$ $$ \\Delta R=0.224 $$ $$ \\therefore\\mathbf{R}=\\left(10\\pm0.224\\right)\\boldsymbol{\\Omega}=\\left(10\\pm0.3\\right)\\boldsymbol{\\Omega} $$\n- Random errors are the errors which occur due to random and unpredictable fluctuations in temperature and voltage supply. <div style=\"text-align: center;\"><img src=\"https://pplines-online.bj.bcebos.com/deploy/official/paddleocr/pp-ocr-vl-16-online//2aba7efd-6b82-47bb-a501-61606c5e1dce/markdown_3/imgs/img_in_image_box_64_1080_99_1121.jpg?authorization=bce-auth-v1%2FALTAKDN8mY5KlNI7zaRpLmOqrw%2F2026-06-06T18%3A15%3A32Z%2F-1%2F%2Ff6432c3ebb155386d3f18499591e4884dcb8e2e3494e1c8bf04352a9b895bc23\" alt=\"Image\" width=\"2%\" /></div> ##### Related Theory Random errors can arise by some other experimental conditions (Example: u mechanical vibrations of experimental set-ups, etc, errors by the observer taking readings, etc.)\n- Volume of the wire, $ V = \\pi r^{2} L $ Density, $$ \\begin{aligned}\\rho&=\\frac{m}{\\mathrm{V}}\\\\&=\\frac{m}{\\pi r^{2}\\mathrm{L}}\\end{aligned}\\quad(\\because\\mathrm{V}=\\pi r^{2}\\mathrm{L})\\quad $$ For % error. $$ \\frac{\\Delta\\rho}{\\rho}\\times100=\\frac{\\Delta m}{m}\\times100+2\\times\\frac{\\Delta r}{r}\\times100+\\frac{\\Delta L}{L}\\times100 $$ $$ \\begin{aligned}\\therefore\\frac{\\Delta\\rho}{\\rho}\\times100&=\\frac{0.002}{0.4}\\times100+2\\times\\frac{0.001\\times100}{0.3}+\\frac{0.02}{5}\\\\&=0.5+0.67+0.4=1.57=1.6\\%\\end{aligned} $$ $$ \\overline{a}=\\frac{1.25+1.24+1.27+1.21+1.28}{5} $$",
+    "title": "How dimensional analysis checks and derives formulas",
+    "summary": "Using the principle of homogeneity (every term in an equation has the same dimensions), dimensional analysis checks equations, converts units, and derives relations up to a constant.",
+    "body": "**Must know**\n- Principle of homogeneity: all terms of a valid equation have identical dimensions.\n- Unit conversion: $n_1u_1=n_2u_2$, so $n_2=n_1\\dfrac{u_1}{u_2}$.\n- It can derive a relation only up to a dimensionless constant.\n**Exam traps**\n- It cannot find dimensionless constants, nor handle trigonometric/exponential functions or sums of terms.\n- A dimensionally correct equation can still be physically wrong (missing constants).",
     "formulas": [
       {
-        "latex": "\\sqrt{x}={\\mathbf{L}}^{1/2}",
-        "meaning": ""
+        "latex": "[\\text{LHS}]=[\\text{RHS}]",
+        "meaning": "Principle of homogeneity"
       },
       {
-        "latex": "\\mathrm{Q}=\\mathrm{L}^{\\prime\\frac{1}{2}}",
-        "meaning": ""
+        "latex": "n_1u_1=n_2u_2",
+        "meaning": "Unit conversion"
       },
       {
-        "latex": "\\mathbf{V}=\\frac{\\mathbf{P}x^{2}}{\\mathbf{L}^{\\prime}^{2}+\\mathbf{L}^{\\prime}^{2}}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathrm{\\frac{[ML^{\\frac{\\nu}{2}}T^{-2}]^{2}}{L^{\\frac{\\nu}{2}}}}\\ \\Rightarrow\\mathrm{\\frac{M^{2}L T^{-4}}{L^{\\frac{\\nu}{2}}}}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\frac{\\mathbf{P}^{2}}{\\mathbf{Q}}=[\\mathbf{M}^{2}\\mathbf{L}^{\\frac{1}{2}}\\mathbf{T}^{-4}]",
-        "meaning": ""
-      },
-      {
-        "latex": "V = \\frac{Px^{2}}{\\sqrt{x} + Q}",
-        "meaning": ""
-      },
-      {
-        "latex": "= [ML^{1/2}T^{-2}]",
-        "meaning": ""
-      },
-      {
-        "latex": "Q = L^{\\frac{1}{2}}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathrm{F}=\\alpha t^{2}+\\beta b",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathrm{F}=\\alpha t^{2}",
-        "meaning": ""
-      },
-      {
-        "latex": "[\\mathrm{M L T}^{-2}]=\\alpha[\\mathrm{T}^{2}]",
-        "meaning": ""
-      },
-      {
-        "latex": "\\alpha=[\\mathrm{M L T^{-4}}]",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathbf{F}=\\boldsymbol{\\beta t}",
-        "meaning": ""
-      },
-      {
-        "latex": "[{\\mathrm{M L T^{-2}}}]=\\upbeta[{\\mathrm{T}}]",
-        "meaning": ""
-      },
-      {
-        "latex": "\\boldsymbol{\\beta}=[\\mathrm{M L T}^{-3}]",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{aligned}\\frac{\\alpha t}{\\beta}&=\\frac{[MLT^{-4}][T]}{[MLT^{-3}]}\\\\&=[M^{0}L^{0}T^{0}]\\end{aligned}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\frac{e^{2}}{4\\pi\\varepsilon_{0}}\\;=\\left[\\mathrm{ML}^{3}\\mathrm{T}^{-2}\\right]",
-        "meaning": ""
-      },
-      {
-        "latex": "[\\mathbf{L}]=[\\mathbf{L}^{x}+3y+3z\\mathbf{M}^{-y}+z\\mathbf{T}^{-x}-2y-2z]",
-        "meaning": ""
-      },
-      {
-        "latex": "-y+z=0",
-        "meaning": ""
-      },
-      {
-        "latex": "y=z",
-        "meaning": ""
-      },
-      {
-        "latex": "x+3y+3z=1",
-        "meaning": ""
-      },
-      {
-        "latex": "-x-4z=0",
-        "meaning": ""
-      },
-      {
-        "latex": "z=y=\\frac{1}{2},x=-2",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathrm{L}=\\frac{1}{c^{2}}\\left[\\mathrm{G}.\\frac{e^{2}}{4\\pi\\varepsilon_{0}}\\right]^{\\frac{1}{2}}",
-        "meaning": ""
+        "latex": "n_2=n_1\\dfrac{u_1}{u_2}",
+        "meaning": "Numerical value in new units"
       }
     ],
     "questionIds": [
@@ -148,7 +64,7 @@
       "AIPMT 1996",
       "AIPMT 1991"
     ],
-    "source": "seed"
+    "source": "authored"
   },
   {
     "id": "note-units-and-measurement-dimensional-formulae-and-dimensional-equations",
@@ -158,105 +74,21 @@
     "unitId": "xi-units",
     "unitLabel": "Unit I — Physical World & Measurement",
     "order": 0,
-    "title": "Dimensional Formulae and Dimensional Equations",
-    "summary": "Given.",
-    "body": "**Key points from solved questions**\n- Dimensional formula of stress = ML^{-1} T^{-2} Dimensional formula of angle = Dimensionless Dimensional formula of strain = Dimensionless Dimensional formula of angular speed = T^{-1} Dimensional formula of arc = L So, strain and angle are dimensionless like solid angle.\n- (a)-(ii), (b)-(iv), (c)-(i), (d)-(iii)\n- Given. Energy = E Gravitational constant = G We know that. $$ \\begin{aligned}[\\mathrm{E}]\\mathbf{F}&=\\mathbf{F.S}\\\\&=\\operatorname{kg}\\ \\mathbf{m}\\mathbf{s}^{-2}\\ \\mathbf{m}\\\\&=\\operatorname{kg}\\ \\mathbf{m}^{2}\\ \\mathbf{s}^{-2}\\\\&=[\\mathbf{M}\\mathbf{L}^{2}\\mathbf{T}^{-2}]\\end{aligned} $$ $$ \\begin{array}{l} \\text{[G]} =\\displaystyle {\\frac{F r^{2}}{m^{2}}} \\\\ \\qquad = \\displaystyle {\\left[ \\frac{k \\text{g} \\text{m s}^{-2} \\text{m}^{2}}{k \\text{g}^{2}} \\right] } \\\\ \\qquad = \\displaystyle {\\frac{m^{3} \\text{s}^{-2}}{k \\text{g}}} \\\\ \\qquad = \\displaystyle {[\\text{M}^{-1} \\text{L}^{3} \\text{T}^{-2}]} \\end{array} $$ $$ \\begin{aligned}\\frac{[E]}{[G]}=&\\left[\\frac{ML^{2}T^{-2}}{M^{-1}L^{3}T^{-2}}\\right]\\\\=&[M^{1+1}L^{2-3}T^{-2+2}]\\\\=&[M^{2}L^{-1}T^{0}]\\end{aligned} $$\n- We know, Given, [E] = [Fα Aβ Tγ] [E] = FS = kg m² s⁻² = [ML²T⁻²] [F] = kg m s⁻² = [MLT⁻²] [A] = ms⁻² = [M⁰LT⁻²] [T] = s = [M⁰L⁰T¹] [ML²T⁻²] = [MLT⁻²]α [LT⁻²]β B[T⁻²] [M¹L²T⁻²] = [Mα Lα⁺β T⁻²α⁻²β⁺γ] On comparing the powers, α = 1 α + β = 2 -2α - 2β + γ = -2 β = 2 - α = 2 - 1 = 1 -2(1) - 2(1) + γ = -2 γ = 2 E = [FAT²]\n- [Stress] = $ \\frac{[Force]}{[Area]} $ = $ \\frac{[MLT^{-2}]}{[L^{2}]} $ = [ML $ ^{-1} $T $ ^{-2} $]\n- Dimension of energy, $ E = [ML^2T^{-2}] $ Dimension of velocity, $ v = [LT^{-1}] $ Dimension of time, $ t = [T] $ From the question, Surface tension, $ S = E a v b T^c $ $$ [S] = [MT^{-2}] $ a, b, c are constants. Equating dimensions on both sides, $$ [\\mathbf{M}\\mathbf{L}^{0}\\mathbf{T}^{-2}]=[\\mathbf{M}\\mathbf{L}^{2}\\mathbf{T}^{-2}]^{a}\\,[\\mathbf{L}\\mathbf{T}^{-1}]^{b}\\,[\\mathbf{T}]^{c} $$ $$ [\\mathbf{M}\\mathbf{L}^{0}\\mathbf{T}^{-2}]=[\\mathbf{M}^{a}\\mathbf{L}^{2a+b}\\mathbf{T}^{-2a-b+c}] $$ On comparing both sides, $$ a=1,2a+b=0\\text{and}-2a-b+c=-2 $$ On solving these equations, we get, $$ a=1,b=-2,c=-2 $$ Putting the values in eq (i), we get, $$ [\\mathbf{S}]=[\\mathrm{E v}^{-2}\\mathrm{T}^{-2}] $$\n- We have, $$ c=\\frac{1}{\\sqrt{\\mu_{0}\\varepsilon_{0}}} $$ So, dimension of $ (\\mu_0\\varepsilon_0)^{-1/2} $ is equal to the dimension of $ c $. Therefore, dimension of $ c = [LT^{-1}] $.\n- Dimension of $ \\varepsilon_0 = [\\mathrm{M}^{-1}\\mathrm{L}^{-3}\\mathrm{T}^4\\mathrm{A}^2] $ Dimension of $ \\mathrm{E} = [\\mathrm{MLT}^{-3}\\mathrm{A}^{-1}] $ $ \\therefore $ Dimension of $$ \\begin{aligned}\\frac{1}{2}\\varepsilon_{0}\\mathrm{E}^{2}&=\\left[\\mathbf{M}^{-1}\\mathrm{L}^{-3}\\mathrm{T}^{4}\\mathbf{A}^{2}\\right]\\left[\\mathbf{M}\\mathrm{LT}^{-3}\\mathbf{A}^{-1}\\right]^{2}\\\\&=\\left[\\mathbf{M}\\mathrm{L}^{-1}\\mathrm{T}^{-2}\\right]\\end{aligned} $$\n- Let Let $ h = [p^a d^p] $ $ [ML^2T^{-1}] = [MLT^{-1}]^a [L]^b $ $ [ML^2T^{-1}] = [MaL^{a+bT^{-a}}] $ Comparing powers on both sides, we get $ a = 1, a + b = 2, $ $ \\Rightarrow $ $ b = 1 $ Putting these values in eq. (i), we get The dimension of $ h = [pd] $\n- Energy density and Young's modulus have same dimension and equal to $ [ML^{-1}T^{-2}] $. Dielectric constant and refractive index are dimension less. #### △! Caution Students should know that the different quantities can have the same dimensional unit. Many students on finding the same dimension of a quantity as of some other quantity cancel out the process and redo the question.\n- We know that. $$ \\begin{aligned}R&=\\frac{V}{I}=\\frac{[ML^{2}T^{-2}]}{[I^{2}T]}\\\\&=[ML^{2}T^{-3}I^{-2}]\\end{aligned} $$\n- $$ \\frac{h}{1}=\\frac{E\\times\\lambda}{c\\times I}=\\frac{[ML^{2}T^{-2}][L]}{[LT^{-1}][ML^{2}]} $$ $$ \\mathrm{\\frac{h}{I}}=[\\mathrm{T}^{-1}] $$ which is the dimension of frequency.\n- We have, $ F = \\frac{GMm}{R^{2}} $ $$ \\begin{array}{l l}{\\Rightarrow\\quad}&{\\mathrm{G}=\\frac{\\mathrm{F R}^{2}}{\\mathrm{M}m}=\\frac{[\\mathrm{M L T}^{-2}][\\mathrm{L}^{2}]}{[\\mathrm{M}^{2}]}}\\\\ {}&{}\\\\ {}&{=[\\mathrm{M}^{-1}\\mathrm{L}^{3}\\mathrm{T}^{-2}]}\\\\ \\end{array} $$\n- $ \\frac{L}{R} $ is time constant of R-L circuit so, dimensions of $\\frac{L}{R}$ is same as that of time. $$ \\frac{\\mathrm{D i m e n s i o n s~of~L}}{\\mathrm{D i m e n s i o n s~of~R~}}=\\frac{[\\mathrm{M L}^{2}\\mathrm{T}^{-2}\\mathrm{A}^{-2}]}{[\\mathrm{M L}^{2}\\mathrm{T}^{-3}\\mathrm{A}^{-2}]}=[\\mathrm{T}] $$",
+    "title": "How dimensional formulae are written and read",
+    "summary": "A dimensional formula expresses a quantity as a product of powers of the base dimensions; a dimensional equation equates a quantity to its dimensional formula.",
+    "body": "**Must know**\n- Dimensional formula example: force $[F]=[MLT^{-2}]$.\n- Useful standard forms: pressure $[ML^{-1}T^{-2}]$, power $[ML^2T^{-3}]$, Planck's constant $[ML^2T^{-1}]$.\n**Exam traps**\n- Take care with the signs of the powers.\n- Pressure and stress and energy density all share $[ML^{-1}T^{-2}]$.",
     "formulas": [
       {
-        "latex": "\\begin{aligned}[\\mathrm{E}]\\mathbf{F}&=\\mathbf{F.S}\\\\&=\\operatorname{kg}\\ \\mathbf{m}\\mathbf{s}^{-2}\\ \\mathbf{m}\\\\&=\\operatorname{kg}\\ \\mathbf{m}^{2}\\ \\mathbf{s}^{-2}\\\\&=[\\mathbf{M}\\mathbf{L}^{2}\\mathbf{T}^{-2}]\\end{aligned}",
-        "meaning": ""
+        "latex": "[\\text{pressure}]=ML^{-1}T^{-2}",
+        "meaning": "Dimensions of pressure"
       },
       {
-        "latex": "\\begin{array}{l} \\text{[G]} =\\displaystyle {\\frac{F r^{2}}{m^{2}}} \\\\ \\qquad = \\displaystyle {\\left[ \\frac{k \\text{g} \\text{m s}^{-2} \\text{m}^{2}}{k \\text{g}^{2}} \\right] } \\\\ \\qquad = \\displaystyle {\\frac{m^{3} \\text{s}^{-2}}{k \\text{g}}} \\\\ \\qquad = \\displaystyle {[\\text{M}^{-1} \\text{L}^{3} \\text{T}^{-2}]} \\end{array}",
-        "meaning": ""
+        "latex": "[\\text{power}]=ML^2T^{-3}",
+        "meaning": "Dimensions of power"
       },
       {
-        "latex": "\\begin{aligned}\\frac{[E]}{[G]}=&\\left[\\frac{ML^{2}T^{-2}}{M^{-1}L^{3}T^{-2}}\\right]\\\\=&[M^{1+1}L^{2-3}T^{-2+2}]\\\\=&[M^{2}L^{-1}T^{0}]\\end{aligned}",
-        "meaning": ""
-      },
-      {
-        "latex": "[S] = [MT^{-2}] $ a, b, c are constants. Equating dimensions on both sides,",
-        "meaning": ""
-      },
-      {
-        "latex": "On comparing both sides,",
-        "meaning": ""
-      },
-      {
-        "latex": "On solving these equations, we get,",
-        "meaning": ""
-      },
-      {
-        "latex": "Putting the values in eq (i), we get,",
-        "meaning": ""
-      },
-      {
-        "latex": "E = [ML^2T^{-2}]",
-        "meaning": ""
-      },
-      {
-        "latex": "v = [LT^{-1}]",
-        "meaning": ""
-      },
-      {
-        "latex": "t = [T]",
-        "meaning": ""
-      },
-      {
-        "latex": "S = E a v b T^c",
-        "meaning": ""
-      },
-      {
-        "latex": "c=\\frac{1}{\\sqrt{\\mu_{0}\\varepsilon_{0}}}",
-        "meaning": ""
-      },
-      {
-        "latex": "c = [LT^{-1}]",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{aligned}\\frac{1}{2}\\varepsilon_{0}\\mathrm{E}^{2}&=\\left[\\mathbf{M}^{-1}\\mathrm{L}^{-3}\\mathrm{T}^{4}\\mathbf{A}^{2}\\right]\\left[\\mathbf{M}\\mathrm{LT}^{-3}\\mathbf{A}^{-1}\\right]^{2}\\\\&=\\left[\\mathbf{M}\\mathrm{L}^{-1}\\mathrm{T}^{-2}\\right]\\end{aligned}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\varepsilon_0 = [\\mathrm{M}^{-1}\\mathrm{L}^{-3}\\mathrm{T}^4\\mathrm{A}^2]",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathrm{E} = [\\mathrm{MLT}^{-3}\\mathrm{A}^{-1}]",
-        "meaning": ""
-      },
-      {
-        "latex": "h = [p^a d^p]",
-        "meaning": ""
-      },
-      {
-        "latex": "[ML^2T^{-1}] = [MLT^{-1}]^a [L]^b",
-        "meaning": ""
-      },
-      {
-        "latex": "[ML^2T^{-1}] = [MaL^{a+bT^{-a}}]",
-        "meaning": ""
-      },
-      {
-        "latex": "a = 1, a + b = 2,",
-        "meaning": ""
-      },
-      {
-        "latex": "b = 1",
-        "meaning": ""
-      },
-      {
-        "latex": "h = [pd]",
-        "meaning": ""
-      },
-      {
-        "latex": "\\begin{aligned}R&=\\frac{V}{I}=\\frac{[ML^{2}T^{-2}]}{[I^{2}T]}\\\\&=[ML^{2}T^{-3}I^{-2}]\\end{aligned}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\frac{h}{1}=\\frac{E\\times\\lambda}{c\\times I}=\\frac{[ML^{2}T^{-2}][L]}{[LT^{-1}][ML^{2}]}",
-        "meaning": ""
+        "latex": "[h]=ML^2T^{-1}",
+        "meaning": "Dimensions of Planck's constant"
       }
     ],
     "questionIds": [
@@ -289,7 +121,7 @@
       "AIPMT 2004, 1992",
       "AIPMT 1996"
     ],
-    "source": "seed"
+    "source": "authored"
   },
   {
     "id": "note-units-and-measurement-dimensions-of-physical-quantities",
@@ -299,53 +131,21 @@
     "unitId": "xi-units",
     "unitLabel": "Unit I — Physical World & Measurement",
     "order": 0,
-    "title": "Dimensions of Physical Quantities",
-    "summary": "Magnetic flux, $ \\phi = B \\cdot A $ As, F = ILB $$ [\\mathbf{B}]={\\frac{\\mathbf{F}}{\\mathbf{I L}}}={\\frac{\\mathbf{M L T}^{-2}}{\\mathbf{A L}}}=[\\mathbf{M T}^{-2}\\mathbf{A}^{-1}] $$ From (i) $$ \\phi=[\\mathrm{M…",
-    "body": "**Key points from solved questions**\n- Magnetic flux, $ \\phi = B \\cdot A $ As, F = ILB $$ [\\mathbf{B}]={\\frac{\\mathbf{F}}{\\mathbf{I L}}}={\\frac{\\mathbf{M L T}^{-2}}{\\mathbf{A L}}}=[\\mathbf{M T}^{-2}\\mathbf{A}^{-1}] $$ From (i) $$ \\phi=[\\mathrm{M T}^{-2}\\mathrm{A}^{-1}]\\mathrm{L}^{2} $$ $$ [\\phi]=[\\mathrm{M L^{2}T^{-2}A^{-1}}] $$ Self inductance, $ \\phi = LI $ $$ \\mathrm{L}=\\frac{\\phi}{\\mathrm{I}}=\\frac{\\mathrm{ML}^{2}\\mathrm{T}^{-2}\\mathrm{A}^{-1}}{\\mathrm{A}} $$ $$ [{\\mathrm L}]={\\mathrm M}{\\mathrm L}^{2}{\\mathrm T}^{-2}{\\mathrm A}^{-2} $$ Magnetic permeability, $ \\mu = \\frac{B \\cdot 2\\pi r}{I} $ $$ [\\mu]=\\frac{[\\mathrm{MT}^{-2}\\mathrm{A}^{-1}\\mathrm{L}]}{[\\mathrm{A}]}=\\mathrm{ML}^{1}\\mathrm{T}^{-2}\\mathrm{A}^{-2} $$ Electric permittivity, $ \\varepsilon_{0} = \\frac{q_{1}q_{2}}{4\\pi r^{2}F} $ $$ [\\varepsilon_{0}]=[\\mathrm{M L}^{-3}\\mathrm{T}^{4}\\mathrm{A}^{2}] $$\n- A quantity which has dimensions and also has a constant value is called dimensional constant. Here, gravitational constant (G) is a dimensional constant.",
+    "title": "How dimensions express a quantity in terms of M, L and T",
+    "summary": "The dimensions of a quantity are the powers to which the base quantities (mainly mass M, length L, time T) must be raised to represent it.",
+    "body": "**Must know**\n- Written with M, L, T (and A, K, etc.): velocity $[LT^{-1}]$, force $[MLT^{-2}]$, energy $[ML^2T^{-2}]$.\n- Some quantities are dimensionless: angle, strain, refractive index.\n**Exam traps**\n- Dimensions and units are different things.\n- Equal dimensions need not mean the same quantity — work and torque share $[ML^2T^{-2}]$.",
     "formulas": [
       {
-        "latex": "[\\mathbf{B}]={\\frac{\\mathbf{F}}{\\mathbf{I L}}}={\\frac{\\mathbf{M L T}^{-2}}{\\mathbf{A L}}}=[\\mathbf{M T}^{-2}\\mathbf{A}^{-1}]",
-        "meaning": ""
+        "latex": "[\\text{velocity}]=LT^{-1}",
+        "meaning": "Dimensions of velocity"
       },
       {
-        "latex": "\\phi=[\\mathrm{M T}^{-2}\\mathrm{A}^{-1}]\\mathrm{L}^{2}",
-        "meaning": ""
+        "latex": "[\\text{force}]=MLT^{-2}",
+        "meaning": "Dimensions of force"
       },
       {
-        "latex": "[\\phi]=[\\mathrm{M L^{2}T^{-2}A^{-1}}]",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mathrm{L}=\\frac{\\phi}{\\mathrm{I}}=\\frac{\\mathrm{ML}^{2}\\mathrm{T}^{-2}\\mathrm{A}^{-1}}{\\mathrm{A}}",
-        "meaning": ""
-      },
-      {
-        "latex": "[{\\mathrm L}]={\\mathrm M}{\\mathrm L}^{2}{\\mathrm T}^{-2}{\\mathrm A}^{-2}",
-        "meaning": ""
-      },
-      {
-        "latex": "[\\mu]=\\frac{[\\mathrm{MT}^{-2}\\mathrm{A}^{-1}\\mathrm{L}]}{[\\mathrm{A}]}=\\mathrm{ML}^{1}\\mathrm{T}^{-2}\\mathrm{A}^{-2}",
-        "meaning": ""
-      },
-      {
-        "latex": "[\\varepsilon_{0}]=[\\mathrm{M L}^{-3}\\mathrm{T}^{4}\\mathrm{A}^{2}]",
-        "meaning": ""
-      },
-      {
-        "latex": "\\phi = B \\cdot A",
-        "meaning": ""
-      },
-      {
-        "latex": "\\phi = LI",
-        "meaning": ""
-      },
-      {
-        "latex": "\\mu = \\frac{B \\cdot 2\\pi r}{I}",
-        "meaning": ""
-      },
-      {
-        "latex": "\\varepsilon_{0} = \\frac{q_{1}q_{2}}{4\\pi r^{2}F}",
-        "meaning": ""
+        "latex": "[\\text{energy}]=ML^2T^{-2}",
+        "meaning": "Dimensions of energy"
       }
     ],
     "questionIds": [
@@ -356,7 +156,7 @@
       "NEET 2022",
       "AIPMT 1995"
     ],
-    "source": "seed"
+    "source": "authored"
   },
   {
     "id": "note-units-and-measurement-objective-i",
@@ -615,10 +415,23 @@
     "unitId": "xi-units",
     "unitLabel": "Unit I — Physical World & Measurement",
     "order": 0,
-    "title": "Significant Figures",
-    "summary": "Given that, length = 55.3 m breadth = 25 m As we know, resultant should have 2 significant digits.",
-    "body": "**Key points from solved questions**\n- Given that, length = 55.3 m breadth = 25 m As we know, resultant should have 2 significant digits. Area = length × breadth = 55.3 × 25 = 1382.5 m² = 13.8 × 10² m² ≈ 14 × 10² m²\n- Value = 9.99 m - 0.0099 m = 9.9801 m Taking significant figure, both the values have two significant figures after decimal point so current answer is 9.98 m.",
-    "formulas": [],
+    "title": "How significant figures and error propagation express precision",
+    "summary": "Significant figures are the reliably known digits of a measurement; rules govern counting them and how errors combine in calculations.",
+    "body": "**Must know**\n- All non-zero digits are significant; zeros between significant digits count; leading zeros do not.\n- Multiplication/division: keep as many significant figures as the least precise factor. Addition/subtraction: keep the least number of decimal places.\n- Error propagation: for $Z=ab$ or $a/b$, relative errors add; for $Z=a^n$, $\\dfrac{\\Delta Z}{Z}=n\\dfrac{\\Delta a}{a}$; for sums/differences, absolute errors add.\n**Exam traps**\n- Use least significant figures for ×/÷, but least decimal places for +/−.\n- Relative errors (not absolute) add for products and quotients.",
+    "formulas": [
+      {
+        "latex": "\\dfrac{\\Delta(ab)}{ab}=\\dfrac{\\Delta a}{a}+\\dfrac{\\Delta b}{b}",
+        "meaning": "Relative error in a product/quotient"
+      },
+      {
+        "latex": "\\dfrac{\\Delta Z}{Z}=n\\dfrac{\\Delta a}{a}\\ \\ (Z=a^n)",
+        "meaning": "Error in a power"
+      },
+      {
+        "latex": "\\Delta(a\\pm b)=\\Delta a+\\Delta b",
+        "meaning": "Absolute error in a sum/difference"
+      }
+    ],
     "questionIds": [
       "6516a7d6-a4d4-4fff-91ba-afb4cd470772",
       "62111874-ef2e-4d99-a9d6-ca7b62c4b3ce"
@@ -627,7 +440,7 @@
       "NEET 2022",
       "NEET 2020"
     ],
-    "source": "seed"
+    "source": "authored"
   },
   {
     "id": "note-units-and-measurement-the-international-system-of-units",
@@ -637,13 +450,21 @@
     "unitId": "xi-units",
     "unitLabel": "Unit I — Physical World & Measurement",
     "order": 0,
-    "title": "The International System of Units",
-    "summary": "Radians and Steradians are measured in either $\\pi$ (pi) or degrees.",
-    "body": "**Key points from solved questions**\n- Radians and Steradians are measured in either $\\pi$ (pi) or degrees. Because $\\pi$ and degrees are pure numbers. Planes and solid angles have no dimensions. Plane and solid angles both have units but no dimensions.\n- Thermal conductivity, $$ \\begin{aligned}&K=\\frac{L}{A\\Delta T}\\frac{dQ}{dt}\\\\ &\\quad=\\frac{Metre}{(Metre)^{2}\\times Kelvin}\\times watt\\\\ &\\quad=Wm^{-1}K^{-1}\\\\ \\end{aligned} $$\n- The value of the Stefan-Boltzmann constant is approximately $ 5.67 \\times 10^{-8} $ watt per meter square per kelvin to the fourth of absolute temperature. (W.m $ ^{-2} $K $ ^{-4} $).",
+    "title": "How the SI system builds every unit from seven base units",
+    "summary": "SI has seven base units (metre, kilogram, second, ampere, kelvin, mole, candela); all derived units are products of powers of these.",
+    "body": "**Must know**\n- The seven base quantities: length (m), mass (kg), time (s), electric current (A), temperature (K), amount of substance (mol), luminous intensity (cd).\n- Derived units are combinations of base units, e.g. force $\\text{N}=\\text{kg m s}^{-2}$.\n- Plane angle (radian) and solid angle (steradian) are dimensionless.\n**Exam traps**\n- There are exactly seven base units; SI is a coherent system.\n- Plane and solid angles have units but no dimensions.",
     "formulas": [
       {
-        "latex": "\\begin{aligned}&K=\\frac{L}{A\\Delta T}\\frac{dQ}{dt}\\\\ &\\quad=\\frac{Metre}{(Metre)^{2}\\times Kelvin}\\times watt\\\\ &\\quad=Wm^{-1}K^{-1}\\\\ \\end{aligned}",
-        "meaning": ""
+        "latex": "\\text{N}=\\text{kg m s}^{-2}",
+        "meaning": "Newton as a derived unit"
+      },
+      {
+        "latex": "\\text{J}=\\text{kg m}^2\\text{s}^{-2}",
+        "meaning": "Joule as a derived unit"
+      },
+      {
+        "latex": "\\text{rad, sr — dimensionless}",
+        "meaning": "Plane and solid angle"
       }
     ],
     "questionIds": [
@@ -656,7 +477,7 @@
       "NEET 2019",
       "AIPMT 2002"
     ],
-    "source": "seed"
+    "source": "authored"
   },
   {
     "id": "note-units-and-measurement-reneet2026",
