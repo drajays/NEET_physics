@@ -117,7 +117,46 @@
   table.trig .fn-cot { color: var(--cot); }
   sup, sub { font-size: 0.75em; }
 
-  @media (max-width: 560px){ canvas { height: 360px; } }
+  /* formula sheet */
+  .fcols { columns: 2; column-gap: 14px; }
+  .fgroup { break-inside: avoid; margin: 0 0 14px; border: 1px solid var(--border); border-radius: 12px; background: var(--glass-strong); overflow: hidden; }
+  .fgroup > h3 { margin: 0; padding: 9px 13px; font-size: 0.9rem; background: rgba(255,255,255,0.05); color: var(--accent); }
+  .fgroup ul { list-style: none; margin: 0; padding: 6px 13px 10px; }
+  .fgroup li { padding: 4px 0; font-size: 0.9rem; border-bottom: 1px dashed rgba(255,255,255,0.06); }
+  .fgroup li:last-child { border-bottom: none; }
+  .fnum { color: var(--muted); font-size: 0.78rem; margin-right: 5px; }
+  .eq { font-family: "Cambria Math", Georgia, serif; }
+  .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; line-height: 1.05; margin: 0 2px; }
+  .frac > .num { border-bottom: 1px solid currentColor; padding: 0 3px; }
+  .frac > .den { padding: 0 3px; }
+  .hl { color: #fde68a; }
+  .ftable { width: 100%; border-collapse: collapse; font-size: 0.86rem; }
+  .ftable th, .ftable td { border: 1px solid rgba(255,255,255,0.10); padding: 5px 8px; text-align: center; }
+  .ftable th { background: rgba(255,255,255,0.05); }
+
+  /* quiz */
+  .quiz-q { font-size: 1.02rem; margin: 6px 0 14px; line-height: 1.55; }
+  .qmeta { display: inline-block; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; color: var(--accent); background: rgba(125,211,252,0.12); padding: 3px 9px; border-radius: 999px; margin-bottom: 10px; }
+  .opts { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px,1fr)); gap: 10px; }
+  .opt {
+    text-align: left; cursor: pointer; border: 1px solid var(--border); border-radius: 11px;
+    padding: 11px 13px; background: var(--glass); color: var(--text); font-size: 0.95rem; transition: all 0.13s;
+  }
+  .opt:hover:not(:disabled) { border-color: var(--accent); }
+  .opt .lab { display: inline-block; width: 22px; font-weight: 700; color: var(--muted); }
+  .opt.correct { border-color: #34d399; background: rgba(16,185,129,0.16); }
+  .opt.wrong { border-color: #f87171; background: rgba(239,68,68,0.16); }
+  .opt:disabled { cursor: default; }
+  .qfeedback { margin-top: 14px; font-size: 0.92rem; }
+  .qfeedback.ok { color: #6ee7b7; } .qfeedback.no { color: #fca5a5; }
+  .qsol { margin-top: 12px; border-left: 3px solid var(--accent); padding: 6px 0 6px 14px; display: none; }
+  .qsol.show { display: block; }
+  .qsol .step { margin: 5px 0; font-size: 0.9rem; color: var(--muted); }
+  .qsol .step b { color: var(--text); }
+  .qbar { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-top: 16px; }
+  .scorepill { margin-left: auto; font-size: 0.85rem; color: var(--muted); }
+
+  @media (max-width: 560px){ canvas { height: 360px; } .fcols { columns: 1; } }
 </style>
 </head>
 <body>
@@ -155,6 +194,27 @@
       <table class="trig" id="valTable"></table>
     </div>
     <p class="foot">UD = undefined (the function has an asymptote there). 1/&radic;2 = &radic;2/2 &asymp; 0.707, &radic;3/2 &asymp; 0.866, 1/&radic;3 = &radic;3/3 &asymp; 0.577, 2/&radic;3 &asymp; 1.155.</p>
+  </section>
+
+  <section class="card panel">
+    <h2>NEET-UG Trigonometry formula sheet</h2>
+    <div class="toolbar">
+      <input id="fSearch" type="search" placeholder="Filter formulas…" style="flex:1 1 220px;max-width:320px;background:var(--glass);border:1px solid var(--border);border-radius:999px;padding:7px 14px;color:var(--text);font-size:0.9rem;" aria-label="Filter formulas" />
+    </div>
+    <div class="fcols" id="formulaSheet"></div>
+  </section>
+
+  <section class="card panel">
+    <h2>Practice · random NEET-UG questions</h2>
+    <div class="quiz-q" id="qStem"><span class="qmeta">loading…</span></div>
+    <div class="opts" id="qOpts"></div>
+    <div class="qfeedback" id="qFeedback"></div>
+    <div class="qsol" id="qSol"></div>
+    <div class="qbar">
+      <button class="btn" id="qNew">New question</button>
+      <button class="btn" id="qShowSol">Show solution</button>
+      <span class="scorepill" id="qScore">Attempted 0 · Correct 0</span>
+    </div>
   </section>
 </div>
 
@@ -342,6 +402,283 @@
     });
     h+='</tbody>'; t.innerHTML=h;
   })();
+})();
+</script>
+
+<script>
+/* ---- Formula sheet + random NEET-UG question generator (self-contained) ---- */
+(function(){
+  "use strict";
+
+  // ===== I. Formula sheet data =====
+  const SHEET = [
+    ['I. Basic ratios (right triangle)', [
+      'sin θ = Perpendicular / Hypotenuse',
+      'cos θ = Base / Hypotenuse',
+      'tan θ = Perpendicular / Base',
+      'cot θ = Base / Perpendicular',
+      'sec θ = Hypotenuse / Base = 1 / cos θ',
+      'cosec θ = Hypotenuse / Perpendicular = 1 / sin θ',
+    ]],
+    ['II. Reciprocal relations', [
+      'sin θ = 1 / cosec θ', 'cos θ = 1 / sec θ', 'tan θ = 1 / cot θ',
+      'cosec θ = 1 / sin θ', 'sec θ = 1 / cos θ', 'cot θ = 1 / tan θ',
+    ]],
+    ['III. Quotient relations', [
+      'tan θ = sin θ / cos θ', 'cot θ = cos θ / sin θ',
+    ]],
+    ['IV. Pythagorean identities', [
+      '<span class="hl">sin²θ + cos²θ = 1</span>',
+      '<span class="hl">1 + tan²θ = sec²θ</span>',
+      '1 + cot²θ = cosec²θ',
+      'cos²θ = 1 − sin²θ ;  sin²θ = 1 − cos²θ',
+      'sec²θ − tan²θ = 1 ;  cosec²θ − cot²θ = 1',
+    ]],
+    ['V. Even / odd (sign on −θ)', [
+      'sin(−θ) = −sin θ  (odd)',
+      'cos(−θ) = cos θ  (even)',
+      'tan(−θ) = −tan θ  (odd)',
+    ]],
+    ['VI. Complementary angles (90° ∓ θ)', [
+      'sin(90° − θ) = cos θ', 'cos(90° − θ) = sin θ',
+      'tan(90° − θ) = cot θ', 'cot(90° − θ) = tan θ',
+      'sec(90° − θ) = cosec θ', 'cosec(90° − θ) = sec θ',
+      'sin(90° + θ) = cos θ', 'cos(90° + θ) = −sin θ', 'tan(90° + θ) = −cot θ',
+    ]],
+    ['VII. Supplementary / allied angles', [
+      'sin(180° − θ) = sin θ', 'cos(180° − θ) = −cos θ', 'tan(180° − θ) = −tan θ',
+      'sin(180° + θ) = −sin θ', 'cos(180° + θ) = −cos θ', 'tan(180° + θ) = tan θ',
+      'sin(360° − θ) = −sin θ', 'cos(360° − θ) = cos θ', 'tan(360° − θ) = −tan θ',
+    ]],
+    ['VIII. Compound angles', [
+      'sin(A + B) = sin A cos B + cos A sin B',
+      'sin(A − B) = sin A cos B − cos A sin B',
+      'cos(A + B) = cos A cos B − sin A sin B',
+      'cos(A − B) = cos A cos B + sin A sin B',
+      'tan(A + B) = (tan A + tan B) / (1 − tan A tan B)',
+      'tan(A − B) = (tan A − tan B) / (1 + tan A tan B)',
+    ]],
+    ['IX. Double angle', [
+      'sin 2θ = 2 sin θ cos θ',
+      'cos 2θ = cos²θ − sin²θ = 2cos²θ − 1 = 1 − 2sin²θ',
+      'tan 2θ = 2 tan θ / (1 − tan²θ)',
+    ]],
+    ['X. Half angle', [
+      'sin²θ = (1 − cos 2θ) / 2',
+      'cos²θ = (1 + cos 2θ) / 2',
+      'tan(θ/2) = sin θ / (1 + cos θ) = (1 − cos θ) / sin θ',
+    ]],
+    ['XI. Product ↔ sum', [
+      'sin A + sin B = 2 sin[(A+B)/2] cos[(A−B)/2]',
+      'sin A − sin B = 2 cos[(A+B)/2] sin[(A−B)/2]',
+      'cos A + cos B = 2 cos[(A+B)/2] cos[(A−B)/2]',
+      'cos A − cos B = −2 sin[(A+B)/2] sin[(A−B)/2]',
+    ]],
+    ['XII. Small-angle (θ in radians)', [
+      '<span class="hl">sin θ ≈ θ</span>', '<span class="hl">tan θ ≈ θ</span>',
+      'cos θ ≈ 1 − θ²/2 ≈ 1', 'sec θ ≈ 1', '1 − cos θ ≈ θ²/2',
+      'Used in: SHM, pendulum, wave &amp; ray optics.',
+    ]],
+    ['XIII. Triangle rules', [
+      'Sine rule: a/sin A = b/sin B = c/sin C',
+      'Cosine rule: c² = a² + b² − 2ab cos C',
+      'Projection: a = b cos C + c cos B',
+    ]],
+    ['XIV. Resultant of two vectors (angle θ)', [
+      '<span class="hl">R = √(A² + B² + 2AB cos θ)</span>',
+      'tan α = (B sin θ) / (A + B cos θ)',
+    ]],
+    ['XV. Standard values', [
+      '<table class="ftable"><tr><th>θ</th><th>0°</th><th>30°</th><th>45°</th><th>60°</th><th>90°</th></tr>'
+      +'<tr><th>sin</th><td>0</td><td>1/2</td><td>1/√2</td><td>√3/2</td><td>1</td></tr>'
+      +'<tr><th>cos</th><td>1</td><td>√3/2</td><td>1/√2</td><td>1/2</td><td>0</td></tr>'
+      +'<tr><th>tan</th><td>0</td><td>1/√3</td><td>1</td><td>√3</td><td>∞</td></tr></table>',
+    ]],
+    ['XVI. Special NEET values (37°–53°)', [
+      'sin 37° = 3/5 = 0.6 ;  cos 37° = 4/5 = 0.8 ;  tan 37° = 3/4',
+      'sin 53° = 4/5 = 0.8 ;  cos 53° = 3/5 = 0.6 ;  tan 53° = 4/3',
+    ]],
+    ['★ Memorize first (highest yield)', [
+      'sin²θ + cos²θ = 1', '1 + tan²θ = sec²θ', 'sin(90° − θ) = cos θ',
+      'sin(A ± B), cos(A ± B), tan(A ± B)',
+      'sin 2θ = 2 sinθ cosθ', 'cos 2θ = 2cos²θ − 1 = 1 − 2sin²θ', 'tan 2θ = 2tanθ/(1 − tan²θ)',
+      'sin θ ≈ θ, tan θ ≈ θ, cos θ ≈ 1', 'Sine rule, Cosine rule, R = √(A²+B²+2AB cosθ)',
+    ]],
+  ];
+
+  (function buildSheet(){
+    const host = document.getElementById('formulaSheet');
+    let n = 0, html = '';
+    SHEET.forEach(([title, items])=>{
+      html += '<div class="fgroup"><h3>'+title+'</h3><ul>';
+      items.forEach(it=>{
+        html += '<li><span class="eq">'+it+'</span></li>';
+      });
+      html += '</ul></div>';
+    });
+    host.innerHTML = html;
+  })();
+
+  // formula search filter
+  document.getElementById('fSearch').addEventListener('input', e=>{
+    const q = e.target.value.trim().toLowerCase();
+    document.querySelectorAll('#formulaSheet .fgroup').forEach(g=>{
+      let any=false;
+      g.querySelectorAll('li').forEach(li=>{
+        const m = !q || li.textContent.toLowerCase().includes(q);
+        li.style.display = m ? '' : 'none'; if(m) any=true;
+      });
+      g.style.display = any ? '' : 'none';
+    });
+  });
+
+  // ===== II. Random NEET-UG question generator =====
+  const pick = a => a[Math.floor(Math.random()*a.length)];
+  const shuffle = a => { for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];} return a; };
+  const round = (n,d=2)=>Number(n.toFixed(d));
+  function opts(correct, pool){
+    const set=[], seen=new Set([String(correct)]);
+    shuffle(pool.slice()).forEach(d=>{ if(set.length<3 && !seen.has(String(d))){ set.push(d); seen.add(String(d)); } });
+    return shuffle([{t:String(correct),ok:true}, ...set.map(d=>({t:String(d),ok:false}))]);
+  }
+  // numeric options that always yield 4 distinct choices (pads with perturbations)
+  function numOpts(correctNum, cands, unit='', dec=2){
+    const fmt=v=>round(v,dec)+unit, correct=fmt(correctNum), seen=new Set([correct]), out=[];
+    const add=v=>{ if(!isFinite(v)) return; const s=fmt(v); if(!seen.has(s)){ seen.add(s); out.push(s); } };
+    shuffle(cands.slice()).forEach(add);
+    const pad=[correctNum*1.25, correctNum*0.75, correctNum*1.5, correctNum*0.5, correctNum+2, Math.max(0.1,correctNum-2)];
+    for(let i=0;i<pad.length && out.length<3;i++) add(pad[i]);
+    return shuffle([{t:correct,ok:true}, ...out.slice(0,3).map(t=>({t,ok:false}))]);
+  }
+
+  const VAL = {
+    sin:{0:'0',30:'1/2',45:'1/√2',60:'√3/2',90:'1'},
+    cos:{0:'1',30:'√3/2',45:'1/√2',60:'1/2',90:'0'},
+    tan:{0:'0',30:'1/√3',45:'1',60:'√3',90:'undefined'},
+  };
+  const POOL = ['0','1/2','1/√2','√3/2','1','√3','1/√3','undefined','2','−1','−1/2'];
+
+  const GEN = [
+    function standardValue(){
+      const fn = pick(['sin','cos','tan']); const a = pick([0,30,45,60,90]);
+      const ans = VAL[fn][a];
+      return { topic:'Standard value', stem:`Evaluate <b>${fn} ${a}°</b>.`,
+        options: opts(ans, POOL.filter(v=>v!==ans)),
+        solution:[`Read directly from the standard table.`, `<b>${fn} ${a}° = ${ans}</b>.`] };
+    },
+    function allied(){
+      const fn = pick(['sin','cos','tan']); const a = pick([30,45,60]);
+      const tf = pick([['180° − ',{sin:1,cos:-1,tan:-1}],['180° + ',{sin:-1,cos:-1,tan:1}],['360° − ',{sin:-1,cos:1,tan:-1}]]);
+      const sign = tf[1][fn]; const base = VAL[fn][a];
+      const ans = (sign<0 && base!=='0') ? '−'+base : base;
+      const distract = [base!=='0'?('−'+base):'0', VAL[fn==='sin'?'cos':'sin'][a], '−'+VAL[fn][a]].filter(d=>d!==ans);
+      return { topic:'Allied angle', stem:`Evaluate <b>${fn}(${tf[0]}${a}°)</b>.`,
+        options: opts(ans, distract.concat(POOL)),
+        solution:[`Allied-angle rule: ${fn}(${tf[0]}θ) ${sign<0?'= −':'= '}${fn} θ.`,
+          `So it equals ${sign<0?'−':''}${fn} ${a}° = <b>${ans}</b>.`] };
+    },
+    function identity(){
+      const q = pick([
+        ['1 + tan²θ', 'sec²θ', ['cosec²θ','sin²θ','1 − sec²θ']],
+        ['1 + cot²θ', 'cosec²θ', ['sec²θ','tan²θ','1 − cosec²θ']],
+        ['sin²θ + cos²θ', '1', ['0','2','sec²θ']],
+        ['sec²θ − tan²θ', '1', ['0','tan²θ','sec²θ']],
+        ['2 sin θ cos θ', 'sin 2θ', ['cos 2θ','sin²θ','2 cos 2θ']],
+        ['2cos²θ − 1', 'cos 2θ', ['sin 2θ','2sin²θ − 1','tan 2θ']],
+      ]);
+      return { topic:'Identity', stem:`<b>${q[0]} = ?</b>`,
+        options: opts(q[1], q[2]),
+        solution:[`Standard identity.`, `<b>${q[0]} = ${q[1]}</b>.`] };
+    },
+    function pythagoras(){
+      const t = pick([[0.6,0.8],[0.8,0.6],[3/5,4/5],[5/13,12/13],[12/13,5/13]]);
+      const s = round(t[0],3), c = round(t[1],3);
+      return { topic:'Pythagorean', stem:`θ is acute and <b>sin θ = ${s}</b>. Find <b>cos θ</b>.`,
+        options: opts(c, [round(1-s,3), round(s,3), round(1-s*s,3)]),
+        solution:[`cos θ = √(1 − sin²θ) = √(1 − ${s}²)`, `= √(${round(1-s*s,3)}) = <b>${c}</b>.`] };
+    },
+    function doubleAngle(){
+      const t = pick([[3,4,5],[4,3,5],[5,12,13],[12,5,13]]);
+      const s=t[0]/t[2], c=t[1]/t[2];
+      const which = pick(['sin','cos']);
+      const ans = which==='sin' ? round(2*s*c,3) : round(c*c - s*s,3);
+      const wrong = which==='sin' ? [round(s*c,3), round(2*s,3), round(c*c-s*s,3)] : [round(2*c*c,3), round(2*s*c,3), round(1-2*c*c,3)];
+      return { topic:'Double angle', stem:`θ is acute with <b>sin θ = ${t[0]}/${t[2]}</b>, <b>cos θ = ${t[1]}/${t[2]}</b>. Find <b>${which} 2θ</b>.`,
+        options: opts(ans, wrong),
+        solution: which==='sin'
+          ? [`sin 2θ = 2 sin θ cos θ = 2·(${t[0]}/${t[2]})·(${t[1]}/${t[2]})`, `= <b>${ans}</b>.`]
+          : [`cos 2θ = cos²θ − sin²θ = (${t[1]}/${t[2]})² − (${t[0]}/${t[2]})²`, `= <b>${ans}</b>.`] };
+    },
+    function smallAngle(){
+      const q = pick([
+        ['For small θ (radians), sin θ ≈', 'θ', ['1','θ²','1 − θ²/2']],
+        ['For small θ (radians), cos θ ≈', '1 − θ²/2', ['θ','0','θ²']],
+        ['For small θ (radians), tan θ ≈', 'θ', ['1','θ/2','sec θ']],
+        ['For small θ (radians), 1 − cos θ ≈', 'θ²/2', ['θ','θ²','1']],
+      ]);
+      return { topic:'Small-angle', stem:`<b>${q[0]} ?</b>`,
+        options: opts(q[1], q[2]),
+        solution:[`Small-angle expansion about θ = 0.`, `<b>${q[0]} ${q[1]}</b> — key in SHM, pendulum &amp; optics.`] };
+    },
+    function resultant(){
+      const A = pick([3,4,5,6,8,10]); const B = pick([3,4,5,6,8]);
+      const ang = pick([60,90,120]); const c = {60:0.5,90:0,120:-0.5}[ang];
+      const R = round(Math.sqrt(A*A + B*B + 2*A*B*c),2);
+      return { topic:'Resultant of vectors', stem:`Two forces <b>${A} N</b> and <b>${B} N</b> act at <b>${ang}°</b> to each other. Magnitude of the resultant?`,
+        options: numOpts(R, [A+B, Math.abs(A-B), Math.sqrt(A*A+B*B), A+B-1], ' N', 2),
+        solution:[`R = √(A² + B² + 2AB cos θ)`,
+          `= √(${A}² + ${B}² + 2·${A}·${B}·cos ${ang}°) = √(${A*A}+${B*B}+${round(2*A*B*c,1)})`,
+          `= <b>${R} N</b>.`] };
+    },
+    function incline(){
+      const m = pick([2,4,5,10]); const ang = pick([30,37,53,45]); const g=10;
+      const SIN={30:0.5,37:0.6,53:0.8,45:0.707}, k=SIN[ang];
+      const comp = round(m*g*k,1);
+      return { topic:'Incline component', stem:`A block of mass <b>${m} kg</b> rests on a smooth incline of <b>${ang}°</b> (g = 10 m/s²). Component of weight along the incline (mg sin θ)?`,
+        options: numOpts(comp, [m*g, m*g*Math.sqrt(1-k*k), m*k, comp+5], ' N', 1),
+        solution:[`Component along incline = mg sin θ = ${m}·10·sin ${ang}°`,
+          `= ${m*g}·${k} = <b>${comp} N</b>.`] };
+    },
+    function cosineRule(){
+      const a = pick([4,5,6,7]); const b = pick([4,5,6]); const ang = pick([60,90,120]);
+      const c = {60:0.5,90:0,120:-0.5}[ang];
+      const side = round(Math.sqrt(a*a + b*b - 2*a*b*c),2);
+      return { topic:'Cosine rule', stem:`In a triangle two sides are <b>${a}</b> and <b>${b}</b> with included angle <b>${ang}°</b>. Find the third side.`,
+        options: numOpts(side, [a+b, Math.abs(a-b), Math.sqrt(a*a+b*b), side+1], '', 2),
+        solution:[`c² = a² + b² − 2ab cos C`,
+          `= ${a}² + ${b}² − 2·${a}·${b}·cos ${ang}° = ${round(a*a+b*b-2*a*b*c,2)}`,
+          `c = <b>${side}</b>.`] };
+    },
+  ];
+
+  let attempted=0, correct=0, current=null, answered=false;
+  const stemEl=document.getElementById('qStem'), optsEl=document.getElementById('qOpts'),
+        fbEl=document.getElementById('qFeedback'), solEl=document.getElementById('qSol'), scoreEl=document.getElementById('qScore');
+
+  function renderQuestion(){
+    current = pick(GEN)(); answered=false;
+    stemEl.innerHTML = `<span class="qmeta">${current.topic}</span><div>${current.stem}</div>`;
+    fbEl.textContent=''; fbEl.className='qfeedback';
+    solEl.className='qsol'; solEl.innerHTML = current.solution.map(s=>`<div class="step">${s}</div>`).join('');
+    optsEl.innerHTML='';
+    const labels=['A','B','C','D'];
+    current.options.forEach((o,i)=>{
+      const b=document.createElement('button'); b.className='opt';
+      b.innerHTML=`<span class="lab">${labels[i]}</span>${o.t}`;
+      b.onclick=()=>choose(b,o);
+      optsEl.appendChild(b);
+    });
+  }
+  function choose(btn, o){
+    if(answered) return; answered=true; attempted++;
+    [...optsEl.children].forEach((b,i)=>{ b.disabled=true; if(current.options[i].ok) b.classList.add('correct'); });
+    if(o.ok){ correct++; btn.classList.add('correct'); fbEl.textContent='✓ Correct!'; fbEl.className='qfeedback ok'; }
+    else { btn.classList.add('wrong'); fbEl.textContent='✗ Not quite — see the solution.'; fbEl.className='qfeedback no'; solEl.className='qsol show'; }
+    scoreEl.textContent=`Attempted ${attempted} · Correct ${correct}`;
+  }
+  document.getElementById('qNew').onclick=renderQuestion;
+  document.getElementById('qShowSol').onclick=()=>{ solEl.className='qsol show'; };
+  renderQuestion();
 })();
 </script>
 </body>
