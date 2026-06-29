@@ -379,7 +379,7 @@ Check your Browserslist config to be sure that your targets are set up correctly
                 <i class="fa-solid fa-magnifying-glass-chart text-indigo-600"></i> Glass-box explanation
             </span>
             <span class="bg-purple-100 text-purple-800 px-2.5 py-1 rounded-full font-medium flex items-center gap-1">
-                <i class="fa-solid fa-cubes text-purple-600"></i> 30 calculus exercises
+                <i class="fa-solid fa-cubes text-purple-600"></i> 33 calculus exercises
             </span>
         </div>
     </header>
@@ -442,6 +442,9 @@ Check your Browserslist config to be sure that your targets are set up correctly
                 <button onclick="filterTopic('modern')" id="tab-modern" class="topic-tab hover:bg-slate-100 text-slate-700 px-4 py-2 rounded-xl text-sm font-medium transition flex items-center gap-2">
                     <i class="fa-solid fa-atom text-blue-600"></i> Modern Physics
                 </button>
+                <button onclick="filterTopic('calculus')" id="tab-calculus" class="topic-tab hover:bg-slate-100 text-slate-700 px-4 py-2 rounded-xl text-sm font-medium transition flex items-center gap-2">
+                    <i class="fa-solid fa-square-root-variable text-rose-600"></i> Calculus Rules
+                </button>
             </div>
         </div>
 
@@ -449,7 +452,7 @@ Check your Browserslist config to be sure that your targets are set up correctly
         <div class="bg-slate-800 text-slate-100 rounded-2xl px-6 py-3 shadow-md mb-6 flex flex-wrap items-center justify-between gap-4 text-sm font-medium">
             <div class="flex items-center gap-2">
                 <i class="fa-solid fa-chart-simple text-sky-400"></i>
-                <span id="status-loaded">Loaded: 1 / 30 reviewed</span>
+                <span id="status-loaded">Loaded: 1 / 33 reviewed</span>
             </div>
             <div class="flex items-center gap-2">
                 <i class="fa-solid fa-terminal text-emerald-400"></i>
@@ -567,7 +570,7 @@ Check your Browserslist config to be sure that your targets are set up correctly
 
     <!-- JavaScript Application Logic -->
     <script>
-        // Data structure for all 30 HC Verma Physics based Differential Calculus questions
+        // Data structure for all 33 HC Verma Physics based Differential Calculus questions
         const questionsData = [
             // Section 1: Kinematics (1D & 2D)
             {
@@ -1143,6 +1146,63 @@ Check your Browserslist config to be sure that your targets are set up correctly
                     { title: "Step 4: Solve for t > 0", content: "Ignoring the trivial root <span class='math'>t = 0</span>: <div class='math-block'>1000 - 300t = 0 &rArr; 300t = 1000<br>t = 1000 / 300 = 10 / 3 &asymp; 3.33 s</div>" }
                 ],
                 finalSummary: "dN/dt = 1000t - 300t²<br>Time for dN/dt = 0: t &asymp; 3.33 s"
+            },
+            {
+                id: 31,
+                title: "Rate of Change of a Sphere's Volume",
+                topic: "calculus",
+                topicLabel: "Calculus Rules",
+                statement: "The volume of a sphere is <span class='math'>V = (4/3)πR³</span>, where <span class='math'>R</span> is the radius. (a) Find <span class='math'>dV/dR</span>. (b) Using it, find the change in volume <span class='math'>ΔV</span> as the radius increases from 20.0 cm to 20.1 cm. (Take the rate as constant over this small interval; use π = 3.1416.)",
+                hint: "Differentiate <span class='math'>V = (4/3)πR³</span> using the power rule to get <span class='math'>dV/dR</span>. Then ΔV ≈ (dV/dR)·ΔR with ΔR = 0.1 cm at R = 20 cm.",
+                inputs: [
+                    { label: "dV/dR at R = 20 cm (cm²)", value: 5026.55, unit: "cm²", tol: 2 },
+                    { label: "Change in volume ΔV, 20.0 → 20.1 cm (cm³)", value: 502.65, unit: "cm³", tol: 1 }
+                ],
+                steps: [
+                    { title: "Step 1: Given relation", content: "Volume as a function of radius: <div class='math-block'>V = (4/3)πR³</div>" },
+                    { title: "Step 2: Differentiate (power rule)", content: "Apply <span class='math'>d/dR(Rⁿ) = nRⁿ⁻¹</span>: <div class='math-block'>dV/dR = (4/3)π · d/dR(R³) = (4/3)π · 3R² = 4πR²</div>" },
+                    { title: "Step 3: Evaluate the rate at R = 20 cm", content: "<div class='math-block'>dV/dR = 4π(20)² = 4π(400) = 1600π ≈ 5026.55 cm²</div>" },
+                    { title: "Step 4: Small change ΔV", content: "With the rate ~constant over the small interval ΔR = 20.1 − 20.0 = 0.1 cm: <div class='math-block'>ΔV ≈ (dV/dR)·ΔR = (1600π)(0.1) = 160π ≈ 502.65 cm³</div>" }
+                ],
+                finalSummary: "dV/dR = 4πR² = 1600π ≈ 5026.55 cm²<br>ΔV = 160π ≈ 502.65 cm³"
+            },
+            {
+                id: 32,
+                title: "Product, Quotient & Chain Rules",
+                topic: "calculus",
+                topicLabel: "Calculus Rules",
+                statement: "Differentiate, then evaluate each derivative at <span class='math'>x = 1</span> rad: (a) <span class='math'>y = x² sin x</span>, (b) <span class='math'>y = (sin x)/x</span>, (c) <span class='math'>y = sin(x²)</span>.",
+                hint: "(a) product rule (uv)' = u'v + uv'. (b) quotient rule (u/v)' = (u'v − uv')/v². (c) chain rule: derivative of outer × derivative of inner. Then put x = 1 rad (sin1 ≈ 0.8415, cos1 ≈ 0.5403).",
+                inputs: [
+                    { label: "(a) dy/dx at x = 1  for y = x² sin x", value: 2.2232, unit: "", tol: 0.01 },
+                    { label: "(b) dy/dx at x = 1  for y = sin x / x", value: -0.3012, unit: "", tol: 0.01 },
+                    { label: "(c) dy/dx at x = 1  for y = sin(x²)", value: 1.0806, unit: "", tol: 0.01 }
+                ],
+                steps: [
+                    { title: "Step 1: (a) Product rule", content: "<div class='math-block'>dy/dx = x²·d/dx(sin x) + sin x·d/dx(x²)<br>= x² cos x + 2x sin x = x(2 sin x + x cos x)</div> At x = 1: 1·(2·0.8415 + 1·0.5403) ≈ <b>2.2232</b>." },
+                    { title: "Step 2: (b) Quotient rule", content: "<div class='math-block'>dy/dx = [x·d/dx(sin x) − sin x·d/dx(x)] / x²<br>= (x cos x − sin x)/x²</div> At x = 1: (0.5403 − 0.8415)/1 ≈ <b>−0.3012</b>." },
+                    { title: "Step 3: (c) Chain rule", content: "<div class='math-block'>dy/dx = cos(x²)·d/dx(x²) = cos(x²)·2x = 2x cos(x²)</div> At x = 1: 2·cos(1) ≈ <b>1.0806</b>." }
+                ],
+                finalSummary: "(a) x(2 sin x + x cos x) → 2.2232<br>(b) (x cos x − sin x)/x² → −0.3012<br>(c) 2x cos(x²) → 1.0806"
+            },
+            {
+                id: 33,
+                title: "Maximum / Minimum of y = x + 1/x",
+                topic: "calculus",
+                topicLabel: "Calculus Rules",
+                statement: "Find the value of <span class='math'>x &gt; 0</span> at which <span class='math'>y = x + 1/x</span> is extremum, and the corresponding extreme value of <span class='math'>y</span>.",
+                hint: "Set <span class='math'>dy/dx = 0</span> and solve for x > 0. Check whether it is a minimum or maximum by examining the behaviour of y near x → 0 and x → ∞.",
+                inputs: [
+                    { label: "x at which y is extremum (x > 0)", value: 1, unit: "", tol: 0.01 },
+                    { label: "Extreme (minimum) value of y", value: 2, unit: "", tol: 0.01 }
+                ],
+                steps: [
+                    { title: "Step 1: Differentiate", content: "<div class='math-block'>y = x + 1/x = x + x⁻¹<br>dy/dx = 1 + (−x⁻²) = 1 − 1/x²</div>" },
+                    { title: "Step 2: Condition for extremum", content: "Set <span class='math'>dy/dx = 0</span>: <div class='math-block'>1 − 1/x² = 0 ⇒ x² = 1 ⇒ x = ±1</div> For <span class='math'>x &gt; 0</span>, only <span class='math'>x = 1</span> is allowed." },
+                    { title: "Step 3: Minimum or maximum?", content: "As <span class='math'>x → 0⁺</span>, the term 1/x → ∞, and as <span class='math'>x → ∞</span>, the term x → ∞. So y is large on both sides ⇒ <span class='math'>x = 1</span> is a <b>minimum</b>." },
+                    { title: "Step 4: Extreme value", content: "<div class='math-block'>y(1) = 1 + 1/1 = 2</div> Minimum value of y is <b>2</b> at x = 1." }
+                ],
+                finalSummary: "dy/dx = 1 − 1/x² = 0 ⇒ x = 1 (x > 0)<br>Minimum value y = 2"
             }
         ];
 
@@ -1413,7 +1473,7 @@ Check your Browserslist config to be sure that your targets are set up correctly
 
         // Status bar update helpers
         function updateStatusLoaded() {
-            document.getElementById('status-loaded').innerText = `Loaded: ${activeQuestionId} / 30 reviewed`;
+            document.getElementById('status-loaded').innerText = `Loaded: ${activeQuestionId} / ${questionsData.length} reviewed`;
         }
         function updateStatusSolver(text) {
             document.getElementById('status-solver').innerText = `Solver: ${text}`;
