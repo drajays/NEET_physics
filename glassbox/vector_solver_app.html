@@ -186,7 +186,7 @@
           <span class="pill">Detailed solving</span>
           <span class="pill">Auto fill answers</span>
           <span class="pill">Glass-box explanation</span>
-          <span class="pill">23 vector exercises</span>
+          <span class="pill">28 vector exercises</span>
         </div>
       </div>
       <div class="body">
@@ -211,7 +211,7 @@
         </div>
 
         <div class="status-bar">
-          <div class="status-chip" id="progressChip">Loaded: 0 / 23 reviewed</div>
+          <div class="status-chip" id="progressChip">Loaded: 0 / 28 reviewed</div>
           <div class="status-chip" id="solverChip">Solver: ready</div>
           <div class="status-chip" id="scoreChip">Last score: --</div>
         </div>
@@ -789,6 +789,123 @@
             ['Final answer', `OA + OB − OC is directed about ${round(below)}° below the +X-axis.`]
           ];
           return { answers:{below}, solution:`Direction ≈ ${round(below)}° below the +X-axis`, steps };
+        }
+      },
+      {
+        id: 24,
+        topic: 'resultant',
+        title: 'Q24 Resultant of three radii (HCV 2-WE5, fig 2-W4)',
+        text: 'In figure 2-W4 the vectors OA, OB and OC each have magnitude R (the radius of the circle). OA is along +X, OC is along +Y, and OB bisects the right angle AOC (i.e. at 45°). Find the magnitude and direction of OA + OB + OC.',
+        answerFields: [
+          { key: 'rmag', label: 'Resultant magnitude (× R)' },
+          { key: 'rang', label: 'Angle with +X-axis (deg)' }
+        ],
+        solver() {
+          const R = 1;
+          const OA = compFromPolar(R, 0), OB = compFromPolar(R, 45), OC = compFromPolar(R, 90);
+          const rx = OA.x + OB.x + OC.x, ry = OA.y + OB.y + OC.y;
+          const rmag = mag2(rx, ry), rang = atanDeg(ry, rx);
+          const steps = [
+            ['Given data', 'OA, OB, OC each have magnitude R. OA along +X, OC along +Y, OB at 45° (bisector of angle AOC).'],
+            ['Add OA + OC first', 'OA and OC are symmetric about OB, so OA + OC lies along OB with magnitude 2R cos45° = R√2.'],
+            ['Add OB', '(OA + OC) and OB are now along the same line, so the magnitudes add: R√2 + R = R(1 + √2).'],
+            ['Magnitude', `|R| = R(1 + √2) = ${round(rmag)} R`],
+            ['Direction', `The resultant points along OB, i.e. at ${round(rang)}° to the +X-axis.`],
+            ['Final answer', `OA + OB + OC = R(1 + √2) ≈ ${round(rmag)} R, directed along OB (45°).`]
+          ];
+          return { answers:{rmag, rang}, solution:`|R| = R(1+√2) ≈ ${round(rmag)} R at ${round(rang)}°`, steps };
+        }
+      },
+      {
+        id: 25,
+        topic: 'angle',
+        title: 'Q25 Angle for resultant ⊥ to OA (HCV 2-WE6, fig 2-W5)',
+        text: 'In figure 2-W5, OA = 4 m lies along the +X-axis and OB = 6 m makes angle θ (= angle AOB) with OA. The resultant of OA and OB is perpendicular to OA (along the Y-axis). Find the angle AOB.',
+        answerFields: [
+          { key: 'theta', label: 'Angle AOB (deg)' }
+        ],
+        solver() {
+          const OA = 4, OB = 6;
+          const cosT = -OA / OB;
+          const theta = Math.acos(cosT) / DEG;
+          const steps = [
+            ['Set up axes', 'Take OA along +X. Then x-component of OA = 4 m and x-component of OB = 6 cosθ.'],
+            ['x-component of the resultant', 'Rx = OA + OB cosθ = 4 + 6 cosθ.'],
+            ['Resultant ⊥ OA ⇒ its x-component is zero', '4 + 6 cosθ = 0  →  cosθ = −4/6 = −2/3.'],
+            ['Solve for θ', `θ = cos⁻¹(−2/3) = ${round(theta)}°`],
+            ['Final answer', `Angle AOB = ${round(theta)}°.`]
+          ];
+          return { answers:{theta}, solution:`θ = cos⁻¹(−2/3) ≈ ${round(theta)}°`, steps };
+        }
+      },
+      {
+        id: 26,
+        topic: '3d',
+        title: 'Q26 Unit vector of 5i + j − 2k (HCV 2-WE7)',
+        text: 'Write the unit vector in the direction of A = 5i + j − 2k. Give |A| and the three components of the unit vector.',
+        answerFields: [
+          { key: 'mag', label: '|A|' },
+          { key: 'ux', label: 'x-component of unit vector' },
+          { key: 'uy', label: 'y-component of unit vector' },
+          { key: 'uz', label: 'z-component of unit vector' }
+        ],
+        solver() {
+          const x = 5, y = 1, z = -2;
+          const mag = mag3(x, y, z);
+          const ux = x/mag, uy = y/mag, uz = z/mag;
+          const steps = [
+            ['Given vector', 'A = 5i + j − 2k.'],
+            ['Magnitude', `|A| = √(5² + 1² + (−2)²) = √(25 + 1 + 4) = √30 = ${round(mag)}`],
+            ['Unit vector = A / |A|', 'Â = (5i + j − 2k) / √30'],
+            ['Components', `Â = (${round(ux)}) i + (${round(uy)}) j + (${round(uz)}) k`],
+            ['Final answer', 'Â = (5/√30) i + (1/√30) j − (2/√30) k']
+          ];
+          return { answers:{mag, ux, uy, uz}, solution:`Â = (5i + j − 2k)/√30, |A| = ${round(mag)}`, steps };
+        }
+      },
+      {
+        id: 27,
+        topic: 'dot',
+        title: 'Q27 Show a ⊥ b when |a+b| = |a−b| (HCV 2-WE8)',
+        text: 'If |a + b| = |a − b|, show that a is perpendicular to b. State the resulting condition on a·b.',
+        answerFields: [
+          { key: 'cond', label: 'Condition on a·b' }
+        ],
+        solver() {
+          const steps = [
+            ['Expand |a + b|²', '|a + b|² = (a + b)·(a + b) = a·a + a·b + b·a + b·b = a² + b² + 2 a·b.'],
+            ['Expand |a − b|²', '|a − b|² = (a − b)·(a − b) = a² + b² − 2 a·b.'],
+            ['Set them equal', 'a² + b² + 2 a·b = a² + b² − 2 a·b  →  4 a·b = 0.'],
+            ['Conclude', 'a·b = 0, and since neither vector is zero, a ⊥ b.'],
+            ['Final answer', 'a·b = 0  ⇒  a is perpendicular to b.']
+          ];
+          return { answers:{cond:'a·b = 0'}, solution:`a·b = 0 ⇒ a ⊥ b`, steps };
+        }
+      },
+      {
+        id: 28,
+        topic: 'dot',
+        title: 'Q28 Angle between two 3-D vectors (HCV 2-WE9)',
+        text: 'If a = 2i + 3j + 4k and b = 4i + 3j + 2k, find the angle between a and b. Also give a·b, |a| and |b|.',
+        answerFields: [
+          { key: 'dot', label: 'a·b' },
+          { key: 'maga', label: '|a|' },
+          { key: 'magb', label: '|b|' },
+          { key: 'theta', label: 'Angle between a and b (deg)' }
+        ],
+        solver() {
+          const a = {x:2,y:3,z:4}, b = {x:4,y:3,z:2};
+          const dot = a.x*b.x + a.y*b.y + a.z*b.z;
+          const maga = mag3(a.x,a.y,a.z), magb = mag3(b.x,b.y,b.z);
+          const cosT = dot/(maga*magb), theta = Math.acos(cosT)/DEG;
+          const steps = [
+            ['Dot product', `a·b = (2)(4) + (3)(3) + (4)(2) = 8 + 9 + 8 = ${dot}`],
+            ['Magnitudes', `|a| = √(2² + 3² + 4²) = √29 = ${round(maga)}\n|b| = √(4² + 3² + 2²) = √29 = ${round(magb)}`],
+            ['Use a·b = |a||b| cosθ', `cosθ = (a·b)/(|a||b|) = ${dot}/(√29·√29) = ${dot}/29 = ${round(cosT)}`],
+            ['Solve for θ', `θ = cos⁻¹(${round(cosT)}) = ${round(theta)}°`],
+            ['Final answer', `a·b = ${dot}, |a| = |b| = √29 ≈ ${round(maga)}, angle ≈ ${round(theta)}°.`]
+          ];
+          return { answers:{dot, maga, magb, theta}, solution:`a·b = ${dot}, θ ≈ ${round(theta)}°`, steps };
         }
       }
     ];
