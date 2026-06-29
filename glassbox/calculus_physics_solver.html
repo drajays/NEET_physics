@@ -379,7 +379,7 @@ Check your Browserslist config to be sure that your targets are set up correctly
                 <i class="fa-solid fa-magnifying-glass-chart text-indigo-600"></i> Glass-box explanation
             </span>
             <span class="bg-purple-100 text-purple-800 px-2.5 py-1 rounded-full font-medium flex items-center gap-1">
-                <i class="fa-solid fa-cubes text-purple-600"></i> 33 calculus exercises
+                <i class="fa-solid fa-cubes text-purple-600"></i> 37 calculus exercises
             </span>
         </div>
     </header>
@@ -445,6 +445,9 @@ Check your Browserslist config to be sure that your targets are set up correctly
                 <button onclick="filterTopic('calculus')" id="tab-calculus" class="topic-tab hover:bg-slate-100 text-slate-700 px-4 py-2 rounded-xl text-sm font-medium transition flex items-center gap-2">
                     <i class="fa-solid fa-square-root-variable text-rose-600"></i> Calculus Rules
                 </button>
+                <button onclick="filterTopic('integration')" id="tab-integration" class="topic-tab hover:bg-slate-100 text-slate-700 px-4 py-2 rounded-xl text-sm font-medium transition flex items-center gap-2">
+                    <i class="fa-solid fa-chart-area text-teal-600"></i> Integration
+                </button>
             </div>
         </div>
 
@@ -452,7 +455,7 @@ Check your Browserslist config to be sure that your targets are set up correctly
         <div class="bg-slate-800 text-slate-100 rounded-2xl px-6 py-3 shadow-md mb-6 flex flex-wrap items-center justify-between gap-4 text-sm font-medium">
             <div class="flex items-center gap-2">
                 <i class="fa-solid fa-chart-simple text-sky-400"></i>
-                <span id="status-loaded">Loaded: 1 / 33 reviewed</span>
+                <span id="status-loaded">Loaded: 1 / 37 reviewed</span>
             </div>
             <div class="flex items-center gap-2">
                 <i class="fa-solid fa-terminal text-emerald-400"></i>
@@ -570,7 +573,7 @@ Check your Browserslist config to be sure that your targets are set up correctly
 
     <!-- JavaScript Application Logic -->
     <script>
-        // Data structure for all 33 HC Verma Physics based Differential Calculus questions
+        // Data structure for all 37 HC Verma Physics based Differential Calculus questions
         const questionsData = [
             // Section 1: Kinematics (1D & 2D)
             {
@@ -1203,6 +1206,79 @@ Check your Browserslist config to be sure that your targets are set up correctly
                     { title: "Step 4: Extreme value", content: "<div class='math-block'>y(1) = 1 + 1/1 = 2</div> Minimum value of y is <b>2</b> at x = 1." }
                 ],
                 finalSummary: "dy/dx = 1 − 1/x² = 0 ⇒ x = 1 (x > 0)<br>Minimum value y = 2"
+            },
+            {
+                id: 34,
+                title: "Area Under y = x² (Definite Integral)",
+                topic: "integration",
+                topicLabel: "Integration",
+                statement: "Find the area enclosed by the curve <span class='math'>y = x²</span>, the x-axis, and the ordinates <span class='math'>x = 0</span> and <span class='math'>x = 6</span>.",
+                hint: "Divide the area into thin vertical strips of width <span class='math'>dx</span> and height <span class='math'>y = x²</span>, so <span class='math'>dA = y dx = x² dx</span>. Sum (integrate) from 0 to 6.",
+                inputs: [
+                    { label: "Area under the curve (square units)", value: 72, unit: "", tol: 0.01 }
+                ],
+                steps: [
+                    { title: "Step 1: Element of area", content: "A thin strip at position x has width dx and height y = x²: <div class='math-block'>dA = y dx = x² dx</div>" },
+                    { title: "Step 2: Integrate from 0 to 6", content: "Sum all strips for x from 0 to 6: <div class='math-block'>A = ∫₀⁶ x² dx</div>" },
+                    { title: "Step 3: Apply the power rule for integration", content: "<div class='math-block'>A = [x³/3]₀⁶ = (6³ − 0³)/3 = 216/3</div>" },
+                    { title: "Step 4: Result", content: "<div class='math-block'>A = 72 square units</div>" }
+                ],
+                finalSummary: "A = ∫₀⁶ x² dx = [x³/3]₀⁶ = 216/3 = 72"
+            },
+            {
+                id: 35,
+                title: "Integral of A sin ωt",
+                topic: "integration",
+                topicLabel: "Integration",
+                statement: "Evaluate <span class='math'>∫₀ᵗ A sin ωt dt</span>, where A and ω are constants. Then verify your result numerically for <span class='math'>A = 2</span>, <span class='math'>ω = π rad/s</span>, <span class='math'>t = 1 s</span>.",
+                hint: "∫ sin(ωt) dt = −cos(ωt)/ω. Apply the limits 0 → t. For the check use cos(π·1) = −1.",
+                inputs: [
+                    { label: "Value of the integral at A=2, ω=π, t=1", value: 1.2732, unit: "", tol: 0.01 }
+                ],
+                steps: [
+                    { title: "Step 1: Pull out the constant", content: "<div class='math-block'>∫₀ᵗ A sin ωt dt = A ∫₀ᵗ sin ωt dt</div>" },
+                    { title: "Step 2: Integrate sin(ωt)", content: "Since ∫ sin(ωt) dt = −cos(ωt)/ω: <div class='math-block'>= A [ −cos ωt / ω ]₀ᵗ</div>" },
+                    { title: "Step 3: Apply limits", content: "<div class='math-block'>= (A/ω)[ −cos ωt − (−cos 0) ] = (A/ω)(1 − cos ωt)</div>" },
+                    { title: "Step 4: Numerical check", content: "With A = 2, ω = π, t = 1: <div class='math-block'>(2/π)(1 − cos π) = (2/π)(1 − (−1)) = 4/π ≈ 1.2732</div>" }
+                ],
+                finalSummary: "∫₀ᵗ A sin ωt dt = (A/ω)(1 − cos ωt)<br>At A=2, ω=π, t=1 → 4/π ≈ 1.2732"
+            },
+            {
+                id: 36,
+                title: "SHM Velocity by Integration",
+                topic: "integration",
+                topicLabel: "Integration",
+                statement: "For a particle in SHM, velocity v and displacement x satisfy <span class='math'>v(dv/dx) = −ω²x</span>, with <span class='math'>v = v₀</span> at <span class='math'>x = 0</span>. Find v at displacement x, then evaluate it for <span class='math'>v₀ = 10 m/s</span>, <span class='math'>ω = 2 rad/s</span>, <span class='math'>x = 3 m</span>.",
+                hint: "Separate variables: v dv = −ω²x dx. Integrate the left side from v₀ to v and the right side from 0 to x.",
+                inputs: [
+                    { label: "Velocity v at v₀=10, ω=2, x=3 (m/s)", value: 8, unit: "m/s", tol: 0.01 }
+                ],
+                steps: [
+                    { title: "Step 1: Separate variables", content: "<div class='math-block'>v dv = −ω² x dx</div>" },
+                    { title: "Step 2: Integrate with limits", content: "<div class='math-block'>∫₍v₀₎ᵛ v dv = −ω² ∫₀ˣ x dx</div>" },
+                    { title: "Step 3: Evaluate", content: "<div class='math-block'>[v²/2]₍v₀₎ᵛ = −ω² [x²/2]₀ˣ<br>½(v² − v₀²) = −½ ω² x²</div>" },
+                    { title: "Step 4: Solve for v", content: "<div class='math-block'>v² = v₀² − ω² x² ⇒ v = √(v₀² − ω² x²)</div>" },
+                    { title: "Step 5: Numerical check", content: "With v₀=10, ω=2, x=3: <div class='math-block'>v = √(100 − 4·9) = √(100 − 36) = √64 = 8 m/s</div>" }
+                ],
+                finalSummary: "v = √(v₀² − ω² x²)<br>At v₀=10, ω=2, x=3 → v = 8 m/s"
+            },
+            {
+                id: 37,
+                title: "Charge Flow by Integration",
+                topic: "integration",
+                topicLabel: "Integration",
+                statement: "The charge flowing in time dt is <span class='math'>dq = e^(−t/τ) dt</span>, where τ is a constant. Find the total charge Q that flows between <span class='math'>t = 0</span> and <span class='math'>t = τ</span>. Express it as <span class='math'>Q = kτ</span> and find k.",
+                hint: "Q = ∫₀^τ e^(−t/τ) dt. Recall ∫ e^(at) dt = e^(at)/a with a = −1/τ. The answer is τ(1 − 1/e), so k = 1 − 1/e.",
+                inputs: [
+                    { label: "Coefficient k in Q = kτ", value: 0.6321, unit: "", tol: 0.005 }
+                ],
+                steps: [
+                    { title: "Step 1: Set up the integral", content: "Total charge is the sum of all dq: <div class='math-block'>Q = ∫₀^τ e^(−t/τ) dt</div>" },
+                    { title: "Step 2: Integrate the exponential", content: "Using ∫ e^(at) dt = e^(at)/a with a = −1/τ: <div class='math-block'>Q = [ e^(−t/τ) / (−1/τ) ]₀^τ = −τ [ e^(−t/τ) ]₀^τ</div>" },
+                    { title: "Step 3: Apply limits", content: "<div class='math-block'>Q = −τ ( e^(−1) − e^(0) ) = −τ(1/e − 1) = τ(1 − 1/e)</div>" },
+                    { title: "Step 4: Coefficient", content: "<div class='math-block'>k = 1 − 1/e = 1 − 0.3679 ≈ 0.6321</div>" }
+                ],
+                finalSummary: "Q = ∫₀^τ e^(−t/τ) dt = τ(1 − 1/e) ≈ 0.6321 τ"
             }
         ];
 
