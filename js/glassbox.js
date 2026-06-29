@@ -32,6 +32,15 @@
       icon: '∂',
       tags: ['Calculus', 'Kinematics'],
       cls: 'XI'
+    },
+    {
+      id: 'trig-waveforms',
+      title: 'Trigonometric Waveforms',
+      desc: 'Interactive graphs of sin, cos, tan, cot, sec and csc with asymptotes, hover read-outs and an exact-values table — fully offline.',
+      file: 'glassbox/trig_waveforms.html',
+      icon: '〰️',
+      tags: ['Trigonometry', 'Math Tools'],
+      cls: 'XI'
     }
     // Add the next tools here, one object each.
   ];

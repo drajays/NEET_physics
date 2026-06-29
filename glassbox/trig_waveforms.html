@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Glass Box · Trigonometric Waveforms</title>
+<style>
+  :root {
+    --bg1: #0b1220;
+    --bg2: #0f172a;
+    --glass: rgba(255,255,255,0.06);
+    --glass-strong: rgba(255,255,255,0.10);
+    --border: rgba(255,255,255,0.14);
+    --text: #e8eefc;
+    --muted: #9fb2d8;
+    --accent: #7dd3fc;
+    --grid: rgba(255,255,255,0.08);
+    --grid-strong: rgba(255,255,255,0.20);
+    --sin: #3b82f6;
+    --cos: #22c55e;
+    --tan: #ef4444;
+    --cot: #f59e0b;
+    --sec: #a855f7;
+    --csc: #06b6d4;
+    --radius: 16px;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: var(--text);
+    background:
+      radial-gradient(1200px 700px at 80% -10%, rgba(125,211,252,0.10), transparent 60%),
+      radial-gradient(900px 600px at -10% 110%, rgba(168,85,247,0.12), transparent 55%),
+      linear-gradient(160deg, var(--bg1), var(--bg2));
+    min-height: 100vh;
+    padding: 28px 18px 48px;
+    line-height: 1.5;
+  }
+  .wrap { max-width: 980px; margin: 0 auto; }
+  header h1 {
+    margin: 0 0 6px;
+    font-size: clamp(1.5rem, 3vw, 2.1rem);
+    letter-spacing: -0.01em;
+    background: linear-gradient(90deg, #bae6fd, #c4b5fd);
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+  }
+  header p.sub { margin: 0 0 22px; color: var(--muted); max-width: 60ch; }
+
+  .card {
+    background: var(--glass);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+    box-shadow: 0 12px 40px rgba(2,6,23,0.45);
+  }
+  .panel { padding: 18px; margin-bottom: 18px; }
+  .panel h2 { margin: 0 0 12px; font-size: 1.05rem; }
+
+  .defs { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 10px; }
+  .def {
+    border: 1px solid var(--border); border-radius: 12px; padding: 11px 13px;
+    background: var(--glass-strong); font-size: 0.92rem;
+  }
+  .def b { color: var(--text); }
+  .def .fname { font-weight: 700; }
+  .def small { color: var(--muted); display: block; margin-top: 2px; }
+  .swatch { display: inline-block; width: 12px; height: 12px; border-radius: 3px; margin-right: 7px; vertical-align: -1px; }
+
+  .toolbar { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 14px; }
+  .toggle {
+    display: inline-flex; align-items: center; gap: 7px; cursor: pointer; user-select: none;
+    border: 1px solid var(--border); border-radius: 999px; padding: 6px 13px;
+    background: var(--glass); font-size: 0.86rem; font-weight: 600; color: var(--muted);
+    transition: all 0.15s ease;
+  }
+  .toggle.on { color: var(--text); border-color: rgba(255,255,255,0.35); background: var(--glass-strong); }
+  .toggle.off { opacity: 0.5; }
+  .toggle:hover { border-color: rgba(255,255,255,0.4); }
+  .toggle .dot { width: 11px; height: 11px; border-radius: 3px; }
+  .spacer { flex: 1 1 auto; }
+  .btn {
+    cursor: pointer; border: 1px solid var(--border); border-radius: 999px; padding: 6px 14px;
+    background: var(--glass); color: var(--text); font-size: 0.82rem; font-weight: 600;
+    transition: all 0.15s ease;
+  }
+  .btn:hover { border-color: var(--accent); color: var(--accent); }
+
+  .plot-wrap { position: relative; width: 100%; }
+  canvas { display: block; width: 100%; height: 460px; border-radius: 12px; }
+  .readout {
+    position: absolute; top: 10px; right: 10px; pointer-events: none;
+    background: rgba(2,6,23,0.78); border: 1px solid var(--border); border-radius: 10px;
+    padding: 8px 11px; font-size: 0.8rem; min-width: 150px; opacity: 0; transition: opacity 0.12s;
+    font-variant-numeric: tabular-nums;
+  }
+  .readout.show { opacity: 1; }
+  .readout .rx { color: var(--muted); margin-bottom: 4px; }
+  .readout .row { display: flex; justify-content: space-between; gap: 14px; }
+  .readout .row span:first-child { color: var(--muted); }
+  .foot { color: var(--muted); font-size: 0.8rem; margin-top: 10px; }
+
+  .table-scroll { overflow-x: auto; border-radius: 12px; border: 1px solid var(--border); }
+  table.trig { border-collapse: collapse; width: 100%; min-width: 880px; font-size: 0.82rem; font-variant-numeric: tabular-nums; }
+  table.trig th, table.trig td { padding: 7px 9px; text-align: center; border-bottom: 1px solid rgba(255,255,255,0.07); border-right: 1px solid rgba(255,255,255,0.06); white-space: nowrap; }
+  table.trig thead th { background: rgba(255,255,255,0.06); position: sticky; top: 0; color: var(--text); font-weight: 700; }
+  table.trig th.rowhead, table.trig td.rowhead { position: sticky; left: 0; background: rgba(15,23,42,0.96); text-align: left; font-weight: 700; z-index: 1; }
+  table.trig tbody td:first-child { border-left: none; }
+  table.trig tr.angle td, table.trig tr.angle th { color: var(--muted); }
+  table.trig td.ud { color: #fca5a5; font-style: italic; }
+  table.trig td.neg { color: #fda4af; }
+  table.trig .fn-sin { color: var(--sin); }
+  table.trig .fn-cos { color: var(--cos); }
+  table.trig .fn-tan { color: var(--tan); }
+  table.trig .fn-csc { color: var(--csc); }
+  table.trig .fn-sec { color: var(--sec); }
+  table.trig .fn-cot { color: var(--cot); }
+  sup, sub { font-size: 0.75em; }
+
+  @media (max-width: 560px){ canvas { height: 360px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Trigonometric Waveforms</h1>
+    <p class="sub">The six trigonometric functions plotted against an angle <em>x</em> in radians, over &minus;2&pi; to 2&pi;. Toggle any curve, and hover the graph to read exact values. Vertical dashed lines mark the asymptotes.</p>
+  </header>
+
+  <section class="card panel">
+    <h2>What each curve does</h2>
+    <div class="defs">
+      <div class="def"><span class="fname"><span class="swatch" style="background:var(--sin)"></span>y = sin x</span><small>Starts at 0, peaks at +1, troughs at &minus;1. Period 2&pi;.</small></div>
+      <div class="def"><span class="fname"><span class="swatch" style="background:var(--cos)"></span>y = cos x</span><small>Starts at +1. Leads sine by &pi;/2. Period 2&pi;.</small></div>
+      <div class="def"><span class="fname"><span class="swatch" style="background:var(--tan)"></span>y = tan x</span><small>= sin x / cos x. Period &pi;. Asymptotes where cos x = 0.</small></div>
+      <div class="def"><span class="fname"><span class="swatch" style="background:var(--cot)"></span>y = cot x</span><small>= cos x / sin x. Period &pi;. Asymptotes where sin x = 0.</small></div>
+      <div class="def"><span class="fname"><span class="swatch" style="background:var(--sec)"></span>y = sec x</span><small>= 1 / cos x. Period 2&pi;. |sec x| &ge; 1. Asymptotes where cos x = 0.</small></div>
+      <div class="def"><span class="fname"><span class="swatch" style="background:var(--csc)"></span>y = csc x</span><small>= 1 / sin x. Period 2&pi;. |csc x| &ge; 1. Asymptotes where sin x = 0.</small></div>
+    </div>
+  </section>
+
+  <section class="card panel">
+    <h2>Basic Trigonometric Functions</h2>
+    <div class="toolbar" id="toolbar"></div>
+    <div class="plot-wrap">
+      <canvas id="plot"></canvas>
+      <div class="readout" id="readout"></div>
+    </div>
+    <p class="foot">x-axis in radians (ticks at multiples of &pi;/2). y clamped to &minus;3 … 3 so the unbounded curves (tan, cot, sec, csc) stay readable.</p>
+  </section>
+
+  <section class="card panel">
+    <h2>Exact values at standard angles</h2>
+    <div class="table-scroll">
+      <table class="trig" id="valTable"></table>
+    </div>
+    <p class="foot">UD = undefined (the function has an asymptote there). 1/&radic;2 = &radic;2/2 &asymp; 0.707, &radic;3/2 &asymp; 0.866, 1/&radic;3 = &radic;3/3 &asymp; 0.577, 2/&radic;3 &asymp; 1.155.</p>
+  </section>
+</div>
+
+<script>
+(function(){
+  "use strict";
+  const PI = Math.PI;
+  const X_MIN = -2*PI, X_MAX = 2*PI;
+  const Y_MIN = -3, Y_MAX = 3;
+
+  const FUNCS = [
+    { key:'sin', label:'y = sin(x)', color:'#3b82f6', f:x=>Math.sin(x), asym:null },
+    { key:'cos', label:'y = cos(x)', color:'#22c55e', f:x=>Math.cos(x), asym:null },
+    { key:'tan', label:'y = tan(x)', color:'#ef4444', f:x=>Math.tan(x), asym:'cos' },
+    { key:'cot', label:'y = cot(x)', color:'#f59e0b', f:x=>1/Math.tan(x), asym:'sin' },
+    { key:'sec', label:'y = sec(x)', color:'#a855f7', f:x=>1/Math.cos(x), asym:'cos' },
+    { key:'csc', label:'y = csc(x)', color:'#06b6d4', f:x=>1/Math.sin(x), asym:'sin' },
+  ];
+  const shown = { sin:true, cos:true, tan:true, cot:false, sec:false, csc:false };
+
+  const canvas = document.getElementById('plot');
+  const ctx = canvas.getContext('2d');
+  const readout = document.getElementById('readout');
+  let W=0, H=0, dpr=1;
+  const PAD = { l:46, r:16, t:16, b:34 };
+
+  // asymptotes inside [X_MIN, X_MAX]
+  function asymptotesFor(type){ // 'cos' -> x = pi/2 + n*pi ; 'sin' -> x = n*pi
+    const out=[];
+    if(type==='cos'){ for(let n=-3;n<=3;n++){ const x=PI/2+n*PI; if(x>=X_MIN&&x<=X_MAX) out.push(x);} }
+    else if(type==='sin'){ for(let n=-2;n<=2;n++){ const x=n*PI; if(x>=X_MIN&&x<=X_MAX) out.push(x);} }
+    return out;
+  }
+
+  const xToPx = x => PAD.l + (x - X_MIN)/(X_MAX - X_MIN) * (W - PAD.l - PAD.r);
+  const yToPx = y => PAD.t + (Y_MAX - y)/(Y_MAX - Y_MIN) * (H - PAD.t - PAD.b);
+
+  function resize(){
+    dpr = window.devicePixelRatio || 1;
+    const rect = canvas.getBoundingClientRect();
+    W = rect.width; H = rect.height;
+    canvas.width = Math.round(W*dpr);
+    canvas.height = Math.round(H*dpr);
+    ctx.setTransform(dpr,0,0,dpr,0,0);
+    draw();
+  }
+
+  function piLabel(x){
+    const n = Math.round(x/(PI/2)); // multiples of pi/2
+    if(n===0) return '0';
+    const map={ '-4':'-2π','-3':'-3π/2','-2':'-π','-1':'-π/2','1':'π/2','2':'π','3':'3π/2','4':'2π' };
+    return map[String(n)] || (n/2)+'π';
+  }
+
+  function draw(){
+    ctx.clearRect(0,0,W,H);
+    const plotR = { x:PAD.l, y:PAD.t, w:W-PAD.l-PAD.r, h:H-PAD.t-PAD.b };
+
+    // grid: vertical at multiples of pi/2
+    ctx.lineWidth = 1;
+    ctx.font = '11px -apple-system, system-ui, sans-serif';
+    ctx.textAlign='center'; ctx.textBaseline='top';
+    for(let n=-4;n<=4;n++){
+      const x = n*PI/2; const px = xToPx(x);
+      ctx.strokeStyle = (n===0)? 'rgba(255,255,255,0.20)' : 'rgba(255,255,255,0.07)';
+      ctx.beginPath(); ctx.moveTo(px, plotR.y); ctx.lineTo(px, plotR.y+plotR.h); ctx.stroke();
+      ctx.fillStyle = '#9fb2d8';
+      ctx.fillText(piLabel(x), px, plotR.y+plotR.h+6);
+    }
+    // grid: horizontal at integers
+    ctx.textAlign='right'; ctx.textBaseline='middle';
+    for(let y=Y_MIN;y<=Y_MAX;y++){
+      const py = yToPx(y);
+      ctx.strokeStyle = (y===0)? 'rgba(255,255,255,0.20)' : 'rgba(255,255,255,0.07)';
+      ctx.beginPath(); ctx.moveTo(plotR.x, py); ctx.lineTo(plotR.x+plotR.w, py); ctx.stroke();
+      ctx.fillStyle = '#9fb2d8';
+      ctx.fillText(String(y), plotR.x-8, py);
+    }
+    // axis titles
+    ctx.fillStyle='#9fb2d8'; ctx.textAlign='center'; ctx.textBaseline='alphabetic';
+    ctx.fillText('Angle x (radians)', plotR.x+plotR.w/2, H-6);
+    ctx.save();
+    ctx.translate(14, plotR.y+plotR.h/2); ctx.rotate(-PI/2);
+    ctx.textBaseline='middle'; ctx.fillText('y', 0, 0);
+    ctx.restore();
+
+    // asymptote dashed lines (only for shown funcs that have them)
+    const asymSet = new Set();
+    FUNCS.forEach(fn=>{ if(shown[fn.key] && fn.asym) asymptotesFor(fn.asym).forEach(x=>asymSet.add(Math.round(x*1e6)/1e6)); });
+    if(asymSet.size){
+      ctx.save(); ctx.setLineDash([5,5]); ctx.strokeStyle='rgba(239,68,68,0.28)'; ctx.lineWidth=1;
+      asymSet.forEach(x=>{ const px=xToPx(x); ctx.beginPath(); ctx.moveTo(px,plotR.y); ctx.lineTo(px,plotR.y+plotR.h); ctx.stroke(); });
+      ctx.restore();
+    }
+
+    // clip to plot area for curves
+    ctx.save();
+    ctx.beginPath(); ctx.rect(plotR.x, plotR.y, plotR.w, plotR.h); ctx.clip();
+
+    const N = 1400;
+    FUNCS.forEach(fn=>{
+      if(!shown[fn.key]) return;
+      ctx.strokeStyle = fn.color; ctx.lineWidth = 2.2; ctx.lineJoin='round'; ctx.lineCap='round';
+      ctx.beginPath();
+      let pen=false, prevY=null;
+      for(let i=0;i<=N;i++){
+        const x = X_MIN + (X_MAX-X_MIN)*i/N;
+        let y = fn.f(x);
+        if(!isFinite(y)){ pen=false; prevY=null; continue; }
+        // break across asymptote: out of view OR large jump in sign with big magnitude
+        const outOfView = y > Y_MAX+0.6 || y < Y_MIN-0.6;
+        const jump = (prevY!==null) && Math.abs(y-prevY) > 6;
+        if(outOfView || jump){ pen=false; prevY = outOfView? null : y; if(!outOfView){ /*keep prevY*/ } continue; }
+        const px=xToPx(x), py=yToPx(y);
+        if(!pen){ ctx.moveTo(px,py); pen=true; } else { ctx.lineTo(px,py); }
+        prevY=y;
+      }
+      ctx.stroke();
+    });
+    ctx.restore();
+  }
+
+  // toolbar toggles + legend
+  const toolbar = document.getElementById('toolbar');
+  FUNCS.forEach(fn=>{
+    const b=document.createElement('button');
+    b.className='toggle '+(shown[fn.key]?'on':'off');
+    b.innerHTML='<span class="dot" style="background:'+fn.color+'"></span>'+fn.label;
+    b.onclick=()=>{ shown[fn.key]=!shown[fn.key]; b.className='toggle '+(shown[fn.key]?'on':'off'); draw(); };
+    toolbar.appendChild(b);
+  });
+  const sp=document.createElement('span'); sp.className='spacer'; toolbar.appendChild(sp);
+  const all=document.createElement('button'); all.className='btn'; all.textContent='Show all';
+  all.onclick=()=>{ FUNCS.forEach(fn=>shown[fn.key]=true); refreshToggles(); draw(); };
+  const none=document.createElement('button'); none.className='btn'; none.textContent='Hide all';
+  none.onclick=()=>{ FUNCS.forEach(fn=>shown[fn.key]=false); refreshToggles(); draw(); };
+  toolbar.appendChild(all); toolbar.appendChild(none);
+  function refreshToggles(){ [...toolbar.querySelectorAll('.toggle')].forEach((el,i)=>{ el.className='toggle '+(shown[FUNCS[i].key]?'on':'off'); }); }
+
+  // hover readout
+  function fmt(v){ return (v>9999||v<-9999||!isFinite(v))?'∞':v.toFixed(2); }
+  canvas.addEventListener('mousemove', e=>{
+    const rect=canvas.getBoundingClientRect();
+    const mx=e.clientX-rect.left;
+    if(mx<PAD.l || mx>W-PAD.r){ readout.classList.remove('show'); draw(); return; }
+    const x = X_MIN + (mx-PAD.l)/(W-PAD.l-PAD.r)*(X_MAX-X_MIN);
+    draw();
+    // vertical cursor
+    ctx.save(); ctx.strokeStyle='rgba(255,255,255,0.35)'; ctx.setLineDash([4,4]);
+    ctx.beginPath(); ctx.moveTo(mx,PAD.t); ctx.lineTo(mx,H-PAD.b); ctx.stroke(); ctx.restore();
+    let rows='<div class="rx">x = '+x.toFixed(3)+' rad = '+(x/PI).toFixed(2)+'π</div>';
+    FUNCS.forEach(fn=>{ if(shown[fn.key]) rows+='<div class="row"><span><span class="swatch" style="background:'+fn.color+'"></span>'+fn.key+'</span><span>'+fmt(fn.f(x))+'</span></div>'; });
+    readout.innerHTML=rows; readout.classList.add('show');
+    // dots on visible curves
+    FUNCS.forEach(fn=>{ if(!shown[fn.key]) return; const y=fn.f(x); if(!isFinite(y)||y>Y_MAX+0.6||y<Y_MIN-0.6) return; ctx.fillStyle=fn.color; ctx.beginPath(); ctx.arc(xToPx(x),yToPx(y),3.5,0,2*PI); ctx.fill(); });
+  });
+  canvas.addEventListener('mouseleave', ()=>{ readout.classList.remove('show'); draw(); });
+
+  window.addEventListener('resize', resize);
+  resize();
+
+  // ---- exact-values table at standard angles ----
+  const deg = [0,30,45,60,90,120,135,150,180,210,225,240,270,300,315,330,360];
+  const rad = ['0','π/6','π/4','π/3','π/2','2π/3','3π/4','5π/6','π','7π/6','5π/4','4π/3','3π/2','5π/3','7π/4','11π/6','2π'];
+  const r2='1/√2', r3h='√3/2', r3='1/√3', tr3='2/√3', s2='√2', s3='√3';
+  const rows = {
+    sin: ['0','1/2',r2,r3h,'1',r3h,r2,'1/2','0','−1/2','−'+r2,'−'+r3h,'−1','−'+r3h,'−'+r2,'−1/2','0'],
+    cos: ['1',r3h,r2,'1/2','0','−1/2','−'+r2,'−'+r3h,'−1','−'+r3h,'−'+r2,'−1/2','0','1/2',r2,r3h,'1'],
+    tan: ['0',r3,'1',s3,'UD','−'+s3,'−1','−'+r3,'0',r3,'1',s3,'UD','−'+s3,'−1','−'+r3,'0'],
+    csc: ['UD','2',s2,tr3,'1',tr3,s2,'2','UD','−2','−'+s2,'−'+tr3,'−1','−'+tr3,'−'+s2,'−2','UD'],
+    sec: ['1',tr3,s2,'2','UD','−2','−'+s2,'−'+tr3,'−1','−'+tr3,'−'+s2,'−2','UD','2',s2,tr3,'1'],
+    cot: ['UD',s3,'1',r3,'0','−'+r3,'−1','−'+s3,'UD',s3,'1',r3,'0','−'+r3,'−1','−'+s3,'UD'],
+  };
+  function cellClass(v){ if(v==='UD') return 'ud'; if(String(v).indexOf('−')===0) return 'neg'; return ''; }
+  (function buildTable(){
+    const t=document.getElementById('valTable');
+    let h='<thead><tr><th class="rowhead">Function</th>';
+    deg.forEach(d=>h+='<th>'+d+'°</th>'); h+='</tr></thead><tbody>';
+    h+='<tr class="angle"><td class="rowhead">Radians</td>';
+    rad.forEach(r=>h+='<td>'+r+'</td>'); h+='</tr>';
+    ['sin','cos','tan','csc','sec','cot'].forEach(fn=>{
+      h+='<tr><td class="rowhead fn-'+fn+'">'+fn+'</td>';
+      rows[fn].forEach(v=>h+='<td class="'+cellClass(v)+'">'+v+'</td>');
+      h+='</tr>';
+    });
+    h+='</tbody>'; t.innerHTML=h;
+  })();
+})();
+</script>
+</body>
+</html>
