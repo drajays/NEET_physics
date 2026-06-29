@@ -1,35 +1,68 @@
 /**
- * NeetGlassbox — "Glass Box" hub: a gallery of standalone interactive
- * physics tools / simulators. Each tool is a self-contained HTML file under
- * glassbox/ and opens in a new browser tab. Renders into #glassboxView.
+ * NeetGlassbox — "Glass Box" hub: a gallery of standalone, glassmorphism
+ * physics solver tools. Each tool is a self-contained HTML file under
+ * glassbox/ that shows every solving step, and opens in a new browser tab.
+ * Renders into #glassboxView.
  *
- * To add a tool: drop the HTML file in glassbox/, add an entry to TOOLS
- * below (and to the SW shell list in sw.js), then rebuild cache versions.
+ * To add a tool: drop its HTML in glassbox/, add an entry to TOOLS below,
+ * add it to the SW shell (sw.js) and bump cache versions. See the
+ * glassbox_physics_solver skill for the full build + register flow.
  */
 (function (global) {
   let deps = {};
   let container = null;
+  const ui = { q: '', tag: '' };
 
   // --- tool manifest (the only thing you edit to add a new Glass Box tool) ---
   const TOOLS = [
     {
       id: 'vector-solver',
       title: 'Vector Physics Solver',
-      desc: 'Step-by-step vector addition, components, dot/cross products and magnitudes — every step shown inside the glass box.',
+      desc: 'Vector addition, components, dot/cross products and magnitudes — every step shown, fully offline.',
       file: 'glassbox/vector_solver_app.html',
       icon: '➗',
       tags: ['Vectors', 'Kinematics'],
       cls: 'XI'
+    },
+    {
+      id: 'calculus-solver',
+      title: 'Differential Calculus Solver',
+      desc: 'Derivatives, rates of change and slopes for NEET physics — step-by-step working with units preserved.',
+      file: 'glassbox/calculus_physics_solver.html',
+      icon: '∂',
+      tags: ['Calculus', 'Kinematics'],
+      cls: 'XI'
     }
-    // Add the next 49+ tools here, one object each.
+    // Add the next tools here, one object each.
   ];
 
   function init(dependencies) {
     deps = dependencies || {};
     container = document.getElementById('glassboxView');
+    if (container && !container.dataset.bound) {
+      container.addEventListener('click', handleClick);
+      container.addEventListener('input', handleInput);
+      container.dataset.bound = '1';
+    }
   }
 
   const esc = t => (deps.escapeHtml ? deps.escapeHtml(t) : String(t == null ? '' : t));
+
+  function allTags() {
+    const seen = [];
+    TOOLS.forEach(t => (t.tags || []).forEach(tag => { if (!seen.includes(tag)) seen.push(tag); }));
+    return seen.sort();
+  }
+
+  function filtered() {
+    const q = ui.q.trim().toLowerCase();
+    return TOOLS.filter(t => {
+      if (ui.tag && !(t.tags || []).includes(ui.tag)) return false;
+      if (!q) return true;
+      const hay = [t.title, t.desc, (t.tags || []).join(' ')].join(' ').toLowerCase();
+      return hay.includes(q);
+    });
+  }
 
   function toolCard(tool) {
     const tags = (tool.tags || [])
@@ -53,20 +86,59 @@
   function render() {
     if (!container) container = document.getElementById('glassboxView');
     if (!container) return;
-    const count = TOOLS.length;
-    const cards = count
-      ? `<div class="glassbox-grid">${TOOLS.map(toolCard).join('')}</div>`
-      : `<div class="empty-state panel-card"><h3>No tools yet</h3><p>Interactive tools will appear here.</p></div>`;
+    const total = TOOLS.length;
+    const list = filtered();
+    const chips = ['', ...allTags()].map(tag => {
+      const label = tag || 'All';
+      return `<button type="button" class="chip-toggle${ui.tag === tag ? ' on' : ''}" data-tag="${esc(tag)}">${esc(label)}</button>`;
+    }).join('');
+    const grid = list.length
+      ? `<div class="glassbox-grid">${list.map(toolCard).join('')}</div>`
+      : `<div class="empty-state panel-card"><h3>No tools match</h3><p>Try a different search or filter.</p></div>`;
+
     container.innerHTML = `
       <div class="view-hero compact">
         <div>
           <p class="eyebrow-dark">Glass Box</p>
-          <h2>Interactive physics tools</h2>
-          <p class="lead">Self-contained solvers and simulators that show every working step. Each opens in a new tab.</p>
+          <h2>Interactive physics solvers</h2>
+          <p class="lead">Step-by-step solver tools that show the full method — given data, principle, formula, substitution, units and the final answer. Each opens in a new tab.</p>
         </div>
-        <span class="pill">${count} tool${count === 1 ? '' : 's'}</span>
+        <span class="pill">${total} tool${total === 1 ? '' : 's'}</span>
       </div>
-      ${cards}`;
+
+      <div class="glassbox-philosophy panel-card">
+        <strong>Why "glass box"?</strong>
+        <span>Unlike a calculator, these tools never hide the working. Use <em>Show Steps</em> or <em>Auto Solve</em> to watch every line of reasoning — and learn the method, not just the answer.</span>
+      </div>
+
+      <div class="glassbox-toolbar">
+        <input id="glassboxSearch" type="search" class="search-input" placeholder="Search tools…" value="${esc(ui.q)}" aria-label="Search Glass Box tools" />
+        <div class="glassbox-tags chip-group">${chips}</div>
+      </div>
+
+      ${grid}`;
+
+    const search = container.querySelector('#glassboxSearch');
+    if (search) {
+      // keep focus + caret after re-render
+      search.focus();
+      const v = search.value; search.value = ''; search.value = v;
+    }
+  }
+
+  function handleClick(e) {
+    const chip = e.target.closest('[data-tag]');
+    if (chip) {
+      ui.tag = chip.dataset.tag || '';
+      render();
+    }
+  }
+
+  function handleInput(e) {
+    if (e.target && e.target.id === 'glassboxSearch') {
+      ui.q = e.target.value;
+      render();
+    }
   }
 
   global.NeetGlassbox = { init, render };

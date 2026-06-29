@@ -276,6 +276,16 @@ img { display: block; max-width: 100%; }
 .glassbox-card-desc { color: var(--muted); font-size: 0.9rem; margin: 8px 0 0; line-height: 1.5; }
 .glassbox-card-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
 .glassbox-card-open { color: var(--primary); font-weight: 700; font-size: 0.85rem; }
+.glassbox-philosophy {
+  display: flex; flex-wrap: wrap; gap: 4px 10px; align-items: baseline;
+  margin-bottom: 16px; font-size: 0.9rem; line-height: 1.5;
+  background: linear-gradient(135deg, var(--surface-3), var(--surface));
+}
+.glassbox-philosophy strong { color: var(--primary); }
+.glassbox-philosophy span { color: var(--muted); }
+.glassbox-toolbar { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin-bottom: 18px; }
+.glassbox-toolbar .search-input { flex: 1 1 220px; max-width: 320px; }
+.glassbox-tags { display: flex; flex-wrap: wrap; gap: 8px; }
 
 /* ── Progress ring ───────────────────────────────────────────────────── */
 .progress-ring { transform: rotate(-90deg); }

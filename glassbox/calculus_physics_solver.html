@@ -1,0 +1,1172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glass Box Differential Calculus Physics Solver (NEET UG)</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['Fira Code', 'monospace'],
+                    },
+                    colors: {
+                        primary: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            800: '#075985',
+                            900: '#0c4a6e',
+                        },
+                        glass: {
+                            bg: 'rgba(255, 255, 255, 0.85)',
+                            border: 'rgba(255, 255, 255, 0.4)',
+                            darkBg: 'rgba(15, 23, 42, 0.75)',
+                        }
+                    },
+                    boxShadow: {
+                        glass: '0 8px 32px 0 rgba(31, 38, 135, 0.15)',
+                        glassDark: '0 8px 32px 0 rgba(0, 0, 0, 0.37)',
+                    },
+                    backdropBlur: {
+                        glass: '12px',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #c5c5c5;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #a0a0a0;
+        }
+        /* Mathematical expressions styling */
+        .math {
+            font-family: 'Fira Code', monospace;
+            background-color: #f1f5f9;
+            padding: 0.125rem 0.375rem;
+            border-radius: 0.25rem;
+            color: #0f172a;
+            font-weight: 500;
+        }
+        .math-block {
+            font-family: 'Fira Code', monospace;
+            background-color: #f8fafc;
+            border-left: 4px solid #0284c7;
+            padding: 0.75rem 1rem;
+            margin: 0.5rem 0;
+            border-radius: 0 0.375rem 0.375rem 0;
+            color: #0f172a;
+            font-size: 0.95rem;
+            overflow-x: auto;
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.12);
+        }
+        .step-transition {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    </style>
+</head>
+<body class="bg-slate-100 text-slate-800 font-sans min-h-screen pb-16 bg-gradient-to-br from-slate-100 via-sky-50 to-indigo-50">
+
+    <!-- Header Section -->
+    <header class="sticky top-0 z-50 glass-panel border-b border-slate-200 py-4 px-4 sm:px-6 mb-6 shadow-sm">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+            <div class="flex items-center space-x-3">
+                <div class="bg-gradient-to-tr from-sky-600 to-indigo-600 text-white p-2.5 rounded-xl shadow-md shadow-sky-500/30 flex items-center justify-center">
+                    <i class="fa-solid fa-cube text-2xl"></i>
+                </div>
+                <div>
+                    <h1 class="text-2xl font-bold bg-gradient-to-r from-sky-800 to-indigo-800 bg-clip-text text-transparent">Glass Box Physics Calculus Solver</h1>
+                    <p class="text-xs font-semibold uppercase tracking-wider text-sky-700">NEET UG Level &bull; Differential Calculus Applications</p>
+                </div>
+            </div>
+            <div class="text-sm text-slate-600 max-w-xl md:text-right">
+                Every problem now supports detailed step-by-step solving. Use <strong class="text-sky-700 font-semibold">Auto Solve</strong> to fill answers instantly or <strong class="text-sky-700 font-semibold">Show Steps</strong> to reveal each reasoning stage.
+            </div>
+        </div>
+        <!-- Feature Badges -->
+        <div class="max-w-7xl mx-auto mt-3 flex flex-wrap gap-2 items-center justify-start md:justify-end text-xs">
+            <span class="bg-sky-100 text-sky-800 px-2.5 py-1 rounded-full font-medium flex items-center gap-1">
+                <i class="fa-solid fa-gears text-sky-600"></i> Detailed solving
+            </span>
+            <span class="bg-emerald-100 text-emerald-800 px-2.5 py-1 rounded-full font-medium flex items-center gap-1">
+                <i class="fa-solid fa-wand-magic-sparkles text-emerald-600"></i> Auto fill answers
+            </span>
+            <span class="bg-indigo-100 text-indigo-800 px-2.5 py-1 rounded-full font-medium flex items-center gap-1">
+                <i class="fa-solid fa-magnifying-glass-chart text-indigo-600"></i> Glass-box explanation
+            </span>
+            <span class="bg-purple-100 text-purple-800 px-2.5 py-1 rounded-full font-medium flex items-center gap-1">
+                <i class="fa-solid fa-cubes text-purple-600"></i> 30 calculus exercises
+            </span>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6">
+
+        <!-- Toolbar / Action Buttons -->
+        <div class="bg-white rounded-2xl p-4 shadow-sm border border-slate-200 mb-6 flex flex-wrap items-center justify-between gap-3">
+            <div class="flex flex-wrap items-center gap-2 w-full sm:w-auto">
+                <button id="btn-random" onclick="generateRandomQuestion()" class="flex-1 sm:flex-none bg-slate-800 hover:bg-slate-700 text-white font-medium text-sm px-4 py-2.5 rounded-xl shadow transition flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-shuffle text-sky-400"></i> Generate Random Question
+                </button>
+            </div>
+            <div class="flex flex-wrap items-center gap-2 w-full sm:w-auto justify-end">
+                <button id="btn-show-solution" onclick="showFullSolution()" class="flex-1 sm:flex-none bg-sky-600 hover:bg-sky-700 text-white font-medium text-sm px-4 py-2.5 rounded-xl shadow-sm shadow-sky-600/20 transition flex items-center justify-center gap-1.5">
+                    <i class="fa-solid fa-book-open"></i> Show Full Solution
+                </button>
+                <button id="btn-show-steps" onclick="showSteps()" class="flex-1 sm:flex-none bg-indigo-600 hover:bg-indigo-700 text-white font-medium text-sm px-4 py-2.5 rounded-xl shadow-sm shadow-indigo-600/20 transition flex items-center justify-center gap-1.5">
+                    <i class="fa-solid fa-list-ol"></i> Show Steps
+                </button>
+                <button id="btn-auto-solve" onclick="autoSolve()" class="flex-1 sm:flex-none bg-emerald-600 hover:bg-emerald-700 text-white font-medium text-sm px-4 py-2.5 rounded-xl shadow-sm shadow-emerald-600/20 transition flex items-center justify-center gap-1.5">
+                    <i class="fa-solid fa-bolt"></i> Auto Solve
+                </button>
+                <button id="btn-show-hint" onclick="showHint()" class="flex-1 sm:flex-none bg-amber-500 hover:bg-amber-600 text-white font-medium text-sm px-4 py-2.5 rounded-xl shadow-sm shadow-amber-500/20 transition flex items-center justify-center gap-1.5">
+                    <i class="fa-solid fa-lightbulb"></i> Show Hint
+                </button>
+                <button id="btn-check-answer" onclick="checkMyAnswer()" class="flex-1 sm:flex-none bg-blue-600 hover:bg-blue-700 text-white font-medium text-sm px-4 py-2.5 rounded-xl shadow-sm shadow-blue-600/20 transition flex items-center justify-center gap-1.5">
+                    <i class="fa-solid fa-circle-check"></i> Check My Answer
+                </button>
+                <button id="btn-clear-answer" onclick="clearAnswer()" class="flex-1 sm:flex-none bg-slate-200 hover:bg-slate-300 text-slate-700 font-medium text-sm px-4 py-2.5 rounded-xl transition flex items-center justify-center gap-1.5">
+                    <i class="fa-solid fa-rotate-left"></i> Clear Answer
+                </button>
+            </div>
+        </div>
+
+        <!-- Filter Bar / Topic Tabs -->
+        <div class="bg-white rounded-2xl p-2 shadow-sm border border-slate-200 mb-6 overflow-x-auto">
+            <div class="flex items-center space-x-1 min-w-max" id="topic-filters">
+                <button onclick="filterTopic('all')" id="tab-all" class="topic-tab active-tab bg-sky-600 text-white px-4 py-2 rounded-xl text-sm font-medium transition flex items-center gap-2">
+                    <i class="fa-solid fa-boxes-stacked"></i> All topics
+                </button>
+                <button onclick="filterTopic('kinematics')" id="tab-kinematics" class="topic-tab hover:bg-slate-100 text-slate-700 px-4 py-2 rounded-xl text-sm font-medium transition flex items-center gap-2">
+                    <i class="fa-solid fa-person-running text-sky-600"></i> Kinematics (1D & 2D)
+                </button>
+                <button onclick="filterTopic('nlm')" id="tab-nlm" class="topic-tab hover:bg-slate-100 text-slate-700 px-4 py-2 rounded-xl text-sm font-medium transition flex items-center gap-2">
+                    <i class="fa-solid fa-weight-hanging text-indigo-600"></i> NLM, Work, Power & Energy
+                </button>
+                <button onclick="filterTopic('shm')" id="tab-shm" class="topic-tab hover:bg-slate-100 text-slate-700 px-4 py-2 rounded-xl text-sm font-medium transition flex items-center gap-2">
+                    <i class="fa-solid fa-wave-square text-emerald-600"></i> SHM & Waves
+                </button>
+                <button onclick="filterTopic('heat')" id="tab-heat" class="topic-tab hover:bg-slate-100 text-slate-700 px-4 py-2 rounded-xl text-sm font-medium transition flex items-center gap-2">
+                    <i class="fa-solid fa-temperature-three-quarters text-amber-500"></i> Heat & Thermodynamics
+                </button>
+                <button onclick="filterTopic('electrostatics')" id="tab-electrostatics" class="topic-tab hover:bg-slate-100 text-slate-700 px-4 py-2 rounded-xl text-sm font-medium transition flex items-center gap-2">
+                    <i class="fa-solid fa-bolt text-yellow-600"></i> Electrostatics & Current Elec.
+                </button>
+                <button onclick="filterTopic('em')" id="tab-em" class="topic-tab hover:bg-slate-100 text-slate-700 px-4 py-2 rounded-xl text-sm font-medium transition flex items-center gap-2">
+                    <i class="fa-solid fa-magnet text-purple-600"></i> EM Induction & AC
+                </button>
+                <button onclick="filterTopic('modern')" id="tab-modern" class="topic-tab hover:bg-slate-100 text-slate-700 px-4 py-2 rounded-xl text-sm font-medium transition flex items-center gap-2">
+                    <i class="fa-solid fa-atom text-blue-600"></i> Modern Physics
+                </button>
+            </div>
+        </div>
+
+        <!-- Status / Info Bar -->
+        <div class="bg-slate-800 text-slate-100 rounded-2xl px-6 py-3 shadow-md mb-6 flex flex-wrap items-center justify-between gap-4 text-sm font-medium">
+            <div class="flex items-center gap-2">
+                <i class="fa-solid fa-chart-simple text-sky-400"></i>
+                <span id="status-loaded">Loaded: 1 / 30 reviewed</span>
+            </div>
+            <div class="flex items-center gap-2">
+                <i class="fa-solid fa-terminal text-emerald-400"></i>
+                <span id="status-solver">Solver: waiting for user input</span>
+            </div>
+            <div class="flex items-center gap-2">
+                <i class="fa-solid fa-award text-amber-400"></i>
+                <span id="status-score">Last score: 0/0</span>
+            </div>
+        </div>
+
+        <!-- Main Workspace (Active Question & Solver View) -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-12">
+            
+            <!-- Active Question & Inputs Column -->
+            <div class="lg:col-span-6 flex flex-col gap-6">
+                <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-sm border border-slate-200 flex-1 flex flex-col justify-between">
+                    <div>
+                        <!-- Question Header -->
+                        <div class="flex items-center justify-between border-b border-slate-100 pb-4 mb-6">
+                            <h2 id="q-title" class="text-2xl font-bold text-slate-900 flex items-center gap-3">
+                                <span class="bg-sky-600 text-white px-3 py-1 rounded-xl text-lg">Q1</span>
+                                Position & Velocity Zero Time
+                            </h2>
+                            <span id="q-topic-badge" class="bg-slate-100 text-slate-700 font-medium text-xs px-3 py-1.5 rounded-full border border-slate-200 uppercase tracking-wider">
+                                Topic: Kinematics
+                            </span>
+                        </div>
+
+                        <!-- Question Statement -->
+                        <div id="q-statement" class="text-slate-700 text-lg leading-relaxed mb-8 prose">
+                            The position <span class="math">x</span> of a particle moving along the x-axis varies with time <span class="math">t</span> as <span class="math">x = 3t² - 2t³</span>, where <span class="math">x</span> is in meters and <span class="math">t</span> is in seconds. At what time will the velocity of the particle become zero?
+                        </div>
+
+                        <!-- Hint Box (Hidden by default) -->
+                        <div id="hint-box" class="hidden bg-amber-50 border border-amber-200 rounded-2xl p-4 mb-8 text-slate-700 text-sm shadow-sm">
+                            <div class="font-bold text-amber-800 mb-1 flex items-center gap-2">
+                                <i class="fa-solid fa-lightbulb text-amber-600"></i> Glass Box Hint
+                            </div>
+                            <div id="hint-content">Velocity is the first derivative of position with respect to time (<span class="math">v = dx/dt</span>). Differentiate the position expression, equate it to zero, and solve for <span class="math">t > 0</span>.</div>
+                        </div>
+
+                        <!-- Input Fields Container -->
+                        <div class="space-y-4 mb-8" id="inputs-container">
+                            <!-- Inputs dynamically injected here -->
+                        </div>
+                    </div>
+
+                    <!-- Score / Verification Results Panel -->
+                    <div id="score-panel" class="hidden bg-slate-50 border border-slate-200 rounded-2xl p-6">
+                        <div id="score-header" class="text-xl font-bold text-slate-900 mb-3 flex items-center gap-2">
+                            Score: 1/1
+                        </div>
+                        <div id="score-details" class="space-y-2 text-sm">
+                            <!-- Verification results injected here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Glass Box Step-by-Step Details Column -->
+            <div class="lg:col-span-6 flex flex-col gap-6">
+                <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-sm border border-slate-200 flex-1 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between border-b border-slate-100 pb-4 mb-6">
+                            <h3 class="text-xl font-bold text-slate-900 flex items-center gap-2">
+                                <i class="fa-solid fa-microchip text-sky-600"></i> Step-by-step solving full details
+                            </h3>
+                            <button onclick="toggleAllSteps()" id="btn-toggle-steps" class="text-xs font-semibold text-sky-700 hover:text-sky-800 flex items-center gap-1 bg-sky-50 hover:bg-sky-100 px-3 py-1.5 rounded-full transition">
+                                Expand All
+                            </button>
+                        </div>
+
+                        <!-- Steps Container -->
+                        <div id="steps-container" class="space-y-4 mb-8">
+                            <!-- Steps dynamically injected here -->
+                        </div>
+                    </div>
+
+                    <!-- Final Answer / Summary Box -->
+                    <div id="summary-panel" class="hidden bg-gradient-to-br from-slate-900 to-slate-800 text-white rounded-2xl p-6 shadow-lg border border-slate-700">
+                        <div class="text-xs font-semibold uppercase tracking-widest text-sky-400 mb-2 flex items-center gap-2">
+                            <i class="fa-solid fa-flag-checkered"></i> Solver Final Answer
+                        </div>
+                        <div id="summary-content" class="text-lg font-mono font-medium leading-relaxed space-y-2">
+                            <!-- Summary injected here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Question Bank Section -->
+        <section class="bg-white rounded-3xl p-6 sm:p-8 shadow-sm border border-slate-200">
+            <div class="border-b border-slate-100 pb-4 mb-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
+                <div>
+                    <h2 class="text-2xl font-bold text-slate-900 flex items-center gap-2">
+                        <i class="fa-solid fa-database text-sky-600"></i> Question Bank
+                    </h2>
+                    <p class="text-sm text-slate-500 mt-1">Click any question to load it. Each item has solver logic, final answers, and a fully expanded sequence of steps.</p>
+                </div>
+                <div class="text-sm font-semibold text-slate-600 bg-slate-100 px-4 py-2 rounded-xl border border-slate-200 flex items-center gap-2">
+                    <i class="fa-solid fa-filter text-sky-600"></i> Active Filter: <span id="lbl-active-filter">All topics</span>
+                </div>
+            </div>
+
+            <!-- Question Grid -->
+            <div id="qb-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <!-- Question bank items injected here -->
+            </div>
+        </section>
+
+    </main>
+
+    <!-- JavaScript Application Logic -->
+    <script>
+        // Data structure for all 30 HC Verma Physics based Differential Calculus questions
+        const questionsData = [
+            // Section 1: Kinematics (1D & 2D)
+            {
+                id: 1,
+                title: "Position & Velocity Zero Time",
+                topic: "kinematics",
+                topicLabel: "Kinematics (1D & 2D)",
+                statement: "The position <span class='math'>x</span> of a particle moving along the x-axis varies with time <span class='math'>t</span> as <span class='math'>x = 3t² - 2t³</span>, where <span class='math'>x</span> is in meters and <span class='math'>t</span> is in seconds. At what time will the velocity of the particle become zero?",
+                hint: "Velocity is the first derivative of position with respect to time (<span class='math'>v = dx/dt</span>). Differentiate the position expression, equate it to zero, and solve for <span class='math'>t > 0</span>.",
+                inputs: [
+                    { label: "Time when velocity is zero", value: 1.0, unit: "s", tol: 0.01 }
+                ],
+                steps: [
+                    { title: "Step 1: Given data", content: "Position function of the particle: <div class='math-block'>x(t) = 3t² - 2t³ m</div>" },
+                    { title: "Step 2: Relate velocity to position", content: "By definition, instantaneous velocity is the time derivative of position: <div class='math-block'>v(t) = dx/dt = d/dt(3t² - 2t³)</div>" },
+                    { title: "Step 3: Calculate derivative", content: "Differentiating term by term using the power rule <span class='math'>d/dt(tⁿ) = n tⁿ⁻¹</span>: <div class='math-block'>v(t) = 3(2t) - 2(3t²) = 6t - 6t²</div>" },
+                    { title: "Step 4: Solve for v = 0", content: "Equate velocity to zero: <div class='math-block'>6t - 6t² = 0<br>6t(1 - t) = 0</div> This yields two roots: <span class='math'>t = 0</span> (starting point) and <span class='math'>t = 1.0 s</span>." },
+                    { title: "Step 5: Final determination", content: "Since <span class='math'>t = 0</span> represents the initial rest state, the particle comes to rest again at <span class='math'>t = 1.0 s</span>." }
+                ],
+                finalSummary: "v(t) = 6t - 6t² m/s<br>Time for v=0: t = 1.0 s"
+            },
+            {
+                id: 2,
+                title: "Retardation in Terms of Velocity",
+                topic: "kinematics",
+                topicLabel: "Kinematics (1D & 2D)",
+                statement: "The relation between time <span class='math'>t</span> and position <span class='math'>x</span> of a moving body is given by <span class='math'>t = α x² + β x</span>, where <span class='math'>α</span> and <span class='math'>β</span> are positive constants. The retardation of the body can be expressed as <span class='math'>C α v³</span>. Find the numerical coefficient <span class='math'>C</span>.",
+                hint: "Differentiate <span class='math'>t</span> with respect to <span class='math'>x</span> to find <span class='math'>dt/dx = 1/v</span>. Then express <span class='math'>v</span> as a function of <span class='math'>x</span> and use <span class='math'>a = v(dv/dx)</span>.",
+                inputs: [
+                    { label: "Numerical coefficient C in retardation (C α v³)", value: 2, unit: "", tol: 0.01 }
+                ],
+                steps: [
+                    { title: "Step 1: Given relation", content: "Time as a function of position: <div class='math-block'>t = α x² + β x</div>" },
+                    { title: "Step 2: Differentiate with respect to x", content: "Differentiating both sides with respect to <span class='math'>x</span>: <div class='math-block'>dt/dx = d/dx(α x² + β x) = 2α x + β</div>" },
+                    { title: "Step 3: Express velocity v", content: "Since velocity <span class='math'>v = dx/dt</span>, we take the reciprocal of <span class='math'>dt/dx</span>: <div class='math-block'>v = (2α x + β)⁻¹</div>" },
+                    { title: "Step 4: Use acceleration relation a = v(dv/dx)", content: "Find <span class='math'>dv/dx</span> using the chain rule: <div class='math-block'>dv/dx = -1(2α x + β)⁻² &middot; d/dx(2α x + β)<br>dv/dx = -2α(2α x + β)⁻²</div>" },
+                    { title: "Step 5: Substitute v into acceleration", content: "Notice that <span class='math'>(2α x + β)⁻² = v²</span>. Therefore: <div class='math-block'>a = v &middot; (-2α v²) = -2α v³</div>" },
+                    { title: "Step 6: Determine retardation", content: "Retardation is negative acceleration (<span class='math'>-a</span>), which equals <span class='math'>2α v³</span>. Thus, the coefficient <span class='math'>C = 2</span>." }
+                ],
+                finalSummary: "Acceleration a = -2α v³<br>Retardation = 2α v³<br>Coefficient C = 2"
+            },
+            {
+                id: 3,
+                title: "Velocity at Zero Acceleration",
+                topic: "kinematics",
+                topicLabel: "Kinematics (1D & 2D)",
+                statement: "A particle moves along a straight line such that its displacement <span class='math'>x</span> at any time <span class='math'>t</span> is given by <span class='math'>x = t³ - 6t² + 9t + 5 m</span>. What is the velocity of the particle when its acceleration becomes zero?",
+                hint: "Find velocity <span class='math'>v(t) = dx/dt</span> and acceleration <span class='math'>a(t) = dv/dt</span>. Solve <span class='math'>a(t) = 0</span> for <span class='math'>t</span>, then substitute this time back into <span class='math'>v(t)</span>.",
+                inputs: [
+                    { label: "Time when acceleration is zero", value: 2.0, unit: "s", tol: 0.01 },
+                    { label: "Velocity at that time", value: -3.0, unit: "m/s", tol: 0.01 }
+                ],
+                steps: [
+                    { title: "Step 1: Given displacement equation", content: "Displacement function: <div class='math-block'>x(t) = t³ - 6t² + 9t + 5 m</div>" },
+                    { title: "Step 2: Find velocity v(t)", content: "Differentiate displacement with respect to time: <div class='math-block'>v(t) = dx/dt = 3t² - 12t + 9</div>" },
+                    { title: "Step 3: Find acceleration a(t)", content: "Differentiate velocity with respect to time: <div class='math-block'>a(t) = dv/dt = 6t - 12</div>" },
+                    { title: "Step 4: Find time for zero acceleration", content: "Equate acceleration to zero: <div class='math-block'>6t - 12 = 0 &rArr; 6t = 12 &rArr; t = 2.0 s</div>" },
+                    { title: "Step 5: Calculate velocity at t = 2 s", content: "Substitute <span class='math'>t = 2</span> into the velocity expression: <div class='math-block'>v(2) = 3(2)² - 12(2) + 9<br>v(2) = 12 - 24 + 9 = -3.0 m/s</div>" }
+                ],
+                finalSummary: "Time of zero acceleration: t = 2.0 s<br>Velocity at t=2s: v = -3.0 m/s"
+            },
+            {
+                id: 4,
+                title: "Acceleration from Velocity-Position Relation",
+                topic: "kinematics",
+                topicLabel: "Kinematics (1D & 2D)",
+                statement: "The velocity <span class='math'>v</span> of a particle depends upon its position <span class='math'>x</span> as <span class='math'>v = β x⁻²ⁿ</span>, where <span class='math'>β</span> and <span class='math'>n</span> are positive constants. The acceleration of the particle is given by <span class='math'>C n β² x⁻⁴ⁿ⁻¹</span>. Find the numerical coefficient <span class='math'>C</span>.",
+                hint: "Use the relation <span class='math'>a = v(dv/dx)</span>. Differentiate <span class='math'>v</span> with respect to <span class='math'>x</span> using the power rule, then multiply by <span class='math'>v</span>.",
+                inputs: [
+                    { label: "Numerical coefficient C in acceleration", value: -2, unit: "", tol: 0.01 }
+                ],
+                steps: [
+                    { title: "Step 1: Given velocity function", content: "Velocity as a function of position: <div class='math-block'>v(x) = β x⁻²ⁿ</div>" },
+                    { title: "Step 2: Find spatial derivative dv/dx", content: "Differentiate <span class='math'>v</span> with respect to <span class='math'>x</span>: <div class='math-block'>dv/dx = β &middot; (-2n) x⁻²ⁿ⁻¹ = -2nβ x⁻²ⁿ⁻¹</div>" },
+                    { title: "Step 3: Apply acceleration formula", content: "Use the fundamental kinematic relation <span class='math'>a = v(dv/dx)</span>: <div class='math-block'>a = (β x⁻²ⁿ) &middot; (-2nβ x⁻²ⁿ⁻¹)</div>" },
+                    { title: "Step 4: Simplify exponents", content: "Combine the base <span class='math'>x</span> terms and constants: <div class='math-block'>a = -2n β² x⁻⁴ⁿ⁻¹</div> Comparing with <span class='math'>C n β² x⁻⁴ⁿ⁻¹</span>, we get <span class='math'>C = -2</span>." }
+                ],
+                finalSummary: "a(x) = -2n β² x⁻⁴ⁿ⁻¹<br>Coefficient C = -2"
+            },
+            {
+                id: 5,
+                title: "Maximum Displacement in 1D Motion",
+                topic: "kinematics",
+                topicLabel: "Kinematics (1D & 2D)",
+                statement: "A body moves along the x-axis such that its position is given by <span class='math'>x = 4t - t²</span>, where <span class='math'>x</span> is in meters and <span class='math'>t</span> is in seconds (<span class='math'>t &ge; 0</span>). What is the maximum displacement of the body in the positive x-direction from the origin?",
+                hint: "For maximum displacement, the rate of change of position (velocity) must be zero (<span class='math'>dx/dt = 0</span>). Find the time <span class='math'>t</span> and substitute it back into <span class='math'>x(t)</span>.",
+                inputs: [
+                    { label: "Time to reach maximum displacement", value: 2.0, unit: "s", tol: 0.01 },
+                    { label: "Maximum displacement from origin", value: 4.0, unit: "m", tol: 0.01 }
+                ],
+                steps: [
+                    { title: "Step 1: Given position equation", content: "Position function: <div class='math-block'>x(t) = 4t - t² m</div>" },
+                    { title: "Step 2: Condition for maximum displacement", content: "At the turnaround point (maximum displacement), instantaneous velocity is zero: <div class='math-block'>v = dx/dt = 0</div>" },
+                    { title: "Step 3: Calculate velocity and solve for t", content: "Differentiating <span class='math'>x(t)</span>: <div class='math-block'>v(t) = 4 - 2t = 0 &rArr; 2t = 4 &rArr; t = 2.0 s</div>" },
+                    { title: "Step 4: Verify maxima condition", content: "Check the second derivative <span class='math'>d²x/dt²</span>: <div class='math-block'>a = d²x/dt² = -2 < 0</div> Since acceleration is negative, <span class='math'>t = 2 s</span> represents a true maximum." },
+                    { title: "Step 5: Calculate maximum displacement", content: "Substitute <span class='math'>t = 2</span> into <span class='math'>x(t)</span>: <div class='math-block'>x_max = 4(2) - (2)² = 8 - 4 = 4.0 m</div>" }
+                ],
+                finalSummary: "Time to max displacement: t = 2.0 s<br>Maximum displacement x_max = 4.0 m"
+            },
+            {
+                id: 6,
+                title: "Resultant Velocity in 2D Harmonic Motion",
+                topic: "kinematics",
+                topicLabel: "Kinematics (1D & 2D)",
+                statement: "A particle moves in a plane with coordinates <span class='math'>x = a sin(ωt)</span> and <span class='math'>y = a cos(ωt)</span>. The magnitude of the instantaneous velocity of the particle is <span class='math'>C a ω</span>. Find the numerical coefficient <span class='math'>C</span>.",
+                hint: "Find velocity components <span class='math'>v_x = dx/dt</span> and <span class='math'>v_y = dy/dt</span>. Then compute the resultant magnitude <span class='math'>v = &radic;(v_x² + v_y²)</span>.",
+                inputs: [
+                    { label: "Numerical coefficient C in velocity magnitude", value: 1.0, unit: "", tol: 0.01 }
+                ],
+                steps: [
+                    { title: "Step 1: Given parametric coordinates", content: "Position coordinates as functions of time: <div class='math-block'>x(t) = a sin(ωt)<br>y(t) = a cos(ωt)</div>" },
+                    { title: "Step 2: Differentiate to find velocity components", content: "Compute <span class='math'>v_x</span> and <span class='math'>v_y</span>: <div class='math-block'>v_x = dx/dt = a ω cos(ωt)<br>v_y = dy/dt = -a ω sin(ωt)</div>" },
+                    { title: "Step 3: Calculate resultant velocity magnitude", content: "Use the Pythagorean theorem for vector magnitude: <div class='math-block'>v = &radic;(v_x² + v_y²)<br>v = &radic;[(a ω cos(ωt))² + (-a ω sin(ωt))²]</div>" },
+                    { title: "Step 4: Simplify using trigonometric identity", content: "Factor out common terms and use <span class='math'>cos²&theta; + sin²&theta; = 1</span>: <div class='math-block'>v = &radic;[a² ω² (cos²(ωt) + sin²(ωt))]<br>v = &radic;(a² ω²) = 1 &middot; a ω</div> Comparing with <span class='math'>C a ω</span>, we find <span class='math'>C = 1.0</span>." }
+                ],
+                finalSummary: "Velocity magnitude v = a ω<br>Coefficient C = 1.0"
+            },
+            {
+                id: 7,
+                title: "Acceleration of Root-Time Motion",
+                topic: "kinematics",
+                topicLabel: "Kinematics (1D & 2D)",
+                statement: "A particle moves such that its position <span class='math'>x</span> depends on time <span class='math'>t</span> as <span class='math'>x = &radic;(t + 1)</span>. The acceleration of the particle as a function of its velocity <span class='math'>v</span> is given by <span class='math'>C v³</span>. Find the numerical coefficient <span class='math'>C</span>.",
+                hint: "Express <span class='math'>v = dx/dt</span> in terms of <span class='math'>(t+1)</span>. Find <span class='math'>a = dv/dt</span> in terms of <span class='math'>(t+1)</span>. Then substitute <span class='math'>v</span> into <span class='math'>a</span>.",
+                inputs: [
+                    { label: "Numerical coefficient C in acceleration (C v³)", value: -2.0, unit: "", tol: 0.01 }
+                ],
+                steps: [
+                    { title: "Step 1: Given position function", content: "Position equation: <div class='math-block'>x(t) = (t + 1)^(1/2)</div>" },
+                    { title: "Step 2: Find velocity v(t)", content: "Differentiate <span class='math'>x</span> with respect to <span class='math'>t</span> using chain rule: <div class='math-block'>v = dx/dt = (1/2)(t + 1)^(-1/2)</div> Notice that this implies <span class='math'>(t + 1)^(-1/2) = 2v</span>." },
+                    { title: "Step 3: Find acceleration a(t)", content: "Differentiate <span class='math'>v</span> with respect to <span class='math'>t</span>: <div class='math-block'>a = dv/dt = (1/2)(-1/2)(t + 1)^(-3/2) = -(1/4)(t + 1)^(-3/2)</div>" },
+                    { title: "Step 4: Express acceleration in terms of v", content: "Rewrite the term <span class='math'>(t + 1)^(-3/2)</span> as <span class='math'>[(t + 1)^(-1/2)]³</span>: <div class='math-block'>a = -(1/4) &middot; (2v)³ = -(1/4)(8v³) = -2 v³</div> Comparing with <span class='math'>C v³</span>, we get <span class='math'>C = -2.0</span>." }
+                ],
+                finalSummary: "Acceleration a(v) = -2 v³<br>Coefficient C = -2.0"
+            },
+            {
+                id: 8,
+                title: "Instantaneous Angular Acceleration",
+                topic: "kinematics",
+                topicLabel: "Kinematics (1D & 2D)",
+                statement: "The angular displacement of a rotating disc varies with time as <span class='math'>&theta; = 2t³ + 0.5 t² rad</span>. Calculate the instantaneous angular velocity and angular acceleration of the disc at <span class='math'>t = 1 s</span>.",
+                hint: "Angular velocity <span class='math'>&omega; = d&theta;/dt</span> and angular acceleration <span class='math'>&alpha; = d&omega;/dt</span>. Differentiate the given polynomial twice.",
+                inputs: [
+                    { label: "Instantaneous angular velocity at t=1s", value: 7.0, unit: "rad/s", tol: 0.01 },
+                    { label: "Instantaneous angular acceleration at t=1s", value: 13.0, unit: "rad/s²", tol: 0.01 }
+                ],
+                steps: [
+                    { title: "Step 1: Given angular displacement", content: "Angular displacement function: <div class='math-block'>&theta;(t) = 2t³ + 0.5t² rad</div>" },
+                    { title: "Step 2: Find angular velocity &omega;(t)", content: "Differentiate <span class='math'>&theta;</span> with respect to time: <div class='math-block'>&omega;(t) = d&theta;/dt = d/dt(2t³ + 0.5t²) = 6t² + t</div>" },
+                    { title: "Step 3: Calculate &omega; at t = 1 s", content: "Substitute <span class='math'>t = 1</span> into <span class='math'>&omega;(t)</span>: <div class='math-block'>&omega;(1) = 6(1)² + 1 = 7.0 rad/s</div>" },
+                    { title: "Step 4: Find angular acceleration &alpha;(t)", content: "Differentiate <span class='math'>&omega;</span> with respect to time: <div class='math-block'>&alpha;(t) = d&omega;/dt = d/dt(6t² + t) = 12t + 1</div>" },
+                    { title: "Step 5: Calculate &alpha; at t = 1 s", content: "Substitute <span class='math'>t = 1</span> into <span class='math'>&alpha;(t)</span>: <div class='math-block'>&alpha;(1) = 12(1) + 1 = 13.0 rad/s²</div>" }
+                ],
+                finalSummary: "Angular velocity &omega;(1) = 7.0 rad/s<br>Angular acceleration &alpha;(1) = 13.0 rad/s²"
+            },
+            {
+                id: 9,
+                title: "Instantaneous Acceleration of a Car",
+                topic: "kinematics",
+                topicLabel: "Kinematics (1D & 2D)",
+                statement: "The velocity of a car traveling in a straight line is given by <span class='math'>v = 4t² + 2t m/s</span>. What is the instantaneous acceleration of the car at <span class='math'>t = 2 s</span>?",
+                hint: "Instantaneous acceleration is the time derivative of velocity (<span class='math'>a = dv/dt</span>). Differentiate the velocity function and evaluate at <span class='math'>t = 2 s</span>.",
+                inputs: [
+                    { label: "Instantaneous acceleration at t=2s", value: 18.0, unit: "m/s²", tol: 0.01 }
+                ],
+                steps: [
+                    { title: "Step 1: Given velocity equation", content: "Velocity function: <div class='math-block'>v(t) = 4t² + 2t m/s</div>" },
+                    { title: "Step 2: Relate acceleration to velocity", content: "Instantaneous acceleration is given by: <div class='math-block'>a(t) = dv/dt = d/dt(4t² + 2t)</div>" },
+                    { title: "Step 3: Calculate derivative", content: "Apply the polynomial derivative rule: <div class='math-block'>a(t) = 4(2t) + 2(1) = 8t + 2</div>" },
+                    { title: "Step 4: Evaluate at t = 2 s", content: "Substitute <span class='math'>t = 2</span> into the acceleration equation: <div class='math-block'>a(2) = 8(2) + 2 = 16 + 2 = 18.0 m/s²</div>" }
+                ],
+                finalSummary: "a(t) = 8t + 2 m/s²<br>a(2) = 18.0 m/s²"
+            },
+            {
+                id: 10,
+                title: "Maximum Height of Vertical Projection",
+                topic: "kinematics",
+                topicLabel: "Kinematics (1D & 2D)",
+                statement: "A body is projected vertically upward. Its height <span class='math'>y</span> above the ground at time <span class='math'>t</span> is given by <span class='math'>y = 20t - 5t² m</span>. Find the time taken to reach the maximum height and the maximum height attained by the body.",
+                hint: "At the peak of vertical motion, the vertical velocity becomes zero (<span class='math'>v_y = dy/dt = 0</span>). Solve for <span class='math'>t</span> and substitute into <span class='math'>y(t)</span>.",
+                inputs: [
+                    { label: "Time to reach maximum height", value: 2.0, unit: "s", tol: 0.01 },
+                    { label: "Maximum height attained", value: 20.0, unit: "m", tol: 0.01 }
+                ],
+                steps: [
+                    { title: "Step 1: Given height equation", content: "Vertical position function: <div class='math-block'>y(t) = 20t - 5t² m</div>" },
+                    { title: "Step 2: Differentiate to find vertical velocity", content: "Compute <span class='math'>v_y</span>: <div class='math-block'>v_y = dy/dt = d/dt(20t - 5t²) = 20 - 10t</div>" },
+                    { title: "Step 3: Condition for maximum height", content: "At the highest point, vertical velocity vanishes: <div class='math-block'>20 - 10t = 0 &rArr; 10t = 20 &rArr; t = 2.0 s</div>" },
+                    { title: "Step 4: Calculate maximum height", content: "Substitute <span class='math'>t = 2</span> into <span class='math'>y(t)</span>: <div class='math-block'>y_max = 20(2) - 5(2)² = 40 - 20 = 20.0 m</div>" }
+                ],
+                finalSummary: "Time to peak: t = 2.0 s<br>Max height y_max = 20.0 m"
+            },
+
+            // Section 2: NLM, Work, Power & Energy
+            {
+                id: 11,
+                title: "Variable Mass System (Conveyor Belt)",
+                topic: "nlm",
+                topicLabel: "NLM, Work, Power & Energy",
+                statement: "A conveyor belt moves at a constant velocity of <span class='math'>v = 2 m/s</span>. Sand falls on the belt from above at a constant rate of <span class='math'>dm/dt = 5 kg/s</span>. What is the extra external force required to maintain the speed of the belt?",
+                hint: "Use Newton's Second Law in its general form <span class='math'>F = dp/dt = d(mv)/dt</span>. Since velocity is constant, <span class='math'>F = v(dm/dt)</span>.",
+                inputs: [
+                    { label: "Extra external force required", value: 10.0, unit: "N", tol: 0.01 }
+                ],
+                steps: [
+                    { title: "Step 1: Given parameters", content: "Constant velocity <span class='math'>v = 2 m/s</span>. Rate of mass addition <span class='math'>dm/dt = 5 kg/s</span>." },
+                    { title: "Step 2: Apply Newton's Second Law", content: "The general form of Newton's second law relates force to the time derivative of momentum: <div class='math-block'>F = dp/dt = d/dt(m &middot; v)</div>" },
+                    { title: "Step 3: Apply product rule", content: "Expanding the derivative: <div class='math-block'>F = m(dv/dt) + v(dm/dt)</div>" },
+                    { title: "Step 4: Account for constant velocity", content: "Since the belt speed is constant, <span class='math'>dv/dt = 0</span>. Thus: <div class='math-block'>F = v &middot; (dm/dt)</div>" },
+                    { title: "Step 5: Calculate required force", content: "Substitute the numerical values: <div class='math-block'>F = 2 m/s &middot; 5 kg/s = 10.0 N</div>" }
+                ],
+                finalSummary: "Force F = v(dm/dt)<br>F = 10.0 N"
+            },
+            {
+                id: 12,
+                title: "Stable Equilibrium in Potential Well",
+                topic: "nlm",
+                topicLabel: "NLM, Work, Power & Energy",
+                statement: "The potential energy <span class='math'>U</span> of a particle in a conservative force field is given by <span class='math'>U(x) = A/x¹² - B/x⁶</span>, where <span class='math'>A</span> and <span class='math'>B</span> are positive constants. The position <span class='math'>x₀</span> of stable equilibrium is given by <span class='math'>(C &middot; A/B)^(1/6)</span>. Find the numerical coefficient <span class='math'>C</span>.",
+                hint: "For equilibrium, the conservative force must be zero (<span class='math'>F = -dU/dx = 0</span>). Differentiate <span class='math'>U(x)</span>, equate to zero, and solve for <span class='math'>x</span>.",
+                inputs: [
+                    { label: "Numerical coefficient C in equilibrium position", value: 2.0, unit: "", tol: 0.01 }
+                ],
+                steps: [
+                    { title: "Step 1: Given potential energy function", content: "Lennard-Jones type potential energy equation: <div class='math-block'>U(x) = A x⁻¹² - B x⁻⁶</div>" },
+                    { title: "Step 2: Relate force to potential energy", content: "In a conservative field, force is the negative gradient of potential energy: <div class='math-block'>F = -dU/dx</div> For equilibrium, <span class='math'>F = 0 &rArr; dU/dx = 0</span>." },
+                    { title: "Step 3: Calculate derivative dU/dx", content: "Using the power rule: <div class='math-block'>dU/dx = A(-12 x⁻¹³) - B(-6 x⁻⁷)<br>dU/dx = -12A/x¹³ + 6B/x⁷ = 0</div>" },
+                    { title: "Step 4: Solve for equilibrium position x₀", content: "Equate the two terms: <div class='math-block'>12A / x¹³ = 6B / x⁷<br>x¹³ / x⁷ = 12A / 6B<br>x⁶ = 2A / B &rArr; x₀ = (2A / B)^(1/6)</div> Comparing with <span class='math'>(C &middot; A/B)^(1/6)</span>, we find <span class='math'>C = 2.0</span>." }
+                ],
+                finalSummary: "Equilibrium position x₀ = (2A / B)^(1/6)<br>Coefficient C = 2.0"
+            },
+            {
+                id: 13,
+                title: "Equilibrium Position & Second Derivative",
+                topic: "nlm",
+                topicLabel: "NLM, Work, Power & Energy",
+                statement: "The potential energy of a body moving along the x-axis is given by <span class='math'>U(x) = 2x² - 4x + 5 J</span>. Find the equilibrium position <span class='math'>x</span> and the second derivative <span class='math'>d²U/dx²</span> at this point to confirm the nature of equilibrium.",
+                hint: "Set <span class='math'>dU/dx = 0</span> to find the equilibrium position. Then find <span class='math'>d²U/dx²</span>; if positive, the equilibrium is stable (potential minimum).",
+                inputs: [
+                    { label: "Equilibrium position x", value: 1.0, unit: "m", tol: 0.01 },
+                    { label: "Second derivative d²U/dx² at equilibrium", value: 4.0, unit: "J/m²", tol: 0.01 }
+                ],
+                steps: [
+                    { title: "Step 1: Given potential energy equation", content: "Potential energy function: <div class='math-block'>U(x) = 2x² - 4x + 5 J</div>" },
+                    { title: "Step 2: Find first derivative dU/dx", content: "Differentiate <span class='math'>U(x)</span> with respect to <span class='math'>x</span>: <div class='math-block'>dU/dx = d/dx(2x² - 4x + 5) = 4x - 4</div>" },
+                    { title: "Step 3: Find equilibrium position", content: "Set <span class='math'>dU/dx = 0</span>: <div class='math-block'>4x - 4 = 0 &rArr; 4x = 4 &rArr; x = 1.0 m</div>" },
+                    { title: "Step 4: Calculate second derivative d²U/dx²", content: "Differentiate <span class='math'>dU/dx</span> with respect to <span class='math'>x</span>: <div class='math-block'>d²U/dx² = d/dx(4x - 4) = 4.0 J/m²</div>" },
+                    { title: "Step 5: Determine nature of equilibrium", content: "Since <span class='math'>d²U/dx² = 4 > 0</span>, the potential energy is at a minimum. This corresponds to a stable equilibrium." }
+                ],
+                finalSummary: "Equilibrium position x = 1.0 m<br>d²U/dx² = 4.0 J/m² (Stable Equilibrium)"
+            },
+            {
+                id: 14,
+                title: "Instantaneous Power Delivery",
+                topic: "nlm",
+                topicLabel: "NLM, Work, Power & Energy",
+                statement: "A body of mass <span class='math'>1 kg</span> is constrained to move along the x-axis under the action of a variable force. Its position varies with time as <span class='math'>x = t³/3 m</span>. Calculate the instantaneous velocity, acceleration, and power delivered to the body by the force at <span class='math'>t = 2 s</span>.",
+                hint: "Instantaneous power <span class='math'>P = F &middot; v = m &middot; a &middot; v</span>. Find <span class='math'>v = dx/dt</span> and <span class='math'>a = dv/dt</span>, evaluate them at <span class='math'>t = 2 s</span>, and multiply.",
+                inputs: [
+                    { label: "Velocity at t=2s", value: 4.0, unit: "m/s", tol: 0.01 },
+                    { label: "Acceleration at t=2s", value: 4.0, unit: "m/s²", tol: 0.01 },
+                    { label: "Instantaneous power at t=2s", value: 16.0, unit: "W", tol: 0.01 }
+                ],
+                steps: [
+                    { title: "Step 1: Given parameters", content: "Mass <span class='math'>m = 1 kg</span>. Position function: <div class='math-block'>x(t) = t³/3 m</div>" },
+                    { title: "Step 2: Find instantaneous velocity v(t)", content: "Differentiate position with respect to time: <div class='math-block'>v(t) = dx/dt = d/dt(t³/3) = t²</div> At <span class='math'>t = 2 s</span>, <span class='math'>v(2) = 2² = 4.0 m/s</span>." },
+                    { title: "Step 3: Find instantaneous acceleration a(t)", content: "Differentiate velocity with respect to time: <div class='math-block'>a(t) = dv/dt = d/dt(t²) = 2t</div> At <span class='math'>t = 2 s</span>, <span class='math'>a(2) = 2(2) = 4.0 m/s²</span>." },
+                    { title: "Step 4: Apply power formula P = F &middot; v", content: "From Newton's second law, force <span class='math'>F = m &middot; a</span>. Therefore power is: <div class='math-block'>P = (m &middot; a) &middot; v = m &middot; (2t) &middot; (t²) = 2m t³</div>" },
+                    { title: "Step 5: Calculate power at t = 2 s", content: "Substitute <span class='math'>m = 1 kg</span> and <span class='math'>t = 2 s</span>: <div class='math-block'>P(2) = 1 &middot; 2(2)³ = 2(8) = 16.0 W</div>" }
+                ],
+                finalSummary: "Velocity v(2) = 4.0 m/s<br>Acceleration a(2) = 4.0 m/s²<br>Power P(2) = 16.0 W"
+            },
+            {
+                id: 15,
+                title: "Minimizing Pulling Force (Friction)",
+                topic: "nlm",
+                topicLabel: "NLM, Work, Power & Energy",
+                statement: "A heavy block of mass <span class='math'>m</span> is placed on a rough horizontal surface with coefficient of static friction <span class='math'>&mu; = 0.75</span>. A force <span class='math'>F</span> is applied at an angle <span class='math'>&theta;</span> above the horizontal to pull the block. Find the optimal angle <span class='math'>&theta;</span> (in degrees) for which the force <span class='math'>F</span> required to move the block is minimum.",
+                hint: "Express pulling force <span class='math'>F(&theta;) = &mu;mg / (cos&theta; + &mu;sin&theta;)</span>. To minimize <span class='math'>F</span>, maximize the denominator by setting <span class='math'>d/d&theta;(cos&theta; + &mu;sin&theta;) = 0</span>.",
+                inputs: [
+                    { label: "Optimal angle θ for minimum force", value: 36.87, unit: "deg", tol: 0.1 }
+                ],
+                steps: [
+                    { title: "Step 1: Set up force equilibrium equations", content: "At the verge of slipping, resolve forces horizontally and vertically: <div class='math-block'>N + F sin&theta; = mg &rArr; N = mg - F sin&theta;<br>F cos&theta; = &mu; N = &mu;(mg - F sin&theta;)</div>" },
+                    { title: "Step 2: Express force F as a function of &theta;", content: "Rearrange to solve for <span class='math'>F</span>: <div class='math-block'>F cos&theta; + &mu;F sin&theta; = &mu;mg<br>F(&theta;) = &mu;mg / (cos&theta; + &mu;sin&theta;)</div>" },
+                    { title: "Step 3: Condition for minimum force", content: "To minimize <span class='math'>F(&theta;)</span>, the denominator <span class='math'>f(&theta;) = cos&theta; + &mu;sin&theta;</span> must be maximized. Set <span class='math'>df/d&theta; = 0</span>: <div class='math-block'>d/d&theta;(cos&theta; + &mu;sin&theta;) = 0<br>-sin&theta; + &mu; cos&theta; = 0</div>" },
+                    { title: "Step 4: Solve for optimal angle &theta;", content: "Rearranging the derivative equation: <div class='math-block'>sin&theta; = &mu; cos&theta; &rArr; tan&theta; = &mu;</div>" },
+                    { title: "Step 5: Calculate numerical value for &mu; = 0.75", content: "Substitute <span class='math'>&mu; = 0.75</span>: <div class='math-block'>&theta; = tan⁻¹(0.75) = 36.87&deg;</div>" }
+                ],
+                finalSummary: "Optimal relation: tan&theta; = &mu;<br>Angle &theta; = 36.87&deg;"
+            },
+            {
+                id: 16,
+                title: "Force from Quadratic Potential Energy",
+                topic: "nlm",
+                topicLabel: "NLM, Work, Power & Energy",
+                statement: "The potential energy of a particle along the x-axis is given by <span class='math'>U = &frac;12 k x² - α x</span>, where <span class='math'>k = 10 N/m</span> and <span class='math'>α = 5 N</span>. What is the net force acting on the particle at <span class='math'>x = 2 m</span>?",
+                hint: "In a 1D conservative field, force is given by <span class='math'>F = -dU/dx</span>. Differentiate the potential energy function with respect to <span class='math'>x</span> and substitute the given values.",
+                inputs: [
+                    { label: "Net force at x=2m", value: -15.0, unit: "N", tol: 0.01 }
+                ],
+                steps: [
+                    { title: "Step 1: Given potential energy function", content: "Potential energy equation: <div class='math-block'>U(x) = 0.5 k x² - α x</div>" },
+                    { title: "Step 2: Apply conservative force relation", content: "Calculate force as the negative derivative of potential energy: <div class='math-block'>F(x) = -dU/dx = -d/dx(0.5 k x² - α x)</div>" },
+                    { title: "Step 3: Compute derivative", content: "Differentiating term by term: <div class='math-block'>F(x) = -(k x - α) = α - k x</div>" },
+                    { title: "Step 4: Evaluate at x = 2 m", content: "Substitute <span class='math'>k = 10 N/m</span>, <span class='math'>α = 5 N</span>, and <span class='math'>x = 2 m</span>: <div class='math-block'>F(2) = 5 - 10(2) = 5 - 20 = -15.0 N</div> The negative sign indicates the force acts in the negative x-direction." }
+                ],
+                finalSummary: "F(x) = α - k x<br>F(2) = -15.0 N"
+            },
+
+            // Section 3: SHM & Waves
+            {
+                id: 17,
+                title: "Ratio of Max Velocity to Max Acceleration in SHM",
+                topic: "shm",
+                topicLabel: "SHM & Waves",
+                statement: "In Simple Harmonic Motion (SHM), the displacement of a particle is given by <span class='math'>y = A sin(ωt)</span>. The ratio of the magnitude of velocity at <span class='math'>y = 0</span> to the magnitude of acceleration at <span class='math'>y = A</span> is given by <span class='math'>ωⁿ</span>. Find the power <span class='math'>n</span>.",
+                hint: "Find velocity <span class='math'>v = dy/dt</span> and acceleration <span class='math'>a = dv/dt</span>. Evaluate <span class='math'>v_max</span> at mean position (<span class='math'>y=0</span>) and <span class='math'>a_max</span> at extreme position (<span class='math'>y=A</span>), then divide.",
+                inputs: [
+                    { label: "Power n in the ratio (ωⁿ)", value: -1.0, unit: "", tol: 0.01 }
+                ],
+                steps: [
+                    { title: "Step 1: Given SHM equation", content: "Displacement function: <div class='math-block'>y(t) = A sin(ωt)</div>" },
+                    { title: "Step 2: Find velocity function v(t)", content: "Differentiate displacement with respect to time: <div class='math-block'>v(t) = dy/dt = A ω cos(ωt)</div> At <span class='math'>y = 0</span> (mean position, <span class='math'>ωt = 0</span>), velocity is maximum: <span class='math'>v_max = A ω</span>." },
+                    { title: "Step 3: Find acceleration function a(t)", content: "Differentiate velocity with respect to time: <div class='math-block'>a(t) = dv/dt = -A ω² sin(ωt)</div> At <span class='math'>y = A</span> (extreme position, <span class='math'>ωt = &pi;/2</span>), acceleration magnitude is maximum: <span class='math'>|a_max| = A ω²</span>." },
+                    { title: "Step 4: Calculate ratio", content: "Divide maximum velocity by maximum acceleration: <div class='math-block'>Ratio = v_max / |a_max| = (A ω) / (A ω²) = 1 / ω = ω⁻¹</div> Comparing with <span class='math'>ωⁿ</span>, we find <span class='math'>n = -1.0</span>." }
+                ],
+                finalSummary: "v_max = A ω, |a_max| = A ω²<br>Ratio = 1/ω = ω⁻¹<br>Power n = -1.0"
+            },
+            {
+                id: 18,
+                title: "Maximum Particle Velocity in Traveling Wave",
+                topic: "shm",
+                topicLabel: "SHM & Waves",
+                statement: "The equation of a traveling wave on a string is given by <span class='math'>y = 0.05 sin(4&pi;t - 2&pi;x)</span>, where <span class='math'>x, y</span> are in meters and <span class='math'>t</span> is in seconds. The maximum velocity of any particle on the string is given by <span class='math'>C &pi; m/s</span>. Find the numerical coefficient <span class='math'>C</span>.",
+                hint: "Particle velocity <span class='math'>v_p = &part;y/&part;t</span> is the partial derivative of displacement with respect to time. Find the amplitude of this derivative.",
+                inputs: [
+                    { label: "Numerical coefficient C in max particle velocity (C π)", value: 0.2, unit: "", tol: 0.01 }
+                ],
+                steps: [
+                    { title: "Step 1: Given traveling wave equation", content: "Wave displacement function: <div class='math-block'>y(x, t) = 0.05 sin(4&pi;t - 2&pi;x) m</div>" },
+                    { title: "Step 2: Calculate partial derivative &part;y/&part;t", content: "To find particle velocity <span class='math'>v_p</span>, differentiate with respect to time <span class='math'>t</span> while treating position <span class='math'>x</span> as a constant: <div class='math-block'>v_p = &part;y/&part;t = 0.05 &middot; (4&pi;) cos(4&pi;t - 2&pi;x)<br>v_p = 0.2&pi; cos(4&pi;t - 2&pi;x)</div>" },
+                    { title: "Step 3: Determine maximum particle velocity", content: "The maximum value of the cosine function is 1. Therefore: <div class='math-block'>(v_p)_max = 0.2&pi; m/s</div> Comparing with <span class='math'>C &pi;</span>, we get <span class='math'>C = 0.2</span>." }
+                ],
+                finalSummary: "v_p = 0.2&pi; cos(4&pi;t - 2&pi;x)<br>(v_p)_max = 0.2&pi; m/s<br>Coefficient C = 0.2"
+            },
+            {
+                id: 19,
+                title: "Relation Between Particle Velocity and Wave Slope",
+                topic: "shm",
+                topicLabel: "SHM & Waves",
+                statement: "For a plane progressive wave given by <span class='math'>y = A sin(ωt - kx)</span>, the fundamental relation between the instantaneous particle velocity <span class='math'>v_p = &part;y/&part;t</span> and the wave slope <span class='math'>s = &part;y/&part;x</span> can be written as <span class='math'>v_p = C &middot; v_wave &middot; s</span>. Find the numerical coefficient <span class='math'>C</span>.",
+                hint: "Find <span class='math'>v_p = &part;y/&part;t</span> and <span class='math'>s = &part;y/&part;x</span>. Divide <span class='math'>v_p</span> by <span class='math'>s</span> and use the fact that wave velocity <span class='math'>v_wave = ω/k</span>.",
+                inputs: [
+                    { label: "Numerical coefficient C in relation (C &middot; v_wave &middot; s)", value: -1.0, unit: "", tol: 0.01 }
+                ],
+                steps: [
+                    { title: "Step 1: Given progressive wave equation", content: "Wave equation: <div class='math-block'>y(x, t) = A sin(ωt - kx)</div>" },
+                    { title: "Step 2: Find particle velocity v_p", content: "Take partial derivative with respect to time <span class='math'>t</span>: <div class='math-block'>v_p = &part;y/&part;t = A ω cos(ωt - kx)</div>" },
+                    { title: "Step 3: Find wave slope s", content: "Take partial derivative with respect to position <span class='math'>x</span>: <div class='math-block'>s = &part;y/&part;x = A(-k) cos(ωt - kx) = -A k cos(ωt - kx)</div>" },
+                    { title: "Step 4: Divide v_p by s", content: "Compute the ratio of particle velocity to wave slope: <div class='math-block'>v_p / s = [A ω cos(ωt - kx)] / [-A k cos(ωt - kx)] = -ω / k</div>" },
+                    { title: "Step 5: Relate to wave velocity", content: "Since wave velocity <span class='math'>v_wave = ω / k</span>, we get: <div class='math-block'>v_p / s = -v_wave &rArr; v_p = -1 &middot; v_wave &middot; s</div> Comparing with <span class='math'>C &middot; v_wave &middot; s</span>, we find <span class='math'>C = -1.0</span>." }
+                ],
+                finalSummary: "v_p = -v_wave &middot; s<br>Coefficient C = -1.0"
+            },
+
+            // Section 4: Heat & Thermodynamics
+            {
+                id: 20,
+                title: "Fourier's Law of Heat Conduction",
+                topic: "heat",
+                topicLabel: "Heat & Thermodynamics",
+                statement: "A metal rod of length <span class='math'>L = 1 m</span> and cross-sectional area <span class='math'>A = 10 cm²</span> has a steady-state temperature distribution along its length given by <span class='math'>T(x) = 100 - 20x²</span>, where <span class='math'>x</span> is in meters and <span class='math'>T</span> is in &deg;C. If the thermal conductivity of the metal is <span class='math'>K = 400 W/(m&middot;&deg;C)</span>, find the temperature gradient <span class='math'>dT/dx</span> and the rate of heat flow <span class='math'>dQ/dt</span> across the cross-section at <span class='math'>x = 0.5 m</span>.",
+                hint: "Fourier's Law states <span class='math'>dQ/dt = -KA(dT/dx)</span>. Differentiate <span class='math'>T(x)</span> to find <span class='math'>dT/dx</span> at <span class='math'>x = 0.5 m</span>, convert area to m², and calculate.",
+                inputs: [
+                    { label: "Temperature gradient dT/dx at x=0.5m", value: -20.0, unit: "&deg;C/m", tol: 0.01 },
+                    { label: "Rate of heat flow dQ/dt at x=0.5m", value: 8.0, unit: "W", tol: 0.01 }
+                ],
+                steps: [
+                    { title: "Step 1: Given data", content: "Cross-sectional area <span class='math'>A = 10 cm² = 10 &times; 10⁻⁴ m² = 10⁻³ m²</span>. Thermal conductivity <span class='math'>K = 400 W/(m&middot;&deg;C)</span>. Temperature function: <div class='math-block'>T(x) = 100 - 20x²</div>" },
+                    { title: "Step 2: Calculate temperature gradient dT/dx", content: "Differentiate temperature with respect to position <span class='math'>x</span>: <div class='math-block'>dT/dx = d/dx(100 - 20x²) = -40x</div>" },
+                    { title: "Step 3: Evaluate gradient at x = 0.5 m", content: "Substitute <span class='math'>x = 0.5 m</span>: <div class='math-block'>dT/dx = -40(0.5) = -20.0 &deg;C/m</div>" },
+                    { title: "Step 4: Apply Fourier's Law of Heat Conduction", content: "The rate of heat transfer is given by: <div class='math-block'>dQ/dt = -K &middot; A &middot; (dT/dx)</div>" },
+                    { title: "Step 5: Calculate rate of heat flow", content: "Substitute the numerical values: <div class='math-block'>dQ/dt = -400 &middot; (10⁻³) &middot; (-20) = 8.0 W</div>" }
+                ],
+                finalSummary: "Temperature gradient dT/dx = -20.0 &deg;C/m<br>Rate of heat flow dQ/dt = 8.0 W"
+            },
+            {
+                id: 21,
+                title: "Newton's Law of Cooling (Instantaneous Rate)",
+                topic: "heat",
+                topicLabel: "Heat & Thermodynamics",
+                statement: "Newton's law of cooling is given by the differential equation <span class='math'>dT/dt = -k(T - T_s)</span>. A body cools from <span class='math'>80&deg;C</span> to <span class='math'>70&deg;C</span> in 5 minutes when the surrounding temperature <span class='math'>T_s</span> is <span class='math'>30&deg;C</span>. Find the cooling constant <span class='math'>k</span> and the instantaneous rate of cooling <span class='math'>|dT/dt|</span> when the body reaches <span class='math'>50&deg;C</span>.",
+                hint: "Use average form <span class='math'>&Delta;T/&Delta;t = k(T_avg - T_s)</span> for the first interval to find <span class='math'>k</span>. Then use the differential form <span class='math'>|dT/dt| = k(T - T_s)</span> at <span class='math'>50&deg;C</span>.",
+                inputs: [
+                    { label: "Cooling constant k", value: 0.0444, unit: "min⁻¹", tol: 0.005 },
+                    { label: "Instantaneous rate of cooling at 50°C", value: 0.89, unit: "&deg;C/min", tol: 0.02 }
+                ],
+                steps: [
+                    { title: "Step 1: Apply average form of Newton's Law of Cooling", content: "For finite intervals, the differential equation is approximated as: <div class='math-block'>&Delta;T/&Delta;t = k(T_avg - T_s)</div>" },
+                    { title: "Step 2: Calculate average temperature and rate of cooling", content: "For the interval 80&deg;C to 70&deg;C in 5 min: <div class='math-block'>&Delta;T/&Delta;t = (80 - 70) / 5 = 10 / 5 = 2.0 &deg;C/min<br>T_avg = (80 + 70) / 2 = 75 &deg;C</div>" },
+                    { title: "Step 3: Solve for cooling constant k", content: "Substitute into the average equation with <span class='math'>T_s = 30&deg;C</span>: <div class='math-block'>2.0 = k(75 - 30) = 45k<br>k = 2 / 45 &asymp; 0.0444 min⁻¹</div>" },
+                    { title: "Step 4: Calculate instantaneous rate at T = 50&deg;C", content: "Use the exact differential form <span class='math'>|dT/dt| = k(T - T_s)</span>: <div class='math-block'>|dT/dt| = (2/45) &middot; (50 - 30) = (2/45) &middot; 20<br>|dT/dt| = 40 / 45 = 8 / 9 &asymp; 0.89 &deg;C/min</div>" }
+                ],
+                finalSummary: "Cooling constant k = 2/45 &asymp; 0.0444 min⁻¹<br>Instantaneous rate |dT/dt| &asymp; 0.89 &deg;C/min"
+            },
+
+            // Section 5: Electrostatics & Current Electricity
+            {
+                id: 22,
+                title: "Instantaneous Electric Current from Charge",
+                topic: "electrostatics",
+                topicLabel: "Electrostatics & Current Electricity",
+                statement: "The total charge <span class='math'>q</span> flowing through a conductor varies with time <span class='math'>t</span> as <span class='math'>q(t) = 3t² + 5t + 2 C</span>. What is the instantaneous electric current flowing through the conductor at <span class='math'>t = 2 s</span>?",
+                hint: "Electric current is the time derivative of charge (<span class='math'>i = dq/dt</span>). Differentiate the charge expression and evaluate at <span class='math'>t = 2 s</span>.",
+                inputs: [
+                    { label: "Instantaneous electric current at t=2s", value: 17.0, unit: "A", tol: 0.01 }
+                ],
+                steps: [
+                    { title: "Step 1: Given charge equation", content: "Charge function: <div class='math-block'>q(t) = 3t² + 5t + 2 C</div>" },
+                    { title: "Step 2: Relate current to charge", content: "Instantaneous electric current is defined as: <div class='math-block'>i(t) = dq/dt = d/dt(3t² + 5t + 2)</div>" },
+                    { title: "Step 3: Calculate derivative", content: "Apply polynomial differentiation rules: <div class='math-block'>i(t) = 3(2t) + 5(1) = 6t + 5</div>" },
+                    { title: "Step 4: Evaluate at t = 2 s", content: "Substitute <span class='math'>t = 2 s</span> into the current equation: <div class='math-block'>i(2) = 6(2) + 5 = 12 + 5 = 17.0 A</div>" }
+                ],
+                finalSummary: "i(t) = 6t + 5 A<br>i(2) = 17.0 A"
+            },
+            {
+                id: 23,
+                title: "Electric Field from Potential Gradient",
+                topic: "electrostatics",
+                topicLabel: "Electrostatics & Current Electricity",
+                statement: "The electric potential <span class='math'>V</span> in a given region along the x-axis varies as <span class='math'>V(x) = 4x² - 3x + 5 Volts</span>. What is the electric field <span class='math'>E</span> at <span class='math'>x = 1 m</span>?",
+                hint: "Electric field along the x-axis is the negative gradient of electric potential (<span class='math'>E = -dV/dx</span>). Differentiate <span class='math'>V(x)</span> and evaluate at <span class='math'>x = 1 m</span>.",
+                inputs: [
+                    { label: "Electric field E at x=1m", value: -5.0, unit: "V/m", tol: 0.01 }
+                ],
+                steps: [
+                    { title: "Step 1: Given electric potential function", content: "Potential equation: <div class='math-block'>V(x) = 4x² - 3x + 5 Volts</div>" },
+                    { title: "Step 2: Relate electric field to potential", content: "The 1D electric field is given by the negative derivative of potential: <div class='math-block'>E(x) = -dV/dx = -d/dx(4x² - 3x + 5)</div>" },
+                    { title: "Step 3: Compute derivative", content: "Differentiating term by term: <div class='math-block'>E(x) = -(8x - 3) = 3 - 8x</div>" },
+                    { title: "Step 4: Evaluate at x = 1 m", content: "Substitute <span class='math'>x = 1 m</span> into the electric field equation: <div class='math-block'>E(1) = 3 - 8(1) = 3 - 8 = -5.0 V/m</div> The negative sign indicates the electric field points in the negative x-direction." }
+                ],
+                finalSummary: "E(x) = 3 - 8x V/m<br>E(1) = -5.0 V/m"
+            },
+            {
+                id: 24,
+                title: "Rate of Change of Current (di/dt)",
+                topic: "electrostatics",
+                topicLabel: "Electrostatics & Current Electricity",
+                statement: "The current <span class='math'>i</span> through a wire depends on time <span class='math'>t</span> as <span class='math'>i(t) = α t + β t²</span>, where <span class='math'>α = 2 A/s</span> and <span class='math'>β = 1 A/s²</span>. What is the rate of change of current <span class='math'>di/dt</span> at <span class='math'>t = 3 s</span>?",
+                hint: "Differentiate the current expression with respect to time to get <span class='math'>di/dt = α + 2βt</span>, then substitute the given numerical values.",
+                inputs: [
+                    { label: "Rate of change of current di/dt at t=3s", value: 8.0, unit: "A/s²", tol: 0.01 }
+                ],
+                steps: [
+                    { title: "Step 1: Given current equation", content: "Current function: <div class='math-block'>i(t) = α t + β t²</div>" },
+                    { title: "Step 2: Differentiate to find di/dt", content: "Take time derivative of current: <div class='math-block'>di/dt = d/dt(α t + β t²) = α + 2β t</div>" },
+                    { title: "Step 3: Evaluate at t = 3 s", content: "Substitute <span class='math'>α = 2 A/s</span>, <span class='math'>β = 1 A/s²</span>, and <span class='math'>t = 3 s</span>: <div class='math-block'>di/dt = 2 + 2(1)(3) = 2 + 6 = 8.0 A/s²</div>" }
+                ],
+                finalSummary: "di/dt = α + 2β t<br>di/dt at t=3s: 8.0 A/s²"
+            },
+            {
+                id: 25,
+                title: "Electric Field from Inverse Potential",
+                topic: "electrostatics",
+                topicLabel: "Electrostatics & Current Electricity",
+                statement: "The electric potential along the x-axis is given by <span class='math'>V = 10/x Volts</span> (<span class='math'>x > 0</span>). What is the magnitude of the electric field at <span class='math'>x = 2 m</span>?",
+                hint: "Use <span class='math'>E = -dV/dx</span>. Differentiate <span class='math'>10x⁻¹</span> with respect to <span class='math'>x</span> using the power rule, then evaluate at <span class='math'>x = 2 m</span>.",
+                inputs: [
+                    { label: "Magnitude of electric field at x=2m", value: 2.5, unit: "V/m", tol: 0.01 }
+                ],
+                steps: [
+                    { title: "Step 1: Given potential function", content: "Potential equation: <div class='math-block'>V(x) = 10 x⁻¹ Volts</div>" },
+                    { title: "Step 2: Relate electric field to potential", content: "Electric field is the negative derivative of potential: <div class='math-block'>E = -dV/dx = -d/dx(10 x⁻¹)</div>" },
+                    { title: "Step 3: Compute derivative", content: "Apply the power rule <span class='math'>d/dx(xⁿ) = n xⁿ⁻¹</span>: <div class='math-block'>E = -10 &middot; (-1 x⁻²) = 10 / x²</div>" },
+                    { title: "Step 4: Evaluate at x = 2 m", content: "Substitute <span class='math'>x = 2 m</span> into the electric field equation: <div class='math-block'>E(2) = 10 / (2)² = 10 / 4 = 2.5 V/m</div>" }
+                ],
+                finalSummary: "E(x) = 10 / x² V/m<br>E(2) = 2.5 V/m"
+            },
+
+            // Section 6: Electromagnetic Induction & AC
+            {
+                id: 26,
+                title: "Faraday's Law of Electromagnetic Induction",
+                topic: "em",
+                topicLabel: "EM Induction & AC",
+                statement: "The magnetic flux <span class='math'>Φ</span> linked with a coil varies with time <span class='math'>t</span> according to the equation <span class='math'>Φ(t) = 5t³ - 2t² + 4t + 1 Wb</span>. What is the magnitude of the induced emf in the coil at <span class='math'>t = 1 s</span>?",
+                hint: "According to Faraday's Law, the magnitude of induced emf is <span class='math'>e = |dΦ/dt|</span>. Differentiate the flux expression and evaluate at <span class='math'>t = 1 s</span>.",
+                inputs: [
+                    { label: "Magnitude of induced emf at t=1s", value: 15.0, unit: "V", tol: 0.01 }
+                ],
+                steps: [
+                    { title: "Step 1: Given magnetic flux equation", content: "Magnetic flux function: <div class='math-block'>Φ(t) = 5t³ - 2t² + 4t + 1 Wb</div>" },
+                    { title: "Step 2: Apply Faraday's Law", content: "The magnitude of induced electromotive force (emf) is the time derivative of magnetic flux: <div class='math-block'>e(t) = |dΦ/dt| = d/dt(5t³ - 2t² + 4t + 1)</div>" },
+                    { title: "Step 3: Calculate derivative", content: "Differentiating term by term: <div class='math-block'>e(t) = 5(3t²) - 2(2t) + 4(1) = 15t² - 4t + 4</div>" },
+                    { title: "Step 4: Evaluate at t = 1 s", content: "Substitute <span class='math'>t = 1 s</span> into the emf equation: <div class='math-block'>e(1) = 15(1)² - 4(1) + 4 = 15 - 4 + 4 = 15.0 V</div>" }
+                ],
+                finalSummary: "e(t) = 15t² - 4t + 4 V<br>e(1) = 15.0 V"
+            },
+            {
+                id: 27,
+                title: "Zero Induced EMF in an Inductor",
+                topic: "em",
+                topicLabel: "EM Induction & AC",
+                statement: "The current <span class='math'>i</span> in an inductor of inductance <span class='math'>L = 2 H</span> varies with time <span class='math'>t</span> as <span class='math'>i = t² e⁻ᵗ A</span>. At what time will the induced emf in the inductor become zero?",
+                hint: "Induced emf in an inductor is <span class='math'>e = -L(di/dt)</span>. For <span class='math'>e = 0</span>, set <span class='math'>di/dt = 0</span>. Use the product rule to differentiate <span class='math'>t² e⁻ᵗ</span>.",
+                inputs: [
+                    { label: "Time when induced emf becomes zero", value: 2.0, unit: "s", tol: 0.01 }
+                ],
+                steps: [
+                    { title: "Step 1: Given current equation", content: "Current function in the inductor: <div class='math-block'>i(t) = t² e⁻ᵗ A</div>" },
+                    { title: "Step 2: Relate induced emf to current", content: "The self-induced emf in an inductor is given by: <div class='math-block'>e = -L(di/dt)</div> For <span class='math'>e = 0</span>, we require <span class='math'>di/dt = 0</span>." },
+                    { title: "Step 3: Apply product rule for differentiation", content: "Differentiate <span class='math'>i(t)</span> using <span class='math'>d/dt(u &middot; v) = u'(v) + u(v')</span>: <div class='math-block'>di/dt = d/dt(t²) &middot; e⁻ᵗ + t² &middot; d/dt(e⁻ᵗ)<br>di/dt = 2t e⁻ᵗ - t² e⁻ᵗ</div>" },
+                    { title: "Step 4: Solve for di/dt = 0", content: "Factor out common terms and equate to zero: <div class='math-block'>t e⁻ᵗ (2 - t) = 0</div> Since <span class='math'>t = 0</span> is the initial state and <span class='math'>e⁻ᵗ &ne; 0</span> for finite <span class='math'>t</span>, we set <span class='math'>2 - t = 0 &rArr; t = 2.0 s</span>." }
+                ],
+                finalSummary: "di/dt = t e⁻ᵗ(2 - t)<br>Time for zero emf: t = 2.0 s"
+            },
+            {
+                id: 28,
+                title: "Induced Current in a Resistive Loop",
+                topic: "em",
+                topicLabel: "EM Induction & AC",
+                statement: "A conducting loop of resistance <span class='math'>R = 10 &Omega;</span> has a magnetic flux linked to it that varies as <span class='math'>Φ = 4t² + 2t + 1 Wb</span>. Calculate the induced emf and the induced current in the loop at <span class='math'>t = 2 s</span>.",
+                hint: "Find induced emf <span class='math'>e = dΦ/dt</span> at <span class='math'>t = 2 s</span>. Then use Ohm's Law <span class='math'>i = e / R</span> to find the induced current.",
+                inputs: [
+                    { label: "Induced emf at t=2s", value: 18.0, unit: "V", tol: 0.01 },
+                    { label: "Induced current at t=2s", value: 1.8, unit: "A", tol: 0.01 }
+                ],
+                steps: [
+                    { title: "Step 1: Given parameters", content: "Loop resistance <span class='math'>R = 10 &Omega;</span>. Magnetic flux function: <div class='math-block'>Φ(t) = 4t² + 2t + 1 Wb</div>" },
+                    { title: "Step 2: Find induced emf e(t)", content: "Differentiate magnetic flux with respect to time: <div class='math-block'>e(t) = dΦ/dt = d/dt(4t² + 2t + 1) = 8t + 2</div>" },
+                    { title: "Step 3: Calculate emf at t = 2 s", content: "Substitute <span class='math'>t = 2 s</span> into the emf equation: <div class='math-block'>e(2) = 8(2) + 2 = 16 + 2 = 18.0 V</div>" },
+                    { title: "Step 4: Apply Ohm's Law for induced current", content: "Relate induced current to emf and resistance: <div class='math-block'>i = e / R</div>" },
+                    { title: "Step 5: Calculate induced current at t = 2 s", content: "Substitute <span class='math'>e = 18 V</span> and <span class='math'>R = 10 &Omega;</span>: <div class='math-block'>i(2) = 18 / 10 = 1.8 A</div>" }
+                ],
+                finalSummary: "Induced emf e(2) = 18.0 V<br>Induced current i(2) = 1.8 A"
+            },
+
+            // Section 7: Modern Physics
+            {
+                id: 29,
+                title: "Instantaneous Radioactive Decay Rate (Activity)",
+                topic: "modern",
+                topicLabel: "Modern Physics",
+                statement: "The number of active undecayed nuclei in a radioactive sample is given by <span class='math'>N(t) = N₀ e⁻&lambda;ᵗ</span>. The instantaneous rate of radioactive decay (Activity <span class='math'>A</span>) at time <span class='math'>t = 1/&lambda;</span> can be expressed as <span class='math'>C &middot; &lambda;N₀</span>. Find the numerical coefficient <span class='math'>C</span> (to three decimal places).",
+                hint: "Activity <span class='math'>A = -dN/dt</span>. Differentiate <span class='math'>N(t)</span> with respect to time to get <span class='math'>A(t) = &lambda;N₀ e⁻&lambda;ᵗ</span>. Substitute <span class='math'>t = 1/&lambda;</span> to get <span class='math'>&lambda;N₀ e⁻¹</span>.",
+                inputs: [
+                    { label: "Numerical coefficient C in Activity (C &middot; &lambda;N₀)", value: 0.368, unit: "", tol: 0.005 }
+                ],
+                steps: [
+                    { title: "Step 1: Given radioactive decay law", content: "Population of undecayed nuclei: <div class='math-block'>N(t) = N₀ e⁻&lambda;ᵗ</div>" },
+                    { title: "Step 2: Define radioactive Activity A(t)", content: "Activity is the negative time derivative of the active population: <div class='math-block'>A(t) = -dN/dt = -d/dt(N₀ e⁻&lambda;ᵗ)</div>" },
+                    { title: "Step 3: Calculate derivative", content: "Using the exponential derivative rule <span class='math'>d/dt(e^(kt)) = k e^(kt)</span>: <div class='math-block'>A(t) = -N₀ &middot; (-&lambda; e⁻&lambda;ᵗ) = &lambda; N₀ e⁻&lambda;ᵗ</div>" },
+                    { title: "Step 4: Evaluate Activity at t = 1/&lambda;", content: "Substitute <span class='math'>t = 1/&lambda;</span> into the Activity equation: <div class='math-block'>A(1/&lambda;) = &lambda; N₀ e^(-&lambda; &middot; 1/&lambda;) = &lambda; N₀ e⁻¹</div>" },
+                    { title: "Step 5: Calculate numerical coefficient", content: "Since <span class='math'>e⁻¹ = 1/e &asymp; 1 / 2.71828 &asymp; 0.368</span>, the coefficient <span class='math'>C = 0.368</span>." }
+                ],
+                finalSummary: "A(t) = &lambda; N₀ e⁻&lambda;ᵗ<br>A(1/&lambda;) = &lambda; N₀ / e &asymp; 0.368 &lambda;N₀<br>Coefficient C = 0.368"
+            },
+            {
+                id: 30,
+                title: "Stable Population in Neutron Chamber",
+                topic: "modern",
+                topicLabel: "Modern Physics",
+                statement: "In an experimental chamber, the total population of active neutrons varies with time <span class='math'>t</span> as <span class='math'>N(t) = 1000 + 500t² - 100t³</span>. At what time <span class='math'>t > 0</span> will the rate of change of neutron population <span class='math'>dN/dt</span> become zero?",
+                hint: "Find the rate of change <span class='math'>dN/dt</span> by differentiating the polynomial with respect to time <span class='math'>t</span>, equate it to zero, and solve for <span class='math'>t > 0</span>.",
+                inputs: [
+                    { label: "Time when rate of change becomes zero", value: 3.33, unit: "s", tol: 0.05 }
+                ],
+                steps: [
+                    { title: "Step 1: Given neutron population equation", content: "Population function: <div class='math-block'>N(t) = 1000 + 500t² - 100t³</div>" },
+                    { title: "Step 2: Differentiate to find rate of change dN/dt", content: "Take time derivative of population: <div class='math-block'>dN/dt = d/dt(1000 + 500t² - 100t³) = 1000t - 300t²</div>" },
+                    { title: "Step 3: Condition for zero rate of change", content: "Set <span class='math'>dN/dt = 0</span>: <div class='math-block'>1000t - 300t² = 0<br>t(1000 - 300t) = 0</div>" },
+                    { title: "Step 4: Solve for t > 0", content: "Ignoring the trivial root <span class='math'>t = 0</span>: <div class='math-block'>1000 - 300t = 0 &rArr; 300t = 1000<br>t = 1000 / 300 = 10 / 3 &asymp; 3.33 s</div>" }
+                ],
+                finalSummary: "dN/dt = 1000t - 300t²<br>Time for dN/dt = 0: t &asymp; 3.33 s"
+            }
+        ];
+
+        let activeQuestionId = 1;
+        let currentTopicFilter = 'all';
+
+        // Initialize application on load
+        window.onload = () => {
+            renderQuestionBank();
+            loadQuestion(1);
+            updateStatusLoaded();
+        };
+
+        // Render Question Bank grid based on active filter
+        function renderQuestionBank() {
+            const grid = document.getElementById('qb-grid');
+            grid.innerHTML = '';
+
+            const filtered = currentTopicFilter === 'all' 
+                ? questionsData 
+                : questionsData.filter(q => q.topic === currentTopicFilter);
+
+            filtered.forEach(q => {
+                const isSelected = q.id === activeQuestionId;
+                const card = document.createElement('div');
+                card.className = `p-5 rounded-2xl border cursor-pointer transition-all duration-200 flex flex-col justify-between ${
+                    isSelected 
+                        ? 'bg-sky-50 border-sky-400 shadow-md ring-2 ring-sky-400/20' 
+                        : 'bg-slate-50 border-slate-200 hover:bg-white hover:border-slate-300 hover:shadow-sm'
+                }`;
+                card.onclick = () => loadQuestion(q.id);
+
+                card.innerHTML = `
+                    <div>
+                        <div class="flex items-center justify-between gap-2 mb-3">
+                            <span class="px-2.5 py-1 rounded-lg text-xs font-bold ${
+                                isSelected ? 'bg-sky-600 text-white' : 'bg-slate-200 text-slate-700'
+                            }">Q${q.id}</span>
+                            <span class="text-xs font-semibold text-slate-500 uppercase tracking-wider">${q.topicLabel}</span>
+                        </div>
+                        <h4 class="font-bold text-slate-900 text-base mb-2 line-clamp-2">${q.title}</h4>
+                        <p class="text-slate-600 text-xs line-clamp-3 mb-4 leading-relaxed">${q.statement}</p>
+                    </div>
+                    <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-sky-700">
+                        <span>Solve Problem</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        // Filter Question Bank by Topic
+        function filterTopic(topic) {
+            currentTopicFilter = topic;
+            
+            // Update tab styles
+            document.querySelectorAll('.topic-tab').forEach(tab => {
+                tab.className = "topic-tab hover:bg-slate-100 text-slate-700 px-4 py-2 rounded-xl text-sm font-medium transition flex items-center gap-2";
+            });
+            const activeTab = document.getElementById(`tab-${topic}`);
+            activeTab.className = "topic-tab active-tab bg-sky-600 text-white px-4 py-2 rounded-xl text-sm font-medium transition flex items-center gap-2";
+
+            // Update filter label
+            const labels = {
+                all: "All topics",
+                kinematics: "Kinematics (1D & 2D)",
+                nlm: "NLM, Work, Power & Energy",
+                shm: "SHM & Waves",
+                heat: "Heat & Thermodynamics",
+                electrostatics: "Electrostatics & Current Elec.",
+                em: "EM Induction & AC",
+                modern: "Modern Physics"
+            };
+            document.getElementById('lbl-active-filter').innerText = labels[topic];
+
+            renderQuestionBank();
+        }
+
+        // Load a specific question into the main solver workspace
+        function loadQuestion(id) {
+            activeQuestionId = id;
+            const q = questionsData.find(item => item.id === id);
+
+            // Update UI titles & badges
+            document.getElementById('q-title').innerHTML = `<span class="bg-sky-600 text-white px-3 py-1 rounded-xl text-lg">Q${q.id}</span> ${q.title}`;
+            document.getElementById('q-topic-badge').innerText = `Topic: ${q.topicLabel}`;
+            document.getElementById('q-statement').innerHTML = q.statement;
+            document.getElementById('hint-content').innerHTML = q.hint;
+            document.getElementById('hint-box').classList.add('hidden');
+
+            // Inject input fields
+            const inputsContainer = document.getElementById('inputs-container');
+            inputsContainer.innerHTML = '';
+            q.inputs.forEach((inp, idx) => {
+                const wrapper = document.createElement('div');
+                wrapper.className = "flex flex-col sm:flex-row sm:items-center justify-between gap-2 p-3 bg-slate-50 rounded-2xl border border-slate-200";
+                wrapper.innerHTML = `
+                    <label class="font-medium text-slate-800 text-sm flex-1 pl-1">${inp.label}</label>
+                    <div class="flex items-center gap-2 w-full sm:w-48">
+                        <input type="number" step="any" id="input-${idx}" class="w-full bg-white border border-slate-300 rounded-xl px-3 py-2 text-sm text-slate-900 font-mono focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500 shadow-inner" placeholder="Enter value...">
+                        ${inp.unit ? `<span class="text-xs font-semibold text-slate-500 w-12 text-center bg-slate-200 py-2 rounded-lg">${inp.unit}</span>` : ''}
+                    </div>
+                `;
+                inputsContainer.appendChild(wrapper);
+            });
+
+            // Inject steps (hidden content by default)
+            const stepsContainer = document.getElementById('steps-container');
+            stepsContainer.innerHTML = '';
+            q.steps.forEach((step, idx) => {
+                const stepBox = document.createElement('div');
+                stepBox.className = "bg-slate-50 border border-slate-200 rounded-2xl overflow-hidden transition-all duration-200";
+                stepBox.innerHTML = `
+                    <button onclick="toggleStep(${idx})" class="w-full p-4 text-left font-bold text-slate-800 flex items-center justify-between bg-slate-100/70 hover:bg-slate-100 transition">
+                        <span>${step.title}</span>
+                        <i id="step-icon-${idx}" class="fa-solid fa-chevron-down text-slate-500 transition-transform duration-300"></i>
+                    </button>
+                    <div id="step-content-${idx}" class="hidden p-4 text-slate-700 text-sm border-t border-slate-200 bg-white leading-relaxed">
+                        ${step.content}
+                    </div>
+                `;
+                stepsContainer.appendChild(stepBox);
+            });
+
+            // Set final summary content
+            document.getElementById('summary-content').innerHTML = q.finalSummary;
+            document.getElementById('summary-panel').classList.add('hidden');
+            document.getElementById('score-panel').classList.add('hidden');
+
+            // Update status and highlight active card
+            updateStatusLoaded();
+            updateStatusSolver("waiting for user input");
+            updateStatusScore("0/0");
+            renderQuestionBank();
+        }
+
+        // Pick a random question
+        function generateRandomQuestion() {
+            const randomIndex = Math.floor(Math.random() * questionsData.length);
+            loadQuestion(questionsData[randomIndex].id);
+        }
+
+        // Show Hint
+        function showHint() {
+            document.getElementById('hint-box').classList.remove('hidden');
+            updateStatusSolver("hint displayed");
+        }
+
+        // Toggle individual step
+        function toggleStep(idx) {
+            const content = document.getElementById(`step-content-${idx}`);
+            const icon = document.getElementById(`step-icon-${idx}`);
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                icon.style.transform = "rotate(180deg)";
+            } else {
+                content.classList.add('hidden');
+                icon.style.transform = "rotate(0deg)";
+            }
+        }
+
+        // Expand / Collapse all steps
+        let allStepsExpanded = false;
+        function toggleAllSteps() {
+            const q = questionsData.find(item => item.id === activeQuestionId);
+            const btn = document.getElementById('btn-toggle-steps');
+            allStepsExpanded = !allStepsExpanded;
+
+            q.steps.forEach((_, idx) => {
+                const content = document.getElementById(`step-content-${idx}`);
+                const icon = document.getElementById(`step-icon-${idx}`);
+                if (allStepsExpanded) {
+                    content.classList.remove('hidden');
+                    icon.style.transform = "rotate(180deg)";
+                } else {
+                    content.classList.add('hidden');
+                    icon.style.transform = "rotate(0deg)";
+                }
+            });
+
+            btn.innerText = allStepsExpanded ? "Collapse All" : "Expand All";
+        }
+
+        // Show Steps button action
+        function showSteps() {
+            allStepsExpanded = false;
+            toggleAllSteps();
+            updateStatusSolver("step-by-step reasoning revealed");
+        }
+
+        // Auto Solve button action
+        function autoSolve() {
+            const q = questionsData.find(item => item.id === activeQuestionId);
+            q.inputs.forEach((inp, idx) => {
+                const inputEl = document.getElementById(`input-${idx}`);
+                if (inputEl) inputEl.value = inp.value;
+            });
+            checkMyAnswer();
+            updateStatusSolver("auto solved successfully");
+        }
+
+        // Show Full Solution button action
+        function showFullSolution() {
+            autoSolve();
+            if (!allStepsExpanded) toggleAllSteps();
+            document.getElementById('summary-panel').classList.remove('hidden');
+            updateStatusSolver("final solution displayed");
+        }
+
+        // Check My Answer validation logic
+        function checkMyAnswer() {
+            const q = questionsData.find(item => item.id === activeQuestionId);
+            let correctCount = 0;
+            const totalInputs = q.inputs.length;
+            const scoreDetails = document.getElementById('score-details');
+            scoreDetails.innerHTML = '';
+
+            q.inputs.forEach((inp, idx) => {
+                const inputEl = document.getElementById(`input-${idx}`);
+                const userVal = parseFloat(inputEl.value);
+                const expectedVal = inp.value;
+                const tol = inp.tol || 0.05;
+
+                const isCorrect = !isNaN(userVal) && Math.abs(userVal - expectedVal) <= tol;
+                if (isCorrect) correctCount++;
+
+                const detailRow = document.createElement('div');
+                detailRow.className = `flex items-center gap-2 font-medium ${isCorrect ? 'text-emerald-700' : 'text-rose-700'}`;
+                detailRow.innerHTML = `
+                    <i class="fa-solid ${isCorrect ? 'fa-circle-check text-emerald-600' : 'fa-circle-xmark text-rose-600'}"></i>
+                    <span>${inp.label}: ${isCorrect ? 'correct' : `incorrect (expected ~${expectedVal})`}</span>
+                `;
+                scoreDetails.appendChild(detailRow);
+            });
+
+            // Show score panel
+            const scorePanel = document.getElementById('score-panel');
+            const scoreHeader = document.getElementById('score-header');
+            scorePanel.classList.remove('hidden');
+            scoreHeader.innerHTML = `Score: ${correctCount}/${totalInputs}`;
+            if (correctCount === totalInputs) {
+                scorePanel.className = "bg-emerald-50 border border-emerald-200 rounded-2xl p-6";
+                scoreHeader.className = "text-xl font-bold text-emerald-900 mb-3 flex items-center gap-2";
+                document.getElementById('summary-panel').classList.remove('hidden');
+            } else {
+                scorePanel.className = "bg-rose-50 border border-rose-200 rounded-2xl p-6";
+                scoreHeader.className = "text-xl font-bold text-rose-900 mb-3 flex items-center gap-2";
+            }
+
+            updateStatusScore(`${correctCount}/${totalInputs}`);
+            updateStatusSolver(correctCount === totalInputs ? "all answers correct" : "needs correction");
+        }
+
+        // Clear Answer inputs
+        function clearAnswer() {
+            const q = questionsData.find(item => item.id === activeQuestionId);
+            q.inputs.forEach((_, idx) => {
+                const inputEl = document.getElementById(`input-${idx}`);
+                if (inputEl) inputEl.value = '';
+            });
+            document.getElementById('score-panel').classList.add('hidden');
+            document.getElementById('summary-panel').classList.add('hidden');
+            if (allStepsExpanded) toggleAllSteps();
+            updateStatusSolver("answers cleared");
+            updateStatusScore("0/0");
+        }
+
+        // Status bar update helpers
+        function updateStatusLoaded() {
+            document.getElementById('status-loaded').innerText = `Loaded: ${activeQuestionId} / 30 reviewed`;
+        }
+        function updateStatusSolver(text) {
+            document.getElementById('status-solver').innerText = `Solver: ${text}`;
+        }
+        function updateStatusScore(score) {
+            document.getElementById('status-score').innerText = `Last score: ${score}`;
+        }
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a136390f6d2216e3',t:'MTc4Mjc0OTY1Mg=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
