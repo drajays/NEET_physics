@@ -186,7 +186,7 @@
           <span class="pill">Detailed solving</span>
           <span class="pill">Auto fill answers</span>
           <span class="pill">Glass-box explanation</span>
-          <span class="pill">19 vector exercises</span>
+          <span class="pill">23 vector exercises</span>
         </div>
       </div>
       <div class="body">
@@ -211,7 +211,7 @@
         </div>
 
         <div class="status-bar">
-          <div class="status-chip" id="progressChip">Loaded: 0 / 19 reviewed</div>
+          <div class="status-chip" id="progressChip">Loaded: 0 / 23 reviewed</div>
           <div class="status-chip" id="solverChip">Solver: ready</div>
           <div class="status-chip" id="scoreChip">Last score: --</div>
         </div>
@@ -690,6 +690,105 @@
             ['Final answer', 'Example: A=(1,0), B=(0,1), C=(2,0)']
           ];
           return { answers:{ex:'(1,0);(0,1);(2,0)'}, solution:`A=(1,0), B=(0,1), C=(2,0)`, steps };
+        }
+      },
+      {
+        id: 20,
+        topic: 'magnitude',
+        title: 'Q20 Magnitude & direction from components (HCV 2-WE1)',
+        text: 'A vector has component along the X-axis equal to 25 units and along the Y-axis equal to 60 units. Find the magnitude and direction of the vector.',
+        answerFields: [
+          { key: 'mag', label: 'Magnitude (units)' },
+          { key: 'ang', label: 'Angle with +X-axis (deg)' }
+        ],
+        solver() {
+          const x = 25, y = 60;
+          const mag = mag2(x, y), ang = atanDeg(y, x);
+          const steps = [
+            ['Given data', 'X-component Ax = 25 units, Y-component Ay = 60 units. The vector is the resultant of two perpendicular vectors of 25 and 60 units.'],
+            ['Magnitude (Pythagoras)', `A = √(Ax² + Ay²) = √(25² + 60²) = √(625 + 3600) = √4225 = ${round(mag)} units`],
+            ['Direction', `tanα = Ay/Ax = 60/25 = 2.4\nα = tan⁻¹(2.4) = ${round(ang)}° with the +X-axis`],
+            ['Final answer', `Magnitude = ${round(mag)} units, directed at ${round(ang)}° above the +X-axis.`]
+          ];
+          return { answers:{mag, ang}, solution:`A = ${round(mag)} units at ${round(ang)}° from +X-axis`, steps };
+        }
+      },
+      {
+        id: 21,
+        topic: 'resultant',
+        title: 'Q21 Resultant of three vectors (HCV 2-WE2, fig 2-W1)',
+        text: 'Find the resultant of the three vectors in figure 2-W1: a 5.0 m vector at 37° above the X-axis, a 3.0 m vector along the +X-axis, and a 2.0 m vector along the +Y-axis. (Take cos37° = 0.80, sin37° = 0.60.)',
+        answerFields: [
+          { key: 'rx', label: 'Resultant x-component (m)' },
+          { key: 'ry', label: 'Resultant y-component (m)' },
+          { key: 'rmag', label: 'Resultant magnitude (m)' },
+          { key: 'rang', label: 'Angle with +X-axis (deg)' }
+        ],
+        solver() {
+          const v1x = round(5.0 * 0.80), v1y = round(5.0 * 0.60); // 5 m at 37°
+          const v2x = 3.0, v2y = 0;                                // 3 m along +X
+          const v3x = 0, v3y = 2.0;                                // 2 m along +Y
+          const rx = v1x + v2x + v3x, ry = v1y + v2y + v3y;
+          const rmag = mag2(rx, ry), rang = atanDeg(ry, rx);
+          const steps = [
+            ['Given data', 'Vector 1 = 5.0 m at 37°, Vector 2 = 3.0 m along +X, Vector 3 = 2.0 m along +Y.'],
+            ['x-components', `5.0 m vector: 5.0 cos37° = ${v1x} m\n3.0 m vector: 3.0 m\n2.0 m vector: 2.0 cos90° = 0`],
+            ['Resultant x-component', `Rx = ${v1x} + ${v2x} + ${v3x} = ${round(rx)} m`],
+            ['y-components', `5.0 m vector: 5.0 sin37° = ${v1y} m\n3.0 m vector: 0\n2.0 m vector: 2.0 m`],
+            ['Resultant y-component', `Ry = ${v1y} + ${v2y} + ${v3y} = ${round(ry)} m`],
+            ['Magnitude', `|R| = √(Rx² + Ry²) = √(${round(rx)}² + ${round(ry)}²) = ${round(rmag)} m`],
+            ['Direction', `tanθ = Ry/Rx = ${round(ry)}/${round(rx)}\nθ = ${round(rang)}° with the +X-axis`],
+            ['Final answer', `R = (${round(rx)} i + ${round(ry)} j) m, |R| = ${round(rmag)} m at ${round(rang)}°.`]
+          ];
+          return { answers:{rx, ry, rmag, rang}, solution:`|R| = ${round(rmag)} m at ${round(rang)}° from +X-axis`, steps };
+        }
+      },
+      {
+        id: 22,
+        topic: 'resultant',
+        title: 'Q22 Three vectors summing to zero (HCV 2-WE3, fig 2-W2)',
+        text: 'In figure 2-W2 the sum of the three vectors is zero. OA = 5 m points along the −Y-axis (straight down), OB lies along the +X-axis, and OC makes 45° with the +Y-axis in the second quadrant (135° from +X). Find the magnitudes of OB and OC.',
+        answerFields: [
+          { key: 'ob', label: '|OB| (m)' },
+          { key: 'oc', label: '|OC| (m)' }
+        ],
+        solver() {
+          const oa = 5;
+          const oc = oa * Math.SQRT2;   // from y-equation: OC/√2 = OA
+          const ob = oc / Math.SQRT2;   // from x-equation: OB = OC/√2
+          const steps = [
+            ['Given data', 'OA = 5 m along −Y. OB along +X. OC at 135° from +X. The three vectors add to zero.'],
+            ['x-components must cancel', 'OA: vertical, x-component = 0\nOB: +OB\nOC: OC cos135° = −OC/√2\nSum: OB − OC/√2 = 0  …(i)  →  OB = OC/√2  …(ii)'],
+            ['y-components must cancel', 'OA: points down, y-component = −OA\nOB: horizontal, y-component = 0\nOC: OC cos45° = +OC/√2\nSum: −OA + OC/√2 = 0  …(iii)'],
+            ['Solve for OC', `From (iii): OC/√2 = OA = 5 m  →  OC = 5√2 = ${round(oc)} m`],
+            ['Solve for OB', `From (ii): OB = OC/√2 = OA = ${round(ob)} m`],
+            ['Final answer', `|OB| = ${round(ob)} m, |OC| = 5√2 ≈ ${round(oc)} m.`]
+          ];
+          return { answers:{ob, oc}, solution:`|OB| = ${round(ob)} m, |OC| = ${round(oc)} m`, steps };
+        }
+      },
+      {
+        id: 23,
+        topic: 'angle',
+        title: 'Q23 Direction of OA + OB − OC (HCV 2-WE4, fig 2-W3)',
+        text: 'In figure 2-W3 the vectors OA, OB and OC have equal magnitudes. OA is at 30° above the +X-axis, OB is at 60° below the +X-axis, and OC is at 45° above the −X-axis (135° from +X). Find the direction of OA + OB − OC.',
+        answerFields: [
+          { key: 'below', label: 'Angle below the +X-axis (deg)' }
+        ],
+        solver() {
+          const a = 1; // direction is independent of the common magnitude
+          const OA = compFromPolar(a, 30), OB = compFromPolar(a, -60), OC = compFromPolar(a, 135);
+          const rx = OA.x + OB.x - OC.x, ry = OA.y + OB.y - OC.y;
+          const below = Math.abs(Math.atan2(ry, rx) / DEG);
+          const steps = [
+            ['Set a common magnitude', 'Let |OA| = |OB| = |OC| = a. The direction of the result does not depend on a, so take a = 1.'],
+            ['Resolve each vector', `OA (30°):  (${round(OA.x)}a, ${round(OA.y)}a)\nOB (−60°): (${round(OB.x)}a, ${round(OB.y)}a)\nOC (135°): (${round(OC.x)}a, ${round(OC.y)}a)`],
+            ['x-component of OA + OB − OC', `Rx = ${round(OA.x)} + ${round(OB.x)} − (${round(OC.x)}) = ${round(rx)}a`],
+            ['y-component of OA + OB − OC', `Ry = ${round(OA.y)} + (${round(OB.y)}) − ${round(OC.y)} = ${round(ry)}a`],
+            ['Direction', `Ry is negative, so the resultant points below the +X-axis.\ntanφ = |Ry|/Rx = ${round(Math.abs(ry))}/${round(rx)}\nφ = ${round(below)}° below the +X-axis`],
+            ['Final answer', `OA + OB − OC is directed about ${round(below)}° below the +X-axis.`]
+          ];
+          return { answers:{below}, solution:`Direction ≈ ${round(below)}° below the +X-axis`, steps };
         }
       }
     ];
