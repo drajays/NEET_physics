@@ -27,7 +27,7 @@
     {
       id: 'calculus-solver',
       title: 'Differential Calculus Solver',
-      desc: 'Derivatives, rates of change and slopes for NEET physics — step-by-step working with units preserved.',
+      desc: 'Derivatives, rates of change and slopes for NEET physics — step-by-step working with units preserved, fully offline.',
       file: 'glassbox/calculus_physics_solver.html',
       icon: '∂',
       tags: ['Calculus', 'Kinematics'],
