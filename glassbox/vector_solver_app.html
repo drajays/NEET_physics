@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Glass Box Vector Physics Solver</title>
+  <style>
+    :root {
+      --bg1: #0f172a;
+      --bg2: #111827;
+      --glass: rgba(255,255,255,0.14);
+      --glass-strong: rgba(255,255,255,0.22);
+      --border: rgba(255,255,255,0.18);
+      --text: #e5eefc;
+      --muted: #bfd0f0;
+      --accent: #7dd3fc;
+      --accent2: #c084fc;
+      --ok: #86efac;
+      --warn: #fcd34d;
+      --bad: #fca5a5;
+      --shadow: 0 16px 40px rgba(0,0,0,0.35);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 20% 20%, rgba(125,211,252,0.18), transparent 30%),
+        radial-gradient(circle at 80% 10%, rgba(192,132,252,0.15), transparent 28%),
+        radial-gradient(circle at 70% 80%, rgba(16,185,129,0.10), transparent 25%),
+        linear-gradient(135deg, var(--bg1), var(--bg2));
+      min-height: 100vh;
+      padding: 24px;
+    }
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 20px;
+    }
+    .card {
+      background: var(--glass);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      overflow: hidden;
+    }
+    .header { padding: 24px 24px 12px; }
+    .body { padding: 20px 24px 24px; }
+    h1, h2, h3 { margin: 0 0 10px; }
+    h1 { font-size: 1.95rem; }
+    h2 { font-size: 1.15rem; }
+    p { color: var(--muted); line-height: 1.55; }
+    .toolbar, .status-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 14px 0 18px;
+    }
+    button, select, input, textarea {
+      border: 1px solid rgba(255,255,255,0.15);
+      background: rgba(255,255,255,0.10);
+      color: var(--text);
+      border-radius: 12px;
+      padding: 10px 14px;
+      font-size: 0.95rem;
+    }
+    textarea { min-height: 72px; resize: vertical; }
+    button {
+      cursor: pointer;
+      transition: 0.2s ease;
+      background: linear-gradient(135deg, rgba(125,211,252,0.22), rgba(192,132,252,0.20));
+    }
+    button:hover { transform: translateY(-1px); background: var(--glass-strong); }
+    .status-chip {
+      padding: 8px 12px;
+      border-radius: 12px;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.10);
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+    .question-box, .hint-box, .result, .formula-box, .steps-box {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 16px;
+      padding: 16px;
+      margin-bottom: 16px;
+      white-space: pre-wrap;
+    }
+    .q-meta {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 8px;
+      color: var(--accent);
+      font-weight: 600;
+    }
+    .answer-area { display: grid; gap: 12px; }
+    .answer-row {
+      display: grid;
+      grid-template-columns: 220px 1fr;
+      gap: 10px;
+      align-items: center;
+    }
+    .answer-row label { color: var(--muted); }
+    .answer-row input.correct {
+      border-color: rgba(134,239,172,0.55);
+      box-shadow: 0 0 0 1px rgba(134,239,172,0.18) inset;
+    }
+    .answer-row input.wrong {
+      border-color: rgba(252,165,165,0.55);
+      box-shadow: 0 0 0 1px rgba(252,165,165,0.18) inset;
+    }
+    .result.good { border-color: rgba(134,239,172,0.45); }
+    .result.bad { border-color: rgba(252,165,165,0.45); }
+    .pill {
+      display: inline-block;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.10);
+      border: 1px solid rgba(255,255,255,0.10);
+      color: var(--accent);
+      font-size: 0.82rem;
+      margin: 4px 6px 0 0;
+    }
+    .list {
+      display: grid;
+      gap: 10px;
+      max-height: 520px;
+      overflow: auto;
+      padding-right: 4px;
+    }
+    .mini {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.10);
+      border-radius: 14px;
+      padding: 12px;
+      cursor: pointer;
+    }
+    .mini:hover { background: rgba(255,255,255,0.09); }
+    .small { font-size: 0.88rem; color: var(--muted); }
+    .footer-note, .legend {
+      margin-top: 14px;
+      font-size: 0.88rem;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+    .step {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 14px;
+      padding: 12px;
+      margin-top: 10px;
+    }
+    .step-title { color: var(--accent); font-weight: 700; margin-bottom: 6px; }
+    .controls-inline { display:flex; gap:10px; flex-wrap:wrap; margin-top:10px; }
+    .badge {
+      display:inline-block;
+      padding:4px 8px;
+      border-radius:999px;
+      background: rgba(125,211,252,0.12);
+      border:1px solid rgba(125,211,252,0.18);
+      color: var(--accent);
+      font-size: 0.8rem;
+      margin-left: 8px;
+    }
+    @media (max-width: 980px) {
+      .container { grid-template-columns: 1fr; }
+      .answer-row { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <section class="card">
+      <div class="header">
+        <h1>Glass Box Vector Physics Solver</h1>
+        <p>Every problem now supports detailed step-by-step solving. Use <b>Auto Solve</b> to fill answers instantly or <b>Show Steps</b> to reveal each reasoning stage.</p>
+        <div>
+          <span class="pill">Detailed solving</span>
+          <span class="pill">Auto fill answers</span>
+          <span class="pill">Glass-box explanation</span>
+          <span class="pill">19 vector exercises</span>
+        </div>
+      </div>
+      <div class="body">
+        <div class="toolbar">
+          <button id="randomBtn">Generate Random Question</button>
+          <button id="showBtn">Show Full Solution</button>
+          <button id="stepsBtn">Show Steps</button>
+          <button id="autoBtn">Auto Solve</button>
+          <button id="hintBtn">Show Hint</button>
+          <button id="checkBtn">Check My Answer</button>
+          <button id="clearBtn">Clear Answer</button>
+          <select id="topicFilter">
+            <option value="all">All topics</option>
+            <option value="resultant">Resultant & components</option>
+            <option value="magnitude">Magnitude & subtraction</option>
+            <option value="angle">Angle between vectors</option>
+            <option value="dot">Dot product</option>
+            <option value="cross">Cross product</option>
+            <option value="3d">3D displacement & vectors</option>
+            <option value="concept">Conceptual / proof / reasoning</option>
+          </select>
+        </div>
+
+        <div class="status-bar">
+          <div class="status-chip" id="progressChip">Loaded: 0 / 19 reviewed</div>
+          <div class="status-chip" id="solverChip">Solver: ready</div>
+          <div class="status-chip" id="scoreChip">Last score: --</div>
+        </div>
+
+        <div class="question-box">
+          <div class="q-meta">
+            <div id="qTitle">Question</div>
+            <div id="qTopic">Topic</div>
+          </div>
+          <div id="questionText"></div>
+        </div>
+
+        <div id="hintBox" class="hint-box" style="display:none"></div>
+        <div class="answer-area" id="answerArea"></div>
+        <div id="checkResult" class="result" style="display:none"></div>
+        <div id="stepsBox" class="steps-box" style="display:none"></div>
+        <div id="solutionBox" class="formula-box" style="display:none"></div>
+      </div>
+    </section>
+
+    <aside class="card">
+      <div class="header">
+        <h2>Question Bank</h2>
+        <p>Click any question to load it. Each item has solver logic, final answers, and a fully expanded sequence of steps.</p>
+      </div>
+      <div class="body">
+        <div class="list" id="questionList"></div>
+        <div class="footer-note">Tip: angles are in degrees. Numeric answers allow small rounding differences.</div>
+        <div class="legend">Review pass completed: auto-solve verified, detailed steps added, answer highlighting included, hint mode added, and the Q18 direction corrected to +Z-axis.</div>
+      </div>
+    </aside>
+  </div>
+
+  <script>
+    const DEG = Math.PI / 180;
+    const tol = 0.15;
+
+    function round(n, d = 3) { return Number(n.toFixed(d)); }
+    function mag2(x, y) { return Math.sqrt(x*x + y*y); }
+    function mag3(x, y, z) { return Math.sqrt(x*x + y*y + z*z); }
+    function atanDeg(y, x) {
+      let a = Math.atan2(y, x) / DEG;
+      if (a < 0) a += 360;
+      return a;
+    }
+    function compFromPolar(m, ang) {
+      const r = ang * DEG;
+      return { x: m * Math.cos(r), y: m * Math.sin(r) };
+    }
+    function closeEnough(a, b, t = tol) {
+      return Math.abs(Number(a) - Number(b)) <= t;
+    }
+    function parseNums(str) {
+      return String(str).split(',').map(s => Number(s.trim())).filter(v => !Number.isNaN(v));
+    }
+    function block(title, body) {
+      return `<div class="step"><div class="step-title">${title}</div><div>${body}</div></div>`;
+    }
+
+    const questionBank = [
+      {
+        id: 1,
+        topic: 'resultant',
+        title: 'Q1 Resultant of two vectors',
+        text: 'A vector A makes an angle of 20° and B makes an angle of 110° with the X-axis. Their magnitudes are 3 m and 4 m respectively. Find the resultant.',
+        answerFields: [
+          { key: 'rx', label: 'Resultant x-component' },
+          { key: 'ry', label: 'Resultant y-component' },
+          { key: 'rmag', label: 'Resultant magnitude' },
+          { key: 'rang', label: 'Resultant angle with +X-axis (deg)' }
+        ],
+        solver() {
+          const A = compFromPolar(3, 20), B = compFromPolar(4, 110);
+          const rx = A.x + B.x, ry = A.y + B.y, rmag = mag2(rx, ry), rang = atanDeg(ry, rx);
+          const steps = [
+            ['Given data', 'Magnitude of A = 3 m at 20°. Magnitude of B = 4 m at 110°.'],
+            ['Resolve vector A', `Ax = 3 cos20° = ${round(A.x)} m\nAy = 3 sin20° = ${round(A.y)} m`],
+            ['Resolve vector B', `Bx = 4 cos110° = ${round(B.x)} m\nBy = 4 sin110° = ${round(B.y)} m`],
+            ['Add corresponding components', `Rx = Ax + Bx = ${round(A.x)} + ${round(B.x)} = ${round(rx)} m\nRy = Ay + By = ${round(A.y)} + ${round(B.y)} = ${round(ry)} m`],
+            ['Find magnitude of resultant', `|R| = √(Rx² + Ry²) = √(${round(rx)}² + ${round(ry)}²) = ${round(rmag)} m`],
+            ['Find direction', `θ = tan⁻¹(Ry/Rx) = atan2(${round(ry)}, ${round(rx)}) = ${round(rang)}°`],
+            ['Final answer', `Resultant = (${round(rx)} i + ${round(ry)} j) m\nMagnitude = ${round(rmag)} m\nAngle = ${round(rang)}°`] 
+          ];
+          return { answers:{rx,ry,rmag,rang}, solution:`R = (${round(rx)}, ${round(ry)}) m\n|R| = ${round(rmag)} m\nAngle = ${round(rang)}°`, steps };
+        }
+      },
+      {
+        id: 2,
+        topic: 'resultant',
+        title: 'Q2 Equal magnitudes at 30° and 60°',
+        text: 'Let vectors A and B each have magnitude 10 units and make angles 30° and 60° respectively with the X-axis. Find the resultant.',
+        answerFields: [
+          { key: 'rx', label: 'Resultant x-component' },
+          { key: 'ry', label: 'Resultant y-component' },
+          { key: 'rmag', label: 'Resultant magnitude' },
+          { key: 'rang', label: 'Resultant angle (deg)' }
+        ],
+        solver() {
+          const A = compFromPolar(10, 30), B = compFromPolar(10, 60);
+          const rx = A.x + B.x, ry = A.y + B.y, rmag = mag2(rx, ry), rang = atanDeg(ry, rx);
+          const steps = [
+            ['Given data', 'A = 10 at 30°, B = 10 at 60°.'],
+            ['Components of A', `Ax = 10cos30° = ${round(A.x)}\nAy = 10sin30° = ${round(A.y)}`],
+            ['Components of B', `Bx = 10cos60° = ${round(B.x)}\nBy = 10sin60° = ${round(B.y)}`],
+            ['Add vectors', `Rx = ${round(A.x)} + ${round(B.x)} = ${round(rx)}\nRy = ${round(A.y)} + ${round(B.y)} = ${round(ry)}`],
+            ['Magnitude', `|R| = √(${round(rx)}² + ${round(ry)}²) = ${round(rmag)}`],
+            ['Direction', `θ = atan2(${round(ry)}, ${round(rx)}) = ${round(rang)}°`],
+            ['Final answer', `R = (${round(rx)}, ${round(ry)})\n|R| = ${round(rmag)}\nθ = ${round(rang)}°`] 
+          ];
+          return { answers:{rx,ry,rmag,rang}, solution:`R = (${round(rx)}, ${round(ry)})\n|R| = ${round(rmag)}\nθ = ${round(rang)}°`, steps };
+        }
+      },
+      {
+        id: 3,
+        topic: 'resultant',
+        title: 'Q3 Sum of three 100-unit vectors',
+        text: 'Add vectors A, B and C, each of magnitude 100 units, inclined at 45°, 135° and 315° to the X-axis.',
+        answerFields: [
+          { key: 'rx', label: 'Sum x-component' },
+          { key: 'ry', label: 'Sum y-component' },
+          { key: 'rmag', label: 'Resultant magnitude' },
+          { key: 'rang', label: 'Resultant angle (deg)' }
+        ],
+        solver() {
+          const A = compFromPolar(100,45), B = compFromPolar(100,135), C = compFromPolar(100,315);
+          const rx = A.x+B.x+C.x, ry = A.y+B.y+C.y, rmag = mag2(rx,ry), rang = atanDeg(ry,rx);
+          const steps = [
+            ['Resolve all three vectors', `A = (${round(A.x)}, ${round(A.y)})\nB = (${round(B.x)}, ${round(B.y)})\nC = (${round(C.x)}, ${round(C.y)})`],
+            ['Add x-components', `Rx = ${round(A.x)} + ${round(B.x)} + ${round(C.x)} = ${round(rx)}`],
+            ['Add y-components', `Ry = ${round(A.y)} + ${round(B.y)} + ${round(C.y)} = ${round(ry)}`],
+            ['Magnitude', `|R| = √(${round(rx)}² + ${round(ry)}²) = ${round(rmag)}`],
+            ['Direction', `θ = atan2(${round(ry)}, ${round(rx)}) = ${round(rang)}°`],
+            ['Final answer', `Resultant = (${round(rx)}, ${round(ry)})\n|R| = ${round(rmag)}\nθ = ${round(rang)}°`] 
+          ];
+          return { answers:{rx,ry,rmag,rang}, solution:`R = (${round(rx)}, ${round(ry)})\n|R| = ${round(rmag)}\nθ = ${round(rang)}°`, steps };
+        }
+      },
+      {
+        id: 4,
+        topic: 'magnitude',
+        title: 'Q4 Magnitudes of a, b, a+b, a-b',
+        text: 'Let a = 4i + 3j and b = 3i + 4j. Find the magnitudes of (a) a, (b) b, (c) a+b and (d) a-b.',
+        answerFields: [
+          { key: 'maga', label: '|a|' },
+          { key: 'magb', label: '|b|' },
+          { key: 'magapb', label: '|a+b|' },
+          { key: 'magamb', label: '|a-b|' }
+        ],
+        solver() {
+          const a = {x:4,y:3}, b = {x:3,y:4}, apb = {x:7,y:7}, amb = {x:1,y:-1};
+          const maga = mag2(a.x,a.y), magb = mag2(b.x,b.y), magapb = mag2(apb.x,apb.y), magamb = mag2(amb.x,amb.y);
+          const steps = [
+            ['Write vectors in component form', `a = (4,3), b = (3,4)`],
+            ['Magnitude of a', `|a| = √(4² + 3²) = √25 = 5`],
+            ['Magnitude of b', `|b| = √(3² + 4²) = √25 = 5`],
+            ['Add vectors', `a + b = (4+3, 3+4) = (7,7)`],
+            ['Magnitude of a+b', `|a+b| = √(7² + 7²) = √98 = ${round(magapb)}`],
+            ['Subtract vectors', `a - b = (4-3, 3-4) = (1,-1)`],
+            ['Magnitude of a-b', `|a-b| = √(1² + (-1)²) = √2 = ${round(magamb)}`],
+            ['Final answer', `|a| = 5, |b| = 5, |a+b| = ${round(magapb)}, |a-b| = ${round(magamb)}`]
+          ];
+          return { answers:{maga,magb,magapb,magamb}, solution:`|a| = 5\n|b| = 5\n|a+b| = ${round(magapb)}\n|a-b| = ${round(magamb)}`, steps };
+        }
+      },
+      {
+        id: 5,
+        topic: 'resultant',
+        title: 'Q5 Figure-based resultant (interpreted)',
+        text: 'Using the figure data: OA = 2.0 m at 30°, BC = 1.5 m at 90°, and DE = 1.0 m along +X-axis. Find the resultant magnitude, x and y components, and angle with X-axis. This uses a coordinate interpretation of the figure.',
+        answerFields: [
+          { key: 'rx', label: 'Resultant x-component' },
+          { key: 'ry', label: 'Resultant y-component' },
+          { key: 'rmag', label: 'Resultant magnitude' },
+          { key: 'rang', label: 'Resultant angle (deg)' }
+        ],
+        solver() {
+          const OA = compFromPolar(2,30), BC = compFromPolar(1.5,90), DE = compFromPolar(1,0);
+          const rx = OA.x+BC.x+DE.x, ry = OA.y+BC.y+DE.y, rmag = mag2(rx,ry), rang = atanDeg(ry,rx);
+          const steps = [
+            ['Interpret the figure as vectors', `OA = 2 m at 30°, BC = 1.5 m at 90°, DE = 1 m at 0°.`],
+            ['Resolve OA', `OA = (${round(OA.x)}, ${round(OA.y)})`],
+            ['Resolve BC', `BC = (${round(BC.x)}, ${round(BC.y)})`],
+            ['Resolve DE', `DE = (${round(DE.x)}, ${round(DE.y)})`],
+            ['Add x-components', `Rx = ${round(OA.x)} + ${round(BC.x)} + ${round(DE.x)} = ${round(rx)}`],
+            ['Add y-components', `Ry = ${round(OA.y)} + ${round(BC.y)} + ${round(DE.y)} = ${round(ry)}`],
+            ['Magnitude and direction', `|R| = √(${round(rx)}² + ${round(ry)}²) = ${round(rmag)}\nθ = atan2(${round(ry)}, ${round(rx)}) = ${round(rang)}°`],
+            ['Final answer', `R = (${round(rx)}, ${round(ry)})\n|R| = ${round(rmag)}\nθ = ${round(rang)}°`] 
+          ];
+          return { answers:{rx,ry,rmag,rang}, solution:`R = (${round(rx)}, ${round(ry)})\n|R| = ${round(rmag)}\nθ = ${round(rang)}°`, steps };
+        }
+      },
+      {
+        id: 6,
+        topic: 'angle',
+        title: 'Q6 Angle from resultant magnitude',
+        text: 'Two vectors have magnitudes 3 units and 4 units respectively. What should be the angle between them if the magnitude of the resultant is (a) 1 unit, (b) 5 units and (c) 7 units?',
+        answerFields: [
+          { key: 'ang1', label: 'Angle for resultant 1 unit (deg)' },
+          { key: 'ang5', label: 'Angle for resultant 5 units (deg)' },
+          { key: 'ang7', label: 'Angle for resultant 7 units (deg)' }
+        ],
+        solver() {
+          function angleFor(R){ return Math.acos((R*R-9-16)/(2*3*4))/DEG; }
+          const ang1 = angleFor(1), ang5 = angleFor(5), ang7 = angleFor(7);
+          const steps = [
+            ['Use resultant formula', 'R² = A² + B² + 2AB cosθ, where A = 3 and B = 4.'],
+            ['Case (a): R = 1', `1² = 3² + 4² + 2×3×4 cosθ\n1 = 9 + 16 + 24 cosθ\n24 cosθ = -24\ncosθ = -1\nθ = 180°`],
+            ['Case (b): R = 5', `5² = 9 + 16 + 24 cosθ\n25 = 25 + 24 cosθ\ncosθ = 0\nθ = 90°`],
+            ['Case (c): R = 7', `7² = 9 + 16 + 24 cosθ\n49 = 25 + 24 cosθ\ncosθ = 1\nθ = 0°`],
+            ['Final answer', `(a) 180°, (b) 90°, (c) 0°`] 
+          ];
+          return { answers:{ang1,ang5,ang7}, solution:`Angles: 180°, 90°, 0°`, steps };
+        }
+      },
+      {
+        id: 7,
+        topic: 'resultant',
+        title: 'Q7 Spy car displacement',
+        text: 'A car moved 2.00 km east, then made a perpendicular left turn, ran for 500 m, then made a perpendicular right turn, ran for 4.00 km and stopped. Find the displacement of the car.',
+        answerFields: [
+          { key: 'dx', label: 'Displacement x-component (km)' },
+          { key: 'dy', label: 'Displacement y-component (km)' },
+          { key: 'dmag', label: 'Displacement magnitude (km)' },
+          { key: 'dang', label: 'Angle north of east (deg)' }
+        ],
+        solver() {
+          const dx = 6, dy = 0.5, dmag = mag2(dx,dy), dang = atanDeg(dy,dx);
+          const steps = [
+            ['Represent each path segment', `East 2.00 km = (2,0)\nLeft turn from east means north 0.50 km = (0,0.5)\nRight turn from north means east 4.00 km = (4,0)`],
+            ['Add x-components', `Dx = 2 + 0 + 4 = 6 km`],
+            ['Add y-components', `Dy = 0 + 0.5 + 0 = 0.5 km`],
+            ['Magnitude', `|D| = √(6² + 0.5²) = ${round(dmag)} km`],
+            ['Direction', `θ = tan⁻¹(0.5/6) = ${round(dang)}° north of east`],
+            ['Final answer', `Displacement = (6, 0.5) km\nMagnitude = ${round(dmag)} km\nDirection = ${round(dang)}° north of east`] 
+          ];
+          return { answers:{dx,dy,dmag,dang}, solution:`D = (6,0.5) km\n|D| = ${round(dmag)} km\nθ = ${round(dang)}°`, steps };
+        }
+      },
+      {
+        id: 8,
+        topic: 'resultant',
+        title: 'Q8 Carrom board displacements',
+        text: 'A carrom board (4 ft × 4 ft square) has the queen at the centre. The queen moves to the front edge, rebounds and goes in the hole behind the striking line. Find the magnitude of displacement (a) from the centre to the front edge, (b) from the front edge to the hole and (c) from the centre to the hole. The app uses a midpoint/front-edge and back-corner-hole interpretation.',
+        answerFields: [
+          { key: 'a', label: '(a) centre to front edge (ft)' },
+          { key: 'b', label: '(b) front edge to hole (ft)' },
+          { key: 'c', label: '(c) centre to hole (ft)' }
+        ],
+        solver() {
+          const a = 2, b = Math.sqrt(20), c = Math.sqrt(8);
+          const steps = [
+            ['Set coordinates', 'Take the square board corners from (0,0) to (4,4). Centre is at (2,2). Use front edge midpoint (2,4) and a hole at a back corner, say (0,0).'],
+            ['Part (a)', `Centre to front edge midpoint = distance between (2,2) and (2,4)\n= √[(2-2)² + (4-2)²] = √4 = 2 ft`],
+            ['Part (b)', `Front edge midpoint to hole = distance between (2,4) and (0,0)\n= √[(2-0)² + (4-0)²] = √(4 + 16) = √20 = ${round(b)} ft`],
+            ['Part (c)', `Centre to hole = distance between (2,2) and (0,0)\n= √[(2-0)² + (2-0)²] = √8 = ${round(c)} ft`],
+            ['Final answer', `(a) 2 ft, (b) ${round(b)} ft, (c) ${round(c)} ft`] 
+          ];
+          return { answers:{a,b,c}, solution:`(a) 2 ft\n(b) ${round(b)} ft\n(c) ${round(c)} ft`, steps };
+        }
+      },
+      {
+        id: 9,
+        topic: '3d',
+        title: 'Q9 Mosquito net displacement',
+        text: 'A mosquito net over a 7 ft × 4 ft bed is 3 ft high. The mosquito enters at one lower corner and sits at the diagonally opposite upper corner. Find (a) the magnitude of displacement and (b) the components of the displacement vector.',
+        answerFields: [
+          { key: 'mag', label: 'Displacement magnitude (ft)' },
+          { key: 'comp', label: 'Components x,y,z' }
+        ],
+        solver() {
+          const x=7, y=4, z=3, mag = mag3(x,y,z);
+          const steps = [
+            ['Choose axes', 'Take the hole as origin. Bed length along X = 7 ft, width along Y = 4 ft, height along Z = 3 ft.'],
+            ['Write displacement vector', `The mosquito goes from (0,0,0) to (7,4,3).\nSo displacement vector = 7i + 4j + 3k.`],
+            ['Find magnitude', `|d| = √(7² + 4² + 3²) = √(49 + 16 + 9) = √74 = ${round(mag)} ft`],
+            ['Final answer', `Magnitude = ${round(mag)} ft\nComponents = (7,4,3)`] 
+          ];
+          return { answers:{mag, comp:'7,4,3'}, solution:`|d| = ${round(mag)} ft\nd = (7,4,3)`, steps };
+        }
+      },
+      {
+        id: 10,
+        topic: 'resultant',
+        title: 'Q10 Scalar multiples of a northward vector',
+        text: 'Suppose a is a vector of magnitude 4.5 units due north. What are the vectors (a) 3a and (b) -4a?',
+        answerFields: [
+          { key: 'a1', label: '3a: magnitude,direction' },
+          { key: 'a2', label: '-4a: magnitude,direction' }
+        ],
+        solver() {
+          const steps = [
+            ['Original vector', 'a has magnitude 4.5 units due north.'],
+            ['Multiply by 3', '3a has magnitude 3 × 4.5 = 13.5 units. Direction remains north because the scalar is positive.'],
+            ['Multiply by -4', '-4a has magnitude 4 × 4.5 = 18 units. Direction reverses because the scalar is negative, so it points south.'],
+            ['Final answer', `3a = 13.5 units north\n-4a = 18 units south`] 
+          ];
+          return { answers:{a1:'13.5,north', a2:'18,south'}, solution:`3a = 13.5 north\n-4a = 18 south`, steps };
+        }
+      },
+      {
+        id: 11,
+        topic: 'dot',
+        title: 'Q11 Dot and cross magnitudes',
+        text: 'Two vectors have magnitudes 2 m and 3 m. The angle between them is 60°. Find (a) the scalar product and (b) the magnitude of their vector product.',
+        answerFields: [
+          { key: 'dot', label: 'Scalar product' },
+          { key: 'cross', label: 'Magnitude of vector product' }
+        ],
+        solver() {
+          const dot = 2*3*Math.cos(60*DEG), cross = 2*3*Math.sin(60*DEG);
+          const steps = [
+            ['Given', 'a = 2 m, b = 3 m, angle θ = 60°.'],
+            ['Scalar product formula', `a·b = ab cosθ = 2 × 3 × cos60° = 6 × 1/2 = 3`],
+            ['Vector product magnitude formula', `|a×b| = ab sinθ = 2 × 3 × sin60° = 6 × (√3/2) = 3√3 = ${round(cross)}`],
+            ['Final answer', `Scalar product = 3\n|a×b| = ${round(cross)}`] 
+          ];
+          return { answers:{dot,cross}, solution:`a·b = 3\n|a×b| = ${round(cross)}`, steps };
+        }
+      },
+      {
+        id: 12,
+        topic: 'concept',
+        title: 'Q12 Hexagon cosine identity',
+        text: 'Let A1A2A3A4A5A6A1 be a regular hexagon. Use the x-components of the vectors represented by the six sides taken in order to prove cos0 + cosπ/3 + cos2π/3 + cos3π/3 + cos4π/3 + cos5π/3 = 0. Verify numerically.',
+        answerFields: [
+          { key: 'sum', label: 'Numerical sum' }
+        ],
+        solver() {
+          const sum = Math.cos(0)+Math.cos(Math.PI/3)+Math.cos(2*Math.PI/3)+Math.cos(Math.PI)+Math.cos(4*Math.PI/3)+Math.cos(5*Math.PI/3);
+          const steps = [
+            ['Use polygon closure', 'The six side vectors of a regular hexagon taken in order form a closed polygon. Therefore, their vector sum is zero.'],
+            ['Take x-components', 'If the magnitudes of all side vectors are equal, then the sum of their x-components must be zero.'],
+            ['Write x-components', 'x-components are proportional to cos0, cos(π/3), cos(2π/3), cos(π), cos(4π/3), cos(5π/3).'],
+            ['Hence', 'cos0 + cos(π/3) + cos(2π/3) + cos(π) + cos(4π/3) + cos(5π/3) = 0'],
+            ['Verify numerically', `1 + 1/2 - 1/2 - 1 - 1/2 + 1/2 = ${round(sum)}`],
+            ['Final answer', 'The identity is proved and verified numerically as 0.']
+          ];
+          return { answers:{sum}, solution:`Sum = ${round(sum)}`, steps };
+        }
+      },
+      {
+        id: 13,
+        topic: 'angle',
+        title: 'Q13 Angle between 3D vectors',
+        text: 'Let a = 2i + 3j + 4k and b = 3i + 4j + 5k. Find the angle between them.',
+        answerFields: [
+          { key: 'ang', label: 'Angle (deg)' }
+        ],
+        solver() {
+          const dot = 38, ma = Math.sqrt(29), mb = Math.sqrt(50), ang = Math.acos(dot/(ma*mb))/DEG;
+          const steps = [
+            ['Use dot product formula', 'a·b = |a||b|cosθ'],
+            ['Find dot product', `a·b = 2×3 + 3×4 + 4×5 = 6 + 12 + 20 = 38`],
+            ['Find magnitudes', `|a| = √(2²+3²+4²) = √29\n|b| = √(3²+4²+5²) = √50`],
+            ['Compute cosθ', `cosθ = 38/(√29 × √50)`],
+            ['Find angle', `θ = cos⁻¹(38/(√29√50)) = ${round(ang)}°`],
+            ['Final answer', `Angle between vectors = ${round(ang)}°`] 
+          ];
+          return { answers:{ang}, solution:`θ = ${round(ang)}°`, steps };
+        }
+      },
+      {
+        id: 14,
+        topic: 'concept',
+        title: 'Q14 Prove A · (A × B) = 0',
+        text: 'Prove that A · (A × B) = 0.',
+        answerFields: [
+          { key: 'ans', label: 'Answer' }
+        ],
+        solver() {
+          const steps = [
+            ['Property of cross product', 'A × B is always perpendicular to A as well as to B.'],
+            ['Property of dot product', 'The dot product of two perpendicular vectors is zero.'],
+            ['Apply to the expression', 'Since A is perpendicular to (A × B), we have A · (A × B) = 0.'],
+            ['Final answer', 'A · (A × B) = 0']
+          ];
+          return { answers:{ans:'0'}, solution:`A · (A × B) = 0`, steps };
+        }
+      },
+      {
+        id: 15,
+        topic: 'cross',
+        title: 'Q15 Cross product in component form',
+        text: 'If A = 2i + 3j + 4k and B = 4i + 3j + 2k, find A × B.',
+        answerFields: [
+          { key: 'comp', label: 'Components x,y,z' }
+        ],
+        solver() {
+          const x = 3*2 - 4*3;
+          const y = -(2*2 - 4*4);
+          const z = 2*3 - 3*4;
+          const steps = [
+            ['Write determinant', 'A × B = | i  j  k ; 2 3 4 ; 4 3 2 |'],
+            ['Expand along first row', `i(3×2 - 4×3) - j(2×2 - 4×4) + k(2×3 - 3×4)`],
+            ['Compute each component', `x = 6 - 12 = ${x}\ny = -(4 - 16) = ${y}\nz = 6 - 12 = ${z}`],
+            ['As a vector', `A × B = ${x}i + ${y}j + ${z}k`],
+            ['Final answer', `A × B = (${x}, ${y}, ${z})`] 
+          ];
+          return { answers:{comp:`${x},${y},${z}`}, solution:`A × B = (${x}, ${y}, ${z})`, steps };
+        }
+      },
+      {
+        id: 16,
+        topic: 'concept',
+        title: 'Q16 Perpendicular vectors and converse',
+        text: 'If A, B, C are mutually perpendicular, show that C × (A × B) = 0. Is the converse true?',
+        answerFields: [
+          { key: 'ans', label: 'Converse true? yes/no' }
+        ],
+        solver() {
+          const steps = [
+            ['Start from A and B', 'If A and B are mutually perpendicular, then A × B is perpendicular to both A and B.'],
+            ['Use the condition on C', 'Since C is also perpendicular to A and to B, C must be parallel or antiparallel to A × B.'],
+            ['Take cross product', 'Cross product of parallel vectors is zero. Therefore C × (A × B) = 0.'],
+            ['Check converse', 'The converse is not always true. C × (A × B) = 0 only tells us that C is parallel to A × B, or one vector may be zero. It does not fully guarantee mutual perpendicularity in every case.'],
+            ['Final answer', 'C × (A × B) = 0. Converse: No.']
+          ];
+          return { answers:{ans:'no'}, solution:`C × (A × B) = 0 ; converse is not true in general`, steps };
+        }
+      },
+      {
+        id: 17,
+        topic: 'concept',
+        title: 'Q17 Show OP × v is constant',
+        text: 'A particle moves on a straight line with constant speed v. At a point P on its path, O is a fixed point. Show that OP × v is independent of the position P.',
+        answerFields: [
+          { key: 'ans', label: 'Key conclusion' }
+        ],
+        solver() {
+          const steps = [
+            ['Let r = OP', 'Take the position vector from O to any point P on the line as r.'],
+            ['Resolve r', 'Split r into two components: one parallel to the direction of motion and one perpendicular to the line.'],
+            ['Cross with v', 'The part parallel to v gives zero cross product. So only the perpendicular component contributes to r × v.'],
+            ['Use straight-line geometry', 'The perpendicular distance from a fixed point O to a fixed straight line is constant. The speed v is also constant.'],
+            ['Conclude', 'Therefore r × v has constant magnitude and direction, so OP × v is independent of P.'],
+            ['Final answer', 'OP × v is constant.']
+          ];
+          return { answers:{ans:'constant'}, solution:`OP × v is constant`, steps };
+        }
+      },
+      {
+        id: 18,
+        topic: 'cross',
+        title: 'Q18 Electric and magnetic force balance',
+        text: 'The force on a charged particle is F = qE + q(v × B). Suppose E is along the X-axis and B along the Y-axis. In what direction and with what minimum speed should a positively charged particle be sent so that the net force on it is zero?',
+        answerFields: [
+          { key: 'dir', label: 'Direction of v' },
+          { key: 'speed', label: 'Minimum speed' }
+        ],
+        solver() {
+          const steps = [
+            ['Set net force to zero', 'For net force zero: qE + q(v × B) = 0. Divide by q to get E + (v × B) = 0.'],
+            ['Required direction of magnetic part', 'Therefore v × B must be opposite to E. If E is along +X, then v × B must be along -X.'],
+            ['Use the direction of B', 'B is along +Y. We need a vector v such that v × j = -i.'],
+            ['Apply right-hand rule', 'k × j = -i. Therefore v must be along +Z-axis.'],
+            ['Find minimum speed', 'Magnitude condition: E = vB when the angle between v and B is 90°. So v = E/B. This is minimum because the magnetic force is maximum for a 90° angle.'],
+            ['Final answer', 'Direction: +Z-axis\nMinimum speed: E/B']
+          ];
+          return { answers:{dir:'positive z-axis', speed:'E/B'}, solution:`v along +Z-axis\nminimum speed = E/B`, steps };
+        }
+      },
+      {
+        id: 19,
+        topic: 'concept',
+        title: 'Q19 Example where A·B = C·B but A ≠ C',
+        text: 'Give an example for which A·B = C·B but A ≠ C.',
+        answerFields: [
+          { key: 'ex', label: 'Example A;B;C' }
+        ],
+        solver() {
+          const steps = [
+            ['Choose B conveniently', 'Take B = (0,1). Then any vector along the x-axis will have dot product zero with B.'],
+            ['Choose two different vectors', 'Take A = (1,0) and C = (2,0). Clearly A ≠ C.'],
+            ['Check dot products', 'A·B = (1,0)·(0,1) = 0\nC·B = (2,0)·(0,1) = 0'],
+            ['Conclude', 'A·B = C·B but A ≠ C.'],
+            ['Final answer', 'Example: A=(1,0), B=(0,1), C=(2,0)']
+          ];
+          return { answers:{ex:'(1,0);(0,1);(2,0)'}, solution:`A=(1,0), B=(0,1), C=(2,0)`, steps };
+        }
+      }
+    ];
+
+    let current = null;
+    const reviewedSet = new Set();
+
+    const questionText = document.getElementById('questionText');
+    const qTitle = document.getElementById('qTitle');
+    const qTopic = document.getElementById('qTopic');
+    const answerArea = document.getElementById('answerArea');
+    const solutionBox = document.getElementById('solutionBox');
+    const stepsBox = document.getElementById('stepsBox');
+    const checkResult = document.getElementById('checkResult');
+    const hintBox = document.getElementById('hintBox');
+    const topicFilter = document.getElementById('topicFilter');
+    const questionList = document.getElementById('questionList');
+    const progressChip = document.getElementById('progressChip');
+    const solverChip = document.getElementById('solverChip');
+    const scoreChip = document.getElementById('scoreChip');
+
+    function renderQuestionList() {
+      questionList.innerHTML = '';
+      questionBank.forEach(q => {
+        const div = document.createElement('div');
+        div.className = 'mini';
+        div.innerHTML = `<strong>${q.title}</strong><div class="small">${q.topic}</div>`;
+        div.onclick = () => loadQuestion(q.id);
+        questionList.appendChild(div);
+      });
+    }
+
+    function loadQuestion(id) {
+      current = questionBank.find(q => q.id === id);
+      reviewedSet.add(id);
+      qTitle.textContent = current.title;
+      qTopic.textContent = 'Topic: ' + current.topic;
+      questionText.textContent = current.text;
+      answerArea.innerHTML = '';
+      current.answerFields.forEach(f => {
+        const row = document.createElement('div');
+        row.className = 'answer-row';
+        row.innerHTML = `<label for="${f.key}">${f.label}</label><input id="${f.key}" placeholder="Enter answer" />`;
+        answerArea.appendChild(row);
+      });
+      hintBox.style.display = 'none';
+      checkResult.style.display = 'none';
+      stepsBox.style.display = 'none';
+      solutionBox.style.display = 'none';
+      hintBox.textContent = '';
+      checkResult.textContent = '';
+      stepsBox.innerHTML = '';
+      solutionBox.textContent = '';
+      checkResult.className = 'result';
+      progressChip.textContent = `Loaded: ${reviewedSet.size} / ${questionBank.length} reviewed`;
+      solverChip.textContent = `Solver: ready for ${current.title}`;
+      scoreChip.textContent = 'Last score: --';
+    }
+
+    function getRandomQuestion() {
+      const filter = topicFilter.value;
+      const pool = filter === 'all' ? questionBank : questionBank.filter(q => q.topic === filter);
+      const q = pool[Math.floor(Math.random() * pool.length)];
+      loadQuestion(q.id);
+    }
+
+    function normalizeText(s) {
+      return String(s).trim().toLowerCase().replace(/\s+/g, ' ');
+    }
+
+    function checkAnswer() {
+      if (!current) return;
+      const solved = current.solver();
+      const ans = solved.answers;
+      const messages = [];
+      let okCount = 0;
+      const total = current.answerFields.length;
+
+      current.answerFields.forEach(f => {
+        const inputEl = document.getElementById(f.key);
+        const userVal = inputEl.value.trim();
+        const correctVal = ans[f.key];
+        let ok = false;
+        inputEl.classList.remove('correct', 'wrong');
+
+        if (typeof correctVal === 'number') {
+          ok = closeEnough(Number(userVal), correctVal);
+        } else if (typeof correctVal === 'string' && correctVal.includes(',') && userVal.includes(',')) {
+          const a = parseNums(userVal), b = parseNums(correctVal);
+          if (a.length === b.length && a.length > 0) ok = a.every((v, i) => closeEnough(v, b[i]));
+          else ok = normalizeText(userVal) === normalizeText(correctVal);
+        } else {
+          ok = normalizeText(userVal).includes(normalizeText(correctVal)) || normalizeText(correctVal).includes(normalizeText(userVal));
+        }
+
+        if (ok) {
+          okCount++;
+          inputEl.classList.add('correct');
+          messages.push(`✔ ${f.label}: correct`);
+        } else {
+          inputEl.classList.add('wrong');
+          messages.push(`✘ ${f.label}: expected ${correctVal}`);
+        }
+      });
+
+      checkResult.style.display = 'block';
+      checkResult.className = 'result ' + (okCount === total ? 'good' : 'bad');
+      checkResult.textContent = `Score: ${okCount}/${total}\n` + messages.join('\n');
+      scoreChip.textContent = `Last score: ${okCount}/${total}`;
+    }
+
+    function showSolution() {
+      if (!current) return;
+      const solved = current.solver();
+      solutionBox.style.display = 'block';
+      solutionBox.textContent = solved.solution;
+      solverChip.textContent = 'Solver: final solution displayed';
+    }
+
+    function showSteps() {
+      if (!current) return;
+      const solved = current.solver();
+      stepsBox.style.display = 'block';
+      stepsBox.innerHTML = '<h3>Step-by-step solving <span class="badge">full details</span></h3>' + solved.steps.map((s, i) => block(`Step ${i+1}: ${s[0]}`, s[1].replace(/\n/g,'<br>'))).join('');
+      solverChip.textContent = 'Solver: detailed steps displayed';
+    }
+
+    function showHint() {
+      if (!current) return;
+      let hint = 'Hint: convert vectors into components first, then combine x- and y-parts carefully.';
+      if (current.topic === 'dot') hint = 'Hint: use a·b = ab cosθ.';
+      if (current.topic === 'cross') hint = 'Hint: use |a×b| = ab sinθ or determinant form in 3D.';
+      if (current.topic === 'angle') hint = 'Hint: use cosθ = (a·b)/(|a||b|) or R² = A² + B² + 2AB cosθ.';
+      if (current.topic === '3d') hint = 'Hint: use √(x² + y² + z²) for magnitude in 3D.';
+      if (current.topic === 'concept') hint = 'Hint: use the geometric meaning of dot product, cross product, perpendicularity, or closed polygon vectors.';
+      hintBox.style.display = 'block';
+      hintBox.textContent = hint;
+    }
+
+    function autoSolve() {
+      if (!current) return;
+      const solved = current.solver();
+      current.answerFields.forEach(f => {
+        const el = document.getElementById(f.key);
+        const value = solved.answers[f.key];
+        if (!el) return;
+        el.value = typeof value === 'number' ? round(value) : value;
+      });
+      showSteps();
+      showSolution();
+      checkAnswer();
+      solverChip.textContent = 'Solver: auto-solved with full details';
+    }
+
+    function clearAnswer() {
+      if (!current) return;
+      current.answerFields.forEach(f => {
+        const el = document.getElementById(f.key);
+        el.value = '';
+        el.classList.remove('correct', 'wrong');
+      });
+      hintBox.style.display = 'none';
+      checkResult.style.display = 'none';
+      stepsBox.style.display = 'none';
+      solutionBox.style.display = 'none';
+      hintBox.textContent = '';
+      checkResult.textContent = '';
+      stepsBox.innerHTML = '';
+      solutionBox.textContent = '';
+      scoreChip.textContent = 'Last score: --';
+      solverChip.textContent = 'Solver: ready';
+    }
+
+    document.getElementById('randomBtn').onclick = getRandomQuestion;
+    document.getElementById('showBtn').onclick = showSolution;
+    document.getElementById('stepsBtn').onclick = showSteps;
+    document.getElementById('autoBtn').onclick = autoSolve;
+    document.getElementById('hintBtn').onclick = showHint;
+    document.getElementById('checkBtn').onclick = checkAnswer;
+    document.getElementById('clearBtn').onclick = clearAnswer;
+
+    renderQuestionList();
+    loadQuestion(1);
+  </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a1361b945b520d14',t:'MTc4Mjc0ODQ0NA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

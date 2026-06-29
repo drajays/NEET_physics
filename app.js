@@ -3343,7 +3343,7 @@ function resetAllData() {
 
 function bindEvents() {
   el.navItems.forEach(tab => {
-    tab.addEventListener('click', () => switchTab(tab.dataset.tab));
+    tab.addEventListener('click', () => { if (tab.dataset.tab) switchTab(tab.dataset.tab); });
   });
 
   if (el.menuToggle && el.sidebar) {
