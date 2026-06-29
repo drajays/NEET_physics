@@ -2677,6 +2677,7 @@ function switchTab(tabName) {
   if (tabName === 'notes' && window.NeetNotes) NeetNotes.render();
   if (tabName === 'revise' && window.NeetRevise) NeetRevise.render();
   if (tabName === 'exam' && window.NeetExam) NeetExam.render();
+  if (tabName === 'glassbox' && window.NeetGlassbox) NeetGlassbox.render();
   refreshLearningViews();
 }
 
@@ -3743,6 +3744,7 @@ async function init() {
   if (window.NeetNotes) NeetNotes.init(learningDeps);
   if (window.NeetRevise) NeetRevise.init(learningDeps);
   if (window.NeetExam) NeetExam.init(learningDeps);
+  if (window.NeetGlassbox) NeetGlassbox.init(learningDeps);
 
   state.questions = await loadQuestionsAsync();
   initNotesIndex();

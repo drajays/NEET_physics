@@ -5,7 +5,7 @@ const CACHE = 'neet-physics-v20260629';
 const SHELL = [
   './',
   './index.html',
-  './styles.css?v=20260627',
+  './styles.css?v=20260629',
   './config.js?v=20260627',
   './notes-bundle.js?v=20260628173638',
   './js/curriculum.js?v=20260627',
@@ -17,6 +17,7 @@ const SHELL = [
   './js/notes.js?v=20260627',
   './js/revise.js?v=20260627',
   './js/exam.js?v=20260627',
+  './js/glassbox.js?v=20260629',
   './app.js?v=20260629',
   './glassbox/vector_solver_app.html',
   './favicon.svg',
