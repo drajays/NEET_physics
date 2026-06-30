@@ -208,6 +208,35 @@
   </section>
 
   <section class="card panel">
+    <h2>NEET concept · Flat-curve top speed (why mass cancels)</h2>
+    <details class="wex" open><summary>Worked problem — max safe speed on an unbanked curve (μ = 0.1, r = 90 m, g = 10)</summary>
+      <div class="sol">
+        On a flat road the <b>only</b> sideways force that can supply the centripetal pull is <b>static friction</b> between the tyres and the road.<br>
+        Required pull: <span class="mono">F<sub>c</sub> = mv²/r</span>. &nbsp; Maximum grip: <span class="mono">f<sub>s</sub> = μN = μmg</span> (flat road ⇒ N = mg).<br>
+        At the skidding limit the grip just equals the required pull: <span class="mono">mv²/r = μmg</span>.<br>
+        The mass <b>cancels from both sides</b> ⇒ <span class="mono">v² = μrg</span> ⇒ <span class="mono">v = √(μrg)</span>.<br>
+        v = √(0.1 × 90 × 10) = √90 ≈ <span class="ans">9.49 m/s</span> (it sits between 9 and 10, since 9² = 81 and 10² = 100). &nbsp;<b>Answer: D.</b>
+      </div>
+    </details>
+    <div class="strat">
+      <b>The examiner's trap:</b> mass m appears on <i>both</i> sides of <span class="mono">mv²/r = μmg</span>, so it vanishes — <span class="mono">v<sub>max</sub> = √(μrg)</span> has no m in it. A 1000 kg sports car and a 10 000 kg truck (same tyres) start skidding at the <b>exact same speed</b>. A question that hands you the car's mass is usually baiting you — ignore it.
+    </div>
+    <div class="rules">
+      <div class="rule"><h3>Why heavier ≠ skids sooner</h3><ul>
+        <li><b>Disadvantage of mass:</b> more inertia ⇒ needs a <i>bigger</i> centripetal force <span class="mono">mv²/r</span> to turn.</li>
+        <li><b>Advantage of mass:</b> presses harder on the road, <span class="mono">N = mg</span> ⇒ <i>more</i> grip <span class="mono">f = μmg</span>.</li>
+        <li>Both scale with m identically, so they cancel <b>exactly</b> — the extra weight earns exactly the extra grip it needs.</li>
+      </ul></div>
+      <div class="rule"><h3>What actually sets v<sub>max</sub></h3><ul>
+        <li>Radius of the turn <b>r</b> (wider turn ⇒ faster).</li>
+        <li>Tyre–road stickiness <b>μ</b>.</li>
+        <li>Gravity <b>g</b>. &nbsp;<b>Not</b> the mass.</li>
+        <li><span class="hl">★ v<sub>max</sub> = √(μrg)</span></li>
+      </ul></div>
+    </div>
+  </section>
+
+  <section class="card panel">
     <h2>Forces formula sheet (NEET &amp; JEE)</h2>
     <div class="toolbar">
       <input id="fSearch" type="search" placeholder="Filter formulas… (e.g. friction, incline, pulley, banking)" style="flex:1 1 260px;max-width:360px;background:var(--glass);border:1px solid var(--border);border-radius:999px;padding:7px 14px;color:var(--text);font-size:0.9rem;" aria-label="Filter formulas" />
