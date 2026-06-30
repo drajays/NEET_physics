@@ -50,6 +50,15 @@
       icon: '🔢',
       tags: ['Units & Measurement', 'Math Tools'],
       cls: 'XI'
+    },
+    {
+      id: 'kinematics',
+      title: 'Rest and Motion: Kinematics',
+      desc: 'Distance vs displacement, average & instantaneous speed/velocity, v–t graphs and equations of motion — concept primer, worked examples and an unlimited NEET-UG quiz.',
+      file: 'glassbox/kinematics.html',
+      icon: '🏃',
+      tags: ['Kinematics', 'Mechanics'],
+      cls: 'XI'
     }
     // Add the next tools here, one object each.
   ];

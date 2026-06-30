@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Glass Box · Rest and Motion — Kinematics</title>
+<style>
+  :root{
+    --bg1:#0b1220;--bg2:#0f172a;--glass:rgba(255,255,255,0.06);--glass-strong:rgba(255,255,255,0.10);
+    --border:rgba(255,255,255,0.14);--text:#e8eefc;--muted:#9fb2d8;--accent:#7dd3fc;--radius:16px;
+  }
+  *{box-sizing:border-box;} html,body{margin:0;padding:0;}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--text);
+    background:radial-gradient(1200px 700px at 80% -10%,rgba(125,211,252,0.10),transparent 60%),
+      radial-gradient(900px 600px at -10% 110%,rgba(168,85,247,0.12),transparent 55%),
+      linear-gradient(160deg,var(--bg1),var(--bg2));min-height:100vh;padding:28px 18px 48px;line-height:1.5;}
+  .wrap{max-width:980px;margin:0 auto;}
+  header h1{margin:0 0 6px;font-size:clamp(1.5rem,3vw,2.1rem);letter-spacing:-0.01em;
+    background:linear-gradient(90deg,#bae6fd,#c4b5fd);-webkit-background-clip:text;background-clip:text;color:transparent;}
+  header p.sub{margin:0 0 22px;color:var(--muted);max-width:65ch;}
+  .card{background:var(--glass);border:1px solid var(--border);border-radius:var(--radius);
+    backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 12px 40px rgba(2,6,23,0.45);}
+  .panel{padding:18px;margin-bottom:18px;}
+  .panel h2{margin:0 0 12px;font-size:1.05rem;}
+  .foot{color:var(--muted);font-size:0.8rem;margin-top:10px;}
+  .hl{color:#fde68a;}
+  .rules{columns:2;column-gap:14px;}
+  .rule{break-inside:avoid;margin:0 0 14px;border:1px solid var(--border);border-radius:12px;background:var(--glass-strong);overflow:hidden;}
+  .rule h3{margin:0;padding:9px 13px;font-size:0.9rem;background:rgba(255,255,255,0.05);color:var(--accent);}
+  .rule ul{list-style:none;margin:0;padding:8px 13px 11px;}
+  .rule li{padding:4px 0;font-size:0.9rem;border-bottom:1px dashed rgba(255,255,255,0.06);}
+  .rule li:last-child{border-bottom:none;}
+  .ex{color:var(--muted);}
+  .mono{font-family:"Cambria Math",Consolas,monospace;background:rgba(255,255,255,0.07);padding:1px 6px;border-radius:6px;}
+  .wex{border:1px solid var(--border);border-radius:12px;background:var(--glass-strong);margin-bottom:10px;overflow:hidden;}
+  .wex summary{cursor:pointer;padding:11px 14px;font-size:0.93rem;font-weight:600;list-style:none;}
+  .wex summary::-webkit-details-marker{display:none;}
+  .wex summary::before{content:'▸ ';color:var(--accent);}
+  .wex[open] summary::before{content:'▾ ';}
+  .wex .sol{padding:0 14px 13px;font-size:0.9rem;color:var(--muted);line-height:1.6;}
+  .wex .sol b{color:var(--text);} .wex .ans{color:#6ee7b7;font-weight:700;}
+  .toolbar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:14px;}
+  .chip{display:inline-flex;align-items:center;gap:6px;cursor:pointer;border:1px solid var(--border);border-radius:999px;
+    padding:6px 13px;background:var(--glass);font-size:0.82rem;font-weight:600;color:var(--muted);transition:all .15s;}
+  .chip.on{color:var(--text);border-color:rgba(255,255,255,0.35);background:var(--glass-strong);}
+  .chip:hover{border-color:rgba(255,255,255,0.4);}
+  .btn{cursor:pointer;border:1px solid var(--border);border-radius:999px;padding:6px 14px;background:var(--glass);
+    color:var(--text);font-size:0.82rem;font-weight:600;transition:all .15s;}
+  .btn:hover{border-color:var(--accent);color:var(--accent);}
+  .quiz-q{font-size:1.04rem;margin:6px 0 14px;line-height:1.55;}
+  .qmeta{display:inline-block;font-size:0.72rem;font-weight:700;letter-spacing:0.04em;text-transform:uppercase;
+    color:var(--accent);background:rgba(125,211,252,0.12);padding:3px 9px;border-radius:999px;margin-bottom:10px;}
+  .opts{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;}
+  .opt{text-align:left;cursor:pointer;border:1px solid var(--border);border-radius:11px;padding:11px 13px;background:var(--glass);
+    color:var(--text);font-size:0.95rem;transition:all .13s;}
+  .opt:hover:not(:disabled){border-color:var(--accent);}
+  .opt .lab{display:inline-block;width:22px;font-weight:700;color:var(--muted);}
+  .opt.correct{border-color:#34d399;background:rgba(16,185,129,0.16);}
+  .opt.wrong{border-color:#f87171;background:rgba(239,68,68,0.16);}
+  .opt:disabled{cursor:default;}
+  .qfeedback{margin-top:14px;font-size:0.92rem;} .qfeedback.ok{color:#6ee7b7;} .qfeedback.no{color:#fca5a5;}
+  .qsol{margin-top:12px;border-left:3px solid var(--accent);padding:6px 0 6px 14px;display:none;}
+  .qsol.show{display:block;}
+  .qsol .step{margin:5px 0;font-size:0.9rem;color:var(--muted);} .qsol .step b{color:var(--text);}
+  .qbar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:16px;}
+  .scorepill{margin-left:auto;font-size:0.85rem;color:var(--muted);}
+  @media (max-width:560px){.rules{columns:1;}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Rest and Motion — Kinematics</h1>
+    <p class="sub">Distance vs displacement, average &amp; instantaneous speed/velocity, and reading v–t graphs — the core ideas from Chapter 3 (HC Verma), worked examples, and an unlimited NEET-UG practice quiz.</p>
+  </header>
+
+  <section class="card panel">
+    <h2>Key ideas at a glance</h2>
+    <div class="rules">
+      <div class="rule"><h3>Distance vs displacement</h3><ul>
+        <li><b>Distance</b> = length of the actual path (scalar, ≥ 0).</li>
+        <li><b>Displacement</b> = straight line from start to end (vector).</li>
+        <li>Semicircle radius R: distance = πR, displacement = 2R.</li>
+        <li>Full circle: distance = 2πR, displacement = 0.</li>
+      </ul></div>
+      <div class="rule"><h3>Average speed &amp; velocity</h3><ul>
+        <li>Average speed = total distance / total time.</li>
+        <li>Average velocity = displacement / total time.</li>
+        <li>For two equal-distance halves at v₁, v₂: avg speed = <span class="mono">2v₁v₂/(v₁+v₂)</span>.</li>
+      </ul></div>
+      <div class="rule"><h3>Instantaneous speed</h3><ul>
+        <li>v = ds/dt (slope of the s–t graph).</li>
+        <li>If s = k t², then v = 2k t.</li>
+      </ul></div>
+      <div class="rule"><h3>v–t graph</h3><ul>
+        <li>Slope of v–t graph = acceleration.</li>
+        <li><b>Area</b> under the v–t graph = distance travelled.</li>
+        <li>Triangle: distance = ½ × base × height.</li>
+      </ul></div>
+      <div class="rule"><h3>Uniform acceleration</h3><ul>
+        <li>v = u + at</li>
+        <li>s = ut + ½at²</li>
+        <li>v² = u² + 2as</li>
+      </ul></div>
+      <div class="rule"><h3>Watch out</h3><ul>
+        <li>Average velocity can be zero while average speed is not (round trips).</li>
+        <li>Displacement direction points from initial → final position.</li>
+      </ul></div>
+    </div>
+  </section>
+
+  <section class="card panel">
+    <h2>Worked examples (HC Verma Ch. 3)</h2>
+    <details class="wex" open><summary>3.1 — Semicircular morning walk, R = 40.0 m</summary>
+      <div class="sol">
+        Distance = length of the track = πR = π × 40.0 = <span class="ans">126 m</span>.<br>
+        Displacement = straight line joining the ends = diameter = 2R = 2 × 40.0 = <span class="ans">80 m</span>, directed from start to finish.
+      </div>
+    </details>
+    <details class="wex"><summary>3.2 — s = (2.5 m/s²)t²: average speed (0→5 s) and instantaneous speed at 5 s</summary>
+      <div class="sol">
+        (a) Distance in 5 s: s = 2.5 × (5.0)² = 62.5 m.<br>
+        Average speed = 62.5 m / 5.0 s = <span class="ans">12.5 m/s</span>.<br>
+        (b) v = ds/dt = (2.5)(2t) = (5.0 m/s²)t. At t = 5.0 s, v = 5.0 × 5.0 = <span class="ans">25 m/s</span>.
+      </div>
+    </details>
+    <details class="wex"><summary>3.3 — Distance from a v–t graph (triangle: height 6 m/s, base 3 s)</summary>
+      <div class="sol">
+        Distance = area under the v–t graph = area of the right triangle = ½ × base × height
+        = ½ × 3 s × 6 m/s = <span class="ans">9 m</span>.
+      </div>
+    </details>
+    <details class="wex"><summary>3.4 — Minute hand 4.0 cm: average velocity of the tip</summary>
+      <div class="sol">
+        Over 30 minutes the tip moves from the 12 to the 6 mark, so displacement = diameter = 2R = 8.0 cm.<br>
+        (a) 6:00→6:30 a.m. = 1800 s: v<sub>av</sub> = 8.0 / 1800 = <span class="ans">4.4 × 10⁻³ cm/s</span>.<br>
+        (b) 6:00 a.m.→6:30 p.m. = 45000 s: v<sub>av</sub> = 8.0 / 45000 = <span class="ans">1.8 × 10⁻⁴ cm/s</span>.<br>
+        (Displacement is the same; only the time differs.)
+      </div>
+    </details>
+    <details class="wex"><summary>3.5 — Uniform acceleration: u = 2.5 m/s, a = 0.50 m/s²</summary>
+      <div class="sol">
+        <b>(a) Distance in the first 2 s</b> — use <span class="mono">x = ut + ½at²</span>:<br>
+        x = (2.5)(2) + ½(0.50)(2)² = 5.0 + 1.0 = <span class="ans">6.0 m</span>.
+        Since the particle never turns back, this is also the distance travelled.<br>
+        <b>(b) Time to reach v = 7.5 m/s</b> — use <span class="mono">v = u + at</span>:<br>
+        t = (v − u)/a = (7.5 − 2.5)/0.50 = <span class="ans">10 s</span>.<br>
+        <b>(c) Distance to reach v = 7.5 m/s</b> — use <span class="mono">v² = u² + 2ax</span>:<br>
+        x = (v² − u²)/(2a) = (56.25 − 6.25)/(1.00) = <span class="ans">50 m</span>.
+      </div>
+    </details>
+    <details class="wex"><summary>3.6 — Displacement in the last 1 second (and the "tᵗʰ second" caveat)</summary>
+      <div class="sol">
+        Position at time t: s = ut + ½at². Position at (t − 1 s): s′ = u(t−1) + ½a(t−1)².<br>
+        Displacement in the last second: s<sub>t</sub> = s − s′ = u(1 s) + (a/2)(2t − 1 s)(1 s).  …(i)<br>
+        <b>For u = 5 m/s, a = 2 m/s², t = 10 s:</b><br>
+        s<sub>t</sub> = (5)(1) + ½(2)(2×10 − 1)(1) = 5 + (1)(19)(1) = <span class="ans">24 m</span>.<br>
+        <b>Correction / caveat:</b> dropping the "(1 s)" factors gives the popular formula
+        <span class="mono">sₜ = u + (a/2)(2t − 1)</span>, which is <b>dimensionally inconsistent</b> (its terms have different dimensions).
+        Equation (i) is the correct form. Also, this is the <b>displacement</b> in the last second, not necessarily the distance covered.
+      </div>
+    </details>
+  </section>
+
+  <section class="card panel">
+    <h2>Practice · NEET-UG kinematics questions</h2>
+    <div class="toolbar" id="catBar"></div>
+    <div class="quiz-q" id="qStem"><span class="qmeta">loading…</span></div>
+    <div class="opts" id="qOpts"></div>
+    <div class="qfeedback" id="qFeedback"></div>
+    <div class="qsol" id="qSol"></div>
+    <div class="qbar">
+      <button class="btn" id="qNew">New question</button>
+      <button class="btn" id="qShowSol">Show solution</button>
+      <span class="scorepill" id="qScore">Attempted 0 · Correct 0</span>
+    </div>
+  </section>
+</div>
+
+<script>
+(function(){
+  "use strict";
+  const PI=3.14159265;
+  const pick=a=>a[Math.floor(Math.random()*a.length)];
+  const shuffle=a=>{for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;};
+  const round=(n,d=2)=>Number(n.toFixed(d));
+  function numOpts(correctNum,cands,unit='',dec=2){
+    const fmt=v=>round(v,dec)+unit, correct=fmt(correctNum), seen=new Set([correct]), out=[];
+    const add=v=>{ if(!isFinite(v))return; const s=fmt(v); if(!seen.has(s)){seen.add(s);out.push(s);} };
+    shuffle(cands.slice()).forEach(add);
+    const pad=[correctNum*1.25,correctNum*0.75,correctNum*1.5,correctNum*0.5,correctNum+2,Math.max(0.1,correctNum-2)];
+    for(let i=0;i<pad.length&&out.length<3;i++) add(pad[i]);
+    return shuffle([{t:correct,ok:true},...out.slice(0,3).map(t=>({t,ok:false}))]);
+  }
+  function opts(correct,pool){
+    const set=[],seen=new Set([String(correct)]);
+    shuffle(pool.slice()).forEach(d=>{d=String(d);if(set.length<3&&!seen.has(d)){set.push(d);seen.add(d);}});
+    return shuffle([{t:String(correct),ok:true},...set.slice(0,3).map(t=>({t,ok:false}))]);
+  }
+
+  const GEN={
+    avgspeed(){
+      const v1=pick([10,20,30,40,60]); let v2=pick([10,20,30,40,60]); if(v2===v1)v2+=20;
+      const ans=round(2*v1*v2/(v1+v2));
+      return {cat:'avgspeed', stem:`A particle covers the first half of a distance at <b>${v1} m/s</b> and the second half at <b>${v2} m/s</b>. Find its average speed.`,
+        options:numOpts(ans,[(v1+v2)/2,v1,v2],' m/s'),
+        solution:[`For two equal-distance halves, average speed = 2v₁v₂/(v₁+v₂) (the harmonic mean).`,
+          `= 2·${v1}·${v2}/(${v1}+${v2}) = <b>${ans} m/s</b>.`]};
+    },
+    avgvel(){
+      const R=pick([7,14,20,28,35,40]), t=pick([5,10,20]);
+      const askSpeed=Math.random()<0.5;
+      const ans=askSpeed?round(PI*R/t):round(2*R/t);
+      const other=askSpeed?round(2*R/t):round(PI*R/t);
+      return {cat:'avgvel', stem:`A particle moves along a semicircle of radius <b>${R} m</b> in <b>${t} s</b> (start to the diametrically opposite end). Find its average ${askSpeed?'<b>speed</b>':'<b>velocity</b>'}.`,
+        options:numOpts(ans,[other,round(R/t),round(PI*R)],' m/s'),
+        solution:askSpeed
+          ? [`Average speed = distance/time = πR/t.`,`= π·${R}/${t} = <b>${ans} m/s</b>.`]
+          : [`Average velocity = displacement/time = (diameter)/t = 2R/t.`,`= 2·${R}/${t} = <b>${ans} m/s</b>.`]};
+    },
+    instspeed(){
+      const k=pick([2,2.5,3,4,5]), t=pick([2,3,4,5,6]);
+      const ans=round(2*k*t);
+      return {cat:'instspeed', stem:`The distance of a particle is <span class="mono">s = (${k} m/s²) t²</span>. Find its instantaneous speed at <b>t = ${t} s</b>.`,
+        options:numOpts(ans,[k*t,k*t*t,2*k],' m/s'),
+        solution:[`v = ds/dt = ${k}·(2t) = ${2*k}t.`,`At t = ${t} s: v = ${2*k}·${t} = <b>${ans} m/s</b>.`]};
+    },
+    vtgraph(){
+      const h=pick([4,6,8,10,12]), b=pick([3,4,5,6]);
+      const ans=round(0.5*b*h);
+      return {cat:'vtgraph', stem:`A v–t graph is a right triangle starting at the origin, rising to <b>${h} m/s</b> at <b>t = ${b} s</b>. Find the distance travelled in this time.`,
+        options:numOpts(ans,[b*h,h+b,0.5*(h+b)],' m'),
+        solution:[`Distance = area under the v–t graph = ½ × base × height.`,`= ½ × ${b} × ${h} = <b>${ans} m</b>.`]};
+    },
+    accel(){
+      const u=pick([0,2,5,10]), a=pick([2,3,4,5]), t=pick([2,4,5,6]);
+      const askV=Math.random()<0.5;
+      const ans=askV?round(u+a*t):round(u*t+0.5*a*t*t);
+      const dis=askV?[u+a,a*t,u*t]:[u*t,0.5*a*t*t,u*t+a*t];
+      return {cat:'accel', stem:`A body starts with velocity <b>u = ${u} m/s</b> and moves with uniform acceleration <b>a = ${a} m/s²</b>. Find its ${askV?'<b>velocity</b>':'<b>displacement</b>'} after <b>t = ${t} s</b>.`,
+        options:numOpts(ans,dis,askV?' m/s':' m'),
+        solution:askV
+          ? [`v = u + at = ${u} + ${a}·${t} = <b>${ans} m/s</b>.`]
+          : [`s = ut + ½at² = ${u}·${t} + ½·${a}·${t}² = <b>${ans} m</b>.`]};
+    },
+    reachv(){
+      const u=pick([2,2.5,5,10]), a=pick([0.5,1,2,2.5]); const extra=pick([5,7.5,10,15,20]); const v=u+extra;
+      const askT=Math.random()<0.5;
+      const ans=askT?round((v-u)/a):round((v*v-u*u)/(2*a));
+      const dis=askT?[v/a,(v+u)/a,v-u]:[(v*v-u*u)/a,v*v/(2*a),(v-u)/a];
+      return {cat:'reachv', stem:`A body starts at <b>u = ${u} m/s</b> with uniform acceleration <b>a = ${a} m/s²</b>. Find the ${askT?'<b>time</b> to reach':'<b>distance</b> covered in reaching'} a velocity of <b>${v} m/s</b>.`,
+        options:numOpts(ans,dis,askT?' s':' m'),
+        solution:askT
+          ? [`v = u + at ⇒ t = (v − u)/a = (${v} − ${u})/${a} = <b>${ans} s</b>.`]
+          : [`v² = u² + 2as ⇒ s = (v² − u²)/(2a) = (${v}² − ${u}²)/(2·${a}) = <b>${ans} m</b>.`]};
+    },
+    nthsec(){
+      const u=pick([0,2,5,10]), a=pick([2,3,4,6,10]), n=pick([2,3,5,8,10]);
+      const ans=round(u + a*(2*n-1)/2);
+      return {cat:'nthsec', stem:`A body moves with <b>u = ${u} m/s</b> and uniform acceleration <b>a = ${a} m/s²</b>. Find its displacement in the <b>${n}ᵗʰ second</b>.`,
+        options:numOpts(ans,[u+a*n, u+a*(n-1), a*(2*n-1)/2],' m'),
+        solution:[`Displacement in the nᵗʰ second: sₙ = u + (a/2)(2n − 1)·(1 s)  [keep the 1-s factor for correct units].`,
+          `= ${u} + (${a}/2)(2·${n} − 1) = <b>${ans} m</b>.`]};
+    },
+    distdisp(){
+      const q=pick([
+        ['A body completes one full circle of radius R. Its displacement is','0','2πR','πR','R'],
+        ['A body completes one full circle of radius R. The distance covered is','2πR','0','πR','4R'],
+        ['A body moves along a semicircle of radius R. Its displacement is','2R','πR','0','R'],
+        ['A body goes from A to B and returns to A. Its net displacement is','zero','2 AB','AB','half AB'],
+        ['A body goes from A to B and back to A. Its average velocity for the trip is','zero','non-zero','2v','v/2'],
+      ]);
+      return {cat:'distdisp', stem:q[0]+'.', options:opts(q[1],[q[2],q[3],q[4]]),
+        solution:[`Distance is the path length; displacement is the straight start→end vector.`,`Correct answer: <b>${q[1]}</b>.`]};
+    },
+  };
+
+  const CATS=[['all','All'],['avgspeed','Average speed'],['avgvel','Average velocity'],['instspeed','Instantaneous'],['vtgraph','v–t graph'],['accel','Uniform accel.'],['reachv','Reach a speed'],['nthsec','nᵗʰ second'],['distdisp','Dist vs disp']];
+  let cat='all', attempted=0, correct=0, current=null, answered=false;
+  const stemEl=document.getElementById('qStem'),optsEl=document.getElementById('qOpts'),
+        fbEl=document.getElementById('qFeedback'),solEl=document.getElementById('qSol'),
+        scoreEl=document.getElementById('qScore'),catBar=document.getElementById('catBar');
+
+  CATS.forEach(([k,label])=>{ const b=document.createElement('button'); b.className='chip'+(k==='all'?' on':'');
+    b.textContent=label; b.onclick=()=>{ cat=k; [...catBar.children].forEach(c=>c.classList.remove('on')); b.classList.add('on'); renderQuestion(); };
+    catBar.appendChild(b); });
+
+  function genOne(){ const keys=cat==='all'?Object.keys(GEN):[cat]; return GEN[pick(keys)](); }
+  function renderQuestion(){
+    current=genOne(); answered=false;
+    const meta=CATS.find(c=>c[0]===current.cat); stemEl.innerHTML=`<span class="qmeta">${meta?meta[1]:current.cat}</span><div>${current.stem}</div>`;
+    fbEl.textContent=''; fbEl.className='qfeedback'; solEl.className='qsol'; solEl.innerHTML=current.solution.map(s=>`<div class="step">${s}</div>`).join('');
+    optsEl.innerHTML=''; const L=['A','B','C','D'];
+    current.options.forEach((o,i)=>{ const b=document.createElement('button'); b.className='opt';
+      b.innerHTML=`<span class="lab">${L[i]}</span>${o.t}`; b.onclick=()=>choose(b,o); optsEl.appendChild(b); });
+  }
+  function choose(btn,o){
+    if(answered) return; answered=true; attempted++;
+    [...optsEl.children].forEach((b,i)=>{ b.disabled=true; if(current.options[i].ok) b.classList.add('correct'); });
+    if(o.ok){ correct++; btn.classList.add('correct'); fbEl.textContent='✓ Correct!'; fbEl.className='qfeedback ok'; }
+    else { btn.classList.add('wrong'); fbEl.textContent='✗ Not quite — see the solution.'; fbEl.className='qfeedback no'; solEl.className='qsol show'; }
+    scoreEl.textContent=`Attempted ${attempted} · Correct ${correct}`;
+  }
+  document.getElementById('qNew').onclick=renderQuestion;
+  document.getElementById('qShowSol').onclick=()=>{ solEl.className='qsol show'; };
+  renderQuestion();
+})();
+</script>
+</body>
+</html>
