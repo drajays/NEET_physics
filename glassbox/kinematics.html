@@ -178,6 +178,45 @@
         So the particle is at <span class="ans">(41.6 m, 7.2 m)</span>.
       </div>
     </details>
+    <details class="wex"><summary>3.9 — Range of a projectile: 12.0 m/s at 45° (g = 10 m/s²)</summary>
+      <div class="sol">
+        Horizontal range R = u²sin2θ/g = (12)²·sin(2×45°)/10.<br>
+        Since sin90° = 1: R = 144 × 1 / 10 = <span class="ans">14.4 m</span>.<br>
+        (Pro-tip: 45° gives sin2θ = 1, so the range is maximum at this angle.)
+      </div>
+    </details>
+    <details class="wex"><summary>3.10 — River swimmer: 4.0 km/h across a 3.0 km/h current</summary>
+      <div class="sol">
+        Swimmer aims perpendicular to the flow, so the two velocities are at 90°.<br>
+        v<sub>S,G</sub> = √(v<sub>S,R</sub>² + v<sub>R,G</sub>²) = √(4.0² + 3.0²) = <span class="ans">5.0 km/h</span> (a 3-4-5 triangle).<br>
+        Angle with the flow direction: tanθ = 4.0/3.0 = 4/3 ⇒ θ = <span class="ans">53°</span>.
+      </div>
+    </details>
+    <details class="wex"><summary>3.11 — Rain–man: walk 3.0 km/h, rain falls 4.0 km/h vertically</summary>
+      <div class="sol">
+        <b>v</b><sub>rain,man</sub> = <b>v</b><sub>rain,street</sub> − <b>v</b><sub>man,street</sub> (flip the man's velocity and add).<br>
+        v<sub>rain,man</sub> = √(4.0² + 3.0²) = <span class="ans">5.0 km/h</span> (again a 3-4-5 triangle).<br>
+        Angle with the vertical: tanθ = 3.0/4.0 = 3/4 ⇒ θ = <span class="ans">37°</span>. The man tilts his umbrella 37° forward.
+      </div>
+    </details>
+    <details class="wex"><summary>Bonus — Relative acceleration between two frames</summary>
+      <div class="sol">
+        Differentiating the relative-velocity relation: <b>a</b><sub>P,S</sub> = <b>a</b><sub>P,S′</sub> + <b>a</b><sub>S′,S</sub>.<br>
+        If frame S′ moves with <b>uniform velocity</b> relative to S, then <b>a</b><sub>S′,S</sub> = 0, so
+        <span class="ans"><b>a</b><sub>P,S</sub> = <b>a</b><sub>P,S′</sub></span> — the acceleration of a body is the <b>same</b> in both frames.<br>
+        Relative acceleration appears only when a frame is itself accelerating (a non-inertial frame).
+      </div>
+    </details>
+  </section>
+
+  <section class="card panel">
+    <h2>Kinematics formula sheet (NEET &amp; JEE)</h2>
+    <div class="toolbar">
+      <input id="fSearch" type="search" placeholder="Filter formulas… (e.g. projectile, river, relative)" style="flex:1 1 260px;max-width:360px;background:var(--glass);border:1px solid var(--border);border-radius:999px;padding:7px 14px;color:var(--text);font-size:0.9rem;" aria-label="Filter formulas" />
+      <button class="btn" id="fExpand">Expand all</button>
+    </div>
+    <div id="formulaSheet"></div>
+    <p class="foot"><span class="hl">★</span> = highest-yield, memorise these first. î ĵ k̂ are unit vectors; bold means a vector.</p>
   </section>
 
   <section class="card panel">
@@ -307,6 +346,67 @@
           : [`aₓ = ${A}·cos${ang}° = ${round(ax)} m/s².`,
              `x = uₓt + ½aₓt² = ${u}·${t} + ½·${round(ax)}·${t}² = <b>${ans} m</b>.`]};
     },
+    projectile(){
+      const u=pick([10,20,30]), ang=pick([30,45,60]), g=10;
+      const rad=ang*Math.PI/180, s=Math.sin(rad), s2=Math.sin(2*rad);
+      const which=pick(['T','H','R']); let ans,unit,dis,sol;
+      if(which==='T'){ ans=round(2*u*s/g); unit=' s'; dis=[u*s/g,u*s2/g,2*u/g]; sol=[`T = 2u sinθ/g = 2·${u}·sin${ang}°/10 = <b>${ans} s</b>.`]; }
+      else if(which==='H'){ ans=round(u*u*s*s/(2*g)); unit=' m'; dis=[u*u/(2*g),u*u*s*s/g,u*s/g]; sol=[`H = u²sin²θ/(2g) = ${u}²·sin²${ang}°/20 = <b>${ans} m</b>.`]; }
+      else { ans=round(u*u*s2/g); unit=' m'; dis=[u*u/g,u*u*s*s/(2*g),2*u*s/g]; sol=[`R = u²sin2θ/g = ${u}²·sin${2*ang}°/10 = <b>${ans} m</b>.`]; }
+      return {cat:'projectile', stem:`A projectile is launched at <b>${u} m/s</b> at <b>${ang}°</b> to the horizontal (g = 10 m/s²). Find its ${which==='T'?'<b>time of flight</b>':which==='H'?'<b>maximum height</b>':'<b>horizontal range</b>'}.`,
+        options:numOpts(ans,dis,unit), solution:sol};
+    },
+    freefall(){
+      const h=pick([5,20,45,80,125]), g=10;
+      const which=pick(['t','v']);
+      const ans=which==='t'?round(Math.sqrt(2*h/g)):round(Math.sqrt(2*g*h));
+      const dis=which==='t'?[2*h/g,h/g,Math.sqrt(h/g)]:[g*h,2*g*h,Math.sqrt(g*h)];
+      return {cat:'freefall', stem:`A body is dropped from rest from a height of <b>${h} m</b> (g = 10 m/s²). Find the ${which==='t'?'<b>time to reach the ground</b>':'<b>speed on hitting the ground</b>'}.`,
+        options:numOpts(ans,dis,which==='t'?' s':' m/s'),
+        solution:which==='t'?[`h = ½gt² ⇒ t = √(2h/g) = √(2·${h}/10) = <b>${ans} s</b>.`]:[`v = √(2gh) = √(2·10·${h}) = <b>${ans} m/s</b>.`]};
+    },
+    horizproj(){
+      const h=pick([5,20,45,80]), u=pick([5,10,15,20]), g=10;
+      const T=Math.sqrt(2*h/g);
+      const which=pick(['R','v']);
+      const ans=which==='R'?round(u*T):round(Math.sqrt(u*u+2*g*h));
+      const dis=which==='R'?[u*h,u*Math.sqrt(h/g),2*u*T]:[u+Math.sqrt(2*g*h),Math.sqrt(2*g*h),u];
+      return {cat:'horizproj', stem:`A ball is thrown horizontally at <b>${u} m/s</b> from a height of <b>${h} m</b> (g = 10 m/s²). Find ${which==='R'?'the <b>horizontal range</b>':'its <b>speed just before landing</b>'}.`,
+        options:numOpts(ans,dis,which==='R'?' m':' m/s'),
+        solution:which==='R'?[`T = √(2h/g) = ${round(T)} s; R = uT = ${u}·${round(T)} = <b>${ans} m</b>.`]:[`v = √(u² + 2gh) = √(${u}² + 2·10·${h}) = <b>${ans} m/s</b>.`]};
+    },
+    relvel(){
+      let v1=pick([10,20,30,40]), v2=pick([10,20,30,40]); if(v2===v1)v2+=10;
+      const opp=Math.random()<0.5;
+      const ans=round(opp?v1+v2:Math.abs(v1-v2));
+      return {cat:'relvel', stem:`Two cars move ${opp?'<b>towards each other</b>':'in the <b>same direction</b>'} at <b>${v1} m/s</b> and <b>${v2} m/s</b>. Find the speed of one relative to the other.`,
+        options:numOpts(ans,[opp?Math.abs(v1-v2):v1+v2,v1,v2],' m/s'),
+        solution:[opp?`Opposite directions: v_rel = v₁ + v₂ = ${v1} + ${v2} = <b>${ans} m/s</b>.`:`Same direction: v_rel = |v₁ − v₂| = |${v1} − ${v2}| = <b>${ans} m/s</b>.`]};
+    },
+    riverboat(){
+      const d=pick([100,120,200,300]), vb=pick([5,10,12,20]); let vr=pick([3,4,6,8]); if(vr>=vb)vr=vb-2;
+      const which=pick(['cross','drift','direct']); let ans,unit,dis,sol;
+      if(which==='cross'){ ans=round(d/vb); unit=' s'; dis=[d/vr,d/(vb+vr),vr*d/vb]; sol=[`Aim straight across: t = d/v_b = ${d}/${vb} = <b>${ans} s</b>.`]; }
+      else if(which==='drift'){ ans=round(vr*d/vb); unit=' m'; dis=[d/vb,vr*d,d]; sol=[`Drift = v_r·t = v_r·(d/v_b) = ${vr}·${d}/${vb} = <b>${ans} m</b>.`]; }
+      else { ans=round(d/Math.sqrt(vb*vb-vr*vr)); unit=' s'; dis=[d/vb,d/(vb+vr),d/Math.abs(vb-vr)]; sol=[`Land directly opposite: effective speed = √(v_b²−v_r²); t = d/√(${vb}²−${vr}²) = <b>${ans} s</b>.`]; }
+      return {cat:'riverboat', stem:`A river of width <b>${d} m</b> flows at <b>${vr} m/s</b>; a boat does <b>${vb} m/s</b> in still water. Find the ${which==='cross'?'<b>time to cross</b> (aimed straight across)':which==='drift'?'<b>drift</b> (aimed straight across)':'<b>time to reach the point directly opposite</b>'}.`,
+        options:numOpts(ans,dis,unit), solution:sol};
+    },
+    rainman(){
+      const vr=pick([3,4,5,10,12]), vm=pick([3,4,5,6,8]);
+      const which=pick(['angle','speed']);
+      const ans=which==='angle'?round(Math.atan2(vm,vr)*180/Math.PI,1):round(Math.hypot(vr,vm));
+      return {cat:'rainman', stem:`Rain falls vertically at <b>${vr} m/s</b>; a man walks horizontally at <b>${vm} m/s</b>. Find ${which==='angle'?'the <b>angle from the vertical</b> to hold the umbrella':'the <b>speed of rain relative to the man</b>'}.`,
+        options:numOpts(ans,which==='angle'?[round(Math.atan2(vr,vm)*180/Math.PI,1),45,round(vm/vr*10,1)]:[vr+vm,Math.abs(vr-vm),vr],which==='angle'?'°':' m/s'),
+        solution:which==='angle'?[`tanθ = v_m/v_r = ${vm}/${vr} ⇒ θ = <b>${ans}°</b> from the vertical (tilt forward).`]:[`v_rel = √(v_r² + v_m²) = √(${vr}² + ${vm}²) = <b>${ans} m/s</b>.`]};
+    },
+    equaltime(){
+      const v1=pick([10,20,30,40,60]); let v2=pick([10,20,30,40,60]); if(v2===v1)v2+=20;
+      const ans=round((v1+v2)/2);
+      return {cat:'equaltime', stem:`A particle moves for <b>equal time</b> intervals at <b>${v1} m/s</b> and <b>${v2} m/s</b>. Find its average speed.`,
+        options:numOpts(ans,[2*v1*v2/(v1+v2),v1,v2],' m/s'),
+        solution:[`Equal times ⇒ average speed = arithmetic mean = (v₁+v₂)/2 = (${v1}+${v2})/2 = <b>${ans} m/s</b>.`]};
+    },
     distdisp(){
       const q=pick([
         ['A body completes one full circle of radius R. Its displacement is','0','2πR','πR','R'],
@@ -320,7 +420,7 @@
     },
   };
 
-  const CATS=[['all','All'],['avgspeed','Average speed'],['avgvel','Average velocity'],['instspeed','Instantaneous'],['vtgraph','v–t graph'],['accel','Uniform accel.'],['reachv','Reach a speed'],['nthsec','nᵗʰ second'],['maxheight','Vertical throw'],['proj2d','2-D motion'],['distdisp','Dist vs disp']];
+  const CATS=[['all','All'],['avgspeed','Average speed'],['avgvel','Average velocity'],['instspeed','Instantaneous'],['vtgraph','v–t graph'],['accel','Uniform accel.'],['reachv','Reach a speed'],['nthsec','nᵗʰ second'],['maxheight','Vertical throw'],['proj2d','2-D motion'],['projectile','Projectile'],['freefall','Free fall'],['horizproj','Horizontal proj.'],['relvel','Relative velocity'],['riverboat','River-boat'],['rainman','Rain-man'],['equaltime','Equal-time avg'],['distdisp','Dist vs disp']];
   let cat='all', attempted=0, correct=0, current=null, answered=false;
   const stemEl=document.getElementById('qStem'),optsEl=document.getElementById('qOpts'),
         fbEl=document.getElementById('qFeedback'),solEl=document.getElementById('qSol'),
@@ -349,6 +449,158 @@
   document.getElementById('qNew').onclick=renderQuestion;
   document.getElementById('qShowSol').onclick=()=>{ solEl.className='qsol show'; };
   renderQuestion();
+})();
+</script>
+
+<script>
+/* ---- Kinematics formula sheet (self-contained) ---- */
+(function(){
+  "use strict";
+  const SHEET = [
+    ['1 · Basic definitions', [
+      'Position: <b>r</b> = x î + y ĵ + z k̂ ; |<b>r</b>| = √(x² + y² + z²)',
+      'Displacement: Δ<b>r</b> = <b>r</b>₂ − <b>r</b>₁',
+      'Distance = length of actual path ; Distance ≥ |Displacement|',
+    ]],
+    ['2 · Speed &amp; velocity', [
+      'Average speed = total distance / total time',
+      'Average velocity <b>v</b>ₐᵥ = Δ<b>r</b>/Δt ; (1-D) (x₂−x₁)/(t₂−t₁)',
+      'Instantaneous <b>v</b> = d<b>r</b>/dt = (dx/dt)î + (dy/dt)ĵ + (dz/dt)k̂',
+      'speed = |<b>v</b>|',
+    ]],
+    ['3 · Acceleration', [
+      '<b>a</b>ₐᵥ = Δ<b>v</b>/Δt',
+      '<b>a</b> = d<b>v</b>/dt = d²<b>r</b>/dt² = aₓî + a_yĵ + a_zk̂',
+      'aₓ = dvₓ/dt, a_y = dv_y/dt, a_z = dv_z/dt',
+    ]],
+    ['4 · Calculus relations', [
+      'v = dx/dt ; a = dv/dt',
+      '<span class="hl">★ a = v·dv/dx</span>  (a as a function of position)',
+      'x = ∫ v dt ; v = ∫ a dt ; a dx = v dv',
+    ]],
+    ['5 · Equations of motion (constant a)', [
+      '<span class="hl">★ v = u + at</span>',
+      '<span class="hl">★ s = ut + ½at²</span>',
+      '<span class="hl">★ v² = u² + 2as</span>',
+      's = ½(u + v)t',
+      'nᵗʰ second: sₙ = u + (a/2)(2n − 1)·(1 s)',
+    ]],
+    ['6 · Motion under gravity (up +ve, a = −g)', [
+      'g ≈ 9.8 m/s² (≈ 10 m/s²)',
+      'v = u − gt ; h = ut − ½gt² ; v² = u² − 2gh',
+    ]],
+    ['7 · Thrown vertically up (speed u)', [
+      'Time to top: t = u/g',
+      '<span class="hl">★ Max height: H = u²/2g</span>',
+      'Time of flight: T = 2u/g',
+      'Returns to start with speed u (velocity −u)',
+    ]],
+    ['8 · Dropped from height (u = 0)', [
+      'h = ½gt² ; v = gt',
+      'v = √(2gh) ; t = √(2h/g)',
+    ]],
+    ['9 · Graphs', [
+      'x–t: slope = v ; concavity ⇒ sign of a',
+      'v–t: slope = a ; <b>area = displacement</b> ; s = ½(u+v)t',
+      'a–t: area = Δv = v_f − v_i',
+    ]],
+    ['10 · Relative motion', [
+      '<b>r</b>_AB = <b>r</b>_A − <b>r</b>_B',
+      '<span class="hl">★ <b>v</b>_AB = <b>v</b>_A − <b>v</b>_B</span> ; <b>a</b>_AB = <b>a</b>_A − <b>a</b>_B',
+      'Same direction: v_rel = |v₁ − v₂| ; opposite: v₁ + v₂',
+      'Time to meet (separation d): same → d/|v₁−v₂| ; opposite → d/(v₁+v₂)',
+    ]],
+    ['11 · Two-dimensional motion', [
+      '<b>v</b> = vₓî + v_yĵ ; v = √(vₓ² + v_y²) ; tanθ = v_y/vₓ',
+      '<b>a</b> = aₓî + a_yĵ ; a = √(aₓ² + a_y²) ; tanθ = a_y/aₓ',
+    ]],
+    ['12 · Projectile (launched at angle θ)', [
+      'aₓ = 0, a_y = −g ; uₓ = u cosθ, u_y = u sinθ',
+      'x = u cosθ·t ; vₓ = u cosθ (constant)',
+      'y = u sinθ·t − ½gt² ; v_y = u sinθ − gt',
+      '<span class="hl">★ T = 2u sinθ/g</span>',
+      '<span class="hl">★ H = u²sin²θ/2g</span>',
+      '<span class="hl">★ R = u²sin2θ/g</span> ; R_max = u²/g at θ = 45°',
+      '<span class="hl">★ Trajectory: y = x·tanθ − gx²/(2u²cos²θ)</span>',
+      'Time to top = u sinθ/g ; speed at top = u cosθ ; at height h: √(u² − 2gh)',
+    ]],
+    ['13 · Projectile from a height (horizontal launch)', [
+      'x = ut ; h = ½gt² ; T = √(2h/g) ; R = u√(2h/g)',
+      'v_y = gT = √(2gh) ; final speed = √(u² + 2gh)',
+      'tanθ = √(2gh)/u',
+    ]],
+    ['14 · Projectile on an inclined plane (incline α)', [
+      'R = 2u²cosθ·sin(θ − α) / (g cos²α)',
+      'Max range at θ = 45° + α/2 ; R_max = u² / [g(1 + sinα)]',
+    ]],
+    ['15 · Projectile landing at height h', [
+      '½gt² − u sinθ·t + h = 0',
+      't = [u sinθ ± √(u²sin²θ − 2gh)]/g ; x = u cosθ·t',
+    ]],
+    ['16 · River–boat problems (boat v_b, river v_r, width d)', [
+      'Aim straight across: t = d/v_b ; drift = v_r·d/v_b ; resultant = √(v_b² + v_r²)',
+      'Reach point directly opposite: sinθ = v_r/v_b (aim upstream)',
+      'Across-speed = √(v_b² − v_r²) ; t = d/√(v_b² − v_r²) (needs v_b > v_r)',
+      'Minimum crossing time: t_min = d/v_b (aim ⊥ to flow)',
+    ]],
+    ['17 · Rain–man problems', [
+      '<b>v</b>_rm = <b>v</b>_r − <b>v</b>_m',
+      'Rain vertical v_r, man horizontal v_m: v_rel = √(v_r² + v_m²)',
+      'tanθ = v_m/v_r (angle from vertical); hold umbrella along <b>v</b>_rm',
+    ]],
+    ['18 · Variable acceleration', [
+      'a = f(t): v = u + ∫a dt ; x = x₀ + ∫v dt',
+      'a = f(v): t = ∫ dv/a',
+      'a = f(x): use a = v dv/dx ⇒ ∫v dv = ∫a dx',
+    ]],
+    ['19 · Average-velocity special results', [
+      'Uniform a: vₐᵥ = (u + v)/2',
+      '<span class="hl">★ Equal distances v₁, v₂: vₐᵥ = 2v₁v₂/(v₁+v₂)</span> (harmonic mean)',
+      'Equal times v₁, v₂: vₐᵥ = (v₁ + v₂)/2 (arithmetic mean)',
+      'n equal distances: vₐᵥ = n / (1/v₁ + 1/v₂ + …)',
+    ]],
+    ['20 · Vector formulae used in kinematics', [
+      '<b>A</b> + <b>B</b> = (Aₓ+Bₓ)î + (A_y+B_y)ĵ',
+      '|<b>A</b>+<b>B</b>| = √(A² + B² + 2AB cosθ) ; |<b>A</b>−<b>B</b>| = √(A² + B² − 2AB cosθ)',
+      'Direction of resultant: tanα = B sinθ / (A + B cosθ)',
+      '<b>A</b>·<b>B</b> = AB cosθ = AₓBₓ + A_yB_y + A_zB_z',
+      '|<b>A</b>×<b>B</b>| = AB sinθ (right-hand rule)',
+    ]],
+    ['21 · Differentiation / integration shortcuts', [
+      'x = Atⁿ ⇒ v = nAtⁿ⁻¹, a = n(n−1)Atⁿ⁻²',
+      'v = Atⁿ ⇒ a = nAtⁿ⁻¹, x = Atⁿ⁺¹/(n+1) + C',
+    ]],
+    ['22 · Key conceptual points', [
+      'Rest &amp; motion are <b>relative</b> (depend on the observer).',
+      'Displacement can be 0 while distance ≠ 0 (round trip).',
+      'v = 0 with a ≠ 0 (top of a vertical throw: a = −g).',
+      'Speed constant while velocity changes (uniform circular motion).',
+      'Acceleration ⇐ change in magnitude, direction, or both.',
+    ]],
+    ['★ Memorise first', [
+      'v = u + at ; s = ut + ½at² ; v² = u² + 2as ; s = ½(u+v)t',
+      'a = v dv/dx ; <b>v</b>_AB = <b>v</b>_A − <b>v</b>_B',
+      'T = 2u sinθ/g ; H = u²sin²θ/2g ; R = u²sin2θ/g',
+      'Trajectory: y = x tanθ − gx²/(2u²cos²θ)',
+    ]],
+  ];
+  const host=document.getElementById('formulaSheet');
+  host.innerHTML = SHEET.map(([title,items],i)=>
+    `<details class="wex"${i===4||i===11?' open':''}><summary>${title}</summary><div class="sol">${items.map(t=>'• '+t).join('<br>')}</div></details>`
+  ).join('');
+
+  let expanded=false;
+  document.getElementById('fExpand').onclick=function(){
+    expanded=!expanded; host.querySelectorAll('details').forEach(d=>d.open=expanded);
+    this.textContent=expanded?'Collapse all':'Expand all';
+  };
+  document.getElementById('fSearch').addEventListener('input', e=>{
+    const q=e.target.value.trim().toLowerCase();
+    host.querySelectorAll('details').forEach(d=>{
+      const m=!q || d.textContent.toLowerCase().includes(q);
+      d.style.display=m?'':'none'; if(q&&m) d.open=true;
+    });
+  });
 })();
 </script>
 </body>
