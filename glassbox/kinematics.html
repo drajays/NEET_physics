@@ -331,6 +331,14 @@
   </section>
 
   <section class="card panel">
+    <h2>Exercises (HC Verma Ch. 3, 1–52 with answers)</h2>
+    <div class="toolbar">
+      <input id="exSearch" type="search" placeholder="Search exercises… (e.g. projectile, river, brake)" style="flex:1 1 260px;max-width:360px;background:var(--glass);border:1px solid var(--border);border-radius:999px;padding:7px 14px;color:var(--text);font-size:0.9rem;" aria-label="Search exercises" />
+    </div>
+    <div id="exerciseSheet"></div>
+  </section>
+
+  <section class="card panel">
     <h2>Practice · NEET-UG kinematics questions</h2>
     <div class="toolbar" id="catBar"></div>
     <div class="quiz-q" id="qStem"><span class="qmeta">loading…</span></div>
@@ -718,6 +726,78 @@
     this.textContent=expanded?'Collapse all':'Expand all';
   };
   document.getElementById('fSearch').addEventListener('input', e=>{
+    const q=e.target.value.trim().toLowerCase();
+    host.querySelectorAll('details').forEach(d=>{
+      const m=!q || d.textContent.toLowerCase().includes(q);
+      d.style.display=m?'':'none'; if(q&&m) d.open=true;
+    });
+  });
+})();
+</script>
+
+<script>
+/* ---- Exercises 1–52 with answers (self-contained) ---- */
+(function(){
+  "use strict";
+  const EX = [
+    [1,"Walk 50 m N, 40 m E, 20 m S to a field. Distance and displacement?","110 m; 50 m at tan⁻¹(3/4) N-of-E","Distance = 50+40+20 = 110 m. Net 30 m N and 40 m E ⇒ √(30²+40²) = 50 m."],
+    [2,"Origin → (20 m,0) → (−20 m,0). Distance and displacement?","60 m; 20 m in −x","Path = 20 + 40 = 60 m; net from 0 to −20 ⇒ 20 m in the negative direction."],
+    [3,"Patna–Ranchi 260 km by air, 320 km by road; plane 30 min, bus 8 h.","(a) 520 km/h (b) 40 km/h (c) 520 km/h (d) 32.5 km/h (Patna→Ranchi)","Speeds use path length; velocities use the 260 km straight-line displacement."],
+    [4,"Odometer 12352 → 12416 km on a 2-h round trip.","(a) 32 km/h (b) zero","64 km / 2 h = 32 km/h; returns home ⇒ displacement = 0."],
+    [5,"Athlete reaches 18 km/h in 2.0 s.","2.5 m/s²","18 km/h = 5 m/s; a = 5/2."],
+    [6,"Speed–time graph: distance and acceleration in 8 s.","80 m; 2.5 m/s²","Distance = area under the graph; a = slope."],
+    [7,"Acceleration–time graph: distance in 30 s.","1000 ft","Integrate a–t to get v, then v–t to get x."],
+    [8,"v–t graph: acceleration, distance and displacement in 0–10 s.","0.6 m/s²; 50 m; 50 m","a = slope; distance = displacement = area (motion stays in +x)."],
+    [9,"x–t graph: avg velocity 0–10 s; instantaneous velocity at 2, 5, 8, 12 s.","10 m/s; 20, 0, 20, −20 m/s","Avg = Δx/Δt; instantaneous = slope of x–t."],
+    [10,"v–t plot (+5 / −5 m/s): distance in 40 s and average velocity.","100 m; zero","Equal +/− areas ⇒ displacement 0; distance adds magnitudes."],
+    [11,"x–t graph: time t for which average velocity over 0→t is zero.","12 s","x returns to its starting value at t = 12 s."],
+    [12,"Particle on a curve A→B: locate B where avg velocity ∥ instantaneous velocity at B.","x = 5 m, y = 3 m","Chord AB parallel to the tangent at B (graphical)."],
+    [13,"u = 4.0 m/s, a = 1.2 m/s², t = 5.0 s. Distance?","35 m","s = ut + ½at² = 20 + 15."],
+    [14,"43.2 km/h, brake −6.0 m/s². Stopping distance?","12 m","12 m/s; s = v²/2a = 144/12."],
+    [15,"Train: a = 2.0 m/s² for 30 s, then brakes to rest in 60 s.","(a) 2.7 km (b) 60 m/s (c) 225 m and 2.25 km","v_max = 60 m/s; distances 900 + 1800 = 2700 m."],
+    [16,"Bullet 16 m/s stops in 0.4 m. Time of retardation?","0.05 s","Average velocity 8 m/s ⇒ t = 0.4/8."],
+    [17,"Bullet 350 m/s stops in 5.0 cm. Deceleration?","12.2×10⁵ m/s²","a = v²/2s = 122500/0.1."],
+    [18,"From rest to 18 km/h in 5.0 s.","(a) 2.5 m/s (b) 12.5 m","Avg velocity 2.5 m/s; s = 2.5×5."],
+    [19,"54 km/h, reaction 0.20 s, brake 6.0 m/s². Total distance to stop?","22 m","Reaction 15×0.2 = 3 m + braking 225/12 = 18.75 m ≈ 22 m."],
+    [20,"Complete the braking / total-stopping-distance table.","(a) 19 (b) 22 (c) 33 (d) 39 (e) 15 (f) 18 (g) 27 (h) 33 m","Braking = v²/2a; total = braking + (reaction time × speed)."],
+    [21,"Bike 72 km/h; jeep 90 km/h crosses the turn 10 s later. Where caught?","1.0 km","Head start 200 m; closing 5 m/s ⇒ 40 s ⇒ 25×40 = 1000 m."],
+    [22,"60 km/h overtakes 42 km/h; each car 5.0 m long.","2 s; 38 m","Relative 5 m/s over 10 m gap ⇒ 2 s; road distance ≈ 38 m."],
+    [23,"Up 50 m/s (g=10): max height, time to top, speed at half height.","125 m; 5 s; 35 m/s","H = u²/2g; v = √(u² − 2g·H/2) = √1250."],
+    [24,"Ball dropped from a balloon rising 7 m/s at 60 m height.","4.3 s","−60 = 7t − 4.9t² ⇒ t = 4.3 s."],
+    [25,"Up 28 m/s: max height; velocity 1 s before the top; does it change for larger u?","40 m; 9.8 m/s; No","1 s before the top, v = g×1 = 9.8 m/s, independent of u."],
+    [26,"Balls dropped each 1 s; positions of 3rd, 4th, 5th when the 6th is dropped.","44.1, 19.6, 4.9 m below the top","½g t² for t = 3, 2, 1 s."],
+    [27,"Kid slips from 11.8 m, caught at 1.8 m; runner is 7 m away.","4.9 m/s","Falls 10 m in 1.43 s ⇒ 7/1.43."],
+    [28,"Berry dropped from 12.1 m; parade at 6 km/h. Who catches it?","2.62 m from the tree","Fall time 1.57 s; 1.667 m/s × 1.57."],
+    [29,"Dropped ball crosses the last 6.00 m in 0.200 s (g=10). Height?","48 m","Speed entering last 6 m = 29 m/s ⇒ 42 m + 6 m."],
+    [30,"Dropped 5 m onto sand, penetrates 10 cm. Retardation?","490 m/s²","v = √98 m/s; a = v²/2d = 98/0.2."],
+    [31,"Descending elevator; coin 6 ft above floor strikes it in 1 s.","20 ft/s²","6 = ½(g−a)(1)², g = 32 ⇒ a = 20 ft/s²."],
+    [32,"Horizontal throw 20 m/s from 100 m.","4.5 s; 90 m; 49 m/s at 66°","T = √(2h/g); R = uT; v = √(u² + 2gh)."],
+    [33,"40 m/s at 60° (g=10): max height and range.","60 m; 80√3 m","H = u²sin²θ/2g; R = u²sin2θ/g."],
+    [34,"Soccer: 64 ft/s at 45°, 40 yd to 10-ft posts. Goal?","Yes","Ball height at the posts is below 10 ft."],
+    [35,"Goli projected horizontally from 19.6 cm to hit one 2.0 m away.","10 m/s","t = √(2h/g) = 0.2 s; u = 2/0.2."],
+    [36,"Ditch 11.7 ft with 15° ramps. Minimum bike speed?","32 ft/s","Projectile range up a 15° incline."],
+    [37,"Cliff 171 ft; friend 228 ft away; throw 15 ft/s aimed directly. How short?","falls 192 ft short","Compare horizontal reach in the fall time."],
+    [38,"15 m/s at 60°: does it clear a wall 5 m away? 22 m away?","Yes; Yes","Trajectory height at x = 5 m and x = 22 m."],
+    [39,"Average velocity between the two crossings of half the maximum height.","u cosθ (horizontal)","Vertical contributions cancel by symmetry."],
+    [40,"Bomb dropped from a horizontally-flying plane — where does it explode?","Vertically below the plane (not so if the plane is not horizontal)","Bomb keeps the plane's horizontal velocity."],
+    [41,"Railcar accelerates 1 m/s²; ball thrown up 9.8 m/s. How far behind?","2 m","Flight time 2 s ⇒ ½·a·t² = 2 m."],
+    [42,"Stairs: 3 steps each 10 cm high, 20 cm wide. Min horizontal v off the top to hit the lowest?","2 m/s","Projectile must clear two steps."],
+    [43,"Truck 14.7 m/s; thrown ball returns after the truck moves 58.8 m.","(a) 19.6 m/s upward (b) 24.5 m/s at 53°","T = 4 s ⇒ u_y = 19.6; combine with 14.7 m/s horizontal."],
+    [44,"Sixer 35 m/s at 53°; benches 1 m × 1 m starting 110 m away.","Sixth bench","Trajectory height matches the 6th bench profile."],
+    [45,"Apple to a 1-m boat 5.5 m away, speed 10 m/s.","Min 15°, max 75° (the 53° band between them is not allowed)","Range must land between 5.0 m and 6.5 m."],
+    [46,"River 400 m, flow 2.0 m/s, boat 10 m/s perpendicular.","(a) 40 s (b) 80 m","t = d/v_b; drift = v_r·t."],
+    [47,"River 500 m, flow 5 km/h, swim 3 km/h at angle θ.","(a) 10/sinθ minutes (b) 10 minutes","Across-speed = 3 sinθ; minimum time when aimed perpendicular."],
+    [48,"Same data; reach the point directly opposite. Minimum walk?","2/3 km","Flow > swim speed ⇒ some drift is unavoidable; minimise it."],
+    [49,"A→B 500 km, 30° E of N; wind 20 m/s N, airspeed 150 m/s.","(a) sin⁻¹(1/15) E of AB (b) 50 min","Head so the cross-wind component cancels."],
+    [50,"Sound with vs against wind over distance x gives delays t₁, t₂.","v = (x/2)(1/t₁ + 1/t₂), u = (x/2)(1/t₁ − 1/t₂)","x/(v+u) = t₁ and x/(v−u) = t₂."],
+    [51,"Same setup, line joining A,B perpendicular to the wind. Time lag?","x/√(v² − u²)","Effective sound speed across = √(v² − u²)."],
+    [52,"Six particles on a hexagon side a, speed v, each chasing the next.","2a/v","Approach rate = v(1 − cos120°)? ⇒ t = a/[v(1 − cos60°)] = 2a/v."],
+  ];
+  const host=document.getElementById('exerciseSheet');
+  host.innerHTML = EX.map(([n,q,a,s])=>
+    `<details class="wex"><summary>${n}. ${q}</summary><div class="sol"><b>Answer:</b> <span class="ans">${a}</span><br>${s}</div></details>`
+  ).join('');
+  document.getElementById('exSearch').addEventListener('input', e=>{
     const q=e.target.value.trim().toLowerCase();
     host.querySelectorAll('details').forEach(d=>{
       const m=!q || d.textContent.toLowerCase().includes(q);
