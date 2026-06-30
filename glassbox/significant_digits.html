@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Glass Box · Significant Digits</title>
+<style>
+  :root{
+    --bg1:#0b1220; --bg2:#0f172a;
+    --glass:rgba(255,255,255,0.06); --glass-strong:rgba(255,255,255,0.10);
+    --border:rgba(255,255,255,0.14); --text:#e8eefc; --muted:#9fb2d8; --accent:#7dd3fc;
+    --radius:16px;
+  }
+  *{box-sizing:border-box;} html,body{margin:0;padding:0;}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:var(--text);
+    background:
+      radial-gradient(1200px 700px at 80% -10%, rgba(125,211,252,0.10), transparent 60%),
+      radial-gradient(900px 600px at -10% 110%, rgba(168,85,247,0.12), transparent 55%),
+      linear-gradient(160deg,var(--bg1),var(--bg2));
+    min-height:100vh; padding:28px 18px 48px; line-height:1.5;
+  }
+  .wrap{max-width:980px;margin:0 auto;}
+  header h1{margin:0 0 6px;font-size:clamp(1.5rem,3vw,2.1rem);letter-spacing:-0.01em;
+    background:linear-gradient(90deg,#bae6fd,#c4b5fd);-webkit-background-clip:text;background-clip:text;color:transparent;}
+  header p.sub{margin:0 0 22px;color:var(--muted);max-width:65ch;}
+  .card{background:var(--glass);border:1px solid var(--border);border-radius:var(--radius);
+    backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 12px 40px rgba(2,6,23,0.45);}
+  .panel{padding:18px;margin-bottom:18px;}
+  .panel h2{margin:0 0 12px;font-size:1.05rem;}
+  .foot{color:var(--muted);font-size:0.8rem;margin-top:10px;}
+  .hl{color:#fde68a;}
+
+  .rules{columns:2;column-gap:14px;}
+  .rule{break-inside:avoid;margin:0 0 14px;border:1px solid var(--border);border-radius:12px;background:var(--glass-strong);overflow:hidden;}
+  .rule h3{margin:0;padding:9px 13px;font-size:0.9rem;background:rgba(255,255,255,0.05);color:var(--accent);}
+  .rule ul{list-style:none;margin:0;padding:8px 13px 11px;}
+  .rule li{padding:4px 0;font-size:0.9rem;border-bottom:1px dashed rgba(255,255,255,0.06);}
+  .rule li:last-child{border-bottom:none;}
+  .ex{color:var(--muted);}
+
+  .toolbar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:14px;}
+  .chip{display:inline-flex;align-items:center;gap:6px;cursor:pointer;border:1px solid var(--border);border-radius:999px;
+    padding:6px 13px;background:var(--glass);font-size:0.82rem;font-weight:600;color:var(--muted);transition:all .15s;}
+  .chip.on{color:var(--text);border-color:rgba(255,255,255,0.35);background:var(--glass-strong);}
+  .chip:hover{border-color:rgba(255,255,255,0.4);}
+  .btn{cursor:pointer;border:1px solid var(--border);border-radius:999px;padding:6px 14px;background:var(--glass);
+    color:var(--text);font-size:0.82rem;font-weight:600;transition:all .15s;}
+  .btn:hover{border-color:var(--accent);color:var(--accent);}
+
+  .quiz-q{font-size:1.04rem;margin:6px 0 14px;line-height:1.55;}
+  .qmeta{display:inline-block;font-size:0.72rem;font-weight:700;letter-spacing:0.04em;text-transform:uppercase;
+    color:var(--accent);background:rgba(125,211,252,0.12);padding:3px 9px;border-radius:999px;margin-bottom:10px;}
+  .mono{font-family:"Cambria Math",Consolas,monospace;background:rgba(255,255,255,0.07);padding:1px 6px;border-radius:6px;}
+  .opts{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;}
+  .opt{text-align:left;cursor:pointer;border:1px solid var(--border);border-radius:11px;padding:11px 13px;background:var(--glass);
+    color:var(--text);font-size:0.95rem;transition:all .13s;}
+  .opt:hover:not(:disabled){border-color:var(--accent);}
+  .opt .lab{display:inline-block;width:22px;font-weight:700;color:var(--muted);}
+  .opt.correct{border-color:#34d399;background:rgba(16,185,129,0.16);}
+  .opt.wrong{border-color:#f87171;background:rgba(239,68,68,0.16);}
+  .opt:disabled{cursor:default;}
+  .qfeedback{margin-top:14px;font-size:0.92rem;}
+  .qfeedback.ok{color:#6ee7b7;} .qfeedback.no{color:#fca5a5;}
+  .qsol{margin-top:12px;border-left:3px solid var(--accent);padding:6px 0 6px 14px;display:none;}
+  .qsol.show{display:block;}
+  .qsol .step{margin:5px 0;font-size:0.9rem;color:var(--muted);}
+  .qsol .step b{color:var(--text);}
+  .qbar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:16px;}
+  .scorepill{margin-left:auto;font-size:0.85rem;color:var(--muted);}
+  @media (max-width:560px){.rules{columns:1;}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Significant Digits</h1>
+    <p class="sub">Counting, rounding and combining measurements with the correct number of significant figures — the rules and worked logic from Chapter 2 (HC Verma), plus an unlimited NEET-UG practice quiz covering every scenario.</p>
+  </header>
+
+  <section class="card panel">
+    <h2>The rules at a glance</h2>
+    <div class="rules">
+      <div class="rule"><h3>Counting significant figures</h3><ul>
+        <li>All non-zero digits are significant. <span class="ex">234 → 3</span></li>
+        <li>Zeros <b>between</b> non-zero digits count. <span class="ex">2.03 → 3</span></li>
+        <li>Leading zeros are <b>not</b> significant. <span class="ex">0.0023 → 2</span></li>
+        <li>Trailing zeros <b>after a decimal</b> are significant. <span class="ex">6.00 → 3, 100.0 → 4</span></li>
+        <li>Trailing zeros in a bare integer are ambiguous — use powers of 10. <span class="ex">600 → write 6×10², 6.0×10² or 6.00×10²</span></li>
+      </ul></div>
+      <div class="rule"><h3>Rounding off</h3><ul>
+        <li>Next digit &gt; 5 → round up.</li>
+        <li>Next digit &lt; 5 → leave unchanged.</li>
+        <li>Next digit exactly 5 (nothing after) → make the kept digit <b>even</b>: up if it is odd, unchanged if even.</li>
+        <li><span class="ex">14.745→14.7, 14.750→14.8, 14.650→14.6</span></li>
+      </ul></div>
+      <div class="rule"><h3>Multiplication &amp; division</h3><ul>
+        <li>Answer keeps as many significant figures as the quantity with the <b>fewest</b>.</li>
+        <li><span class="ex">12.0 / 7.0 = 1.7 (2 s.f.)</span></li>
+        <li><span class="ex">25.2 × 1374 / 33.3 = 1040 (3 s.f.)</span></li>
+      </ul></div>
+      <div class="rule"><h3>Addition &amp; subtraction</h3><ul>
+        <li>Round every number to the <b>least number of decimal places</b> present, then add/subtract.</li>
+        <li><span class="ex">24.36 + 0.0623 + 256.2 → 24.4 + 0.1 + 256.2 = 280.7</span></li>
+      </ul></div>
+      <div class="rule"><h3>Least count</h3><ul>
+        <li>The smallest sub-division of the scale.</li>
+        <li>A mm-marked metre scale → least count = 1 mm = 0.1 cm.</li>
+        <li>The reading carries all certain digits + one doubtful digit. <span class="ex">10.46 cm → 4 s.f.</span></li>
+      </ul></div>
+      <div class="rule"><h3>Errors &amp; standard deviation</h3><ul>
+        <li>Best value = mean x̄ of N repeated readings.</li>
+        <li>σ = √[ (1/N) Σ(xᵢ − x̄)² ]; report as x̄ ± σ.</li>
+        <li><span class="ex">f = (25.4 ± 0.2) cm</span>. ~95% chance the true value lies within x̄ ± 1.96σ.</li>
+      </ul></div>
+    </div>
+  </section>
+
+  <section class="card panel">
+    <h2>Practice · NEET-UG significant-figure questions</h2>
+    <div class="toolbar" id="catBar"></div>
+    <div class="quiz-q" id="qStem"><span class="qmeta">loading…</span></div>
+    <div class="opts" id="qOpts"></div>
+    <div class="qfeedback" id="qFeedback"></div>
+    <div class="qsol" id="qSol"></div>
+    <div class="qbar">
+      <button class="btn" id="qNew">New question</button>
+      <button class="btn" id="qShowSol">Show solution</button>
+      <span class="scorepill" id="qScore">Attempted 0 · Correct 0</span>
+    </div>
+  </section>
+</div>
+
+<script>
+(function(){
+  "use strict";
+  // ---------- sig-fig core ----------
+  function sigFigCountDecimal(s){
+    s=String(s).replace('-','').trim();
+    if(s.indexOf('.')>=0){ const d=s.replace('.','').replace(/^0+/,''); return d===''?1:d.length; }
+    const d=s.replace(/^0+/,'').replace(/0+$/,''); return d===''?1:d.length;
+  }
+  function roundSig(numStr,n){
+    const neg=String(numStr).trim().startsWith('-'); let s=String(numStr).trim().replace('-','');
+    const dot=s.indexOf('.'); let digits,intLen;
+    if(dot>=0){ digits=s.slice(0,dot)+s.slice(dot+1); intLen=dot; } else { digits=s; intLen=s.length; }
+    let first=0; while(first<digits.length && digits[first]==='0') first++;
+    if(first===digits.length) return '0';
+    let lastSig=first+n-1, arr=digits.split('').map(Number);
+    if(lastSig>=arr.length-1) return (neg?'-':'')+s;
+    const nextIdx=lastSig+1, nextDigit=arr[nextIdx], followingNonZero=arr.slice(nextIdx+1).some(d=>d!==0);
+    let up; if(nextDigit>5)up=true; else if(nextDigit<5)up=false; else up=followingNonZero?true:(arr[lastSig]%2===1);
+    for(let i=lastSig+1;i<arr.length;i++)arr[i]=0;
+    if(up){ let i=lastSig; while(i>=0){ arr[i]++; if(arr[i]<10)break; arr[i]=0; i--; } if(i<0){ arr.unshift(1); intLen++; lastSig++; } }
+    const intPart=arr.slice(0,intLen).join('')||'0', fracSig=Math.max(0,lastSig-intLen+1);
+    const fracPart=arr.slice(intLen).join('').slice(0,fracSig);
+    return (neg?'-':'')+(fracPart.length?intPart+'.'+fracPart:intPart);
+  }
+  function decimals(s){ const d=String(s).indexOf('.'); return d<0?0:String(s).length-d-1; }
+  function roundDec(x,m){ const f=Math.pow(10,m); return Math.round((x+Number.EPSILON*Math.sign(x))*f)/f; }
+
+  // ---------- helpers ----------
+  const pick=a=>a[Math.floor(Math.random()*a.length)];
+  const randInt=(a,b)=>a+Math.floor(Math.random()*(b-a+1));
+  const shuffle=a=>{for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;};
+  function opts(correct, pool){
+    const set=[], seen=new Set([String(correct)]);
+    shuffle(pool.slice()).forEach(d=>{ d=String(d); if(set.length<3 && !seen.has(d)){ set.push(d); seen.add(d);} });
+    let k=2; while(set.length<3){ const v=String(Number(correct)+k); if(!seen.has(v)){set.push(v);seen.add(v);} k++; if(k>50)break; }
+    return shuffle([{t:String(correct),ok:true}, ...set.slice(0,3).map(t=>({t,ok:false}))]);
+  }
+
+  // ---------- generators ----------
+  function randDecimalWithSig(){
+    // returns {str, sf}
+    const forms=[
+      ()=>{ const d=randInt(2,4); let s='0.'+'0'.repeat(randInt(1,3)); for(let i=0;i<d;i++) s+= (i===0?randInt(1,9):randInt(0,9)); return s; },               // leading zeros
+      ()=>{ const a=randInt(1,9), b=randInt(0,9), c=randInt(0,9); return a+'.'+b+''+c; },                                                                       // d.dd
+      ()=>{ const a=randInt(1,9); return a+'.'+'00'; },                                                                                                         // trailing zeros after decimal
+      ()=>{ const a=randInt(1,9), b=randInt(1,9); return a+''+b+'.0'; },                                                                                        // dd.0
+      ()=>{ const a=randInt(1,9), z=randInt(0,9); return a+''+z+'0.0'; },                                                                                       // middle + trailing
+    ];
+    const str=pick(forms)(); return {str, sf:sigFigCountDecimal(str)};
+  }
+  const GEN = {
+    count(){
+      const sci = Math.random()<0.35;
+      if(sci){
+        const sf=randInt(2,4); let m=String(randInt(1,9)); if(sf>1){ m+='.'; for(let i=1;i<sf;i++) m+=randInt(0,9); }
+        const exp=randInt(2,6);
+        return { cat:'count', stem:`How many significant figures are there in <span class="mono">${m} × 10<sup>${exp}</sup></span>?`,
+          options:opts(sf,[sf+1,sf-1,sf+2,String(m).replace('.','').length+1]),
+          solution:[`In scientific notation only the mantissa digits count.`,`Mantissa <b>${m}</b> has <b>${sf}</b> significant figures (the power of 10 is not counted).`] };
+      }
+      const {str,sf}=randDecimalWithSig();
+      return { cat:'count', stem:`How many significant figures are there in <span class="mono">${str}</span>?`,
+        options:opts(sf,[sf+1,sf-1,sf+2,String(str).replace('.','').length]),
+        solution:[`Non-zero digits always count; leading zeros never count; trailing zeros after a decimal point do count.`,`So <b>${str}</b> has <b>${sf}</b> significant figures.`] };
+    },
+    round(){
+      // build a number with d sig digits then round to n
+      const d=randInt(4,5), n=randInt(2,3);
+      let digs=''; for(let i=0;i<d;i++) digs+= (i===0?randInt(1,9):randInt(0,9));
+      const form=pick(['int','dec1','dec2']);
+      let str;
+      if(form==='int') str=digs;
+      else if(form==='dec1') str=digs.slice(0,2)+'.'+digs.slice(2);
+      else str=digs.slice(0,1)+'.'+digs.slice(1);
+      const ans=roundSig(str,n);
+      // distractors: round-half-up, truncate, n±1
+      const up=roundSig(str.replace(/5(0*)$/,'6$1'),n); // perturb (rough)
+      const dis=[roundSig(str,n+1), roundSig(str,n-1), str];
+      return { cat:'round', stem:`Round <span class="mono">${str}</span> to <b>${n}</b> significant figures.`,
+        options:opts(ans,dis.filter(x=>x!==ans)),
+        solution:[`Keep ${n} significant figures; look at the next digit and apply the rounding rules (round-half-to-even on an exact 5).`,`<b>${str} → ${ans}</b>.`] };
+    },
+    muldiv(){
+      const op=pick(['×','÷']);
+      const a=(randInt(10,99)/10).toFixed(1);          // 2 s.f.
+      const b=String(randInt(100,9999));               // up to 4 s.f.
+      const sfA=sigFigCountDecimal(a), sfB=sigFigCountDecimal(b), nsf=Math.min(sfA,sfB);
+      const val= op==='×' ? Number(a)*Number(b) : Number(a)/Number(b);
+      const ans=roundSig(val.toFixed(6),nsf);
+      const dis=[val.toFixed(2), roundSig(val.toFixed(6),Math.max(sfA,sfB)), roundSig(val.toFixed(6),nsf+1)];
+      return { cat:'muldiv', stem:`Evaluate <span class="mono">${a} ${op} ${b}</span> to the correct number of significant figures.`,
+        options:opts(ans,dis.filter(x=>x!==ans)),
+        solution:[`${a} has ${sfA} s.f. and ${b} has ${sfB} s.f., so the answer must have the smaller, <b>${nsf}</b> s.f.`,`${a} ${op} ${b} = ${val.toFixed(4)}… → <b>${ans}</b>.`] };
+    },
+    addsub(){
+      const a=(randInt(100,999)/10).toFixed(1);    // 1 dp
+      const b=(randInt(100,999)/100).toFixed(2);   // 2 dp
+      const c=(randInt(1,99)/1000).toFixed(3);     // 3 dp (small)
+      const nums=[a,b,c]; const m=Math.min(...nums.map(decimals));
+      const rounded=nums.map(x=>roundDec(Number(x),m));
+      const sum=roundDec(rounded.reduce((p,q)=>p+q,0),m).toFixed(m);
+      const rawSum=roundDec(nums.reduce((p,q)=>p+Number(q),0),m).toFixed(m); // the common-mistake answer
+      const dis=[rawSum, nums.reduce((p,q)=>p+Number(q),0).toFixed(3), (Number(sum)+Number((0.1).toFixed(m))).toFixed(m)];
+      return { cat:'addsub', stem:`Evaluate <span class="mono">${a} + ${b} + ${c}</span> to the correct number of decimal places.`,
+        options:opts(sum,dis.filter(x=>x!==sum)),
+        solution:[`The least number of decimal places is <b>${m}</b> (from ${a}). Round each term to ${m} dp first:`,
+          `${rounded.join(' + ')} = <b>${sum}</b>.`] };
+    },
+    sci(){
+      const base=randInt(1,9), zeros=randInt(2,4), sf=randInt(1,3);
+      const value=String(base)+'0'.repeat(zeros);     // e.g. 600
+      let mant=String(base); if(sf>1){ mant+='.'; for(let i=1;i<sf;i++) mant+='0'; }
+      const exp=zeros;
+      const ans=`${mant} × 10^${exp}`;
+      const dis=[`${mant} × 10^${exp+1}`, `${base}.${'0'.repeat(Math.max(1,sf))} × 10^${exp-1}`, `${mant} × 10^${exp-1}`];
+      return { cat:'sci', stem:`Express <span class="mono">${value}</span> keeping <b>${sf}</b> significant figure${sf>1?'s':''} in scientific notation.`,
+        options:opts(ans,dis.filter(x=>x!==ans)),
+        solution:[`Write one non-zero digit before the decimal and show only the significant digits.`,`${value} with ${sf} s.f. = <b>${ans.replace('^','<sup>').replace(/$/,'</sup>')}</b>.`] };
+    },
+    concept(){
+      const q=pick([
+        ['What is the least count of a metre scale that has markings at every millimetre?','0.1 cm','0.1 mm','1 cm','0.01 cm'],
+        ['A length is recorded as 10.46 cm. How many significant figures does it have?','4','3','2','5'],
+        ['In the reading 10.46 cm, which digit is the doubtful (least significant) digit?','6','1','0','4'],
+        ['How many significant figures are in 0.0023?','2','4','3','5'],
+        ['How many significant figures are in 1.0023?','5','4','3','2'],
+        ['A bare value 600 mm is written as 6.0 × 10² mm. How many significant figures does it have?','2','1','3','4'],
+        ['Best estimate of a quantity from N repeated readings is the…','mean (average)','largest reading','median','smallest reading'],
+        ['The spread of repeated readings about the mean is measured by the…','standard deviation σ','least count','mean','range only'],
+      ]);
+      return { cat:'concept', stem:q[0], options:opts(q[1],[q[2],q[3],q[4]]),
+        solution:[`Definition / rule check.`,`Correct answer: <b>${q[1]}</b>.`] };
+    },
+    mean(){
+      const n=4; const base=randInt(200,260)/10; // ~ x.x
+      const arr=[]; for(let i=0;i<n;i++) arr.push((base + randInt(-3,3)/10).toFixed(1));
+      const mean=roundDec(arr.reduce((p,q)=>p+Number(q),0)/n,1).toFixed(1);
+      const dis=[(Number(mean)+0.1).toFixed(1),(Number(mean)-0.1).toFixed(1),(arr.reduce((p,q)=>p+Number(q),0)/n).toFixed(3)];
+      return { cat:'mean', stem:`Four readings (cm): <span class="mono">${arr.join(', ')}</span>. Find the mean to the correct number of significant figures.`,
+        options:opts(mean,dis.filter(x=>x!==mean)),
+        solution:[`Mean = (sum)/N = ${arr.join('+')} / ${n} = ${(arr.reduce((p,q)=>p+Number(q),0)/n).toFixed(3)} cm.`,
+          `The data have 1 decimal place, so report <b>${mean} cm</b>.`] };
+    },
+  };
+
+  const CATS=[
+    ['all','All'],['count','Count s.f.'],['round','Rounding'],['muldiv','× ÷'],
+    ['addsub','+ −'],['sci','Sci. notation'],['concept','Concept'],['mean','Mean ± σ'],
+  ];
+  let cat='all', attempted=0, correct=0, current=null, answered=false;
+  const stemEl=document.getElementById('qStem'),optsEl=document.getElementById('qOpts'),
+        fbEl=document.getElementById('qFeedback'),solEl=document.getElementById('qSol'),
+        scoreEl=document.getElementById('qScore'),catBar=document.getElementById('catBar');
+
+  CATS.forEach(([k,label])=>{ const b=document.createElement('button'); b.className='chip'+(k==='all'?' on':'');
+    b.textContent=label; b.onclick=()=>{ cat=k; [...catBar.children].forEach(c=>c.classList.remove('on')); b.classList.add('on'); renderQuestion(); };
+    catBar.appendChild(b); });
+
+  function genOne(){
+    const keys = cat==='all' ? Object.keys(GEN) : [cat];
+    return GEN[pick(keys)]();
+  }
+  function renderQuestion(){
+    current=genOne(); answered=false;
+    stemEl.innerHTML=`<span class="qmeta">${CATS.find(c=>c[0]===current.cat)?CATS.find(c=>c[0]===current.cat)[1]:current.cat}</span><div>${current.stem}</div>`;
+    fbEl.textContent=''; fbEl.className='qfeedback';
+    solEl.className='qsol'; solEl.innerHTML=current.solution.map(s=>`<div class="step">${s}</div>`).join('');
+    optsEl.innerHTML=''; const L=['A','B','C','D'];
+    current.options.forEach((o,i)=>{ const b=document.createElement('button'); b.className='opt';
+      b.innerHTML=`<span class="lab">${L[i]}</span>${o.t}`; b.onclick=()=>choose(b,o); optsEl.appendChild(b); });
+  }
+  function choose(btn,o){
+    if(answered) return; answered=true; attempted++;
+    [...optsEl.children].forEach((b,i)=>{ b.disabled=true; if(current.options[i].ok) b.classList.add('correct'); });
+    if(o.ok){ correct++; btn.classList.add('correct'); fbEl.textContent='✓ Correct!'; fbEl.className='qfeedback ok'; }
+    else { btn.classList.add('wrong'); fbEl.textContent='✗ Not quite — see the solution.'; fbEl.className='qfeedback no'; solEl.className='qsol show'; }
+    scoreEl.textContent=`Attempted ${attempted} · Correct ${correct}`;
+  }
+  document.getElementById('qNew').onclick=renderQuestion;
+  document.getElementById('qShowSol').onclick=()=>{ solEl.className='qsol show'; };
+  renderQuestion();
+})();
+</script>
+</body>
+</html>

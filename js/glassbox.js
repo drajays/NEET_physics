@@ -41,6 +41,15 @@
       icon: '〰️',
       tags: ['Trigonometry', 'Math Tools'],
       cls: 'XI'
+    },
+    {
+      id: 'significant-digits',
+      title: 'Significant Digits',
+      desc: 'Significant-figure rules (counting, rounding, ×/÷, +/−, scientific notation, errors) plus an unlimited NEET-UG practice quiz — fully offline.',
+      file: 'glassbox/significant_digits.html',
+      icon: '🔢',
+      tags: ['Units & Measurement', 'Math Tools'],
+      cls: 'XI'
     }
     // Add the next tools here, one object each.
   ];
