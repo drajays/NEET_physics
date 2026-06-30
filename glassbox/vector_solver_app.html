@@ -186,7 +186,7 @@
           <span class="pill">Detailed solving</span>
           <span class="pill">Auto fill answers</span>
           <span class="pill">Glass-box explanation</span>
-          <span class="pill">35 vector exercises</span>
+          <span class="pill">37 vector exercises</span>
         </div>
       </div>
       <div class="body">
@@ -211,7 +211,7 @@
         </div>
 
         <div class="status-bar">
-          <div class="status-chip" id="progressChip">Loaded: 0 / 35 reviewed</div>
+          <div class="status-chip" id="progressChip">Loaded: 0 / 37 reviewed</div>
           <div class="status-chip" id="solverChip">Solver: ready</div>
           <div class="status-chip" id="scoreChip">Last score: --</div>
         </div>
@@ -243,6 +243,60 @@
         <div class="legend">Review pass completed: auto-solve verified, detailed steps added, answer highlighting included, hint mode added, and the Q18 direction corrected to +Z-axis.</div>
       </div>
     </aside>
+
+    <section class="card" style="grid-column:1 / -1">
+      <style>
+        .vshort h3{color:var(--accent);font-size:1rem;margin:16px 0 6px;}
+        .vtab{width:100%;border-collapse:collapse;font-size:0.9rem;margin:4px 0 14px;}
+        .vtab th,.vtab td{border:1px solid var(--border);padding:7px 10px;text-align:center;}
+        .vtab th{background:rgba(255,255,255,0.08);color:var(--accent);}
+        .vtab td.mean{color:var(--muted);text-align:left;font-size:0.84rem;}
+        .vtab tr.hi td{background:rgba(125,211,252,0.16);color:#fff;font-weight:600;}
+        .vtab tr.hi td.mean{color:#e8f4ff;}
+        .vnote{border:1px solid var(--border);border-radius:12px;background:var(--glass);padding:12px 14px;font-size:0.9rem;line-height:1.6;margin-top:6px;}
+        .vnote b{color:var(--accent);}
+        .vtab td code{font-family:Consolas,monospace;}
+      </style>
+      <div class="header">
+        <h2>Shortcut · the cosine controls the whole resultant</h2>
+        <p>Because <b>R = √(A² + B² + 2AB·cosθ)</b>, the resultant dances to cosθ — maximum (A + B) at 0°, Pythagorean √(A²+B²) at 90°, minimum |A − B| at 180°. For two <b>equal</b> vectors it collapses to the one-line cheat code <b>R = 2A·cos(θ/2)</b>.</p>
+      </div>
+      <div class="body vshort">
+        <h3>General two-vector resultant across a full 360° sweep</h3>
+        <table class="vtab">
+          <tr><th>θ</th><th>cosθ</th><th>Resultant R</th><th class="mean">Meaning</th></tr>
+          <tr><td>0°</td><td>1</td><td>A + B</td><td class="mean">Maximum — both vectors point the same way.</td></tr>
+          <tr><td>30°</td><td>√3/2 ≈ 0.866</td><td>√(A² + B² + √3·AB)</td><td class="mean">Very strong constructive addition.</td></tr>
+          <tr><td>45°</td><td>1/√2 ≈ 0.707</td><td>√(A² + B² + √2·AB)</td><td class="mean">Strong diagonal pull.</td></tr>
+          <tr><td>60°</td><td>1/2</td><td>√(A² + B² + AB)</td><td class="mean">Moderate addition.</td></tr>
+          <tr class="hi"><td>90°</td><td>0</td><td>√(A² + B²)</td><td class="mean">Independent axes — pure Pythagoras.</td></tr>
+          <tr><td>120°</td><td>−1/2</td><td>√(A² + B² − AB)</td><td class="mean">Destructive addition begins.</td></tr>
+          <tr><td>135°</td><td>−1/√2 ≈ −0.707</td><td>√(A² + B² − √2·AB)</td><td class="mean">Strong destructive addition.</td></tr>
+          <tr><td>150°</td><td>−√3/2 ≈ −0.866</td><td>√(A² + B² − √3·AB)</td><td class="mean">Very strong destructive addition.</td></tr>
+          <tr><td>180°</td><td>−1</td><td>|A − B|</td><td class="mean">Minimum — exact opposite directions (tug-of-war).</td></tr>
+          <tr><td>270°</td><td>0</td><td>√(A² + B²)</td><td class="mean">Same magnitude as 90°, other quadrant.</td></tr>
+          <tr><td>360°</td><td>1</td><td>A + B</td><td class="mean">Full circle — identical to 0°.</td></tr>
+        </table>
+
+        <h3>Equal vectors (A = B): the cheat code <code>R = 2A·cos(θ/2)</code></h3>
+        <table class="vtab">
+          <tr><th>θ</th><th>Exact R</th><th>≈</th><th class="mean">NEET shortcut / where it shows up</th></tr>
+          <tr><td>0°</td><td>2A</td><td>2.00 A</td><td class="mean">Maximum — vectors stack perfectly.</td></tr>
+          <tr><td>30°</td><td>A√(2 + √3)</td><td>1.93 A</td><td class="mean">Very strong addition.</td></tr>
+          <tr><td>45°</td><td>A√(2 + √2)</td><td>1.85 A</td><td class="mean">Strong diagonal pull.</td></tr>
+          <tr class="hi"><td>60°</td><td>A√3</td><td>1.73 A</td><td class="mean">High-yield — diagonal of a 60° rhombus; equilateral-triangle charge problems.</td></tr>
+          <tr class="hi"><td>90°</td><td>A√2</td><td>1.41 A</td><td class="mean">High-yield — diagonal of a square; charges on square corners.</td></tr>
+          <tr class="hi"><td>120°</td><td>A</td><td>1.00 A</td><td class="mean">The magic angle — resultant equals each vector; three at 120° sum to zero.</td></tr>
+          <tr><td>135°</td><td>A√(2 − √2)</td><td>0.77 A</td><td class="mean">Destructive now beats constructive.</td></tr>
+          <tr><td>150°</td><td>A√(2 − √3)</td><td>0.52 A</td><td class="mean">Nearly opposing.</td></tr>
+          <tr><td>180°</td><td>0</td><td>0</td><td class="mean">Perfect cancellation — tug-of-war tie.</td></tr>
+          <tr><td>270°</td><td>A√2</td><td>1.41 A</td><td class="mean">Same geometry as 90°, different quadrant.</td></tr>
+          <tr><td>360°</td><td>2A</td><td>2.00 A</td><td class="mean">Back to the start (same as 0°).</td></tr>
+        </table>
+
+        <div class="vnote"><b>Why 120° is the magic angle:</b> if two friends each pull a block with 100 N and their ropes are 120° apart, the net force is exactly 100 N (R = 2·100·cos60° = 100 N). Whenever you see a regular hexagon or vectors spreading evenly around a circle, hunt for 120° angles — you can often cancel them in your head. (Try this live in <b>Q36</b> and <b>Q37</b> of the question bank.)</div>
+      </div>
+    </section>
   </div>
 
   <script>
@@ -1053,6 +1107,47 @@
             ['Final answer', 'Project the charge along the +Z-axis with minimum speed v = E/B.']
           ];
           return { answers:{dir:'Z-axis', speed:'E/B'}, solution:`Along +Z-axis, minimum speed v = E/B`, steps };
+        }
+      },
+      {
+        id: 36,
+        topic: 'resultant',
+        title: 'Q36 Equal vectors at the 120° "magic angle"',
+        text: 'Two forces, each of magnitude 100 N, act at an angle of 120° to each other. Using the equal-vector shortcut, find the magnitude of their resultant.',
+        answerFields: [
+          { key: 'rmag', label: 'Resultant magnitude (N)' }
+        ],
+        solver() {
+          const F = 100, th = 120;
+          const R = 2 * F * Math.cos((th / 2) * DEG);
+          const steps = [
+            ['Spot the equal-vector case', 'Both magnitudes are equal (A = B = F = 100 N), so the shortcut R = 2F·cos(θ/2) applies — no long root needed.'],
+            ['Substitute', 'R = 2 × 100 × cos(120°/2) = 200 × cos60°.'],
+            ['Evaluate', `cos60° = 0.5 ⇒ R = 200 × 0.5 = ${round(R)} N.`],
+            ['Why it is the "magic angle"', 'At 120° the resultant of two equal vectors equals each vector itself — three equal vectors spaced 120° apart therefore sum to zero (hexagon / symmetric-charge problems).'],
+            ['Final answer', `|R| = ${round(R)} N`]
+          ];
+          return { answers:{ rmag: round(R) }, solution:`|R| = 2F·cos(θ/2) = 2×100×cos60° = ${round(R)} N`, steps };
+        }
+      },
+      {
+        id: 37,
+        topic: 'resultant',
+        title: 'Q37 Find the angle from an equal-vector resultant',
+        text: 'Two vectors of equal magnitude A have a resultant whose magnitude is also exactly A. Find the angle between the two vectors.',
+        answerFields: [
+          { key: 'ang', label: 'Angle between the vectors (deg)' }
+        ],
+        solver() {
+          const ang = 120;
+          const steps = [
+            ['Use the equal-vector shortcut', 'For A = B the resultant is R = 2A·cos(θ/2).'],
+            ['Set R = A', 'A = 2A·cos(θ/2) ⇒ cos(θ/2) = ½.'],
+            ['Solve for θ', 'θ/2 = 60° ⇒ θ = 120°.'],
+            ['Check with the general formula', 'R² = A² + A² + 2A²cos120° = 2A² + 2A²(−½) = A² ⇒ R = A. ✓'],
+            ['Final answer', 'θ = 120° (the same magic angle as Q36).']
+          ];
+          return { answers:{ ang }, solution:'θ = 120°', steps };
         }
       }
     ];
