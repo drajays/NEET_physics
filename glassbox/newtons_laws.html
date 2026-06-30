@@ -168,6 +168,15 @@
   </section>
 
   <section class="card panel">
+    <h2>Worked-out problems (HC Verma Ch. 5, 1–11)</h2>
+    <div class="toolbar">
+      <input id="wSearch" type="search" placeholder="Search these 11… (e.g. wedge, pulley, elevator, bullet, prism)" style="flex:1 1 260px;max-width:380px;background:var(--glass);border:1px solid var(--border);border-radius:999px;padding:7px 14px;color:var(--text);font-size:0.9rem;" aria-label="Search worked-out problems" />
+    </div>
+    <div id="workedSheet"></div>
+    <p class="foot">The chapter's signature derivations — figures described in words. Click any to see the result and the method.</p>
+  </section>
+
+  <section class="card panel">
     <h2>Newton's Laws formula sheet (NEET)</h2>
     <div class="toolbar">
       <input id="fSearch" type="search" placeholder="Filter formulas… (e.g. impulse, lift, Atwood, pseudo)" style="flex:1 1 260px;max-width:360px;background:var(--glass);border:1px solid var(--border);border-radius:999px;padding:7px 14px;color:var(--text);font-size:0.9rem;" aria-label="Filter formulas" />
@@ -369,6 +378,59 @@
   document.getElementById('qNew').onclick=renderQuestion;
   document.getElementById('qShowSol').onclick=()=>{ solEl.className='qsol show'; };
   renderQuestion();
+})();
+</script>
+
+<script>
+/* ---- Worked-out problems (HC Verma Ch. 5, 1–11) (self-contained) ---- */
+(function(){
+  "use strict";
+  const W = [
+    [1,"A body of mass m hangs from two strings making angles α and β with the horizontal. Find the tensions.",
+      "T₁ = mg cosβ / sin(α+β),&nbsp; T₂ = mg cosα / sin(α+β)",
+      "Equilibrium of the bob: horizontal T₁cosα = T₂cosβ; vertical T₁sinα + T₂sinβ = mg. Eliminating T₂ gives the symmetric pair above."],
+    [2,"Mass m₁ rests on a smooth incline, connected over a pulley at the top to a vertically hanging mass m₂; the system is at rest. Find the incline angle θ and the normal force on m₁.",
+      "θ = sin⁻¹(m₂/m₁);&nbsp; N = m₁g·√(1 − (m₂/m₁)²)",
+      "String holds m₂: T = m₂g. Along the incline T = m₁g sinθ ⇒ sinθ = m₂/m₁. Normal: N = m₁g cosθ = m₁g√(1 − (m₂/m₁)²)."],
+    [3,"A 10 g bullet moving at 250 m/s penetrates 5 cm into a uniform tree limb. Find the (magnitude of the) force exerted by the limb.",
+      "6250 N",
+      "u = 250, v = 0, x = 0.05 m. a = (u² − v²)/(2x) = 62500/0.1 = 6.25×10⁵ m/s². F = ma = 0.01 × 6.25×10⁵ = 6250 N."],
+    [4,"A force F = (10î + 5ĵ) N acts on a 10 g particle starting from rest at the origin. Find its position at t = 5 s.",
+      "r = (12500 î + 6250 ĵ) m",
+      "aₓ = Fₓ/m = 10/0.01 = 1000 m/s² ⇒ x = ½aₓt² = ½·1000·25 = 12500 m. a_y = 5/0.01 = 500 m/s² ⇒ y = ½·500·25 = 6250 m."],
+    [5,"A block of mass M rests on the floor of a box that is accelerating downward at a. Find the force the block exerts on the floor (and its value when a = 3g/4).",
+      "N = M(g − a);&nbsp; if a = 3g/4 ⇒ N = Mg/4",
+      "Forces on the block: Mg down, N up. Mg − N = Ma ⇒ N = M(g − a). With a = 3g/4, N = Mg/4 (by Newton's 3rd law the block presses the floor with the same N)."],
+    [6,"A block A of mass m is tied to a fixed clamp C by a string that runs over a movable (smooth, light) pulley B; a force F pulls the pulley's axle. Find the accelerations of the block and the pulley.",
+      "Block: a = F/2m;&nbsp; Pulley: a/2 = F/4m",
+      "The pulley is in equilibrium of its string forces: F − 2T = 0 ⇒ T = F/2. Block: T = ma ⇒ a = F/2m. Geometry makes the pulley move half as far, so its acceleration is F/4m."],
+    [7,"A smooth ring A (mass m) slides on a fixed horizontal rod; a string over a fixed pulley B connects it to a hanging block C of mass M = 2m, making angle θ with the rod. (a) Show the block descends at v cosθ when the ring moves at v. (b) Find the acceleration when released from rest at θ = 30° (g = 9.8).",
+      "(a) v_block = v cosθ;&nbsp; (b) a = Mg cosθ/(M + m cos²θ) = 6.78 m/s²",
+      "(a) Only the along-string component of the ring's velocity feeds the string ⇒ v cosθ. (b) Ring: T cosθ = ma; block: Mg − T = Ma cosθ. Eliminate T ⇒ a = Mg cosθ/(M + m cos²θ); M = 2m, θ = 30° ⇒ a = 6.78 m/s²."],
+    [8,"A rope is fixed to a clamp on the ground, runs over a tree branch, and hangs at 30° to the vertical. A 60 kg man climbs it. The clamp pulls out if the rope tension reaches 360 N. Find his maximum safe upward acceleration (neglect branch friction, g = 10).",
+      "2 m/s²",
+      "Upward pull on the clamp = T sin30° = T/2. Limit: T/2 = 360 ⇒ T_max = 720 N. Man: T − mg = ma ⇒ a = (720 − 600)/60 = 2 m/s²."],
+    [9,"Three blocks m₁, m₂, m₃ are connected by light strings over light pulleys; all surfaces are frictionless. Find the acceleration of m₁.",
+      "a₁ = g / [ 1 + (m₁/4)(1/m₂ + 1/m₃) ]",
+      "Constraint a₁ = a₀; the two hanging masses share the movable-pulley constraint. Writing each block's equation and the pulley constraint and eliminating the tensions gives the stated result."],
+    [10,"A particle slides down a smooth incline of angle θ fixed inside an elevator going up with acceleration a₀. The incline's base has length L. Find the time to reach the bottom.",
+      "t = √[ 2L / ((g + a₀) sinθ cosθ) ]",
+      "In the elevator frame add a pseudo force ma₀ downward, so effective gravity is g + a₀. Acceleration along the incline = (g + a₀)sinθ; distance = L/cosθ. L/cosθ = ½(g+a₀)sinθ·t² gives the time."],
+    [11,"A block of mass m slides down a smooth wedge (prism) of mass M, which is itself free to slide on a frictionless floor. Find the acceleration of the block relative to the prism.",
+      "a = (M + m)g sinθ / (M + m sin²θ)",
+      "Work in the lab frame (or add the prism's recoil): writing Newton's law along and perpendicular to the incline for both bodies and eliminating N and the prism acceleration gives a = (M+m)g sinθ/(M + m sin²θ)."],
+  ];
+  const host=document.getElementById('workedSheet');
+  host.innerHTML = W.map(([n,q,a,s])=>
+    `<details class="wex"><summary>${n}. ${q}</summary><div class="sol"><b>Answer:</b> <span class="ans">${a}</span><br>${s}</div></details>`
+  ).join('');
+  document.getElementById('wSearch').addEventListener('input', e=>{
+    const q=e.target.value.trim().toLowerCase();
+    host.querySelectorAll('details').forEach(d=>{
+      const m=!q || d.textContent.toLowerCase().includes(q);
+      d.style.display=m?'':'none'; if(q&&m) d.open=true;
+    });
+  });
 })();
 </script>
 
