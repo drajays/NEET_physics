@@ -36,6 +36,10 @@
   .ktable th,.ktable td{border:1px solid rgba(255,255,255,0.12);padding:6px 9px;text-align:center;}
   .ktable th{background:rgba(255,255,255,0.06);color:var(--accent);}
   .ktable td.k{color:#6ee7b7;font-weight:700;}
+  .strat{border:1px solid var(--border);border-radius:12px;background:linear-gradient(135deg,var(--glass-strong),var(--glass));padding:12px 14px;margin-bottom:14px;font-size:0.9rem;line-height:1.6;}
+  .strat b{color:var(--accent);}
+  .gtag{display:inline-block;font-size:0.68rem;font-weight:700;letter-spacing:0.03em;padding:2px 7px;border-radius:999px;margin-right:6px;background:rgba(125,211,252,0.14);color:var(--accent);}
+  .gtag.e{background:rgba(16,185,129,0.16);color:#6ee7b7;} .gtag.m{background:rgba(252,211,77,0.16);color:#fcd34d;} .gtag.h{background:rgba(239,68,68,0.16);color:#fca5a5;}
   .wex{border:1px solid var(--border);border-radius:12px;background:var(--glass-strong);margin-bottom:10px;overflow:hidden;}
   .wex summary{cursor:pointer;padding:11px 14px;font-size:0.93rem;font-weight:600;list-style:none;}
   .wex summary::-webkit-details-marker{display:none;}
@@ -366,6 +370,25 @@
   </section>
 
   <section class="card panel">
+    <h2>The four means — NEET shortcut toolkit</h2>
+    <div class="strat">
+      <b>Which mean?</b> &nbsp;Equal chunks of <b>time</b> → Arithmetic mean &nbsp;·&nbsp; equal chunks of <b>distance</b> → Harmonic mean &nbsp;·&nbsp; effect depends on the <b>square</b> of the quantity → RMS &nbsp;·&nbsp; <b>exponential decay / resonance</b> → Geometric mean.
+    </div>
+    <table class="ktable" style="margin-bottom:14px">
+      <tr><th>Mean</th><th>Formula</th><th>When to use</th><th>NEET chapter</th></tr>
+      <tr><td>Arithmetic</td><td>(v₁+v₂)/2</td><td>Equal time intervals</td><td>Kinematics</td></tr>
+      <tr><td>Harmonic</td><td>2v₁v₂/(v₁+v₂)</td><td>Equal distance intervals</td><td>Kinematics</td></tr>
+      <tr><td>RMS</td><td>√[(v₁²+v₂²)/2]</td><td>Effect ∝ (quantity)²</td><td>KTG, AC circuits</td></tr>
+      <tr><td>Geometric</td><td>√(a₁a₂)</td><td>Proportional decay / resonance</td><td>Oscillations, LCR</td></tr>
+    </table>
+    <div class="toolbar">
+      <input id="meanSearch" type="search" placeholder="Search the 20 questions… (e.g. RMS, resonance, harmonic)" style="flex:1 1 260px;max-width:380px;background:var(--glass);border:1px solid var(--border);border-radius:999px;padding:7px 14px;color:var(--text);font-size:0.9rem;" aria-label="Search means questions" />
+    </div>
+    <div id="meansSheet"></div>
+    <p class="foot">★ Key fact: for unequal numbers, AM &gt; GM &gt; HM, and RMS ≥ AM — so RMS is the largest of the four.</p>
+  </section>
+
+  <section class="card panel">
     <h2>Exercises (HC Verma Ch. 3, 1–52 with answers)</h2>
     <div class="toolbar">
       <input id="exSearch" type="search" placeholder="Search exercises… (e.g. projectile, river, brake)" style="flex:1 1 260px;max-width:360px;background:var(--glass);border:1px solid var(--border);border-radius:999px;padding:7px 14px;color:var(--text);font-size:0.9rem;" aria-label="Search exercises" />
@@ -561,6 +584,34 @@
         options:numOpts(ans,[2*v1*v2/(v1+v2),v1,v2],' m/s'),
         solution:[`Equal times ⇒ average speed = arithmetic mean = (v₁+v₂)/2 = (${v1}+${v2})/2 = <b>${ans} m/s</b>.`]};
     },
+    rms(){
+      if(Math.random()<0.5){
+        const set=pick([[2,4,6],[1,3,5],[2,4,4],[3,4,5],[1,2,3]]);
+        const mean=set.reduce((p,q)=>p+q,0)/set.length;
+        const ans=round(Math.sqrt(set.reduce((p,q)=>p+q*q,0)/set.length));
+        return {cat:'rms', stem:`Three molecules have speeds <b>${set.join(', ')} m/s</b>. Find their <b>RMS speed</b>.`,
+          options:numOpts(ans,[mean,Math.max(...set),Math.sqrt(set.reduce((p,q)=>p+q*q,0))],' m/s'),
+          solution:[`v_rms = √[(Σv²)/n] = √[(${set.map(v=>v*v).join('+')})/${set.length}]`,`= <b>${ans} m/s</b> (note: RMS > arithmetic mean ${round(mean)}).`]};
+      }
+      const V0=pick([311,200,100,340,156]);
+      const ans=round(V0/Math.SQRT2,1);
+      return {cat:'rms', stem:`An AC source has peak voltage <b>${V0} V</b>. Find the <b>RMS voltage</b>.`,
+        options:numOpts(ans,[V0,V0/2,V0*Math.SQRT2],' V'),
+        solution:[`V_rms = V₀/√2 = ${V0}/1.414 = <b>${ans} V</b>.`]};
+    },
+    gm(){
+      if(Math.random()<0.5){
+        const pairs=pick([[12,3,6],[8,2,4],[18,2,6],[16,4,8],[9,1,3],[12,27,18]]);
+        return {cat:'gm', stem:`In a damped oscillator the 1st amplitude is <b>${pairs[0]} cm</b> and the 3rd is <b>${pairs[1]} cm</b>. Find the <b>2nd amplitude</b>.`,
+          options:numOpts(pairs[2],[(pairs[0]+pairs[1])/2,pairs[0]-pairs[1],pairs[1]],' cm'),
+          solution:[`Amplitudes form a GP ⇒ A₂ = √(A₁·A₃) = √(${pairs[0]}·${pairs[1]}) = <b>${pairs[2]} cm</b>.`]};
+      }
+      const fp=pick([[400,1000],[200,800],[100,400],[250,1000],[160,640]]);
+      const ans=round(Math.sqrt(fp[0]*fp[1]),1);
+      return {cat:'gm', stem:`A series LCR circuit has half-power frequencies <b>${fp[0]} Hz</b> and <b>${fp[1]} Hz</b>. Find the <b>resonant frequency</b>.`,
+        options:numOpts(ans,[(fp[0]+fp[1])/2,fp[1]-fp[0],fp[1]],' Hz'),
+        solution:[`f_r = √(f₁·f₂) = √(${fp[0]}·${fp[1]}) = <b>${ans} Hz</b> (geometric mean).`]};
+    },
     heightfrac(){
       const Hmax=pick([40,80,100,120,200]), ang=pick([30,45,60]);
       const frac={30:0.25,45:0.5,60:0.75}[ang], label={30:'¼',45:'½',60:'¾'}[ang];
@@ -594,7 +645,7 @@
     },
   };
 
-  const CATS=[['all','All'],['avgspeed','Average speed'],['avgvel','Average velocity'],['instspeed','Instantaneous'],['vtgraph','v–t graph'],['accel','Uniform accel.'],['reachv','Reach a speed'],['nthsec','nᵗʰ second'],['maxheight','Vertical throw'],['proj2d','2-D motion'],['projectile','Projectile'],['freefall','Free fall'],['horizproj','Horizontal proj.'],['relvel','Relative velocity'],['riverboat','River-boat'],['rainman','Rain-man'],['equaltime','Equal-time avg'],['polynomial','Polynomial x(t)'],['heightfrac','Height shortcut'],['distdisp','Dist vs disp']];
+  const CATS=[['all','All'],['avgspeed','Average speed'],['avgvel','Average velocity'],['instspeed','Instantaneous'],['vtgraph','v–t graph'],['accel','Uniform accel.'],['reachv','Reach a speed'],['nthsec','nᵗʰ second'],['maxheight','Vertical throw'],['proj2d','2-D motion'],['projectile','Projectile'],['freefall','Free fall'],['horizproj','Horizontal proj.'],['relvel','Relative velocity'],['riverboat','River-boat'],['rainman','Rain-man'],['equaltime','Equal-time avg'],['polynomial','Polynomial x(t)'],['heightfrac','Height shortcut'],['rms','RMS'],['gm','Geometric mean'],['distdisp','Dist vs disp']];
   let cat='all', attempted=0, correct=0, current=null, answered=false;
   const stemEl=document.getElementById('qStem'),optsEl=document.getElementById('qOpts'),
         fbEl=document.getElementById('qFeedback'),solEl=document.getElementById('qSol'),
@@ -843,6 +894,54 @@
   document.getElementById('exSearch').addEventListener('input', e=>{
     const q=e.target.value.trim().toLowerCase();
     host.querySelectorAll('details').forEach(d=>{
+      const m=!q || d.textContent.toLowerCase().includes(q);
+      d.style.display=m?'':'none'; if(q&&m) d.open=true;
+    });
+  });
+})();
+</script>
+
+<script>
+/* ---- The four means: 20 NEET questions (self-contained) ---- */
+(function(){
+  "use strict";
+  const D={E:'e',M:'m',H:'h'}; // difficulty class
+  const MEANS = [
+    ['Part 1 · Arithmetic mean (equal time)'],
+    [1,'E','Train: 30 km/h for 2 h, then 50 km/h for 2 h. Average speed?','40 km/h','Equal times ⇒ arithmetic mean: (30+50)/2 = 40 km/h.'],
+    [2,'M','10 m/s, 15 m/s, 20 m/s each for 10 s. Average speed?','15 m/s','Equal times ⇒ (10+15+20)/3 = 15 m/s.'],
+    [3,'M','Velocity 8, 12, 4 m/s each for 5 s. Average velocity?','8 m/s','Equal times ⇒ (8+12+4)/3 = 8 m/s.'],
+    [4,'M-H','20 m/s for 1 min then 30 m/s for 2 min. Average speed?','26.67 m/s','Unequal times — the AM shortcut FAILS. Use total/total: (1200+3600)/180 = 26.67 m/s.'],
+    [5,'H','Rest, a=2 m/s² for 4 s, constant for 4 s, a=−1 m/s² for 4 s. Average velocity?','6 m/s','Distances 16+32+24 = 72 m over 12 s ⇒ 6 m/s. AM of velocities does not apply (velocity changes within a segment).'],
+    ['Part 2 · Harmonic mean (equal distance)'],
+    [6,'E','P→Q at 4 km/h, back at 6 km/h. Average speed?','4.8 km/h','Equal distances ⇒ HM: 2·4·6/(4+6) = 4.8 km/h.'],
+    [7,'M','A→B at 30, back at 20 km/h. Average speed (and compare with AM)?','24 km/h','HM = 2·30·20/50 = 24 km/h, less than AM (25) — slower speed dominates over equal distances.'],
+    [8,'M','Three equal distances at 10, 15, 20 m/s. Average speed?','13.85 m/s','HM (n=3): 3/(1/10+1/15+1/20) = 3/(13/60) = 180/13 ≈ 13.85 m/s.'],
+    [9,'M-H','2 km up at 20, 2 km down at 40, 2 km flat at 30 km/h. Average speed?','27.69 km/h','3 equal distances ⇒ 3/(1/20+1/40+1/30) = 360/13 ≈ 27.69 km/h.'],
+    [10,'H','Half the distance at 40, one-third of the rest at 60, rest at 80 km/h. Average speed?','51.43 km/h','Distances unequal — HM fails. Times D/80+D/360+D/240 = 7D/360 ⇒ 360/7 ≈ 51.43 km/h.'],
+    ['Part 3 · Root mean square (energy &amp; power)'],
+    [11,'E','AC peak voltage 311 V. RMS voltage? (√2≈1.414)','220 V','V_rms = V₀/√2 = 311/1.414 ≈ 220 V (the Indian "220 V" supply).'],
+    [12,'E-M','I(t)=5 sin(100πt) A across 10 Ω. RMS current &amp; average power?','3.54 A; 125 W','I_rms = 5/√2 ≈ 3.54 A; P = I_rms²R = 12.5·10 = 125 W (= I₀²R/2).'],
+    [13,'M','Molecule speeds 2, 4, 6 m/s. RMS speed vs arithmetic mean?','4.32 m/s (AM = 4)','v_rms = √[(4+16+36)/3] = √18.67 ≈ 4.32 m/s > AM, because squaring weights large values.'],
+    [14,'M-H','Gas RMS speed 500 m/s at T. New RMS if T is doubled?','707 m/s','v_rms ∝ √T ⇒ 500·√2 ≈ 707 m/s.'],
+    [15,'H','V(t)=200 sin(314t) across 50 Ω: V_rms, I_rms, P_avg, P_peak?','141.4 V; 2.83 A; 400 W; 800 W','V_rms=200/√2≈141.4; I_rms=141.4/50≈2.83; P_avg=V₀²/2R=400 W; P_peak=V₀²/R=800 W (twice P_avg).'],
+    ['Part 4 · Geometric mean (proportional / resonance)'],
+    [16,'E','Damped swings: 1st amplitude 12 cm, 3rd 3 cm. 2nd amplitude?','6 cm','Geometric progression ⇒ A₂ = √(A₁A₃) = √(12·3) = 6 cm.'],
+    [17,'M','LCR half-power frequencies 400 Hz and 1000 Hz. Resonant frequency?','632.5 Hz','f_r = √(f₁f₂) = √(400·1000) ≈ 632.5 Hz (geometric mean).'],
+    [18,'M','Intensity drops ×4 per metre; source 64 W/m². Intensity at 2 m?','4 W/m²','64→16 (1 m)→4 (2 m). GM check: √(64·4)=16 = I at 1 m.'],
+    [19,'M-H','Damped oscillator: A₀=10 cm, A₁=8 cm. A₂ after second oscillation?','6.4 cm','Constant ratio ⇒ A₂ = A₁²/A₀ = 64/10 = 6.4 cm (A₁ = √(A₀A₂)).'],
+    [20,'H','Amplifier: bandwidth f₂−f₁ = 300 Hz, centre √(f₁f₂) = 600 Hz. Find f₁, f₂.','f₁ ≈ 468.5 Hz, f₂ ≈ 768.5 Hz','f₁f₂=360000 and f₂=f₁+300 ⇒ f₁²+300f₁−360000=0 ⇒ f₁≈468.5, f₂≈768.5 Hz.'],
+  ];
+  const dcls={'E':'e','M':'m','M-H':'m','H':'h','E-M':'e'};
+  const mh=document.getElementById('meansSheet');
+  mh.innerHTML = MEANS.map(row=>{
+    if(row.length===1) return `<h3 style="color:var(--accent);font-size:0.92rem;margin:14px 0 8px">${row[0]}</h3>`;
+    const [n,diff,q,a,s]=row;
+    return `<details class="wex"><summary><span class="gtag ${dcls[diff]||'m'}">${diff}</span>Q${n}. ${q}</summary><div class="sol"><b>Answer:</b> <span class="ans">${a}</span><br>${s}</div></details>`;
+  }).join('');
+  document.getElementById('meanSearch').addEventListener('input', e=>{
+    const q=e.target.value.trim().toLowerCase();
+    mh.querySelectorAll('details').forEach(d=>{
       const m=!q || d.textContent.toLowerCase().includes(q);
       d.style.display=m?'':'none'; if(q&&m) d.open=true;
     });
