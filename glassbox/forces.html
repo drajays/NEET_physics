@@ -267,6 +267,18 @@
   </section>
 
   <section class="card panel">
+    <h2>Pseudo force in an accelerating train — 11 NEET MCQs</h2>
+    <div class="strat">
+      <b>Why g<sub>eff</sub> = √(g² + a²)?</b> &nbsp;In the train's (non-inertial) frame two accelerations act on a bob: true gravity <b>g</b> straight down and the pseudo acceleration <b>a₀</b> straight back — at <b>90°</b>. The Law of Cosines R = √(A² + B² + 2AB cosθ) with <span class="mono">cos90° = 0</span> kills the cross-term, leaving <span class="mono">g<sub>eff</sub> = √(g² + a₀²)</span>. The bob hangs along this diagonal at <span class="mono">tanθ = a₀/g</span> from the vertical. (Adding them as 10 + 5 = 15 would wrongly assume cos0° = 1; ignoring a₀ wrongly drops a real force.)
+    </div>
+    <p class="foot" style="margin:0 0 12px">Standing up in a lurching train comes down to three defences: <b>friction</b> (feet don't slide), <b>torque balance</b> (you don't topple) and <b>tension</b> (you grab a handle). Each MCQ below isolates one.</p>
+    <div class="toolbar">
+      <input id="exSearch3" type="search" placeholder="Search these 11… (e.g. topple, strap, balloon, water surface)" style="flex:1 1 260px;max-width:380px;background:var(--glass);border:1px solid var(--border);border-radius:999px;padding:7px 14px;color:var(--text);font-size:0.9rem;" aria-label="Search train pseudo-force MCQs" />
+    </div>
+    <div id="exerciseSheet3"></div>
+  </section>
+
+  <section class="card panel">
     <h2>Practice · unlimited NEET-UG force questions</h2>
     <div class="toolbar" id="catBar"></div>
     <div class="quiz-q" id="qStem"><span class="qmeta">loading…</span></div>
@@ -745,6 +757,63 @@
     `<details class="wex"><summary>${n}. ${q}</summary><div class="sol"><b>Answer:</b> <span class="ans">${a}</span><br>${s}</div></details>`
   ).join('');
   document.getElementById('exSearch2').addEventListener('input', e=>{
+    const q=e.target.value.trim().toLowerCase();
+    host.querySelectorAll('details').forEach(d=>{
+      const m=!q || d.textContent.toLowerCase().includes(q);
+      d.style.display=m?'':'none'; if(q&&m) d.open=true;
+    });
+  });
+})();
+</script>
+
+<script>
+/* ---- Pseudo force in an accelerating train: 11 NEET MCQs (self-contained) ---- */
+(function(){
+  "use strict";
+  // [n, stem, [A,B,C,D], correctLetter, solution]
+  const MCQ = [
+    [1,"A 60 kg man stands on a <b>frictionless</b> train floor; the train accelerates at 5 m/s². He grips a vertical pole. Minimum horizontal force his hands must exert?",
+      ["0 N","300 N","600 N","150 N"],"B",
+      "In the train frame a pseudo force F<sub>p</sub> = ma = 60×5 = <b>300 N</b> pushes him backward; to stay put he must pull the pole forward with an equal 300 N."],
+    [2,"A passenger holds a strap (grip mass m) hanging from the ceiling; the train accelerates at a = g√3. Angle with vertical and tension?",
+      ["30°, mg","60°, 2mg","45°, mg√2","60°, √3 mg"],"B",
+      "tanθ = ma/mg = √3 ⇒ θ = <b>60°</b>. Tension balances effective gravity: T = m√(g² + (g√3)²) = m√(4g²) = <b>2mg</b>."],
+    [3,"A 50 kg passenger stands on the floor (μ<sub>s</sub> = 0.4, g = 10). Maximum train acceleration before his feet slip?",
+      ["2 m/s²","4 m/s²","5 m/s²","10 m/s²"],"B",
+      "No slip needs friction ≥ pseudo force: ma ≤ μ<sub>s</sub>mg ⇒ a<sub>max</sub> = μ<sub>s</sub>g = 0.4×10 = <b>4 m/s²</b> (mass cancels)."],
+    [4,"A standing person modelled as a uniform box of height h and stance width b; friction is very high (no slip). Critical acceleration to topple backward?",
+      ["g(h/b)","g(b/h)","g(b/2h)","g"],"B",
+      "Pseudo force at the CM (height h/2) gives toppling torque ma(h/2); gravity restores with mg(b/2). Equate: ma(h/2) = mg(b/2) ⇒ a = <b>g(b/h)</b>."],
+    [5,"A block of height 20 cm and width 10 cm sits on the floor (μ = 0.8, g = 10). As acceleration rises slowly, what happens first?",
+      ["Slides at 8 m/s²","Topples at 5 m/s²","Topples at 8 m/s²","Slides at 5 m/s²"],"B",
+      "Topple: a = g(b/h) = 10(10/20) = 5 m/s². Slide: a = μg = 0.8×10 = 8 m/s². Since 5 &lt; 8 it <b>topples at 5 m/s²</b> first."],
+    [6,"A glass half-filled with water sits on a table in a train accelerating at 10 m/s² (g = 10). Angle of the water surface with the horizontal?",
+      ["30°","45°","60°","0°"],"B",
+      "A free surface sets itself ⟂ to g<sub>eff</sub>: tanθ = a/g = 10/10 = 1 ⇒ θ = <b>45°</b>."],
+    [7,"A smooth incline of angle θ is fixed in a train. Horizontal acceleration so a block stays stationary on the incline?",
+      ["g sinθ","g cosθ","g tanθ","g cotθ"],"C",
+      "Pseudo force ma up-slope component = ma cosθ; gravity down-slope = mg sinθ. Balance ⇒ a = <b>g tanθ</b>."],
+    [8,"A helium balloon is tied by a string to the floor of a train. When it suddenly accelerates forward, the balloon leans…",
+      ["Backward","Forward","Stays vertical","Oscillates"],"B",
+      "g<sub>eff</sub> points down-and-back, so the denser air piles toward the rear; buoyancy (opposite g<sub>eff</sub>) shoves the light balloon <b>forward</b>."],
+    [9,"A boy in a train accelerating at a throws a ball straight up at speed u (relative to himself). It lands…",
+      ["Back in his hands","In front of him","Behind him","Deflected sideways"],"C",
+      "Once airborne the ball keeps the train's velocity but not its acceleration; the train accelerates forward under it, so it lands <b>behind him</b>."],
+    [10,"A pendulum hangs from a train roof. At rest the tension is T₁; when the train accelerates at a = ¾g the tension is T₂. Ratio T₂/T₁?",
+      ["5/4","3/4","4/5","1/1"],"A",
+      "T₁ = mg; T₂ = m√(g² + (¾g)²) = m√(25/16 g²) = (5/4)mg ⇒ T₂/T₁ = <b>5/4</b>."],
+    [11,"A bob hangs from the ceiling of a train accelerating at a₀ = 5 m/s² (g = 10). Magnitude of the effective gravity it feels?",
+      ["15 m/s²","5 m/s²","11.18 m/s²","13.97 m/s²"],"C",
+      "g and a₀ are perpendicular: g<sub>eff</sub> = √(g² + a₀²) = √(100 + 25) = √125 ≈ <b>11.18 m/s²</b> (the cos90° cross-term vanishes)."],
+  ];
+  const host=document.getElementById('exerciseSheet3');
+  const L=['A','B','C','D'];
+  host.innerHTML = MCQ.map(([n,q,opts,ans,sol])=>{
+    const ai=L.indexOf(ans);
+    const optHtml = opts.map((o,i)=>`<div${i===ai?' class="ans"':' style="color:var(--muted)"'}>${L[i]}) ${o}${i===ai?' ✓':''}</div>`).join('');
+    return `<details class="wex"><summary>Q${n}. ${q}</summary><div class="sol">${optHtml}<br><b>Answer: ${ans}.</b> ${sol}</div></details>`;
+  }).join('');
+  document.getElementById('exSearch3').addEventListener('input', e=>{
     const q=e.target.value.trim().toLowerCase();
     host.querySelectorAll('details').forEach(d=>{
       const m=!q || d.textContent.toLowerCase().includes(q);
