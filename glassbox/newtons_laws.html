@@ -177,6 +177,15 @@
   </section>
 
   <section class="card panel">
+    <h2>Exercises (HC Verma Ch. 5, 1–42 with answers)</h2>
+    <div class="toolbar">
+      <input id="exrSearch" type="search" placeholder="Search exercises… (e.g. elevator, monkey, spring, Atwood, pulley)" style="flex:1 1 260px;max-width:380px;background:var(--glass);border:1px solid var(--border);border-radius:999px;padding:7px 14px;color:var(--text);font-size:0.9rem;" aria-label="Search exercises" />
+    </div>
+    <div id="exerciseSheet2"></div>
+    <p class="foot">g = 9.8 m/s² unless a problem states otherwise. Answers from the HC Verma key; figure references trimmed.</p>
+  </section>
+
+  <section class="card panel">
     <h2>Newton's Laws formula sheet (NEET)</h2>
     <div class="toolbar">
       <input id="fSearch" type="search" placeholder="Filter formulas… (e.g. impulse, lift, Atwood, pseudo)" style="flex:1 1 260px;max-width:360px;background:var(--glass);border:1px solid var(--border);border-radius:999px;padding:7px 14px;color:var(--text);font-size:0.9rem;" aria-label="Filter formulas" />
@@ -425,6 +434,68 @@
     `<details class="wex"><summary>${n}. ${q}</summary><div class="sol"><b>Answer:</b> <span class="ans">${a}</span><br>${s}</div></details>`
   ).join('');
   document.getElementById('wSearch').addEventListener('input', e=>{
+    const q=e.target.value.trim().toLowerCase();
+    host.querySelectorAll('details').forEach(d=>{
+      const m=!q || d.textContent.toLowerCase().includes(q);
+      d.style.display=m?'':'none'; if(q&&m) d.open=true;
+    });
+  });
+})();
+</script>
+
+<script>
+/* ---- Exercises 1–42 with answers (self-contained) ---- */
+(function(){
+  "use strict";
+  const EX = [
+    [1,"A 2 kg block on a frictionless table is pulled by a constant horizontal force F; it moves 10 m in the first 2 s. Find F.","10 N","u=0, s=10 m in 2 s ⇒ a = 2s/t² = 5 m/s²; F = ma = 2×5 = 10 N."],
+    [2,"A car at 40 km/h is stopped in the next 4.0 m. If it weighs 2000 kg, find the average stopping force.","3.1 × 10⁴ N","40 km/h = 11.1 m/s; a = v²/2s = 123.4/8 ≈ 15.4 m/s²; F = 2000×15.4."],
+    [3,"Electrons reach 5×10⁶ m/s from rest over 1 cm in a TV tube. Find the force. (mₑ = 9.1×10⁻³¹ kg)","1.1 × 10⁻¹⁵ N","a = v²/2s = 25×10¹²/0.02 = 1.25×10¹⁵; F = mₑa."],
+    [4,"0.2 kg hangs from the ceiling by a string; 0.3 kg hangs from it by a second string. Find both tensions (g=10).","5 N (upper) and 3 N (lower)","Lower string: T₂ = 0.3×10 = 3 N; upper: T₁ = (0.2+0.3)×10 = 5 N."],
+    [5,"Two equal masses m on a smooth table are joined by a string; one is pulled along the line by force F. Tension in the joining string?","F/2","System a = F/2m; tension pulls the rear mass: T = m·a = F/2."],
+    [6,"A 50 g particle's speed–time graph is given (Fig 5-E1). Find the force at t = 2, 4, 6 s.","0.25 N (along motion), 0, 0.25 N (opposite)","F = m × (slope of v–t): accelerating, constant, then decelerating."],
+    [7,"Blocks A and B (m_A, m_B) in contact on a frictionless table; A is pushed from behind. If A pushes B with force F, find the experimenter's force on A.","F(1 + m_A/m_B)","a = F/m_B; pusher's force = (m_A+m_B)a = F(1 + m_A/m_B)."],
+    [8,"Raindrops (r = 1 mm, m = 4 mg) fall at 30 m/s onto a bald head and stop within a distance r. Estimate each drop's force on the head.","1.8 N","a = v²/2r = 900/0.002 = 4.5×10⁵; F = ma = 4×10⁻⁶×4.5×10⁵ ≈ 1.8 N."],
+    [9,"A 0.3 kg particle feels F = −kx with k = 15 N/m. Initial acceleration if released from x = 20 cm?","10 m/s²","F = kx = 15×0.2 = 3 N; a = F/m = 3/0.3 = 10 m/s²."],
+    [10,"Both springs (k₁, k₂, Fig 5-E2) are unstretched; the block is displaced x and released. Initial acceleration?","(k₁ + k₂)x/m, opposite to the displacement","Both springs pull back: F = (k₁+k₂)x ⇒ a = (k₁+k₂)x/m."],
+    [11,"Block B sits at the right end of a 20 cm, 5 kg block A; a 10 N force pulls A (Fig 5-E3, all frictionless). Time before B separates from A?","0.45 s","Only A accelerates: a = 10/5 = 2 m/s²; relative slip 0.20 m ⇒ 0.20 = ½×2×t² ⇒ t = 0.45 s."],
+    [12,"A man in a ditch of width d is pulled up by two friends via a rope over two pulleys (Fig 5-E4). Force each friend exerts when the man is at depth h?","(mg/4h)·√(d² + 4h²)","Each rope makes angle with vertical; vertical components carry mg, geometry gives the factor."],
+    [13,"The elevator (Fig 5-E5) descends at 2 m/s²; block A (0.5 kg) sits on block B. Force A exerts on B? (g=10)","4 N","N = m(g − a) = 0.5×(10−2) = 4 N."],
+    [14,"A 50 g pendulum bob hangs in an elevator. Tension if it (a) accel up 1.2 (b) decel up 1.2 (c) up uniform (d) accel down 1.2 (e) decel down 1.2 (f) down uniform? (g≈9.8)","(a) 0.55 N (b) 0.43 N (c) 0.49 N (d) 0.43 N (e) 0.55 N (f) 0.49 N","T = m(g ± a); 'decel up' = effective down accel, etc."],
+    [15,"On a weighing machine in an elevator (up-accel, uniform, then decel-stop) the max and min readings are 72 kg and 60 kg (equal magnitudes). Find (a) true weight and (b) the acceleration. (g=9.9)","66 kg and 0.9 m/s²","True wt = (72+60)/2 = 66 kg; a = g(72−60)/(72+60) = 9.9×12/132 = 0.9 m/s²."],
+    [16,"Reading of the spring balance (Fig 5-E6): elevator goes up at g/10, light smooth pulley.","4.4 kg","Two masses (1.5 & 3.0 kg) over the balance pulley in an up-accelerating frame."],
+    [17,"A 2 kg block hangs from a spring (k = 100 N/m). Find the elongation; then the extra elongation when 1 kg more is added.","0.2 m, then 0.1 m","x = mg/k = 20/100 = 0.2 m; extra = (1×10)/100 = 0.1 m."],
+    [18,"As in Q17 but the ceiling accelerates up at 2 m/s². Find the two elongations.","0.24 m, 0.12 m","x = m(g+a)/k = 2×12/100 = 0.24 m; extra = 1×12/100 = 0.12 m."],
+    [19,"Buoyancy B (constant, up) and a drag ∝ velocity act on a balloon of mass M that falls at constant v. Mass to remove so it rises at constant v?","2(M − B/g)","Falling: Mg − B = kv; rising: B − (M−Δ)g = kv. Subtract ⇒ Δ = 2(M − B/g)."],
+    [20,"An empty box (mass m) accelerates up at g/6 deep in water. Sand to add so it accelerates down at g/6?","2m/5","Buoyancy from mg+ (mg/6); set new weight for down g/6 and solve ⇒ 2m/5."],
+    [21,"A force F = v×A (A horizontal, constant) plus gravity acts on a particle. Minimum projection speed to move undeflected at constant velocity?","mg/A","Need qv×A to cancel mg: v A = mg ⇒ v = mg/A (v ⟂ A, horizontal)."],
+    [22,"Atwood machine m₁ = 300 g, m₂ = 600 g (Fig 5-E7), released at t=0. (a) Distance the first block moves in 2 s. (b) Tension. (c) Force of the clamp on the pulley.","(a) 6.5 m (b) 3.9 N (c) 7.8 N","a = (m₂−m₁)g/(m₁+m₂) = g/3 ≈ 3.27; s = ½at²; T = 2m₁m₂g/(m₁+m₂); clamp = 2T."],
+    [23,"Atwood as in Q22; the larger mass is stopped for a moment 2.0 s after start. Time before the string is taut again?","2/3 s","At 2 s both move at v = a×2; the heavier stops, lighter rises and decelerates; relative motion closes the slack."],
+    [24,"A uniform 30 cm rod (3.0 kg) is pulled by 20 N and 32 N at its ends (Fig 5-E8). Force the 20 cm part exerts on the 10 cm part? (smooth)","24 N","System a = (32−20)/3 = 4 m/s²; treat the 10 cm (1 kg) piece: 32 − T = 1×4 ⇒ T = 24 N (or 20 cm piece: T − 20 = 2×4)."],
+    [25,"All surfaces frictionless, light string/pulley (Fig 5-E9, two 1 kg blocks on a wedge). Magnitude of the blocks' acceleration.","g/10","Net driving = difference of weight-components along the inclines over total mass."],
+    [26,"A constant F = m₂g/2 is applied on m₁ (Fig 5-E10); light string/pulley, smooth table. Acceleration of m₁?","m₂g/[2(m₁ + m₂)], towards right","Write F and tension on m₁ and the hanging m₂, eliminate T."],
+    [27,"m₁ = 5 kg, m₂ = 2 kg, F = 1 N (Fig 5-E11). Find the blocks' acceleration; then describe m₁ if the string breaks but F still acts.","4.3 m/s²; then m₁ moves down at g + 0.2 m/s²","Solve the connected system; after the break only gravity + F act on m₁."],
+    [28,"m₁ = 1, m₂ = 2, m₃ = 3 kg (Fig 5-E12). Find each acceleration; the m₁→pulley string is 20 cm. Time for m₁ to strike the pulley?","19g/29 (up), 17g/29 (down), 21g/29 (down); 0.25 s","Double-pulley constraint a₁ = a₂ + a₃; solve the three equations, then 0.20 = ½a₁t²."],
+    [29,"As in Q28 with m₂ = 2.0 kg, m₃ = 3.0 kg. What mass m₁ stays at rest?","4.8 kg","For m₁ at rest its tension must balance mg with the lower system in equilibrium ⇒ m = 4·m₂m₃/(m₂+m₃)."],
+    [30,"Tension in the string (Fig 5-E13): light pulley/string, all frictionless. (g=10)","5 N","Set up the 1 kg + 1 kg connected blocks and solve for T."],
+    [31,"Both pulleys/string light, all frictionless (Fig 5-E14). (a) Acceleration of M. (b) Tension. (c) Clamp force on pulley A.","(a) 2g/3 (b) Mg/3 (c) (√2/3)Mg at 45° to the horizontal","Movable-pulley constraint; clamp force is the vector sum of two perpendicular tensions."],
+    [32,"Acceleration of block M (Fig 5-E15, 30° incline), all frictionless, light pulleys/string.","g/3, up the plane","Resolve along the incline with the pulley constraint and solve."],
+    [33,"Mass M of the hanging block that stops the smaller block slipping on the wedge (Fig 5-E16), all frictionless.","M = (M′ + m)/(cotθ − 1)","Require the small block's relative acceleration on the wedge to be zero."],
+    [34,"Accelerations of A and B in the three set-ups of Fig 5-E17.","(a) 2g/7 down, g/7 up (b) 10g/13 forward, 5g/13 down (c) 2g/3 down, g/3 up","Each uses the string constraint a_A = 2a_B (movable pulley) with the two force equations."],
+    [35,"Acceleration of the 500 g block (Fig 5-E18, 100 g on a 30° incline).","8g/13, downward","Combine the incline block, hanging block and pulley constraint."],
+    [36,"A 15 kg monkey climbs a ceiling-fixed rope with a = 1 m/s². Force on the rope? If the rope is 5 m and it starts from rest, time to reach the ceiling?","165 N; √10 s","F = m(g+a) = 15×11 = 165 N; 5 = ½×1×t² ⇒ t = √10 s."],
+    [37,"A monkey climbs a rope over a smooth light pulley balancing an equal mass (Fig 5-E19). Show both move alike, so the separation is unchanged.","Monkey and block accelerate equally in the same direction; separation constant","Equal masses ⇒ whatever the monkey's pull, both get the same acceleration; from rest the gap stays fixed."],
+    [38,"Monkey B (2 kg) hangs from the tail of monkey A (5 kg) climbing a rope (Fig 5-E20). A's tail tolerates 30 N. Force A must apply on the rope to carry B? (g=10)","Between 70 N and 105 N","Tail tension ≤ 30 N bounds the common acceleration; rope force = (m_A+m_B)(g+a)."],
+    [39,"A 60 kg man on a light machine in a 30 kg box hangs from a rope he holds himself (Fig 5-E21). (i) Reading if he keeps the box at rest. (ii) Rope force to read his true weight.","15 kg; 1800 N","Box at rest: 2T = (60+30)g ⇒ analysis gives a 15 kg reading; for true weight he needs N = 600 N ⇒ rope force 1800 N."],
+    [40,"Block A on a frictionless incline (angle θ, length l) inside an elevator moving up at constant v (Fig 5-E22). Time to slide down the incline from rest.","√(2l/(g sinθ))","Constant v ⇒ inertial frame; a = g sinθ along the plane; l = ½(g sinθ)t²."],
+    [41,"A car accelerates at a. (i) Angle a ceiling-hung ball makes with the vertical. (ii) Angle of a smooth incline on which a block does not slip.","tan⁻¹(a/g) in each case","Pseudo force ma horizontal vs mg vertical ⇒ tanθ = a/g for both."],
+    [42,"A block rests on an elevator floor; the elevator then descends at 12 m/s². Displacement of the block in the first 0.2 s. (g=10)","20 cm","Floor accelerates down faster than g, so the block free-falls: s = ½g t² = ½×10×0.04 = 0.20 m."],
+  ];
+  const host=document.getElementById('exerciseSheet2');
+  host.innerHTML = EX.map(([n,q,a,s])=>
+    `<details class="wex"><summary>${n}. ${q}</summary><div class="sol"><b>Answer:</b> <span class="ans">${a}</span><br>${s}</div></details>`
+  ).join('');
+  document.getElementById('exrSearch').addEventListener('input', e=>{
     const q=e.target.value.trim().toLowerCase();
     host.querySelectorAll('details').forEach(d=>{
       const m=!q || d.textContent.toLowerCase().includes(q);
