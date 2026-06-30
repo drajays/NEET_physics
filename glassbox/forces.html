@@ -18,8 +18,11 @@
   header h1{margin:0 0 6px;font-size:clamp(1.5rem,3vw,2.1rem);letter-spacing:-0.01em;
     background:linear-gradient(90deg,#fde68a,#fca5a5);-webkit-background-clip:text;background-clip:text;color:transparent;}
   header p.sub{margin:0 0 22px;color:var(--muted);max-width:65ch;}
-  .card{background:var(--glass);border:1px solid var(--border);border-radius:var(--radius);
-    backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 12px 40px rgba(20,8,2,0.5);}
+  /* No backdrop-filter: live blur on every card repaints the whole background on
+     each scroll frame and makes scrolling hang. A semi-opaque fill keeps the
+     glass look with smooth, GPU-cheap scrolling. */
+  .card{background:rgba(34,22,11,0.55);border:1px solid var(--border);border-radius:var(--radius);
+    box-shadow:0 12px 40px rgba(20,8,2,0.5);}
   .panel{padding:18px;margin-bottom:18px;}
   .panel h2{margin:0 0 12px;font-size:1.05rem;}
   .foot{color:var(--muted);font-size:0.8rem;margin-top:10px;}
