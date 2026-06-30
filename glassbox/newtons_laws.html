@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Glass Box · Newton's Laws of Motion</title>
+<style>
+  :root{
+    --bg1:#08130d;--bg2:#04110b;--glass:rgba(255,255,255,0.06);--glass-strong:rgba(255,255,255,0.10);
+    --border:rgba(255,255,255,0.14);--text:#e8fbf3;--muted:#a7d8c4;--accent:#34d399;--radius:16px;
+  }
+  *{box-sizing:border-box;} html,body{margin:0;padding:0;}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--text);
+    background:radial-gradient(1200px 700px at 80% -10%,rgba(16,185,129,0.12),transparent 60%),
+      radial-gradient(900px 600px at -10% 110%,rgba(45,212,191,0.13),transparent 55%),
+      linear-gradient(160deg,var(--bg1),var(--bg2));min-height:100vh;padding:28px 18px 48px;line-height:1.5;}
+  .wrap{max-width:980px;margin:0 auto;}
+  header h1{margin:0 0 6px;font-size:clamp(1.5rem,3vw,2.1rem);letter-spacing:-0.01em;
+    background:linear-gradient(90deg,#6ee7b7,#5eead4);-webkit-background-clip:text;background-clip:text;color:transparent;}
+  header p.sub{margin:0 0 22px;color:var(--muted);max-width:65ch;}
+  /* No backdrop-filter: live blur repaints the background every scroll frame and
+     makes scrolling hang. Semi-opaque fill keeps the glass look, smooth scroll. */
+  .card{background:rgba(8,22,15,0.6);border:1px solid var(--border);border-radius:var(--radius);
+    box-shadow:0 12px 40px rgba(2,20,12,0.5);}
+  .panel{padding:18px;margin-bottom:18px;}
+  .panel h2{margin:0 0 12px;font-size:1.05rem;}
+  .foot{color:var(--muted);font-size:0.8rem;margin-top:10px;}
+  .hl{color:#fcd34d;}
+  .rules{columns:2;column-gap:14px;}
+  .rule{break-inside:avoid;margin:0 0 14px;border:1px solid var(--border);border-radius:12px;background:var(--glass-strong);overflow:hidden;}
+  .rule h3{margin:0;padding:9px 13px;font-size:0.9rem;background:rgba(255,255,255,0.05);color:var(--accent);}
+  .rule ul{list-style:none;margin:0;padding:8px 13px 11px;}
+  .rule li{padding:4px 0;font-size:0.9rem;border-bottom:1px dashed rgba(255,255,255,0.06);}
+  .rule li:last-child{border-bottom:none;}
+  .mono{font-family:"Cambria Math",Consolas,monospace;background:rgba(255,255,255,0.07);padding:1px 6px;border-radius:6px;}
+  .ktable{width:100%;border-collapse:collapse;font-size:0.86rem;margin:4px 0 2px;}
+  .ktable th,.ktable td{border:1px solid rgba(255,255,255,0.12);padding:6px 9px;text-align:center;}
+  .ktable th{background:rgba(255,255,255,0.06);color:var(--accent);}
+  .ktable td.k{color:#6ee7b7;font-weight:700;}
+  .strat{border:1px solid var(--border);border-radius:12px;background:linear-gradient(135deg,var(--glass-strong),var(--glass));padding:12px 14px;margin-bottom:14px;font-size:0.9rem;line-height:1.6;}
+  .strat b{color:var(--accent);}
+  .wex{border:1px solid var(--border);border-radius:12px;background:var(--glass-strong);margin-bottom:10px;overflow:hidden;}
+  .wex summary{cursor:pointer;padding:11px 14px;font-size:0.93rem;font-weight:600;list-style:none;}
+  .wex summary::-webkit-details-marker{display:none;}
+  .wex summary::before{content:'▸ ';color:var(--accent);}
+  .wex[open] summary::before{content:'▾ ';}
+  .wex .sol{padding:0 14px 13px;font-size:0.9rem;color:var(--muted);line-height:1.6;}
+  .wex .sol b{color:var(--text);} .wex .ans{color:#6ee7b7;font-weight:700;}
+  .toolbar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:14px;}
+  .chip{display:inline-flex;align-items:center;gap:6px;cursor:pointer;border:1px solid var(--border);border-radius:999px;
+    padding:6px 13px;background:var(--glass);font-size:0.82rem;font-weight:600;color:var(--muted);transition:all .15s;}
+  .chip.on{color:var(--text);border-color:rgba(255,255,255,0.35);background:var(--glass-strong);}
+  .chip:hover{border-color:rgba(255,255,255,0.4);}
+  .btn{cursor:pointer;border:1px solid var(--border);border-radius:999px;padding:6px 14px;background:var(--glass);
+    color:var(--text);font-size:0.82rem;font-weight:600;transition:all .15s;}
+  .btn:hover{border-color:var(--accent);color:var(--accent);}
+  .quiz-q{font-size:1.04rem;margin:6px 0 14px;line-height:1.55;}
+  .qmeta{display:inline-block;font-size:0.72rem;font-weight:700;letter-spacing:0.04em;text-transform:uppercase;
+    color:var(--accent);background:rgba(52,211,153,0.12);padding:3px 9px;border-radius:999px;margin-bottom:10px;}
+  .opts{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;}
+  .opt{text-align:left;cursor:pointer;border:1px solid var(--border);border-radius:11px;padding:11px 13px;background:var(--glass);
+    color:var(--text);font-size:0.95rem;transition:all .13s;}
+  .opt:hover:not(:disabled){border-color:var(--accent);}
+  .opt .lab{display:inline-block;width:22px;font-weight:700;color:var(--muted);}
+  .opt.correct{border-color:#34d399;background:rgba(16,185,129,0.16);}
+  .opt.wrong{border-color:#f87171;background:rgba(239,68,68,0.16);}
+  .opt:disabled{cursor:default;}
+  .qfeedback{margin-top:14px;font-size:0.92rem;} .qfeedback.ok{color:#6ee7b7;} .qfeedback.no{color:#fca5a5;}
+  .qsol{margin-top:12px;border-left:3px solid var(--accent);padding:6px 0 6px 14px;display:none;}
+  .qsol.show{display:block;}
+  .qsol .step{margin:5px 0;font-size:0.9rem;color:var(--muted);} .qsol .step b{color:var(--text);}
+  .qbar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:16px;}
+  .scorepill{margin-left:auto;font-size:0.85rem;color:var(--muted);}
+  @media (max-width:560px){.rules{columns:1;}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Newton's Laws of Motion</h1>
+    <p class="sub">HC Verma Chapter 5 for NEET: the three laws, momentum &amp; impulse, free-body diagrams, lifts, Atwood machines, inclines, blocks in contact, pseudo force and momentum conservation (recoil, rockets) — key ideas, worked examples, a formula sheet, 30 high-yield Q&amp;A and an unlimited quiz.</p>
+  </header>
+
+  <section class="card panel">
+    <h2>Key ideas at a glance</h2>
+    <div class="rules">
+      <div class="rule"><h3>The three laws</h3><ul>
+        <li><b>1st (inertia):</b> ΣF = 0 ⇒ a = 0; defines an inertial frame.</li>
+        <li><b>2nd:</b> <span class="mono">F = dp/dt = ma</span>.</li>
+        <li><b>3rd:</b> <span class="mono">F<sub>AB</sub> = −F<sub>BA</sub></span> — equal, opposite, on <b>different</b> bodies.</li>
+      </ul></div>
+      <div class="rule"><h3>Momentum &amp; impulse</h3><ul>
+        <li>p = mv ; F = dp/dt.</li>
+        <li>Impulse <span class="mono">J = ∫F dt = Δp</span> = area under the F–t graph.</li>
+        <li>No external force ⇒ total momentum conserved.</li>
+      </ul></div>
+      <div class="rule"><h3>Common forces</h3><ul>
+        <li>Weight W = mg (down). Normal N ⟂ surface.</li>
+        <li>Tension T pulls along the string, away from the body.</li>
+        <li>Spring <span class="mono">F = −kx</span>.</li>
+      </ul></div>
+      <div class="rule"><h3>Lift (apparent weight)</h3><ul>
+        <li>Up: N = m(g + a). Down: N = m(g − a).</li>
+        <li>Constant v: N = mg. Free fall: N = 0.</li>
+      </ul></div>
+      <div class="rule"><h3>Pulleys &amp; contact</h3><ul>
+        <li>Atwood: a = (m₁−m₂)g/(m₁+m₂); T = 2m₁m₂g/(m₁+m₂).</li>
+        <li>Blocks in contact (F on m₁): a = F/(m₁+m₂), contact = m₂F/(m₁+m₂).</li>
+      </ul></div>
+      <div class="rule"><h3>Pseudo force (non-inertial)</h3><ul>
+        <li>In a frame accelerating at a₀: add <span class="mono">F<sub>pseudo</sub> = −ma₀</span>.</li>
+        <li>Hanging bob: tanθ = a₀/g. Block fixed on a wedge: a = g tanθ.</li>
+      </ul></div>
+      <div class="rule"><h3>FBD recipe</h3><ul>
+        <li>Isolate one body; draw only the forces <b>on</b> it.</li>
+        <li>Pick axes (along motion / incline); write ΣF = ma per axis.</li>
+        <li>Constraint: bodies on one string share |a|.</li>
+      </ul></div>
+      <div class="rule"><h3>Watch out</h3><ul>
+        <li>Action &amp; reaction never cancel — different bodies.</li>
+        <li>Internal forces can't move the centre of mass.</li>
+        <li>On a flat curve / many results, mass cancels.</li>
+      </ul></div>
+    </div>
+  </section>
+
+  <section class="card panel">
+    <h2>Worked examples (the tricky ones)</h2>
+    <details class="wex" open><summary>Painter in a hanging chair pulls himself up (HC Verma classic)</summary>
+      <div class="sol">
+        A 60 kg painter sits in a 20 kg chair and pulls the rope over a fixed pulley to rise at 1 m/s² (g = 10).<br>
+        The single rope pulls up on the chair (T) <b>and</b> up on his hands (T), so the upward force on the (man + chair) system is <b>2T</b>.<br>
+        <span class="mono">2T − (m+M)g = (m+M)a</span> ⇒ 2T = 80(10+1) = 880 ⇒ <span class="ans">T = 440 N</span>.
+      </div>
+    </details>
+    <details class="wex"><summary>Block held still on an accelerating smooth wedge</summary>
+      <div class="sol">
+        A block rests on a smooth wedge of incline θ. What horizontal acceleration a keeps it stationary relative to the wedge?<br>
+        In the wedge frame a pseudo force ma acts back. Along the incline: <span class="mono">ma cosθ = mg sinθ</span> ⇒ <span class="ans">a = g tanθ</span>.<br>
+        (Equivalently, the effective gravity must be ⟂ to the incline surface.)
+      </div>
+    </details>
+    <details class="wex"><summary>Block pulled by a heavy (massive) rope</summary>
+      <div class="sol">
+        A block M is pulled along a smooth floor by a rope of mass m with force F at the far end.<br>
+        Whole system: <span class="mono">a = F/(M+m)</span>. The force the rope exerts on the block is only what accelerates M:<br>
+        <span class="ans">F<sub>on block</sub> = Ma = MF/(M+m)</span> &lt; F — the rope keeps some force to accelerate itself.
+      </div>
+    </details>
+    <details class="wex"><summary>Rocket lift-off: minimum gas ejection rate</summary>
+      <div class="sol">
+        Thrust from ejecting gas at speed v<sub>ex</sub>: <span class="mono">F = v<sub>ex</sub>·(dm/dt)</span>.<br>
+        To just lift a 1000 kg rocket (g = 10): F = mg ⇒ 500·(dm/dt) = 10000 ⇒ <span class="ans">dm/dt = 20 kg/s</span>.
+      </div>
+    </details>
+    <details class="wex"><summary>Tug-of-war: rope suddenly cut</summary>
+      <div class="sol">
+        While the rope holds, team A is in equilibrium: the rope pulls them with T, balanced by ground friction T (the other way).<br>
+        The instant the rope is cut, the rope's pull T vanishes but the friction can't change instantly, leaving a net <span class="ans">force T</span> on team A (they lurch backward).
+      </div>
+    </details>
+    <details class="wex"><summary>Three forces in equilibrium — remove one</summary>
+      <div class="sol">
+        3 N, 4 N and 5 N keep a 2 kg particle in equilibrium, so the 3 N and 4 N resultant is 5 N opposing the 5 N force.<br>
+        Remove the 5 N force and the remaining 3 N &amp; 4 N give a 5 N net force ⇒ <span class="mono">a = F/m = 5/2 = <span class="ans">2.5 m/s²</span></span>.
+      </div>
+    </details>
+  </section>
+
+  <section class="card panel">
+    <h2>Newton's Laws formula sheet (NEET)</h2>
+    <div class="toolbar">
+      <input id="fSearch" type="search" placeholder="Filter formulas… (e.g. impulse, lift, Atwood, pseudo)" style="flex:1 1 260px;max-width:360px;background:var(--glass);border:1px solid var(--border);border-radius:999px;padding:7px 14px;color:var(--text);font-size:0.9rem;" aria-label="Filter formulas" />
+      <button class="btn" id="fExpand">Expand all</button>
+    </div>
+    <div id="formulaSheet"></div>
+    <p class="foot"><span class="hl">★</span> = highest-yield, memorise first. Bold means a vector; take g = 10 m/s² for NEET numericals.</p>
+  </section>
+
+  <section class="card panel">
+    <h2>30 high-yield Q&amp;A (HC Verma · NLM)</h2>
+    <div class="toolbar">
+      <input id="exSearch" type="search" placeholder="Search the 30 Q&A… (e.g. recoil, lift, pulley, pseudo)" style="flex:1 1 260px;max-width:380px;background:var(--glass);border:1px solid var(--border);border-radius:999px;padding:7px 14px;color:var(--text);font-size:0.9rem;" aria-label="Search Q&A" />
+    </div>
+    <div id="exerciseSheet"></div>
+    <p class="foot">Take g = 10 m/s² unless stated. Click any question to reveal the answer and reasoning.</p>
+  </section>
+
+  <section class="card panel">
+    <h2>Practice · unlimited NEET-UG NLM questions</h2>
+    <div class="toolbar" id="catBar"></div>
+    <div class="quiz-q" id="qStem"><span class="qmeta">loading…</span></div>
+    <div class="opts" id="qOpts"></div>
+    <div class="qfeedback" id="qFeedback"></div>
+    <div class="qsol" id="qSol"></div>
+    <div class="qbar">
+      <button class="btn" id="qNew">New question</button>
+      <button class="btn" id="qShowSol">Show solution</button>
+      <span class="scorepill" id="qScore">Attempted 0 · Correct 0</span>
+    </div>
+  </section>
+</div>
+
+<script>
+/* ---- Practice quiz engine (self-contained) ---- */
+(function(){
+  "use strict";
+  const g=10;
+  const pick=a=>a[Math.floor(Math.random()*a.length)];
+  const shuffle=a=>{for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;};
+  const round=(n,d=2)=>Number(n.toFixed(d));
+  function numOpts(correctNum,cands,unit='',dec=2){
+    const fmt=v=>round(v,dec)+unit, correct=fmt(correctNum), seen=new Set([correct]), out=[];
+    const add=v=>{ if(!isFinite(v))return; const s=fmt(v); if(!seen.has(s)){seen.add(s);out.push(s);} };
+    shuffle(cands.slice()).forEach(add);
+    const pad=[correctNum*1.25,correctNum*0.75,correctNum*1.5,correctNum*0.5,correctNum+2,Math.max(0.1,correctNum-2)];
+    for(let i=0;i<pad.length&&out.length<3;i++) add(pad[i]);
+    return shuffle([{t:correct,ok:true},...out.slice(0,3).map(t=>({t,ok:false}))]);
+  }
+  function opts(correct,pool){
+    const set=[],seen=new Set([String(correct)]);
+    shuffle(pool.slice()).forEach(d=>{d=String(d);if(set.length<3&&!seen.has(d)){set.push(d);seen.add(d);}});
+    return shuffle([{t:String(correct),ok:true},...set.slice(0,3).map(t=>({t,ok:false}))]);
+  }
+  const TR={30:[0.5,Math.sqrt(3)/2],37:[0.6,0.8],45:[1/Math.SQRT2,1/Math.SQRT2],53:[0.8,0.6],60:[Math.sqrt(3)/2,0.5]};
+
+  const GEN={
+    fma(){
+      const a=pick([2,3,4,5]), m=pick([2,4,5,10]), F=m*a;
+      return {cat:'fma', stem:`A force of <b>${F} N</b> acts on a body of mass <b>${m} kg</b>. Find its acceleration.`,
+        options:numOpts(a,[F+m,F*m,F-m],' m/s²'),
+        solution:[`Newton's 2nd law: a = F/m = ${F}/${m} = <b>${a} m/s²</b>.`]};
+    },
+    lift(){
+      const m=pick([50,60,80]), a=pick([1,2,3,4]), up=Math.random()<0.5;
+      const ans=round(up?m*(g+a):m*(g-a));
+      return {cat:'lift', stem:`A person of mass <b>${m} kg</b> stands on a weighing machine in a lift accelerating <b>${up?'upward':'downward'} at ${a} m/s²</b> (g = 10). Apparent weight (reading)?`,
+        options:numOpts(ans,[m*g,up?m*(g-a):m*(g+a),m*a],' N'),
+        solution:[`N = m(g ${up?'+':'−'} a) = ${m}×(10 ${up?'+':'−'} ${a}) = <b>${ans} N</b> (rest value mg = ${m*g} N).`]};
+    },
+    monkey(){
+      const m=pick([5,10,15,20]), a=pick([1,2,3]);
+      const ans=round(m*(g+a));
+      return {cat:'monkey', stem:`A monkey of mass <b>${m} kg</b> climbs <b>up</b> a rope with acceleration <b>${a} m/s²</b> (g = 10). Tension in the rope?`,
+        options:numOpts(ans,[m*g,m*(g-a),m*a],' N'),
+        solution:[`T − mg = ma ⇒ T = m(g+a) = ${m}×${g+a} = <b>${ans} N</b>.`]};
+    },
+    normalincline(){
+      const m=pick([2,5,10]), th=pick([30,60,37,53,45]); const c=TR[th][1];
+      const ans=round(m*g*c);
+      return {cat:'normalincline', stem:`A <b>${m} kg</b> block rests on a smooth incline of <b>${th}°</b> (g = 10). Normal reaction on the block?`,
+        options:numOpts(ans,[m*g,m*g*TR[th][0],m*g/2],' N'),
+        solution:[`N = mg cosθ = ${m}×10×cos${th}° = <b>${ans} N</b>.`]};
+    },
+    inclinesmooth(){
+      const th=pick([30,37,45,53,60]); const s=TR[th][0];
+      const ans=round(g*s);
+      return {cat:'inclinesmooth', stem:`A block slides down a <b>smooth</b> incline of angle <b>${th}°</b> (g = 10). Acceleration?`,
+        options:numOpts(ans,[g*TR[th][1],g,g*s/2],' m/s²'),
+        solution:[`Along the plane only mg sinθ acts: a = g sinθ = 10×sin${th}° = <b>${ans} m/s²</b>.`]};
+    },
+    spring(){
+      const k=pick([100,200,400,500]), x=pick([0.05,0.1,0.2]);
+      const ans=round(k*x);
+      return {cat:'spring', stem:`A spring of force constant <b>${k} N/m</b> is extended by <b>${x} m</b>. Force required?`,
+        options:numOpts(ans,[k/x,k*x*2,k],' N'),
+        solution:[`F = kx = ${k}×${x} = <b>${ans} N</b> (Hooke's law).`]};
+    },
+    atwood(){
+      const m2=pick([1,2,3]), m1=m2+pick([1,2,4]);
+      const a=round((m1-m2)*g/(m1+m2)), T=round(2*m1*m2*g/(m1+m2));
+      const askT=Math.random()<0.5;
+      return {cat:'atwood', stem:`Two masses <b>${m1} kg</b> and <b>${m2} kg</b> hang over a frictionless pulley (g = 10). Find the ${askT?'<b>tension</b>':'<b>acceleration</b>'}.`,
+        options:askT?numOpts(T,[m1*g,m2*g,(m1+m2)*g/2],' N'):numOpts(a,[(m1-m2)*g,g,(m1+m2)*g/(m1-m2)],' m/s²'),
+        solution:askT?[`T = 2m₁m₂g/(m₁+m₂) = 2×${m1}×${m2}×10/${m1+m2} = <b>${T} N</b>.`]
+          :[`a = (m₁−m₂)g/(m₁+m₂) = (${m1}−${m2})×10/${m1+m2} = <b>${a} m/s²</b>.`]};
+    },
+    contact(){
+      const m1=pick([2,4,6]), m2=pick([3,5,6]), a=pick([2,3,4]); const F=(m1+m2)*a;
+      const ans=round(m2*a);
+      return {cat:'contact', stem:`Blocks <b>${m1} kg</b> and <b>${m2} kg</b> sit in contact on a frictionless floor; a force of <b>${F} N</b> pushes the ${m1} kg block against the ${m2} kg block. Contact force between them?`,
+        options:numOpts(ans,[F,m1*a,F/2],' N'),
+        solution:[`System a = F/(m₁+m₂) = ${F}/${m1+m2} = ${a} m/s².`,`Contact force accelerates only m₂: N′ = m₂a = ${m2}×${a} = <b>${ans} N</b>.`]};
+    },
+    recoil(){
+      const mb=pick([10,20,25,50]), vb=pick([200,400,500,600]), mg2=pick([2,4,5,8]);
+      const ans=round((mb/1000)*vb/mg2);
+      return {cat:'recoil', stem:`A <b>${mb} g</b> bullet leaves a <b>${mg2} kg</b> gun at <b>${vb} m/s</b>. Recoil speed of the gun?`,
+        options:numOpts(ans,[vb/mg2,(mb/1000)*vb,mb*vb/1000],' m/s'),
+        solution:[`Momentum conservation: m_b v_b = m_g v_g ⇒ v_g = ${mb/1000}×${vb}/${mg2} = <b>${ans} m/s</b>.`]};
+    },
+    rocket(){
+      const m=pick([500,1000,2000]), vex=pick([400,500,1000]);
+      const ans=round(m*g/vex);
+      return {cat:'rocket', stem:`A <b>${m} kg</b> rocket ejects gas at <b>${vex} m/s</b>. Minimum gas-ejection rate dm/dt to just lift off (g = 10)?`,
+        options:numOpts(ans,[m/vex,m*g,vex/m],' kg/s'),
+        solution:[`Thrust = v_ex(dm/dt) = mg ⇒ dm/dt = mg/v_ex = ${m}×10/${vex} = <b>${ans} kg/s</b>.`]};
+    },
+    waterjet(){
+      const v=pick([10,20,15,25]), rate=pick([2,5,10]);
+      const ans=round(v*rate);
+      return {cat:'waterjet', stem:`A water jet of speed <b>${v} m/s</b> hits a wall at <b>${rate} kg/s</b> and stops dead. Force on the wall?`,
+        options:numOpts(ans,[v+rate,v/rate,v*rate*2],' N'),
+        solution:[`Force = rate of change of momentum = v·(dm/dt) = ${v}×${rate} = <b>${ans} N</b>.`]};
+    },
+    pendulum(){
+      const a0=pick([5,10,2.5,7.5]);
+      const ans=round(a0/g);
+      return {cat:'pendulum', stem:`A pendulum hangs from the roof of a car accelerating horizontally at <b>${a0} m/s²</b> (g = 10). Find tanθ (θ = tilt from vertical).`,
+        options:numOpts(ans,[g/a0,a0,Math.sqrt(a0*a0+g*g)],''),
+        solution:[`T sinθ = ma₀, T cosθ = mg ⇒ tanθ = a₀/g = ${a0}/10 = <b>${ans}</b>.`]};
+    },
+    maxaccel(){
+      const set=pick([[60,4,5],[100,5,10],[90,6,5],[120,8,5],[80,5,6],[150,10,5]]);
+      const [Tmax,m,a]=set;
+      return {cat:'maxaccel', stem:`A string can withstand at most <b>${Tmax} N</b>. Maximum <b>upward</b> acceleration for a <b>${m} kg</b> mass hung from it without snapping (g = 10)?`,
+        options:numOpts(a,[Tmax/m,g,Tmax/m+g],' m/s²'),
+        solution:[`T_max = m(g+a) ⇒ a = T_max/m − g = ${Tmax}/${m} − 10 = <b>${a} m/s²</b>.`]};
+    },
+    resultant(){
+      const F1=pick([3,6,5,10]), F2=pick([4,8,10,12]);
+      const ans=round(Math.sqrt(F1*F1+F2*F2));
+      return {cat:'resultant', stem:`Two forces of <b>${F1} N</b> and <b>${F2} N</b> act on a body at <b>right angles</b>. Magnitude of the net force?`,
+        options:numOpts(ans,[F1+F2,Math.abs(F1-F2),F1*F2],' N'),
+        solution:[`Perpendicular ⇒ F = √(F₁² + F₂²) = √(${F1}² + ${F2}²) = <b>${ans} N</b>.`]};
+    },
+    impulse(){
+      const F=pick([10,20,50,100]), t=pick([0.1,0.2,0.5,2]);
+      const ans=round(F*t);
+      return {cat:'impulse', stem:`A constant force of <b>${F} N</b> acts for <b>${t} s</b>. Impulse (= change in momentum)?`,
+        options:numOpts(ans,[F/t,F+t,F*t*2],' N·s'),
+        solution:[`J = F·Δt = ${F}×${t} = <b>${ans} N·s</b> = area under the F–t graph.`]};
+    },
+    ropeblock(){
+      const M=pick([4,6,8]), m=pick([1,2]), F=pick([10,20,30]);
+      const ans=round(M*F/(M+m));
+      return {cat:'ropeblock', stem:`A block of mass <b>${M} kg</b> is pulled along a smooth floor by a rope of mass <b>${m} kg</b> with a force <b>${F} N</b> at the free end. Force the rope exerts on the block?`,
+        options:numOpts(ans,[F,F*m/(M+m),F/2],' N'),
+        solution:[`a = F/(M+m) = ${F}/${M+m} m/s²; force on block = Ma = MF/(M+m) = ${M}×${F}/${M+m} = <b>${ans} N</b> (&lt; F).`]};
+    },
+  };
+
+  const CATS=[['all','All'],['fma','F = ma'],['lift','Lift weight'],['monkey','Rope tension'],['normalincline','Normal on incline'],['inclinesmooth','Smooth incline'],['spring','Spring (kx)'],['atwood','Atwood'],['contact','Contact force'],['recoil','Gun recoil'],['rocket','Rocket thrust'],['waterjet','Water jet'],['pendulum','Pendulum angle'],['maxaccel','String limit'],['resultant','Resultant'],['impulse','Impulse'],['ropeblock','Massive rope']];
+  let cat='all', attempted=0, correct=0, current=null, answered=false;
+  const stemEl=document.getElementById('qStem'),optsEl=document.getElementById('qOpts'),
+        fbEl=document.getElementById('qFeedback'),solEl=document.getElementById('qSol'),
+        scoreEl=document.getElementById('qScore'),catBar=document.getElementById('catBar');
+
+  CATS.forEach(([k,label])=>{ const b=document.createElement('button'); b.className='chip'+(k==='all'?' on':'');
+    b.textContent=label; b.onclick=()=>{ cat=k; [...catBar.children].forEach(c=>c.classList.remove('on')); b.classList.add('on'); renderQuestion(); };
+    catBar.appendChild(b); });
+
+  function genOne(){ const keys=cat==='all'?Object.keys(GEN):[cat]; return GEN[pick(keys)](); }
+  function renderQuestion(){
+    current=genOne(); answered=false;
+    const meta=CATS.find(c=>c[0]===current.cat); stemEl.innerHTML=`<span class="qmeta">${meta?meta[1]:current.cat}</span><div>${current.stem}</div>`;
+    fbEl.textContent=''; fbEl.className='qfeedback'; solEl.className='qsol'; solEl.innerHTML=current.solution.map(s=>`<div class="step">${s}</div>`).join('');
+    optsEl.innerHTML=''; const L=['A','B','C','D'];
+    current.options.forEach((o,i)=>{ const b=document.createElement('button'); b.className='opt';
+      b.innerHTML=`<span class="lab">${L[i]}</span>${o.t}`; b.onclick=()=>choose(b,o); optsEl.appendChild(b); });
+  }
+  function choose(btn,o){
+    if(answered) return; answered=true; attempted++;
+    [...optsEl.children].forEach((b,i)=>{ b.disabled=true; if(current.options[i].ok) b.classList.add('correct'); });
+    if(o.ok){ correct++; btn.classList.add('correct'); fbEl.textContent='✓ Correct!'; fbEl.className='qfeedback ok'; }
+    else { btn.classList.add('wrong'); fbEl.textContent='✗ Not quite — see the solution.'; fbEl.className='qfeedback no'; solEl.className='qsol show'; }
+    scoreEl.textContent=`Attempted ${attempted} · Correct ${correct}`;
+  }
+  document.getElementById('qNew').onclick=renderQuestion;
+  document.getElementById('qShowSol').onclick=()=>{ solEl.className='qsol show'; };
+  renderQuestion();
+})();
+</script>
+
+<script>
+/* ---- Newton's Laws formula sheet (self-contained) ---- */
+(function(){
+  "use strict";
+  const SHEET = [
+    ['1 · Newton\'s first law (inertia)', [
+      'ΣF<sub>ext</sub> = 0 ⇒ a = 0 (velocity constant)',
+      'Defines an <b>inertial frame</b> (at rest or moving at constant velocity)',
+      'Mass = measure of inertia (resistance to change in motion)',
+    ]],
+    ['2 · Newton\'s second law', [
+      '<span class="hl">★ F<sub>net</sub> = dp/dt = d(mv)/dt</span>',
+      '<span class="hl">★ Constant mass: F<sub>net</sub> = ma</span>',
+      'Components: ΣFₓ = maₓ, ΣF_y = ma_y',
+    ]],
+    ['3 · Newton\'s third law', [
+      '<span class="hl">★ F<sub>AB</sub> = −F<sub>BA</sub></span> — equal &amp; opposite',
+      'Action and reaction act on <b>different</b> bodies ⇒ never cancel',
+    ]],
+    ['4 · Impulse', [
+      '<span class="hl">★ J = ∫F dt = Δp = p_f − p_i</span>',
+      'Area under the F–t graph = impulse',
+    ]],
+    ['5 · Common forces', [
+      'Weight: W = mg (vertically down)',
+      'Normal N ⟂ to the contact surface',
+      'Tension T along the string, pulling away from the body',
+      'Spring: F = −kx (k = spring constant, x = extension/compression)',
+    ]],
+    ['6 · Apparent weight in a lift', [
+      '<span class="hl">★ Up (a): N = m(g + a)</span>',
+      '<span class="hl">★ Down (a): N = m(g − a)</span>',
+      'Constant velocity: N = mg ; free fall (a = g): N = 0 (weightless)',
+    ]],
+    ['7 · Atwood machine (m₁ &gt; m₂)', [
+      '<span class="hl">★ a = (m₁ − m₂)g/(m₁ + m₂)</span>',
+      '<span class="hl">★ T = 2m₁m₂g/(m₁ + m₂)</span>',
+    ]],
+    ['8 · Smooth inclined plane (angle θ)', [
+      '<span class="hl">★ a = g sinθ</span> (down the plane)',
+      'N = mg cosθ',
+    ]],
+    ['9 · Blocks in contact (F on m₁ pushing m₂)', [
+      'Common acceleration a = F/(m₁ + m₂)',
+      '<span class="hl">★ Contact force N′ = m₂a = m₂F/(m₁ + m₂)</span>',
+    ]],
+    ['10 · Pseudo force (non-inertial frame)', [
+      '<span class="hl">★ F<sub>pseudo</sub> = −ma₀</span> (a₀ = frame acceleration)',
+      'Hanging bob: tanθ = a₀/g ; block fixed on a wedge: a = g tanθ',
+    ]],
+    ['11 · Momentum conservation', [
+      'No external force ⇒ Σp = constant',
+      'Recoil: m_b v_b = m_g v_g',
+      'Rocket thrust: F = v_ex·(dm/dt)',
+      'Internal forces cannot move the centre of mass',
+    ]],
+    ['★ Memorise first', [
+      'F = ma = dp/dt ; J = Δp',
+      'N = m(g ± a) ; free fall N = 0',
+      'a = (m₁−m₂)g/(m₁+m₂) ; T = 2m₁m₂g/(m₁+m₂)',
+      'a = g sinθ ; N = mg cosθ ; contact = m₂F/(m₁+m₂)',
+      'F_pseudo = ma₀ ; tanθ = a₀/g ; wedge a = g tanθ',
+    ]],
+  ];
+  const host=document.getElementById('formulaSheet');
+  host.innerHTML = SHEET.map(([title,items],i)=>
+    `<details class="wex"${i===1||i===11?' open':''}><summary>${title}</summary><div class="sol">${items.map(t=>'• '+t).join('<br>')}</div></details>`
+  ).join('');
+
+  let expanded=false;
+  document.getElementById('fExpand').onclick=function(){
+    expanded=!expanded; host.querySelectorAll('details').forEach(d=>d.open=expanded);
+    this.textContent=expanded?'Collapse all':'Expand all';
+  };
+  document.getElementById('fSearch').addEventListener('input', e=>{
+    const q=e.target.value.trim().toLowerCase();
+    host.querySelectorAll('details').forEach(d=>{
+      const m=!q || d.textContent.toLowerCase().includes(q);
+      d.style.display=m?'':'none'; if(q&&m) d.open=true;
+    });
+  });
+})();
+</script>
+
+<script>
+/* ---- 30 high-yield Q&A (self-contained) ---- */
+(function(){
+  "use strict";
+  const EX = [
+    [1,"What physical quantity measures the inertia of a body?","Mass","Greater mass ⇒ greater inertia (more resistance to a change in motion)."],
+    [2,"A force of 20 N acts on a 4 kg body. Acceleration?","5 m/s²","a = F/m = 20/4 = 5 m/s²."],
+    [3,"A 15 kg monkey climbs up a rope with a = 2 m/s². Tension? (g=10)","180 N","T − mg = ma ⇒ T = m(g+a) = 15×12 = 180 N."],
+    [4,"A 10 kg block on a horizontal floor. Normal reaction? (g=10)","100 N","Vertical equilibrium: N = mg = 10×10 = 100 N."],
+    [5,"Apparent weight of a 60 kg man in a freely falling lift?","Zero","Free fall a = g ⇒ N = m(g−g) = 0 (weightlessness)."],
+    [6,"Rocket propulsion conserves which quantity?","Linear momentum","Follows from Newton's 2nd and 3rd laws (thrust from ejected gas)."],
+    [7,"Pseudo force on a pendulum bob in a car accelerating at a₀ (in the car frame)?","ma₀, opposite to the car's acceleration","In a non-inertial frame add F_pseudo = −ma₀."],
+    [8,"3 kg and 2 kg over a frictionless pulley. Acceleration? (g=10)","2 m/s²","a = (3−2)/(3+2)×10 = 2 m/s²."],
+    [9,"Tension for the system in Q8?","24 N","T = 2·3·2/(3+2)×10 = 12/5×10 = 24 N."],
+    [10,"A boy pushes a wall with 50 N. Force the wall exerts on him?","50 N","Newton's 3rd law — equal and opposite."],
+    [11,"Spring constant k = 200 N/m. Force to extend it 0.1 m?","20 N","F = kx = 200×0.1 = 20 N."],
+    [12,"Acceleration down a smooth 30° incline? (g=10)","5 m/s²","a = g sin30° = 10×0.5 = 5 m/s²."],
+    [13,"Normal reaction on a 5 kg block on a smooth 60° incline? (g=10)","25 N","N = mg cos60° = 5×10×0.5 = 25 N."],
+    [14,"4 kg and 6 kg in contact on a frictionless floor; 20 N pushes the 4 kg. Contact force?","12 N","a = 20/10 = 2 m/s²; contact force on the 6 kg = 6×2 = 12 N."],
+    [15,"3 N, 4 N, 5 N keep a 2 kg particle in equilibrium. Remove the 5 N — acceleration?","2.5 m/s²","Remaining 3 N & 4 N give a 5 N net ⇒ a = 5/2 = 2.5 m/s²."],
+    [16,"What does the area under a Force–Time graph represent?","Impulse (= change in momentum)","J = ∫F dt = Δp."],
+    [17,"A 20 g bullet leaves a 4 kg gun at 400 m/s. Recoil velocity?","2 m/s","m_b v_b = m_g v_g ⇒ 0.02×400 = 4×v_g ⇒ v_g = 2 m/s."],
+    [18,"1000 kg rocket, exhaust speed 500 m/s. dm/dt to just lift off? (g=10)","20 kg/s","Thrust = v_ex(dm/dt) = mg ⇒ 500(dm/dt) = 10000 ⇒ 20 kg/s."],
+    [19,"A water jet (speed v, rate dm/dt) stops dead on a wall. Force on the wall?","v·(dm/dt)","Force = rate of change of momentum."],
+    [20,"Why does a passenger lurch forward when a moving train brakes suddenly?","Inertia of motion","The upper body keeps moving forward while the lower body stops with the train."],
+    [21,"Pendulum in a car accelerating at a — angle with the vertical?","θ = tan⁻¹(a/g)","T sinθ = ma, T cosθ = mg ⇒ tanθ = a/g."],
+    [22,"Mass M on a weighing machine in a lift accelerating down at g/4. Reading?","3Mg/4","N = M(g − g/4) = 3Mg/4."],
+    [23,"Two 10 N forces act North and East. Net force?","10√2 N","Perpendicular ⇒ √(10² + 10²) = 10√2 N."],
+    [24,"A string holds at most 60 N. Max upward acceleration for a 4 kg mass? (g=10)","5 m/s²","T_max = m(g+a) ⇒ 60 = 4(10+a) ⇒ a = 5 m/s²."],
+    [25,"Can internal forces change the momentum of a system's centre of mass?","No","Internal forces cancel in 3rd-law pairs ⇒ ΣF_ext = 0 ⇒ CM momentum conserved."],
+    [26,"Block M pulled by a uniform rope of mass m with force F. Force the rope exerts on the block?","MF/(M+m)","a = F/(M+m); force on block = Ma = MF/(M+m)."],
+    [27,"Tug-of-war at tension T; the rope is suddenly cut. Immediate net force on team A?","T","The rope's pull T vanishes while ground friction T persists ⇒ net T."],
+    [28,"60 kg painter in a 20 kg chair pulls the rope (over a fixed pulley) to rise at 1 m/s². Tension? (g=10)","440 N","Rope pulls up twice: 2T − (m+M)g = (m+M)a ⇒ 2T = 80×11 = 880 ⇒ T = 440 N."],
+    [29,"Why don't action and reaction cancel each other?","They act on two different bodies","Each force in the pair acts on a different object, so neither cancels the other's effect."],
+    [30,"Block m on a smooth wedge (incline θ). Horizontal acceleration so it stays put relative to the wedge?","a = g tanθ","Pseudo force balances gravity along the incline: ma cosθ = mg sinθ ⇒ a = g tanθ."],
+  ];
+  const host=document.getElementById('exerciseSheet');
+  host.innerHTML = EX.map(([n,q,a,s])=>
+    `<details class="wex"><summary>Q${n}. ${q}</summary><div class="sol"><b>Answer:</b> <span class="ans">${a}</span><br>${s}</div></details>`
+  ).join('');
+  document.getElementById('exSearch').addEventListener('input', e=>{
+    const q=e.target.value.trim().toLowerCase();
+    host.querySelectorAll('details').forEach(d=>{
+      const m=!q || d.textContent.toLowerCase().includes(q);
+      d.style.display=m?'':'none'; if(q&&m) d.open=true;
+    });
+  });
+})();
+</script>
+</body>
+</html>

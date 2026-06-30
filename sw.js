@@ -1,7 +1,7 @@
 /* NEET Physics service worker — offline app shell.
    Cache-first for same-origin static assets; network passthrough for
    everything else (the remote bank.json is cross-origin and untouched). */
-const CACHE = 'neet-physics-v20260630o';
+const CACHE = 'neet-physics-v20260630p';
 const SHELL = [
   './',
   './index.html',
@@ -17,7 +17,7 @@ const SHELL = [
   './js/notes.js?v=20260627',
   './js/revise.js?v=20260627',
   './js/exam.js?v=20260627',
-  './js/glassbox.js?v=20260630c',
+  './js/glassbox.js?v=20260630d',
   './app.js?v=20260629',
   './glassbox/vector_solver_app.html',
   './glassbox/calculus_physics_solver.html',
@@ -25,6 +25,7 @@ const SHELL = [
   './glassbox/significant_digits.html',
   './glassbox/kinematics.html',
   './glassbox/forces.html',
+  './glassbox/newtons_laws.html',
   './favicon.svg',
   './manifest.webmanifest'
 ];

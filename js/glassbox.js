@@ -68,6 +68,15 @@
       icon: '⚖️',
       tags: ['Laws of Motion', 'Mechanics'],
       cls: 'XI'
+    },
+    {
+      id: 'newtons-laws',
+      title: 'Newton’s Laws of Motion',
+      desc: 'HC Verma Ch. 5: the three laws, momentum & impulse, free-body diagrams, lifts, Atwood machines, inclines, blocks in contact, pseudo force and momentum conservation — key ideas, worked examples, formula sheet, 30 high-yield Q&A and an unlimited quiz.',
+      file: 'glassbox/newtons_laws.html',
+      icon: '🍎',
+      tags: ['Laws of Motion', 'Mechanics'],
+      cls: 'XI'
     }
     // Add the next tools here, one object each.
   ];
