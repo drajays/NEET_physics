@@ -32,6 +32,10 @@
   .rule li:last-child{border-bottom:none;}
   .ex{color:var(--muted);}
   .mono{font-family:"Cambria Math",Consolas,monospace;background:rgba(255,255,255,0.07);padding:1px 6px;border-radius:6px;}
+  .ktable{width:100%;border-collapse:collapse;font-size:0.86rem;margin:4px 0 2px;}
+  .ktable th,.ktable td{border:1px solid rgba(255,255,255,0.12);padding:6px 9px;text-align:center;}
+  .ktable th{background:rgba(255,255,255,0.06);color:var(--accent);}
+  .ktable td.k{color:#6ee7b7;font-weight:700;}
   .wex{border:1px solid var(--border);border-radius:12px;background:var(--glass-strong);margin-bottom:10px;overflow:hidden;}
   .wex summary{cursor:pointer;padding:11px 14px;font-size:0.93rem;font-weight:600;list-style:none;}
   .wex summary::-webkit-details-marker{display:none;}
@@ -331,6 +335,37 @@
   </section>
 
   <section class="card panel">
+    <h2>Shortcuts &amp; memory tricks</h2>
+    <div class="rules">
+      <div class="rule"><h3>The √n / 2 rule for sin θ</h3><ul>
+        <li>Count n = 0, 1, 2, 3, 4 under a root and divide by 2:</li>
+        <li><table class="ktable">
+          <tr><th>θ</th><th>√n/2</th><th>sin θ</th></tr>
+          <tr><td>0°</td><td>√0/2</td><td class="k">0</td></tr>
+          <tr><td>30°</td><td>√1/2</td><td class="k">1/2</td></tr>
+          <tr><td>45°</td><td>√2/2</td><td class="k">1/√2</td></tr>
+          <tr><td>60°</td><td>√3/2</td><td class="k">√3/2</td></tr>
+          <tr><td>90°</td><td>√4/2</td><td class="k">1</td></tr>
+        </table></li>
+        <li>For cos θ, just read the table <b>bottom-to-top</b> (cos0°=1, cos30°=√3/2, …).</li>
+      </ul></div>
+      <div class="rule"><h3>Projectile max height scales as sin²θ</h3><ul>
+        <li>H = u²sin²θ/2g, and the "full height" (straight up, 90°) is H<sub>max</sub> = u²/2g.</li>
+        <li>So the height reached is just <b>(sin²θ) × H<sub>max</sub></b>:</li>
+        <li><table class="ktable">
+          <tr><th>θ</th><th>sin²θ</th><th>Height</th></tr>
+          <tr><td>0°</td><td>0</td><td class="k">0</td></tr>
+          <tr><td>30°</td><td>1/4</td><td class="k">¼ H<sub>max</sub></td></tr>
+          <tr><td>45°</td><td>1/2</td><td class="k">½ H<sub>max</sub></td></tr>
+          <tr><td>60°</td><td>3/4</td><td class="k">¾ H<sub>max</sub></td></tr>
+          <tr><td>90°</td><td>1</td><td class="k">H<sub>max</sub></td></tr>
+        </table></li>
+        <li><b>Example:</b> straight up → 100 m. At 60° → ¾ × 100 = <span class="hl">75 m</span> in 5 seconds, no pen needed!</li>
+      </ul></div>
+    </div>
+  </section>
+
+  <section class="card panel">
     <h2>Exercises (HC Verma Ch. 3, 1–52 with answers)</h2>
     <div class="toolbar">
       <input id="exSearch" type="search" placeholder="Search exercises… (e.g. projectile, river, brake)" style="flex:1 1 260px;max-width:360px;background:var(--glass);border:1px solid var(--border);border-radius:999px;padding:7px 14px;color:var(--text);font-size:0.9rem;" aria-label="Search exercises" />
@@ -526,6 +561,14 @@
         options:numOpts(ans,[2*v1*v2/(v1+v2),v1,v2],' m/s'),
         solution:[`Equal times ⇒ average speed = arithmetic mean = (v₁+v₂)/2 = (${v1}+${v2})/2 = <b>${ans} m/s</b>.`]};
     },
+    heightfrac(){
+      const Hmax=pick([40,80,100,120,200]), ang=pick([30,45,60]);
+      const frac={30:0.25,45:0.5,60:0.75}[ang], label={30:'¼',45:'½',60:'¾'}[ang];
+      const ans=round(Hmax*frac);
+      return {cat:'heightfrac', stem:`A ball thrown <b>straight up</b> reaches a maximum height of <b>${Hmax} m</b>. Thrown with the same speed at <b>${ang}°</b> to the horizontal, what maximum height does it reach? (Use the sin²θ shortcut.)`,
+        options:numOpts(ans,[Hmax,Hmax*0.5,Hmax*({30:0.5,45:0.25,60:0.5}[ang])],' m'),
+        solution:[`Max height ∝ sin²θ, and at 90° it is H_max. So height = sin²${ang}° × H_max = ${label} × ${Hmax}.`,`= <b>${ans} m</b>.`]};
+    },
     polynomial(){
       const A=pick([1,2]), B=pick([1,2,3,4]), C=pick([-2,-1,1,2,3]), t=pick([2,3,4]);
       const askV=Math.random()<0.5;
@@ -551,7 +594,7 @@
     },
   };
 
-  const CATS=[['all','All'],['avgspeed','Average speed'],['avgvel','Average velocity'],['instspeed','Instantaneous'],['vtgraph','v–t graph'],['accel','Uniform accel.'],['reachv','Reach a speed'],['nthsec','nᵗʰ second'],['maxheight','Vertical throw'],['proj2d','2-D motion'],['projectile','Projectile'],['freefall','Free fall'],['horizproj','Horizontal proj.'],['relvel','Relative velocity'],['riverboat','River-boat'],['rainman','Rain-man'],['equaltime','Equal-time avg'],['polynomial','Polynomial x(t)'],['distdisp','Dist vs disp']];
+  const CATS=[['all','All'],['avgspeed','Average speed'],['avgvel','Average velocity'],['instspeed','Instantaneous'],['vtgraph','v–t graph'],['accel','Uniform accel.'],['reachv','Reach a speed'],['nthsec','nᵗʰ second'],['maxheight','Vertical throw'],['proj2d','2-D motion'],['projectile','Projectile'],['freefall','Free fall'],['horizproj','Horizontal proj.'],['relvel','Relative velocity'],['riverboat','River-boat'],['rainman','Rain-man'],['equaltime','Equal-time avg'],['polynomial','Polynomial x(t)'],['heightfrac','Height shortcut'],['distdisp','Dist vs disp']];
   let cat='all', attempted=0, correct=0, current=null, answered=false;
   const stemEl=document.getElementById('qStem'),optsEl=document.getElementById('qOpts'),
         fbEl=document.getElementById('qFeedback'),solEl=document.getElementById('qSol'),
