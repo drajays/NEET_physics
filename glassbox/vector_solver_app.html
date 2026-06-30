@@ -186,7 +186,7 @@
           <span class="pill">Detailed solving</span>
           <span class="pill">Auto fill answers</span>
           <span class="pill">Glass-box explanation</span>
-          <span class="pill">28 vector exercises</span>
+          <span class="pill">35 vector exercises</span>
         </div>
       </div>
       <div class="body">
@@ -211,7 +211,7 @@
         </div>
 
         <div class="status-bar">
-          <div class="status-chip" id="progressChip">Loaded: 0 / 28 reviewed</div>
+          <div class="status-chip" id="progressChip">Loaded: 0 / 35 reviewed</div>
           <div class="status-chip" id="solverChip">Solver: ready</div>
           <div class="status-chip" id="scoreChip">Last score: --</div>
         </div>
@@ -906,6 +906,153 @@
             ['Final answer', `a·b = ${dot}, |a| = |b| = √29 ≈ ${round(maga)}, angle ≈ ${round(theta)}°.`]
           ];
           return { answers:{dot, maga, magb, theta}, solution:`a·b = ${dot}, θ ≈ ${round(theta)}°`, steps };
+        }
+      },
+      {
+        id: 29,
+        topic: 'concept',
+        title: 'Q29 Regular hexagon: Σ cos = 0 (HCV Ex.12)',
+        text: 'For a regular hexagon A₁A₂…A₆, the six side vectors (taken in order, each of length a) make angles 0, π/3, 2π/3, π, 4π/3, 5π/3 with the X-axis. Using the fact that their resultant is zero, find cos0 + cos(π/3) + cos(2π/3) + cos(π) + cos(4π/3) + cos(5π/3).',
+        answerFields: [
+          { key: 'sum', label: 'Value of the cosine sum' }
+        ],
+        solver() {
+          const angs = [0, 60, 120, 180, 240, 300];
+          const sum = round(angs.reduce((p, a) => p + Math.cos(a * DEG), 0));
+          const steps = [
+            ['Each side as a vector', 'Side k has x-component a·cos θ_k with θ = 0, 60°, 120°, 180°, 240°, 300° (steps of 60°).'],
+            ['Closed polygon ⇒ resultant zero', 'The six sides form a closed hexagon, so their vector sum is zero; hence the sum of all x-components is zero.'],
+            ['Factor out a', 'a(cos0 + cos60° + cos120° + cos180° + cos240° + cos300°) = 0, so the bracket itself = 0.'],
+            ['Verify with known values', '1 + 0.5 + (−0.5) + (−1) + (−0.5) + 0.5 = 0'],
+            ['Final answer', `cos0 + cos(π/3) + cos(2π/3) + cos(π) + cos(4π/3) + cos(5π/3) = ${sum}`]
+          ];
+          return { answers:{sum}, solution:`Sum = ${sum}`, steps };
+        }
+      },
+      {
+        id: 30,
+        topic: 'angle',
+        title: 'Q30 Angle between a = 2i+3j+4k and b = 3i+4j+5k (HCV Ex.13)',
+        text: 'Find the angle between a = 2i + 3j + 4k and b = 3i + 4j + 5k. Give a·b, |a|, |b| and the angle.',
+        answerFields: [
+          { key: 'dot', label: 'a·b' },
+          { key: 'maga', label: '|a|' },
+          { key: 'magb', label: '|b|' },
+          { key: 'theta', label: 'Angle (deg)' }
+        ],
+        solver() {
+          const a = {x:2,y:3,z:4}, b = {x:3,y:4,z:5};
+          const dot = a.x*b.x + a.y*b.y + a.z*b.z;
+          const maga = mag3(a.x,a.y,a.z), magb = mag3(b.x,b.y,b.z);
+          const cosT = dot/(maga*magb), theta = Math.acos(cosT)/DEG;
+          const steps = [
+            ['Dot product', `a·b = (2)(3) + (3)(4) + (4)(5) = 6 + 12 + 20 = ${dot}`],
+            ['Magnitudes', `|a| = √(4+9+16) = √29 = ${round(maga)}\n|b| = √(9+16+25) = √50 = ${round(magb)}`],
+            ['Use a·b = |a||b| cosθ', `cosθ = ${dot}/(√29·√50) = ${dot}/√1450 = ${round(cosT)}`],
+            ['Solve for θ', `θ = cos⁻¹(${round(cosT)}) = ${round(theta)}°`],
+            ['Final answer', `a·b = ${dot}, |a| = √29, |b| = √50, angle ≈ ${round(theta)}°.`]
+          ];
+          return { answers:{dot, maga, magb, theta}, solution:`a·b = ${dot}, θ ≈ ${round(theta)}°`, steps };
+        }
+      },
+      {
+        id: 31,
+        topic: 'cross',
+        title: 'Q31 Prove A·(A×B) = 0 (HCV Ex.14)',
+        text: 'Prove that A·(A×B) = 0 for any vectors A and B. State the value of A·(A×B).',
+        answerFields: [
+          { key: 'val', label: 'Value of A·(A×B)' }
+        ],
+        solver() {
+          const steps = [
+            ['Direction of A×B', 'By definition the cross product A×B is perpendicular to both A and B.'],
+            ['Dot of perpendicular vectors', 'Since A×B ⊥ A, the angle between A and (A×B) is 90°.'],
+            ['Apply the dot product', 'A·(A×B) = |A||A×B| cos90° = 0.'],
+            ['Final answer', 'A·(A×B) = 0 (the scalar triple product with a repeated vector vanishes).']
+          ];
+          return { answers:{val:'0'}, solution:`A·(A×B) = 0`, steps };
+        }
+      },
+      {
+        id: 32,
+        topic: 'cross',
+        title: 'Q32 Cross product 2i+3j+4k × 4i+3j+2k (HCV Ex.15)',
+        text: 'If A = 2i + 3j + 4k and B = 4i + 3j + 2k, find A×B (give the i, j, k components).',
+        answerFields: [
+          { key: 'cx', label: 'i-component' },
+          { key: 'cy', label: 'j-component' },
+          { key: 'cz', label: 'k-component' }
+        ],
+        solver() {
+          const a = {x:2,y:3,z:4}, b = {x:4,y:3,z:2};
+          const cx = a.y*b.z - a.z*b.y, cy = a.z*b.x - a.x*b.z, cz = a.x*b.y - a.y*b.x;
+          const steps = [
+            ['Set up the determinant', 'A×B = | i  j  k ; 2  3  4 ; 4  3  2 |'],
+            ['i-component', `i: (3)(2) − (4)(3) = 6 − 12 = ${cx}`],
+            ['j-component', `j: (4)(4) − (2)(2) = 16 − 4 = ${cy}  (the −j term, expanded with sign)`],
+            ['k-component', `k: (2)(3) − (3)(4) = 6 − 12 = ${cz}`],
+            ['Final answer', `A×B = ${cx}i + ${cy}j + ${cz}k = −6i + 12j − 6k`]
+          ];
+          return { answers:{cx, cy, cz}, solution:`A×B = ${cx}i + ${cy}j + ${cz}k`, steps };
+        }
+      },
+      {
+        id: 33,
+        topic: 'cross',
+        title: 'Q33 C×(A×B) for mutually ⊥ vectors (HCV Ex.16)',
+        text: 'If A, B and C are mutually perpendicular, show that C×(A×B) = 0. State its value. (Is the converse true?)',
+        answerFields: [
+          { key: 'val', label: 'Value of C×(A×B)' }
+        ],
+        solver() {
+          const steps = [
+            ['Direction of A×B', 'A×B is perpendicular to the plane of A and B.'],
+            ['Use mutual perpendicularity', 'If A, B, C are mutually perpendicular, then C is also perpendicular to that plane, so A×B is parallel (or anti-parallel) to C.'],
+            ['Cross product of parallel vectors', 'C×(A×B) = |C||A×B| sin0° = 0 (cross product of parallel vectors is zero).'],
+            ['Converse', 'The converse is NOT necessarily true: C×(A×B) = 0 only requires C parallel to A×B, which does not force A, B, C to be mutually perpendicular.'],
+            ['Final answer', 'C×(A×B) = 0; converse not necessarily true.']
+          ];
+          return { answers:{val:'0'}, solution:`C×(A×B) = 0 (converse not necessarily true)`, steps };
+        }
+      },
+      {
+        id: 34,
+        topic: 'cross',
+        title: 'Q34 OP × v is independent of P (HCV Ex.17)',
+        text: 'A particle moves along a straight line with constant velocity v. O is a fixed point not on the line. Show that OP × v is the same for every position P of the particle on the line. What geometric quantity does |OP × v| equal?',
+        answerFields: [
+          { key: 'ans', label: '|OP × v| equals v times…' }
+        ],
+        solver() {
+          const steps = [
+            ['Write OP for two positions', 'Let P and P′ be two positions; OP′ = OP + PP′, where PP′ is along the line (parallel to v).'],
+            ['Cross with v', 'OP′ × v = OP × v + PP′ × v.'],
+            ['PP′ is parallel to v', 'Since PP′ ∥ v, PP′ × v = 0. Hence OP′ × v = OP × v for all positions.'],
+            ['Geometric meaning', '|OP × v| = (OP sinθ)·v = d·v, where d is the perpendicular distance of O from the line — a fixed quantity.'],
+            ['Final answer', 'OP × v is constant; its magnitude = v × (perpendicular distance of O from the line).']
+          ];
+          return { answers:{ans:'perpendicular distance of O from the line'}, solution:`OP × v = constant = v × (perpendicular distance d)`, steps };
+        }
+      },
+      {
+        id: 35,
+        topic: 'cross',
+        title: 'Q35 Zero net force on a moving charge (HCV Ex.18)',
+        text: 'The force on a charge is F = qE + q(v×B). E is along the +X-axis and B along the +Y-axis. In which direction and with what minimum speed should a positive charge be projected so that the net force is zero?',
+        answerFields: [
+          { key: 'dir', label: 'Direction of v' },
+          { key: 'speed', label: 'Minimum speed (in terms of E, B)' }
+        ],
+        solver() {
+          const steps = [
+            ['Condition for zero force', 'qE + q(v×B) = 0  ⇒  v×B = −E.'],
+            ['Set up axes', 'E = E x̂, B = B ŷ. We need v×B to point along −x̂ with magnitude E.'],
+            ['Try v along +z', 'v = v ẑ  ⇒  v×B = vB (ẑ×ŷ) = vB(−x̂) = −vB x̂.'],
+            ['Match magnitudes', '−vB x̂ = −E x̂  ⇒  v = E/B.'],
+            ['Why minimum', 'Any extra component of v along x or y cannot help cancel E and only increases the speed, so v = E/B (along +Z) is the minimum.'],
+            ['Final answer', 'Project the charge along the +Z-axis with minimum speed v = E/B.']
+          ];
+          return { answers:{dir:'Z-axis', speed:'E/B'}, solution:`Along +Z-axis, minimum speed v = E/B`, steps };
         }
       }
     ];

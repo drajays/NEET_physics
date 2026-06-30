@@ -49,6 +49,14 @@
     color:var(--text);font-size:0.82rem;font-weight:600;transition:all .15s;}
   .btn:hover{border-color:var(--accent);color:var(--accent);}
 
+  .wex{border:1px solid var(--border);border-radius:12px;background:var(--glass-strong);margin-bottom:10px;overflow:hidden;}
+  .wex summary{cursor:pointer;padding:11px 14px;font-size:0.93rem;font-weight:600;list-style:none;}
+  .wex summary::-webkit-details-marker{display:none;}
+  .wex summary::before{content:'▸ ';color:var(--accent);}
+  .wex[open] summary::before{content:'▾ ';}
+  .wex .sol{padding:0 14px 13px;font-size:0.9rem;color:var(--muted);line-height:1.6;}
+  .wex .sol b{color:var(--text);}
+  .wex .ans{color:#6ee7b7;font-weight:700;}
   .quiz-q{font-size:1.04rem;margin:6px 0 14px;line-height:1.55;}
   .qmeta{display:inline-block;font-size:0.72rem;font-weight:700;letter-spacing:0.04em;text-transform:uppercase;
     color:var(--accent);background:rgba(125,211,252,0.12);padding:3px 9px;border-radius:999px;margin-bottom:10px;}
@@ -115,6 +123,51 @@
         <li><span class="ex">f = (25.4 ± 0.2) cm</span>. ~95% chance the true value lies within x̄ ± 1.96σ.</li>
       </ul></div>
     </div>
+  </section>
+
+  <section class="card panel">
+    <h2>Worked exercises (HC Verma Ch. 2)</h2>
+    <details class="wex"><summary>30. Number of significant digits in (a) 1001, (b) 100.1, (c) 100.10, (d) 0.001001</summary>
+      <div class="sol">
+        (a) <span class="mono">1001</span>: all four digits significant (zeros between non-zeros) → <span class="ans">4</span>.<br>
+        (b) <span class="mono">100.1</span>: zeros between non-zeros count → <span class="ans">4</span>.<br>
+        (c) <span class="mono">100.10</span>: trailing zero after the decimal also counts → <span class="ans">5</span>.<br>
+        (d) <span class="mono">0.001001</span>: leading zeros don't count; 1, 0, 0, 1 do → <span class="ans">4</span>.
+      </div>
+    </details>
+    <details class="wex"><summary>31. How many significant digits in a length measured with a mm-graduated metre scale?</summary>
+      <div class="sol">
+        Least count = 1 mm = 0.1 cm, and the reading carries all certain digits plus <b>one</b> estimated (doubtful) digit.
+        So the count <b>depends on the length</b>: a few-mm length gives 1–2 s.f., while a length near the full metre
+        (e.g. <span class="mono">100.0 cm</span> = 1000 mm) gives up to <span class="ans">4 significant digits</span>.
+      </div>
+    </details>
+    <details class="wex"><summary>32. Round to 2 significant digits: (a) 3472, (b) 84.16, (c) 2.55, (d) 28.5</summary>
+      <div class="sol">
+        (a) <span class="mono">3472</span>: keep "34", next digit 7 &gt; 5 → up → <span class="ans">3500</span>.<br>
+        (b) <span class="mono">84.16</span>: keep "84", next digit 1 &lt; 5 → <span class="ans">84</span>.<br>
+        (c) <span class="mono">2.55</span>: keep "2.5", next digit exactly 5; kept digit 5 is <b>odd</b> → round up → <span class="ans">2.6</span>.<br>
+        (d) <span class="mono">28.5</span>: keep "28", next digit exactly 5; kept digit 8 is <b>even</b> → unchanged → <span class="ans">28</span>.
+      </div>
+    </details>
+    <details class="wex"><summary>33. Volume of a cylinder: length 4.54 cm, radius 1.75 cm</summary>
+      <div class="sol">
+        V = πr²L = π × (1.75)² × 4.54 = π × 3.0625 × 4.54 = 43.68 cm³.<br>
+        All data have 3 s.f., so the answer has 3 s.f.: <span class="ans">V ≈ 43.7 cm³</span>.
+      </div>
+    </details>
+    <details class="wex"><summary>34. Average thickness from 2.17 mm, 2.17 mm, 2.18 mm</summary>
+      <div class="sol">
+        Mean = (2.17 + 2.17 + 2.18)/3 = 6.52/3 = 2.1733… mm.<br>
+        The data have 3 s.f., so report <span class="ans">2.17 mm</span>.
+      </div>
+    </details>
+    <details class="wex"><summary>35. Effective length of a pendulum: string 90.0 cm + bob radius 2.13 cm</summary>
+      <div class="sol">
+        Add to the least number of decimal places. 90.0 has 1 decimal place, so round 2.13 → 2.1 first:<br>
+        90.0 + 2.1 = <span class="ans">92.1 cm</span>.
+      </div>
+    </details>
   </section>
 
   <section class="card panel">

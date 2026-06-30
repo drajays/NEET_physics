@@ -379,7 +379,7 @@ Check your Browserslist config to be sure that your targets are set up correctly
                 <i class="fa-solid fa-magnifying-glass-chart text-indigo-600"></i> Glass-box explanation
             </span>
             <span class="bg-purple-100 text-purple-800 px-2.5 py-1 rounded-full font-medium flex items-center gap-1">
-                <i class="fa-solid fa-cubes text-purple-600"></i> 37 calculus exercises
+                <i class="fa-solid fa-cubes text-purple-600"></i> 47 calculus exercises
             </span>
         </div>
     </header>
@@ -455,7 +455,7 @@ Check your Browserslist config to be sure that your targets are set up correctly
         <div class="bg-slate-800 text-slate-100 rounded-2xl px-6 py-3 shadow-md mb-6 flex flex-wrap items-center justify-between gap-4 text-sm font-medium">
             <div class="flex items-center gap-2">
                 <i class="fa-solid fa-chart-simple text-sky-400"></i>
-                <span id="status-loaded">Loaded: 1 / 37 reviewed</span>
+                <span id="status-loaded">Loaded: 1 / 47 reviewed</span>
             </div>
             <div class="flex items-center gap-2">
                 <i class="fa-solid fa-terminal text-emerald-400"></i>
@@ -573,7 +573,7 @@ Check your Browserslist config to be sure that your targets are set up correctly
 
     <!-- JavaScript Application Logic -->
     <script>
-        // Data structure for all 37 HC Verma Physics based Differential Calculus questions
+        // Data structure for all 47 HC Verma Physics based Differential Calculus questions
         const questionsData = [
             // Section 1: Kinematics (1D & 2D)
             {
@@ -1279,6 +1279,182 @@ Check your Browserslist config to be sure that your targets are set up correctly
                     { title: "Step 4: Coefficient", content: "<div class='math-block'>k = 1 − 1/e = 1 − 0.3679 ≈ 0.6321</div>" }
                 ],
                 finalSummary: "Q = ∫₀^τ e^(−t/τ) dt = τ(1 − 1/e) ≈ 0.6321 τ"
+            },
+            {
+                id: 38,
+                title: "Slopes of Tangents to y = 2x²",
+                topic: "calculus",
+                topicLabel: "Calculus Rules",
+                statement: "A set of (x, y) data fits the curve <span class='math'>y = 2x²</span>. The slope of the tangent is tanθ = dy/dx. Find the slopes at x = 2, 4, 6 and 8.",
+                hint: "Differentiate y = 2x² to get dy/dx = 4x, then substitute each x value.",
+                inputs: [
+                    { label: "Slope at x = 2", value: 8, unit: "", tol: 0.01 },
+                    { label: "Slope at x = 4", value: 16, unit: "", tol: 0.01 },
+                    { label: "Slope at x = 6", value: 24, unit: "", tol: 0.01 },
+                    { label: "Slope at x = 8", value: 32, unit: "", tol: 0.01 }
+                ],
+                steps: [
+                    { title: "Step 1: Differentiate", content: "<div class='math-block'>y = 2x² ⇒ dy/dx = 2·2x = 4x</div>" },
+                    { title: "Step 2: Evaluate the slope", content: "slope = 4x: at x=2 → 8, x=4 → 16, x=6 → 24, x=8 → 32." },
+                    { title: "Step 3: Verify", content: "These match the tangents drawn on the y = 2x² graph, confirming tanθ = dy/dx = 4x." }
+                ],
+                finalSummary: "dy/dx = 4x → slopes 8, 16, 24, 32 at x = 2, 4, 6, 8"
+            },
+            {
+                id: 39,
+                title: "Small Change in y = sin x",
+                topic: "calculus",
+                topicLabel: "Calculus Rules",
+                statement: "For <span class='math'>y = sin x</span>, x changes from <span class='math'>π/3</span> to <span class='math'>π/3 + π/100</span>. Find the approximate change in y.",
+                hint: "Δy ≈ (dy/dx)·Δx = cos x · Δx, with x = π/3 and Δx = π/100.",
+                inputs: [
+                    { label: "Approximate change Δy", value: 0.0157, unit: "", tol: 0.0005 }
+                ],
+                steps: [
+                    { title: "Step 1: Derivative", content: "<div class='math-block'>dy/dx = cos x</div>" },
+                    { title: "Step 2: Linear approximation", content: "<div class='math-block'>Δy ≈ (dy/dx)Δx = cos(π/3)·(π/100)</div>" },
+                    { title: "Step 3: Substitute", content: "<div class='math-block'>= (0.5)(0.03142) ≈ 0.0157</div>" }
+                ],
+                finalSummary: "Δy ≈ cos(π/3)·(π/100) = 0.5 × 0.03142 ≈ 0.0157"
+            },
+            {
+                id: 40,
+                title: "Rate of Current in a Charging R-C Circuit",
+                topic: "calculus",
+                topicLabel: "Calculus Rules",
+                statement: "Current in a charging R-C circuit is <span class='math'>i = i₀ e^(−t/RC)</span>. Writing the rate as <span class='math'>di/dt = k·(i₀/RC)</span>, find the coefficient k at (a) t = 0, (b) t = RC, (c) t = 10RC.",
+                hint: "Differentiate: di/dt = −(i₀/RC) e^(−t/RC). So k = −e^(−t/RC).",
+                inputs: [
+                    { label: "k at t = 0", value: -1, unit: "", tol: 0.01 },
+                    { label: "k at t = RC", value: -0.368, unit: "", tol: 0.005 },
+                    { label: "k at t = 10RC (≈ 0)", value: 0, unit: "", tol: 0.001 }
+                ],
+                steps: [
+                    { title: "Step 1: Differentiate", content: "<div class='math-block'>di/dt = i₀·(−1/RC)e^(−t/RC) = −(i₀/RC) e^(−t/RC)</div> So k = −e^(−t/RC)." },
+                    { title: "Step 2: t = 0", content: "k = −e⁰ = −1, i.e. di/dt = −i₀/RC (fastest decay)." },
+                    { title: "Step 3: t = RC", content: "k = −e⁻¹ ≈ −0.368." },
+                    { title: "Step 4: t = 10RC", content: "k = −e⁻¹⁰ ≈ −0.0000454 ≈ 0 (current has essentially stopped changing)." }
+                ],
+                finalSummary: "di/dt = −(i₀/RC)e^(−t/RC); k = −1, −0.368, ≈0 at t = 0, RC, 10RC"
+            },
+            {
+                id: 41,
+                title: "Discharging R-C Circuit (Numerical)",
+                topic: "calculus",
+                topicLabel: "Calculus Rules",
+                statement: "A discharging R-C circuit has <span class='math'>i = i₀ e^(−t/RC)</span> with i₀ = 2.00 A, R = 6.00×10⁵ Ω, C = 0.500 μF. Find (a) the current at t = 0.3 s, (b) the rate of change of current at t = 0.3 s, (c) the approximate current at t = 0.31 s.",
+                hint: "First compute RC = R·C in seconds. Then i = i₀e^(−t/RC), di/dt = −(i₀/RC)e^(−t/RC), and i(0.31) ≈ i(0.3) + (di/dt)(0.01).",
+                inputs: [
+                    { label: "(a) Current at t = 0.3 s (A)", value: 0.736, unit: "A", tol: 0.005 },
+                    { label: "(b) di/dt at t = 0.3 s (A/s)", value: -2.45, unit: "A/s", tol: 0.03 },
+                    { label: "(c) Current at t = 0.31 s (A)", value: 0.711, unit: "A", tol: 0.005 }
+                ],
+                steps: [
+                    { title: "Step 1: Time constant", content: "<div class='math-block'>RC = (6.00×10⁵)(0.500×10⁻⁶) = 0.300 s</div>" },
+                    { title: "Step 2: (a) Current at 0.3 s", content: "<div class='math-block'>i = 2.00 e^(−0.3/0.3) = 2.00 e⁻¹ = 2.00(0.368) ≈ 0.736 A</div>" },
+                    { title: "Step 3: (b) Rate of change", content: "<div class='math-block'>di/dt = −(i₀/RC)e^(−t/RC) = −(2.00/0.3)(0.368) ≈ −2.45 A/s</div>" },
+                    { title: "Step 4: (c) Current at 0.31 s", content: "<div class='math-block'>i ≈ i(0.3) + (di/dt)(0.01) = 0.736 − 0.0245 ≈ 0.711 A</div>" }
+                ],
+                finalSummary: "RC = 0.3 s; i(0.3) ≈ 0.736 A; di/dt ≈ −2.45 A/s; i(0.31) ≈ 0.711 A"
+            },
+            {
+                id: 42,
+                title: "Area Under y = 3x² + 6x + 7",
+                topic: "integration",
+                topicLabel: "Integration",
+                statement: "Find the area bounded by the curve <span class='math'>y = 3x² + 6x + 7</span>, the X-axis and the ordinates at x = 5 and x = 10.",
+                hint: "Integrate term by term from 5 to 10: ∫(3x²+6x+7)dx = x³ + 3x² + 7x.",
+                inputs: [
+                    { label: "Area (square units)", value: 1135, unit: "", tol: 0.5 }
+                ],
+                steps: [
+                    { title: "Step 1: Set up the integral", content: "<div class='math-block'>A = ∫₅¹⁰ (3x² + 6x + 7) dx</div>" },
+                    { title: "Step 2: Integrate", content: "<div class='math-block'>A = [x³ + 3x² + 7x]₅¹⁰</div>" },
+                    { title: "Step 3: Apply limits", content: "<div class='math-block'>= (1000 + 300 + 70) − (125 + 75 + 35) = 1370 − 235 = 1135</div>" }
+                ],
+                finalSummary: "A = [x³+3x²+7x]₅¹⁰ = 1370 − 235 = 1135"
+            },
+            {
+                id: 43,
+                title: "Area Under y = sin x (0 to π)",
+                topic: "integration",
+                topicLabel: "Integration",
+                statement: "Find the area enclosed by the curve <span class='math'>y = sin x</span> and the X-axis between x = 0 and x = π.",
+                hint: "∫ sin x dx = −cos x. Apply the limits 0 to π.",
+                inputs: [
+                    { label: "Area (square units)", value: 2, unit: "", tol: 0.01 }
+                ],
+                steps: [
+                    { title: "Step 1: Integral", content: "<div class='math-block'>A = ∫₀^π sin x dx = [−cos x]₀^π</div>" },
+                    { title: "Step 2: Apply limits", content: "<div class='math-block'>= (−cos π) − (−cos 0) = (1) − (−1) = 2</div>" }
+                ],
+                finalSummary: "A = [−cos x]₀^π = 1 + 1 = 2"
+            },
+            {
+                id: 44,
+                title: "Area Under y = e^(−x) (First Quadrant)",
+                topic: "integration",
+                topicLabel: "Integration",
+                statement: "Find the area bounded by the curve <span class='math'>y = e^(−x)</span>, the X-axis and the Y-axis (x from 0 to ∞).",
+                hint: "∫ e^(−x) dx = −e^(−x). Evaluate from 0 to ∞ (e^(−∞) → 0).",
+                inputs: [
+                    { label: "Area (square units)", value: 1, unit: "", tol: 0.01 }
+                ],
+                steps: [
+                    { title: "Step 1: Integral", content: "<div class='math-block'>A = ∫₀^∞ e^(−x) dx = [−e^(−x)]₀^∞</div>" },
+                    { title: "Step 2: Apply limits", content: "<div class='math-block'>= (0) − (−1) = 1</div>" }
+                ],
+                finalSummary: "A = [−e^(−x)]₀^∞ = 0 − (−1) = 1"
+            },
+            {
+                id: 45,
+                title: "Mass of a Rod with Variable Density",
+                topic: "integration",
+                topicLabel: "Integration",
+                statement: "A rod lies on the X-axis from x = 0 to x = L. Its linear density is <span class='math'>ρ = a + bx</span>. (a) SI units of a and b? (b) Find its mass. Verify numerically for a = 2 kg/m, b = 3 kg/m², L = 4 m.",
+                hint: "Mass = ∫₀^L ρ dx = ∫₀^L (a + bx) dx. a has units of ρ (kg/m); b = ρ/x has units kg/m².",
+                inputs: [
+                    { label: "Mass for a=2, b=3, L=4 (kg)", value: 32, unit: "kg", tol: 0.01 }
+                ],
+                steps: [
+                    { title: "Step 1: Units", content: "ρ is in kg/m, so a is in <b>kg/m</b>; since bx must also be kg/m, b is in <b>kg/m²</b>." },
+                    { title: "Step 2: Integrate for mass", content: "<div class='math-block'>M = ∫₀^L (a + bx) dx = [ax + bx²/2]₀^L = aL + bL²/2</div>" },
+                    { title: "Step 3: Numerical check", content: "<div class='math-block'>M = (2)(4) + (3)(4²)/2 = 8 + 24 = 32 kg</div>" }
+                ],
+                finalSummary: "M = aL + bL²/2; for a=2, b=3, L=4 → 32 kg"
+            },
+            {
+                id: 46,
+                title: "Momentum from a Time-Varying Force",
+                topic: "integration",
+                topicLabel: "Integration",
+                statement: "The momentum of a particle changes as <span class='math'>dp/dt = (10 N) + (2 N/s)t</span>. If p = 0 at t = 0, find the momentum at t = 10 s.",
+                hint: "p = ∫₀^10 (10 + 2t) dt. Integrate and apply the limits.",
+                inputs: [
+                    { label: "Momentum at t = 10 s (kg·m/s)", value: 200, unit: "kg·m/s", tol: 0.5 }
+                ],
+                steps: [
+                    { title: "Step 1: Integrate dp/dt", content: "<div class='math-block'>p = ∫₀¹⁰ (10 + 2t) dt = [10t + t²]₀¹⁰</div>" },
+                    { title: "Step 2: Apply limits", content: "<div class='math-block'>= (100 + 100) − 0 = 200 kg·m/s</div>" }
+                ],
+                finalSummary: "p = [10t + t²]₀¹⁰ = 100 + 100 = 200 kg·m/s"
+            },
+            {
+                id: 47,
+                title: "Find y from dy/dx = x²",
+                topic: "integration",
+                topicLabel: "Integration",
+                statement: "The change in a function y and the variable x are related by <span class='math'>dy/dx = x²</span>. Find y as a function of x, then evaluate y at x = 3 taking y = 0 at x = 0.",
+                hint: "Integrate: y = ∫ x² dx = x³/3 + C. Use y(0) = 0 to fix C.",
+                inputs: [
+                    { label: "y at x = 3 (with y(0) = 0)", value: 9, unit: "", tol: 0.01 }
+                ],
+                steps: [
+                    { title: "Step 1: Integrate", content: "<div class='math-block'>y = ∫ x² dx = x³/3 + C</div>" },
+                    { title: "Step 2: Fix the constant", content: "y(0) = 0 ⇒ C = 0, so y = x³/3." },
+                    { title: "Step 3: Evaluate at x = 3", content: "<div class='math-block'>y = 3³/3 = 27/3 = 9</div>" }
+                ],
+                finalSummary: "y = x³/3 + C; with y(0)=0, y(3) = 9"
             }
         ];
 
