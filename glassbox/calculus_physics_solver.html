@@ -338,9 +338,10 @@ Check your Browserslist config to be sure that your targets are set up correctly
             font-size: 0.95rem;
             overflow-x: auto;
         }
+        /* No backdrop-filter: live blur repaints the background every scroll
+           frame and makes scrolling hang. Opaque fill keeps the look. */
         .glass-panel {
-            background: rgba(255, 255, 255, 0.85);
-            backdrop-filter: blur(12px);
+            background: rgba(255, 255, 255, 0.92);
             border: 1px solid rgba(255, 255, 255, 0.5);
             box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.12);
         }
