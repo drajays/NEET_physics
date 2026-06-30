@@ -160,6 +160,24 @@
         Equation (i) is the correct form. Also, this is the <b>displacement</b> in the last second, not necessarily the distance covered.
       </div>
     </details>
+    <details class="wex"><summary>3.7 — Ball thrown up at 4.0 m/s: maximum height (g = 10 m/s²)</summary>
+      <div class="sol">
+        Take up as +Y, so u = +4.0 m/s and a = −g = −10 m/s². At the highest point the velocity is <b>v = 0</b>.<br>
+        Use <span class="mono">v² = u² + 2ay</span>: 0 = (4.0)² + 2(−10)y.<br>
+        y = 16 / 20 = <span class="ans">0.80 m</span>.<br>
+        (Key idea: at maximum height the velocity is momentarily zero; sign convention makes a = −g.)
+      </div>
+    </details>
+    <details class="wex"><summary>3.8 — 2-D constant acceleration: a = 1.5 m/s² at 37°, u = 8.0 m/s along X</summary>
+      <div class="sol">
+        Resolve the acceleration (cos37° = 0.8, sin37° = 0.6):<br>
+        aₓ = 1.5 cos37° = 1.2 m/s²; a_y = 1.5 sin37° = 0.90 m/s². Initial: uₓ = 8.0 m/s, u_y = 0.<br>
+        <b>Velocity at t = 4.0 s:</b> vₓ = 8.0 + 1.2×4 = 12.8 m/s; v_y = 0 + 0.90×4 = 3.6 m/s.<br>
+        Speed v = √(12.8² + 3.6²) = <span class="ans">13.3 m/s</span>, at tanθ = v_y/vₓ = 3.6/12.8 = 9/32 (θ ≈ 15.7° above X).<br>
+        <b>Position at t = 4.0 s:</b> x = 8.0×4 + ½×1.2×4² = 41.6 m; y = 0 + ½×0.90×4² = 7.2 m.<br>
+        So the particle is at <span class="ans">(41.6 m, 7.2 m)</span>.
+      </div>
+    </details>
   </section>
 
   <section class="card panel">
@@ -262,6 +280,33 @@
         solution:[`Displacement in the nᵗʰ second: sₙ = u + (a/2)(2n − 1)·(1 s)  [keep the 1-s factor for correct units].`,
           `= ${u} + (${a}/2)(2·${n} − 1) = <b>${ans} m</b>.`]};
     },
+    maxheight(){
+      const u=pick([10,20,30,40,5]); const g=10;
+      const askH=Math.random()<0.5;
+      const ans=askH?round(u*u/(2*g)):round(u/g);
+      const dis=askH?[u*u/g, u*u/(4*g), u/g]:[u/(g/2), u, 2*u/g];
+      return {cat:'maxheight', stem:`A ball is thrown straight up at <b>${u} m/s</b> (g = 10 m/s²). Find the ${askH?'<b>maximum height</b> reached':'<b>time</b> to reach the top'}.`,
+        options:numOpts(ans,dis,askH?' m':' s'),
+        solution:askH
+          ? [`At the top v = 0. Use v² = u² − 2gH ⇒ H = u²/(2g).`,`= ${u}²/(2·10) = <b>${ans} m</b>.`]
+          : [`At the top v = 0. Use v = u − gt ⇒ t = u/g.`,`= ${u}/10 = <b>${ans} s</b>.`]};
+    },
+    proj2d(){
+      const A=pick([1.5,2.5,5,10]), ang=pick([37,53]), u=pick([4,8,10]), t=pick([2,4,5]);
+      const c=ang===37?0.8:0.6, s=ang===37?0.6:0.8;
+      const ax=A*c, ay=A*s, vx=u+ax*t, vy=ay*t;
+      const askSpeed=Math.random()<0.5;
+      const ans=askSpeed?round(Math.hypot(vx,vy)):round(u*t+0.5*ax*t*t);
+      const dis=askSpeed?[vx,vy,vx+vy]:[u*t,0.5*ax*t*t,u*t+ax*t];
+      return {cat:'proj2d', stem:`A particle starts at the origin with velocity <b>${u} m/s along +X</b> and constant acceleration <b>${A} m/s² at ${ang}°</b> to the X-axis. Find its ${askSpeed?'<b>speed</b>':'<b>x-coordinate</b>'} at <b>t = ${t} s</b>. (cos${ang}° = ${c}, sin${ang}° = ${s})`,
+        options:numOpts(ans,dis,askSpeed?' m/s':' m'),
+        solution:askSpeed
+          ? [`aₓ = ${A}·cos${ang}° = ${round(ax)}, a_y = ${A}·sin${ang}° = ${round(ay)} m/s².`,
+             `vₓ = u + aₓt = ${u} + ${round(ax)}·${t} = ${round(vx)}; v_y = a_yt = ${round(vy)}.`,
+             `speed = √(vₓ² + v_y²) = <b>${ans} m/s</b>.`]
+          : [`aₓ = ${A}·cos${ang}° = ${round(ax)} m/s².`,
+             `x = uₓt + ½aₓt² = ${u}·${t} + ½·${round(ax)}·${t}² = <b>${ans} m</b>.`]};
+    },
     distdisp(){
       const q=pick([
         ['A body completes one full circle of radius R. Its displacement is','0','2πR','πR','R'],
@@ -275,7 +320,7 @@
     },
   };
 
-  const CATS=[['all','All'],['avgspeed','Average speed'],['avgvel','Average velocity'],['instspeed','Instantaneous'],['vtgraph','v–t graph'],['accel','Uniform accel.'],['reachv','Reach a speed'],['nthsec','nᵗʰ second'],['distdisp','Dist vs disp']];
+  const CATS=[['all','All'],['avgspeed','Average speed'],['avgvel','Average velocity'],['instspeed','Instantaneous'],['vtgraph','v–t graph'],['accel','Uniform accel.'],['reachv','Reach a speed'],['nthsec','nᵗʰ second'],['maxheight','Vertical throw'],['proj2d','2-D motion'],['distdisp','Dist vs disp']];
   let cat='all', attempted=0, correct=0, current=null, answered=false;
   const stemEl=document.getElementById('qStem'),optsEl=document.getElementById('qOpts'),
         fbEl=document.getElementById('qFeedback'),solEl=document.getElementById('qSol'),
