@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Glass Box · Forces — Newton's Laws of Motion</title>
+<style>
+  :root{
+    --bg1:#160f0a;--bg2:#1a1206;--glass:rgba(255,255,255,0.06);--glass-strong:rgba(255,255,255,0.10);
+    --border:rgba(255,255,255,0.14);--text:#fdf3e7;--muted:#d6bfa3;--accent:#fbbf24;--radius:16px;
+  }
+  *{box-sizing:border-box;} html,body{margin:0;padding:0;}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--text);
+    background:radial-gradient(1200px 700px at 80% -10%,rgba(251,191,36,0.12),transparent 60%),
+      radial-gradient(900px 600px at -10% 110%,rgba(239,68,68,0.14),transparent 55%),
+      linear-gradient(160deg,var(--bg1),var(--bg2));min-height:100vh;padding:28px 18px 48px;line-height:1.5;}
+  .wrap{max-width:980px;margin:0 auto;}
+  header h1{margin:0 0 6px;font-size:clamp(1.5rem,3vw,2.1rem);letter-spacing:-0.01em;
+    background:linear-gradient(90deg,#fde68a,#fca5a5);-webkit-background-clip:text;background-clip:text;color:transparent;}
+  header p.sub{margin:0 0 22px;color:var(--muted);max-width:65ch;}
+  .card{background:var(--glass);border:1px solid var(--border);border-radius:var(--radius);
+    backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 12px 40px rgba(20,8,2,0.5);}
+  .panel{padding:18px;margin-bottom:18px;}
+  .panel h2{margin:0 0 12px;font-size:1.05rem;}
+  .foot{color:var(--muted);font-size:0.8rem;margin-top:10px;}
+  .hl{color:#fde68a;}
+  .rules{columns:2;column-gap:14px;}
+  .rule{break-inside:avoid;margin:0 0 14px;border:1px solid var(--border);border-radius:12px;background:var(--glass-strong);overflow:hidden;}
+  .rule h3{margin:0;padding:9px 13px;font-size:0.9rem;background:rgba(255,255,255,0.05);color:var(--accent);}
+  .rule ul{list-style:none;margin:0;padding:8px 13px 11px;}
+  .rule li{padding:4px 0;font-size:0.9rem;border-bottom:1px dashed rgba(255,255,255,0.06);}
+  .rule li:last-child{border-bottom:none;}
+  .ex{color:var(--muted);}
+  .mono{font-family:"Cambria Math",Consolas,monospace;background:rgba(255,255,255,0.07);padding:1px 6px;border-radius:6px;}
+  .ktable{width:100%;border-collapse:collapse;font-size:0.86rem;margin:4px 0 2px;}
+  .ktable th,.ktable td{border:1px solid rgba(255,255,255,0.12);padding:6px 9px;text-align:center;}
+  .ktable th{background:rgba(255,255,255,0.06);color:var(--accent);}
+  .ktable td.k{color:#fcd34d;font-weight:700;}
+  .strat{border:1px solid var(--border);border-radius:12px;background:linear-gradient(135deg,var(--glass-strong),var(--glass));padding:12px 14px;margin-bottom:14px;font-size:0.9rem;line-height:1.6;}
+  .strat b{color:var(--accent);}
+  .gtag{display:inline-block;font-size:0.68rem;font-weight:700;letter-spacing:0.03em;padding:2px 7px;border-radius:999px;margin-right:6px;background:rgba(251,191,36,0.16);color:var(--accent);}
+  .gtag.e{background:rgba(16,185,129,0.16);color:#6ee7b7;} .gtag.m{background:rgba(252,211,77,0.16);color:#fcd34d;} .gtag.h{background:rgba(239,68,68,0.16);color:#fca5a5;}
+  .wex{border:1px solid var(--border);border-radius:12px;background:var(--glass-strong);margin-bottom:10px;overflow:hidden;}
+  .wex summary{cursor:pointer;padding:11px 14px;font-size:0.93rem;font-weight:600;list-style:none;}
+  .wex summary::-webkit-details-marker{display:none;}
+  .wex summary::before{content:'▸ ';color:var(--accent);}
+  .wex[open] summary::before{content:'▾ ';}
+  .wex .sol{padding:0 14px 13px;font-size:0.9rem;color:var(--muted);line-height:1.6;}
+  .wex .sol b{color:var(--text);} .wex .ans{color:#fcd34d;font-weight:700;}
+  .toolbar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:14px;}
+  .chip{display:inline-flex;align-items:center;gap:6px;cursor:pointer;border:1px solid var(--border);border-radius:999px;
+    padding:6px 13px;background:var(--glass);font-size:0.82rem;font-weight:600;color:var(--muted);transition:all .15s;}
+  .chip.on{color:var(--text);border-color:rgba(255,255,255,0.35);background:var(--glass-strong);}
+  .chip:hover{border-color:rgba(255,255,255,0.4);}
+  .btn{cursor:pointer;border:1px solid var(--border);border-radius:999px;padding:6px 14px;background:var(--glass);
+    color:var(--text);font-size:0.82rem;font-weight:600;transition:all .15s;}
+  .btn:hover{border-color:var(--accent);color:var(--accent);}
+  .quiz-q{font-size:1.04rem;margin:6px 0 14px;line-height:1.55;}
+  .qmeta{display:inline-block;font-size:0.72rem;font-weight:700;letter-spacing:0.04em;text-transform:uppercase;
+    color:var(--accent);background:rgba(251,191,36,0.12);padding:3px 9px;border-radius:999px;margin-bottom:10px;}
+  .opts{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;}
+  .opt{text-align:left;cursor:pointer;border:1px solid var(--border);border-radius:11px;padding:11px 13px;background:var(--glass);
+    color:var(--text);font-size:0.95rem;transition:all .13s;}
+  .opt:hover:not(:disabled){border-color:var(--accent);}
+  .opt .lab{display:inline-block;width:22px;font-weight:700;color:var(--muted);}
+  .opt.correct{border-color:#34d399;background:rgba(16,185,129,0.16);}
+  .opt.wrong{border-color:#f87171;background:rgba(239,68,68,0.16);}
+  .opt:disabled{cursor:default;}
+  .qfeedback{margin-top:14px;font-size:0.92rem;} .qfeedback.ok{color:#6ee7b7;} .qfeedback.no{color:#fca5a5;}
+  .qsol{margin-top:12px;border-left:3px solid var(--accent);padding:6px 0 6px 14px;display:none;}
+  .qsol.show{display:block;}
+  .qsol .step{margin:5px 0;font-size:0.9rem;color:var(--muted);} .qsol .step b{color:var(--text);}
+  .qbar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:16px;}
+  .scorepill{margin-left:auto;font-size:0.85rem;color:var(--muted);}
+  @media (max-width:560px){.rules{columns:1;}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Forces — Newton's Laws of Motion</h1>
+    <p class="sub">The whole force toolkit for NEET: Newton's three laws, weight &amp; normal reaction, tension, springs, friction, inclines, connected bodies, pulleys, pseudo-force and circular-motion forces — key ideas, worked examples, a full formula sheet, 30 NEET numericals and an unlimited practice quiz.</p>
+  </header>
+
+  <section class="card panel">
+    <h2>Key ideas at a glance</h2>
+    <div class="rules">
+      <div class="rule"><h3>Newton's three laws</h3><ul>
+        <li><b>1st:</b> if <span class="mono">ΣF = 0</span> then <span class="mono">a = 0</span> (rest or uniform velocity).</li>
+        <li><b>2nd:</b> <span class="mono">ΣF = ma = dp/dt</span>.</li>
+        <li><b>3rd:</b> action = −reaction, on <b>different</b> bodies (never cancel).</li>
+      </ul></div>
+      <div class="rule"><h3>Weight &amp; normal reaction</h3><ul>
+        <li>Weight <span class="mono">W = mg</span>, always vertically down.</li>
+        <li>Flat surface: <span class="mono">N = mg</span>.</li>
+        <li>Push up with F: <span class="mono">N = mg − F</span>; press down: <span class="mono">N = mg + F</span>.</li>
+        <li>On incline: <span class="mono">N = mg cosθ</span>.</li>
+      </ul></div>
+      <div class="rule"><h3>Lift (apparent weight)</h3><ul>
+        <li>Up with a: <span class="mono">N = m(g + a)</span> — feel heavier.</li>
+        <li>Down with a: <span class="mono">N = m(g − a)</span> — feel lighter.</li>
+        <li>Free fall (a = g): <span class="mono">N = 0</span> → weightless.</li>
+      </ul></div>
+      <div class="rule"><h3>Friction</h3><ul>
+        <li>Static adjusts: <span class="mono">f<sub>s</sub> ≤ μ<sub>s</sub>N</span>.</li>
+        <li>Kinetic (sliding): <span class="mono">f<sub>k</sub> = μ<sub>k</sub>N</span>, usually μ<sub>s</sub> &gt; μ<sub>k</sub>.</li>
+        <li>Opposes relative motion (or its tendency).</li>
+      </ul></div>
+      <div class="rule"><h3>Inclined plane</h3><ul>
+        <li>Smooth: <span class="mono">a = g sinθ</span> down.</li>
+        <li>Rough, sliding down: <span class="mono">a = g(sinθ − μcosθ)</span>.</li>
+        <li>Stays put while <span class="mono">tanθ ≤ μ<sub>s</sub></span>; angle of repose <span class="mono">tanθ<sub>r</sub> = μ<sub>s</sub></span>.</li>
+      </ul></div>
+      <div class="rule"><h3>Pulleys &amp; connected bodies</h3><ul>
+        <li>Atwood: <span class="mono">a = (m₂−m₁)g/(m₁+m₂)</span>.</li>
+        <li>Tension: <span class="mono">T = 2m₁m₂g/(m₁+m₂)</span>.</li>
+        <li>Block + hanging mass: <span class="mono">a = m₂g/(m₁+m₂)</span>.</li>
+      </ul></div>
+      <div class="rule"><h3>Pseudo force (non-inertial)</h3><ul>
+        <li>Magnitude <span class="mono">F<sub>p</sub> = ma₀</span>, opposite the frame's acceleration.</li>
+        <li>Hanging bob: <span class="mono">tanθ = a/g</span>, <span class="mono">g<sub>eff</sub> = √(g²+a²)</span>.</li>
+      </ul></div>
+      <div class="rule"><h3>Watch out</h3><ul>
+        <li>Action &amp; reaction act on <b>different</b> bodies — don't cancel them in one FBD.</li>
+        <li>Friction is whatever is needed up to μN — not always μN.</li>
+        <li>Tension is one value throughout a massless string over an ideal pulley.</li>
+      </ul></div>
+    </div>
+  </section>
+
+  <section class="card panel">
+    <h2>Worked examples</h2>
+    <details class="wex" open><summary>1 — Force at an angle: 20 kg block, F = 100 N at 37° above horizontal, μ<sub>k</sub> = 0.25</summary>
+      <div class="sol">
+        Vertical: <span class="mono">N = mg − F sin37° = 200 − 100×0.6 = 140 N</span>.<br>
+        Friction: <span class="mono">f = μN = 0.25×140 = 35 N</span>.<br>
+        Horizontal: <span class="mono">F cos37° = 100×0.8 = 80 N</span> ⇒ net = 80 − 35 = 45 N.<br>
+        <span class="ans">a = 45/20 = 2.25 m/s²</span> (lifting the block reduces N, so friction drops).
+      </div>
+    </details>
+    <details class="wex"><summary>2 — Minimum pull to start a block (angle of least effort)</summary>
+      <div class="sol">
+        Pulling at angle θ: <span class="mono">F = μmg/(cosθ + μ sinθ)</span>.<br>
+        This is smallest when <span class="mono">tanθ = μ</span>, giving <span class="mono">F<sub>min</sub> = μmg/√(1+μ²)</span>.<br>
+        So a slight upward pull beats a purely horizontal one — it both pulls and unloads the surface.
+      </div>
+    </details>
+    <details class="wex"><summary>3 — Atwood machine: m₁ = 3 kg, m₂ = 5 kg (g = 10)</summary>
+      <div class="sol">
+        <span class="mono">a = (m₂−m₁)g/(m₁+m₂) = (5−3)×10/8 = 2.5 m/s²</span>.<br>
+        <span class="mono">T = 2m₁m₂g/(m₁+m₂) = 2×3×5×10/8 = 37.5 N</span>.<br>
+        Check: for m₂, m₂g − T = 50 − 37.5 = 12.5 = m₂a = 5×2.5. ✓
+      </div>
+    </details>
+    <details class="wex"><summary>4 — Block on a rough table pulled by a hanging mass</summary>
+      <div class="sol">
+        m₁ on table (μ), m₂ hanging: <span class="mono">a = g(m₂ − μm₁)/(m₁+m₂)</span>.<br>
+        With m₁ = 5, m₂ = 2, μ = 0.2: <span class="mono">a = 10(2 − 0.2×5)/7 = 10(1)/7 = 10/7 ≈ 1.43 m/s²</span>.<br>
+        Motion happens only if <span class="mono">m₂ &gt; μ<sub>s</sub>m₁</span>.
+      </div>
+    </details>
+    <details class="wex"><summary>5 — Vertical circle: minimum speeds for a full loop</summary>
+      <div class="sol">
+        At the top, gravity alone can supply the centripetal need when <span class="mono">mg = mv²/r</span> ⇒ <span class="mono">v<sub>top,min</sub> = √(gr)</span>.<br>
+        Energy conservation from top to bottom (drop 2r): <span class="mono">v<sub>bottom,min</sub> = √(5gr)</span>.<br>
+        Tension at the lowest point: <span class="mono">T = mg + mv²/r</span> (largest there).
+      </div>
+    </details>
+    <details class="wex"><summary>6 — Lift &amp; apparent weight: 60 kg person, a = 2 m/s² up (g = 10)</summary>
+      <div class="sol">
+        <span class="mono">N = m(g + a) = 60×12 = 720 N</span> (vs 600 N at rest) — the floor pushes harder, so you feel heavier.<br>
+        If the cable snapped (a = g down): <span class="mono">N = m(g − g) = 0</span> → apparent weightlessness.
+      </div>
+    </details>
+    <details class="wex"><summary>7 — Pseudo force: pendulum in an accelerating train</summary>
+      <div class="sol">
+        In the train's frame a pseudo force <span class="mono">ma₀</span> acts backward on the bob.<br>
+        It settles at <span class="mono">tanθ = a₀/g</span> from the vertical, along the effective gravity <span class="mono">g<sub>eff</sub> = √(g²+a₀²)</span>.<br>
+        For a₀ = 5, g = 10: tanθ = 0.5 ⇒ θ ≈ 26.6°.
+      </div>
+    </details>
+    <details class="wex"><summary>8 — Stopping distance from friction</summary>
+      <div class="sol">
+        Only friction decelerates: <span class="mono">a = μg</span>, so <span class="mono">s = u²/(2μg)</span> and <span class="mono">t = u/(μg)</span>.<br>
+        Note the mass cancels — a heavy and a light block on the same surface stop in the same distance.
+      </div>
+    </details>
+    <details class="wex"><summary>9 — Two hydrogen atoms: how many electric forces? (HC Verma 4-W1)</summary>
+      <div class="sol">
+        The system has <b>4 charged particles</b> — two protons (nuclei) and two electrons.<br>
+        Each particle exerts an electric force on the <b>other three</b>, so the total number of forces is
+        <span class="mono">4 × 3 = <span class="ans">12 forces</span></span>.<br>
+        (Counting ordered pairs; the 12 come in 6 action–reaction pairs — like charges repel, unlike attract.)
+      </div>
+    </details>
+    <details class="wex"><summary>10 — Force between two charged rods, and the l ≫ a and a ≫ l limits (HC Verma 4-W3)</summary>
+      <div class="sol">
+        Two rods of length <b>l</b> lie end-to-end with a gap <b>a</b>; each carries +q on its left end and −q on its right end.<br>
+        Adding the attractions/repulsions between the four end-charges, the net force on rod A (towards the right) is<br>
+        <span class="mono">F = (q²/4πε₀)·[ 1/a² − 2/(l+a)² + 1/(2l+a)² ]</span>.<br>
+        <b>If l ≫ a:</b> the last two terms are negligible ⇒ <span class="mono"><span class="ans">F = q²/(4πε₀a²)</span></span> (only the nearest +q, −q pair across the gap matters).<br>
+        <b>If a ≫ l:</b> all three terms → 1/a² ⇒ <span class="mono">F ≈ (q²/4πε₀)[1/a² − 2/a² + 1/a²] = <span class="ans">0</span></span> (each rod looks like a neutral dipole from far away).
+      </div>
+    </details>
+  </section>
+
+  <section class="card panel">
+    <h2>Forces formula sheet (NEET &amp; JEE)</h2>
+    <div class="toolbar">
+      <input id="fSearch" type="search" placeholder="Filter formulas… (e.g. friction, incline, pulley, banking)" style="flex:1 1 260px;max-width:360px;background:var(--glass);border:1px solid var(--border);border-radius:999px;padding:7px 14px;color:var(--text);font-size:0.9rem;" aria-label="Filter formulas" />
+      <button class="btn" id="fExpand">Expand all</button>
+    </div>
+    <div id="formulaSheet"></div>
+    <p class="foot"><span class="hl">★</span> = highest-yield, memorise these first. Bold means a vector; take g = 10 m/s² unless told otherwise.</p>
+  </section>
+
+  <section class="card panel">
+    <h2>Shortcuts &amp; standard angle values</h2>
+    <div class="rules">
+      <div class="rule"><h3>Angle of repose = the friction angle</h3><ul>
+        <li>A block stays on an incline while <span class="mono">tanθ ≤ μ<sub>s</sub></span>.</li>
+        <li>At the verge of sliding, <span class="mono">tanθ<sub>r</sub> = μ<sub>s</sub></span> — read μ straight off the tilt!</li>
+        <li>μ = 1 ⇒ θ<sub>r</sub> = 45°; μ = 1/√3 ⇒ θ<sub>r</sub> = 30°; μ = √3 ⇒ θ<sub>r</sub> = 60°.</li>
+      </ul></div>
+      <div class="rule"><h3>3-4-5 trig (37° &amp; 53°)</h3><ul>
+        <li><table class="ktable">
+          <tr><th>θ</th><th>sin</th><th>cos</th><th>tan</th></tr>
+          <tr><td>30°</td><td class="k">1/2</td><td>√3/2</td><td>1/√3</td></tr>
+          <tr><td>37°</td><td class="k">3/5</td><td>4/5</td><td>3/4</td></tr>
+          <tr><td>45°</td><td>1/√2</td><td>1/√2</td><td class="k">1</td></tr>
+          <tr><td>53°</td><td class="k">4/5</td><td>3/5</td><td>4/3</td></tr>
+          <tr><td>60°</td><td>√3/2</td><td class="k">1/2</td><td>√3</td></tr>
+        </table></li>
+        <li>37° and 53° turn ugly inclines into clean 3-4-5 arithmetic.</li>
+      </ul></div>
+      <div class="rule"><h3>Least-effort pull</h3><ul>
+        <li>Pull at <span class="mono">tanθ = μ</span> (not horizontal) to drag a block with least force.</li>
+        <li>Then <span class="mono">F<sub>min</sub> = μmg/√(1+μ²)</span>.</li>
+      </ul></div>
+      <div class="rule"><h3>Mass cancels — remember these</h3><ul>
+        <li>Smooth incline: <span class="mono">a = g sinθ</span> (no m).</li>
+        <li>Friction stop: <span class="mono">s = u²/2μg</span> (no m).</li>
+        <li>Sliding down rough incline: <span class="mono">a = g(sinθ − μcosθ)</span> (no m).</li>
+      </ul></div>
+    </div>
+  </section>
+
+  <section class="card panel">
+    <h2>30 NEET-UG numericals (with worked answers)</h2>
+    <div class="toolbar">
+      <input id="exSearch" type="search" placeholder="Search the 30 questions… (e.g. lift, pulley, banking, impulse)" style="flex:1 1 260px;max-width:380px;background:var(--glass);border:1px solid var(--border);border-radius:999px;padding:7px 14px;color:var(--text);font-size:0.9rem;" aria-label="Search numericals" />
+    </div>
+    <div id="exerciseSheet"></div>
+    <p class="foot">Take g = 10 m/s² unless stated. Click any question to reveal the answer and the one-line method.</p>
+  </section>
+
+  <section class="card panel">
+    <h2>HC Verma · “The Forces” — Exercises 1–12</h2>
+    <p class="foot" style="margin:0 0 12px">The four fundamental forces in action — gravitation, Coulomb, normal &amp; friction, and the spring force. (G = 6.67×10⁻¹¹ N·m²/kg², k = 9×10⁹ N·m²/C², g = 9.8 m/s².)</p>
+    <div class="toolbar">
+      <input id="exSearch2" type="search" placeholder="Search these 12… (e.g. moon, proton, satellite, charge)" style="flex:1 1 260px;max-width:380px;background:var(--glass);border:1px solid var(--border);border-radius:999px;padding:7px 14px;color:var(--text);font-size:0.9rem;" aria-label="Search HC Verma exercises" />
+    </div>
+    <div id="exerciseSheet2"></div>
+  </section>
+
+  <section class="card panel">
+    <h2>Practice · unlimited NEET-UG force questions</h2>
+    <div class="toolbar" id="catBar"></div>
+    <div class="quiz-q" id="qStem"><span class="qmeta">loading…</span></div>
+    <div class="opts" id="qOpts"></div>
+    <div class="qfeedback" id="qFeedback"></div>
+    <div class="qsol" id="qSol"></div>
+    <div class="qbar">
+      <button class="btn" id="qNew">New question</button>
+      <button class="btn" id="qShowSol">Show solution</button>
+      <span class="scorepill" id="qScore">Attempted 0 · Correct 0</span>
+    </div>
+  </section>
+</div>
+
+<script>
+/* ---- Practice quiz engine (self-contained) ---- */
+(function(){
+  "use strict";
+  const g=10;
+  const pick=a=>a[Math.floor(Math.random()*a.length)];
+  const shuffle=a=>{for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;};
+  const round=(n,d=2)=>Number(n.toFixed(d));
+  function numOpts(correctNum,cands,unit='',dec=2){
+    const fmt=v=>round(v,dec)+unit, correct=fmt(correctNum), seen=new Set([correct]), out=[];
+    const add=v=>{ if(!isFinite(v))return; const s=fmt(v); if(!seen.has(s)){seen.add(s);out.push(s);} };
+    shuffle(cands.slice()).forEach(add);
+    const pad=[correctNum*1.25,correctNum*0.75,correctNum*1.5,correctNum*0.5,correctNum+2,Math.max(0.1,correctNum-2)];
+    for(let i=0;i<pad.length&&out.length<3;i++) add(pad[i]);
+    return shuffle([{t:correct,ok:true},...out.slice(0,3).map(t=>({t,ok:false}))]);
+  }
+  function opts(correct,pool){
+    const set=[],seen=new Set([String(correct)]);
+    shuffle(pool.slice()).forEach(d=>{d=String(d);if(set.length<3&&!seen.has(d)){set.push(d);seen.add(d);}});
+    return shuffle([{t:String(correct),ok:true},...set.slice(0,3).map(t=>({t,ok:false}))]);
+  }
+  const TR={30:[0.5,Math.sqrt(3)/2],37:[0.6,0.8],45:[1/Math.SQRT2,1/Math.SQRT2],53:[0.8,0.6],60:[Math.sqrt(3)/2,0.5]};
+
+  const GEN={
+    fma(){
+      const a=pick([2,3,4,5]), m=pick([2,4,5,10]), F=m*a;
+      return {cat:'fma', stem:`A force of <b>${F} N</b> acts on a body of mass <b>${m} kg</b>. Find its acceleration.`,
+        options:numOpts(a,[F+m,F*m,F-m],' m/s²'),
+        solution:[`Newton's 2nd law: a = F/m = ${F}/${m} = <b>${a} m/s²</b>.`]};
+    },
+    impulse(){
+      const F=pick([10,20,50,100]), t=pick([0.1,0.2,0.5,2]);
+      const ans=round(F*t);
+      return {cat:'impulse', stem:`A constant force of <b>${F} N</b> acts for <b>${t} s</b>. Find the impulse delivered.`,
+        options:numOpts(ans,[F/t,F+t,F*t*2],' N·s'),
+        solution:[`Impulse J = F·Δt = ${F}×${t} = <b>${ans} N·s</b> (= change in momentum).`]};
+    },
+    momentum(){
+      const m=pick([2,3,5]), v=pick([4,6,10]), F=pick([5,10,20]);
+      const t=round(m*v/F);
+      return {cat:'momentum', stem:`A body of mass <b>${m} kg</b> at rest is acted on by a force of <b>${F} N</b> for <b>${t} s</b>. Find its final speed.`,
+        options:numOpts(round(F*t/m),[F*t,F/m,m*v/2],' m/s'),
+        solution:[`a = F/m = ${F}/${m} = ${round(F/m)} m/s²; v = u + at = 0 + ${round(F/m)}×${t} = <b>${round(F*t/m)} m/s</b>.`]};
+    },
+    normalv(){
+      const m=pick([5,10,20]), F=pick([20,30,40]), up=Math.random()<0.5;
+      const ans=round(up?m*g-F:m*g+F);
+      return {cat:'normalv', stem:`A <b>${m} kg</b> block rests on a horizontal floor. A vertical force of <b>${F} N</b> ${up?'pulls it upward':'presses it downward'}. Find the normal reaction.`,
+        options:numOpts(ans,[m*g,up?m*g+F:m*g-F,F],' N'),
+        solution:[`Vertical balance: N = mg ${up?'−':'+'} F = ${m*g} ${up?'−':'+'} ${F} = <b>${ans} N</b>.`]};
+    },
+    lift(){
+      const m=pick([50,60,80]), a=pick([2,3,4,5]), up=Math.random()<0.5;
+      const ans=round(up?m*(g+a):m*(g-a));
+      return {cat:'lift', stem:`A person of mass <b>${m} kg</b> stands in a lift accelerating <b>${up?'upward':'downward'} at ${a} m/s²</b> (g = 10). Find the apparent weight.`,
+        options:numOpts(ans,[m*g,up?m*(g-a):m*(g+a),m*a],' N'),
+        solution:[`N = m(g ${up?'+':'−'} a) = ${m}×(10 ${up?'+':'−'} ${a}) = <b>${ans} N</b> (rest value mg = ${m*g} N).`]};
+    },
+    tension(){
+      const m=pick([2,4,5,10]), a=pick([2,3,5]), up=Math.random()<0.5;
+      const ans=round(up?m*(g+a):m*(g-a));
+      return {cat:'tension', stem:`A mass of <b>${m} kg</b> hangs from a string and is pulled <b>${up?'upward':'downward'} with acceleration ${a} m/s²</b>. Find the string tension (g = 10).`,
+        options:numOpts(ans,[m*g,up?m*(g-a):m*(g+a),m*a],' N'),
+        solution:[up?`T − mg = ma ⇒ T = m(g+a) = ${m}×${g+a} = <b>${ans} N</b>.`:`mg − T = ma ⇒ T = m(g−a) = ${m}×${g-a} = <b>${ans} N</b>.`]};
+    },
+    spring(){
+      const k=pick([100,200,400,500]), x=pick([2,5,10]);
+      const ans=round(k*x/100);
+      return {cat:'spring', stem:`A spring of force constant <b>${k} N/m</b> is stretched by <b>${x} cm</b>. Find the restoring force.`,
+        options:numOpts(ans,[k*x,k/x,k*x/10],' N'),
+        solution:[`F = kx = ${k} × ${x/100} m = <b>${ans} N</b> (Hooke's law; ${x} cm = ${x/100} m).`]};
+    },
+    frictionflat(){
+      const m=pick([5,10,20]), mu=pick([0.1,0.2,0.3]);
+      const f=mu*m*g; const F=f+m*pick([1,2,3,4]);
+      const ans=round((F-f)/m);
+      return {cat:'frictionflat', stem:`A <b>${m} kg</b> block on a rough floor (μ<sub>k</sub> = ${mu}) is pushed by a horizontal force of <b>${round(F)} N</b>. Find its acceleration (g = 10).`,
+        options:numOpts(ans,[F/m,(F+f)/m,f/m],' m/s²'),
+        solution:[`Friction f = μmg = ${mu}×${m}×10 = ${round(f)} N.`,`a = (F − f)/m = (${round(F)} − ${round(f)})/${m} = <b>${ans} m/s²</b>.`]};
+    },
+    minforce(){
+      const m=pick([5,10,20]), mu=pick([0.2,0.3,0.4,0.5]);
+      const ans=round(mu*m*g);
+      return {cat:'minforce', stem:`A <b>${m} kg</b> block sits on a surface with μ<sub>s</sub> = ${mu}. What minimum horizontal force just starts it moving (g = 10)?`,
+        options:numOpts(ans,[m*g,mu*m,mu*g],' N'),
+        solution:[`Limiting friction: F<sub>min</sub> = μ<sub>s</sub>mg = ${mu}×${m}×10 = <b>${ans} N</b>.`]};
+    },
+    inclinesmooth(){
+      const th=pick([30,37,45,53,60]); const s=TR[th][0];
+      const ans=round(g*s);
+      return {cat:'inclinesmooth', stem:`A block slides down a <b>smooth</b> incline of angle <b>${th}°</b>. Find its acceleration (g = 10).`,
+        options:numOpts(ans,[g*TR[th][1],g,g*s/2],' m/s²'),
+        solution:[`Along the plane only mg sinθ acts: a = g sinθ = 10 × sin${th}° = <b>${ans} m/s²</b>.`]};
+    },
+    inclinerough(){
+      const th=pick([37,53]), mu=pick([0.25,0.5]); const s=TR[th][0],c=TR[th][1];
+      const ans=round(g*(s-mu*c));
+      return {cat:'inclinerough', stem:`A block slides down a <b>rough</b> incline of angle <b>${th}°</b> with μ = ${mu}. Find its acceleration (g = 10, sin${th}°=${s}, cos${th}°=${c}).`,
+        options:numOpts(ans,[g*s,g*(s+mu*c),g*mu*c],' m/s²'),
+        solution:[`a = g(sinθ − μcosθ) = 10(${s} − ${mu}×${c}) = <b>${ans} m/s²</b>.`]};
+    },
+    repose(){
+      const th=pick([30,37,45,53,60]);
+      const tan={30:'1/√3',37:'3/4',45:'1',53:'4/3',60:'√3'}[th];
+      const ans=round(TR[th][0]/TR[th][1]);
+      return {cat:'repose', stem:`A block is on the verge of sliding down an incline tilted at <b>${th}°</b>. Find the coefficient of static friction.`,
+        options:opts(tan,['1/2','1','√3/2','1/√2','2','3/5'].filter(x=>x!==tan)),
+        solution:[`At the angle of repose μ<sub>s</sub> = tanθ<sub>r</sub> = tan${th}° = <b>${tan}</b> (≈ ${ans}).`]};
+    },
+    connected(){
+      const m1=pick([2,3,4]), m2=pick([3,5,6]), a=pick([2,3,4]); const F=(m1+m2)*a;
+      const T=round(m2*a);
+      const askT=Math.random()<0.5;
+      return {cat:'connected', stem:`Blocks <b>${m1} kg</b> and <b>${m2} kg</b> are joined by a light string on a smooth floor; a force of <b>${F} N</b> pulls the ${m1} kg block. Find the ${askT?'<b>tension</b> in the string':'<b>acceleration</b>'}.`,
+        options:askT?numOpts(T,[m1*a,F/m2,(m1+m2)*a/2],' N'):numOpts(a,[F/m1,F/m2,F/(m1*m2)],' m/s²'),
+        solution:askT?[`System a = F/(m₁+m₂) = ${F}/${m1+m2} = ${a} m/s².`,`Tension drags the rear block: T = m₂a = ${m2}×${a} = <b>${T} N</b>.`]
+          :[`Both blocks share one acceleration: a = F/(m₁+m₂) = ${F}/${m1+m2} = <b>${a} m/s²</b>.`]};
+    },
+    atwood(){
+      const m1=pick([1,2,3]), m2=m1+pick([1,2,4]);
+      const a=round((m2-m1)*g/(m1+m2)), T=round(2*m1*m2*g/(m1+m2));
+      const askT=Math.random()<0.5;
+      return {cat:'atwood', stem:`In an Atwood machine two masses <b>${m1} kg</b> and <b>${m2} kg</b> hang over an ideal pulley (g = 10). Find the ${askT?'<b>tension</b>':'<b>acceleration</b>'}.`,
+        options:askT?numOpts(T,[m1*g,m2*g,(m1+m2)*g/2],' N'):numOpts(a,[(m2-m1)*g,g,(m2+m1)*g/(m2-m1)],' m/s²'),
+        solution:askT?[`T = 2m₁m₂g/(m₁+m₂) = 2×${m1}×${m2}×10/${m1+m2} = <b>${T} N</b>.`]
+          :[`a = (m₂−m₁)g/(m₁+m₂) = (${m2}−${m1})×10/${m1+m2} = <b>${a} m/s²</b>.`]};
+    },
+    tablehang(){
+      const m1=pick([3,4,5]), m2=pick([1,2,3]);
+      const a=round(m2*g/(m1+m2)), T=round(m1*m2*g/(m1+m2));
+      const askT=Math.random()<0.5;
+      return {cat:'tablehang', stem:`A <b>${m1} kg</b> block on a smooth table is connected over a pulley to a hanging <b>${m2} kg</b> mass (g = 10). Find the ${askT?'<b>tension</b>':'<b>acceleration</b>'}.`,
+        options:askT?numOpts(T,[m2*g,m1*g,m2*g/2],' N'):numOpts(a,[m2*g,g,m2*g/m1],' m/s²'),
+        solution:askT?[`a = m₂g/(m₁+m₂) = ${m2}×10/${m1+m2} = ${a} m/s²; T = m₁a = ${m1}×${a} = <b>${T} N</b>.`]
+          :[`a = m₂g/(m₁+m₂) = ${m2}×10/${m1+m2} = <b>${a} m/s²</b>.`]};
+    },
+    levelroad(){
+      const m=pick([800,1000,1200]), r=pick([40,90,100,160]), mu=pick([0.1,0.25,0.4]);
+      const ans=round(Math.sqrt(mu*r*g));
+      return {cat:'levelroad', stem:`A car rounds a flat circular road of radius <b>${r} m</b> (μ = ${mu}, g = 10). Find the maximum safe speed (no skidding).`,
+        options:numOpts(ans,[mu*r*g,Math.sqrt(r*g),mu*r],' m/s'),
+        solution:[`Friction gives the centripetal force: μmg = mv²/r ⇒ v<sub>max</sub> = √(μrg) = √(${mu}×${r}×10) = <b>${ans} m/s</b>.`]};
+    },
+    banking(){
+      const r=pick([40,50,80,100]), th=pick([30,45,60]);
+      const tan=TR[th][0]/TR[th][1];
+      const ans=round(Math.sqrt(r*g*tan));
+      return {cat:'banking', stem:`A frictionless road of radius <b>${r} m</b> is banked at <b>${th}°</b>. Find the safe speed (g = 10).`,
+        options:numOpts(ans,[r*g*tan,Math.sqrt(r*g),r*tan],' m/s'),
+        solution:[`For frictionless banking tanθ = v²/rg ⇒ v = √(rg tanθ) = √(${r}×10×tan${th}°) = <b>${ans} m/s</b>.`]};
+    },
+    centripetal(){
+      const m=pick([0.5,1,2]), r=pick([2,4,5]), v=pick([4,6,10]);
+      const ans=round(m*v*v/r);
+      return {cat:'centripetal', stem:`A <b>${m} kg</b> stone moves in a horizontal circle of radius <b>${r} m</b> at <b>${v} m/s</b>. Find the centripetal force.`,
+        options:numOpts(ans,[m*v/r,m*v*v,v*v/r],' N'),
+        solution:[`F = mv²/r = ${m}×${v}²/${r} = <b>${ans} N</b>.`]};
+    },
+    vertcirc(){
+      const r=pick([2,2.5,4,5]); const top=Math.random()<0.5;
+      const ans=round(Math.sqrt((top?1:5)*g*r));
+      return {cat:'vertcirc', stem:`Find the minimum speed at the <b>${top?'top':'bottom'}</b> of a vertical circle of radius <b>${r} m</b> for the body to complete the loop (g = 10).`,
+        options:numOpts(ans,[Math.sqrt((top?5:1)*g*r),Math.sqrt(g*r/2),g*r],' m/s'),
+        solution:[top?`At the top mg = mv²/r ⇒ v<sub>min</sub> = √(gr) = √(10×${r}) = <b>${ans} m/s</b>.`
+          :`v<sub>bottom</sub> = √(5gr) = √(5×10×${r}) = <b>${ans} m/s</b>.`]};
+    },
+    lowtension(){
+      const m=pick([0.5,1,2]), r=pick([1,2,2.5]), v=pick([6,8,10]);
+      const ans=round(m*g+m*v*v/r);
+      return {cat:'lowtension', stem:`A <b>${m} kg</b> body moves in a vertical circle of radius <b>${r} m</b>; at the lowest point its speed is <b>${v} m/s</b>. Find the string tension (g = 10).`,
+        options:numOpts(ans,[m*v*v/r,m*v*v/r-m*g,m*g],' N'),
+        solution:[`At the lowest point T − mg = mv²/r ⇒ T = mg + mv²/r = ${m*g} + ${round(m*v*v/r)} = <b>${ans} N</b>.`]};
+    },
+    pseudo(){
+      const a0=pick([5,10,2.5,7.5]);
+      const ans=round(a0/g);
+      return {cat:'pseudo', stem:`A pendulum hangs in a vehicle accelerating horizontally at <b>${a0} m/s²</b> (g = 10). Find tanθ, where θ is the bob's tilt from the vertical.`,
+        options:numOpts(ans,[g/a0,a0,Math.sqrt(a0*a0+g*g)],''),
+        solution:[`In the vehicle frame a pseudo force ma₀ acts back; balancing: tanθ = a₀/g = ${a0}/10 = <b>${ans}</b>.`]};
+    },
+    geff(){
+      const a0=pick([5,6,8,7.5]);
+      const ans=round(Math.sqrt(a0*a0+g*g));
+      return {cat:'geff', stem:`A frame accelerates horizontally at <b>${a0} m/s²</b> (g = 10). Find the effective gravity g<sub>eff</sub> felt inside.`,
+        options:numOpts(ans,[g+a0,Math.abs(g-a0),a0],' m/s²'),
+        solution:[`g<sub>eff</sub> = √(g² + a₀²) = √(10² + ${a0}²) = <b>${ans} m/s²</b>.`]};
+    },
+    resultant(){
+      const F1=pick([3,6,5,8]), F2=pick([4,8,12]), ang=pick([90,60,120]);
+      const c=ang===90?0:ang===60?0.5:-0.5;
+      const ans=round(Math.sqrt(F1*F1+F2*F2+2*F1*F2*c));
+      return {cat:'resultant', stem:`Two forces of <b>${F1} N</b> and <b>${F2} N</b> act at <b>${ang}°</b> to each other. Find the magnitude of their resultant.`,
+        options:numOpts(ans,[F1+F2,Math.abs(F1-F2),Math.sqrt(F1*F1+F2*F2)+1],' N'),
+        solution:[`R = √(F₁² + F₂² + 2F₁F₂cosθ) = √(${F1}² + ${F2}² + 2×${F1}×${F2}×cos${ang}°) = <b>${ans} N</b>.`]};
+    },
+    stopping(){
+      const u=pick([10,20,5,15]), mu=pick([0.2,0.25,0.5]);
+      const askT=Math.random()<0.5;
+      const ans=round(askT?u/(mu*g):u*u/(2*mu*g));
+      return {cat:'stopping', stem:`A block moving at <b>${u} m/s</b> slides onto a rough surface (μ = ${mu}, g = 10) and stops. Find the ${askT?'<b>time</b> to stop':'<b>stopping distance</b>'}.`,
+        options:numOpts(ans,[askT?u*u/(2*mu*g):u/(mu*g),u/mu,u],askT?' s':' m'),
+        solution:[`Friction decelerates at a = μg = ${mu*g} m/s².`,
+          askT?`t = u/(μg) = ${u}/${mu*g} = <b>${ans} s</b>.`:`s = u²/(2μg) = ${u}²/(2×${mu*g}) = <b>${ans} m</b>.`]};
+    },
+  };
+
+  const CATS=[['all','All'],['fma','F = ma'],['impulse','Impulse'],['momentum','Momentum'],['normalv','Normal force'],['lift','Lift weight'],['tension','Tension'],['spring','Spring (kx)'],['frictionflat','Friction (flat)'],['minforce','Min force'],['inclinesmooth','Smooth incline'],['inclinerough','Rough incline'],['repose','Angle of repose'],['connected','Connected blocks'],['atwood','Atwood'],['tablehang','Table + hang'],['levelroad','Level-road turn'],['banking','Banking'],['centripetal','Centripetal'],['vertcirc','Vertical circle'],['lowtension','Loop tension'],['pseudo','Pseudo force'],['geff','Effective g'],['resultant','Resultant'],['stopping','Stopping']];
+  let cat='all', attempted=0, correct=0, current=null, answered=false;
+  const stemEl=document.getElementById('qStem'),optsEl=document.getElementById('qOpts'),
+        fbEl=document.getElementById('qFeedback'),solEl=document.getElementById('qSol'),
+        scoreEl=document.getElementById('qScore'),catBar=document.getElementById('catBar');
+
+  CATS.forEach(([k,label])=>{ const b=document.createElement('button'); b.className='chip'+(k==='all'?' on':'');
+    b.textContent=label; b.onclick=()=>{ cat=k; [...catBar.children].forEach(c=>c.classList.remove('on')); b.classList.add('on'); renderQuestion(); };
+    catBar.appendChild(b); });
+
+  function genOne(){ const keys=cat==='all'?Object.keys(GEN):[cat]; return GEN[pick(keys)](); }
+  function renderQuestion(){
+    current=genOne(); answered=false;
+    const meta=CATS.find(c=>c[0]===current.cat); stemEl.innerHTML=`<span class="qmeta">${meta?meta[1]:current.cat}</span><div>${current.stem}</div>`;
+    fbEl.textContent=''; fbEl.className='qfeedback'; solEl.className='qsol'; solEl.innerHTML=current.solution.map(s=>`<div class="step">${s}</div>`).join('');
+    optsEl.innerHTML=''; const L=['A','B','C','D'];
+    current.options.forEach((o,i)=>{ const b=document.createElement('button'); b.className='opt';
+      b.innerHTML=`<span class="lab">${L[i]}</span>${o.t}`; b.onclick=()=>choose(b,o); optsEl.appendChild(b); });
+  }
+  function choose(btn,o){
+    if(answered) return; answered=true; attempted++;
+    [...optsEl.children].forEach((b,i)=>{ b.disabled=true; if(current.options[i].ok) b.classList.add('correct'); });
+    if(o.ok){ correct++; btn.classList.add('correct'); fbEl.textContent='✓ Correct!'; fbEl.className='qfeedback ok'; }
+    else { btn.classList.add('wrong'); fbEl.textContent='✗ Not quite — see the solution.'; fbEl.className='qfeedback no'; solEl.className='qsol show'; }
+    scoreEl.textContent=`Attempted ${attempted} · Correct ${correct}`;
+  }
+  document.getElementById('qNew').onclick=renderQuestion;
+  document.getElementById('qShowSol').onclick=()=>{ solEl.className='qsol show'; };
+  renderQuestion();
+})();
+</script>
+
+<script>
+/* ---- Forces formula sheet (self-contained) ---- */
+(function(){
+  "use strict";
+  const SHEET = [
+    ['1 · Force, momentum &amp; impulse', [
+      '<span class="hl">★ <b>F</b> = m<b>a</b></span> ; 1 N = 1 kg·m/s²',
+      'Momentum <b>p</b> = m<b>v</b>',
+      '<span class="hl">★ <b>F</b><sub>net</sub> = d<b>p</b>/dt</span> (reduces to m<b>a</b> for constant mass)',
+      'Impulse <b>J</b> = <b>F</b><sub>avg</sub>·Δt = Δ<b>p</b> = m<b>v</b><sub>f</sub> − m<b>v</b><sub>i</sub>',
+      'Varying force: J = ∫F dt = area under the F–t graph',
+    ]],
+    ['2 · Newton\'s three laws', [
+      '1st (inertia): F<sub>net</sub> = 0 ⇒ a = 0 (rest or uniform velocity)',
+      '2nd: ΣF = ma ; components ΣFₓ = maₓ, ΣF_y = ma_y',
+      '<span class="hl">★ 3rd: <b>F</b><sub>AB</sub> = −<b>F</b><sub>BA</sub></span> — equal, opposite, on different bodies (never cancel)',
+    ]],
+    ['3 · Weight &amp; normal reaction', [
+      'Weight W = mg (vertically down)',
+      'Flat surface, no vertical accel.: N = mg',
+      'Upward applied force F: N = mg − F ; downward F: N = mg + F',
+      'Lift up (a): N = m(g + a) ; lift down (a): N = m(g − a)',
+      'Free fall: N = 0 (apparent weightlessness)',
+    ]],
+    ['4 · Tension (ideal string &amp; pulley)', [
+      'Massless, inextensible string ⇒ one tension throughout an ideal pulley',
+      'At rest: T = mg',
+      '<span class="hl">★ Accelerating up: T = m(g + a)</span>',
+      '<span class="hl">★ Accelerating down: T = m(g − a)</span>',
+    ]],
+    ['5 · Spring force (Hooke\'s law)', [
+      '<span class="hl">★ F = −kx</span> (magnitude F = kx)',
+      'k = spring constant, x = extension/compression',
+      'Mass m hanging at rest: kx = mg ⇒ x = mg/k',
+    ]],
+    ['6 · Friction', [
+      'Static (self-adjusting): f<sub>s</sub> ≤ f<sub>s,max</sub> = μ<sub>s</sub>N',
+      '<span class="hl">★ Kinetic: f<sub>k</sub> = μ<sub>k</sub>N</span> ; usually μ<sub>s</sub> &gt; μ<sub>k</sub>',
+      'Friction opposes relative motion (or its tendency)',
+      'Stopping distance: s = u²/(2μg) ; time: t = u/(μg)',
+    ]],
+    ['7 · Block on a rough horizontal surface', [
+      'Moving: F − μ<sub>k</sub>mg = ma ⇒ a = (F − μ<sub>k</sub>mg)/m',
+      'Just starts moving: F<sub>min</sub> = μ<sub>s</sub>mg',
+      'If F &lt; μ<sub>s</sub>mg: block stays, f<sub>s</sub> = F',
+    ]],
+    ['8 · Force applied at an angle θ', [
+      'Pull (above horizontal): N = mg − F sinθ ; a = [F cosθ − μ(mg − F sinθ)]/m',
+      'Min pull to start: F<sub>min</sub> = μ<sub>s</sub>mg/(cosθ + μ<sub>s</sub> sinθ)',
+      'Push (below horizontal): N = mg + F sinθ ; a = [F cosθ − μ(mg + F sinθ)]/m',
+      '<span class="hl">★ Least effort at tanθ = μ: F<sub>min</sub> = μmg/√(1+μ²)</span>',
+    ]],
+    ['9 · Smooth inclined plane (angle θ)', [
+      'Along plane: mg sinθ ; perpendicular: mg cosθ',
+      'N = mg cosθ',
+      '<span class="hl">★ a = g sinθ</span> (down the incline, mass-independent)',
+    ]],
+    ['10 · Rough inclined plane', [
+      'N = mg cosθ ; friction f = μmg cosθ',
+      '<span class="hl">★ Sliding down: a = g(sinθ − μcosθ)</span>',
+      'Driven up: retardation a = g(sinθ + μcosθ)',
+      'Stays at rest while tanθ ≤ μ<sub>s</sub>',
+      '<span class="hl">★ Angle of repose: tanθ<sub>r</sub> = μ<sub>s</sub></span>',
+    ]],
+    ['11 · Connected blocks on a surface', [
+      'Smooth, force F on the pair: a = F/(m₁+m₂)',
+      'Tension on the trailing block: T = (rear mass)·a',
+      'With friction μ on both: a = [F − μ(m₁+m₂)g]/(m₁+m₂)',
+    ]],
+    ['12 · Atwood machine (m₂ &gt; m₁)', [
+      '<span class="hl">★ a = (m₂−m₁)g/(m₁+m₂)</span>',
+      '<span class="hl">★ T = 2m₁m₂g/(m₁+m₂)</span>',
+      'Check: m₂g − T = m₂a and T − m₁g = m₁a',
+    ]],
+    ['13 · Block on table + hanging mass', [
+      'Smooth table: a = m₂g/(m₁+m₂) ; T = m₁m₂g/(m₁+m₂)',
+      'Rough table (μ): a = g(m₂ − μm₁)/(m₁+m₂)',
+      'Motion only if m₂ &gt; μ<sub>s</sub>m₁',
+    ]],
+    ['14 · Pseudo force (non-inertial frame)', [
+      'Frame accel. a₀: <b>F</b><sub>p</sub> = −m<b>a₀</b> (magnitude ma₀, opposite the frame)',
+      'Horizontal a: g<sub>eff</sub> = √(g² + a²)',
+      'Hanging bob tilt: tanθ = a/g',
+    ]],
+    ['15 · Lift (apparent weight)', [
+      'Up: N = m(g + a) ; down: N = m(g − a)',
+      'Constant velocity: N = mg ; free fall: N = 0',
+      'a &gt; g downward ⇒ person leaves the floor (N = 0)',
+    ]],
+    ['16 · Circular-motion forces', [
+      '<span class="hl">★ F<sub>c</sub> = mv²/r = mω²r = 4π²mr/T²</span>',
+      'a<sub>c</sub> = v²/r = ω²r',
+      'ω = v/r = 2π/T',
+    ]],
+    ['17 · Vehicle on a level road', [
+      'Friction supplies F<sub>c</sub>: μmg = mv²/r',
+      '<span class="hl">★ v<sub>max</sub> = √(μrg)</span> (no skidding)',
+    ]],
+    ['18 · Banking of roads', [
+      'Frictionless: tanθ = v²/(rg)',
+      '<span class="hl">★ Safe speed v = √(rg tanθ)</span>',
+    ]],
+    ['19 · Vertical circular motion', [
+      'General: T − mg cosθ = mv²/r',
+      'Lowest point: T = mg + mv²/r (max tension)',
+      'Highest point: T = mv²/r − mg',
+      '<span class="hl">★ Min speed at top: v = √(gr)</span>',
+      '<span class="hl">★ Min speed at bottom: v = √(5gr)</span>',
+    ]],
+    ['20 · Conical pendulum (string length l, angle θ)', [
+      'T cosθ = mg ; T sinθ = mv²/r ; tanθ = v²/(rg)',
+      'r = l sinθ',
+      'Period T<sub>p</sub> = 2π√(l cosθ / g)',
+    ]],
+    ['21 · Statics &amp; resultants', [
+      'Resultant of F₁, F₂ at θ: R = √(F₁² + F₂² + 2F₁F₂cosθ)',
+      'Three-force equilibrium: <b>F</b>₁ + <b>F</b>₂ + <b>F</b>₃ = 0',
+      'Lami\'s theorem: F₁/sinα = F₂/sinβ = F₃/sinγ',
+    ]],
+    ['22 · Standard angle values', [
+      'sin30°=½, cos30°=√3/2, tan30°=1/√3',
+      'sin37°=3/5, cos37°=4/5, tan37°=3/4',
+      'sin53°=4/5, cos53°=3/5, tan53°=4/3 ; tan45°=1',
+      'g = 10 m/s² (or 9.8 m/s²) for NEET numericals',
+    ]],
+    ['★ Memorise first', [
+      'F = ma ; J = Δp ; f<sub>s</sub> ≤ μ<sub>s</sub>N ; f<sub>k</sub> = μ<sub>k</sub>N',
+      'N = mg cosθ ; a = g sinθ ; a = g(sinθ − μcosθ) ; tanθ<sub>r</sub> = μ',
+      'a = (m₂−m₁)g/(m₁+m₂) ; T = 2m₁m₂g/(m₁+m₂)',
+      'N = m(g±a) ; F<sub>c</sub> = mv²/r ; v<sub>max</sub> = √(μrg) ; tanθ = v²/rg',
+      'v<sub>top</sub> = √(gr) ; v<sub>bottom</sub> = √(5gr)',
+    ]],
+  ];
+  const host=document.getElementById('formulaSheet');
+  host.innerHTML = SHEET.map(([title,items],i)=>
+    `<details class="wex"${i===0||i===22?' open':''}><summary>${title}</summary><div class="sol">${items.map(t=>'• '+t).join('<br>')}</div></details>`
+  ).join('');
+
+  let expanded=false;
+  document.getElementById('fExpand').onclick=function(){
+    expanded=!expanded; host.querySelectorAll('details').forEach(d=>d.open=expanded);
+    this.textContent=expanded?'Collapse all':'Expand all';
+  };
+  document.getElementById('fSearch').addEventListener('input', e=>{
+    const q=e.target.value.trim().toLowerCase();
+    host.querySelectorAll('details').forEach(d=>{
+      const m=!q || d.textContent.toLowerCase().includes(q);
+      d.style.display=m?'':'none'; if(q&&m) d.open=true;
+    });
+  });
+})();
+</script>
+
+<script>
+/* ---- 30 NEET numericals with answers (self-contained) ---- */
+(function(){
+  "use strict";
+  const EX = [
+    [1,"A force of 20 N acts on a body of mass 5 kg. Find its acceleration.","4 m/s²","a = F/m = 20/5 = 4 m/s²."],
+    [2,"A 2 kg body at rest is acted on by a 10 N force for 3 s. Final velocity?","15 m/s","a = 10/2 = 5 m/s²; v = u + at = 0 + 5×3 = 15 m/s."],
+    [3,"A 10 kg block on a floor has a 40 N upward force on it. Normal reaction?","60 N","N = mg − F = 100 − 40 = 60 N."],
+    [4,"A 60 kg man in a lift accelerating up at 2 m/s². Apparent weight? (g=10)","720 N","N = m(g+a) = 60×12 = 720 N."],
+    [5,"A 5 kg body pulled vertically up with a = 3 m/s². String tension? (g=10)","65 N","T = m(g+a) = 5×13 = 65 N."],
+    [6,"A spring (k = 200 N/m) is stretched 5 cm. Restoring force?","10 N","F = kx = 200×0.05 = 10 N."],
+    [7,"A 4 kg block on a smooth floor is pulled by 12 N. Acceleration?","3 m/s²","a = F/m = 12/4 = 3 m/s²."],
+    [8,"10 kg block, μ_k = 0.2, horizontal force 50 N. Acceleration? (g=10)","3 m/s²","f = μmg = 0.2×100 = 20 N; a = (50−20)/10 = 3 m/s²."],
+    [9,"5 kg block at rest, μ_s = 0.4. Minimum force to start motion? (g=10)","20 N","F_min = μ_s mg = 0.4×50 = 20 N."],
+    [10,"20 kg block pulled by 100 N at 37° above horizontal, μ_k = 0.25. Acceleration? (sin37=3/5, cos37=4/5)","≈ 2.25 m/s² (nearest option 2 m/s²)","N = mg − F sin37° = 200 − 60 = 140 N; f = 0.25×140 = 35 N; F cos37° = 80 N; a = (80−35)/20 = 2.25 m/s²."],
+    [11,"Body slides down a smooth 30° incline. Acceleration? (g=10)","5 m/s²","a = g sinθ = 10×0.5 = 5 m/s²."],
+    [12,"Body slides down a rough 37° incline, μ = 0.5. Acceleration? (g=10)","2 m/s²","a = g(sinθ − μcosθ) = 10(0.6 − 0.5×0.8) = 10(0.2) = 2 m/s²."],
+    [13,"A body is just about to slide on a 30° incline. μ_s?","1/√3","At the angle of repose μ_s = tan30° = 1/√3."],
+    [14,"2 kg and 3 kg joined by a string on a smooth floor; 20 N pulls the 2 kg. Acceleration?","4 m/s²","a = F/(m₁+m₂) = 20/5 = 4 m/s²."],
+    [15,"In Q14, tension in the string?","12 N","T pulls the 3 kg block: T = m₂a = 3×4 = 12 N."],
+    [16,"3 kg and 5 kg over a smooth pulley (Atwood). Acceleration? (g=10)","2.5 m/s²","a = (5−3)g/(5+3) = 20/8 = 2.5 m/s²."],
+    [17,"For the Atwood in Q16, tension?","37.5 N","T = 2m₁m₂g/(m₁+m₂) = 2×3×5×10/8 = 37.5 N."],
+    [18,"4 kg block on a smooth table connected to a 1 kg hanging mass. Acceleration? (g=10)","2 m/s²","a = m₂g/(m₁+m₂) = 1×10/5 = 2 m/s²."],
+    [19,"In Q18, tension in the string?","8 N","T = m₁a = 4×2 = 8 N."],
+    [20,"5 kg block on a rough table (μ=0.2) tied to a 2 kg hanging mass. Acceleration? (g=10)","10/7 m/s²","a = g(m₂ − μm₁)/(m₁+m₂) = 10(2 − 0.2×5)/7 = 10(1)/7 = 10/7 ≈ 1.43 m/s²."],
+    [21,"1000 kg car on a level circular road, r = 100 m, μ = 0.4. Max safe speed? (g=10)","20 m/s","v_max = √(μrg) = √(0.4×100×10) = √400 = 20 m/s."],
+    [22,"Road banked at 45°, radius 50 m. Safe speed? (g=10)","√500 ≈ 22.4 m/s","v = √(rg tanθ) = √(50×10×1) = √500 m/s."],
+    [23,"0.5 kg stone in a horizontal circle, r = 2 m, v = 4 m/s. Centripetal force?","4 N","F = mv²/r = 0.5×16/2 = 4 N."],
+    [24,"1 kg body in a vertical circle r = 2 m; speed 10 m/s at the lowest point. Tension? (g=10)","60 N","T = mg + mv²/r = 10 + 100/2 = 60 N."],
+    [25,"Minimum speed at the top of a vertical circle, r = 2.5 m? (g=10)","5 m/s","v_top = √(gr) = √(10×2.5) = 5 m/s."],
+    [26,"Minimum speed at the bottom of a vertical circle, r = 2 m? (g=10)","10 m/s","v_bottom = √(5gr) = √(5×10×2) = 10 m/s."],
+    [27,"A pendulum in a train accelerating at 5 m/s² makes angle θ with vertical. tanθ? (g=10)","1/2","tanθ = a/g = 5/10 = 0.5."],
+    [28,"2 kg body at 10 m/s; constant retarding force 5 N. Stopping distance?","20 m","a = F/m = 5/2 = 2.5 m/s²; s = u²/2a = 100/5 = 20 m."],
+    [29,"A 50 N force acts for 0.2 s. Impulse?","10 N·s","J = FΔt = 50×0.2 = 10 N·s."],
+    [30,"Two forces 6 N and 8 N act at right angles. Resultant?","10 N","R = √(6² + 8²) = √100 = 10 N."],
+  ];
+  const host=document.getElementById('exerciseSheet');
+  host.innerHTML = EX.map(([n,q,a,s])=>
+    `<details class="wex"><summary>Q${n}. ${q}</summary><div class="sol"><b>Answer:</b> <span class="ans">${a}</span><br>${s}</div></details>`
+  ).join('');
+  document.getElementById('exSearch').addEventListener('input', e=>{
+    const q=e.target.value.trim().toLowerCase();
+    host.querySelectorAll('details').forEach(d=>{
+      const m=!q || d.textContent.toLowerCase().includes(q);
+      d.style.display=m?'':'none'; if(q&&m) d.open=true;
+    });
+  });
+})();
+</script>
+
+<script>
+/* ---- HC Verma "The Forces" exercises 1–12 (self-contained) ---- */
+(function(){
+  "use strict";
+  const EX = [
+    [1,"The gravitational force on a 1 g particle due to a similar particle is 6.67×10⁻¹⁷ N. Find their separation.","1 m","r² = Gm²/F = (6.67×10⁻¹¹×(10⁻³)²)/(6.67×10⁻¹⁷) = 1 ⇒ r = 1 m."],
+    [2,"With what force do you attract the earth?","Equal to your weight, mg (≈ 500 N for a 50 kg person)","By Newton's 3rd law the force you exert on the earth equals the earth's pull on you = your weight mg."],
+    [3,"At what separation should two 1 C charges be placed so the force between them equals your weight?","r = √(kq²/W) ≈ 4.2 km (for W ≈ 500 N)","kq²/r² = W ⇒ r = √(9×10⁹×1²/W); with W ≈ 500 N, r ≈ √(1.8×10⁷) ≈ 4.2×10³ m."],
+    [4,"Two 50 kg spheres are 20 cm apart. Equal charges make the Coulomb repulsion equal the gravitational attraction. Find the charge on each.","4.3×10⁻⁹ C","kq² = Gm² (r² cancels) ⇒ q = m√(G/k) = 50×√(6.67×10⁻¹¹/9×10⁹) = 4.3×10⁻⁹ C."],
+    [5,"A tree limb exerts a 48 N normal force and a 20 N frictional force on a monkey. Find the total force from the limb.","52 N","Perpendicular components ⇒ R = √(48² + 20²) = √2704 = 52 N (a 5-12-13 scaled triangle)."],
+    [6,"A 150 N force compresses a bullworker spring by 20 cm. Find the spring constant.","750 N/m","k = F/x = 150/0.20 = 750 N/m."],
+    [7,"At what height above the surface is the earth's pull on a satellite halved? (R = 6400 km)","≈ 2650 km","F ∝ 1/r²; half ⇒ r = R√2; h = R(√2 − 1) = 6400×0.414 ≈ 2650 km."],
+    [8,"Two charges 20 cm apart exert 20 N. What is the force when the separation becomes 25 cm?","13 N","F ∝ 1/r² ⇒ F₂ = 20×(20/25)² = 20×0.64 = 12.8 ≈ 13 N."],
+    [9,"Find the 'weight' of the moon — the earth's pull on it. (M_e = 6×10²⁴ kg, M_m = 7.36×10²² kg, r = 3.8×10⁵ km)","2×10²⁰ N","F = GM_eM_m/r² = 6.67×10⁻¹¹×6×10²⁴×7.36×10²²/(3.8×10⁸)² ≈ 2.0×10²⁰ N."],
+    [10,"Find the ratio of the electric force to the gravitational force between two protons.","1.24×10³⁶","F_e/F_g = ke²/(Gm²) = (9×10⁹×(1.6×10⁻¹⁹)²)/(6.67×10⁻¹¹×(1.67×10⁻²⁷)²) ≈ 1.24×10³⁶."],
+    [11,"Hydrogen ground state, separation 5.3×10⁻¹¹ m. (a) Coulomb force? (b) Force when the separation becomes 4× larger (first excited state)?","(a) 8.2×10⁻⁸ N  (b) 5.1×10⁻⁹ N","(a) F = ke²/r² = 9×10⁹×2.56×10⁻³⁸/(5.3×10⁻¹¹)² ≈ 8.2×10⁻⁸ N. (b) r→4r ⇒ F/16 = 8.2×10⁻⁸/16 ≈ 5.1×10⁻⁹ N."],
+    [12,"Find the weight of a 120 kg equipment in a geostationary satellite, 36000 km above the surface. (R = 6400 km)","27 N","r = 36000+6400 = 42400 km; W = mg(R/r)² = 120×9.8×(6400/42400)² ≈ 27 N."],
+  ];
+  const host=document.getElementById('exerciseSheet2');
+  host.innerHTML = EX.map(([n,q,a,s])=>
+    `<details class="wex"><summary>${n}. ${q}</summary><div class="sol"><b>Answer:</b> <span class="ans">${a}</span><br>${s}</div></details>`
+  ).join('');
+  document.getElementById('exSearch2').addEventListener('input', e=>{
+    const q=e.target.value.trim().toLowerCase();
+    host.querySelectorAll('details').forEach(d=>{
+      const m=!q || d.textContent.toLowerCase().includes(q);
+      d.style.display=m?'':'none'; if(q&&m) d.open=true;
+    });
+  });
+})();
+</script>
+</body>
+</html>

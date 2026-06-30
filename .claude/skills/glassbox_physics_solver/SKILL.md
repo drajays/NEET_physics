@@ -13,6 +13,37 @@ units, and the final interpretation. The student should *learn the method*.
 requirements, solver contract, UX standards, helper patterns). **Read it before
 authoring** — this SKILL.md only adds how to wire the result into *this* repo.
 
+## Two tool shapes
+
+There are now **two proven layouts** — pick by the content the user gives you:
+
+1. **Interactive solver** (the original — `vector_solver_app.html`,
+   `calculus_physics_solver.html`): question objects with `answerFields` +
+   `solver()`, Auto-Solve, Check-My-Answer. Use when the topic is a *calculator*
+   (vectors, derivatives) where the student types numeric inputs.
+
+2. **Chapter primer** (the newer, higher-value shape — `kinematics.html` and
+   `forces.html`): a full NEET chapter page, top-to-bottom:
+   - **Key ideas at a glance** — a 2-column `.rules` grid of short concept cards.
+   - **Worked examples** — `<details class="wex">` accordions (HC-Verma sourced
+     where possible); answers wrapped in `<span class="ans">`.
+   - **Formula sheet** — a `SHEET` array of `[sectionTitle, [items…]]` rendered
+     as searchable / expand-all `<details>`; mark highest-yield lines with
+     `<span class="hl">★ …</span>`. Plain-HTML math (`<b>`, superscript glyphs,
+     `.mono` spans) — **no KaTeX/CDN**, keep it offline.
+   - **Shortcuts & memory tricks** + any **toolkit tables** (`.ktable`).
+   - **Exercise bank** — an `EX` array `[n, question, answer, worked-hint]`
+     rendered as searchable `<details>` accordions.
+   - **Practice quiz** — a `GEN` map of category → generator returning
+     `{cat, stem, options:[{t,ok}], solution:[…]}`; chip filter bar, New /
+     Show-solution buttons, running score. Build options with the shared
+     `numOpts(correct, distractors, unit)` / `opts(correct, pool)` helpers and
+     **construct clean integer numbers** so generated answers are exact.
+
+   Reuse `kinematics.html` verbatim as the scaffold (CSS block + the four
+   `<script>` IIFEs) and swap in the new chapter's data. Give each chapter a
+   distinct `--accent` / gradient so tools are visually distinguishable.
+
 ## Output contract (non-negotiable)
 
 - **One standalone `.html` file**, inline CSS + JS, **no build step**.

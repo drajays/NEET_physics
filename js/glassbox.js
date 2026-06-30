@@ -59,6 +59,15 @@
       icon: '🏃',
       tags: ['Kinematics', 'Mechanics'],
       cls: 'XI'
+    },
+    {
+      id: 'forces',
+      title: 'Forces — Newton’s Laws of Motion',
+      desc: 'Newton’s three laws, weight, normal reaction, tension, springs, friction, inclines, pulleys, pseudo-force and circular-motion forces — key ideas, worked examples, a full formula sheet, 30 NEET numericals and an unlimited quiz.',
+      file: 'glassbox/forces.html',
+      icon: '⚖️',
+      tags: ['Laws of Motion', 'Mechanics'],
+      cls: 'XI'
     }
     // Add the next tools here, one object each.
   ];
