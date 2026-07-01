@@ -27,6 +27,7 @@
   .foot{color:var(--muted);font-size:0.8rem;margin-top:10px;}
   .hl{color:#fcd34d;}
   .rules{columns:2;column-gap:14px;}
+  .fig{display:block;width:100%;max-width:300px;height:auto;margin:6px auto 10px;background:rgba(255,255,255,0.03);border:1px solid var(--border);border-radius:10px;padding:6px;}
   .rule{break-inside:avoid;margin:0 0 14px;border:1px solid var(--border);border-radius:12px;background:var(--glass-strong);overflow:hidden;}
   .rule h3{margin:0;padding:9px 13px;font-size:0.9rem;background:rgba(255,255,255,0.05);color:var(--accent);}
   .rule ul{list-style:none;margin:0;padding:8px 13px 11px;}
@@ -135,6 +136,7 @@
     </details>
     <details class="wex"><summary>Block held still on an accelerating smooth wedge</summary>
       <div class="sol">
+        <svg class="fig" viewBox="0 0 260 170" xmlns="http://www.w3.org/2000/svg"><defs><marker id="ah5" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 z" fill="#fcd34d"/></marker></defs><line x1="20" y1="150" x2="245" y2="150" stroke="#7fb8a0" stroke-width="3"/><polygon points="45,150 225,150 225,58" fill="rgba(52,211,153,0.12)" stroke="#7fb8a0" stroke-width="2"/><rect x="150" y="92" width="26" height="15" transform="rotate(-27 163 99)" fill="rgba(52,211,153,0.28)" stroke="#34d399" stroke-width="2"/><path d="M78,150 A32,32 0 0,0 71,134" fill="none" stroke="#cfeede" stroke-width="1"/><text x="52" y="143" fill="#cfeede" font-size="12">θ</text><line x1="40" y1="110" x2="86" y2="110" stroke="#fcd34d" stroke-width="2" marker-end="url(#ah5)"/><text x="55" y="103" fill="#fcd34d" font-size="13">a</text></svg>
         A block rests on a smooth wedge of incline θ. What horizontal acceleration a keeps it stationary relative to the wedge?<br>
         In the wedge frame a pseudo force ma acts back. Along the incline: <span class="mono">ma cosθ = mg sinθ</span> ⇒ <span class="ans">a = g tanθ</span>.<br>
         (Equivalently, the effective gravity must be ⟂ to the incline surface.)
@@ -188,6 +190,7 @@
   <section class="card panel">
     <h2>Elevator / lift mechanics — every case (NEET high-yield)</h2>
     <p class="foot" style="margin:0 0 12px">Apparent weight N depends on the direction of <b>acceleration</b> a, never the velocity. One shortcut rules them all: find <b>g<sub>eff</sub></b>, then <span class="mono">N = M·g<sub>eff</sub></span> (× cosθ on a ramp).</p>
+    <svg class="fig" viewBox="0 0 200 190" xmlns="http://www.w3.org/2000/svg"><defs><marker id="ah4" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 z" fill="#fcd34d"/></marker></defs><line x1="100" y1="8" x2="100" y2="30" stroke="#7fb8a0" stroke-width="2"/><rect x="45" y="30" width="110" height="140" fill="none" stroke="#7fb8a0" stroke-width="2"/><rect x="78" y="140" width="44" height="24" fill="rgba(52,211,153,0.25)" stroke="#34d399" stroke-width="2"/><text x="94" y="157" fill="#cfeede" font-size="12">M</text><line x1="172" y1="150" x2="172" y2="96" stroke="#fcd34d" stroke-width="2" marker-end="url(#ah4)"/><text x="178" y="126" fill="#fcd34d" font-size="13">a</text></svg>
 
     <table class="ktable" style="margin-bottom:14px">
       <tr><th>Vertical motion of the lift</th><th>Equation</th><th>Apparent weight N</th><th>Feel</th></tr>
@@ -229,6 +232,7 @@
   <section class="card panel">
     <h2>Movable-pulley constraint · the “×2 / ¼” rule</h2>
     <p class="foot" style="margin:0 0 12px">Block A (mass m) is tied to a fixed clamp C by a string over a <b>movable</b> pulley B whose axle is pulled by force F (smooth floor, from rest). The clamp anchors the upper string segment, so A must move exactly twice as far as the pulley. (This is worked-out problem 6 above, in full.)</p>
+    <svg class="fig" viewBox="0 0 300 165" xmlns="http://www.w3.org/2000/svg"><defs><marker id="ah3" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 z" fill="#fcd34d"/></marker></defs><line x1="20" y1="143" x2="285" y2="143" stroke="#7fb8a0" stroke-width="3"/><line x1="34" y1="40" x2="34" y2="70" stroke="#7fb8a0" stroke-width="3"/><text x="14" y="58" fill="#cfeede" font-size="13">C</text><line x1="34" y1="55" x2="172" y2="55" stroke="#34d399" stroke-width="2"/><circle cx="178" cy="55" r="10" fill="none" stroke="#34d399" stroke-width="2"/><text x="174" y="40" fill="#cfeede" font-size="13">B</text><line x1="190" y1="55" x2="240" y2="55" stroke="#fcd34d" stroke-width="2" marker-end="url(#ah3)"/><text x="245" y="59" fill="#fcd34d" font-size="13">F</text><line x1="178" y1="65" x2="95" y2="125" stroke="#34d399" stroke-width="2"/><rect x="62" y="123" width="32" height="20" fill="rgba(52,211,153,0.25)" stroke="#34d399" stroke-width="2"/><text x="72" y="138" fill="#cfeede" font-size="13">A</text></svg>
 
     <table class="ktable" style="margin-bottom:14px">
       <tr><th>Quantity</th><th>Constraint</th><th>Meaning</th></tr>
@@ -502,7 +506,8 @@
   const W = [
     [1,"A body of mass m hangs from two strings making angles α and β with the horizontal. Find the tensions.",
       "T₁ = mg cosβ / sin(α+β),&nbsp; T₂ = mg cosα / sin(α+β)",
-      "Equilibrium of the bob: horizontal T₁cosα = T₂cosβ; vertical T₁sinα + T₂sinβ = mg. Eliminating T₂ gives the symmetric pair above."],
+      "Equilibrium of the bob: horizontal T₁cosα = T₂cosβ; vertical T₁sinα + T₂sinβ = mg. Eliminating T₂ gives the symmetric pair above.",
+      "<svg class='fig' viewBox='0 0 260 175' xmlns='http://www.w3.org/2000/svg'><defs><marker id='ah2' markerWidth='8' markerHeight='8' refX='6' refY='3' orient='auto'><path d='M0,0 L6,3 L0,6 z' fill='#fcd34d'/></marker></defs><line x1='20' y1='30' x2='240' y2='30' stroke='#7fb8a0' stroke-width='3'/><line x1='72' y1='30' x2='130' y2='118' stroke='#34d399' stroke-width='2'/><line x1='188' y1='30' x2='130' y2='118' stroke='#34d399' stroke-width='2'/><text x='84' y='48' fill='#cfeede' font-size='12'>β</text><text x='170' y='48' fill='#cfeede' font-size='12'>α</text><rect x='113' y='118' width='34' height='24' fill='rgba(52,211,153,0.25)' stroke='#34d399' stroke-width='2'/><text x='123' y='135' fill='#cfeede' font-size='12'>m</text><line x1='130' y1='144' x2='130' y2='165' stroke='#fcd34d' stroke-width='2' marker-end='url(#ah2)'/><text x='136' y='161' fill='#fcd34d' font-size='11'>mg</text></svg>"],
     [2,"Mass m₁ rests on a smooth incline, connected over a pulley at the top to a vertically hanging mass m₂; the system is at rest. Find the incline angle θ and the normal force on m₁.",
       "θ = sin⁻¹(m₂/m₁);&nbsp; N = m₁g·√(1 − (m₂/m₁)²)",
       "String holds m₂: T = m₂g. Along the incline T = m₁g sinθ ⇒ sinθ = m₂/m₁. Normal: N = m₁g cosθ = m₁g√(1 − (m₂/m₁)²)."],
@@ -538,7 +543,8 @@ Using a unified equation like this is a great habit—it minimizes intermediate 
       "The pulley is in equilibrium of its string forces: F − 2T = 0 ⇒ T = F/2. Block: T = ma ⇒ a = F/2m. Geometry makes the pulley move half as far, so its acceleration is F/4m."],
     [7,"A smooth ring A (mass m) slides on a fixed horizontal rod; a string over a fixed pulley B connects it to a hanging block C of mass M = 2m, making angle θ with the rod. (a) Show the block descends at v cosθ when the ring moves at v. (b) Find the acceleration when released from rest at θ = 30° (g = 9.8).",
       "(a) v_block = v cosθ;&nbsp; (b) a = Mg cosθ/(M + m cos²θ) = 6.78 m/s²",
-      "(a) Only the along-string component of the ring's velocity feeds the string ⇒ v cosθ. (b) Ring: T cosθ = ma; block: Mg − T = Ma cosθ. Eliminate T ⇒ a = Mg cosθ/(M + m cos²θ); M = 2m, θ = 30° ⇒ a = 6.78 m/s²."],
+      "(a) Only the along-string component of the ring's velocity feeds the string ⇒ v cosθ. (b) Ring: T cosθ = ma; block: Mg − T = Ma cosθ. Eliminate T ⇒ a = Mg cosθ/(M + m cos²θ); M = 2m, θ = 30° ⇒ a = 6.78 m/s².",
+      "<svg class='fig' viewBox='0 0 300 205' xmlns='http://www.w3.org/2000/svg'><defs><marker id='ah1' markerWidth='8' markerHeight='8' refX='6' refY='3' orient='auto'><path d='M0,0 L6,3 L0,6 z' fill='#fcd34d'/></marker></defs><line x1='20' y1='60' x2='280' y2='60' stroke='#7fb8a0' stroke-width='3'/><circle cx='95' cy='60' r='7' fill='rgba(52,211,153,0.3)' stroke='#34d399' stroke-width='2'/><text x='78' y='52' fill='#cfeede' font-size='13'>A</text><line x1='108' y1='49' x2='152' y2='49' stroke='#fcd34d' stroke-width='2' marker-end='url(#ah1)'/><text x='157' y='53' fill='#fcd34d' font-size='13'>v</text><line x1='95' y1='60' x2='168' y2='132' stroke='#34d399' stroke-width='2'/><path d='M124,60 A28,28 0 0,1 116,80' fill='none' stroke='#cfeede' stroke-width='1'/><text x='126' y='80' fill='#cfeede' font-size='12'>θ</text><circle cx='171' cy='135' r='8' fill='none' stroke='#34d399' stroke-width='2'/><text x='183' y='139' fill='#cfeede' font-size='13'>B</text><line x1='171' y1='143' x2='171' y2='174' stroke='#34d399' stroke-width='2'/><rect x='159' y='174' width='24' height='20' fill='rgba(52,211,153,0.25)' stroke='#34d399' stroke-width='2'/><text x='188' y='189' fill='#cfeede' font-size='13'>C</text></svg>"],
     [8,"A rope is fixed to a clamp on the ground, runs over a tree branch, and hangs at 30° to the vertical. A 60 kg man climbs it. The clamp pulls out if the rope tension reaches 360 N. Find his maximum safe upward acceleration (neglect branch friction, g = 10).",
       "2 m/s²",
       "Upward pull on the clamp = T sin30° = T/2. Limit: T/2 = 360 ⇒ T_max = 720 N. Man: T − mg = ma ⇒ a = (720 − 600)/60 = 2 m/s²."],
@@ -553,8 +559,8 @@ Using a unified equation like this is a great habit—it minimizes intermediate 
       "Work in the lab frame (or add the prism's recoil): writing Newton's law along and perpendicular to the incline for both bodies and eliminating N and the prism acceleration gives a = (M+m)g sinθ/(M + m sin²θ)."],
   ];
   const host=document.getElementById('workedSheet');
-  host.innerHTML = W.map(([n,q,a,s])=>
-    `<details class="wex"><summary>${n}. ${q}</summary><div class="sol"><b>Answer:</b> <span class="ans">${a}</span><br>${s}</div></details>`
+  host.innerHTML = W.map(([n,q,a,s,fig])=>
+    `<details class="wex"><summary>${n}. ${q}</summary><div class="sol">${fig||''}<b>Answer:</b> <span class="ans">${a}</span><br>${s}</div></details>`
   ).join('');
   document.getElementById('wSearch').addEventListener('input', e=>{
     const q=e.target.value.trim().toLowerCase();
