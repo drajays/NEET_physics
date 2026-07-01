@@ -227,6 +227,38 @@
   </section>
 
   <section class="card panel">
+    <h2>Movable-pulley constraint · the “×2 / ¼” rule</h2>
+    <p class="foot" style="margin:0 0 12px">Block A (mass m) is tied to a fixed clamp C by a string over a <b>movable</b> pulley B whose axle is pulled by force F (smooth floor, from rest). The clamp anchors the upper string segment, so A must move exactly twice as far as the pulley. (This is worked-out problem 6 above, in full.)</p>
+
+    <table class="ktable" style="margin-bottom:14px">
+      <tr><th>Quantity</th><th>Constraint</th><th>Meaning</th></tr>
+      <tr><td>Displacement</td><td class="k">x_A = 2x_P</td><td>Block A moves twice the pulley's distance.</td></tr>
+      <tr><td>Velocity</td><td class="k">v_A = 2v_P</td><td>Block A moves twice as fast.</td></tr>
+      <tr><td>Acceleration</td><td class="k">a_A = 2a_P</td><td>Block A accelerates twice as fast.</td></tr>
+    </table>
+
+    <div class="rules">
+      <div class="rule"><h3>Block A (mass m)</h3><ul>
+        <li>Tension: <span class="mono">T = F/2</span></li>
+        <li>Acceleration: <span class="mono">a_A = F/2m</span></li>
+        <li>Velocity: <span class="mono">v_A = a_A·t = Ft/2m</span></li>
+        <li>Displacement: <span class="mono">x_A = ½a_A t² = Ft²/4m</span></li>
+      </ul></div>
+      <div class="rule"><h3>Pulley B (massless axle)</h3><ul>
+        <li>Net force: <span class="mono">ΣF = F − 2T = 0</span></li>
+        <li>Acceleration: <span class="mono">a_P = a_A/2 = F/4m</span></li>
+        <li>Velocity: <span class="mono">v_P = Ft/4m</span></li>
+        <li>Displacement: <span class="mono">x_P = Ft²/8m</span></li>
+      </ul></div>
+    </div>
+
+    <div class="strat">
+      <b>Consistency check:</b> <span class="mono">x_A = Ft²/4m = 2×(Ft²/8m) = 2x_P</span> ✓ &nbsp; — the dynamics fold straight back into the geometry.<br>
+      <b>Two ways to say it:</b> <b>(force)</b> half of F becomes the tension T = F/2; the massless pulley feels <i>zero</i> net force because the forward pull F is balanced by the two backward tensions 2T. &nbsp; <b>(acceleration — the "quarter" rule)</b> the mass accelerates at F/2m, and by the constraint the pulley accelerates at one-<i>quarter</i> the standard rate, F/4m.
+    </div>
+  </section>
+
+  <section class="card panel">
     <h2>Newton's Laws formula sheet (NEET)</h2>
     <div class="toolbar">
       <input id="fSearch" type="search" placeholder="Filter formulas… (e.g. impulse, lift, Atwood, pseudo)" style="flex:1 1 260px;max-width:360px;background:var(--glass);border:1px solid var(--border);border-radius:999px;padding:7px 14px;color:var(--text);font-size:0.9rem;" aria-label="Filter formulas" />
@@ -413,6 +445,15 @@
         options:numOpts(ans,[m*(g+a0),m*g,m*Math.abs(g-a0)],' N'),
         solution:[`g and a₀ are perpendicular ⇒ g_eff = √(g² + a₀²) = √(100 + ${a0}²) = ${round(geff)} m/s².`,`N = m·g_eff = ${m}×${round(geff)} = <b>${ans} N</b>.`]};
     },
+    movpulley(){
+      const F=pick([8,12,20,40]), m=pick([2,4,5]); const askP=Math.random()<0.5;
+      const aA=round(F/(2*m)), aP=round(F/(4*m));
+      const ans=askP?aP:aA;
+      return {cat:'movpulley', stem:`Block A (mass <b>${m} kg</b>) is tied to a fixed clamp by a string over a movable pulley whose axle is pulled by <b>F = ${F} N</b> (smooth floor). Find the acceleration of the <b>${askP?'pulley':'block'}</b>.`,
+        options:numOpts(ans,[askP?aA:aP,F/m,askP?F/(2*m):F/(4*m)],' m/s²'),
+        solution:askP?[`Pulley: F − 2T = 0 ⇒ T = F/2. Block a_A = T/m = F/2m; the pulley moves half as far ⇒ a_P = F/4m = ${F}/${4*m} = <b>${aP} m/s²</b>.`]
+          :[`Massless pulley: F − 2T = 0 ⇒ T = F/2. Block: a_A = T/m = F/2m = ${F}/${2*m} = <b>${aA} m/s²</b>.`]};
+    },
     superthrust(){
       const m=pick([2,5,10]), a=pick([12,15,20]);
       const ans=round(m*(a-g));
@@ -422,7 +463,7 @@
     },
   };
 
-  const CATS=[['all','All'],['fma','F = ma'],['lift','Lift weight'],['liftincline','Incline-in-lift'],['lifthoriz','Horizontal accel'],['superthrust','Super-thrust'],['monkey','Rope tension'],['normalincline','Normal on incline'],['inclinesmooth','Smooth incline'],['spring','Spring (kx)'],['atwood','Atwood'],['contact','Contact force'],['recoil','Gun recoil'],['rocket','Rocket thrust'],['waterjet','Water jet'],['pendulum','Pendulum angle'],['maxaccel','String limit'],['resultant','Resultant'],['impulse','Impulse'],['ropeblock','Massive rope']];
+  const CATS=[['all','All'],['fma','F = ma'],['lift','Lift weight'],['liftincline','Incline-in-lift'],['lifthoriz','Horizontal accel'],['superthrust','Super-thrust'],['movpulley','Movable pulley'],['monkey','Rope tension'],['normalincline','Normal on incline'],['inclinesmooth','Smooth incline'],['spring','Spring (kx)'],['atwood','Atwood'],['contact','Contact force'],['recoil','Gun recoil'],['rocket','Rocket thrust'],['waterjet','Water jet'],['pendulum','Pendulum angle'],['maxaccel','String limit'],['resultant','Resultant'],['impulse','Impulse'],['ropeblock','Massive rope']];
   let cat='all', attempted=0, correct=0, current=null, answered=false;
   const stemEl=document.getElementById('qStem'),optsEl=document.getElementById('qOpts'),
         fbEl=document.getElementById('qFeedback'),solEl=document.getElementById('qSol'),
