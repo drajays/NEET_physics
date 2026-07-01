@@ -186,6 +186,47 @@
   </section>
 
   <section class="card panel">
+    <h2>Elevator / lift mechanics — every case (NEET high-yield)</h2>
+    <p class="foot" style="margin:0 0 12px">Apparent weight N depends on the direction of <b>acceleration</b> a, never the velocity. One shortcut rules them all: find <b>g<sub>eff</sub></b>, then <span class="mono">N = M·g<sub>eff</sub></span> (× cosθ on a ramp).</p>
+
+    <table class="ktable" style="margin-bottom:14px">
+      <tr><th>Vertical motion of the lift</th><th>Equation</th><th>Apparent weight N</th><th>Feel</th></tr>
+      <tr><td>At rest / constant velocity (a = 0)</td><td>N − Mg = 0</td><td class="k">Mg</td><td>Normal</td></tr>
+      <tr><td>Accelerating up (or decelerating down)</td><td>N − Mg = Ma</td><td class="k">M(g + a)</td><td>Heavier</td></tr>
+      <tr><td>Accelerating down (or decelerating up)</td><td>Mg − N = Ma</td><td class="k">M(g − a)</td><td>Lighter</td></tr>
+      <tr><td>Free fall (a = g)</td><td>Mg − N = Mg</td><td class="k">0</td><td>Weightless</td></tr>
+      <tr><td>Super-thrust down (a &gt; g)</td><td>N + Mg = Ma</td><td class="k">M(a − g)</td><td>Pressed to ceiling</td></tr>
+    </table>
+
+    <div class="rules">
+      <div class="rule"><h3>Incline (angle θ) inside a lift</h3><ul>
+        <li>Up (a): <span class="mono">N = M(g + a)cosθ</span>; slide <span class="mono">a<sub>s</sub> = (g + a)sinθ</span>.</li>
+        <li>Down (a): <span class="mono">N = M(g − a)cosθ</span>; slide <span class="mono">a<sub>s</sub> = (g − a)sinθ</span>.</li>
+        <li>Effective gravity simply becomes (g ± a) everywhere.</li>
+      </ul></div>
+      <div class="rule"><h3>Horizontal / angled acceleration</h3><ul>
+        <li>Horizontal a₀: <span class="mono">g<sub>eff</sub> = √(g² + a₀²)</span>, N = M·g<sub>eff</sub>.</li>
+        <li>Up a slope α: <span class="mono">g<sub>eff</sub> = √((g + a₀sinα)² + (a₀cosα)²)</span>.</li>
+        <li>Down a slope α: <span class="mono">g<sub>eff</sub> = √((g − a₀sinα)² + (a₀cosα)²)</span>.</li>
+      </ul></div>
+    </div>
+
+    <div class="strat">
+      <b>💡 The g<sub>eff</sub> shortcut:</b> &nbsp;Going up ⇒ <span class="mono">g<sub>eff</sub> = g + a</span> &nbsp;·&nbsp; going down ⇒ <span class="mono">g<sub>eff</sub> = g − a</span> &nbsp;·&nbsp; horizontal ⇒ <span class="mono">g<sub>eff</sub> = √(g² + a²)</span>. &nbsp;Then <span class="mono">N = M·g<sub>eff</sub></span> (flat floor) or <span class="mono">N = M·g<sub>eff</sub>·cosθ</span> (on a ramp) — no FBD needed.
+    </div>
+
+    <details class="wex"><summary>Worked — 5 kg block on a 30° incline in a lift rising at 2 m/s² (g = 10)</summary>
+      <div class="sol">g<sub>eff</sub> = g + a = 12 m/s². N = M·g<sub>eff</sub>·cosθ = 5×12×cos30° = 60×0.866 = <span class="ans">≈ 52 N</span> (and it slides at (g+a)sin30° = 6 m/s²).</div>
+    </details>
+    <details class="wex"><summary>Worked — apparent weight of a 60 kg person in a train accelerating at 5 m/s² (g = 10)</summary>
+      <div class="sol">Horizontal ⇒ g<sub>eff</sub> = √(10² + 5²) = √125 ≈ 11.18 m/s². N = M·g<sub>eff</sub> = 60×11.18 = <span class="ans">≈ 671 N</span> (vs 600 N at rest).</div>
+    </details>
+    <details class="wex"><summary>Worked — super-thrust: 2 kg block, lift forced down at 15 m/s² (g = 10)</summary>
+      <div class="sol">a &gt; g, so the block presses the ceiling: N + Mg = Ma ⇒ N = M(a − g) = 2×(15 − 10) = <span class="ans">10 N</span> (against the ceiling).</div>
+    </details>
+  </section>
+
+  <section class="card panel">
     <h2>Newton's Laws formula sheet (NEET)</h2>
     <div class="toolbar">
       <input id="fSearch" type="search" placeholder="Filter formulas… (e.g. impulse, lift, Atwood, pseudo)" style="flex:1 1 260px;max-width:360px;background:var(--glass);border:1px solid var(--border);border-radius:999px;padding:7px 14px;color:var(--text);font-size:0.9rem;" aria-label="Filter formulas" />
@@ -356,9 +397,32 @@
         options:numOpts(ans,[F,F*m/(M+m),F/2],' N'),
         solution:[`a = F/(M+m) = ${F}/${M+m} m/s²; force on block = Ma = MF/(M+m) = ${M}×${F}/${M+m} = <b>${ans} N</b> (&lt; F).`]};
     },
+    liftincline(){
+      const m=pick([2,5,10]), a=pick([2,4,5]), th=pick([30,37,53,60]), up=Math.random()<0.5;
+      const c=TR[th][1], geff=up?g+a:g-a;
+      const ans=round(m*geff*c);
+      return {cat:'liftincline', stem:`A <b>${m} kg</b> block rests on a smooth <b>${th}°</b> incline fixed inside a lift accelerating <b>${up?'up':'down'} at ${a} m/s²</b> (g = 10). Normal force on the block?`,
+        options:numOpts(ans,[m*geff,m*g*c,m*(up?g-a:g+a)*c],' N'),
+        solution:[`Effective gravity g_eff = g ${up?'+':'−'} a = ${geff} m/s².`,`N = m·g_eff·cosθ = ${m}×${geff}×cos${th}° = <b>${ans} N</b>.`]};
+    },
+    lifthoriz(){
+      const m=pick([2,5,10,60]), a0=pick([5,6,8,7.5]);
+      const geff=Math.sqrt(g*g+a0*a0);
+      const ans=round(m*geff);
+      return {cat:'lifthoriz', stem:`A <b>${m} kg</b> block sits on the floor of a vehicle accelerating <b>horizontally at ${a0} m/s²</b> (g = 10). Apparent weight (normal force)?`,
+        options:numOpts(ans,[m*(g+a0),m*g,m*Math.abs(g-a0)],' N'),
+        solution:[`g and a₀ are perpendicular ⇒ g_eff = √(g² + a₀²) = √(100 + ${a0}²) = ${round(geff)} m/s².`,`N = m·g_eff = ${m}×${round(geff)} = <b>${ans} N</b>.`]};
+    },
+    superthrust(){
+      const m=pick([2,5,10]), a=pick([12,15,20]);
+      const ans=round(m*(a-g));
+      return {cat:'superthrust', stem:`A lift is forced <b>downward</b> at <b>${a} m/s² (&gt; g)</b>; a <b>${m} kg</b> block is on its floor (g = 10). Force between the block and the ceiling it now presses against?`,
+        options:numOpts(ans,[m*(a+g),m*g,m*a],' N'),
+        solution:[`Since a &gt; g the block would float up, so the ceiling pushes it down: N + mg = ma ⇒ N = m(a − g) = ${m}×${a-g} = <b>${ans} N</b>.`]};
+    },
   };
 
-  const CATS=[['all','All'],['fma','F = ma'],['lift','Lift weight'],['monkey','Rope tension'],['normalincline','Normal on incline'],['inclinesmooth','Smooth incline'],['spring','Spring (kx)'],['atwood','Atwood'],['contact','Contact force'],['recoil','Gun recoil'],['rocket','Rocket thrust'],['waterjet','Water jet'],['pendulum','Pendulum angle'],['maxaccel','String limit'],['resultant','Resultant'],['impulse','Impulse'],['ropeblock','Massive rope']];
+  const CATS=[['all','All'],['fma','F = ma'],['lift','Lift weight'],['liftincline','Incline-in-lift'],['lifthoriz','Horizontal accel'],['superthrust','Super-thrust'],['monkey','Rope tension'],['normalincline','Normal on incline'],['inclinesmooth','Smooth incline'],['spring','Spring (kx)'],['atwood','Atwood'],['contact','Contact force'],['recoil','Gun recoil'],['rocket','Rocket thrust'],['waterjet','Water jet'],['pendulum','Pendulum angle'],['maxaccel','String limit'],['resultant','Resultant'],['impulse','Impulse'],['ropeblock','Massive rope']];
   let cat='all', attempted=0, correct=0, current=null, answered=false;
   const stemEl=document.getElementById('qStem'),optsEl=document.getElementById('qOpts'),
         fbEl=document.getElementById('qFeedback'),solEl=document.getElementById('qSol'),
@@ -406,7 +470,25 @@
       "u = 250, v = 0, x = 0.05 m. a = (u² − v²)/(2x) = 62500/0.1 = 6.25×10⁵ m/s². F = ma = 0.01 × 6.25×10⁵ = 6250 N."],
     [4,"A force F = (10î + 5ĵ) N acts on a 10 g particle starting from rest at the origin. Find its position at t = 5 s.",
       "r = (12500 î + 6250 ĵ) m",
-      "aₓ = Fₓ/m = 10/0.01 = 1000 m/s² ⇒ x = ½aₓt² = ½·1000·25 = 12500 m. a_y = 5/0.01 = 500 m/s² ⇒ y = ½·500·25 = 6250 m."],
+      `This problem demonstrates how to analyze motion in multiple dimensions using vector decomposition. Because perpendicular axes ($x$ and $y$) are completely independent of each other, we can split the vector force into two separate, simpler 1D kinematics problems, solve them individually, and then reassemble the final position vector.<br><br>Here is the comprehensive, step-by-step breakdown of the solution.<br><br><b>Step 1: Convert Units to standard SI</b><br>Before performing any kinematic calculations, always ensure all quantities are in standard SI units (meters, kilograms, seconds).<br>The mass of the particle is given in grams:<br>• Mass ($m$) = $10\\text{ g} = \\frac{10}{1000}\\text{ kg} = 0.01\\text{ kg}$ (or $10^{-2}\\text{ kg}$)<br><br><b>Step 2: Extract the Force Components</b><br>The force vector is given as:<br>$$\\vec{F} = (10\\hat{i} + 5\\hat{j})\\text{ N}$$
+This means the force is acting simultaneously along both axes:<br>• Force along the x-axis ($F_x$) = $10\\text{ N}$<br>• Force along the y-axis ($F_y$) = $5\\text{ N}$<br><br><b>Step 3: Calculate Acceleration Components</b><br>Using Newton's Second Law ($\\vec{a} = \\frac{\\vec{F}}{m}$), we find the constant acceleration for each independent direction:<br>Along the x-axis:<br>$$a_x = \\frac{F_x}{m} = \\frac{10\\text{ N}}{0.01\\text{ kg}} = 1000\\text{ m/s}^2$$
+Along the y-axis:<br>$$a_y = \\frac{F_y}{m} = \\frac{5\\text{ N}}{0.01\\text{ kg}} = 500\\text{ m/s}^2$$
+<br><b>Step 4: Calculate the Position Components at $t = 5\\text{ s}$</b><br>The particle starts from rest ($u_x = 0, u_y = 0$) at the origin ($x_0 = 0, y_0 = 0$). We can safely use the standard second equation of motion for constant acceleration:<br>$$s = ut + \\frac{1}{2}at^2 \\implies s = \\frac{1}{2}at^2$$
+Given time ($t$) = $5\\text{ s}$, then $t^2 = 25\\text{ s}^2$.<br>Finding the x-coordinate ($x$):<br>$$x = \\frac{1}{2} \\cdot a_x \\cdot t^2$$
+$$x = \\frac{1}{2} \\cdot (1000) \\cdot (25) = 500 \\cdot 25 = 12,500\\text{ m}$$
+Finding the y-coordinate ($y$):<br>$$y = \\frac{1}{2} \\cdot a_y \\cdot t^2$$
+$$y = \\frac{1}{2} \\cdot (500) \\cdot (25) = 250 \\cdot 25 = 6,250\\text{ m}$$
+<br><b>Step 5: Construct the Final Position Vector ($\\vec{r}$)</b><br>By combining the independent directional coordinates back into a unified position vector notation ($\\vec{r} = x\\hat{i} + y\\hat{j}$):<br>$$\\vec{r} = (12500\\hat{i} + 6250\\hat{j})\\text{ m}$$
+<br><b>Physical Takeaway</b><br>Because the force vector is perfectly constant and the particle starts from rest, its trajectory isn't curved—it travels in a perfectly straight line pointing in the exact same direction as the force vector, just covering an immense distance due to its tiny $10\\text{ g}$ mass.<br><hr><br><b>The total force vector is:</b><br>$$\\vec{F} = F_x\\hat{i} + F_y\\hat{j}$$
+Since the particle starts from rest at the origin, the complete vector equation for position ($\\vec{r}$) is:<br>$$\\vec{r} = \\frac{1}{2}\\vec{a}t^2 = \\frac{1}{2}\\left(\\frac{\\vec{F}}{m}\\right)t^2$$
+Substituting the force components gives you the exact unified formula:<br>$$\\vec{r} = \\frac{t^2}{2m}(F_x\\hat{i} + F_y\\hat{j})$$
+<br><b>Testing Your Formula on the Problem</b><br>Let's plug the numbers from the previous problem directly into this unified formula to see how fast it works:<br>• $$t = 5\\text{ s} \\implies t^2 = 25$$
+• $$m = 0.01\\text{ kg} \\implies 2m = 0.02$$
+• $F_x = 10$, $F_y = 5$<br>$$\\vec{r} = \\frac{25}{0.02}(10\\hat{i} + 5\\hat{j})$$
+Since $\\frac{25}{0.02} = 1250$, we can just distribute that single number to both components inside the parentheses:<br>$$\\vec{r} = 1250 \\cdot (10\\hat{i} + 5\\hat{j})$$
+$$\\vec{r} = (12500\\hat{i} + 6250\\hat{j})\\text{ m}$$
+<br><b>What if you wanted the absolute distance?</b><br>If your formula was meant to find the scalar distance (the straight-line length of the path from the origin, $r = |\\vec{r}|$), we use the Pythagorean theorem on the forces rather than adding them directly:<br>$$r = \\frac{t^2}{2m}\\sqrt{F_x^2 + F_y^2}$$
+Using a unified equation like this is a great habit—it minimizes intermediate rounding errors and keeps the physics tightly tied to a single starting principle!`],
     [5,"A block of mass M rests on the floor of a box that is accelerating downward at a. Find the force the block exerts on the floor (and its value when a = 3g/4).",
       "N = M(g − a);&nbsp; if a = 3g/4 ⇒ N = Mg/4",
       "Forces on the block: Mg down, N up. Mg − N = Ma ⇒ N = M(g − a). With a = 3g/4, N = Mg/4 (by Newton's 3rd law the block presses the floor with the same N)."],
@@ -596,12 +678,59 @@
   const EX = [
     [1,"What physical quantity measures the inertia of a body?","Mass","Greater mass ⇒ greater inertia (more resistance to a change in motion)."],
     [2,"A force of 20 N acts on a 4 kg body. Acceleration?","5 m/s²","a = F/m = 20/4 = 5 m/s²."],
-    [3,"A 15 kg monkey climbs up a rope with a = 2 m/s². Tension? (g=10)","180 N","T − mg = ma ⇒ T = m(g+a) = 15×12 = 180 N."],
+    [3,"A 15 kg monkey climbs up a rope with a = 2 m/s². Tension? (g=10)","180 N",`T − mg = ma ⇒ T = m(g+a) = 15×12 = 180 N.<br><br>If the monkey climbs down the rope with the same acceleration (a = 2\\text{ m/s}^2), the direction of the acceleration changes, which alters the dynamic equilibrium.<br>When climbing down, the acceleration points downward, meaning gravity is "winning" against the tension. The equation of motion becomes:<br>$$mg - T = ma$$<br>Rearranging the formula to solve for Tension (T):<br>$$T = m(g - a)$$<br>Calculation:<br>Substituting the given values (m = 15\\text{ kg}, g = 10\\text{ m/s}^2, a = 2\\text{ m/s}^2):<br>$$T = 15 \\times (10 - 2)$$<br>$$T = 15 \\times 8$$<br>$$T = 120\\text{ N}$$<br>Summary of Physics:<br>• Climbing Up: The rope must support the monkey's weight and provide extra force to accelerate it upward, resulting in a higher tension (180\\text{ N}).<br>• Climbing Down: The rope "slackens" slightly to allow the monkey to accelerate downward, resulting in a lower tension (120\\text{ N}).`],
     [4,"A 10 kg block on a horizontal floor. Normal reaction? (g=10)","100 N","Vertical equilibrium: N = mg = 10×10 = 100 N."],
     [5,"Apparent weight of a 60 kg man in a freely falling lift?","Zero","Free fall a = g ⇒ N = m(g−g) = 0 (weightlessness)."],
     [6,"Rocket propulsion conserves which quantity?","Linear momentum","Follows from Newton's 2nd and 3rd laws (thrust from ejected gas)."],
     [7,"Pseudo force on a pendulum bob in a car accelerating at a₀ (in the car frame)?","ma₀, opposite to the car's acceleration","In a non-inertial frame add F_pseudo = −ma₀."],
-    [8,"3 kg and 2 kg over a frictionless pulley. Acceleration? (g=10)","2 m/s²","a = (3−2)/(3+2)×10 = 2 m/s²."],
+    [8,"3 kg and 2 kg over a frictionless pulley. Acceleration? (g=10)","2 m/s²",`This problem describes a classic Atwood Machine—a system consisting of two masses connected by an inextensible, massless string passing over a ideal, frictionless pulley.<br>Because the masses are linked by the same taut string, they share a single magnitude of acceleration (a): as the heavier 3\\text{ kg} mass accelerates downward, the lighter 2\\text{ kg} mass must accelerate upward at the exact same rate.<br><br><b>1. The Short-Cut Method (System Approach)</b><br>If you treat the entire setup as a single system, the internal tension forces (T) cancel each other out. The net external driving force is simply the difference between the two weights, and the total mass being moved is the sum of both masses.<br>Using Newton's Second Law (\\Sigma F = m_{\\text{total}} \\cdot a):<br>$$a = \\frac{\\text{Net Driving Force}}{\\text{Total Mass}}$$
+$$a = \\frac{m_1g - m_2g}{m_1 + m_2} = \\left(\\frac{m_1 - m_2}{m_1 + m_2}\\right)g$$
+Substituting the given values (m_1 = 3\\text{ kg}, m_2 = 2\\text{ kg}, g = 10\\text{ m/s}^2):<br>$$a = \\left(\\frac{3 - 2}{3 + 2}\\right) \\times 10 = \\frac{1}{5} \\times 10 = 2\\text{ m/s}^2$$
+<br><b>2. First-Principles Derivation (Free Body Diagrams)</b><br>To see exactly why this formula works, we can isolate each mass and write down their individual equations of motion using Free Body Diagrams (FBD).<br><b>For the 3\\text{ kg} Mass (m_1)</b><br>This mass moves downward. Therefore, its weight (m_1g) is larger than the upward tension (T).<br>$$\\Sigma F = m_1a$$
+$$m_1g - T = m_1a \\quad \\text{--- (Equation 1)}$$
+Substituting values:<br>$$3(10) - T = 3a \\implies 30 - T = 3a$$
+<b>For the 2\\text{ kg} Mass (m_2)</b><br>This mass moves upward. Therefore, the upward tension (T) is larger than its weight (m_2g).<br>$$\\Sigma F = m_2a$$
+$$T - m_2g = m_2a \\quad \\text{--- (Equation 2)}$$
+Substituting values:<br>$$T - 2(10) = 2a \\implies T - 20 = 2a$$
+<br><b>3. Solving the System of Equations</b><br>Now, we add Equation 1 and Equation 2 together. Notice how the internal tension (T) cancels out perfectly:<br>$$(30 - T) + (T - 20) = 3a + 2a$$
+$$30 - 20 = 5a$$
+$$10 = 5a$$
+$$a = \\frac{10}{5} = 2\\text{ m/s}^2$$
+<br><b>Finding String Tension (Bonus Step)</b><br>If you ever need to find the tension (T) in the string, you can substitute a = 2\\text{ m/s}^2 back into either equation (e.g., Equation 2):<br>$$T - 20 = 2(2)$$
+$$T = 20 + 4 = 24\\text{ N}$$
+<br><hr><br>
+If you add an extra 2\\text{ kg} to both sides of the pulley, the new masses hanging on each side become:<br>• Left side (M_1): 3\\text{ kg} + 2\\text{ kg} = 5\\text{ kg}<br>• Right side (M_2): 2\\text{ kg} + 2\\text{ kg} = 4\\text{ kg}<br><br><b>1. Calculating the New Acceleration (a)</b><br>Using the same system shortcut formula derived previously:<br>$$a = \\left(\\frac{M_1 - M_2}{M_1 + M_2}\\right)g$$
+Substitute the new mass values (M_1 = 5\\text{ kg}, M_2 = 4\\text{ kg}, g = 10\\text{ m/s}^2):<br>$$a = \\left(\\frac{5 - 4}{5 + 4}\\right) \\times 10$$
+$$a = \\frac{1}{9} \\times 10 = \\frac{10}{9}\\text{ m/s}^2 \\approx 1.11\\text{ m/s}^2$$
+<b>Physical Insight:</b> The acceleration decreases (from 2\\text{ m/s}^2 down to 1.11\\text{ m/s}^2). Even though the net driving weight difference remains exactly the same (1\\text{ kg} \\times g), the total inertia of the system has increased from 5\\text{ kg} to 9\\text{ kg}, making it harder to accelerate.<br><br><b>2. Calculating the New Tension (T)</b><br>You can find the tension by looking at the equation of motion for either mass. Let's look at the lighter side (M_2 = 4\\text{ kg}), which moves upward:<br>$$T - M_2g = M_2a$$
+$$T = M_2(g + a)$$
+Substitute our values:<br>$$T = 4 \\times \\left(10 + \\frac{10}{9}\\right)$$
+$$T = 4 \\times \\left(\\frac{100}{9}\\right)$$
+$$T = \\frac{400}{9}\\text{ N} \\approx 44.44\\text{ N}$$
+(Alternatively, checking with the 5\\text{ kg} mass moving down: T = M_1(g - a) = 5 \\times (10 - \\frac{10}{9}) = 5 \\times \\frac{80}{9} = \\frac{400}{9}\\text{ N}, which confirms the calculation is correct).<br><br><b>Comparison Summary</b>
+<table class="ktable">
+<tr><th>Metric</th><th>Original Setup (3\\text{ kg} & 2\\text{ kg})</th><th>New Setup (5\\text{ kg} & 4\\text{ kg})</th></tr>
+<tr><td>Acceleration (a)</td><td>2\\text{ m/s}^2</td><td>\\frac{10}{9}\\text{ m/s}^2 (\\approx 1.11\\text{ m/s}^2)</td></tr>
+<tr><td>Tension (T)</td><td>24\\text{ N}</td><td>\\frac{400}{9}\\text{ N} (\\approx 44.44\\text{ N})</td></tr>
+</table>
+<br><hr><br>
+Let's apply the additional masses to our current setup.<br>Starting from our previous state (M_{\\text{left}} = 5\\text{ kg} and M_{\\text{right}} = 4\\text{ kg}):<br>• New Left side (M_1): 5\\text{ kg} + 5\\text{ kg} = 10\\text{ kg}<br>• New Right side (M_2): 4\\text{ kg} + 10\\text{ kg} = 14\\text{ kg}<br>Now the right side is heavier, meaning the system will accelerate downward on the right and upward on the left.<br><br><b>1. Calculating the New Acceleration (a)</b><br>Using the system shortcut formula (taking the heavier mass minus the lighter mass to get a positive magnitude):<br>$$a = \\left(\\frac{M_2 - M_1}{M_1 + M_2}\\right)g$$
+Substitute the new values (M_1 = 10\\text{ kg}, M_2 = 14\\text{ kg}, g = 10\\text{ m/s}^2):<br>$$a = \\left(\\frac{14 - 10}{10 + 14}\\right) \\times 10$$
+$$a = \\frac{4}{24} \\times 10$$
+$$a = \\frac{1}{6} \\times 10 = \\frac{5}{3}\\text{ m/s}^2 \\approx 1.67\\text{ m/s}^2$$
+<br><b>2. Calculating the New Tension (T)</b><br>Let's look at the left mass (M_1 = 10\\text{ kg}), which is now the lighter side moving upward:<br>$$T - M_1g = M_1a$$
+$$T = M_1(g + a)$$
+Substitute our values:<br>$$T = 10 \\times \\left(10 + \\frac{5}{3}\\right)$$
+$$T = 10 \\times \\left(\\frac{35}{3}\\right)$$
+$$T = \\frac{350}{3}\\text{ N} \\approx 116.67\\text{ N}$$
+(Double-checking with the heavier 14\\text{ kg} mass moving down: T = M_2(g - a) = 14 \\times (10 - \\frac{5}{3}) = 14 \\times \\frac{25}{3} = \\frac{350}{3}\\text{ N}. The values match perfectly).<br><br><b>Final Blueprint Tracking</b>
+<table class="ktable">
+<tr><th>Metric</th><th>Phase 1 (3\\text{ kg} & 2\\text{ kg})</th><th>Phase 2 (5\\text{ kg} & 4\\text{ kg})</th><th>Phase 3 (10\\text{ kg} & 14\\text{ kg})</th></tr>
+<tr><td>Net Driver</td><td>1\\text{ kg} \\cdot g (Left heavy)</td><td>1\\text{ kg} \\cdot g (Left heavy)</td><td>4\\text{ kg} \\cdot g (Right heavy)</td></tr>
+<tr><td>Total Inertia</td><td>5\\text{ kg}</td><td>9\\text{ kg}</td><td>24\\text{ kg}</td></tr>
+<tr><td>Acceleration (a)</td><td>2\\text{ m/s}^2</td><td>\\frac{10}{9}\\text{ m/s}^2 \\approx 1.11\\text{ m/s}^2</td><td>\\frac{5}{3}\\text{ m/s}^2 \\approx 1.67\\text{ m/s}^2</td></tr>
+<tr><td>Tension (T)</td><td>24\\text{ N}</td><td>\\frac{400}{9}\\text{ N} \\approx 44.44\\text{ N}</td><td>\\frac{350}{3}\\text{ N} \\approx 116.67\\text{ N}</td></tr>
+</table>`],
     [9,"Tension for the system in Q8?","24 N","T = 2·3·2/(3+2)×10 = 12/5×10 = 24 N."],
     [10,"A boy pushes a wall with 50 N. Force the wall exerts on him?","50 N","Newton's 3rd law — equal and opposite."],
     [11,"Spring constant k = 200 N/m. Force to extend it 0.1 m?","20 N","F = kx = 200×0.1 = 20 N."],
